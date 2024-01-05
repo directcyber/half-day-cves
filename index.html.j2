@@ -4,7 +4,41 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>halfdaycves</title>
+
+
+<style>
+
+	body {
+		background-color: #09414c;
+		color: white;
+		font-family: monospace;
+		font-size: 12px;
+	}
+
+	a {
+		color: #07edf9;
+	}
+/*
+	.description {
+		font-size: .9em;
+	}*/
+
+	table {
+  	border-collapse: collapse;
+	}
+
+	tr {
+		border-bottom: 1px solid #ccc;
+	}
+
+	td {
+		padding: 0.5em;
+	}
+
+</style>
+
 </head>
+
 
 
 <body>
@@ -17,13 +51,20 @@ Updated at UTC {{ updated }}
 		<tr>
 		<!-- sortTable TODO !-->
 		    <th onclick="sortTable(0)">CVE</th>
-		    <th onclick="sortTable(1)">Github URL</th>
+		    <th onclick="sortTable(1)">CVSS</th>
+		    <th onclick="sortTable(2)">Git URL</th>
+		    <th onclick="sortTable(3)">Published</th>
+		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
 		{% for cve in data %}
 		<tr>
 			<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/{{cve}}">{{cve}}</a></td>
+			<td>{{data[cve]['cvss']}}</td>
 			<td><a target=_blank href="{{ data[cve]['url'] }}">{{ data[cve]['url'] }}</a></td>
+			<td class=date>{{ data[cve]['published'] }}</td>
+			<td class=description>{{ data[cve]['description'] }}</td>
+
 
 		</tr>
 
