@@ -1,9 +1,11 @@
+#!/usr/bin/env python3
 import argparse
 import requests
 import github_api_request_handler as gh
 import datetime
 import json
 import parse
+import os
 import sys
 
 def run_GQ_query(query, variables=""): 
@@ -43,7 +45,9 @@ def get_nvd_data(days):
 		return None
 
 def get_repo_amount_of_stars(repo):
-	resp=gh.get(f"https://api.github.com/repos/{repo}", github_token)
+	resp = gh.get(f"https://api.github.com/repos/{repo}", github_token)
+	if resp.status_code != 200:
+		print(f"ERROR bad status code {resp.status_code}: {resp.text}", file=sys.stderr)
 	resp_json = resp.json()
 	return resp_json['stargazers_count']
 
@@ -162,11 +166,11 @@ def check_issue_half_day(issue_url):
 	# maybe in the future check pull requests that resolve the issue, etc.
 	return True
 
-def found_half_day(cve_id, github_url):
-	print(f'found a possible half_day on {cve_id} with the reference: {github_url}')
-
 
 def iterate_nvd_cves_for_half_day(lastest_nvd_vulneraiblities, minimum_github_stars):
+
+	results = {} # CVE: {detail dict}
+
 	for cve in lastest_nvd_vulneraiblities:
 		cve_has_github_data=False
 		cve_has_github_commit=False
@@ -176,8 +180,9 @@ def iterate_nvd_cves_for_half_day(lastest_nvd_vulneraiblities, minimum_github_st
 		cve_id = cve_data['id']
 		cve_references = cve_data['references']
 
+		current_year = datetime.datetime.utcnow().year
 		# dont analyze cves that do not start with the current year
-		if not cve_id.lower().startswith('cve-2023'):
+		if not cve_id.lower().startswith(f'cve-{current_year}'):
 			continue
 
 		for reference in cve_references:
@@ -209,7 +214,7 @@ def iterate_nvd_cves_for_half_day(lastest_nvd_vulneraiblities, minimum_github_st
 				print(f'error in {github_url}')
 				continue
 
-			org,repo,_=parsed
+			org,repo,_ = parsed
 
 			# if the repo has small amount of stars we skip this cve
 			if get_repo_amount_of_stars(org+'/'+repo) < minimum_github_stars:
@@ -223,29 +228,47 @@ def iterate_nvd_cves_for_half_day(lastest_nvd_vulneraiblities, minimum_github_st
 				cve_is_half_day = check_issue_half_day(github_url) 
 
 			if cve_is_half_day:
-				found_half_day(cve_id, github_url)
-	
+				results[cve_id] = {"url": github_url}
+				print(f'found a possible half_day on {cve_id} with the reference: {github_url}')
+
+	return results
 
 def main():
 	global github_token
 
-	parser = argparse.ArgumentParser(description="Scan nvd for potential 0.5 days vulnerabilities")
+	results_filename = 'half_day_cves.json'
 
-	parser.add_argument("--github_token","-gh", help="GitHub token to use for the api, no permissions needed.", required=True)
+	parser = argparse.ArgumentParser(description="Scan nvd for potential half day vulnerabilities")
+
+	# parser.add_argument("--github_token","-gh", help="GitHub token to use for the api, no permissions needed.", required=True)
 
 	parser.add_argument("--days", "-d",default=3, type=int, help="How many days ago to scan the nvd for new CVEs. Default is 3.")
 
-	parser.add_argument("--min_stars","-s", default=150, type=int, help="The minimum amount of GitHub stars to scan for 0.5 day. Default is 150.")
+	parser.add_argument("--min_stars","-s", default=50, type=int, help="The minimum amount of GitHub stars to scan for half day.")
 
 	# Parse the command-line arguments
 	args = parser.parse_args()
 
-	github_token = args.github_token
+	github_token = os.getenv("GITHUB_TOKEN")
 
 	lastest_nvd_vulneraiblities = get_nvd_data(args.days)
 
 	if lastest_nvd_vulneraiblities is not None:
-		iterate_nvd_cves_for_half_day(lastest_nvd_vulneraiblities, args.min_stars)
+		cve_urls_dict = iterate_nvd_cves_for_half_day(lastest_nvd_vulneraiblities, args.min_stars)
+		if os.path.isfile(results_filename):
+			with open(results_filename, 'r') as f:
+				old_cves = set(json.load(f).keys())
+				for cve in cve_urls_dict:
+					if cve not in old_cves:
+						cve_urls_dict[cve]['new'] = True
+					else:
+						cve_urls_dict[cve]['new'] = False
+		with open(results_filename, 'w') as f:
+			json.dump(cve_urls_dict, f)
+			print(f"saved output to {results_filename}", file=sys.stderr)
+
 
 if __name__ == '__main__':
 	main()
+
+

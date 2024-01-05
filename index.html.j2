@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>halfdaycves</title>
+</head>
+
+
+<body>
+Updated at UTC {{ updated }}
+
+<p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
+
+<section id=index>
+	<table id=cvetable>
+		<tr>
+		<!-- sortTable TODO !-->
+		    <th onclick="sortTable(0)">CVE</th>
+		    <th onclick="sortTable(1)">Github URL</th>
+		</tr>
+
+		{% for cve in data %}
+		<tr>
+			<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/{{cve}}">{{cve}}</a></td>
+			<td><a target=_blank href="{{ data[cve]['url'] }}">{{ data[cve]['url'] }}</a></td>
+
+		</tr>
+
+
+		{% endfor %}
+
+	</table>
+</section>
