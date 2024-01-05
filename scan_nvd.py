@@ -51,10 +51,14 @@ def get_repo_amount_of_stars(repo):
 	resp_json = resp.json()
 	return resp_json['stargazers_count']
 
-def filter_url_by_github(reference):
+def filter_url_by_git(reference):
 	reference_lower = reference.lower()
 	if "github.com" in reference_lower:
 		if "/commit/" in reference_lower or "/pull/" in reference_lower or "/issues/" in reference_lower:
+			return True
+
+	if "gitlab" in reference_lower:
+		if "/commit" in reference_lower or "/merge_requests" in reference_lower or "/compare" in reference_lower or "/snippets" in reference_lower:
 			return True
 
 	return False
@@ -167,6 +171,41 @@ def check_issue_half_day(issue_url):
 	return True
 
 
+def get_cvss_from_nvd_cve(nvd_cve_data):
+	# print(nvd_cve_data)
+	cvss_scores = []
+	cvss = '-'
+	if 'impact' in nvd_cve_data:
+		if 'baseMetricV3' in nvd_cve_data['impact']:
+				fedi_cve_feed[cve]['cvss3'] = nvd_cve_data['impact']['baseMetricV3']['cvssV3']['baseScore']
+				fedi_cve_feed[cve]['severity'] = nvd_cve_data['impact']['baseMetricV3']['cvssV3']['baseSeverity']
+
+	elif 'metrics' in nvd_cve_data['cve']:
+		if 'cvssMetricV30' in nvd_cve_data['cve']['metrics']:
+			for source in nvd_cve_data['cve']['metrics']['cvssMetricV30']:
+				cvss_scores.append(source['cvssData']['baseScore'])
+				# XXX maybe display severity
+				# severity = source['cvssData']['baseSeverity']
+		if 'cvssMetricV31' in nvd_cve_data['cve']['metrics']:
+			for source in nvd_cve_data['cve']['metrics']['cvssMetricV31']:
+				cvss_scores.append(source['cvssData']['baseScore'])
+
+			# description = nvd_cve_data['cve']['description']['description_data'][0]['value']
+
+	# choose the biggest
+	if len(cvss_scores) > 0:
+		cvss = max(cvss_scores)
+	return cvss
+
+def get_description_from_nvd_cve(nvd_cve_data):
+	description = '-'
+	if 'description' in nvd_cve_data['cve'] and len(nvd_cve_data['cve']['description']['description_data']) > 0:
+		description = nvd_cve_data['cve']['description']['description_data'][0]['value']
+	elif 'descriptions' in nvd_cve_data['cve'] and len(nvd_cve_data['cve']['descriptions']) > 0:
+		description = nvd_cve_data['cve']['descriptions'][0]['value']
+	return description
+
+
 def iterate_nvd_cves_for_half_day(lastest_nvd_vulneraiblities, minimum_github_stars):
 
 	results = {} # CVE: {detail dict}
@@ -179,6 +218,9 @@ def iterate_nvd_cves_for_half_day(lastest_nvd_vulneraiblities, minimum_github_st
 		cve_data=cve['cve']
 		cve_id = cve_data['id']
 		cve_references = cve_data['references']
+		cvss = get_cvss_from_nvd_cve(cve)
+		published_date = cve['cve']['published']
+		description = get_description_from_nvd_cve(cve)
 
 		current_year = datetime.datetime.utcnow().year
 		# dont analyze cves that do not start with the current year
@@ -188,7 +230,7 @@ def iterate_nvd_cves_for_half_day(lastest_nvd_vulneraiblities, minimum_github_st
 		for reference in cve_references:
 			url = reference['url']
 
-			if filter_url_by_github(url):
+			if filter_url_by_git(url):
 				cve_has_github_data=True
 				
 				if '/pull/' in url:
@@ -228,7 +270,7 @@ def iterate_nvd_cves_for_half_day(lastest_nvd_vulneraiblities, minimum_github_st
 				cve_is_half_day = check_issue_half_day(github_url) 
 
 			if cve_is_half_day:
-				results[cve_id] = {"url": github_url}
+				results[cve_id] = {"url": github_url, "cvss": cvss, "description": description, 'published': published_date}
 				print(f'found a possible half_day on {cve_id} with the reference: {github_url}')
 
 	return results
@@ -264,7 +306,7 @@ def main():
 					else:
 						cve_urls_dict[cve]['new'] = False
 		with open(results_filename, 'w') as f:
-			json.dump(cve_urls_dict, f)
+			json.dump(cve_urls_dict, f, indent=2)
 			print(f"saved output to {results_filename}", file=sys.stderr)
 
 
