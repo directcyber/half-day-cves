@@ -1,4 +1,8 @@
-# CVE Half-Day Watcher
+# CVE Half-Day Watcher dashboard
+
+This is a fork of Aqua-Nautilus/CVE-Half-Day-Watcher that runs periodically and caches the results in JSON for programmatic access, as well as generates a web dashboard via Github Pages.
+
+## Overview
 
 CVE Half-Day Watcher is a security tool designed to highlight the risk of early exposure of Common Vulnerabilities and Exposures (CVEs) in the public domain. It leverages the National Vulnerability Database (NVD) API to identify recently published CVEs with GitHub references before an official patch is released. By doing so, CVE Half-Day Watcher aims to underscore the window of opportunity for attackers to "harvest" this information and develop exploits.
 This tool is a proof of concept, ready to be built upon and extended.
@@ -33,11 +37,12 @@ pip install -r requirements.txt
 To use CVE Half-Day Watcher, you will need a GitHub token (without permissions).
 
 ```bash
-python scan_nvd.py --github_token YOUR_GITHUB_TOKEN [--days DAYS] [--min_stars MIN_STARS]
+export GITHUB_TOKEN=your_github_token
+python scan_nvd.py [--days DAYS] [--min_stars MIN_STARS]
 ```
-* --github_token: Your GitHub token for authentication (required).
+
 * --days: The number of days to look back for CVEs (optional - default is 3).
-* --min_stars: The minimum number of stars a repository should have to be considered (optional - default is 150).
+* --min_stars: The minimum number of stars a repository should have to be considered (optional - default is 50).
 
 An example of the results from November 2, 2023.
 ![5_half_day_2_x2.png](/misc/5_half_day_2_x2.png)
