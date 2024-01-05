@@ -1,10 +1,4 @@
 {
-  "CVE-2024-21629": {
-    "url": "https://github.com/rust-ethereum/evm/pull/264",
-    "cvss": 5.9,
-    "description": "Rust EVM is an Ethereum Virtual Machine interpreter. In `rust-evm`, a feature called `record_external_operation` was introduced, allowing library users to record custom gas changes. This feature can have some bogus interactions with the call stack. In particular, during finalization of a `CREATE` or `CREATE2`, in the case that the substack execution happens successfully, `rust-evm` will first commit the substate, and then call `record_external_operation(Write(out_code.len()))`. If `record_external_operation` later fails, this error is returned to the parent call stack, instead of `Succeeded`. Yet, the substate commitment already happened. This causes smart contracts able to commit state changes, when the parent caller contract receives zero address (which usually indicates that the execution has failed). This issue only impacts library users with custom `record_external_operation` that returns errors. The issue is patched in release 0.41.1. No known workarounds are available.",
-    "published": "2024-01-02T22:15:09.897"
-  },
   "CVE-2024-21910": {
     "url": "https://github.com/jazzband/django-tinymce/issues/366",
     "cvss": "-",
@@ -22,5 +16,11 @@
     "cvss": "-",
     "description": "Lotos WebServer through 0.1.1 (commit 3eb36cc) has a use-after-free in buffer_avail() at buffer.h via a long URI, because realloc is mishandled.",
     "published": "2024-01-05T04:15:07.930"
+  },
+  "CVE-2024-21642": {
+    "url": "https://github.com/man-group/dtale/commit/954f6be1a06ff8629ead2c85c6e3f8e2196b3df2",
+    "cvss": 7.5,
+    "description": "D-Tale is a visualizer for Pandas data structures. Users hosting versions D-Tale prior to 3.9.0 publicly can be vulnerable to server-side request forgery (SSRF), allowing attackers to access files on the server. Users should upgrade to version 3.9.0, where the `Load From the Web` input is turned off by default. The only workaround for versions earlier than 3.9.0 is to only host D-Tale to trusted users.",
+    "published": "2024-01-05T22:15:43.190"
   }
 }
