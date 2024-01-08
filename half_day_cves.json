@@ -4,5 +4,17 @@
     "cvss": 7.5,
     "description": "D-Tale is a visualizer for Pandas data structures. Users hosting versions D-Tale prior to 3.9.0 publicly can be vulnerable to server-side request forgery (SSRF), allowing attackers to access files on the server. Users should upgrade to version 3.9.0, where the `Load From the Web` input is turned off by default. The only workaround for versions earlier than 3.9.0 is to only host D-Tale to trusted users.",
     "published": "2024-01-05T22:15:43.190"
+  },
+  "CVE-2024-0321": {
+    "url": "https://github.com/gpac/gpac/commit/d0ced41651b279bb054eb6390751e2d4eb84819a",
+    "cvss": 4.0,
+    "description": "Stack-based Buffer Overflow in GitHub repository gpac/gpac prior to 2.3-DEV.",
+    "published": "2024-01-08T13:15:09.347"
+  },
+  "CVE-2024-0322": {
+    "url": "https://github.com/gpac/gpac/commit/092904b80edbc4dce315684a59cc3184c45c1b70",
+    "cvss": 4.4,
+    "description": "Out-of-bounds Read in GitHub repository gpac/gpac prior to 2.3-DEV.",
+    "published": "2024-01-08T13:15:09.557"
   }
 }
