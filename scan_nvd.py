@@ -51,15 +51,28 @@ def get_repo_amount_of_stars(repo):
 	resp_json = resp.json()
 	return resp_json['stargazers_count']
 
+def filter_by_keywords(description):
+	'''
+	filter by keywords and return keyword matches as a list
+	'''
+	keywords = ['remote', 'execution', 'unauthenticated', 'authentication', 'command', 'sensitive', 'vpn', 'bypass', 'leak']
+	kw_matches = []
+	for kw in keywords:
+		if kw in description.lower():
+			kw_matches.append(kw)
+
+	return kw_matches
+
+
 def filter_url_by_git(reference):
 	reference_lower = reference.lower()
 	if "github.com" in reference_lower:
 		if "/commit/" in reference_lower or "/pull/" in reference_lower or "/issues/" in reference_lower:
 			return True
 
-	if "gitlab" in reference_lower:
-		if "/commit" in reference_lower or "/merge_requests" in reference_lower or "/compare" in reference_lower or "/snippets" in reference_lower:
-			return True
+	# if "gitlab" in reference_lower:
+	# 	if "/commit" in reference_lower or "/merge_requests" in reference_lower or "/compare" in reference_lower or "/snippets" in reference_lower:
+	# 		return True
 
 	return False
 
@@ -177,8 +190,8 @@ def get_cvss_from_nvd_cve(nvd_cve_data):
 	cvss = '-'
 	if 'impact' in nvd_cve_data:
 		if 'baseMetricV3' in nvd_cve_data['impact']:
-				fedi_cve_feed[cve]['cvss3'] = nvd_cve_data['impact']['baseMetricV3']['cvssV3']['baseScore']
-				fedi_cve_feed[cve]['severity'] = nvd_cve_data['impact']['baseMetricV3']['cvssV3']['baseSeverity']
+				cvss_scores.append(nvd_cve_data['impact']['baseMetricV3']['cvssV3']['baseScore'])
+				# severity = nvd_cve_data['impact']['baseMetricV3']['cvssV3']['baseSeverity']
 
 	elif 'metrics' in nvd_cve_data['cve']:
 		if 'cvssMetricV30' in nvd_cve_data['cve']['metrics']:
@@ -273,6 +286,13 @@ def iterate_nvd_cves_for_half_day(lastest_nvd_vulneraiblities, minimum_github_st
 				results[cve_id] = {"url": github_url, "cvss": cvss, "description": description, 'published': published_date}
 				print(f'found a possible half_day on {cve_id} with the reference: {github_url}')
 
+		keywords_matched = filter_by_keywords(description)
+		if len(keywords_matched) > 1:
+			results[cve_id] = { "cvss": cvss, "description": description, 'published': published_date, 'keywords': ','.join(keywords_matched)}
+			print(f"found good keyword match on {cve_id} with keywords {keywords_matched}")
+
+
+
 	return results
 
 def main():
@@ -292,6 +312,9 @@ def main():
 	args = parser.parse_args()
 
 	github_token = os.getenv("GITHUB_TOKEN")
+	if github_token == None:
+		print("error: github token not set")
+		exit(1)
 
 	lastest_nvd_vulneraiblities = get_nvd_data(args.days)
 

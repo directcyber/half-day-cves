@@ -58,18 +58,47 @@ Updated at UTC {{ updated }}
 		</tr>
 
 		{% for cve in data %}
-		<tr>
-			<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/{{cve}}">{{cve}}</a></td>
-			<td>{{data[cve]['cvss']}}</td>
-			<td><a target=_blank href="{{ data[cve]['url'] }}">{{ data[cve]['url'] }}</a></td>
-			<td class=date>{{ data[cve]['published'] }}</td>
-			<td class=description>{{ data[cve]['description'] }}</td>
+			{% if not data[cve].get("keywords") %}
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/{{cve}}">{{cve}}</a></td>
+					<td>{{data[cve]['cvss']}}</td>
+					<td><a target=_blank href="{{ data[cve]['url'] }}">{{ data[cve]['url'] }}</a></td>
+					<td class=date>{{ data[cve]['published'] }}</td>
+					<td class=description>{{ data[cve]['description'] }}</td>
 
 
-		</tr>
-
-
+				</tr>
+			{% endif %}
 		{% endfor %}
+
+		<hr>
+		{% for cve in data %}
+			{% if data[cve].get("keywords") %}
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/{{cve}}">{{cve}}</a></td>
+					<td>{{data[cve]['cvss']}}</td>
+					<td>{{ data[cve]['keywords'] }}</td>
+					<td class=date>{{ data[cve]['published'] }}</td>
+					<td class=description>{{ data[cve]['description'] }}</td>
+				</tr>
+			{% endif %}
+		{% endfor %}
+
+		</div>
+
+
 
 	</table>
 </section>
+
+<script>
+	if (window.location.toString().includes("keywords")) {
+		keywordElements = document.getElementsByClassName("keywords");
+		for(var i = 0; i < keywordElements.length; i++){
+			keywordElements[i].style.display = "";
+	    }
+		
+	}
+</script>
+
+</body>
