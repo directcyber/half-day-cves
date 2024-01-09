@@ -22,5 +22,11 @@
     "cvss": 5.3,
     "description": "pyLoad is the free and open-source Download Manager written in pure Python. A log injection vulnerability was identified in `pyload` allowing any unauthenticated actor to inject arbitrary messages into the logs gathered by `pyload`. Forged or otherwise, corrupted log files can be used to cover an attacker\u2019s tracks or even to implicate another party in the commission of a malicious act. This vulnerability has been patched in version 0.5.0b3.dev77.\n",
     "published": "2024-01-08T14:15:47.420"
+  },
+  "CVE-2024-21646": {
+    "url": "https://github.com/azure/azure-uamqp-c/commit/12ddb3a31a5a97f55b06fa5d74c59a1d84ad78fe",
+    "cvss": 9.8,
+    "description": "Azure uAMQP is a general purpose C library for AMQP 1.0. The UAMQP library is used by several clients to implement AMQP protocol communication.  When clients using this library receive a crafted binary type data, an integer overflow or wraparound or memory safety issue can occur and may cause remote code execution.  This vulnerability has been patched in release 2024-01-01.",
+    "published": "2024-01-09T01:15:38.937"
   }
 }
