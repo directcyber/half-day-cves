@@ -1,4 +1,70 @@
 {
+  "CVE-2024-0261": {
+    "cvss": 5.3,
+    "description": "A vulnerability has been found in Sentex FTPDMIN 0.96 and classified as problematic. Affected by this vulnerability is an unknown functionality of the component RNFR Command Handler. The manipulation leads to denial of service. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-249817 was assigned to this vulnerability.",
+    "published": "2024-01-07T02:15:44.380",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-0264": {
+    "cvss": 7.3,
+    "description": "A vulnerability was found in SourceCodester Clinic Queuing System 1.0. It has been declared as critical. This vulnerability affects unknown code of the file /LoginRegistration.php. The manipulation of the argument formToken leads to authorization bypass. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-249820.",
+    "published": "2024-01-07T05:15:09.143",
+    "keywords": "remote,bypass"
+  },
+  "CVE-2024-0291": {
+    "cvss": 6.3,
+    "description": "A vulnerability was found in Totolink LR1200GB 9.1.0u.6619_B20230130. It has been rated as critical. This issue affects the function UploadFirmwareFile of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument FileName leads to command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-249857 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-01-08T01:15:10.850",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-0292": {
+    "cvss": 6.3,
+    "description": "A vulnerability classified as critical has been found in Totolink LR1200GB 9.1.0u.6619_B20230130. Affected is the function setOpModeCfg of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument hostName leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-249858 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-01-08T02:15:14.367",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-0293": {
+    "cvss": 6.3,
+    "description": "A vulnerability classified as critical was found in Totolink LR1200GB 9.1.0u.6619_B20230130. Affected by this vulnerability is the function setUploadSetting of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument FileName leads to os command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-249859. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-01-08T03:15:13.820",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-0294": {
+    "cvss": 7.3,
+    "description": "A vulnerability, which was classified as critical, has been found in Totolink LR1200GB 9.1.0u.6619_B20230130. Affected by this issue is the function setUssd of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument ussd leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-249860. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-01-08T03:15:14.050",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-0295": {
+    "cvss": 7.3,
+    "description": "A vulnerability, which was classified as critical, was found in Totolink LR1200GB 9.1.0u.6619_B20230130. This affects the function setWanCfg of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument hostName leads to os command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-249861 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-01-08T04:15:08.287",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-0296": {
+    "cvss": 7.3,
+    "description": "A vulnerability has been found in Totolink N200RE 9.3.5u.6139_B20201216 and classified as critical. This vulnerability affects the function NTPSyncWithHost of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument host_time leads to os command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-249862 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-01-08T04:15:08.540",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-0297": {
+    "cvss": 7.3,
+    "description": "A vulnerability was found in Totolink N200RE 9.3.5u.6139_B20201216 and classified as critical. This issue affects the function UploadFirmwareFile of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument FileName leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-249863. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-01-08T05:15:09.393",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-0298": {
+    "cvss": 7.3,
+    "description": "A vulnerability was found in Totolink N200RE 9.3.5u.6139_B20201216. It has been classified as critical. Affected is the function setDiagnosisCfg of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument ip leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-249864. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-01-08T05:15:09.770",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-0299": {
+    "cvss": 7.3,
+    "description": "A vulnerability was found in Totolink N200RE 9.3.5u.6139_B20201216. It has been declared as critical. Affected by this vulnerability is the function setTracerouteCfg of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument command leads to os command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-249865 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-01-08T06:15:44.593",
+    "keywords": "remote,command"
+  },
   "CVE-2024-0321": {
     "url": "https://github.com/gpac/gpac/commit/d0ced41651b279bb054eb6390751e2d4eb84819a",
     "cvss": 4.0,
@@ -23,10 +89,88 @@
     "description": "pyLoad is the free and open-source Download Manager written in pure Python. A log injection vulnerability was identified in `pyload` allowing any unauthenticated actor to inject arbitrary messages into the logs gathered by `pyload`. Forged or otherwise, corrupted log files can be used to cover an attacker\u2019s tracks or even to implicate another party in the commission of a malicious act. This vulnerability has been patched in version 0.5.0b3.dev77.\n",
     "published": "2024-01-08T14:15:47.420"
   },
+  "CVE-2024-21650": {
+    "cvss": 10.0,
+    "description": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. XWiki is vulnerable to a remote code execution (RCE) attack through its user registration feature. This issue allows an attacker to execute arbitrary code by crafting malicious payloads in the \"first name\" or \"last name\" fields during user registration. This impacts all installations that have user registration enabled for guests. This vulnerability has been patched in XWiki 14.10.17, 15.5.3 and 15.8 RC1.",
+    "published": "2024-01-08T16:15:46.903",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-21663": {
+    "cvss": 9.9,
+    "description": "Discord-Recon is a Discord bot created to automate bug bounty recon, automated scans and information gathering via a discord server. Discord-Recon is vulnerable to remote code execution. An attacker is able to execute shell commands in the server without having an admin role. This vulnerability has been fixed in version 0.0.8.\n",
+    "published": "2024-01-09T00:15:44.790",
+    "keywords": "remote,execution,command"
+  },
   "CVE-2024-21646": {
-    "url": "https://github.com/azure/azure-uamqp-c/commit/12ddb3a31a5a97f55b06fa5d74c59a1d84ad78fe",
     "cvss": 9.8,
     "description": "Azure uAMQP is a general purpose C library for AMQP 1.0. The UAMQP library is used by several clients to implement AMQP protocol communication.  When clients using this library receive a crafted binary type data, an integer overflow or wraparound or memory safety issue can occur and may cause remote code execution.  This vulnerability has been patched in release 2024-01-01.",
-    "published": "2024-01-09T01:15:38.937"
+    "published": "2024-01-09T01:15:38.937",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-20654": {
+    "cvss": 8.0,
+    "description": "Microsoft ODBC Driver Remote Code Execution Vulnerability",
+    "published": "2024-01-09T18:15:48.130",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-20655": {
+    "cvss": 6.6,
+    "description": "Microsoft Online Certificate Status Protocol (OCSP) Remote Code Execution Vulnerability",
+    "published": "2024-01-09T18:15:48.307",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-20676": {
+    "cvss": 8.0,
+    "description": "Azure Storage Mover Remote Code Execution Vulnerability",
+    "published": "2024-01-09T18:15:50.680",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-20677": {
+    "cvss": 7.8,
+    "description": "<p>A security vulnerability exists in FBX that could lead to remote code execution. To mitigate this vulnerability, the ability to insert FBX files has been disabled in Word, Excel, PowerPoint and Outlook for Windows and Mac. Versions of Office that had this feature enabled will no longer have access to it. This includes Office 2019, Office 2021, Office LTSC for Mac 2021, and Microsoft 365.</p>\n<p>3D models in Office documents that were previously inserted from a FBX file will continue to work as expected unless the Link to File option was chosen at insert time.</p>\n<p>This change is effective as of the January 9, 2024 security update.</p>\n",
+    "published": "2024-01-09T18:15:50.887",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-20682": {
+    "cvss": 7.8,
+    "description": "Windows Cryptographic Services Remote Code Execution Vulnerability",
+    "published": "2024-01-09T18:15:51.433",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-20696": {
+    "cvss": 7.3,
+    "description": "Windows Libarchive Remote Code Execution Vulnerability",
+    "published": "2024-01-09T18:15:52.927",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-20697": {
+    "cvss": 7.3,
+    "description": "Windows Libarchive Remote Code Execution Vulnerability",
+    "published": "2024-01-09T18:15:53.130",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-20700": {
+    "cvss": 7.5,
+    "description": "Windows Hyper-V Remote Code Execution Vulnerability",
+    "published": "2024-01-09T18:15:53.673",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-21307": {
+    "cvss": 7.5,
+    "description": "Remote Desktop Client Remote Code Execution Vulnerability",
+    "published": "2024-01-09T18:15:54.310",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-21318": {
+    "cvss": 8.8,
+    "description": "Microsoft SharePoint Server Remote Code Execution Vulnerability",
+    "published": "2024-01-09T18:15:55.883",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-21325": {
+    "cvss": 7.8,
+    "description": "Microsoft Printer Metadata Troubleshooter Tool Remote Code Execution Vulnerability",
+    "published": "2024-01-09T18:15:56.270",
+    "keywords": "remote,execution"
   }
 }
