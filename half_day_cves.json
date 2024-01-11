@@ -1,10 +1,4 @@
 {
-  "CVE-2024-21650": {
-    "cvss": 10.0,
-    "description": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. XWiki is vulnerable to a remote code execution (RCE) attack through its user registration feature. This issue allows an attacker to execute arbitrary code by crafting malicious payloads in the \"first name\" or \"last name\" fields during user registration. This impacts all installations that have user registration enabled for guests. This vulnerability has been patched in XWiki 14.10.17, 15.5.3 and 15.8 RC1.",
-    "published": "2024-01-08T16:15:46.903",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-21663": {
     "cvss": 9.9,
     "description": "Discord-Recon is a Discord bot created to automate bug bounty recon, automated scans and information gathering via a discord server. Discord-Recon is vulnerable to remote code execution. An attacker is able to execute shell commands in the server without having an admin role. This vulnerability has been fixed in version 0.0.8.\n",
