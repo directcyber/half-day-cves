@@ -1,10 +1,4 @@
 {
-  "CVE-2024-21663": {
-    "cvss": 9.9,
-    "description": "Discord-Recon is a Discord bot created to automate bug bounty recon, automated scans and information gathering via a discord server. Discord-Recon is vulnerable to remote code execution. An attacker is able to execute shell commands in the server without having an admin role. This vulnerability has been fixed in version 0.0.8.\n",
-    "published": "2024-01-09T00:15:44.790",
-    "keywords": "remote,execution,command"
-  },
   "CVE-2024-21646": {
     "cvss": 9.8,
     "description": "Azure uAMQP is a general purpose C library for AMQP 1.0. The UAMQP library is used by several clients to implement AMQP protocol communication.  When clients using this library receive a crafted binary type data, an integer overflow or wraparound or memory safety issue can occur and may cause remote code execution.  This vulnerability has been patched in release 2024-01-01.",
@@ -172,5 +166,11 @@
     "description": "Nginx-UI is a web interface to manage Nginx configurations. It is vulnerable to arbitrary command execution by abusing the configuration settings. The `Home > Preference` page exposes a list of system settings such as `Run Mode`, `Jwt Secret`, `Node Secret` and `Terminal Start Command`. While the UI doesn't allow users to modify the `Terminal Start Command` setting, it is possible to do so by sending a request to the API. This issue may lead to authenticated remote code execution, privilege escalation, and information disclosure. This vulnerability has been patched in version 2.0.0.beta.9.",
     "published": "2024-01-11T20:15:45.120",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2024-21982": {
+    "cvss": 4.8,
+    "description": "ONTAP versions 9.4 and higher are susceptible to a vulnerability \nwhich when successfully exploited could lead to disclosure of sensitive \ninformation to unprivileged attackers when the object-store profiler \ncommand is being run by an administrative user.\n\n",
+    "published": "2024-01-12T00:15:45.450",
+    "keywords": "command,sensitive"
   }
 }
