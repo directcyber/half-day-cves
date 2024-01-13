@@ -1,10 +1,4 @@
 {
-  "CVE-2024-0349": {
-    "cvss": 5.3,
-    "description": "A vulnerability was found in SourceCodester Engineers Online Portal 1.0. It has been declared as problematic. Affected by this vulnerability is an unknown functionality. The manipulation leads to sensitive cookie without secure attribute. The attack can be launched remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. The identifier VDB-250117 was assigned to this vulnerability.",
-    "published": "2024-01-09T23:15:09.727",
-    "keywords": "remote,sensitive"
-  },
   "CVE-2024-0310": {
     "cvss": 6.1,
     "description": "\nA content-security-policy vulnerability in ENS Control browser extension prior to 10.7.0 Update 15 allows a remote attacker to alter the response header parameter setting to switch the content security policy into report-only mode, allowing an attacker to bypass the content-security-policy configuration. \n\n",
@@ -184,5 +178,11 @@
     "cvss": 5.3,
     "description": "CEF (Chromium Embedded Framework ) is a simple framework for embedding Chromium-based browsers in other applications. `CefLayeredWindowUpdaterOSR::OnAllocatedSharedMemory` does not check the size of the shared memory, which leads to out-of-bounds read outside the sandbox. This vulnerability was patched in commit 1f55d2e.",
     "published": "2024-01-12T22:15:45.750"
+  },
+  "CVE-2024-23301": {
+    "url": "https://github.com/rear/rear/pull/3123",
+    "cvss": "-",
+    "description": "Relax-and-Recover (aka ReaR) through 2.7 creates a world-readable initrd when using GRUB_RESCUE=y. This allows local attackers to gain access to system secrets otherwise only readable by root.",
+    "published": "2024-01-12T23:15:10.030"
   }
 }
