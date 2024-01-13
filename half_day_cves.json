@@ -184,5 +184,17 @@
     "cvss": "-",
     "description": "Relax-and-Recover (aka ReaR) through 2.7 creates a world-readable initrd when using GRUB_RESCUE=y. This allows local attackers to gain access to system secrets otherwise only readable by root.",
     "published": "2024-01-12T23:15:10.030"
+  },
+  "CVE-2024-21640": {
+    "url": "https://github.com/chromiumembedded/cef/commit/1f55d2e12f62cfdfbf9da6968fde2f928982670b",
+    "cvss": 5.4,
+    "description": "Chromium Embedded Framework (CEF) is a simple framework for embedding Chromium-based browsers in other applications.`CefVideoConsumerOSR::OnFrameCaptured` does not check `pixel_format` properly, which leads to out-of-bounds read out of the sandbox. This vulnerability was patched in commit 1f55d2e.\n\n",
+    "published": "2024-01-13T08:15:07.340"
+  },
+  "CVE-2024-22209": {
+    "url": "https://github.com/openedx/edx-platform/commit/019888f3d15beaebcb7782934f6c43b0c2b3735e",
+    "cvss": 6.4,
+    "description": "Open edX Platform is a service-oriented platform for authoring and delivering online learning. A user with a JWT and more limited scopes could call endpoints exceeding their access. This vulnerability has been patched in commit 019888f.",
+    "published": "2024-01-13T08:15:07.557"
   }
 }
