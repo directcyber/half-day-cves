@@ -64,5 +64,11 @@
     "description": "A vulnerability classified as critical was found in Totolink X2000R 1.0.0-B20221212.1452. Affected by this vulnerability is the function formMapDelDevice of the file /boafrm/formMapDelDevice. The manipulation of the argument macstr leads to command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-250795. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2024-01-16T17:15:08.280",
     "keywords": "remote,command"
+  },
+  "CVE-2024-0200": {
+    "cvss": 7.2,
+    "description": "An unsafe reflection vulnerability was identified in GitHub Enterprise Server that could lead to reflection injection. This vulnerability\u00a0could lead to the execution of user-controlled methods and remote code execution. To\u00a0exploit this bug, an actor would need to be logged into an account on the GHES instance with the organization owner role.\u00a0This vulnerability affected all versions of GitHub Enterprise Server prior to 3.12 and was fixed in versions 3.8.13, 3.9.8, 3.10.5, and 3.11.3. This vulnerability was reported via the GitHub Bug Bounty program.\n\n",
+    "published": "2024-01-16T19:15:08.667",
+    "keywords": "remote,execution"
   }
 }
