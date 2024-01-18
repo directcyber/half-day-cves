@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-01-18T19:07:19.055860
+Updated at UTC 2024-01-18T20:09:31.915137
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,18 @@ Updated at UTC 2024-01-18T19:07:19.055860
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-22419">CVE-2024-22419</a></td>
+					<td>7.3</td>
+					<td><a target=_blank href="https://github.com/vyperlang/vyper/commit/55e18f6d128b2da8986adbbcccf1cd59a4b9ad6f">https://github.com/vyperlang/vyper/commit/55e18f6d128b2da8986adbbcccf1cd59a4b9ad6f</a></td>
+					<td class=date>2024-01-18T19:15:10.550</td>
+					<td class=description>Vyper is a Pythonic Smart Contract Language for the Ethereum Virtual Machine. The `concat` built-in can write over the bounds of the memory buffer that was allocated for it and thus overwrite existing valid data. The root cause is that the `build_IR` for `concat` doesn't properly adhere to the API of copy functions (for `>=0.3.2` the `copy_bytes` function). A contract search was performed and no vulnerable contracts were found in production. The buffer overflow can result in the change of semantics of the contract. The overflow is length-dependent and thus it might go unnoticed during contract testing. However, certainly not all usages of concat will result in overwritten valid data as we require it to be in an internal function and close to the return statement where other memory allocations don't occur. This issue has been addressed in commit `55e18f6d1` which will be included in future releases. Users are advised to update when possible.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -100,6 +112,8 @@ Updated at UTC 2024-01-18T19:07:19.055860
 		
 
 		<hr>
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
