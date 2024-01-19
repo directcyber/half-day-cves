@@ -1,10 +1,4 @@
 {
-  "CVE-2024-0200": {
-    "cvss": 7.2,
-    "description": "An unsafe reflection vulnerability was identified in GitHub Enterprise Server that could lead to reflection injection. This vulnerability\u00a0could lead to the execution of user-controlled methods and remote code execution. To\u00a0exploit this bug, an actor would need to be logged into an account on the GHES instance with the organization owner role.\u00a0This vulnerability affected all versions of GitHub Enterprise Server prior to 3.12 and was fixed in versions 3.8.13, 3.9.8, 3.10.5, and 3.11.3. This vulnerability was reported via the GitHub Bug Bounty program.\n\n",
-    "published": "2024-01-16T19:15:08.667",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-20251": {
     "cvss": 4.8,
     "description": "A vulnerability in the web-based management interface of Cisco Identity Services Engine (ISE) could allow an authenticated, remote attacker to perform a stored cross-site scripting (XSS) attack against a user of the interface on an affected device. This vulnerability exists because the web-based management interface does not properly validate user-supplied input. An attacker could exploit this vulnerability by injecting malicious code into specific pages of the interface. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.",
