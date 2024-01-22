@@ -1,22 +1,4 @@
 {
-  "CVE-2024-0731": {
-    "cvss": 5.3,
-    "description": "A vulnerability has been found in PCMan FTP Server 2.0.7 and classified as problematic. This vulnerability affects unknown code of the component PUT Command Handler. The manipulation leads to denial of service. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-251554 is the identifier assigned to this vulnerability.",
-    "published": "2024-01-19T20:15:13.120",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-0732": {
-    "cvss": 5.3,
-    "description": "A vulnerability was found in PCMan FTP Server 2.0.7 and classified as problematic. This issue affects some unknown processing of the component STOR Command Handler. The manipulation leads to denial of service. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-251555.",
-    "published": "2024-01-19T20:15:13.353",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-23331": {
-    "cvss": 7.5,
-    "description": "Vite is a frontend tooling framework for javascript. The Vite dev server option `server.fs.deny` can be bypassed on case-insensitive file systems using case-augmented versions of filenames. Notably this affects servers hosted on Windows. This bypass is similar to CVE-2023-34092 -- with surface area reduced to hosts having case-insensitive filesystems. Since `picomatch` defaults to case-sensitive glob matching, but the file server doesn't discriminate; a blacklist bypass is possible. By requesting raw filesystem paths using augmented casing, the matcher derived from `config.server.fs.deny` fails to block access to sensitive files. This issue has been addressed in vite@5.0.12, vite@4.5.2, vite@3.2.8, and vite@2.9.17. Users are advised to upgrade. Users unable to upgrade should restrict access to dev servers.",
-    "published": "2024-01-19T20:15:14.070",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2024-23679": {
     "cvss": "-",
     "description": "Enonic XP versions less than 7.7.4 are vulnerable to a session fixation issue. An remote and unauthenticated attacker can use prior sessions due to the lack of invalidating session attributes.\n\n",
