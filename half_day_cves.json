@@ -1,16 +1,4 @@
 {
-  "CVE-2024-22422": {
-    "cvss": 7.5,
-    "description": "AnythingLLM is an application that turns any document, resource, or piece of content into context that any LLM can use as references during chatting. In versions prior to commit `08d33cfd8` an unauthenticated API route (file export) can allow attacker to crash the server resulting in a denial of service attack. The \u201cdata-export\u201d endpoint is used to export files using the filename parameter as user input. The endpoint takes the user input, filters it to avoid directory traversal attacks, fetches the file from the server, and afterwards deletes it. An attacker can trick the input filter mechanism to point to the current directory, and while attempting to delete it the server will crash as there is no error-handling wrapper around it. Moreover, the endpoint is public and does not require any form of authentication, resulting in an unauthenticated Denial of Service issue, which crashes the instance using a single HTTP packet. This issue has been addressed in commit `08d33cfd8`. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
-    "published": "2024-01-19T01:15:09.123",
-    "keywords": "unauthenticated,authentication"
-  },
-  "CVE-2024-22424": {
-    "cvss": 8.3,
-    "description": "Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes. The Argo CD API prior to versions 2.10-rc2, 2.9.4, 2.8.8, and 2.7.15 are vulnerable to a cross-server request forgery (CSRF) attack when the attacker has the ability to write HTML to a page on the same parent domain as Argo CD. A CSRF attack works by tricking an authenticated Argo CD user into loading a web page which contains code to call Argo CD API endpoints on the victim\u2019s behalf. For example, an attacker could send an Argo CD user a link to a page which looks harmless but in the background calls an Argo CD API endpoint to create an application running malicious code. Argo CD uses the \u201cLax\u201d SameSite cookie policy to prevent CSRF attacks where the attacker controls an external domain. The malicious external website can attempt to call the Argo CD API, but the web browser will refuse to send the Argo CD auth token with the request. Many companies host Argo CD on an internal subdomain. If an attacker can place malicious code on, for example, https://test.internal.example.com/, they can still perform a CSRF attack. In this case, the \u201cLax\u201d SameSite cookie does not prevent the browser from sending the auth cookie, because the destination is a parent domain of the Argo CD API. Browsers generally block such attacks by applying CORS policies to sensitive requests with sensitive content types. Specifically, browsers will send a \u201cpreflight request\u201d for POSTs with content type \u201capplication/json\u201d asking the destination API \u201care you allowed to accept requests from my domain?\u201d If the destination API does not answer \u201cyes,\u201d the browser will block the request. Before the patched versions, Argo CD did not validate that requests contained the correct content type header. So an attacker could bypass the browser\u2019s CORS check by setting the content type to something which is considered \u201cnot sensitive\u201d such as \u201ctext/plain.\u201d The browser wouldn\u2019t send the preflight request, and Argo CD would happily accept the contents (which are actually still JSON) and perform the requested action (such as running malicious code). A patch for this vulnerability has been released in the following Argo CD versions: 2.10-rc2, 2.9.4, 2.8.8, and 2.7.15. The patch contains a breaking API change. The Argo CD API will no longer accept non-GET requests which do not specify application/json as their Content-Type. The accepted content types list is configurable, and it is possible (but discouraged) to disable the content type check completely. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
-    "published": "2024-01-19T01:15:09.317",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2024-0705": {
     "cvss": 9.8,
     "description": "The Stripe Payment Plugin for WooCommerce plugin for WordPress is vulnerable to SQL Injection via the 'id' parameter in all versions up to, and including, 3.7.9 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
@@ -124,5 +112,23 @@
     "cvss": "-",
     "description": "An issue was discovered in Mbed TLS 3.5.1. There is persistent handshake denial if a client sends a TLS 1.3 ClientHello without extensions.",
     "published": "2024-01-21T23:15:44.833"
+  },
+  "CVE-2024-23750": {
+    "url": "https://github.com/geekan/metagpt/issues/731",
+    "cvss": "-",
+    "description": "MetaGPT through 0.6.4 allows the QaEngineer role to execute arbitrary code because RunCode.run_script() passes shell metacharacters to subprocess.Popen.",
+    "published": "2024-01-22T01:15:08.507"
+  },
+  "CVE-2024-23751": {
+    "url": "https://github.com/run-llama/llama_index/issues/9957",
+    "cvss": "-",
+    "description": "LlamaIndex (aka llama_index) through 0.9.34 allows SQL injection via the Text-to-SQL feature in NLSQLTableQueryEngine, SQLTableRetrieverQueryEngine, NLSQLRetriever, RetrieverQueryEngine, and PGVectorSQLQueryEngine. For example, an attacker might be able to delete this year's student records via \"Drop the Students table\" within English language input.",
+    "published": "2024-01-22T01:15:08.557"
+  },
+  "CVE-2024-23752": {
+    "url": "https://github.com/gventuri/pandas-ai/issues/868",
+    "cvss": "-",
+    "description": "GenerateSDFPipeline in synthetic_dataframe in PandasAI (aka pandas-ai) through 1.5.17 allows attackers to trigger the generation of arbitrary Python code that is executed by SDFCodeExecutor. An attacker can create a dataframe that provides an English language specification of this Python code. NOTE: the vendor previously attempted to restrict code execution in response to a separate issue, CVE-2023-39660.",
+    "published": "2024-01-22T01:15:08.607"
   }
 }
