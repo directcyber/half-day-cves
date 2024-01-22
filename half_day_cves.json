@@ -136,5 +136,17 @@
     "description": "darkhttpd before 1.15 uses strcmp (which is not constant time) to verify authentication, which makes it easier for remote attackers to bypass authentication via a timing side channel.",
     "published": "2024-01-22T04:15:07.723",
     "keywords": "remote,authentication,bypass"
+  },
+  "CVE-2024-21484": {
+    "url": "https://github.com/kjur/jsrsasign/issues/598",
+    "cvss": 7.5,
+    "description": "Versions of the package jsrsasign before 11.0.0 are vulnerable to Observable Discrepancy via the RSA PKCS1.5 or RSAOAEP decryption process. An attacker can decrypt ciphertexts by exploiting this vulnerability. Exploiting this vulnerability requires the attacker to have access to a large number of ciphertexts encrypted with the same key.\r\r Workaround \r\rThis vulnerability can be mitigated by finding and replacing RSA and RSAOAEP decryption with another crypto library.",
+    "published": "2024-01-22T05:15:08.720"
+  },
+  "CVE-2024-22113": {
+    "cvss": "-",
+    "description": "Open redirect vulnerability in Access analysis CGI An-Analyzer released in 2023 December 31 and earlier allows a remote unauthenticated attacker to redirect users to arbitrary websites and conduct phishing attacks via a specially crafted URL.",
+    "published": "2024-01-22T05:15:09.050",
+    "keywords": "remote,unauthenticated"
   }
 }
