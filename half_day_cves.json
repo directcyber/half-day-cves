@@ -58,5 +58,17 @@
     "description": "\nAuthentication bypass in vector-admin allows a user to register to a vector-admin server while \u201cdomain restriction\u201d is active, even when not owning an authorized email address.\n\n\n",
     "published": "2024-01-25T15:15:07.713",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-0822": {
+    "cvss": 9.1,
+    "description": "An authentication bypass vulnerability was found in overt-engine. This flaw allows the creation of users in the system without authentication due to a flaw in the CreateUserSession command.",
+    "published": "2024-01-25T16:15:08.743",
+    "keywords": "authentication,command,bypass"
+  },
+  "CVE-2024-22749": {
+    "url": "https://github.com/gpac/gpac/issues/2713",
+    "cvss": "-",
+    "description": "GPAC v2.3 was detected to contain a buffer overflow via the function gf_isom_new_generic_sample_description function in the isomedia/isom_write.c:4577",
+    "published": "2024-01-25T16:15:09.010"
   }
 }
