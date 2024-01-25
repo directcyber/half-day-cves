@@ -1,22 +1,4 @@
 {
-  "CVE-2024-23750": {
-    "url": "https://github.com/geekan/metagpt/issues/731",
-    "cvss": "-",
-    "description": "MetaGPT through 0.6.4 allows the QaEngineer role to execute arbitrary code because RunCode.run_script() passes shell metacharacters to subprocess.Popen.",
-    "published": "2024-01-22T01:15:08.507"
-  },
-  "CVE-2024-23751": {
-    "url": "https://github.com/run-llama/llama_index/issues/9957",
-    "cvss": "-",
-    "description": "LlamaIndex (aka llama_index) through 0.9.34 allows SQL injection via the Text-to-SQL feature in NLSQLTableQueryEngine, SQLTableRetrieverQueryEngine, NLSQLRetriever, RetrieverQueryEngine, and PGVectorSQLQueryEngine. For example, an attacker might be able to delete this year's student records via \"Drop the Students table\" within English language input.",
-    "published": "2024-01-22T01:15:08.557"
-  },
-  "CVE-2024-23752": {
-    "url": "https://github.com/gventuri/pandas-ai/issues/868",
-    "cvss": "-",
-    "description": "GenerateSDFPipeline in synthetic_dataframe in PandasAI (aka pandas-ai) through 1.5.17 allows attackers to trigger the generation of arbitrary Python code that is executed by SDFCodeExecutor. An attacker can create a dataframe that provides an English language specification of this Python code. NOTE: the vendor previously attempted to restrict code execution in response to a separate issue, CVE-2023-39660.",
-    "published": "2024-01-22T01:15:08.607"
-  },
   "CVE-2024-23771": {
     "cvss": "-",
     "description": "darkhttpd before 1.15 uses strcmp (which is not constant time) to verify authentication, which makes it easier for remote attackers to bypass authentication via a timing side channel.",
