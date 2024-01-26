@@ -202,5 +202,23 @@
     "description": "A vulnerability has been found in D-Link DIR-816 A2 1.10CNB04 and classified as critical. Affected by this vulnerability is an unknown functionality of the file /goform/setDeviceSettings of the component Web Interface. The manipulation of the argument statuscheckpppoeuser leads to os command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-252139.",
     "published": "2024-01-26T14:15:50.237",
     "keywords": "remote,command"
+  },
+  "CVE-2024-20253": {
+    "cvss": 9.9,
+    "description": "A vulnerability in multiple Cisco Unified Communications and Contact Center Solutions products could allow an unauthenticated, remote attacker to execute arbitrary code on an affected device. This vulnerability is due to the improper processing of user-provided data that is being read into memory. An attacker could exploit this vulnerability by sending a crafted message to a listening port of an affected device. A successful exploit could allow the attacker to execute arbitrary commands on the underlying operating system with the privileges of the web services user. With access to the underlying operating system, the attacker could also establish root access on the affected device.",
+    "published": "2024-01-26T18:15:10.970",
+    "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2024-20263": {
+    "cvss": 5.8,
+    "description": "A vulnerability with the access control list (ACL) management within a stacked switch configuration of Cisco Business 250 Series Smart Switches and Business 350 Series Managed Switches could allow an unauthenticated, remote attacker to bypass protection offered by a configured ACL on an affected device. This vulnerability is due to incorrect processing of ACLs on a stacked configuration when either the primary or backup switches experience a full stack reload or power cycle. An attacker could exploit this vulnerability by sending crafted traffic through an affected device. A successful exploit could allow the attacker to bypass configured ACLs, causing traffic to be dropped or forwarded in an unexpected manner. The attacker does not have control over the conditions that result in the device being in the vulnerable state. Note: In the vulnerable state, the ACL would be correctly applied on the primary devices but could be incorrectly applied to the backup devices.",
+    "published": "2024-01-26T18:15:11.163",
+    "keywords": "remote,unauthenticated,bypass"
+  },
+  "CVE-2024-20305": {
+    "cvss": 4.8,
+    "description": "A vulnerability in the web-based management interface of Cisco Unity Connection could allow an authenticated, remote attacker to conduct a cross-site scripting (XSS) attack against a user of the interface. This vulnerability exists because the web-based management interface does not properly validate user-supplied input. An attacker could exploit this vulnerability by persuading a user of the interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.",
+    "published": "2024-01-26T18:15:11.350",
+    "keywords": "remote,sensitive"
   }
 }
