@@ -202,5 +202,11 @@
     "description": "A vulnerability in the web-based management interface of Cisco Unity Connection could allow an authenticated, remote attacker to conduct a cross-site scripting (XSS) attack against a user of the interface. This vulnerability exists because the web-based management interface does not properly validate user-supplied input. An attacker could exploit this vulnerability by persuading a user of the interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.",
     "published": "2024-01-26T18:15:11.350",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-0960": {
+    "cvss": 5.0,
+    "description": "A vulnerability was found in flink-extended ai-flow 0.3.1. It has been declared as critical. Affected by this vulnerability is the function cloudpickle.loads of the file \\ai_flow\\cli\\commands\\workflow_command.py. The manipulation leads to deserialization. The attack can be launched remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. The identifier VDB-252205 was assigned to this vulnerability.",
+    "published": "2024-01-27T12:15:07.903",
+    "keywords": "remote,command"
   }
 }
