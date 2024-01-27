@@ -208,5 +208,11 @@
     "description": "A vulnerability was found in flink-extended ai-flow 0.3.1. It has been declared as critical. Affected by this vulnerability is the function cloudpickle.loads of the file \\ai_flow\\cli\\commands\\workflow_command.py. The manipulation leads to deserialization. The attack can be launched remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. The identifier VDB-252205 was assigned to this vulnerability.",
     "published": "2024-01-27T12:15:07.903",
     "keywords": "remote,command"
+  },
+  "CVE-2024-0962": {
+    "url": "https://github.com/obgm/libcoap/pull/1311",
+    "cvss": 6.3,
+    "description": "A vulnerability was found in obgm libcoap 4.3.4. It has been rated as critical. Affected by this issue is the function get_split_entry of the file src/coap_oscore.c of the component Configuration File Handler. The manipulation leads to stack-based buffer overflow. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue. VDB-252206 is the identifier assigned to this vulnerability.",
+    "published": "2024-01-27T13:15:07.973"
   }
 }
