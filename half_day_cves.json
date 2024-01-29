@@ -64,5 +64,11 @@
     "description": "Nginx-UI is a web interface to manage Nginx configurations. The Import Certificate feature allows arbitrary write into the system. The feature does not check if the provided user input is a certification/key and allows to write into arbitrary paths in the system. It's possible to leverage the vulnerability into a remote code execution overwriting the config file app.ini. Version 2.0.0.beta.12 fixed the issue.",
     "published": "2024-01-29T16:15:09.867",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-23828": {
+    "cvss": 8.8,
+    "description": "Nginx-UI is a web interface to manage Nginx configurations. It is vulnerable to an authenticated arbitrary command execution via CRLF attack when changing the value of test_config_cmd or start_cmd. This vulnerability exists due to an incomplete fix for CVE-2024-22197 and CVE-2024-22198. This vulnerability has been patched in version 2.0.0.beta.12.",
+    "published": "2024-01-29T17:15:10.457",
+    "keywords": "execution,command"
   }
 }
