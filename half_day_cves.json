@@ -1,28 +1,4 @@
 {
-  "CVE-2024-0727": {
-    "url": "https://github.com/openssl/openssl/commit/d135eeab8a5dbf72b3da5240bab9ddb7678dbd2c",
-    "cvss": "-",
-    "description": "Issue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL\nto crash leading to a potential Denial of Service attack\n\nImpact summary: Applications loading files in the PKCS12 format from untrusted\nsources might terminate abruptly.\n\nA file in PKCS12 format can contain certificates and keys and may come from an\nuntrusted source. The PKCS12 specification allows certain fields to be NULL, but\nOpenSSL does not correctly check for this case. This can lead to a NULL pointer\ndereference that results in OpenSSL crashing. If an application processes PKCS12\nfiles from an untrusted source using the OpenSSL APIs then that application will\nbe vulnerable to this issue.\n\nOpenSSL APIs that are vulnerable to this are: PKCS12_parse(),\nPKCS12_unpack_p7data(), PKCS12_unpack_p7encdata(), PKCS12_unpack_authsafes()\nand PKCS12_newpass().\n\nWe have also fixed a similar issue in SMIME_write_PKCS7(). However since this\nfunction is related to writing data we do not consider it security significant.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue.",
-    "published": "2024-01-26T09:15:07.637"
-  },
-  "CVE-2024-0918": {
-    "cvss": 7.2,
-    "description": "A vulnerability was found in TRENDnet TEW-800MB 1.0.1.0 and classified as critical. Affected by this issue is some unknown functionality of the component POST Request Handler. The manipulation of the argument DeviceURL leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-252122 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2024-01-26T09:15:07.707",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-0919": {
-    "cvss": 8.8,
-    "description": "A vulnerability was found in TRENDnet TEW-815DAP 1.0.2.0. It has been classified as critical. This affects the function do_setNTP of the component POST Request Handler. The manipulation of the argument NtpDstStart/NtpDstEnd leads to command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-252123. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2024-01-26T09:15:08.023",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-0920": {
-    "cvss": 7.2,
-    "description": "A vulnerability was found in TRENDnet TEW-822DRE 1.03B02. It has been declared as critical. This vulnerability affects unknown code of the file /admin_ping.htm of the component POST Request Handler. The manipulation of the argument ipv4_ping/ipv6_ping leads to command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-252124. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2024-01-26T09:15:08.293",
-    "keywords": "remote,command"
-  },
   "CVE-2024-0921": {
     "cvss": 4.7,
     "description": "A vulnerability has been found in D-Link DIR-816 A2 1.10CNB04 and classified as critical. Affected by this vulnerability is an unknown functionality of the file /goform/setDeviceSettings of the component Web Interface. The manipulation of the argument statuscheckpppoeuser leads to os command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-252139.",

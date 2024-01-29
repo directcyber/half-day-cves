@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-01-29T09:09:12.885653
+Updated at UTC 2024-01-29T10:09:26.228345
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -80,44 +80,6 @@ Updated at UTC 2024-01-29T09:09:12.885653
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-0727">CVE-2024-0727</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/openssl/openssl/commit/d135eeab8a5dbf72b3da5240bab9ddb7678dbd2c">https://github.com/openssl/openssl/commit/d135eeab8a5dbf72b3da5240bab9ddb7678dbd2c</a></td>
-					<td class=date>2024-01-26T09:15:07.637</td>
-					<td class=description>Issue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL
-to crash leading to a potential Denial of Service attack
-
-Impact summary: Applications loading files in the PKCS12 format from untrusted
-sources might terminate abruptly.
-
-A file in PKCS12 format can contain certificates and keys and may come from an
-untrusted source. The PKCS12 specification allows certain fields to be NULL, but
-OpenSSL does not correctly check for this case. This can lead to a NULL pointer
-dereference that results in OpenSSL crashing. If an application processes PKCS12
-files from an untrusted source using the OpenSSL APIs then that application will
-be vulnerable to this issue.
-
-OpenSSL APIs that are vulnerable to this are: PKCS12_parse(),
-PKCS12_unpack_p7data(), PKCS12_unpack_p7encdata(), PKCS12_unpack_authsafes()
-and PKCS12_newpass().
-
-We have also fixed a similar issue in SMIME_write_PKCS7(). However since this
-function is related to writing data we do not consider it security significant.
-
-The FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue.</td>
-
-
-				</tr>
 			
 		
 
@@ -183,38 +145,6 @@ The FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue.</td>
 					<td class=date>2024-01-26T14:15:50.237</td>
 					<td class=description>A vulnerability has been found in D-Link DIR-816 A2 1.10CNB04 and classified as critical. Affected by this vulnerability is an unknown functionality of the file /goform/setDeviceSettings of the component Web Interface. The manipulation of the argument statuscheckpppoeuser leads to os command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-252139.</td>
 				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-0920">CVE-2024-0920</a></td>
-					<td>7.2</td>
-					<td>remote,command</td>
-					<td class=date>2024-01-26T09:15:08.293</td>
-					<td class=description>A vulnerability was found in TRENDnet TEW-822DRE 1.03B02. It has been declared as critical. This vulnerability affects unknown code of the file /admin_ping.htm of the component POST Request Handler. The manipulation of the argument ipv4_ping/ipv6_ping leads to command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-252124. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-0919">CVE-2024-0919</a></td>
-					<td>8.8</td>
-					<td>remote,command</td>
-					<td class=date>2024-01-26T09:15:08.023</td>
-					<td class=description>A vulnerability was found in TRENDnet TEW-815DAP 1.0.2.0. It has been classified as critical. This affects the function do_setNTP of the component POST Request Handler. The manipulation of the argument NtpDstStart/NtpDstEnd leads to command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-252123. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-0918">CVE-2024-0918</a></td>
-					<td>7.2</td>
-					<td>remote,command</td>
-					<td class=date>2024-01-26T09:15:07.707</td>
-					<td class=description>A vulnerability was found in TRENDnet TEW-800MB 1.0.1.0 and classified as critical. Affected by this issue is some unknown functionality of the component POST Request Handler. The manipulation of the argument DeviceURL leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-252122 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-				</tr>
-			
-		
 			
 		
 
