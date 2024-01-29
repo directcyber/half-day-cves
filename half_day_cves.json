@@ -1,112 +1,4 @@
 {
-  "CVE-2024-0889": {
-    "cvss": 5.3,
-    "description": "A vulnerability was found in Kmint21 Golden FTP Server 2.02b and classified as problematic. This issue affects some unknown processing of the component PASV Command Handler. The manipulation leads to denial of service. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-252041 was assigned to this vulnerability.",
-    "published": "2024-01-25T23:15:08.790",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-21619": {
-    "cvss": 5.3,
-    "description": "A Missing Authentication for Critical Function vulnerability combined with a Generation of Error Message Containing Sensitive Information vulnerability in J-Web of Juniper Networks Junos OS on SRX Series and EX Series allows an unauthenticated, network-based attacker to access sensitive system information.\n\nWhen a user logs in, a temporary file which contains the configuration of the device (as visible to that user) is created in the /cache folder. An unauthenticated attacker can then attempt to access such a file by sending a specific request to the device trying to guess the name of such a file. Successful exploitation will reveal configuration information.\n\nThis issue affects Juniper Networks Junos OS on SRX Series and EX Series:\n  *  All versions earlier than 20.4R3-S9;\n  *  21.2 versions earlier than 21.2R3-S7;\n  *  21.3 versions earlier than 21.3R3-S5;\n  *  21.4 versions earlier than 21.4R3-S6;\n  *  22.1 versions earlier than 22.1R3-S5;\n  *  22.2 versions earlier than 22.2R3-S3;\n  *  22.3 versions earlier than 22.3R3-S2;\n  *  22.4 versions earlier than 22.4R3;\n  *  23.2 versions earlier than 23.2R1-S2, 23.2R2.\n\n\n",
-    "published": "2024-01-25T23:15:09.467",
-    "keywords": "unauthenticated,authentication,sensitive"
-  },
-  "CVE-2024-23613": {
-    "cvss": 10.0,
-    "description": "A buffer overflow vulnerability exists in Symantec Deployment Solution version 7.9 when parsing UpdateComputer tokens. A remote, anonymous attacker can exploit this vulnerability to achieve remote code execution as SYSTEM.\n",
-    "published": "2024-01-26T00:15:08.123",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-23614": {
-    "cvss": 10.0,
-    "description": "A buffer overflow vulnerability exists in Symantec Messaging Gateway versions 9.5 and before. A remote, anonymous attacker can exploit this vulnerability to achieve remote code execution as root.\n",
-    "published": "2024-01-26T00:15:08.373",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-23615": {
-    "cvss": 10.0,
-    "description": "A buffer overflow vulnerability exists in Symantec Messaging Gateway versions 10.5 and before. A remote, anonymous attacker can exploit this vulnerability to achieve remote code execution as root.\n",
-    "published": "2024-01-26T00:15:08.627",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-23616": {
-    "cvss": 10.0,
-    "description": "A buffer overflow vulnerability exists in Symantec Server Management Suite version 7.9 and before. A remote, anonymous attacker can exploit this vulnerability to achieve remote code execution as SYSTEM.\n",
-    "published": "2024-01-26T00:15:08.843",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-23617": {
-    "cvss": 9.6,
-    "description": "A buffer overflow vulnerability exists in Symantec Data Loss Prevention version 14.0.2 and before. A remote, unauthenticated attacker can exploit this vulnerability by enticing a user to open a crafted document to achieve code execution.\n",
-    "published": "2024-01-26T00:15:09.060",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-23618": {
-    "cvss": 9.6,
-    "description": "An arbitrary code execution vulnerability exists in Arris SURFboard SGB6950AC2 devices. An unauthenticated attacker can exploit this vulnerability to achieve code execution as root.\n",
-    "published": "2024-01-26T00:15:09.263",
-    "keywords": "execution,unauthenticated"
-  },
-  "CVE-2024-23619": {
-    "cvss": 9.8,
-    "description": "A hardcoded credential vulnerability exists in IBM Merge Healthcare eFilm Workstation. A remote, unauthenticated attacker can exploit this vulnerability to achieve information disclosure or remote code execution.\n",
-    "published": "2024-01-26T00:15:09.470",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-23621": {
-    "cvss": 10.0,
-    "description": "A buffer overflow exists in IBM Merge Healthcare eFilm Workstation license server. A remote, unauthenticated attacker can exploit this vulnerability to achieve remote code execution.",
-    "published": "2024-01-26T00:15:09.957",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-23622": {
-    "cvss": 10.0,
-    "description": "A stack-based buffer overflow exists in IBM Merge Healthcare eFilm Workstation license server. A remote, unauthenticated attacker can exploit this vulnerability to achieve remote code execution with SYSTEM privileges.\n",
-    "published": "2024-01-26T00:15:10.190",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-23624": {
-    "cvss": 9.6,
-    "description": "A command injection vulnerability exists in the gena.cgi module of D-Link DAP-1650 devices. An unauthenticated attacker can exploit this vulnerability to gain command execution on the device as root.\n",
-    "published": "2024-01-26T00:15:10.397",
-    "keywords": "execution,unauthenticated,command"
-  },
-  "CVE-2024-23625": {
-    "cvss": 9.6,
-    "description": "A command injection vulnerability exists in D-Link DAP-1650 devices when handling UPnP SUBSCRIBE messages. An unauthenticated attacker can exploit this vulnerability to gain command execution on the device as root.\n",
-    "published": "2024-01-26T00:15:10.620",
-    "keywords": "execution,unauthenticated,command"
-  },
-  "CVE-2024-23626": {
-    "cvss": 9.0,
-    "description": "A command injection vulnerability exists in the \u2018SaveSysLogParams\u2019 \nparameter of the Motorola MR2600. A remote attacker can exploit this \nvulnerability to achieve command execution. Authentication is required, \nhowever can be bypassed.\n",
-    "published": "2024-01-26T00:15:10.820",
-    "keywords": "remote,execution,authentication,command,bypass"
-  },
-  "CVE-2024-23627": {
-    "cvss": 9.0,
-    "description": "A command injection vulnerability exists in the 'SaveStaticRouteIPv4Params' parameter of the Motorola MR2600. A remote attacker can exploit this vulnerability to achieve command execution. Authentication is required, however can be bypassed.",
-    "published": "2024-01-26T00:15:11.037",
-    "keywords": "remote,execution,authentication,command,bypass"
-  },
-  "CVE-2024-23628": {
-    "cvss": 9.0,
-    "description": "A command injection vulnerability exists in the \n'SaveStaticRouteIPv6Params' parameter of the Motorola MR2600. A remote \nattacker can exploit this vulnerability to achieve command execution. \nAuthentication is required, however can be bypassed.",
-    "published": "2024-01-26T00:15:11.273",
-    "keywords": "remote,execution,authentication,command,bypass"
-  },
-  "CVE-2024-23629": {
-    "cvss": 9.6,
-    "description": "An authentication bypass vulnerability exists in the web component of the Motorola MR2600. An attacker can exploit this vulnerability to access protected URLs and retrieve sensitive information.\n",
-    "published": "2024-01-26T00:15:11.650",
-    "keywords": "authentication,sensitive,bypass"
-  },
-  "CVE-2024-23630": {
-    "cvss": 9.0,
-    "description": "An arbitrary firmware upload vulnerability exists in the Motorola \nMR2600. An attacker can exploit this vulnerability to achieve code \nexecution on the device. Authentication is required, however can be \nbypassed.",
-    "published": "2024-01-26T00:15:12.187",
-    "keywords": "execution,authentication,bypass"
-  },
   "CVE-2024-0727": {
     "url": "https://github.com/openssl/openssl/commit/d135eeab8a5dbf72b3da5240bab9ddb7678dbd2c",
     "cvss": "-",
@@ -166,5 +58,11 @@
     "cvss": 6.3,
     "description": "A vulnerability was found in obgm libcoap 4.3.4. It has been rated as critical. Affected by this issue is the function get_split_entry of the file src/coap_oscore.c of the component Configuration File Handler. The manipulation leads to stack-based buffer overflow. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue. VDB-252206 is the identifier assigned to this vulnerability.",
     "published": "2024-01-27T13:15:07.973"
+  },
+  "CVE-2024-0986": {
+    "cvss": 4.7,
+    "description": "A vulnerability was found in Issabel PBX 4.0.0. It has been rated as critical. This issue affects some unknown processing of the file /index.php?menu=asterisk_cli of the component Asterisk-Cli. The manipulation of the argument Command leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-252251. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-01-29T00:15:07.850",
+    "keywords": "remote,command"
   }
 }
