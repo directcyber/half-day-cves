@@ -1,10 +1,4 @@
 {
-  "CVE-2024-0921": {
-    "cvss": 4.7,
-    "description": "A vulnerability has been found in D-Link DIR-816 A2 1.10CNB04 and classified as critical. Affected by this vulnerability is an unknown functionality of the file /goform/setDeviceSettings of the component Web Interface. The manipulation of the argument statuscheckpppoeuser leads to os command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-252139.",
-    "published": "2024-01-26T14:15:50.237",
-    "keywords": "remote,command"
-  },
   "CVE-2024-20253": {
     "cvss": 9.9,
     "description": "A vulnerability in multiple Cisco Unified Communications and Contact Center Solutions products could allow an unauthenticated, remote attacker to execute arbitrary code on an affected device. This vulnerability is due to the improper processing of user-provided data that is being read into memory. An attacker could exploit this vulnerability by sending a crafted message to a listening port of an affected device. A successful exploit could allow the attacker to execute arbitrary commands on the underlying operating system with the privileges of the web services user. With access to the underlying operating system, the attacker could also establish root access on the affected device.",
@@ -40,5 +34,23 @@
     "description": "A vulnerability was found in Issabel PBX 4.0.0. It has been rated as critical. This issue affects some unknown processing of the file /index.php?menu=asterisk_cli of the component Asterisk-Cli. The manipulation of the argument Command leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-252251. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2024-01-29T00:15:07.850",
     "keywords": "remote,command"
+  },
+  "CVE-2024-1000": {
+    "cvss": 7.2,
+    "description": "A vulnerability was found in Totolink N200RE 9.3.5u.6139_B20201216. It has been rated as critical. This issue affects the function setTracerouteCfg of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument command leads to stack-based buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-252269 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-01-29T14:15:08.717",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-1015": {
+    "cvss": 9.8,
+    "description": " Remote command execution vulnerability in SE-elektronic GmbH E-DDC3.3 affecting versions 03.07.03 and higher. An attacker could send different commands from the operating system to the system via the web configuration functionality of the device.",
+    "published": "2024-01-29T14:15:09.657",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2024-22559": {
+    "url": "https://github.com/eddy8/lightcms/issues/34",
+    "cvss": "-",
+    "description": "LightCMS v2.0 is vulnerable to Cross Site Scripting (XSS) in the Content Management - Articles field.",
+    "published": "2024-01-29T14:15:09.940"
   }
 }
