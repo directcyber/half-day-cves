@@ -58,5 +58,11 @@
     "description": "A vulnerability was found in Solar FTP Server 2.1.1/2.1.2. It has been declared as problematic. This vulnerability affects unknown code of the component PASV Command Handler. The manipulation leads to denial of service. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue. VDB-252286 is the identifier assigned to this vulnerability.",
     "published": "2024-01-29T18:15:07.800",
     "keywords": "remote,command"
+  },
+  "CVE-2024-21488": {
+    "url": "https://github.com/tomas/network/commit/72c523265940fe279eb0050d441522628f8988e5",
+    "cvss": 7.3,
+    "description": "Versions of the package network before 0.7.0 are vulnerable to Arbitrary Command Injection due to use of the child_process exec function without input sanitization. If (attacker-controlled) user input is given to the mac_address_for function of the package, it is possible for an attacker to execute arbitrary commands on the operating system that this package is being run on.",
+    "published": "2024-01-30T05:15:09.277"
   }
 }
