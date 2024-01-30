@@ -64,5 +64,11 @@
     "cvss": 7.3,
     "description": "Versions of the package network before 0.7.0 are vulnerable to Arbitrary Command Injection due to use of the child_process exec function without input sanitization. If (attacker-controlled) user input is given to the mac_address_for function of the package, it is possible for an attacker to execute arbitrary commands on the operating system that this package is being run on.",
     "published": "2024-01-30T05:15:09.277"
+  },
+  "CVE-2024-22523": {
+    "cvss": "-",
+    "description": "Directory Traversal vulnerability in Qiyu iFair version 23.8_ad0 and before, allows remote attackers to obtain sensitive information via uploadimage component.",
+    "published": "2024-01-30T09:15:48.573",
+    "keywords": "remote,sensitive"
   }
 }
