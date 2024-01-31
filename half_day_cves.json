@@ -82,5 +82,11 @@
     "description": "The Contact Form Entries plugin for WordPress is vulnerable to arbitrary file uploads due to insufficient file validation on the 'view_page' function in versions up to, and including, 1.3.2. This makes it possible for authenticated attackers with administrator-level capabilities or above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
     "published": "2024-01-31T03:15:08.573",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-23637": {
+    "url": "https://github.com/octoprint/octoprint/commit/1729d167b4ae4a5835bbc7211b92c6828b1c4125",
+    "cvss": 4.2,
+    "description": "OctoPrint is a web interface for 3D printer.s OctoPrint versions up until and including 1.9.3 contain a vulnerability that allows malicious admins to change the password of other admin accounts, including their own, without having to repeat their password. An attacker who managed to hijack an admin account might use this to lock out actual admins from their OctoPrint instance. The vulnerability will be patched in version 1.10.0.",
+    "published": "2024-01-31T18:15:49.810"
   }
 }
