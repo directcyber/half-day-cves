@@ -70,5 +70,11 @@
     "cvss": 5.5,
     "description": "GoReleaser builds Go binaries for several platforms, creates a GitHub release and then pushes a Homebrew formula to a tap repository. `goreleaser release --debug` log shows secret values used in the in the custom publisher. This vulnerability is fixed in 1.24.0.",
     "published": "2024-01-30T17:15:11.810"
+  },
+  "CVE-2024-23745": {
+    "cvss": "-",
+    "description": "In Notion Web Clipper 1.0.3(7), a .nib file is susceptible to the Dirty NIB attack. NIB files can be manipulated to execute arbitrary commands. Additionally, even if a NIB file is modified within an application, Gatekeeper may still permit the execution of the application, enabling the execution of arbitrary commands within the application's context.",
+    "published": "2024-01-31T02:15:54.520",
+    "keywords": "execution,command"
   }
 }
