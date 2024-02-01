@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-02-01T17:08:39.144780
+Updated at UTC 2024-02-01T18:10:42.325456
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,22 @@ Updated at UTC 2024-02-01T17:08:39.144780
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-24561">CVE-2024-24561</a></td>
+					<td>9.8</td>
+					<td><a target=_blank href="https://github.com/vyperlang/vyper/issues/3756">https://github.com/vyperlang/vyper/issues/3756</a></td>
+					<td class=date>2024-02-01T17:15:11.180</td>
+					<td class=description>Vyper is a pythonic Smart Contract Language for the ethereum virtual machine. In versions 0.3.10 and earlier, the bounds check for slices does not account for the ability for start + length to overflow when the values aren't literals. If a slice() function uses a non-literal argument for the start or length variable, this creates the ability for an attacker to overflow the bounds check. This issue can be used to do OOB access to storage, memory or calldata addresses. It can also be used to corrupt the length slot of the respective array.
+
+</td>
+
+
+				</tr>
+			
+		
+			
 		
 			
 		
@@ -158,10 +174,20 @@ variable by appending a GET parameter search_sql in the URL. The information abo
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-23832">CVE-2024-23832</a></td>
+					<td>9.4</td>
+					<td>remote,authentication</td>
+					<td class=date>2024-02-01T17:15:10.677</td>
+					<td class=description>Mastodon is a free, open-source social network server based on ActivityPub Mastodon allows configuration of LDAP for authentication. Due to insufficient origin validation in all Mastodon, attackers can impersonate and take over any remote account. Every Mastodon version prior to 3.5.17 is vulnerable, as well as 4.0.x versions prior to 4.0.13, 4.1.x version prior to 4.1.13, and 4.2.x versions prior to 4.2.5.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -244,16 +270,6 @@ variable by appending a GET parameter search_sql in the URL. The information abo
 					<td>remote,command</td>
 					<td class=date>2024-01-29T18:15:07.800</td>
 					<td class=description>A vulnerability was found in Solar FTP Server 2.1.1/2.1.2. It has been declared as problematic. This vulnerability affects unknown code of the component PASV Command Handler. The manipulation leads to denial of service. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue. VDB-252286 is the identifier assigned to this vulnerability.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-23828">CVE-2024-23828</a></td>
-					<td>8.8</td>
-					<td>execution,command</td>
-					<td class=date>2024-01-29T17:15:10.457</td>
-					<td class=description>Nginx-UI is a web interface to manage Nginx configurations. It is vulnerable to an authenticated arbitrary command execution via CRLF attack when changing the value of test_config_cmd or start_cmd. This vulnerability exists due to an incomplete fix for CVE-2024-22197 and CVE-2024-22198. This vulnerability has been patched in version 2.0.0.beta.12.</td>
 				</tr>
 			
 		
