@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-01-31T23:08:59.285844
+Updated at UTC 2024-02-01T00:40:58.361758
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,43 @@ Updated at UTC 2024-01-31T23:08:59.285844
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-24573">CVE-2024-24573</a></td>
+					<td>8.8</td>
+					<td><a target=_blank href="https://github.com/willyxj/facilemanager/commit/0aa850d4b518f10143a4c675142b15caa5872877">https://github.com/willyxj/facilemanager/commit/0aa850d4b518f10143a4c675142b15caa5872877</a></td>
+					<td class=date>2024-01-31T23:15:08.560</td>
+					<td class=description>facileManager is a modular suite of web apps built with the sysadmin in mind. In versions 4.5.0 and earlier, when a user updates their profile, a POST request containing user information is sent to the endpoint server/fm-modules/facileManager/ajax/processPost.php. It was found that non-admins can arbitrarily set their permissions and grant their non-admin accounts with super user privileges.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-24572">CVE-2024-24572</a></td>
+					<td>6.5</td>
+					<td><a target=_blank href="https://github.com/willyxj/facilemanager/commit/0aa850d4b518f10143a4c675142b15caa5872877">https://github.com/willyxj/facilemanager/commit/0aa850d4b518f10143a4c675142b15caa5872877</a></td>
+					<td class=date>2024-01-31T23:15:08.337</td>
+					<td class=description>facileManager is a modular suite of web apps built with the sysadmin in mind. In versions 4.5.0 and earlier, the $_REQUEST global array was unsafely called inside an extract() function in admin-logs.php. The PHP file fm-init.php prevents arbitrary manipulation of $_SESSION via the GET/POST parameters. However, it does not prevent manipulation of any other sensitive variables such as $search_sql. Knowing this, an authenticated user with privileges to view site logs can manipulate the search_sql
+variable by appending a GET parameter search_sql in the URL. The information above means that the checks and SQL injection prevention attempts were rendered unusable.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-24571">CVE-2024-24571</a></td>
+					<td>5.4</td>
+					<td><a target=_blank href="https://github.com/willyxj/facilemanager/commit/0aa850d4b518f10143a4c675142b15caa5872877">https://github.com/willyxj/facilemanager/commit/0aa850d4b518f10143a4c675142b15caa5872877</a></td>
+					<td class=date>2024-01-31T23:15:08.110</td>
+					<td class=description>facileManager is a modular suite of web apps built with the sysadmin in mind. For the facileManager web application versions 4.5.0 and earlier, we have found that XSS was present in almost all of the input fields as there is insufficient input validation.</td>
+
+
+				</tr>
+			
 		
 			
 				<tr>
@@ -102,18 +139,6 @@ Updated at UTC 2024-01-31T23:08:59.285844
 			
 		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-23840">CVE-2024-23840</a></td>
-					<td>5.5</td>
-					<td><a target=_blank href="https://github.com/goreleaser/goreleaser/commit/d5b6a533ca1dc3366983d5d31ee2d2b6232b83c0">https://github.com/goreleaser/goreleaser/commit/d5b6a533ca1dc3366983d5d31ee2d2b6232b83c0</a></td>
-					<td class=date>2024-01-30T17:15:11.810</td>
-					<td class=description>GoReleaser builds Go binaries for several platforms, creates a GitHub release and then pushes a Homebrew formula to a tap repository. `goreleaser release --debug` log shows secret values used in the in the custom publisher. This vulnerability is fixed in 1.24.0.</td>
-
-
-				</tr>
-			
-		
-			
 		
 			
 		
@@ -153,10 +178,14 @@ Updated at UTC 2024-01-31T23:08:59.285844
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -192,8 +221,6 @@ Updated at UTC 2024-01-31T23:08:59.285844
 					<td class=date>2024-01-31T02:15:54.520</td>
 					<td class=description>In Notion Web Clipper 1.0.3(7), a .nib file is susceptible to the Dirty NIB attack. NIB files can be manipulated to execute arbitrary commands. Additionally, even if a NIB file is modified within an application, Gatekeeper may still permit the execution of the application, enabling the execution of arbitrary commands within the application's context.</td>
 				</tr>
-			
-		
 			
 		
 			
@@ -277,16 +304,6 @@ Updated at UTC 2024-01-31T23:08:59.285844
 					<td>remote,command</td>
 					<td class=date>2024-01-29T14:15:08.717</td>
 					<td class=description>A vulnerability was found in Totolink N200RE 9.3.5u.6139_B20201216. It has been rated as critical. This issue affects the function setTracerouteCfg of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument command leads to stack-based buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-252269 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-0986">CVE-2024-0986</a></td>
-					<td>4.7</td>
-					<td>remote,command</td>
-					<td class=date>2024-01-29T00:15:07.850</td>
-					<td class=description>A vulnerability was found in Issabel PBX 4.0.0. It has been rated as critical. This issue affects some unknown processing of the file /index.php?menu=asterisk_cli of the component Asterisk-Cli. The manipulation of the argument Command leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-252251. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
 				</tr>
 			
 		
