@@ -1,10 +1,4 @@
 {
-  "CVE-2024-22523": {
-    "cvss": "-",
-    "description": "Directory Traversal vulnerability in Qiyu iFair version 23.8_ad0 and before, allows remote attackers to obtain sensitive information via uploadimage component.",
-    "published": "2024-01-30T09:15:48.573",
-    "keywords": "remote,sensitive"
-  },
   "CVE-2024-24330": {
     "cvss": 9.8,
     "description": "TOTOLINK A3300R V17.0.0cu.557_B20221024 was discovered to contain a command injection vulnerability via the port or enable parameter in the setRemoteCfg function.",
@@ -154,5 +148,11 @@
     "description": "Central Dogma versions prior to 0.64.0 is vulnerable to Cross-Site Scripting (XSS), which could allow for the leakage of user sessions and subsequent authentication bypass.",
     "published": "2024-02-02T06:15:45.360",
     "keywords": "authentication,bypass,leak"
+  },
+  "CVE-2024-22851": {
+    "cvss": "-",
+    "description": "Directory Traversal Vulnerability in LiveConfig before v.2.5.2 allows a remote attacker to obtain sensitive information via a crafted request to the /static/ endpoint.",
+    "published": "2024-02-02T09:15:37.473",
+    "keywords": "remote,sensitive"
   }
 }
