@@ -148,5 +148,11 @@
     "description": "Before Beetl v3.15.12, the rendering template has a server-side template injection (SSTI) vulnerability. When the incoming template is controllable, it will be filtered by the DefaultNativeSecurityManager blacklist. Because blacklist filtering is not strict, the blacklist can be bypassed, leading to arbitrary code execution.",
     "published": "2024-02-02T03:15:11.210",
     "keywords": "execution,bypass"
+  },
+  "CVE-2024-1143": {
+    "cvss": "-",
+    "description": "Central Dogma versions prior to 0.64.0 is vulnerable to Cross-Site Scripting (XSS), which could allow for the leakage of user sessions and subsequent authentication bypass.",
+    "published": "2024-02-02T06:15:45.360",
+    "keywords": "authentication,bypass,leak"
   }
 }
