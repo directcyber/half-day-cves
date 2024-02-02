@@ -88,5 +88,41 @@
     "cvss": 9.8,
     "description": "Vyper is a pythonic Smart Contract Language for the ethereum virtual machine. In versions 0.3.10 and earlier, the bounds check for slices does not account for the ability for start + length to overflow when the values aren't literals. If a slice() function uses a non-literal argument for the start or length variable, this creates the ability for an attacker to overflow the bounds check. This issue can be used to do OOB access to storage, memory or calldata addresses. It can also be used to corrupt the length slot of the respective array.\n\n",
     "published": "2024-02-01T17:15:11.180"
+  },
+  "CVE-2024-21852": {
+    "cvss": 8.8,
+    "description": "In Rapid Software LLC's Rapid SCADA versions prior to\u00a0Version 5.8.4,\u00a0an attacker can supply a malicious configuration file by utilizing a Zip Slip vulnerability in the unpacking routine to achieve remote code execution.\n",
+    "published": "2024-02-01T23:15:10.730",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-22927": {
+    "url": "https://github.com/weng-xianhu/eyoucms/issues/57",
+    "cvss": "-",
+    "description": "Cross Site Scripting (XSS) vulnerability in the func parameter in eyoucms v.1.6.5 allows a remote attacker to run arbitrary code via crafted URL.",
+    "published": "2024-02-01T23:15:10.960"
+  },
+  "CVE-2024-23031": {
+    "url": "https://github.com/weng-xianhu/eyoucms/issues/57",
+    "cvss": "-",
+    "description": "Cross Site Scripting (XSS) vulnerability in is_water parameter in eyoucms v.1.6.5 allows a remote attacker to run arbitrary code via crafted URL.",
+    "published": "2024-02-01T23:15:11.020"
+  },
+  "CVE-2024-23032": {
+    "url": "https://github.com/weng-xianhu/eyoucms/issues/57",
+    "cvss": "-",
+    "description": "Cross Site Scripting vulnerability in num parameter in eyoucms v.1.6.5 allows a remote attacker to run arbitrary code via crafted URL.",
+    "published": "2024-02-01T23:15:11.067"
+  },
+  "CVE-2024-23033": {
+    "url": "https://github.com/weng-xianhu/eyoucms/issues/57",
+    "cvss": "-",
+    "description": "Cross Site Scripting vulnerability in the path parameter in eyoucms v.1.6.5 allows a remote attacker to run arbitrary code via crafted URL.",
+    "published": "2024-02-01T23:15:11.113"
+  },
+  "CVE-2024-23034": {
+    "url": "https://github.com/weng-xianhu/eyoucms/issues/57",
+    "cvss": "-",
+    "description": "Cross Site Scripting vulnerability in the input parameter in eyoucms v.1.6.5 allows a remote attacker to run arbitrary code via crafted URL.",
+    "published": "2024-02-01T23:15:11.160"
   }
 }
