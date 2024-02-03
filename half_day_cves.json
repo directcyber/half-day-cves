@@ -1,16 +1,4 @@
 {
-  "CVE-2024-21626": {
-    "url": "https://github.com/opencontainers/runc/commit/02120488a4c0fc487d1ed2867e901eeed7ce8ecf",
-    "cvss": 8.6,
-    "description": "runc is a CLI tool for spawning and running containers on Linux according to the OCI specification. In runc 1.1.11 and earlier, due to an internal file descriptor leak, an attacker could cause a newly-spawned container process (from runc exec) to have a working directory in the host filesystem namespace, allowing for a container escape by giving access to the host filesystem (\"attack 2\"). The same attack could be used by a malicious image to allow a container process to gain access to the host filesystem through runc run (\"attack 1\"). Variants of attacks 1 and 2 could be also be used to overwrite semi-arbitrary host binaries, allowing for complete container escapes (\"attack 3a\" and \"attack 3b\"). runc 1.1.12 includes patches for this issue. ",
-    "published": "2024-01-31T22:15:53.780"
-  },
-  "CVE-2024-23650": {
-    "url": "https://github.com/moby/buildkit/pull/4601",
-    "cvss": 5.3,
-    "description": "BuildKit is a toolkit for converting source code to build artifacts in an efficient, expressive and repeatable manner. A malicious BuildKit client or frontend could craft a request that could lead to BuildKit daemon crashing with a panic. The issue has been fixed in v0.12.5. As a workaround, avoid using BuildKit frontends from untrusted sources.\n",
-    "published": "2024-01-31T22:15:53.990"
-  },
   "CVE-2024-24571": {
     "url": "https://github.com/willyxj/facilemanager/commit/0aa850d4b518f10143a4c675142b15caa5872877",
     "cvss": 5.4,
