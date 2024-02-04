@@ -1,22 +1,4 @@
 {
-  "CVE-2024-24571": {
-    "url": "https://github.com/willyxj/facilemanager/commit/0aa850d4b518f10143a4c675142b15caa5872877",
-    "cvss": 5.4,
-    "description": "facileManager is a modular suite of web apps built with the sysadmin in mind. For the facileManager web application versions 4.5.0 and earlier, we have found that XSS was present in almost all of the input fields as there is insufficient input validation.",
-    "published": "2024-01-31T23:15:08.110"
-  },
-  "CVE-2024-24572": {
-    "url": "https://github.com/willyxj/facilemanager/commit/0aa850d4b518f10143a4c675142b15caa5872877",
-    "cvss": 6.5,
-    "description": "facileManager is a modular suite of web apps built with the sysadmin in mind. In versions 4.5.0 and earlier, the $_REQUEST global array was unsafely called inside an extract() function in admin-logs.php. The PHP file fm-init.php prevents arbitrary manipulation of $_SESSION via the GET/POST parameters. However, it does not prevent manipulation of any other sensitive variables such as $search_sql. Knowing this, an authenticated user with privileges to view site logs can manipulate the search_sql\nvariable by appending a GET parameter search_sql in the URL. The information above means that the checks and SQL injection prevention attempts were rendered unusable.",
-    "published": "2024-01-31T23:15:08.337"
-  },
-  "CVE-2024-24573": {
-    "url": "https://github.com/willyxj/facilemanager/commit/0aa850d4b518f10143a4c675142b15caa5872877",
-    "cvss": 8.8,
-    "description": "facileManager is a modular suite of web apps built with the sysadmin in mind. In versions 4.5.0 and earlier, when a user updates their profile, a POST request containing user information is sent to the endpoint server/fm-modules/facileManager/ajax/processPost.php. It was found that non-admins can arbitrarily set their permissions and grant their non-admin accounts with super user privileges.",
-    "published": "2024-01-31T23:15:08.560"
-  },
   "CVE-2024-24548": {
     "cvss": "-",
     "description": "Payment EX Ver1.1.5b and earlier allows a remote unauthenticated attacker to obtain the information of the user who purchases merchandise using Payment EX.",
