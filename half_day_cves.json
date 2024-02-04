@@ -1,16 +1,4 @@
 {
-  "CVE-2024-23832": {
-    "cvss": 9.4,
-    "description": "Mastodon is a free, open-source social network server based on ActivityPub Mastodon allows configuration of LDAP for authentication. Due to insufficient origin validation in all Mastodon, attackers can impersonate and take over any remote account. Every Mastodon version prior to 3.5.17 is vulnerable, as well as 4.0.x versions prior to 4.0.13, 4.1.x version prior to 4.1.13, and 4.2.x versions prior to 4.2.5.",
-    "published": "2024-02-01T17:15:10.677",
-    "keywords": "remote,authentication"
-  },
-  "CVE-2024-24561": {
-    "url": "https://github.com/vyperlang/vyper/issues/3756",
-    "cvss": 9.8,
-    "description": "Vyper is a pythonic Smart Contract Language for the ethereum virtual machine. In versions 0.3.10 and earlier, the bounds check for slices does not account for the ability for start + length to overflow when the values aren't literals. If a slice() function uses a non-literal argument for the start or length variable, this creates the ability for an attacker to overflow the bounds check. This issue can be used to do OOB access to storage, memory or calldata addresses. It can also be used to corrupt the length slot of the respective array.\n\n",
-    "published": "2024-02-01T17:15:11.180"
-  },
   "CVE-2024-21852": {
     "cvss": 8.8,
     "description": "In Rapid Software LLC's Rapid SCADA versions prior to\u00a0Version 5.8.4,\u00a0an attacker can supply a malicious configuration file by utilizing a Zip Slip vulnerability in the unpacking routine to achieve remote code execution.\n",
