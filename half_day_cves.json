@@ -40,5 +40,11 @@
     "description": "In telephony, there is a possible escalation of privilege due to a permissions bypass. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS08441419; Issue ID: ALPS08441419.",
     "published": "2024-02-05T06:15:47.580",
     "keywords": "execution,bypass"
+  },
+  "CVE-2024-23054": {
+    "cvss": "-",
+    "description": "An issue in Plone Docker Official Image 5.2.13 (5221) open-source software that could allow for remote code execution due to a package listed in ++plone++static/components not existing in the public package index (npm).",
+    "published": "2024-02-05T16:15:55.437",
+    "keywords": "remote,execution"
   }
 }
