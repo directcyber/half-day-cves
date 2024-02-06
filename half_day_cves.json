@@ -136,5 +136,17 @@
     "description": "In JetBrains TeamCity before 2023.11.3 authentication bypass leading to RCE was possible",
     "published": "2024-02-06T10:15:09.280",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-24592": {
+    "cvss": 9.8,
+    "description": "Lack of authentication in all versions of the fileserver component of Allegro AI\u2019s ClearML platform allows a remote attacker to arbitrarily access, create, modify and delete files. \n",
+    "published": "2024-02-06T15:15:09.730",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2024-24593": {
+    "cvss": 9.6,
+    "description": "A cross-site request forgery (CSRF) vulnerability in all versions of the api and web server components of Allegro AI\u2019s ClearML platform allows a remote attacker to impersonate a user by sending API requests via maliciously crafted html. Exploitation of the vulnerability allows an attacker to compromise confidential workspaces and files, leak sensitive information, and target instances of the ClearML platform within closed off networks.\n",
+    "published": "2024-02-06T15:15:09.977",
+    "keywords": "remote,sensitive,leak"
   }
 }
