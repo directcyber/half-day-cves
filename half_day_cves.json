@@ -118,5 +118,11 @@
     "cvss": "-",
     "description": "xmall v1.1 was discovered to contain a SQL injection vulnerability via the orderDir parameter.",
     "published": "2024-02-06T01:15:09.700"
+  },
+  "CVE-2024-24808": {
+    "url": "https://github.com/pyload/pyload/commit/fe94451dcc2be90b3889e2fd9d07b483c8a6dccd",
+    "cvss": 4.7,
+    "description": "pyLoad is an open-source Download Manager written in pure Python. There is an open redirect vulnerability due to incorrect validation of input values when redirecting users after login. pyLoad is validating URLs via the `get_redirect_url` function when redirecting users at login. This vulnerability has been patched with commit fe94451.",
+    "published": "2024-02-06T04:15:08.260"
   }
 }
