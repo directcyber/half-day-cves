@@ -130,5 +130,11 @@
     "description": "\nDell Data Protection Search 19.2.0 and above contain an exposed password opportunity in plain text when using LdapSettings.get_ldap_info in DP Search. A remote unauthorized unauthenticated attacker could potentially exploit this vulnerability leading to a loss of Confidentiality, Integrity, Protection, and remote takeover of the system. This is a high-severity vulnerability as it allows an attacker to take complete control of DP Search to affect downstream protected devices.\n\n",
     "published": "2024-02-06T07:15:11.337",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-23917": {
+    "cvss": 9.8,
+    "description": "In JetBrains TeamCity before 2023.11.3 authentication bypass leading to RCE was possible",
+    "published": "2024-02-06T10:15:09.280",
+    "keywords": "authentication,bypass"
   }
 }
