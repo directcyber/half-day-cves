@@ -202,5 +202,29 @@
     "description": "Open Forms allows users create and publish smart forms. Versions prior to 2.2.9, 2.3.7, 2.4.5, and 2.5.2 contain a non-exploitable multi-factor authentication weakness. Superusers who have their credentials (username + password) compromised could potentially have the second-factor authentication bypassed if an attacker somehow managed to authenticate to Open Forms. The maintainers of Open Forms do not believe it is or has been possible to perform this login. However, if this were possible, the victim's account may be abused to view (potentially sensitive) submission data or have been used to impersonate other staff accounts to view and/or modify data. Three mitigating factors to help prevent exploitation include: the usual login page (at `/admin/login/`) does not fully log in the user until the second factor was succesfully provided; the additional non-MFA protected login page at `/api/v2/api-authlogin/` was misconfigured and could not be used to log in; and there are no additional ways to log in. This also requires credentials of a superuser to be compromised to be exploitable. Versions 2.2.9, 2.3.7, 2.4.5, and 2.5.2 contain the following patches to address these weaknesses: Move and only enable the API auth endpoints (`/api/v2/api-auth/login/`) with `settings.DEBUG = True`. `settings.DEBUG = True` is insecure and should never be applied in production settings. Additionally, apply a custom permission check to the hijack flow to only allow second-factor-verified superusers to perform user hijacking.",
     "published": "2024-02-07T15:15:08.283",
     "keywords": "authentication,sensitive,bypass"
+  },
+  "CVE-2024-20252": {
+    "cvss": 9.6,
+    "description": "Multiple vulnerabilities in Cisco Expressway Series and Cisco TelePresence Video Communication Server (VCS) could allow an unauthenticated, remote attacker to conduct cross-site request forgery (CSRF) attacks that perform arbitrary actions on an affected device. \r\n\r Note: \"Cisco Expressway Series\" refers to Cisco Expressway Control (Expressway-C) devices and Cisco Expressway Edge (Expressway-E) devices.\r\n\r For more information about these vulnerabilities, see the Details [\"#details\"] section of this advisory.",
+    "published": "2024-02-07T17:15:09.913",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-20254": {
+    "cvss": 9.6,
+    "description": "Multiple vulnerabilities in Cisco Expressway Series and Cisco TelePresence Video Communication Server (VCS) could allow an unauthenticated, remote attacker to conduct cross-site request forgery (CSRF) attacks that perform arbitrary actions on an affected device. \r\n\r Note: \"Cisco Expressway Series\" refers to Cisco Expressway Control (Expressway-C) devices and Cisco Expressway Edge (Expressway-E) devices.\r\n\r For more information about these vulnerabilities, see the Details [\"#details\"] section of this advisory.",
+    "published": "2024-02-07T17:15:10.130",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-20255": {
+    "cvss": 8.2,
+    "description": "A vulnerability in the SOAP API of Cisco Expressway Series and Cisco TelePresence Video Communication Server could allow an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack on an affected system.\r\n\r This vulnerability is due to insufficient CSRF protections for the web-based management interface of an affected system. An attacker could exploit this vulnerability by persuading a user of the REST API to follow a crafted link. A successful exploit could allow the attacker to cause the affected system to reload.",
+    "published": "2024-02-07T17:15:10.327",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-20290": {
+    "cvss": 7.5,
+    "description": "A vulnerability in the OLE2 file format parser of ClamAV could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.\r\n\r This vulnerability is due to an incorrect check for end-of-string values during scanning, which may result in a heap buffer over-read. An attacker could exploit this vulnerability by submitting a crafted file containing OLE2 content to be scanned by ClamAV on an affected device. A successful exploit could allow the attacker to cause the ClamAV scanning process to terminate, resulting in a DoS condition on the affected software and consuming available system resources.\r\n\r For a description of this vulnerability, see the ClamAV blog .",
+    "published": "2024-02-07T17:15:10.517",
+    "keywords": "remote,unauthenticated"
   }
 }
