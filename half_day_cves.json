@@ -1,64 +1,4 @@
 {
-  "CVE-2024-0324": {
-    "cvss": 8.2,
-    "description": "The User Profile Builder \u2013 Beautiful User Registration Forms, User Profiles & User Role Editor plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'wppb_two_factor_authentication_settings_update' function in all versions up to, and including, 3.10.8. This makes it possible for unauthenticated attackers to enable or disable the 2FA functionality present in the Premium version of the plugin for arbitrary user roles.",
-    "published": "2024-02-05T22:15:59.980",
-    "keywords": "unauthenticated,authentication"
-  },
-  "CVE-2024-0699": {
-    "cvss": 6.6,
-    "description": "The AI Engine: Chatbots, Generators, Assistants, GPT 4 and more! plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'add_image_from_url' function in all versions up to, and including, 2.1.4. This makes it possible for authenticated attackers, with Editor access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2024-02-05T22:16:04.210",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-0701": {
-    "cvss": 5.3,
-    "description": "The UserPro plugin for WordPress is vulnerable to Security Feature Bypass in all versions up to, and including, 5.1.6. This is due to the use of client-side restrictions to enforce the 'Disabled registration' Membership feature within the plugin's General settings. This makes it possible for unauthenticated attackers to register an account even when account registration has been disabled by an administrator.",
-    "published": "2024-02-05T22:16:04.380",
-    "keywords": "unauthenticated,bypass"
-  },
-  "CVE-2024-0709": {
-    "cvss": 9.8,
-    "description": "The Cryptocurrency Widgets \u2013 Price Ticker & Coins List plugin for WordPress is vulnerable to SQL Injection via the 'coinslist' parameter in versions 2.0 to 2.6.5 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
-    "published": "2024-02-05T22:16:04.553",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-0761": {
-    "cvss": 8.1,
-    "description": "The File Manager plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 7.2.1 due to insufficient randomness in the backup filenames, which use a timestamp plus 4 random digits. This makes it possible for unauthenticated attackers, to extract sensitive data including site backups in configurations where the .htaccess file in the directory does not block access.",
-    "published": "2024-02-05T22:16:04.733",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-0969": {
-    "cvss": 5.3,
-    "description": "The ARMember plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.0.21 via the REST API. This makes it possible for unauthenticated attackers to bypass the plugin's \"Default Restriction\" feature and view restricted post content.",
-    "published": "2024-02-05T22:16:06.767",
-    "keywords": "unauthenticated,sensitive,bypass"
-  },
-  "CVE-2024-1075": {
-    "cvss": 3.7,
-    "description": "The Minimal Coming Soon \u2013 Coming Soon Page plugin for WordPress is vulnerable to maintenance mode bypass and information disclosure in all versions up to, and including, 2.37. This is due to the plugin improperly validating the request path. This makes it possible for unauthenticated attackers to bypass maintenance mode and view pages that should be hidden.",
-    "published": "2024-02-05T22:16:07.283",
-    "keywords": "unauthenticated,bypass"
-  },
-  "CVE-2024-1208": {
-    "cvss": 5.3,
-    "description": "The LearnDash LMS plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 4.10.2 via API. This makes it possible for unauthenticated attackers to obtain access to quiz questions.",
-    "published": "2024-02-05T22:16:07.977",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-1209": {
-    "cvss": 5.3,
-    "description": "The LearnDash LMS plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 4.10.1 via direct file access due to insufficient protection of uploaded assignments. This makes it possible for unauthenticated attackers to obtain those uploads.",
-    "published": "2024-02-05T22:16:08.143",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-1210": {
-    "cvss": 5.3,
-    "description": "The LearnDash LMS plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 4.10.1 via API. This makes it possible for unauthenticated attackers to obtain access to quizzes.",
-    "published": "2024-02-05T22:16:08.310",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2024-23049": {
     "url": "https://github.com/88250/symphony/issues/82",
     "cvss": "-",
@@ -274,5 +214,11 @@
     "description": "SQL Injection vulnerability in Employee Management System v.1.0 allows a remote attacker to execute arbitrary SQL commands via the txtfullname and txtphone parameters in the edit_profile.php component.",
     "published": "2024-02-08T21:15:08.693",
     "keywords": "remote,command"
+  },
+  "CVE-2024-24393": {
+    "url": "https://github.com/zyx0814/pichome/issues/24",
+    "cvss": "-",
+    "description": "File Upload vulnerability index.php in Pichome v.1.1.01 allows a remote attacker to execute arbitrary code via crafted POST request.",
+    "published": "2024-02-08T22:15:09.130"
   }
 }
