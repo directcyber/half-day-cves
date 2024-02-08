@@ -238,5 +238,11 @@
     "cvss": "-",
     "description": "jshERP v3.3 is vulnerable to SQL Injection. The com.jsh.erp.controller.DepotHeadController: com.jsh.erp.utils.BaseResponseInfo findInOutMaterialCount() function of jshERP does not filter `column` and `order` parameters well enough, and an attacker can construct malicious payload to bypass jshERP's protection mechanism in `safeSqlParse` method for sql injection.",
     "published": "2024-02-08T02:15:07.763"
+  },
+  "CVE-2024-25148": {
+    "cvss": 5.4,
+    "description": "In Liferay Portal 7.2.0 through 7.4.1, and older unsupported versions, and Liferay DXP 7.3 before service pack 3, 7.2 before fix pack 15, and older unsupported versions the `doAsUserId` URL parameter may get leaked when creating linked content using the WYSIWYG editor and while impersonating a user. This may allow remote authenticated users to impersonate a user after accessing the linked content.",
+    "published": "2024-02-08T04:15:08.240",
+    "keywords": "remote,leak"
   }
 }
