@@ -191,6 +191,18 @@
     "published": "2024-02-07T17:15:10.517",
     "keywords": "remote,unauthenticated"
   },
+  "CVE-2024-24823": {
+    "url": "https://github.com/graylog2/graylog2-server/commit/b93a66353f35a94a4e8f3f75ac4f5cdc5a2d4a6a",
+    "cvss": 5.7,
+    "description": "Graylog is a free and open log management platform. Starting in version 4.3.0 and prior to versions 5.1.11 and 5.2.4, reauthenticating with an existing session cookie would re-use that session id, even if for different user credentials. In this case, the pre-existing session could be used to gain elevated access to an existing Graylog login session, provided the malicious user could successfully inject their session cookie into someone else's browser. The complexity of such an attack is high, because it requires presenting a spoofed login screen and injection of a session cookie into an existing browser, potentially through a cross-site scripting attack. No such attack has been discovered. Graylog 5.1.11 and 5.2.4, and any versions of the 6.0 development branch, contain patches to not re-use sessions under any circumstances. Some workarounds are available. Using short session expiration and explicit log outs of unused sessions can help limiting the attack vector. Unpatched this vulnerability exists, but is relatively hard to exploit. A proxy could be leveraged to clear the `authentication` cookie for the Graylog server URL for the `/api/system/sessions` endpoint, as that is the only one vulnerable.",
+    "published": "2024-02-07T18:15:54.870"
+  },
+  "CVE-2024-24824": {
+    "url": "https://github.com/graylog2/graylog2-server/commit/7f8ef7fa8edf493106d5ef6f777d4da02c5194d9",
+    "cvss": 8.8,
+    "description": "Graylog is a free and open log management platform. Starting in version 2.0.0 and prior to versions 5.1.11 and 5.2.4, arbitrary classes can be loaded and instantiated using a HTTP PUT request to the `/api/system/cluster_config/` endpoint. Graylog's cluster config system uses fully qualified class names as config keys. To validate the existence of the requested class before using them, Graylog loads the class using the class loader. If a user with the appropriate permissions performs the request, arbitrary classes with 1-arg String constructors can be instantiated. This will execute arbitrary code that is run during class instantiation. In the specific use case of `java.io.File`, the behavior of the internal web-server stack will lead to information exposure by including the entire file content in the response to the REST request. Versions 5.1.11 and 5.2.4 contain a fix for this issue.",
+    "published": "2024-02-07T18:15:55.330"
+  },
   "CVE-2024-22394": {
     "cvss": "-",
     "description": "An improper authentication vulnerability has been identified in SonicWall SonicOS SSL-VPN feature, which in specific conditions could allow a remote attacker to bypass authentication.\u00a0\n\nThis issue affects only firmware version SonicOS 7.1.1-7040.\n\n",
