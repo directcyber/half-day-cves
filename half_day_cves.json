@@ -1,40 +1,4 @@
 {
-  "CVE-2024-20003": {
-    "cvss": "-",
-    "description": "In Modem NL1, there is a possible system crash due to an improper input validation. This could lead to remote denial of service, if NW sent invalid NR RRC Connection Setup message, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01191612; Issue ID: MOLY01191612 (MSV-981).",
-    "published": "2024-02-05T06:15:47.130",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-20004": {
-    "cvss": "-",
-    "description": "In Modem NL1, there is a possible system crash due to an improper input validation. This could lead to remote denial of service, if NW sent invalid NR RRC Connection Setup message, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01191612; Issue ID: MOLY01195812 (MSV-985).",
-    "published": "2024-02-05T06:15:47.190",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-20007": {
-    "cvss": "-",
-    "description": "In mp3 decoder, there is a possible out of bounds write due to a race condition. This could lead to remote escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation. Patch ID: ALPS08441369; Issue ID: ALPS08441369.",
-    "published": "2024-02-05T06:15:47.283",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-20009": {
-    "cvss": "-",
-    "description": "In alac decoder, there is a possible out of bounds write due to an incorrect error handling. This could lead to remote escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation. Patch ID: ALPS08441150; Issue ID: ALPS08441150.",
-    "published": "2024-02-05T06:15:47.330",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-20011": {
-    "cvss": "-",
-    "description": "In alac decoder, there is a possible information disclosure due to an incorrect bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS08441146; Issue ID: ALPS08441146.",
-    "published": "2024-02-05T06:15:47.447",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-20015": {
-    "cvss": "-",
-    "description": "In telephony, there is a possible escalation of privilege due to a permissions bypass. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS08441419; Issue ID: ALPS08441419.",
-    "published": "2024-02-05T06:15:47.580",
-    "keywords": "execution,bypass"
-  },
   "CVE-2024-23054": {
     "cvss": "-",
     "description": "An issue in Plone Docker Official Image 5.2.13 (5221) open-source software that could allow for remote code execution due to a package listed in ++plone++static/components not existing in the public package index (npm).",
@@ -244,5 +208,11 @@
     "description": "In Liferay Portal 7.2.0 through 7.4.1, and older unsupported versions, and Liferay DXP 7.3 before service pack 3, 7.2 before fix pack 15, and older unsupported versions the `doAsUserId` URL parameter may get leaked when creating linked content using the WYSIWYG editor and while impersonating a user. This may allow remote authenticated users to impersonate a user after accessing the linked content.",
     "published": "2024-02-08T04:15:08.240",
     "keywords": "remote,leak"
+  },
+  "CVE-2024-24216": {
+    "cvss": "-",
+    "description": "Zentao v18.0 to v18.10 was discovered to contain a remote code execution (RCE) vulnerability via the checkConnection method of /app/zentao/module/repo/model.php.",
+    "published": "2024-02-08T06:15:51.750",
+    "keywords": "remote,execution"
   }
 }
