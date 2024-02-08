@@ -262,5 +262,17 @@
     "description": "php-jwt 1.0.0 uses strcmp (which is not constant time) to verify authentication, which makes it easier to bypass authentication via a timing side channel.",
     "published": "2024-02-08T17:15:11.067",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-24497": {
+    "cvss": "-",
+    "description": "SQL Injection vulnerability in Employee Management System v.1.0 allows a remote attacker to execute arbitrary SQL commands via the txtusername and txtpassword parameters in the login.php components.",
+    "published": "2024-02-08T21:15:08.590",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-24499": {
+    "cvss": "-",
+    "description": "SQL Injection vulnerability in Employee Management System v.1.0 allows a remote attacker to execute arbitrary SQL commands via the txtfullname and txtphone parameters in the edit_profile.php component.",
+    "published": "2024-02-08T21:15:08.693",
+    "keywords": "remote,command"
   }
 }
