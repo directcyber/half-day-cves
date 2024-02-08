@@ -226,5 +226,17 @@
     "description": "A vulnerability in the OLE2 file format parser of ClamAV could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.\r\n\r This vulnerability is due to an incorrect check for end-of-string values during scanning, which may result in a heap buffer over-read. An attacker could exploit this vulnerability by submitting a crafted file containing OLE2 content to be scanned by ClamAV on an affected device. A successful exploit could allow the attacker to cause the ClamAV scanning process to terminate, resulting in a DoS condition on the affected software and consuming available system resources.\r\n\r For a description of this vulnerability, see the ClamAV blog .",
     "published": "2024-02-07T17:15:10.517",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-22394": {
+    "cvss": "-",
+    "description": "An improper authentication vulnerability has been identified in SonicWall SonicOS SSL-VPN feature, which in specific conditions could allow a remote attacker to bypass authentication.\u00a0\n\nThis issue affects only firmware version SonicOS 7.1.1-7040.\n\n",
+    "published": "2024-02-08T02:15:07.620",
+    "keywords": "remote,authentication,vpn,bypass"
+  },
+  "CVE-2024-24003": {
+    "url": "https://github.com/jishenghua/jsherp/issues/99",
+    "cvss": "-",
+    "description": "jshERP v3.3 is vulnerable to SQL Injection. The com.jsh.erp.controller.DepotHeadController: com.jsh.erp.utils.BaseResponseInfo findInOutMaterialCount() function of jshERP does not filter `column` and `order` parameters well enough, and an attacker can construct malicious payload to bypass jshERP's protection mechanism in `safeSqlParse` method for sql injection.",
+    "published": "2024-02-08T02:15:07.763"
   }
 }
