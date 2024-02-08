@@ -214,5 +214,17 @@
     "description": "Zentao v18.0 to v18.10 was discovered to contain a remote code execution (RCE) vulnerability via the checkConnection method of /app/zentao/module/repo/model.php.",
     "published": "2024-02-08T06:15:51.750",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-0965": {
+    "cvss": 5.3,
+    "description": "The Simple Page Access Restriction plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.0.21 via the REST API. This makes it possible for unauthenticated attackers to bypass the plugin's page restriction and view page content.",
+    "published": "2024-02-08T09:15:46.047",
+    "keywords": "unauthenticated,sensitive,bypass"
+  },
+  "CVE-2024-1207": {
+    "cvss": 9.8,
+    "description": "The WP Booking Calendar plugin for WordPress is vulnerable to SQL Injection via the 'calendar_request_params[dates_ddmmyy_csv]' parameter in all versions up to, and including, 9.9 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2024-02-08T09:15:46.253",
+    "keywords": "unauthenticated,sensitive"
   }
 }
