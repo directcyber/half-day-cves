@@ -190,5 +190,17 @@
     "description": "An out-of-bounds memory access flaw was found in the X.Org server. This issue can be triggered when a device frozen by a sync grab is reattached to a different master device. This issue may lead to an application crash, local privilege escalation (if the server runs with extended privileges), or remote code execution in SSH X11 forwarding environments.",
     "published": "2024-02-09T07:16:00.107",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-23749": {
+    "cvss": "-",
+    "description": "KiTTY versions 0.76.1.13 and before is vulnerable to command injection via the filename variable, occurs due to insufficient input sanitization and validation, failure to escape special characters, and insecure system calls (at lines 2369-2390). This allows an attacker to add inputs inside the filename variable, leading to arbitrary code execution.",
+    "published": "2024-02-09T08:15:08.530",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-24308": {
+    "cvss": "-",
+    "description": "SQL Injection vulnerability in Boostmyshop (boostmyshopagent) module for Prestashop versions 1.1.9 and before, allows remote attackers to escalate privileges and obtain sensitive information via changeOrderCarrier.php, relayPoint.php, and shippingConfirmation.php.",
+    "published": "2024-02-09T08:15:08.707",
+    "keywords": "remote,sensitive"
   }
 }
