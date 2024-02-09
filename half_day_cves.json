@@ -1,10 +1,4 @@
 {
-  "CVE-2024-22433": {
-    "cvss": 8.8,
-    "description": "\nDell Data Protection Search 19.2.0 and above contain an exposed password opportunity in plain text when using LdapSettings.get_ldap_info in DP Search. A remote unauthorized unauthenticated attacker could potentially exploit this vulnerability leading to a loss of Confidentiality, Integrity, Protection, and remote takeover of the system. This is a high-severity vulnerability as it allows an attacker to take complete control of DP Search to affect downstream protected devices.\n\n",
-    "published": "2024-02-06T07:15:11.337",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2024-23917": {
     "cvss": 9.8,
     "description": "In JetBrains TeamCity before 2023.11.3 authentication bypass leading to RCE was possible",
@@ -190,5 +184,11 @@
     "description": "Composer is a dependency Manager for the PHP language. In affected versions several files within the local working directory are included during the invocation of Composer and in the context of the executing user. As such, under certain conditions arbitrary code execution may lead to local privilege escalation, provide lateral user movement or malicious code execution when Composer is invoked within a directory with tampered files. All Composer CLI commands are affected, including composer.phar's self-update. The following scenarios are of high risk: Composer being run with sudo, Pipelines which may execute Composer on untrusted projects, Shared environments with developers who run Composer individually on the same project. This vulnerability has been addressed in versions 2.7.0 and 2.2.23. It is advised that the patched versions are applied at the earliest convenience. Where not possible, the following should be addressed: Remove all sudo composer privileges for all users to mitigate root privilege escalation, and avoid running Composer within an untrusted directory, or if needed, verify that the contents of `vendor/composer/InstalledVersions.php` and `vendor/composer/installed.php` do not include untrusted code.  A reset can also be done on these files by the following:```sh\nrm vendor/composer/installed.php vendor/composer/InstalledVersions.php\ncomposer install --no-scripts --no-plugins\n```",
     "published": "2024-02-09T00:15:08.680",
     "keywords": "execution,command"
+  },
+  "CVE-2024-0229": {
+    "cvss": 7.8,
+    "description": "An out-of-bounds memory access flaw was found in the X.Org server. This issue can be triggered when a device frozen by a sync grab is reattached to a different master device. This issue may lead to an application crash, local privilege escalation (if the server runs with extended privileges), or remote code execution in SSH X11 forwarding environments.",
+    "published": "2024-02-09T07:16:00.107",
+    "keywords": "remote,execution"
   }
 }
