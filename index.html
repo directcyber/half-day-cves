@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-02-08T23:09:35.204517
+Updated at UTC 2024-02-09T00:37:51.496420
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-02-08T23:09:35.204517
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 				<tr>
@@ -260,20 +262,21 @@ Updated at UTC 2024-02-08T23:09:35.204517
 				</tr>
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-23049">CVE-2024-23049</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/88250/symphony/issues/82">https://github.com/88250/symphony/issues/82</a></td>
-					<td class=date>2024-02-05T23:15:08.463</td>
-					<td class=description>An issue in symphony v.3.6.3 and before allows a remote attacker to execute arbitrary code via the log4j component.</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-24821">CVE-2024-24821</a></td>
+					<td>8.8</td>
+					<td>execution,command</td>
+					<td class=date>2024-02-09T00:15:08.680</td>
+					<td class=description>Composer is a dependency Manager for the PHP language. In affected versions several files within the local working directory are included during the invocation of Composer and in the context of the executing user. As such, under certain conditions arbitrary code execution may lead to local privilege escalation, provide lateral user movement or malicious code execution when Composer is invoked within a directory with tampered files. All Composer CLI commands are affected, including composer.phar's self-update. The following scenarios are of high risk: Composer being run with sudo, Pipelines which may execute Composer on untrusted projects, Shared environments with developers who run Composer individually on the same project. This vulnerability has been addressed in versions 2.7.0 and 2.2.23. It is advised that the patched versions are applied at the earliest convenience. Where not possible, the following should be addressed: Remove all sudo composer privileges for all users to mitigate root privilege escalation, and avoid running Composer within an untrusted directory, or if needed, verify that the contents of `vendor/composer/InstalledVersions.php` and `vendor/composer/installed.php` do not include untrusted code.  A reset can also be done on these files by the following:```sh
+rm vendor/composer/installed.php vendor/composer/InstalledVersions.php
+composer install --no-scripts --no-plugins
+```</td>
+				</tr>
+			
 		
 			
 		
@@ -547,8 +550,6 @@ Dell Data Protection Search 19.2.0 and above contain an exposed password opportu
 					<td class=date>2024-02-06T05:15:10.630</td>
 					<td class=description>Cybozu KUNAI for Android 3.0.20 to 3.0.21 allows a remote unauthenticated attacker to cause a denial-of-service (DoS) condition by performing certain operations.</td>
 				</tr>
-			
-		
 			
 		
 			
