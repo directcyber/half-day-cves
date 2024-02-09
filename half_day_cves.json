@@ -1,16 +1,4 @@
 {
-  "CVE-2024-24592": {
-    "cvss": 9.8,
-    "description": "Lack of authentication in all versions of the fileserver component of Allegro AI\u2019s ClearML platform allows a remote attacker to arbitrarily access, create, modify and delete files. \n",
-    "published": "2024-02-06T15:15:09.730",
-    "keywords": "remote,authentication"
-  },
-  "CVE-2024-24593": {
-    "cvss": 9.6,
-    "description": "A cross-site request forgery (CSRF) vulnerability in all versions of the api and web server components of Allegro AI\u2019s ClearML platform allows a remote attacker to impersonate a user by sending API requests via maliciously crafted html. Exploitation of the vulnerability allows an attacker to compromise confidential workspaces and files, leak sensitive information, and target instances of the ClearML platform within closed off networks.\n",
-    "published": "2024-02-06T15:15:09.977",
-    "keywords": "remote,sensitive,leak"
-  },
   "CVE-2024-0955": {
     "cvss": 4.8,
     "description": "\nA stored XSS vulnerability exists where an authenticated, remote attacker with administrator privileges on the Nessus application could alter Nessus proxy settings, which could lead to the execution of remote arbitrary scripts. \n\n",
@@ -214,5 +202,47 @@
     "description": "Code-projects Simple School Managment System 1.0 allows Authentication Bypass via the username and password parameters at School/teacher_login.php.",
     "published": "2024-02-09T13:15:42.227",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-25447": {
+    "url": "https://github.com/derf/feh/issues/709",
+    "cvss": "-",
+    "description": "An issue in the imlib_load_image_with_error_return function of imlib2 v1.9.1 allows attackers to cause a heap buffer overflow via parsing a crafted image.",
+    "published": "2024-02-09T15:15:08.967"
+  },
+  "CVE-2024-25448": {
+    "url": "https://github.com/derf/feh/issues/711",
+    "cvss": "-",
+    "description": "An issue in the imlib_free_image_and_decache function of imlib2 v1.9.1 allows attackers to cause a heap buffer overflow via parsing a crafted image.",
+    "published": "2024-02-09T15:15:09.027"
+  },
+  "CVE-2024-25450": {
+    "url": "https://github.com/derf/feh/issues/712",
+    "cvss": "-",
+    "description": "imlib2 v1.9.1 was discovered to mishandle memory allocation in the function init_imlib_fonts().",
+    "published": "2024-02-09T15:15:09.087"
+  },
+  "CVE-2024-25451": {
+    "url": "https://github.com/axiomatic-systems/bento4/issues/872",
+    "cvss": "-",
+    "description": "Bento4 v1.6.0-640 was discovered to contain an out-of-memory bug via the AP4_DataBuffer::ReallocateBuffer() function.",
+    "published": "2024-02-09T15:15:09.143"
+  },
+  "CVE-2024-25452": {
+    "url": "https://github.com/axiomatic-systems/bento4/issues/873",
+    "cvss": "-",
+    "description": "Bento4 v1.6.0-640 was discovered to contain an out-of-memory bug via the AP4_UrlAtom::AP4_UrlAtom() function.",
+    "published": "2024-02-09T15:15:09.193"
+  },
+  "CVE-2024-25453": {
+    "url": "https://github.com/axiomatic-systems/bento4/issues/874",
+    "cvss": "-",
+    "description": "Bento4 v1.6.0-640 was discovered to contain a NULL pointer dereference via the AP4_StszAtom::GetSampleSize() function.",
+    "published": "2024-02-09T15:15:09.240"
+  },
+  "CVE-2024-25454": {
+    "url": "https://github.com/axiomatic-systems/bento4/issues/875",
+    "cvss": "-",
+    "description": "Bento4 v1.6.0-640 was discovered to contain a NULL pointer dereference via the AP4_DescriptorFinder::Test() function.",
+    "published": "2024-02-09T15:15:09.293"
   }
 }
