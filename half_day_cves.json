@@ -1,28 +1,4 @@
 {
-  "CVE-2024-20252": {
-    "cvss": 9.6,
-    "description": "Multiple vulnerabilities in Cisco Expressway Series and Cisco TelePresence Video Communication Server (VCS) could allow an unauthenticated, remote attacker to conduct cross-site request forgery (CSRF) attacks that perform arbitrary actions on an affected device. \r\n\r Note: \"Cisco Expressway Series\" refers to Cisco Expressway Control (Expressway-C) devices and Cisco Expressway Edge (Expressway-E) devices.\r\n\r For more information about these vulnerabilities, see the Details [\"#details\"] section of this advisory.",
-    "published": "2024-02-07T17:15:09.913",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-20254": {
-    "cvss": 9.6,
-    "description": "Multiple vulnerabilities in Cisco Expressway Series and Cisco TelePresence Video Communication Server (VCS) could allow an unauthenticated, remote attacker to conduct cross-site request forgery (CSRF) attacks that perform arbitrary actions on an affected device. \r\n\r Note: \"Cisco Expressway Series\" refers to Cisco Expressway Control (Expressway-C) devices and Cisco Expressway Edge (Expressway-E) devices.\r\n\r For more information about these vulnerabilities, see the Details [\"#details\"] section of this advisory.",
-    "published": "2024-02-07T17:15:10.130",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-20255": {
-    "cvss": 8.2,
-    "description": "A vulnerability in the SOAP API of Cisco Expressway Series and Cisco TelePresence Video Communication Server could allow an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack on an affected system.\r\n\r This vulnerability is due to insufficient CSRF protections for the web-based management interface of an affected system. An attacker could exploit this vulnerability by persuading a user of the REST API to follow a crafted link. A successful exploit could allow the attacker to cause the affected system to reload.",
-    "published": "2024-02-07T17:15:10.327",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-20290": {
-    "cvss": 7.5,
-    "description": "A vulnerability in the OLE2 file format parser of ClamAV could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.\r\n\r This vulnerability is due to an incorrect check for end-of-string values during scanning, which may result in a heap buffer over-read. An attacker could exploit this vulnerability by submitting a crafted file containing OLE2 content to be scanned by ClamAV on an affected device. A successful exploit could allow the attacker to cause the ClamAV scanning process to terminate, resulting in a DoS condition on the affected software and consuming available system resources.\r\n\r For a description of this vulnerability, see the ClamAV blog .",
-    "published": "2024-02-07T17:15:10.517",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2024-22394": {
     "cvss": "-",
     "description": "An improper authentication vulnerability has been identified in SonicWall SonicOS SSL-VPN feature, which in specific conditions could allow a remote attacker to bypass authentication.\u00a0\n\nThis issue affects only firmware version SonicOS 7.1.1-7040.\n\n",
