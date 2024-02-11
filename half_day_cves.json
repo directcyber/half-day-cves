@@ -1,10 +1,4 @@
 {
-  "CVE-2024-25148": {
-    "cvss": 5.4,
-    "description": "In Liferay Portal 7.2.0 through 7.4.1, and older unsupported versions, and Liferay DXP 7.3 before service pack 3, 7.2 before fix pack 15, and older unsupported versions the `doAsUserId` URL parameter may get leaked when creating linked content using the WYSIWYG editor and while impersonating a user. This may allow remote authenticated users to impersonate a user after accessing the linked content.",
-    "published": "2024-02-08T04:15:08.240",
-    "keywords": "remote,leak"
-  },
   "CVE-2024-24216": {
     "cvss": "-",
     "description": "Zentao v18.0 to v18.10 was discovered to contain a remote code execution (RCE) vulnerability via the checkConnection method of /app/zentao/module/repo/model.php.",
