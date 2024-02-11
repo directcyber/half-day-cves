@@ -1,22 +1,4 @@
 {
-  "CVE-2024-25189": {
-    "cvss": "-",
-    "description": "libjwt 1.15.3 uses strcmp (which is not constant time) to verify authentication, which makes it easier to bypass authentication via a timing side channel.",
-    "published": "2024-02-08T17:15:10.960",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-25190": {
-    "cvss": "-",
-    "description": "l8w8jwt 2.2.1 uses memcmp (which is not constant time) to verify authentication, which makes it easier to bypass authentication via a timing side channel.",
-    "published": "2024-02-08T17:15:11.013",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-25191": {
-    "cvss": "-",
-    "description": "php-jwt 1.0.0 uses strcmp (which is not constant time) to verify authentication, which makes it easier to bypass authentication via a timing side channel.",
-    "published": "2024-02-08T17:15:11.067",
-    "keywords": "authentication,bypass"
-  },
   "CVE-2024-24497": {
     "cvss": "-",
     "description": "SQL Injection vulnerability in Employee Management System v.1.0 allows a remote attacker to execute arbitrary SQL commands via the txtusername and txtpassword parameters in the login.php components.",
