@@ -172,5 +172,11 @@
     "description": "Envoy is a high-performance edge/middle/service proxy. External authentication can be bypassed by downstream connections. Downstream clients can force invalid gRPC requests to be sent to ext_authz, circumventing ext_authz checks when failure_mode_allow is set to true. This issue has been addressed in released 1.29.1, 1.28.1, 1.27.3, and 1.26.7. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n",
     "published": "2024-02-09T23:15:09.223",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-23724": {
+    "url": "https://github.com/tryghost/ghost/pull/19646",
+    "cvss": "-",
+    "description": "Ghost through 5.76.0 allows stored XSS, and resultant privilege escalation in which a contributor can take over any account, via an SVG profile picture that contains JavaScript code to interact with the API on localhost TCP port 3001. NOTE: The discoverer reports that \"The vendor does not view this as a valid vector.\"",
+    "published": "2024-02-11T01:15:08.080"
   }
 }
