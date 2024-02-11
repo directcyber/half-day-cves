@@ -1,10 +1,4 @@
 {
-  "CVE-2024-24393": {
-    "url": "https://github.com/zyx0814/pichome/issues/24",
-    "cvss": "-",
-    "description": "File Upload vulnerability index.php in Pichome v.1.1.01 allows a remote attacker to execute arbitrary code via crafted POST request.",
-    "published": "2024-02-08T22:15:09.130"
-  },
   "CVE-2024-24821": {
     "cvss": 8.8,
     "description": "Composer is a dependency Manager for the PHP language. In affected versions several files within the local working directory are included during the invocation of Composer and in the context of the executing user. As such, under certain conditions arbitrary code execution may lead to local privilege escalation, provide lateral user movement or malicious code execution when Composer is invoked within a directory with tampered files. All Composer CLI commands are affected, including composer.phar's self-update. The following scenarios are of high risk: Composer being run with sudo, Pipelines which may execute Composer on untrusted projects, Shared environments with developers who run Composer individually on the same project. This vulnerability has been addressed in versions 2.7.0 and 2.2.23. It is advised that the patched versions are applied at the earliest convenience. Where not possible, the following should be addressed: Remove all sudo composer privileges for all users to mitigate root privilege escalation, and avoid running Composer within an untrusted directory, or if needed, verify that the contents of `vendor/composer/InstalledVersions.php` and `vendor/composer/installed.php` do not include untrusted code.  A reset can also be done on these files by the following:```sh\nrm vendor/composer/installed.php vendor/composer/InstalledVersions.php\ncomposer install --no-scripts --no-plugins\n```",
@@ -106,5 +100,11 @@
     "cvss": "-",
     "description": "Glewlwyd SSO server 2.x through 2.7.6 allows open redirection via redirect_uri.",
     "published": "2024-02-11T03:15:09.453"
+  },
+  "CVE-2024-25728": {
+    "cvss": "-",
+    "description": "ExpressVPN before 12.73.0 on Windows, when split tunneling is used, sends DNS requests according to the Windows configuration (e.g., sends them to DNS servers operated by the user's ISP instead of to the ExpressVPN DNS servers), which may allow remote attackers to obtain sensitive information about websites visited by VPN users.",
+    "published": "2024-02-11T22:15:08.360",
+    "keywords": "remote,sensitive,vpn"
   }
 }

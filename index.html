@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-02-11T22:07:29.006060
+Updated at UTC 2024-02-11T23:07:54.923027
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-02-11T22:07:29.006060
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 				<tr>
@@ -192,20 +194,18 @@ Updated at UTC 2024-02-11T22:07:29.006060
 		
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-24393">CVE-2024-24393</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/zyx0814/pichome/issues/24">https://github.com/zyx0814/pichome/issues/24</a></td>
-					<td class=date>2024-02-08T22:15:09.130</td>
-					<td class=description>File Upload vulnerability index.php in Pichome v.1.1.01 allows a remote attacker to execute arbitrary code via crafted POST request.</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-25728">CVE-2024-25728</a></td>
+					<td>-</td>
+					<td>remote,sensitive,vpn</td>
+					<td class=date>2024-02-11T22:15:08.360</td>
+					<td class=description>ExpressVPN before 12.73.0 on Windows, when split tunneling is used, sends DNS requests according to the Windows configuration (e.g., sends them to DNS servers operated by the user's ISP instead of to the ExpressVPN DNS servers), which may allow remote attackers to obtain sensitive information about websites visited by VPN users.</td>
+				</tr>
+			
 		
 			
 		
@@ -299,8 +299,6 @@ rm vendor/composer/installed.php vendor/composer/InstalledVersions.php
 composer install --no-scripts --no-plugins
 ```</td>
 				</tr>
-			
-		
 			
 		
 
