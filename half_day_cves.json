@@ -1,10 +1,4 @@
 {
-  "CVE-2024-24821": {
-    "cvss": 8.8,
-    "description": "Composer is a dependency Manager for the PHP language. In affected versions several files within the local working directory are included during the invocation of Composer and in the context of the executing user. As such, under certain conditions arbitrary code execution may lead to local privilege escalation, provide lateral user movement or malicious code execution when Composer is invoked within a directory with tampered files. All Composer CLI commands are affected, including composer.phar's self-update. The following scenarios are of high risk: Composer being run with sudo, Pipelines which may execute Composer on untrusted projects, Shared environments with developers who run Composer individually on the same project. This vulnerability has been addressed in versions 2.7.0 and 2.2.23. It is advised that the patched versions are applied at the earliest convenience. Where not possible, the following should be addressed: Remove all sudo composer privileges for all users to mitigate root privilege escalation, and avoid running Composer within an untrusted directory, or if needed, verify that the contents of `vendor/composer/InstalledVersions.php` and `vendor/composer/installed.php` do not include untrusted code.  A reset can also be done on these files by the following:```sh\nrm vendor/composer/installed.php vendor/composer/InstalledVersions.php\ncomposer install --no-scripts --no-plugins\n```",
-    "published": "2024-02-09T00:15:08.680",
-    "keywords": "execution,command"
-  },
   "CVE-2024-0229": {
     "cvss": 7.8,
     "description": "An out-of-bounds memory access flaw was found in the X.Org server. This issue can be triggered when a device frozen by a sync grab is reattached to a different master device. This issue may lead to an application crash, local privilege escalation (if the server runs with extended privileges), or remote code execution in SSH X11 forwarding environments.",
@@ -106,5 +100,11 @@
     "description": "ExpressVPN before 12.73.0 on Windows, when split tunneling is used, sends DNS requests according to the Windows configuration (e.g., sends them to DNS servers operated by the user's ISP instead of to the ExpressVPN DNS servers), which may allow remote attackers to obtain sensitive information about websites visited by VPN users.",
     "published": "2024-02-11T22:15:08.360",
     "keywords": "remote,sensitive,vpn"
+  },
+  "CVE-2024-1433": {
+    "url": "https://github.com/kde/plasma-workspace/commit/6cdf42916369ebf4ad5bd876c4dfa0170d7b2f01",
+    "cvss": 3.1,
+    "description": "A vulnerability, which was classified as problematic, was found in KDE Plasma Workspace up to 5.93.0. This affects the function EventPluginsManager::enabledPlugins of the file components/calendar/eventpluginsmanager.cpp of the component Theme File Handler. The manipulation of the argument pluginId leads to path traversal. It is possible to initiate the attack remotely. The complexity of an attack is rather high. The exploitability is told to be difficult. The patch is named 6cdf42916369ebf4ad5bd876c4dfa0170d7b2f01. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-253407. NOTE: This requires write access to user's home or the installation of third party global themes.",
+    "published": "2024-02-11T23:15:07.850"
   }
 }
