@@ -28,5 +28,41 @@
     "cvss": 3.1,
     "description": "A vulnerability, which was classified as problematic, was found in KDE Plasma Workspace up to 5.93.0. This affects the function EventPluginsManager::enabledPlugins of the file components/calendar/eventpluginsmanager.cpp of the component Theme File Handler. The manipulation of the argument pluginId leads to path traversal. It is possible to initiate the attack remotely. The complexity of an attack is rather high. The exploitability is told to be difficult. The patch is named 6cdf42916369ebf4ad5bd876c4dfa0170d7b2f01. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-253407. NOTE: This requires write access to user's home or the installation of third party global themes.",
     "published": "2024-02-11T23:15:07.850"
+  },
+  "CVE-2024-0164": {
+    "cvss": 7.8,
+    "description": "\nDell Unity, versions prior to 5.4, contain an OS Command Injection Vulnerability in its svc_topstats utility. An authenticated attacker could potentially exploit this vulnerability, leading to the execution of arbitrary commands with elevated privileges.\n\n",
+    "published": "2024-02-12T19:15:09.473",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-0165": {
+    "cvss": 7.8,
+    "description": "\nDell Unity, versions prior to 5.4, contains an OS Command Injection Vulnerability in its svc_acldb_dump utility. An authenticated attacker could potentially exploit this vulnerability, leading to execution of arbitrary operating system commands with root privileges.\n\n",
+    "published": "2024-02-12T19:15:09.700",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-0166": {
+    "cvss": 7.8,
+    "description": "\nDell Unity, versions prior to 5.4, contains an OS Command Injection Vulnerability in its svc_tcpdump utility. An authenticated attacker could potentially exploit this vulnerability, leading to the execution of arbitrary OS commands with elevated privileges.\n\n",
+    "published": "2024-02-12T19:15:09.960",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-22222": {
+    "cvss": 7.8,
+    "description": "\nDell Unity, versions prior to 5.4, contains an OS Command Injection Vulnerability within its svc_udoctor utility. An authenticated malicious user with local access could potentially exploit this vulnerability, leading to the execution of arbitrary OS commands on the application's underlying OS, with the privileges of the vulnerable application.\n\n",
+    "published": "2024-02-12T19:15:11.283",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-22223": {
+    "cvss": 7.8,
+    "description": "\nDell Unity, versions prior to 5.4, contains an OS Command Injection Vulnerability within its svc_cbr utility. An authenticated malicious user with local access could potentially exploit this vulnerability, leading to the execution of arbitrary OS commands on the application's underlying OS, with the privileges of the vulnerable application.\n\n",
+    "published": "2024-02-12T19:15:11.497",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-22225": {
+    "cvss": 7.8,
+    "description": "\nDell Unity, versions prior to 5.4, contains an OS Command Injection Vulnerability in its svc_supportassist utility. An authenticated attacker could potentially exploit this vulnerability, leading to execution of arbitrary operating system commands with root privileges.\n\n",
+    "published": "2024-02-12T19:15:11.927",
+    "keywords": "execution,command"
   }
 }
