@@ -1,10 +1,4 @@
 {
-  "CVE-2024-23324": {
-    "cvss": 8.6,
-    "description": "Envoy is a high-performance edge/middle/service proxy. External authentication can be bypassed by downstream connections. Downstream clients can force invalid gRPC requests to be sent to ext_authz, circumventing ext_authz checks when failure_mode_allow is set to true. This issue has been addressed in released 1.29.1, 1.28.1, 1.27.3, and 1.26.7. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n",
-    "published": "2024-02-09T23:15:09.223",
-    "keywords": "authentication,bypass"
-  },
   "CVE-2024-23724": {
     "url": "https://github.com/tryghost/ghost/pull/19646",
     "cvss": "-",
@@ -76,5 +70,11 @@
     "description": "OpenRefine is a free, open source power tool for working with messy data and improving it. A jdbc attack vulnerability exists in OpenRefine(version<=3.7.7) where an attacker may construct a JDBC query which may read files on the host filesystem. Due to the newer MySQL driver library in the latest version of OpenRefine (8.0.30), there is no associated deserialization utilization point, so original code execution cannot be achieved, but attackers can use this vulnerability to read sensitive files on the target server. This issue has been addressed in version 3.7.8. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
     "published": "2024-02-12T21:15:08.760",
     "keywords": "execution,sensitive"
+  },
+  "CVE-2024-1454": {
+    "url": "https://github.com/opensc/opensc/commit/5835f0d4f6c033bd58806d33fa546908d39825c9",
+    "cvss": 3.4,
+    "description": "The use-after-free vulnerability was found in the AuthentIC driver in OpenSC packages, occuring in the card enrolment process using pkcs15-init when a user or administrator enrols or modifies cards. An attacker must have physical access to the computer system and requires a crafted USB device or smart card to present the system with specially crafted responses to the APDUs, which are considered high complexity and low severity. This manipulation can allow for compromised card management operations during enrolment.",
+    "published": "2024-02-12T23:15:08.410"
   }
 }
