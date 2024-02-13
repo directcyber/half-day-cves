@@ -82,5 +82,23 @@
     "cvss": "-",
     "description": "SteVe v3.6.0 was discovered to use predictable transaction ID's when receiving a StartTransaction request. This vulnerability can allow attackers to cause a Denial of Service (DoS) by using the predicted transaction ID's to terminate other transactions.",
     "published": "2024-02-13T01:15:08.470"
+  },
+  "CVE-2024-22131": {
+    "cvss": 9.1,
+    "description": "In SAP ABA (Application Basis) - versions 700, 701, 702, 731, 740, 750, 751, 752, 75C, 75I, an attacker authenticated as a user with a remote execution authorization can use a vulnerable interface. This allows the attacker to use the interface to\u00a0invoke\u00a0an application function to perform actions which they would not normally be permitted to perform. \u00a0Depending on the function executed, the attack can read or modify any user/business data and can make the entire system unavailable.\n\n",
+    "published": "2024-02-13T03:15:08.363",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-24743": {
+    "cvss": 8.6,
+    "description": "SAP NetWeaver AS Java (CAF - Guided Procedures) - version 7.50, allows an unauthenticated attacker to submit a malicious request with a crafted XML file over the network, which when parsed will enable him to access sensitive files and data but not modify them. There are expansion limits in place so that availability is not affected.\n\n",
+    "published": "2024-02-13T03:15:09.393",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-25642": {
+    "cvss": 7.4,
+    "description": "Due to improper validation of certificate in SAP Cloud Connector - version 2.0, attacker can impersonate the genuine servers to interact with SCC breaking the mutual authentication. Hence, the attacker can intercept the request to view/modify sensitive information. There is no impact on the availability of the system.\n\n",
+    "published": "2024-02-13T03:15:09.613",
+    "keywords": "authentication,sensitive"
   }
 }
