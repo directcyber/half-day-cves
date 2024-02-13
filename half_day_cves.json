@@ -118,5 +118,29 @@
     "description": "\nDell PowerProtect Data Manager, version 19.15 and prior versions, contain a weak password recovery mechanism for forgotten passwords. A remote unauthenticated attacker could potentially exploit this vulnerability, leading to unauthorized access to the application with privileges of the compromised account. The attacker could retrieve the reset password token without authorization and then perform the password change\n\n",
     "published": "2024-02-13T08:16:35.993",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-23810": {
+    "cvss": 8.8,
+    "description": "A vulnerability has been identified in SINEC NMS (All versions < V2.0 SP1). The affected application is vulnerable to SQL injection. This could allow an unauthenticated remote attacker to execute arbitrary SQL queries on the server database.",
+    "published": "2024-02-13T09:15:49.573",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-23811": {
+    "cvss": 8.8,
+    "description": "A vulnerability has been identified in SINEC NMS (All versions < V2.0 SP1). The affected application allows users to upload arbitrary files via TFTP. This could allow an attacker to upload malicious firmware images or other files, that could potentially lead to remote code execution.",
+    "published": "2024-02-13T09:15:49.760",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-23813": {
+    "cvss": 7.3,
+    "description": "A vulnerability has been identified in Polarion ALM (All versions). The REST API endpoints of doorsconnector of the affected product lacks proper authentication. An unauthenticated attacker could access the endpoints, and potentially execute code.",
+    "published": "2024-02-13T09:15:50.140",
+    "keywords": "unauthenticated,authentication"
+  },
+  "CVE-2024-23816": {
+    "cvss": 9.8,
+    "description": "A vulnerability has been identified in Location Intelligence Perpetual Large (9DE5110-8CA13-1AX0) (All versions < V4.3), Location Intelligence Perpetual Medium (9DE5110-8CA12-1AX0) (All versions < V4.3), Location Intelligence Perpetual Non-Prod (9DE5110-8CA10-1AX0) (All versions < V4.3), Location Intelligence Perpetual Small (9DE5110-8CA11-1AX0) (All versions < V4.3), Location Intelligence SUS Large (9DE5110-8CA13-1BX0) (All versions < V4.3), Location Intelligence SUS Medium (9DE5110-8CA12-1BX0) (All versions < V4.3), Location Intelligence SUS Non-Prod (9DE5110-8CA10-1BX0) (All versions < V4.3), Location Intelligence SUS Small (9DE5110-8CA11-1BX0) (All versions < V4.3). Affected products use a hard-coded secret value for the computation of a Keyed-Hash Message Authentication Code. This could allow an unauthenticated remote attacker to gain full administrative access to the application.",
+    "published": "2024-02-13T09:15:50.343",
+    "keywords": "remote,unauthenticated,authentication"
   }
 }
