@@ -76,5 +76,11 @@
     "cvss": 3.4,
     "description": "The use-after-free vulnerability was found in the AuthentIC driver in OpenSC packages, occuring in the card enrolment process using pkcs15-init when a user or administrator enrols or modifies cards. An attacker must have physical access to the computer system and requires a crafted USB device or smart card to present the system with specially crafted responses to the APDUs, which are considered high complexity and low severity. This manipulation can allow for compromised card management operations during enrolment.",
     "published": "2024-02-12T23:15:08.410"
+  },
+  "CVE-2024-25407": {
+    "url": "https://github.com/steve-community/steve/issues/1296",
+    "cvss": "-",
+    "description": "SteVe v3.6.0 was discovered to use predictable transaction ID's when receiving a StartTransaction request. This vulnerability can allow attackers to cause a Denial of Service (DoS) by using the predicted transaction ID's to terminate other transactions.",
+    "published": "2024-02-13T01:15:08.470"
   }
 }
