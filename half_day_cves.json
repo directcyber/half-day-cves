@@ -106,5 +106,17 @@
     "description": "Versions of the package svix before 1.17.0 are vulnerable to Authentication Bypass due to an issue in the verify function where signatures of different lengths are incorrectly compared. An attacker can bypass signature verification by providing a shorter signature that matches the beginning of the actual signature.\r\r**Note:**\r\rThe attacker would need to know a victim uses the Rust library for verification,no easy way to automatically check that; and uses webhooks by a service that uses Svix, and then figure out a way to craft a malicious payload that will actually include all of the correct identifiers needed to trick the receivers to cause actual issues.",
     "published": "2024-02-13T05:15:08.873",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-22445": {
+    "cvss": 7.2,
+    "description": "\nDell PowerProtect Data Manager, version 19.15 and prior versions, contain an OS command injection vulnerability. A remote high privileged attacker could potentially exploit this vulnerability, leading to the execution of arbitrary OS commands on the application's underlying OS, with the privileges of the vulnerable application. Exploitation may lead to a system take over by an attacker.\n\n",
+    "published": "2024-02-13T08:16:35.723",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2024-22454": {
+    "cvss": 8.8,
+    "description": "\nDell PowerProtect Data Manager, version 19.15 and prior versions, contain a weak password recovery mechanism for forgotten passwords. A remote unauthenticated attacker could potentially exploit this vulnerability, leading to unauthorized access to the application with privileges of the compromised account. The attacker could retrieve the reset password token without authorization and then perform the password change\n\n",
+    "published": "2024-02-13T08:16:35.993",
+    "keywords": "remote,unauthenticated"
   }
 }
