@@ -192,7 +192,7 @@
     "keywords": "remote,execution"
   },
   "CVE-2024-21357": {
-    "cvss": 7.5,
+    "cvss": 8.1,
     "description": "Windows Pragmatic General Multicast (PGM) Remote Code Execution Vulnerability",
     "published": "2024-02-13T18:15:52.373",
     "keywords": "remote,execution"
@@ -358,5 +358,11 @@
     "description": "\nWhen LDAP remote authentication is configured on F5OS, a remote user without an assigned role will be incorrectly authorized.\u00a0 Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
     "published": "2024-02-14T17:15:15.213",
     "keywords": "remote,authentication"
+  },
+  "CVE-2024-25301": {
+    "cvss": "-",
+    "description": "Redaxo v5.15.1 was discovered to contain a remote code execution (RCE) vulnerability via the component /pages/templates.php.",
+    "published": "2024-02-14T19:15:10.277",
+    "keywords": "remote,execution"
   }
 }
