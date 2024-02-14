@@ -1,10 +1,4 @@
 {
-  "CVE-2024-25728": {
-    "cvss": "-",
-    "description": "ExpressVPN before 12.73.0 on Windows, when split tunneling is used, sends DNS requests according to the Windows configuration (e.g., sends them to DNS servers operated by the user's ISP instead of to the ExpressVPN DNS servers), which may allow remote attackers to obtain sensitive information about websites visited by VPN users.",
-    "published": "2024-02-11T22:15:08.360",
-    "keywords": "remote,sensitive,vpn"
-  },
   "CVE-2024-1433": {
     "url": "https://github.com/kde/plasma-workspace/commit/6cdf42916369ebf4ad5bd876c4dfa0170d7b2f01",
     "cvss": 3.1,
@@ -370,5 +364,11 @@
     "cvss": "-",
     "description": "A global-buffer-overflow vulnerability was found in SWFTools v0.9.2, in the function LineText at lib/swf5compiler.flex.",
     "published": "2024-02-14T20:15:46.057"
+  },
+  "CVE-2024-1367": {
+    "cvss": 7.2,
+    "description": "\nA command injection vulnerability exists where an authenticated, remote attacker with administrator privileges on the Security Center application could modify Logging parameters, which could lead to the execution of arbitrary code on the Security Center host. \n\n",
+    "published": "2024-02-14T22:15:47.753",
+    "keywords": "remote,execution,command"
   }
 }
