@@ -454,5 +454,11 @@
     "description": "Acrobat Reader versions 20.005.30539, 23.008.20470 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
     "published": "2024-02-15T13:15:49.237",
     "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-20720": {
+    "cvss": 9.1,
+    "description": "Adobe Commerce versions 2.4.6-p3, 2.4.5-p5, 2.4.4-p6 and earlier are affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could lead in arbitrary code execution by an attacker. Exploitation of this issue does not require user interaction.",
+    "published": "2024-02-15T14:15:46.283",
+    "keywords": "execution,command"
   }
 }
