@@ -1,40 +1,4 @@
 {
-  "CVE-2024-0164": {
-    "cvss": 7.8,
-    "description": "\nDell Unity, versions prior to 5.4, contain an OS Command Injection Vulnerability in its svc_topstats utility. An authenticated attacker could potentially exploit this vulnerability, leading to the execution of arbitrary commands with elevated privileges.\n\n",
-    "published": "2024-02-12T19:15:09.473",
-    "keywords": "execution,command"
-  },
-  "CVE-2024-0165": {
-    "cvss": 7.8,
-    "description": "\nDell Unity, versions prior to 5.4, contains an OS Command Injection Vulnerability in its svc_acldb_dump utility. An authenticated attacker could potentially exploit this vulnerability, leading to execution of arbitrary operating system commands with root privileges.\n\n",
-    "published": "2024-02-12T19:15:09.700",
-    "keywords": "execution,command"
-  },
-  "CVE-2024-0166": {
-    "cvss": 7.8,
-    "description": "\nDell Unity, versions prior to 5.4, contains an OS Command Injection Vulnerability in its svc_tcpdump utility. An authenticated attacker could potentially exploit this vulnerability, leading to the execution of arbitrary OS commands with elevated privileges.\n\n",
-    "published": "2024-02-12T19:15:09.960",
-    "keywords": "execution,command"
-  },
-  "CVE-2024-22222": {
-    "cvss": 7.8,
-    "description": "\nDell Unity, versions prior to 5.4, contains an OS Command Injection Vulnerability within its svc_udoctor utility. An authenticated malicious user with local access could potentially exploit this vulnerability, leading to the execution of arbitrary OS commands on the application's underlying OS, with the privileges of the vulnerable application.\n\n",
-    "published": "2024-02-12T19:15:11.283",
-    "keywords": "execution,command"
-  },
-  "CVE-2024-22223": {
-    "cvss": 7.8,
-    "description": "\nDell Unity, versions prior to 5.4, contains an OS Command Injection Vulnerability within its svc_cbr utility. An authenticated malicious user with local access could potentially exploit this vulnerability, leading to the execution of arbitrary OS commands on the application's underlying OS, with the privileges of the vulnerable application.\n\n",
-    "published": "2024-02-12T19:15:11.497",
-    "keywords": "execution,command"
-  },
-  "CVE-2024-22225": {
-    "cvss": 7.8,
-    "description": "\nDell Unity, versions prior to 5.4, contains an OS Command Injection Vulnerability in its svc_supportassist utility. An authenticated attacker could potentially exploit this vulnerability, leading to execution of arbitrary operating system commands with root privileges.\n\n",
-    "published": "2024-02-12T19:15:11.927",
-    "keywords": "execution,command"
-  },
   "CVE-2024-25110": {
     "cvss": 9.8,
     "description": "The UAMQP is a general purpose C library for AMQP 1.0. During a call to open_get_offered_capabilities, a memory allocation may fail causing a use-after-free issue and if a client called it during connection communication it may cause a remote code execution. Users are advised to update the submodule with commit `30865c9c`. There are no known workarounds for this vulnerability.",
