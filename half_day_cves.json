@@ -1,10 +1,4 @@
 {
-  "CVE-2024-23833": {
-    "cvss": 7.5,
-    "description": "OpenRefine is a free, open source power tool for working with messy data and improving it. A jdbc attack vulnerability exists in OpenRefine(version<=3.7.7) where an attacker may construct a JDBC query which may read files on the host filesystem. Due to the newer MySQL driver library in the latest version of OpenRefine (8.0.30), there is no associated deserialization utilization point, so original code execution cannot be achieved, but attackers can use this vulnerability to read sensitive files on the target server. This issue has been addressed in version 3.7.8. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
-    "published": "2024-02-12T21:15:08.760",
-    "keywords": "execution,sensitive"
-  },
   "CVE-2024-1454": {
     "url": "https://github.com/opensc/opensc/commit/5835f0d4f6c033bd58806d33fa546908d39825c9",
     "cvss": 3.4,
@@ -418,5 +412,29 @@
     "description": "Adobe Commerce versions 2.4.6-p3, 2.4.5-p5, 2.4.4-p6 and earlier are affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could lead in arbitrary code execution by an attacker. Exploitation of this issue does not require user interaction.",
     "published": "2024-02-15T14:15:46.283",
     "keywords": "execution,command"
+  },
+  "CVE-2024-23476": {
+    "cvss": 9.6,
+    "description": "The SolarWinds Access Rights Manager (ARM) was found to be susceptible to a Directory Traversal Remote Code Execution Vulnerability. If exploited, this vulnerability allows an unauthenticated user to achieve the Remote Code Execution.\n",
+    "published": "2024-02-15T21:15:09.353",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-23477": {
+    "cvss": 7.9,
+    "description": "The SolarWinds Access Rights Manager (ARM) was found to be susceptible to a Directory Traversal Remote Code Execution Vulnerability. If exploited, this vulnerability allows an unauthenticated user to achieve a Remote Code Execution.\n",
+    "published": "2024-02-15T21:15:09.603",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-23478": {
+    "cvss": 8.0,
+    "description": "SolarWinds Access Rights Manager (ARM) was found to be susceptible to a Remote Code Execution Vulnerability. If exploited, this vulnerability allows an authenticated user to abuse a SolarWinds service, resulting in remote code execution.\n",
+    "published": "2024-02-15T21:15:09.867",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-23479": {
+    "cvss": 9.6,
+    "description": "SolarWinds Access Rights Manager (ARM) was found to be susceptible to a Directory Traversal Remote Code Execution Vulnerability. If exploited, this vulnerability allows an unauthenticated user to achieve a Remote Code Execution.\n",
+    "published": "2024-02-15T21:15:10.213",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
