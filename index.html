@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-02-15T20:07:34.767550
+Updated at UTC 2024-02-15T21:07:40.867217
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -234,8 +234,6 @@ Updated at UTC 2024-02-15T20:07:34.767550
 
 
 				</tr>
-			
-		
 			
 		
 			
@@ -924,16 +922,6 @@ Dell PowerProtect Data Manager, version 19.15 and prior versions, contain an OS 
 					<td>execution,sensitive</td>
 					<td class=date>2024-02-12T21:15:08.760</td>
 					<td class=description>OpenRefine is a free, open source power tool for working with messy data and improving it. A jdbc attack vulnerability exists in OpenRefine(version<=3.7.7) where an attacker may construct a JDBC query which may read files on the host filesystem. Due to the newer MySQL driver library in the latest version of OpenRefine (8.0.30), there is no associated deserialization utilization point, so original code execution cannot be achieved, but attackers can use this vulnerability to read sensitive files on the target server. This issue has been addressed in version 3.7.8. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-25110">CVE-2024-25110</a></td>
-					<td>9.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-02-12T20:15:08.803</td>
-					<td class=description>The UAMQP is a general purpose C library for AMQP 1.0. During a call to open_get_offered_capabilities, a memory allocation may fail causing a use-after-free issue and if a client called it during connection communication it may cause a remote code execution. Users are advised to update the submodule with commit `30865c9c`. There are no known workarounds for this vulnerability.</td>
 				</tr>
 			
 		

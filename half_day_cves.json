@@ -1,10 +1,4 @@
 {
-  "CVE-2024-25110": {
-    "cvss": 9.8,
-    "description": "The UAMQP is a general purpose C library for AMQP 1.0. During a call to open_get_offered_capabilities, a memory allocation may fail causing a use-after-free issue and if a client called it during connection communication it may cause a remote code execution. Users are advised to update the submodule with commit `30865c9c`. There are no known workarounds for this vulnerability.",
-    "published": "2024-02-12T20:15:08.803",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-23833": {
     "cvss": 7.5,
     "description": "OpenRefine is a free, open source power tool for working with messy data and improving it. A jdbc attack vulnerability exists in OpenRefine(version<=3.7.7) where an attacker may construct a JDBC query which may read files on the host filesystem. Due to the newer MySQL driver library in the latest version of OpenRefine (8.0.30), there is no associated deserialization utilization point, so original code execution cannot be achieved, but attackers can use this vulnerability to read sensitive files on the target server. This issue has been addressed in version 3.7.8. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
