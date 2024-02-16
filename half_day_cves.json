@@ -1,10 +1,4 @@
 {
-  "CVE-2024-1454": {
-    "url": "https://github.com/opensc/opensc/commit/5835f0d4f6c033bd58806d33fa546908d39825c9",
-    "cvss": 3.4,
-    "description": "The use-after-free vulnerability was found in the AuthentIC driver in OpenSC packages, occuring in the card enrolment process using pkcs15-init when a user or administrator enrols or modifies cards. An attacker must have physical access to the computer system and requires a crafted USB device or smart card to present the system with specially crafted responses to the APDUs, which are considered high complexity and low severity. This manipulation can allow for compromised card management operations during enrolment.",
-    "published": "2024-02-12T23:15:08.410"
-  },
   "CVE-2024-25407": {
     "url": "https://github.com/steve-community/steve/issues/1296",
     "cvss": "-",
@@ -436,5 +430,11 @@
     "description": "SolarWinds Access Rights Manager (ARM) was found to be susceptible to a Directory Traversal Remote Code Execution Vulnerability. If exploited, this vulnerability allows an unauthenticated user to achieve a Remote Code Execution.\n",
     "published": "2024-02-15T21:15:10.213",
     "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-23674": {
+    "cvss": "-",
+    "description": "The Online-Ausweis-Funktion eID scheme in the German National Identity card through 2024-02-15 allows authentication bypass by spoofing. A man-in-the-middle attacker can assume a victim's identify for access to government, medical, and financial resources, and can also extract personal data from the card, aka the \"sPACE (Spoofing Password Authenticated Connection Establishment)\" issue. This occurs because of a combination of factors, such as insecure PIN entry (for basic readers) and eid:// deeplinking. The victim must be using a modified eID kernel, which may occur if the victim is tricked into installing a fake version of an official app. NOTE: the BSI position is \"ensuring a secure operational environment at the client side is an obligation of the ID card owner.\"",
+    "published": "2024-02-15T23:15:08.827",
+    "keywords": "authentication,bypass"
   }
 }
