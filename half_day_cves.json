@@ -406,5 +406,17 @@
     "description": "An issue in idocv v.14.1.3_20231228 allows a remote attacker to execute arbitrary code and obtain sensitive information via a crafted script.",
     "published": "2024-02-16T09:15:08.603",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-22425": {
+    "cvss": 6.5,
+    "description": "\nDell RecoverPoint for Virtual Machines 5.3.x contains a brute force/dictionary attack vulnerability. An unauthenticated remote attacker could potentially exploit this vulnerability, leading to launch a brute force attack or a dictionary attack against the RecoverPoint login form. This allows attackers to brute-force the password of valid users in an automated manner.\n\n",
+    "published": "2024-02-16T12:15:07.757",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-22426": {
+    "cvss": 7.2,
+    "description": "\nDell RecoverPoint for Virtual Machines 5.3.x contains an OS Command injection vulnerability. An unauthenticated remote\nattacker could potentially exploit this vulnerability, leading to execute arbitrary operating system commands, which will get executed in the context of the root user, resulting in a complete system compromise.\n\n",
+    "published": "2024-02-16T12:15:08.537",
+    "keywords": "remote,unauthenticated,command"
   }
 }
