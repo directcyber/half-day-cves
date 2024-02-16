@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-02-16T03:10:57.275231
+Updated at UTC 2024-02-16T04:09:56.914151
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -148,12 +148,6 @@ Updated at UTC 2024-02-16T03:10:57.275231
 
 
 				</tr>
-			
-		
-			
-		
-			
-		
 			
 		
 			
@@ -970,42 +964,6 @@ Dell PowerProtect Data Manager, version 19.15 and prior versions, contain an OS 
 					<td>authentication,bypass</td>
 					<td class=date>2024-02-13T05:15:08.873</td>
 					<td class=description>Versions of the package svix before 1.17.0 are vulnerable to Authentication Bypass due to an issue in the verify function where signatures of different lengths are incorrectly compared. An attacker can bypass signature verification by providing a shorter signature that matches the beginning of the actual signature.**Note:**The attacker would need to know a victim uses the Rust library for verification,no easy way to automatically check that; and uses webhooks by a service that uses Svix, and then figure out a way to craft a malicious payload that will actually include all of the correct identifiers needed to trick the receivers to cause actual issues.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-25642">CVE-2024-25642</a></td>
-					<td>7.4</td>
-					<td>authentication,sensitive</td>
-					<td class=date>2024-02-13T03:15:09.613</td>
-					<td class=description>Due to improper validation of certificate in SAP Cloud Connector - version 2.0, attacker can impersonate the genuine servers to interact with SCC breaking the mutual authentication. Hence, the attacker can intercept the request to view/modify sensitive information. There is no impact on the availability of the system.
-
-</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-24743">CVE-2024-24743</a></td>
-					<td>8.6</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2024-02-13T03:15:09.393</td>
-					<td class=description>SAP NetWeaver AS Java (CAF - Guided Procedures) - version 7.50, allows an unauthenticated attacker to submit a malicious request with a crafted XML file over the network, which when parsed will enable him to access sensitive files and data but not modify them. There are expansion limits in place so that availability is not affected.
-
-</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-22131">CVE-2024-22131</a></td>
-					<td>9.1</td>
-					<td>remote,execution</td>
-					<td class=date>2024-02-13T03:15:08.363</td>
-					<td class=description>In SAP ABA (Application Basis) - versions 700, 701, 702, 731, 740, 750, 751, 752, 75C, 75I, an attacker authenticated as a user with a remote execution authorization can use a vulnerable interface. This allows the attacker to use the interface to invoke an application function to perform actions which they would not normally be permitted to perform.  Depending on the function executed, the attack can read or modify any user/business data and can make the entire system unavailable.
-
-</td>
 				</tr>
 			
 		
