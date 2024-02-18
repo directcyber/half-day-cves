@@ -1,22 +1,4 @@
 {
-  "CVE-2024-26260": {
-    "cvss": 9.8,
-    "description": "The functionality for synchronization in HGiga OAKlouds' certain moudules has an OS Command Injection vulnerability, allowing remote attackers to inject system commands within specific request parameters. This enables the execution of arbitrary code on the remote server without permission.",
-    "published": "2024-02-15T03:15:34.833",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-26262": {
-    "cvss": 8.8,
-    "description": "EBM Technologies Uniweb/SoliPACS WebServer's query functionality lacks proper restrictions of user input, allowing remote attackers authenticated as regular user to inject SQL commands for reading, modifying, and deleting database records, as well as executing system commands. Attackers may even leverage the dbo privilege in the database for privilege escalation, elevating their privileges to administrator .",
-    "published": "2024-02-15T03:15:35.313",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-26264": {
-    "cvss": 9.8,
-    "description": "EBM Technologies RISWEB's specific query function parameter does not properly restrict user input, and this feature page is accessible without login. This allows remote attackers to inject SQL commands without authentication, enabling them to read, modify, and delete database records.",
-    "published": "2024-02-15T03:15:35.840",
-    "keywords": "remote,authentication,command"
-  },
   "CVE-2024-0708": {
     "cvss": 5.3,
     "description": "The Landing Page Cat \u2013 Coming Soon Page, Maintenance Page & Squeeze Pages plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.7.2. This makes it possible for unauthenticated attackers to access landing pages that may not be public.",
