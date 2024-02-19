@@ -1,10 +1,4 @@
 {
-  "CVE-2024-0017": {
-    "cvss": "-",
-    "description": "In shouldUseNoOpLocation of CameraActivity.java, there is a possible confused deputy due to a permissions bypass. This could lead to local information disclosure with no additional execution privileges needed. User interaction is needed for exploitation.",
-    "published": "2024-02-16T20:15:47.513",
-    "keywords": "execution,bypass"
-  },
   "CVE-2024-21492": {
     "url": "https://github.com/greenpau/caddy-security/issues/272",
     "cvss": 4.8,
@@ -70,5 +64,11 @@
     "description": "The MasterStudy LMS WordPress Plugin \u2013 for Online Courses and Education plugin for WordPress is vulnerable to union based SQL Injection via the 'user' parameter of the /lms/stm-lms/order/items REST route in all versions up to, and including, 3.2.5 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
     "published": "2024-02-17T08:15:08.093",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-25626": {
+    "cvss": 8.8,
+    "description": "Yocto Project is an open source collaboration project that helps developers create custom Linux-based systems regardless of the hardware architecture. In Yocto Projects Bitbake before 2.6.2 (before and included Yocto Project 4.3.1), with the Toaster server (included in bitbake) running, missing input validation allows an attacker to perform a remote code execution in the server's shell via a crafted HTTP request. Authentication is not necessary. Toaster server execution has to be specifically run and is not the default for Bitbake command line builds, it is only used for the Toaster web based user interface to Bitbake. The fix has been backported to the bitbake included with Yocto Project 5.0, 3.1.31, 4.0.16, and 4.3.2.",
+    "published": "2024-02-19T20:15:45.513",
+    "keywords": "remote,execution,authentication,command"
   }
 }
