@@ -95,10 +95,82 @@
     "published": "2024-02-21T16:15:50.420",
     "keywords": "authentication,bypass"
   },
-  "CVE-2024-27215": {
+  "CVE-2024-25117": {
+    "cvss": 6.8,
+    "description": "php-svg-lib is a scalable vector graphics (SVG) file parsing/rendering library. Prior to version 0.5.2, php-svg-lib fails to validate that font-family doesn't contain a PHAR url, which might leads to RCE on PHP < 8.0, and doesn't validate if external references are allowed. This might leads to bypass of restrictions or RCE on projects that are using it, if they do not strictly revalidate the fontName that is passed by php-svg-lib. The `Style::fromAttributes(`), or the `Style::parseCssStyle()` should check the content of the `font-family` and prevents it to use a PHAR url, to avoid passing an invalid and dangerous `fontName` value to other libraries. The same check as done in the `Style::fromStyleSheets` might be reused. Libraries using this library as a dependency might be vulnerable to some bypass of restrictions, or even remote code execution, if they do not double check the value of the `fontName` that is passed by php-svg-lib. Version 0.5.2 contains a fix for this issue.",
+    "published": "2024-02-21T17:15:09.617",
+    "keywords": "remote,execution,bypass"
+  },
+  "CVE-2024-25288": {
+    "url": "https://github.com/slims/slims9_bulian/issues/229",
+    "cvss": "-",
+    "description": "SLIMS (Senayan Library Management Systems) 9 Bulian v9.6.1 is vulnerable to SQL Injection via pop-scope-vocabolary.php.",
+    "published": "2024-02-21T17:15:09.817"
+  },
+  "CVE-2024-26133": {
+    "url": "https://github.com/eventstore/eventstore/commit/6d4edee18c7fe886abffe58fa1f97d72681b24bf",
+    "cvss": 5.5,
+    "description": "EventStoreDB (ESDB) is an operational database built to store events. A vulnerability has been identified in the projections subsystem in versions 20 prior to 20.10.6, 21 prior to 21.10.11, 22 prior to 22.10.5, and 23 prior to 23.10.1. Only database instances that use custom projections are affected by this vulnerability. User passwords may become accessible to those who have access to the chunk files on disk, and users who have read access to system streams. Only users in the `$admins` group can access system streams by default. ESDB 23.10.1, 22.10.5, 21.10.11, and 20.10.6 contain a patch for this issue. Users should upgrade EventStoreDB, reset the passwords for current and previous members of `$admins` and `$ops` groups, and, if a password was reused in any other system, reset it in those systems to a unique password to follow best practices. If an upgrade cannot be done immediately, reset the passwords for current and previous members of `$admins` and `$ops` groups. Avoid creating custom projections until the patch has been applied.",
+    "published": "2024-02-21T17:15:10.060"
+  },
+  "CVE-2024-1212": {
     "cvss": 10.0,
-    "description": "ConnectWise ScreenConnnect before 23.9.8 allows authentication bypass via an alternate path or channel.",
-    "published": "2024-02-21T16:15:50.657",
-    "keywords": "authentication,bypass"
+    "description": "Unauthenticated remote attackers can access the system through the LoadMaster management interface, enabling arbitrary system command execution.\n\n\n",
+    "published": "2024-02-21T18:15:50.417",
+    "keywords": "remote,execution,unauthenticated,command"
+  },
+  "CVE-2024-25891": {
+    "url": "https://github.com/churchcrm/crm/issues/6856",
+    "cvss": "-",
+    "description": "ChurchCRM 5.5.0 FRBidSheets.php is vulnerable to Blind SQL Injection (Time-based) via the CurrentFundraiser GET parameter.",
+    "published": "2024-02-21T18:15:51.493"
+  },
+  "CVE-2024-25892": {
+    "url": "https://github.com/churchcrm/crm/issues/6858",
+    "cvss": "-",
+    "description": "ChurchCRM 5.5.0 ConfirmReport.php is vulnerable to Blind SQL Injection (Time-based) via the familyId GET parameter.",
+    "published": "2024-02-21T18:15:51.540"
+  },
+  "CVE-2024-25893": {
+    "url": "https://github.com/churchcrm/crm/issues/6856",
+    "cvss": "-",
+    "description": "ChurchCRM 5.5.0 FRCertificates.php is vulnerable to Blind SQL Injection (Time-based) via the CurrentFundraiser GET parameter.",
+    "published": "2024-02-21T18:15:51.580"
+  },
+  "CVE-2024-25894": {
+    "url": "https://github.com/churchcrm/crm/issues/6849",
+    "cvss": "-",
+    "description": "ChurchCRM 5.5.0 /EventEditor.php is vulnerable to Blind SQL Injection (Time-based) via the EventCount POST parameter.",
+    "published": "2024-02-21T18:15:51.623"
+  },
+  "CVE-2024-25895": {
+    "url": "https://github.com/churchcrm/crm/issues/6853",
+    "cvss": "-",
+    "description": "A reflected cross-site scripting (XSS) vulnerability in ChurchCRM 5.5.0 allows remote attackers to inject arbitrary web script or HTML via the type parameter of /EventAttendance.php",
+    "published": "2024-02-21T18:15:51.680"
+  },
+  "CVE-2024-25896": {
+    "url": "https://github.com/churchcrm/crm/issues/6854",
+    "cvss": "-",
+    "description": "ChurchCRM 5.5.0 EventEditor.php is vulnerable to Blind SQL Injection (Time-based) via the EID POST parameter.",
+    "published": "2024-02-21T18:15:51.727"
+  },
+  "CVE-2024-25897": {
+    "url": "https://github.com/churchcrm/crm/issues/6856",
+    "cvss": "-",
+    "description": "ChurchCRM 5.5.0 FRCatalog.php is vulnerable to Blind SQL Injection (Time-based) via the CurrentFundraiser GET parameter.",
+    "published": "2024-02-21T18:15:51.777"
+  },
+  "CVE-2024-25898": {
+    "url": "https://github.com/churchcrm/crm/issues/6851",
+    "cvss": "-",
+    "description": "A XSS vulnerability was found in the ChurchCRM v.5.5.0 functionality, edit your event, where malicious JS or HTML code can be inserted in the Event Sermon field in EventEditor.php.",
+    "published": "2024-02-21T18:15:51.820"
+  },
+  "CVE-2024-26145": {
+    "url": "https://github.com/discourse/discourse-calendar/commit/dfc4fa15f340189f177a1d1ab2cc94ffed3c1190",
+    "cvss": 6.5,
+    "description": "Discourse Calendar adds the ability to create a dynamic calendar in the first post of a topic on Discourse. Uninvited users are able to gain access to private events by crafting a request to update their attendance. This problem is resolved in commit dfc4fa15f340189f177a1d1ab2cc94ffed3c1190. As a workaround, one may use post visibility to limit access.",
+    "published": "2024-02-21T18:15:51.870"
   }
 }
