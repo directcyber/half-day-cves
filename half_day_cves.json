@@ -202,5 +202,17 @@
     "cvss": 4.3,
     "description": "Discourse Calendar adds the ability to create a dynamic calendar in the first post of a topic on the open-source discussion platform Discourse. Prior to version 0.4, event invitees created in topics in private categories or PMs (private messages) can be retrieved by anyone, even if they're not logged in. This problem is resolved in version 0.4 of the discourse-calendar plugin. While no known workaround is available, putting the site behind `login_required` will disallow this endpoint to be used by anonymous users, but logged in users can still get the list of invitees in the private topics.",
     "published": "2024-02-22T18:15:48.587"
+  },
+  "CVE-2024-25130": {
+    "url": "https://github.com/enalean/tuleap/commit/57978a32508f5c6d0365419b6eaeb368aee20667",
+    "cvss": 5.4,
+    "description": "Tuleap is an open source suite to improve management of software developments and collaboration. Prior to version 15.5.99.76 of Tuleap Community Edition and prior to versions 15.5-4 and 15.4-7 of Tuleap Enterprise Edition, users with a read access to a tracker where the mass update feature is used might get access to restricted information. Tuleap Community Edition 15.5.99.76, Tuleap Enterprise Edition 15.5-4, and Tuleap Enterprise Edition 15.4-7 contain a patch for this issue.",
+    "published": "2024-02-22T19:15:08.823"
+  },
+  "CVE-2024-25385": {
+    "url": "https://github.com/noirotm/flvmeta/issues/23",
+    "cvss": "-",
+    "description": "An issue in flvmeta v.1.2.2 allows a local attacker to cause a denial of service via the flvmeta/src/flv.c:375:21 function in flv_close.",
+    "published": "2024-02-22T19:15:09.037"
   }
 }
