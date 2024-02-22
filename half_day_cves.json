@@ -190,5 +190,11 @@
     "cvss": 9.4,
     "description": "Fiber is a web framework written in go. Prior to version 2.52.1, the CORS middleware allows for insecure configurations that could potentially expose the application to multiple CORS-related vulnerabilities. Specifically, it allows setting the Access-Control-Allow-Origin header to a wildcard (`*`) while also having the Access-Control-Allow-Credentials set to true, which goes against recommended security best practices. The impact of this misconfiguration is high as it can lead to unauthorized access to sensitive user data and expose the system to various types of attacks listed in the PortSwigger article linked in the references. Version 2.52.1 contains a patch for this issue. As a workaround, users may manually validate the CORS configurations in their implementation to ensure that they do not allow a wildcard origin when credentials are enabled. The browser fetch api, as well as browsers and utilities that enforce CORS policies, are not affected by this.",
     "published": "2024-02-21T21:15:09.250"
+  },
+  "CVE-2024-1525": {
+    "cvss": 5.3,
+    "description": "An issue has been discovered in GitLab CE/EE affecting all versions starting from 16.1 before 16.7.6, all versions starting from 16.8 before 16.8.3, all versions starting from 16.9 before 16.9.1. Under some specialized conditions, an LDAP user may be able to reset their password using their verified secondary email address and sign-in using direct authentication with the reset password, bypassing LDAP.",
+    "published": "2024-02-22T00:15:52.327",
+    "keywords": "authentication,bypass"
   }
 }
