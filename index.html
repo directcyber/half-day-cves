@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-02-23T18:11:58.636409
+Updated at UTC 2024-02-23T19:09:08.711198
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,32 @@ Updated at UTC 2024-02-23T18:11:58.636409
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27319">CVE-2024-27319</a></td>
+					<td>4.4</td>
+					<td><a target=_blank href="https://github.com/onnx/onnx/commit/08a399ba75a805b7813ab8936b91d0e274b08287">https://github.com/onnx/onnx/commit/08a399ba75a805b7813ab8936b91d0e274b08287</a></td>
+					<td class=date>2024-02-23T18:15:50.960</td>
+					<td class=description>Versions of the package onnx before and including 1.15.0 are vulnerable to Out-of-bounds Read as the ONNX_ASSERT and ONNX_ASSERTM functions have an off by one string copy.
+</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27318">CVE-2024-27318</a></td>
+					<td>7.5</td>
+					<td><a target=_blank href="https://github.com/onnx/onnx/commit/66b7fb630903fdcf3e83b6b6d56d82e904264a20">https://github.com/onnx/onnx/commit/66b7fb630903fdcf3e83b6b6d56d82e904264a20</a></td>
+					<td class=date>2024-02-23T18:15:50.767</td>
+					<td class=description>Versions of the package onnx before and including 1.15.0 are vulnerable to Directory Traversal as the external_data field of the tensor proto can have a path to the file which is outside the model current directory or user-provided directory. The vulnerability occurs as a bypass for the patch added for CVE-2022-25882.
+</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -288,10 +314,12 @@ Updated at UTC 2024-02-23T18:11:58.636409
 				</tr>
 			
 		
-			
-		
 
 		<hr>
+		
+			
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -464,16 +492,6 @@ critical systems.
 				</tr>
 			
 		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-0794">CVE-2024-0794</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2024-02-20T18:15:50.840</td>
-					<td class=description>Certain HP LaserJet Pro, HP Enterprise LaserJet, and HP LaserJet Managed Printers are potentially vulnerable to Remote Code Execution due to buffer overflow when rendering fonts embedded in a PDF file.</td>
-				</tr>
 			
 		
 
