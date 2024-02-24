@@ -184,5 +184,17 @@
     "cvss": 4.4,
     "description": "Versions of the package onnx before and including 1.15.0 are vulnerable to Out-of-bounds Read as the ONNX_ASSERT and ONNX_ASSERTM functions have an off by one string copy.\n",
     "published": "2024-02-23T18:15:50.960"
+  },
+  "CVE-2024-25469": {
+    "cvss": "-",
+    "description": "SQL Injection vulnerability in CRMEB crmeb_java v.1.3.4 and before allows a remote attacker to obtain sensitive information via the latitude and longitude parameters in the api/front/store/list component.",
+    "published": "2024-02-23T23:15:09.740",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-22395": {
+    "cvss": 6.3,
+    "description": "Improper access control vulnerability has been identified in the SMA100 SSL-VPN virtual office portal, which in specific conditions could potentially enable a remote authenticated attacker to associate another user's MFA mobile application.",
+    "published": "2024-02-24T00:15:45.673",
+    "keywords": "remote,vpn"
   }
 }
