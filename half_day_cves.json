@@ -1,10 +1,4 @@
 {
-  "CVE-2024-0903": {
-    "cvss": 5.4,
-    "description": "The User Feedback \u2013 Create Interactive Feedback Form, User Surveys, and Polls in Seconds plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'page_submitted' 'link' value in all versions up to, and including, 1.0.13 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in the feedback submission page that will execute when a user clicks the link, while also pressing the command key.",
-    "published": "2024-02-22T06:15:57.453",
-    "keywords": "unauthenticated,command"
-  },
   "CVE-2024-1104": {
     "cvss": 7.5,
     "description": "An unauthenticated remote attacker can bypass the brute force prevention mechanism and disturb the webservice for all users.",
