@@ -22,5 +22,77 @@
     "description": "Improper access control vulnerability has been identified in the SMA100 SSL-VPN virtual office portal, which in specific conditions could potentially enable a remote authenticated attacker to associate another user's MFA mobile application.",
     "published": "2024-02-24T00:15:45.673",
     "keywords": "remote,vpn"
+  },
+  "CVE-2024-0435": {
+    "url": "https://github.com/mintplex-labs/anything-llm/commit/a4ace56a401ffc8ce0082d7444159dfd5dc28834",
+    "cvss": 8.1,
+    "description": "User can send a chat that contains an XSS opportunity that will then run when the chat is sent and on subsequent page loads.\n\nGiven the minimum requirement for a user to send a chat is to be given access to a workspace via an admin the risk is low. Additionally, the location in which the XSS renders is only limited to the user who submits the XSS. \n\nUltimately, this attack is limited to the user attacking themselves. There is no anonymous chat submission unless the user does not take the minimum steps required to protect their instance.",
+    "published": "2024-02-26T16:27:50.087"
+  },
+  "CVE-2024-0436": {
+    "url": "https://github.com/mintplex-labs/anything-llm/commit/3c859ba3038121b67fb98e87dc52617fa27cbef0",
+    "cvss": 7.1,
+    "description": "Theoretically, it would be possible for an attacker to brute-force the password for an instance in single-user password protection mode via a timing attack given the linear nature of the `!==` used for comparison.\n\nThe risk is minified by the additional overhead of the request, which varies in a non-constant nature making the attack less reliable to execute ",
+    "published": "2024-02-26T16:27:50.283"
+  },
+  "CVE-2024-0439": {
+    "url": "https://github.com/mintplex-labs/anything-llm/commit/7200a06ef07d92eef5f3c4c8be29824aa001d688",
+    "cvss": 7.1,
+    "description": "As a manager, you should not be able to modify a series of settings. In the UI this is indeed hidden as a convenience for the role since most managers would not be savvy enough to modify these settings. They can use their token to still modify those settings though through a standard HTTP request\n\nWhile this is not a critical vulnerability, it does indeed need to be patched to enforce the expected permission level.",
+    "published": "2024-02-26T16:27:50.490"
+  },
+  "CVE-2024-0440": {
+    "url": "https://github.com/mintplex-labs/anything-llm/commit/1563a1b20f72846d617a88510970d0426ab880d3",
+    "cvss": 9.6,
+    "description": "Attacker, with permission to submit a link or submits a link via POST  to be collected that is using the file:// protocol can then introspect host files and other relatively stored files.",
+    "published": "2024-02-26T16:27:50.697"
+  },
+  "CVE-2024-0455": {
+    "url": "https://github.com/mintplex-labs/anything-llm/commit/b2b2c2afe15c48952d57b4d01e7108f9515c5f55",
+    "cvss": 9.9,
+    "description": "The inclusion of the web scraper for AnythingLLM means that any user with the proper authorization level (manager, admin, and when in single user) could put in the URL\n```\nhttp://169.254.169.254/latest/meta-data/identity-credentials/ec2/security-credentials/ec2-instance\n```\nwhich is a special IP and URL that resolves only when the request comes from within an EC2 instance. This would allow the user to see the connection/secret credentials for their specific instance and be able to manage it regardless of who deployed it.\n\nThe user would have to have pre-existing knowledge of the hosting infra which the target instance is deployed on, but if sent - would resolve if on EC2 and the proper `iptable` or firewall rule is not configured for their setup.",
+    "published": "2024-02-26T16:27:50.937"
+  },
+  "CVE-2024-0798": {
+    "url": "https://github.com/mintplex-labs/anything-llm/commit/d5cde8b7c27a47ab45b05b441db16751537f1733",
+    "cvss": 8.1,
+    "description": "A user with a `default` role given to them by the admin can sent `DELETE` HTTP requests to `remove-folder` and `remove-document` to delete folders and source files from the instance even when their role should explicitly not allow this action on the system.",
+    "published": "2024-02-26T16:27:51.563"
+  },
+  "CVE-2024-1735": {
+    "cvss": 9.1,
+    "description": "A vulnerability has been identified in armeria-saml versions less than 1.27.2, allowing the use of malicious SAML messages to bypass authentication. All users who rely on armeria-saml older than version 1.27.2 must upgrade to 1.27.2 or later.",
+    "published": "2024-02-26T16:27:53.123",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-22201": {
+    "url": "https://github.com/jetty/jetty.project/issues/11256",
+    "cvss": 7.5,
+    "description": "Jetty is a Java based web server and servlet engine. An HTTP/2 SSL connection that is established and TCP congested will be leaked when it times out. An attacker can cause many connections to end up in this state, and the server may run out of file descriptors, eventually causing the server to stop accepting new connections from valid clients. The vulnerability is patched in 9.4.54, 10.0.20, 11.0.20, and 12.0.6.\n\n",
+    "published": "2024-02-26T16:27:56.343"
+  },
+  "CVE-2024-25081": {
+    "url": "https://github.com/fontforge/fontforge/pull/5367",
+    "cvss": "-",
+    "description": "Splinefont in FontForge through 20230101 allows command injection via crafted filenames.",
+    "published": "2024-02-26T16:27:58.710"
+  },
+  "CVE-2024-25082": {
+    "url": "https://github.com/fontforge/fontforge/pull/5367",
+    "cvss": "-",
+    "description": "Splinefont in FontForge through 20230101 allows command injection via crafted archives or compressed files.",
+    "published": "2024-02-26T16:27:58.763"
+  },
+  "CVE-2024-25344": {
+    "url": "https://github.com/itflow-org/itflow/commit/8068cb6081e4760860a634c1066b2c64d0ee2d46",
+    "cvss": "-",
+    "description": "Cross Site Scripting vulnerability in ITFlow.org before commit v.432488eca3998c5be6b6b9e8f8ba01f54bc12378 allows a remtoe attacker to execute arbitrary code and obtain sensitive information via the settings.php, settings+company.php, settings_defaults.php,settings_integrations.php, settings_invoice.php, settings_localization.php, settings_mail.php components.",
+    "published": "2024-02-26T16:27:58.897"
+  },
+  "CVE-2024-27456": {
+    "url": "https://github.com/cyu/rack-cors/issues/274",
+    "cvss": "-",
+    "description": "rack-cors (aka Rack CORS Middleware) 2.0.1 has 0666 permissions for the .rb files.",
+    "published": "2024-02-26T16:28:00.760"
   }
 }
