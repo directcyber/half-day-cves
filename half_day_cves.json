@@ -94,5 +94,41 @@
     "description": "The NotificationX \u2013 Best FOMO, Social Proof, WooCommerce Sales Popup & Notification Bar Plugin With Elementor plugin for WordPress is vulnerable to SQL Injection via the 'type' parameter in all versions up to, and including, 2.8.2 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
     "published": "2024-02-27T06:15:46.140",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-0551": {
+    "url": "https://github.com/mintplex-labs/anything-llm/commit/7aaa4b38e7112a6cd879c1238310c56b1844c6d8",
+    "cvss": 7.1,
+    "description": "Enable exports of the database and associated exported information of the system via the default user role. The attacked would have to have been granted access to the system prior to the attack.\n\nIt is worth noting that the deterministic nature of the export name is lower risk as the UI for exporting would start the download at the same time, which once downloaded - deletes the export from the system.\n\nThe endpoint for exporting should simply be patched to a higher privilege level.",
+    "published": "2024-02-27T14:15:27.130"
+  },
+  "CVE-2024-27905": {
+    "cvss": "-",
+    "description": "** UNSUPPORTED WHEN ASSIGNED ** Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Apache Aurora.\n\nAn endpoint exposing internals to unauthenticated users can be used as a \"padding oracle\" allowing an anonymous attacker to construct a valid authentication cookie. Potentially this could be combined with vulnerabilities in other components to achieve remote code execution.\n\nAs this project is retired, we do not plan to release a version that fixes this issue. Users are recommended to find an alternative or restrict access to the instance to trusted users.\n\nNOTE: This vulnerability only affects products that are no longer supported by the maintainer.\n\n",
+    "published": "2024-02-27T15:15:07.930",
+    "keywords": "remote,execution,unauthenticated,authentication,sensitive"
+  },
+  "CVE-2024-1403": {
+    "cvss": 10.0,
+    "description": "In OpenEdge Authentication Gateway and AdminServer prior to 11.7.19, 12.2.14, 12.8.1 on all platforms supported by the OpenEdge product, an authentication bypass vulnerability has been identified.\u00a0 The\nvulnerability is a bypass to authentication based on a failure to properly\nhandle username and password.  Certain unexpected\ncontent passed into the credentials can lead to unauthorized access without proper\nauthentication.  \u00a0 \n\n\n\n\n\n\n",
+    "published": "2024-02-27T16:15:45.643",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-25400": {
+    "url": "https://github.com/intelliants/subrion/issues/910",
+    "cvss": "-",
+    "description": "Subrion CMS 4.2.1 is vulnerable to SQL Injection via ia.core.mysqli.php.",
+    "published": "2024-02-27T16:15:46.517"
+  },
+  "CVE-2024-26144": {
+    "cvss": 5.3,
+    "description": "Rails is a web-application framework. Starting with version 5.2.0, there is a possible sensitive session information leak in Active Storage. By default, Active Storage sends a Set-Cookie header along with the user's session cookie when serving blobs. It also sets Cache-Control to public. Certain proxies may cache the Set-Cookie, leading to an information leak. The vulnerability is fixed in 7.0.8.1 and 6.1.7.7.",
+    "published": "2024-02-27T16:15:46.970",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2024-24323": {
+    "cvss": "-",
+    "description": "SQL injection vulnerability in linlinjava litemall v.1.8.0 allows a remote attacker to obtain sensitive information via the nickname, consignee, orderSN, orderStatusArray parameters of the AdminOrdercontroller.java component.",
+    "published": "2024-02-27T17:15:12.103",
+    "keywords": "remote,sensitive"
   }
 }
