@@ -130,5 +130,11 @@
     "description": "SQL injection vulnerability in linlinjava litemall v.1.8.0 allows a remote attacker to obtain sensitive information via the nickname, consignee, orderSN, orderStatusArray parameters of the AdminOrdercontroller.java component.",
     "published": "2024-02-27T17:15:12.103",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-27099": {
+    "url": "https://github.com/azure/azure-uamqp-c/commit/2ca42b6e4e098af2d17e487814a91d05f6ae4987",
+    "cvss": 9.8,
+    "description": "The uAMQP is a C library for AMQP 1.0 communication to Azure Cloud Services. When processing an incorrect `AMQP_VALUE` failed state, may cause a double free problem. This may cause a RCE. Update submodule with commit 2ca42b6e4e098af2d17e487814a91d05f6ae4987.",
+    "published": "2024-02-27T19:04:07.603"
   }
 }
