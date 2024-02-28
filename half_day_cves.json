@@ -232,5 +232,11 @@
     "cvss": 6.3,
     "description": "A vulnerability was found in 3Scale, when used with Keycloak 15 (or RHSSO 7.5.0) and superiors. When the auth_type is use_3scale_oidc_issuer_endpoint, the Token Introspection policy discovers the Token Introspection endpoint from the token_introspection_endpoint field, but the field was removed on RH-SSO 7.5. As a result, the policy doesn't inspect tokens, it determines that all tokens are valid.",
     "published": "2024-02-28T17:15:08.340"
+  },
+  "CVE-2024-24148": {
+    "url": "https://github.com/libming/libming/issues/308",
+    "cvss": "-",
+    "description": "A memory leak issue discovered in parseSWF_FREECHARACTER in libming v0.4.8 allows attackers to cause a denial of service via a crafted SWF file.",
+    "published": "2024-02-28T20:15:41.683"
   }
 }
