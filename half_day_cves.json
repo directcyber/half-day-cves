@@ -430,5 +430,11 @@
     "description": "The Avada | Website Builder For WordPress & WooCommerce theme for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the ajax_import_options() function in all versions up to, and including, 7.11.4. This makes it possible for authenticated attackers, with contributor-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
     "published": "2024-02-29T04:15:06.020",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-1981": {
+    "cvss": 9.8,
+    "description": "The Migration, Backup, Staging \u2013 WPvivid plugin for WordPress is vulnerable to SQL Injection via the 'table_prefix' parameter in version 0.9.68 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2024-02-29T07:15:06.930",
+    "keywords": "unauthenticated,sensitive"
   }
 }
