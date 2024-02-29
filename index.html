@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-02-29T22:08:08.089804
+Updated at UTC 2024-02-29T23:09:03.969904
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -397,18 +397,6 @@ The endpoint for exporting should simply be patched to a higher privilege level.
 This would require the attacker also be able to guess these internal IPs as `/*` ranging is not possible, but could be brute forced.
 
 There is a duty of care that other services on the same network would not be fully open and accessible via a simple CuRL with zero authentication as it is not possible to set headers or access via the link collector.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27093">CVE-2024-27093</a></td>
-					<td>4.6</td>
-					<td><a target=_blank href="https://github.com/stacklok/minder/commit/53868a878e93f29c43437f96dbc990b548e48d1d">https://github.com/stacklok/minder/commit/53868a878e93f29c43437f96dbc990b548e48d1d</a></td>
-					<td class=date>2024-02-26T22:15:07.113</td>
-					<td class=description>Minder is a Software Supply Chain Security Platform. In version 0.0.31 and earlier, it is possible for an attacker to register a repository with a invalid or differing upstream ID, which causes Minder to report the repository as registered, but not remediate any future changes which conflict with policy (because the webhooks for the repo do not match any known repository in the database).  When attempting to register a repo with a different repo ID, the registered provider must have admin on the named repo, or a 404 error will result.  Similarly, if the stored provider token does not have repo access, then the remediations will not apply successfully.  Lastly, it appears that reconciliation actions do not execute against repos with this type of mismatch. This appears to primarily be a potential denial-of-service vulnerability.  This vulnerability is patched in version 0.20240226.1425+ref.53868a8.</td>
 
 
 				</tr>
@@ -939,8 +927,6 @@ NOTE: This vulnerability only affects products that are no longer supported by t
 					<td class=date>2024-02-27T06:15:46.140</td>
 					<td class=description>The NotificationX – Best FOMO, Social Proof, WooCommerce Sales Popup & Notification Bar Plugin With Elementor plugin for WordPress is vulnerable to SQL Injection via the 'type' parameter in all versions up to, and including, 2.8.2 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
 				</tr>
-			
-		
 			
 		
 			
