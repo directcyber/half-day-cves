@@ -364,5 +364,29 @@
     "description": "Enabling Simple Ajax Uploader plugin included in Laragon open-source software allows for a remote code execution (RCE) attack via an improper input validation in a file_upload.php file which serves as an example.\nBy default, Laragon is not vulnerable until a user decides to use the\u00a0aforementioned plugin. \n",
     "published": "2024-02-29T13:15:07.260",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-24246": {
+    "url": "https://github.com/qpdf/qpdf/issues/1123",
+    "cvss": "-",
+    "description": "Heap Buffer Overflow vulnerability in qpdf 11.9.0 allows attackers to crash the application via the std::__shared_count() function at /bits/shared_ptr_base.h.",
+    "published": "2024-02-29T20:15:41.407"
+  },
+  "CVE-2024-27655": {
+    "cvss": "-",
+    "description": "D-Link DIR-823G A1V1.0.2B05 was discovered to contain a buffer overflow via the SOAPACTION parameter. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted input, and possibly remote code execution.",
+    "published": "2024-02-29T20:15:41.500",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-27656": {
+    "cvss": "-",
+    "description": "D-Link DIR-823G A1V1.0.2B05 was discovered to contain a buffer overflow via the Cookie parameter. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted input, and possibly remote code execution.",
+    "published": "2024-02-29T20:15:41.547",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-27657": {
+    "cvss": "-",
+    "description": "D-Link DIR-823G A1V1.0.2B05 was discovered to contain a buffer overflow via the User-Agent parameter. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted input, and possibly remote code execution.",
+    "published": "2024-02-29T20:15:41.597",
+    "keywords": "remote,execution"
   }
 }
