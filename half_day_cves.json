@@ -424,5 +424,11 @@
     "cvss": "-",
     "description": "Webasyst 2.9.9 has a Cross-Site Scripting (XSS) vulnerability, Attackers can create blogs containing malicious code after gaining blog permissions.",
     "published": "2024-02-29T01:44:20.180"
+  },
+  "CVE-2024-1468": {
+    "cvss": 8.8,
+    "description": "The Avada | Website Builder For WordPress & WooCommerce theme for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the ajax_import_options() function in all versions up to, and including, 7.11.4. This makes it possible for authenticated attackers, with contributor-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-02-29T04:15:06.020",
+    "keywords": "remote,execution"
   }
 }
