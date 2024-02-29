@@ -436,5 +436,11 @@
     "description": "The Migration, Backup, Staging \u2013 WPvivid plugin for WordPress is vulnerable to SQL Injection via the 'table_prefix' parameter in version 0.9.68 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
     "published": "2024-02-29T07:15:06.930",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-0864": {
+    "cvss": "-",
+    "description": "Enabling Simple Ajax Uploader plugin included in Laragon open-source software allows for a remote code execution (RCE) attack via an improper input validation in a file_upload.php file which serves as an example.\nBy default, Laragon is not vulnerable until a user decides to use the\u00a0aforementioned plugin. \n",
+    "published": "2024-02-29T13:15:07.260",
+    "keywords": "remote,execution"
   }
 }
