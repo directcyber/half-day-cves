@@ -1,10 +1,4 @@
 {
-  "CVE-2024-0551": {
-    "url": "https://github.com/mintplex-labs/anything-llm/commit/7aaa4b38e7112a6cd879c1238310c56b1844c6d8",
-    "cvss": 7.1,
-    "description": "Enable exports of the database and associated exported information of the system via the default user role. The attacked would have to have been granted access to the system prior to the attack.\n\nIt is worth noting that the deterministic nature of the export name is lower risk as the UI for exporting would start the download at the same time, which once downloaded - deletes the export from the system.\n\nThe endpoint for exporting should simply be patched to a higher privilege level.",
-    "published": "2024-02-27T14:15:27.130"
-  },
   "CVE-2024-27905": {
     "cvss": "-",
     "description": "** UNSUPPORTED WHEN ASSIGNED ** Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Apache Aurora.\n\nAn endpoint exposing internals to unauthenticated users can be used as a \"padding oracle\" allowing an anonymous attacker to construct a valid authentication cookie. Potentially this could be combined with vulnerabilities in other components to achieve remote code execution.\n\nAs this project is retired, we do not plan to release a version that fixes this issue. Users are recommended to find an alternative or restrict access to the instance to trusted users.\n\nNOTE: This vulnerability only affects products that are no longer supported by the maintainer.\n\n",
