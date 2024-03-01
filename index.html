@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-03-01T06:12:20.579386
+Updated at UTC 2024-03-01T07:08:35.530811
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-03-01T06:12:20.579386
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -384,26 +388,28 @@ The endpoint for exporting should simply be patched to a higher privilege level.
 				</tr>
 			
 		
-			
+
+		<hr>
 		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-0759">CVE-2024-0759</a></td>
-					<td>9.6</td>
-					<td><a target=_blank href="https://github.com/mintplex-labs/anything-llm/commit/0db6c3b2aa1787a7054ffdaba975474f122c20eb">https://github.com/mintplex-labs/anything-llm/commit/0db6c3b2aa1787a7054ffdaba975474f122c20eb</a></td>
-					<td class=date>2024-02-27T06:15:45.493</td>
-					<td class=description>Should an instance of AnythingLLM be hosted on an internal network and the attacked be explicitly granted a permission level of manager or admin, they could link-scrape internally resolving IPs of other services that are on the same network as AnythingLLM.
-
-This would require the attacker also be able to guess these internal IPs as `/*` ranging is not possible, but could be brute forced.
-
-There is a duty of care that other services on the same network would not be fully open and accessible via a simple CuRL with zero authentication as it is not possible to set headers or access via the link collector.</td>
-
-
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-25293">CVE-2024-25293</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2024-03-01T06:15:48.347</td>
+					<td class=description>mjml-app versions 3.0.4 and 3.1.0-beta were discovered to contain a remote code execution (RCE) via the href attribute.</td>
 				</tr>
 			
 		
-
-		<hr>
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-22891">CVE-2024-22891</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2024-03-01T06:15:48.280</td>
+					<td class=description>Nteract v.0.28.0 was discovered to contain a remote code execution (RCE) vulnerability via the Markdown link.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -914,18 +920,6 @@ As this project is retired, we do not plan to release a version that fixes this 
 NOTE: This vulnerability only affects products that are no longer supported by the maintainer.
 
 </td>
-				</tr>
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-1698">CVE-2024-1698</a></td>
-					<td>9.8</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2024-02-27T06:15:46.140</td>
-					<td class=description>The NotificationX – Best FOMO, Social Proof, WooCommerce Sales Popup & Notification Bar Plugin With Elementor plugin for WordPress is vulnerable to SQL Injection via the 'type' parameter in all versions up to, and including, 2.8.2 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
 				</tr>
 			
 		
