@@ -1,22 +1,4 @@
 {
-  "CVE-2024-1403": {
-    "cvss": 10.0,
-    "description": "In OpenEdge Authentication Gateway and AdminServer prior to 11.7.19, 12.2.14, 12.8.1 on all platforms supported by the OpenEdge product, an authentication bypass vulnerability has been identified.\u00a0 The\nvulnerability is a bypass to authentication based on a failure to properly\nhandle username and password.  Certain unexpected\ncontent passed into the credentials can lead to unauthorized access without proper\nauthentication.  \u00a0 \n\n\n\n\n\n\n",
-    "published": "2024-02-27T16:15:45.643",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-25400": {
-    "url": "https://github.com/intelliants/subrion/issues/910",
-    "cvss": "-",
-    "description": "Subrion CMS 4.2.1 is vulnerable to SQL Injection via ia.core.mysqli.php.",
-    "published": "2024-02-27T16:15:46.517"
-  },
-  "CVE-2024-26144": {
-    "cvss": 5.3,
-    "description": "Rails is a web-application framework. Starting with version 5.2.0, there is a possible sensitive session information leak in Active Storage. By default, Active Storage sends a Set-Cookie header along with the user's session cookie when serving blobs. It also sets Cache-Control to public. Certain proxies may cache the Set-Cookie, leading to an information leak. The vulnerability is fixed in 7.0.8.1 and 6.1.7.7.",
-    "published": "2024-02-27T16:15:46.970",
-    "keywords": "sensitive,leak"
-  },
   "CVE-2024-24323": {
     "cvss": "-",
     "description": "SQL injection vulnerability in linlinjava litemall v.1.8.0 allows a remote attacker to obtain sensitive information via the nickname, consignee, orderSN, orderStatusArray parameters of the AdminOrdercontroller.java component.",
@@ -388,5 +370,11 @@
     "description": "Linksys E2000 Ver.1.0.06 build 1 is vulnerable to authentication bypass via the position.js file.",
     "published": "2024-03-01T15:15:08.580",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-1624": {
+    "cvss": 9.4,
+    "description": "An OS Command Injection vulnerability affecting documentation server on 3DEXPERIENCE from Release 3DEXPERIENCE R2022x through Release 3DEXPERIENCE R2024x, SIMULIA Abaqus from Release 2022 through Release 2024, SIMULIA Isight from Release 2022 through Release 2024 and CATIA Composer from Release R2023 through Release R2024. A specially crafted HTTP request can lead to arbitrary command execution.",
+    "published": "2024-03-01T16:15:45.723",
+    "keywords": "execution,command"
   }
 }
