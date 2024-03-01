@@ -1,10 +1,4 @@
 {
-  "CVE-2024-27905": {
-    "cvss": "-",
-    "description": "** UNSUPPORTED WHEN ASSIGNED ** Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Apache Aurora.\n\nAn endpoint exposing internals to unauthenticated users can be used as a \"padding oracle\" allowing an anonymous attacker to construct a valid authentication cookie. Potentially this could be combined with vulnerabilities in other components to achieve remote code execution.\n\nAs this project is retired, we do not plan to release a version that fixes this issue. Users are recommended to find an alternative or restrict access to the instance to trusted users.\n\nNOTE: This vulnerability only affects products that are no longer supported by the maintainer.\n\n",
-    "published": "2024-02-27T15:15:07.930",
-    "keywords": "remote,execution,unauthenticated,authentication,sensitive"
-  },
   "CVE-2024-1403": {
     "cvss": 10.0,
     "description": "In OpenEdge Authentication Gateway and AdminServer prior to 11.7.19, 12.2.14, 12.8.1 on all platforms supported by the OpenEdge product, an authentication bypass vulnerability has been identified.\u00a0 The\nvulnerability is a bypass to authentication based on a failure to properly\nhandle username and password.  Certain unexpected\ncontent passed into the credentials can lead to unauthorized access without proper\nauthentication.  \u00a0 \n\n\n\n\n\n\n",
@@ -388,5 +382,11 @@
     "description": "Dell Secure Connect Gateway 5.20 contains an improper authentication vulnerability during the SRS to SCG update path. A remote low privileged attacker could potentially exploit this vulnerability, leading to impersonation of the server through presenting a fake self-signed certificate and communicating with the remote server.",
     "published": "2024-03-01T11:15:07.127",
     "keywords": "remote,authentication"
+  },
+  "CVE-2024-27497": {
+    "cvss": "-",
+    "description": "Linksys E2000 Ver.1.0.06 build 1 is vulnerable to authentication bypass via the position.js file.",
+    "published": "2024-03-01T15:15:08.580",
+    "keywords": "authentication,bypass"
   }
 }
