@@ -1,10 +1,4 @@
 {
-  "CVE-2024-0550": {
-    "url": "https://github.com/mintplex-labs/anything-llm/commit/e1dcd5ded010b03abd6aa32d1bf0668a48e38e17",
-    "cvss": 9.6,
-    "description": "A user who is privileged already `manager` or `admin` can set their profile picture via the frontend API using a relative filepath to then user the PFP GET API to download any valid files.\n\nThe attacker would have to have been granted privileged permissions to the system before executing this attack.",
-    "published": "2024-02-28T05:15:08.770"
-  },
   "CVE-2024-0975": {
     "cvss": 5.3,
     "description": "The WordPress Access Control plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 4.0.13  via the REST API. This makes it possible for unauthenticated attackers to bypass the plugin's \"Make Website Members Only\" feature (when unset) and view restricted page and post content.",
