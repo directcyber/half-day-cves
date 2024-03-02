@@ -1,22 +1,4 @@
 {
-  "CVE-2024-25866": {
-    "cvss": "-",
-    "description": "A SQL Injection vulnerability in CodeAstro Membership Management System in PHP v.1.0 allows a remote attacker to execute arbitrary SQL commands via the email parameter in the index.php component.",
-    "published": "2024-02-28T22:15:26.573",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-25867": {
-    "cvss": "-",
-    "description": "A SQL Injection vulnerability in CodeAstro Membership Management System in PHP v.1.0 allows a remote attacker to execute arbitrary SQL commands via the membershipType and membershipAmount parameters in the add_type.php component.",
-    "published": "2024-02-28T22:15:26.617",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-26476": {
-    "url": "https://github.com/mpdf/mpdf/issues/867",
-    "cvss": "-",
-    "description": "An issue in open-emr before v.7.0.2 allows a remote attacker to escalate privileges via a crafted script to the formid parameter in the ereq_form.php component.",
-    "published": "2024-02-28T22:15:26.767"
-  },
   "CVE-2024-23910": {
     "cvss": "-",
     "description": "Cross-site request forgery (CSRF) vulnerability in ELECOM wireless LAN routers allows a remote unauthenticated attacker to hijack the authentication of administrators and to perform unintended operations to the affected product. Affected products and versions are as follows: WRC-1167GS2-B v1.67 and earlier, WRC-1167GS2H-B v1.67 and earlier, WRC-2533GS2-B v1.62 and earlier, WRC-2533GS2-W v1.62 and earlier, and WRC-2533GS2V-B v1.62 and earlier.",
@@ -280,5 +262,23 @@
     "description": "A remote, unauthenticated attacker may be able to send crafted messages \nto the web server of the Commend WS203VICM causing the system to \nrestart, interrupting service.\n\n",
     "published": "2024-03-01T21:15:08.167",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-0795": {
+    "url": "https://github.com/mintplex-labs/anything-llm/commit/9a237db3d1f66cdbcf5079599258f5fb251c5564",
+    "cvss": 7.2,
+    "description": "If an attacked was given access to an instance with the admin or manager role there is no backend authentication that would prevent the attacked from creating a new user with an `admin` role and then be able to use this new account to have elevated privileges on the instance",
+    "published": "2024-03-02T22:15:49.813"
+  },
+  "CVE-2024-0968": {
+    "url": "https://github.com/langchain-ai/chat-langchain/commit/e13db53cba2a48e4e26d103fd51598856f6bdd33",
+    "cvss": 4.6,
+    "description": "Cross-site Scripting (XSS) - DOM in GitHub repository langchain-ai/chat-langchain prior to 0.0.0.",
+    "published": "2024-03-02T22:15:50.123"
+  },
+  "CVE-2024-25865": {
+    "url": "https://github.com/anzhiyu-c/hexo-theme-anzhiyu/issues/200",
+    "cvss": "-",
+    "description": "Cross Site Scripting (XSS) vulnerability in hexo-theme-anzhiyu v1.6.12, allows remote attackers to execute arbitrary code via the algolia search function.",
+    "published": "2024-03-02T22:15:50.293"
   }
 }
