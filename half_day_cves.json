@@ -1,22 +1,4 @@
 {
-  "CVE-2024-21885": {
-    "cvss": 7.8,
-    "description": "A flaw was found in X.Org server. In the XISendDeviceHierarchyEvent function, it is possible to exceed the allocated array length when certain new device IDs are added to the xXIHierarchyInfo struct. This can trigger a heap buffer overflow condition, which may lead to an application crash or remote code execution in SSH X11 forwarding environments.",
-    "published": "2024-02-28T13:15:08.197",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-21886": {
-    "cvss": 7.8,
-    "description": "A heap buffer overflow flaw was found in the DisableDevice function in the X.Org server. This issue may lead to an application crash or, in some circumstances, remote code execution in SSH X11 forwarding environments.",
-    "published": "2024-02-28T13:15:08.440",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-27515": {
-    "url": "https://github.com/mindstellar/osclass/issues/495",
-    "cvss": "-",
-    "description": "Osclass 5.1.2 is vulnerable to SQL Injection.",
-    "published": "2024-02-28T13:15:09.530"
-  },
   "CVE-2024-0560": {
     "url": "https://github.com/3scale/apicast/pull/1438",
     "cvss": 6.3,
