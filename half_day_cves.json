@@ -1,10 +1,4 @@
 {
-  "CVE-2024-1468": {
-    "cvss": 8.8,
-    "description": "The Avada | Website Builder For WordPress & WooCommerce theme for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the ajax_import_options() function in all versions up to, and including, 7.11.4. This makes it possible for authenticated attackers, with contributor-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2024-02-29T04:15:06.020",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-1981": {
     "cvss": 9.8,
     "description": "The Migration, Backup, Staging \u2013 WPvivid plugin for WordPress is vulnerable to SQL Injection via the 'table_prefix' parameter in version 0.9.68 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
@@ -112,5 +106,11 @@
     "cvss": "-",
     "description": "Cross Site Scripting (XSS) vulnerability in hexo-theme-anzhiyu v1.6.12, allows remote attackers to execute arbitrary code via the algolia search function.",
     "published": "2024-03-02T22:15:50.293"
+  },
+  "CVE-2024-25016": {
+    "cvss": 7.5,
+    "description": "IBM MQ and IBM MQ Appliance 9.0, 9.1, 9.2, 9.3 LTS and 9.3 CD could allow a remote unauthenticated attacker to cause a denial of service due to incorrect buffering logic.  IBM X-Force ID:  281279.",
+    "published": "2024-03-03T04:15:06.057",
+    "keywords": "remote,unauthenticated"
   }
 }
