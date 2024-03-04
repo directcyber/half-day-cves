@@ -112,5 +112,11 @@
     "description": "In JetBrains TeamCity before 2023.11.4 authentication bypass allowing to perform admin actions was possible",
     "published": "2024-03-04T18:15:09.040",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-2048": {
+    "cvss": 8.1,
+    "description": "Vault and Vault Enterprise (\u201cVault\u201d) TLS certificate auth method did not correctly validate client certificates when configured with a non-CA certificate as trusted certificate. In this configuration, an attacker may be able to craft a malicious certificate that could be used to bypass authentication. Fixed in Vault 1.15.5 and 1.14.10.",
+    "published": "2024-03-04T20:15:50.690",
+    "keywords": "authentication,bypass"
   }
 }
