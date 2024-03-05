@@ -166,5 +166,11 @@
     "description": "Cross-Site Scripting (XSS) vulnerability stored in TP-Link Archer AX50 affecting firmware version 1.0.11 build 2022052. This vulnerability could allow an unauthenticated attacker to create a port mapping rule via a SOAP request and store a malicious JavaScript payload within that rule, which could result in an execution of the JavaScript payload when the rule is loaded.",
     "published": "2024-03-05T13:15:07.203",
     "keywords": "execution,unauthenticated"
+  },
+  "CVE-2024-27622": {
+    "cvss": "-",
+    "description": "A remote code execution vulnerability has been identified in the User Defined Tags module of CMS Made Simple version 2.2.19. This vulnerability arises from inadequate sanitization of user-supplied input in the 'Code' section of the module. As a result, authenticated users with administrative privileges can inject and execute arbitrary PHP code.",
+    "published": "2024-03-05T14:15:49.030",
+    "keywords": "remote,execution"
   }
 }
