@@ -106,5 +106,11 @@
     "description": "Vault and Vault Enterprise (\u201cVault\u201d) TLS certificate auth method did not correctly validate client certificates when configured with a non-CA certificate as trusted certificate. In this configuration, an attacker may be able to craft a malicious certificate that could be used to bypass authentication. Fixed in Vault 1.15.5 and 1.14.10.",
     "published": "2024-03-04T20:15:50.690",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-25164": {
+    "cvss": "-",
+    "description": "iA Path Traversal vulnerability exists in iDURAR v2.0.0, that allows unauthenticated attackers to expose sensitive files via the download functionality.",
+    "published": "2024-03-05T00:15:52.400",
+    "keywords": "unauthenticated,sensitive"
   }
 }
