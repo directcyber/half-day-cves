@@ -160,5 +160,41 @@
     "description": "Directory Traversal vulnerability in Jeewms v.3.7 and before allows a remote attacker to obtain sensitive information via the cgformTemplateController component.",
     "published": "2024-03-05T23:15:08.050",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-20292": {
+    "cvss": 4.4,
+    "description": "A vulnerability in the logging component of Cisco Duo Authentication for Windows Logon and RDP could allow an authenticated, local attacker to view sensitive information in clear text on an affected system. \r\n\r This vulnerability is due to improper storage of an unencrypted registry key in certain logs. An attacker could exploit this vulnerability by accessing the logs on an affected system. A successful exploit could allow the attacker to view sensitive information in clear text.",
+    "published": "2024-03-06T17:15:08.797",
+    "keywords": "authentication,sensitive"
+  },
+  "CVE-2024-20301": {
+    "cvss": 6.2,
+    "description": "A vulnerability in Cisco Duo Authentication for Windows Logon and RDP could allow an authenticated, physical attacker to bypass secondary authentication and access an affected Windows device. \r\n\r This vulnerability is due to a failure to invalidate locally created trusted sessions after a reboot of the affected device. An attacker with primary user credentials could exploit this vulnerability by attempting to authenticate to an affected device. A successful exploit could allow the attacker to access the affected device without valid permissions.",
+    "published": "2024-03-06T17:15:08.987",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-20335": {
+    "cvss": 6.5,
+    "description": "A vulnerability in the web-based management interface of Cisco Small Business 100, 300, and 500 Series Wireless APs could allow an authenticated, remote attacker to perform command injection attacks against an affected device. In order to exploit this vulnerability, the attacker must have valid administrative credentials for the device. This vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by sending a crafted HTTP request to the web-based management interface of an affected device. A successful exploit could allow the attacker to execute arbitrary code as the root user on the underlying operating system.",
+    "published": "2024-03-06T17:15:09.193",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-20337": {
+    "cvss": 8.2,
+    "description": "A vulnerability in the SAML authentication process of Cisco Secure Client could allow an unauthenticated, remote attacker to conduct a carriage return line feed (CRLF) injection attack against a user. \r\n\r This vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by persuading a user to click a crafted link while establishing a VPN session. A successful exploit could allow the attacker to execute arbitrary script code in the browser or access sensitive, browser-based information, including a valid SAML token. The attacker could then use the token to establish a remote access VPN session with the privileges of the affected user. Individual hosts and services behind the VPN headend would still need additional credentials for successful access.",
+    "published": "2024-03-06T17:15:09.580",
+    "keywords": "remote,unauthenticated,authentication,sensitive,vpn"
+  },
+  "CVE-2024-20345": {
+    "cvss": 6.5,
+    "description": "A vulnerability in the file upload functionality of Cisco AppDynamics Controller could allow an authenticated, remote attacker to conduct directory traversal attacks on an affected device. \r\n\r This vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by sending a crafted request to an affected device. A successful exploit could allow the attacker to access sensitive data on an affected device.",
+    "published": "2024-03-06T17:15:09.973",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-20346": {
+    "cvss": 5.4,
+    "description": "A vulnerability in the web-based management interface of Cisco AppDynamics Controller could allow an authenticated, remote attacker to perform a reflected cross-site scripting (XSS) attack against a user of the interface of an affected device.\r\n\r This vulnerability is due to insufficient validation of user-supplied input by the web-based management interface. An attacker could exploit this vulnerability by persuading a user to click a malicious link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.",
+    "published": "2024-03-06T17:15:10.173",
+    "keywords": "remote,sensitive"
   }
 }
