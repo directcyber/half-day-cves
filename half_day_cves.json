@@ -196,5 +196,11 @@
     "description": "A vulnerability in the web-based management interface of Cisco AppDynamics Controller could allow an authenticated, remote attacker to perform a reflected cross-site scripting (XSS) attack against a user of the interface of an affected device.\r\n\r This vulnerability is due to insufficient validation of user-supplied input by the web-based management interface. An attacker could exploit this vulnerability by persuading a user to click a malicious link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.",
     "published": "2024-03-06T17:15:10.173",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-27287": {
+    "cvss": 6.5,
+    "description": "ESPHome is a system to control your ESP8266/ESP32 for Home Automation systems. Starting in version 2023.12.9 and prior to version 2024.2.2, editing the configuration file API in dashboard component of ESPHome version 2023.12.9 (command line installation and Home Assistant add-on) serves unsanitized data with `Content-Type: text/html; charset=UTF-8`, allowing a remote authenticated user to inject arbitrary web script and exfiltrate session cookies via Cross-Site scripting. It is possible for a malicious authenticated user to inject arbitrary Javascript in configuration files using a POST request to the /edit endpoint, the configuration parameter allows to specify the file to write. To trigger the XSS vulnerability, the victim must visit the page` /edit?configuration=[xss file]`. Abusing this vulnerability a malicious actor could perform operations on the dashboard on the behalf of a logged user, access sensitive information, create, edit and delete configuration files and flash firmware on managed boards.\nIn addition to this, cookies are not correctly secured, allowing the exfiltration of session cookie values. Version 2024.2.2 contains a patch for this issue.\n",
+    "published": "2024-03-06T19:15:07.723",
+    "keywords": "remote,command,sensitive"
   }
 }
