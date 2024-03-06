@@ -208,5 +208,11 @@
     "description": "JSONata is a JSON query and transformation language. Starting in version 1.4.0 and prior to version 1.8.7 and 2.0.4, a malicious expression can use the transform operator to override properties on the `Object` constructor and prototype. This may lead to denial of service, remote code execution or other unexpected behavior in applications that evaluate user-provided JSONata expressions. This issue has been fixed in JSONata versions 1.8.7 and 2.0.4. Applications that evaluate user-provided expressions should update ASAP to prevent exploitation. As a workaround, one may apply the patch manually.",
     "published": "2024-03-06T20:15:47.537",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-28111": {
+    "url": "https://github.com/thinkst/canarytokens/commit/c595a1f884b986da2ca05aa5bff9ae5f93c6a4aa",
+    "cvss": 6.5,
+    "description": "Canarytokens helps track activity and actions on a network. Canarytokens.org supports exporting the history of a Canarytoken's incidents in CSV format. The generation of these CSV files is vulnerable to a CSV Injection vulnerability. This flaw can be used by an attacker who discovers an HTTP-based Canarytoken to target the Canarytoken's owner, if the owner exports the incident history to CSV and opens in a reader application such as Microsoft Excel. The impact is that this issue could lead to code execution on the machine on which the CSV file is opened. Version sha-c595a1f8 contains a fix for this issue.",
+    "published": "2024-03-06T22:15:57.780"
   }
 }
