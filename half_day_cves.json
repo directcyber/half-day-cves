@@ -191,10 +191,22 @@
     "published": "2024-03-07T01:15:52.707",
     "keywords": "remote,sensitive"
   },
+  "CVE-2024-0815": {
+    "cvss": 9.3,
+    "description": "Command injection in paddle.utils.download._wget_download (bypass filter) in paddlepaddle/paddle 2.6.0",
+    "published": "2024-03-07T04:15:07.143",
+    "keywords": "command,bypass"
+  },
   "CVE-2024-28213": {
     "cvss": "-",
     "description": "nGrinder before 3.5.9 allows to accept serialized Java objects from unauthenticated users, which could allow remote attacker to execute arbitrary code via unsafe Java objects deserialization.",
     "published": "2024-03-07T05:15:54.710",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-1720": {
+    "cvss": 4.7,
+    "description": "The User Registration \u2013 Custom Registration Form, Login Form, and User Profile WordPress Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'Display Name' parameter in all versions up to, and including, 3.1.4 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This vulnerability requires social engineering to successfully exploit, and the impact would be very limited due to the attacker requiring a user to login as the user with the injected payload for execution.",
+    "published": "2024-03-07T06:15:50.630",
+    "keywords": "execution,unauthenticated"
   }
 }
