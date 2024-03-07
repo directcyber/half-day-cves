@@ -1,10 +1,4 @@
 {
-  "CVE-2024-28088": {
-    "cvss": "-",
-    "description": "LangChain through 0.1.10 allows ../ directory traversal by an actor who is able to control the final part of the path parameter in a load_chain call. This bypasses the intended behavior of loading configurations only from the hwchase17/langchain-hub GitHub repository. The outcome can be disclosure of an API key for a large language model online service, or remote code execution.",
-    "published": "2024-03-04T00:15:47.017",
-    "keywords": "remote,execution,bypass"
-  },
   "CVE-2024-20005": {
     "cvss": "-",
     "description": "In da, there is a possible permission bypass due to a missing permission check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS08355599; Issue ID: ALPS08355599.",
