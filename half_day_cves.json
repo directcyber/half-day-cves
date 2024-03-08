@@ -1,16 +1,4 @@
 {
-  "CVE-2024-1088": {
-    "cvss": 5.3,
-    "description": "The Password Protected Store for WooCommerce plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.9 via the REST API. This makes it possible for unauthenticated attackers to extract sensitive data including post titles and content.",
-    "published": "2024-03-05T02:15:25.813",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-1478": {
-    "cvss": 5.3,
-    "description": "The Maintenance Mode plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.5.0 via the REST API. This makes it possible for unauthenticated attackers to obtain post and page content via API thus bypassing the content protection provided by the plugin.",
-    "published": "2024-03-05T02:15:26.773",
-    "keywords": "unauthenticated,sensitive,bypass"
-  },
   "CVE-2024-26333": {
     "url": "https://github.com/matthiaskramm/swftools/issues/219",
     "cvss": "-",
@@ -202,5 +190,23 @@
     "description": "A vulnerability, which was classified as problematic, was found in keerti1924 PHP-MYSQL-User-Login-System 1.0. This affects an unknown part of the file login.sql. The manipulation leads to inclusion of sensitive information in source code. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-256035. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2024-03-07T22:15:58.220",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-23239": {
+    "cvss": "-",
+    "description": "A race condition was addressed with improved state handling. This issue is fixed in tvOS 17.4, iOS 17.4 and iPadOS 17.4, macOS Sonoma 14.4, watchOS 10.4. An app may be able to leak sensitive user information.",
+    "published": "2024-03-08T02:15:48.063",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2024-23241": {
+    "cvss": "-",
+    "description": "This issue was addressed through improved state management. This issue is fixed in tvOS 17.4, iOS 17.4 and iPadOS 17.4, macOS Sonoma 14.4. An app may be able to leak sensitive user information.",
+    "published": "2024-03-08T02:15:48.153",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2024-26309": {
+    "cvss": 5.3,
+    "description": "Archer Platform 6.x before 2024.03 contains a sensitive information disclosure vulnerability. An unauthenticated attacker could potentially obtain access to sensitive information via an internal URL, aka CE-120677.",
+    "published": "2024-03-08T02:15:50.640",
+    "keywords": "unauthenticated,sensitive"
   }
 }
