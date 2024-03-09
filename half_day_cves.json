@@ -1,10 +1,4 @@
 {
-  "CVE-2024-28111": {
-    "url": "https://github.com/thinkst/canarytokens/commit/c595a1f884b986da2ca05aa5bff9ae5f93c6a4aa",
-    "cvss": 6.5,
-    "description": "Canarytokens helps track activity and actions on a network. Canarytokens.org supports exporting the history of a Canarytoken's incidents in CSV format. The generation of these CSV files is vulnerable to a CSV Injection vulnerability. This flaw can be used by an attacker who discovers an HTTP-based Canarytoken to target the Canarytoken's owner, if the owner exports the incident history to CSV and opens in a reader application such as Microsoft Excel. The impact is that this issue could lead to code execution on the machine on which the CSV file is opened. Version sha-c595a1f8 contains a fix for this issue.",
-    "published": "2024-03-06T22:15:57.780"
-  },
   "CVE-2024-24375": {
     "cvss": "-",
     "description": "SQL injection vulnerability in Jfinalcms v.5.0.0 allows a remote attacker to obtain sensitive information via /admin/admin name parameter.",
