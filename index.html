@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-03-10T21:06:42.931296
+Updated at UTC 2024-03-10T22:08:52.950200
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -80,23 +80,6 @@ Updated at UTC 2024-03-10T21:06:42.931296
 		
 			
 		
-			
-		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-2044">CVE-2024-2044</a></td>
-					<td>4.6</td>
-					<td><a target=_blank href="https://github.com/pgadmin-org/pgadmin4/issues/7258">https://github.com/pgadmin-org/pgadmin4/issues/7258</a></td>
-					<td class=date>2024-03-07T21:15:08.767</td>
-					<td class=description>pgAdmin 4 uses a file-based session management approach. The session files are saved on disk as pickle objects. When a user performs a request, the value of the session cookie 'pga4_session' is used to retrieve the file, then its content is deserialised, and finally its signature verified.
-The cookie value is split in 2 parts at the first '!' character. The first part is the session ID (sid), while the second is the session digest.
- The vulnerability lies in versions of pgAdmin prior to 8.4 where a method loads session files by concatenating the sessions folder - located inside the pgAdmin 4 DATA_DIR - with the session ID. Precisely, the two values are concatenated using the ['os.path.join'] function. It does not set a trusted base-path which should not be escaped
-</td>
-
-
-				</tr>
 			
 		
 			
@@ -173,18 +156,6 @@ The cookie value is split in 2 parts at the first '!' character. The first part 
 					<td>remote,sensitive</td>
 					<td class=date>2024-03-07T22:15:58.220</td>
 					<td class=description>A vulnerability, which was classified as problematic, was found in keerti1924 PHP-MYSQL-User-Login-System 1.0. This affects an unknown part of the file login.sql. The manipulation leads to inclusion of sensitive information in source code. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-256035. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-				</tr>
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-1986">CVE-2024-1986</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-03-07T21:15:08.013</td>
-					<td class=description>The Booster Elite for WooCommerce plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the wc_add_new_product() function in all versions up to, and including, 7.1.7. This makes it possible for customer-level attackers, and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. This is only exploitable when the user product upload functionality is enabled.</td>
 				</tr>
 			
 		

@@ -1,16 +1,4 @@
 {
-  "CVE-2024-1986": {
-    "cvss": 8.8,
-    "description": "The Booster Elite for WooCommerce plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the wc_add_new_product() function in all versions up to, and including, 7.1.7. This makes it possible for customer-level attackers, and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. This is only exploitable when the user product upload functionality is enabled.",
-    "published": "2024-03-07T21:15:08.013",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-2044": {
-    "url": "https://github.com/pgadmin-org/pgadmin4/issues/7258",
-    "cvss": 4.6,
-    "description": "pgAdmin 4 uses a file-based session management approach. The session files are saved on disk as pickle objects. When a user performs a request, the value of the session cookie 'pga4_session' is used to retrieve the file, then its content is deserialised, and finally its signature verified.\nThe cookie value is split in 2 parts at the first '!' character. The first part is the session ID (sid), while the second is the session digest.\n The vulnerability lies in versions of pgAdmin prior to 8.4 where a method loads session files by concatenating the sessions folder - located inside the pgAdmin 4 DATA_DIR - with the session ID. Precisely, the two values are concatenated using the ['os.path.join'] function. It does not set a trusted base-path which should not be escaped\n",
-    "published": "2024-03-07T21:15:08.767"
-  },
   "CVE-2024-2265": {
     "cvss": 5.3,
     "description": "A vulnerability, which was classified as problematic, was found in keerti1924 PHP-MYSQL-User-Login-System 1.0. This affects an unknown part of the file login.sql. The manipulation leads to inclusion of sensitive information in source code. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-256035. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
