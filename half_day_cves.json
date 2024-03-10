@@ -1,10 +1,4 @@
 {
-  "CVE-2024-28213": {
-    "cvss": "-",
-    "description": "nGrinder before 3.5.9 allows to accept serialized Java objects from unauthenticated users, which could allow remote attacker to execute arbitrary code via unsafe Java objects deserialization.",
-    "published": "2024-03-07T05:15:54.710",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2024-1720": {
     "cvss": 4.7,
     "description": "The User Registration \u2013 Custom Registration Form, Login Form, and User Profile WordPress Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'Display Name' parameter in all versions up to, and including, 3.1.4 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This vulnerability requires social engineering to successfully exploit, and the impact would be very limited due to the attacker requiring a user to login as the user with the injected payload for execution.",
@@ -64,5 +58,11 @@
     "description": "A vulnerability, which was classified as critical, has been found in 1Panel up to 1.10.1-lts. Affected by this issue is the function baseApi.UpdateDeviceSwap of the file /api/v1/toolbox/device/update/swap. The manipulation of the argument Path with the input 123123123\\nopen -a Calculator leads to command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-256304.",
     "published": "2024-03-10T02:16:08.767",
     "keywords": "remote,command"
+  },
+  "CVE-2024-28757": {
+    "url": "https://github.com/libexpat/libexpat/pull/842",
+    "cvss": "-",
+    "description": "libexpat through 2.6.1 allows an XML Entity Expansion attack when there is isolated use of external parsers (created via XML_ExternalEntityParserCreate).",
+    "published": "2024-03-10T05:15:06.570"
   }
 }
