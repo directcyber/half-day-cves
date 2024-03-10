@@ -1,10 +1,4 @@
 {
-  "CVE-2024-1720": {
-    "cvss": 4.7,
-    "description": "The User Registration \u2013 Custom Registration Form, Login Form, and User Profile WordPress Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'Display Name' parameter in all versions up to, and including, 3.1.4 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This vulnerability requires social engineering to successfully exploit, and the impact would be very limited due to the attacker requiring a user to login as the user with the injected payload for execution.",
-    "published": "2024-03-07T06:15:50.630",
-    "keywords": "execution,unauthenticated"
-  },
   "CVE-2024-0917": {
     "cvss": 9.4,
     "description": "remote code execution in paddlepaddle/paddle 2.6.0",
