@@ -28,5 +28,11 @@
     "cvss": 2.8,
     "description": "If kernel headers need to be extracted, bcc will attempt to load them from a temporary directory. An unprivileged attacker could use this to force bcc to load compromised linux headers. Linux distributions which provide kernel headers by default are not affected by default.",
     "published": "2024-03-10T23:15:53.967"
+  },
+  "CVE-2024-28816": {
+    "url": "https://github.com/aaravrajsingh/chatbot/pull/10",
+    "cvss": "-",
+    "description": "Student Information Chatbot a0196ab allows SQL injection via the username to the login function in index.php.",
+    "published": "2024-03-11T03:15:05.943"
   }
 }
