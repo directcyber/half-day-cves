@@ -100,5 +100,17 @@
     "description": "In access_secure_service_from_temp_bond of btm_sec.cc, there is a possible way to achieve keystroke injection due to improper input validation. This could lead to remote (proximal/adjacent) escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
     "published": "2024-03-11T17:15:46.253",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-1279": {
+    "cvss": "-",
+    "description": "The Paid Memberships Pro WordPress plugin before 2.12.9 does not prevent user with at least the contributor role from leaking other users' sensitive metadata.",
+    "published": "2024-03-11T18:15:17.950",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2024-1290": {
+    "cvss": "-",
+    "description": "The User Registration WordPress plugin before 2.12 does not prevent users with at least the contributor role from rendering sensitive shortcodes, allowing them to generate, and leak, valid password reset URLs, which they can use to take over any accounts.",
+    "published": "2024-03-11T18:15:18.003",
+    "keywords": "sensitive,leak"
   }
 }
