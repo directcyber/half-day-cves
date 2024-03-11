@@ -112,5 +112,71 @@
     "description": "The User Registration WordPress plugin before 2.12 does not prevent users with at least the contributor role from rendering sensitive shortcodes, allowing them to generate, and leak, valid password reset URLs, which they can use to take over any accounts.",
     "published": "2024-03-11T18:15:18.003",
     "keywords": "sensitive,leak"
+  },
+  "CVE-2024-22005": {
+    "cvss": "-",
+    "description": "In TBD of TBD, there is a possible Authentication Bypass due to improperly used crypto. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-03-11T19:15:47.120",
+    "keywords": "execution,authentication,bypass"
+  },
+  "CVE-2024-22011": {
+    "cvss": "-",
+    "description": "In ss_ProcessRejectComponent of ss_MmConManagement.c, there is a possible out of bounds read due to a missing bounds check. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-03-11T19:15:47.413",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-25987": {
+    "cvss": "-",
+    "description": "In pt_sysctl_command of pt.c, there is a possible out of bounds write due to an incorrect bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-03-11T19:15:47.603",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-25988": {
+    "cvss": "-",
+    "description": "In SAEMM_DiscloseGuti of SAEMM_RadioMessageCodec.c, there is a possible out of bounds read due to a missing bounds check. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-03-11T19:15:47.650",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-27206": {
+    "cvss": "-",
+    "description": "In tbd of tbd, there is a possible out of bounds read due to a missing bounds check. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-03-11T19:15:48.020",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-27213": {
+    "cvss": "-",
+    "description": "In BroadcastSystemMessage of servicemgr.cpp, there is a possible Remote Code Execution due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-03-11T19:15:48.333",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-27223": {
+    "cvss": "-",
+    "description": "In EUTRAN_LCS_DecodeFacilityInformationElement of LPP_LcsManagement.c, there is a possible out of bounds read due to a missing bounds check. This could lead to remote information disclosure after authenticating the cell connection with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-03-11T19:15:48.603",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-27225": {
+    "cvss": "-",
+    "description": "In sendHciCommand of bluetooth_hci.cc, there is a possible out of bounds read due to a heap buffer overflow. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-03-11T19:15:48.693",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-27228": {
+    "cvss": "-",
+    "description": "In TBD of TBD, there is a possible out of bounds write due to a heap buffer overflow. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-03-11T19:15:48.827",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-27229": {
+    "cvss": "-",
+    "description": "In ss_SendCallBarringPwdRequiredIndMsg of ss_CallBarring.c, there is a possible null pointer deref due to a missing null check. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-03-11T19:15:48.873",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-27233": {
+    "cvss": "-",
+    "description": "In ppcfw_init_secpolicy of ppcfw.c, there is a possible permission bypass due to uninitialized data. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-03-11T19:15:48.963",
+    "keywords": "execution,bypass"
   }
 }
