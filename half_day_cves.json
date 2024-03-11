@@ -70,5 +70,35 @@
     "description": "An improper error handling vulnerability in LabVIEW may result in remote code execution.  Successful exploitation requires an attacker to provide a user with a specially crafted VI.  This vulnerability affects LabVIEW 2024 Q1 and prior versions.\n\n",
     "published": "2024-03-11T16:15:08.743",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-0039": {
+    "cvss": "-",
+    "description": "In attp_build_value_cmd of att_protocol.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-03-11T17:15:45.350",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-0045": {
+    "cvss": "-",
+    "description": "In smp_proc_sec_req of smp_act.cc, there is a possible out of bounds read due to improper input validation. This could lead to remote (proximal/adjacent) information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-03-11T17:15:45.507",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-0046": {
+    "cvss": "-",
+    "description": "In installExistingPackageAsUser of InstallPackageHelper.java, there is a possible carrier restriction bypass due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-03-11T17:15:45.563",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2024-0052": {
+    "cvss": "-",
+    "description": "In multiple functions of healthconnect, there is a possible leakage of exercise route data due to a missing permission check. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-03-11T17:15:45.897",
+    "keywords": "execution,leak"
+  },
+  "CVE-2024-23717": {
+    "cvss": "-",
+    "description": "In access_secure_service_from_temp_bond of btm_sec.cc, there is a possible way to achieve keystroke injection due to improper input validation. This could lead to remote (proximal/adjacent) escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-03-11T17:15:46.253",
+    "keywords": "remote,execution"
   }
 }
