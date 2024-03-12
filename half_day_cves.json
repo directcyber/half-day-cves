@@ -274,5 +274,29 @@
     "description": "An unauthenticated remote attacker can influence the communication due to the lack of encryption of sensitive data via a MITM. Charging is not affected.",
     "published": "2024-03-12T09:15:09.823",
     "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2024-22039": {
+    "cvss": 10.0,
+    "description": "A vulnerability has been identified in Cerberus PRO EN Engineering Tool (All versions < IP8), Cerberus PRO EN Fire Panel FC72x (All versions < IP8), Cerberus PRO EN X200 Cloud Distribution (All versions < V4.0.5016), Cerberus PRO EN X300 Cloud Distribution (All versions < V4.2.5015), Sinteso FS20 EN Engineering Tool (All versions < MP8), Sinteso FS20 EN Fire Panel FC20 (All versions < MP8), Sinteso FS20 EN X200 Cloud Distribution (All versions < V4.0.5016), Sinteso FS20 EN X300 Cloud Distribution (All versions < V4.2.5015), Sinteso Mobile (All versions < V3.0.0). The network communication library in affected systems does not validate the length of certain X.509 certificate attributes which might result in a stack-based buffer overflow.\r\nThis could allow an unauthenticated remote attacker to execute code on the underlying operating system with root privileges.",
+    "published": "2024-03-12T11:15:48.420",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-22040": {
+    "cvss": 7.5,
+    "description": "A vulnerability has been identified in Cerberus PRO EN Engineering Tool (All versions), Cerberus PRO EN Fire Panel FC72x (All versions < IP8 SR4), Cerberus PRO EN X200 Cloud Distribution (All versions < V4.3.5618), Cerberus PRO EN X300 Cloud Distribution (All versions < V4.3.5617), Sinteso FS20 EN Engineering Tool (All versions), Sinteso FS20 EN Fire Panel FC20 (All versions < MP8 SR4), Sinteso FS20 EN X200 Cloud Distribution (All versions < V4.3.5618), Sinteso FS20 EN X300 Cloud Distribution (All versions < V4.3.5617), Sinteso Mobile (All versions). The network communication library in affected systems insufficiently validates HMAC values which might result in a buffer overread.\r\nThis could allow an unauthenticated remote attacker to crash the network service.",
+    "published": "2024-03-12T11:15:48.637",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-22041": {
+    "cvss": 7.5,
+    "description": "A vulnerability has been identified in Cerberus PRO EN Engineering Tool (All versions), Cerberus PRO EN Fire Panel FC72x (All versions < IP8 SR4), Cerberus PRO EN X200 Cloud Distribution (All versions < V4.3.5618), Cerberus PRO EN X300 Cloud Distribution (All versions < V4.3.5617), Sinteso FS20 EN Engineering Tool (All versions), Sinteso FS20 EN Fire Panel FC20 (All versions < MP8 SR4), Sinteso FS20 EN X200 Cloud Distribution (All versions < V4.3.5618), Sinteso FS20 EN X300 Cloud Distribution (All versions < V4.3.5617), Sinteso Mobile (All versions). The network communication library in affected systems improperly handles memory buffers when parsing X.509 certificates.\r\nThis could allow an unauthenticated remote attacker to crash the network service.",
+    "published": "2024-03-12T11:15:48.940",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-22045": {
+    "cvss": 7.6,
+    "description": "A vulnerability has been identified in SINEMA Remote Connect Client (All versions < V3.1 SP1). The product places sensitive information into files or directories that are accessible to actors who are allowed to have access to the files, but not to the sensitive information. This information is also available via the web interface of the product.",
+    "published": "2024-03-12T11:15:49.390",
+    "keywords": "remote,sensitive"
   }
 }
