@@ -184,5 +184,11 @@
     "description": "In ppcfw_init_secpolicy of ppcfw.c, there is a possible permission bypass due to uninitialized data. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
     "published": "2024-03-11T19:15:48.963",
     "keywords": "execution,bypass"
+  },
+  "CVE-2024-28199": {
+    "url": "https://github.com/phlex-ruby/phlex/commit/aa50c604cdee1d0ce7ef068a4c66cbd5d43f96a1",
+    "cvss": 7.1,
+    "description": "phlex is an open source framework for building object-oriented views in Ruby. There is a potential cross-site scripting (XSS) vulnerability that can be exploited via maliciously crafted user data. This was due to improper case-sensitivity in the code that was meant to prevent these attacks. If you render an `<a>` tag with an `href` attribute set to a user-provided link, that link could potentially execute JavaScript when clicked by another user. If you splat user-provided attributes when rendering any HTML tag, malicious event attributes could be included in the output, executing JavaScript when the events are triggered by another user. Patches are available on RubyGems for all 1.x minor versions. Users are advised to upgrade. Users unable to upgrade should consider configuring a content security policy that does not allow `unsafe-inline`.",
+    "published": "2024-03-11T23:15:47.333"
   }
 }
