@@ -508,5 +508,35 @@
     "description": "The MasterStudy LMS WordPress Plugin \u2013 for Online Courses and Education plugin for WordPress is vulnerable to Information Exposure in versions up to, and including, 3.2.10. This can allow unauthenticated attackers to extract sensitive data including all registered user's username and email addresses which can be used to help perform future attacks.",
     "published": "2024-03-13T16:15:31.703",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-20262": {
+    "cvss": 6.5,
+    "description": "A vulnerability in the Secure Copy Protocol (SCP) and SFTP feature of Cisco IOS XR Software could allow an authenticated, local attacker to create or overwrite files in a system directory, which could lead to a denial of service (DoS) condition. The attacker would require valid user credentials to perform this attack.\r\n\r This vulnerability is due to a lack of proper validation of SCP and SFTP CLI input parameters. An attacker could exploit this vulnerability by authenticating to the device and issuing SCP or SFTP CLI commands with specific parameters. A successful exploit could allow the attacker to impact the functionality of the device, which could lead to a DoS condition. The device may need to be manually rebooted to recover.\r\n\r Note: This vulnerability is exploitable only when a local user invokes SCP or SFTP commands at the Cisco IOS XR CLI. A local user with administrative privileges could exploit this vulnerability remotely.",
+    "published": "2024-03-13T17:15:47.187",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-20266": {
+    "cvss": 5.3,
+    "description": "A vulnerability in the DHCP version 4 (DHCPv4) server feature of Cisco IOS XR Software could allow an unauthenticated, remote attacker to trigger a crash of the dhcpd process, resulting in a denial of service (DoS) condition.\r\n\r This vulnerability exists because certain DHCPv4 messages are improperly validated when they are processed by an affected device. An attacker could exploit this vulnerability by sending a malformed DHCPv4 message to an affected device. A successful exploit could allow the attacker to cause a crash of the dhcpd process. While the dhcpd process is restarting, which may take approximately two minutes, DHCPv4 server services are unavailable on the affected device. This could temporarily prevent network access to clients that join the network during that time period and rely on the DHCPv4 server of the affected device.\r\n\r Notes: \r\n\r \r Only the dhcpd process crashes and eventually restarts automatically. The router does not reload.\r This vulnerability only applies to DHCPv4. DHCP version 6 (DHCPv6) is not affected.",
+    "published": "2024-03-13T17:15:47.407",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-20315": {
+    "cvss": 5.8,
+    "description": "A vulnerability in the access control list (ACL) processing on MPLS interfaces in the ingress direction of Cisco IOS XR Software could allow an unauthenticated, remote attacker to bypass a configured ACL.\r\n\r This vulnerability is due to improper assignment of lookup keys to internal interface contexts. An attacker could exploit this vulnerability by attempting to send traffic through an affected device. A successful exploit could allow the attacker to access resources behind the affected device that were supposed to be protected by a configured ACL.",
+    "published": "2024-03-13T17:15:47.607",
+    "keywords": "remote,unauthenticated,bypass"
+  },
+  "CVE-2024-20319": {
+    "cvss": 4.3,
+    "description": "A vulnerability in the UDP forwarding code of Cisco IOS XR Software could allow an unauthenticated, adjacent attacker to bypass configured management plane protection policies and access the Simple Network Management Plane (SNMP) server of an affected device.\r\n\r This vulnerability is due to incorrect UDP forwarding programming when using SNMP with management plane protection. An attacker could exploit this vulnerability by attempting to perform an SNMP operation using broadcast as the destination address that could be processed by an affected device that is configured with an SNMP server. A successful exploit could allow the attacker to communicate to the device on the configured SNMP ports. Although an unauthenticated attacker could send UDP datagrams to the configured SNMP port, only an authenticated user can retrieve or modify data using SNMP requests.",
+    "published": "2024-03-13T17:15:48.003",
+    "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2024-20322": {
+    "cvss": 5.8,
+    "description": "A vulnerability in the access control list (ACL) processing on Pseudowire interfaces in the ingress direction of Cisco IOS XR Software could allow an unauthenticated, remote attacker to bypass a configured ACL.\r\n\r This vulnerability is due to improper assignment of lookup keys to internal interface contexts. An attacker could exploit this vulnerability by attempting to send traffic through an affected device. A successful exploit could allow the attacker to access resources behind the affected device that were supposed to be protected by a configured ACL.",
+    "published": "2024-03-13T17:15:48.407",
+    "keywords": "remote,unauthenticated,bypass"
   }
 }
