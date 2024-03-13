@@ -538,5 +538,11 @@
     "description": "A vulnerability in the access control list (ACL) processing on Pseudowire interfaces in the ingress direction of Cisco IOS XR Software could allow an unauthenticated, remote attacker to bypass a configured ACL.\r\n\r This vulnerability is due to improper assignment of lookup keys to internal interface contexts. An attacker could exploit this vulnerability by attempting to send traffic through an affected device. A successful exploit could allow the attacker to access resources behind the affected device that were supposed to be protected by a configured ACL.",
     "published": "2024-03-13T17:15:48.407",
     "keywords": "remote,unauthenticated,bypass"
+  },
+  "CVE-2024-2403": {
+    "cvss": "-",
+    "description": "\nImproper cleanup in temporary file handling component in Devolutions Remote Desktop Manager 2024.1.12 and\nearlier on Windows allows an attacker that compromised a user endpoint, under specific circumstances, to access sensitive information via residual files in the temporary directory.\n\n",
+    "published": "2024-03-13T18:15:07.917",
+    "keywords": "remote,sensitive"
   }
 }
