@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-03-13T21:09:52.661852
+Updated at UTC 2024-03-13T22:08:06.978354
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,22 @@ Updated at UTC 2024-03-13T21:09:52.661852
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27097">CVE-2024-27097</a></td>
+					<td>4.3</td>
+					<td><a target=_blank href="https://github.com/ckan/ckan/commit/81b56c55e5e3651d7fcf9642cd5a489a9b62212c">https://github.com/ckan/ckan/commit/81b56c55e5e3651d7fcf9642cd5a489a9b62212c</a></td>
+					<td class=date>2024-03-13T21:15:58.993</td>
+					<td class=description>A user endpoint didn't perform filtering on an incoming parameter, which was added directly to the application log. This could lead to an attacker injecting false log entries or corrupt the log file format. This has been fixed in the CKAN versions 2.9.11 and 2.10.4. Users are advised to upgrade. Users unable to upgrade should override the `/user/reset` endpoint to filter the `id` parameter in order to exclude newlines.
+
+</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -306,6 +322,18 @@ Updated at UTC 2024-03-13T21:09:52.661852
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28192">CVE-2024-28192</a></td>
+					<td>5.3</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-03-13T21:16:00.823</td>
+					<td class=description>your_spotify is an open source, self hosted Spotify tracking dashboard. YourSpotify version <1.8.0 is vulnerable to NoSQL injection in the public access token processing logic. Attackers can fully bypass the public token authentication mechanism, regardless if a public token has been generated before or not, without any user interaction or prerequisite knowledge. This vulnerability allows an attacker to fully bypass the public token authentication mechanism, regardless if a public token has been generated before or not, without any user interaction or prerequisite knowledge. This issue has been addressed in version 1.8.0. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+				</tr>
+			
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
