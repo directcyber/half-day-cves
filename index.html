@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-03-14T19:07:00.995480
+Updated at UTC 2024-03-14T20:09:30.694067
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,21 @@ Updated at UTC 2024-03-14T19:07:00.995480
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27301">CVE-2024-27301</a></td>
+					<td>7.3</td>
+					<td><a target=_blank href="https://github.com/root3nl/supportapp/commit/e866b2aa4028f6a982977f462c0f7550d952c5d0">https://github.com/root3nl/supportapp/commit/e866b2aa4028f6a982977f462c0f7550d952c5d0</a></td>
+					<td class=date>2024-03-14T19:15:50.680</td>
+					<td class=description>Support App is an opensource application specialized in managing Apple devices. It's possible to abuse a vulnerability inside the postinstall installer script to make the installer execute arbitrary code as root. The cause of the vulnerability is the fact that the shebang `#!/bin/zsh` is being used. When the installer is executed it asks for the users password to be executed as root. However, it'll still be using the $HOME of the user and therefore loading the file  `$HOME/.zshenv` when the `postinstall` script is executed.
+An attacker could add malicious code to `$HOME/.zshenv` and it will be executed when the app is installed. An attacker may leverage this vulnerability to escalate privilege on the system. This issue has been addressed in version 2.5.1 Rev 2. All users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+
+
+				</tr>
+			
+		
+			
 		
 			
 		
@@ -256,32 +271,20 @@ Updated at UTC 2024-03-14T19:07:00.995480
 				</tr>
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27266">CVE-2024-27266</a></td>
+					<td>8.2</td>
+					<td>remote,sensitive</td>
+					<td class=date>2024-03-14T19:15:50.420</td>
+					<td class=description>IBM Maximo Application Suite 7.6.1.3 is vulnerable to an XML External Entity Injection (XXE) attack when processing XML data. A remote attacker could exploit this vulnerability to expose sensitive information or consume memory resources.  IBM X-Force ID:  284566.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -1065,126 +1068,6 @@ This could allow an unauthenticated remote attacker to execute code on the under
 				</tr>
 			
 		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27233">CVE-2024-27233</a></td>
-					<td>-</td>
-					<td>execution,bypass</td>
-					<td class=date>2024-03-11T19:15:48.963</td>
-					<td class=description>In ppcfw_init_secpolicy of ppcfw.c, there is a possible permission bypass due to uninitialized data. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27229">CVE-2024-27229</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2024-03-11T19:15:48.873</td>
-					<td class=description>In ss_SendCallBarringPwdRequiredIndMsg of ss_CallBarring.c, there is a possible null pointer deref due to a missing null check. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27228">CVE-2024-27228</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2024-03-11T19:15:48.827</td>
-					<td class=description>In TBD of TBD, there is a possible out of bounds write due to a heap buffer overflow. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27227">CVE-2024-27227</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2024-03-11T19:15:48.783</td>
-					<td class=description>Android kernel allows Remote code execution.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27225">CVE-2024-27225</a></td>
-					<td>-</td>
-					<td>execution,command</td>
-					<td class=date>2024-03-11T19:15:48.693</td>
-					<td class=description>In sendHciCommand of bluetooth_hci.cc, there is a possible out of bounds read due to a heap buffer overflow. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27223">CVE-2024-27223</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2024-03-11T19:15:48.603</td>
-					<td class=description>In EUTRAN_LCS_DecodeFacilityInformationElement of LPP_LcsManagement.c, there is a possible out of bounds read due to a missing bounds check. This could lead to remote information disclosure after authenticating the cell connection with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27213">CVE-2024-27213</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2024-03-11T19:15:48.333</td>
-					<td class=description>In BroadcastSystemMessage of servicemgr.cpp, there is a possible Remote Code Execution due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27206">CVE-2024-27206</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2024-03-11T19:15:48.020</td>
-					<td class=description>In tbd of tbd, there is a possible out of bounds read due to a missing bounds check. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-25988">CVE-2024-25988</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2024-03-11T19:15:47.650</td>
-					<td class=description>In SAEMM_DiscloseGuti of SAEMM_RadioMessageCodec.c, there is a possible out of bounds read due to a missing bounds check. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-25987">CVE-2024-25987</a></td>
-					<td>-</td>
-					<td>execution,command</td>
-					<td class=date>2024-03-11T19:15:47.603</td>
-					<td class=description>In pt_sysctl_command of pt.c, there is a possible out of bounds write due to an incorrect bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-22011">CVE-2024-22011</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2024-03-11T19:15:47.413</td>
-					<td class=description>In ss_ProcessRejectComponent of ss_MmConManagement.c, there is a possible out of bounds read due to a missing bounds check. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-22005">CVE-2024-22005</a></td>
-					<td>-</td>
-					<td>execution,authentication,bypass</td>
-					<td class=date>2024-03-11T19:15:47.120</td>
-					<td class=description>In TBD of TBD, there is a possible Authentication Bypass due to improperly used crypto. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
 			
 		
 
