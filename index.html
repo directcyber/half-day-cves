@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-03-14T22:07:56.989455
+Updated at UTC 2024-03-14T23:08:34.796314
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,19 +57,6 @@ Updated at UTC 2024-03-14T22:07:56.989455
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27301">CVE-2024-27301</a></td>
-					<td>7.3</td>
-					<td><a target=_blank href="https://github.com/root3nl/supportapp/commit/e866b2aa4028f6a982977f462c0f7550d952c5d0">https://github.com/root3nl/supportapp/commit/e866b2aa4028f6a982977f462c0f7550d952c5d0</a></td>
-					<td class=date>2024-03-14T19:15:50.680</td>
-					<td class=description>Support App is an opensource application specialized in managing Apple devices. It's possible to abuse a vulnerability inside the postinstall installer script to make the installer execute arbitrary code as root. The cause of the vulnerability is the fact that the shebang `#!/bin/zsh` is being used. When the installer is executed it asks for the users password to be executed as root. However, it'll still be using the $HOME of the user and therefore loading the file  `$HOME/.zshenv` when the `postinstall` script is executed.
-An attacker could add malicious code to `$HOME/.zshenv` and it will be executed when the app is installed. An attacker may leverage this vulnerability to escalate privilege on the system. This issue has been addressed in version 2.5.1 Rev 2. All users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-
-
-				</tr>
-			
 		
 			
 		
@@ -273,8 +260,6 @@ An attacker could add malicious code to `$HOME/.zshenv` and it will be executed 
 		
 
 		<hr>
-		
-			
 		
 			
 				<tr class=keywords style="display: none">
