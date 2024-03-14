@@ -1,10 +1,4 @@
 {
-  "CVE-2024-28816": {
-    "url": "https://github.com/aaravrajsingh/chatbot/pull/10",
-    "cvss": "-",
-    "description": "Student Information Chatbot a0196ab allows SQL injection via the username to the login function in index.php.",
-    "published": "2024-03-11T03:15:05.943"
-  },
   "CVE-2024-28823": {
     "url": "https://github.com/awslabs/aws-js-s3-explorer/commit/f62f12960d081895960d0dc6fde8364f25d651b6",
     "cvss": "-",
@@ -568,5 +562,23 @@
     "description": "Vinchin Backup and Recovery 7.2 and Earlier is vulnerable to Authenticated Remote Code Execution (RCE) via the getVerifydiyResult function in ManoeuvreHandler.class.php.",
     "published": "2024-03-14T02:15:50.613",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-1654": {
+    "cvss": 7.2,
+    "description": "This vulnerability potentially allows unauthorized write operations which may lead to remote code execution. An attacker must already have authenticated admin access and knowledge of both an internal system identifier and details of another valid user to exploit this. ",
+    "published": "2024-03-14T03:15:08.033",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-25651": {
+    "cvss": "-",
+    "description": "User enumeration can occur in the Authentication REST API in Delinea PAM Secret Server 11.4. This allows a remote attacker to determine whether a user is valid because of a difference in responses from the /oauth2/token endpoint.",
+    "published": "2024-03-14T03:15:08.727",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2024-28388": {
+    "cvss": "-",
+    "description": "SQL injection vulnerability in SunnyToo stproductcomments module for PrestaShop v.1.0.5 and before, allows a remote attacker to escalate privileges and obtain sensitive information via the StProductCommentClass::getListcomments method.",
+    "published": "2024-03-14T03:15:09.173",
+    "keywords": "remote,sensitive"
   }
 }
