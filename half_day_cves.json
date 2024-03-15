@@ -1,10 +1,4 @@
 {
-  "CVE-2024-25331": {
-    "cvss": "-",
-    "description": "DIR-822 Rev. B Firmware v2.02KRB09 and DIR-822-CA Rev. B Firmware v2.03WWb01 suffer from a LAN-Side Unauthenticated Remote Code Execution (RCE) vulnerability elevated from HNAP Stack-Based Buffer Overflow.",
-    "published": "2024-03-12T06:15:07.970",
-    "keywords": "remote,execution,unauthenticated"
-  },
   "CVE-2024-0906": {
     "cvss": 5.3,
     "description": "The f(x) Private Site plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.2.1 via the API. This makes it possible for unauthenticated attackers to obtain page and post contents of a site protected with this plugin.",
@@ -496,5 +490,11 @@
     "cvss": "-",
     "description": "A heap-based buffer overflow in Clmg before 3.3.3 can occur via a crafted file to cimg_library::CImg<unsigned char>::_load_analyze.",
     "published": "2024-03-15T01:15:58.833"
+  },
+  "CVE-2024-25227": {
+    "cvss": "-",
+    "description": "SQL Injection vulnerability in ABO.CMS version 5.8, allows remote attackers to execute arbitrary code, cause a denial of service (DoS), escalate privileges, and obtain sensitive information via the tb_login parameter in admin login page.",
+    "published": "2024-03-15T06:15:08.603",
+    "keywords": "remote,sensitive"
   }
 }
