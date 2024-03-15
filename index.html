@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-03-15T19:07:29.649025
+Updated at UTC 2024-03-15T20:10:50.963372
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,19 @@ Updated at UTC 2024-03-15T19:07:29.649025
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28252">CVE-2024-28252</a></td>
+					<td>7.5</td>
+					<td><a target=_blank href="https://github.com/corewcf/corewcf/issues/1345">https://github.com/corewcf/corewcf/issues/1345</a></td>
+					<td class=date>2024-03-15T19:15:07.210</td>
+					<td class=description>CoreWCF is a port of the service side of Windows Communication Foundation (WCF) to .NET Core. If you have a NetFraming based CoreWCF service, extra system resources could be consumed by connections being left established instead of closing or aborting them. There are two scenarios when this can happen. When a client established a connection to the service and sends no data, the service will wait indefinitely for the client to initiate the NetFraming session handshake. Additionally, once a client has established a session, if the client doesn't send any requests for the period of time configured in the binding ReceiveTimeout, the connection is not properly closed as part of the session being aborted. The bindings affected by this behavior are NetTcpBinding, NetNamedPipeBinding, and UnixDomainSocketBinding. Only NetTcpBinding has the ability to accept non local connections. The currently supported versions of CoreWCF are v1.4.x and v1.5.x. The fix can be found in v1.4.2 and v1.5.3 of the CoreWCF packages. Users are advised to upgrade. There are no workarounds for this issue.
+</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -214,10 +227,10 @@ Updated at UTC 2024-03-15T19:07:29.649025
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -655,29 +668,6 @@ earlier on Windows allows an attacker that compromised a user endpoint, under sp
 					<td class=date>2024-03-12T20:15:08.113</td>
 					<td class=description>Peering Manager is a BGP session management tool. There is a Server Side Template Injection vulnerability that leads to Remote Code Execution in Peering Manager <=1.8.2. As a result arbitrary commands can be executed on the operating system that is running Peering Manager. This issue has been addressed in version 1.8.3. Users are advised to upgrade. There are no known workarounds for this vulnerability.
 </td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27894">CVE-2024-27894</a></td>
-					<td>8.5</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-03-12T19:15:47.970</td>
-					<td class=description>The Pulsar Functions Worker includes a capability that permits authenticated users to create functions where the function's implementation is referenced by a URL. The supported URL schemes include "file", "http", and "https". When a function is created using this method, the Functions Worker will retrieve the implementation from the URL provided by the user. However, this feature introduces a vulnerability that can be exploited by an attacker to gain unauthorized access to any file that the Pulsar Functions Worker process has permissions to read. This includes reading the process environment which potentially includes sensitive information, such as secrets. Furthermore, an attacker could leverage this vulnerability to use the Pulsar Functions Worker as a proxy to access the content of remote HTTP and HTTPS endpoint URLs. This could also be used to carry out denial of service attacks.
-This vulnerability also applies to the Pulsar Broker when it is configured with "functionsWorkerEnabled=true".
-
-This issue affects Apache Pulsar versions from 2.4.0 to 2.10.5, from 2.11.0 to 2.11.3, from 3.0.0 to 3.0.2, from 3.1.0 to 3.1.2, and 3.2.0. 
-
-2.10 Pulsar Function Worker users should upgrade to at least 2.10.6.
-2.11 Pulsar Function Worker users should upgrade to at least 2.11.4.
-3.0 Pulsar Function Worker users should upgrade to at least 3.0.3.
-3.1 Pulsar Function Worker users should upgrade to at least 3.1.3.
-3.2 Pulsar Function Worker users should upgrade to at least 3.2.1.
-
-Users operating versions prior to those listed above should upgrade to the aforementioned patched versions or newer versions.
-
-The updated versions of Pulsar Functions Worker will, by default, impose restrictions on the creation of functions using URLs. For users who rely on this functionality, the Function Worker configuration provides two configuration keys: "additionalEnabledConnectorUrlPatterns" and "additionalEnabledFunctionsUrlPatterns". These keys allow users to specify a set of URL patterns that are permitted, enabling the creation of functions using URLs that match the defined patterns. This approach ensures that the feature remains available to those who require it, while limiting the potential for unauthorized access and exploitation.</td>
 				</tr>
 			
 		
