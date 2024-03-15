@@ -1,10 +1,4 @@
 {
-  "CVE-2024-23112": {
-    "cvss": 8.0,
-    "description": "An authorization bypass through user-controlled key vulnerability [CWE-639] in FortiOS version 7.4.0 through 7.4.1, 7.2.0 through 7.2.6, 7.0.1 through 7.0.13, 6.4.7 through 6.4.14, and FortiProxy version 7.4.0 through 7.4.2, 7.2.0 through 7.2.8, 7.0.0 through 7.0.14 SSL-VPN may allow an authenticated attacker to gain access to another user\u2019s bookmark via URL manipulation.",
-    "published": "2024-03-12T15:15:49.090",
-    "keywords": "vpn,bypass"
-  },
   "CVE-2024-1527": {
     "cvss": 9.8,
     "description": "Unrestricted file upload vulnerability in CMS Made Simple, affecting version 2.2.14. This vulnerability allows an authenticated user to bypass the security measures of the upload functionality and potentially create a remote execution of commands via webshell.",
@@ -412,5 +406,17 @@
     "description": "Information disclosure in persistent watchers handling in Apache ZooKeeper due to missing ACL check. It allows an attacker to monitor child znodes by attaching a persistent watcher (addWatch command) to a parent which the attacker has already access to. ZooKeeper server doesn't do ACL check when the persistent watcher is triggered and as a consequence, the full path of znodes that a watch event gets triggered upon is exposed to the owner of the watcher. It's important to note that only the path is exposed by this vulnerability, not the data of znode, but since znode path can contain sensitive information like user name or login ID, this issue is potentially critical.\n\nUsers are recommended to upgrade to version 3.9.2, 3.8.4 which fixes the issue.\n",
     "published": "2024-03-15T11:15:08.927",
     "keywords": "command,sensitive"
+  },
+  "CVE-2024-28318": {
+    "url": "https://github.com/gpac/gpac/issues/2764",
+    "cvss": "-",
+    "description": "gpac 2.3-DEV-rev921-g422b78ecf-master was discovered to contain a out of boundary write vulnerability via swf_get_string at scene_manager/swf_parse.c:325",
+    "published": "2024-03-15T15:15:08.977"
+  },
+  "CVE-2024-28319": {
+    "url": "https://github.com/gpac/gpac/issues/2763",
+    "cvss": "-",
+    "description": "gpac 2.3-DEV-rev921-g422b78ecf-master was discovered to contain an out of boundary read vulnerability via gf_dash_setup_period media_tools/dash_client.c:6374",
+    "published": "2024-03-15T15:15:09.020"
   }
 }
