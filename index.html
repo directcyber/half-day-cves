@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-03-15T23:09:04.772125
+Updated at UTC 2024-03-16T00:37:12.684878
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-03-15T23:09:04.772125
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -235,6 +237,16 @@ Updated at UTC 2024-03-15T23:09:04.772125
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28859">CVE-2024-28859</a></td>
+					<td>5.0</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-03-15T23:15:08.117</td>
+					<td class=description>Symfony1 is a community fork of symfony 1.4 with DIC, form enhancements, latest Swiftmailer, better performance, composer compatible and PHP 8 support. Symfony 1 has a gadget chain due to vulnerable Swift Mailer dependency that would enable an attacker to get remote code execution if a developer unserialize user input in his project. This vulnerability present no direct threat but is a vector that will enable remote code execution if a developper deserialize user untrusted data. Symfony 1 depends on Swift Mailer which is bundled by default in vendor directory in the default installation since 1.3.0. Swift Mailer classes implement some `__destruct()` methods. These methods are called when php destroys the object in memory. However, it is possible to include any object type in `$this->_keys` to make PHP access to another array/object properties than intended by the developer. In particular, it is possible to abuse the array access which is triggered on foreach($this->_keys ...) for any class implementing ArrayAccess interface. This may allow an attacker to execute any PHP command which leads to remote code execution. This issue has been addressed in version 1.5.18. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
