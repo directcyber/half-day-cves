@@ -1,16 +1,4 @@
 {
-  "CVE-2024-27097": {
-    "url": "https://github.com/ckan/ckan/commit/81b56c55e5e3651d7fcf9642cd5a489a9b62212c",
-    "cvss": 4.3,
-    "description": "A user endpoint didn't perform filtering on an incoming parameter, which was added directly to the application log. This could lead to an attacker injecting false log entries or corrupt the log file format. This has been fixed in the CKAN versions 2.9.11 and 2.10.4. Users are advised to upgrade. Users unable to upgrade should override the `/user/reset` endpoint to filter the `id` parameter in order to exclude newlines.\n\n",
-    "published": "2024-03-13T21:15:58.993"
-  },
-  "CVE-2024-28192": {
-    "cvss": 5.3,
-    "description": "your_spotify is an open source, self hosted Spotify tracking dashboard. YourSpotify version <1.8.0 is vulnerable to NoSQL injection in the public access token processing logic. Attackers can fully bypass the public token authentication mechanism, regardless if a public token has been generated before or not, without any user interaction or prerequisite knowledge. This vulnerability allows an attacker to fully bypass the public token authentication mechanism, regardless if a public token has been generated before or not, without any user interaction or prerequisite knowledge. This issue has been addressed in version 1.8.0. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
-    "published": "2024-03-13T21:16:00.823",
-    "keywords": "authentication,bypass"
-  },
   "CVE-2024-25228": {
     "cvss": "-",
     "description": "Vinchin Backup and Recovery 7.2 and Earlier is vulnerable to Authenticated Remote Code Execution (RCE) via the getVerifydiyResult function in ManoeuvreHandler.class.php.",
