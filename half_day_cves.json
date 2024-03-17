@@ -1,22 +1,4 @@
 {
-  "CVE-2024-1654": {
-    "cvss": 7.2,
-    "description": "This vulnerability potentially allows unauthorized write operations which may lead to remote code execution. An attacker must already have authenticated admin access and knowledge of both an internal system identifier and details of another valid user to exploit this. ",
-    "published": "2024-03-14T03:15:08.033",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-25651": {
-    "cvss": "-",
-    "description": "User enumeration can occur in the Authentication REST API in Delinea PAM Secret Server 11.4. This allows a remote attacker to determine whether a user is valid because of a difference in responses from the /oauth2/token endpoint.",
-    "published": "2024-03-14T03:15:08.727",
-    "keywords": "remote,authentication"
-  },
-  "CVE-2024-28388": {
-    "cvss": "-",
-    "description": "SQL injection vulnerability in SunnyToo stproductcomments module for PrestaShop v.1.0.5 and before, allows a remote attacker to escalate privileges and obtain sensitive information via the StProductCommentClass::getListcomments method.",
-    "published": "2024-03-14T03:15:09.173",
-    "keywords": "remote,sensitive"
-  },
   "CVE-2024-1882": {
     "cvss": 7.2,
     "description": "This vulnerability allows an already authenticated admin user to create a malicious payload that could be leveraged for remote code execution on the server hosting the PaperCut NG/MF application server.\n",
