@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-03-17T09:07:44.177419
+Updated at UTC 2024-03-17T10:08:04.586501
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-03-17T09:07:44.177419
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -163,10 +165,18 @@ Updated at UTC 2024-03-17T09:07:44.177419
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-2558">CVE-2024-2558</a></td>
+					<td>8.8</td>
+					<td>remote,command</td>
+					<td class=date>2024-03-17T09:15:07.253</td>
+					<td class=description>A vulnerability was found in Tenda AC18 15.03.05.05. It has been rated as critical. This issue affects the function formexeCommand of the file /goform/execCommand. The manipulation of the argument cmdinput leads to stack-based buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-257057 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -398,16 +408,6 @@ Users are recommended to upgrade to version 3.9.2, 3.8.4 which fixes the issue.
 					<td>authentication,leak</td>
 					<td class=date>2024-03-14T17:15:52.097</td>
 					<td class=description>follow-redirects is an open source, drop-in replacement for Node's `http` and `https` modules that automatically follows redirects. In affected versions follow-redirects only clears authorization header during cross-domain redirect, but keep the proxy-authentication header which contains credentials too. This vulnerability may lead to credentials leak, but has been addressed in version 1.15.6. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-0313">CVE-2024-0313</a></td>
-					<td>5.5</td>
-					<td>remote,bypass</td>
-					<td class=date>2024-03-14T09:15:47.153</td>
-					<td class=description>A malicious insider exploiting this vulnerability can circumvent existing security controls put in place by the organization. On the contrary, if the victim is legitimately using the temporary bypass to reach out to the Internet for retrieving application and system updates, a remote device could target it and undo the bypass, thereby denying the victim access to the update service, causing it to fail. </td>
 				</tr>
 			
 		
