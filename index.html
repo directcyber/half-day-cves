@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-03-18T22:08:48.889778
+Updated at UTC 2024-03-18T23:09:17.820770
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,22 @@ Updated at UTC 2024-03-18T22:08:48.889778
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28865">CVE-2024-28865</a></td>
+					<td>7.5</td>
+					<td><a target=_blank href="https://github.com/django-wiki/django-wiki/commit/8e280fd6c0bd27ce847c67b2d216c6cbf920f88c">https://github.com/django-wiki/django-wiki/commit/8e280fd6c0bd27ce847c67b2d216c6cbf920f88c</a></td>
+					<td class=date>2024-03-18T22:15:09.510</td>
+					<td class=description>django-wiki is a wiki system for Django. Installations of django-wiki prior to version 0.10.1 are vulnerable to maliciously crafted article content that can cause severe use of server CPU through a regular expression loop. Version 0.10.1 fixes this issue. As a workaround, close off access to create and edit articles by anonymous users.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
 		
 			
 		
@@ -196,6 +212,28 @@ Updated at UTC 2024-03-18T22:08:48.889778
 		
 
 		<hr>
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28855">CVE-2024-28855</a></td>
+					<td>8.1</td>
+					<td>execution,authentication</td>
+					<td class=date>2024-03-18T22:15:08.963</td>
+					<td class=description>ZITADEL, open source authentication management software, uses Go templates to render the login UI. Due to a improper use of the `text/template` instead of the `html/template` package, the Login UI did not sanitize input parameters prior to versions 2.47.3, 2.46.1, 2.45.1, 2.44.3, 2.43.9, 2.42.15, and 2.41.15. An attacker could create a malicious link, where he injected code which would be rendered as part of the login screen. While it was possible to inject HTML including JavaScript, the execution of such scripts would be prevented by the Content Security Policy. Versions 2.47.3, 2.46.1, 2.45.1, 2.44.3, 2.43.9, 2.42.15, and 2.41.15 contain a patch for this issue. No known workarounds are available.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-24578">CVE-2024-24578</a></td>
+					<td>10.0</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2024-03-18T22:15:07.683</td>
+					<td class=description>RaspberryMatic is an open-source operating system for HomeMatic internet-of-things devices. RaspberryMatic / OCCU prior to version 3.75.6.20240316 contains a unauthenticated remote code execution (RCE) vulnerability, caused by multiple issues within the Java based `HMIPServer.jar` component. RaspberryMatric includes a Java based `HMIPServer`, that can be accessed through URLs starting with `/pages/jpages`. The `FirmwareController` class does however not perform any session id checks, thus this feature can be accessed without a valid session. Due to this issue, attackers can gain remote code execution as root user, allowing a full system compromise. Version 3.75.6.20240316 contains a patch.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
