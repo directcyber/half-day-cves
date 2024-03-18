@@ -1,10 +1,4 @@
 {
-  "CVE-2024-2193": {
-    "cvss": "-",
-    "description": "A Speculative Race Condition (SRC) vulnerability that impacts modern CPU architectures supporting speculative execution (related to Spectre V1) has been disclosed. An unauthenticated attacker can exploit this vulnerability to disclose arbitrary data from the CPU using race conditions to access the speculative executable code paths.",
-    "published": "2024-03-15T18:15:08.530",
-    "keywords": "execution,unauthenticated"
-  },
   "CVE-2024-28252": {
     "url": "https://github.com/corewcf/corewcf/issues/1345",
     "cvss": 7.5,
@@ -244,5 +238,29 @@
     "description": "\nCWE-502: Deserialization of Untrusted Data vulnerability exists that could cause remote code\nexecution when a malicious project file is loaded into the application by a valid user.\n\n",
     "published": "2024-03-18T16:15:09.580",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-20762": {
+    "cvss": 5.5,
+    "description": "Animate versions 24.0, 23.0.3 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-03-18T18:15:08.777",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-20763": {
+    "cvss": 5.5,
+    "description": "Animate versions 24.0, 23.0.3 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-03-18T18:15:09.017",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-20764": {
+    "cvss": 5.5,
+    "description": "Animate versions 24.0, 23.0.3 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-03-18T18:15:09.237",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-26063": {
+    "cvss": 5.3,
+    "description": "Adobe Experience Manager versions 6.5.19 and earlier are affected by an Information Exposure vulnerability that could result in a Security feature bypass. An attacker could leverage this vulnerability to gain unauthorized access to sensitive information, potentially bypassing security measures. Exploitation of this issue does not require user interaction.",
+    "published": "2024-03-18T18:15:14.973",
+    "keywords": "sensitive,bypass"
   }
 }
