@@ -172,5 +172,29 @@
     "description": "A vulnerability classified as critical has been found in SourceCodester Employee Task Management System 1.0. Affected is an unknown function of the file /task-info.php. The manipulation leads to execution after redirect. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-257076.",
     "published": "2024-03-18T01:15:48.923",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-24230": {
+    "cvss": "-",
+    "description": "Komm.One CMS 10.4.2.14 has a Server-Side Template Injection (SSTI) vulnerability via the Velocity template engine. It allows remote attackers to execute arbitrary code via a URL that specifies java.lang.Runtime in conjunction with getRuntime().exec followed by an OS command.",
+    "published": "2024-03-18T02:15:06.123",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-2574": {
+    "cvss": 7.3,
+    "description": "A vulnerability classified as critical was found in SourceCodester Employee Task Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /edit-task.php. The manipulation of the argument task_id leads to authorization bypass. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-257077 was assigned to this vulnerability.",
+    "published": "2024-03-18T02:15:06.177",
+    "keywords": "remote,bypass"
+  },
+  "CVE-2024-2575": {
+    "cvss": 7.3,
+    "description": "A vulnerability, which was classified as critical, has been found in SourceCodester Employee Task Management System 1.0. Affected by this issue is some unknown functionality of the file /task-details.php. The manipulation of the argument task_id leads to authorization bypass. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-257078 is the identifier assigned to this vulnerability.",
+    "published": "2024-03-18T02:15:06.397",
+    "keywords": "remote,bypass"
+  },
+  "CVE-2024-2576": {
+    "cvss": 7.3,
+    "description": "A vulnerability, which was classified as critical, was found in SourceCodester Employee Task Management System 1.0. This affects an unknown part of the file /update-admin.php. The manipulation of the argument admin_id leads to authorization bypass. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-257079.",
+    "published": "2024-03-18T02:15:06.620",
+    "keywords": "remote,bypass"
   }
 }
