@@ -232,5 +232,17 @@
     "description": "\nCWE-287: Improper Authentication may allow Authentication Bypass\n\n",
     "published": "2024-03-18T14:15:08.050",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-20757": {
+    "cvss": 5.5,
+    "description": "Bridge versions 13.0.5, 14.0.1 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-03-18T16:15:08.193",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-2229": {
+    "cvss": 7.8,
+    "description": "\nCWE-502: Deserialization of Untrusted Data vulnerability exists that could cause remote code\nexecution when a malicious project file is loaded into the application by a valid user.\n\n",
+    "published": "2024-03-18T16:15:09.580",
+    "keywords": "remote,execution"
   }
 }
