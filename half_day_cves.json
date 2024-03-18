@@ -1,40 +1,4 @@
 {
-  "CVE-2024-0802": {
-    "cvss": 9.8,
-    "description": "Incorrect Pointer Scaling vulnerability in Mitsubishi Electric Corporation MELSEC-Q Series and MELSEC-L Series CPU modules allows a remote unauthenticated attacker to read arbitrary information from a target product or execute malicious code on a target product by sending a specially crafted packet.",
-    "published": "2024-03-15T01:15:57.703",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-0803": {
-    "cvss": 9.8,
-    "description": "Integer Overflow or Wraparound vulnerability in Mitsubishi Electric Corporation MELSEC-Q Series and MELSEC-L Series CPU modules allows a remote unauthenticated attacker to execute malicious code on a target product by sending a specially crafted packet.",
-    "published": "2024-03-15T01:15:57.997",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-1915": {
-    "cvss": 9.8,
-    "description": "Incorrect Pointer Scaling vulnerability in Mitsubishi Electric Corporation MELSEC-Q Series and MELSEC-L Series CPU modules allows a remote unauthenticated attacker to execute malicious code on a target product by sending a specially crafted packet.",
-    "published": "2024-03-15T01:15:58.197",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-1916": {
-    "cvss": 9.8,
-    "description": "Integer Overflow or Wraparound vulnerability in Mitsubishi Electric Corporation MELSEC-Q Series and MELSEC-L Series CPU modules allows a remote unauthenticated attacker to execute malicious code on a target product by sending a specially crafted packet.",
-    "published": "2024-03-15T01:15:58.390",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-1917": {
-    "cvss": 9.8,
-    "description": "Integer Overflow or Wraparound vulnerability in Mitsubishi Electric Corporation MELSEC-Q Series and MELSEC-L Series CPU modules allows a remote unauthenticated attacker to execute malicious code on a target product by sending a specially crafted packet.",
-    "published": "2024-03-15T01:15:58.590",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-26540": {
-    "url": "https://github.com/greyclab/cimg/issues/403",
-    "cvss": "-",
-    "description": "A heap-based buffer overflow in Clmg before 3.3.3 can occur via a crafted file to cimg_library::CImg<unsigned char>::_load_analyze.",
-    "published": "2024-03-15T01:15:58.833"
-  },
   "CVE-2024-25227": {
     "cvss": "-",
     "description": "SQL Injection vulnerability in ABO.CMS version 5.8, allows remote attackers to execute arbitrary code, cause a denial of service (DoS), escalate privileges, and obtain sensitive information via the tb_login parameter in admin login page.",
@@ -189,6 +153,24 @@
     "cvss": 7.3,
     "description": "A vulnerability was found in SourceCodester Employee Task Management System 1.0. It has been classified as critical. This affects an unknown part of the file /edit-task.php. The manipulation leads to execution after redirect. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-257073 was assigned to this vulnerability.",
     "published": "2024-03-18T00:15:08.073",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-2571": {
+    "cvss": 7.3,
+    "description": "A vulnerability was found in SourceCodester Employee Task Management System 1.0. It has been declared as critical. This vulnerability affects unknown code of the file /manage-admin.php. The manipulation leads to execution after redirect. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-257074 is the identifier assigned to this vulnerability.",
+    "published": "2024-03-18T01:15:48.493",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-2572": {
+    "cvss": 7.3,
+    "description": "A vulnerability was found in SourceCodester Employee Task Management System 1.0. It has been rated as critical. This issue affects some unknown processing of the file /task-details.php. The manipulation leads to execution after redirect. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-257075.",
+    "published": "2024-03-18T01:15:48.707",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-2573": {
+    "cvss": 7.3,
+    "description": "A vulnerability classified as critical has been found in SourceCodester Employee Task Management System 1.0. Affected is an unknown function of the file /task-info.php. The manipulation leads to execution after redirect. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-257076.",
+    "published": "2024-03-18T01:15:48.923",
     "keywords": "remote,execution"
   }
 }
