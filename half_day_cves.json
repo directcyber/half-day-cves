@@ -1,10 +1,4 @@
 {
-  "CVE-2024-27756": {
-    "cvss": "-",
-    "description": "An issue in GLPI v.10.0.12 and before allows a remote attacker to execute arbitrary code, escalate privileges, and obtain sensitive information via a crafted script to the title field.",
-    "published": "2024-03-15T07:15:09.923",
-    "keywords": "remote,sensitive"
-  },
   "CVE-2024-23944": {
     "cvss": "-",
     "description": "Information disclosure in persistent watchers handling in Apache ZooKeeper due to missing ACL check. It allows an attacker to monitor child znodes by attaching a persistent watcher (addWatch command) to a parent which the attacker has already access to. ZooKeeper server doesn't do ACL check when the persistent watcher is triggered and as a consequence, the full path of znodes that a watch event gets triggered upon is exposed to the owner of the watcher. It's important to note that only the path is exposed by this vulnerability, not the data of znode, but since znode path can contain sensitive information like user name or login ID, this issue is potentially critical.\n\nUsers are recommended to upgrade to version 3.9.2, 3.8.4 which fixes the issue.\n",
@@ -196,5 +190,11 @@
     "description": "A vulnerability has been found in SourceCodester Employee Task Management System 1.0 and classified as critical. This vulnerability affects unknown code of the file /update-employee.php. The manipulation of the argument admin_id leads to authorization bypass. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-257080.",
     "published": "2024-03-18T03:15:06.123",
     "keywords": "remote,bypass"
+  },
+  "CVE-2024-29156": {
+    "cvss": "-",
+    "description": "In OpenStack Murano through 16.0.0, when YAQL before 3.0.0 is used, the Murano service's MuranoPL extension to the YAQL language fails to sanitize the supplied environment, leading to potential leakage of sensitive service account information.",
+    "published": "2024-03-18T07:15:05.880",
+    "keywords": "sensitive,leak"
   }
 }
