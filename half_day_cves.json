@@ -1,16 +1,4 @@
 {
-  "CVE-2024-24578": {
-    "cvss": 10.0,
-    "description": "RaspberryMatic is an open-source operating system for HomeMatic internet-of-things devices. RaspberryMatic / OCCU prior to version 3.75.6.20240316 contains a unauthenticated remote code execution (RCE) vulnerability, caused by multiple issues within the Java based `HMIPServer.jar` component. RaspberryMatric includes a Java based `HMIPServer`, that can be accessed through URLs starting with `/pages/jpages`. The `FirmwareController` class does however not perform any session id checks, thus this feature can be accessed without a valid session. Due to this issue, attackers can gain remote code execution as root user, allowing a full system compromise. Version 3.75.6.20240316 contains a patch.",
-    "published": "2024-03-18T22:15:07.683",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-28855": {
-    "cvss": 8.1,
-    "description": "ZITADEL, open source authentication management software, uses Go templates to render the login UI. Due to a improper use of the `text/template` instead of the `html/template` package, the Login UI did not sanitize input parameters prior to versions 2.47.3, 2.46.1, 2.45.1, 2.44.3, 2.43.9, 2.42.15, and 2.41.15. An attacker could create a malicious link, where he injected code which would be rendered as part of the login screen. While it was possible to inject HTML including JavaScript, the execution of such scripts would be prevented by the Content Security Policy. Versions 2.47.3, 2.46.1, 2.45.1, 2.44.3, 2.43.9, 2.42.15, and 2.41.15 contain a patch for this issue. No known workarounds are available.",
-    "published": "2024-03-18T22:15:08.963",
-    "keywords": "execution,authentication"
-  },
   "CVE-2024-2620": {
     "cvss": 6.3,
     "description": "A vulnerability has been found in Fujian Kelixin Communication Command and Dispatch Platform up to 20240318 and classified as critical. Affected by this vulnerability is an unknown functionality of the file api/client/down_file.php. The manipulation of the argument uuid leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-257197 was assigned to this vulnerability.",
@@ -292,5 +280,35 @@
     "cvss": "-",
     "description": "Datalust Seq before 2023.4.11151 and 2024 before 2024.1.11146 has Incorrect Access Control because a Project Owner or Organization Owner can escalate to System privileges.",
     "published": "2024-03-21T14:15:07.810"
+  },
+  "CVE-2024-24272": {
+    "cvss": "-",
+    "description": "An issue in iTop DualSafe Password Manager & Digital Vault before 1.4.24 allows a local attacker to obtain sensitive information via leaked credentials as plaintext in a log file that can be accessed by the local user without knowledge of the master secret.",
+    "published": "2024-03-21T22:15:10.850",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2024-28116": {
+    "cvss": 8.8,
+    "description": "Grav is an open-source, flat-file content management system. Grav CMS prior to version 1.7.45 is vulnerable to a Server-Side Template Injection (SSTI), which allows any authenticated user (editor permissions are sufficient) to execute arbitrary code on the remote server bypassing the existing security sandbox. Version 1.7.45 contains a patch for this issue.",
+    "published": "2024-03-21T22:15:11.577",
+    "keywords": "remote,bypass"
+  },
+  "CVE-2024-28117": {
+    "cvss": 8.8,
+    "description": "Grav is an open-source, flat-file content management system. Prior to version 1.7.45, Grav validates accessible functions through the Utils::isDangerousFunction function, but does not impose restrictions on twig functions like twig_array_map, allowing attackers to bypass the validation and execute arbitrary commands. Twig processing of static pages can be enabled in the front matter by any administrative user allowed to create or edit pages. As the Twig processor runs unsandboxed, this behavior can be used to gain arbitrary code execution and elevate privileges on the instance. Upgrading to patched version 1.7.45 can mitigate this issue.\n",
+    "published": "2024-03-21T22:15:11.820",
+    "keywords": "execution,command,bypass"
+  },
+  "CVE-2024-28118": {
+    "cvss": 8.8,
+    "description": "Grav is an open-source, flat-file content management system. Prior to version 1.7.45, due to the unrestricted access to twig extension class from Grav context, an attacker can redefine config variable. As a result, attacker can bypass a previous SSTI mitigation. Twig processing of static pages can be enabled in the front matter by any administrative user allowed to create or edit pages. As the Twig processor runs unsandboxed, this behavior can be used to gain arbitrary code execution and elevate privileges on the instance. Version 1.7.45 contains a fix for this issue.\n",
+    "published": "2024-03-21T22:15:12.037",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2024-28119": {
+    "cvss": 8.8,
+    "description": "Grav is an open-source, flat-file content management system. Prior to version 1.7.45, due to the unrestricted access to twig extension class from grav context, an attacker can redefine the escape function and execute arbitrary commands. Twig processing of static pages can be enabled in the front matter by any administrative user allowed to create or edit pages. As the Twig processor runs unsandboxed, this behavior can be used to gain arbitrary code execution and elevate privileges on the instance. Version 1.7.45 contains a patch for this issue.",
+    "published": "2024-03-21T22:15:12.233",
+    "keywords": "execution,command"
   }
 }
