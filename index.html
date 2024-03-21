@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-03-21T07:10:13.005603
+Updated at UTC 2024-03-21T11:09:12.525294
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,12 @@ Updated at UTC 2024-03-21T07:10:13.005603
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -296,22 +302,45 @@ Moby releases 26.0.0, 25.0.4, and 23.0.11 are patched to prevent forwarding any 
 				</tr>
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27438">CVE-2024-27438</a></td>
+					<td>-</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-03-21T10:15:08.370</td>
+					<td class=description>Download of Code Without Integrity Check vulnerability in Apache Doris.
+The jdbc driver files used for JDBC catalog is not checked and may resulting in remote command execution.
+Once the attacker is authorized to create a JDBC catalog, he/she can use arbitrary driver jar file with unchecked code snippet. This code snippet will be run when catalog is initializing without any check.
+This issue affects Apache Doris: from 1.2.0 through 2.0.4.
+
+Users are recommended to upgrade to version 2.0.5 or 2.1.x, which fixes the issue.
+
+</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-1148">CVE-2024-1148</a></td>
+					<td>9.8</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-03-21T08:15:07.620</td>
+					<td class=description>Weak access control in OpenText PVCS Version Manager allows potential bypassing of authentication and uploading of files.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-1147">CVE-2024-1147</a></td>
+					<td>9.8</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-03-21T08:15:07.423</td>
+					<td class=description>Weak access control in OpenText PVCS Version Manager allows potential bypassing of authentication and download of files.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -802,76 +831,6 @@ CWE-287: Improper Authentication may allow Authentication Bypass
 				</tr>
 			
 		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28039">CVE-2024-28039</a></td>
-					<td>-</td>
-					<td>remote,unauthenticated,sensitive</td>
-					<td class=date>2024-03-18T09:15:06.483</td>
-					<td class=description>Improper restriction of XML external entity references vulnerability exists in FitNesse all releases, which allows a remote unauthenticated attacker to obtain sensitive information, alter data, or cause a denial-of-service (DoS) condition.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28128">CVE-2024-28128</a></td>
-					<td>-</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-03-18T08:15:06.400</td>
-					<td class=description>Cross-site scripting vulnerability exists in FitNesse releases prior to 20220319, which may allow a remote unauthenticated attacker to execute an arbitrary script on the web browser of the user who is using the product and accessing a link with a specially crafted certain parameter.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28125">CVE-2024-28125</a></td>
-					<td>-</td>
-					<td>remote,command</td>
-					<td class=date>2024-03-18T08:15:06.347</td>
-					<td class=description>FitNesse all releases allows a remote authenticated attacker to execute arbitrary OS commands.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27974">CVE-2024-27974</a></td>
-					<td>-</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-03-18T08:15:06.287</td>
-					<td class=description>Cross-site request forgery vulnerability in FUJIFILM printers which implement CentreWare Internet Services or Internet Services allows a remote unauthenticated attacker to alter user information. In the case the user is an administrator, the settings such as the administrator's ID, password, etc. may be altered. As for the details of affected product names, model numbers, and versions, refer to the information provided by the vendor listed under [References].</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-23604">CVE-2024-23604</a></td>
-					<td>-</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-03-18T08:15:06.233</td>
-					<td class=description>Cross-site scripting vulnerability exists in FitNesse all releases, which may allow a remote unauthenticated attacker to execute an arbitrary script on the web browser of the user who is using the product and accessing a link with specially crafted multiple parameters.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-22475">CVE-2024-22475</a></td>
-					<td>-</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-03-18T08:15:06.173</td>
-					<td class=description>Cross-site request forgery vulnerability in multiple printers and scanners which implement Web Based Management provided by BROTHER INDUSTRIES, LTD. allows a remote unauthenticated attacker to perform unintended operations on the affected product. As for the details of affected product names, model numbers, and versions, refer to the information provided by the respective vendors listed under [References].</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-29156">CVE-2024-29156</a></td>
-					<td>-</td>
-					<td>sensitive,leak</td>
-					<td class=date>2024-03-18T07:15:05.880</td>
-					<td class=description>In OpenStack Murano through 16.0.0, when YAQL before 3.0.0 is used, the Murano service's MuranoPL extension to the YAQL language fails to sanitize the supplied environment, leading to potential leakage of sensitive service account information.</td>
-				</tr>
 			
 		
 

@@ -1,46 +1,4 @@
 {
-  "CVE-2024-29156": {
-    "cvss": "-",
-    "description": "In OpenStack Murano through 16.0.0, when YAQL before 3.0.0 is used, the Murano service's MuranoPL extension to the YAQL language fails to sanitize the supplied environment, leading to potential leakage of sensitive service account information.",
-    "published": "2024-03-18T07:15:05.880",
-    "keywords": "sensitive,leak"
-  },
-  "CVE-2024-22475": {
-    "cvss": "-",
-    "description": "Cross-site request forgery vulnerability in multiple printers and scanners which implement Web Based Management provided by BROTHER INDUSTRIES, LTD. allows a remote unauthenticated attacker to perform unintended operations on the affected product. As for the details of affected product names, model numbers, and versions, refer to the information provided by the respective vendors listed under [References].",
-    "published": "2024-03-18T08:15:06.173",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-23604": {
-    "cvss": "-",
-    "description": "Cross-site scripting vulnerability exists in FitNesse all releases, which may allow a remote unauthenticated attacker to execute an arbitrary script on the web browser of the user who is using the product and accessing a link with specially crafted multiple parameters.",
-    "published": "2024-03-18T08:15:06.233",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-27974": {
-    "cvss": "-",
-    "description": "Cross-site request forgery vulnerability in FUJIFILM printers which implement CentreWare Internet Services or Internet Services allows a remote unauthenticated attacker to alter user information. In the case the user is an administrator, the settings such as the administrator's ID, password, etc. may be altered. As for the details of affected product names, model numbers, and versions, refer to the information provided by the vendor listed under [References].",
-    "published": "2024-03-18T08:15:06.287",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-28125": {
-    "cvss": "-",
-    "description": "FitNesse all releases allows a remote authenticated attacker to execute arbitrary OS commands.",
-    "published": "2024-03-18T08:15:06.347",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-28128": {
-    "cvss": "-",
-    "description": "Cross-site scripting vulnerability exists in FitNesse releases prior to 20220319, which may allow a remote unauthenticated attacker to execute an arbitrary script on the web browser of the user who is using the product and accessing a link with a specially crafted certain parameter.",
-    "published": "2024-03-18T08:15:06.400",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-28039": {
-    "cvss": "-",
-    "description": "Improper restriction of XML external entity references vulnerability exists in FitNesse all releases, which allows a remote unauthenticated attacker to obtain sensitive information, alter data, or cause a denial-of-service (DoS) condition.",
-    "published": "2024-03-18T09:15:06.483",
-    "keywords": "remote,unauthenticated,sensitive"
-  },
   "CVE-2024-1013": {
     "url": "https://github.com/lurcher/unixodbc/pull/157",
     "cvss": 7.1,
@@ -370,5 +328,23 @@
     "description": "An OS Command Injection vulnerability in Kiloview NDI allows a low-privileged user to execute arbitrary code remotely on the device with high privileges.\n\nThis issue affects Kiloview NDI N3, N3-s, N4, N20, N30, N40 and was fixed in Firmware version 2.02.0227 .\n\n",
     "published": "2024-03-21T06:15:47.073",
     "keywords": "remote,command"
+  },
+  "CVE-2024-1147": {
+    "cvss": 9.8,
+    "description": "Weak access control in OpenText PVCS Version Manager allows potential bypassing of authentication and download of files.",
+    "published": "2024-03-21T08:15:07.423",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-1148": {
+    "cvss": 9.8,
+    "description": "Weak access control in OpenText PVCS Version Manager allows potential bypassing of authentication and uploading of files.",
+    "published": "2024-03-21T08:15:07.620",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-27438": {
+    "cvss": "-",
+    "description": "Download of Code Without Integrity Check vulnerability in Apache Doris.\nThe jdbc driver files used for JDBC catalog is not checked and may\u00a0resulting in remote command execution.\nOnce the attacker is authorized to create a JDBC catalog, he/she can use arbitrary driver jar file with unchecked code snippet. This\u00a0code snippet will be run when catalog is initializing without any check.\nThis issue affects Apache Doris: from 1.2.0 through 2.0.4.\n\nUsers are recommended to upgrade to version 2.0.5 or 2.1.x, which fixes the issue.\n\n",
+    "published": "2024-03-21T10:15:08.370",
+    "keywords": "remote,execution,command"
   }
 }
