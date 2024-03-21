@@ -1,28 +1,4 @@
 {
-  "CVE-2024-20762": {
-    "cvss": 5.5,
-    "description": "Animate versions 24.0, 23.0.3 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-03-18T18:15:08.777",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-20763": {
-    "cvss": 5.5,
-    "description": "Animate versions 24.0, 23.0.3 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-03-18T18:15:09.017",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-20764": {
-    "cvss": 5.5,
-    "description": "Animate versions 24.0, 23.0.3 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-03-18T18:15:09.237",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-26063": {
-    "cvss": 5.3,
-    "description": "Adobe Experience Manager versions 6.5.19 and earlier are affected by an Information Exposure vulnerability that could result in a Security feature bypass. An attacker could leverage this vulnerability to gain unauthorized access to sensitive information, potentially bypassing security measures. Exploitation of this issue does not require user interaction.",
-    "published": "2024-03-18T18:15:14.973",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2024-24578": {
     "cvss": 10.0,
     "description": "RaspberryMatic is an open-source operating system for HomeMatic internet-of-things devices. RaspberryMatic / OCCU prior to version 3.75.6.20240316 contains a unauthenticated remote code execution (RCE) vulnerability, caused by multiple issues within the Java based `HMIPServer.jar` component. RaspberryMatric includes a Java based `HMIPServer`, that can be accessed through URLs starting with `/pages/jpages`. The `FirmwareController` class does however not perform any session id checks, thus this feature can be accessed without a valid session. Due to this issue, attackers can gain remote code execution as root user, allowing a full system compromise. Version 3.75.6.20240316 contains a patch.",
