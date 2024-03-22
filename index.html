@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-03-22T17:08:19.716456
+Updated at UTC 2024-03-22T18:11:19.252886
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,12 @@ Updated at UTC 2024-03-22T17:08:19.716456
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -290,6 +296,42 @@ Moby releases 26.0.0, 25.0.4, and 23.0.11 are patched to prevent forwarding any 
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-29385">CVE-2024-29385</a></td>
+					<td>-</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2024-03-22T17:15:08.943</td>
+					<td class=description>DIR-845L router <= v1.01KRb03 has an Unauthenticated remote code execution vulnerability in the cgibin binary via soapcgi_main function.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-29184">CVE-2024-29184</a></td>
+					<td>8.0</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-03-22T17:15:08.203</td>
+					<td class=description>FreeScout is a self-hosted help desk and shared mailbox. A Stored Cross-Site Scripting (XSS) vulnerability has been identified within the Signature Input Field of the FreeScout Application prior to version 1.8.128. Stored XSS occurs when user input is not properly sanitized and is stored on the server, allowing an attacker to inject malicious scripts that will be executed when other users access the affected page. In this case, the Support Agent User can inject malicious scripts into their signature, which will then be executed when viewed by the Administrator.
+
+The application protects users against XSS attacks by enforcing a CSP policy, the CSP Policy is:  `script-src 'self' 'nonce-abcd'  `. The CSP policy only allows the inclusion of JS files that are present on the application server and doesn't allow any inline script or script other than nonce-abcd. The CSP policy was bypassed by uploading a JS file to the server by a POST request to /conversation/upload endpoint. After this, a working XSS payload was crafted by including the uploaded JS file link as the src of the script. This bypassed the CSP policy and XSS attacks became possible.
+
+The impact of this vulnerability is severe as it allows an attacker to compromise the FreeScout Application. By exploiting this vulnerability, the attacker can perform various malicious actions such as forcing the Administrator to execute actions without their knowledge or consent. For instance, the attacker can force the Administrator to add a new administrator controlled by the attacker, thereby giving the attacker full control over the application. Alternatively, the attacker can elevate the privileges of a low-privileged user to Administrator, further compromising the security of the application. Attackers can steal sensitive information such as login credentials, session tokens, personal identifiable information (PII), and financial data. The vulnerability can also lead to defacement of the Application.
+
+Version 1.8.128 contains a patch for this issue.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28861">CVE-2024-28861</a></td>
+					<td>9.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-03-22T17:15:07.770</td>
+					<td class=description>Symfony 1 is a community-driven fork of the 1.x branch of Symfony, a PHP framework for web projects. Starting in version 1.1.0 and prior to version 1.5.19, Symfony 1 has a gadget chain due to dangerous deserialization in `sfNamespacedParameterHolder` class that would enable an attacker to get remote code execution if a developer deserializes user input in their project. Version 1.5.19 contains a patch for the issue.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
