@@ -298,5 +298,23 @@
     "description": "Meshery is an open source, cloud native manager that enables the design and management of Kubernetes-based infrastructure and applications. A SQL injection vulnerability in Meshery prior to version 0.7.17 allows a remote attacker to obtain sensitive information via the `order` parameter of `GetMeshSyncResources`. Version 0.7.17 contains a patch for this issue.",
     "published": "2024-03-21T23:15:11.167",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-29271": {
+    "cvss": "-",
+    "description": "Reflected Cross-Site Scripting (XSS) vulnerability in VvvebJs before version 1.7.7, allows remote attackers to execute arbitrary code and obtain sensitive information via the action parameter in save.php.",
+    "published": "2024-03-22T04:15:11.573",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-29272": {
+    "cvss": "-",
+    "description": "Arbitrary File Upload vulnerability in VvvebJs before version 1.7.5, allows unauthenticated remote attackers to execute arbitrary code and obtain sensitive information via the sanitizeFileName parameter in save.php.",
+    "published": "2024-03-22T04:15:11.663",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2024-29273": {
+    "url": "https://github.com/zyx0814/dzzoffice/issues/244",
+    "cvss": "-",
+    "description": "There is Stored Cross-Site Scripting (XSS) in dzzoffice 2.02.1 SC UTF8 in uploadfile to index.php, with the XSS payload in an SVG document.",
+    "published": "2024-03-22T04:15:11.857"
   }
 }
