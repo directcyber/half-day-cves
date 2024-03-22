@@ -310,5 +310,11 @@
     "description": "Grav is an open-source, flat-file content management system. Prior to version 1.7.45, due to the unrestricted access to twig extension class from grav context, an attacker can redefine the escape function and execute arbitrary commands. Twig processing of static pages can be enabled in the front matter by any administrative user allowed to create or edit pages. As the Twig processor runs unsandboxed, this behavior can be used to gain arbitrary code execution and elevate privileges on the instance. Version 1.7.45 contains a patch for this issue.",
     "published": "2024-03-21T22:15:12.233",
     "keywords": "execution,command"
+  },
+  "CVE-2024-29031": {
+    "cvss": 7.5,
+    "description": "Meshery is an open source, cloud native manager that enables the design and management of Kubernetes-based infrastructure and applications. A SQL injection vulnerability in Meshery prior to version 0.7.17 allows a remote attacker to obtain sensitive information via the `order` parameter of `GetMeshSyncResources`. Version 0.7.17 contains a patch for this issue.",
+    "published": "2024-03-21T23:15:11.167",
+    "keywords": "remote,sensitive"
   }
 }
