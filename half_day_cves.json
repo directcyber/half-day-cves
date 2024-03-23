@@ -1,34 +1,4 @@
 {
-  "CVE-2024-1181": {
-    "cvss": 5.3,
-    "description": "The Coming Soon, Under Construction & Maintenance Mode By Dazzler plugin for WordPress is vulnerable to maintenance mode bypass in all versions up to, and including, 2.1.2. This is due to the plugin relying on the REQUEST_URI to determine if the page being accesses is an admin area.  This makes it possible for unauthenticated attackers to bypass maintenance mode and access the site which may be considered confidential when in maintenance mode.",
-    "published": "2024-03-20T07:15:09.167",
-    "keywords": "unauthenticated,bypass"
-  },
-  "CVE-2024-1205": {
-    "cvss": 8.8,
-    "description": "The Management App for WooCommerce \u2013 Order notifications, Order management, Lead management, Uptime Monitoring plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the nouvello_upload_csv_file function in all versions up to, and including, 1.2.0. This makes it possible for authenticated attackers, with subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2024-03-20T07:15:09.467",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-1473": {
-    "cvss": 5.3,
-    "description": "The Coming Soon & Maintenance Mode by Colorlib plugin for WordPress is vulnerable to Information Exposure in all versions up to, and including, 1.0.99 via the REST API. This makes it possible for unauthenticated attackers to obtain post and page contents via REST API thus bypassing maintenance mode protection provided by the plugin.",
-    "published": "2024-03-20T07:15:10.133",
-    "keywords": "unauthenticated,bypass"
-  },
-  "CVE-2024-1477": {
-    "cvss": 5.3,
-    "description": "The Easy Maintenance Mode plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.4.2 via the REST API. This makes it possible for authenticated attackers to obtain post and page content via REST API thus bypassign the protection provided by the plugin.",
-    "published": "2024-03-20T07:15:10.330",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-1711": {
-    "cvss": 9.8,
-    "description": "The Create by Mediavine plugin for WordPress is vulnerable to SQL Injection via the 'id' parameter in all versions up to, and including, 1.9.4 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
-    "published": "2024-03-20T07:15:10.550",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2024-1800": {
     "cvss": 9.9,
     "description": "\nIn Progress\u00ae Telerik\u00ae Report Server versions prior to 2024 Q1 (10.0.24.130), a remote code execution attack is possible through an insecure deserialization vulnerability.",
