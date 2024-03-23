@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-03-23T18:09:53.087475
+Updated at UTC 2024-03-23T19:07:11.707081
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -279,8 +279,6 @@ Moby releases 26.0.0, 25.0.4, and 23.0.11 are patched to prevent forwarding any 
 
 
 				</tr>
-			
-		
 			
 		
 			
@@ -666,16 +664,6 @@ NOTE: The vendor was contacted and it was learned that the product is not suppo
 					<td>remote,execution,unauthenticated,authentication</td>
 					<td class=date>2024-03-20T20:15:08.680</td>
 					<td class=description>Jupyter Server Proxy allows users to run arbitrary external processes alongside their Jupyter notebook servers and provides authenticated web access. Prior to versions 3.2.3 and 4.1.1, Jupyter Server Proxy did not check user authentication appropriately when proxying websockets, allowing unauthenticated access to anyone who had network access to the Jupyter server endpoint. This vulnerability can allow unauthenticated remote access to any websocket endpoint set up to be accessible via Jupyter Server Proxy. In many cases, this leads to remote unauthenticated arbitrary code execution, due to how affected instances use websockets. The websocket endpoints exposed by `jupyter_server` itself is not affected. Projects that do not rely on websockets are also not affected. Versions 3.2.3 and 4.1.1 contain a fix for this issue.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-2708">CVE-2024-2708</a></td>
-					<td>8.8</td>
-					<td>remote,command</td>
-					<td class=date>2024-03-20T18:15:10.843</td>
-					<td class=description>A vulnerability was found in Tenda AC10U 15.03.06.49 and classified as critical. This issue affects the function formexeCommand of the file /goform/execCommand. The manipulation of the argument cmdinput leads to stack-based buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-257459. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
 				</tr>
 			
 		
