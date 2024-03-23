@@ -1,10 +1,4 @@
 {
-  "CVE-2024-2384": {
-    "cvss": 4.3,
-    "description": "The WooCommerce POS plugin for WordPress is vulnerable to information disclosure in all versions up to, and including, 1.4.11. This is due to the plugin not properly verifying the authentication and authorization of the current user This makes it possible for authenticated attackers, with customer-level access and above, to view potentially sensitive information about other users by leveraging their order id",
-    "published": "2024-03-20T03:15:08.327",
-    "keywords": "authentication,sensitive"
-  },
   "CVE-2024-1181": {
     "cvss": 5.3,
     "description": "The Coming Soon, Under Construction & Maintenance Mode By Dazzler plugin for WordPress is vulnerable to maintenance mode bypass in all versions up to, and including, 2.1.2. This is due to the plugin relying on the REQUEST_URI to determine if the page being accesses is an admin area.  This makes it possible for unauthenticated attackers to bypass maintenance mode and access the site which may be considered confidential when in maintenance mode.",
