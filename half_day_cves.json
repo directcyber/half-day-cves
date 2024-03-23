@@ -1,10 +1,4 @@
 {
-  "CVE-2024-28179": {
-    "cvss": 9.0,
-    "description": "Jupyter Server Proxy allows users to run arbitrary external processes alongside their Jupyter notebook servers and provides authenticated web access. Prior to versions 3.2.3 and 4.1.1, Jupyter Server Proxy did not check user authentication appropriately when proxying websockets, allowing unauthenticated access to anyone who had network access to the Jupyter server endpoint. This vulnerability can allow unauthenticated remote access to any websocket endpoint set up to be accessible via Jupyter Server Proxy. In many cases, this leads to remote unauthenticated arbitrary code execution, due to how affected instances use websockets. The websocket endpoints exposed by `jupyter_server` itself is not affected. Projects that do not rely on websockets are also not affected. Versions 3.2.3 and 4.1.1 contain a fix for this issue.",
-    "published": "2024-03-20T20:15:08.680",
-    "keywords": "remote,execution,unauthenticated,authentication"
-  },
   "CVE-2024-25294": {
     "cvss": "-",
     "description": "An SSRF issue in REBUILD v.3.5 allows a remote attacker to obtain sensitive information and execute arbitrary code via the FileDownloader.java, proxyDownload,URL parameters.",
