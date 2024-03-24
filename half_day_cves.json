@@ -1,34 +1,4 @@
 {
-  "CVE-2024-24272": {
-    "cvss": "-",
-    "description": "An issue in iTop DualSafe Password Manager & Digital Vault before 1.4.24 allows a local attacker to obtain sensitive information via leaked credentials as plaintext in a log file that can be accessed by the local user without knowledge of the master secret.",
-    "published": "2024-03-21T22:15:10.850",
-    "keywords": "sensitive,leak"
-  },
-  "CVE-2024-28116": {
-    "cvss": 8.8,
-    "description": "Grav is an open-source, flat-file content management system. Grav CMS prior to version 1.7.45 is vulnerable to a Server-Side Template Injection (SSTI), which allows any authenticated user (editor permissions are sufficient) to execute arbitrary code on the remote server bypassing the existing security sandbox. Version 1.7.45 contains a patch for this issue.",
-    "published": "2024-03-21T22:15:11.577",
-    "keywords": "remote,bypass"
-  },
-  "CVE-2024-28117": {
-    "cvss": 8.8,
-    "description": "Grav is an open-source, flat-file content management system. Prior to version 1.7.45, Grav validates accessible functions through the Utils::isDangerousFunction function, but does not impose restrictions on twig functions like twig_array_map, allowing attackers to bypass the validation and execute arbitrary commands. Twig processing of static pages can be enabled in the front matter by any administrative user allowed to create or edit pages. As the Twig processor runs unsandboxed, this behavior can be used to gain arbitrary code execution and elevate privileges on the instance. Upgrading to patched version 1.7.45 can mitigate this issue.\n",
-    "published": "2024-03-21T22:15:11.820",
-    "keywords": "execution,command,bypass"
-  },
-  "CVE-2024-28118": {
-    "cvss": 8.8,
-    "description": "Grav is an open-source, flat-file content management system. Prior to version 1.7.45, due to the unrestricted access to twig extension class from Grav context, an attacker can redefine config variable. As a result, attacker can bypass a previous SSTI mitigation. Twig processing of static pages can be enabled in the front matter by any administrative user allowed to create or edit pages. As the Twig processor runs unsandboxed, this behavior can be used to gain arbitrary code execution and elevate privileges on the instance. Version 1.7.45 contains a fix for this issue.\n",
-    "published": "2024-03-21T22:15:12.037",
-    "keywords": "execution,bypass"
-  },
-  "CVE-2024-28119": {
-    "cvss": 8.8,
-    "description": "Grav is an open-source, flat-file content management system. Prior to version 1.7.45, due to the unrestricted access to twig extension class from grav context, an attacker can redefine the escape function and execute arbitrary commands. Twig processing of static pages can be enabled in the front matter by any administrative user allowed to create or edit pages. As the Twig processor runs unsandboxed, this behavior can be used to gain arbitrary code execution and elevate privileges on the instance. Version 1.7.45 contains a patch for this issue.",
-    "published": "2024-03-21T22:15:12.233",
-    "keywords": "execution,command"
-  },
   "CVE-2024-29031": {
     "cvss": 7.5,
     "description": "Meshery is an open source, cloud native manager that enables the design and management of Kubernetes-based infrastructure and applications. A SQL injection vulnerability in Meshery prior to version 0.7.17 allows a remote attacker to obtain sensitive information via the `order` parameter of `GetMeshSyncResources`. Version 0.7.17 contains a patch for this issue.",
