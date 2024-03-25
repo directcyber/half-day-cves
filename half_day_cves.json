@@ -1,22 +1,4 @@
 {
-  "CVE-2024-28861": {
-    "cvss": 9.8,
-    "description": "Symfony 1 is a community-driven fork of the 1.x branch of Symfony, a PHP framework for web projects. Starting in version 1.1.0 and prior to version 1.5.19, Symfony 1 has a gadget chain due to dangerous deserialization in `sfNamespacedParameterHolder` class that would enable an attacker to get remote code execution if a developer deserializes user input in their project. Version 1.5.19 contains a patch for the issue.",
-    "published": "2024-03-22T17:15:07.770",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-29184": {
-    "cvss": 8.0,
-    "description": "FreeScout is a self-hosted help desk and shared mailbox. A Stored Cross-Site Scripting (XSS) vulnerability has been identified within the Signature Input Field of the FreeScout Application prior to version 1.8.128. Stored XSS occurs when user input is not properly sanitized and is stored on the server, allowing an attacker to inject malicious scripts that will be executed when other users access the affected page. In this case, the Support Agent User can inject malicious scripts into their signature, which will then be executed when viewed by the Administrator.\n\nThe application protects users against XSS attacks by enforcing a CSP policy, the CSP Policy is:  `script-src 'self' 'nonce-abcd'  `. The CSP policy only allows the inclusion of JS files that are present on the application server and doesn't allow any inline script or script other than nonce-abcd. The CSP policy was bypassed by uploading a JS file to the server by a POST request to /conversation/upload endpoint. After this, a working XSS payload was crafted by including the uploaded JS file link as the src of the script. This bypassed the CSP policy and XSS attacks became possible.\n\nThe impact of this vulnerability is severe as it allows an attacker to compromise the FreeScout Application. By exploiting this vulnerability, the attacker can perform various malicious actions such as forcing the Administrator to execute actions without their knowledge or consent. For instance, the attacker can force the Administrator to add a new administrator controlled by the attacker, thereby giving the attacker full control over the application. Alternatively, the attacker can elevate the privileges of a low-privileged user to Administrator, further compromising the security of the application. Attackers can steal sensitive information such as login credentials, session tokens, personal identifiable information (PII), and financial data. The vulnerability can also lead to defacement of the Application.\n\nVersion 1.8.128 contains a patch for this issue.",
-    "published": "2024-03-22T17:15:08.203",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-29385": {
-    "cvss": "-",
-    "description": "DIR-845L router <= v1.01KRb03 has an Unauthenticated remote code execution vulnerability in the cgibin binary via soapcgi_main function.",
-    "published": "2024-03-22T17:15:08.943",
-    "keywords": "remote,execution,unauthenticated"
-  },
   "CVE-2024-2824": {
     "url": "https://github.com/matthias-wandel/jhead/issues/84",
     "cvss": 6.3,
