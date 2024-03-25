@@ -58,5 +58,17 @@
     "description": "KaTeX is a JavaScript library for TeX math rendering on the web. KaTeX users who render untrusted mathematical expressions could encounter malicious input using `\\def` or `\\newcommand` that causes a near-infinite loop, despite setting `maxExpand` to avoid such loops. KaTeX supports an option named maxExpand which aims to prevent infinitely recursive macros from consuming all available memory and/or triggering a stack overflow error. Unfortunately, support for \"Unicode (sub|super)script characters\" allows an attacker to bypass this limit. Each sub/superscript group instantiated a separate Parser with its own limit on macro executions, without inheriting the current count of macro executions from its parent. This has been corrected in KaTeX v0.16.10.",
     "published": "2024-03-25T20:15:08.160",
     "keywords": "execution,command,bypass"
+  },
+  "CVE-2024-29041": {
+    "url": "https://github.com/expressjs/express/pull/5539",
+    "cvss": 6.1,
+    "description": "Express.js minimalist web framework for node. Versions of Express.js prior to 4.19.0 and all pre-release alpha and beta versions of 5.0 are affected by an open redirect vulnerability using malformed URLs. When a user of Express performs a redirect using a user-provided URL Express performs an encode [using `encodeurl`](https://github.com/pillarjs/encodeurl) on the contents before passing it to the `location` header. This can cause malformed URLs to be evaluated in unexpected ways by common redirect allow list implementations in Express applications, leading to an Open Redirect via bypass of a properly implemented allow list. The main method impacted is `res.location()` but this is also called from within `res.redirect()`. The vulnerability is fixed in 4.19.2 and 5.0.0-beta.3.",
+    "published": "2024-03-25T21:15:46.847"
+  },
+  "CVE-2024-29440": {
+    "cvss": "-",
+    "description": "An unauthorized access vulnerability has been discovered in ROS2 Humble Hawksbill versions where ROS_VERSION is 2 and ROS_PYTHON_VERSION is 3. This vulnerability could potentially allow a malicious user to gain unauthorized access to multiple ROS2 nodes remotely. Unauthorized access to these nodes could result in compromised system integrity, the execution of arbitrary commands, and disclosure of sensitive information.",
+    "published": "2024-03-25T21:15:47.217",
+    "keywords": "remote,execution,command,sensitive"
   }
 }
