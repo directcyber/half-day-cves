@@ -46,5 +46,11 @@
     "cvss": 6.1,
     "description": "ESP-IDF is the development framework for Espressif SoCs supported on Windows, Linux and macOS. A Time-of-Check to Time-of-Use (TOCTOU) vulnerability was discovered in the implementation of the ESP-IDF bootloader which could allow an attacker with physical access to flash of the device to bypass anti-rollback protection. Anti-rollback prevents rollback to application with security version lower than one programmed in eFuse of chip. This attack can allow to boot past (passive) application partition having lower security version of the same device even in the presence of the flash encryption scheme. The attack requires carefully modifying the flash contents after the anti-rollback checks have been performed by the bootloader (before loading the application). The vulnerability is fixed in 4.4.7 and 5.2.1.",
     "published": "2024-03-25T15:15:52.183"
+  },
+  "CVE-2024-28105": {
+    "cvss": 7.2,
+    "description": "phpMyFAQ is an open source FAQ web application for PHP 8.1+ and MySQL, PostgreSQL and other databases. The category image upload function in phpmyfaq is vulnerable to manipulation of the `Content-type` and `lang` parameters, allowing attackers to upload malicious files with a .php extension, potentially leading to remote code execution (RCE) on the system. This vulnerability is fixed in 3.2.6.",
+    "published": "2024-03-25T19:15:58.020",
+    "keywords": "remote,execution"
   }
 }
