@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-03-25T15:10:15.197582
+Updated at UTC 2024-03-25T16:10:58.735549
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,18 @@ Updated at UTC 2024-03-25T15:10:15.197582
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28183">CVE-2024-28183</a></td>
+					<td>6.1</td>
+					<td><a target=_blank href="https://github.com/espressif/esp-idf/commit/f327ddf6adab0c28d395975785727b2feef57803">https://github.com/espressif/esp-idf/commit/f327ddf6adab0c28d395975785727b2feef57803</a></td>
+					<td class=date>2024-03-25T15:15:52.183</td>
+					<td class=description>ESP-IDF is the development framework for Espressif SoCs supported on Windows, Linux and macOS. A Time-of-Check to Time-of-Use (TOCTOU) vulnerability was discovered in the implementation of the ESP-IDF bootloader which could allow an attacker with physical access to flash of the device to bypass anti-rollback protection. Anti-rollback prevents rollback to application with security version lower than one programmed in eFuse of chip. This attack can allow to boot past (passive) application partition having lower security version of the same device even in the presence of the flash encryption scheme. The attack requires carefully modifying the flash contents after the anti-rollback checks have been performed by the bootloader (before loading the application). The vulnerability is fixed in 4.4.7 and 5.2.1.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -105,6 +117,8 @@ Updated at UTC 2024-03-25T15:10:15.197582
 		
 
 		<hr>
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
