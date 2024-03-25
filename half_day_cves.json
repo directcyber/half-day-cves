@@ -1,10 +1,4 @@
 {
-  "CVE-2024-29275": {
-    "cvss": "-",
-    "description": "SQL injection vulnerability in SeaCMS version 12.9, allows remote unauthenticated attackers to execute arbitrary code and obtain sensitive information via the id parameter in class.php.",
-    "published": "2024-03-22T05:15:47.583",
-    "keywords": "remote,unauthenticated,sensitive"
-  },
   "CVE-2024-2812": {
     "cvss": 6.3,
     "description": "A vulnerability was found in Tenda AC15 15.03.05.18/15.03.20_multi. It has been classified as critical. This affects the function formWriteFacMac of the file /goform/WriteFacMac. The manipulation of the argument mac leads to os command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-257667. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
@@ -76,5 +70,11 @@
     "description": "HGW BL1500HM Ver 002.001.013 and earlier allows a network-adjacent unauthenticated attacker to execute an arbitrary command.",
     "published": "2024-03-25T04:15:08.880",
     "keywords": "unauthenticated,command"
+  },
+  "CVE-2024-29009": {
+    "cvss": "-",
+    "description": "Cross-site request forgery (CSRF) vulnerability in easy-popup-show all versions allows a remote unauthenticated attacker to hijack the authentication of the administrator and to perform unintended operations if the administrator views a malicious page while logged in.",
+    "published": "2024-03-25T05:15:50.913",
+    "keywords": "remote,unauthenticated,authentication"
   }
 }
