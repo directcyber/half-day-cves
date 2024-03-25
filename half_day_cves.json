@@ -1,16 +1,4 @@
 {
-  "CVE-2024-2824": {
-    "url": "https://github.com/matthias-wandel/jhead/issues/84",
-    "cvss": 6.3,
-    "description": "A vulnerability was found in Matthias-Wandel jhead 3.08 and classified as critical. This issue affects the function PrintFormatNumber of the file exif.c. The manipulation leads to heap-based buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-257711.",
-    "published": "2024-03-22T18:15:08.063"
-  },
-  "CVE-2024-29190": {
-    "url": "https://github.com/mobsf/mobile-security-framework-mobsf/commit/5a8eeee73c5f504a6c3abdf2a139a13804efdb77",
-    "cvss": 7.5,
-    "description": "Mobile Security Framework (MobSF) is a pen-testing, malware analysis and security assessment framework capable of performing static and dynamic analysis. In version 3.9.5 Beta and prior, MobSF does not perform any input validation when extracting the hostnames in `android:host`, so requests can also be sent to local hostnames. This can lead to server-side request forgery. An attacker can cause the server to make a connection to internal-only services within the organization's infrastructure. Commit 5a8eeee73c5f504a6c3abdf2a139a13804efdb77 has a hotfix for this issue.\n",
-    "published": "2024-03-22T23:15:07.123"
-  },
   "CVE-2024-2851": {
     "cvss": 6.3,
     "description": "A vulnerability was found in Tenda AC15 15.03.05.18/15.03.20_multi. It has been classified as critical. This affects the function formSetSambaConf of the file /goform/setsambacfg. The manipulation of the argument usbName leads to os command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-257775. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
