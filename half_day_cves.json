@@ -1,22 +1,4 @@
 {
-  "CVE-2024-29271": {
-    "cvss": "-",
-    "description": "Reflected Cross-Site Scripting (XSS) vulnerability in VvvebJs before version 1.7.7, allows remote attackers to execute arbitrary code and obtain sensitive information via the action parameter in save.php.",
-    "published": "2024-03-22T04:15:11.573",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-29272": {
-    "cvss": "-",
-    "description": "Arbitrary File Upload vulnerability in VvvebJs before version 1.7.5, allows unauthenticated remote attackers to execute arbitrary code and obtain sensitive information via the sanitizeFileName parameter in save.php.",
-    "published": "2024-03-22T04:15:11.663",
-    "keywords": "remote,unauthenticated,sensitive"
-  },
-  "CVE-2024-29273": {
-    "url": "https://github.com/zyx0814/dzzoffice/issues/244",
-    "cvss": "-",
-    "description": "There is Stored Cross-Site Scripting (XSS) in dzzoffice 2.02.1 SC UTF8 in uploadfile to index.php, with the XSS payload in an SVG document.",
-    "published": "2024-03-22T04:15:11.857"
-  },
   "CVE-2024-29275": {
     "cvss": "-",
     "description": "SQL injection vulnerability in SeaCMS version 12.9, allows remote unauthenticated attackers to execute arbitrary code and obtain sensitive information via the id parameter in class.php.",
@@ -88,5 +70,11 @@
     "description": "A vulnerability classified as critical has been found in Tenda AC18 15.03.05.05. Affected is the function formSetSambaConf of the file /goform/setsambacfg. The manipulation of the argument usbName leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-257778 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2024-03-24T06:15:08.633",
     "keywords": "remote,command"
+  },
+  "CVE-2024-28041": {
+    "cvss": "-",
+    "description": "HGW BL1500HM Ver 002.001.013 and earlier allows a network-adjacent unauthenticated attacker to execute an arbitrary command.",
+    "published": "2024-03-25T04:15:08.880",
+    "keywords": "unauthenticated,command"
   }
 }
