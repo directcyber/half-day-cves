@@ -106,5 +106,11 @@
     "description": "The image upload component allows SVG files and the regular expression used to remove script tags can be bypassed by using a Cross Site Scripting payload which does not match the regular expression; one example of this is the inclusion of whitespace within the script tag. An attacker must target an authenticated user with permissions to access this feature, however once uploaded the payload is also accessible to unauthenticated users.",
     "published": "2024-03-26T16:15:13.063",
     "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2024-2897": {
+    "cvss": 6.3,
+    "description": "A vulnerability classified as critical has been found in Tenda AC7 15.03.06.44. Affected is the function formWriteFacMac of the file /goform/WriteFacMac. The manipulation of the argument mac leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-257940. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-03-26T19:15:48.857",
+    "keywords": "remote,command"
   }
 }
