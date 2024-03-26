@@ -112,5 +112,23 @@
     "description": "A vulnerability classified as critical has been found in Tenda AC7 15.03.06.44. Affected is the function formWriteFacMac of the file /goform/WriteFacMac. The manipulation of the argument mac leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-257940. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2024-03-26T19:15:48.857",
     "keywords": "remote,command"
+  },
+  "CVE-2024-27521": {
+    "cvss": "-",
+    "description": "TOTOLINK A3300R V17.0.0cu.557_B20221024 was discovered to contain an unauthenticated remote command execution (RCE) vulnerability via multiple parameters in the \"setOpModeCfg\" function. This security issue allows an attacker to take complete control of the device. In detail, exploitation allows unauthenticated, remote attackers to execute arbitrary system commands with administrative privileges (i.e., as user \"root\").",
+    "published": "2024-03-26T21:15:53.013",
+    "keywords": "remote,execution,unauthenticated,command"
+  },
+  "CVE-2024-2909": {
+    "cvss": 8.8,
+    "description": "A vulnerability classified as critical was found in Ruijie RG-EG350 up to 20240318. Affected by this vulnerability is the function setAction of the file /itbox_pi/networksafe.php?a=set of the component HTTP POST Request Handler. The manipulation of the argument bandwidth leads to os command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-257977 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-03-26T21:15:53.613",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-2910": {
+    "cvss": 6.3,
+    "description": "A vulnerability, which was classified as critical, has been found in Ruijie RG-EG350 up to 20240318. Affected by this issue is the function vpnAction of the file /itbox_pi/vpn_quickset_service.php?a=set_vpn of the component HTTP POST Request Handler. The manipulation of the argument ip/port/user/pass/dns/startIp leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-257978 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-03-26T21:15:53.880",
+    "keywords": "remote,command,vpn"
   }
 }
