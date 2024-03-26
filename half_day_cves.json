@@ -1,18 +1,18 @@
 {
   "CVE-2024-2851": {
-    "cvss": 6.3,
+    "cvss": 9.8,
     "description": "A vulnerability was found in Tenda AC15 15.03.05.18/15.03.20_multi. It has been classified as critical. This affects the function formSetSambaConf of the file /goform/setsambacfg. The manipulation of the argument usbName leads to os command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-257775. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2024-03-24T03:15:09.177",
     "keywords": "remote,command"
   },
   "CVE-2024-2853": {
-    "cvss": 6.3,
+    "cvss": 9.8,
     "description": "A vulnerability was found in Tenda AC10U 15.03.06.48/15.03.06.49. It has been rated as critical. This issue affects the function formSetSambaConf of the file /goform/setsambacfg. The manipulation of the argument usbName leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-257777 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2024-03-24T05:15:10.517",
     "keywords": "remote,command"
   },
   "CVE-2024-2854": {
-    "cvss": 6.3,
+    "cvss": 9.8,
     "description": "A vulnerability classified as critical has been found in Tenda AC18 15.03.05.05. Affected is the function formSetSambaConf of the file /goform/setsambacfg. The manipulation of the argument usbName leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-257778 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2024-03-24T06:15:08.633",
     "keywords": "remote,command"
@@ -82,5 +82,11 @@
     "cvss": "-",
     "description": "SQL Injection vulnerability in Razor 0.8.0 allows a remote attacker to escalate privileges via the ChannelModel::updateapk method of the channelmodle.php",
     "published": "2024-03-25T23:15:51.447"
+  },
+  "CVE-2024-29195": {
+    "cvss": 6.0,
+    "description": "The azure-c-shared-utility is a C library for AMQP/MQTT communication to Azure Cloud Services. This library may be used by the Azure IoT C SDK for communication between IoT Hub and IoT Hub devices. An attacker can cause an integer wraparound or under-allocation or heap buffer overflow due to vulnerabilities in parameter checking mechanism, by exploiting the buffer length parameter in Azure C SDK, which may lead to remote code execution. Requirements for RCE are 1. Compromised Azure account allowing malformed payloads to be sent to the device via IoT Hub service, 2. By passing IoT hub service max message payload limit of 128KB, and 3. Ability to overwrite code space with remote code. Fixed in commit https://github.com/Azure/azure-c-shared-utility/commit/1129147c38ac02ad974c4c701a1e01b2141b9fe2.",
+    "published": "2024-03-26T03:15:13.333",
+    "keywords": "remote,execution"
   }
 }
