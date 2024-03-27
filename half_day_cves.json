@@ -1,10 +1,4 @@
 {
-  "CVE-2024-2851": {
-    "cvss": 9.8,
-    "description": "A vulnerability was found in Tenda AC15 15.03.05.18/15.03.20_multi. It has been classified as critical. This affects the function formSetSambaConf of the file /goform/setsambacfg. The manipulation of the argument usbName leads to os command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-257775. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2024-03-24T03:15:09.177",
-    "keywords": "remote,command"
-  },
   "CVE-2024-2853": {
     "cvss": 9.8,
     "description": "A vulnerability was found in Tenda AC10U 15.03.06.48/15.03.06.49. It has been rated as critical. This issue affects the function formSetSambaConf of the file /goform/setsambacfg. The manipulation of the argument usbName leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-257777 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
@@ -130,5 +124,83 @@
     "description": "A vulnerability, which was classified as critical, has been found in Ruijie RG-EG350 up to 20240318. Affected by this issue is the function vpnAction of the file /itbox_pi/vpn_quickset_service.php?a=set_vpn of the component HTTP POST Request Handler. The manipulation of the argument ip/port/user/pass/dns/startIp leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-257978 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2024-03-26T21:15:53.880",
     "keywords": "remote,command,vpn"
+  },
+  "CVE-2024-0400": {
+    "cvss": 7.5,
+    "description": "SCM Software is a client and server application. An Authenticated System manager client can execute LINQ query in the SCM server, for customized filtering. An Authenticated malicious client can send a specially crafted code to skip the validation and execute arbitrary code (RCE) on the SCM Server remotely. Malicious clients can execute any command by using this RCE vulnerability.",
+    "published": "2024-03-27T03:15:10.697",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-24334": {
+    "url": "https://github.com/rt-thread/rt-thread/pull/8305",
+    "cvss": "-",
+    "description": "A heap buffer overflow occurs in dfs_v2 dfs_file in RT-Thread through 5.0.2.",
+    "published": "2024-03-27T03:15:11.260"
+  },
+  "CVE-2024-24335": {
+    "url": "https://github.com/rt-thread/rt-thread/pull/8278",
+    "cvss": "-",
+    "description": "A heap buffer overflow occurs in the dfs_v2 romfs filesystem RT-Thread through 5.0.2.",
+    "published": "2024-03-27T03:15:11.330"
+  },
+  "CVE-2024-25388": {
+    "url": "https://github.com/rt-thread/rt-thread/issues/8285",
+    "cvss": "-",
+    "description": "drivers/wlan/wlan_mgmt,c in RT-Thread through 5.0.2 has an integer signedness error and resultant buffer overflow.",
+    "published": "2024-03-27T03:15:11.400"
+  },
+  "CVE-2024-25389": {
+    "url": "https://github.com/rt-thread/rt-thread/issues/8283",
+    "cvss": "-",
+    "description": "RT-Thread through 5.0.2 generates random numbers with a weak algorithm of \"seed = 214013L * seed + 2531011L; return (seed >> 16) & 0x7FFF;\" in calc_random in drivers/misc/rt_random.c.",
+    "published": "2024-03-27T03:15:11.460"
+  },
+  "CVE-2024-25390": {
+    "url": "https://github.com/rt-thread/rt-thread/issues/8286",
+    "cvss": "-",
+    "description": "A heap buffer overflow occurs in finsh/msh_file.c and finsh/msh.c in RT-Thread through 5.0.2.",
+    "published": "2024-03-27T03:15:11.537"
+  },
+  "CVE-2024-25391": {
+    "url": "https://github.com/rt-thread/rt-thread/issues/8287",
+    "cvss": "-",
+    "description": "A stack buffer overflow occurs in libc/posix/ipc/mqueue.c in RT-Thread through 5.0.2.",
+    "published": "2024-03-27T03:15:11.603"
+  },
+  "CVE-2024-25392": {
+    "url": "https://github.com/rt-thread/rt-thread/issues/8290",
+    "cvss": "-",
+    "description": "An out-of-bounds access occurs in utilities/var_export/var_export.c in RT-Thread through 5.0.2.",
+    "published": "2024-03-27T03:15:11.667"
+  },
+  "CVE-2024-25393": {
+    "url": "https://github.com/rt-thread/rt-thread/issues/8288",
+    "cvss": "-",
+    "description": "A stack buffer overflow occurs in net/at/src/at_server.c in RT-Thread through 5.0.2.",
+    "published": "2024-03-27T03:15:11.730"
+  },
+  "CVE-2024-25394": {
+    "url": "https://github.com/rt-thread/rt-thread/issues/8291",
+    "cvss": "-",
+    "description": "A buffer overflow occurs in utilities/ymodem/ry_sy.c in RT-Thread through 5.0.2 because of an incorrect sprintf call or a missing '\\0' character.",
+    "published": "2024-03-27T03:15:11.830"
+  },
+  "CVE-2024-25395": {
+    "url": "https://github.com/rt-thread/rt-thread/issues/8289",
+    "cvss": "-",
+    "description": "A buffer overflow occurs in utilities/rt-link/src/rtlink.c in RT-Thread through 5.0.2.",
+    "published": "2024-03-27T03:15:11.927"
+  },
+  "CVE-2024-2203": {
+    "cvss": 6.4,
+    "description": "The The Plus Addons for Elementor plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 5.4.1 via the Clients widget. This makes it possible for authenticated attackers, with contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
+    "published": "2024-03-27T03:15:12.737",
+    "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2024-2210": {
+    "cvss": 6.4,
+    "description": "The The Plus Addons for Elementor plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 5.4.1 via the Team Member Listing widget. This makes it possible for authenticated attackers, with contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
+    "published": "2024-03-27T03:15:12.937",
+    "keywords": "execution,sensitive,bypass"
   }
 }
