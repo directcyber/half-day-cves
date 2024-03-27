@@ -208,5 +208,47 @@
     "description": "A vulnerability, which was classified as critical, has been found in Tenda FH1202 1.2.0.14(408). This issue affects the function formexeCommand of the file /goform/execCommand. The manipulation of the argument cmdinput leads to stack-based buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-258149 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2024-03-27T15:15:48.420",
     "keywords": "remote,command"
+  },
+  "CVE-2024-20259": {
+    "cvss": 8.6,
+    "description": "A vulnerability in the DHCP snooping feature of Cisco IOS XE Software could allow an unauthenticated, remote attacker to cause an affected device to reload unexpectedly, resulting in a denial of service (DoS) condition.\r\n\r This vulnerability is due to a crafted IPv4 DHCP request packet being mishandled when endpoint analytics are enabled. An attacker could exploit this vulnerability by sending a crafted DHCP request through an affected device. A successful exploit could allow the attacker to cause the device to reload, resulting in a DoS condition.\r\n\r Note: The attack vector is listed as network because a DHCP relay anywhere on the network could allow exploits from networks other than the adjacent one.",
+    "published": "2024-03-27T17:15:50.913",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-20265": {
+    "cvss": 5.9,
+    "description": "A vulnerability in the boot process of Cisco Access Point (AP) Software could allow an unauthenticated, physical attacker to bypass the Cisco Secure Boot functionality and load a software image that has been tampered with on an affected device.\r\n\r This vulnerability exists because unnecessary commands are available during boot time at the physical console. An attacker could exploit this vulnerability by interrupting the boot process and executing specific commands to bypass the Cisco Secure Boot validation checks and load an image that has been tampered with. This image would have been previously downloaded onto the targeted device. A successful exploit could allow the attacker to load the image once. The Cisco Secure Boot functionality is not permanently compromised.",
+    "published": "2024-03-27T17:15:51.113",
+    "keywords": "unauthenticated,command,bypass"
+  },
+  "CVE-2024-20271": {
+    "cvss": 8.6,
+    "description": "A vulnerability in the IP packet processing of Cisco Access Point (AP) Software could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.\r\n\r This vulnerability is due to insufficient input validation of certain IPv4 packets. An attacker could exploit this vulnerability by sending a crafted IPv4 packet either to or through an affected device. A successful exploit could allow the attacker to cause an affected device to reload unexpectedly, resulting in a DoS condition. To successfully exploit this vulnerability, the attacker does not need to be associated with the affected AP. This vulnerability cannot be exploited by sending IPv6 packets.",
+    "published": "2024-03-27T17:15:51.320",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-20311": {
+    "cvss": 8.6,
+    "description": "A vulnerability in the Locator ID Separation Protocol (LISP) feature of Cisco IOS Software and Cisco IOS XE Software could allow an unauthenticated, remote attacker to cause an affected device to reload.\r\n\r This vulnerability is due to the incorrect handling of LISP packets. An attacker could exploit this vulnerability by sending a crafted LISP packet to an affected device. A successful exploit could allow the attacker to cause the device to reload, resulting in a denial of service (DoS) condition.\r\n\r Note: This vulnerability could be exploited over either IPv4 or IPv6 transport.",
+    "published": "2024-03-27T17:15:52.463",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-20314": {
+    "cvss": 8.6,
+    "description": "A vulnerability in the IPv4 Software-Defined Access (SD-Access) fabric edge node feature of Cisco IOS XE Software could allow an unauthenticated, remote attacker to cause high CPU utilization and stop all traffic processing, resulting in a denial of service (DoS) condition on an affected device.\r\n\r This vulnerability is due to improper handling of certain IPv4 packets. An attacker could exploit this vulnerability by sending certain IPv4 packets to an affected device. A successful exploit could allow the attacker to cause the device to exhaust CPU resources and stop processing traffic, resulting in a DoS condition.",
+    "published": "2024-03-27T17:15:52.920",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-20316": {
+    "cvss": 5.8,
+    "description": "A vulnerability in the data model interface (DMI) services of Cisco IOS XE Software could allow an unauthenticated, remote attacker to access resources that should have been protected by a configured IPv4 access control list (ACL).\r\n\r This vulnerability is due to improper handling of error conditions when a successfully authorized device administrator updates an IPv4 ACL using the NETCONF or RESTCONF protocol, and the update would reorder access control entries (ACEs) in the updated ACL. An attacker could exploit this vulnerability by accessing resources that should have been protected across an affected device.",
+    "published": "2024-03-27T17:15:53.110",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-29946": {
+    "cvss": 8.1,
+    "description": "In Splunk Enterprise versions below 9.2.1, 9.1.4, and 9.0.9, the Dashboard Examples Hub in the Splunk Dashboard Studio app lacks protections for risky SPL commands. This could let attackers bypass SPL safeguards for risky commands in the Hub. The vulnerability would require the attacker to phish the victim by tricking them into initiating a request within their browser.",
+    "published": "2024-03-27T17:15:54.273",
+    "keywords": "command,bypass"
   }
 }
