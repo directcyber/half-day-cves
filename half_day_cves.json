@@ -250,5 +250,17 @@
     "description": "In Splunk Enterprise versions below 9.2.1, 9.1.4, and 9.0.9, the Dashboard Examples Hub in the Splunk Dashboard Studio app lacks protections for risky SPL commands. This could let attackers bypass SPL safeguards for risky commands in the Hub. The vulnerability would require the attacker to phish the victim by tricking them into initiating a request within their browser.",
     "published": "2024-03-27T17:15:54.273",
     "keywords": "command,bypass"
+  },
+  "CVE-2024-20307": {
+    "cvss": 6.8,
+    "description": "A vulnerability in the IKEv1 fragmentation code of Cisco IOS Software and Cisco IOS XE Software could allow an unauthenticated, remote attacker to cause a heap overflow, resulting in an affected device reloading.\r\n\r This vulnerability exists because crafted, fragmented IKEv1 packets are not properly reassembled. An attacker could exploit this vulnerability by sending crafted UDP packets to an affected system. A successful exploit could allow the attacker to cause the affected device to reload, resulting in a DoS condition.\r\n\r Note: Only traffic that is directed to the affected system can be used to exploit this vulnerability. This vulnerability can be triggered by IPv4 and IPv6 traffic.",
+    "published": "2024-03-27T18:15:09.357",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-20308": {
+    "cvss": 8.6,
+    "description": "A vulnerability in the IKEv1 fragmentation code of Cisco IOS Software and Cisco IOS XE Software could allow an unauthenticated, remote attacker to cause a heap underflow, resulting in an affected device reloading.\r\n\r This vulnerability exists because crafted, fragmented IKEv1 packets are not properly reassembled. An attacker could exploit this vulnerability by sending crafted UDP packets to an affected system. A successful exploit could allow the attacker to cause the affected device to reload, resulting in a denial of service (DoS) condition.\r\n\r Note: Only traffic that is directed to the affected system can be used to exploit this vulnerability. This vulnerability can be triggered by IPv4 and IPv6 traffic..",
+    "published": "2024-03-27T18:15:09.853",
+    "keywords": "remote,unauthenticated"
   }
 }
