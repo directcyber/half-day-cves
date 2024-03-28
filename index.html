@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-03-28T13:09:04.007953
+Updated at UTC 2024-03-28T15:10:23.870445
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,32 @@ Updated at UTC 2024-03-28T13:09:04.007953
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-29897">CVE-2024-29897</a></td>
+					<td>4.9</td>
+					<td><a target=_blank href="https://github.com/miraheze/mw-config/commit/fb3e68bcef459e9cf2a415241b28042a6c9727e8">https://github.com/miraheze/mw-config/commit/fb3e68bcef459e9cf2a415241b28042a6c9727e8</a></td>
+					<td class=date>2024-03-28T14:15:14.557</td>
+					<td class=description>CreateWiki is Miraheze's MediaWiki extension for requesting & creating wikis. It is possible for users with (delete) or (suppressrevision) on any wiki in the farm to access suppressed wiki requests by going to the request's entry on Special:RequestWikiQueue on the wiki where they have these rights. The same vulnerability was present briefly on the REST API before being quickly corrected in commit `6bc0685`. To our knowledge, the vulnerable commits of the REST API are not running in production anywhere. This vulnerability is fixed in 23415c17ffb4832667c06abcf1eadadefd4c8937.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-29882">CVE-2024-29882</a></td>
+					<td>7.2</td>
+					<td><a target=_blank href="https://github.com/ossrs/srs/commit/244ce7bc013a0b805274a65132a2980680ba6b9d">https://github.com/ossrs/srs/commit/244ce7bc013a0b805274a65132a2980680ba6b9d</a></td>
+					<td class=date>2024-03-28T14:15:14.337</td>
+					<td class=description>SRS is a simple, high-efficiency, real-time video server. SRS's `/api/v1/vhosts/vid-<id>?callback=<payload>` endpoint didn't filter the callback function name which led to injecting malicious javascript payloads and executing XSS ( Cross-Site Scripting). This vulnerability is fixed in 5.0.210 and 6.0.121.</td>
+
+
+				</tr>
+			
+		
+			
 		
 			
 		
@@ -322,10 +348,22 @@ Updated at UTC 2024-03-28T13:09:04.007953
 				</tr>
 			
 		
-			
-		
 
 		<hr>
+		
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28109">CVE-2024-28109</a></td>
+					<td>8.1</td>
+					<td>remote,execution</td>
+					<td class=date>2024-03-28T14:15:13.863</td>
+					<td class=description>veraPDF-library is a PDF/A validation library. Executing policy checks using custom schematron files invokes an XSL transformation that could lead to a remote code execution (RCE) vulnerability. This vulnerability is fixed in 1.24.2.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -845,16 +883,6 @@ Updated at UTC 2024-03-28T13:09:04.007953
 				</tr>
 			
 		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28387">CVE-2024-28387</a></td>
-					<td>-</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-03-25T14:15:09.613</td>
-					<td class=description>An issue in axonaut v.3.1.23 and before allows a remote attacker to obtain sensitive information via the log.txt component.</td>
-				</tr>
 			
 		
 
