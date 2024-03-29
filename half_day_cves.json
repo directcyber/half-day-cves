@@ -1,10 +1,4 @@
 {
-  "CVE-2024-29833": {
-    "cvss": 5.4,
-    "description": "The image upload component allows SVG files and the regular expression used to remove script tags can be bypassed by using a Cross Site Scripting payload which does not match the regular expression; one example of this is the inclusion of whitespace within the script tag. An attacker must target an authenticated user with permissions to access this feature, however once uploaded the payload is also accessible to unauthenticated users.",
-    "published": "2024-03-26T16:15:13.063",
-    "keywords": "unauthenticated,bypass"
-  },
   "CVE-2024-2897": {
     "cvss": 6.3,
     "description": "A vulnerability classified as critical has been found in Tenda AC7 15.03.06.44. Affected is the function formWriteFacMac of the file /goform/WriteFacMac. The manipulation of the argument mac leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-257940. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
@@ -394,5 +388,23 @@
     "description": "JumpServer is an open source bastion host and an operation and maintenance security audit system. Attackers can bypass the input validation mechanism in JumpServer's Ansible to execute arbitrary code within the Celery container. Since the Celery container runs with root privileges and has database access, attackers could steal sensitive information from all hosts or manipulate the database. This vulnerability is fixed in v3.10.7.",
     "published": "2024-03-29T15:15:11.963",
     "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-29900": {
+    "cvss": 7.5,
+    "description": "Electron Packager bundles Electron-based application source code with a renamed Electron executable and supporting files into folders ready for distribution. A random segment of ~1-10kb of Node.js heap memory allocated either side of a known buffer will be leaked into the final executable. This memory _could_ contain sensitive information such as environment variables, secrets files, etc. This issue is patched in 18.3.1.\n",
+    "published": "2024-03-29T16:15:08.103",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2024-30246": {
+    "url": "https://github.com/enalean/tuleap/commit/a0ba0ae82a29eb8bfacef286778e5e49954f5316",
+    "cvss": 7.6,
+    "description": "Tuleap is an Open Source Suite to improve management of software developments and collaboration. A malicious user could exploit this issue on purpose to delete information on the instance or possibly gain access to restricted artifacts. It is however not possible to control exactly which information is deleted. Information from theDate, File, Float, Int, List, OpenList, Text, and Permissions on artifact (this one can lead to the disclosure of restricted information) fields can be impacted.  This vulnerability is fixed in Tuleap Community Edition version 15.7.99.6 and Tuleap Enterprise Edition 15.7-2, 15.6-5, 15.5-6, 15.4-8, 15.3-6, 15.2-5, 15.1-9, 15.0-9, and 14.12-6.",
+    "published": "2024-03-29T16:15:08.860"
+  },
+  "CVE-2024-30247": {
+    "cvss": 10.0,
+    "description": "NextcloudPi is a ready to use image for Virtual Machines, Raspberry Pi, Odroid HC1, Rock64 and other boards. A command injection vulnerability in NextCloudPi allows command execution as the root user via the NextCloudPi web-panel. Due to a security misconfiguration this can be used by anyone with access to NextCloudPi web-panel, no authentication is required. It is recommended that the NextCloudPi is upgraded to 1.53.1.",
+    "published": "2024-03-29T16:15:09.130",
+    "keywords": "execution,authentication,command"
   }
 }
