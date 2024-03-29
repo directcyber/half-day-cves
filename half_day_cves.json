@@ -1,10 +1,4 @@
 {
-  "CVE-2024-28421": {
-    "url": "https://github.com/cobub/razor/issues/178",
-    "cvss": "-",
-    "description": "SQL Injection vulnerability in Razor 0.8.0 allows a remote attacker to escalate privileges via the ChannelModel::updateapk method of the channelmodle.php",
-    "published": "2024-03-25T23:15:51.447"
-  },
   "CVE-2024-29195": {
     "cvss": 6.0,
     "description": "The azure-c-shared-utility is a C library for AMQP/MQTT communication to Azure Cloud Services. This library may be used by the Azure IoT C SDK for communication between IoT Hub and IoT Hub devices. An attacker can cause an integer wraparound or under-allocation or heap buffer overflow due to vulnerabilities in parameter checking mechanism, by exploiting the buffer length parameter in Azure C SDK, which may lead to remote code execution. Requirements for RCE are 1. Compromised Azure account allowing malformed payloads to be sent to the device via IoT Hub service, 2. By passing IoT hub service max message payload limit of 128KB, and 3. Ability to overwrite code space with remote code. Fixed in commit https://github.com/Azure/azure-c-shared-utility/commit/1129147c38ac02ad974c4c701a1e01b2141b9fe2.",
@@ -388,5 +382,17 @@
     "description": "A flaw was found in PCP. The default pmproxy configuration exposes the Redis server backend to the local network, allowing remote command execution with the privileges of the Redis user. This issue can only be exploited when pmproxy is running. By default, pmproxy is not running and needs to be started manually. The pmproxy service is usually started from the 'Metrics settings' page of the Cockpit web interface. This flaw affects PCP versions 4.3.4 and newer.",
     "published": "2024-03-28T19:15:49.160",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2024-24407": {
+    "cvss": "-",
+    "description": "SQL Injection vulnerability in Best Courier management system v.1.0 allows a remote attacker to obtain sensitive information via print_pdets.php component.",
+    "published": "2024-03-28T23:15:46.283",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-29489": {
+    "url": "https://github.com/jerryscript-project/jerryscript/pull/5129",
+    "cvss": "-",
+    "description": "Jerryscript 2.4.0 has SEGV at ./jerry-core/ecma/base/ecma-helpers.c:238:58 in ecma_get_object_type.",
+    "published": "2024-03-28T23:15:46.527"
   }
 }
