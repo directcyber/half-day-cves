@@ -1,22 +1,4 @@
 {
-  "CVE-2024-27521": {
-    "cvss": "-",
-    "description": "TOTOLINK A3300R V17.0.0cu.557_B20221024 was discovered to contain an unauthenticated remote command execution (RCE) vulnerability via multiple parameters in the \"setOpModeCfg\" function. This security issue allows an attacker to take complete control of the device. In detail, exploitation allows unauthenticated, remote attackers to execute arbitrary system commands with administrative privileges (i.e., as user \"root\").",
-    "published": "2024-03-26T21:15:53.013",
-    "keywords": "remote,execution,unauthenticated,command"
-  },
-  "CVE-2024-2909": {
-    "cvss": 8.8,
-    "description": "A vulnerability classified as critical was found in Ruijie RG-EG350 up to 20240318. Affected by this vulnerability is the function setAction of the file /itbox_pi/networksafe.php?a=set of the component HTTP POST Request Handler. The manipulation of the argument bandwidth leads to os command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-257977 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2024-03-26T21:15:53.613",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-2910": {
-    "cvss": 6.3,
-    "description": "A vulnerability, which was classified as critical, has been found in Ruijie RG-EG350 up to 20240318. Affected by this issue is the function vpnAction of the file /itbox_pi/vpn_quickset_service.php?a=set_vpn of the component HTTP POST Request Handler. The manipulation of the argument ip/port/user/pass/dns/startIp leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-257978 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2024-03-26T21:15:53.880",
-    "keywords": "remote,command,vpn"
-  },
   "CVE-2024-0400": {
     "cvss": 7.5,
     "description": "SCM Software is a client and server application. An Authenticated System manager client can execute LINQ query in the SCM server, for customized filtering. An Authenticated malicious client can send a specially crafted code to skip the validation and execute arbitrary code (RCE) on the SCM Server remotely. Malicious clients can execute any command by using this RCE vulnerability.",
