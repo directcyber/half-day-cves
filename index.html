@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-03-30T18:11:28.226514
+Updated at UTC 2024-03-30T19:07:11.549655
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-03-30T18:11:28.226514
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -204,12 +206,107 @@ Updated at UTC 2024-03-30T18:11:28.226514
 				</tr>
 			
 		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-1522">CVE-2024-1522</a></td>
+					<td>8.8</td>
+					<td>execution,authentication</td>
+					<td class=date>2024-03-30T18:15:45.930</td>
+					<td class=description>I have activated the CORS because I had a development ui that uses another port number then I forgot to remove it.
+
+So what I just did is :
+- First removed the cors configuration that allows everyone to access it :
+before:
+```python
+    sio = socketio.AsyncServer(async_mode="asgi", cors_allowed_origins="*", ping_timeout=1200, ping_interval=30)  # Enable CORS for every one
+```
+after:
+```python
+    cert_file_path = lollms_paths.personal_certificates/"cert.pem"
+    key_file_path = lollms_paths.personal_certificates/"key.pem"
+    if os.path.exists(cert_file_path) and os.path.exists(key_file_path):
+        is_https = True
+    else:
+        is_https = False        
+
+    # Create a Socket.IO server
+    sio = socketio.AsyncServer(async_mode="asgi", cors_allowed_origins=config.allowed_origins+[f"https://localhost:{config['port']}" if is_https else f"http://localhost:{config['port']}"], ping_timeout=1200, ping_interval=30)  # Enable CORS for selected origins
+```
+
+- Second, I have updated lollms to have two modes (a headless mode and a ui mode).
+And updated the /execute_code to block if the server is headless or is exposed
+```python
+@router.post("/execute_code")
+async def execute_code(request: Request):
+    """
+    Executes Python code and returns the output.
+
+    :param request: The HTTP request object.
+    :return: A JSON response with the status of the operation.
+    """
+    if lollmsElfServer.config.headless_server_mode:
+        return {"status":False,"error":"Code execution is blocked when in headless mode for obvious security reasons!"}
+
+    if lollmsElfServer.config.host=="0.0.0.0":
+        return {"status":False,"error":"Code execution is blocked when the server is exposed outside for very obvipous reasons!"}
+
+    try:
+        data = (await request.json())
+        code = data["code"]
+        discussion_id = int(data.get("discussion_id","unknown_discussion"))
+        message_id = int(data.get("message_id","unknown_message"))
+        language = data.get("language","python")
+        
+
+
+        if language=="python":
+            ASCIIColors.info("Executing python code:")
+            ASCIIColors.yellow(code)
+            return execute_python(code, discussion_id, message_id)
+        if language=="javascript":
+            ASCIIColors.info("Executing javascript code:")
+            ASCIIColors.yellow(code)
+            return execute_javascript(code, discussion_id, message_id)
+        if language in ["html","html5","svg"]:
+            ASCIIColors.info("Executing javascript code:")
+            ASCIIColors.yellow(code)
+            return execute_html(code, discussion_id, message_id)
+        
+        elif language=="latex":
+            ASCIIColors.info("Executing latex code:")
+            ASCIIColors.yellow(code)
+            return execute_latex(code, discussion_id, message_id)
+        elif language in ["bash","shell","cmd","powershell"]:
+            ASCIIColors.info("Executing shell code:")
+            ASCIIColors.yellow(code)
+            return execute_bash(code, discussion_id, message_id)
+        elif language in ["mermaid"]:
+            ASCIIColors.info("Executing mermaid code:")
+            ASCIIColors.yellow(code)
+            return execute_mermaid(code, discussion_id, message_id)
+        elif language in ["graphviz","dot"]:
+            ASCIIColors.info("Executing graphviz code:")
+            ASCIIColors.yellow(code)
+            return execute_graphviz(code, discussion_id, message_id)
+        return {"status": False, "error": "Unsupported language", "execution_time": 0}
+    except Exception as ex:
+        trace_exception(ex)
+        lollmsElfServer.error(ex)
+        return {"status":False,"error":str(ex)}
+```
+
+I also added an optional https mode and looking forward to add a full authentication with cookies and a personal session etc.
+
+
+All updates will be in V 9.1 
+
+
+Again, thanks alot for your work. I will make it harder next time, but if you find more bugs, just be my guest :)</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -592,30 +689,6 @@ Updated at UTC 2024-03-30T18:11:28.226514
 				</tr>
 			
 		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20308">CVE-2024-20308</a></td>
-					<td>8.6</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-03-27T18:15:09.853</td>
-					<td class=description>A vulnerability in the IKEv1 fragmentation code of Cisco IOS Software and Cisco IOS XE Software could allow an unauthenticated, remote attacker to cause a heap underflow, resulting in an affected device reloading.
- This vulnerability exists because crafted, fragmented IKEv1 packets are not properly reassembled. An attacker could exploit this vulnerability by sending crafted UDP packets to an affected system. A successful exploit could allow the attacker to cause the affected device to reload, resulting in a denial of service (DoS) condition.
- Note: Only traffic that is directed to the affected system can be used to exploit this vulnerability. This vulnerability can be triggered by IPv4 and IPv6 traffic..</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20307">CVE-2024-20307</a></td>
-					<td>6.8</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-03-27T18:15:09.357</td>
-					<td class=description>A vulnerability in the IKEv1 fragmentation code of Cisco IOS Software and Cisco IOS XE Software could allow an unauthenticated, remote attacker to cause a heap overflow, resulting in an affected device reloading.
- This vulnerability exists because crafted, fragmented IKEv1 packets are not properly reassembled. An attacker could exploit this vulnerability by sending crafted UDP packets to an affected system. A successful exploit could allow the attacker to cause the affected device to reload, resulting in a DoS condition.
- Note: Only traffic that is directed to the affected system can be used to exploit this vulnerability. This vulnerability can be triggered by IPv4 and IPv6 traffic.</td>
-				</tr>
 			
 		
 
