@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-03-30T17:07:05.168924
+Updated at UTC 2024-03-30T18:11:28.226514
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -202,20 +202,6 @@ Updated at UTC 2024-03-30T17:07:05.168924
 
 
 				</tr>
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
 			
 		
 			
@@ -629,84 +615,6 @@ Updated at UTC 2024-03-30T17:07:05.168924
 					<td class=description>A vulnerability in the IKEv1 fragmentation code of Cisco IOS Software and Cisco IOS XE Software could allow an unauthenticated, remote attacker to cause a heap overflow, resulting in an affected device reloading.
  This vulnerability exists because crafted, fragmented IKEv1 packets are not properly reassembled. An attacker could exploit this vulnerability by sending crafted UDP packets to an affected system. A successful exploit could allow the attacker to cause the affected device to reload, resulting in a DoS condition.
  Note: Only traffic that is directed to the affected system can be used to exploit this vulnerability. This vulnerability can be triggered by IPv4 and IPv6 traffic.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-29946">CVE-2024-29946</a></td>
-					<td>8.1</td>
-					<td>command,bypass</td>
-					<td class=date>2024-03-27T17:15:54.273</td>
-					<td class=description>In Splunk Enterprise versions below 9.2.1, 9.1.4, and 9.0.9, the Dashboard Examples Hub in the Splunk Dashboard Studio app lacks protections for risky SPL commands. This could let attackers bypass SPL safeguards for risky commands in the Hub. The vulnerability would require the attacker to phish the victim by tricking them into initiating a request within their browser.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20316">CVE-2024-20316</a></td>
-					<td>5.8</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-03-27T17:15:53.110</td>
-					<td class=description>A vulnerability in the data model interface (DMI) services of Cisco IOS XE Software could allow an unauthenticated, remote attacker to access resources that should have been protected by a configured IPv4 access control list (ACL).
- This vulnerability is due to improper handling of error conditions when a successfully authorized device administrator updates an IPv4 ACL using the NETCONF or RESTCONF protocol, and the update would reorder access control entries (ACEs) in the updated ACL. An attacker could exploit this vulnerability by accessing resources that should have been protected across an affected device.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20314">CVE-2024-20314</a></td>
-					<td>8.6</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-03-27T17:15:52.920</td>
-					<td class=description>A vulnerability in the IPv4 Software-Defined Access (SD-Access) fabric edge node feature of Cisco IOS XE Software could allow an unauthenticated, remote attacker to cause high CPU utilization and stop all traffic processing, resulting in a denial of service (DoS) condition on an affected device.
- This vulnerability is due to improper handling of certain IPv4 packets. An attacker could exploit this vulnerability by sending certain IPv4 packets to an affected device. A successful exploit could allow the attacker to cause the device to exhaust CPU resources and stop processing traffic, resulting in a DoS condition.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20311">CVE-2024-20311</a></td>
-					<td>8.6</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-03-27T17:15:52.463</td>
-					<td class=description>A vulnerability in the Locator ID Separation Protocol (LISP) feature of Cisco IOS Software and Cisco IOS XE Software could allow an unauthenticated, remote attacker to cause an affected device to reload.
- This vulnerability is due to the incorrect handling of LISP packets. An attacker could exploit this vulnerability by sending a crafted LISP packet to an affected device. A successful exploit could allow the attacker to cause the device to reload, resulting in a denial of service (DoS) condition.
- Note: This vulnerability could be exploited over either IPv4 or IPv6 transport.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20271">CVE-2024-20271</a></td>
-					<td>8.6</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-03-27T17:15:51.320</td>
-					<td class=description>A vulnerability in the IP packet processing of Cisco Access Point (AP) Software could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.
- This vulnerability is due to insufficient input validation of certain IPv4 packets. An attacker could exploit this vulnerability by sending a crafted IPv4 packet either to or through an affected device. A successful exploit could allow the attacker to cause an affected device to reload unexpectedly, resulting in a DoS condition. To successfully exploit this vulnerability, the attacker does not need to be associated with the affected AP. This vulnerability cannot be exploited by sending IPv6 packets.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20265">CVE-2024-20265</a></td>
-					<td>5.9</td>
-					<td>unauthenticated,command,bypass</td>
-					<td class=date>2024-03-27T17:15:51.113</td>
-					<td class=description>A vulnerability in the boot process of Cisco Access Point (AP) Software could allow an unauthenticated, physical attacker to bypass the Cisco Secure Boot functionality and load a software image that has been tampered with on an affected device.
- This vulnerability exists because unnecessary commands are available during boot time at the physical console. An attacker could exploit this vulnerability by interrupting the boot process and executing specific commands to bypass the Cisco Secure Boot validation checks and load an image that has been tampered with. This image would have been previously downloaded onto the targeted device. A successful exploit could allow the attacker to load the image once. The Cisco Secure Boot functionality is not permanently compromised.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20259">CVE-2024-20259</a></td>
-					<td>8.6</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-03-27T17:15:50.913</td>
-					<td class=description>A vulnerability in the DHCP snooping feature of Cisco IOS XE Software could allow an unauthenticated, remote attacker to cause an affected device to reload unexpectedly, resulting in a denial of service (DoS) condition.
- This vulnerability is due to a crafted IPv4 DHCP request packet being mishandled when endpoint analytics are enabled. An attacker could exploit this vulnerability by sending a crafted DHCP request through an affected device. A successful exploit could allow the attacker to cause the device to reload, resulting in a DoS condition.
- Note: The attack vector is listed as network because a DHCP relay anywhere on the network could allow exploits from networks other than the adjacent one.</td>
 				</tr>
 			
 		
