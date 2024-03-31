@@ -1,40 +1,4 @@
 {
-  "CVE-2024-25946": {
-    "cvss": 7.2,
-    "description": "Dell vApp Manager, versions prior to 9.2.4.9 contain a Command Injection Vulnerability. An authorized attacker could potentially exploit this vulnerability leading to an execution of an inserted command. Dell recommends customers to upgrade at the earliest opportunity.",
-    "published": "2024-03-28T19:15:47.010",
-    "keywords": "execution,command"
-  },
-  "CVE-2024-25954": {
-    "cvss": 5.3,
-    "description": "Dell PowerScale OneFS, versions 9.5.0.x through 9.7.0.x, contain an insufficient session expiration vulnerability. A remote unauthenticated attacker could potentially exploit this vulnerability, leading to denial of service.",
-    "published": "2024-03-28T19:15:47.587",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-25955": {
-    "cvss": 7.2,
-    "description": "Dell vApp Manager, versions prior to 9.2.4.9 contain a Command Injection Vulnerability. An authorized attacker could potentially exploit this vulnerability leading to an execution of an inserted command. Dell recommends customers to upgrade at the earliest opportunity.",
-    "published": "2024-03-28T19:15:47.790",
-    "keywords": "execution,command"
-  },
-  "CVE-2024-25963": {
-    "cvss": 5.9,
-    "description": "Dell PowerScale OneFS, versions 8.2.2.x through 9.5.0.x contains a use of a broken cryptographic algorithm vulnerability. A remote unauthenticated attacker could potentially exploit this vulnerability, leading to information disclosure.",
-    "published": "2024-03-28T19:15:48.173",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-27719": {
-    "cvss": "-",
-    "description": "A cross site scripting (XSS) vulnerability in rems FAQ Management System v.1.0 allows a remote attacker to obtain sensitive information via a crafted payload to the Frequently Asked Question field in the Add FAQ function.",
-    "published": "2024-03-28T19:15:48.570",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-3019": {
-    "cvss": 8.8,
-    "description": "A flaw was found in PCP. The default pmproxy configuration exposes the Redis server backend to the local network, allowing remote command execution with the privileges of the Redis user. This issue can only be exploited when pmproxy is running. By default, pmproxy is not running and needs to be started manually. The pmproxy service is usually started from the 'Metrics settings' page of the Cockpit web interface. This flaw affects PCP versions 4.3.4 and newer.",
-    "published": "2024-03-28T19:15:49.160",
-    "keywords": "remote,execution,command"
-  },
   "CVE-2024-24407": {
     "cvss": "-",
     "description": "SQL Injection vulnerability in Best Courier management system v.1.0 allows a remote attacker to obtain sensitive information via print_pdets.php component.",
