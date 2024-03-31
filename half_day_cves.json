@@ -1,22 +1,4 @@
 {
-  "CVE-2024-28109": {
-    "cvss": 8.1,
-    "description": "veraPDF-library is a PDF/A validation library. Executing policy checks using custom schematron files invokes an XSL transformation that could lead to a remote code execution (RCE) vulnerability. This vulnerability is fixed in 1.24.2.",
-    "published": "2024-03-28T14:15:13.863",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-29882": {
-    "url": "https://github.com/ossrs/srs/commit/244ce7bc013a0b805274a65132a2980680ba6b9d",
-    "cvss": 7.2,
-    "description": "SRS is a simple, high-efficiency, real-time video server. SRS's `/api/v1/vhosts/vid-<id>?callback=<payload>` endpoint didn't filter the callback function name which led to injecting malicious javascript payloads and executing XSS ( Cross-Site Scripting). This vulnerability is fixed in 5.0.210 and 6.0.121.",
-    "published": "2024-03-28T14:15:14.337"
-  },
-  "CVE-2024-29897": {
-    "url": "https://github.com/miraheze/mw-config/commit/fb3e68bcef459e9cf2a415241b28042a6c9727e8",
-    "cvss": 4.9,
-    "description": "CreateWiki is Miraheze's MediaWiki extension for requesting & creating wikis. It is possible for users with (delete) or (suppressrevision) on any wiki in the farm to access suppressed wiki requests by going to the request's entry on Special:RequestWikiQueue on the wiki where they have these rights. The same vulnerability was present briefly on the REST API before being quickly corrected in commit `6bc0685`. To our knowledge, the vulnerable commits of the REST API are not running in production anywhere. This vulnerability is fixed in 23415c17ffb4832667c06abcf1eadadefd4c8937.",
-    "published": "2024-03-28T14:15:14.557"
-  },
   "CVE-2024-25946": {
     "cvss": 7.2,
     "description": "Dell vApp Manager, versions prior to 9.2.4.9 contain a Command Injection Vulnerability. An authorized attacker could potentially exploit this vulnerability leading to an execution of an inserted command. Dell recommends customers to upgrade at the earliest opportunity.",
