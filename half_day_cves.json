@@ -1,10 +1,4 @@
 {
-  "CVE-2024-3061": {
-    "cvss": 7.2,
-    "description": "The HUSKY \u2013 Products Filter Professional for WooCommerce plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.3.5.2 via the 'type' parameter. This makes it possible for authenticated attackers, with administrator-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
-    "published": "2024-03-29T10:15:09.403",
-    "keywords": "execution,sensitive,bypass"
-  },
   "CVE-2024-29201": {
     "cvss": 9.9,
     "description": "JumpServer is an open source bastion host and an operation and maintenance security audit system. Attackers can bypass the input validation mechanism in JumpServer's Ansible to execute arbitrary code within the Celery container. Since the Celery container runs with root privileges and has database access, attackers could steal sensitive information from all hosts or manipulate the database. This vulnerability is fixed in v3.10.7.",
