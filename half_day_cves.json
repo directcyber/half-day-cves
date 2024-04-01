@@ -1,10 +1,4 @@
 {
-  "CVE-2024-29201": {
-    "cvss": 9.9,
-    "description": "JumpServer is an open source bastion host and an operation and maintenance security audit system. Attackers can bypass the input validation mechanism in JumpServer's Ansible to execute arbitrary code within the Celery container. Since the Celery container runs with root privileges and has database access, attackers could steal sensitive information from all hosts or manipulate the database. This vulnerability is fixed in v3.10.7.",
-    "published": "2024-03-29T15:15:11.963",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2024-29900": {
     "cvss": 7.5,
     "description": "Electron Packager bundles Electron-based application source code with a renamed Electron executable and supporting files into folders ready for distribution. A random segment of ~1-10kb of Node.js heap memory allocated either side of a known buffer will be leaked into the final executable. This memory _could_ contain sensitive information such as environment variables, secrets files, etc. This issue is patched in 18.3.1.\n",
