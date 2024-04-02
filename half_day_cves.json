@@ -142,5 +142,11 @@
     "description": "Kofax Power PDF JPG File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Kofax Power PDF. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of JPG files.\nThe issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-21978.",
     "published": "2024-04-02T00:15:09.320",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-3160": {
+    "cvss": 5.3,
+    "description": "** DISPUTED ** A vulnerability, which was classified as problematic, was found in Intelbras MHDX 1004, MHDX 1008, MHDX 1016, MHDX 5016, HDCVI 1008 and HDCVI 1016 up to 20240401. This affects an unknown part of the file /cap.js of the component HTTP GET Request Handler. The manipulation leads to information disclosure. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The identifier VDB-258933 was assigned to this vulnerability. NOTE: The vendor explains that they do not classify the information shown as sensitive and therefore there is no vulnerability which is about to harm the user.",
+    "published": "2024-04-02T03:15:19.010",
+    "keywords": "remote,sensitive"
   }
 }
