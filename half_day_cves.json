@@ -262,5 +262,161 @@
     "description": "Foxit PDF Reader Annotation Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Annotation objects. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22721.",
     "published": "2024-04-02T20:15:11.410",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-27604": {
+    "cvss": "-",
+    "description": "Alldata V0.4.6 is vulnerable to Command execution vulnerability. System commands can be deserialized.",
+    "published": "2024-04-02T21:15:46.010",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-30344": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Acroforms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22733.",
+    "published": "2024-04-02T21:15:46.173",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30345": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Doc objects in AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22742.",
+    "published": "2024-04-02T21:15:46.353",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30346": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Doc objects in AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22745.",
+    "published": "2024-04-02T21:15:46.530",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30347": {
+    "cvss": 3.3,
+    "description": "Foxit PDF Reader U3D File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of U3D files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-22910.",
+    "published": "2024-04-02T21:15:46.723",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-30348": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader U3D File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of U3D files. The issue results from the lack of proper validation of user-supplied data, which can result in a write  past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22911.",
+    "published": "2024-04-02T21:15:46.900",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30349": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader U3D File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of U3D files. The issue results from the lack of proper validation of user-supplied data, which can result in a write  past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22912.",
+    "published": "2024-04-02T21:15:47.090",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30350": {
+    "cvss": 3.3,
+    "description": "Foxit PDF Reader Annotation Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Annotation objects. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-22708.",
+    "published": "2024-04-02T21:15:47.263",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-30351": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Doc objects in AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22799.",
+    "published": "2024-04-02T21:15:47.447",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30352": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Doc objects. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22800.",
+    "published": "2024-04-02T21:15:47.630",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30353": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm Out-Of-Bounds Read Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Doc objects in AcroForms. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22807.",
+    "published": "2024-04-02T21:15:47.813",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30354": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Doc objects in AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22808.",
+    "published": "2024-04-02T21:15:47.993",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30355": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Doc objects in AcroForms. The issue results from the lack of proper validation of user-supplied data, which can result in a write  past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22809.",
+    "published": "2024-04-02T21:15:48.167",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30356": {
+    "cvss": 3.3,
+    "description": "Foxit PDF Reader AcroForm Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Doc objects in AcroForms. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-22811.",
+    "published": "2024-04-02T21:15:48.347",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-30357": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm Annotation Type Confusion Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Annotation objects in AcroForms. The issue results from the lack of proper validation of user-supplied data, which can result in a type confusion condition. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22818.",
+    "published": "2024-04-02T21:15:48.530",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30358": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm User-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22821.",
+    "published": "2024-04-02T21:15:48.717",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30359": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm 3D Out-Of-Bounds Read Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of 3D objects in AcroForms. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22888.",
+    "published": "2024-04-02T21:15:48.900",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30360": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22797.",
+    "published": "2024-04-02T21:15:49.077",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30361": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22877.",
+    "published": "2024-04-02T21:15:49.280",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30362": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader PDF File Parsing Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of PDF files. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22798.",
+    "published": "2024-04-02T21:15:49.477",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30363": {
+    "cvss": 3.3,
+    "description": "Foxit PDF Reader U3D File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of U3D files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-23008.",
+    "published": "2024-04-02T21:15:49.667",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-30364": {
+    "cvss": 3.3,
+    "description": "Foxit PDF Reader U3D File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of U3D files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-23009.",
+    "published": "2024-04-02T21:15:49.853",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-30365": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22947.",
+    "published": "2024-04-02T21:15:50.033",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30367": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23013.",
+    "published": "2024-04-02T21:15:50.217",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30370": {
+    "cvss": 4.3,
+    "description": "RARLAB WinRAR Mark-Of-The-Web Bypass Vulnerability. This vulnerability allows remote attackers to bypass the Mark-Of-The-Web protection mechanism on affected installations of RARLAB WinRAR. User interaction is required to exploit this vulnerability in that the target must perform a specific action on a malicious page.\n\nThe specific flaw exists within the archive extraction functionality. A crafted archive entry can cause the creation of an arbitrary file without the Mark-Of-The-Web. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current user. Was ZDI-CAN-23156.",
+    "published": "2024-04-02T21:15:50.403",
+    "keywords": "remote,bypass"
+  },
+  "CVE-2024-30371": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23355.",
+    "published": "2024-04-02T21:15:50.600",
+    "keywords": "remote,execution"
   }
 }
