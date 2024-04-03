@@ -1,4 +1,10 @@
 {
+  "CVE-2024-31033": {
+    "url": "https://github.com/jwtk/jjwt/issues/930#issuecomment-2032699358",
+    "cvss": "-",
+    "description": "JJWT (aka Java JWT) through 0.12.5 ignores certain characters and thus a user might falsely conclude that they have a strong key. The impacted code is the setSigningKey() method within the DefaultJwtParser class and the signWith() method within the DefaultJwtBuilder class. NOTE: the vendor disputes this because the \"ignores\" behavior cannot occur (in any version) unless there is a user error in how JJWT is used, and because the version that was actually tested must have been more than six years out of date.",
+    "published": "2024-04-01T02:15:07.850"
+  },
   "CVE-2024-20039": {
     "cvss": "-",
     "description": "In modem protocol, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01240012; Issue ID: MSV-1215.",
@@ -424,5 +430,23 @@
     "description": "A vulnerability, which was classified as problematic, has been found in codelyfe Stupid Simple CMS 1.2.4. This issue affects some unknown processing of the component Login Page. The manipulation leads to improper restriction of excessive authentication attempts. The attack may be initiated remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. The identifier VDB-259049 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2024-04-02T22:15:09.643",
     "keywords": "remote,authentication"
+  },
+  "CVE-2024-24724": {
+    "cvss": "-",
+    "description": "Gibbon through 26.0.00 allows /modules/School%20Admin/messengerSettings.php Server Side Template Injection leading to Remote Code Execution because input is passed to the Twig template engine (messengerSettings.php) without sanitization.",
+    "published": "2024-04-03T03:15:09.173",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-25864": {
+    "cvss": "-",
+    "description": "Server Side Request Forgery (SSRF) vulnerability in Friendica versions after v.2023.12, allows a remote attacker to execute arbitrary code and obtain sensitive information via the fpostit.php component.",
+    "published": "2024-04-03T03:15:09.350",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-26495": {
+    "cvss": "-",
+    "description": "Cross Site Scripting (XSS) vulnerability in Friendica versions after v.2023.12, allows a remote attacker to execute arbitrary code and obtain sensitive information via the BBCode tags in the post content and post comments function.",
+    "published": "2024-04-03T03:15:09.533",
+    "keywords": "remote,sensitive"
   }
 }
