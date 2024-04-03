@@ -502,5 +502,215 @@
     "description": "An information leak in the BRS_top.html component of Netgear R6850 v1.1.0.88 allows attackers to obtain sensitive information without any authentication required.",
     "published": "2024-04-03T13:16:02.620",
     "keywords": "authentication,sensitive,leak"
+  },
+  "CVE-2024-1180": {
+    "cvss": 6.8,
+    "description": "TP-Link Omada ER605 Access Control Command Injection Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of TP-Link Omada ER605. Authentication is required to exploit this vulnerability.\n\nThe specific issue exists within the handling of the name field in the access control user interface. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-22227.",
+    "published": "2024-04-03T17:15:47.530",
+    "keywords": "remote,execution,authentication,command"
+  },
+  "CVE-2024-20281": {
+    "cvss": 7.5,
+    "description": "A vulnerability in the web-based management interface of Cisco Nexus Dashboard and Cisco Nexus Dashboard hosted services could allow an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack on an affected system.\r\n\r This vulnerability is due to insufficient CSRF protections for the web-based management interface on an affected system. An attacker could exploit this vulnerability by persuading a user to click a malicious link. A successful exploit could allow the attacker to perform arbitrary actions with the privilege level of the affected user. If the affected user has administrative privileges, these actions could include modifying the system configuration and creating new privileged accounts.\r\n\r Note: There are internal security mechanisms in place that limit the scope of this exploit, reducing the Security Impact Rating of this vulnerability.",
+    "published": "2024-04-03T17:15:47.740",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-20310": {
+    "cvss": 6.1,
+    "description": "A vulnerability in the web-based interface of Cisco Unified Communications Manager IM & Presence Service (Unified CM IM&P) could allow an unauthenticated, remote attacker to conduct a cross-site scripting (XSS) attack against an authenticated user of the interface.\r\n\r This vulnerability exists because the web-based management interface does not properly validate user-supplied input. An attacker could exploit this vulnerability by persuading an authenticated user of the interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive browser-based information.",
+    "published": "2024-04-03T17:15:48.513",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2024-20334": {
+    "cvss": 5.5,
+    "description": "A vulnerability in the web-based management interface of Cisco TelePresence Management Suite (TMS) could allow a low-privileged, remote attacker to conduct a cross-site scripting (XSS) attack against a user of the interface.\r\n\r This vulnerability is due to insufficient input validation by the web-based management interface. An attacker could exploit this vulnerability by inserting malicious data in a specific data field in the interface. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.",
+    "published": "2024-04-03T17:15:48.907",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-20347": {
+    "cvss": 4.3,
+    "description": "A vulnerability in Cisco Emergency Responder could allow an unauthenticated, remote attacker to conduct a CSRF attack, which could allow the attacker to perform arbitrary actions on an affected device. This vulnerability is due to insufficient protections for the web UI of an affected system. An attacker could exploit this vulnerability by persuading a user to click a crafted link. A successful exploit could allow the attacker to perform arbitrary actions with the privilege level of the affected user, such as deleting users from the device.",
+    "published": "2024-04-03T17:15:49.107",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-20348": {
+    "cvss": 7.5,
+    "description": "A vulnerability in the Out-of-Band (OOB) Plug and Play (PnP) feature of Cisco Nexus Dashboard Fabric Controller (NDFC) could allow an unauthenticated, remote attacker to read arbitrary files.\r\n\r This vulnerability is due to an unauthenticated provisioning web server. An attacker could exploit this vulnerability through direct web requests to the provisioning server. A successful exploit could allow the attacker to read sensitive files in the PnP container that could facilitate further attacks on the PnP infrastructure.",
+    "published": "2024-04-03T17:15:49.310",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2024-20362": {
+    "cvss": 6.1,
+    "description": "A vulnerability in the web-based management interface of Cisco Small Business RV016, RV042, RV042G, RV082, RV320, and RV325 Routers could allow an unauthenticated, remote attacker to conduct a cross-site scripting (XSS) attack against a user of the interface.\r\n\r This vulnerability is due to insufficient input validation by the web-based management interface. An attacker could exploit this vulnerability by persuading a user to visit specific web pages that include malicious payloads. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.",
+    "published": "2024-04-03T17:15:49.707",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2024-20367": {
+    "cvss": 5.4,
+    "description": "A vulnerability in the web UI of Cisco Enterprise Chat and Email (ECE) could allow an authenticated, remote attacker to conduct a cross-site scripting (XSS) attack against a user of the interface.\r\n\r This vulnerability exists because the web UI does not properly validate user-supplied input. An attacker could exploit this vulnerability by persuading a user of the interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information. To successfully exploit this vulnerability, an attacker would need valid agent credentials.",
+    "published": "2024-04-03T17:15:49.907",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-20368": {
+    "cvss": 6.5,
+    "description": "A vulnerability in the web-based management interface of Cisco Identity Services Engine (ISE) could allow an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack and perform arbitrary actions on an affected device.\r\n\r This vulnerability is due to insufficient CSRF protections for the web-based management interface of an affected device. An attacker could exploit this vulnerability by persuading a user of the interface to follow a crafted link. A successful exploit could allow the attacker to perform arbitrary actions on the affected device with the privileges of the targeted user.",
+    "published": "2024-04-03T17:15:50.107",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-27335": {
+    "cvss": 7.8,
+    "description": "Kofax Power PDF PNG File Parsing Out-Of-Bounds Read Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Kofax Power PDF. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of PNG files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22018.",
+    "published": "2024-04-03T17:15:53.560",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-27336": {
+    "cvss": 3.3,
+    "description": "Kofax Power PDF PNG File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Kofax Power PDF. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of PNG files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-22022.",
+    "published": "2024-04-03T17:15:53.733",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-27337": {
+    "cvss": 7.8,
+    "description": "Kofax Power PDF TIF File Parsing Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Kofax Power PDF. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of TIF files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22033.",
+    "published": "2024-04-03T17:15:53.900",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-27338": {
+    "cvss": 7.8,
+    "description": "Kofax Power PDF app response Out-Of-Bounds Read Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Kofax Power PDF. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the implementation of the app.response method. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22588.",
+    "published": "2024-04-03T17:15:54.073",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-27339": {
+    "cvss": 7.8,
+    "description": "Kofax Power PDF PDF File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Kofax Power PDF. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of PDF files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22925.",
+    "published": "2024-04-03T17:15:54.250",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-27340": {
+    "cvss": 7.8,
+    "description": "Kofax Power PDF PDF File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Kofax Power PDF. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of PDF files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22926.",
+    "published": "2024-04-03T17:15:54.453",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-27341": {
+    "cvss": 7.8,
+    "description": "Kofax Power PDF PDF File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Kofax Power PDF. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of PDF files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22927.",
+    "published": "2024-04-03T17:15:54.637",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-27342": {
+    "cvss": 7.8,
+    "description": "Kofax Power PDF PDF File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Kofax Power PDF. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of PDF files. The issue results from the lack of proper validation of user-supplied data, which can result in a write  past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22928.",
+    "published": "2024-04-03T17:15:54.820",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-27343": {
+    "cvss": 3.3,
+    "description": "Kofax Power PDF PDF File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Kofax Power PDF. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of PDF files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-22929.",
+    "published": "2024-04-03T17:15:54.993",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-27344": {
+    "cvss": 7.8,
+    "description": "Kofax Power PDF PDF File Parsing Memory Corruption Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Kofax Power PDF. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of PDF files. The issue results from the lack of proper validation of user-supplied data, which can result in a memory corruption condition. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22931.",
+    "published": "2024-04-03T17:15:55.167",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-27345": {
+    "cvss": 3.3,
+    "description": "Kofax Power PDF PDF File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Kofax Power PDF. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of PDF files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-22932.",
+    "published": "2024-04-03T17:15:55.353",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-27346": {
+    "cvss": 3.3,
+    "description": "Kofax Power PDF PDF File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Kofax Power PDF. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of PDF files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-22934.",
+    "published": "2024-04-03T17:15:55.527",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-30322": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22499.",
+    "published": "2024-04-03T17:15:55.880",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30323": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader template Out-Of-Bounds Read Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of template objects. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22501.",
+    "published": "2024-04-03T17:15:56.103",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30324": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader Doc Object Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Doc objects. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22576.",
+    "published": "2024-04-03T17:15:56.293",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30325": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Doc objects in AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22592.",
+    "published": "2024-04-03T17:15:56.480",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30326": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader Doc Object Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Doc objects. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22593.",
+    "published": "2024-04-03T17:15:56.660",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30327": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader template Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of template objects. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22632.",
+    "published": "2024-04-03T17:15:56.837",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30328": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Doc objects in AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22633.",
+    "published": "2024-04-03T17:15:57.023",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30329": {
+    "cvss": 3.3,
+    "description": "Foxit PDF Reader Annotation Use-After-Free Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Annotation objects. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-22634.",
+    "published": "2024-04-03T17:15:57.260",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-30330": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Doc objects in AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22636.",
+    "published": "2024-04-03T17:15:57.450",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30331": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Doc objects in AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22637.",
+    "published": "2024-04-03T17:15:57.627",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30332": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader Doc Object Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Doc objects. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22638.",
+    "published": "2024-04-03T17:15:57.803",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30333": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader Doc Object Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Doc objects. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22639.",
+    "published": "2024-04-03T17:15:57.990",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30334": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader Doc Object Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Doc objects. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22640.",
+    "published": "2024-04-03T17:15:58.190",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30366": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23002.",
+    "published": "2024-04-03T17:15:58.383",
+    "keywords": "remote,execution"
   }
 }
