@@ -448,5 +448,35 @@
     "description": "Cross Site Scripting (XSS) vulnerability in Friendica versions after v.2023.12, allows a remote attacker to execute arbitrary code and obtain sensitive information via the BBCode tags in the post content and post comments function.",
     "published": "2024-04-03T03:15:09.533",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-2879": {
+    "cvss": 9.8,
+    "description": "The LayerSlider plugin for WordPress is vulnerable to SQL Injection via the ls_get_popup_markup action in versions 7.9.11 and 7.10.0 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2024-04-03T04:15:11.960",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-31009": {
+    "cvss": "-",
+    "description": "SQL injection vulnerability in SEMCMS v.4.8, allows a remote attacker to obtain sensitive information via lgid parameter in Banner.php.",
+    "published": "2024-04-03T04:15:12.403",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-31010": {
+    "cvss": "-",
+    "description": "SQL injection vulnerability in SEMCMS v.4.8, allows a remote attacker to obtain sensitive information via the ID parameter in Banner.php.",
+    "published": "2024-04-03T04:15:12.653",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-31012": {
+    "cvss": "-",
+    "description": "An issue was discovered in SEMCMS v.4.8, allows remote attackers to execute arbitrary code, escalate privileges, and obtain sensitive information via the upload.php file.",
+    "published": "2024-04-03T04:15:12.797",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-31013": {
+    "url": "https://github.com/emlog/emlog/issues/291",
+    "cvss": "-",
+    "description": "Cross Site Scripting (XSS) vulnerability in emlog version Pro 2.3, allow remote attackers to execute arbitrary code via a crafted payload to the bottom of the homepage in footer_info parameter.",
+    "published": "2024-04-03T04:15:12.907"
   }
 }
