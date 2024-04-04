@@ -1,10 +1,4 @@
 {
-  "CVE-2024-31033": {
-    "url": "https://github.com/jwtk/jjwt/issues/930#issuecomment-2032699358",
-    "cvss": "-",
-    "description": "JJWT (aka Java JWT) through 0.12.5 ignores certain characters and thus a user might falsely conclude that they have a strong key. The impacted code is the setSigningKey() method within the DefaultJwtParser class and the signWith() method within the DefaultJwtBuilder class. NOTE: the vendor disputes this because the \"ignores\" behavior cannot occur (in any version) unless there is a user error in how JJWT is used, and because the version that was actually tested must have been more than six years out of date.",
-    "published": "2024-04-01T02:15:07.850"
-  },
   "CVE-2024-20039": {
     "cvss": "-",
     "description": "In modem protocol, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01240012; Issue ID: MSV-1215.",
@@ -736,5 +730,11 @@
     "description": "A vulnerability, which was classified as critical, was found in D-Link DNS-320L, DNS-325, DNS-327L and DNS-340L up to 20240403. Affected is an unknown function of the file /cgi-bin/nas_sharing.cgi of the component HTTP GET Request Handler. The manipulation of the argument system leads to command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-259284. NOTE: Vendor was contacted early and confirmed immediately that the product is end-of-life. It should be retired and replaced.",
     "published": "2024-04-04T01:15:50.387",
     "keywords": "remote,command"
+  },
+  "CVE-2024-3022": {
+    "cvss": 7.2,
+    "description": "The BookingPress plugin for WordPress is vulnerable to arbitrary file uploads due to insufficient filename validation in the 'bookingpress_process_upload' function in all versions up to, and including 1.0.87. This allows an authenticated attacker with administrator-level capabilities or higher to upload arbitrary files on the affected site's server, enabling remote code execution.",
+    "published": "2024-04-04T02:15:07.230",
+    "keywords": "remote,execution"
   }
 }
