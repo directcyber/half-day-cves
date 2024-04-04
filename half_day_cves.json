@@ -712,5 +712,23 @@
     "description": "Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23002.",
     "published": "2024-04-03T17:15:58.383",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-25568": {
+    "cvss": "-",
+    "description": "OS command injection vulnerability in WRC-X3200GST3-B v1.25 and earlier, and WRC-G01-W v1.24 and earlier allows a network-adjacent unauthenticated attacker to execute arbitrary OS commands by sending a specially crafted request to the product.",
+    "published": "2024-04-04T00:15:06.990",
+    "keywords": "unauthenticated,command"
+  },
+  "CVE-2024-29167": {
+    "cvss": "-",
+    "description": "SVR-116 firmware version 1.6.0.30028871 allows a remote authenticated attacker with an administrative privilege to execute arbitrary OS commands by sending a specially crafted request to the product.",
+    "published": "2024-04-04T00:15:07.103",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-29225": {
+    "cvss": "-",
+    "description": "WRC-X3200GST3-B v1.25 and earlier, and WRC-G01-W v1.24 and earlier allow a network-adjacent unauthenticated attacker to obtain the configuration file containing sensitive information by sending a specially crafted request.",
+    "published": "2024-04-04T00:15:07.200",
+    "keywords": "unauthenticated,sensitive"
   }
 }
