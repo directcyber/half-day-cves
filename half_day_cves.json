@@ -1,34 +1,4 @@
 {
-  "CVE-2024-30335": {
-    "cvss": 3.3,
-    "description": "Foxit PDF Reader AcroForm Annotation Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Annotation objects. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-22641.",
-    "published": "2024-04-02T18:15:12.110",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-30806": {
-    "url": "https://github.com/axiomatic-systems/bento4/issues/914",
-    "cvss": "-",
-    "description": "An issue was discovered in Bento4 v1.6.0-641-2-g1529b83. There is a heap overflow in AP4_Dec3Atom::AP4_Dec3Atom at Ap4Dec3Atom.cpp, leading to a Denial of Service (DoS), as demonstrated by mp42aac.",
-    "published": "2024-04-02T18:15:12.397"
-  },
-  "CVE-2024-30807": {
-    "url": "https://github.com/axiomatic-systems/bento4/issues/937",
-    "cvss": "-",
-    "description": "An issue was discovered in Bento4 v1.6.0-641-2-g1529b83. There is a heap-use-after-free in AP4_UnknownAtom::~AP4_UnknownAtom at Ap4Atom.cpp, leading to a Denial of Service (DoS), as demonstrated by mp42ts.",
-    "published": "2024-04-02T18:15:12.460"
-  },
-  "CVE-2024-30808": {
-    "url": "https://github.com/axiomatic-systems/bento4/issues/937",
-    "cvss": "-",
-    "description": "An issue was discovered in Bento4 v1.6.0-641-2-g1529b83. There is a heap-use-after-free in AP4_SubStream::~AP4_SubStream at Ap4ByteStream.cpp, leading to a Denial of Service (DoS), as demonstrated by mp42ts.",
-    "published": "2024-04-02T18:15:12.510"
-  },
-  "CVE-2024-30809": {
-    "url": "https://github.com/axiomatic-systems/bento4/issues/937",
-    "cvss": "-",
-    "description": "An issue was discovered in Bento4 v1.6.0-641-2-g1529b83. There is a heap-use-after-free in Ap4Sample.h in AP4_Sample::GetOffset() const, leading to a Denial of Service (DoS), as demonstrated by mp42ts.",
-    "published": "2024-04-02T18:15:12.563"
-  },
   "CVE-2024-30336": {
     "cvss": 7.8,
     "description": "Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Doc objects in AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22642.",
@@ -688,5 +658,29 @@
     "description": "A vulnerability was found in Byzro Smart S80 up to 20240328. It has been declared as critical. This vulnerability affects unknown code of the file /log/webmailattach.php. The manipulation of the argument mail_file_path leads to os command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-259450 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2024-04-05T16:15:07.810",
     "keywords": "remote,command"
+  },
+  "CVE-2024-31848": {
+    "cvss": 9.8,
+    "description": "A path traversal vulnerability exists in the Java version of CData API Server < 23.4.8844 when running using the embedded Jetty server, which could allow an unauthenticated remote attacker to gain complete administrative access to the application.",
+    "published": "2024-04-05T18:15:09.360",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-31849": {
+    "cvss": 9.8,
+    "description": "A path traversal vulnerability exists in the Java version of CData Connect < 23.4.8846 when running using the embedded Jetty server, which could allow an unauthenticated remote attacker to gain complete administrative access to the application.",
+    "published": "2024-04-05T18:15:09.563",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-31850": {
+    "cvss": 8.6,
+    "description": "A path traversal vulnerability exists in the Java version of CData Arc < 23.4.8839 when running using the embedded Jetty server, which could allow an unauthenticated remote attacker to gain access to sensitive information and perform limited actions.",
+    "published": "2024-04-05T18:15:09.753",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2024-31851": {
+    "cvss": 8.6,
+    "description": "A path traversal vulnerability exists in the Java version of CData Sync < 23.4.8843 when running using the embedded Jetty server, which could allow an unauthenticated remote attacker to gain access to sensitive information and perform limited actions.",
+    "published": "2024-04-05T18:15:09.953",
+    "keywords": "remote,unauthenticated,sensitive"
   }
 }
