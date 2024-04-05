@@ -1,10 +1,4 @@
 {
-  "CVE-2024-22246": {
-    "cvss": 7.4,
-    "description": "VMware SD-WAN Edge contains an unauthenticated command injection vulnerability potentially leading to remote code execution.\n\nA malicious actor with local access to the Edge Router UI during \nactivation may be able to perform a command injection attack that could \nlead to full control of the router. \n\n",
-    "published": "2024-04-02T16:15:07.573",
-    "keywords": "remote,execution,unauthenticated,command"
-  },
   "CVE-2024-30335": {
     "cvss": 3.3,
     "description": "Foxit PDF Reader AcroForm Annotation Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Annotation objects. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-22641.",
@@ -688,5 +682,11 @@
     "description": "Sunshine is a self-hosted game stream host for Moonlight. Starting in version 0.16.0 and prior to version 0.18.0, an attacker may be able to remotely read arbitrary files without authentication due to a path traversal vulnerability. Users who exposed the Sunshine configuration web user interface outside of localhost may be affected, depending on firewall configuration. To exploit vulnerability, attacker could make an http/s request to the `node_modules` endpoint if user exposed Sunshine config web server to internet or attacker is on the LAN. Version 0.18.0 contains a patch for this issue. As a workaround, one may block access to Sunshine via firewall.",
     "published": "2024-04-05T15:15:08.060",
     "keywords": "remote,authentication"
+  },
+  "CVE-2024-3346": {
+    "cvss": 6.3,
+    "description": "A vulnerability was found in Byzro Smart S80 up to 20240328. It has been declared as critical. This vulnerability affects unknown code of the file /log/webmailattach.php. The manipulation of the argument mail_file_path leads to os command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-259450 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-04-05T16:15:07.810",
+    "keywords": "remote,command"
   }
 }
