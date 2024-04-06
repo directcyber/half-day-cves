@@ -1,34 +1,4 @@
 {
-  "CVE-2024-2879": {
-    "cvss": 9.8,
-    "description": "The LayerSlider plugin for WordPress is vulnerable to SQL Injection via the ls_get_popup_markup action in versions 7.9.11 and 7.10.0 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
-    "published": "2024-04-03T04:15:11.960",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-31009": {
-    "cvss": "-",
-    "description": "SQL injection vulnerability in SEMCMS v.4.8, allows a remote attacker to obtain sensitive information via lgid parameter in Banner.php.",
-    "published": "2024-04-03T04:15:12.403",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-31010": {
-    "cvss": "-",
-    "description": "SQL injection vulnerability in SEMCMS v.4.8, allows a remote attacker to obtain sensitive information via the ID parameter in Banner.php.",
-    "published": "2024-04-03T04:15:12.653",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-31012": {
-    "cvss": "-",
-    "description": "An issue was discovered in SEMCMS v.4.8, allows remote attackers to execute arbitrary code, escalate privileges, and obtain sensitive information via the upload.php file.",
-    "published": "2024-04-03T04:15:12.797",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-31013": {
-    "url": "https://github.com/emlog/emlog/issues/291",
-    "cvss": "-",
-    "description": "Cross Site Scripting (XSS) vulnerability in emlog version Pro 2.3, allow remote attackers to execute arbitrary code via a crafted payload to the bottom of the homepage in footer_info parameter.",
-    "published": "2024-04-03T04:15:12.907"
-  },
   "CVE-2024-30998": {
     "cvss": "-",
     "description": "SQL Injection vulnerability in PHPGurukul Men Salon Management System v.2.0, allows remote attackers to execute arbitrary code and obtain sensitive information via the email parameter in the index.php component.",
@@ -484,5 +454,11 @@
     "description": "A vulnerability was reported in some Lenovo Printers that could allow an unauthenticated attacker to reboot the printer without authentication.",
     "published": "2024-04-05T21:15:09.060",
     "keywords": "unauthenticated,authentication"
+  },
+  "CVE-2024-2950": {
+    "cvss": 5.3,
+    "description": "The BoldGrid Easy SEO \u2013 Simple and Effective SEO plugin for WordPress is vulnerable to Information Exposure in all versions up to, and including, 1.6.14 via meta information (og:description) This makes it possible for unauthenticated attackers to view the first 130 characters of a password protected post which can contain sensitive information.",
+    "published": "2024-04-06T04:15:11.463",
+    "keywords": "unauthenticated,sensitive"
   }
 }
