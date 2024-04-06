@@ -1,22 +1,4 @@
 {
-  "CVE-2024-30569": {
-    "cvss": "-",
-    "description": "An information leak in currentsetting.htm of Netgear R6850 v1.1.0.88 allows attackers to obtain sensitive information without any authentication required.",
-    "published": "2024-04-03T13:16:02.503",
-    "keywords": "authentication,sensitive,leak"
-  },
-  "CVE-2024-30570": {
-    "cvss": "-",
-    "description": "An information leak in debuginfo.htm of Netgear R6850 v1.1.0.88 allows attackers to obtain sensitive information without any authentication required.",
-    "published": "2024-04-03T13:16:02.563",
-    "keywords": "authentication,sensitive,leak"
-  },
-  "CVE-2024-30571": {
-    "cvss": "-",
-    "description": "An information leak in the BRS_top.html component of Netgear R6850 v1.1.0.88 allows attackers to obtain sensitive information without any authentication required.",
-    "published": "2024-04-03T13:16:02.620",
-    "keywords": "authentication,sensitive,leak"
-  },
   "CVE-2024-1180": {
     "cvss": 6.8,
     "description": "TP-Link Omada ER605 Access Control Command Injection Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of TP-Link Omada ER605. Authentication is required to exploit this vulnerability.\n\nThe specific issue exists within the handling of the name field in the access control user interface. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-22227.",
