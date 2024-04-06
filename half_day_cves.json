@@ -460,5 +460,17 @@
     "cvss": 3.5,
     "description": "A vulnerability classified as problematic was found in Xuxueli xxl-job up to 2.4.1. This vulnerability affects the function deserialize of the file com/xxl/job/core/util/JdkSerializeTool.java of the component Template Handler. The manipulation leads to injection. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-259480.",
     "published": "2024-04-06T11:15:08.740"
+  },
+  "CVE-2024-25029": {
+    "cvss": 9.0,
+    "description": "IBM Personal Communications 14.0.6 through 15.0.1 includes a Windows service that is vulnerable to remote code execution (RCE) and local privilege escalation (LPE). The vulnerability allows any unprivileged user with network access to a target computer to run commands with full privileges in the context of NT AUTHORITY\\SYSTEM. This allows for a low privileged attacker to move laterally to affected systems and to escalate their privileges.  IBM X-Force ID:  281619.",
+    "published": "2024-04-06T12:15:08.400",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2024-3376": {
+    "cvss": 7.3,
+    "description": "A vulnerability classified as critical has been found in SourceCodester Computer Laboratory Management System 1.0. This affects an unknown part of the file config.php. The manipulation of the argument url leads to execution after redirect. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-259497 was assigned to this vulnerability.",
+    "published": "2024-04-06T12:15:08.603",
+    "keywords": "remote,execution"
   }
 }
