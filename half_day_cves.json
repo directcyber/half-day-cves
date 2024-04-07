@@ -1,16 +1,4 @@
 {
-  "CVE-2024-29191": {
-    "url": "https://github.com/alexxit/go2rtc/commit/3b3d5b033aac3a019af64f83dec84f70ed2c8aba",
-    "cvss": 6.1,
-    "description": "gotortc is a camera streaming application. Versions 1.8.5 and prior are vulnerable to DOM-based cross-site scripting. The links page (`links.html`) appends the `src` GET parameter (`[0]`) in all of its links for 1-click previews. The context in which `src` is being appended is `innerHTML` (`[1]`), which will insert the text as HTML. Commit 3b3d5b033aac3a019af64f83dec84f70ed2c8aba contains a patch for the issue.",
-    "published": "2024-04-04T15:15:39.043"
-  },
-  "CVE-2024-3116": {
-    "cvss": 7.4,
-    "description": "pgAdmin <= 8.4 is affected by a  Remote Code Execution (RCE) vulnerability through the validate binary path API. This vulnerability allows attackers to execute arbitrary code on the server hosting PGAdmin, posing a severe risk to the database management system's integrity and the security of the underlying data.\n",
-    "published": "2024-04-04T15:15:39.667",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-31215": {
     "url": "https://github.com/mobsf/mobile-security-framework-mobsf/pull/2373",
     "cvss": 6.3,
