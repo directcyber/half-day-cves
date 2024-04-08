@@ -1,10 +1,4 @@
 {
-  "CVE-2024-31220": {
-    "cvss": 7.3,
-    "description": "Sunshine is a self-hosted game stream host for Moonlight. Starting in version 0.16.0 and prior to version 0.18.0, an attacker may be able to remotely read arbitrary files without authentication due to a path traversal vulnerability. Users who exposed the Sunshine configuration web user interface outside of localhost may be affected, depending on firewall configuration. To exploit vulnerability, attacker could make an http/s request to the `node_modules` endpoint if user exposed Sunshine config web server to internet or attacker is on the LAN. Version 0.18.0 contains a patch for this issue. As a workaround, one may block access to Sunshine via firewall.",
-    "published": "2024-04-05T15:15:08.060",
-    "keywords": "remote,authentication"
-  },
   "CVE-2024-3346": {
     "cvss": 6.3,
     "description": "A vulnerability was found in Byzro Smart S80 up to 20240328. It has been declared as critical. This vulnerability affects unknown code of the file /log/webmailattach.php. The manipulation of the argument mail_file_path leads to os command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-259450 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
@@ -172,5 +166,11 @@
     "cvss": "-",
     "description": "An issue was discovered in OFPMatch in parser.py in Faucet SDN Ryu version 4.34, allows remote attackers to cause a denial of service (DoS) (infinite loop).",
     "published": "2024-04-08T14:15:07.600"
+  },
+  "CVE-2024-31205": {
+    "cvss": 4.2,
+    "description": "Saleor is an e-commerce platform. Starting in version 3.10.0 and prior to versions 3.14.64, 3.15.39, 3.16.39, 3.17.35, 3.18.31, and 3.19.19, an attacker may bypass cross-set request forgery (CSRF) validation when calling refresh token mutation with empty string. When a user provides an empty string in `refreshToken` mutation, while the token persists in `JWT_REFRESH_TOKEN_COOKIE_NAME` cookie, application omits validation against CSRF token and returns valid access token. Versions 3.14.64, 3.15.39, 3.16.39, 3.17.35, 3.18.31, and 3.19.19 contain a patch for the issue. As a workaround, one may replace `saleor.graphql.account.mutations.authentication.refresh_token.py.get_refresh_token`. This will fix the issue, but be aware, that it returns `JWT_MISSING_TOKEN` instead of `JWT_INVALID_TOKEN`.\n",
+    "published": "2024-04-08T15:15:08.023",
+    "keywords": "authentication,bypass"
   }
 }
