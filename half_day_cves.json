@@ -1,10 +1,4 @@
 {
-  "CVE-2024-27448": {
-    "cvss": "-",
-    "description": "MailDev 2 through 2.1.0 allows Remote Code Execution via a crafted Content-ID header for an e-mail attachment, leading to lib/mailserver.js writing arbitrary code into the routes.js file.",
-    "published": "2024-04-05T06:15:10.263",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-30891": {
     "cvss": "-",
     "description": "A command injection vulnerability exists in /goform/exeCommand in Tenda AC18 v15.03.05.05, which allows attackers to construct cmdinput parameters for arbitrary command execution.",
@@ -130,5 +124,11 @@
     "cvss": "-",
     "description": "In the Opaque LSA Extended Link parser in FRRouting (FRR) through 9.1, there can be a buffer overflow and daemon crash in ospf_te_parse_ext_link for OSPF LSA packets during an attempt to read Segment Routing Adjacency SID subTLVs (lengths are not validated).",
     "published": "2024-04-07T21:15:07.600"
+  },
+  "CVE-2024-27488": {
+    "cvss": "-",
+    "description": "Incorrect Access Control vulnerability in ZLMediaKit versions 1.0 through 8.0, allows remote attackers to escalate privileges and obtain sensitive information. The application system enables the http API interface by default and uses the secret parameter method to authenticate the http restful api interface, but the secret is hardcoded by default.",
+    "published": "2024-04-08T06:15:07.533",
+    "keywords": "remote,sensitive"
   }
 }
