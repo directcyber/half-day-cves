@@ -130,5 +130,17 @@
     "description": "Incorrect Access Control vulnerability in ZLMediaKit versions 1.0 through 8.0, allows remote attackers to escalate privileges and obtain sensitive information. The application system enables the http API interface by default and uses the secret parameter method to authenticate the http restful api interface, but the secret is hardcoded by default.",
     "published": "2024-04-08T06:15:07.533",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-30661": {
+    "cvss": "-",
+    "description": "An unauthorized access vulnerability has been discovered in ROS Melodic Morenia versions where ROS_VERSION is 1 and ROS_PYTHON_VERSION is 3. This vulnerability could potentially allow a malicious user to gain unauthorized information access to multiple ROS nodes remotely. Unauthorized information access to these nodes could result in compromised system integrity, the execution of arbitrary commands, and disclosure of sensitive information.",
+    "published": "2024-04-08T07:15:09.370",
+    "keywords": "remote,execution,command,sensitive"
+  },
+  "CVE-2024-30665": {
+    "cvss": "-",
+    "description": "An OS command injection vulnerability has been discovered in ROS (Robot Operating System) Melodic Morenia in ROS_VERSION 1 and ROS_PYTHON_VERSION 3. This vulnerability primarily affects the command processing or system call components in ROS, making them susceptible to manipulation by malicious entities. Through this, unauthorized commands can be executed, leading to remote code execution (RCE), data theft, and malicious activities. The affected components include External Command Execution Modules, System Call Handlers, and Interface Scripts.",
+    "published": "2024-04-08T07:15:09.643",
+    "keywords": "remote,execution,command"
   }
 }
