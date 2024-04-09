@@ -106,5 +106,11 @@
     "description": "GPT Academic provides interactive interfaces for large language models. A vulnerability was found in gpt_academic versions 3.64 through 3.73. The server deserializes untrustworthy data from the client, which may risk remote code execution. Any device that exposes the GPT Academic service to the Internet is vulnerable. Version 3.74 contains a patch for the issue. There are no known workarounds aside from upgrading to a patched version.",
     "published": "2024-04-08T16:15:07.790",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-31047": {
+    "url": "https://github.com/academysoftwarefoundation/openexr/issues/1680",
+    "cvss": "-",
+    "description": "An issue in Academy Software Foundation openexr v.3.2.3 and before allows a local attacker to cause a denial of service (DoS) via the convert function of exrmultipart.cpp.",
+    "published": "2024-04-08T23:15:08.023"
   }
 }
