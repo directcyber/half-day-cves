@@ -1,22 +1,4 @@
 {
-  "CVE-2024-3366": {
-    "url": "https://github.com/xuxueli/xxl-job/issues/3391",
-    "cvss": 3.5,
-    "description": "A vulnerability classified as problematic was found in Xuxueli xxl-job up to 2.4.1. This vulnerability affects the function deserialize of the file com/xxl/job/core/util/JdkSerializeTool.java of the component Template Handler. The manipulation leads to injection. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-259480.",
-    "published": "2024-04-06T11:15:08.740"
-  },
-  "CVE-2024-25029": {
-    "cvss": 9.0,
-    "description": "IBM Personal Communications 14.0.6 through 15.0.1 includes a Windows service that is vulnerable to remote code execution (RCE) and local privilege escalation (LPE). The vulnerability allows any unprivileged user with network access to a target computer to run commands with full privileges in the context of NT AUTHORITY\\SYSTEM. This allows for a low privileged attacker to move laterally to affected systems and to escalate their privileges.  IBM X-Force ID:  281619.",
-    "published": "2024-04-06T12:15:08.400",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-3376": {
-    "cvss": 7.3,
-    "description": "A vulnerability classified as critical has been found in SourceCodester Computer Laboratory Management System 1.0. This affects an unknown part of the file config.php. The manipulation of the argument url leads to execution after redirect. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-259497 was assigned to this vulnerability.",
-    "published": "2024-04-06T12:15:08.603",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-27620": {
     "cvss": "-",
     "description": "An issue in Ladder v.0.0.1 thru v.0.0.21 allows a remote attacker to obtain sensitive information via a crafted request to the API.",
@@ -136,5 +118,11 @@
     "description": "OS command injection vulnerability in ROS2 Galactic Geochelone in ROS_VERSION 2 and ROS_PYTHON_VERSION 3, allows remote attackers to execute arbitrary code, escalate privileges, and obtain sensitive information via the command processing or system call components in ROS2, including External Command Execution Modules, System Call Handlers, and Interface Scripts.",
     "published": "2024-04-09T08:15:07.587",
     "keywords": "remote,execution,command,sensitive"
+  },
+  "CVE-2024-31863": {
+    "cvss": "-",
+    "description": "Authentication Bypass by Spoofing vulnerability by replacing to exsiting notes in Apache Zeppelin.This issue affects Apache Zeppelin: from 0.10.1 before 0.11.0.\n\nUsers are recommended to upgrade to version 0.11.0, which fixes the issue.\n\n",
+    "published": "2024-04-09T11:15:31.713",
+    "keywords": "authentication,bypass"
   }
 }
