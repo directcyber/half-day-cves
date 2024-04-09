@@ -1,10 +1,4 @@
 {
-  "CVE-2024-27620": {
-    "cvss": "-",
-    "description": "An issue in Ladder v.0.0.1 thru v.0.0.21 allows a remote attacker to obtain sensitive information via a crafted request to the API.",
-    "published": "2024-04-06T19:15:07.183",
-    "keywords": "remote,sensitive"
-  },
   "CVE-2024-31950": {
     "url": "https://github.com/frrouting/frr/pull/15674/",
     "cvss": "-",
@@ -562,5 +556,77 @@
     "cvss": 7.7,
     "description": "gin-vue-admin is a backstage management system based on vue and gin, which separates the front and rear of the full stack. gin-vue-admin pseudoversion 0.0.0-20240407133540-7bc7c3051067, corresponding to version 2.6.1, has a code injection vulnerability in the backend. In the Plugin System -> Plugin Template feature, an attacker can perform directory traversal by manipulating the `plugName` parameter. They can create specific folders such as `api`, `config`, `global`, `model`, `router`, `service`, and `main.go` function within the specified traversal directory. Moreover, the Go files within these folders can have arbitrary code inserted based on a specific PoC parameter. The main reason for the existence of this vulnerability is the controllability of the PlugName field within the struct. Pseudoversion 0.0.0-20240409100909-b1b7427c6ea6, corresponding to commit b1b7427c6ea6c7a027fa188c6be557f3795e732b, contains a patch for the issue. As a workaround, one may manually use a filtering method available in the GitHub Security Advisory to rectify the directory traversal problem.",
     "published": "2024-04-09T18:15:10.263"
+  },
+  "CVE-2024-1587": {
+    "cvss": 5.3,
+    "description": "The Newsmatic theme for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.3.0 via the 'newsmatic_filter_posts_load_tab_content'. This makes it possible for unauthenticated attackers to view draft posts and post content.",
+    "published": "2024-04-09T19:15:18.580",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-1813": {
+    "cvss": 9.8,
+    "description": "The Simple Job Board plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.11.0 via deserialization of untrusted input in the job_board_applicant_list_columns_value function. This makes it possible for unauthenticated attackers to inject a PHP Object. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code when a submitted job application is viewed.",
+    "published": "2024-04-09T19:15:19.973",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-2112": {
+    "cvss": 5.9,
+    "description": "The Form Maker by 10Web \u2013 Mobile-Friendly Drag & Drop Contact Form Builder plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.15.22 via the signature functionality. This makes it possible for unauthenticated attackers to extract sensitive data including user signatures.",
+    "published": "2024-04-09T19:15:28.017",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-2302": {
+    "cvss": 5.3,
+    "description": "The Easy Digital Downloads \u2013 Sell Digital Files & Subscriptions (eCommerce Store + Payments Made Easy) plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.2.9. This makes it possible for unauthenticated attackers to download the debug log via Directory Listing. This file may include PII.",
+    "published": "2024-04-09T19:15:30.990",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-2340": {
+    "cvss": 5.3,
+    "description": "The Avada theme for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 7.11.6 via the '/wp-content/uploads/fusion-forms/' directory. This makes it possible for unauthenticated attackers to extract sensitive data uploaded via an Avada created form with a file upload mechanism.",
+    "published": "2024-04-09T19:15:32.520",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-2804": {
+    "cvss": 9.8,
+    "description": "The Network Summary plugin for WordPress is vulnerable to SQL Injection via the 'category' parameter in all versions up to, and including, 2.0.11 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2024-04-09T19:15:37.490",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-2974": {
+    "cvss": 5.3,
+    "description": "The Essential Addons for Elementor \u2013 Best Elementor Templates, Widgets, Kits & WooCommerce Builders plugin for WordPress is vulnerable to Sensitive Information Exposure in versions up to, and including, 5.9.13 via the load_more function. This can allow unauthenticated attackers to extract sensitive data including private and draft posts.",
+    "published": "2024-04-09T19:15:38.817",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-30706": {
+    "cvss": "-",
+    "description": "An issue was discovered in ROS2 Dashing Diademata versions ROS_VERSION is 2 and ROS_PYTHON_VERSION is 3, allows remote attackers to execute arbitrary code, escalate privileges, obtain sensitive information, and gain unauthorized access to multiple ROS2 nodes.",
+    "published": "2024-04-09T19:15:38.980",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-3097": {
+    "cvss": 5.3,
+    "description": "The WordPress Gallery Plugin \u2013 NextGEN Gallery plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the get_item function in versions up to, and including, 3.59. This makes it possible for unauthenticated attackers to extract sensitive data including EXIF and other metadata of any image uploaded through the plugin.",
+    "published": "2024-04-09T19:15:39.553",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-3136": {
+    "cvss": 9.8,
+    "description": "The MasterStudy LMS plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 3.3.3 via the 'template' parameter. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
+    "published": "2024-04-09T19:15:39.720",
+    "keywords": "execution,unauthenticated,sensitive,bypass"
+  },
+  "CVE-2024-3214": {
+    "cvss": 5.8,
+    "description": "The Relevanssi \u2013 A Better Search plugin for WordPress is vulnerable to CSV Injection in all versions up to, and including, 4.22.1. This makes it possible for unauthenticated attackers to embed untrusted input into exported CSV files, which can result in code execution when these files are downloaded and opened on a local system with a vulnerable configuration.",
+    "published": "2024-04-09T19:15:40.377",
+    "keywords": "execution,unauthenticated"
+  },
+  "CVE-2024-3545": {
+    "cvss": "-",
+    "description": "Improper permission handling in the vault offline cache feature in Devolutions Remote Desktop Manager 2024.1.20 and earlier on windows and Devolutions Server 2024.1.8 and earlier allows an attacker to access sensitive informations contained in the offline cache file by gaining access to a computer where the software is installed even though the offline mode is disabled.\n\n",
+    "published": "2024-04-09T19:15:41.380",
+    "keywords": "remote,sensitive"
   }
 }
