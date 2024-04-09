@@ -124,5 +124,17 @@
     "description": "An issue was discovered in ROS2 Galactic Geochelone in version ROS_VERSION 2 and ROS_PYTHON_VERSION 3, allows remote attackers to execute arbitrary code, escalate privileges, obtain sensitive information, and gain unauthorized access to multiple ROS2 nodes.",
     "published": "2024-04-09T07:15:08.467",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-30694": {
+    "cvss": "-",
+    "description": "A shell injection vulnerability was discovered in ROS2 (Robot Operating System 2) Galactic Geochelone ROS_VERSION 2 and ROS_PYTHON_VERSION 3, allows attackers to execute arbitrary code, escalate privileges, and obtain sensitive information due to the way ROS2 handles shell command execution in components like command interpreters or interfaces that process external inputs.",
+    "published": "2024-04-09T08:15:07.420",
+    "keywords": "execution,command,sensitive"
+  },
+  "CVE-2024-30696": {
+    "cvss": "-",
+    "description": "OS command injection vulnerability in ROS2 Galactic Geochelone in ROS_VERSION 2 and ROS_PYTHON_VERSION 3, allows remote attackers to execute arbitrary code, escalate privileges, and obtain sensitive information via the command processing or system call components in ROS2, including External Command Execution Modules, System Call Handlers, and Interface Scripts.",
+    "published": "2024-04-09T08:15:07.587",
+    "keywords": "remote,execution,command,sensitive"
   }
 }
