@@ -124,5 +124,17 @@
     "description": "Authentication Bypass by Spoofing vulnerability by replacing to exsiting notes in Apache Zeppelin.This issue affects Apache Zeppelin: from 0.10.1 before 0.11.0.\n\nUsers are recommended to upgrade to version 0.11.0, which fixes the issue.\n\n",
     "published": "2024-04-09T11:15:31.713",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-28190": {
+    "url": "https://github.com/contao/contao/commit/b794e14fff070101bf6a885da9b1a83395093b4d",
+    "cvss": 5.4,
+    "description": "Contao is an open source content management system. Starting in version 4.0.0 and prior to version 4.13.40 and 5.3.4, users can inject malicious code in filenames when uploading files (back end and front end), which is then executed in tooltips and popups in the back end. Contao versions 4.13.40 and 5.3.4 have a patch for this issue. As a workaround, remove upload fields from frontend forms and disable uploads for untrusted back end users.",
+    "published": "2024-04-09T14:15:08.503"
+  },
+  "CVE-2024-28234": {
+    "url": "https://github.com/contao/contao/commit/6d42e667177c972ae7c219645593c262d7764ce2",
+    "cvss": 4.3,
+    "description": "Contao is an open source content management system. Starting in version 2.0.0 and prior to versions 4.13.40 and 5.3.4, it is possible to inject CSS styles via BBCode in comments. Installations are only affected if BBCode is enabled. Contao versions 4.13.40 and 5.3.4 have a patch for this issue. As a workaround, disable BBCode for comments.",
+    "published": "2024-04-09T14:15:08.897"
   }
 }
