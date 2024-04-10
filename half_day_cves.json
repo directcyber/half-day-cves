@@ -796,5 +796,29 @@
     "description": "Plane, an open-source project management tool, has a Server-Side Request Forgery (SSRF) vulnerability in versions prior to 0.17-dev. This issue may allow an attacker to send arbitrary requests from the server hosting the application, potentially leading to unauthorized access to internal systems. The impact of this vulnerability includes, but is not limited to, unauthorized access to internal services accessible from the server, potential leakage of sensitive information from internal services, manipulation of internal systems by interacting with internal APIs. Version 0.17-dev contains a patch for this issue. Those who are unable to update immediately may mitigate the issue by restricting outgoing network connections from servers hosting the application to essential services only and/or implementing strict input validation on URLs or parameters that are used to generate server-side requests.",
     "published": "2024-04-10T18:15:07.917",
     "keywords": "sensitive,leak"
+  },
+  "CVE-2024-31981": {
+    "cvss": 9.9,
+    "description": "XWiki Platform is a generic wiki platform. Starting in version 3.0.1 and prior to versions 4.10.20, 15.5.4, and 15.10-rc-1, remote code execution is possible via PDF export templates. This vulnerability has been patched in XWiki 14.10.20, 15.5.4 and 15.10-rc-1. If PDF templates are not typically used on the instance, an administrator can create the document `XWiki.PDFClass` and block its edition, after making sure that it does not contain a `style` attribute. Otherwise, there are no known workarounds aside from upgrading.",
+    "published": "2024-04-10T20:15:08.280",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-31982": {
+    "cvss": 10.0,
+    "description": "XWiki Platform is a generic wiki platform. Starting in version 2.4-milestone-1 and prior to versions 4.10.20, 15.5.4, and 15.10-rc-1, XWiki's database search allows remote code execution through the search text. This allows remote code execution for any visitor of a public wiki or user of a closed wiki as the database search is by default accessible for all users. This impacts the confidentiality, integrity and availability of the whole XWiki installation. This vulnerability has been patched in XWiki 14.10.20, 15.5.4 and 15.10RC1. As a workaround, one may manually apply the patch to the page `Main.DatabaseSearch`. Alternatively, unless database search is explicitly used by users, this page can be deleted as this is not the default search interface of XWiki.",
+    "published": "2024-04-10T20:15:08.463",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-31983": {
+    "cvss": 9.9,
+    "description": "XWiki Platform is a generic wiki platform. In multilingual wikis, translations can be edited by any user who has edit right, circumventing the rights that are normally required for authoring translations (script right for user-scope translations, wiki admin for translations on the wiki). Starting in version 4.3-milestone-2 and prior to versions 4.10.20, 15.5.4, and 15.10-rc-1, this can be exploited for remote code execution if the translation value is not properly escaped where it is used. This has been patched in XWiki 14.10.20, 15.5.4 and 15.10RC1. As a workaround, one may restrict edit rights on documents that contain translations.",
+    "published": "2024-04-10T20:15:08.650",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-31984": {
+    "cvss": 9.9,
+    "description": "Starting in version 7.2-rc-1 and prior to versions 4.10.20, 15.5.4, and 15.10-rc-1, by creating a document with a specially crafted title, it is possible to trigger remote code execution in the (Solr-based) search in XWiki. This allows any user who can edit the title of a space (all users by default) to execute any Groovy code in the XWiki installation which compromises the confidentiality, integrity and availability of the whole XWiki installation. This has been patched in XWiki 14.10.20, 15.5.4 and 15.10 RC1. As a workaround, manually apply the patch to the `Main.SolrSpaceFacet` page.",
+    "published": "2024-04-10T20:15:08.830",
+    "keywords": "remote,execution"
   }
 }
