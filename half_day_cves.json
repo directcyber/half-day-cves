@@ -694,5 +694,11 @@
     "description": "Mautic uses predictable page indices for unpublished landing pages, their content can be accessed by unauthenticated users under public preview URLs which could expose sensitive data. At the time of publication of the CVE no patch is available \n\n",
     "published": "2024-04-10T14:15:07.550",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-29296": {
+    "cvss": "-",
+    "description": "A user enumeration vulnerability was found in Portainer CE 2.19.4. This issue occurs during user authentication process, where a difference in response time could allow a remote unauthenticated user to determine if a username is valid or not.",
+    "published": "2024-04-10T15:16:05.033",
+    "keywords": "remote,unauthenticated,authentication"
   }
 }
