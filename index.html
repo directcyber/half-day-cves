@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-04-10T21:09:33.595819
+Updated at UTC 2024-04-10T22:11:12.941576
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,14 @@ Updated at UTC 2024-04-10T21:09:33.595819
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -449,32 +457,48 @@ Updated at UTC 2024-04-10T21:09:33.595819
 		
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31951">CVE-2024-31951</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/frrouting/frr/pull/15674/">https://github.com/frrouting/frr/pull/15674/</a></td>
-					<td class=date>2024-04-07T21:15:07.600</td>
-					<td class=description>In the Opaque LSA Extended Link parser in FRRouting (FRR) through 9.1, there can be a buffer overflow and daemon crash in ospf_te_parse_ext_link for OSPF LSA packets during an attempt to read Segment Routing Adjacency SID subTLVs (lengths are not validated).</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31950">CVE-2024-31950</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/frrouting/frr/pull/15674/">https://github.com/frrouting/frr/pull/15674/</a></td>
-					<td class=date>2024-04-07T21:15:07.540</td>
-					<td class=description>In FRRouting (FRR) through 9.1, there can be a buffer overflow and daemon crash in ospf_te_parse_ri for OSPF LSA packets during an attempt to read Segment Routing subTLVs (their size is not validated).</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31996">CVE-2024-31996</a></td>
+					<td>10.0</td>
+					<td>remote,execution</td>
+					<td class=date>2024-04-10T21:15:07.510</td>
+					<td class=description>XWiki Platform is a generic wiki platform. Starting in version 3.0.1 and prior to versions 4.10.19, 15.5.4, and 15.10-rc-1, the HTML escaping of escaping tool that is used in XWiki doesn't escape `{`, which, when used in certain places, allows XWiki syntax injection and thereby remote code execution. The vulnerability has been fixed in XWiki 14.10.19, 15.5.5, and 15.9 RC1. Apart from upgrading, there is no generic workaround. However, replacing `$escapetool.html` by `$escapetool.xml` in XWiki documents fixes the vulnerability. In a standard XWiki installation, the maintainers are only aware of the document `Panels.PanelLayoutUpdate` that exposes this vulnerability, patching this document is thus a workaround. Any extension could expose this vulnerability and might thus require patching, too.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31988">CVE-2024-31988</a></td>
+					<td>9.6</td>
+					<td>remote,execution</td>
+					<td class=date>2024-04-10T21:15:07.297</td>
+					<td class=description>XWiki Platform is a generic wiki platform. Starting in version 13.9-rc-1 and prior to versions 4.10.19, 15.5.4, and 15.10-rc-1, when the realtime editor is installed in XWiki, it allows arbitrary remote code execution with the interaction of an admin user with programming right. More precisely, by getting an admin user to either visit a crafted URL or to view an image with this URL that could be in a comment, the attacker can get the admin to execute arbitrary XWiki syntax including scripting macros with Groovy or Python code. This compromises the confidentiality, integrity and availability of the whole XWiki installation. This vulnerability has been patched in XWiki 14.10.19, 15.5.4 and 15.9. As a workaround, one may update `RTFrontend.ConvertHTML` manually with the patch. This will, however, break some synchronization processes in the realtime editor, so upgrading should be the preferred way on installations where this editor is used.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31987">CVE-2024-31987</a></td>
+					<td>9.9</td>
+					<td>remote,execution</td>
+					<td class=date>2024-04-10T21:15:07.110</td>
+					<td class=description>XWiki Platform is a generic wiki platform. Starting in version 6.4-milestone-1 and prior to versions 4.10.19, 15.5.4, and 15.10-rc-1, any user who can edit any page like their profile can create a custom skin with a template override that is executed with programming right, thus allowing remote code execution. This has been patched in XWiki 14.10.19, 15.5.4 and 15.10RC1. No known workarounds are available except for upgrading.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-1481">CVE-2024-1481</a></td>
+					<td>5.3</td>
+					<td>remote,command</td>
+					<td class=date>2024-04-10T21:15:06.313</td>
+					<td class=description>A flaw was found in FreeIPA. This issue may allow a remote attacker to craft a HTTP request with parameters that can be interpreted as command arguments to kinit on the FreeIPA server, which can lead to a denial of service.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -482,7 +506,7 @@ Updated at UTC 2024-04-10T21:09:33.595819
 					<td>9.9</td>
 					<td>remote,execution</td>
 					<td class=date>2024-04-10T20:15:08.830</td>
-					<td class=description>Starting in version 7.2-rc-1 and prior to versions 4.10.20, 15.5.4, and 15.10-rc-1, by creating a document with a specially crafted title, it is possible to trigger remote code execution in the (Solr-based) search in XWiki. This allows any user who can edit the title of a space (all users by default) to execute any Groovy code in the XWiki installation which compromises the confidentiality, integrity and availability of the whole XWiki installation. This has been patched in XWiki 14.10.20, 15.5.4 and 15.10 RC1. As a workaround, manually apply the patch to the `Main.SolrSpaceFacet` page.</td>
+					<td class=description>XWiki Platform is a generic wiki platform. Starting in version 7.2-rc-1 and prior to versions 4.10.20, 15.5.4, and 15.10-rc-1, by creating a document with a specially crafted title, it is possible to trigger remote code execution in the (Solr-based) search in XWiki. This allows any user who can edit the title of a space (all users by default) to execute any Groovy code in the XWiki installation which compromises the confidentiality, integrity and availability of the whole XWiki installation. This has been patched in XWiki 14.10.20, 15.5.4 and 15.10 RC1. As a workaround, manually apply the patch to the `Main.SolrSpaceFacet` page.</td>
 				</tr>
 			
 		
@@ -1749,10 +1773,6 @@ Users are recommended to upgrade to version 0.11.0, which fixes the issue.
 					<td class=date>2024-04-08T06:15:07.533</td>
 					<td class=description>Incorrect Access Control vulnerability in ZLMediaKit versions 1.0 through 8.0, allows remote attackers to escalate privileges and obtain sensitive information. The application system enables the http API interface by default and uses the secret parameter method to authenticate the http restful api interface, but the secret is hardcoded by default.</td>
 				</tr>
-			
-		
-			
-		
 			
 		
 
