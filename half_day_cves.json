@@ -832,5 +832,17 @@
     "description": "XWiki Platform is a generic wiki platform. Starting in version 3.0.1 and prior to versions 4.10.19, 15.5.4, and 15.10-rc-1, the HTML escaping of escaping tool that is used in XWiki doesn't escape `{`, which, when used in certain places, allows XWiki syntax injection and thereby remote code execution. The vulnerability has been fixed in XWiki 14.10.19, 15.5.5, and 15.9 RC1. Apart from upgrading, there is no generic workaround. However, replacing `$escapetool.html` by `$escapetool.xml` in XWiki documents fixes the vulnerability. In a standard XWiki installation, the maintainers are only aware of the document `Panels.PanelLayoutUpdate` that exposes this vulnerability, patching this document is thus a workaround. Any extension could expose this vulnerability and might thus require patching, too.",
     "published": "2024-04-10T21:15:07.510",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-29504": {
+    "url": "https://github.com/summernote/summernote/pull/3782",
+    "cvss": "-",
+    "description": "Cross Site Scripting vulnerability in Summernote v.0.8.18 and before allows a remote attacker to execute arbtirary code via a crafted payload to the codeview parameter.",
+    "published": "2024-04-10T22:15:07.287"
+  },
+  "CVE-2024-31997": {
+    "cvss": 9.9,
+    "description": "XWiki Platform is a generic wiki platform. Prior to versions 4.10.19, 15.5.4, and 15.10-rc-1, parameters of UI extensions are always interpreted as Velocity code and executed with programming rights. Any user with edit right on any document like the user's own profile can create UI extensions. This allows remote code execution and thereby impacts the confidentiality, integrity and availability of the whole XWiki installation. This vulnerability has been patched in XWiki 14.10.19, 15.5.4 and 15.9-RC1. No known workarounds are available.",
+    "published": "2024-04-10T22:15:07.527",
+    "keywords": "remote,execution"
   }
 }
