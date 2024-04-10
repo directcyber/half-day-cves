@@ -628,5 +628,71 @@
     "description": "Improper permission handling in the vault offline cache feature in Devolutions Remote Desktop Manager 2024.1.20 and earlier on windows and Devolutions Server 2024.1.8 and earlier allows an attacker to access sensitive informations contained in the offline cache file by gaining access to a computer where the software is installed even though the offline mode is disabled.\n\n",
     "published": "2024-04-09T19:15:41.380",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-30712": {
+    "cvss": "-",
+    "description": "A shell injection vulnerability was discovered in ROS2 (Robot Operating System 2) Dashing Diademata in ROS_VERSION 2 and ROS_PYTHON_VERSION 3, allows remote attackers to execute arbitrary code, escalate privileges, and obtain sensitive information due to the way ROS2 handles shell command execution in components like command interpreters or interfaces that process external inputs.",
+    "published": "2024-04-10T02:15:10.400",
+    "keywords": "remote,execution,command,sensitive"
+  },
+  "CVE-2024-30713": {
+    "cvss": "-",
+    "description": "An OS command injection vulnerability has been discovered in ROS2 Dashing Diademata in ROS_VERSION 2 and ROS_PYTHON_VERSION 3, allows remote attackers to execute arbitrary code, escalate privileges, and obtain sensitive information via the External Command Execution Modules, System Call Handlers, and Interface Scripts.",
+    "published": "2024-04-10T02:15:10.473",
+    "keywords": "remote,execution,command,sensitive"
+  },
+  "CVE-2024-30724": {
+    "cvss": "-",
+    "description": "An issue was discovered in ROS Kinetic Kame in ROS_VERSION 1 and ROS_PYTHON_VERSION 3, allows remote attackers to execute arbitrary code, escalate privileges, obtain sensitive information, and gain unauthorized access to multiple ROS nodes.",
+    "published": "2024-04-10T04:15:09.960",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-30726": {
+    "cvss": "-",
+    "description": "A shell injection vulnerability was discovered in ROS (Robot Operating System) Kinetic Kame in ROS_VERSION 1 and ROS_ PYTHON_VERSION 3, allows remote attackers to execute arbitrary code, escalate privileges, and obtain sensitive information due to the way ROS handles shell command execution in components like command interpreters or interfaces that process external inputs.",
+    "published": "2024-04-10T04:15:10.040",
+    "keywords": "remote,execution,command,sensitive"
+  },
+  "CVE-2024-30729": {
+    "cvss": "-",
+    "description": "An OS command injection vulnerability has been discovered in ROS Kinetic Kame in ROS_VERSION 1 and ROS_ PYTHON_VERSION 3, allows remote attackers to execute arbitrary code, escalate privileges, and obtain sensitive information via the External Command Execution Modules, System Call Handlers, and Interface Scripts.",
+    "published": "2024-04-10T05:15:49.863",
+    "keywords": "remote,execution,command,sensitive"
+  },
+  "CVE-2024-3235": {
+    "cvss": 5.3,
+    "description": "The Essential Grid Gallery WordPress Plugin plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.1.1 via the on_front_ajax_action() function. This makes it possible for unauthenticated attackers to view private and password protected posts that may have private or sensitive information.",
+    "published": "2024-04-10T05:15:50.417",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-20737": {
+    "cvss": 5.5,
+    "description": "After Effects versions 24.1, 23.6.2 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-04-10T09:15:06.700",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-2243": {
+    "cvss": 7.6,
+    "description": "A vulnerability was found in csmock where a regular user of the OSH service (anyone with a valid Kerberos ticket) can use the vulnerability to disclose the confidential Snyk authentication token and to run arbitrary commands on OSH workers.",
+    "published": "2024-04-10T11:15:49.443",
+    "keywords": "authentication,command"
+  },
+  "CVE-2024-20766": {
+    "cvss": 5.5,
+    "description": "InDesign Desktop versions 18.5.1, 19.2 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-04-10T13:51:37.820",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-20770": {
+    "cvss": 5.5,
+    "description": "Photoshop Desktop versions 24.7.2, 25.3.1 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-04-10T13:51:38.157",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-2730": {
+    "cvss": 5.3,
+    "description": "Mautic uses predictable page indices for unpublished landing pages, their content can be accessed by unauthenticated users under public preview URLs which could expose sensitive data. At the time of publication of the CVE no patch is available \n\n",
+    "published": "2024-04-10T14:15:07.550",
+    "keywords": "unauthenticated,sensitive"
   }
 }
