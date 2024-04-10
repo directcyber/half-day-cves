@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-04-10T17:07:55.100759
+Updated at UTC 2024-04-10T18:13:17.741320
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,94 @@ Updated at UTC 2024-04-10T17:07:55.100759
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-3570">CVE-2024-3570</a></td>
+					<td>0.0</td>
+					<td><a target=_blank href="https://github.com/mintplex-labs/anything-llm/commit/a4ace56a401ffc8ce0082d7444159dfd5dc28834">https://github.com/mintplex-labs/anything-llm/commit/a4ace56a401ffc8ce0082d7444159dfd5dc28834</a></td>
+					<td class=date>2024-04-10T17:15:58.543</td>
+					<td class=description>A stored Cross-Site Scripting (XSS) vulnerability exists in the chat functionality of the mintplex-labs/anything-llm repository, allowing attackers to execute arbitrary JavaScript in the context of a user's session. By manipulating the ChatBot responses, an attacker can inject malicious scripts to perform actions on behalf of the user, such as creating a new admin account or changing the user's password, leading to a complete takeover of the AnythingLLM application. The vulnerability stems from the improper sanitization of user and ChatBot input, specifically through the use of `dangerouslySetInnerHTML`. Successful exploitation requires convincing an admin to add a malicious LocalAI ChatBot to their AnythingLLM instance.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-3569">CVE-2024-3569</a></td>
+					<td>7.5</td>
+					<td><a target=_blank href="https://github.com/mintplex-labs/anything-llm/commit/efe9dfa5e3550d12abd34d06ab7f8fbcf2206cfa">https://github.com/mintplex-labs/anything-llm/commit/efe9dfa5e3550d12abd34d06ab7f8fbcf2206cfa</a></td>
+					<td class=date>2024-04-10T17:15:58.350</td>
+					<td class=description>A Denial of Service (DoS) vulnerability exists in the mintplex-labs/anything-llm repository when the application is running in 'just me' mode with a password. An attacker can exploit this vulnerability by making a request to the endpoint using the [validatedRequest] middleware with a specially crafted 'Authorization:' header. This vulnerability leads to uncontrolled resource consumption, causing a DoS condition.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-3283">CVE-2024-3283</a></td>
+					<td>7.2</td>
+					<td><a target=_blank href="https://github.com/mintplex-labs/anything-llm/commit/52fac844221a9b951d08ceb93c4c014e9397b1f2">https://github.com/mintplex-labs/anything-llm/commit/52fac844221a9b951d08ceb93c4c014e9397b1f2</a></td>
+					<td class=date>2024-04-10T17:15:56.600</td>
+					<td class=description>A vulnerability in mintplex-labs/anything-llm allows users with manager roles to escalate their privileges to admin roles through a mass assignment issue. The '/admin/system-preferences' API endpoint improperly authorizes manager-level users to modify the 'multi_user_mode' system variable, enabling them to access the '/api/system/enable-multi-user' endpoint and create a new admin user. This issue results from the endpoint accepting a full JSON object in the request body without proper validation of modifiable fields, leading to unauthorized modification of system settings and subsequent privilege escalation.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-3101">CVE-2024-3101</a></td>
+					<td>6.7</td>
+					<td><a target=_blank href="https://github.com/mintplex-labs/anything-llm/commit/52fac844221a9b951d08ceb93c4c014e9397b1f2">https://github.com/mintplex-labs/anything-llm/commit/52fac844221a9b951d08ceb93c4c014e9397b1f2</a></td>
+					<td class=date>2024-04-10T17:15:56.417</td>
+					<td class=description>In mintplex-labs/anything-llm, an improper input validation vulnerability allows attackers to escalate privileges by deactivating 'Multi-User Mode'. By sending a specially crafted curl request with the 'multi_user_mode' parameter set to false, an attacker can deactivate 'Multi-User Mode'. This action permits the creation of a new admin user without requiring a password, leading to unauthorized administrative access.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-3025">CVE-2024-3025</a></td>
+					<td>9.9</td>
+					<td><a target=_blank href="https://github.com/mintplex-labs/anything-llm/commit/7de23dbb2da932fbfb39f56d981784d3702cf5ce">https://github.com/mintplex-labs/anything-llm/commit/7de23dbb2da932fbfb39f56d981784d3702cf5ce</a></td>
+					<td class=date>2024-04-10T17:15:55.993</td>
+					<td class=description>mintplex-labs/anything-llm is vulnerable to path traversal attacks due to insufficient validation of user-supplied input in the logo filename functionality. Attackers can exploit this vulnerability by manipulating the logo filename to reference files outside of the restricted directory. This can lead to unauthorized reading or deletion of files by utilizing the `/api/system/upload-logo` and `/api/system/logo` endpoints. The issue stems from the lack of filtering or validation on the logo filename, allowing attackers to target sensitive files such as the application's database.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-1600">CVE-2024-1600</a></td>
+					<td>9.3</td>
+					<td><a target=_blank href="https://github.com/parisneo/lollms-webui/commit/49b0332e98d42dd5204dda53dee410b160106265">https://github.com/parisneo/lollms-webui/commit/49b0332e98d42dd5204dda53dee410b160106265</a></td>
+					<td class=date>2024-04-10T17:15:52.317</td>
+					<td class=description>A Local File Inclusion (LFI) vulnerability exists in the parisneo/lollms-webui application, specifically within the `/personalities` route. An attacker can exploit this vulnerability by crafting a URL that includes directory traversal sequences (`../../`) followed by the desired system file path, URL encoded. Successful exploitation allows the attacker to read any file on the filesystem accessible by the web server. This issue arises due to improper control of filename for include/require statement in the application.</td>
+
+
+				</tr>
+			
+		
+			
 		
 			
 		
@@ -375,6 +463,98 @@ Updated at UTC 2024-04-10T17:07:55.100759
 		
 
 		<hr>
+		
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-3568">CVE-2024-3568</a></td>
+					<td>3.4</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-04-10T17:15:58.160</td>
+					<td class=description>The huggingface/transformers library is vulnerable to arbitrary code execution through deserialization of untrusted data within the `load_repo_checkpoint()` function of the `TFPreTrainedModel()` class. Attackers can execute arbitrary code and commands by crafting a malicious serialized payload, exploiting the use of `pickle.load()` on data from potentially untrusted sources. This vulnerability allows for remote code execution (RCE) by deceiving victims into loading a seemingly harmless checkpoint during a normal training process, thereby enabling attackers to execute arbitrary code on the targeted machine.</td>
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-3098">CVE-2024-3098</a></td>
+					<td>9.8</td>
+					<td>execution,bypass</td>
+					<td class=date>2024-04-10T17:15:56.213</td>
+					<td class=description>A vulnerability was identified in the `exec_utils` class of the `llama_index` package, specifically within the `safe_eval` function, allowing for prompt injection leading to arbitrary code execution. This issue arises due to insufficient validation of input, which can be exploited to bypass method restrictions and execute unauthorized code. The vulnerability is a bypass of the previously addressed CVE-2023-39662, demonstrated through a proof of concept that creates a file on the system by exploiting the flaw.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-2221">CVE-2024-2221</a></td>
+					<td>9.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-04-10T17:15:54.633</td>
+					<td class=description>qdrant/qdrant is vulnerable to a path traversal and arbitrary file upload vulnerability via the `/collections/{COLLECTION}/snapshots/upload` endpoint, specifically through the `snapshot` parameter. This vulnerability allows attackers to upload and overwrite any file on the filesystem, leading to potential remote code execution. This issue affects the integrity and availability of the system, enabling unauthorized access and potentially causing the server to malfunction.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-2217">CVE-2024-2217</a></td>
+					<td>7.5</td>
+					<td>unauthenticated,authentication,sensitive</td>
+					<td class=date>2024-04-10T17:15:54.440</td>
+					<td class=description>gaizhenbiao/chuanhuchatgpt is vulnerable to improper access control, allowing unauthorized access to the `config.json` file. This vulnerability is present in both authenticated and unauthenticated versions of the application, enabling attackers to obtain sensitive information such as API keys (`openai_api_key`, `google_palm_api_key`, `xmchat_api_key`, etc.), configuration details, and user credentials. The issue stems from the application's handling of HTTP requests for the `config.json` file, which does not properly restrict access based on user authentication.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-2195">CVE-2024-2195</a></td>
+					<td>9.8</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-04-10T17:15:54.067</td>
+					<td class=description>A critical Remote Code Execution (RCE) vulnerability was identified in the aimhubio/aim project, specifically within the `/api/runs/search/run/` endpoint, affecting versions >= 3.0.0. The vulnerability resides in the `run_search_api` function of the `aim/web/api/runs/views.py` file, where improper restriction of user access to the `RunView` object allows for the execution of arbitrary code via the `query` parameter. This issue enables attackers to execute arbitrary commands on the server, potentially leading to full system compromise.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-1728">CVE-2024-1728</a></td>
+					<td>7.5</td>
+					<td>remote,execution</td>
+					<td class=date>2024-04-10T17:15:53.097</td>
+					<td class=description>gradio-app/gradio is vulnerable to a local file inclusion vulnerability due to improper validation of user-supplied input in the UploadButton component. Attackers can exploit this vulnerability to read arbitrary files on the filesystem, such as private SSH keys, by manipulating the file path in the request to the `/queue/join` endpoint. This issue could potentially lead to remote code execution. The vulnerability is present in the handling of file upload paths, allowing attackers to redirect file uploads to unintended locations on the server.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-1602">CVE-2024-1602</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-04-10T17:15:52.537</td>
+					<td class=description>parisneo/lollms-webui is vulnerable to stored Cross-Site Scripting (XSS) that leads to Remote Code Execution (RCE). The vulnerability arises due to inadequate sanitization and validation of model output data, allowing an attacker to inject malicious JavaScript code. This code can be executed within the user's browser context, enabling the attacker to send a request to the `/execute_code` endpoint and establish a reverse shell to the attacker's host. The issue affects various components of the application, including the handling of user input and model output.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-1520">CVE-2024-1520</a></td>
+					<td>9.8</td>
+					<td>execution,command,leak</td>
+					<td class=date>2024-04-10T17:15:51.930</td>
+					<td class=description>An OS Command Injection vulnerability exists in the '/open_code_folder' endpoint of the parisneo/lollms-webui application, due to improper validation of user-supplied input in the 'discussion_id' parameter. Attackers can exploit this vulnerability by injecting malicious OS commands, leading to unauthorized command execution on the underlying operating system. This could result in unauthorized access, data leakage, or complete system compromise.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
