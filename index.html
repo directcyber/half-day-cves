@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-04-10T18:13:17.741320
+Updated at UTC 2024-04-10T19:08:53.455191
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-04-10T18:13:17.741320
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 				<tr>
@@ -463,6 +467,27 @@ Updated at UTC 2024-04-10T18:13:17.741320
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31461">CVE-2024-31461</a></td>
+					<td>9.1</td>
+					<td>sensitive,leak</td>
+					<td class=date>2024-04-10T18:15:07.917</td>
+					<td class=description>Plane, an open-source project management tool, has a Server-Side Request Forgery (SSRF) vulnerability in versions prior to 0.17-dev. This issue may allow an attacker to send arbitrary requests from the server hosting the application, potentially leading to unauthorized access to internal systems. The impact of this vulnerability includes, but is not limited to, unauthorized access to internal services accessible from the server, potential leakage of sensitive information from internal services, manipulation of internal systems by interacting with internal APIs. Version 0.17-dev contains a patch for this issue. Those who are unable to update immediately may mitigate the issue by restricting outgoing network connections from servers hosting the application to essential services only and/or implementing strict input validation on URLs or parameters that are used to generate server-side requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31214">CVE-2024-31214</a></td>
+					<td>9.6</td>
+					<td>remote,execution</td>
+					<td class=date>2024-04-10T18:15:07.350</td>
+					<td class=description>Traccar is an open source GPS tracking system. Traccar versions 5.1 through 5.12 allow arbitrary files to be uploaded through the device image upload API. Attackers have full control over the file contents, full control over the directory where the file is stored, full control over the file extension, and partial control over the file name. While it's not  for an attacker to overwrite an existing file, an attacker can create new files with certain names and attacker-controlled extensions anywhere on the file system. This can potentially lead to remote code execution, XSS, DOS, etc. The default install of Traccar makes this vulnerability more severe. Self-registration is enabled by default, allowing anyone to create an account to exploit this vulnerability. Traccar also runs by default with root/system privileges, allowing files to be placed anywhere on the file system. Version 6.0 contains a fix for the issue. One may also turn off self-registration by default, as that would make most vulnerabilities in the application much harder to exploit by default and reduce the severity considerably.
+</td>
+				</tr>
+			
 		
 			
 		
