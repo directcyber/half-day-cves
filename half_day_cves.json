@@ -856,5 +856,17 @@
     "description": "An OS command injection vulnerability has been discovered in ROS2 (Robot Operating System 2) Humble Hawksbill in ROS_VERSION 2 and ROS_PYTHON_VERSION 3, allows remote attackers to execute arbitrary code, escalate privileges, and obtain sensitive information via External Command Execution Modules, System Call Handlers, and Interface Scripts.",
     "published": "2024-04-11T00:15:07.283",
     "keywords": "remote,execution,command,sensitive"
+  },
+  "CVE-2024-29019": {
+    "cvss": 8.1,
+    "description": "ESPHome is a system to control microcontrollers remotely through Home Automation systems. API endpoints in dashboard component of ESPHome version 2023.12.9 (command line installation) are vulnerable to Cross-Site Request Forgery (CSRF) allowing remote attackers to carry out attacks against a logged user of the dashboard to perform operations on configuration files (create, edit, delete). It is possible for a malicious actor to create a specifically crafted web page that triggers a cross site request against ESPHome, this allows bypassing the authentication for API calls on the platform. This vulnerability allows bypassing authentication on API calls accessing configuration file operations on the behalf of a logged user. In order to trigger the vulnerability, the victim must visit a weaponized page. In addition to this, it is possible to chain this vulnerability with GHSA-9p43-hj5j-96h5/ CVE-2024-27287 to obtain a complete takeover of the user account. Version 2024.3.0 contains a patch for this issue.\n\n",
+    "published": "2024-04-11T01:25:11.690",
+    "keywords": "remote,authentication,command,bypass"
+  },
+  "CVE-2024-2742": {
+    "cvss": 6.4,
+    "description": "Operating system command injection vulnerability in Planet IGS-4215-16T2S, affecting firmware version 1.305b210528. An authenticated attacker could execute arbitrary code on the remote host by exploiting IP address functionality.",
+    "published": "2024-04-11T01:25:34.950",
+    "keywords": "remote,command"
   }
 }
