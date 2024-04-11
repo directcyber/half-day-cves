@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-04-11T14:09:51.122484
+Updated at UTC 2024-04-11T15:10:55.229872
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -505,18 +505,6 @@ Updated at UTC 2024-04-11T14:09:51.122484
 		
 			
 		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28732">CVE-2024-28732</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/faucetsdn/ryu/issues/188">https://github.com/faucetsdn/ryu/issues/188</a></td>
-					<td class=date>2024-04-08T14:15:07.600</td>
-					<td class=description>An issue was discovered in OFPMatch in parser.py in Faucet SDN Ryu version 4.34, allows remote attackers to cause a denial of service (DoS) (infinite loop).</td>
-
-
-				</tr>
 			
 		
 
@@ -1913,8 +1901,6 @@ Users are recommended to upgrade to version 0.11.0, which fixes the issue.
 					<td class=description>Saleor is an e-commerce platform. Starting in version 3.10.0 and prior to versions 3.14.64, 3.15.39, 3.16.39, 3.17.35, 3.18.31, and 3.19.19, an attacker may bypass cross-set request forgery (CSRF) validation when calling refresh token mutation with empty string. When a user provides an empty string in `refreshToken` mutation, while the token persists in `JWT_REFRESH_TOKEN_COOKIE_NAME` cookie, application omits validation against CSRF token and returns valid access token. Versions 3.14.64, 3.15.39, 3.16.39, 3.17.35, 3.18.31, and 3.19.19 contain a patch for the issue. As a workaround, one may replace `saleor.graphql.account.mutations.authentication.refresh_token.py.get_refresh_token`. This will fix the issue, but be aware, that it returns `JWT_MISSING_TOKEN` instead of `JWT_INVALID_TOKEN`.
 </td>
 				</tr>
-			
-		
 			
 		
 
