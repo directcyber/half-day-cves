@@ -1,10 +1,4 @@
 {
-  "CVE-2024-27488": {
-    "cvss": "-",
-    "description": "Incorrect Access Control vulnerability in ZLMediaKit versions 1.0 through 8.0, allows remote attackers to escalate privileges and obtain sensitive information. The application system enables the http API interface by default and uses the secret parameter method to authenticate the http restful api interface, but the secret is hardcoded by default.",
-    "published": "2024-04-08T06:15:07.533",
-    "keywords": "remote,sensitive"
-  },
   "CVE-2024-30661": {
     "cvss": "-",
     "description": "An unauthorized access vulnerability has been discovered in ROS Melodic Morenia versions where ROS_VERSION is 1 and ROS_PYTHON_VERSION is 3. This vulnerability could potentially allow a malicious user to gain unauthorized information access to multiple ROS nodes remotely. Unauthorized information access to these nodes could result in compromised system integrity, the execution of arbitrary commands, and disclosure of sensitive information.",
@@ -904,5 +898,23 @@
     "description": "Reflected Cross Site Scripting (XSS) vulnerability in RageFrame2 v2.6.43, allows remote attackers to execute arbitrary web scripts or HTML and obtain sensitive information via a crafted payload injected into the aspectRatio parameter in the image cropping function.",
     "published": "2024-04-11T05:15:47.640",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-30915": {
+    "url": "https://github.com/opendds/opendds/issues/4527",
+    "cvss": "-",
+    "description": "An issue was discovered in OpenDDS commit b1c534032bb62ad4ae32609778de6b8d6c823a66, allows a local attacker to cause a denial of service and obtain sensitive information via the max_samples parameter within the DataReaderQoS component.",
+    "published": "2024-04-11T06:15:06.977"
+  },
+  "CVE-2024-30916": {
+    "url": "https://github.com/eprosima/fast-dds/issues/4609",
+    "cvss": "-",
+    "description": "An issue was discovered in eProsima FastDDS v.2.14.0 and before, allows a local attacker to cause a denial of service (DoS) and obtain sensitive information via a crafted max_samples parameter in DurabilityService QoS component.",
+    "published": "2024-04-11T06:15:07.030"
+  },
+  "CVE-2024-30917": {
+    "url": "https://github.com/eprosima/fast-dds/issues/4609",
+    "cvss": "-",
+    "description": "An issue was discovered in eProsima FastDDS v.2.14.0 and before, allows a local attacker to cause a denial of service (DoS) and obtain sensitive information via a crafted history_depth parameter in DurabilityService QoS component.",
+    "published": "2024-04-11T06:15:07.083"
   }
 }
