@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-04-11T21:09:20.415060
+Updated at UTC 2024-04-11T22:08:59.968606
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-04-11T21:09:20.415060
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -468,6 +470,16 @@ Updated at UTC 2024-04-11T21:09:20.415060
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-25852">CVE-2024-25852</a></td>
+					<td>-</td>
+					<td>execution,command</td>
+					<td class=date>2024-04-11T21:15:07.980</td>
+					<td class=description>Linksys RE7000 v2.0.9, v2.0.11, and v2.0.15 have a command execution vulnerability in the "AccessControlList" parameter of the access control function point. An attacker can use the vulnerability to obtain device administrator rights.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -1093,7 +1105,7 @@ On Windows, the implementation of this is more complex than other platforms, bec
 
 One exception though is `cmd.exe` (used among other things to execute batch files), which has its own argument splitting logic. That forces the standard library to implement custom escaping for arguments passed to batch files. Unfortunately it was reported that our escaping logic was not thorough enough, and it was possible to pass malicious arguments that would result in arbitrary shell execution.
 
-Due to the complexity of `cmd.exe`, we didn't identify a solution that would correctly escape arguments in all cases. To maintain our API guarantees, we improved the robustness of the escaping code, and changed the `Command` API to return an [`InvalidInput`][4] error when it cannot safely escape an argument. This error will be emitted when spawning the process.
+Due to the complexity of `cmd.exe`, we didn't identify a solution that would correctly escape arguments in all cases. To maintain our API guarantees, we improved the robustness of the escaping code, and changed the `Command` API to return an `InvalidInput` error when it cannot safely escape an argument. This error will be emitted when spawning the process.
 
 The fix is included in Rust 1.77.2. Note that the new escaping logic for batch files errs on the conservative side, and could reject valid arguments. Those who implement the escaping themselves or only handle trusted inputs on Windows can also use the `CommandExt::raw_arg` method to bypass the standard library's escaping logic. </td>
 				</tr>
