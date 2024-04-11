@@ -844,5 +844,17 @@
     "description": "XWiki Platform is a generic wiki platform. Prior to versions 4.10.19, 15.5.4, and 15.10-rc-1, parameters of UI extensions are always interpreted as Velocity code and executed with programming rights. Any user with edit right on any document like the user's own profile can create UI extensions. This allows remote code execution and thereby impacts the confidentiality, integrity and availability of the whole XWiki installation. This vulnerability has been patched in XWiki 14.10.19, 15.5.4 and 15.9-RC1. No known workarounds are available.",
     "published": "2024-04-10T22:15:07.527",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-29443": {
+    "cvss": "-",
+    "description": "A shell injection vulnerability was discovered in ROS2 (Robot Operating System 2) Humble Hawksbill in ROS_VERSION 2 and ROS_PYTHON_VERSION 3, allows remote attackers to execute arbitrary code, escalate privileges, and obtain sensitive information due to the way ROS2 handles shell command execution in components like command interpreters or interfaces that process external inputs.",
+    "published": "2024-04-10T23:15:06.810",
+    "keywords": "remote,execution,command,sensitive"
+  },
+  "CVE-2024-29444": {
+    "cvss": "-",
+    "description": "An OS command injection vulnerability has been discovered in ROS2 (Robot Operating System 2) Humble Hawksbill in ROS_VERSION 2 and ROS_PYTHON_VERSION 3, allows remote attackers to execute arbitrary code, escalate privileges, and obtain sensitive information via External Command Execution Modules, System Call Handlers, and Interface Scripts.",
+    "published": "2024-04-11T00:15:07.283",
+    "keywords": "remote,execution,command,sensitive"
   }
 }
