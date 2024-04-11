@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-04-11T16:10:18.232831
+Updated at UTC 2024-04-11T17:09:17.861433
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -309,23 +309,6 @@ Updated at UTC 2024-04-11T16:10:18.232831
 			
 		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-30262">CVE-2024-30262</a></td>
-					<td>5.9</td>
-					<td><a target=_blank href="https://github.com/contao/contao/commit/3032baa456f607169ffae82a8920354adb338fe9">https://github.com/contao/contao/commit/3032baa456f607169ffae82a8920354adb338fe9</a></td>
-					<td class=date>2024-04-09T17:16:02.850</td>
-					<td class=description>Contao is an open source content management system. Prior to version 4.13.40, when a frontend member changes their password in the personal data or the password lost module, the corresponding remember-me tokens are not removed. If someone compromises an account and is able to get a remember-me token, changing the password would not be enough to reclaim control over the account. Version 4.13.40 contains a fix for the issue. As a workaround, disable "Allow auto login" in the login module.
-</td>
-
-
-				</tr>
-			
-		
-			
-		
-			
-		
-			
 		
 			
 		
@@ -456,27 +439,7 @@ Updated at UTC 2024-04-11T16:10:18.232831
 			
 		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28234">CVE-2024-28234</a></td>
-					<td>4.3</td>
-					<td><a target=_blank href="https://github.com/contao/contao/commit/6d42e667177c972ae7c219645593c262d7764ce2">https://github.com/contao/contao/commit/6d42e667177c972ae7c219645593c262d7764ce2</a></td>
-					<td class=date>2024-04-09T14:15:08.897</td>
-					<td class=description>Contao is an open source content management system. Starting in version 2.0.0 and prior to versions 4.13.40 and 5.3.4, it is possible to inject CSS styles via BBCode in comments. Installations are only affected if BBCode is enabled. Contao versions 4.13.40 and 5.3.4 have a patch for this issue. As a workaround, disable BBCode for comments.</td>
-
-
-				</tr>
-			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28190">CVE-2024-28190</a></td>
-					<td>5.4</td>
-					<td><a target=_blank href="https://github.com/contao/contao/commit/b794e14fff070101bf6a885da9b1a83395093b4d">https://github.com/contao/contao/commit/b794e14fff070101bf6a885da9b1a83395093b4d</a></td>
-					<td class=date>2024-04-09T14:15:08.503</td>
-					<td class=description>Contao is an open source content management system. Starting in version 4.0.0 and prior to version 4.13.40 and 5.3.4, users can inject malicious code in filenames when uploading files (back end and front end), which is then executed in tooltips and popups in the back end. Contao versions 4.13.40 and 5.3.4 have a patch for this issue. As a workaround, remove upload fields from frontend forms and disable uploads for untrusted back end users.</td>
-
-
-				</tr>
 			
 		
 			
@@ -501,8 +464,6 @@ Updated at UTC 2024-04-11T16:10:18.232831
 
 
 				</tr>
-			
-		
 			
 		
 
@@ -1136,8 +1097,6 @@ Due to the complexity of `cmd.exe`, we didn't identify a solution that would cor
 
 The fix is included in Rust 1.77.2. Note that the new escaping logic for batch files errs on the conservative side, and could reject valid arguments. Those who implement the escaping themselves or only handle trusted inputs on Windows can also use the `CommandExt::raw_arg` method to bypass the standard library's escaping logic. </td>
 				</tr>
-			
-		
 			
 		
 			
@@ -1811,10 +1770,6 @@ The fix is included in Rust 1.77.2. Note that the new escaping logic for batch f
 			
 		
 			
-		
-			
-		
-			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31863">CVE-2024-31863</a></td>
 					<td>-</td>
@@ -1878,16 +1833,6 @@ Users are recommended to upgrade to version 0.11.0, which fixes the issue.
 				</tr>
 			
 		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31224">CVE-2024-31224</a></td>
-					<td>9.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-04-08T16:15:07.790</td>
-					<td class=description>GPT Academic provides interactive interfaces for large language models. A vulnerability was found in gpt_academic versions 3.64 through 3.73. The server deserializes untrustworthy data from the client, which may risk remote code execution. Any device that exposes the GPT Academic service to the Internet is vulnerable. Version 3.74 contains a patch for the issue. There are no known workarounds aside from upgrading to a patched version.</td>
-				</tr>
 			
 		
 
