@@ -1,16 +1,4 @@
 {
-  "CVE-2024-30694": {
-    "cvss": "-",
-    "description": "A shell injection vulnerability was discovered in ROS2 (Robot Operating System 2) Galactic Geochelone ROS_VERSION 2 and ROS_PYTHON_VERSION 3, allows attackers to execute arbitrary code, escalate privileges, and obtain sensitive information due to the way ROS2 handles shell command execution in components like command interpreters or interfaces that process external inputs.",
-    "published": "2024-04-09T08:15:07.420",
-    "keywords": "execution,command,sensitive"
-  },
-  "CVE-2024-30696": {
-    "cvss": "-",
-    "description": "OS command injection vulnerability in ROS2 Galactic Geochelone in ROS_VERSION 2 and ROS_PYTHON_VERSION 3, allows remote attackers to execute arbitrary code, escalate privileges, and obtain sensitive information via the command processing or system call components in ROS2, including External Command Execution Modules, System Call Handlers, and Interface Scripts.",
-    "published": "2024-04-09T08:15:07.587",
-    "keywords": "remote,execution,command,sensitive"
-  },
   "CVE-2024-31863": {
     "cvss": "-",
     "description": "Authentication Bypass by Spoofing vulnerability by replacing to exsiting notes in Apache Zeppelin.This issue affects Apache Zeppelin: from 0.10.1 before 0.11.0.\n\nUsers are recommended to upgrade to version 0.11.0, which fixes the issue.\n\n",
@@ -844,5 +832,11 @@
     "description": "Linksys RE7000 v2.0.9, v2.0.11, and v2.0.15 have a command execution vulnerability in the \"AccessControlList\" parameter of the access control function point. An attacker can use the vulnerability to obtain device administrator rights.",
     "published": "2024-04-11T21:15:07.980",
     "keywords": "execution,command"
+  },
+  "CVE-2024-3400": {
+    "cvss": 9.8,
+    "description": "A command injection vulnerability in the GlobalProtect feature of Palo Alto Networks PAN-OS software for specific PAN-OS versions and distinct feature configurations may enable an unauthenticated attacker to execute arbitrary code with root privileges on the firewall.\n\nFixes for PAN-OS 10.2, PAN-OS 11.0, and PAN-OS 11.1 are in development and are expected to be released by April 14, 2024. Cloud NGFW, Panorama appliances, and Prisma Access are not impacted by this vulnerability. All other versions of PAN-OS are also not impacted.",
+    "published": "2024-04-12T08:15:06.230",
+    "keywords": "unauthenticated,command"
   }
 }
