@@ -832,5 +832,29 @@
     "description": "A command injection vulnerability in the GlobalProtect feature of Palo Alto Networks PAN-OS software for specific PAN-OS versions and distinct feature configurations may enable an unauthenticated attacker to execute arbitrary code with root privileges on the firewall.\n\nFixes for PAN-OS 10.2, PAN-OS 11.0, and PAN-OS 11.1 are in development and are expected to be released by April 14, 2024. Cloud NGFW, Panorama appliances, and Prisma Access are not impacted by this vulnerability. All other versions of PAN-OS are also not impacted.",
     "published": "2024-04-12T08:15:06.230",
     "keywords": "unauthenticated,command"
+  },
+  "CVE-2024-29461": {
+    "url": "https://github.com/floodlight/floodlight/issues/867",
+    "cvss": "-",
+    "description": "An issue in Floodlight SDN OpenFlow Controller v.1.2 allows a remote attacker to cause a denial of service via the datapath id component.",
+    "published": "2024-04-12T14:15:07.597"
+  },
+  "CVE-2024-2397": {
+    "url": "https://github.com/the-tcpdump-group/tcpdump/commit/b9811ef5bb1b7d45a90e042f81f3aaf233c8bcb2",
+    "cvss": 6.2,
+    "description": "Due to a bug in packet data buffers management, the PPP printer in tcpdump can enter an infinite loop when reading a crafted DLT_PPP_SERIAL .pcap savefile.  This problem does not affect any tcpdump release, but it affected the git master branch from 2023-06-05 to 2024-03-21.",
+    "published": "2024-04-12T14:15:07.657"
+  },
+  "CVE-2024-30845": {
+    "url": "https://github.com/netcccyun/pan/issues/6",
+    "cvss": "-",
+    "description": "Cross Site Scripting vulnerability in Rainbow external link network disk v.5.5 allows a remote attacker to execute arbitrary code via the validation component of the input parameters.",
+    "published": "2024-04-12T14:15:07.870"
+  },
+  "CVE-2024-31839": {
+    "cvss": "-",
+    "description": "Cross Site Scripting vulnerability in tiagorlampert CHAOS v.5.0.1 allows a remote attacker to escalate privileges via the sendCommandHandler function in the handler.go component.",
+    "published": "2024-04-12T14:15:07.947",
+    "keywords": "remote,command"
   }
 }
