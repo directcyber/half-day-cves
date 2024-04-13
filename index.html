@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-04-13T20:08:08.708658
+Updated at UTC 2024-04-13T21:07:12.769088
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -240,14 +240,6 @@ Updated at UTC 2024-04-13T20:08:08.708658
 
 
 				</tr>
-			
-		
-			
-		
-			
-		
-			
-		
 			
 		
 			
@@ -831,46 +823,6 @@ Fixes for PAN-OS 10.2, PAN-OS 11.0, and PAN-OS 11.1 are in development and are e
 					<td>remote,command</td>
 					<td class=date>2024-04-10T21:15:06.313</td>
 					<td class=description>A flaw was found in FreeIPA. This issue may allow a remote attacker to craft a HTTP request with parameters that can be interpreted as command arguments to kinit on the FreeIPA server, which can lead to a denial of service.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31984">CVE-2024-31984</a></td>
-					<td>9.9</td>
-					<td>remote,execution</td>
-					<td class=date>2024-04-10T20:15:08.830</td>
-					<td class=description>XWiki Platform is a generic wiki platform. Starting in version 7.2-rc-1 and prior to versions 4.10.20, 15.5.4, and 15.10-rc-1, by creating a document with a specially crafted title, it is possible to trigger remote code execution in the (Solr-based) search in XWiki. This allows any user who can edit the title of a space (all users by default) to execute any Groovy code in the XWiki installation which compromises the confidentiality, integrity and availability of the whole XWiki installation. This has been patched in XWiki 14.10.20, 15.5.4 and 15.10 RC1. As a workaround, manually apply the patch to the `Main.SolrSpaceFacet` page.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31983">CVE-2024-31983</a></td>
-					<td>9.9</td>
-					<td>remote,execution</td>
-					<td class=date>2024-04-10T20:15:08.650</td>
-					<td class=description>XWiki Platform is a generic wiki platform. In multilingual wikis, translations can be edited by any user who has edit right, circumventing the rights that are normally required for authoring translations (script right for user-scope translations, wiki admin for translations on the wiki). Starting in version 4.3-milestone-2 and prior to versions 4.10.20, 15.5.4, and 15.10-rc-1, this can be exploited for remote code execution if the translation value is not properly escaped where it is used. This has been patched in XWiki 14.10.20, 15.5.4 and 15.10RC1. As a workaround, one may restrict edit rights on documents that contain translations.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31982">CVE-2024-31982</a></td>
-					<td>10.0</td>
-					<td>remote,execution</td>
-					<td class=date>2024-04-10T20:15:08.463</td>
-					<td class=description>XWiki Platform is a generic wiki platform. Starting in version 2.4-milestone-1 and prior to versions 4.10.20, 15.5.4, and 15.10-rc-1, XWiki's database search allows remote code execution through the search text. This allows remote code execution for any visitor of a public wiki or user of a closed wiki as the database search is by default accessible for all users. This impacts the confidentiality, integrity and availability of the whole XWiki installation. This vulnerability has been patched in XWiki 14.10.20, 15.5.4 and 15.10RC1. As a workaround, one may manually apply the patch to the page `Main.DatabaseSearch`. Alternatively, unless database search is explicitly used by users, this page can be deleted as this is not the default search interface of XWiki.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31981">CVE-2024-31981</a></td>
-					<td>9.9</td>
-					<td>remote,execution</td>
-					<td class=date>2024-04-10T20:15:08.280</td>
-					<td class=description>XWiki Platform is a generic wiki platform. Starting in version 3.0.1 and prior to versions 4.10.20, 15.5.4, and 15.10-rc-1, remote code execution is possible via PDF export templates. This vulnerability has been patched in XWiki 14.10.20, 15.5.4 and 15.10-rc-1. If PDF templates are not typically used on the instance, an administrator can create the document `XWiki.PDFClass` and block its edition, after making sure that it does not contain a `style` attribute. Otherwise, there are no known workarounds aside from upgrading.</td>
 				</tr>
 			
 		
