@@ -1,10 +1,4 @@
 {
-  "CVE-2024-2730": {
-    "cvss": 5.3,
-    "description": "Mautic uses predictable page indices for unpublished landing pages, their content can be accessed by unauthenticated users under public preview URLs which could expose sensitive data. At the time of publication of the CVE no patch is available \n\n",
-    "published": "2024-04-10T14:15:07.550",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2024-29296": {
     "cvss": "-",
     "description": "A user enumeration vulnerability was found in Portainer CE 2.19.4. This issue occurs during user authentication process, where a difference in response time could allow a remote unauthenticated user to determine if a username is valid or not.",
@@ -376,5 +370,11 @@
     "description": "A vulnerability was found in TBK DVR-4104 and DVR-4216 up to 20240412 and classified as critical. This issue affects some unknown processing of the file /device.rsp?opt=sys&cmd=___S_O_S_T_R_E_A_MAX___. The manipulation of the argument mdb/mdc leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-260573 was assigned to this vulnerability.",
     "published": "2024-04-13T12:15:12.087",
     "keywords": "remote,command"
+  },
+  "CVE-2024-3736": {
+    "url": "https://github.com/cym1102/nginxwebui/issues/138",
+    "cvss": 4.3,
+    "description": "A vulnerability was found in cym1102 nginxWebUI up to 3.9.9. It has been declared as problematic. Affected by this vulnerability is the function upload of the file /adminPage/main/upload. The manipulation leads to unrestricted upload. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-260575.",
+    "published": "2024-04-13T14:15:07.490"
   }
 }
