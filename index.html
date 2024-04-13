@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-04-13T15:06:48.105284
+Updated at UTC 2024-04-13T16:11:29.106769
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-04-13T15:06:48.105284
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 				<tr>
@@ -322,10 +324,18 @@ Updated at UTC 2024-04-13T15:06:48.105284
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-32487">CVE-2024-32487</a></td>
+					<td>-</td>
+					<td>execution,command</td>
+					<td class=date>2024-04-13T15:15:52.683</td>
+					<td class=description>less through 653 allows OS command execution via a newline character in the name of a file, because quoting is mishandled in filename.c. Exploitation typically requires use with attacker-controlled file names, such as the files extracted from an untrusted archive. Exploitation also requires the LESSOPEN environment variable, but this is set by default in many common cases.</td>
+				</tr>
+			
 		
 			
 		
@@ -1026,16 +1036,6 @@ Fixes for PAN-OS 10.2, PAN-OS 11.0, and PAN-OS 11.1 are in development and are e
 					<td>execution,command,leak</td>
 					<td class=date>2024-04-10T17:15:51.930</td>
 					<td class=description>An OS Command Injection vulnerability exists in the '/open_code_folder' endpoint of the parisneo/lollms-webui application, due to improper validation of user-supplied input in the 'discussion_id' parameter. Attackers can exploit this vulnerability by injecting malicious OS commands, leading to unauthorized command execution on the underlying operating system. This could result in unauthorized access, data leakage, or complete system compromise.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-29296">CVE-2024-29296</a></td>
-					<td>-</td>
-					<td>remote,unauthenticated,authentication</td>
-					<td class=date>2024-04-10T15:16:05.033</td>
-					<td class=description>A user enumeration vulnerability was found in Portainer CE 2.19.4. This issue occurs during user authentication process, where a difference in response time could allow a remote unauthenticated user to determine if a username is valid or not.</td>
 				</tr>
 			
 		
