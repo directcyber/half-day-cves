@@ -407,12 +407,6 @@
     "published": "2024-04-12T21:15:11.617",
     "keywords": "authentication,leak"
   },
-  "CVE-2024-31462": {
-    "url": "https://github.com/automatic1111/stable-diffusion-webui/commit/d9708c92b444894bce8070e4dcfaa093f8eb8d43",
-    "cvss": 6.3,
-    "description": "stable-diffusion-webui is a web interface for Stable Diffusion, implemented using Gradio library. Stable-diffusion-webui 1.7.0 is vulnerable to a limited file write affecting Windows systems. The create_ui method (Backup/Restore tab) in modules/ui_extensions.py takes user input into the config_save_name variable on line 653. This user input is later used in the save_config_state method and used to create a file path on line 65, which is afterwards opened for writing on line 67, which leads to a limited file write exploitable on Windows systems. This issue may lead to limited file write. It allows for writing json files anywhere on the server where the web server has access.",
-    "published": "2024-04-12T22:15:07.320"
-  },
   "CVE-2024-32028": {
     "cvss": 4.1,
     "description": "OpenTelemetry dotnet is a dotnet telemetry framework. In affected versions of `OpenTelemetry.Instrumentation.Http` and `OpenTelemetry.Instrumentation.AspNetCore` the `url.full` writes attribute/tag on spans (`Activity`) when tracing is enabled for outgoing http requests and `OpenTelemetry.Instrumentation.AspNetCore` writes the `url.query` attribute/tag on spans (`Activity`) when tracing is enabled for incoming http requests. These attributes are defined by the Semantic Conventions for HTTP Spans. Up until version `1.8.1` the values written by `OpenTelemetry.Instrumentation.Http` & `OpenTelemetry.Instrumentation.AspNetCore` will pass-through the raw query string as was sent or received (respectively). This may lead to sensitive information (e.g. EUII - End User Identifiable Information, credentials, etc.) being leaked into telemetry backends (depending on the application(s) being instrumented) which could cause privacy and/or security incidents. Note: Older versions of `OpenTelemetry.Instrumentation.Http` & `OpenTelemetry.Instrumentation.AspNetCore` may use different tag names but have the same vulnerability. The `1.8.1` versions of `OpenTelemetry.Instrumentation.Http` & `OpenTelemetry.Instrumentation.AspNetCore` will now redact by default all values detected on transmitted or received query strings. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
