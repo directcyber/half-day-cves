@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-04-13T21:07:12.769088
+Updated at UTC 2024-04-13T22:08:24.955715
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,18 @@ Updated at UTC 2024-04-13T21:07:12.769088
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-3740">CVE-2024-3740</a></td>
+					<td>6.3</td>
+					<td><a target=_blank href="https://github.com/cym1102/nginxwebui/issues/138">https://github.com/cym1102/nginxwebui/issues/138</a></td>
+					<td class=date>2024-04-13T21:15:48.353</td>
+					<td class=description>A vulnerability, which was classified as critical, has been found in cym1102 nginxWebUI up to 3.9.9. This issue affects the function exec of the file /adminPage/conf/reload. The manipulation of the argument nginxExe leads to deserialization. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-260579.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -242,16 +254,10 @@ Updated at UTC 2024-04-13T21:07:12.769088
 				</tr>
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -784,46 +790,6 @@ Fixes for PAN-OS 10.2, PAN-OS 11.0, and PAN-OS 11.1 are in development and are e
 				</tr>
 			
 		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31996">CVE-2024-31996</a></td>
-					<td>10.0</td>
-					<td>remote,execution</td>
-					<td class=date>2024-04-10T21:15:07.510</td>
-					<td class=description>XWiki Platform is a generic wiki platform. Starting in version 3.0.1 and prior to versions 4.10.19, 15.5.4, and 15.10-rc-1, the HTML escaping of escaping tool that is used in XWiki doesn't escape `{`, which, when used in certain places, allows XWiki syntax injection and thereby remote code execution. The vulnerability has been fixed in XWiki 14.10.19, 15.5.5, and 15.9 RC1. Apart from upgrading, there is no generic workaround. However, replacing `$escapetool.html` by `$escapetool.xml` in XWiki documents fixes the vulnerability. In a standard XWiki installation, the maintainers are only aware of the document `Panels.PanelLayoutUpdate` that exposes this vulnerability, patching this document is thus a workaround. Any extension could expose this vulnerability and might thus require patching, too.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31988">CVE-2024-31988</a></td>
-					<td>9.6</td>
-					<td>remote,execution</td>
-					<td class=date>2024-04-10T21:15:07.297</td>
-					<td class=description>XWiki Platform is a generic wiki platform. Starting in version 13.9-rc-1 and prior to versions 4.10.19, 15.5.4, and 15.10-rc-1, when the realtime editor is installed in XWiki, it allows arbitrary remote code execution with the interaction of an admin user with programming right. More precisely, by getting an admin user to either visit a crafted URL or to view an image with this URL that could be in a comment, the attacker can get the admin to execute arbitrary XWiki syntax including scripting macros with Groovy or Python code. This compromises the confidentiality, integrity and availability of the whole XWiki installation. This vulnerability has been patched in XWiki 14.10.19, 15.5.4 and 15.9. As a workaround, one may update `RTFrontend.ConvertHTML` manually with the patch. This will, however, break some synchronization processes in the realtime editor, so upgrading should be the preferred way on installations where this editor is used.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31987">CVE-2024-31987</a></td>
-					<td>9.9</td>
-					<td>remote,execution</td>
-					<td class=date>2024-04-10T21:15:07.110</td>
-					<td class=description>XWiki Platform is a generic wiki platform. Starting in version 6.4-milestone-1 and prior to versions 4.10.19, 15.5.4, and 15.10-rc-1, any user who can edit any page like their profile can create a custom skin with a template override that is executed with programming right, thus allowing remote code execution. This has been patched in XWiki 14.10.19, 15.5.4 and 15.10RC1. No known workarounds are available except for upgrading.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-1481">CVE-2024-1481</a></td>
-					<td>5.3</td>
-					<td>remote,command</td>
-					<td class=date>2024-04-10T21:15:06.313</td>
-					<td class=description>A flaw was found in FreeIPA. This issue may allow a remote attacker to craft a HTTP request with parameters that can be interpreted as command arguments to kinit on the FreeIPA server, which can lead to a denial of service.</td>
-				</tr>
 			
 		
 
