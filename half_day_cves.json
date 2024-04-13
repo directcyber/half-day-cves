@@ -376,5 +376,17 @@
     "description": "OpenTelemetry dotnet is a dotnet telemetry framework. In affected versions of `OpenTelemetry.Instrumentation.Http` and `OpenTelemetry.Instrumentation.AspNetCore` the `url.full` writes attribute/tag on spans (`Activity`) when tracing is enabled for outgoing http requests and `OpenTelemetry.Instrumentation.AspNetCore` writes the `url.query` attribute/tag on spans (`Activity`) when tracing is enabled for incoming http requests. These attributes are defined by the Semantic Conventions for HTTP Spans. Up until version `1.8.1` the values written by `OpenTelemetry.Instrumentation.Http` & `OpenTelemetry.Instrumentation.AspNetCore` will pass-through the raw query string as was sent or received (respectively). This may lead to sensitive information (e.g. EUII - End User Identifiable Information, credentials, etc.) being leaked into telemetry backends (depending on the application(s) being instrumented) which could cause privacy and/or security incidents. Note: Older versions of `OpenTelemetry.Instrumentation.Http` & `OpenTelemetry.Instrumentation.AspNetCore` may use different tag names but have the same vulnerability. The `1.8.1` versions of `OpenTelemetry.Instrumentation.Http` & `OpenTelemetry.Instrumentation.AspNetCore` will now redact by default all values detected on transmitted or received query strings. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
     "published": "2024-04-12T23:15:06.643",
     "keywords": "sensitive,leak"
+  },
+  "CVE-2024-3720": {
+    "cvss": 6.3,
+    "description": "A vulnerability has been found in Tianwell Fire Intelligent Command Platform 1.1.1.1 and classified as critical. This vulnerability affects unknown code of the file /mfsNotice/page of the component API Interface. The manipulation of the argument gsdwid leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-260572.",
+    "published": "2024-04-13T12:15:11.843",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-3721": {
+    "cvss": 6.3,
+    "description": "A vulnerability was found in TBK DVR-4104 and DVR-4216 up to 20240412 and classified as critical. This issue affects some unknown processing of the file /device.rsp?opt=sys&cmd=___S_O_S_T_R_E_A_MAX___. The manipulation of the argument mdb/mdc leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-260573 was assigned to this vulnerability.",
+    "published": "2024-04-13T12:15:12.087",
+    "keywords": "remote,command"
   }
 }
