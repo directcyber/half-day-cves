@@ -1,16 +1,4 @@
 {
-  "CVE-2024-20766": {
-    "cvss": 5.5,
-    "description": "InDesign Desktop versions 18.5.1, 19.2 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-04-10T13:51:37.820",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-20770": {
-    "cvss": 5.5,
-    "description": "Photoshop Desktop versions 24.7.2, 25.3.1 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-04-10T13:51:38.157",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2024-2730": {
     "cvss": 5.3,
     "description": "Mautic uses predictable page indices for unpublished landing pages, their content can be accessed by unauthenticated users under public preview URLs which could expose sensitive data. At the time of publication of the CVE no patch is available \n\n",
