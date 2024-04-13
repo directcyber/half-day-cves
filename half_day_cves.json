@@ -1,10 +1,4 @@
 {
-  "CVE-2024-20737": {
-    "cvss": 5.5,
-    "description": "After Effects versions 24.1, 23.6.2 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-04-10T09:15:06.700",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2024-2243": {
     "cvss": 7.6,
     "description": "A vulnerability was found in csmock where a regular user of the OSH service (anyone with a valid Kerberos ticket) can use the vulnerability to disclose the confidential Snyk authentication token and to run arbitrary commands on OSH workers.",
