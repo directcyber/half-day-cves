@@ -1,16 +1,4 @@
 {
-  "CVE-2024-31214": {
-    "cvss": 9.6,
-    "description": "Traccar is an open source GPS tracking system. Traccar versions 5.1 through 5.12 allow arbitrary files to be uploaded through the device image upload API. Attackers have full control over the file contents, full control over the directory where the file is stored, full control over the file extension, and partial control over the file name. While it's not  for an attacker to overwrite an existing file, an attacker can create new files with certain names and attacker-controlled extensions anywhere on the file system. This can potentially lead to remote code execution, XSS, DOS, etc. The default install of Traccar makes this vulnerability more severe. Self-registration is enabled by default, allowing anyone to create an account to exploit this vulnerability. Traccar also runs by default with root/system privileges, allowing files to be placed anywhere on the file system. Version 6.0 contains a fix for the issue. One may also turn off self-registration by default, as that would make most vulnerabilities in the application much harder to exploit by default and reduce the severity considerably.\n",
-    "published": "2024-04-10T18:15:07.350",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-31461": {
-    "cvss": 9.1,
-    "description": "Plane, an open-source project management tool, has a Server-Side Request Forgery (SSRF) vulnerability in versions prior to 0.17-dev. This issue may allow an attacker to send arbitrary requests from the server hosting the application, potentially leading to unauthorized access to internal systems. The impact of this vulnerability includes, but is not limited to, unauthorized access to internal services accessible from the server, potential leakage of sensitive information from internal services, manipulation of internal systems by interacting with internal APIs. Version 0.17-dev contains a patch for this issue. Those who are unable to update immediately may mitigate the issue by restricting outgoing network connections from servers hosting the application to essential services only and/or implementing strict input validation on URLs or parameters that are used to generate server-side requests.",
-    "published": "2024-04-10T18:15:07.917",
-    "keywords": "sensitive,leak"
-  },
   "CVE-2024-31981": {
     "cvss": 9.9,
     "description": "XWiki Platform is a generic wiki platform. Starting in version 3.0.1 and prior to versions 4.10.20, 15.5.4, and 15.10-rc-1, remote code execution is possible via PDF export templates. This vulnerability has been patched in XWiki 14.10.20, 15.5.4 and 15.10-rc-1. If PDF templates are not typically used on the instance, an administrator can create the document `XWiki.PDFClass` and block its edition, after making sure that it does not contain a `style` attribute. Otherwise, there are no known workarounds aside from upgrading.",
@@ -298,5 +286,11 @@
     "cvss": 6.3,
     "description": "A vulnerability was found in cym1102 nginxWebUI up to 3.9.9. It has been rated as critical. Affected by this issue is the function findCountByQuery of the file /adminPage/www/addOver. The manipulation of the argument dir leads to path traversal. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-260576.",
     "published": "2024-04-13T17:15:50.400"
+  },
+  "CVE-2024-3738": {
+    "url": "https://github.com/cym1102/nginxwebui/issues/138",
+    "cvss": 7.3,
+    "description": "A vulnerability classified as critical has been found in cym1102 nginxWebUI up to 3.9.9. This affects the function handlePath of the file /adminPage/conf/saveCmd. The manipulation of the argument nginxPath leads to improper certificate validation. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-260577 was assigned to this vulnerability.",
+    "published": "2024-04-13T18:15:07.390"
   }
 }
