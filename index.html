@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-04-15T15:09:34.005097
+Updated at UTC 2024-04-15T16:10:46.731622
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -124,14 +124,6 @@ Updated at UTC 2024-04-15T15:09:34.005097
 
 
 				</tr>
-			
-		
-			
-		
-			
-		
-			
-		
 			
 		
 			
@@ -448,136 +440,6 @@ Junos OS Evolved: 
  versions before 22.4R2-EVO.
 
 
-
-
-</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31391">CVE-2024-31391</a></td>
-					<td>-</td>
-					<td>authentication,sensitive</td>
-					<td class=date>2024-04-12T15:15:26.157</td>
-					<td class=description>Insertion of Sensitive Information into Log File vulnerability in the Apache Solr Operator.
-
-This issue affects all versions of the Apache Solr Operator from 0.3.0 through 0.8.0.
-
-When asked to bootstrap Solr security, the operator will enable basic authentication and create several accounts for accessing Solr: including the "solr" and "admin" accounts for use by end-users, and a "k8s-oper" account which the operator uses for its own requests to Solr.
-One common source of these operator requests is healthchecks: liveness, readiness, and startup probes are all used to determine Solr's health and ability to receive traffic.
-By default, the operator configures the Solr APIs used for these probes to be exempt from authentication, but users may specifically request that authentication be required on probe endpoints as well.
-Whenever one of these probes would fail, if authentication was in use, the Solr Operator would create a Kubernetes "event" containing the username and password of the "k8s-oper" account.
-
-Within the affected version range, this vulnerability affects any solrcloud resource which (1) bootstrapped security through use of the `.solrOptions.security.authenticationType=basic` option, and (2) required authentication be used on probes by setting `.solrOptions.security.probesRequireAuth=true`.
-
-Users are recommended to upgrade to Solr Operator version 0.8.1, which fixes this issue by ensuring that probes no longer print the credentials used for Solr requests.  Users may also mitigate the vulnerability by disabling authentication on their healthcheck probes using the setting `.solrOptions.security.probesRequireAuth=false`.
-</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-30394">CVE-2024-30394</a></td>
-					<td>7.5</td>
-					<td>unauthenticated,vpn</td>
-					<td class=date>2024-04-12T15:15:24.730</td>
-					<td class=description>A Stack-based Buffer Overflow vulnerability in the Routing Protocol Daemon (RPD) component of Junos OS and Junos OS Evolved allows an unauthenticated, network-based attacker to cause an rpd crash, leading to Denial of Service (DoS).
-
-On all Junos OS and Junos OS Evolved platforms, when EVPN is configured, and a specific EVPN type-5 route is received via BGP, rpd crashes and restarts. Continuous receipt of this specific route will lead to a sustained Denial of Service (DoS) condition.
-
-This issue affects:
-Junos OS:
-
-
-
-  *  all versions before 21.2R3-S7,
-
-  *  from 21.4 before 21.4R3-S5,
-
-  *  from 22.1 before 22.1R3-S4,
-
-  *  from 22.2 before 22.2R3-S2,
-
-  *  from 22.3 before 22.3R3-S1,
-
-  *  from 22.4 before 22.4R3,
-
-  *  from 23.2 before 23.2R2.
-
-
-
-
-
-Junos OS Evolved:
-
-
-
-  *  all versions before 21.4R3-S5-EVO,
-
-  *  from 22.1-EVO before 22.1R3-S4-EVO,
-
-  *  from 22.2-EVO before 22.2R3-S2-EVO,
-
-  *  from 22.3-EVO before 22.3R3-S1-EVO,
-
-  *  from 22.4-EVO before 22.4R3-EVO,
-
-  *  from 23.2-EVO before 23.2R2-EVO.
-
-
-
-
-
-</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-30381">CVE-2024-30381</a></td>
-					<td>8.4</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-04-12T15:15:24.547</td>
-					<td class=description>An Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Juniper Networks Paragon Active Assurance Control Center allows a network-adjacent attacker with root access to a Test Agent Appliance the ability to access sensitive information about downstream devices.
-
-The "netrounds-probe-login" daemon (also called probe_serviced) exposes functions where the Test Agent (TA) Appliance pushes interface state/config, unregister itself, etc.  The remote service accidentally exposes an internal database object that can be used for direct database access on the Paragon Active Assurance Control Center.
-
-
-
-
-This issue affects Paragon Active Assurance: 4.1.0, 4.2.0.
-
-
-</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-21609">CVE-2024-21609</a></td>
-					<td>6.5</td>
-					<td>remote,command,leak</td>
-					<td class=date>2024-04-12T15:15:23.770</td>
-					<td class=description>A Missing Release of Memory after Effective Lifetime vulnerability in the IKE daemon (iked) of Juniper Networks Junos OS on MX Series with SPC3, and SRX Series allows an administratively adjacent attacker which is able to successfully establish IPsec tunnels to cause a Denial of Service (DoS).
-
-If specific values for the IPsec parameters local-ip, remote-ip, remote ike-id, and traffic selectors are sent from the peer, a memory leak occurs during every IPsec SA rekey which is carried out with a specific message sequence. This will eventually result in an iked process crash and restart.
-
-The iked process memory consumption can be checked using the below command:
-  user@host> show system processes extensive | grep iked
-           PID   USERNAME     PRI  NICE    SIZE    RES    STATE    C   TIME  WCPU COMMAND
-           56903 root         31    0      4016M  2543M   CPU0     0   2:10  10.50% iked
-
-This issue affects Juniper Networks Junos OS:
-  *  All versions earlier than 20.4R3-S9;
-  *  21.2 versions earlier than 21.2R3-S7;
-  *  21.3 versions earlier than 21.3R3-S5;
-  *  21.4 versions earlier than 21.4R3-S4;
-  *  22.1 versions earlier than 22.1R3-S3;
-  *  22.2 versions earlier than 22.2R3-S2;
-  *  22.3 versions earlier than 22.3R3;
-  *  22.4 versions earlier than 22.4R3;
-  *  23.2 versions earlier than 23.2R1-S2, 23.2R2.
 
 
 </td>
