@@ -124,5 +124,11 @@
     "description": "An issue discovered in silex technology DS-600 Firmware v.1.4.1 allows a remote attacker to cause a denial of service via crafted UDP packets using the EXEC REBOOT SYSTEM command.",
     "published": "2024-04-15T19:15:09.830",
     "keywords": "remote,command"
+  },
+  "CVE-2024-32035": {
+    "url": "https://github.com/sixlabors/imagesharp/commit/f21d64188e59ae9464ff462056a5e29d8e618b27",
+    "cvss": 5.3,
+    "description": "ImageSharp is a 2D graphics API. A vulnerability discovered in the ImageSharp library, where the processing of specially crafted files can lead to excessive memory usage in image decoders. The vulnerability is triggered when ImageSharp attempts to process image files that are designed to exploit this flaw.  This flaw can be exploited to cause a denial of service (DoS) by depleting process memory, thereby affecting applications and services that rely on ImageSharp for image processing tasks. Users and administrators are advised to update to the latest version of ImageSharp that addresses this vulnerability to mitigate the risk of exploitation. The problem has been patched in v3.1.4 and v2.1.8.",
+    "published": "2024-04-15T20:15:11.323"
   }
 }
