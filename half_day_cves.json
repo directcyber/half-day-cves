@@ -1,7 +1,7 @@
 {
   "CVE-2024-3400": {
     "cvss": 10.0,
-    "description": "A command injection vulnerability in the GlobalProtect feature of Palo Alto Networks PAN-OS software for specific PAN-OS versions and distinct feature configurations may enable an unauthenticated attacker to execute arbitrary code with root privileges on the firewall.\n\nFixes for PAN-OS 10.2, PAN-OS 11.0, and PAN-OS 11.1 are in development and are expected to be released by April 14, 2024. Cloud NGFW, Panorama appliances, and Prisma Access are not impacted by this vulnerability. All other versions of PAN-OS are also not impacted.",
+    "description": "A command injection vulnerability in the GlobalProtect feature of Palo Alto Networks PAN-OS software for specific PAN-OS versions and distinct feature configurations may enable an unauthenticated attacker to execute arbitrary code with root privileges on the firewall.\n\nCloud NGFW, Panorama appliances, and Prisma Access are not impacted by this vulnerability.",
     "published": "2024-04-12T08:15:06.230",
     "keywords": "unauthenticated,command"
   },
@@ -136,5 +136,23 @@
     "cvss": 6.3,
     "description": "A vulnerability, which was classified as critical, has been found in cym1102 nginxWebUI up to 3.9.9. This issue affects the function exec of the file /adminPage/conf/reload. The manipulation of the argument nginxExe leads to deserialization. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-260579.",
     "published": "2024-04-13T21:15:48.353"
+  },
+  "CVE-2024-1655": {
+    "cvss": 8.8,
+    "description": "Certain ASUS WiFi routers models has an OS Command Injection vulnerability, allowing an authenticated remote attacker to execute arbitrary system commands by sending a specially crafted request.",
+    "published": "2024-04-15T04:15:14.723",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-3776": {
+    "cvss": 6.1,
+    "description": "The parameter used in the login page of Netvision airPASS is not properly filtered for user input. An unauthenticated remote attacker can insert JavaScript code to the parameter for Reflected Cross-site scripting attacks.",
+    "published": "2024-04-15T04:15:16.340",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-3777": {
+    "cvss": 9.8,
+    "description": "\nThe password reset feature of Ai3 QbiBot lacks proper access control, allowing unauthenticated remote attackers to reset any user's password.\n\n",
+    "published": "2024-04-15T04:15:16.553",
+    "keywords": "remote,unauthenticated"
   }
 }
