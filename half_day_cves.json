@@ -214,5 +214,17 @@
     "description": "In scrapy version 2.10.1, an issue was identified where the Authorization header, containing credentials for server authentication, is leaked to a third-party site during a cross-domain redirect. This vulnerability arises from the failure to remove the Authorization header when redirecting across domains. The exposure of the Authorization header to unauthorized actors could potentially allow for account hijacking.",
     "published": "2024-04-16T00:15:12.750",
     "keywords": "authentication,leak"
+  },
+  "CVE-2024-3871": {
+    "cvss": 7.2,
+    "description": "The Delta Electronics DVW-W02W2-E2 devices expose a web administration interface to users. This interface implements two features\u00a0(access control lists management, WPS pin setup) that are affected by command injections and stack overflows vulnerabilities.\nSuccessful exploitation of these flaws would allow remote authenticated attackers to gain remote command execution with\u00a0elevated privileges on the affected devices.\n\nThis issue affects DVW-W02W2-E2 through version 2.5.2.\n\n",
+    "published": "2024-04-16T09:15:08.630",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2024-3872": {
+    "cvss": 3.1,
+    "description": "Mattermost Mobile app versions 2.13.0 and earlier use a regular expression with polynomial complexity to parse certain deeplinks, which allows an unauthenticated remote attacker to freeze or crash the app via a long maliciously crafted link.\n\n",
+    "published": "2024-04-16T09:15:08.817",
+    "keywords": "remote,unauthenticated"
   }
 }
