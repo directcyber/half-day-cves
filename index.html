@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-04-16T22:09:28.044064
+Updated at UTC 2024-04-16T23:09:32.759025
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-04-16T22:09:28.044064
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -139,16 +141,6 @@ Updated at UTC 2024-04-16T22:09:28.044064
 			
 		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-32036">CVE-2024-32036</a></td>
-					<td>7.1</td>
-					<td><a target=_blank href="https://github.com/sixlabors/imagesharp/commit/da5f09a42513489fe359578d81cec2f15ba588ba">https://github.com/sixlabors/imagesharp/commit/da5f09a42513489fe359578d81cec2f15ba588ba</a></td>
-					<td class=date>2024-04-15T20:15:11.543</td>
-					<td class=description>ImageSharp is a 2D graphics API. A heap-use-after-free flaw was found in ImageSharp's JPEG and TGA decoders. This vulnerability is triggered when an attacker passes a specially crafted JPEG or TGA image file to ImageSharp for conversion, potentially leading to information disclosure. The problem has been patched in v3.1.4 and v2.1.8.</td>
-
-
-				</tr>
-			
 		
 			
 				<tr>
@@ -186,6 +178,16 @@ Updated at UTC 2024-04-16T22:09:28.044064
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31887">CVE-2024-31887</a></td>
+					<td>7.5</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2024-04-16T22:15:35.240</td>
+					<td class=description>IBM Security Verify Privilege 11.6.25 could allow an unauthenticated actor to obtain sensitive information from the SOAP API.   IBM X-Force ID:  287651.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -387,6 +389,14 @@ This issue affects DVW-W02W2-E2 through version 2.5.2.
 		
 			
 		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-32036">CVE-2024-32036</a></td>
+					<td>7.1</td>
+					<td>sensitive,leak</td>
+					<td class=date>2024-04-15T20:15:11.543</td>
+					<td class=description>ImageSharp is a 2D graphics API. A data leakage flaw was found in ImageSharp's JPEG and TGA decoders. This vulnerability is triggered when an attacker passes a specially crafted JPEG or TGA image file to a software using ImageSharp, potentially disclosing sensitive information from other parts of the software in the resulting image buffer. The problem has been patched in v3.1.4 and v2.1.8.</td>
+				</tr>
 			
 		
 			
