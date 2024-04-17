@@ -238,5 +238,11 @@
     "description": "Insufficient policy enforcement in WebUI in Google Chrome prior to 124.0.6367.60 allowed a remote attacker to bypass content security policy via a crafted HTML page. (Chromium security severity: Low)",
     "published": "2024-04-17T08:15:10.767",
     "keywords": "remote,bypass"
+  },
+  "CVE-2024-26829": {
+    "cvss": "-",
+    "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: ir_toy: fix a memleak in irtoy_tx\n\nWhen irtoy_command fails, buf should be freed since it is allocated by\nirtoy_tx, or there is a memleak.",
+    "published": "2024-04-17T10:15:09.347",
+    "keywords": "command,leak"
   }
 }
