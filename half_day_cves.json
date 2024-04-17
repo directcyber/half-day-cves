@@ -268,5 +268,11 @@
     "description": "A flaw was found in Keycloak, where it does not properly validate URLs included in a redirect. This issue could allow an attacker to construct a malicious request to bypass validation and access other URLs and sensitive information within the domain or conduct further attacks. This flaw affects any client that utilizes a wildcard in the Valid Redirect URIs field, and requires user interaction within the malicious URL.",
     "published": "2024-04-17T14:15:07.953",
     "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-32463": {
+    "url": "https://github.com/phlex-ruby/phlex/commit/9e3f5b980655817993682e409cbda72956d865cb",
+    "cvss": 7.1,
+    "description": "phlex is an open source framework for building object-oriented views in Ruby. There is a potential cross-site scripting (XSS) vulnerability that can be exploited via maliciously crafted user data. The filter to detect and prevent the use of the `javascript:` URL scheme in the `href` attribute of an `<a>` tag could be bypassed with tab `\\t` or newline `\\n` characters between the characters of the protocol, e.g. `java\\tscript:`. This vulnerability is fixed in 1.10.1, 1.9.2, 1.8.3, 1.7.2, 1.6.3, 1.5.3, and 1.4.2. Configuring a Content Security Policy that does not allow `unsafe-inline` would effectively prevent this vulnerability from being exploited.",
+    "published": "2024-04-17T16:15:09.243"
   }
 }
