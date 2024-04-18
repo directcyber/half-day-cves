@@ -1,16 +1,4 @@
 {
-  "CVE-2024-32035": {
-    "url": "https://github.com/sixlabors/imagesharp/commit/f21d64188e59ae9464ff462056a5e29d8e618b27",
-    "cvss": 5.3,
-    "description": "ImageSharp is a 2D graphics API. A vulnerability discovered in the ImageSharp library, where the processing of specially crafted files can lead to excessive memory usage in image decoders. The vulnerability is triggered when ImageSharp attempts to process image files that are designed to exploit this flaw.  This flaw can be exploited to cause a denial of service (DoS) by depleting process memory, thereby affecting applications and services that rely on ImageSharp for image processing tasks. Users and administrators are advised to update to the latest version of ImageSharp that addresses this vulnerability to mitigate the risk of exploitation. The problem has been patched in v3.1.4 and v2.1.8.",
-    "published": "2024-04-15T20:15:11.323"
-  },
-  "CVE-2024-32036": {
-    "cvss": 5.3,
-    "description": "ImageSharp is a 2D graphics API. A data leakage flaw was found in ImageSharp's JPEG and TGA decoders. This vulnerability is triggered when an attacker passes a specially crafted JPEG or TGA image file to a software using ImageSharp, potentially disclosing sensitive information from other parts of the software in the resulting image buffer. The problem has been patched in v3.1.4 and v2.1.8.",
-    "published": "2024-04-15T20:15:11.543",
-    "keywords": "sensitive,leak"
-  },
   "CVE-2024-0404": {
     "url": "https://github.com/mintplex-labs/anything-llm/commit/8cd3a92c660b202655d99bee90b2864694c99946",
     "cvss": 9.1,
@@ -238,5 +226,11 @@
     "description": "Judge0 is an open-source online code execution system. The application uses the UNIX chown command on an untrusted file within the sandbox. An attacker can abuse this by creating a symbolic link (symlink) to a file outside the sandbox, allowing the attacker to run chown on arbitrary files outside of the sandbox. This vulnerability is not impactful on it's own, but it can be used to bypass the patch for CVE-2024-28185 and obtain a complete sandbox escape. This vulnerability is fixed in 1.13.1.",
     "published": "2024-04-18T15:15:29.480",
     "keywords": "execution,command,bypass"
+  },
+  "CVE-2024-20380": {
+    "cvss": 7.5,
+    "description": "A vulnerability in the HTML parser of ClamAV could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.\r\nThe vulnerability is due to an issue in the C to Rust foreign function interface. An attacker could exploit this vulnerability by submitting a crafted file containing HTML content to be scanned by ClamAV on an affected device. An exploit could allow the attacker to cause the ClamAV scanning process to terminate, resulting in a DoS condition on the affected software.",
+    "published": "2024-04-18T20:15:17.520",
+    "keywords": "remote,unauthenticated"
   }
 }

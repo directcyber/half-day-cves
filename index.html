@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-04-18T20:10:03.864428
+Updated at UTC 2024-04-18T21:08:32.938958
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-04-18T20:10:03.864428
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -224,22 +226,19 @@ Updated at UTC 2024-04-18T20:10:03.864428
 				</tr>
 			
 		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-32035">CVE-2024-32035</a></td>
-					<td>5.3</td>
-					<td><a target=_blank href="https://github.com/sixlabors/imagesharp/commit/f21d64188e59ae9464ff462056a5e29d8e618b27">https://github.com/sixlabors/imagesharp/commit/f21d64188e59ae9464ff462056a5e29d8e618b27</a></td>
-					<td class=date>2024-04-15T20:15:11.323</td>
-					<td class=description>ImageSharp is a 2D graphics API. A vulnerability discovered in the ImageSharp library, where the processing of specially crafted files can lead to excessive memory usage in image decoders. The vulnerability is triggered when ImageSharp attempts to process image files that are designed to exploit this flaw.  This flaw can be exploited to cause a denial of service (DoS) by depleting process memory, thereby affecting applications and services that rely on ImageSharp for image processing tasks. Users and administrators are advised to update to the latest version of ImageSharp that addresses this vulnerability to mitigate the risk of exploitation. The problem has been patched in v3.1.4 and v2.1.8.</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20380">CVE-2024-20380</a></td>
+					<td>7.5</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-04-18T20:15:17.520</td>
+					<td class=description>A vulnerability in the HTML parser of ClamAV could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.
+The vulnerability is due to an issue in the C to Rust foreign function interface. An attacker could exploit this vulnerability by submitting a crafted file containing HTML content to be scanned by ClamAV on an affected device. An exploit could allow the attacker to cause the ClamAV scanning process to terminate, resulting in a DoS condition on the affected software.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -587,18 +586,6 @@ This issue affects DVW-W02W2-E2 through version 2.5.2.
 				</tr>
 			
 		
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-32036">CVE-2024-32036</a></td>
-					<td>5.3</td>
-					<td>sensitive,leak</td>
-					<td class=date>2024-04-15T20:15:11.543</td>
-					<td class=description>ImageSharp is a 2D graphics API. A data leakage flaw was found in ImageSharp's JPEG and TGA decoders. This vulnerability is triggered when an attacker passes a specially crafted JPEG or TGA image file to a software using ImageSharp, potentially disclosing sensitive information from other parts of the software in the resulting image buffer. The problem has been patched in v3.1.4 and v2.1.8.</td>
-				</tr>
 			
 		
 			
