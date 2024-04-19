@@ -1,94 +1,4 @@
 {
-  "CVE-2024-0404": {
-    "url": "https://github.com/mintplex-labs/anything-llm/commit/8cd3a92c660b202655d99bee90b2864694c99946",
-    "cvss": 9.1,
-    "description": "A mass assignment vulnerability exists in the `/api/invite/:code` endpoint of the mintplex-labs/anything-llm repository, allowing unauthorized creation of high-privileged accounts. By intercepting and modifying the HTTP request during the account creation process via an invitation link, an attacker can add a `role` property with `admin` value, thereby gaining administrative access. This issue arises due to the lack of property allowlisting and blocklisting, enabling the attacker to exploit the system and perform actions as an administrator.",
-    "published": "2024-04-16T00:15:07.387"
-  },
-  "CVE-2024-0549": {
-    "url": "https://github.com/mintplex-labs/anything-llm/commit/026849df0224b6a8754f4103530bc015874def62",
-    "cvss": 8.1,
-    "description": "mintplex-labs/anything-llm is vulnerable to a relative path traversal attack, allowing unauthorized attackers with a default role account to delete files and folders within the filesystem, including critical database files such as 'anythingllm.db'. The vulnerability stems from insufficient input validation and normalization in the handling of file and folder deletion requests. Successful exploitation results in the compromise of data integrity and availability.",
-    "published": "2024-04-16T00:15:07.603"
-  },
-  "CVE-2024-1558": {
-    "cvss": 7.5,
-    "description": "A path traversal vulnerability exists in the `_create_model_version()` function within `server/handlers.py` of the mlflow/mlflow repository, due to improper validation of the `source` parameter. Attackers can exploit this vulnerability by crafting a `source` parameter that bypasses the `_validate_non_local_source_contains_relative_paths(source)` function's checks, allowing for arbitrary file read access on the server. The issue arises from the handling of unquoted URL characters and the subsequent misuse of the original `source` value for model version creation, leading to the exposure of sensitive files when interacting with the `/model-versions/get-artifact` handler.",
-    "published": "2024-04-16T00:15:08.533",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-1561": {
-    "cvss": 7.5,
-    "description": "An issue was discovered in gradio-app/gradio, where the `/component_server` endpoint improperly allows the invocation of any method on a `Component` class with attacker-controlled arguments. Specifically, by exploiting the `move_resource_to_block_cache()` method of the `Block` class, an attacker can copy any file on the filesystem to a temporary directory and subsequently retrieve it. This vulnerability enables unauthorized local file read access, posing a significant risk especially when the application is exposed to the internet via `launch(share=True)`, thereby allowing remote attackers to read files on the host machine. Furthermore, gradio apps hosted on `huggingface.co` are also affected, potentially leading to the exposure of sensitive information such as API keys and credentials stored in environment variables.",
-    "published": "2024-04-16T00:15:08.887",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-1646": {
-    "cvss": 8.2,
-    "description": "parisneo/lollms-webui is vulnerable to authentication bypass due to insufficient protection over sensitive endpoints. The application checks if the host parameter is not '0.0.0.0' to restrict access, which is inadequate when the application is bound to a specific interface, allowing unauthorized access to endpoints such as '/restart_program', '/update_software', '/check_update', '/start_recording', and '/stop_recording'. This vulnerability can lead to denial of service, unauthorized disabling or overriding of recordings, and potentially other impacts if certain features are enabled in the configuration.",
-    "published": "2024-04-16T00:15:09.967",
-    "keywords": "authentication,sensitive,bypass"
-  },
-  "CVE-2024-1739": {
-    "cvss": 7.5,
-    "description": "lunary-ai/lunary is vulnerable to an authentication issue due to improper validation of email addresses during the signup process. Specifically, the server fails to treat email addresses as case insensitive, allowing the creation of multiple accounts with the same email address by varying the case of the email characters. For example, accounts for 'abc@gmail.com' and 'Abc@gmail.com' can both be created, leading to potential impersonation and confusion among users.",
-    "published": "2024-04-16T00:15:10.697",
-    "keywords": "authentication,sensitive"
-  },
-  "CVE-2024-1961": {
-    "cvss": 8.8,
-    "description": "vertaai/modeldb is vulnerable to a path traversal attack due to improper sanitization of user-supplied file paths in its file upload functionality. Attackers can exploit this vulnerability to write arbitrary files anywhere in the file system by manipulating the 'artifact_path' parameter. This flaw can lead to Remote Code Execution (RCE) by overwriting critical files, such as the application's configuration file, especially when the application is run outside of Docker. The vulnerability is present in the NFSController.java and NFSService.java components of the application.",
-    "published": "2024-04-16T00:15:10.867",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-2260": {
-    "cvss": 4.2,
-    "description": "A session fixation vulnerability exists in the zenml-io/zenml application, where JWT tokens used for user authentication are not invalidated upon logout. This flaw allows an attacker to bypass authentication mechanisms by reusing a victim's JWT token.",
-    "published": "2024-04-16T00:15:11.237",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-2912": {
-    "cvss": 9.8,
-    "description": "An insecure deserialization vulnerability exists in the BentoML framework, allowing remote code execution (RCE) by sending a specially crafted POST request. By exploiting this vulnerability, attackers can execute arbitrary commands on the server hosting the BentoML application. The vulnerability is triggered when a serialized object, crafted to execute OS commands upon deserialization, is sent to any valid BentoML endpoint. This issue poses a significant security risk, enabling attackers to compromise the server and potentially gain unauthorized access or control.",
-    "published": "2024-04-16T00:15:11.427",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-3028": {
-    "url": "https://github.com/mintplex-labs/anything-llm/commit/7de23dbb2da932fbfb39f56d981784d3702cf5ce",
-    "cvss": 7.2,
-    "description": "mintplex-labs/anything-llm is vulnerable to improper input validation, allowing attackers to read and delete arbitrary files on the server. By manipulating the 'logo_filename' parameter in the 'system-preferences' API endpoint, an attacker can construct requests to read sensitive files or the application's '.env' file, and even delete files by setting the 'logo_filename' to the path of the target file and invoking the 'remove-logo' API endpoint. This vulnerability is due to the lack of proper sanitization of user-supplied input.",
-    "published": "2024-04-16T00:15:11.667"
-  },
-  "CVE-2024-3029": {
-    "url": "https://github.com/mintplex-labs/anything-llm/commit/99cfee1e7025fe9a0919a4d506ba1e1b819f6073",
-    "cvss": 9.0,
-    "description": "In mintplex-labs/anything-llm, an attacker can exploit improper input validation by sending a malformed JSON payload to the '/system/enable-multi-user' endpoint. This triggers an error that is caught by a catch block, which in turn deletes all users and disables the 'multi_user_mode'. The vulnerability allows an attacker to remove all existing users and potentially create a new admin user without requiring a password, leading to unauthorized access and control over the application.",
-    "published": "2024-04-16T00:15:11.850"
-  },
-  "CVE-2024-3271": {
-    "cvss": 9.8,
-    "description": "A command injection vulnerability exists in the run-llama/llama_index repository, specifically within the safe_eval function. Attackers can bypass the intended security mechanism, which checks for the presence of underscores in code generated by LLM, to execute arbitrary code. This is achieved by crafting input that does not contain an underscore but still results in the execution of OS commands. The vulnerability allows for remote code execution (RCE) on the server hosting the application.",
-    "published": "2024-04-16T00:15:12.017",
-    "keywords": "remote,execution,command,bypass"
-  },
-  "CVE-2024-3571": {
-    "cvss": 6.5,
-    "description": "langchain-ai/langchain is vulnerable to path traversal due to improper limitation of a pathname to a restricted directory ('Path Traversal') in its LocalFileStore functionality. An attacker can leverage this vulnerability to read or write files anywhere on the filesystem, potentially leading to information disclosure or remote code execution. The issue lies in the handling of file paths in the mset and mget methods, where user-supplied input is not adequately sanitized, allowing directory traversal sequences to reach unintended directories.",
-    "published": "2024-04-16T00:15:12.203",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-3573": {
-    "cvss": 9.3,
-    "description": "mlflow/mlflow is vulnerable to Local File Inclusion (LFI) due to improper parsing of URIs, allowing attackers to bypass checks and read arbitrary files on the system. The issue arises from the 'is_local_uri' function's failure to properly handle URIs with empty or 'file' schemes, leading to the misclassification of URIs as non-local. Attackers can exploit this by crafting malicious model versions with specially crafted 'source' parameters, enabling the reading of sensitive files within at least two directory levels from the server's root.",
-    "published": "2024-04-16T00:15:12.570",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-3574": {
-    "cvss": 7.5,
-    "description": "In scrapy version 2.10.1, an issue was identified where the Authorization header, containing credentials for server authentication, is leaked to a third-party site during a cross-domain redirect. This vulnerability arises from the failure to remove the Authorization header when redirecting across domains. The exposure of the Authorization header to unauthorized actors could potentially allow for account hijacking.",
-    "published": "2024-04-16T00:15:12.750",
-    "keywords": "authentication,leak"
-  },
   "CVE-2024-3871": {
     "cvss": 9.8,
     "description": "The Delta Electronics DVW-W02W2-E2 devices expose a web administration interface to users. This interface implements multiple features that are affected by command injections and stack overflows vulnerabilities.\nSuccessful exploitation of these flaws would allow remote unauthenticated attackers to gain remote code execution with\u00a0elevated privileges on the affected devices.\n\nThis issue affects DVW-W02W2-E2 through version 2.5.2.\n\n",
@@ -238,5 +148,29 @@
     "description": "Electrolink transmitters are vulnerable to an authentication bypass \nvulnerability affecting the login cookie. An attacker can set an \narbitrary value except 'NO' to the login cookie and have full system \naccess.\n\n",
     "published": "2024-04-18T22:15:10.603",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-21846": {
+    "cvss": 5.3,
+    "description": "\nAn unauthenticated attacker can reset the board and stop transmitter \noperations by sending a specially-crafted GET request to the command.cgi\n gateway, resulting in a denial-of-service scenario.\n\n",
+    "published": "2024-04-18T23:15:06.933",
+    "keywords": "unauthenticated,command"
+  },
+  "CVE-2024-21872": {
+    "cvss": 7.5,
+    "description": "\nThe device allows an unauthenticated attacker to bypass authentication \nand modify the cookie to reveal hidden pages that allows more critical \noperations to the transmitter.\n\n",
+    "published": "2024-04-18T23:15:07.123",
+    "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-30938": {
+    "cvss": "-",
+    "description": "SQL Injection vulnerability in SEMCMS v.4.8 allows a remote attacker to obtain sensitive information via the ID parameter in the SEMCMS_User.php component.",
+    "published": "2024-04-19T00:15:10.623",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-31750": {
+    "cvss": "-",
+    "description": "SQL injection vulnerability in f-logic datacube3 v.1.0 allows a remote attacker to obtain sensitive information via the req_id parameter.",
+    "published": "2024-04-19T00:15:10.690",
+    "keywords": "remote,sensitive"
   }
 }
