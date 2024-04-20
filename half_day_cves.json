@@ -1,10 +1,4 @@
 {
-  "CVE-2024-1132": {
-    "cvss": 8.1,
-    "description": "A flaw was found in Keycloak, where it does not properly validate URLs included in a redirect. This issue could allow an attacker to construct a malicious request to bypass validation and access other URLs and sensitive information within the domain or conduct further attacks. This flaw affects any client that utilizes a wildcard in the Valid Redirect URIs field, and requires user interaction within the malicious URL.",
-    "published": "2024-04-17T14:15:07.953",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2024-32463": {
     "url": "https://github.com/phlex-ruby/phlex/commit/9e3f5b980655817993682e409cbda72956d865cb",
     "cvss": 7.1,
