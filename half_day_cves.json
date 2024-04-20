@@ -1,28 +1,4 @@
 {
-  "CVE-2024-29950": {
-    "cvss": 7.5,
-    "description": "The class FileTransfer implemented in Brocade SANnav before v2.3.1, v2.3.0a, uses the ssh-rsa signature scheme, which has a SHA-1 hash.\nThe vulnerability could allow a remote, unauthenticated attacker to perform a man-in-the-middle attack.\n",
-    "published": "2024-04-17T19:15:07.213",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-31031": {
-    "url": "https://github.com/obgm/libcoap/issues/1351",
-    "cvss": "-",
-    "description": "An issue in `coap_pdu.c` in libcoap 4.3.4 allows attackers to cause undefined behavior via a sequence of messages leading to unsigned integer overflow.",
-    "published": "2024-04-17T19:15:07.623"
-  },
-  "CVE-2024-31040": {
-    "url": "https://github.com/nanomq/nanomq/issues/1720",
-    "cvss": "-",
-    "description": "Buffer Overflow vulnerability in the get_var_integer function in mqtt_parser.c in NanoMQ 0.21.7 allows remote attackers to cause a denial of service via a series of specially crafted hexstreams.",
-    "published": "2024-04-17T19:15:07.680"
-  },
-  "CVE-2024-31041": {
-    "url": "https://github.com/nanomq/nanomq/issues/1723",
-    "cvss": "-",
-    "description": "Null Pointer Dereference vulnerability in topic_filtern function in mqtt_parser.c in NanoMQ 0.21.7 allows attackers to cause a denial of service.",
-    "published": "2024-04-17T19:15:07.733"
-  },
   "CVE-2024-28189": {
     "cvss": 10.0,
     "description": "Judge0 is an open-source online code execution system. The application uses the UNIX chown command on an untrusted file within the sandbox. An attacker can abuse this by creating a symbolic link (symlink) to a file outside the sandbox, allowing the attacker to run chown on arbitrary files outside of the sandbox. This vulnerability is not impactful on it's own, but it can be used to bypass the patch for CVE-2024-28185 and obtain a complete sandbox escape. This vulnerability is fixed in 1.13.1.",
