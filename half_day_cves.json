@@ -1,10 +1,4 @@
 {
-  "CVE-2024-3741": {
-    "cvss": 7.5,
-    "description": "Electrolink transmitters are vulnerable to an authentication bypass \nvulnerability affecting the login cookie. An attacker can set an \narbitrary value except 'NO' to the login cookie and have full system \naccess.\n\n",
-    "published": "2024-04-18T22:15:10.603",
-    "keywords": "authentication,bypass"
-  },
   "CVE-2024-21846": {
     "cvss": 5.3,
     "description": "\nAn unauthenticated attacker can reset the board and stop transmitter \noperations by sending a specially-crafted GET request to the command.cgi\n gateway, resulting in a denial-of-service scenario.\n\n",
