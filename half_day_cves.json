@@ -1,10 +1,4 @@
 {
-  "CVE-2024-28189": {
-    "cvss": 10.0,
-    "description": "Judge0 is an open-source online code execution system. The application uses the UNIX chown command on an untrusted file within the sandbox. An attacker can abuse this by creating a symbolic link (symlink) to a file outside the sandbox, allowing the attacker to run chown on arbitrary files outside of the sandbox. This vulnerability is not impactful on it's own, but it can be used to bypass the patch for CVE-2024-28185 and obtain a complete sandbox escape. This vulnerability is fixed in 1.13.1.",
-    "published": "2024-04-18T15:15:29.480",
-    "keywords": "execution,command,bypass"
-  },
   "CVE-2024-20380": {
     "cvss": 7.5,
     "description": "A vulnerability in the HTML parser of ClamAV could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.\r\nThe vulnerability is due to an issue in the C to Rust foreign function interface. An attacker could exploit this vulnerability by submitting a crafted file containing HTML content to be scanned by ClamAV on an affected device. An exploit could allow the attacker to cause the ClamAV scanning process to terminate, resulting in a DoS condition on the affected software.",
