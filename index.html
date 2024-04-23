@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-04-22T23:08:34.856188
+Updated at UTC 2024-04-23T00:40:11.276545
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,34 @@ Updated at UTC 2024-04-22T23:08:34.856188
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-3177">CVE-2024-3177</a></td>
+					<td>2.7</td>
+					<td><a target=_blank href="https://github.com/kubernetes/kubernetes/issues/124336">https://github.com/kubernetes/kubernetes/issues/124336</a></td>
+					<td class=date>2024-04-22T23:15:51.180</td>
+					<td class=description>A security issue was discovered in Kubernetes where users may be able to launch containers that bypass the mountable secrets policy enforced by the ServiceAccount admission plugin when using containers, init containers, and ephemeral containers with the envFrom field populated. The policy ensures pods running with a service account may only reference secrets specified in the service account’s secrets field. Kubernetes clusters are only affected if the ServiceAccount admission plugin and the kubernetes.io/enforce-mountable-secrets annotation are used together with containers, init containers, and ephemeral containers with the envFrom field populated.
+
+</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-32657">CVE-2024-32657</a></td>
+					<td>4.6</td>
+					<td><a target=_blank href="https://github.com/nixos/nixpkgs/pull/306017">https://github.com/nixos/nixpkgs/pull/306017</a></td>
+					<td class=date>2024-04-22T23:15:50.997</td>
+					<td class=description>Hydra is a Continuous Integration service for Nix based projects. Attackers can execute arbitrary code in the browser context of Hydra and execute authenticated HTTP requests. The abused feature allows Nix builds to specify files that Hydra serves to clients. One use of this functionality is serving NixOS `.iso` files. The issue is only with html files served by Hydra. The issue has been patched on https://hydra.nixos.org around 2024-04-21 14:30 UTC. The nixpkgs package were fixed in unstable and 23.11. Users with custom Hydra packages can apply the fix commit to their local installations. The vulnerability is only triggered when opening HTML build artifacts, so not opening them until the vulnerability is fixed works around the issue.</td>
+
+
+				</tr>
+			
+		
+			
 		
 			
 				<tr>
@@ -104,6 +132,20 @@ Updated at UTC 2024-04-22T23:08:34.856188
 		
 
 		<hr>
+		
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-32656">CVE-2024-32656</a></td>
+					<td>7.8</td>
+					<td>remote,authentication</td>
+					<td class=date>2024-04-22T23:15:50.817</td>
+					<td class=description>Ant Media Server is live streaming engine software. A local privilege escalation vulnerability in present in versions 2.6.0 through 2.8.2 allows any unprivileged operating system user account to escalate privileges to the root user account on the system. This vulnerability arises from Ant Media Server running with Java Management Extensions (JMX) enabled and authentication disabled on localhost on port 5599/TCP. This vulnerability is nearly identical to the local privilege escalation vulnerability CVE-2023-26269 identified in Apache James. Any unprivileged operating system user can connect to the JMX service running on port 5599/TCP on localhost and leverage the MLet Bean within JMX to load a remote MBean from an attacker-controlled server. This allows an attacker to execute arbitrary code within the Java process run by Ant Media Server and execute code within the context of the `antmedia` service account on the system. Version 2.9.0 contains a patch for the issue. As a workaround, one may remove certain parameters from the `antmedia.service` file.</td>
+				</tr>
+			
 		
 			
 		
