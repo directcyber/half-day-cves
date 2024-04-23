@@ -58,5 +58,11 @@
     "cvss": 2.7,
     "description": "A security issue was discovered in Kubernetes where users may be able to launch containers that bypass the mountable secrets policy enforced by the ServiceAccount admission plugin when using containers, init containers, and ephemeral containers with the envFrom field populated. The policy ensures pods running with a service account may only reference secrets specified in the service account\u2019s secrets field. Kubernetes clusters are only affected if the ServiceAccount admission plugin and the kubernetes.io/enforce-mountable-secrets annotation are used together with containers, init containers, and ephemeral containers with the envFrom field populated.\n\n",
     "published": "2024-04-22T23:15:51.180"
+  },
+  "CVE-2024-28890": {
+    "cvss": "-",
+    "description": "Forminator prior to 1.29.0 contains an unrestricted upload of file with dangerous type vulnerability. If this vulnerability is exploited, a remote attacker may obtain sensitive information by accessing files on the server, alter the site that uses the plugin, and cause a denial-of-service (DoS) condition. ",
+    "published": "2024-04-23T05:15:49.260",
+    "keywords": "remote,sensitive"
   }
 }
