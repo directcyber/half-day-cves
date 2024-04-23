@@ -82,5 +82,11 @@
     "cvss": "-",
     "description": "The network server of fceux 2.7.0 has a path traversal vulnerability, allowing attackers to overwrite any files on the server without authentication by fake ROM.",
     "published": "2024-04-23T16:15:07.353"
+  },
+  "CVE-2024-4064": {
+    "cvss": 8.8,
+    "description": "A vulnerability was found in Tenda AC8 16.03.34.09. It has been declared as critical. This vulnerability affects the function R7WebsSecurityHandler of the file /goform/execCommand. The manipulation of the argument password leads to stack-based buffer overflow. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-261790 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-04-23T20:15:07.997",
+    "keywords": "remote,command"
   }
 }
