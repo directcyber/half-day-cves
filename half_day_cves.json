@@ -100,5 +100,17 @@
     "description": "SQL Injection vulnerability in PHP Task Management System v.1.0 allows a remote attacker to escalate privileges and obtain sensitive information via the task_id parameter of the task-details.php, and edit-task.php component.",
     "published": "2024-04-24T04:15:18.820",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-32051": {
+    "cvss": "-",
+    "description": "Insertion of sensitive information into log file issue exists in RoamWiFi R10 prior to 4.8.45. If this vulnerability is exploited, a network-adjacent unauthenticated attacker with access to the device may obtain sensitive information.",
+    "published": "2024-04-24T06:15:14.040",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-33531": {
+    "url": "https://github.com/cdbattags/lua-resty-jwt/commit/d1558e2afefe868fea1e7e9a4b04ea94ab678a85",
+    "cvss": "-",
+    "description": "cdbattags lua-resty-jwt 0.2.3 allows attackers to bypass all JWT-parsing signature checks by crafting a JWT with an enc header with the value A256GCM.",
+    "published": "2024-04-24T06:15:14.210"
   }
 }
