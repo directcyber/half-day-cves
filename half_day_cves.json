@@ -166,5 +166,11 @@
     "description": "Iris is a web collaborative platform aiming to help incident responders sharing technical details during investigations. Due to an improper setup of Jinja2 environment, reports generation in `iris-web` is prone to a Server Side Template Injection (SSTI). Successful exploitation of the vulnerability can lead to an arbitrary Remote Code Execution. An authenticated administrator has to upload a crafted report template containing the payload. Upon generation of a report based on the weaponized report, any user can trigger the vulnerability.  The vulnerability is patched in IRIS v2.4.6. No workaround is available. It is recommended to update as soon as possible. Until patching, review the report templates and keep the administrative privileges that include the upload of report templates limited to dedicated users. \n",
     "published": "2024-04-25T17:15:48.813",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-2905": {
+    "cvss": 6.2,
+    "description": "A security vulnerability has been discovered within rpm-ostree, pertaining to the /etc/shadow file in default builds having the world-readable bit enabled. This issue arises from the default permissions being set at a higher level than recommended, potentially exposing sensitive authentication data to unauthorized access.",
+    "published": "2024-04-25T18:15:08.037",
+    "keywords": "authentication,sensitive"
   }
 }
