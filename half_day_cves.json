@@ -154,5 +154,11 @@
     "description": "In Brocade SANnav, before Brocade SANnav v2.3.0, syslog traffic received\n clear text. This could allow an unauthenticated, remote attacker to \ncapture sensitive information.\n\n",
     "published": "2024-04-25T06:16:01.427",
     "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2024-3733": {
+    "cvss": 5.3,
+    "description": "The Essential Addons for Elementor \u2013 Best Elementor Templates, Widgets, Kits & WooCommerce Builders plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 5.9.15 via the ajax_load_more() , eael_woo_pagination_product_ajax(), and ajax_eael_product_gallery() functions. This makes it possible for unauthenticated attackers to extract posts that may be in private or draft status.",
+    "published": "2024-04-25T09:15:08.237",
+    "keywords": "unauthenticated,sensitive"
   }
 }
