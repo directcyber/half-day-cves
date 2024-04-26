@@ -148,5 +148,11 @@
     "cvss": "-",
     "description": "angular-translate through 2.19.1 allows XSS via a crafted key that is used by the translate directive. NOTE: the vendor indicates that there is no documentation indicating that a key is supposed to be safe against XSS attacks.",
     "published": "2024-04-26T01:15:46.100"
+  },
+  "CVE-2024-31755": {
+    "url": "https://github.com/davegamble/cjson/issues/839",
+    "cvss": "-",
+    "description": "cJSON v1.7.17 was discovered to contain a segmentation violation, which can trigger through the second parameter of function cJSON_SetValuestring at cJSON.c.",
+    "published": "2024-04-26T03:15:06.690"
   }
 }
