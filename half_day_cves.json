@@ -202,5 +202,35 @@
     "cvss": "-",
     "description": "Jerryscript commit cefd391 was discovered to contain a segmentation violation via the component parser_parse_class at jerry-core/parser/js/js-parser-expr.c",
     "published": "2024-04-26T15:15:49.303"
+  },
+  "CVE-2024-32880": {
+    "cvss": 9.1,
+    "description": "pyload is an open-source Download Manager written in pure Python. An authenticated user can change the download folder and upload a crafted template to the specified folder lead to remote code execution. There is no fix available at the time of publication.",
+    "published": "2024-04-26T18:15:45.970",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-33342": {
+    "cvss": "-",
+    "description": "D-Link DIR-822+ V1.0.5 was found to contain a command injection in SetPlcNetworkpwd function of prog.cgi, which allows remote attackers to execute arbitrary commands via shell.",
+    "published": "2024-04-26T18:15:46.350",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-33343": {
+    "cvss": "-",
+    "description": "D-Link DIR-822+ V1.0.5 was found to contain a command injection in ChgSambaUserSettings function of prog.cgi, which allows remote attackers to execute arbitrary commands via shell.",
+    "published": "2024-04-26T18:15:46.413",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-33344": {
+    "cvss": "-",
+    "description": "D-Link DIR-822+ V1.0.5 was found to contain a command injection in ftext function of upload_firmware.cgi, which allows remote attackers to execute arbitrary commands via shell.",
+    "published": "2024-04-26T18:15:46.467",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-4235": {
+    "cvss": 2.7,
+    "description": "A vulnerability classified as problematic was found in Netgear DG834Gv5 1.6.01.34. This vulnerability affects unknown code of the component Web Management Interface. The manipulation leads to cleartext storage of sensitive information. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-262126 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-04-26T18:15:46.527",
+    "keywords": "remote,sensitive"
   }
 }
