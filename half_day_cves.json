@@ -172,5 +172,11 @@
     "description": "The Blog2Social: Social Media Auto Post & Scheduler plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 7.4.2. This makes it possible for unauthenticated attackers to view limited information from password protected posts.",
     "published": "2024-04-26T08:15:13.567",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-3962": {
+    "cvss": 9.8,
+    "description": "The Product Addons & Fields for WooCommerce plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the ppom_upload_file function in all versions up to, and including, 32.0.18. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible. Successful exploitation requires the PPOM Pro plugin to be installed along with a WooCommerce product that contains a file upload field to retrieve the correct nonce.",
+    "published": "2024-04-26T09:15:12.337",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
