@@ -1,10 +1,4 @@
 {
-  "CVE-2024-31755": {
-    "url": "https://github.com/davegamble/cjson/issues/839",
-    "cvss": "-",
-    "description": "cJSON v1.7.17 was discovered to contain a segmentation violation, which can trigger through the second parameter of function cJSON_SetValuestring at cJSON.c.",
-    "published": "2024-04-26T03:15:06.690"
-  },
   "CVE-2024-22632": {
     "cvss": "-",
     "description": "Setor Informatica Sistema Inteligente para Laboratorios (S.I.L.) 388 was discovered to contain a remote code execution (RCE) vulnerability via the hmsg parameter. This vulnerability is triggered via a crafted POST request.",
@@ -130,5 +124,11 @@
     "cvss": "-",
     "description": "In CARLA through 0.9.15.2, the collision sensor mishandles some situations involving pedestrians or bicycles, in part because the collision sensor function is not exposed to the Blueprint library.",
     "published": "2024-04-29T01:15:09.600"
+  },
+  "CVE-2024-4298": {
+    "cvss": 7.2,
+    "description": "The email search interface of HGiga iSherlock (including MailSherlock, SpamSherock, AuditSherlock) fails to filter special characters in certain function parameters, allowing remote attackers with administrative privileges to exploit this vulnerability for Command Injection attacks, enabling execution of arbitrary system commands.",
+    "published": "2024-04-29T03:15:09.810",
+    "keywords": "remote,execution,command"
   }
 }
