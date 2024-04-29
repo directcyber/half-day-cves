@@ -160,5 +160,41 @@
     "description": "ArmorX Android APP's multi-factor authentication (MFA) for the login function is not properly implemented. Remote attackers who obtain user credentials can bypass MFA, allowing them to successfully log into the APP.",
     "published": "2024-04-29T06:15:18.457",
     "keywords": "remote,authentication,bypass"
+  },
+  "CVE-2024-3191": {
+    "cvss": 9.8,
+    "description": "A vulnerability, which was classified as critical, has been found in MailCleaner up to 2023.03.14. This issue affects some unknown processing of the component Email Handler. The manipulation leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-262307.",
+    "published": "2024-04-29T07:15:07.080",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-3192": {
+    "url": "https://github.com/mailcleaner/mailcleaner/pull/601",
+    "cvss": 4.3,
+    "description": "A vulnerability, which was classified as problematic, was found in MailCleaner up to 2023.03.14. Affected is an unknown function of the component Admin Interface. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-262308.",
+    "published": "2024-04-29T07:15:07.480"
+  },
+  "CVE-2024-3193": {
+    "cvss": 8.8,
+    "description": "A vulnerability has been found in MailCleaner up to 2023.03.14 and classified as critical. Affected by this vulnerability is an unknown functionality of the component Admin Endpoints. The manipulation leads to os command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue. The identifier VDB-262309 was assigned to this vulnerability.",
+    "published": "2024-04-29T07:15:07.773",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-3194": {
+    "url": "https://github.com/mailcleaner/mailcleaner/pull/601",
+    "cvss": 4.3,
+    "description": "A vulnerability was found in MailCleaner up to 2023.03.14 and classified as problematic. Affected by this issue is some unknown functionality of the component Log File Endpoint. The manipulation leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue. VDB-262310 is the identifier assigned to this vulnerability.",
+    "published": "2024-04-29T07:15:08.070"
+  },
+  "CVE-2024-3195": {
+    "url": "https://github.com/mailcleaner/mailcleaner/pull/601",
+    "cvss": 4.7,
+    "description": "A vulnerability was found in MailCleaner up to 2023.03.14. It has been classified as critical. This affects an unknown part of the component Admin Endpoints. The manipulation leads to path traversal. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-262311.",
+    "published": "2024-04-29T07:15:08.400"
+  },
+  "CVE-2024-3196": {
+    "url": "https://github.com/mailcleaner/mailcleaner/pull/601",
+    "cvss": 6.7,
+    "description": "A vulnerability was found in MailCleaner up to 2023.03.14. It has been declared as critical. This vulnerability affects unknown code of the file /mailcleaner.php/getStats of the component SOAP Service. The manipulation leads to os command injection. Local access is required to approach this attack. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-262312.",
+    "published": "2024-04-29T07:15:08.740"
   }
 }
