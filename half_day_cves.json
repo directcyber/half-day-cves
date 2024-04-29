@@ -142,5 +142,23 @@
     "cvss": 6.7,
     "description": "A vulnerability was found in MailCleaner up to 2023.03.14. It has been declared as critical. This vulnerability affects the function getStats/Services_silentDump/Services_stopStartMTA/Config_saveDateTime/Config_hostid/Logs_StartGetStat/dumpConfiguration of the component SOAP Service. The manipulation leads to os command injection. Local access is required to approach this attack. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-262312.",
     "published": "2024-04-29T07:15:08.740"
+  },
+  "CVE-2024-33444": {
+    "url": "https://github.com/liu21st/onethink/issues/39",
+    "cvss": "-",
+    "description": "SQL injection vulnerability in onethink v.1.1 allows a remote attacker to escalate privileges via a crafted script to the ModelModel.class.php component.",
+    "published": "2024-04-29T17:15:19.357"
+  },
+  "CVE-2024-33445": {
+    "url": "https://github.com/hisiphp/hisiphp/issues/11",
+    "cvss": "-",
+    "description": "An issue in hisiphp v2.0.111 allows a remote attacker to execute arbitrary code via a crafted script to the SystemPlugins::mkInfo parameter in the SystemPlugins.php component.",
+    "published": "2024-04-29T17:15:19.410"
+  },
+  "CVE-2024-33449": {
+    "cvss": "-",
+    "description": "An SSRF issue in the PDFMyURL service allows a remote attacker to obtain sensitive information and execute arbitrary code via a POST request in the url parameter",
+    "published": "2024-04-29T17:15:19.470",
+    "keywords": "remote,sensitive"
   }
 }
