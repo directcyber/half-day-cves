@@ -1,10 +1,4 @@
 {
-  "CVE-2024-4237": {
-    "cvss": 8.8,
-    "description": "A vulnerability, which was classified as critical, was found in Tenda AX1806 1.0.0.1. Affected is the function R7WebsSecurityHandler of the file /goform/execCommand. The manipulation of the argument password leads to stack-based buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-262128. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2024-04-26T19:15:47.713",
-    "keywords": "remote,command"
-  },
   "CVE-2024-31741": {
     "url": "https://github.com/bg5sbk/minicms/issues/49",
     "cvss": "-",
@@ -166,5 +160,11 @@
     "cvss": "-",
     "description": "An issue in onethink v.1.1 allows a remote attacker to execute arbitrary code via a crafted script to the AddonsController.class.php component.",
     "published": "2024-04-29T18:15:08.100"
+  },
+  "CVE-2024-0840": {
+    "cvss": 8.8,
+    "description": "The Grandstream UCM Series IP PBX before firmware version 1.0.20.52 is affected by a parameter injection vulnerability in the HTTP interface. A remote and authenticated attacker can execute arbitrary code by sending a crafted HTTP request. Authentication may be possible using a default user and password. Affected models are the UCM6202, UCM6204, UCM6208, and UCM6510.\n",
+    "published": "2024-04-29T19:15:19.730",
+    "keywords": "remote,authentication"
   }
 }
