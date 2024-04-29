@@ -166,5 +166,17 @@
     "description": "The Grandstream UCM Series IP PBX before firmware version 1.0.20.52 is affected by a parameter injection vulnerability in the HTTP interface. A remote and authenticated attacker can execute arbitrary code by sending a crafted HTTP request. Authentication may be possible using a default user and password. Affected models are the UCM6202, UCM6204, UCM6208, and UCM6510.\n",
     "published": "2024-04-29T19:15:19.730",
     "keywords": "remote,authentication"
+  },
+  "CVE-2024-31801": {
+    "cvss": "-",
+    "description": "Directory Traversal vulnerability in NEXSYS-ONE before v.Rev.15320 allows a remote attacker to obtain sensitive information via a crafted request.",
+    "published": "2024-04-29T20:15:08.453",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-33276": {
+    "cvss": "-",
+    "description": "SQL Injection vulnerability in FME Modules preorderandnotication v.3.1.0 and before allows a remote attacker to run arbitrary SQL commands via the PreorderModel::getIdProductAttributesByIdAttributes() method.",
+    "published": "2024-04-29T20:15:08.753",
+    "keywords": "remote,command"
   }
 }
