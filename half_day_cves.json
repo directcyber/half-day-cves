@@ -1,28 +1,4 @@
 {
-  "CVE-2024-33255": {
-    "url": "https://github.com/jerryscript-project/jerryscript/issues/5135",
-    "cvss": "-",
-    "description": "Jerryscript commit cefd391 was discovered to contain an Assertion Failure via ECMA_STRING_IS_REF_EQUALS_TO_ONE (string_p) in ecma_free_string_list.",
-    "published": "2024-04-26T15:15:49.130"
-  },
-  "CVE-2024-33258": {
-    "url": "https://github.com/jerryscript-project/jerryscript/issues/5114",
-    "cvss": "-",
-    "description": "Jerryscript commit ff9ff8f was discovered to contain a segmentation violation via the component vm_loop at jerry-core/vm/vm.c.",
-    "published": "2024-04-26T15:15:49.180"
-  },
-  "CVE-2024-33259": {
-    "url": "https://github.com/jerryscript-project/jerryscript/issues/5132",
-    "cvss": "-",
-    "description": "Jerryscript commit cefd391 was discovered to contain a segmentation violation via the component scanner_seek at jerry-core/parser/js/js-scanner-util.c.",
-    "published": "2024-04-26T15:15:49.250"
-  },
-  "CVE-2024-33260": {
-    "url": "https://github.com/jerryscript-project/jerryscript/issues/5133",
-    "cvss": "-",
-    "description": "Jerryscript commit cefd391 was discovered to contain a segmentation violation via the component parser_parse_class at jerry-core/parser/js/js-parser-expr.c",
-    "published": "2024-04-26T15:15:49.303"
-  },
   "CVE-2024-32880": {
     "cvss": 9.1,
     "description": "pyload is an open-source Download Manager written in pure Python. An authenticated user can change the download folder and upload a crafted template to the specified folder lead to remote code execution. There is no fix available at the time of publication.",
