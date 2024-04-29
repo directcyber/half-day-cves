@@ -1,28 +1,4 @@
 {
-  "CVE-2024-0916": {
-    "cvss": 10.0,
-    "description": "Unauthenticated\u00a0file upload allows remote code execution.\nThis issue affects UvDesk Community: from 1.0.0 through 1.1.3.\n\n",
-    "published": "2024-04-25T23:15:46.863",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-32651": {
-    "cvss": 10.0,
-    "description": "changedetection.io is an open source web page change detection, website watcher, restock monitor and notification service. There is a Server Side Template Injection (SSTI) in Jinja2 that allows Remote Command Execution on the server host. Attackers can run any system command without any restriction and they could use a reverse shell. The impact is critical as the attacker can completely takeover the server machine. This can be reduced if changedetection is behind a login page, but this isn't required by the application (not by default and not enforced).",
-    "published": "2024-04-26T00:15:08.550",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-33663": {
-    "url": "https://github.com/mpdavis/python-jose/issues/346",
-    "cvss": "-",
-    "description": "python-jose through 3.3.0 has algorithm confusion with OpenSSH ECDSA keys and other key formats. This is similar to CVE-2022-29217.",
-    "published": "2024-04-26T00:15:09.010"
-  },
-  "CVE-2024-33664": {
-    "url": "https://github.com/mpdavis/python-jose/pull/345",
-    "cvss": "-",
-    "description": "python-jose through 3.3.0 allows attackers to cause a denial of service (resource consumption) during a decode via a crafted JSON Web Encryption (JWE) token with a high compression ratio, aka a \"JWT bomb.\" This is similar to CVE-2024-21319.",
-    "published": "2024-04-26T00:15:09.060"
-  },
   "CVE-2024-33665": {
     "url": "https://github.com/angular-translate/angular-translate/issues/1418#issuecomment-252498855",
     "cvss": "-",
@@ -148,5 +124,11 @@
     "description": "A vulnerability, which was classified as critical, has been found in Ruijie RG-UAC up to 20240419. This issue affects some unknown processing of the file /view/network Config/GRE/gre_edit_commit.php. The manipulation of the argument name leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-262145 was assigned to this vulnerability.",
     "published": "2024-04-27T15:15:06.437",
     "keywords": "remote,command"
+  },
+  "CVE-2024-33891": {
+    "cvss": 8.8,
+    "description": "Delinea Secret Server before 11.7.000001 allows attackers to bypass authentication via the SOAP API in SecretServer/webservices/SSWebService.asmx. This is related to a hardcoded key, the use of the integer 2 for the Admin user, and removal of the oauthExpirationId attribute.",
+    "published": "2024-04-28T23:15:07.200",
+    "keywords": "authentication,bypass"
   }
 }

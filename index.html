@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-04-28T23:08:29.752317
+Updated at UTC 2024-04-29T00:40:49.642274
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-04-28T23:08:29.752317
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -170,36 +172,18 @@ Updated at UTC 2024-04-28T23:08:29.752317
 				</tr>
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-33664">CVE-2024-33664</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/mpdavis/python-jose/pull/345">https://github.com/mpdavis/python-jose/pull/345</a></td>
-					<td class=date>2024-04-26T00:15:09.060</td>
-					<td class=description>python-jose through 3.3.0 allows attackers to cause a denial of service (resource consumption) during a decode via a crafted JSON Web Encryption (JWE) token with a high compression ratio, aka a "JWT bomb." This is similar to CVE-2024-21319.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-33663">CVE-2024-33663</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/mpdavis/python-jose/issues/346">https://github.com/mpdavis/python-jose/issues/346</a></td>
-					<td class=date>2024-04-26T00:15:09.010</td>
-					<td class=description>python-jose through 3.3.0 has algorithm confusion with OpenSSH ECDSA keys and other key formats. This is similar to CVE-2022-29217.</td>
-
-
-				</tr>
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-33891">CVE-2024-33891</a></td>
+					<td>8.8</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-04-28T23:15:07.200</td>
+					<td class=description>Delinea Secret Server before 11.7.000001 allows attackers to bypass authentication via the SOAP API in SecretServer/webservices/SSWebService.asmx. This is related to a hardcoded key, the use of the integer 2 for the Admin user, and removal of the oauthExpirationId attribute.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -362,33 +346,6 @@ The fixed version is included in Eclipse IDE 2024-03
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-32651">CVE-2024-32651</a></td>
-					<td>10.0</td>
-					<td>remote,execution,command</td>
-					<td class=date>2024-04-26T00:15:08.550</td>
-					<td class=description>changedetection.io is an open source web page change detection, website watcher, restock monitor and notification service. There is a Server Side Template Injection (SSTI) in Jinja2 that allows Remote Command Execution on the server host. Attackers can run any system command without any restriction and they could use a reverse shell. The impact is critical as the attacker can completely takeover the server machine. This can be reduced if changedetection is behind a login page, but this isn't required by the application (not by default and not enforced).</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-0916">CVE-2024-0916</a></td>
-					<td>10.0</td>
-					<td>remote,execution,unauthenticated</td>
-					<td class=date>2024-04-25T23:15:46.863</td>
-					<td class=description>Unauthenticated file upload allows remote code execution.
-This issue affects UvDesk Community: from 1.0.0 through 1.1.3.
-
-</td>
-				</tr>
 			
 		
 
