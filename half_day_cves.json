@@ -1,10 +1,4 @@
 {
-  "CVE-2024-33665": {
-    "url": "https://github.com/angular-translate/angular-translate/issues/1418#issuecomment-252498855",
-    "cvss": "-",
-    "description": "angular-translate through 2.19.1 allows XSS via a crafted key that is used by the translate directive. NOTE: the vendor indicates that there is no documentation indicating that a key is supposed to be safe against XSS attacks.",
-    "published": "2024-04-26T01:15:46.100"
-  },
   "CVE-2024-31755": {
     "url": "https://github.com/davegamble/cjson/issues/839",
     "cvss": "-",
@@ -130,5 +124,11 @@
     "description": "Delinea Secret Server before 11.7.000001 allows attackers to bypass authentication via the SOAP API in SecretServer/webservices/SSWebService.asmx. This is related to a hardcoded key, the use of the integer 2 for the Admin user, and removal of the oauthExpirationId attribute.",
     "published": "2024-04-28T23:15:07.200",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-33903": {
+    "url": "https://github.com/carla-simulator/carla/pull/7445",
+    "cvss": "-",
+    "description": "In CARLA through 0.9.15.2, the collision sensor mishandles some situations involving pedestrians or bicycles, in part because the collision sensor function is not exposed to the Blueprint library.",
+    "published": "2024-04-29T01:15:09.600"
   }
 }
