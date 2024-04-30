@@ -1,10 +1,4 @@
 {
-  "CVE-2024-4255": {
-    "cvss": 4.7,
-    "description": "A vulnerability, which was classified as critical, has been found in Ruijie RG-UAC up to 20240419. This issue affects some unknown processing of the file /view/network Config/GRE/gre_edit_commit.php. The manipulation of the argument name leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-262145 was assigned to this vulnerability.",
-    "published": "2024-04-27T15:15:06.437",
-    "keywords": "remote,command"
-  },
   "CVE-2024-33891": {
     "cvss": 8.8,
     "description": "Delinea Secret Server before 11.7.000001 allows attackers to bypass authentication via the SOAP API in SecretServer/webservices/SSWebService.asmx. This is related to a hardcoded key, the use of the integer 2 for the Admin user, and removal of the oauthExpirationId attribute.",
@@ -190,5 +184,23 @@
     "description": "The Customer Email Verification for WooCommerce plugin for WordPress is vulnerable to Email Verification and Authentication Bypass in all versions up to, and including, 2.7.4 via the use of insufficiently random activation code. This makes it possible for unauthenticated attackers to bypass the email verification, and if both the \"Login the user automatically after the account is verified\" and \"Verify account for current users\" options are checked, then it potentially makes it possible for attackers to bypass authentication for other users.",
     "published": "2024-04-30T09:15:07.463",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-33270": {
+    "cvss": "-",
+    "description": "An issue in FME Modules fileuploads v.2.0.3 and before and fixed in v2.0.4 allows a remote attacker to obtain sensitive information via the uploadfiles.php component.",
+    "published": "2024-04-30T15:15:53.020",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-33274": {
+    "cvss": "-",
+    "description": "Directory Traversal vulnerability in FME Modules customfields v.2.2.7 and before allows a remote attacker to obtain sensitive information via the Custom Checkout Fields, Add Custom Fields to Checkout parameter of the ajax.php",
+    "published": "2024-04-30T15:15:53.130",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-33309": {
+    "cvss": "-",
+    "description": "An issue in TVS Motor Company Limited TVS Connet Android v.4.5.1 and iOS v.5.0.0 allows a remote attacker to obtain sensitive information via an insecure API endpoint",
+    "published": "2024-04-30T15:15:53.293",
+    "keywords": "remote,sensitive"
   }
 }
