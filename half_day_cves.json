@@ -250,5 +250,29 @@
     "cvss": "-",
     "description": "In FRRouting (FRR) through 9.1, it is possible for the get_edge() function in ospf_te.c in the OSPF daemon to return a NULL pointer. In cases where calling functions do not handle the returned NULL value, the OSPF daemon crashes, leading to denial of service.",
     "published": "2024-04-30T19:15:23.307"
+  },
+  "CVE-2024-29384": {
+    "cvss": "-",
+    "description": "An issue in CSS Exfil Protection v.1.1.0 allows a remote attacker to obtain sensitive information via the content.js and parseCSSRules functions.",
+    "published": "2024-04-30T20:15:07.993",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-33383": {
+    "cvss": "-",
+    "description": "Arbitrary File Read vulnerability in novel-plus 4.3.0 and before allows a remote attacker to obtain sensitive information via a crafted GET request using the filePath parameter.",
+    "published": "2024-04-30T20:15:08.580",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-33436": {
+    "cvss": "-",
+    "description": "An issue in CSS Exfil Protection v.1.1.0 allows a remote attacker to obtain sensitive information due to missing support for CSS variables",
+    "published": "2024-04-30T20:15:08.630",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-33437": {
+    "cvss": "-",
+    "description": "An issue in CSS Exfil Protection v.1.1.0 allows a remote attacker to obtain sensitive information due to missing support for CSS Style Rules.",
+    "published": "2024-04-30T20:15:08.680",
+    "keywords": "remote,sensitive"
   }
 }
