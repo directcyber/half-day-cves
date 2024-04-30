@@ -184,5 +184,11 @@
     "cvss": "-",
     "description": "DMitry (Deepmagic Information Gathering Tool) 1.3a has a format-string vulnerability, with a threat model similar to CVE-2017-7938.",
     "published": "2024-04-30T07:15:48.993"
+  },
+  "CVE-2024-4185": {
+    "cvss": 8.1,
+    "description": "The Customer Email Verification for WooCommerce plugin for WordPress is vulnerable to Email Verification and Authentication Bypass in all versions up to, and including, 2.7.4 via the use of insufficiently random activation code. This makes it possible for unauthenticated attackers to bypass the email verification, and if both the \"Login the user automatically after the account is verified\" and \"Verify account for current users\" options are checked, then it potentially makes it possible for attackers to bypass authentication for other users.",
+    "published": "2024-04-30T09:15:07.463",
+    "keywords": "unauthenticated,authentication,bypass"
   }
 }
