@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-04-30T19:07:22.901928
+Updated at UTC 2024-04-30T20:09:30.609725
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,22 @@ Updated at UTC 2024-04-30T19:07:22.901928
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-34088">CVE-2024-34088</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/frrouting/frr/pull/15674/commits/34d704fb0ea60dc5063af477a2c11d4884984d4f">https://github.com/frrouting/frr/pull/15674/commits/34d704fb0ea60dc5063af477a2c11d4884984d4f</a></td>
+					<td class=date>2024-04-30T19:15:23.307</td>
+					<td class=description>In FRRouting (FRR) through 9.1, it is possible for the get_edge() function in ospf_te.c in the OSPF daemon to return a NULL pointer. In cases where calling functions do not handle the returned NULL value, the OSPF daemon crashes, leading to denial of service.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
 		
 			
 				<tr>
@@ -338,6 +354,28 @@ Updated at UTC 2024-04-30T19:07:22.901928
 		
 
 		<hr>
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28269">CVE-2024-28269</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2024-04-30T19:15:23.257</td>
+					<td class=description>ReCrystallize Server 5.10.0.0 allows administrators to upload files to the server. The file upload is not restricted, leading to the ability to upload of malicious files. This could result in a Remote Code Execution.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-26331">CVE-2024-26331</a></td>
+					<td>-</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-04-30T19:15:23.200</td>
+					<td class=description>ReCrystallize Server 5.10.0.0 uses a authorization mechanism that relies on the value of a cookie, but it does not bind the cookie value to a session ID. Attackers can easily modify the cookie value, within a browser or by implementing client-side code outside of a browser. Attackers can bypass the authentication mechanism by modifying the cookie to contain an expected value.</td>
+				</tr>
+			
 		
 			
 		
