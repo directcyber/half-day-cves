@@ -274,5 +274,11 @@
     "description": "An issue in CSS Exfil Protection v.1.1.0 allows a remote attacker to obtain sensitive information due to missing support for CSS Style Rules.",
     "published": "2024-04-30T20:15:08.680",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-34149": {
+    "url": "https://github.com/bitcoin/bitcoin/pull/29769",
+    "cvss": "-",
+    "description": "In Bitcoin Core through 27.0 and Bitcoin Knots before 25.1.knots20231115, tapscript lacks a policy size limit check, a different issue than CVE-2023-50428. NOTE: some parties oppose this new limit check (for example, because they agree with the objective but disagree with the technical mechanism, or because they have a different objective).",
+    "published": "2024-04-30T23:15:06.703"
   }
 }
