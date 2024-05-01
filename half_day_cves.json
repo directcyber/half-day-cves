@@ -370,5 +370,59 @@
     "description": "Tencent Libpag v4.3 is vulnerable to Buffer Overflow. A user can send a crafted image to trigger a overflow leading to remote code execution.",
     "published": "2024-05-01T18:15:24.283",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-24312": {
+    "cvss": "-",
+    "description": "SQL injection vulnerability in Vaales Technologies V_QRS v.2024-01-17 allows a remote attacker to obtain sensitive information via the Models/UserModel.php component.",
+    "published": "2024-05-01T19:15:22.087",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-24313": {
+    "cvss": "-",
+    "description": "An issue in Vaales Technologies V_QRS v.2024-01-17 allows a remote attacker to obtain sensitive information via the Models/FormModel.php and QRModel.php component.",
+    "published": "2024-05-01T19:15:22.140",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-25458": {
+    "cvss": "-",
+    "description": "An issue in CYCZCAM, SHIX ZHAO, SHIXCAM A9 Camera (circuit board identifier A9-48B-V1.0) firmware v.CYCAM_48B_BC01_v87_0903 allows a remote attacker to obtain sensitive information via a crafted request to a UDP port.",
+    "published": "2024-05-01T19:15:22.333",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-29011": {
+    "cvss": 7.5,
+    "description": "Use of hard-coded password in the GMS ECM endpoint leading to authentication bypass vulnerability.\n\nThis issue affects GMS: 9.3.4 and earlier versions.\n",
+    "published": "2024-05-01T19:15:22.627",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-33292": {
+    "cvss": "-",
+    "description": "SQL Injection vulnerability in Realisation MGSD v.1.0 allows a remote attacker to obtain sensitive information via the id parameter.",
+    "published": "2024-05-01T19:15:26.857",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-33428": {
+    "url": "https://github.com/stsaz/phiola/issues/29",
+    "cvss": "-",
+    "description": "Buffer-Overflow vulnerability at conv.c:68 of stsaz phiola v2.0-rc22 allows a remote attacker to execute arbitrary code via the a crafted .wav file.",
+    "published": "2024-05-01T19:15:27.120"
+  },
+  "CVE-2024-33429": {
+    "url": "https://github.com/stsaz/phiola/issues/30",
+    "cvss": "-",
+    "description": "Buffer-Overflow vulnerability at pcm_convert.h:513 of phiola v2.0-rc22 allows a remote attacker to execute arbitrary code via a crafted .wav file.",
+    "published": "2024-05-01T19:15:27.170"
+  },
+  "CVE-2024-33430": {
+    "url": "https://github.com/stsaz/phiola/issues/28",
+    "cvss": "-",
+    "description": "An issue in phiola/src/afilter/pcm_convert.h:513 of phiola v2.0-rc22 allows a remote attacker to execute arbitrary code via the a crafted .wav file.",
+    "published": "2024-05-01T19:15:27.223"
+  },
+  "CVE-2024-33431": {
+    "url": "https://github.com/stsaz/phiola/issues/27",
+    "cvss": "-",
+    "description": "An issue in phiola/src/afilter/conv.c:115 of phiola v2.0-rc22 allows a remote attacker to cause a denial of service via a crafted .wav file.",
+    "published": "2024-05-01T19:15:27.283"
   }
 }
