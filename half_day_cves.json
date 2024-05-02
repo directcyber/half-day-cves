@@ -334,5 +334,17 @@
     "cvss": "-",
     "description": "URL GET parameter \"logtime\" utilized within the \"downloadlog\" function from \"cbpi/http_endpoints/http_system.py\" is subsequently passed to the \"os.system\" function in \"cbpi/controller/system_controller.py\" without prior validation allowing to execute arbitrary code.This issue affects CraftBeerPi 4: from 4.0.0.58 (commit 563fae9) before 4.4.1.a1 (commit 57572c7).\n\n",
     "published": "2024-05-02T10:15:08.630"
+  },
+  "CVE-2024-4405": {
+    "cvss": 8.8,
+    "description": "Xiaomi Pro 13 mimarket manual-upgrade Cross-Site Scripting Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Xiaomi Pro 13 smartphones. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the manual-upgrade.html file. When parsing the manualUpgradeInfo parameter, the process does not properly sanitize user-supplied data, which can lead to the injection of an arbitrary script. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-22379.",
+    "published": "2024-05-02T15:15:07.427",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-4406": {
+    "cvss": 8.8,
+    "description": "Xiaomi Pro 13 GetApps integral-dialog-page Cross-Site Scripting Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Xiaomi Pro 13 smartphones. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the integral-dialog-page.html file. When parsing the integralInfo parameter, the process does not properly sanitize user-supplied data, which can lead to the injection of an arbitrary script. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-22332.",
+    "published": "2024-05-02T15:15:07.670",
+    "keywords": "remote,execution"
   }
 }
