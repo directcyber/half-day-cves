@@ -1,40 +1,4 @@
 {
-  "CVE-2024-31820": {
-    "url": "https://github.com/kirilkirkov/ecommerce-codeigniter-bootstrap/commit/d22b54e8915f167a135046ceb857caaf8479c4da",
-    "cvss": "-",
-    "description": "An issue in Ecommerce-CodeIgniter-Bootstrap commit v. d22b54e8915f167a135046ceb857caaf8479c4da allows a remote attacker to execute arbitrary code via the getLangFolderForEdit method of the Languages.php component.",
-    "published": "2024-04-29T18:15:07.683"
-  },
-  "CVE-2024-31821": {
-    "url": "https://github.com/kirilkirkov/ecommerce-codeigniter-bootstrap/commit/d22b54e8915f167a135046ceb857caaf8479c4da",
-    "cvss": "-",
-    "description": "SQL Injection vulnerability in Ecommerce-CodeIgniter-Bootstrap commit v. d22b54e8915f167a135046ceb857caaf8479c4da allows a remote attacker to execute arbitrary code via the manageQuantitiesAndProcurement method of the Orders_model.php component.",
-    "published": "2024-04-29T18:15:07.747"
-  },
-  "CVE-2024-31822": {
-    "url": "https://github.com/kirilkirkov/ecommerce-codeigniter-bootstrap/commit/d22b54e8915f167a135046ceb857caaf8479c4da",
-    "cvss": "-",
-    "description": "An issue in Ecommerce-CodeIgniter-Bootstrap commit v. d22b54e8915f167a135046ceb857caaf8479c4da allows a remote attacker to execute arbitrary code via the saveLanguageFiles method of the Languages.php component.",
-    "published": "2024-04-29T18:15:07.817"
-  },
-  "CVE-2024-31823": {
-    "url": "https://github.com/kirilkirkov/ecommerce-codeigniter-bootstrap/commit/d22b54e8915f167a135046ceb857caaf8479c4da",
-    "cvss": "-",
-    "description": "An issue in Ecommerce-CodeIgniter-Bootstrap commit v. d22b54e8915f167a135046ceb857caaf8479c4da allows a remote attacker to execute arbitrary code via the removeSecondaryImage method of the Publish.php component.",
-    "published": "2024-04-29T18:15:07.880"
-  },
-  "CVE-2024-33338": {
-    "cvss": "-",
-    "description": "Cross Site Scripting vulnerability in jizhicms v.2.5.4 allows a remote attacker to obtain sensitive information via a crafted article publication request.",
-    "published": "2024-04-29T18:15:07.937",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-33443": {
-    "url": "https://github.com/liu21st/onethink/issues/40",
-    "cvss": "-",
-    "description": "An issue in onethink v.1.1 allows a remote attacker to execute arbitrary code via a crafted script to the AddonsController.class.php component.",
-    "published": "2024-04-29T18:15:08.100"
-  },
   "CVE-2024-0840": {
     "cvss": 8.8,
     "description": "The Grandstream UCM Series IP PBX before firmware version 1.0.20.52 is affected by a parameter injection vulnerability in the HTTP interface. A remote and authenticated attacker can execute arbitrary code by sending a crafted HTTP request. Authentication may be possible using a default user and password. Affected models are the UCM6202, UCM6204, UCM6208, and UCM6510.\n",
@@ -442,5 +406,17 @@
     "description": "The All-in-One Video Gallery plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the aiovg_create_attachment_from_external_image_url function in all versions up to, and including, 3.6.4. This makes it possible for authenticated attackers, with contributor access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
     "published": "2024-05-02T17:15:33.740",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-4215": {
+    "cvss": 7.4,
+    "description": "pgAdmin <= 8.5 is affected by a multi-factor authentication bypass vulnerability. This vulnerability allows an attacker with knowledge of a legitimate account\u2019s username and password may authenticate to the application and perform sensitive actions within the application, such as managing files and executing SQL queries, regardless of the account\u2019s MFA enrollment status.\n",
+    "published": "2024-05-02T18:15:07.593",
+    "keywords": "authentication,sensitive,bypass"
+  },
+  "CVE-2024-4216": {
+    "url": "https://github.com/pgadmin-org/pgadmin4/issues/7282",
+    "cvss": 7.4,
+    "description": "pgAdmin <= 8.5 is affected by XSS vulnerability in /settings/store API response json payload. This vulnerability allows attackers to execute malicious script at the client end.\n",
+    "published": "2024-05-02T18:15:07.757"
   }
 }
