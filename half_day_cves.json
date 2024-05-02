@@ -1,22 +1,4 @@
 {
-  "CVE-2024-4299": {
-    "cvss": 7.2,
-    "description": "The system configuration interface of HGiga iSherlock (including MailSherlock, SpamSherock, AuditSherlock) fails to filter special characters in certain function parameters, allowing remote attackers with administrative privileges to exploit this vulnerability for Command Injection attacks, enabling execution of arbitrary system commands.",
-    "published": "2024-04-29T04:15:08.623",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-4300": {
-    "cvss": 9.8,
-    "description": "E-WEBInformationCo. FS-EZViewer(Web) exposes sensitive information in the service. A remote attacker can obtain the database configuration file path through the webpage source code without login. Accessing this path allows attacker to obtain the database credential with the highest privilege and database host IP address. With this information, attackers can connect to the database and perform actions such as adding, modifying, or deleting database contents.",
-    "published": "2024-04-29T04:15:08.887",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-4301": {
-    "cvss": 8.8,
-    "description": "N-Reporter and N-Cloud, products of the N-Partner, have an OS Command Injection vulnerability. Remote attackers with normal user privilege can execute arbitrary system commands by manipulating user inputs on a specific page.",
-    "published": "2024-04-29T04:15:09.110",
-    "keywords": "remote,command"
-  },
   "CVE-2024-33904": {
     "url": "https://github.com/hyprwm/hyprland/commit/28c85619243e6320e75d7abcfe8244fa99d054dd",
     "cvss": "-",
