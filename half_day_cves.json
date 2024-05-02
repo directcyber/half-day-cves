@@ -1,10 +1,4 @@
 {
-  "CVE-2024-33350": {
-    "cvss": "-",
-    "description": "Directory Traversal vulnerability in TaoCMS v.3.0.2 allows a remote attacker to execute arbitrary code and obtain sensitive information via the include/model/file.php component.",
-    "published": "2024-04-29T21:15:47.960",
-    "keywords": "remote,sensitive"
-  },
   "CVE-2024-31837": {
     "url": "https://github.com/jaygreig86/dmitry/pull/12",
     "cvss": "-",
@@ -412,5 +406,11 @@
     "description": "libxmljs is vulnerable to a type confusion vulnerability when parsing a specially crafted XML while invoking the namespaces() function (which invokes _wrap__xmlNode_nsDef_get()) on a grand-child of a node that refers to an entity. This vulnerability can lead to denial of service and remote code execution.",
     "published": "2024-05-02T19:15:06.333",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-30302": {
+    "cvss": 5.5,
+    "description": "Acrobat Reader versions 20.005.30539, 23.008.20470 and earlier are affected by a Use After Free vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-05-02T21:16:11.747",
+    "keywords": "sensitive,bypass"
   }
 }
