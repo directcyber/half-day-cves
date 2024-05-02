@@ -1,10 +1,4 @@
 {
-  "CVE-2024-0840": {
-    "cvss": 8.8,
-    "description": "The Grandstream UCM Series IP PBX before firmware version 1.0.20.52 is affected by a parameter injection vulnerability in the HTTP interface. A remote and authenticated attacker can execute arbitrary code by sending a crafted HTTP request. Authentication may be possible using a default user and password. Affected models are the UCM6202, UCM6204, UCM6208, and UCM6510.\n",
-    "published": "2024-04-29T19:15:19.730",
-    "keywords": "remote,authentication"
-  },
   "CVE-2024-31801": {
     "cvss": "-",
     "description": "Directory Traversal vulnerability in NEXSYS-ONE before v.Rev.15320 allows a remote attacker to obtain sensitive information via a crafted request.",
@@ -418,5 +412,17 @@
     "cvss": 7.4,
     "description": "pgAdmin <= 8.5 is affected by XSS vulnerability in /settings/store API response json payload. This vulnerability allows attackers to execute malicious script at the client end.\n",
     "published": "2024-05-02T18:15:07.757"
+  },
+  "CVE-2024-34391": {
+    "cvss": 8.1,
+    "description": "libxmljs is vulnerable to a type confusion vulnerability when parsing a specially crafted XML while invoking a function on the result of attrs() that was called on a parsed node. This vulnerability might lead to denial of service (on both 32-bit systems and 64-bit systems), data leak, infinite loop and remote code execution (on 32-bit systems with the XML_PARSE_HUGE flag enabled).\n\n",
+    "published": "2024-05-02T19:15:06.177",
+    "keywords": "remote,execution,leak"
+  },
+  "CVE-2024-34392": {
+    "cvss": 8.1,
+    "description": "libxmljs is vulnerable to a type confusion vulnerability when parsing a specially crafted XML while invoking the namespaces() function (which invokes _wrap__xmlNode_nsDef_get()) on a grand-child of a node that refers to an entity. This vulnerability can lead to denial of service and remote code execution.",
+    "published": "2024-05-02T19:15:06.333",
+    "keywords": "remote,execution"
   }
 }
