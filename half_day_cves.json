@@ -1,22 +1,4 @@
 {
-  "CVE-2024-33444": {
-    "url": "https://github.com/liu21st/onethink/issues/39",
-    "cvss": "-",
-    "description": "SQL injection vulnerability in onethink v.1.1 allows a remote attacker to escalate privileges via a crafted script to the ModelModel.class.php component.",
-    "published": "2024-04-29T17:15:19.357"
-  },
-  "CVE-2024-33445": {
-    "url": "https://github.com/hisiphp/hisiphp/issues/11",
-    "cvss": "-",
-    "description": "An issue in hisiphp v2.0.111 allows a remote attacker to execute arbitrary code via a crafted script to the SystemPlugins::mkInfo parameter in the SystemPlugins.php component.",
-    "published": "2024-04-29T17:15:19.410"
-  },
-  "CVE-2024-33449": {
-    "cvss": "-",
-    "description": "An SSRF issue in the PDFMyURL service allows a remote attacker to obtain sensitive information and execute arbitrary code via a POST request in the url parameter",
-    "published": "2024-04-29T17:15:19.470",
-    "keywords": "remote,sensitive"
-  },
   "CVE-2024-31820": {
     "url": "https://github.com/kirilkirkov/ecommerce-codeigniter-bootstrap/commit/d22b54e8915f167a135046ceb857caaf8479c4da",
     "cvss": "-",
@@ -358,5 +340,107 @@
     "description": "A vulnerability on Mitel 6800 Series and 6900 Series SIP Phones, including 6970 Conference Unit, through 6.3 SP3 HF4 allows an authenticated attacker with administrative privilege to conduct an argument injection attack due to insufficient parameter sanitization. A successful exploit could allow an attacker to access sensitive information, modify the system configuration, or execute arbitrary commands.",
     "published": "2024-05-02T16:15:08.020",
     "keywords": "command,sensitive"
+  },
+  "CVE-2024-0615": {
+    "cvss": 5.3,
+    "description": "The Content Control \u2013 The Ultimate Content Restriction Plugin! Restrict Content, Create Conditional Blocks & More plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.1.0 via the API. This makes it possible for unauthenticated attackers to extract post titles, IDs, slugs, statuses and other information including post content. This includes published content only.",
+    "published": "2024-05-02T17:15:09.360",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-1567": {
+    "cvss": 8.2,
+    "description": "The Royal Elementor Addons and Templates plugin for WordPress is vulnerable to limited file uploads due to missing file type validation in the 'file_validity' function in all versions up to, and including, 1.3.94. This makes it possible for unauthenticated attackers to upload dangerous file types such as .svgz on the affected site's server which may make cross-site scripting or remote code execution possible.",
+    "published": "2024-05-02T17:15:11.603",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-1584": {
+    "cvss": 5.3,
+    "description": "The Analytify \u2013 Google Analytics Dashboard For WordPress (GA4 analytics made easy) plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'wpa_check_authentication' function in all versions up to, and including, 5.2.1. This makes it possible for unauthenticated attackers to modify the site's Google Analytics tracking ID.",
+    "published": "2024-05-02T17:15:11.960",
+    "keywords": "unauthenticated,authentication"
+  },
+  "CVE-2024-1678": {
+    "cvss": 5.3,
+    "description": "The Subway \u2013 Private Site Option plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.1.4 via the REST API. This makes it possible for unauthenticated attackers to bypass the plugin's private site feature and view restricted page and post content.",
+    "published": "2024-05-02T17:15:12.300",
+    "keywords": "unauthenticated,sensitive,bypass"
+  },
+  "CVE-2024-1809": {
+    "cvss": 5.4,
+    "description": "The Analytify \u2013 Google Analytics Dashboard For WordPress (GA4 analytics made easy) plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on AJAX functions in combination with nonce leakage in all versions up to, and including, 5.2.3. This makes it possible for authenticated attackers, with subscriber access and higher, to obtain certain sensitive information related to plugin settings.",
+    "published": "2024-05-02T17:15:13.500",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2024-2109": {
+    "cvss": 5.3,
+    "description": "The Booster Extension plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.2.0 via the 'booster_extension_authorbox_shortcode_display' function. This makes it possible for unauthenticated attackers to extract sensitive data including user emails",
+    "published": "2024-05-02T17:15:15.880",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-2876": {
+    "cvss": 9.8,
+    "description": "The Email Subscribers by Icegram Express \u2013 Email Marketing, Newsletters, Automation for WordPress & WooCommerce plugin for WordPress is vulnerable to SQL Injection via the 'run' function of the 'IG_ES_Subscribers_Query' class in all versions up to, and including, 5.7.14 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2024-05-02T17:15:20.463",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-3312": {
+    "cvss": 5.3,
+    "description": "The Easy Custom Auto Excerpt plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.4.12. This makes it possible for unauthenticated attackers to obtain excerpts of password-protected posts.",
+    "published": "2024-05-02T17:15:24.690",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-3499": {
+    "cvss": 8.8,
+    "description": "The ElementsKit Elementor addons plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 3.1.0 via the generate_navigation_markup function of the Onepage Scroll module. This makes it possible for authenticated attackers, with contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
+    "published": "2024-05-02T17:15:25.940",
+    "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2024-3500": {
+    "cvss": 8.8,
+    "description": "The ElementsKit Pro plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 3.6.0 via the Price Menu, Hotspot, and Advanced Toggle widgets. This makes it possible for authenticated attackers, with contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
+    "published": "2024-05-02T17:15:26.100",
+    "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2024-3717": {
+    "cvss": 5.3,
+    "description": "The Drag and Drop Multiple File Upload \u2013 Contact Form 7 plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.3.7.7 via the '/wp-content/uploads/wp_dndcf7_uploads/wpcf7-files' directory. This makes it possible for unauthenticated attackers to extract sensitive data uploaded via this plugin through a form.",
+    "published": "2024-05-02T17:15:29.987",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-3729": {
+    "cvss": 9.8,
+    "description": "The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to improper missing encryption exception handling  on the 'fea_encrypt' function in all versions up to, and including, 3.19.4. This makes it possible for unauthenticated attackers to manipulate the user processing forms, which can be used to add and edit administrator user for privilege escalation, or to automatically log in users for authentication bypass, or manipulate the post processing form that can be used to inject arbitrary web scripts. This can only be exploited if the 'openssl' php extension is not loaded on the server.",
+    "published": "2024-05-02T17:15:30.730",
+    "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-3734": {
+    "cvss": 6.5,
+    "description": "The FOX \u2013 Currency Switcher Professional for WooCommerce plugin is vulnerable to Unauthenticated Arbitrary Shortcode Execution in versions up to, and including, 1.4.1.8. This allows unauthenticated attackers to execute arbitrary shortcodes. The severity and exploitability depends on what other plugins are installed and what shortcode functionality they provide.",
+    "published": "2024-05-02T17:15:30.900",
+    "keywords": "execution,unauthenticated"
+  },
+  "CVE-2024-3849": {
+    "cvss": 8.8,
+    "description": "The Click to Chat \u2013 HoliThemes plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 3.35. This makes it possible for authenticated attackers, with contributor access or above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
+    "published": "2024-05-02T17:15:31.563",
+    "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2024-3870": {
+    "cvss": 5.3,
+    "description": "The Contact Form 7 Database Addon \u2013 CFDB7 plugin for WordPress is vulnerable to Sensitive Information Exposure in versions up to, and including, 1.2.6.8 via the cfdb7_before_send_mail function. This can allow unauthenticated attackers to extract sensitive data, such as Personally Identifiable Information, from files uploaded by users.",
+    "published": "2024-05-02T17:15:31.743",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-3957": {
+    "cvss": 6.5,
+    "description": "The Booster for WooCommerce plugin is vulnerable to Unauthenticated Arbitrary Shortcode Execution in versions up to, and including, 7.1.8. This allows unauthenticated attackers to execute arbitrary shortcodes. The severity and exploitability depends on what other plugins are installed and what shortcode functionality they provide.",
+    "published": "2024-05-02T17:15:32.910",
+    "keywords": "execution,unauthenticated"
+  },
+  "CVE-2024-4033": {
+    "cvss": 8.8,
+    "description": "The All-in-One Video Gallery plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the aiovg_create_attachment_from_external_image_url function in all versions up to, and including, 3.6.4. This makes it possible for authenticated attackers, with contributor access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-05-02T17:15:33.740",
+    "keywords": "remote,execution"
   }
 }
