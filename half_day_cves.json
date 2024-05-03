@@ -1,22 +1,4 @@
 {
-  "CVE-2024-33270": {
-    "cvss": "-",
-    "description": "An issue in FME Modules fileuploads v.2.0.3 and before and fixed in v2.0.4 allows a remote attacker to obtain sensitive information via the uploadfiles.php component.",
-    "published": "2024-04-30T15:15:53.020",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-33274": {
-    "cvss": "-",
-    "description": "Directory Traversal vulnerability in FME Modules customfields v.2.2.7 and before allows a remote attacker to obtain sensitive information via the Custom Checkout Fields, Add Custom Fields to Checkout parameter of the ajax.php",
-    "published": "2024-04-30T15:15:53.130",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-33309": {
-    "cvss": "-",
-    "description": "An issue in TVS Motor Company Limited TVS Connet Android v.4.5.1 and iOS v.5.0.0 allows a remote attacker to obtain sensitive information via an insecure API endpoint",
-    "published": "2024-04-30T15:15:53.293",
-    "keywords": "remote,sensitive"
-  },
   "CVE-2024-33101": {
     "url": "https://github.com/thinksaas/thinksaas/issues/34",
     "cvss": "-",
@@ -436,5 +418,11 @@
     "description": "sagemaker-python-sdk is a library for training and deploying machine learning models on Amazon SageMaker. In affected versions the capture_dependencies function in `sagemaker.serve.save_retrive.version_1_0_0.save.utils` module allows for potentially unsafe Operating System (OS) Command Injection if inappropriate command is passed as the \u201crequirements_path\u201d parameter. This consequently may allow an unprivileged third party to cause remote code execution, denial of service, affecting both confidentiality and integrity. This issue has been addressed in version 2.214.3. Users are advised to upgrade. Users unable to upgrade should not override the \u201crequirements_path\u201d parameter of capture_dependencies function in `sagemaker.serve.save_retrive.version_1_0_0.save.utils`, and instead use the default value.",
     "published": "2024-05-03T11:15:22.447",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2024-34446": {
+    "cvss": "-",
+    "description": "Mullvad VPN through 2024.1 on Android does not set a DNS server in the blocking state (after a hard failure to create a tunnel), and thus DNS traffic can leave the device. Data showing that the affected device was the origin of sensitive DNS requests may be observed and logged by operators of unintended DNS servers.",
+    "published": "2024-05-03T15:15:08.210",
+    "keywords": "sensitive,vpn"
   }
 }
