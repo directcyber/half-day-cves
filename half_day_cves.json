@@ -239,15 +239,21 @@
     "published": "2024-05-02T15:15:07.670",
     "keywords": "remote,execution"
   },
+  "CVE-2024-31963": {
+    "cvss": "-",
+    "description": "A vulnerability on Mitel 6800 Series and 6900 Series SIP Phones through 6.3 SP3 HF4, 6900w Series SIP Phone through 6.3.3, and 6970 Conference Unit through 5.1.1 SP8 allows an authenticated attacker to conduct a buffer overflow attack due to insufficient bounds checking and input sanitization. A successful exploit could allow an attacker to gain access to sensitive information, modify system configuration or execute arbitrary commands within the context of the system.",
+    "published": "2024-05-02T16:15:07.863",
+    "keywords": "command,sensitive"
+  },
   "CVE-2024-31964": {
     "cvss": "-",
-    "description": "A vulnerability on Mitel 6800 Series and 6900 Series SIP Phones, including 6970 Conference Unit, through 6.3 SP3 HF4 allows an unauthenticated attacker to conduct an authentication bypass attack due to improper authentication control. A successful exploit could allow an attacker to modify system configuration settings and potentially cause a denial of service.",
+    "description": "A vulnerability on Mitel 6800 Series and 6900 Series SIP Phones through 6.3 SP3 HF4, 6900w Series SIP Phone through 6.3.3, and 6970 Conference Unit through 5.1.1 SP8 allows an unauthenticated attacker to conduct an authentication bypass attack due to improper authentication control. A successful exploit could allow an attacker to modify system configuration settings and potentially cause a denial of service.",
     "published": "2024-05-02T16:15:07.913",
     "keywords": "unauthenticated,authentication,bypass"
   },
   "CVE-2024-31966": {
     "cvss": "-",
-    "description": "A vulnerability on Mitel 6800 Series and 6900 Series SIP Phones, including 6970 Conference Unit, through 6.3 SP3 HF4 allows an authenticated attacker with administrative privilege to conduct an argument injection attack due to insufficient parameter sanitization. A successful exploit could allow an attacker to access sensitive information, modify the system configuration, or execute arbitrary commands.",
+    "description": "A vulnerability on Mitel 6800 Series and 6900 Series SIP Phones through 6.3 SP3 HF4, 6900w Series SIP Phone through 6.3.3, and 6970 Conference Unit through 5.1.1 SP8 allows an authenticated attacker with administrative privilege to conduct an argument injection attack due to insufficient parameter sanitization. A successful exploit could allow an attacker to access sensitive information, modify system configuration or execute arbitrary commands.",
     "published": "2024-05-02T16:15:08.020",
     "keywords": "command,sensitive"
   },
@@ -430,5 +436,11 @@
     "cvss": "-",
     "description": "Vditor 3.10.3 allows XSS via an attribute of an A element. NOTE: the vendor indicates that a user is supposed to mitigate this via sanitize=true.",
     "published": "2024-05-03T16:15:11.520"
+  },
+  "CVE-2024-31636": {
+    "url": "https://github.com/lief-project/lief/issues/1038",
+    "cvss": "-",
+    "description": "An issue in LIEF v.0.14.1 allows a local attacker to obtain sensitive information via the name parameter of the machd_reader.c component.",
+    "published": "2024-05-03T17:15:07.687"
   }
 }
