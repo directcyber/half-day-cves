@@ -424,5 +424,11 @@
     "cvss": "-",
     "description": "An issue was discovered in uriparser through 0.9.7. ComposeQueryMallocExMm in UriQuery.c has an integer overflow via a long string.",
     "published": "2024-05-03T01:15:48.693"
+  },
+  "CVE-2024-34408": {
+    "url": "https://github.com/tencent/libpag/pull/2243",
+    "cvss": "-",
+    "description": "Tencent libpag through 4.3.51 has an integer overflow in DecodeStream::checkEndOfFile() in codec/utils/DecodeStream.cpp via a crafted PAG (Portable Animated Graphics) file.",
+    "published": "2024-05-03T06:15:13.883"
   }
 }
