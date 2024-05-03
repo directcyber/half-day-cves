@@ -424,5 +424,11 @@
     "description": "Mullvad VPN through 2024.1 on Android does not set a DNS server in the blocking state (after a hard failure to create a tunnel), and thus DNS traffic can leave the device. Data showing that the affected device was the origin of sensitive DNS requests may be observed and logged by operators of unintended DNS servers.",
     "published": "2024-05-03T15:15:08.210",
     "keywords": "sensitive,vpn"
+  },
+  "CVE-2024-34449": {
+    "url": "https://github.com/vanessa219/vditor/issues/1604",
+    "cvss": "-",
+    "description": "Vditor 3.10.3 allows XSS via an attribute of an A element. NOTE: the vendor indicates that a user is supposed to mitigate this via sanitize=true.",
+    "published": "2024-05-03T16:15:11.520"
   }
 }
