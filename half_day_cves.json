@@ -412,5 +412,17 @@
     "description": "Acrobat Reader versions 20.005.30539, 23.008.20470 and earlier are affected by a Use After Free vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
     "published": "2024-05-02T21:16:11.747",
     "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-34402": {
+    "url": "https://github.com/uriparser/uriparser/pull/185",
+    "cvss": "-",
+    "description": "An issue was discovered in uriparser through 0.9.7. ComposeQueryEngine in UriQuery.c has an integer overflow via long keys or values, with a resultant buffer overflow.",
+    "published": "2024-05-03T01:15:48.633"
+  },
+  "CVE-2024-34403": {
+    "url": "https://github.com/uriparser/uriparser/pull/186",
+    "cvss": "-",
+    "description": "An issue was discovered in uriparser through 0.9.7. ComposeQueryMallocExMm in UriQuery.c has an integer overflow via a long string.",
+    "published": "2024-05-03T01:15:48.693"
   }
 }
