@@ -418,5 +418,11 @@
     "cvss": "-",
     "description": "Tencent libpag through 4.3.51 has an integer overflow in DecodeStream::checkEndOfFile() in codec/utils/DecodeStream.cpp via a crafted PAG (Portable Animated Graphics) file.",
     "published": "2024-05-03T06:15:13.883"
+  },
+  "CVE-2024-34063": {
+    "url": "https://github.com/matrix-org/vodozemac/commit/297548cad4016ce448c4b5007c54db7ee39489d9",
+    "cvss": 2.5,
+    "description": "vodozemac is an implementation of Olm and Megolm in pure Rust. Versions 0.5.0 and 0.5.1 of vodozemac have degraded secret zeroization capabilities, due to changes in third-party cryptographic dependencies (the Dalek crates), which moved secret zeroization capabilities behind a feature flag and defaulted this feature to off. The degraded zeroization capabilities could result in the production of more memory copies of encryption secrets and secrets could linger in memory longer than necessary. This marginally increases the risk of sensitive data exposure. This issue has been addressed in version 0.6.0 and users are advised to upgrade. There are no known workarounds for this vulnerability.",
+    "published": "2024-05-03T10:15:08.690"
   }
 }
