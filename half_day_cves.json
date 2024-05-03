@@ -1,22 +1,4 @@
 {
-  "CVE-2024-26331": {
-    "cvss": "-",
-    "description": "ReCrystallize Server 5.10.0.0 uses a authorization mechanism that relies on the value of a cookie, but it does not bind the cookie value to a session ID. Attackers can easily modify the cookie value, within a browser or by implementing client-side code outside of a browser. Attackers can bypass the authentication mechanism by modifying the cookie to contain an expected value.",
-    "published": "2024-04-30T19:15:23.200",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-28269": {
-    "cvss": "-",
-    "description": "ReCrystallize Server 5.10.0.0 allows administrators to upload files to the server. The file upload is not restricted, leading to the ability to upload of malicious files. This could result in a Remote Code Execution.",
-    "published": "2024-04-30T19:15:23.257",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-34088": {
-    "url": "https://github.com/frrouting/frr/pull/15674/commits/34d704fb0ea60dc5063af477a2c11d4884984d4f",
-    "cvss": "-",
-    "description": "In FRRouting (FRR) through 9.1, it is possible for the get_edge() function in ospf_te.c in the OSPF daemon to return a NULL pointer. In cases where calling functions do not handle the returned NULL value, the OSPF daemon crashes, leading to denial of service.",
-    "published": "2024-04-30T19:15:23.307"
-  },
   "CVE-2024-29384": {
     "cvss": "-",
     "description": "An issue in CSS Exfil Protection v.1.1.0 allows a remote attacker to obtain sensitive information via the content.js and parseCSSRules functions.",
@@ -430,5 +412,11 @@
     "cvss": "-",
     "description": "TwoNav 2.1.13 contains an SSRF vulnerability via the url paramater to index.php?c=api&method=read_data&type=connectivity_test (which reaches /system/api.php).",
     "published": "2024-05-03T18:15:10.160"
+  },
+  "CVE-2024-34455": {
+    "url": "https://github.com/buildroot/buildroot/commit/0b2967e15800421efbdfe3a7a6061cf6bd84134d",
+    "cvss": "-",
+    "description": "Buildroot before 0b2967e lacks the sticky bit for the /dev/shm directory.",
+    "published": "2024-05-03T19:15:07.950"
   }
 }
