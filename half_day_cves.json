@@ -1,16 +1,4 @@
 {
-  "CVE-2024-27391": {
-    "cvss": "-",
-    "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nwifi: wilc1000: do not realloc workqueue everytime an interface is added\n\nCommit 09ed8bfc5215 (\"wilc1000: Rename workqueue from \"WILC_wq\" to\n\"NETDEV-wq\"\") moved workqueue creation in wilc_netdev_ifc_init in order to\nset the interface name in the workqueue name. However, while the driver\nneeds only one workqueue, the wilc_netdev_ifc_init is called each time we\nadd an interface over a phy, which in turns overwrite the workqueue with a\nnew one. This can be observed with the following commands:\n\nfor i in $(seq 0 10)\ndo\n  iw phy phy0 interface add wlan1 type managed\n  iw dev wlan1 del\ndone\nps -eo pid,comm|grep wlan\n\n 39 kworker/R-wlan0\n 98 kworker/R-wlan1\n102 kworker/R-wlan1\n105 kworker/R-wlan1\n108 kworker/R-wlan1\n111 kworker/R-wlan1\n114 kworker/R-wlan1\n117 kworker/R-wlan1\n120 kworker/R-wlan1\n123 kworker/R-wlan1\n126 kworker/R-wlan1\n129 kworker/R-wlan1\n\nFix this leakage by putting back hif_workqueue allocation in\nwilc_cfg80211_init. Regarding the workqueue name, it is indeed relevant to\nset it lowercase, however it is not  attached to a specific netdev, so\nenforcing netdev name in the name is not so relevant. Still, enrich the\nname with the wiphy name to make it clear which phy is using the workqueue.",
-    "published": "2024-05-01T13:15:51.750",
-    "keywords": "command,leak"
-  },
-  "CVE-2024-4059": {
-    "cvss": "-",
-    "description": "Out of bounds read in V8 API in Google Chrome prior to 124.0.6367.78 allowed a remote attacker to leak cross-site data via a crafted HTML page. (Chromium security severity: High)",
-    "published": "2024-05-01T13:15:52.253",
-    "keywords": "remote,leak"
-  },
   "CVE-2024-26304": {
     "cvss": 9.8,
     "description": "There is a buffer overflow vulnerability in the underlying L2/L3 Management service that could lead to unauthenticated remote code execution by sending specially crafted packets destined to the PAPI (Aruba's access point management protocol) UDP port (8211). Successful exploitation of this vulnerability results in the ability to execute arbitrary code as a privileged user on the underlying operating system. \n\n",
