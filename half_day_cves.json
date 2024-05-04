@@ -1,28 +1,4 @@
 {
-  "CVE-2024-26304": {
-    "cvss": 9.8,
-    "description": "There is a buffer overflow vulnerability in the underlying L2/L3 Management service that could lead to unauthenticated remote code execution by sending specially crafted packets destined to the PAPI (Aruba's access point management protocol) UDP port (8211). Successful exploitation of this vulnerability results in the ability to execute arbitrary code as a privileged user on the underlying operating system. \n\n",
-    "published": "2024-05-01T15:15:14.680",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-26305": {
-    "cvss": 9.8,
-    "description": "There is a buffer overflow vulnerability in the underlying Utility daemon that could lead to unauthenticated remote code execution by sending specially crafted packets destined to the PAPI (Aruba's access point management protocol) UDP port (8211). Successful exploitation of this vulnerability results in the ability to execute arbitrary code as a privileged user on the underlying operating system. \n\n",
-    "published": "2024-05-01T15:15:14.863",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-33511": {
-    "cvss": 9.8,
-    "description": "There is a buffer overflow vulnerability in the underlying Automatic Reporting service that could lead to unauthenticated remote code execution by sending specially crafted packets destined to the PAPI (Aruba's access point management protocol) UDP port (8211). Successful exploitation of this vulnerability results in the ability to execute arbitrary code as a privileged user on the underlying operating system. \n\n",
-    "published": "2024-05-01T15:15:15.060",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-33512": {
-    "cvss": 9.8,
-    "description": "There is a buffer overflow vulnerability in the underlying Local User Authentication Database service that could lead to unauthenticated remote code execution by sending specially crafted packets destined to the PAPI (Aruba's access point management protocol) UDP port (8211). Successful exploitation of this vulnerability results in the ability to execute arbitrary code as a privileged user on the underlying operating system.\n\n",
-    "published": "2024-05-01T15:15:15.257",
-    "keywords": "remote,execution,unauthenticated,authentication"
-  },
   "CVE-2024-20357": {
     "cvss": 5.9,
     "description": "A vulnerability in the XML service of Cisco IP Phone firmware could allow an unauthenticated, remote attacker to initiate phone calls on an affected device.  \r\n\r This vulnerability exists because bounds-checking does not occur while parsing XML requests. An attacker could exploit this vulnerability by sending a crafted XML request to an affected device. A successful exploit could allow the attacker to initiate calls or play sounds on the device.",
