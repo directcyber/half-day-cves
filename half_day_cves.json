@@ -268,5 +268,29 @@
     "cvss": "-",
     "description": "OFPBucket in parser.py in Faucet SDN Ryu 4.34 allows attackers to cause a denial of service (infinite loop) via action.len=0.",
     "published": "2024-05-05T02:15:07.187"
+  },
+  "CVE-2024-34486": {
+    "url": "https://github.com/faucetsdn/ryu/issues/190",
+    "cvss": "-",
+    "description": "OFPPacketQueue in parser.py in Faucet SDN Ryu 4.34 allows attackers to cause a denial of service (infinite loop) via OFPQueueProp.len=0.",
+    "published": "2024-05-05T03:15:07.120"
+  },
+  "CVE-2024-34487": {
+    "url": "https://github.com/faucetsdn/ryu/issues/192",
+    "cvss": "-",
+    "description": "OFPFlowStats in parser.py in Faucet SDN Ryu 4.34 allows attackers to cause a denial of service (infinite loop) via inst.length=0.",
+    "published": "2024-05-05T03:15:07.167"
+  },
+  "CVE-2024-34488": {
+    "url": "https://github.com/faucetsdn/ryu/issues/191",
+    "cvss": "-",
+    "description": "OFPMultipartReply in parser.py in Faucet SDN Ryu 4.34 allows attackers to cause a denial of service (infinite loop) via b.length=0.",
+    "published": "2024-05-05T03:15:07.207"
+  },
+  "CVE-2024-34489": {
+    "url": "https://github.com/faucetsdn/ryu/issues/195",
+    "cvss": "-",
+    "description": "OFPHello in parser.py in Faucet SDN Ryu 4.34 allows attackers to cause a denial of service (infinite loop) via length=0.",
+    "published": "2024-05-05T03:15:07.250"
   }
 }
