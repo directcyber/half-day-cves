@@ -1,16 +1,4 @@
 {
-  "CVE-2024-4215": {
-    "cvss": 7.4,
-    "description": "pgAdmin <= 8.5 is affected by a multi-factor authentication bypass vulnerability. This vulnerability allows an attacker with knowledge of a legitimate account\u2019s username and password may authenticate to the application and perform sensitive actions within the application, such as managing files and executing SQL queries, regardless of the account\u2019s MFA enrollment status.\n",
-    "published": "2024-05-02T18:15:07.593",
-    "keywords": "authentication,sensitive,bypass"
-  },
-  "CVE-2024-4216": {
-    "url": "https://github.com/pgadmin-org/pgadmin4/issues/7282",
-    "cvss": 7.4,
-    "description": "pgAdmin <= 8.5 is affected by XSS vulnerability in /settings/store API response json payload. This vulnerability allows attackers to execute malicious script at the client end.\n",
-    "published": "2024-05-02T18:15:07.757"
-  },
   "CVE-2024-34391": {
     "cvss": 8.1,
     "description": "libxmljs is vulnerable to a type confusion vulnerability when parsing a specially crafted XML while invoking a function on the result of attrs() that was called on a parsed node. This vulnerability might lead to denial of service (on both 32-bit systems and 64-bit systems), data leak, infinite loop and remote code execution (on 32-bit systems with the XML_PARSE_HUGE flag enabled).\n\n",
