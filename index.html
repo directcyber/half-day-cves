@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-05-06T16:11:53.335973
+Updated at UTC 2024-05-06T17:09:38.244804
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,44 @@ Updated at UTC 2024-05-06T16:11:53.335973
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-34251">CVE-2024-34251</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/bytecodealliance/wasm-micro-runtime/issues/3347">https://github.com/bytecodealliance/wasm-micro-runtime/issues/3347</a></td>
+					<td class=date>2024-05-06T16:15:14.083</td>
+					<td class=description>An out-of-bound memory read vulnerability was discovered in Bytecode Alliance wasm-micro-runtime v2.0.0 which allows a remote attacker to cause a denial of service via the "block_type_get_arity" function in core/iwasm/interpreter/wasm.h.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-34250">CVE-2024-34250</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/bytecodealliance/wasm-micro-runtime/issues/3346">https://github.com/bytecodealliance/wasm-micro-runtime/issues/3346</a></td>
+					<td class=date>2024-05-06T16:15:14.033</td>
+					<td class=description>A heap buffer overflow vulnerability was discovered in Bytecode Alliance wasm-micro-runtime v2.0.0 which allows a remote attacker to cause at least a denial of service via the "wasm_loader_check_br" function in core/iwasm/interpreter/wasm_loader.c.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-34246">CVE-2024-34246</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/wasm3/wasm3/issues/484">https://github.com/wasm3/wasm3/issues/484</a></td>
+					<td class=date>2024-05-06T16:15:13.987</td>
+					<td class=description>wasm3 v0.5.0 was discovered to contain an out-of-bound memory read which leads to segmentation fault via the function "main" in wasm3/platforms/app/main.c.</td>
+
+
+				</tr>
+			
+		
+			
 		
 			
 				<tr>
@@ -314,20 +352,24 @@ Updated at UTC 2024-05-06T16:11:53.335973
 				</tr>
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-34449">CVE-2024-34449</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/vanessa219/vditor/issues/1604">https://github.com/vanessa219/vditor/issues/1604</a></td>
-					<td class=date>2024-05-03T16:15:11.520</td>
-					<td class=description>Vditor 3.10.3 allows XSS via an attribute of an A element. NOTE: the vendor indicates that a user is supposed to mitigate this via sanitize=true.</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-34093">CVE-2024-34093</a></td>
+					<td>5.3</td>
+					<td>unauthenticated,bypass</td>
+					<td class=date>2024-05-06T16:15:13.817</td>
+					<td class=description>An issue was discovered in Archer Platform 6 before 2024.03. There is an X-Forwarded-For Header Bypass vulnerability. An unauthenticated attacker could potentially bypass intended whitelisting when X-Forwarded-For header is enabled.</td>
+				</tr>
+			
 		
 			
 		
@@ -501,8 +543,6 @@ Updated at UTC 2024-05-06T16:11:53.335973
 					<td class=date>2024-05-03T18:15:09.773</td>
 					<td class=description>Pterodactyl wings is the server control plane for Pterodactyl Panel. An authenticated user who has access to a game server is able to bypass the previously implemented access control (GHSA-6rg3-8h8x-5xfv) that prevents accessing internal endpoints of the node hosting Wings in the pull endpoint. This would allow malicious users to potentially access resources on local networks that would otherwise be inaccessible. This issue has been addressed in version 1.11.2 and users are advised to upgrade. Users unable to upgrade may enable the `api.disable_remote_download` option as a workaround. </td>
 				</tr>
-			
-		
 			
 		
 			
