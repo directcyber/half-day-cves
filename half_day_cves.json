@@ -1,22 +1,4 @@
 {
-  "CVE-2024-31673": {
-    "url": "https://github.com/kliqqi-cms/kliqqi-cms/issues/265",
-    "cvss": "-",
-    "description": "Kliqqi-CMS 2.0.2 is vulnerable to SQL Injection in load_data.php via the userid parameter.",
-    "published": "2024-05-03T18:15:09.310"
-  },
-  "CVE-2024-34068": {
-    "cvss": 6.4,
-    "description": "Pterodactyl wings is the server control plane for Pterodactyl Panel. An authenticated user who has access to a game server is able to bypass the previously implemented access control (GHSA-6rg3-8h8x-5xfv) that prevents accessing internal endpoints of the node hosting Wings in the pull endpoint. This would allow malicious users to potentially access resources on local networks that would otherwise be inaccessible. This issue has been addressed in version 1.11.2 and users are advised to upgrade. Users unable to upgrade may enable the `api.disable_remote_download` option as a workaround. ",
-    "published": "2024-05-03T18:15:09.773",
-    "keywords": "remote,bypass"
-  },
-  "CVE-2024-34453": {
-    "url": "https://github.com/tznb1/twonav/issues/9#issuecomment-2022194939",
-    "cvss": "-",
-    "description": "TwoNav 2.1.13 contains an SSRF vulnerability via the url paramater to index.php?c=api&method=read_data&type=connectivity_test (which reaches /system/api.php).",
-    "published": "2024-05-03T18:15:10.160"
-  },
   "CVE-2024-34455": {
     "url": "https://github.com/buildroot/buildroot/commit/0b2967e15800421efbdfe3a7a6061cf6bd84134d",
     "cvss": "-",
