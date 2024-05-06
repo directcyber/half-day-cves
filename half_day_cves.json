@@ -1,10 +1,4 @@
 {
-  "CVE-2024-34446": {
-    "cvss": "-",
-    "description": "Mullvad VPN through 2024.1 on Android does not set a DNS server in the blocking state (after a hard failure to create a tunnel), and thus DNS traffic can leave the device. Data showing that the affected device was the origin of sensitive DNS requests may be observed and logged by operators of unintended DNS servers.",
-    "published": "2024-05-03T15:15:08.210",
-    "keywords": "sensitive,vpn"
-  },
   "CVE-2024-34449": {
     "url": "https://github.com/vanessa219/vditor/issues/1604",
     "cvss": "-",
@@ -196,5 +190,17 @@
     "description": "An SQLi vulnerability exists in\u00a0Delta Electronics DIAEnergie v1.10.1.8610 and prior when CEBC.exe processes a 'RecalculateHDMWYC' message, which is split into 4 fields using the '~' character as the separator. An unauthenticated remote attacker can perform SQLi via the fourth field.",
     "published": "2024-05-06T14:15:08.533",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-34249": {
+    "url": "https://github.com/wasm3/wasm3/issues/485",
+    "cvss": "-",
+    "description": "wasm3 v0.5.0 was discovered to contain a heap buffer overflow which leads to segmentation fault via the function \"DeallocateSlot\" in wasm3/source/m3_compile.c.",
+    "published": "2024-05-06T15:15:24.367"
+  },
+  "CVE-2024-34252": {
+    "url": "https://github.com/wasm3/wasm3/issues/483",
+    "cvss": "-",
+    "description": "wasm3 v0.5.0 was discovered to contain a global buffer overflow which leads to segmentation fault via the function \"PreserveRegisterIfOccupied\" in wasm3/source/m3_compile.c.",
+    "published": "2024-05-06T15:15:24.420"
   }
 }
