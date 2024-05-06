@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-05-06T10:09:56.546482
+Updated at UTC 2024-05-06T11:07:26.137180
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -304,18 +304,6 @@ Updated at UTC 2024-05-06T10:09:56.546482
 		
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-34063">CVE-2024-34063</a></td>
-					<td>2.5</td>
-					<td><a target=_blank href="https://github.com/matrix-org/vodozemac/commit/297548cad4016ce448c4b5007c54db7ee39489d9">https://github.com/matrix-org/vodozemac/commit/297548cad4016ce448c4b5007c54db7ee39489d9</a></td>
-					<td class=date>2024-05-03T10:15:08.690</td>
-					<td class=description>vodozemac is an implementation of Olm and Megolm in pure Rust. Versions 0.5.0 and 0.5.1 of vodozemac have degraded secret zeroization capabilities, due to changes in third-party cryptographic dependencies (the Dalek crates), which moved secret zeroization capabilities behind a feature flag and defaulted this feature to off. The degraded zeroization capabilities could result in the production of more memory copies of encryption secrets and secrets could linger in memory longer than necessary. This marginally increases the risk of sensitive data exposure. This issue has been addressed in version 0.6.0 and users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
 		
@@ -503,8 +491,6 @@ Updated at UTC 2024-05-06T10:09:56.546482
 					<td class=date>2024-05-03T11:15:22.260</td>
 					<td class=description>sagemaker-python-sdk is a library for training and deploying machine learning models on Amazon SageMaker. The sagemaker.base_deserializers.NumpyDeserializer module before v2.218.0 allows potentially unsafe deserialization when untrusted data is passed as pickled object arrays. This consequently may allow an unprivileged third party to cause remote code execution, denial of service, affecting both confidentiality and integrity. Users are advised to upgrade to version 2.218.0. Users unable to upgrade should not pass pickled numpy object arrays which originated from an untrusted source, or that could have been tampered with. Only pass pickled numpy object arrays from trusted sources.</td>
 				</tr>
-			
-		
 			
 		
 
