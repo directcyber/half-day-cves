@@ -184,5 +184,17 @@
     "description": "A vulnerability was found in Ruijie RG-UAC up to 20240428. It has been rated as critical. Affected by this issue is some unknown functionality of the file /view/networkConfig/ArpTable/arp_add_commit.php. The manipulation of the argument text_ip_addr/text_mac_addr leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-263114 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2024-05-06T01:15:48.643",
     "keywords": "remote,command"
+  },
+  "CVE-2024-4547": {
+    "cvss": 9.8,
+    "description": "A SQLi vulnerability exists in\u00a0Delta Electronics\u00a0DIAEnergie v1.10.1.8610 and prior when CEBC.exe processes a 'RecalculateScript' message, which is splitted into 4 fields using the '~' character as the separator. An unauthenticated remote attacker can perform SQLi via the fourth field",
+    "published": "2024-05-06T14:15:08.330",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-4548": {
+    "cvss": 9.8,
+    "description": "An SQLi vulnerability exists in\u00a0Delta Electronics DIAEnergie v1.10.1.8610 and prior when CEBC.exe processes a 'RecalculateHDMWYC' message, which is split into 4 fields using the '~' character as the separator. An unauthenticated remote attacker can perform SQLi via the fourth field.",
+    "published": "2024-05-06T14:15:08.533",
+    "keywords": "remote,unauthenticated"
   }
 }
