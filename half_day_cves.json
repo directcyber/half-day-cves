@@ -244,5 +244,11 @@
     "description": "A vulnerability, which was classified as problematic, has been found in Faraday GM8181 and GM828x up to 20240429. Affected by this issue is some unknown functionality of the file /command_port.ini. The manipulation leads to information disclosure. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-263306 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2024-05-07T12:15:10.223",
     "keywords": "remote,command"
+  },
+  "CVE-2024-33434": {
+    "url": "https://github.com/tiagorlampert/chaos/pull/95",
+    "cvss": "-",
+    "description": "An issue in tiagorlampert CHAOS before 1b451cf62582295b7225caf5a7b506f0bad56f6b and 24c9e109b5be34df7b2bce8368eae669c481ed5e allows a remote attacker to execute arbitrary code via the unsafe concatenation of the `filename` argument into the `buildStr` string without any sanitization or filtering.",
+    "published": "2024-05-07T14:15:10.760"
   }
 }
