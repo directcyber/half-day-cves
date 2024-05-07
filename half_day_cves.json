@@ -220,5 +220,17 @@
     "description": "The Build App Online plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 3.0.5. This is due to the 'eb_user_email_verification_key' default value is empty, and the not empty check is missing in the 'eb_user_email_verify' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the user id. This can only be exploited if the 'Email Verification' setting is enabled.",
     "published": "2024-05-07T06:15:09.380",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-4345": {
+    "cvss": 9.8,
+    "description": "The Startklar Elementor Addons plugin for WordPress is vulnerable to arbitrary file uploads due to insufficient file type validation in the 'process' function in the 'startklarDropZoneUploadProcess' class in versions up to, and including, 1.7.13. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-05-07T09:15:38.840",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-4346": {
+    "cvss": 9.1,
+    "description": "The Startklar Elementor Addons plugin for WordPress is vulnerable to arbitrary file deletion in all versions up to, and including, 1.7.13. This is due to the plugin not properly validating the path of an uploaded file prior to deleting it. This makes it possible for unauthenticated attackers to delete arbitrary files, including the wp-config.php file, which can make site takeover and remote code execution possible.",
+    "published": "2024-05-07T09:15:39.027",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
