@@ -1,4 +1,10 @@
 {
+  "CVE-2024-34462": {
+    "url": "https://github.com/alinto/sogo/commit/2e37e59ed140d4aee0ff2fba579ca5f83f2c5920",
+    "cvss": "-",
+    "description": "Alinto SOGo through 5.10.0 allows XSS during attachment preview.",
+    "published": "2024-05-04T19:15:46.510"
+  },
   "CVE-2024-34467": {
     "url": "https://github.com/top-think/framework/issues/2996",
     "cvss": "-",
@@ -250,5 +256,23 @@
     "cvss": "-",
     "description": "An issue in tiagorlampert CHAOS before 1b451cf62582295b7225caf5a7b506f0bad56f6b and 24c9e109b5be34df7b2bce8368eae669c481ed5e allows a remote attacker to execute arbitrary code via the unsafe concatenation of the `filename` argument into the `buildStr` string without any sanitization or filtering.",
     "published": "2024-05-07T14:15:10.760"
+  },
+  "CVE-2024-32369": {
+    "cvss": "-",
+    "description": "SQL Injection vulnerability in HSC Cybersecurity HC Mailinspector 5.2.17-3 through 5.2.18 allows a remote attacker to obtain sensitive information via a crafted payload to the start and limit parameter in the mliWhiteList.php component.",
+    "published": "2024-05-07T15:15:08.520",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-32370": {
+    "cvss": "-",
+    "description": "An issue in HSC Cybersecurity HC Mailinspector 5.2.17-3 through 5.2.18 allows a remote attacker to obtain sensitive information via a crafted payload to the id parameter in the mliSystemUsers.php component.",
+    "published": "2024-05-07T15:15:08.597",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-34523": {
+    "cvss": "-",
+    "description": "AChecker 1.5 allows remote attackers to read the contents of arbitrary files via the download.php path parameter by using Unauthenticated Path Traversal. This occurs through readfile in PHP. NOTE: This vulnerability only affects products that are no longer supported by the maintainer.",
+    "published": "2024-05-07T15:15:09.930",
+    "keywords": "remote,unauthenticated"
   }
 }
