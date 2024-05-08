@@ -286,5 +286,11 @@
     "description": "The WP Latest Posts plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 5.0.7. This is due to the plugin allowing users to execute an action that does not properly validate a user-supplied value prior to using that value in a call to do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
     "published": "2024-05-08T10:15:08.360",
     "keywords": "execution,unauthenticated"
+  },
+  "CVE-2024-34255": {
+    "url": "https://github.com/cherry-toto/jizhicms/issues/93",
+    "cvss": "-",
+    "description": "jizhicms v2.5.1 contains a Cross-Site Scripting(XSS) vulnerability in the message function.",
+    "published": "2024-05-08T13:15:08.033"
   }
 }
