@@ -286,5 +286,17 @@
     "cvss": "-",
     "description": "jizhicms v2.5.1 contains a Cross-Site Scripting(XSS) vulnerability in the message function.",
     "published": "2024-05-08T13:15:08.033"
+  },
+  "CVE-2024-28883": {
+    "cvss": 7.4,
+    "description": "An origin validation vulnerability exists in \n\nBIG-IP APM browser network access VPN client \n\n\n\n for Windows, macOS and Linux which may allow an attacker to bypass F5 endpoint inspection. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "published": "2024-05-08T15:15:09.380",
+    "keywords": "vpn,bypass"
+  },
+  "CVE-2024-32049": {
+    "cvss": 7.4,
+    "description": "BIG-IP Next Central Manager (CM) may allow an unauthenticated, remote attacker to obtain the BIG-IP Next LTM/WAF instance credentials.\u00a0\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\n",
+    "published": "2024-05-08T15:15:09.987",
+    "keywords": "remote,unauthenticated"
   }
 }
