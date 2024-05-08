@@ -280,5 +280,11 @@
     "description": "The Social Connect plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.2. This is due to insufficient verification on the OpenID server being supplied during the social login through the plugin. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email.",
     "published": "2024-05-08T03:15:07.020",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-4135": {
+    "cvss": 5.4,
+    "description": "The WP Latest Posts plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 5.0.7. This is due to the plugin allowing users to execute an action that does not properly validate a user-supplied value prior to using that value in a call to do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+    "published": "2024-05-08T10:15:08.360",
+    "keywords": "execution,unauthenticated"
   }
 }
