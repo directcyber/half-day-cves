@@ -1,28 +1,4 @@
 {
-  "CVE-2024-34486": {
-    "url": "https://github.com/faucetsdn/ryu/issues/190",
-    "cvss": "-",
-    "description": "OFPPacketQueue in parser.py in Faucet SDN Ryu 4.34 allows attackers to cause a denial of service (infinite loop) via OFPQueueProp.len=0.",
-    "published": "2024-05-05T03:15:07.120"
-  },
-  "CVE-2024-34487": {
-    "url": "https://github.com/faucetsdn/ryu/issues/192",
-    "cvss": "-",
-    "description": "OFPFlowStats in parser.py in Faucet SDN Ryu 4.34 allows attackers to cause a denial of service (infinite loop) via inst.length=0.",
-    "published": "2024-05-05T03:15:07.167"
-  },
-  "CVE-2024-34488": {
-    "url": "https://github.com/faucetsdn/ryu/issues/191",
-    "cvss": "-",
-    "description": "OFPMultipartReply in parser.py in Faucet SDN Ryu 4.34 allows attackers to cause a denial of service (infinite loop) via b.length=0.",
-    "published": "2024-05-05T03:15:07.207"
-  },
-  "CVE-2024-34489": {
-    "url": "https://github.com/faucetsdn/ryu/issues/195",
-    "cvss": "-",
-    "description": "OFPHello in parser.py in Faucet SDN Ryu 4.34 allows attackers to cause a denial of service (infinite loop) via length=0.",
-    "published": "2024-05-05T03:15:07.250"
-  },
   "CVE-2024-4497": {
     "cvss": 8.8,
     "description": "A vulnerability was found in Tenda i21 1.0.0.14(4656). It has been declared as critical. This vulnerability affects the function formexeCommand. The manipulation of the argument cmdinput leads to stack-based buffer overflow. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-263086 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
@@ -304,5 +280,11 @@
     "description": "The PostgreSQL implementation in Brocade SANnav versions before 2.3.0a is vulnerable to an incorrect local authentication flaw. An attacker accessing the VM where the Brocade SANnav is installed can gain access to sensitive data inside the PostgreSQL database.\n ",
     "published": "2024-05-08T02:15:09.873",
     "keywords": "authentication,sensitive"
+  },
+  "CVE-2024-4393": {
+    "cvss": 9.8,
+    "description": "The Social Connect plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.2. This is due to insufficient verification on the OpenID server being supplied during the social login through the plugin. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email.",
+    "published": "2024-05-08T03:15:07.020",
+    "keywords": "unauthenticated,authentication,bypass"
   }
 }
