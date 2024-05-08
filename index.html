@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-05-08T14:08:32.033986
+Updated at UTC 2024-05-08T15:08:57.506090
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -76,23 +76,6 @@ Updated at UTC 2024-05-08T14:08:32.033986
 		
 			
 		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4030">CVE-2024-4030</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/python/cpython/commit/8ed546679524140d8282175411fd141fe7df070d">https://github.com/python/cpython/commit/8ed546679524140d8282175411fd141fe7df070d</a></td>
-					<td class=date>2024-05-07T21:15:09.467</td>
-					<td class=description>On Windows a directory returned by tempfile.mkdtemp() would not always have permissions set to restrict reading and writing to the temporary directory by other users, instead usually inheriting the correct permissions from the default location. Alternate configurations or users without a profile directory may not have the intended permissions.
-
-If you’re not using Windows or haven’t changed the temporary directory location then you aren’t affected by this vulnerability. On other platforms the returned directory is consistently readable and writable only by the current user.
-
-This issue was caused by Python not supporting Unix permissions on Windows. The fix adds support for Unix “700” for the mkdir function on Windows which is used by mkdtemp() to ensure the newly created directory has the proper permissions.
-</td>
-
-
-				</tr>
 			
 		
 			
@@ -349,8 +332,6 @@ Also, a local attacker can place a valid repository configuration file in this d
 a plethora of additional configuration options. This makes various additional code paths in libdnf5 accessible to the attacker. 
 </td>
 				</tr>
-			
-		
 			
 		
 			
