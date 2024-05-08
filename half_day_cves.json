@@ -137,6 +137,12 @@
     "description": "An out-of-bound memory read vulnerability was discovered in Bytecode Alliance wasm-micro-runtime v2.0.0 which allows a remote attacker to cause a denial of service via the \"block_type_get_arity\" function in core/iwasm/interpreter/wasm.h.",
     "published": "2024-05-06T16:15:14.083"
   },
+  "CVE-2024-3661": {
+    "cvss": 7.6,
+    "description": "DHCP can add routes to a client\u2019s routing table via the classless static route option (121). VPN-based security solutions that rely on routes to redirect traffic can be forced to leak traffic over the physical interface. An attacker on the same local network can read, disrupt, or possibly modify network traffic that was expected to be protected by the VPN.",
+    "published": "2024-05-06T19:15:11.027",
+    "keywords": "vpn,leak"
+  },
   "CVE-2024-34534": {
     "cvss": "-",
     "description": "A SQL injection vulnerability in Cybrosys Techno Solutions Text Commander module (aka text_commander) 16.0 through 16.0.1 allows a remote attacker to gain privileges via the data parameter to models/ir_model.py:IrModel::chech_model.",
@@ -310,5 +316,29 @@
     "description": "A SQL injection vulnerability in unit.php in Sonic Shopfloor.guide before 3.1.3 allows remote attackers to execute arbitrary SQL commands via the level2 parameter.",
     "published": "2024-05-08T16:15:08.960",
     "keywords": "remote,command"
+  },
+  "CVE-2024-25533": {
+    "cvss": "-",
+    "description": "Error messages in RuvarOA v6.01 and v12.01 were discovered to leak the physical path of the website (/WorkFlow/OfficeFileUpdate.aspx). This vulnerability can allow attackers to write files to the server or execute arbitrary commands via crafted SQL statements.",
+    "published": "2024-05-08T17:15:07.620",
+    "keywords": "command,leak"
+  },
+  "CVE-2024-33382": {
+    "url": "https://github.com/open5gs/open5gs/issues/2733",
+    "cvss": "-",
+    "description": "An issue in Open5GS v.2.7.0 allows an attacker to cause a denial of service via the 64 unsuccessful UE/gnb registration",
+    "published": "2024-05-08T17:15:07.677"
+  },
+  "CVE-2024-34244": {
+    "url": "https://github.com/stephane/libmodbus/issues/743",
+    "cvss": "-",
+    "description": "libmodbus v3.1.10 is vulnerable to Buffer Overflow via the modbus_write_bits function. This issue can be triggered when the function is fed with specially crafted input, which leads to out-of-bounds read and can potentially cause a crash or other unintended behaviors.",
+    "published": "2024-05-08T17:15:07.730"
+  },
+  "CVE-2024-34257": {
+    "cvss": "-",
+    "description": "TOTOLINK EX1800T V9.1.0cu.2112_B20220316 has a vulnerability in the apcliEncrypType parameter that allows unauthorized execution of arbitrary commands, allowing an attacker to obtain device administrator privileges.",
+    "published": "2024-05-08T17:15:07.783",
+    "keywords": "execution,command"
   }
 }
