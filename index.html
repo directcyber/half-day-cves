@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-05-08T02:10:42.009511
+Updated at UTC 2024-05-08T03:11:34.609250
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-05-08T02:10:42.009511
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 				<tr>
@@ -321,32 +325,43 @@ This issue was caused by Python not supporting Unix permissions on Windows. The 
 				</tr>
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-34484">CVE-2024-34484</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/faucetsdn/ryu/issues/194">https://github.com/faucetsdn/ryu/issues/194</a></td>
-					<td class=date>2024-05-05T02:15:07.187</td>
-					<td class=description>OFPBucket in parser.py in Faucet SDN Ryu 4.34 allows attackers to cause a denial of service (infinite loop) via action.len=0.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-34483">CVE-2024-34483</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/faucetsdn/ryu/issues/193">https://github.com/faucetsdn/ryu/issues/193</a></td>
-					<td class=date>2024-05-05T02:15:06.613</td>
-					<td class=description>OFPGroupDescStats in parser.py in Faucet SDN Ryu 4.34 allows attackers to cause a denial of service (infinite loop) via OFPBucket.len=0.</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-2860">CVE-2024-2860</a></td>
+					<td>7.8</td>
+					<td>authentication,sensitive</td>
+					<td class=date>2024-05-08T02:15:09.873</td>
+					<td class=description>The PostgreSQL implementation in Brocade SANnav versions before 2.3.0a is vulnerable to an incorrect local authentication flaw. An attacker accessing the VM where the Brocade SANnav is installed can gain access to sensitive data inside the PostgreSQL database.
+ </td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-2746">CVE-2024-2746</a></td>
+					<td>8.8</td>
+					<td>authentication,leak</td>
+					<td class=date>2024-05-08T02:15:09.677</td>
+					<td class=description>Incomplete fix for CVE-2024-1929
+
+The problem with CVE-2024-1929 was that the dnf5 D-Bus daemon accepted arbitrary configuration parameters from unprivileged users, which allowed a
+local root exploit by tricking the daemon into loading a user controlled "plugin". All of this happened before Polkit authentication was even started.
+
+The dnf5 library code does not check whether non-root users control the directory in question. 
+
+On one hand, this poses a Denial-of-Service attack vector by making the daemonoperate on a blocking file (e.g. named FIFO special file) or a very large file
+that causes an out-of-memory situation (e.g. /dev/zero). On the other hand, this can be used to let the daemon process privileged files like /etc/shadow.
+The file in question is parsed as an INI file. Error diagnostics resulting from parsing privileged files could cause information leaks, if these diagnostics
+are accessible to unprivileged users. In the case of libdnf5, no such user accessible diagnostics should exist, though.
+
+Also, a local attacker can place a valid repository configuration file in this directory. This configuration file allows to specify
+a plethora of additional configuration options. This makes various additional code paths in libdnf5 accessible to the attacker. 
+</td>
+				</tr>
+			
 		
 			
 		
@@ -728,10 +743,6 @@ running on Silicon Labs 500 series Z-wave devices.
 					<td class=date>2024-05-05T07:15:06.463</td>
 					<td class=description>A vulnerability was found in Tenda i21 1.0.0.14(4656). It has been declared as critical. This vulnerability affects the function formexeCommand. The manipulation of the argument cmdinput leads to stack-based buffer overflow. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-263086 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
 				</tr>
-			
-		
-			
-		
 			
 		
 			

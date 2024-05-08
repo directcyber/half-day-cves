@@ -1,16 +1,4 @@
 {
-  "CVE-2024-34483": {
-    "url": "https://github.com/faucetsdn/ryu/issues/193",
-    "cvss": "-",
-    "description": "OFPGroupDescStats in parser.py in Faucet SDN Ryu 4.34 allows attackers to cause a denial of service (infinite loop) via OFPBucket.len=0.",
-    "published": "2024-05-05T02:15:06.613"
-  },
-  "CVE-2024-34484": {
-    "url": "https://github.com/faucetsdn/ryu/issues/194",
-    "cvss": "-",
-    "description": "OFPBucket in parser.py in Faucet SDN Ryu 4.34 allows attackers to cause a denial of service (infinite loop) via action.len=0.",
-    "published": "2024-05-05T02:15:07.187"
-  },
   "CVE-2024-34486": {
     "url": "https://github.com/faucetsdn/ryu/issues/190",
     "cvss": "-",
@@ -304,5 +292,17 @@
     "cvss": "-",
     "description": "On Windows a directory returned by tempfile.mkdtemp() would not always have permissions set to restrict reading and writing to the temporary directory by other users, instead usually inheriting the correct permissions from the default location. Alternate configurations or users without a profile directory may not have the intended permissions.\n\nIf you\u2019re not using Windows or haven\u2019t changed the temporary directory location then you aren\u2019t affected by this vulnerability. On other platforms the returned directory is consistently readable and writable only by the current user.\n\nThis issue was caused by Python not supporting Unix permissions on Windows. The fix adds support for Unix \u201c700\u201d for the mkdir function on Windows which is used by mkdtemp() to ensure the newly created directory has the proper permissions.\n",
     "published": "2024-05-07T21:15:09.467"
+  },
+  "CVE-2024-2746": {
+    "cvss": 8.8,
+    "description": "Incomplete fix for CVE-2024-1929\n\nThe problem with CVE-2024-1929 was that the dnf5 D-Bus daemon accepted arbitrary configuration parameters from unprivileged users, which allowed a\nlocal root exploit by tricking the daemon into loading a user controlled \"plugin\". All of this happened before Polkit authentication was even started.\n\nThe dnf5 library code does not check whether non-root users control the directory in question.\u00a0\n\nOn one hand, this poses a Denial-of-Service attack vector by making the daemonoperate on a blocking file (e.g. named FIFO special file) or a very large file\nthat causes an out-of-memory situation (e.g. /dev/zero). On the other hand, this can be used to let the daemon process privileged files like /etc/shadow.\nThe file in question is parsed as an INI file. Error diagnostics resulting from parsing privileged files could cause information leaks, if these diagnostics\nare accessible to unprivileged users. In the case of libdnf5, no such user accessible diagnostics should exist, though.\n\nAlso, a local attacker can place a valid repository configuration file in this directory. This configuration file allows to specify\na plethora of additional configuration options. This makes various\u00a0additional code paths in libdnf5 accessible to the attacker.\u00a0\n",
+    "published": "2024-05-08T02:15:09.677",
+    "keywords": "authentication,leak"
+  },
+  "CVE-2024-2860": {
+    "cvss": 7.8,
+    "description": "The PostgreSQL implementation in Brocade SANnav versions before 2.3.0a is vulnerable to an incorrect local authentication flaw. An attacker accessing the VM where the Brocade SANnav is installed can gain access to sensitive data inside the PostgreSQL database.\n ",
+    "published": "2024-05-08T02:15:09.873",
+    "keywords": "authentication,sensitive"
   }
 }
