@@ -1,16 +1,4 @@
 {
-  "CVE-2024-34249": {
-    "url": "https://github.com/wasm3/wasm3/issues/485",
-    "cvss": "-",
-    "description": "wasm3 v0.5.0 was discovered to contain a heap buffer overflow which leads to segmentation fault via the function \"DeallocateSlot\" in wasm3/source/m3_compile.c.",
-    "published": "2024-05-06T15:15:24.367"
-  },
-  "CVE-2024-34252": {
-    "url": "https://github.com/wasm3/wasm3/issues/483",
-    "cvss": "-",
-    "description": "wasm3 v0.5.0 was discovered to contain a global buffer overflow which leads to segmentation fault via the function \"PreserveRegisterIfOccupied\" in wasm3/source/m3_compile.c.",
-    "published": "2024-05-06T15:15:24.420"
-  },
   "CVE-2024-34093": {
     "cvss": 5.3,
     "description": "An issue was discovered in Archer Platform 6 before 2024.03. There is an X-Forwarded-For Header Bypass vulnerability. An unauthenticated attacker could potentially bypass intended whitelisting when X-Forwarded-For header is enabled.",
