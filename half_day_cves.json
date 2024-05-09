@@ -149,12 +149,6 @@
     "description": "jizhicms v2.5.1 contains a Cross-Site Scripting(XSS) vulnerability in the message function.",
     "published": "2024-05-08T13:15:08.033"
   },
-  "CVE-2024-32886": {
-    "url": "https://github.com/vitessio/vitess/commit/d438adf7e34a6cf00fe441db80842ec669a99202",
-    "cvss": 4.9,
-    "description": "Vitess is a database clustering system for horizontal scaling of MySQL. When executing the following simple query, the `vtgate` will go into an endless loop that also keeps consuming memory and eventually will run out of memory. This vulnerability is fixed in 19.0.4, 18.0.5, and 17.0.7.",
-    "published": "2024-05-08T14:15:08.310"
-  },
   "CVE-2024-28883": {
     "cvss": 7.4,
     "description": "An origin validation vulnerability exists in \n\nBIG-IP APM browser network access VPN client \n\n\n\n for Windows, macOS and Linux which may allow an attacker to bypass F5 endpoint inspection. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
