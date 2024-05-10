@@ -1,10 +1,4 @@
 {
-  "CVE-2024-33434": {
-    "url": "https://github.com/tiagorlampert/chaos/pull/95",
-    "cvss": "-",
-    "description": "An issue in tiagorlampert CHAOS before 1b451cf62582295b7225caf5a7b506f0bad56f6b and 24c9e109b5be34df7b2bce8368eae669c481ed5e allows a remote attacker to execute arbitrary code via the unsafe concatenation of the `filename` argument into the `buildStr` string without any sanitization or filtering.",
-    "published": "2024-05-07T14:15:10.760"
-  },
   "CVE-2024-32369": {
     "cvss": "-",
     "description": "SQL Injection vulnerability in HSC Cybersecurity HC Mailinspector 5.2.17-3 through 5.2.18 allows a remote attacker to obtain sensitive information via a crafted payload to the start and limit parameter in the mliWhiteList.php component.",
@@ -88,12 +82,6 @@
     "cvss": "-",
     "description": "jizhicms v2.5.1 contains a Cross-Site Scripting(XSS) vulnerability in the message function.",
     "published": "2024-05-08T13:15:08.033"
-  },
-  "CVE-2024-32886": {
-    "url": "https://github.com/vitessio/vitess/commit/d438adf7e34a6cf00fe441db80842ec669a99202",
-    "cvss": 4.9,
-    "description": "Vitess is a database clustering system for horizontal scaling of MySQL. When executing the following simple query, the `vtgate` will go into an endless loop that also keeps consuming memory and eventually will run out of memory. This vulnerability is fixed in 19.0.4, 18.0.5, and 17.0.7.",
-    "published": "2024-05-08T14:15:08.310"
   },
   "CVE-2024-28883": {
     "cvss": 7.4,
