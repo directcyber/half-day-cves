@@ -1,16 +1,4 @@
 {
-  "CVE-2024-22472": {
-    "cvss": 8.1,
-    "description": "\nA buffer Overflow vulnerability in Silicon Labs 500 Series Z-Wave devices may allow Denial of Service, and potential Remote Code execution\n\nThis issue affects all versions of Silicon Labs\u00a0500 Series SDK prior to v6.85.2\n\nrunning on Silicon Labs 500 series Z-wave devices.\n\n",
-    "published": "2024-05-07T06:15:07.410",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-4186": {
-    "cvss": 9.8,
-    "description": "The Build App Online plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 3.0.5. This is due to the 'eb_user_email_verification_key' default value is empty, and the not empty check is missing in the 'eb_user_email_verify' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the user id. This can only be exploited if the 'Email Verification' setting is enabled.",
-    "published": "2024-05-07T06:15:09.380",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
   "CVE-2024-4345": {
     "cvss": 9.8,
     "description": "The Startklar Elementor Addons plugin for WordPress is vulnerable to arbitrary file uploads due to insufficient file type validation in the 'process' function in the 'startklarDropZoneUploadProcess' class in versions up to, and including, 1.7.13. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
