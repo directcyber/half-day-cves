@@ -1,22 +1,4 @@
 {
-  "CVE-2024-4582": {
-    "cvss": 7.3,
-    "description": "A vulnerability classified as critical has been found in Faraday GM8181 and GM828x up to 20240429. Affected is an unknown function of the component NTP Service. The manipulation of the argument ntp_srv leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-263304.",
-    "published": "2024-05-07T11:15:49.827",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-4538": {
-    "cvss": 7.5,
-    "description": "IDOR vulnerability in Janto Ticketing Software affecting version 4.3r10. This vulnerability could allow a remote user to obtain a user's event ticket by creating a specific request with the ticket reference ID, leading to the exposure of sensitive user data.",
-    "published": "2024-05-07T12:15:10.030",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-4584": {
-    "cvss": 5.3,
-    "description": "A vulnerability, which was classified as problematic, has been found in Faraday GM8181 and GM828x up to 20240429. Affected by this issue is some unknown functionality of the file /command_port.ini. The manipulation leads to information disclosure. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-263306 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2024-05-07T12:15:10.223",
-    "keywords": "remote,command"
-  },
   "CVE-2024-33434": {
     "url": "https://github.com/tiagorlampert/chaos/pull/95",
     "cvss": "-",
@@ -106,6 +88,12 @@
     "cvss": "-",
     "description": "jizhicms v2.5.1 contains a Cross-Site Scripting(XSS) vulnerability in the message function.",
     "published": "2024-05-08T13:15:08.033"
+  },
+  "CVE-2024-32886": {
+    "url": "https://github.com/vitessio/vitess/commit/d438adf7e34a6cf00fe441db80842ec669a99202",
+    "cvss": 4.9,
+    "description": "Vitess is a database clustering system for horizontal scaling of MySQL. When executing the following simple query, the `vtgate` will go into an endless loop that also keeps consuming memory and eventually will run out of memory. This vulnerability is fixed in 19.0.4, 18.0.5, and 17.0.7.",
+    "published": "2024-05-08T14:15:08.310"
   },
   "CVE-2024-28883": {
     "cvss": 7.4,
