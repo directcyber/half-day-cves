@@ -1,16 +1,4 @@
 {
-  "CVE-2024-4345": {
-    "cvss": 9.8,
-    "description": "The Startklar Elementor Addons plugin for WordPress is vulnerable to arbitrary file uploads due to insufficient file type validation in the 'process' function in the 'startklarDropZoneUploadProcess' class in versions up to, and including, 1.7.13. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2024-05-07T09:15:38.840",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-4346": {
-    "cvss": 9.1,
-    "description": "The Startklar Elementor Addons plugin for WordPress is vulnerable to arbitrary file deletion in all versions up to, and including, 1.7.13. This is due to the plugin not properly validating the path of an uploaded file prior to deleting it. This makes it possible for unauthenticated attackers to delete arbitrary files, including the wp-config.php file, which can make site takeover and remote code execution possible.",
-    "published": "2024-05-07T09:15:39.027",
-    "keywords": "remote,execution,unauthenticated"
-  },
   "CVE-2024-4582": {
     "cvss": 7.3,
     "description": "A vulnerability classified as critical has been found in Faraday GM8181 and GM828x up to 20240429. Affected is an unknown function of the component NTP Service. The manipulation of the argument ntp_srv leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-263304.",
