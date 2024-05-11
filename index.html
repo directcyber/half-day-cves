@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-05-11T01:45:24.293038
+Updated at UTC 2024-05-11T02:19:23.897891
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -104,10 +104,6 @@ Updated at UTC 2024-05-11T01:45:24.293038
 
 
 				</tr>
-			
-		
-			
-		
 			
 		
 			
@@ -212,41 +208,6 @@ Note: Software versions which have reached End of Technical Support (EoTS) are n
 					<td>unauthenticated,authentication,bypass</td>
 					<td class=date>2024-05-08T03:15:07.020</td>
 					<td class=description>The Social Connect plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.2. This is due to insufficient verification on the OpenID server being supplied during the social login through the plugin. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-2860">CVE-2024-2860</a></td>
-					<td>7.8</td>
-					<td>authentication,sensitive</td>
-					<td class=date>2024-05-08T02:15:09.873</td>
-					<td class=description>The PostgreSQL implementation in Brocade SANnav versions before 2.3.0a is vulnerable to an incorrect local authentication flaw. An attacker accessing the VM where the Brocade SANnav is installed can gain access to sensitive data inside the PostgreSQL database.
- </td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-2746">CVE-2024-2746</a></td>
-					<td>8.8</td>
-					<td>authentication,leak</td>
-					<td class=date>2024-05-08T02:15:09.677</td>
-					<td class=description>Incomplete fix for CVE-2024-1929
-
-The problem with CVE-2024-1929 was that the dnf5 D-Bus daemon accepted arbitrary configuration parameters from unprivileged users, which allowed a
-local root exploit by tricking the daemon into loading a user controlled "plugin". All of this happened before Polkit authentication was even started.
-
-The dnf5 library code does not check whether non-root users control the directory in question. 
-
-On one hand, this poses a Denial-of-Service attack vector by making the daemonoperate on a blocking file (e.g. named FIFO special file) or a very large file
-that causes an out-of-memory situation (e.g. /dev/zero). On the other hand, this can be used to let the daemon process privileged files like /etc/shadow.
-The file in question is parsed as an INI file. Error diagnostics resulting from parsing privileged files could cause information leaks, if these diagnostics
-are accessible to unprivileged users. In the case of libdnf5, no such user accessible diagnostics should exist, though.
-
-Also, a local attacker can place a valid repository configuration file in this directory. This configuration file allows to specify
-a plethora of additional configuration options. This makes various additional code paths in libdnf5 accessible to the attacker. 
-</td>
 				</tr>
 			
 		
