@@ -16,5 +16,353 @@
     "description": "SQL Injection vulnerability in School Task Manager v.1.0 allows a remote attacker to obtain sensitive information via a crafted payload to the delete-task.php component.",
     "published": "2024-05-14T15:09:08.060",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-27281": {
+    "cvss": "-",
+    "description": "An issue was discovered in RDoc 6.3.3 through 6.6.2, as distributed in Ruby 3.x through 3.3.0. When parsing .rdoc_options (used for configuration in RDoc) as a YAML file, object injection and resultant remote code execution are possible because there are no restrictions on the classes that can be restored. (When loading the documentation cache, object injection and resultant remote code execution are also possible if there were a crafted cache.) The main fixed version is 6.6.3.1. For Ruby 3.0 users, a fixed version is rdoc 6.3.4.1. For Ruby 3.1 users, a fixed version is rdoc 6.4.1.1. For Ruby 3.2 users, a fixed version is rdoc 6.5.1.1.",
+    "published": "2024-05-14T15:11:57.250",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-27834": {
+    "cvss": "-",
+    "description": "The issue was addressed with improved checks. This issue is fixed in iOS 17.5 and iPadOS 17.5, tvOS 17.5, Safari 17.5, watchOS 10.5, macOS Sonoma 14.5. An attacker with arbitrary read and write capability may be able to bypass Pointer Authentication.",
+    "published": "2024-05-14T15:13:06.953",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-28075": {
+    "cvss": 9.0,
+    "description": "The SolarWinds Access Rights Manager was susceptible to Remote Code Execution Vulnerability. This vulnerability allows an authenticated user to abuse SolarWinds service resulting in remote code execution. \n\nWe thank Trend Micro Zero Day Initiative (ZDI) for its ongoing partnership in coordinating with SolarWinds on responsible disclosure of this and other potential vulnerabilities.   ",
+    "published": "2024-05-14T15:13:53.397",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-29212": {
+    "cvss": 9.9,
+    "description": "Due to an  unsafe de-serialization method used by the Veeam Service Provider Console(VSPC) server in communication between the management agent and its components, under certain conditions, it is possible to perform Remote Code Execution (RCE) on the VSPC server machine.",
+    "published": "2024-05-14T15:15:43.623",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-29895": {
+    "cvss": 10.0,
+    "description": "Cacti provides an operational monitoring and fault management framework. A command injection vulnerability on the 1.3.x DEV branch allows any unauthenticated user to execute arbitrary command on the server when `register_argc_argv` option of PHP is `On`. In `cmd_realtime.php` line 119, the `$poller_id` used as part of the command execution is sourced from `$_SERVER['argv']`, which can be controlled by URL when `register_argc_argv` option of PHP is `On`. And this option is `On` by default in many environments such as the main PHP Docker image for PHP. Commit 53e8014d1f082034e0646edc6286cde3800c683d contains a patch for the issue, but this commit was reverted in commit 99633903cad0de5ace636249de16f77e57a3c8fc.",
+    "published": "2024-05-14T15:17:15.593",
+    "keywords": "execution,unauthenticated,command"
+  },
+  "CVE-2024-2299": {
+    "cvss": 7.4,
+    "description": "A stored Cross-Site Scripting (XSS) vulnerability exists in the parisneo/lollms-webui application due to improper validation of uploaded files in the profile picture upload functionality. Attackers can exploit this vulnerability by uploading malicious HTML files containing JavaScript code, which is executed when the file is accessed. This vulnerability is remotely exploitable via Cross-Site Request Forgery (CSRF), allowing attackers to perform actions on behalf of authenticated users and potentially leading to unauthorized access to sensitive information within the Lollms-webui application.",
+    "published": "2024-05-14T15:18:47.760",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-31445": {
+    "cvss": 8.8,
+    "description": "Cacti provides an operational monitoring and fault management framework. Prior to version 1.2.27, a SQL injection vulnerability in `automation_get_new_graphs_sql` function of `api_automation.php` allows authenticated users to exploit these SQL injection vulnerabilities to perform privilege escalation and remote code execution. In `api_automation.php` line 856, the `get_request_var('filter')` is being concatenated into the SQL statement without any sanitization. In `api_automation.php` line 717, The filter of `'filter'` is `FILTER_DEFAULT`, which means there is no filter for it. Version 1.2.27 contains a patch for the issue.",
+    "published": "2024-05-14T15:25:21.567",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-31459": {
+    "cvss": 8.0,
+    "description": "Cacti provides an operational monitoring and fault management framework. Prior to version 1.2.27, there is a file inclusion issue in the `lib/plugin.php` file. Combined with SQL injection vulnerabilities, remote code execution can be implemented. There is a file inclusion issue with the `api_plugin_hook()` function in the `lib/plugin.php` file, which reads the plugin_hooks and plugin_config tables in database. The read data is directly used to concatenate the file path which is used for file inclusion. Version 1.2.27 contains a patch for the issue.",
+    "published": "2024-05-14T15:25:26.110",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-31460": {
+    "cvss": 6.5,
+    "description": "Cacti provides an operational monitoring and fault management framework. Prior to version 1.2.27, some of the data stored in `automation_tree_rules.php` is not thoroughly checked and is used to concatenate the SQL statement in `create_all_header_nodes()`  function from `lib/api_automation.php` , finally resulting in SQL injection. Using SQL based secondary injection technology, attackers can modify the contents of the Cacti database, and based on the modified content, it may be possible to achieve further impact, such as arbitrary file reading, and even remote code execution through arbitrary file writing. Version 1.2.27 contains a patch for the issue.",
+    "published": "2024-05-14T15:25:26.897",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-31803": {
+    "url": "https://github.com/emp-toolkit/emp-ot/issues/89",
+    "cvss": "-",
+    "description": "Buffer Overflow vulnerability in emp-ot v.0.2.4 allows a remote attacker to execute arbitrary code via the FerretCOT<T>::read_pre_data128_from_file function.",
+    "published": "2024-05-14T15:25:43.390"
+  },
+  "CVE-2024-32735": {
+    "cvss": 9.8,
+    "description": "An issue regarding missing authentication for certain utilities exists in CyberPower PowerPanel Enterprise prior to v2.8.3.\u00a0An unauthenticated remote attacker can access the PDNU REST APIs, which may result in compromise of the application.",
+    "published": "2024-05-14T15:37:03.527",
+    "keywords": "remote,unauthenticated,authentication"
+  },
+  "CVE-2024-32736": {
+    "cvss": 7.5,
+    "description": "A sql injection vulnerability exists in CyberPower PowerPanel Enterprise prior to v2.8.3.\u00a0An unauthenticated remote attacker can leak sensitive information via the \"query_utask_verbose\" function within MCUDBHelper.\n",
+    "published": "2024-05-14T15:37:03.870",
+    "keywords": "remote,unauthenticated,sensitive,leak"
+  },
+  "CVE-2024-32737": {
+    "cvss": 7.5,
+    "description": "A sql injection vulnerability exists in CyberPower PowerPanel Enterprise prior to v2.8.3.\u00a0An unauthenticated remote attacker can leak sensitive information via the \"query_contract_result\" function within MCUDBHelper.\n",
+    "published": "2024-05-14T15:37:04.270",
+    "keywords": "remote,unauthenticated,sensitive,leak"
+  },
+  "CVE-2024-32738": {
+    "cvss": 7.5,
+    "description": "A sql injection vulnerability exists in CyberPower PowerPanel Enterprise prior to v2.8.3.\u00a0An unauthenticated remote attacker can leak sensitive information via the \"query_ptask_lean\" function within MCUDBHelper.\n",
+    "published": "2024-05-14T15:37:04.597",
+    "keywords": "remote,unauthenticated,sensitive,leak"
+  },
+  "CVE-2024-32739": {
+    "cvss": 7.5,
+    "description": "A sql injection vulnerability exists in CyberPower PowerPanel Enterprise prior to v2.8.3.\u00a0An unauthenticated remote attacker can leak sensitive information via the \"query_ptask_verbose\" function within MCUDBHelper.\n",
+    "published": "2024-05-14T15:37:04.897",
+    "keywords": "remote,unauthenticated,sensitive,leak"
+  },
+  "CVE-2024-32874": {
+    "url": "https://github.com/blakeblackshear/frigate/commit/cc851555e4029647986dccc8b8ecf54afee31442",
+    "cvss": 6.8,
+    "description": "Frigate is a network video recorder (NVR) with realtime local object detection for IP cameras. Below 0.13.2 Release, when uploading a file or retrieving the filename, a user may intentionally use a large Unicode filename which would lead to a application-level denial of service. This is due to no limitation set on the length of the filename and the costy use of the Unicode normalization with the form NFKD under the hood of `secure_filename()`.",
+    "published": "2024-05-14T15:37:13.483"
+  },
+  "CVE-2024-32964": {
+    "cvss": 9.0,
+    "description": "Lobe Chat is a chatbot framework that supports speech synthesis, multimodal, and extensible Function Call plugin system. Prior to 0.150.6, lobe-chat had an unauthorized Server-Side Request Forgery vulnerability in the /api/proxy endpoint. An attacker can construct malicious requests to cause Server-Side Request Forgery without logging in, attack intranet services, and leak sensitive information.",
+    "published": "2024-05-14T15:37:18.180",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2024-33263": {
+    "url": "https://github.com/bellard/quickjs/issues/277",
+    "cvss": "-",
+    "description": "QuickJS commit 3b45d15 was discovered to contain an Assertion Failure via JS_FreeRuntime(JSRuntime *) at quickjs.c.",
+    "published": "2024-05-14T15:37:31.263"
+  },
+  "CVE-2024-34196": {
+    "cvss": "-",
+    "description": "Totolink AC1200 Wireless Dual Band Gigabit Router A3002RU_V3 Firmware V3.0.0-B20230809.1615 is vulnerable to Buffer Overflow. The \"boa\" program allows attackers to modify the value of the \"vwlan_idx\" field via \"formMultiAP\". This can lead to a stack overflow through the \"formWlEncrypt\" CGI function by constructing malicious HTTP requests and passing a WLAN SSID value exceeding the expected length, potentially resulting in command execution or denial of service attacks.",
+    "published": "2024-05-14T15:38:32.730",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-34199": {
+    "cvss": "-",
+    "description": "TinyWeb 1.94 and below allows unauthenticated remote attackers to cause a denial of service (Buffer Overflow) when sending excessively large elements in the request line.",
+    "published": "2024-05-14T15:38:32.970",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-34338": {
+    "cvss": "-",
+    "description": "A Blind command injection vulnerability in Tenda O3V2 V1.0.0.12 and earlier allows remote attackers to execute operating system commands via dest parameter in /goform/getTraceroute",
+    "published": "2024-05-14T15:38:39.337",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-34354": {
+    "url": "https://github.com/criticalmoments/cmsaasstarter/pull/65",
+    "cvss": 6.5,
+    "description": "CMSaaSStarter is a SaaS template/boilerplate built with SvelteKit, Tailwind, and Supabase. Any forks of the CMSaaSStarter template before commit 7904d416d2c72ec75f42fbf51e9e64fa74062ee6 are impacted. The issue is the user JWT Token is not verified on server session. You should take the patch 7904d416d2c72ec75f42fbf51e9e64fa74062ee6 into your fork.\n",
+    "published": "2024-05-14T15:38:44.480"
+  },
+  "CVE-2024-34359": {
+    "cvss": 9.6,
+    "description": "llama-cpp-python is the Python bindings for llama.cpp. `llama-cpp-python` depends on class `Llama` in `llama.py` to load `.gguf` llama.cpp or Latency Machine Learning Models. The `__init__` constructor built in the `Llama` takes several parameters to configure the loading and running of the model. Other than `NUMA, LoRa settings`, `loading tokenizers,` and `hardware settings`, `__init__` also loads the `chat template` from targeted `.gguf` 's Metadata and furtherly parses it to `llama_chat_format.Jinja2ChatFormatter.to_chat_handler()` to construct the `self.chat_handler` for this model. Nevertheless, `Jinja2ChatFormatter` parse the `chat template` within the Metadate with sandbox-less `jinja2.Environment`, which is furthermore rendered in `__call__` to construct the `prompt` of interaction. This allows `jinja2` Server Side Template Injection which leads to remote code execution by a carefully constructed payload.",
+    "published": "2024-05-14T15:38:45.093",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-34360": {
+    "url": "https://github.com/spacemeshos/go-spacemesh/commit/9aff88d54be809ac43d60e8a8b4d65359c356b87",
+    "cvss": 8.2,
+    "description": "go-spacemesh is a Go implementation of the Spacemesh protocol full node. Nodes can publish activations transactions (ATXs) which reference the incorrect previous ATX of the Smesher that created the ATX. ATXs are expected to form a single chain from the newest to the first ATX ever published by an identity. Allowing Smeshers to reference an earlier (but not the latest) ATX as previous breaks this protocol rule and can serve as an attack vector where Nodes are rewarded for holding their PoST data for less than one epoch but still being eligible for rewards. This vulnerability is fixed in go-spacemesh 1.5.2-hotfix1 and Spacemesh API 1.37.1.",
+    "published": "2024-05-14T15:38:45.830"
+  },
+  "CVE-2024-34701": {
+    "url": "https://github.com/miraheze/mw-config/commit/e5664995fbb8644f9a80b450b4326194f20f9ddc",
+    "cvss": 5.9,
+    "description": "CreateWiki is Miraheze's MediaWiki extension for requesting & creating wikis. It is possible for users to be considered as the requester of a specific wiki request if their local user ID on any wiki in a wiki farm matches the local ID of the requester at the wiki where the wiki request was made. This allows them to go to that request entry's on Special:RequestWikiQueue on the wiki where their local user ID matches and take any actions that the wiki requester is allowed to take from there.\n\nCommit 02e0f298f8d35155c39aa74193cb7b867432c5b8 fixes the issue. Important note about the fix: This vulnerability has been fixed by disabling access to the REST API and special pages outside of the wiki configured as the \"global wiki\" in `$wgCreateWikiGlobalWiki` in a user's MediaWiki settings.\n\nAs a workaround, it is possible to disable the special pages outside of one's own global wiki by doing something similar to `miraheze/mw-config` commit e5664995fbb8644f9a80b450b4326194f20f9ddc that is adapted to one's own setup. As for the REST API, before the fix, there wasn't any REST endpoint that allowed one to make writes. Regardless, it is possible to also disable it outside of the global wiki by using `$wgCreateWikiDisableRESTAPI` and `$wgConf` in the configuration for one's own wiki farm..",
+    "published": "2024-05-14T15:39:28.940"
+  },
+  "CVE-2024-34749": {
+    "cvss": "-",
+    "description": "Phormer prior to version 3.35 contains a cross-site scripting vulnerability. If this vulnerability is exploited, a remote unauthenticated attacker may execute an arbitrary script on the web browser of the user.",
+    "published": "2024-05-14T15:39:32.140",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-34921": {
+    "cvss": "-",
+    "description": "TOTOLINK X5000R v9.1.0cu.2350_B20230313 was discovered to contain a command injection via the disconnectVPN function.",
+    "published": "2024-05-14T15:39:37.937",
+    "keywords": "command,vpn"
+  },
+  "CVE-2024-35048": {
+    "url": "https://github.com/javahuang/surveyking/issues/56",
+    "cvss": "-",
+    "description": "An issue in SurveyKing v1.3.1 allows attackers to execute a session replay attack after a user changes their password.",
+    "published": "2024-05-14T15:39:38.973"
+  },
+  "CVE-2024-35049": {
+    "url": "https://github.com/javahuang/surveyking/issues/55",
+    "cvss": "-",
+    "description": "SurveyKing v1.3.1 was discovered to keep users' sessions active after logout. Related to an incomplete fix for CVE-2022-25590.",
+    "published": "2024-05-14T15:39:39.080"
+  },
+  "CVE-2024-35050": {
+    "url": "https://github.com/javahuang/surveyking/issues/57",
+    "cvss": "-",
+    "description": "An issue in SurveyKing v1.3.1 allows attackers to escalate privileges via re-using the session ID of a user that was deleted by an Admin.",
+    "published": "2024-05-14T15:39:39.180"
+  },
+  "CVE-2024-35205": {
+    "cvss": "-",
+    "description": "The WPS Office (aka cn.wps.moffice_eng) application before 17.0.0 for Android fails to properly sanitize file names before processing them through external application interactions, leading to a form of path traversal. This potentially enables any application to dispatch a crafted library file, aiming to overwrite an existing native library utilized by WPS Office. Successful exploitation could result in the execution of arbitrary commands under the guise of WPS Office's application ID.",
+    "published": "2024-05-14T15:39:43.030",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-3070": {
+    "cvss": 9.8,
+    "description": "The Last Viewed Posts by WPBeginner plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.0.0 via deserialization of untrusted input from the LastViewedPosts Cookie. This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable plugin. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code.",
+    "published": "2024-05-14T15:39:52.800",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-3263": {
+    "cvss": 9.8,
+    "description": "YMS VIS Pro is an information system for veterinary and food administration, veterinarians and farm. Due to a combination of improper method for system credentials generation and weak password policy, passwords can be easily guessed and enumerated through brute force attacks. Successful attacks can lead to unauthorised access and execution of operations based on assigned user permissions. This vulnerability affects VIS Pro in versions <= 3.3.0.6. This vulnerability has been mitigated by changes in authentication mechanisms and implementation of additional authentication layer and strong password policies.\n\n\n\n\n\n\n\n",
+    "published": "2024-05-14T15:40:35.000",
+    "keywords": "execution,authentication"
+  },
+  "CVE-2024-3792": {
+    "cvss": 4.8,
+    "description": "Vulnerability in WBSAirback 21.02.04, which consists of a stored Cross-Site Scripting (XSS) through /admin/DeviceReplication, execution range field, all parameters. Exploitation of this vulnerability could allow a remote user to send a specially crafted URL to the victim and steal their session data.",
+    "published": "2024-05-14T15:42:18.567",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-3806": {
+    "cvss": 9.8,
+    "description": "The Porto theme for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 7.1.0 via the 'porto_ajax_posts' function. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where php file type can be uploaded and included.",
+    "published": "2024-05-14T15:42:22.107",
+    "keywords": "execution,unauthenticated,sensitive,bypass"
+  },
+  "CVE-2024-3807": {
+    "cvss": 8.8,
+    "description": "The Porto theme for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 7.1.0 via 'porto_page_header_shortcode_type', 'slideshow_type' and 'post_layout' post meta. This makes it possible for authenticated attackers, with contributor-level and above permissions, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where php file type can be uploaded and included. This was partially patched in version 7.1.0 and fully patched in version 7.1.1.",
+    "published": "2024-05-14T15:42:22.653",
+    "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2024-3808": {
+    "cvss": 8.8,
+    "description": "The Porto Theme - Functionality plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 3.1.0 via the 'porto_portfolios' shortcode 'portfolio_layout' attribute. This makes it possible for authenticated attackers, with contributor-level and above permissions, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where php file type can be uploaded and included.",
+    "published": "2024-05-14T15:42:22.943",
+    "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2024-3809": {
+    "cvss": 8.8,
+    "description": "The Porto Theme - Functionality plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 3.0.9 via the 'slideshow_type' post meta. This makes it possible for authenticated attackers, with contributor-level and above permissions, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where php file type can be uploaded and included.",
+    "published": "2024-05-14T15:42:23.270",
+    "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2024-4038": {
+    "cvss": 6.5,
+    "description": "The The Back In Stock Notifier for WooCommerce | WooCommerce Waitlist Pro plugin for WordPress for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 5.3.1. This is due to the plugin for WordPress allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+    "published": "2024-05-14T15:42:44.400",
+    "keywords": "execution,unauthenticated"
+  },
+  "CVE-2024-4039": {
+    "cvss": 6.5,
+    "description": "The The Orders Tracking for WooCommerce plugin for WordPress for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 1.2.10. This is due to the plugin allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes. A partial patch was released in 1.2.10, and a complete patch was released in 1.2.11.",
+    "published": "2024-05-14T15:42:44.707",
+    "keywords": "execution,unauthenticated"
+  },
+  "CVE-2024-4044": {
+    "cvss": 7.8,
+    "description": "A deserialization of untrusted data vulnerability exists in common code used by FlexLogger and InstrumentStudio that may result in remote code execution.  Successful exploitation requires an attacker to get a user to open a specially crafted project file.  This vulnerability affects NI FlexLogger 2024 Q1 and prior versions as well as NI InstrumentStudio 2024 Q1 and prior versions.\n",
+    "published": "2024-05-14T15:42:45.640",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-4067": {
+    "url": "https://github.com/micromatch/micromatch/pull/247",
+    "cvss": 7.5,
+    "description": "The NPM package `micromatch` is vulnerable to Regular Expression Denial of Service (ReDoS). The vulnerability occurs in `micromatch.braces()` in `index.js` because the pattern `.*` will greedily match anything. By passing a malicious payload, the pattern matching will keep backtracking to the input while it doesn't find the closing bracket. As the input size increases, the consumption time will also increase until it causes the application to hang or slow down. There was a merged fix but further testing shows the issue persists. This issue should be mitigated by using a safe pattern that won't start backtracking the regular expression due to greedy matching.\n",
+    "published": "2024-05-14T15:42:47.947"
+  },
+  "CVE-2024-4068": {
+    "url": "https://github.com/micromatch/braces/issues/35",
+    "cvss": 7.5,
+    "description": "The NPM package `braces` fails to limit the number of characters it can handle, which could lead to Memory Exhaustion. In `lib/parse.js,` if a malicious user sends \"imbalanced braces\" as input, the parsing will enter a loop, which will cause the program to start allocating heap memory without freeing it at any moment of the loop. Eventually, the JavaScript heap limit is reached, and the program will crash.\n",
+    "published": "2024-05-14T15:42:48.660"
+  },
+  "CVE-2024-4129": {
+    "cvss": 8.8,
+    "description": "Improper Authentication vulnerability in Snow Software AB Snow License Manager on Windows allows a networked attacker to perform an Authentication Bypass if Active Directory Authentication is enabled.This issue affects Snow License Manager: from 9.33.2 through 9.34.0.\n\n",
+    "published": "2024-05-14T15:42:57.983",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-4213": {
+    "cvss": 5.3,
+    "description": "The Shopping Cart & eCommerce Store plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 5.6.4 via the order report functionality. This makes it possible for unauthenticated attackers to extract sensitive data including order details such as payment details, addresses and other PII.",
+    "published": "2024-05-14T15:43:06.810",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-4397": {
+    "cvss": 8.8,
+    "description": "The LearnPress \u2013 WordPress LMS Plugin plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'save_post_materials' function in versions up to, and including, 4.2.6.5. This makes it possible for authenticated attackers, with Instructor-level permissions and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-05-14T15:43:31.793",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-4413": {
+    "cvss": 9.8,
+    "description": "The Hotel Booking Lite plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 4.11.1 via deserialization of untrusted input. This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable plugin. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code.",
+    "published": "2024-05-14T15:43:36.710",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-4423": {
+    "cvss": "-",
+    "description": "The access control in\u00a0CemiPark software does not properly validate user-entered data, which allows the authentication bypass. An attacker who has network access to the login panel can log in with administrator rights to the application.This issue affects CemiPark software: 4.5, 4.7, 5.03 and potentially others. The vendor refused to provide the specific range of affected products.\n\n",
+    "published": "2024-05-14T15:43:40.150",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-4434": {
+    "cvss": 9.8,
+    "description": "The LearnPress \u2013 WordPress LMS Plugin plugin for WordPress is vulnerable to time-based SQL Injection via the \u2018term_id\u2019 parameter in versions up to, and including, 4.2.6.5 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2024-05-14T15:43:44.537",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-4441": {
+    "cvss": 8.1,
+    "description": "The XML Sitemap & Google News plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 5.4.8 via the 'feed' parameter. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
+    "published": "2024-05-14T15:43:46.220",
+    "keywords": "execution,unauthenticated,sensitive,bypass"
+  },
+  "CVE-2024-4444": {
+    "cvss": 5.3,
+    "description": "The LearnPress \u2013 WordPress LMS Plugin plugin for WordPress is vulnerable to bypass to user registration in versions up to, and including, 4.2.6.5. This is due to missing checks in the 'create_account' function in the checkout. This makes it possible for unauthenticated attackers to register as the default role on the site, even if registration is disabled.",
+    "published": "2024-05-14T15:43:46.507",
+    "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2024-4560": {
+    "cvss": 9.8,
+    "description": "The Kognetiks Chatbot for WordPress plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the chatbot_chatgpt_upload_file_to_assistant function in all versions up to, and including, 1.9.9. This makes it possible for unauthenticated attackers, with to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-05-14T15:44:04.037",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-4605": {
+    "cvss": 8.8,
+    "description": "The Breakdance plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.7.1 via post meta data. This is due to the plugin storing custom data in metadata without an underscore prefix. This makes it possible for lower privileged users, such as contributors, to edit this data via UI. As a result they can escalate their privileges or execute arbitrary code.",
+    "published": "2024-05-14T15:44:11.683",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-4701": {
+    "cvss": 9.9,
+    "description": "A path traversal issue potentially leading to remote code execution in Genie for all versions prior to 4.3.18",
+    "published": "2024-05-14T15:44:27.123",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-4813": {
+    "cvss": 6.3,
+    "description": "A vulnerability classified as critical has been found in Ruijie RG-UAC up to 20240506. Affected is an unknown function of the file /view/networkConfig/physicalInterface/interface_commit.php. The manipulation of the argument name leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue. VDB-263934 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-05-14T15:45:02.627",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-4814": {
+    "cvss": 6.3,
+    "description": "A vulnerability classified as critical was found in Ruijie RG-UAC up to 20240506. Affected by this vulnerability is an unknown functionality of the file /view/networkConfig/RouteConfig/StaticRoute/static_route_edit_commit.php. The manipulation of the argument oldipmask/oldgateway leads to os command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-263935. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-05-14T15:45:03.913",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-4815": {
+    "cvss": 6.3,
+    "description": "A vulnerability, which was classified as critical, has been found in Ruijie RG-UAC up to 20240506. Affected by this issue is some unknown functionality of the file /view/bugSolve/viewData/detail.php. The manipulation of the argument filename leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-263936. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-05-14T15:45:05.653",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-4816": {
+    "cvss": 6.3,
+    "description": "A vulnerability, which was classified as critical, was found in Ruijie RG-UAC up to 20240506. This affects an unknown part of the file /view/networkConfig/GRE/gre_add_commit.php. The manipulation of the argument name/remote/local/IP leads to os command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-263937 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-05-14T15:45:07.320",
+    "keywords": "remote,command"
   }
 }
