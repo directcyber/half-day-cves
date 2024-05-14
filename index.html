@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-05-14T16:12:38.808536
+Updated at UTC 2024-05-14T17:08:19.965195
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,78 @@ Updated at UTC 2024-05-14T16:12:38.808536
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-34714">CVE-2024-34714</a></td>
+					<td>7.6</td>
+					<td><a target=_blank href="https://github.com/hoppscotch/hoppscotch-extension/commit/d4e8e4830326f46ba17acd1307977ecd32a85b58">https://github.com/hoppscotch/hoppscotch-extension/commit/d4e8e4830326f46ba17acd1307977ecd32a85b58</a></td>
+					<td class=date>2024-05-14T16:17:27.623</td>
+					<td class=description>The Hoppscotch Browser Extension is a browser extension for Hoppscotch, a community-driven end-to-end open-source API development ecosystem. Due to an oversight during a change made to the extension in the commit d4e8e4830326f46ba17acd1307977ecd32a85b58, a critical check for the origin list was missed and allowed for messages to be sent to the extension which the extension gladly processed and responded back with the results of, while this wasn't supposed to happen and be blocked by the origin not being present in the origin list.
+
+This vulnerability exposes Hoppscotch Extension users to sites which call into Hoppscotch Extension APIs internally. This fundamentally allows any site running on the browser with the extension installed to bypass CORS restrictions if the user is running extensions with the given version. This security hole was patched in the commit 7e364b928ab722dc682d0fcad713a96cc38477d6 which was released along with the extension version `0.35`. As a workaround, Chrome users can use the Extensions Settings to disable the extension access to only the origins that you want. Firefox doesn't have an alternative to upgrading to a fixed version.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-34713">CVE-2024-34713</a></td>
+					<td>3.5</td>
+					<td><a target=_blank href="https://github.com/cea-hpc/sshproxy/commit/f7eabd05d5f0f951e160293692327cad9a7d9580">https://github.com/cea-hpc/sshproxy/commit/f7eabd05d5f0f951e160293692327cad9a7d9580</a></td>
+					<td class=date>2024-05-14T16:17:27.147</td>
+					<td class=description>sshproxy is used on a gateway to transparently proxy a user SSH connection on the gateway to an internal host via SSH. Prior to version 1.6.3, any user authorized to connect to a ssh server using `sshproxy` can inject options to the `ssh` command executed by `sshproxy`. All versions of `sshproxy` are impacted. The problem is patched starting in version 1.6.3. The only workaround is to use the `force_command` option in `sshproxy.yaml`, but it's rarely relevant.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -309,6 +381,369 @@ As a workaround, it is possible to disable the special pages outside of one's ow
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4871">CVE-2024-4871</a></td>
+					<td>6.8</td>
+					<td>remote,execution,leak</td>
+					<td class=date>2024-05-14T16:17:37.163</td>
+					<td class=description>A vulnerability was found in Satellite. When running a remote execution job on a host, the host's SSH key is not being checked. When the key changes, the Satellite still connects it because it uses "-o StrictHostKeyChecking=no". This flaw can lead to a man-in-the-middle attack (MITM), denial of service, leaking of secrets the remote execution job contains, or other issues that may arise from the attacker's ability to forge an SSH key. This issue does not directly allow unauthorized remote execution on the Satellite, although it can leak secrets that may lead to it.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4144">CVE-2024-4144</a></td>
+					<td>6.5</td>
+					<td>execution,unauthenticated</td>
+					<td class=date>2024-05-14T16:17:33.483</td>
+					<td class=description>The Simple Basic Contact Form plugin for WordPress for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 20240502. This allows unauthenticated attackers to execute arbitrary shortcodes. The severity and exploitability depends on the functionality of other plugins installed in the environment.</td>
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-33498">CVE-2024-33498</a></td>
+					<td>5.3</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-05-14T16:17:19.793</td>
+					<td class=description>A vulnerability has been identified in SIMATIC RTLS Locating Manager (6GT2780-0DA00) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-0DA10) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-0DA20) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-0DA30) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-1EA10) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-1EA20) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-1EA30) (All versions < V3.0.1.1). Affected applications do not properly release memory that is allocated when handling specifically crafted incoming packets. This could allow an unauthenticated remote attacker to cause a denial of service condition by crashing the service when it runs out of memory. The service is restarted automatically after a short time.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-33495">CVE-2024-33495</a></td>
+					<td>6.5</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-05-14T16:17:18.490</td>
+					<td class=description>A vulnerability has been identified in SIMATIC RTLS Locating Manager (6GT2780-0DA00) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-0DA10) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-0DA20) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-0DA30) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-1EA10) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-1EA20) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-1EA30) (All versions < V3.0.1.1). The affected application does not properly limit the size of specific logs. This could allow an unauthenticated remote attacker to exhaust system resources by creating a great number of log entries which could potentially lead to a denial of service condition. A successful exploitation requires the attacker to have access to specific SIMATIC RTLS Locating Manager Clients in the deployment.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-33494">CVE-2024-33494</a></td>
+					<td>6.5</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-05-14T16:17:17.983</td>
+					<td class=description>A vulnerability has been identified in SIMATIC RTLS Locating Manager (6GT2780-0DA00) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-0DA10) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-0DA20) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-0DA30) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-1EA10) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-1EA20) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-1EA30) (All versions < V3.0.1.1). Affected components do not properly authenticate heartbeat messages. This could allow an unauthenticated remote attacker to affected the availability of secondary RTLS systems configured using a TeeRevProxy service and potentially cause loss of data generated during the time the attack is ongoing.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-32977">CVE-2024-32977</a></td>
+					<td>7.1</td>
+					<td>unauthenticated,authentication,bypass</td>
+					<td class=date>2024-05-14T16:17:12.590</td>
+					<td class=description>OctoPrint provides a web interface for controlling consumer 3D printers. OctoPrint versions up until and including 1.10.0 contain a vulnerability that allows an unauthenticated attacker to completely bypass the authentication if the `autologinLocal` option is enabled within `config.yaml`, even if they come from networks that are not configured as `localNetworks`, spoofing their IP via the `X-Forwarded-For` header. If autologin is not enabled, this vulnerability does not have any impact. The vulnerability has been patched in version 1.10.1. Until the patch has been applied, OctoPrint administrators who have autologin enabled on their instances should disable it and/or to make the instance inaccessible from potentially hostile networks like the internet.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-32733">CVE-2024-32733</a></td>
+					<td>6.1</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2024-05-14T16:17:10.490</td>
+					<td class=description>
+Due to missing input validation and output encoding of untrusted data, SAP NetWeaver Application Server ABAP and ABAP Platform allows an unauthenticated attacker to inject malicious JavaScript code into the dynamically crafted web page. On successful exploitation the attacker can access or modify sensitive information with no impact on availability of the application
+
+</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-32352">CVE-2024-32352</a></td>
+					<td>-</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-05-14T16:17:03.113</td>
+					<td class=description>TOTOLINK X5000R V9.1.0cu.2350_B20230313 was discovered to contain an authenticated remote command execution (RCE) vulnerability via the "ipsecL2tpEnable" parameter in the "cstecgi.cgi" binary.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-32351">CVE-2024-32351</a></td>
+					<td>-</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-05-14T16:17:02.800</td>
+					<td class=description>TOTOLINK X5000R V9.1.0cu.2350_B20230313 was discovered to contain an authenticated remote command execution (RCE) vulnerability via the "mru" parameter in the "cstecgi.cgi" binary.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-32350">CVE-2024-32350</a></td>
+					<td>-</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-05-14T16:17:02.543</td>
+					<td class=description>TOTOLINK X5000R V9.1.0cu.2350_B20230313 was discovered to contain an authenticated remote command execution (RCE) vulnerability via the "ipsecPsk" parameter in the "cstecgi.cgi" binary.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-32349">CVE-2024-32349</a></td>
+					<td>-</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-05-14T16:17:02.243</td>
+					<td class=description>TOTOLINK X5000R V9.1.0cu.2350_B20230313 was discovered to contain an authenticated remote command execution (RCE) vulnerability via the "mtu" parameters in the "cstecgi.cgi" binary.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31485">CVE-2024-31485</a></td>
+					<td>7.2</td>
+					<td>remote,command</td>
+					<td class=date>2024-05-14T16:16:51.033</td>
+					<td class=description>A vulnerability has been identified in CPCI85 Central Processing/Communication (All versions < V5.30), SICORE Base system (All versions < V1.3.0). The web interface of affected devices is vulnerable to command injection due to missing server side input sanitation. This could allow an authenticated privileged remote attacker to execute arbitrary code with root privileges.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-30207">CVE-2024-30207</a></td>
+					<td>10.0</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-05-14T16:16:47.020</td>
+					<td class=description>A vulnerability has been identified in SIMATIC RTLS Locating Manager (6GT2780-0DA00) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-0DA10) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-0DA20) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-0DA30) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-1EA10) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-1EA20) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-1EA30) (All versions < V3.0.1.1). The affected systems use symmetric cryptography with a hard-coded key to protect the communication between client and server. This could allow an unauthenticated remote attacker to compromise confidentiality and integrity of the communication and, subsequently, availability of the system.
+A successful exploit requires the attacker to gain knowledge of the hard-coded key and to be able to intercept the communication between client and server on the network.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-30206">CVE-2024-30206</a></td>
+					<td>8.8</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-05-14T16:16:45.767</td>
+					<td class=description>A vulnerability has been identified in SIMATIC RTLS Locating Manager (6GT2780-0DA00) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-0DA10) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-0DA20) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-0DA30) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-1EA10) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-1EA20) (All versions < V3.0.1.1), SIMATIC RTLS Locating Manager (6GT2780-1EA30) (All versions < V3.0.1.1). Affected SIMATIC RTLS Locating Manager Clients do not properly check the integrity of update files. This could allow an unauthenticated remote attacker to alter update files in transit and trick an authorized user into installing malicious code. 
+A successful exploit requires the attacker to be able to modify the communication between server and client on the network.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28136">CVE-2024-28136</a></td>
+					<td>7.8</td>
+					<td>remote,command</td>
+					<td class=date>2024-05-14T16:16:40.613</td>
+					<td class=description>
+	
+		
+		
+	
+	
+		
+			
+				
+					
+
+	
+		
+		
+	
+	
+		
+
+
+			
+				
+					A local attacker with low privileges can use a command injection vulnerability to gain root
+privileges due to improper input validation using the OCPP Remote service.
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+		
+
+
+	
+</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28135">CVE-2024-28135</a></td>
+					<td>5.0</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-05-14T16:16:39.033</td>
+					<td class=description>
+	
+		
+		
+	
+	
+		
+			
+				
+					
+
+	
+		
+		
+	
+	
+		
+
+
+			
+				
+					A low privileged remote attacker can use a command injection vulnerability in the API which performs
+remote code execution as the user-app user due to improper input validation. The confidentiality is partly affected.
+
+
+
+
+
+
+
+
+
+				
+
+
+			
+
+
+		
+
+
+	
+</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28134">CVE-2024-28134</a></td>
+					<td>7.0</td>
+					<td>remote,unauthenticated,sensitive</td>
+					<td class=date>2024-05-14T16:16:37.623</td>
+					<td class=description>
+	
+		
+		
+	
+	
+		
+			
+				
+					
+
+	
+		
+		
+	
+	
+		
+
+
+			
+				
+					An unauthenticated remote attacker can extract a session token with a MitM attack and gain web-based
+management access with the privileges of the currently logged in user due to cleartext transmission of sensitive information. No additional user interaction is required. The access is limited as only non-sensitive information can be obtained but the availability can be seriously affected. 
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+		
+
+
+	
+</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27945">CVE-2024-27945</a></td>
+					<td>7.2</td>
+					<td>remote,execution</td>
+					<td class=date>2024-05-14T16:16:32.503</td>
+					<td class=description>A vulnerability has been identified in RUGGEDCOM CROSSBOW (All versions < V5.5). The bulk import feature of the affected systems allow a privileged user to upload files to the root installation directory of the system. By replacing specific files, an attacker could tamper specific files or even achieve remote code execution.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27944">CVE-2024-27944</a></td>
+					<td>7.2</td>
+					<td>remote,execution</td>
+					<td class=date>2024-05-14T16:16:31.260</td>
+					<td class=description>A vulnerability has been identified in RUGGEDCOM CROSSBOW (All versions < V5.5). The affected systems allow a privileged user to upload firmware files to the root installation directory of the system. By replacing specific files, an attacker could tamper specific files or even achieve remote code execution.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27943">CVE-2024-27943</a></td>
+					<td>7.2</td>
+					<td>remote,execution</td>
+					<td class=date>2024-05-14T16:16:28.537</td>
+					<td class=description>A vulnerability has been identified in RUGGEDCOM CROSSBOW (All versions < V5.5). The affected systems allow a privileged user to upload generic files to the root installation directory of the system. By replacing specific files, an attacker could tamper specific files or even achieve remote code execution.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27939">CVE-2024-27939</a></td>
+					<td>9.8</td>
+					<td>execution,unauthenticated</td>
+					<td class=date>2024-05-14T16:16:23.443</td>
+					<td class=description>A vulnerability has been identified in RUGGEDCOM CROSSBOW (All versions < V5.5). The affected systems allow the upload of arbitrary files of any unauthenticated user. An attacker could leverage this vulnerability and achieve arbitrary code execution with system privileges.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-25968">CVE-2024-25968</a></td>
+					<td>5.9</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-05-14T16:16:18.523</td>
+					<td class=description>Dell PowerScale OneFS versions 8.2.x through 9.7.0.2 contains a use of a broken or risky cryptographic algorithm vulnerability. A remote unauthenticated attacker could potentially exploit this vulnerability, leading to information disclosure.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-25966">CVE-2024-25966</a></td>
+					<td>5.3</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-05-14T16:16:15.943</td>
+					<td class=description>Dell PowerScale OneFS versions 8.2.x through 9.7.0.2 contains an improper handling of unexpected data type vulnerability. A remote unauthenticated attacker could potentially exploit this vulnerability, leading to denial of service.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
