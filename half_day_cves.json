@@ -682,5 +682,11 @@
     "cvss": "-",
     "description": "An issue in Reportico Web before v.8.1.0 allows a local attacker to execute arbitrary code and obtain sensitive information via the sessionid function.",
     "published": "2024-05-14T21:15:12.060"
+  },
+  "CVE-2024-31466": {
+    "cvss": 9.8,
+    "description": "There are buffer overflow vulnerabilities in the underlying CLI service that could lead to unauthenticated remote code execution by sending specially crafted packets destined to the PAPI (Aruba's Access Point management protocol) UDP port (8211). Successful exploitation of these vulnerabilities result in the ability to execute arbitrary code as a privileged user on the underlying operating system.\n\n",
+    "published": "2024-05-14T22:15:09.777",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
