@@ -514,5 +514,161 @@
     "description": "A vulnerability was found in Satellite. When running a remote execution job on a host, the host's SSH key is not being checked. When the key changes, the Satellite still connects it because it uses \"-o StrictHostKeyChecking=no\". This flaw can lead to a man-in-the-middle attack (MITM), denial of service, leaking of secrets the remote execution job contains, or other issues that may arise from the attacker's ability to forge an SSH key. This issue does not directly allow unauthorized remote execution on the Satellite, although it can leak secrets that may lead to it.",
     "published": "2024-05-14T16:17:37.163",
     "keywords": "remote,execution,leak"
+  },
+  "CVE-2024-23105": {
+    "cvss": 7.5,
+    "description": "A Use Of Less Trusted Source [CWE-348] vulnerability in Fortinet FortiPortal version 7.0.0 through 7.0.6 and version 7.2.0 through 7.2.1 allows an unauthenticated attack to bypass IP protection through crafted HTTP or HTTPS packets.",
+    "published": "2024-05-14T17:15:38.967",
+    "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2024-29997": {
+    "cvss": 6.8,
+    "description": "Windows Mobile Broadband Driver Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:16:21.450",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-29998": {
+    "cvss": 6.8,
+    "description": "Windows Mobile Broadband Driver Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:16:23.233",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-29999": {
+    "cvss": 6.8,
+    "description": "Windows Mobile Broadband Driver Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:16:25.200",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30000": {
+    "cvss": 6.8,
+    "description": "Windows Mobile Broadband Driver Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:16:26.977",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30001": {
+    "cvss": 6.8,
+    "description": "Windows Mobile Broadband Driver Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:16:28.200",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30002": {
+    "cvss": 6.8,
+    "description": "Windows Mobile Broadband Driver Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:16:29.683",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30003": {
+    "cvss": 6.8,
+    "description": "Windows Mobile Broadband Driver Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:16:31.567",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30004": {
+    "cvss": 6.8,
+    "description": "Windows Mobile Broadband Driver Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:16:32.987",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30005": {
+    "cvss": 6.8,
+    "description": "Windows Mobile Broadband Driver Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:16:34.533",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30006": {
+    "cvss": 8.8,
+    "description": "Microsoft WDAC OLE DB provider for SQL Server Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:16:35.757",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30009": {
+    "cvss": 8.8,
+    "description": "Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:16:39.597",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30010": {
+    "cvss": 8.8,
+    "description": "Windows Hyper-V Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:16:40.937",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30012": {
+    "cvss": 6.8,
+    "description": "Windows Mobile Broadband Driver Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:16:43.317",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30014": {
+    "cvss": 7.5,
+    "description": "Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:16:44.540",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30015": {
+    "cvss": 7.5,
+    "description": "Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:16:45.747",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30017": {
+    "cvss": 8.8,
+    "description": "Windows Hyper-V Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:16:48.240",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30020": {
+    "cvss": 8.1,
+    "description": "Windows Cryptographic Services Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:16:52.823",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30021": {
+    "cvss": 6.8,
+    "description": "Windows Mobile Broadband Driver Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:16:54.090",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30022": {
+    "cvss": 7.5,
+    "description": "Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:16:55.400",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30023": {
+    "cvss": 7.5,
+    "description": "Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:16:56.520",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30024": {
+    "cvss": 7.5,
+    "description": "Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:16:57.523",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30029": {
+    "cvss": 7.5,
+    "description": "Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:17:01.497",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30042": {
+    "cvss": 7.8,
+    "description": "Microsoft Excel Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:17:14.283",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30044": {
+    "cvss": 8.8,
+    "description": "Microsoft SharePoint Server Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:17:16.107",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-30045": {
+    "cvss": 6.3,
+    "description": ".NET and Visual Studio Remote Code Execution Vulnerability",
+    "published": "2024-05-14T17:17:17.023",
+    "keywords": "remote,execution"
   }
 }
