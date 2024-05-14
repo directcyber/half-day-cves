@@ -670,5 +670,11 @@
     "description": ".NET and Visual Studio Remote Code Execution Vulnerability",
     "published": "2024-05-14T17:17:17.023",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-3676": {
+    "cvss": 7.5,
+    "description": "The Proofpoint Encryption endpoint of Proofpoint Enterprise Protection contains an Improper Input Validation vulnerability that allows an unauthenticated remote attacker with a specially crafted HTTP request to create additional Encryption user accounts under the attacker's control.\u00a0 These accounts are able to send spoofed email to any users within the domains configured by the Administrator.",
+    "published": "2024-05-14T19:15:12.970",
+    "keywords": "remote,unauthenticated"
   }
 }
