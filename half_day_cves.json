@@ -820,5 +820,41 @@
     "description": "Remote Code\nExecution has been discovered in\nOpenText\u2122 iManager 3.2.6.0200.\u00a0The vulnerability can\ntrigger remote code execution using custom file upload task.",
     "published": "2024-05-15T17:15:14.910",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-20256": {
+    "cvss": 4.8,
+    "description": "A vulnerability in the web-based management interface of Cisco AsyncOS Software for Cisco Secure Email and Web Manager and Secure Web Appliance could allow an authenticated, remote attacker to conduct an XSS attack against a user of the interface.\r\n\rThis vulnerability is due to insufficient validation of user input. An attacker could exploit this vulnerability by persuading a user of an affected interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.",
+    "published": "2024-05-15T18:15:08.720",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-20257": {
+    "cvss": 4.8,
+    "description": "A vulnerability in the web-based management interface of Cisco AsyncOS Software for Cisco Secure Email Gateway could allow an authenticated, remote attacker to conduct an XSS attack against a user of the interface.r\n\r This vulnerability is due to insufficient validation of user input. An attacker could exploit this vulnerability by persuading a user of an affected interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.",
+    "published": "2024-05-15T18:15:08.967",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-20258": {
+    "cvss": 6.1,
+    "description": "A vulnerability in the web-based management interface of Cisco AsyncOS Software for Cisco Secure Email and Web Manager and Secure Email Gateway could allow an unauthenticated, remote attacker to conduct an XSS attack against a user of the interface.\r\n\r This vulnerability is due to insufficient validation of user input. An attacker could exploit this vulnerability by persuading a user of an affected interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.",
+    "published": "2024-05-15T18:15:09.193",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2024-20369": {
+    "cvss": 4.7,
+    "description": "A vulnerability in the web-based management interface of Cisco Crosswork Network Services Orchestrator (NSO) could allow an unauthenticated, remote attacker to redirect a user to a malicious web page.\r\n\r\n\r This vulnerability is due to improper input validation of a parameter in an HTTP request. An attacker could exploit this vulnerability by persuading a user to click a crafted link. A successful exploit could allow the attacker to redirect a user to a malicious website.",
+    "published": "2024-05-15T18:15:09.673",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-20391": {
+    "cvss": 6.8,
+    "description": "A vulnerability in the Network Access Manager (NAM) module of Cisco Secure Client could allow an unauthenticated attacker with physical access to an affected device to elevate privileges to SYSTEM.\r\n\r This vulnerability is due to a lack of authentication on a specific function. A successful exploit could allow the attacker to execute arbitrary code with SYSTEM privileges on an affected device.",
+    "published": "2024-05-15T18:15:10.153",
+    "keywords": "unauthenticated,authentication"
+  },
+  "CVE-2024-20392": {
+    "cvss": 6.1,
+    "description": "A vulnerability in the web-based management API of Cisco AsyncOS Software for Cisco Secure Email Gateway could allow an unauthenticated, remote attacker to conduct an HTTP response splitting attack. \r\n\r This vulnerability is due to insufficient input validation of some parameters that are passed to the web-based management API of the affected system. An attacker could exploit this vulnerability by persuading a user of an affected interface to click a crafted link. A successful exploit could allow the attacker to perform cross-site scripting (XSS) attacks, resulting in the execution of arbitrary script code in the browser of the targeted user, or could allow the attacker to access sensitive, browser-based information.",
+    "published": "2024-05-15T18:15:10.390",
+    "keywords": "remote,execution,unauthenticated,sensitive"
   }
 }
