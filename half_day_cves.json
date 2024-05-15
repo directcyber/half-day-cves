@@ -660,7 +660,7 @@
     "keywords": "remote,execution"
   },
   "CVE-2024-30044": {
-    "cvss": 8.8,
+    "cvss": 7.2,
     "description": "Microsoft SharePoint Server Remote Code Execution Vulnerability",
     "published": "2024-05-14T17:17:16.107",
     "keywords": "remote,execution"
@@ -783,6 +783,42 @@
     "cvss": 9.1,
     "description": "An issue was identified in the Identity Security Cloud (ISC) Transform preview and IdentityProfile preview API endpoints that allowed an authenticated administrator to execute user-defined templates as part of attribute transforms which could allow remote code execution on the host.",
     "published": "2024-05-15T16:15:11.170",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-3483": {
+    "cvss": 7.8,
+    "description": "Remote Code\nExecution has been discovered in\nOpenText\u2122 iManager 3.2.6.0200.\u00a0The vulnerability can\ntrigger command injection and insecure deserialization issues.\n\n",
+    "published": "2024-05-15T17:15:12.943",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2024-3486": {
+    "cvss": 7.8,
+    "description": "XML External Entity injection vulnerability found\u00a0in OpenText\u2122 iManager 3.2.6.0200. This could lead to information disclosure and remote code execution.\n\n",
+    "published": "2024-05-15T17:15:13.773",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-3487": {
+    "cvss": 3.5,
+    "description": "Broken Authentication vulnerability discovered in OpenText\u2122 iManager 3.2.6.0200.\u00a0This\nvulnerability allows an attacker to manipulate certain parameters to bypass\nauthentication.\n\n",
+    "published": "2024-05-15T17:15:14.003",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-3488": {
+    "cvss": 5.6,
+    "description": "File Upload vulnerability in unauthenticated\nsession found in OpenText\u2122 iManager 3.2.6.0200.\u00a0The vulnerability could allow ant attacker to upload a\nfile without authentication.\n\n",
+    "published": "2024-05-15T17:15:14.250",
+    "keywords": "unauthenticated,authentication"
+  },
+  "CVE-2024-3967": {
+    "cvss": 7.6,
+    "description": "Remote Code\nExecution has been discovered in\nOpenText\u2122 iManager 3.2.6.0200.\u00a0The vulnerability can\ntrigger remote code execution unisng unsafe java object deserialization.\n\n",
+    "published": "2024-05-15T17:15:14.703",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-3968": {
+    "cvss": 7.8,
+    "description": "Remote Code\nExecution has been discovered in\nOpenText\u2122 iManager 3.2.6.0200.\u00a0The vulnerability can\ntrigger remote code execution using custom file upload task.",
+    "published": "2024-05-15T17:15:14.910",
     "keywords": "remote,execution"
   }
 }
