@@ -742,5 +742,17 @@
     "cvss": 6.5,
     "description": "A security issue was discovered in azure-file-csi-driver where an actor with access to the driver logs could observe service account tokens. These tokens could then potentially be exchanged with external cloud providers to access secrets stored in cloud vault solutions. Tokens are only logged when TokenRequests is configured in the CSIDriver object and the driver is set to run at log level 2 or greater via the -v flag.\n\n",
     "published": "2024-05-15T01:15:07.843"
+  },
+  "CVE-2024-4893": {
+    "cvss": 9.8,
+    "description": "DigiWin EasyFlow .NET lacks validation for certain input parameters, allowing remote attackers to inject arbitrary SQL commands. This vulnerability enables unauthorized access to read, modify, and delete database records, as well as execute system commands.",
+    "published": "2024-05-15T03:15:14.493",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-4894": {
+    "cvss": 5.3,
+    "description": "ITPison OMICARD EDM  fails to properly filter specific URL parameter, allowing unauthenticated remote attackers to modify the parameters and conduct Server-Side Request Forgery (SSRF) attacks. This vulnerability enables attackers to probe internal network information.",
+    "published": "2024-05-15T03:15:14.887",
+    "keywords": "remote,unauthenticated"
   }
 }
