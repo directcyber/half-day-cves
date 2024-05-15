@@ -856,5 +856,29 @@
     "description": "A vulnerability in the web-based management API of Cisco AsyncOS Software for Cisco Secure Email Gateway could allow an unauthenticated, remote attacker to conduct an HTTP response splitting attack. \r\n\r This vulnerability is due to insufficient input validation of some parameters that are passed to the web-based management API of the affected system. An attacker could exploit this vulnerability by persuading a user of an affected interface to click a crafted link. A successful exploit could allow the attacker to perform cross-site scripting (XSS) attacks, resulting in the execution of arbitrary script code in the browser of the targeted user, or could allow the attacker to access sensitive, browser-based information.",
     "published": "2024-05-15T18:15:10.390",
     "keywords": "remote,execution,unauthenticated,sensitive"
+  },
+  "CVE-2024-33615": {
+    "cvss": 8.8,
+    "description": "A specially crafted Zip file containing path traversal characters can be\n imported to the \nCyberPower PowerPanel \n\nserver, which allows file writing to the server outside\n the intended scope, and could allow an attacker to achieve remote code \nexecution.",
+    "published": "2024-05-15T20:15:12.687",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-33625": {
+    "cvss": 9.8,
+    "description": "CyberPower PowerPanel business \napplication code contains a hard-coded JWT signing key. This could \nresult in an attacker forging JWT tokens to bypass authentication.",
+    "published": "2024-05-15T20:15:12.927",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-34025": {
+    "cvss": 9.8,
+    "description": "CyberPower PowerPanel business application code contains a hard-coded set of authentication \ncredentials. This could result in an attacker bypassing authentication \nand gaining administrator privileges.",
+    "published": "2024-05-15T20:15:13.190",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-34906": {
+    "url": "https://github.com/kuaifan/dootask/issues/210",
+    "cvss": "-",
+    "description": "An arbitrary file upload vulnerability in dootask v0.30.13 allows attackers to execute arbitrary code via uploading a crafted PDF file.",
+    "published": "2024-05-15T20:15:13.460"
   }
 }
