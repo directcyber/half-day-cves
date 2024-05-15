@@ -736,5 +736,11 @@
     "description": "The Password Protected \u2013 Ultimate Plugin to Password Protect Your WordPress Content with Ease plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.6.6 via the API. This makes it possible for authenticated attackers, with subscriber access or higher, to extract post titles and content, thus bypassing the plugin's password protection.",
     "published": "2024-05-15T00:15:08.320",
     "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-3744": {
+    "url": "https://github.com/kubernetes/kubernetes/issues/124759",
+    "cvss": 6.5,
+    "description": "A security issue was discovered in azure-file-csi-driver where an actor with access to the driver logs could observe service account tokens. These tokens could then potentially be exchanged with external cloud providers to access secrets stored in cloud vault solutions. Tokens are only logged when TokenRequests is configured in the CSIDriver object and the driver is set to run at log level 2 or greater via the -v flag.\n\n",
+    "published": "2024-05-15T01:15:07.843"
   }
 }
