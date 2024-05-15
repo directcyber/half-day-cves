@@ -880,5 +880,11 @@
     "cvss": "-",
     "description": "An arbitrary file upload vulnerability in dootask v0.30.13 allows attackers to execute arbitrary code via uploading a crafted PDF file.",
     "published": "2024-05-15T20:15:13.460"
+  },
+  "CVE-2024-35184": {
+    "cvss": 5.5,
+    "description": "Paperless-ngx is a document management system that transforms physical documents into a searchable online archive. Starting in version 2.5.0 and prior to version 2.8.6, remote user authentication allows API access even if API access is explicitly disabled. Version 2.8.6 contains a patchc for the issue.",
+    "published": "2024-05-15T22:15:08.867",
+    "keywords": "remote,authentication"
   }
 }
