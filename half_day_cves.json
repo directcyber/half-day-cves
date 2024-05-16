@@ -982,5 +982,29 @@
     "description": "A Server-Side Request Forgery (SSRF) vulnerability exists in the wandb/wandb repository due to improper handling of HTTP 302 redirects. This issue allows team members with access to the 'User settings -> Webhooks' function to exploit this vulnerability to access internal HTTP(s) servers. In severe cases, such as on AWS instances, this could potentially be abused to achieve remote code execution on the victim's machine. The vulnerability is present in the latest version of the repository.",
     "published": "2024-05-16T09:15:17.360",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-30283": {
+    "cvss": 5.5,
+    "description": "Adobe Framemaker versions 2020.5, 2022.3 and earlier Answer: are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-05-16T12:15:08.407",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-30286": {
+    "cvss": 5.5,
+    "description": "Adobe Framemaker versions 2020.5, 2022.3 and earlier Answer: are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-05-16T12:15:09.097",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-30287": {
+    "cvss": 5.5,
+    "description": "Adobe Framemaker versions 2020.5, 2022.3 and earlier Answer: are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-05-16T12:15:09.700",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-30314": {
+    "cvss": 9.3,
+    "description": "Dreamweaver Desktop versions 21.3 and earlier are affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could lead in arbitrary code execution by an attacker. Exploitation of this issue does require user interaction.",
+    "published": "2024-05-16T12:15:13.280",
+    "keywords": "execution,command"
   }
 }
