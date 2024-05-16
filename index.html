@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-05-16T09:09:58.881679
+Updated at UTC 2024-05-16T10:10:26.712832
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,36 @@ Updated at UTC 2024-05-16T09:09:58.881679
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -539,6 +569,156 @@ As a workaround, it is possible to disable the special pages outside of one's ow
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4642">CVE-2024-4642</a></td>
+					<td>7.7</td>
+					<td>remote,execution</td>
+					<td class=date>2024-05-16T09:15:17.360</td>
+					<td class=description>A Server-Side Request Forgery (SSRF) vulnerability exists in the wandb/wandb repository due to improper handling of HTTP 302 redirects. This issue allows team members with access to the 'User settings -> Webhooks' function to exploit this vulnerability to access internal HTTP(s) servers. In severe cases, such as on AWS instances, this could potentially be abused to achieve remote code execution on the victim's machine. The vulnerability is present in the latest version of the repository.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4326">CVE-2024-4326</a></td>
+					<td>9.8</td>
+					<td>remote,execution,command,bypass</td>
+					<td class=date>2024-05-16T09:15:16.887</td>
+					<td class=description>A vulnerability in parisneo/lollms-webui versions up to 9.3 allows remote attackers to execute arbitrary code. The vulnerability stems from insufficient protection of the `/apply_settings` and `/execute_code` endpoints. Attackers can bypass protections by setting the host to localhost, enabling code execution, and disabling code validation through the `/apply_settings` endpoint. Subsequently, arbitrary commands can be executed remotely via the `/execute_code` endpoint, exploiting the delay in settings enforcement. This issue was addressed in version 9.5.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4321">CVE-2024-4321</a></td>
+					<td>7.5</td>
+					<td>sensitive,leak</td>
+					<td class=date>2024-05-16T09:15:16.327</td>
+					<td class=description>A Local File Inclusion (LFI) vulnerability exists in the gaizhenbiao/chuanhuchatgpt application, specifically within the functionality for uploading chat history. The vulnerability arises due to improper input validation when handling file paths during the chat history upload process. An attacker can exploit this vulnerability by intercepting requests and manipulating the 'name' parameter to specify arbitrary file paths. This allows the attacker to read sensitive files on the server, leading to information leakage, including API keys and private information. The issue affects version 20240310 of the application.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4078">CVE-2024-4078</a></td>
+					<td>9.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-05-16T09:15:15.313</td>
+					<td class=description>A vulnerability in the parisneo/lollms, specifically in the `/unInstall_binding` endpoint, allows for arbitrary code execution due to insufficient sanitization of user input. The issue arises from the lack of path sanitization when handling the `name` parameter in the `unInstall_binding` function, allowing an attacker to traverse directories and execute arbitrary code by loading a malicious `__init__.py` file. This vulnerability affects the latest version of the software. The exploitation of this vulnerability could lead to remote code execution on the system where parisneo/lollms is deployed.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-3848">CVE-2024-3848</a></td>
+					<td>7.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-05-16T09:15:14.543</td>
+					<td class=description>A path traversal vulnerability exists in mlflow/mlflow version 2.11.0, identified as a bypass for the previously addressed CVE-2023-6909. The vulnerability arises from the application's handling of artifact URLs, where a '#' character can be used to insert a path into the fragment, effectively skipping validation. This allows an attacker to construct a URL that, when processed, ignores the protocol scheme and uses the provided path for filesystem access. As a result, an attacker can read arbitrary files, including sensitive information such as SSH and cloud keys, by exploiting the way the application converts the URL into a filesystem path. The issue stems from insufficient validation of the fragment portion of the URL, leading to arbitrary file read through path traversal.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-3435">CVE-2024-3435</a></td>
+					<td>8.4</td>
+					<td>remote,execution,bypass</td>
+					<td class=date>2024-05-16T09:15:14.290</td>
+					<td class=description>A path traversal vulnerability exists in the 'save_settings' endpoint of the parisneo/lollms-webui application, affecting versions up to the latest release before 9.5. The vulnerability arises due to insufficient sanitization of the 'config' parameter in the 'apply_settings' function, allowing an attacker to manipulate the application's configuration by sending specially crafted JSON payloads. This could lead to remote code execution (RCE) by bypassing existing patches designed to mitigate such vulnerabilities.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-3403">CVE-2024-3403</a></td>
+					<td>7.5</td>
+					<td>remote,execution</td>
+					<td class=date>2024-05-16T09:15:14.053</td>
+					<td class=description>imartinez/privategpt version 0.2.0 is vulnerable to a local file inclusion vulnerability that allows attackers to read arbitrary files from the filesystem. By manipulating file upload functionality to ingest arbitrary local files, attackers can exploit the 'Search in Docs' feature or query the AI to retrieve or disclose the contents of any file on the system. This vulnerability could lead to various impacts, including but not limited to remote code execution by obtaining private SSH keys, unauthorized access to private files, source code disclosure facilitating further attacks, and exposure of configuration files.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-3126">CVE-2024-3126</a></td>
+					<td>8.4</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-05-16T09:15:13.840</td>
+					<td class=description>A command injection vulnerability exists in the 'run_xtts_api_server' function of the parisneo/lollms-webui application, specifically within the 'lollms_xtts.py' script. The vulnerability arises due to the improper neutralization of special elements used in an OS command. The affected function utilizes 'subprocess.Popen' to execute a command constructed with a Python f-string, without adequately sanitizing the 'xtts_base_url' input. This flaw allows attackers to execute arbitrary commands remotely by manipulating the 'xtts_base_url' parameter. The vulnerability affects versions up to and including the latest version before 9.5. Successful exploitation could lead to arbitrary remote code execution (RCE) on the system where the application is deployed.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-30309">CVE-2024-30309</a></td>
+					<td>5.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-05-16T09:15:13.377</td>
+					<td class=description>Substance3D - Painter versions 9.1.2 and earlier Answer: are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-30308">CVE-2024-30308</a></td>
+					<td>5.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-05-16T09:15:13.137</td>
+					<td class=description>Substance3D - Painter versions 9.1.2 and earlier Answer: are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-30298">CVE-2024-30298</a></td>
+					<td>5.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-05-16T09:15:12.680</td>
+					<td class=description>Animate versions 24.0.2, 23.0.5 and earlier Answer: are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-30281">CVE-2024-30281</a></td>
+					<td>5.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-05-16T09:15:11.007</td>
+					<td class=description>Substance3D - Designer versions 13.1.1 and earlier Answer: are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-2366">CVE-2024-2366</a></td>
+					<td>9.0</td>
+					<td>remote,execution</td>
+					<td class=date>2024-05-16T09:15:10.287</td>
+					<td class=description>A remote code execution vulnerability exists in the parisneo/lollms-webui application, specifically within the reinstall_binding functionality in lollms_core/lollms/server/endpoints/lollms_binding_infos.py of the latest version. The vulnerability arises due to insufficient path sanitization, allowing an attacker to exploit path traversal to navigate to arbitrary directories. By manipulating the binding_path to point to a controlled directory and uploading a malicious __init__.py file, an attacker can execute arbitrary code on the server.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-2358">CVE-2024-2358</a></td>
+					<td>9.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-05-16T09:15:09.800</td>
+					<td class=description>A path traversal vulnerability in the '/apply_settings' endpoint of parisneo/lollms-webui allows attackers to execute arbitrary code. The vulnerability arises due to insufficient sanitization of user-supplied input in the configuration settings, specifically within the 'extensions' parameter. Attackers can exploit this by crafting a payload that includes relative path traversal sequences ('../../../'), enabling them to navigate to arbitrary directories. This flaw subsequently allows the server to load and execute a malicious '__init__.py' file, leading to remote code execution. The issue affects the latest version of parisneo/lollms-webui.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20793">CVE-2024-20793</a></td>
+					<td>5.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-05-16T09:15:09.560</td>
+					<td class=description>Illustrator versions 28.4, 27.9.3 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
