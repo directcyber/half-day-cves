@@ -1042,5 +1042,11 @@
     "description": "Improper input validation in some Intel(R) Neural Compressor software before version 2.5.0 may allow an unauthenticated user to potentially enable escalation of privilege via remote access.",
     "published": "2024-05-16T21:16:07.350",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-3551": {
+    "cvss": 9.8,
+    "description": "The Penci Soledad Data Migrator plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.3.0 via the 'data' parameter. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included. This is limited to just PHP files.",
+    "published": "2024-05-17T03:15:08.463",
+    "keywords": "execution,unauthenticated,sensitive,bypass"
   }
 }
