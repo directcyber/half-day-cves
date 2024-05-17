@@ -1,10 +1,4 @@
 {
-  "CVE-2024-3676": {
-    "cvss": 7.5,
-    "description": "The Proofpoint Encryption endpoint of Proofpoint Enterprise Protection contains an Improper Input Validation vulnerability that allows an unauthenticated remote attacker with a specially crafted HTTP request to create additional Encryption user accounts under the attacker's control.\u00a0 These accounts are able to send spoofed email to any users within the domains configured by the Administrator.",
-    "published": "2024-05-14T19:15:12.970",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2024-31556": {
     "url": "https://github.com/reportico-web/reportico/issues/53",
     "cvss": "-",
@@ -478,5 +472,11 @@
     "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndmaengine: fsl-qdma: Fix a memory leak related to the queue command DMA\n\nThis dma_alloc_coherent() is undone neither in the remove function, nor in\nthe error handling path of fsl_qdma_probe().\n\nSwitch to the managed version to fix both issues.",
     "published": "2024-05-17T14:15:19.930",
     "keywords": "command,leak"
+  },
+  "CVE-2024-34997": {
+    "url": "https://github.com/joblib/joblib/issues/1582",
+    "cvss": "-",
+    "description": "joblib v1.4.2 was discovered to contain a deserialization vulnerability via the component joblib.numpy_pickle::NumpyArrayWrapper().read_array().",
+    "published": "2024-05-17T19:15:07.373"
   }
 }
