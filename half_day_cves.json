@@ -1,10 +1,4 @@
 {
-  "CVE-2024-4670": {
-    "cvss": 8.8,
-    "description": "The All-in-One Video Gallery plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 3.6.5 via the aiovg_search_form shortcode. This makes it possible for authenticated attackers, with contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
-    "published": "2024-05-15T13:15:26.503",
-    "keywords": "execution,sensitive,bypass"
-  },
   "CVE-2024-3319": {
     "cvss": 9.1,
     "description": "An issue was identified in the Identity Security Cloud (ISC) Transform preview and IdentityProfile preview API endpoints that allowed an authenticated administrator to execute user-defined templates as part of attribute transforms which could allow remote code execution on the host.",
