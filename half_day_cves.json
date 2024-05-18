@@ -1,10 +1,4 @@
 {
-  "CVE-2024-3744": {
-    "url": "https://github.com/kubernetes/kubernetes/issues/124759",
-    "cvss": 6.5,
-    "description": "A security issue was discovered in azure-file-csi-driver where an actor with access to the driver logs could observe service account tokens. These tokens could then potentially be exchanged with external cloud providers to access secrets stored in cloud vault solutions. Tokens are only logged when TokenRequests is configured in the CSIDriver object and the driver is set to run at log level 2 or greater via the -v flag.\n\n",
-    "published": "2024-05-15T01:15:07.843"
-  },
   "CVE-2024-4893": {
     "cvss": 9.8,
     "description": "DigiWin EasyFlow .NET lacks validation for certain input parameters, allowing remote attackers to inject arbitrary SQL commands. This vulnerability enables unauthorized access to read, modify, and delete database records, as well as execute system commands.",
