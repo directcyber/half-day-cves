@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-05-18T10:08:44.315399
+Updated at UTC 2024-05-18T11:07:36.572721
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-05-18T10:08:44.315399
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -274,14 +276,18 @@ The OpenSSL 3.0 and 3.1 FIPS providers are affected by this issue.</td>
 		
 			
 		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-3658">CVE-2024-3658</a></td>
+					<td>9.8</td>
+					<td>unauthenticated,authentication,bypass</td>
+					<td class=date>2024-05-18T10:15:07.053</td>
+					<td class=description>The Build App Online plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.0.21. This is due to missing authentication checking in the 'set_user_cart' function with the 'user_id' header value. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the user id.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -982,36 +988,6 @@ trigger command injection and insecure deserialization issues.
 					<td>execution,sensitive,bypass</td>
 					<td class=date>2024-05-15T13:15:26.503</td>
 					<td class=description>The All-in-One Video Gallery plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 3.6.5 via the aiovg_search_form shortcode. This makes it possible for authenticated attackers, with contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-34101">CVE-2024-34101</a></td>
-					<td>5.5</td>
-					<td>sensitive,bypass</td>
-					<td class=date>2024-05-15T10:15:14.827</td>
-					<td class=description>Acrobat Reader versions 20.005.30574, 24.002.20736 and earlier Answer: are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-30312">CVE-2024-30312</a></td>
-					<td>5.5</td>
-					<td>sensitive,bypass</td>
-					<td class=date>2024-05-15T10:15:11.087</td>
-					<td class=description>Acrobat Reader versions 20.005.30574, 24.002.20736 and earlier Answer: are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-30311">CVE-2024-30311</a></td>
-					<td>5.5</td>
-					<td>sensitive,bypass</td>
-					<td class=date>2024-05-15T10:15:10.640</td>
-					<td class=description>Acrobat Reader versions 20.005.30574, 24.002.20736 and earlier Answer: are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
 				</tr>
 			
 		

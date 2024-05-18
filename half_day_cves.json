@@ -1,22 +1,4 @@
 {
-  "CVE-2024-30311": {
-    "cvss": 5.5,
-    "description": "Acrobat Reader versions 20.005.30574, 24.002.20736 and earlier Answer: are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-05-15T10:15:10.640",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-30312": {
-    "cvss": 5.5,
-    "description": "Acrobat Reader versions 20.005.30574, 24.002.20736 and earlier Answer: are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-05-15T10:15:11.087",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-34101": {
-    "cvss": 5.5,
-    "description": "Acrobat Reader versions 20.005.30574, 24.002.20736 and earlier Answer: are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-05-15T10:15:14.827",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2024-4670": {
     "cvss": 8.8,
     "description": "The All-in-One Video Gallery plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 3.6.5 via the aiovg_search_form shortcode. This makes it possible for authenticated attackers, with contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
@@ -424,5 +406,11 @@
     "description": "The Salient Core plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.0.7 via the 'nectar_icon' shortcode 'icon_linea' attribute. This makes it possible for authenticated attackers, with contributor-level and above permissions, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where php file type can be uploaded and included.",
     "published": "2024-05-18T06:15:08.000",
     "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2024-3658": {
+    "cvss": 9.8,
+    "description": "The Build App Online plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.0.21. This is due to missing authentication checking in the 'set_user_cart' function with the 'user_id' header value. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the user id.",
+    "published": "2024-05-18T10:15:07.053",
+    "keywords": "unauthenticated,authentication,bypass"
   }
 }
