@@ -1,10 +1,4 @@
 {
-  "CVE-2024-35184": {
-    "cvss": 5.5,
-    "description": "Paperless-ngx is a document management system that transforms physical documents into a searchable online archive. Starting in version 2.5.0 and prior to version 2.8.6, remote user authentication allows API access even if API access is explicitly disabled. Version 2.8.6 contains a patchc for the issue.",
-    "published": "2024-05-15T22:15:08.867",
-    "keywords": "remote,authentication"
-  },
   "CVE-2024-4965": {
     "cvss": 6.3,
     "description": "** UNSUPPORTED WHEN ASSIGNED ** A vulnerability was found in D-Link DAR-7000-40 V31R02B1413C and classified as critical. This issue affects some unknown processing of the file /useratte/resmanage.php. The manipulation of the argument load leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-264533 was assigned to this vulnerability. NOTE: This vulnerability only affects products that are no longer supported by the maintainer. NOTE: Vendor was contacted early and confirmed immediately that the product is end-of-life. It should be retired and replaced.",
@@ -304,5 +298,11 @@
     "description": "The Build App Online plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.0.21. This is due to missing authentication checking in the 'set_user_cart' function with the 'user_id' header value. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the user id.",
     "published": "2024-05-18T10:15:07.053",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-36050": {
+    "url": "https://github.com/nixos/ofborg/issues/68#issuecomment-2082789441",
+    "cvss": "-",
+    "description": "Nix through 2.22.1 mishandles certain usage of hash caches, which makes it easier for attackers to replace current source code with attacker-controlled source code by luring a maintainer into accepting a malicious pull request.",
+    "published": "2024-05-18T22:15:07.460"
   }
 }
