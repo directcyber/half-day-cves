@@ -1,28 +1,4 @@
 {
-  "CVE-2024-33615": {
-    "cvss": 8.8,
-    "description": "A specially crafted Zip file containing path traversal characters can be\n imported to the \nCyberPower PowerPanel \n\nserver, which allows file writing to the server outside\n the intended scope, and could allow an attacker to achieve remote code \nexecution.",
-    "published": "2024-05-15T20:15:12.687",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-33625": {
-    "cvss": 9.8,
-    "description": "CyberPower PowerPanel business \napplication code contains a hard-coded JWT signing key. This could \nresult in an attacker forging JWT tokens to bypass authentication.",
-    "published": "2024-05-15T20:15:12.927",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-34025": {
-    "cvss": 9.8,
-    "description": "CyberPower PowerPanel business application code contains a hard-coded set of authentication \ncredentials. This could result in an attacker bypassing authentication \nand gaining administrator privileges.",
-    "published": "2024-05-15T20:15:13.190",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-34906": {
-    "url": "https://github.com/kuaifan/dootask/issues/210",
-    "cvss": "-",
-    "description": "An arbitrary file upload vulnerability in dootask v0.30.13 allows attackers to execute arbitrary code via uploading a crafted PDF file.",
-    "published": "2024-05-15T20:15:13.460"
-  },
   "CVE-2024-35184": {
     "cvss": 5.5,
     "description": "Paperless-ngx is a document management system that transforms physical documents into a searchable online archive. Starting in version 2.5.0 and prior to version 2.8.6, remote user authentication allows API access even if API access is explicitly disabled. Version 2.8.6 contains a patchc for the issue.",
