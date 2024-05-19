@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-05-19T11:08:17.825332
+Updated at UTC 2024-05-19T12:15:53.532341
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-05-19T11:08:17.825332
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -204,16 +206,49 @@ The OpenSSL 3.0 and 3.1 FIPS providers are affected by this issue.</td>
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-35929">CVE-2024-35929</a></td>
+					<td>-</td>
+					<td>bypass,leak</td>
+					<td class=date>2024-05-19T11:15:48.993</td>
+					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
+
+rcu/nocb: Fix WARN_ON_ONCE() in the rcu_nocb_bypass_lock()
+
+For the kernels built with CONFIG_RCU_NOCB_CPU_DEFAULT_ALL=y and
+CONFIG_RCU_LAZY=y, the following scenarios will trigger WARN_ON_ONCE()
+in the rcu_nocb_bypass_lock() and rcu_nocb_wait_contended() functions:
+
+        CPU2                                               CPU11
+kthread
+rcu_nocb_cb_kthread                                       ksys_write
+rcu_do_batch                                              vfs_write
+rcu_torture_timer_cb                                      proc_sys_write
+__kmem_cache_free                                         proc_sys_call_handler
+kmemleak_free                                             drop_caches_sysctl_handler
+delete_object_full                                        drop_slab
+__delete_object                                           shrink_slab
+put_object                                                lazy_rcu_shrink_scan
+call_rcu                                                  rcu_nocb_flush_bypass
+__call_rcu_commn                                            rcu_nocb_bypass_lock
+                                                            raw_spin_trylock(&rdp->nocb_bypass_lock) fail
+                                                            atomic_inc(&rdp->nocb_lock_contended);
+rcu_nocb_wait_contended                                     WARN_ON_ONCE(smp_processor_id() != rdp->cpu);
+ WARN_ON_ONCE(atomic_read(&rdp->nocb_lock_contended))                                          |
+                            |_ _ _ _ _ _ _ _ _ _same rdp and rdp->cpu != 11_ _ _ _ _ _ _ _ _ __|
+
+Reproduce this bug with "echo 3 > /proc/sys/vm/drop_caches".
+
+This commit therefore uses rcu_nocb_try_flush_bypass() instead of
+rcu_nocb_flush_bypass() in lazy_rcu_shrink_scan().  If the nocb_bypass
+queue is being flushed, then rcu_nocb_try_flush_bypass will return
+directly.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -572,46 +607,6 @@ think we should keep two reserved tags for admin queue.</td>
 					<td>remote,command</td>
 					<td class=date>2024-05-16T13:15:48.357</td>
 					<td class=description>A vulnerability in the web-based management interface of multiple Ligowave devices could allow an authenticated remote attacker to execute arbitrary commands with elevated privileges.This issue affects UNITY: through 6.95-2; PRO: through 6.95-1.Rt3883; MIMO: through 6.95-1.Rt2880; APC Propeller: through 2-5.95-4.Rt3352.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-30314">CVE-2024-30314</a></td>
-					<td>9.3</td>
-					<td>execution,command</td>
-					<td class=date>2024-05-16T12:15:13.280</td>
-					<td class=description>Dreamweaver Desktop versions 21.3 and earlier are affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could lead in arbitrary code execution by an attacker. Exploitation of this issue does require user interaction.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-30287">CVE-2024-30287</a></td>
-					<td>5.5</td>
-					<td>sensitive,bypass</td>
-					<td class=date>2024-05-16T12:15:09.700</td>
-					<td class=description>Adobe Framemaker versions 2020.5, 2022.3 and earlier Answer: are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-30286">CVE-2024-30286</a></td>
-					<td>5.5</td>
-					<td>sensitive,bypass</td>
-					<td class=date>2024-05-16T12:15:09.097</td>
-					<td class=description>Adobe Framemaker versions 2020.5, 2022.3 and earlier Answer: are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-30283">CVE-2024-30283</a></td>
-					<td>5.5</td>
-					<td>sensitive,bypass</td>
-					<td class=date>2024-05-16T12:15:08.407</td>
-					<td class=description>Adobe Framemaker versions 2020.5, 2022.3 and earlier Answer: are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
 				</tr>
 			
 		
