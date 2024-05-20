@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-05-20T08:12:38.063829
+Updated at UTC 2024-05-20T09:12:39.454508
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,18 @@ Updated at UTC 2024-05-20T08:12:38.063829
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-1968">CVE-2024-1968</a></td>
+					<td>7.5</td>
+					<td><a target=_blank href="https://github.com/scrapy/scrapy/commit/1d0502f25bbe55a22899af915623fda1aaeb9dd8">https://github.com/scrapy/scrapy/commit/1d0502f25bbe55a22899af915623fda1aaeb9dd8</a></td>
+					<td class=date>2024-05-20T08:15:08.850</td>
+					<td class=description>In scrapy/scrapy, an issue was identified where the Authorization header is not removed during redirects that only change the scheme (e.g., HTTPS to HTTP) but remain within the same domain. This behavior contravenes the Fetch standard, which mandates the removal of Authorization headers in cross-origin requests when the scheme, host, or port changes. Consequently, when a redirect downgrades from HTTPS to HTTP, the Authorization header may be inadvertently exposed in plaintext, leading to potential sensitive information disclosure to unauthorized actors. The flaw is located in the _build_redirect_request function of the redirect middleware.</td>
+
+
+				</tr>
+			
 		
 			
 				<tr>
@@ -142,20 +154,10 @@ Updated at UTC 2024-05-20T08:12:38.063829
 		
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-35110">CVE-2024-35110</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/yzmcms/yzmcms/issues/68">https://github.com/yzmcms/yzmcms/issues/68</a></td>
-					<td class=date>2024-05-17T08:15:06.073</td>
-					<td class=description>A reflected XSS vulnerability has been found in YzmCMS 7.1. The vulnerability exists in yzmphp/core/class/application.class.php: when logged-in users access a malicious link, their cookies can be captured by an attacker.</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
+		
+			
 		
 			
 		
@@ -502,8 +504,6 @@ think we should keep two reserved tags for admin queue.</td>
 					<td class=date>2024-05-17T09:15:20.363</td>
 					<td class=description>Authentication Bypass by Spoofing vulnerability in Wpmet Wp Ultimate Review allows Functionality Bypass.This issue affects Wp Ultimate Review: from n/a through 2.3.2.</td>
 				</tr>
-			
-		
 			
 		
 
