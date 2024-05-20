@@ -1,10 +1,4 @@
 {
-  "CVE-2024-35833": {
-    "cvss": "-",
-    "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndmaengine: fsl-qdma: Fix a memory leak related to the queue command DMA\n\nThis dma_alloc_coherent() is undone neither in the remove function, nor in\nthe error handling path of fsl_qdma_probe().\n\nSwitch to the managed version to fix both issues.",
-    "published": "2024-05-17T14:15:19.930",
-    "keywords": "command,leak"
-  },
   "CVE-2024-34997": {
     "url": "https://github.com/joblib/joblib/issues/1582",
     "cvss": "-",
@@ -88,5 +82,17 @@
     "cvss": 8.1,
     "description": "In mintplex-labs/anything-llm, a vulnerability exists due to improper input validation in the workspace update process. Specifically, the application fails to validate or format JSON data sent in an HTTP POST request to `/api/workspace/:workspace-slug/update`, allowing it to be executed as part of a database query without restrictions. This flaw enables users with a manager role to craft a request that includes nested write operations, effectively allowing them to create new Administrator accounts.",
     "published": "2024-05-20T13:15:23.980"
+  },
+  "CVE-2024-34952": {
+    "url": "https://github.com/taurusxin/ncmdump/issues/18",
+    "cvss": "-",
+    "description": "taurusxin ncmdump v1.3.2 was discovered to contain a segmentation violation via the NeteaseCrypt::FixMetadata() function at /src/ncmcrypt.cpp. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted .ncm file.",
+    "published": "2024-05-20T14:15:09.480"
+  },
+  "CVE-2024-34953": {
+    "url": "https://github.com/taurusxin/ncmdump/issues/19",
+    "cvss": "-",
+    "description": "An issue in taurusxin ncmdump v1.3.2 allows attackers to cause a Denial of Service (DoS) via memory exhaustion by supplying a crafted .ncm file",
+    "published": "2024-05-20T14:15:09.580"
   }
 }
