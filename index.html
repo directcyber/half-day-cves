@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-05-20T21:08:21.275918
+Updated at UTC 2024-05-20T22:08:39.910366
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,18 @@ Updated at UTC 2024-05-20T21:08:21.275918
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-35194">CVE-2024-35194</a></td>
+					<td>5.3</td>
+					<td><a target=_blank href="https://github.com/stacklok/minder/commit/fe321d345b4f738de6a06b13207addc72b59f892">https://github.com/stacklok/minder/commit/fe321d345b4f738de6a06b13207addc72b59f892</a></td>
+					<td class=date>2024-05-20T21:15:09.773</td>
+					<td class=description>Minder is a software supply chain security platform. Prior to version 0.0.50, Minder engine is susceptible to a denial of service from memory exhaustion that can be triggered from maliciously created templates. Minder engine uses templating to generate strings for various use cases such as URLs, messages for pull requests, descriptions for advisories. In some cases can the user control both the template and the params for it, and in a subset of these cases, Minder reads the generated template entirely into memory. When Minders templating meets both of these conditions, an attacker is able to generate large enough templates that Minder will exhaust memory and crash. This vulnerability is fixed in 0.0.50.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -152,6 +164,8 @@ Updated at UTC 2024-05-20T21:08:21.275918
 		
 
 		<hr>
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
