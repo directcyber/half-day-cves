@@ -1,10 +1,4 @@
 {
-  "CVE-2024-27435": {
-    "cvss": "-",
-    "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnvme: fix reconnection fail due to reserved tag allocation\n\nWe found a issue on production environment while using NVMe over RDMA,\nadmin_q reconnect failed forever while remote target and network is ok.\nAfter dig into it, we found it may caused by a ABBA deadlock due to tag\nallocation. In my case, the tag was hold by a keep alive request\nwaiting inside admin_q, as we quiesced admin_q while reset ctrl, so the\nrequest maked as idle and will not process before reset success. As\nfabric_q shares tagset with admin_q, while reconnect remote target, we\nneed a tag for connect command, but the only one reserved tag was held\nby keep alive command which waiting inside admin_q. As a result, we\nfailed to reconnect admin_q forever. In order to fix this issue, I\nthink we should keep two reserved tags for admin queue.",
-    "published": "2024-05-17T13:15:58.073",
-    "keywords": "remote,command"
-  },
   "CVE-2024-35833": {
     "cvss": "-",
     "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndmaengine: fsl-qdma: Fix a memory leak related to the queue command DMA\n\nThis dma_alloc_coherent() is undone neither in the remove function, nor in\nthe error handling path of fsl_qdma_probe().\n\nSwitch to the managed version to fix both issues.",
@@ -88,5 +82,11 @@
     "description": "A memory corruption vulnerability in Fluent Bit versions 2.0.7 thru 3.0.3. This issue lies in the embedded http server\u2019s parsing of trace requests and may result in denial of service conditions, information disclosure, or remote code execution.",
     "published": "2024-05-20T12:15:08.720",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-4287": {
+    "url": "https://github.com/mintplex-labs/anything-llm/commit/94b58249a37a21b1c08deaa2d1edfdecbb6deb18",
+    "cvss": 8.1,
+    "description": "In mintplex-labs/anything-llm, a vulnerability exists due to improper input validation in the workspace update process. Specifically, the application fails to validate or format JSON data sent in an HTTP POST request to `/api/workspace/:workspace-slug/update`, allowing it to be executed as part of a database query without restrictions. This flaw enables users with a manager role to craft a request that includes nested write operations, effectively allowing them to create new Administrator accounts.",
+    "published": "2024-05-20T13:15:23.980"
   }
 }
