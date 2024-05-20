@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-05-20T11:08:52.334009
+Updated at UTC 2024-05-20T12:18:33.798226
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-05-20T11:08:52.334009
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 				<tr>
@@ -126,10 +128,18 @@ Updated at UTC 2024-05-20T11:08:52.334009
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4323">CVE-2024-4323</a></td>
+					<td>9.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-05-20T12:15:08.720</td>
+					<td class=description>A memory corruption vulnerability in Fluent Bit versions 2.0.7 thru 3.0.3. This issue lies in the embedded http server’s parsing of trace requests and may result in denial of service conditions, information disclosure, or remote code execution.</td>
+				</tr>
+			
 		
 			
 		
@@ -337,16 +347,6 @@ need a tag for connect command, but the only one reserved tag was held
 by keep alive command which waiting inside admin_q. As a result, we
 failed to reconnect admin_q forever. In order to fix this issue, I
 think we should keep two reserved tags for admin queue.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5044">CVE-2024-5044</a></td>
-					<td>3.7</td>
-					<td>remote,authentication</td>
-					<td class=date>2024-05-17T12:15:17.727</td>
-					<td class=description>A vulnerability was found in Emlog Pro 2.3.4. It has been classified as problematic. This affects an unknown part of the component Cookie Handler. The manipulation of the argument AuthCookie leads to improper authentication. It is possible to initiate the attack remotely. The complexity of an attack is rather high. The exploitability is told to be difficult. The exploit has been disclosed to the public and may be used. The identifier VDB-264741 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
 				</tr>
 			
 		
