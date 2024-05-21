@@ -82,5 +82,29 @@
     "description": "The Salon booking system plugin for WordPress is vulnerable to arbitrary file deletion in all versions up to, and including, 9.8. This is due to the plugin not properly validating the path of an uploaded file prior to deleting it. This makes it possible for unauthenticated attackers to delete arbitrary files, including the wp-config.php file, which can make site takeover and remote code execution possible.",
     "published": "2024-05-21T07:15:08.460",
     "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-34071": {
+    "url": "https://github.com/umbraco/umbraco-cms/commit/d8df405db4ea884bb4b96f088d10d9a2070cf024",
+    "cvss": 6.1,
+    "description": "Umbraco is an ASP.NET CMS used by more than 730.000 websites. Umbraco has an endpoint that is vulnerable to open redirects. The endpoint is protected so it requires the user to be signed into backoffice before the vulnerable is exposed. This vulnerability has been patched in version(s) 8.18.14, 10.8.6, 12.3.10 and 13.3.1.",
+    "published": "2024-05-21T14:15:11.783"
+  },
+  "CVE-2024-35384": {
+    "url": "https://github.com/cesanta/mjs/issues/287",
+    "cvss": "-",
+    "description": "An issue in Cesanta mjs 2.20.0 allows a remote attacker to cause a denial of service via the mjs_array_length function in the mjs.c file.",
+    "published": "2024-05-21T14:15:12.217"
+  },
+  "CVE-2024-35385": {
+    "url": "https://github.com/cesanta/mjs/issues/288",
+    "cvss": "-",
+    "description": "An issue in Cesanta mjs 2.20.0 allows a remote attacker to cause a denial of service via the mjs_mk_ffi_sig function in the mjs.c file.",
+    "published": "2024-05-21T14:15:12.307"
+  },
+  "CVE-2024-35386": {
+    "url": "https://github.com/cesanta/mjs/issues/286",
+    "cvss": "-",
+    "description": "An issue in Cesanta mjs 2.20.0 allows a remote attacker to cause a denial of service via the mjs_do_gc function in the mjs.c file.",
+    "published": "2024-05-21T14:15:12.400"
   }
 }
