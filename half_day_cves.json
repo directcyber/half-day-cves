@@ -65,6 +65,18 @@
     "published": "2024-05-20T17:15:09.223",
     "keywords": "remote,execution,command,vpn"
   },
+  "CVE-2024-33900": {
+    "url": "https://github.com/keepassxreboot/keepassxc/issues/10784",
+    "cvss": "-",
+    "description": "KeePassXC 2.7.7 allows an attacker (who has the privileges of the victim) to recover cleartext credentials via a memory dump. NOTE: the vendor disputes this because memory-management constraints make this unavoidable in the current design and other realistic designs.",
+    "published": "2024-05-20T21:15:09.177"
+  },
+  "CVE-2024-33901": {
+    "url": "https://github.com/keepassxreboot/keepassxc/issues/10784",
+    "cvss": "-",
+    "description": "Issue in KeePassXC 2.7.7 allows an attacker (who has the privileges of the victim) to recover some passwords stored in the .kdbx database via a memory dump. NOTE: the vendor disputes this because memory-management constraints make this unavoidable in the current design and other realistic designs.",
+    "published": "2024-05-20T21:15:09.243"
+  },
   "CVE-2024-35194": {
     "url": "https://github.com/stacklok/minder/commit/fe321d345b4f738de6a06b13207addc72b59f892",
     "cvss": 5.3,

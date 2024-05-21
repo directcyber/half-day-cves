@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-05-21T17:08:49.035240
+Updated at UTC 2024-05-21T18:12:04.093193
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -123,6 +123,30 @@ Updated at UTC 2024-05-21T17:08:49.035240
 					<td><a target=_blank href="https://github.com/stacklok/minder/commit/fe321d345b4f738de6a06b13207addc72b59f892">https://github.com/stacklok/minder/commit/fe321d345b4f738de6a06b13207addc72b59f892</a></td>
 					<td class=date>2024-05-20T21:15:09.773</td>
 					<td class=description>Minder is a software supply chain security platform. Prior to version 0.0.50, Minder engine is susceptible to a denial of service from memory exhaustion that can be triggered from maliciously created templates. Minder engine uses templating to generate strings for various use cases such as URLs, messages for pull requests, descriptions for advisories. In some cases can the user control both the template and the params for it, and in a subset of these cases, Minder reads the generated template entirely into memory. When Minders templating meets both of these conditions, an attacker is able to generate large enough templates that Minder will exhaust memory and crash. This vulnerability is fixed in 0.0.50.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-33901">CVE-2024-33901</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/keepassxreboot/keepassxc/issues/10784">https://github.com/keepassxreboot/keepassxc/issues/10784</a></td>
+					<td class=date>2024-05-20T21:15:09.243</td>
+					<td class=description>Issue in KeePassXC 2.7.7 allows an attacker (who has the privileges of the victim) to recover some passwords stored in the .kdbx database via a memory dump. NOTE: the vendor disputes this because memory-management constraints make this unavoidable in the current design and other realistic designs.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-33900">CVE-2024-33900</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/keepassxreboot/keepassxc/issues/10784">https://github.com/keepassxreboot/keepassxc/issues/10784</a></td>
+					<td class=date>2024-05-20T21:15:09.177</td>
+					<td class=description>KeePassXC 2.7.7 allows an attacker (who has the privileges of the victim) to recover cleartext credentials via a memory dump. NOTE: the vendor disputes this because memory-management constraints make this unavoidable in the current design and other realistic designs.</td>
 
 
 				</tr>
@@ -269,6 +293,10 @@ Updated at UTC 2024-05-21T17:08:49.035240
 					<td class=date>2024-05-20T22:15:08.727</td>
 					<td class=description>An authentication bypass vulnerability was present in the GitHub Enterprise Server (GHES) when utilizing SAML single sign-on authentication with the optional encrypted assertions feature. This vulnerability allowed an attacker to forge a SAML response to provision and/or gain access to a user with site administrator privileges. Exploitation of this vulnerability would allow unauthorized access to the instance without requiring prior authentication. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.13.0 and was fixed in versions 3.9.15, 3.10.12, 3.11.10 and 3.12.4. This vulnerability was reported via the GitHub Bug Bounty program.</td>
 				</tr>
+			
+		
+			
+		
 			
 		
 			
