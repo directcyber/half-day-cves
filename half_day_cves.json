@@ -1,16 +1,4 @@
 {
-  "CVE-2024-23554": {
-    "cvss": 5.7,
-    "description": "Cross-Site Request Forgery (CSRF) on Session Token vulnerability that could potentially lead to Remote Code Execution (RCE). \n",
-    "published": "2024-05-18T00:15:07.337",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-4264": {
-    "cvss": 9.8,
-    "description": "A remote code execution (RCE) vulnerability exists in the berriai/litellm project due to improper control of the generation of code when using the `eval` function unsafely in the `litellm.get_secret()` method. Specifically, when the server utilizes Google KMS, untrusted data is passed to the `eval` function without any sanitization. Attackers can exploit this vulnerability by injecting malicious values into environment variables through the `/config/update` endpoint, which allows for the update of settings in `proxy_server_config.yaml`.",
-    "published": "2024-05-18T00:15:07.777",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-3810": {
     "cvss": 8.8,
     "description": "The Salient Shortcodes plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.5.3 via the 'icon' shortcode 'image' attribute. This makes it possible for authenticated attackers, with contributor-level and above permissions, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where php file type can be uploaded and included.",

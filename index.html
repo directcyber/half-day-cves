@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-05-20T23:09:49.342980
+Updated at UTC 2024-05-21T00:41:49.136358
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -152,10 +152,6 @@ Updated at UTC 2024-05-20T23:09:49.342980
 
 
 				</tr>
-			
-		
-			
-		
 			
 		
 			
@@ -347,27 +343,6 @@ from userspace in at least five ways:
 					<td>execution,sensitive,bypass</td>
 					<td class=date>2024-05-18T06:15:06.440</td>
 					<td class=description>The Salient Shortcodes plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.5.3 via the 'icon' shortcode 'image' attribute. This makes it possible for authenticated attackers, with contributor-level and above permissions, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where php file type can be uploaded and included.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4264">CVE-2024-4264</a></td>
-					<td>9.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-05-18T00:15:07.777</td>
-					<td class=description>A remote code execution (RCE) vulnerability exists in the berriai/litellm project due to improper control of the generation of code when using the `eval` function unsafely in the `litellm.get_secret()` method. Specifically, when the server utilizes Google KMS, untrusted data is passed to the `eval` function without any sanitization. Attackers can exploit this vulnerability by injecting malicious values into environment variables through the `/config/update` endpoint, which allows for the update of settings in `proxy_server_config.yaml`.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-23554">CVE-2024-23554</a></td>
-					<td>5.7</td>
-					<td>remote,execution</td>
-					<td class=date>2024-05-18T00:15:07.337</td>
-					<td class=description>Cross-Site Request Forgery (CSRF) on Session Token vulnerability that could potentially lead to Remote Code Execution (RCE). 
-</td>
 				</tr>
 			
 		
