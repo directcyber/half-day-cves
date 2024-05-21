@@ -1,16 +1,4 @@
 {
-  "CVE-2024-3810": {
-    "cvss": 8.8,
-    "description": "The Salient Shortcodes plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.5.3 via the 'icon' shortcode 'image' attribute. This makes it possible for authenticated attackers, with contributor-level and above permissions, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where php file type can be uploaded and included.",
-    "published": "2024-05-18T06:15:06.440",
-    "keywords": "execution,sensitive,bypass"
-  },
-  "CVE-2024-3812": {
-    "cvss": 7.5,
-    "description": "The Salient Core plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.0.7 via the 'nectar_icon' shortcode 'icon_linea' attribute. This makes it possible for authenticated attackers, with contributor-level and above permissions, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where php file type can be uploaded and included.",
-    "published": "2024-05-18T06:15:08.000",
-    "keywords": "execution,sensitive,bypass"
-  },
   "CVE-2024-3658": {
     "cvss": 9.8,
     "description": "The Build App Online plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.0.21. This is due to missing authentication checking in the 'set_user_cart' function with the 'user_id' header value. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the user id.",
