@@ -1,10 +1,4 @@
 {
-  "CVE-2024-3658": {
-    "cvss": 9.8,
-    "description": "The Build App Online plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.0.21. This is due to missing authentication checking in the 'set_user_cart' function with the 'user_id' header value. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the user id.",
-    "published": "2024-05-18T10:15:07.053",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
   "CVE-2024-36050": {
     "url": "https://github.com/nixos/ofborg/issues/68#issuecomment-2082789441",
     "cvss": "-",
