@@ -82,5 +82,11 @@
     "description": "An authentication bypass vulnerability was present in the GitHub Enterprise Server (GHES) when utilizing SAML single sign-on authentication with the optional encrypted assertions feature. This vulnerability allowed an attacker to forge a SAML response to provision and/or gain access to a user with site administrator privileges. Exploitation of this vulnerability would allow unauthorized access to the instance without requiring prior authentication. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.13.0 and was fixed in versions 3.9.15, 3.10.12, 3.11.10 and 3.12.4. This vulnerability was reported via the GitHub Bug Bounty program.",
     "published": "2024-05-20T22:15:08.727",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-4442": {
+    "cvss": 9.1,
+    "description": "The Salon booking system plugin for WordPress is vulnerable to arbitrary file deletion in all versions up to, and including, 9.8. This is due to the plugin not properly validating the path of an uploaded file prior to deleting it. This makes it possible for unauthenticated attackers to delete arbitrary files, including the wp-config.php file, which can make site takeover and remote code execution possible.",
+    "published": "2024-05-21T07:15:08.460",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
