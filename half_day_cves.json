@@ -125,6 +125,12 @@
     "published": "2024-05-21T19:15:09.557",
     "keywords": "remote,sensitive,leak"
   },
+  "CVE-2024-35061": {
+    "cvss": "-",
+    "description": "NASA AIT-Core v2.5.2 was discovered to use unencrypted channels to exchange data over the network, allowing attackers to execute a man-in-the-middle attack. When chained with CVE-2024-35059, the CVE in subject leads to an unauthenticated, fully remote code execution.",
+    "published": "2024-05-21T19:15:10.390",
+    "keywords": "remote,execution,unauthenticated"
+  },
   "CVE-2024-21683": {
     "cvss": "-",
     "description": "This High severity RCE (Remote Code Execution) vulnerability was introduced in version 5.2 of Confluence Data Center and Server.\n\nThis RCE (Remote Code Execution) vulnerability, with a CVSS Score of 8.3, allows an authenticated attacker to execute arbitrary code which has high impact to confidentiality, high impact to integrity, high impact to availability, and requires no user interaction.\u00a0\n\nAtlassian recommends that Confluence Data Center and Server customers upgrade to latest version. If you are unable to do so, upgrade your instance to one of the specified supported fixed versions. See the release notes https://confluence.atlassian.com/doc/confluence-release-notes-327.html\n\nYou can download the latest version of Confluence Data Center and Server from the download center https://www.atlassian.com/software/confluence/download-archives.\n\nThis vulnerability was found internally.",
@@ -225,6 +231,12 @@
     "cvss": 8.8,
     "description": "Qlik Sense Enterprise for Windows before 14.187.4 allows a remote attacker to elevate their privilege due to improper validation. The attacker can elevate their privilege to the internal system role, which allows them to execute commands on the server. This affects February 2024 Patch 3 (14.173.3 through 14.173.7), November 2023 Patch 8 (14.159.4 through 14.159.13), August 2023 Patch 13 (14.139.3 through 14.139.20), May 2023 Patch 15 (14.129.3 through 14.129.22), February 2023 Patch 13 (14.113.1 through 14.113.18), November 2022 Patch 13 (14.97.2 through 14.97.18), August 2022 Patch 16 (14.78.3 through 14.78.23), and May 2022 Patch 17 (14.67.7 through 14.67.31). This has been fixed in May 2024 (14.187.4), February 2024 Patch 4 (14.173.8), November 2023 Patch 9 (14.159.14), August 2023 Patch 14 (14.139.21), May 2023 Patch 16 (14.129.23), February 2023 Patch 14 (14.113.19), November 2022 Patch 14 (14.97.19), August 2022 Patch 17 (14.78.25), and May 2022 Patch 18 (14.67.34).",
     "published": "2024-05-22T17:16:15.377",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-20360": {
+    "cvss": 8.8,
+    "description": "A vulnerability in the web-based management interface of Cisco Firepower Management Center (FMC) Software could allow an authenticated, remote attacker to conduct SQL injection attacks on an affected system. This vulnerability exists because the web-based management interface does not adequately validate user input. An attacker could exploit this vulnerability by authenticating to the application and sending crafted SQL queries to an affected system. A successful exploit could allow the attacker to obtain any data from the database, execute arbitrary commands on the underlying operating system, and elevate privileges to root. To exploit this vulnerability, an attacker would need at least Read Only user credentials.",
+    "published": "2024-05-22T18:15:09.493",
     "keywords": "remote,command"
   }
 }
