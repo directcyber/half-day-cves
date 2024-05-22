@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-05-22T08:13:27.474197
+Updated at UTC 2024-05-22T09:11:18.997822
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-05-22T08:13:27.474197
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -236,6 +240,26 @@ Updated at UTC 2024-05-22T08:13:27.474197
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5147">CVE-2024-5147</a></td>
+					<td>9.8</td>
+					<td>execution,unauthenticated,sensitive,bypass</td>
+					<td class=date>2024-05-22T08:15:10.743</td>
+					<td class=description>The WPZOOM Addons for Elementor (Templates, Widgets) plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.1.37 via the 'grid_style' parameter. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4157">CVE-2024-4157</a></td>
+					<td>7.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-05-22T08:15:10.557</td>
+					<td class=description>The Contact Form Plugin by Fluent Forms for Quiz, Survey, and Drag & Drop WP Form Builder plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 5.1.15 via deserialization of untrusted input in the extractDynamicValues function. This makes it possible for authenticated attackers, with contributor-level access and above, to inject a PHP Object. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code. Successful exploitation requires the attacker to have "View Form" and "Manage Form" permissions, which must be explicitly set by an administrator. However, this requirement can be bypassed when this vulnerability is chained with CVE-2024-2771.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
