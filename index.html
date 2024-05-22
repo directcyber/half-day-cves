@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-05-22T11:08:52.665043
+Updated at UTC 2024-05-22T12:18:10.757375
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,12 @@ Updated at UTC 2024-05-22T11:08:52.665043
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -234,10 +240,38 @@ Updated at UTC 2024-05-22T11:08:52.665043
 				</tr>
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5196">CVE-2024-5196</a></td>
+					<td>4.7</td>
+					<td>remote,command</td>
+					<td class=date>2024-05-22T12:15:11.097</td>
+					<td class=description>A vulnerability classified as critical has been found in Arris VAP2500 08.50. This affects an unknown part of the file /tools_command.php. The manipulation of the argument cmb_header/txt_command leads to command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-265833 was assigned to this vulnerability.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5195">CVE-2024-5195</a></td>
+					<td>4.7</td>
+					<td>remote,command</td>
+					<td class=date>2024-05-22T11:15:54.063</td>
+					<td class=description>A vulnerability was found in Arris VAP2500 08.50. It has been rated as critical. Affected by this issue is some unknown functionality of the file /diag_s.php. The manipulation of the argument customer_info leads to command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-265832.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5194">CVE-2024-5194</a></td>
+					<td>4.7</td>
+					<td>remote,command</td>
+					<td class=date>2024-05-22T11:15:53.797</td>
+					<td class=description>A vulnerability was found in Arris VAP2500 08.50. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file /assoc_table.php. The manipulation of the argument id leads to command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-265831.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -429,47 +463,6 @@ This vulnerability was found internally.</td>
 		
 			
 		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-35929">CVE-2024-35929</a></td>
-					<td>-</td>
-					<td>bypass,leak</td>
-					<td class=date>2024-05-19T11:15:48.993</td>
-					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
-
-rcu/nocb: Fix WARN_ON_ONCE() in the rcu_nocb_bypass_lock()
-
-For the kernels built with CONFIG_RCU_NOCB_CPU_DEFAULT_ALL=y and
-CONFIG_RCU_LAZY=y, the following scenarios will trigger WARN_ON_ONCE()
-in the rcu_nocb_bypass_lock() and rcu_nocb_wait_contended() functions:
-
-        CPU2                                               CPU11
-kthread
-rcu_nocb_cb_kthread                                       ksys_write
-rcu_do_batch                                              vfs_write
-rcu_torture_timer_cb                                      proc_sys_write
-__kmem_cache_free                                         proc_sys_call_handler
-kmemleak_free                                             drop_caches_sysctl_handler
-delete_object_full                                        drop_slab
-__delete_object                                           shrink_slab
-put_object                                                lazy_rcu_shrink_scan
-call_rcu                                                  rcu_nocb_flush_bypass
-__call_rcu_commn                                            rcu_nocb_bypass_lock
-                                                            raw_spin_trylock(&rdp->nocb_bypass_lock) fail
-                                                            atomic_inc(&rdp->nocb_lock_contended);
-rcu_nocb_wait_contended                                     WARN_ON_ONCE(smp_processor_id() != rdp->cpu);
- WARN_ON_ONCE(atomic_read(&rdp->nocb_lock_contended))                                          |
-                            |_ _ _ _ _ _ _ _ _ _same rdp and rdp->cpu != 11_ _ _ _ _ _ _ _ _ __|
-
-Reproduce this bug with "echo 3 > /proc/sys/vm/drop_caches".
-
-This commit therefore uses rcu_nocb_try_flush_bypass() instead of
-rcu_nocb_flush_bypass() in lazy_rcu_shrink_scan().  If the nocb_bypass
-queue is being flushed, then rcu_nocb_try_flush_bypass will return
-directly.</td>
-				</tr>
 			
 		
 
