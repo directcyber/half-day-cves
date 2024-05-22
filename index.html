@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-05-22T17:08:28.843166
+Updated at UTC 2024-05-22T18:12:36.131210
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,18 @@ Updated at UTC 2024-05-22T17:08:28.843166
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 				<tr>
@@ -254,6 +266,66 @@ Updated at UTC 2024-05-22T17:08:28.843166
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-36077">CVE-2024-36077</a></td>
+					<td>8.8</td>
+					<td>remote,command</td>
+					<td class=date>2024-05-22T17:16:15.377</td>
+					<td class=description>Qlik Sense Enterprise for Windows before 14.187.4 allows a remote attacker to elevate their privilege due to improper validation. The attacker can elevate their privilege to the internal system role, which allows them to execute commands on the server. This affects February 2024 Patch 3 (14.173.3 through 14.173.7), November 2023 Patch 8 (14.159.4 through 14.159.13), August 2023 Patch 13 (14.139.3 through 14.139.20), May 2023 Patch 15 (14.129.3 through 14.129.22), February 2023 Patch 13 (14.113.1 through 14.113.18), November 2022 Patch 13 (14.97.2 through 14.97.18), August 2022 Patch 16 (14.78.3 through 14.78.23), and May 2022 Patch 17 (14.67.7 through 14.67.31). This has been fixed in May 2024 (14.187.4), February 2024 Patch 4 (14.173.8), November 2023 Patch 9 (14.159.14), August 2023 Patch 14 (14.139.21), May 2023 Patch 16 (14.129.23), February 2023 Patch 14 (14.113.19), November 2022 Patch 14 (14.97.19), August 2022 Patch 17 (14.78.25), and May 2022 Patch 18 (14.67.34).</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20363">CVE-2024-20363</a></td>
+					<td>5.8</td>
+					<td>remote,unauthenticated,bypass</td>
+					<td class=date>2024-05-22T17:16:13.950</td>
+					<td class=description>Multiple Cisco products are affected by a vulnerability in the Snort Intrusion Prevention System (IPS) rule engine that could allow an unauthenticated, remote attacker to bypass the configured rules on an affected system. This vulnerability is due to incorrect HTTP packet handling. An attacker could exploit this vulnerability by sending crafted HTTP packets through an affected device. A successful exploit could allow the attacker to bypass configured IPS rules and allow uninspected traffic onto the network.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20361">CVE-2024-20361</a></td>
+					<td>5.8</td>
+					<td>remote,unauthenticated,bypass</td>
+					<td class=date>2024-05-22T17:16:13.733</td>
+					<td class=description>A vulnerability in the Object Groups for Access Control Lists (ACLs) feature of Cisco Firepower Management Center (FMC) Software could allow an unauthenticated, remote attacker to bypass configured access controls on managed devices that are running Cisco Firepower Threat Defense (FTD) Software. This vulnerability is due to the incorrect deployment of the Object Groups for ACLs feature from Cisco FMC Software to managed FTD devices in high-availability setups. After an affected device is rebooted following Object Groups for ACLs deployment, an attacker can exploit this vulnerability by sending traffic through the affected device. A successful exploit could allow the attacker to bypass configured access controls and successfully send traffic to devices that are expected to be protected by the affected device.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20355">CVE-2024-20355</a></td>
+					<td>5.0</td>
+					<td>remote,authentication,vpn</td>
+					<td class=date>2024-05-22T17:16:13.477</td>
+					<td class=description>A vulnerability in the implementation of SAML 2.0 single sign-on (SSO) for remote access VPN services in Cisco Adaptive Security Appliance (ASA) Software and Cisco Firepower Threat Defense (FTD) Software could allow an authenticated, remote attacker to successfully establish a VPN session on an affected device. This vulnerability is due to improper separation of authorization domains when using SAML authentication. An attacker could exploit this vulnerability by using valid credentials to successfully authenticate using their designated connection profile (tunnel group), intercepting the SAML SSO token that is sent back from the Cisco ASA device, and then submitting the same SAML SSO token to a different tunnel group for authentication. A successful exploit could allow the attacker to establish a remote access VPN session using a connection profile that they are not authorized to use and connect to secured networks behind the affected device that they are not authorized to access. For successful exploitation, the attacker must have valid remote access VPN user credentials.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20293">CVE-2024-20293</a></td>
+					<td>5.8</td>
+					<td>remote,unauthenticated,bypass</td>
+					<td class=date>2024-05-22T17:16:13.167</td>
+					<td class=description>A vulnerability in the activation of an access control list (ACL) on Cisco Adaptive Security Appliance (ASA) Software and Cisco Firepower Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to bypass the protection that is offered by a configured ACL on an affected device. This vulnerability is due to a logic error that occurs when an ACL changes from inactive to active in the running configuration of an affected device. An attacker could exploit this vulnerability by sending traffic through the affected device that should be denied by the configured ACL. The reverse condition is also true—traffic that should be permitted could be denied by the configured ACL. A successful exploit could allow the attacker to bypass configured ACL protections on the affected device, allowing the attacker to access trusted networks that the device might be protecting. Note: This vulnerability applies to both IPv4 and IPv6 traffic as well as dual-stack ACL configurations in which both IPv4 and IPv6 ACLs are configured on an interface.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20261">CVE-2024-20261</a></td>
+					<td>5.8</td>
+					<td>remote,unauthenticated,bypass</td>
+					<td class=date>2024-05-22T17:16:12.873</td>
+					<td class=description>A vulnerability in the file policy feature that is used to inspect encrypted archive files of Cisco Firepower Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to bypass a configured file policy to block an encrypted archive file. This vulnerability exists because of a logic error when a specific class of encrypted archive files is inspected. An attacker could exploit this vulnerability by sending a crafted, encrypted archive file through the affected device. A successful exploit could allow the attacker to send an encrypted archive file, which could contain malware and should have been blocked and dropped at the Cisco FTD device.</td>
+				</tr>
+			
 		
 			
 		
