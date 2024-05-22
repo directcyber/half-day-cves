@@ -142,5 +142,11 @@
     "description": "In RTI Connext Professional 5.3.1 through 6.1.0 before 6.1.1, a buffer overflow in XML parsing from Routing Service, Recording Service, Queuing Service, and Cloud Discovery Service allows attackers to execute code with the affected service's privileges, compromise the service's integrity, leak sensitive information, or crash the service. These attacks could be done via a remote malicious RTPS message; a compromised call with malicious parameters to the RTI_RoutingService_new, rti::recording::Service, RTI_QueuingService_new, or RTI_CDS_Service_new public APIs; or a compromised local file system containing a malicious XML file.",
     "published": "2024-05-21T19:15:09.557",
     "keywords": "remote,sensitive,leak"
+  },
+  "CVE-2024-21683": {
+    "cvss": "-",
+    "description": "This High severity RCE (Remote Code Execution) vulnerability was introduced in version 5.2 of Confluence Data Center and Server.\n\nThis RCE (Remote Code Execution) vulnerability, with a CVSS Score of 8.3, allows an authenticated attacker to execute arbitrary code which has high impact to confidentiality, high impact to integrity, high impact to availability, and requires no user interaction.\u00a0\n\nAtlassian recommends that Confluence Data Center and Server customers upgrade to latest version. If you are unable to do so, upgrade your instance to one of the specified supported fixed versions. See the release notes https://confluence.atlassian.com/doc/confluence-release-notes-327.html\n\nYou can download the latest version of Confluence Data Center and Server from the download center https://www.atlassian.com/software/confluence/download-archives.\n\nThis vulnerability was found internally.",
+    "published": "2024-05-21T23:15:07.923",
+    "keywords": "remote,execution"
   }
 }
