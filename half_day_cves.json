@@ -244,5 +244,17 @@
     "description": "A Server-Side Request Forgery (SSRF) vulnerability in the /Upgrade/FixConfig route in Open Library Foundation VuFind 2.0 through 9.1 before 9.1.1 allows a remote attacker to overwrite local configuration files to gain access to the administrator panel and achieve Remote Code Execution. A mitigating factor is that it requires the allow_url_include PHP runtime setting to be on, which is off in default installations. It also requires the /Upgrade route to be exposed, which is exposed by default after installing VuFind, and is recommended to be disabled by setting autoConfigure to false in config.ini.",
     "published": "2024-05-22T19:15:08.807",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-4267": {
+    "cvss": 8.4,
+    "description": "A remote code execution (RCE) vulnerability exists in the parisneo/lollms-webui, specifically within the 'open_file' module, version 9.5. The vulnerability arises due to improper neutralization of special elements used in a command within the 'open_file' function. An attacker can exploit this vulnerability by crafting a malicious file path that, when processed by the 'open_file' function, executes arbitrary system commands or reads sensitive file content. This issue is present in the code where subprocess.Popen is used unsafely to open files based on user-supplied paths without adequate validation, leading to potential command injection.",
+    "published": "2024-05-22T20:15:09.700",
+    "keywords": "remote,execution,command,sensitive"
+  },
+  "CVE-2024-4453": {
+    "cvss": 7.8,
+    "description": "GStreamer EXIF Metadata Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GStreamer. Interaction with this library is required to exploit this vulnerability but attack vectors may vary depending on the implementation.\n\nThe specific flaw exists within the parsing of EXIF metadata. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before allocating a buffer. An attacker can leverage this vulnerability to execute code in the context of the current process.\n. Was ZDI-CAN-23896.",
+    "published": "2024-05-22T20:15:09.923",
+    "keywords": "remote,execution"
   }
 }
