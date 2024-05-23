@@ -268,5 +268,17 @@
     "description": "Tauri is a framework for building binaries for all major desktop platforms. Remote origin iFrames in Tauri applications can access the Tauri IPC endpoints without being explicitly allowed in the `dangerousRemoteDomainIpcAccess` in v1 and in the `capabilities` in v2. Valid commands with potentially unwanted consequences (\"delete project\", \"transfer credits\", etc.) could be invoked by an attacker that controls the content of an iframe running inside a Tauri app. This vulnerability has been patched in versions 1.6.7 and 2.0.0-beta.19.",
     "published": "2024-05-23T14:15:09.603",
     "keywords": "remote,command"
+  },
+  "CVE-2024-5084": {
+    "cvss": 9.8,
+    "description": "The Hash Form \u2013 Drag & Drop Form Builder plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'file_upload_action' function in all versions up to, and including, 1.1.0. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-05-23T15:15:15.970",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-5085": {
+    "cvss": 8.1,
+    "description": "The Hash Form \u2013 Drag & Drop Form Builder plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.1.0 via deserialization of untrusted input in the 'process_entry' function. This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable software. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code.",
+    "published": "2024-05-23T15:15:16.540",
+    "keywords": "unauthenticated,sensitive"
   }
 }
