@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-05-23T13:10:54.766626
+Updated at UTC 2024-05-23T14:09:00.098342
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-05-23T13:10:54.766626
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -238,20 +240,18 @@ Updated at UTC 2024-05-23T13:10:54.766626
 				</tr>
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4287">CVE-2024-4287</a></td>
-					<td>8.1</td>
-					<td><a target=_blank href="https://github.com/mintplex-labs/anything-llm/commit/94b58249a37a21b1c08deaa2d1edfdecbb6deb18">https://github.com/mintplex-labs/anything-llm/commit/94b58249a37a21b1c08deaa2d1edfdecbb6deb18</a></td>
-					<td class=date>2024-05-20T13:15:23.980</td>
-					<td class=description>In mintplex-labs/anything-llm, a vulnerability exists due to improper input validation in the workspace update process. Specifically, the application fails to validate or format JSON data sent in an HTTP POST request to `/api/workspace/:workspace-slug/update`, allowing it to be executed as part of a database query without restrictions. This flaw enables users with a manager role to craft a request that includes nested write operations, effectively allowing them to create new Administrator accounts.</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5168">CVE-2024-5168</a></td>
+					<td>9.8</td>
+					<td>unauthenticated,authentication,bypass</td>
+					<td class=date>2024-05-23T13:15:09.810</td>
+					<td class=description>Improper access control vulnerability in Prodys' Quantum Audio codec affecting versions 2.3.4t and below. This vulnerability could allow an unauthenticated user to bypass authentication entirely and execute arbitrary API requests against the web application.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -641,8 +641,6 @@ This vulnerability was found internally.</td>
 					<td class=date>2024-05-20T17:15:09.223</td>
 					<td class=description>ASUS routers supporting custom OpenVPN profiles are vulnerable to a code execution vulnerability. An authenticated and remote attacker can execute arbitrary operating system commands by uploading a crafted OVPN profile. Known affected routers include ASUS ExpertWiFi, ASUS RT-AX55, ASUS RT-AX58U, ASUS RT-AC67U, ASUS RT-AC68R, ASUS RT-AC68U, ASUS RT-AX86, ASUS RT-AC86U, ASUS RT-AX88U, and ASUS RT-AX3000.</td>
 				</tr>
-			
-		
 			
 		
 			

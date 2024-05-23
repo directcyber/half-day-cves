@@ -1,10 +1,4 @@
 {
-  "CVE-2024-4287": {
-    "url": "https://github.com/mintplex-labs/anything-llm/commit/94b58249a37a21b1c08deaa2d1edfdecbb6deb18",
-    "cvss": 8.1,
-    "description": "In mintplex-labs/anything-llm, a vulnerability exists due to improper input validation in the workspace update process. Specifically, the application fails to validate or format JSON data sent in an HTTP POST request to `/api/workspace/:workspace-slug/update`, allowing it to be executed as part of a database query without restrictions. This flaw enables users with a manager role to craft a request that includes nested write operations, effectively allowing them to create new Administrator accounts.",
-    "published": "2024-05-20T13:15:23.980"
-  },
   "CVE-2024-34952": {
     "url": "https://github.com/taurusxin/ncmdump/issues/18",
     "cvss": "-",
@@ -274,5 +268,11 @@
     "description": "Dapr is a portable, event-driven, runtime for building distributed applications across cloud and edge. Dapr sends the app token of the invoker app instead of the app token of the invoked app. This causes of a leak of the application token of the invoker app to the invoked app when using Dapr as a gRPC proxy for remote service invocation. This vulnerability impacts Dapr users who use Dapr as a gRPC proxy for remote service invocation as well as the Dapr App API token functionality. An attacker could exploit this vulnerability to gain access to the app token of the invoker app, potentially compromising security and authentication mechanisms. This vulnerability was patched in version 1.13.3.\n",
     "published": "2024-05-23T09:15:09.890",
     "keywords": "remote,authentication,leak"
+  },
+  "CVE-2024-5168": {
+    "cvss": 9.8,
+    "description": "Improper access control vulnerability in Prodys' Quantum Audio codec affecting versions 2.3.4t and below. This vulnerability could allow an unauthenticated user to bypass authentication entirely and execute arbitrary API requests against the web application.",
+    "published": "2024-05-23T13:15:09.810",
+    "keywords": "unauthenticated,authentication,bypass"
   }
 }
