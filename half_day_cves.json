@@ -65,12 +65,6 @@
     "published": "2024-05-21T07:15:08.460",
     "keywords": "remote,execution,unauthenticated"
   },
-  "CVE-2024-34071": {
-    "url": "https://github.com/umbraco/umbraco-cms/commit/d8df405db4ea884bb4b96f088d10d9a2070cf024",
-    "cvss": 6.1,
-    "description": "Umbraco is an ASP.NET CMS used by more than 730.000 websites. Umbraco has an endpoint that is vulnerable to open redirects. The endpoint is protected so it requires the user to be signed into backoffice before the vulnerable is exposed. This vulnerability has been patched in version(s) 8.18.14, 10.8.6, 12.3.10 and 13.3.1.",
-    "published": "2024-05-21T14:15:11.783"
-  },
   "CVE-2024-35384": {
     "url": "https://github.com/cesanta/mjs/issues/287",
     "cvss": "-",
@@ -280,5 +274,11 @@
     "description": "The Oxygen Builder plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 4.8.2 via post metadata. This is due to the plugin storing custom data in post metadata without an underscore prefix. This makes it possible for lower privileged users, such as contributors, to inject arbitrary PHP code via the WordPress user interface and gain elevated privileges.",
     "published": "2024-05-23T05:15:49.140",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-5241": {
+    "cvss": 4.7,
+    "description": "A vulnerability was found in Huashi Private Cloud CDN Live Streaming Acceleration Server up to 20240520. It has been classified as critical. Affected is an unknown function of the file /manager/ipconfig_new.php. The manipulation of the argument dev leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-265992.",
+    "published": "2024-05-23T07:15:10.803",
+    "keywords": "remote,command"
   }
 }
