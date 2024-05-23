@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-05-22T23:11:04.438155
+Updated at UTC 2024-05-23T00:41:31.761209
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-05-22T23:11:04.438155
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -262,20 +266,28 @@ Updated at UTC 2024-05-22T23:11:04.438155
 				</tr>
 			
 		
+
+		<hr>
+		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4284">CVE-2024-4284</a></td>
-					<td>4.9</td>
-					<td><a target=_blank href="https://github.com/mintplex-labs/anything-llm/commit/1b35bcbeab10b77e6dbd263cceecf1b965a40789">https://github.com/mintplex-labs/anything-llm/commit/1b35bcbeab10b77e6dbd263cceecf1b965a40789</a></td>
-					<td class=date>2024-05-19T23:15:06.960</td>
-					<td class=description>A vulnerability in mintplex-labs/anything-llm allows for a denial of service (DoS) condition through the modification of a user's `id` attribute to a value of 0. This issue affects the current version of the software, with the latest commit id `57984fa85c31988b2eff429adfc654c46e0c342a`. By exploiting this vulnerability, an attacker, with manager or admin privileges, can render a chosen account completely inaccessible. The application's mechanism for suspending accounts does not provide a means to reverse this condition through the UI, leading to uncontrolled resource consumption. The vulnerability is introduced due to the lack of input validation and sanitization in the user modification endpoint and the middleware's token validation logic. This issue has been addressed in version 1.0.0 of the software.</td>
-
-
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-29853">CVE-2024-29853</a></td>
+					<td>7.8</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-05-22T23:15:09.367</td>
+					<td class=description>An authentication bypass vulnerability in Veeam Agent for Microsoft Windows allows for local privilege escalation.</td>
 				</tr>
 			
 		
-
-		<hr>
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-22026">CVE-2024-22026</a></td>
+					<td>6.7</td>
+					<td>command,bypass</td>
+					<td class=date>2024-05-22T23:15:08.520</td>
+					<td class=description>A local privilege escalation vulnerability in EPMM before 12.1.0.0 allows an authenticated local user to bypass shell restriction and execute arbitrary commands on the appliance.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -608,8 +620,6 @@ This vulnerability was found internally.</td>
 					<td class=date>2024-05-20T12:15:08.720</td>
 					<td class=description>A memory corruption vulnerability in Fluent Bit versions 2.0.7 thru 3.0.3. This issue lies in the embedded http server’s parsing of trace requests and may result in denial of service conditions, information disclosure, or remote code execution.</td>
 				</tr>
-			
-		
 			
 		
 			
