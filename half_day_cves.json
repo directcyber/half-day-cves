@@ -1,16 +1,4 @@
 {
-  "CVE-2024-34952": {
-    "url": "https://github.com/taurusxin/ncmdump/issues/18",
-    "cvss": "-",
-    "description": "taurusxin ncmdump v1.3.2 was discovered to contain a segmentation violation via the NeteaseCrypt::FixMetadata() function at /src/ncmcrypt.cpp. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted .ncm file.",
-    "published": "2024-05-20T14:15:09.480"
-  },
-  "CVE-2024-34953": {
-    "url": "https://github.com/taurusxin/ncmdump/issues/19",
-    "cvss": "-",
-    "description": "An issue in taurusxin ncmdump v1.3.2 allows attackers to cause a Denial of Service (DoS) via memory exhaustion by supplying a crafted .ncm file",
-    "published": "2024-05-20T14:15:09.580"
-  },
   "CVE-2024-0401": {
     "cvss": 7.2,
     "description": "ASUS routers supporting custom OpenVPN profiles are vulnerable to a code execution vulnerability. An authenticated and remote attacker can execute arbitrary operating system commands by uploading a crafted OVPN profile. Known affected routers include ASUS ExpertWiFi, ASUS RT-AX55, ASUS RT-AX58U, ASUS RT-AC67U, ASUS RT-AC68R, ASUS RT-AC68U, ASUS RT-AX86, ASUS RT-AC86U, ASUS RT-AX88U, and ASUS RT-AX3000.",
@@ -274,5 +262,11 @@
     "description": "Improper access control vulnerability in Prodys' Quantum Audio codec affecting versions 2.3.4t and below. This vulnerability could allow an unauthenticated user to bypass authentication entirely and execute arbitrary API requests against the web application.",
     "published": "2024-05-23T13:15:09.810",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-35222": {
+    "cvss": 5.9,
+    "description": "Tauri is a framework for building binaries for all major desktop platforms. Remote origin iFrames in Tauri applications can access the Tauri IPC endpoints without being explicitly allowed in the `dangerousRemoteDomainIpcAccess` in v1 and in the `capabilities` in v2. Valid commands with potentially unwanted consequences (\"delete project\", \"transfer credits\", etc.) could be invoked by an attacker that controls the content of an iframe running inside a Tauri app. This vulnerability has been patched in versions 1.6.7 and 2.0.0-beta.19.",
+    "published": "2024-05-23T14:15:09.603",
+    "keywords": "remote,command"
   }
 }
