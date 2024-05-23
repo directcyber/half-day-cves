@@ -1,10 +1,4 @@
 {
-  "CVE-2024-1968": {
-    "url": "https://github.com/scrapy/scrapy/commit/1d0502f25bbe55a22899af915623fda1aaeb9dd8",
-    "cvss": 7.5,
-    "description": "In scrapy/scrapy, an issue was identified where the Authorization header is not removed during redirects that only change the scheme (e.g., HTTPS to HTTP) but remain within the same domain. This behavior contravenes the Fetch standard, which mandates the removal of Authorization headers in cross-origin requests when the scheme, host, or port changes. Consequently, when a redirect downgrades from HTTPS to HTTP, the Authorization header may be inadvertently exposed in plaintext, leading to potential sensitive information disclosure to unauthorized actors. The flaw is located in the _build_redirect_request function of the redirect middleware.",
-    "published": "2024-05-20T08:15:08.850"
-  },
   "CVE-2024-4323": {
     "cvss": 9.8,
     "description": "A memory corruption vulnerability in Fluent Bit versions 2.0.7 thru 3.0.3. This issue lies in the embedded http server\u2019s parsing of trace requests and may result in denial of service conditions, information disclosure, or remote code execution.",
