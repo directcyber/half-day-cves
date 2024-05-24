@@ -1,16 +1,4 @@
 {
-  "CVE-2024-31844": {
-    "cvss": "-",
-    "description": "An issue was discovered in Italtel Embrace 1.6.4. The server does not properly handle application errors. In some cases, this leads to a disclosure of information about the server. An unauthenticated user is able craft specific requests in order to make the application generate an error. Inside an error message, some information about the server is revealed, such as the absolute path of the source code of the application. This kind of information can help an attacker to perform other attacks against the system. This can be exploited without authentication.",
-    "published": "2024-05-21T16:15:26.027",
-    "keywords": "unauthenticated,authentication"
-  },
-  "CVE-2024-31847": {
-    "cvss": "-",
-    "description": "An issue was discovered in Italtel Embrace 1.6.4. A stored cross-site scripting (XSS) vulnerability allows authenticated and unauthenticated remote attackers to inject arbitrary web script or HTML into a GET parameter. This reflects/stores the user input without sanitization.",
-    "published": "2024-05-21T16:15:26.210",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2024-22274": {
     "cvss": 7.2,
     "description": "The vCenter Server contains an authenticated remote code execution vulnerability.\u00a0A malicious actor with administrative privileges on the vCenter appliance shell may exploit this issue to run arbitrary commands on the underlying operating system.",
@@ -352,5 +340,17 @@
     "cvss": "-",
     "description": "PingCAP TiDB v7.5.1 was discovered to contain a NULL pointer dereference via the component SortedRowContainer.",
     "published": "2024-05-24T15:15:24.670"
+  },
+  "CVE-2024-33427": {
+    "url": "https://github.com/squid-cache/squid/pull/1763",
+    "cvss": "-",
+    "description": "Buffer Overflow vulnerability in Squid version before v.6.10 allows a local attacker cause a denial of service via a improper check of string in function ConfigParser::UnQuote.",
+    "published": "2024-05-24T16:15:10.253"
+  },
+  "CVE-2024-34995": {
+    "url": "https://github.com/cym1102/svnwebui/issues/8",
+    "cvss": "-",
+    "description": "svnWebUI v1.8.3 was discovered to contain an arbitrary file deletion vulnerability via the dirTemps parameter under com.cym.controller.UserController#importOver. This vulnerability allows attackers to delete arbitrary files via a crafted POST request.",
+    "published": "2024-05-24T16:15:10.460"
   }
 }
