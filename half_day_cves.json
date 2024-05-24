@@ -334,5 +334,17 @@
     "cvss": "-",
     "description": "svnWebUI v1.8.3 was discovered to contain an arbitrary file deletion vulnerability via the dirTemps parameter under com.cym.controller.UserController#importOver. This vulnerability allows attackers to delete arbitrary files via a crafted POST request.",
     "published": "2024-05-24T16:15:10.460"
+  },
+  "CVE-2024-35373": {
+    "cvss": "-",
+    "description": "Mocodo Mocodo Online 4.2.6 and below is vulnerable to Remote Code Execution via /web/rewrite.php.",
+    "published": "2024-05-24T21:15:59.720",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-35374": {
+    "cvss": "-",
+    "description": "Mocodo Mocodo Online 4.2.6 and below does not properly sanitize the sql_case input field in /web/generate.php, allowing remote attackers to execute arbitrary SQL commands and potentially command injection, leading to remote code execution (RCE) under certain conditions.",
+    "published": "2024-05-24T21:15:59.793",
+    "keywords": "remote,execution,command"
   }
 }
