@@ -340,5 +340,11 @@
     "description": "The Pie Register - Social Sites Login (Add on) plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.7.7. This is due to insufficient verification on the user being supplied during a social login through the plugin. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email.",
     "published": "2024-05-24T04:15:08.670",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-36361": {
+    "url": "https://github.com/pugjs/pug/pull/3428",
+    "cvss": "-",
+    "description": "Pug through 3.0.2 allows JavaScript code execution if an application accepts untrusted input for the name option of the compileClient, compileFileClient, or compileClientWithDependenciesTracked function. NOTE: these functions are for compiling Pug templates into JavaScript, and there would typically be no reason to allow untrusted callers.",
+    "published": "2024-05-24T06:15:08.947"
   }
 }
