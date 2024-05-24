@@ -334,5 +334,11 @@
     "description": "D-Link D-View execMonitorScript Exposed Dangerous Method Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of D-Link D-View. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed.\n\nThe specific flaw exists within the execMonitorScript method. The issue results from an exposed dangerous method. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-21828.",
     "published": "2024-05-23T22:15:16.320",
     "keywords": "remote,execution,authentication,bypass"
+  },
+  "CVE-2024-4544": {
+    "cvss": 9.8,
+    "description": "The Pie Register - Social Sites Login (Add on) plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.7.7. This is due to insufficient verification on the user being supplied during a social login through the plugin. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email.",
+    "published": "2024-05-24T04:15:08.670",
+    "keywords": "unauthenticated,authentication,bypass"
   }
 }
