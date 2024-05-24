@@ -1,28 +1,4 @@
 {
-  "CVE-2024-34071": {
-    "url": "https://github.com/umbraco/umbraco-cms/commit/d8df405db4ea884bb4b96f088d10d9a2070cf024",
-    "cvss": 6.1,
-    "description": "Umbraco is an ASP.NET CMS used by more than 730.000 websites. Umbraco has an endpoint that is vulnerable to open redirects. The endpoint is protected so it requires the user to be signed into backoffice before the vulnerable is exposed. This vulnerability has been patched in version(s) 8.18.14, 10.8.6, 12.3.10 and 13.3.1.",
-    "published": "2024-05-21T14:15:11.783"
-  },
-  "CVE-2024-35384": {
-    "url": "https://github.com/cesanta/mjs/issues/287",
-    "cvss": "-",
-    "description": "An issue in Cesanta mjs 2.20.0 allows a remote attacker to cause a denial of service via the mjs_array_length function in the mjs.c file.",
-    "published": "2024-05-21T14:15:12.217"
-  },
-  "CVE-2024-35385": {
-    "url": "https://github.com/cesanta/mjs/issues/288",
-    "cvss": "-",
-    "description": "An issue in Cesanta mjs 2.20.0 allows a remote attacker to cause a denial of service via the mjs_mk_ffi_sig function in the mjs.c file.",
-    "published": "2024-05-21T14:15:12.307"
-  },
-  "CVE-2024-35386": {
-    "url": "https://github.com/cesanta/mjs/issues/286",
-    "cvss": "-",
-    "description": "An issue in Cesanta mjs 2.20.0 allows a remote attacker to cause a denial of service via the mjs_do_gc function in the mjs.c file.",
-    "published": "2024-05-21T14:15:12.400"
-  },
   "CVE-2024-33529": {
     "cvss": "-",
     "description": "ILIAS 7 before 7.30 and ILIAS 8 before 8.11 as well as ILIAS 9.0 allow remote authenticated attackers with administrative privileges to execute operating system commands via file uploads with dangerous types.",
@@ -358,5 +334,11 @@
     "description": "Vulnerabilities in Dolibarr ERP - CRM that affect version 9.0.1 and allow SQL injection. These vulnerabilities could allow a remote attacker to send a specially crafted SQL query to the system and retrieve all the information stored in the database through the parameters \n\nviewstatut in /dolibarr/commande/list.php.",
     "published": "2024-05-24T10:15:11.197",
     "keywords": "remote,command"
+  },
+  "CVE-2024-35591": {
+    "url": "https://github.com/o2oa/o2oa/issues/156",
+    "cvss": "-",
+    "description": "An arbitrary file upload vulnerability in O2OA v8.3.8 allows attackers to execute arbitrary code via uploading a crafted PDF file.",
+    "published": "2024-05-24T14:15:17.153"
   }
 }
