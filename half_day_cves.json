@@ -340,5 +340,11 @@
     "cvss": "-",
     "description": "Pug through 3.0.2 allows JavaScript code execution if an application accepts untrusted input for the name option of the compileClient, compileFileClient, or compileClientWithDependenciesTracked function. NOTE: these functions are for compiling Pug templates into JavaScript, and there would typically be no reason to allow untrusted callers.",
     "published": "2024-05-24T06:15:08.947"
+  },
+  "CVE-2024-4037": {
+    "cvss": 6.5,
+    "description": "The WP Photo Album Plus plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 8.7.02.003. This is due to the plugin allowing unauthenticated users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+    "published": "2024-05-24T09:15:08.873",
+    "keywords": "execution,unauthenticated"
   }
 }
