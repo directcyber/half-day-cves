@@ -1,16 +1,4 @@
 {
-  "CVE-2024-22026": {
-    "cvss": 6.7,
-    "description": "A local privilege escalation vulnerability in EPMM before 12.1.0.0 allows an authenticated local user to bypass shell restriction and execute arbitrary commands on the appliance.",
-    "published": "2024-05-22T23:15:08.520",
-    "keywords": "command,bypass"
-  },
-  "CVE-2024-29853": {
-    "cvss": 7.8,
-    "description": "An authentication bypass vulnerability in Veeam Agent for Microsoft Windows allows for local privilege escalation.",
-    "published": "2024-05-22T23:15:09.367",
-    "keywords": "authentication,bypass"
-  },
   "CVE-2024-3708": {
     "cvss": "-",
     "description": "A condition exists in lighttpd version prior to 1.4.51 whereby a remote attacker can craft an http request which could result in multiple outcomes:\n1.) cause lighttpd to access freed memory in which case the process lighttpd is running in could be terminated or other non-deterministic behavior could result\n2.) a memory information disclosure event could result which could be used to determine the state of memory which could then be used to theoretically bypass ALSR protections\n\nThis CVE will be updated with more details on July 9th, 2024 after affected parties have had time to remediate.",
@@ -250,5 +238,17 @@
     "description": "A vulnerability was found in Ruijie RG-UAC up to 20240516. It has been rated as critical. Affected by this issue is some unknown functionality of the file /view/vpn/autovpn/sub_commit.php. The manipulation of the argument key leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-266246 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2024-05-25T22:15:49.540",
     "keywords": "remote,command,vpn"
+  },
+  "CVE-2024-5350": {
+    "url": "https://github.com/anji-plus/report/issues/34",
+    "cvss": 6.3,
+    "description": "A vulnerability was found in anji-plus AJ-Report up to 1.4.1. It has been classified as critical. Affected is the function pageList of the file /pageList. The manipulation of the argument p leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-266262 is the identifier assigned to this vulnerability.",
+    "published": "2024-05-25T23:15:09.123"
+  },
+  "CVE-2024-5351": {
+    "url": "https://github.com/anji-plus/report/issues/34",
+    "cvss": 6.3,
+    "description": "A vulnerability was found in anji-plus AJ-Report up to 1.4.1. It has been declared as critical. Affected by this vulnerability is the function getValueFromJs of the component Javascript Handler. The manipulation leads to deserialization. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-266263.",
+    "published": "2024-05-26T00:15:09.890"
   }
 }
