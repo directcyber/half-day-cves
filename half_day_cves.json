@@ -1,10 +1,4 @@
 {
-  "CVE-2024-36361": {
-    "url": "https://github.com/pugjs/pug/pull/3428",
-    "cvss": "-",
-    "description": "Pug through 3.0.2 allows JavaScript code execution if an application accepts untrusted input for the name option of the compileClient, compileFileClient, or compileClientWithDependenciesTracked function. NOTE: these functions are for compiling Pug templates into JavaScript, and there would typically be no reason to allow untrusted callers.",
-    "published": "2024-05-24T06:15:08.947"
-  },
   "CVE-2024-4037": {
     "cvss": 6.5,
     "description": "The WP Photo Album Plus plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 8.7.02.003. This is due to the plugin allowing unauthenticated users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
@@ -141,6 +135,18 @@
     "cvss": 7.2,
     "description": "Openfind Mail2000 does not properly filter parameters of specific API. Remote attackers with administrative privileges can exploit this vulnerability to execute arbitrary system commands on the remote server.",
     "published": "2024-05-27T04:15:09.300",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-3933": {
+    "url": "https://github.com/eclipse/omr/pull/7275",
+    "cvss": 5.3,
+    "description": "In Eclipse OpenJ9 release versions prior to 0.44.0 and after 0.13.0, when running with JVM option -Xgc:concurrentScavenge, the sequence generated for System.arrayCopy on the IBM Z platform with hardware and software support for guarded storage [1], could allow access to a buffer with an incorrect length value when executing an arraycopy sequence while the Concurrent Scavenge Garbage Collection cycle is active and the source and destination memory regions for arraycopy overlap. This allows read and write to addresses beyond the end of the array range.",
+    "published": "2024-05-27T06:15:09.367"
+  },
+  "CVE-2024-5400": {
+    "cvss": 8.8,
+    "description": "Openfind Mail2000 does not properly filter parameters of specific CGI. Remote attackers with regular privileges can exploit this vulnerability to execute arbitrary system commands on the remote server.",
+    "published": "2024-05-27T06:15:10.620",
     "keywords": "remote,command"
   }
 }

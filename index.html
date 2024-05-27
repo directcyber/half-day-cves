@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-05-27T06:14:09.595165
+Updated at UTC 2024-05-27T07:10:25.521003
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,20 @@ Updated at UTC 2024-05-27T06:14:09.595165
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-3933">CVE-2024-3933</a></td>
+					<td>5.3</td>
+					<td><a target=_blank href="https://github.com/eclipse/omr/pull/7275">https://github.com/eclipse/omr/pull/7275</a></td>
+					<td class=date>2024-05-27T06:15:09.367</td>
+					<td class=description>In Eclipse OpenJ9 release versions prior to 0.44.0 and after 0.13.0, when running with JVM option -Xgc:concurrentScavenge, the sequence generated for System.arrayCopy on the IBM Z platform with hardware and software support for guarded storage [1], could allow access to a buffer with an incorrect length value when executing an arraycopy sequence while the Concurrent Scavenge Garbage Collection cycle is active and the source and destination memory regions for arraycopy overlap. This allows read and write to addresses beyond the end of the array range.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -224,20 +238,20 @@ Updated at UTC 2024-05-27T06:14:09.595165
 		
 			
 		
+
+		<hr>
+		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-36361">CVE-2024-36361</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/pugjs/pug/pull/3428">https://github.com/pugjs/pug/pull/3428</a></td>
-					<td class=date>2024-05-24T06:15:08.947</td>
-					<td class=description>Pug through 3.0.2 allows JavaScript code execution if an application accepts untrusted input for the name option of the compileClient, compileFileClient, or compileClientWithDependenciesTracked function. NOTE: these functions are for compiling Pug templates into JavaScript, and there would typically be no reason to allow untrusted callers.</td>
-
-
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5400">CVE-2024-5400</a></td>
+					<td>8.8</td>
+					<td>remote,command</td>
+					<td class=date>2024-05-27T06:15:10.620</td>
+					<td class=description>Openfind Mail2000 does not properly filter parameters of specific CGI. Remote attackers with regular privileges can exploit this vulnerability to execute arbitrary system commands on the remote server.</td>
 				</tr>
 			
 		
-
-		<hr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -373,8 +387,6 @@ viewstatut in /dolibarr/commande/list.php.</td>
 					<td class=date>2024-05-24T09:15:08.873</td>
 					<td class=description>The WP Photo Album Plus plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 8.7.02.003. This is due to the plugin allowing unauthenticated users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.</td>
 				</tr>
-			
-		
 			
 		
 
