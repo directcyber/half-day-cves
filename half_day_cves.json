@@ -124,5 +124,11 @@
     "description": "Audiobookshelf is a self-hosted audiobook and podcast server. Prior to version 2.10.0, opening an ebook with malicious scripts inside leads to code execution inside the browsing context. Attacking a user with high privileges (upload, creation of libraries) can lead to remote code execution (RCE) in the worst case. This was tested on version 2.9.0 on Windows, but an arbitrary file write is powerful enough as is and should easily lead to RCE on Linux, too. Version 2.10.0 contains a patch for the vulnerability.",
     "published": "2024-05-27T17:15:09.990",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-29415": {
+    "url": "https://github.com/indutny/node-ip/pull/143",
+    "cvss": "-",
+    "description": "The ip package through 2.0.1 for Node.js might allow SSRF because some IP addresses (such as 127.1, 01200034567, 012.1.2.3, 000:0:0000::01, and ::fFFf:127.0.0.1) are improperly categorized as globally routable via isPublic. NOTE: this issue exists because of an incomplete fix for CVE-2023-42282.",
+    "published": "2024-05-27T20:15:08.970"
   }
 }
