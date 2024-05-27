@@ -1,10 +1,4 @@
 {
-  "CVE-2024-4544": {
-    "cvss": 9.8,
-    "description": "The Pie Register - Social Sites Login (Add on) plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.7.7. This is due to insufficient verification on the user being supplied during a social login through the plugin. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email.",
-    "published": "2024-05-24T04:15:08.670",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
   "CVE-2024-36361": {
     "url": "https://github.com/pugjs/pug/pull/3428",
     "cvss": "-",
@@ -142,5 +136,11 @@
     "cvss": 4.9,
     "description": "Mintplex-Labs' anything-llm application is vulnerable to improper neutralization of special elements used in an expression language statement, identified in the commit id `57984fa85c31988b2eff429adfc654c46e0c342a`. The vulnerability arises from the application's handling of user modifications by managers or admins, allowing for the modification of all existing attributes of the `user` database entity without proper checks or sanitization. This flaw can be exploited to delete user threads, denying users access to their previously submitted data, or to inject fake threads and/or chat history for social engineering attacks.",
     "published": "2024-05-26T23:15:21.600"
+  },
+  "CVE-2024-5399": {
+    "cvss": 7.2,
+    "description": "Openfind Mail2000 does not properly filter parameters of specific API. Remote attackers with administrative privileges can exploit this vulnerability to execute arbitrary system commands on the remote server.",
+    "published": "2024-05-27T04:15:09.300",
+    "keywords": "remote,command"
   }
 }
