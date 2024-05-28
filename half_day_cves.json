@@ -118,5 +118,17 @@
     "cvss": "-",
     "description": "The ip package through 2.0.1 for Node.js might allow SSRF because some IP addresses (such as 127.1, 01200034567, 012.1.2.3, 000:0:0000::01, and ::fFFf:127.0.0.1) are improperly categorized as globally routable via isPublic. NOTE: this issue exists because of an incomplete fix for CVE-2023-42282.",
     "published": "2024-05-27T20:15:08.970"
+  },
+  "CVE-2024-28880": {
+    "cvss": "-",
+    "description": "Path traversal vulnerability in MosP kintai kanri V4.6.6 and earlier allows a remote attacker who can log in to the product to obtain sensitive information of the product.",
+    "published": "2024-05-28T00:15:08.407",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-29078": {
+    "cvss": "-",
+    "description": "Incorrect permission assignment for critical resource issue exists in MosP kintai kanri V4.6.6 and earlier, which may allow a remote unauthenticated attacker with access to the product to alter the product settings.",
+    "published": "2024-05-28T00:15:08.497",
+    "keywords": "remote,unauthenticated"
   }
 }
