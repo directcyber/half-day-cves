@@ -1,10 +1,4 @@
 {
-  "CVE-2024-5339": {
-    "cvss": 4.7,
-    "description": "A vulnerability was found in Ruijie RG-UAC up to 20240516. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file /view/vpn/autovpn/online_check.php. The manipulation of the argument peernode leads to os command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-266245 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2024-05-25T17:15:15.830",
-    "keywords": "remote,command,vpn"
-  },
   "CVE-2024-5340": {
     "cvss": 4.7,
     "description": "A vulnerability was found in Ruijie RG-UAC up to 20240516. It has been rated as critical. Affected by this issue is some unknown functionality of the file /view/vpn/autovpn/sub_commit.php. The manipulation of the argument key leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-266246 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
@@ -130,5 +124,23 @@
     "description": "A read-what-where vulnerability exists in the Programming Software Connection IMM 01A1 Memory Read functionality of AutomationDirect P3-550E 1.2.10.9. A specially crafted network packet can lead to a disclosure of sensitive information. An attacker can send an unauthenticated packet to trigger this vulnerability.",
     "published": "2024-05-28T16:15:12.663",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-30164": {
+    "cvss": "-",
+    "description": "Amazon AWS Client VPN has a buffer overflow that could potentially allow a local actor to execute arbitrary commands with elevated permissions. This is resolved in 3.11.1 on Windows, 3.9.1 on macOS, and 3.12.1 on Linux. NOTE: although the macOS resolution is the same as for CVE-2024-30165, this vulnerability on macOS is not the same as CVE-2024-30165.",
+    "published": "2024-05-28T17:15:10.160",
+    "keywords": "command,vpn"
+  },
+  "CVE-2024-30165": {
+    "cvss": "-",
+    "description": "Amazon AWS Client VPN before 3.9.1 on macOS has a buffer overflow that could potentially allow a local actor to execute arbitrary commands with elevated permissions, a different vulnerability than CVE-2024-30164.",
+    "published": "2024-05-28T17:15:10.237",
+    "keywords": "command,vpn"
+  },
+  "CVE-2024-34852": {
+    "cvss": "-",
+    "description": "F-logic DataCube3 v1.0 is affected by command injection due to improper string filtering at the command execution point in the ./admin/transceiver_schedule.php file. An unauthenticated remote attacker can exploit this vulnerability by sending a file name containing command injection. Successful exploitation of this vulnerability may allow the attacker to execute system commands.",
+    "published": "2024-05-28T17:15:10.303",
+    "keywords": "remote,execution,unauthenticated,command"
   }
 }
