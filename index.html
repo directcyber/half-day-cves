@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-05-29T21:08:57.690430
+Updated at UTC 2024-05-29T22:09:45.747448
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-05-29T21:08:57.690430
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -164,6 +166,16 @@ Updated at UTC 2024-05-29T21:08:57.690430
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-36114">CVE-2024-36114</a></td>
+					<td>8.6</td>
+					<td>sensitive,leak</td>
+					<td class=date>2024-05-29T21:15:49.237</td>
+					<td class=description>Aircompressor is a library with ports of the Snappy, LZO, LZ4, and Zstandard compression algorithms to Java. All decompressor implementations of Aircompressor (LZ4, LZO, Snappy, Zstandard) can crash the JVM for certain input, and in some cases also leak the content of other memory of the Java process (which could contain sensitive information). When decompressing certain data, the decompressors try to access memory outside the bounds of the given byte arrays or byte buffers. Because Aircompressor uses the JDK class `sun.misc.Unsafe` to speed up memory access, no additional bounds checks are performed and this has similar security consequences as out-of-bounds access in C or C++, namely it can lead to non-deterministic behavior or crash the JVM. Users should update to Aircompressor 0.27 or newer where these issues have been fixed. When decompressing data from untrusted users, this can be exploited for a denial-of-service attack by crashing the JVM, or to leak other sensitive information from the Java process. There are no known workarounds for this issue.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
