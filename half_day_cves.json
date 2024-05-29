@@ -142,5 +142,11 @@
     "description": "The Swiss Toolkit For WP plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.0.7. This is due to the plugin storing custom data in post metadata without an underscore prefix. This makes it possible for authenticated attackers with contributor-level and above permissions to log in as any existing user on the site, such as an administrator.",
     "published": "2024-05-29T02:16:32.570",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-3412": {
+    "cvss": 9.1,
+    "description": "The WP STAGING WordPress Backup Plugin \u2013 Migration Backup Restore plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the wpstg_processing AJAX action in all versions up to, and including, 3.4.3. This makes it possible for authenticated attackers, with administrator-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-05-29T09:15:09.103",
+    "keywords": "remote,execution"
   }
 }
