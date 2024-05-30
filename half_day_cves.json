@@ -1,10 +1,4 @@
 {
-  "CVE-2024-5035": {
-    "cvss": "-",
-    "description": "The affected device expose a network service called \"rftest\" that is vulnerable to unauthenticated command injection on ports TCP/8888, TCP/8889, and TCP/8890.\u00a0By successfully exploiting this flaw, remote unauthenticated attacker can gain arbitrary command execution on the device with\u00a0elevated privileges.This issue affects Archer C4500X: through 1_1.1.6.",
-    "published": "2024-05-27T08:15:09.490",
-    "keywords": "remote,execution,unauthenticated,command"
-  },
   "CVE-2024-35236": {
     "cvss": 4.8,
     "description": "Audiobookshelf is a self-hosted audiobook and podcast server. Prior to version 2.10.0, opening an ebook with malicious scripts inside leads to code execution inside the browsing context. Attacking a user with high privileges (upload, creation of libraries) can lead to remote code execution (RCE) in the worst case. This was tested on version 2.9.0 on Windows, but an arbitrary file write is powerful enough as is and should easily lead to RCE on Linux, too. Version 2.10.0 contains a patch for the vulnerability.",
