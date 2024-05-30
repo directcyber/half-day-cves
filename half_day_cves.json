@@ -60,7 +60,7 @@
     "keywords": "remote,execution,unauthenticated,command"
   },
   "CVE-2024-24919": {
-    "cvss": 7.5,
+    "cvss": 8.6,
     "description": "Potentially allowing an attacker to read certain information on Check Point Security Gateways once connected to the internet and enabled with remote Access VPN or Mobile Access Software Blades. A Security fix that mitigates this vulnerability is available.",
     "published": "2024-05-28T19:15:10.060",
     "keywords": "remote,vpn"
@@ -136,5 +136,11 @@
     "description": "MinMax CMS from\u00a0MinMax Digital Technology contains a hidden administrator account with a fixed password that cannot be removed or disabled from the management interface. Remote attackers who obtain this account can bypass IP access control restrictions and log in to the backend system without being recorded in the system logs.",
     "published": "2024-05-30T03:15:08.467",
     "keywords": "remote,bypass"
+  },
+  "CVE-2024-3584": {
+    "url": "https://github.com/qdrant/qdrant/commit/15479a45ffa3b955485ae516696f7e933a8cce8a",
+    "cvss": 9.8,
+    "description": "qdrant/qdrant version 1.9.0-dev is vulnerable to path traversal due to improper input validation in the `/collections/{name}/snapshots/upload` endpoint. By manipulating the `name` parameter through URL encoding, an attacker can upload a file to an arbitrary location on the system, such as `/root/poc.txt`. This vulnerability allows for the writing and overwriting of arbitrary files on the server, potentially leading to a full takeover of the system. The issue is fixed in version 1.9.0.",
+    "published": "2024-05-30T13:15:49.947"
   }
 }
