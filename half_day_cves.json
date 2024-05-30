@@ -142,5 +142,17 @@
     "cvss": 9.8,
     "description": "qdrant/qdrant version 1.9.0-dev is vulnerable to path traversal due to improper input validation in the `/collections/{name}/snapshots/upload` endpoint. By manipulating the `name` parameter through URL encoding, an attacker can upload a file to an arbitrary location on the system, such as `/root/poc.txt`. This vulnerability allows for the writing and overwriting of arbitrary files on the server, potentially leading to a full takeover of the system. The issue is fixed in version 1.9.0.",
     "published": "2024-05-30T13:15:49.947"
+  },
+  "CVE-2024-36024": {
+    "cvss": "-",
+    "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amd/display: Disable idle reallow as part of command/gpint execution\n\n[Why]\nWorkaroud for a race condition where DMCUB is in the process of\ncommitting to IPS1 during the handshake causing us to miss the\ntransition into IPS2 and touch the INBOX1 RPTR causing a HW hang.\n\n[How]\nDisable the reallow to ensure that we have enough of a gap between entry\nand exit and we're not seeing back-to-back wake_and_executes.",
+    "published": "2024-05-30T15:15:49.420",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-3924": {
+    "cvss": 4.4,
+    "description": "A code injection vulnerability exists in the huggingface/text-generation-inference repository, specifically within the `autodocs.yml` workflow file. The vulnerability arises from the insecure handling of the `github.head_ref` user input, which is used to dynamically construct a command for installing a software package. An attacker can exploit this by forking the repository, creating a branch with a malicious payload as the name, and then opening a pull request to the base repository. Successful exploitation could lead to arbitrary code execution within the context of the GitHub Actions runner. This issue affects versions up to and including v2.0.0 and was fixed in version 2.0.0.",
+    "published": "2024-05-30T15:15:49.653",
+    "keywords": "execution,command"
   }
 }

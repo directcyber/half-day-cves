@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-05-30T15:10:17.910662
+Updated at UTC 2024-05-30T16:11:31.019762
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-05-30T15:10:17.910662
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 				<tr>
@@ -148,6 +152,37 @@ Updated at UTC 2024-05-30T15:10:17.910662
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-3924">CVE-2024-3924</a></td>
+					<td>4.4</td>
+					<td>execution,command</td>
+					<td class=date>2024-05-30T15:15:49.653</td>
+					<td class=description>A code injection vulnerability exists in the huggingface/text-generation-inference repository, specifically within the `autodocs.yml` workflow file. The vulnerability arises from the insecure handling of the `github.head_ref` user input, which is used to dynamically construct a command for installing a software package. An attacker can exploit this by forking the repository, creating a branch with a malicious payload as the name, and then opening a pull request to the base repository. Successful exploitation could lead to arbitrary code execution within the context of the GitHub Actions runner. This issue affects versions up to and including v2.0.0 and was fixed in version 2.0.0.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-36024">CVE-2024-36024</a></td>
+					<td>-</td>
+					<td>execution,command</td>
+					<td class=date>2024-05-30T15:15:49.420</td>
+					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
+
+drm/amd/display: Disable idle reallow as part of command/gpint execution
+
+[Why]
+Workaroud for a race condition where DMCUB is in the process of
+committing to IPS1 during the handshake causing us to miss the
+transition into IPS2 and touch the INBOX1 RPTR causing a HW hang.
+
+[How]
+Disable the reallow to ensure that we have enough of a gap between entry
+and exit and we're not seeing back-to-back wake_and_executes.</td>
+				</tr>
+			
 		
 			
 		
