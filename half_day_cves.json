@@ -1,10 +1,4 @@
 {
-  "CVE-2024-29415": {
-    "url": "https://github.com/indutny/node-ip/pull/143",
-    "cvss": "-",
-    "description": "The ip package through 2.0.1 for Node.js might allow SSRF because some IP addresses (such as 127.1, 01200034567, 012.1.2.3, 000:0:0000::01, and ::fFFf:127.0.0.1) are improperly categorized as globally routable via isPublic. NOTE: this issue exists because of an incomplete fix for CVE-2023-42282.",
-    "published": "2024-05-27T20:15:08.970"
-  },
   "CVE-2024-28880": {
     "cvss": "-",
     "description": "Path traversal vulnerability in MosP kintai kanri V4.6.6 and earlier allows a remote attacker who can log in to the product to obtain sensitive information of the product.",
