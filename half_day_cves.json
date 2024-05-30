@@ -1,10 +1,4 @@
 {
-  "CVE-2024-4286": {
-    "url": "https://github.com/mintplex-labs/anything-llm/commit/1b35bcbeab10b77e6dbd263cceecf1b965a40789",
-    "cvss": 4.9,
-    "description": "Mintplex-Labs' anything-llm application is vulnerable to improper neutralization of special elements used in an expression language statement, identified in the commit id `57984fa85c31988b2eff429adfc654c46e0c342a`. The vulnerability arises from the application's handling of user modifications by managers or admins, allowing for the modification of all existing attributes of the `user` database entity without proper checks or sanitization. This flaw can be exploited to delete user threads, denying users access to their previously submitted data, or to inject fake threads and/or chat history for social engineering attacks.",
-    "published": "2024-05-26T23:15:21.600"
-  },
   "CVE-2024-5399": {
     "cvss": 7.2,
     "description": "Openfind Mail2000 does not properly filter parameters of specific API. Remote attackers with administrative privileges can exploit this vulnerability to execute arbitrary system commands on the remote server.",
