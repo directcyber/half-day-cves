@@ -160,5 +160,11 @@
     "cvss": "-",
     "description": "asdcplib (aka AS-DCP Lib) 2.13.1 has a heap-based buffer over-read in ASDCP::TimedText::MXFReader::h__Reader::MD_to_TimedText_TDesc in AS_DCP_TimedText.cpp in libasdcp.so.",
     "published": "2024-05-31T00:15:08.890"
+  },
+  "CVE-2024-32850": {
+    "cvss": "-",
+    "description": "Improper neutralization of special elements used in a command ('Command Injection') exists in SkyBridge MB-A100/MB-A110 firmware Ver. 4.2.2 and earlier and SkyBridge BASIC MB-A130 firmware Ver. 1.5.5 and earlier. If the remote monitoring and control function is enabled on the product, an attacker with access to the product may execute an arbitrary command or login to the product with the administrator privilege.",
+    "published": "2024-05-31T02:15:08.843",
+    "keywords": "remote,command"
   }
 }
