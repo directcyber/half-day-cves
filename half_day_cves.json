@@ -154,5 +154,23 @@
     "cvss": 8.1,
     "description": "javascript-deobfuscator removes common JavaScript obfuscation techniques. In affected versions crafted payloads targeting expression simplification can lead to code execution. This issue has been patched in version 1.1.0. Users are advised to update. Users unable to upgrade should disable the expression simplification feature.",
     "published": "2024-05-31T17:15:09.317"
+  },
+  "CVE-2024-22060": {
+    "cvss": 8.7,
+    "description": "An unrestricted file upload vulnerability in web component of Ivanti Neurons for ITSM allows a remote, authenticated, high privileged user to write arbitrary files into sensitive directories of ITSM server.",
+    "published": "2024-05-31T18:15:10.660",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-31030": {
+    "url": "https://github.com/keith-cullen/freecoap/issues/36",
+    "cvss": "-",
+    "description": "An issue in coap_msg.c in Keith Cullen's FreeCoAP v.0.7 allows remote attackers to cause a Denial of Service or potentially disclose information via a specially crafted packet.",
+    "published": "2024-05-31T18:15:12.893"
+  },
+  "CVE-2024-35196": {
+    "cvss": 2.0,
+    "description": "Sentry is a developer-first error tracking and performance monitoring platform. Sentry's Slack integration incorrectly records the incoming request body in logs. This request data can contain sensitive information, including the deprecated Slack verification token. With this verification token, it is possible under specific configurations, an attacker can forge requests and act as the Slack integration. The request body is leaked in log entries matching `event == \"slack.*\" && name == \"sentry.integrations.slack\" && request_data == *`. The deprecated slack verification token, will be found in the `request_data.token` key. **SaaS users** do not need to take any action. **Self-hosted users** should upgrade to version 24.5.0 or higher, rotate their Slack verification token, and use the Slack Signing Secret instead of the verification token. For users only using the `slack.signing-secret` in their self-hosted configuration, the legacy verification token is not used to verify the webhook payload. It is ignored. Users unable to upgrade should either set the `slack.signing-secret` instead of `slack.verification-token`. The signing secret is Slack's recommended way of authenticating webhooks. By having `slack.singing-secret` set, Sentry self-hosted will no longer use the verification token for authentication of the webhooks, regardless of whether `slack.verification-token` is set or not. Alternatively if the self-hosted instance is unable to be upgraded or re-configured to use the `slack.signing-secret`, the logging configuration can be adjusted to not generate logs from the integration. The default logging configuration can be found in `src/sentry/conf/server.py`. **Services should be restarted once the configuration change is saved.**\n",
+    "published": "2024-05-31T18:15:12.993",
+    "keywords": "authentication,sensitive,leak"
   }
 }
