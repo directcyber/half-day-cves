@@ -1,22 +1,4 @@
 {
-  "CVE-2024-30164": {
-    "cvss": "-",
-    "description": "Amazon AWS Client VPN has a buffer overflow that could potentially allow a local actor to execute arbitrary commands with elevated permissions. This is resolved in 3.11.1 on Windows, 3.9.1 on macOS, and 3.12.1 on Linux. NOTE: although the macOS resolution is the same as for CVE-2024-30165, this vulnerability on macOS is not the same as CVE-2024-30165.",
-    "published": "2024-05-28T17:15:10.160",
-    "keywords": "command,vpn"
-  },
-  "CVE-2024-30165": {
-    "cvss": "-",
-    "description": "Amazon AWS Client VPN before 3.9.1 on macOS has a buffer overflow that could potentially allow a local actor to execute arbitrary commands with elevated permissions, a different vulnerability than CVE-2024-30164.",
-    "published": "2024-05-28T17:15:10.237",
-    "keywords": "command,vpn"
-  },
-  "CVE-2024-34852": {
-    "cvss": "-",
-    "description": "F-logic DataCube3 v1.0 is affected by command injection due to improper string filtering at the command execution point in the ./admin/transceiver_schedule.php file. An unauthenticated remote attacker can exploit this vulnerability by sending a file name containing command injection. Successful exploitation of this vulnerability may allow the attacker to execute system commands.",
-    "published": "2024-05-28T17:15:10.303",
-    "keywords": "remote,execution,unauthenticated,command"
-  },
   "CVE-2024-24919": {
     "cvss": 8.6,
     "description": "Potentially allowing an attacker to read certain information on Check Point Security Gateways once connected to the internet and enabled with remote Access VPN or Mobile Access Software Blades. A Security fix that mitigates this vulnerability is available.",
@@ -166,5 +148,11 @@
     "description": "The Vanna library uses a prompt function to present the user with visualized results, it is possible to alter the prompt using prompt injection and run arbitrary Python code instead of the intended visualization code. Specifically - allowing external input to the library\u2019s \u201cask\u201d method with \"visualize\" set to True (default behavior) leads to remote code execution.",
     "published": "2024-05-31T15:15:09.673",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-36120": {
+    "url": "https://github.com/ben-sb/javascript-deobfuscator/commit/630d3caec83d5f31c5f7a07e6fadf613d06699d6",
+    "cvss": 8.1,
+    "description": "javascript-deobfuscator removes common JavaScript obfuscation techniques. In affected versions crafted payloads targeting expression simplification can lead to code execution. This issue has been patched in version 1.1.0. Users are advised to update. Users unable to upgrade should disable the expression simplification feature.",
+    "published": "2024-05-31T17:15:09.317"
   }
 }
