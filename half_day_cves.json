@@ -1,10 +1,4 @@
 {
-  "CVE-2024-3969": {
-    "cvss": 7.8,
-    "description": "XML External Entity injection vulnerability found\u00a0in OpenText\u2122 iManager 3.2.6.0200. This could lead to remote code execution by parsing untrusted XML payload\n\n",
-    "published": "2024-05-28T15:15:09.953",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-22187": {
     "cvss": 9.1,
     "description": "A write-what-where vulnerability exists in the Programming Software Connection Remote Memory Diagnostics functionality of AutomationDirect P3-550E 1.2.10.9. A specially crafted network packet can lead to an arbitrary write. An attacker can send an unauthenticated packet to trigger this vulnerability.",
@@ -178,5 +172,11 @@
     "description": "Rejetto HTTP File Server, up to and including version 2.3m, is vulnerable to a template injection vulnerability. This vulnerability allows a remote, unauthenticated attacker to execute arbitrary commands on the affected system by sending a specially crafted HTTP request. As of the CVE assignment date, Rejetto HFS 2.3m is no longer supported.",
     "published": "2024-05-31T10:15:09.330",
     "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2024-5565": {
+    "cvss": 8.1,
+    "description": "The Vanna library uses a prompt function to present the user with visualized results, it is possible to alter the prompt using prompt injection and run arbitrary Python code instead of the intended visualization code. Specifically - allowing external input to the library\u2019s \u201cask\u201d method with \"visualize\" set to True (default behavior) leads to remote code execution.",
+    "published": "2024-05-31T15:15:09.673",
+    "keywords": "remote,execution"
   }
 }
