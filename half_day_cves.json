@@ -1,10 +1,4 @@
 {
-  "CVE-2024-3412": {
-    "cvss": 9.1,
-    "description": "The WP STAGING WordPress Backup Plugin \u2013 Migration Backup Restore plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the wpstg_processing AJAX action in all versions up to, and including, 3.4.3. This makes it possible for authenticated attackers, with administrator-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2024-05-29T09:15:09.103",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-36470": {
     "cvss": 8.1,
     "description": "In JetBrains TeamCity before 2022.04.7, 2022.10.6, 2023.05.6, 2023.11.5 authentication bypass was possible in specific edge cases",
@@ -160,5 +154,17 @@
     "description": "The QQWorld Auto Save Images plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the save_remote_images_get_auto_saved_results() function hooked via a norpriv AJAX in all versions up to, and including, 1.9.8. This makes it possible for unauthenticated attackers to retrieve the contents of arbitrary posts that may not be public.",
     "published": "2024-06-01T07:15:07.850",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-3820": {
+    "cvss": 10.0,
+    "description": "The wpDataTables \u2013 WordPress Data Table, Dynamic Tables & Table Charts Plugin plugin for WordPress is vulnerable to SQL Injection via the 'id_key' parameter of the wdt_delete_table_row AJAX action in all versions up to, and including, 6.3.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. Please note this only affects the premium version of the plugin.",
+    "published": "2024-06-01T09:15:09.660",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-5348": {
+    "cvss": 8.8,
+    "description": "The Elements For Elementor plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.1 via the 'beforeafter_layout' attribute of the beforeafter widget, the 'eventsgrid_layout' attribute of the eventsgrid and list widgets, the 'marquee_layout' attribute of the marquee widget, the 'postgrid_layout' attribute of the postgrid widget, the 'woocart_layout'  attribute of the woocart widget, and the 'woogrid_layout' attribute of the woogrid widget. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
+    "published": "2024-06-01T09:15:10.063",
+    "keywords": "execution,sensitive,bypass"
   }
 }
