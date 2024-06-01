@@ -154,5 +154,11 @@
     "description": "The Content Blocks (Custom Post Widget) plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 3.3.0 via the plugin's 'content_block' shortcode. This makes it possible for authenticated attackers, with contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
     "published": "2024-06-01T04:15:08.743",
     "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2024-1324": {
+    "cvss": 5.3,
+    "description": "The QQWorld Auto Save Images plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the save_remote_images_get_auto_saved_results() function hooked via a norpriv AJAX in all versions up to, and including, 1.9.8. This makes it possible for unauthenticated attackers to retrieve the contents of arbitrary posts that may not be public.",
+    "published": "2024-06-01T07:15:07.850",
+    "keywords": "remote,unauthenticated"
   }
 }
