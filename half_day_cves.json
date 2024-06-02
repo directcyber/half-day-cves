@@ -136,5 +136,17 @@
     "description": "The Elements For Elementor plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.1 via the 'beforeafter_layout' attribute of the beforeafter widget, the 'eventsgrid_layout' attribute of the eventsgrid and list widgets, the 'marquee_layout' attribute of the marquee widget, the 'postgrid_layout' attribute of the postgrid widget, the 'woocart_layout'  attribute of the woocart widget, and the 'woogrid_layout' attribute of the woogrid widget. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
     "published": "2024-06-01T09:15:10.063",
     "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2024-36389": {
+    "cvss": 9.8,
+    "description": "MileSight DeviceHub - \n\n\n\n\n\nCWE-330 Use of Insufficiently Random Values may allow Authentication Bypass",
+    "published": "2024-06-02T14:15:08.933",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-36391": {
+    "cvss": 9.1,
+    "description": "MileSight DeviceHub -\u00a0CWE-320: Key Management Errors may allow Authentication Bypass and Man-In-The-Middle Traffic",
+    "published": "2024-06-02T14:15:09.413",
+    "keywords": "authentication,bypass"
   }
 }
