@@ -1,10 +1,4 @@
 {
-  "CVE-2024-3584": {
-    "url": "https://github.com/qdrant/qdrant/commit/15479a45ffa3b955485ae516696f7e933a8cce8a",
-    "cvss": 9.8,
-    "description": "qdrant/qdrant version 1.9.0-dev is vulnerable to path traversal due to improper input validation in the `/collections/{name}/snapshots/upload` endpoint. By manipulating the `name` parameter through URL encoding, an attacker can upload a file to an arbitrary location on the system, such as `/root/poc.txt`. This vulnerability allows for the writing and overwriting of arbitrary files on the server, potentially leading to a full takeover of the system. The issue is fixed in version 1.9.0.",
-    "published": "2024-05-30T13:15:49.947"
-  },
   "CVE-2024-36024": {
     "cvss": "-",
     "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amd/display: Disable idle reallow as part of command/gpint execution\n\n[Why]\nWorkaroud for a race condition where DMCUB is in the process of\ncommitting to IPS1 during the handshake causing us to miss the\ntransition into IPS2 and touch the INBOX1 RPTR causing a HW hang.\n\n[How]\nDisable the reallow to ensure that we have enough of a gap between entry\nand exit and we're not seeing back-to-back wake_and_executes.",
