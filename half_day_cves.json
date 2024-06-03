@@ -136,5 +136,11 @@
     "description": "DigiWin EasyFlow .NET lacks validation for certain input parameters. An unauthenticated remote attacker can inject arbitrary SQL commands to read, modify, and delete database records.",
     "published": "2024-06-03T07:15:10.163",
     "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2024-23107": {
+    "cvss": 5.5,
+    "description": "An exposure of sensitive information to an unauthorized actor vulnerability [CWE-200] in FortiWeb version 7.4.0, version 7.2.4 and below, version 7.0.8 and below, 6.3 all versions may allow an authenticated attacker to read password hashes of other administrators via CLI commands.",
+    "published": "2024-06-03T08:15:08.837",
+    "keywords": "command,sensitive"
   }
 }
