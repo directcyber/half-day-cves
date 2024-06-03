@@ -1,10 +1,4 @@
 {
-  "CVE-2024-23692": {
-    "cvss": 9.8,
-    "description": "Rejetto HTTP File Server, up to and including version 2.3m, is vulnerable to a template injection vulnerability. This vulnerability allows a remote, unauthenticated attacker to execute arbitrary commands on the affected system by sending a specially crafted HTTP request. As of the CVE assignment date, Rejetto HFS 2.3m is no longer supported.",
-    "published": "2024-05-31T10:15:09.330",
-    "keywords": "remote,unauthenticated,command"
-  },
   "CVE-2024-5565": {
     "cvss": 8.1,
     "description": "The Vanna library uses a prompt function to present the user with visualized results, it is possible to alter the prompt using prompt injection and run arbitrary Python code instead of the intended visualization code. Specifically - allowing external input to the library\u2019s \u201cask\u201d method with \"visualize\" set to True (default behavior) leads to remote code execution.",
@@ -148,5 +142,11 @@
     "description": "An unauthenticated remote attacker\u00a0can change the admin password in a\u00a0moneo appliance due to weak password recovery mechanism.\n",
     "published": "2024-06-03T09:15:10.193",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-3829": {
+    "url": "https://github.com/qdrant/qdrant/commit/ee7a31ec3459a6a4219200234615c1817ab82260",
+    "cvss": 9.8,
+    "description": "qdrant/qdrant version 1.9.0-dev is vulnerable to arbitrary file read and write during the snapshot recovery process. Attackers can exploit this vulnerability by manipulating snapshot files to include symlinks, leading to arbitrary file read by adding a symlink that points to a desired file on the filesystem and arbitrary file write by including a symlink and a payload file in the snapshot's directory structure. This vulnerability allows for the reading and writing of arbitrary files on the server, which could potentially lead to a full takeover of the system. The issue is fixed in version v1.9.0.",
+    "published": "2024-06-03T10:15:14.267"
   }
 }
