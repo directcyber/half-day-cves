@@ -1,10 +1,4 @@
 {
-  "CVE-2024-5138": {
-    "url": "https://github.com/snapcore/snapd/commit/68ee9c6aa916ab87dbfd9a26030690f2cabf1e14",
-    "cvss": "-",
-    "description": "The snapctl component within snapd allows a confined snap to interact with the snapd daemon to take certain privileged actions on behalf of the snap. It was found that snapctl did not properly parse command-line arguments, allowing an unprivileged user to trigger an authorised action on behalf of the snap that would normally require administrator privileges to perform. This could possibly allow an unprivileged user to perform a denial of service or similar.",
-    "published": "2024-05-31T21:15:09.930"
-  },
   "CVE-2024-3564": {
     "cvss": 8.8,
     "description": "The Content Blocks (Custom Post Widget) plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 3.3.0 via the plugin's 'content_block' shortcode. This makes it possible for authenticated attackers, with contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
