@@ -1,22 +1,4 @@
 {
-  "CVE-2024-36843": {
-    "url": "https://github.com/stephane/libmodbus/issues/748",
-    "cvss": "-",
-    "description": "libmodbus v3.1.6 was discovered to contain a heap overflow via the modbus_mapping_free() function.",
-    "published": "2024-05-31T20:15:10.290"
-  },
-  "CVE-2024-36844": {
-    "url": "https://github.com/stephane/libmodbus/issues/749",
-    "cvss": "-",
-    "description": "libmodbus v3.1.6 was discovered to contain a use-after-free via the ctx->backend pointer. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted message sent to the unit-test-server.",
-    "published": "2024-05-31T20:15:10.380"
-  },
-  "CVE-2024-36845": {
-    "url": "https://github.com/stephane/libmodbus/issues/750",
-    "cvss": "-",
-    "description": "An invalid pointer in the modbus_receive() function of libmodbus v3.1.6 allows attackers to cause a Denial of Service (DoS) via a crafted message sent to the unit-test-server.",
-    "published": "2024-05-31T20:15:10.463"
-  },
   "CVE-2024-5138": {
     "url": "https://github.com/snapcore/snapd/commit/68ee9c6aa916ab87dbfd9a26030690f2cabf1e14",
     "cvss": "-",
@@ -136,5 +118,17 @@
     "description": "Incorrect access control in the fingerprint authentication mechanism of Bitdefender Mobile Security v4.11.3-gms allows attackers to bypass fingerprint authentication due to the use of a deprecated API.",
     "published": "2024-06-03T19:15:09.260",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-31682": {
+    "cvss": "-",
+    "description": "Incorrect access control in the fingerprint authentication mechanism of Phone Cleaner: Boost & Clean v2.2.0 allows attackers to bypass fingerprint authentication due to the use of a deprecated API.",
+    "published": "2024-06-03T20:15:09.010",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-34987": {
+    "cvss": "-",
+    "description": "A SQL Injection vulnerability exists in the `ofrs/admin/index.php` script of PHPGurukul Online Fire Reporting System 1.2. The vulnerability allows attackers to bypass authentication and gain unauthorized access by injecting SQL commands into the username input field during the login process.",
+    "published": "2024-06-03T20:15:09.273",
+    "keywords": "authentication,command,bypass"
   }
 }
