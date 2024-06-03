@@ -1,10 +1,4 @@
 {
-  "CVE-2024-32850": {
-    "cvss": "-",
-    "description": "Improper neutralization of special elements used in a command ('Command Injection') exists in SkyBridge MB-A100/MB-A110 firmware Ver. 4.2.2 and earlier and SkyBridge BASIC MB-A130 firmware Ver. 1.5.5 and earlier. If the remote monitoring and control function is enabled on the product, an attacker with access to the product may execute an arbitrary command or login to the product with the administrator privilege.",
-    "published": "2024-05-31T02:15:08.843",
-    "keywords": "remote,command"
-  },
   "CVE-2024-5345": {
     "cvss": 8.8,
     "description": "The Responsive Owl Carousel for Elementor plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.2.0 via the layout parameter. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included. The inclusion is limited to PHP files.",
@@ -106,5 +100,35 @@
     "description": "MileSight DeviceHub -\u00a0CWE-320: Key Management Errors may allow Authentication Bypass and Man-In-The-Middle Traffic",
     "published": "2024-06-02T14:15:09.413",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-20066": {
+    "cvss": "-",
+    "description": "In modem, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote denial of service with no additional execution privileges needed. User interaction is no needed for exploitation. Patch ID: MOLY01267281; Issue ID: MSV-1477.",
+    "published": "2024-06-03T02:15:08.630",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-20067": {
+    "cvss": "-",
+    "description": "In modem, there is a possible out of bounds write due to improper input invalidation. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01267285; Issue ID: MSV-1462.",
+    "published": "2024-06-03T02:15:08.770",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-20068": {
+    "cvss": "-",
+    "description": "In modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed. User interaction is no needed for exploitation. Patch ID: MOLY01270721; Issue ID: MSV-1479.",
+    "published": "2024-06-03T02:15:08.873",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-20069": {
+    "cvss": "-",
+    "description": "In modem, there is a possible selection of less-secure algorithm during the VoWiFi IKE due to a missing DH downgrade check. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is needed for exploitation. Patch ID: MOLY01286330; Issue ID: MSV-1430.",
+    "published": "2024-06-03T02:15:08.977",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-20070": {
+    "cvss": "-",
+    "description": "In modem, there is a possible information disclosure due to using risky cryptographic algorithm during connection establishment negotiation. This could lead to remote information disclosure, when weak encryption algorithm is used, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY00942482; Issue ID: MSV-1469.",
+    "published": "2024-06-03T02:15:09.093",
+    "keywords": "remote,execution"
   }
 }
