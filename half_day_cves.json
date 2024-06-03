@@ -1,10 +1,4 @@
 {
-  "CVE-2024-5565": {
-    "cvss": 8.1,
-    "description": "The Vanna library uses a prompt function to present the user with visualized results, it is possible to alter the prompt using prompt injection and run arbitrary Python code instead of the intended visualization code. Specifically - allowing external input to the library\u2019s \u201cask\u201d method with \"visualize\" set to True (default behavior) leads to remote code execution.",
-    "published": "2024-05-31T15:15:09.673",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-36120": {
     "url": "https://github.com/ben-sb/javascript-deobfuscator/commit/630d3caec83d5f31c5f7a07e6fadf613d06699d6",
     "cvss": 8.1,
