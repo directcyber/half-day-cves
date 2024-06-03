@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-06-03T18:12:58.612849
+Updated at UTC 2024-06-03T19:09:02.222088
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-06-03T18:12:58.612849
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 				<tr>
@@ -160,24 +162,18 @@ Updated at UTC 2024-06-03T18:12:58.612849
 				</tr>
 			
 		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31030">CVE-2024-31030</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/keith-cullen/freecoap/issues/36">https://github.com/keith-cullen/freecoap/issues/36</a></td>
-					<td class=date>2024-05-31T18:15:12.893</td>
-					<td class=description>An issue in coap_msg.c in Keith Cullen's FreeCoAP v.0.7 allows remote attackers to cause a Denial of Service or potentially disclose information via a specially crafted packet.</td>
-
-
-				</tr>
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4332">CVE-2024-4332</a></td>
+					<td>-</td>
+					<td>remote,unauthenticated,authentication,bypass</td>
+					<td class=date>2024-06-03T18:15:09.060</td>
+					<td class=description>An authentication bypass vulnerability has been identified in the REST and SOAP API components of Tripwire Enterprise (TE) 9.1.0 when TE is configured to use LDAP/Active Directory SAML authentication and its optional "Auto-synchronize LDAP Users, Roles, and Groups" feature is enabled. This vulnerability allows unauthenticated attackers to bypass authentication if a valid username is known. Exploitation of this vulnerability could allow remote attackers to gain privileged access to the APIs and lead to unauthorized information disclosure or modification.</td>
+				</tr>
+			
 		
 			
 		
@@ -346,29 +342,6 @@ CWE-330 Use of Insufficiently Random Values may allow Authentication Bypass</td>
 		
 			
 		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-35196">CVE-2024-35196</a></td>
-					<td>2.0</td>
-					<td>authentication,sensitive,leak</td>
-					<td class=date>2024-05-31T18:15:12.993</td>
-					<td class=description>Sentry is a developer-first error tracking and performance monitoring platform. Sentry's Slack integration incorrectly records the incoming request body in logs. This request data can contain sensitive information, including the deprecated Slack verification token. With this verification token, it is possible under specific configurations, an attacker can forge requests and act as the Slack integration. The request body is leaked in log entries matching `event == "slack.*" && name == "sentry.integrations.slack" && request_data == *`. The deprecated slack verification token, will be found in the `request_data.token` key. **SaaS users** do not need to take any action. **Self-hosted users** should upgrade to version 24.5.0 or higher, rotate their Slack verification token, and use the Slack Signing Secret instead of the verification token. For users only using the `slack.signing-secret` in their self-hosted configuration, the legacy verification token is not used to verify the webhook payload. It is ignored. Users unable to upgrade should either set the `slack.signing-secret` instead of `slack.verification-token`. The signing secret is Slack's recommended way of authenticating webhooks. By having `slack.singing-secret` set, Sentry self-hosted will no longer use the verification token for authentication of the webhooks, regardless of whether `slack.verification-token` is set or not. Alternatively if the self-hosted instance is unable to be upgraded or re-configured to use the `slack.signing-secret`, the logging configuration can be adjusted to not generate logs from the integration. The default logging configuration can be found in `src/sentry/conf/server.py`. **Services should be restarted once the configuration change is saved.**
-</td>
-				</tr>
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-22060">CVE-2024-22060</a></td>
-					<td>8.7</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-05-31T18:15:10.660</td>
-					<td class=description>An unrestricted file upload vulnerability in web component of Ivanti Neurons for ITSM allows a remote, authenticated, high privileged user to write arbitrary files into sensitive directories of ITSM server.</td>
-				</tr>
 			
 		
 
