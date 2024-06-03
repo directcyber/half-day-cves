@@ -130,5 +130,11 @@
     "description": "An authentication bypass vulnerability has been identified in the REST and SOAP API components of Tripwire Enterprise (TE) 9.1.0 when TE is configured to use LDAP/Active Directory SAML authentication and its optional \"Auto-synchronize LDAP Users, Roles, and Groups\" feature is enabled. This vulnerability allows unauthenticated attackers to bypass authentication if a valid username is known. Exploitation of this vulnerability could allow remote attackers to gain privileged access to the APIs and lead to unauthorized information disclosure or modification.",
     "published": "2024-06-03T18:15:09.060",
     "keywords": "remote,unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-31684": {
+    "cvss": "-",
+    "description": "Incorrect access control in the fingerprint authentication mechanism of Bitdefender Mobile Security v4.11.3-gms allows attackers to bypass fingerprint authentication due to the use of a deprecated API.",
+    "published": "2024-06-03T19:15:09.260",
+    "keywords": "authentication,bypass"
   }
 }
