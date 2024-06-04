@@ -1,16 +1,4 @@
 {
-  "CVE-2024-3820": {
-    "cvss": 10.0,
-    "description": "The wpDataTables \u2013 WordPress Data Table, Dynamic Tables & Table Charts Plugin plugin for WordPress is vulnerable to SQL Injection via the 'id_key' parameter of the wdt_delete_table_row AJAX action in all versions up to, and including, 6.3.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. Please note this only affects the premium version of the plugin.",
-    "published": "2024-06-01T09:15:09.660",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-5348": {
-    "cvss": 8.8,
-    "description": "The Elements For Elementor plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.1 via the 'beforeafter_layout' attribute of the beforeafter widget, the 'eventsgrid_layout' attribute of the eventsgrid and list widgets, the 'marquee_layout' attribute of the marquee widget, the 'postgrid_layout' attribute of the postgrid widget, the 'woocart_layout'  attribute of the woocart widget, and the 'woogrid_layout' attribute of the woogrid widget. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
-    "published": "2024-06-01T09:15:10.063",
-    "keywords": "execution,sensitive,bypass"
-  },
   "CVE-2024-36389": {
     "cvss": 9.8,
     "description": "MileSight DeviceHub - \n\n\n\n\n\nCWE-330 Use of Insufficiently Random Values may allow Authentication Bypass",
@@ -154,5 +142,11 @@
     "description": "A command injection vulnerability exists in the gradio-app/gradio repository, specifically within the 'test-functional.yml' workflow. The vulnerability arises due to improper neutralization of special elements used in a command, allowing for unauthorized modification of the base repository or secrets exfiltration. The issue affects versions up to and including '@gradio/video@0.6.12'. The flaw is present in the workflow's handling of GitHub context information, where it echoes the full name of the head repository, the head branch, and the workflow reference without adequate sanitization. This could potentially lead to the exfiltration of sensitive secrets such as 'GITHUB_TOKEN', 'COMMENT_TOKEN', and 'CHROMATIC_PROJECT_TOKEN'.",
     "published": "2024-06-04T08:15:10.863",
     "keywords": "command,sensitive"
+  },
+  "CVE-2024-5000": {
+    "cvss": 7.5,
+    "description": "An unauthenticated remote attacker can use a\u00a0malicious OPC UA client to send a crafted request to affected CODESYS products which can cause a DoS due to incorrect calculation of buffer size.\n\n",
+    "published": "2024-06-04T09:15:09.830",
+    "keywords": "remote,unauthenticated"
   }
 }
