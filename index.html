@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-06-04T08:12:30.761981
+Updated at UTC 2024-06-04T09:11:58.155273
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-06-04T08:12:30.761981
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -130,6 +132,16 @@ Updated at UTC 2024-06-04T08:12:30.761981
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4253">CVE-2024-4253</a></td>
+					<td>7.5</td>
+					<td>command,sensitive</td>
+					<td class=date>2024-06-04T08:15:10.863</td>
+					<td class=description>A command injection vulnerability exists in the gradio-app/gradio repository, specifically within the 'test-functional.yml' workflow. The vulnerability arises due to improper neutralization of special elements used in a command, allowing for unauthorized modification of the base repository or secrets exfiltration. The issue affects versions up to and including '@gradio/video@0.6.12'. The flaw is present in the workflow's handling of GitHub context information, where it echoes the full name of the head repository, the head branch, and the workflow reference without adequate sanitization. This could potentially lead to the exfiltration of sensitive secrets such as 'GITHUB_TOKEN', 'COMMENT_TOKEN', and 'CHROMATIC_PROJECT_TOKEN'.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
