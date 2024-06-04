@@ -142,5 +142,17 @@
     "description": "The Social Login Lite For WooCommerce plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.6.0. This is due to insufficient verification on the user being supplied during the social login through the plugin. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email.",
     "published": "2024-06-04T02:15:49.417",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-1718": {
+    "cvss": 5.3,
+    "description": "The Claudio Sanches \u2013 Checkout Cielo for WooCommerce plugin for WordPress is vulnerable to unauthorized modification of data due to insufficient payment validation in the update_order_status() function in all versions up to, and including, 1.1.0. This makes it possible for unauthenticated attackers to update the status of orders to paid bypassing payment.",
+    "published": "2024-06-04T06:15:09.180",
+    "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2024-2382": {
+    "cvss": 5.3,
+    "description": "The Authorize.net Payment Gateway For WooCommerce plugin for WordPress is vulnerable to payment bypass in all versions up to, and including, 8.0. This is due to the plugin not properly verifying the authenticity of the request that updates a orders payment status. This makes it possible for unauthenticated attackers to update order payment statuses to paid bypassing any payment.",
+    "published": "2024-06-04T06:15:09.677",
+    "keywords": "unauthenticated,bypass"
   }
 }
