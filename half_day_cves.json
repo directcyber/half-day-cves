@@ -1,10 +1,4 @@
 {
-  "CVE-2024-1324": {
-    "cvss": 5.3,
-    "description": "The QQWorld Auto Save Images plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the save_remote_images_get_auto_saved_results() function hooked via a norpriv AJAX in all versions up to, and including, 1.9.8. This makes it possible for unauthenticated attackers to retrieve the contents of arbitrary posts that may not be public.",
-    "published": "2024-06-01T07:15:07.850",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2024-3820": {
     "cvss": 10.0,
     "description": "The wpDataTables \u2013 WordPress Data Table, Dynamic Tables & Table Charts Plugin plugin for WordPress is vulnerable to SQL Injection via the 'id_key' parameter of the wdt_delete_table_row AJAX action in all versions up to, and including, 6.3.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. Please note this only affects the premium version of the plugin.",
