@@ -178,5 +178,11 @@
     "cvss": "-",
     "description": "LyLme_spage v1.9.5 is vulnerable to Server-Side Request Forgery (SSRF) via the get_head function.",
     "published": "2024-06-04T22:15:10.740"
+  },
+  "CVE-2024-5483": {
+    "cvss": 5.3,
+    "description": "The LearnPress \u2013 WordPress LMS Plugin plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 4.2.6.8 due to incorrect implementation of get_items_permissions_check function. This makes it possible for unauthenticated attackers to extract basic information about website users, including their emails",
+    "published": "2024-06-05T03:15:08.810",
+    "keywords": "unauthenticated,sensitive"
   }
 }
