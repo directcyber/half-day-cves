@@ -1,34 +1,4 @@
 {
-  "CVE-2024-20066": {
-    "cvss": "-",
-    "description": "In modem, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote denial of service with no additional execution privileges needed. User interaction is no needed for exploitation. Patch ID: MOLY01267281; Issue ID: MSV-1477.",
-    "published": "2024-06-03T02:15:08.630",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-20067": {
-    "cvss": "-",
-    "description": "In modem, there is a possible out of bounds write due to improper input invalidation. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01267285; Issue ID: MSV-1462.",
-    "published": "2024-06-03T02:15:08.770",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-20068": {
-    "cvss": "-",
-    "description": "In modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed. User interaction is no needed for exploitation. Patch ID: MOLY01270721; Issue ID: MSV-1479.",
-    "published": "2024-06-03T02:15:08.873",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-20069": {
-    "cvss": "-",
-    "description": "In modem, there is a possible selection of less-secure algorithm during the VoWiFi IKE due to a missing DH downgrade check. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is needed for exploitation. Patch ID: MOLY01286330; Issue ID: MSV-1430.",
-    "published": "2024-06-03T02:15:08.977",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-20070": {
-    "cvss": "-",
-    "description": "In modem, there is a possible information disclosure due to using risky cryptographic algorithm during connection establishment negotiation. This could lead to remote information disclosure, when weak encryption algorithm is used, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY00942482; Issue ID: MSV-1469.",
-    "published": "2024-06-03T02:15:09.093",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-36042": {
     "cvss": "-",
     "description": "Silverpeas before 6.3.5 allows authentication bypass by omitting the Password field to AuthenticationServlet, often providing an unauthenticated user with superadmin access.",
@@ -208,5 +178,23 @@
     "description": "A flaw was found in OpenShift's Telemeter. If certain conditions are in place, an attacker can use a forged token to bypass the issue (\"iss\") check during JSON web token (JWT) authentication.",
     "published": "2024-06-05T18:15:11.747",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-0910": {
+    "cvss": 5.3,
+    "description": "The Restrict for Elementor plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.0.6 due to improper restrictions on hidden data that make it accessible through the REST API. This makes it possible for unauthenticated attackers to extract potentially sensitive data from post content.",
+    "published": "2024-06-06T02:15:53.010",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-4194": {
+    "cvss": 6.5,
+    "description": "The The Album and Image Gallery plus Lightbox plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 2.0. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+    "published": "2024-06-06T02:15:53.453",
+    "keywords": "execution,unauthenticated"
+  },
+  "CVE-2024-5179": {
+    "cvss": 8.8,
+    "description": "The Cowidgets \u2013 Elementor Addons plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.1.1 via the 'item_style' and 'style' parameters. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
+    "published": "2024-06-06T02:15:54.487",
+    "keywords": "execution,sensitive,bypass"
   }
 }

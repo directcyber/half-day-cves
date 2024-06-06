@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-06-06T01:54:24.989468
+Updated at UTC 2024-06-06T02:26:21.786486
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,12 @@ Updated at UTC 2024-06-06T01:54:24.989468
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -148,18 +154,38 @@ Updated at UTC 2024-06-06T01:54:24.989468
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5179">CVE-2024-5179</a></td>
+					<td>8.8</td>
+					<td>execution,sensitive,bypass</td>
+					<td class=date>2024-06-06T02:15:54.487</td>
+					<td class=description>The Cowidgets – Elementor Addons plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.1.1 via the 'item_style' and 'style' parameters. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4194">CVE-2024-4194</a></td>
+					<td>6.5</td>
+					<td>execution,unauthenticated</td>
+					<td class=date>2024-06-06T02:15:53.453</td>
+					<td class=description>The The Album and Image Gallery plus Lightbox plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 2.0. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-0910">CVE-2024-0910</a></td>
+					<td>5.3</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2024-06-06T02:15:53.010</td>
+					<td class=description>The Restrict for Elementor plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.0.6 due to improper restrictions on hidden data that make it accessible through the REST API. This makes it possible for unauthenticated attackers to extract potentially sensitive data from post content.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -442,56 +468,6 @@ The command injection vulnerability in the CGI program "remote_help-cgi" in Zyxe
 					<td>unauthenticated,authentication,bypass</td>
 					<td class=date>2024-06-03T06:15:09.293</td>
 					<td class=description>Silverpeas before 6.3.5 allows authentication bypass by omitting the Password field to AuthenticationServlet, often providing an unauthenticated user with superadmin access.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20070">CVE-2024-20070</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2024-06-03T02:15:09.093</td>
-					<td class=description>In modem, there is a possible information disclosure due to using risky cryptographic algorithm during connection establishment negotiation. This could lead to remote information disclosure, when weak encryption algorithm is used, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY00942482; Issue ID: MSV-1469.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20069">CVE-2024-20069</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2024-06-03T02:15:08.977</td>
-					<td class=description>In modem, there is a possible selection of less-secure algorithm during the VoWiFi IKE due to a missing DH downgrade check. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is needed for exploitation. Patch ID: MOLY01286330; Issue ID: MSV-1430.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20068">CVE-2024-20068</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2024-06-03T02:15:08.873</td>
-					<td class=description>In modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed. User interaction is no needed for exploitation. Patch ID: MOLY01270721; Issue ID: MSV-1479.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20067">CVE-2024-20067</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2024-06-03T02:15:08.770</td>
-					<td class=description>In modem, there is a possible out of bounds write due to improper input invalidation. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01267285; Issue ID: MSV-1462.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20066">CVE-2024-20066</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2024-06-03T02:15:08.630</td>
-					<td class=description>In modem, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote denial of service with no additional execution privileges needed. User interaction is no needed for exploitation. Patch ID: MOLY01267281; Issue ID: MSV-1477.</td>
 				</tr>
 			
 		
