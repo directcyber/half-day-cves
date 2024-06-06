@@ -1,10 +1,4 @@
 {
-  "CVE-2024-36674": {
-    "url": "https://github.com/lylme/lylme_spage/issues/91",
-    "cvss": "-",
-    "description": "LyLme_spage v1.9.5 is vulnerable to Cross Site Scripting (XSS) via admin/link.php.",
-    "published": "2024-06-03T16:15:08.897"
-  },
   "CVE-2024-4332": {
     "cvss": "-",
     "description": "An authentication bypass vulnerability has been identified in the REST and SOAP API components of Tripwire Enterprise (TE) 9.1.0 when TE is configured to use LDAP/Active Directory SAML authentication and its optional \"Auto-synchronize LDAP Users, Roles, and Groups\" feature is enabled. This vulnerability allows unauthenticated attackers to bypass authentication if a valid username is known. Exploitation of this vulnerability could allow remote attackers to gain privileged access to the APIs and lead to unauthorized information disclosure or modification.",
@@ -190,5 +184,17 @@
     "description": "An attacker with access to the private network (the charger is connected to) or local access to the Ethernet-Interface can exploit a faulty implementation of the JWT-library in order to bypass the password authentication to the web configuration interface and then has full access as the user would have. However, an attacker will not have developer or admin rights. If the implementation of the JWT-library is wrongly configured to accept \"none\"-algorithms, the server will pass insecure JWT. A local, unauthenticated attacker can exploit this vulnerability to bypass the authentication mechanism.",
     "published": "2024-06-06T13:15:32.027",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-35178": {
+    "cvss": 7.5,
+    "description": "The Jupyter Server provides the backend for Jupyter web applications. Jupyter Server on Windows has a vulnerability that lets unauthenticated attackers leak the NTLMv2 password hash of the Windows user running the Jupyter server. An attacker can crack this password to gain access to the Windows machine hosting the Jupyter server, or access other network-accessible machines or 3rd party services using that credential. Or an attacker perform an NTLM relay attack without cracking the credential to gain access to other network-accessible machines. This vulnerability is fixed in 2.14.1.",
+    "published": "2024-06-06T16:15:11.937",
+    "keywords": "unauthenticated,leak"
+  },
+  "CVE-2024-37152": {
+    "cvss": 5.3,
+    "description": "Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes. The vulnerability allows unauthorized access to the sensitive settings exposed by  /api/v1/settings endpoint without authentication. All sensitive settings are hidden except passwordPattern. This vulnerability is fixed in 2.11.3, 2.10.12, and 2.9.17.",
+    "published": "2024-06-06T16:15:13.190",
+    "keywords": "authentication,sensitive"
   }
 }

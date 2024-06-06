@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-06-06T16:11:36.361585
+Updated at UTC 2024-06-06T17:09:40.951427
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-06-06T16:11:36.361585
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -130,20 +134,28 @@ Updated at UTC 2024-06-06T16:11:36.361585
 		
 			
 		
+
+		<hr>
+		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-36674">CVE-2024-36674</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/lylme/lylme_spage/issues/91">https://github.com/lylme/lylme_spage/issues/91</a></td>
-					<td class=date>2024-06-03T16:15:08.897</td>
-					<td class=description>LyLme_spage v1.9.5 is vulnerable to Cross Site Scripting (XSS) via admin/link.php.</td>
-
-
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37152">CVE-2024-37152</a></td>
+					<td>5.3</td>
+					<td>authentication,sensitive</td>
+					<td class=date>2024-06-06T16:15:13.190</td>
+					<td class=description>Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes. The vulnerability allows unauthorized access to the sensitive settings exposed by  /api/v1/settings endpoint without authentication. All sensitive settings are hidden except passwordPattern. This vulnerability is fixed in 2.11.3, 2.10.12, and 2.9.17.</td>
 				</tr>
 			
 		
-
-		<hr>
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-35178">CVE-2024-35178</a></td>
+					<td>7.5</td>
+					<td>unauthenticated,leak</td>
+					<td class=date>2024-06-06T16:15:11.937</td>
+					<td class=description>The Jupyter Server provides the backend for Jupyter web applications. Jupyter Server on Windows has a vulnerability that lets unauthenticated attackers leak the NTLMv2 password hash of the Windows user running the Jupyter server. An attacker can crack this password to gain access to the Windows machine hosting the Jupyter server, or access other network-accessible machines or 3rd party services using that credential. Or an attacker perform an NTLM relay attack without cracking the credential to gain access to other network-accessible machines. This vulnerability is fixed in 2.14.1.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -452,8 +464,6 @@ The command injection vulnerability in the CGI program "remote_help-cgi" in Zyxe
 					<td class=date>2024-06-03T18:15:09.060</td>
 					<td class=description>An authentication bypass vulnerability has been identified in the REST and SOAP API components of Tripwire Enterprise (TE) 9.1.0 when TE is configured to use LDAP/Active Directory SAML authentication and its optional "Auto-synchronize LDAP Users, Roles, and Groups" feature is enabled. This vulnerability allows unauthenticated attackers to bypass authentication if a valid username is known. Exploitation of this vulnerability could allow remote attackers to gain privileged access to the APIs and lead to unauthorized information disclosure or modification.</td>
 				</tr>
-			
-		
 			
 		
 
