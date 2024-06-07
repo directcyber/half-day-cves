@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-06-07T17:09:22.385283
+Updated at UTC 2024-06-07T18:13:59.625863
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-06-07T17:09:22.385283
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -390,6 +392,16 @@ Updated at UTC 2024-06-07T17:09:22.385283
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-30162">CVE-2024-30162</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2024-06-07T17:15:50.170</td>
+					<td class=description>Invision Community through 4.7.16 allows remote code execution via the applications/core/modules/admin/editor/toolbar.php IPS\core\modules\admin\editor\_toolbar::addPlugin() method. This method handles uploaded ZIP files that are extracted into the applications/core/interface/ckeditor/ckeditor/plugins/ directory without properly verifying their content. This can be exploited by admin users (with the toolbar_manage permission) to write arbitrary PHP files into that directory, leading to execution of arbitrary PHP code in the context of the web server user.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
