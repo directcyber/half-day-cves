@@ -1,16 +1,4 @@
 {
-  "CVE-2024-1718": {
-    "cvss": 5.3,
-    "description": "The Claudio Sanches \u2013 Checkout Cielo for WooCommerce plugin for WordPress is vulnerable to unauthorized modification of data due to insufficient payment validation in the update_order_status() function in all versions up to, and including, 1.1.0. This makes it possible for unauthenticated attackers to update the status of orders to paid bypassing payment.",
-    "published": "2024-06-04T06:15:09.180",
-    "keywords": "unauthenticated,bypass"
-  },
-  "CVE-2024-2382": {
-    "cvss": 5.3,
-    "description": "The Authorize.net Payment Gateway For WooCommerce plugin for WordPress is vulnerable to payment bypass in all versions up to, and including, 8.0. This is due to the plugin not properly verifying the authenticity of the request that updates a orders payment status. This makes it possible for unauthenticated attackers to update order payment statuses to paid bypassing any payment.",
-    "published": "2024-06-04T06:15:09.677",
-    "keywords": "unauthenticated,bypass"
-  },
   "CVE-2024-4253": {
     "cvss": 7.5,
     "description": "A command injection vulnerability exists in the gradio-app/gradio repository, specifically within the 'test-functional.yml' workflow. The vulnerability arises due to improper neutralization of special elements used in a command, allowing for unauthorized modification of the base repository or secrets exfiltration. The issue affects versions up to and including '@gradio/video@0.6.12'. The flaw is present in the workflow's handling of GitHub context information, where it echoes the full name of the head repository, the head branch, and the workflow reference without adequate sanitization. This could potentially lead to the exfiltration of sensitive secrets such as 'GITHUB_TOKEN', 'COMMENT_TOKEN', and 'CHROMATIC_PROJECT_TOKEN'.",
