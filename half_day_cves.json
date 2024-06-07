@@ -514,5 +514,11 @@
     "description": "The Qi Addons For Elementor plugin for WordPress is vulnerable to Remote File Inclusion in all versions up to, and including, 1.7.2 via the 'behavior' attributes found in the qi_addons_for_elementor_blog_list shortcode. This makes it possible for authenticated attackers, with Contributor-level access and above, to include remote files on the server, resulting in code execution. Please note that this requires an attacker to create a non-existent directory or target an instance where file_exists won't return false with a non-existent directory in the path, in order to successfully exploit.",
     "published": "2024-06-07T04:15:31.777",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-5732": {
+    "cvss": 7.3,
+    "description": "A vulnerability was found in Clash up to 0.20.1 on Windows. It has been declared as critical. This vulnerability affects unknown code of the component Proxy Port. The manipulation leads to improper authentication. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. It is recommended to change the configuration settings. VDB-267406 is the identifier assigned to this vulnerability.",
+    "published": "2024-06-07T10:15:12.293",
+    "keywords": "remote,authentication"
   }
 }
