@@ -1,16 +1,4 @@
 {
-  "CVE-2024-37061": {
-    "cvss": 8.8,
-    "description": "Remote Code Execution can occur in versions of the MLflow platform running version 1.11.0 or newer, enabling a maliciously crafted MLproject to execute arbitrary code on an end user\u2019s system when run.",
-    "published": "2024-06-04T12:15:12.703",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-4254": {
-    "cvss": 7.1,
-    "description": "The 'deploy-website.yml' workflow in the gradio-app/gradio repository, specifically in the 'main' branch, is vulnerable to secrets exfiltration due to improper authorization. The vulnerability arises from the workflow's explicit checkout and execution of code from a fork, which is unsafe as it allows the running of untrusted code in an environment with access to push to the base repository and access secrets. This flaw could lead to the exfiltration of sensitive secrets such as GITHUB_TOKEN, HF_TOKEN, VERCEL_ORG_ID, VERCEL_PROJECT_ID, COMMENT_TOKEN, AWSACCESSKEYID, AWSSECRETKEY, and VERCEL_TOKEN. The vulnerability is present in the workflow file located at https://github.com/gradio-app/gradio/blob/72f4ca88ab569aae47941b3fb0609e57f2e13a27/.github/workflows/deploy-website.yml.",
-    "published": "2024-06-04T12:15:13.710",
-    "keywords": "execution,sensitive"
-  },
   "CVE-2024-36800": {
     "cvss": "-",
     "description": "A SQL injection vulnerability in SEMCMS v.4.8, allows a remote attacker to obtain sensitive information via the ID parameter in Download.php.",
