@@ -1,10 +1,4 @@
 {
-  "CVE-2024-5149": {
-    "cvss": 6.5,
-    "description": "The BuddyForms plugin for WordPress is vulnerable to Email Verification Bypass in all versions up to, and including, 2.8.9 via the use of an insufficiently random activation code. This makes it possible for unauthenticated attackers to bypass the email verification.",
-    "published": "2024-06-05T05:15:50.260",
-    "keywords": "unauthenticated,bypass"
-  },
   "CVE-2024-4295": {
     "cvss": 9.8,
     "description": "The Email Subscribers by Icegram Express plugin for WordPress is vulnerable to SQL Injection via the \u2018hash\u2019 parameter in all versions up to, and including, 5.7.20 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
