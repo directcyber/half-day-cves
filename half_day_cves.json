@@ -508,5 +508,11 @@
     "description": "Invision Community through 4.7.16 allows remote code execution via the applications/core/modules/admin/editor/toolbar.php IPS\\core\\modules\\admin\\editor\\_toolbar::addPlugin() method. This method handles uploaded ZIP files that are extracted into the applications/core/interface/ckeditor/ckeditor/plugins/ directory without properly verifying their content. This can be exploited by admin users (with the toolbar_manage permission) to write arbitrary PHP files into that directory, leading to execution of arbitrary PHP code in the context of the web server user.",
     "published": "2024-06-07T17:15:50.170",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-0444": {
+    "cvss": 7.5,
+    "description": "GStreamer AV1 Video Parsing Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GStreamer. Interaction with this library is required to exploit this vulnerability but attack vectors may vary depending on the implementation.\n\nThe specific flaw exists within the parsing of tile list data within AV1-encoded video files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22873.",
+    "published": "2024-06-07T23:15:47.267",
+    "keywords": "remote,execution"
   }
 }
