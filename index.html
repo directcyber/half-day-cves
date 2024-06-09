@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-06-09T16:11:12.057794
+Updated at UTC 2024-06-09T17:10:01.641201
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -338,10 +338,6 @@ Updated at UTC 2024-06-09T16:11:12.057794
 
 
 				</tr>
-			
-		
-			
-		
 			
 		
 			
@@ -986,26 +982,6 @@ The specific flaw exists within the CsrRequestView class. The issue results from
 					<td>execution,command</td>
 					<td class=date>2024-06-06T18:15:12.827</td>
 					<td class=description>A Cross-Site Request Forgery (CSRF) vulnerability in significant-gravitas/autogpt version v0.5.0 allows attackers to execute arbitrary commands on the AutoGPT server. The vulnerability stems from the lack of protections on the API endpoint receiving instructions, enabling an attacker to direct a user running AutoGPT in their local network to a malicious website. This site can then send crafted requests to the AutoGPT server, leading to command execution. The issue is exacerbated by CORS being enabled for arbitrary origins by default, allowing the attacker to read the response of all cross-site queries. This vulnerability was addressed in version 5.1.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37152">CVE-2024-37152</a></td>
-					<td>5.3</td>
-					<td>authentication,sensitive</td>
-					<td class=date>2024-06-06T16:15:13.190</td>
-					<td class=description>Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes. The vulnerability allows unauthorized access to the sensitive settings exposed by  /api/v1/settings endpoint without authentication. All sensitive settings are hidden except passwordPattern. This vulnerability is fixed in 2.11.3, 2.10.12, and 2.9.17.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-35178">CVE-2024-35178</a></td>
-					<td>7.5</td>
-					<td>unauthenticated,leak</td>
-					<td class=date>2024-06-06T16:15:11.937</td>
-					<td class=description>The Jupyter Server provides the backend for Jupyter web applications. Jupyter Server on Windows has a vulnerability that lets unauthenticated attackers leak the NTLMv2 password hash of the Windows user running the Jupyter server. An attacker can crack this password to gain access to the Windows machine hosting the Jupyter server, or access other network-accessible machines or 3rd party services using that credential. Or an attacker perform an NTLM relay attack without cracking the credential to gain access to other network-accessible machines. This vulnerability is fixed in 2.14.1.</td>
 				</tr>
 			
 		
