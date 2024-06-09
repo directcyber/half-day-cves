@@ -1,22 +1,4 @@
 {
-  "CVE-2024-0910": {
-    "cvss": 5.3,
-    "description": "The Restrict for Elementor plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.0.6 due to improper restrictions on hidden data that make it accessible through the REST API. This makes it possible for unauthenticated attackers to extract potentially sensitive data from post content.",
-    "published": "2024-06-06T02:15:53.010",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-4194": {
-    "cvss": 6.5,
-    "description": "The The Album and Image Gallery plus Lightbox plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 2.0. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
-    "published": "2024-06-06T02:15:53.453",
-    "keywords": "execution,unauthenticated"
-  },
-  "CVE-2024-5179": {
-    "cvss": 8.8,
-    "description": "The Cowidgets \u2013 Elementor Addons plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.1.1 via the 'item_style' and 'style' parameters. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
-    "published": "2024-06-06T02:15:54.487",
-    "keywords": "execution,sensitive,bypass"
-  },
   "CVE-2024-0972": {
     "cvss": 5.3,
     "description": "The BuddyPress Members Only plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.3.5 via the REST API. This makes it possible for unauthenticated attackers to bypass the plugin's \"All Other Sections On Your Site Will be Opened to Guest\" feature (when unset) and view restricted page and post content.",
