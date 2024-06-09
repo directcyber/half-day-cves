@@ -100,5 +100,17 @@
     "cvss": "-",
     "description": "lepture Authlib before 1.3.1 has algorithm confusion with asymmetric public keys. Unless an algorithm is specified in a jwt.decode call, HMAC verification is allowed with any asymmetric public key. (This is similar to CVE-2022-29217 and CVE-2024-33663.)",
     "published": "2024-06-09T19:15:52.323"
+  },
+  "CVE-2024-37569": {
+    "cvss": "-",
+    "description": "An issue was discovered on Mitel 6869i through 4.5.0.41 and 5.x through 5.0.0.1018 devices. A command injection vulnerability exists in the hostname parameter taken in by the provis.html endpoint. The provis.html endpoint performs no sanitization on the hostname parameter (sent by an authenticated user), which is subsequently written to disk. During boot, the hostname parameter is executed as part of a series of shell commands. Attackers can achieve remote code execution in the root context by placing shell metacharacters in the hostname parameter.",
+    "published": "2024-06-09T20:15:09.377",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2024-37570": {
+    "cvss": "-",
+    "description": "On Mitel 6869i 4.5.0.41 devices, the Manual Firmware Update (upgrade.html) page does not perform sanitization on the username and path parameters (sent by an authenticated user) before appending flags to the busybox ftpget command. This leads to $() command execution.",
+    "published": "2024-06-09T20:15:09.460",
+    "keywords": "execution,command"
   }
 }

@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-06-09T20:10:07.462005
+Updated at UTC 2024-06-09T21:09:15.015391
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-06-09T20:10:07.462005
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 				<tr>
@@ -174,6 +178,26 @@ Updated at UTC 2024-06-09T20:10:07.462005
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37570">CVE-2024-37570</a></td>
+					<td>-</td>
+					<td>execution,command</td>
+					<td class=date>2024-06-09T20:15:09.460</td>
+					<td class=description>On Mitel 6869i 4.5.0.41 devices, the Manual Firmware Update (upgrade.html) page does not perform sanitization on the username and path parameters (sent by an authenticated user) before appending flags to the busybox ftpget command. This leads to $() command execution.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37569">CVE-2024-37569</a></td>
+					<td>-</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-06-09T20:15:09.377</td>
+					<td class=description>An issue was discovered on Mitel 6869i through 4.5.0.41 and 5.x through 5.0.0.1018 devices. A command injection vulnerability exists in the hostname parameter taken in by the provis.html endpoint. The provis.html endpoint performs no sanitization on the hostname parameter (sent by an authenticated user), which is subsequently written to disk. During boot, the hostname parameter is executed as part of a series of shell commands. Attackers can achieve remote code execution in the root context by placing shell metacharacters in the hostname parameter.</td>
+				</tr>
+			
 		
 			
 		
