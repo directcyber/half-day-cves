@@ -82,5 +82,29 @@
     "description": "Multiple LDAP injections vulnerabilities exist in SecurEnvoy MFA before 9.4.514 due to improper validation of user-supplied input. An unauthenticated remote attacker could exfiltrate data from Active Directory through blind LDAP injection attacks against the DESKTOP service exposed on the /secserver HTTP endpoint. This may include ms-Mcs-AdmPwd, which has a cleartext password for the Local Administrator Password Solution (LAPS) feature.",
     "published": "2024-06-10T20:15:15.293",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-23251": {
+    "cvss": "-",
+    "description": "An authentication issue was addressed with improved state management. This issue is fixed in macOS Sonoma 14.5, watchOS 10.5, iOS 17.5 and iPadOS 17.5, iOS 16.7.8 and iPadOS 16.7.8. An attacker with physical access may be able to leak Mail account credentials.",
+    "published": "2024-06-10T21:15:49.430",
+    "keywords": "authentication,leak"
+  },
+  "CVE-2024-27840": {
+    "cvss": "-",
+    "description": "The issue was addressed with improved memory handling. This issue is fixed in macOS Ventura 13.6.7, macOS Monterey 12.7.5, iOS 16.7.8 and iPadOS 16.7.8, tvOS 17.5, visionOS 1.2, iOS 17.5 and iPadOS 17.5, watchOS 10.5. An attacker that has already achieved kernel code execution may be able to bypass kernel memory protections.",
+    "published": "2024-06-10T21:15:51.313",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2024-27857": {
+    "cvss": "-",
+    "description": "An out-of-bounds access issue was addressed with improved bounds checking. This issue is fixed in visionOS 1.2, macOS Sonoma 14.5, tvOS 17.5, iOS 17.5 and iPadOS 17.5. A remote attacker may be able to cause unexpected app termination or arbitrary code execution.",
+    "published": "2024-06-10T21:15:51.833",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-36418": {
+    "cvss": 8.5,
+    "description": "SuiteCRM is an open-source Customer Relationship Management (CRM) software application. Prior to versions 7.14.4 and 8.6.1, a vulnerability in connectors allows an authenticated user to perform a remote code execution attack. Versions 7.14.4 and 8.6.1 contain a fix for this issue.",
+    "published": "2024-06-10T21:15:52.120",
+    "keywords": "remote,execution"
   }
 }
