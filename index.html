@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-06-10T13:13:39.480866
+Updated at UTC 2024-06-10T14:11:10.345140
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,18 @@ Updated at UTC 2024-06-10T13:13:39.480866
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-36405">CVE-2024-36405</a></td>
+					<td>5.9</td>
+					<td><a target=_blank href="https://github.com/pq-crystals/kyber/commit/9b8d30698a3e7449aeb34e62339d4176f11e3c6c">https://github.com/pq-crystals/kyber/commit/9b8d30698a3e7449aeb34e62339d4176f11e3c6c</a></td>
+					<td class=date>2024-06-10T13:15:50.700</td>
+					<td class=description>liboqs is a C-language cryptographic library that provides implementations of post-quantum cryptography algorithms. A control-flow timing lean has been identified in the reference implementation of the Kyber key encapsulation mechanism when it is compiled with Clang 15-18 for `-Os`, `-O1`, and other compilation options. A proof-of-concept local attack on the reference implementation leaks the entire ML-KEM 512 secret key in ~10 minutes using end-to-end decapsulation timing measurements. The issue has been fixed in version 0.10.1. As a possible workaround, some compiler options may produce vectorized code that does not leak secret information, however relying on these compiler options as a workaround may not be reliable.</td>
+
+
+				</tr>
+			
 		
 			
 				<tr>
@@ -106,10 +118,10 @@ Updated at UTC 2024-06-10T13:13:39.480866
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
 		
 			
 		
@@ -176,16 +188,6 @@ The specific flaw exists within the parsing of tile list data within AV1-encoded
 					<td>authentication,bypass</td>
 					<td class=date>2024-06-07T15:15:50.140</td>
 					<td class=description>An issue in Netgear WNR614 JNR1010V2 N300-V1.1.0.54_1.0.1 allows attackers to bypass authentication and access the administrative interface via unspecified vectors.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5599">CVE-2024-5599</a></td>
-					<td>7.5</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2024-06-07T13:15:50.943</td>
-					<td class=description>The FileOrganizer – Manage WordPress and Website Files plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.0.7 via the 'fileorganizer_ajax_handler' function. This makes it possible for unauthenticated attackers to extract sensitive data including backups or other sensitive information if the files have been moved to the built-in Trash folder.</td>
 				</tr>
 			
 		
