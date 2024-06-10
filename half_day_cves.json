@@ -64,5 +64,23 @@
     "description": "Authentication Bypass by Spoofing vulnerability in Acurax Under Construction / Maintenance Mode from Acurax allows Authentication Bypass.This issue affects Under Construction / Maintenance Mode from Acurax: from n/a through 2.6.",
     "published": "2024-06-10T17:16:31.187",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-36415": {
+    "cvss": 9.1,
+    "description": "SuiteCRM is an open-source Customer Relationship Management (CRM) software application. Prior to versions 7.14.4 and 8.6.1, a vulnerability in uploaded file verification in products allows for remote code execution. Versions 7.14.4 and 8.6.1 contain a fix for this issue.",
+    "published": "2024-06-10T20:15:14.503",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-37014": {
+    "cvss": "-",
+    "description": "Langflow through 0.6.19 allows remote code execution if untrusted users are able to reach the \"POST /api/v1/custom_component\" endpoint and provide a Python script.",
+    "published": "2024-06-10T20:15:15.213",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-37393": {
+    "cvss": "-",
+    "description": "Multiple LDAP injections vulnerabilities exist in SecurEnvoy MFA before 9.4.514 due to improper validation of user-supplied input. An unauthenticated remote attacker could exfiltrate data from Active Directory through blind LDAP injection attacks against the DESKTOP service exposed on the /secserver HTTP endpoint. This may include ms-Mcs-AdmPwd, which has a cleartext password for the Local Administrator Password Solution (LAPS) feature.",
+    "published": "2024-06-10T20:15:15.293",
+    "keywords": "remote,unauthenticated"
   }
 }
