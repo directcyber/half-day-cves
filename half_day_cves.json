@@ -1,10 +1,4 @@
 {
-  "CVE-2024-36787": {
-    "cvss": "-",
-    "description": "An issue in Netgear WNR614 JNR1010V2 N300-V1.1.0.54_1.0.1 allows attackers to bypass authentication and access the administrative interface via unspecified vectors.",
-    "published": "2024-06-07T15:15:50.140",
-    "keywords": "authentication,bypass"
-  },
   "CVE-2024-30162": {
     "cvss": "-",
     "description": "Invision Community through 4.7.16 allows remote code execution via the applications/core/modules/admin/editor/toolbar.php IPS\\core\\modules\\admin\\editor\\_toolbar::addPlugin() method. This method handles uploaded ZIP files that are extracted into the applications/core/interface/ckeditor/ckeditor/plugins/ directory without properly verifying their content. This can be exploited by admin users (with the toolbar_manage permission) to write arbitrary PHP files into that directory, leading to execution of arbitrary PHP code in the context of the web server user.",
@@ -58,5 +52,11 @@
     "cvss": 5.9,
     "description": "liboqs is a C-language cryptographic library that provides implementations of post-quantum cryptography algorithms. A control-flow timing lean has been identified in the reference implementation of the Kyber key encapsulation mechanism when it is compiled with Clang 15-18 for `-Os`, `-O1`, and other compilation options. A proof-of-concept local attack on the reference implementation leaks the entire ML-KEM 512 secret key in ~10 minutes using end-to-end decapsulation timing measurements. The issue has been fixed in version 0.10.1. As a possible workaround, some compiler options may produce vectorized code that does not leak secret information, however relying on these compiler options as a workaround may not be reliable.",
     "published": "2024-06-10T13:15:50.700"
+  },
+  "CVE-2024-35307": {
+    "cvss": "-",
+    "description": "Argument Injection Leading to Remote Code Execution in Realtime Graph Extension,\u00a0allowing unauthenticated attackers to execute arbitrary code on the server.\u00a0This issue affects Pandora FMS: from 700 through <777.",
+    "published": "2024-06-10T15:15:51.803",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
