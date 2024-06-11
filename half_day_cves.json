@@ -256,5 +256,11 @@
     "description": "Microsoft Dynamics 365 Business Central Remote Code Execution Vulnerability",
     "published": "2024-06-11T17:16:02.417",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-5851": {
+    "url": "https://github.com/playsms/playsms/commit/7a88920f6b536c6a91512e739bcb4e8adefeed2b",
+    "cvss": 3.5,
+    "description": "A vulnerability classified as problematic has been found in playSMS up to 1.4.7. Affected is an unknown function of the file /index.php?app=main&inc=feature_schedule&op=list of the component SMS Schedule Handler. The manipulation of the argument name/message leads to basic cross site scripting. It is possible to launch the attack remotely. Upgrading to version 1.4.8 is able to address this issue. The name of the patch is 7a88920f6b536c6a91512e739bcb4e8adefeed2b. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-267912. NOTE: The code maintainer was contacted early about this disclosure and was eager to prepare a fix as quickly as possible.",
+    "published": "2024-06-11T18:15:14.437"
   }
 }
