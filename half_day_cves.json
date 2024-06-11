@@ -130,5 +130,17 @@
     "description": "A vulnerability has been identified in PowerSys (All versions < V3.11). The affected application insufficiently protects responses to authentication requests. This could allow a local attacker to bypass authentication, thereby gaining administrative privileges for the managed remote devices.",
     "published": "2024-06-11T12:15:18.657",
     "keywords": "remote,authentication,bypass"
+  },
+  "CVE-2024-2012": {
+    "cvss": 9.1,
+    "description": "vulnerability exists in the FOXMAN-UN/UNEM server / API Gateway that if exploited an attacker could use to allow unintended commands or \ncode to be executed on the UNEM server allowing sensitive data to \nbe read or modified or could cause other unintended behavior",
+    "published": "2024-06-11T14:15:11.273",
+    "keywords": "command,sensitive"
+  },
+  "CVE-2024-2013": {
+    "cvss": 10.0,
+    "description": "An authentication bypass vulnerability exists in the FOXMAN-UN/UNEM server /\nAPI Gateway component that if exploited allows attackers without \nany access to interact with the services and the post-authentication \nattack surface.",
+    "published": "2024-06-11T14:15:11.503",
+    "keywords": "authentication,bypass"
   }
 }
