@@ -274,5 +274,11 @@
     "description": "Document Merge Service is a document template merge service providing an API to manage templates and merge them with given data. Versions 6.5.1 and prior are vulnerable to remote code execution via server-side template injection which, when executed as root, can result in full takeover of the affected system. As of time of publication, no patched version exists, nor have any known workarounds been disclosed.",
     "published": "2024-06-11T19:16:07.890",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-5840": {
+    "cvss": "-",
+    "description": "Policy bypass in CORS in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to bypass discretionary access control via a crafted HTML page. (Chromium security severity: Medium)",
+    "published": "2024-06-11T21:15:54.933",
+    "keywords": "remote,bypass"
   }
 }
