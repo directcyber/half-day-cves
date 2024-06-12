@@ -6,13 +6,13 @@
     "published": "2024-06-09T19:15:52.323"
   },
   "CVE-2024-37569": {
-    "cvss": "-",
+    "cvss": 8.8,
     "description": "An issue was discovered on Mitel 6869i through 4.5.0.41 and 5.x through 5.0.0.1018 devices. A command injection vulnerability exists in the hostname parameter taken in by the provis.html endpoint. The provis.html endpoint performs no sanitization on the hostname parameter (sent by an authenticated user), which is subsequently written to disk. During boot, the hostname parameter is executed as part of a series of shell commands. Attackers can achieve remote code execution in the root context by placing shell metacharacters in the hostname parameter.",
     "published": "2024-06-09T20:15:09.377",
     "keywords": "remote,execution,command"
   },
   "CVE-2024-37570": {
-    "cvss": "-",
+    "cvss": 8.8,
     "description": "On Mitel 6869i 4.5.0.41 devices, the Manual Firmware Update (upgrade.html) page does not perform sanitization on the username and path parameters (sent by an authenticated user) before appending flags to the busybox ftpget command. This leads to $() command execution.",
     "published": "2024-06-09T20:15:09.460",
     "keywords": "execution,command"
@@ -25,7 +25,7 @@
   },
   "CVE-2024-37880": {
     "url": "https://github.com/pq-crystals/kyber/commit/9b8d30698a3e7449aeb34e62339d4176f11e3c6c",
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "The Kyber reference implementation before 9b8d306, when compiled by LLVM Clang through 18.x with some common optimization options, has a timing side channel that allows attackers to recover an ML-KEM 512 secret key in minutes. This occurs because poly_frommsg in poly.c does not prevent Clang from emitting a vulnerable secret-dependent branch.",
     "published": "2024-06-10T02:15:47.160"
   },
@@ -328,5 +328,11 @@
     "cvss": 5.4,
     "description": "WooCommerce is an open-source e-commerce platform built on WordPress. A vulnerability introduced in WooCommerce 8.8 allows for cross-site scripting. A bad actor can manipulate a link to include malicious HTML & JavaScript content. While the content is not saved to the database, the links may be sent to victims for malicious purposes. The injected JavaScript could hijack content & data stored in the browser, including the session. The URL content is read through the `Sourcebuster.js` library and then inserted without proper sanitization to the classic checkout and registration forms. Versions 8.8.5 and 8.9.3 contain a patch for the issue. As a workaround, one may disable the Order Attribution feature.",
     "published": "2024-06-12T15:15:52.677"
+  },
+  "CVE-2024-36761": {
+    "url": "https://github.com/gfx-rs/naga/issues/2591",
+    "cvss": "-",
+    "description": "naga v0.14.0 was discovered to contain a stack overflow via the component /wgsl/parse/mod.rs.",
+    "published": "2024-06-12T16:15:11.983"
   }
 }
