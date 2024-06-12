@@ -60,13 +60,13 @@
     "keywords": "remote,execution"
   },
   "CVE-2024-37014": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "Langflow through 0.6.19 allows remote code execution if untrusted users are able to reach the \"POST /api/v1/custom_component\" endpoint and provide a Python script.",
     "published": "2024-06-10T20:15:15.213",
     "keywords": "remote,execution"
   },
   "CVE-2024-37393": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "Multiple LDAP injections vulnerabilities exist in SecurEnvoy MFA before 9.4.514 due to improper validation of user-supplied input. An unauthenticated remote attacker could exfiltrate data from Active Directory through blind LDAP injection attacks against the DESKTOP service exposed on the /secserver HTTP endpoint. This may include ms-Mcs-AdmPwd, which has a cleartext password for the Local Administrator Password Solution (LAPS) feature.",
     "published": "2024-06-10T20:15:15.293",
     "keywords": "remote,unauthenticated"
@@ -334,5 +334,11 @@
     "cvss": "-",
     "description": "naga v0.14.0 was discovered to contain a stack overflow via the component /wgsl/parse/mod.rs.",
     "published": "2024-06-12T16:15:11.983"
+  },
+  "CVE-2024-37036": {
+    "cvss": 9.8,
+    "description": "CWE-787: Out-of-bounds Write vulnerability exists that could result in an authentication bypass\nwhen sending a malformed POST request and particular configuration parameters are set.",
+    "published": "2024-06-12T17:15:50.637",
+    "keywords": "authentication,bypass"
   }
 }
