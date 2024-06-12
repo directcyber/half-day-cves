@@ -304,5 +304,29 @@
     "cvss": "-",
     "description": "** UNSUPPORTED WHEN ASSIGNED ** Improper Authentication vulnerability in Apache Submarine Commons Utils.\n\nThis issue affects Apache Submarine Commons Utils: from 0.8.0.\n\nAs this project is retired, we do not plan to release a version that fixes this issue. Users are recommended to find an alternative or restrict access to the instance to trusted users.\n\nNOTE: This vulnerability only affects products that are no longer supported by the maintainer.\n\n",
     "published": "2024-06-12T14:15:11.983"
+  },
+  "CVE-2024-28964": {
+    "cvss": 7.8,
+    "description": "Dell Common Event Enabler, version 8.9.10.0 and prior, contain an insecure deserialization vulnerability in CAVATools. A local unauthenticated attacker could potentially exploit this vulnerability, leading to arbitrary code execution in the context of the logged in user. Exploitation of this issue requires a victim to open a malicious file.",
+    "published": "2024-06-12T15:15:50.647",
+    "keywords": "execution,unauthenticated"
+  },
+  "CVE-2024-34065": {
+    "cvss": 7.1,
+    "description": "Strapi is an open-source content management system. By combining two vulnerabilities (an `Open Redirect` and `session token sent as URL query parameter`) in @strapi/plugin-users-permissions before version 4.24.2, is its possible of an unauthenticated attacker to bypass authentication mechanisms and retrieve the 3rd party tokens. The attack requires user interaction (one click). Unauthenticated attackers can leverage two vulnerabilities to obtain an 3rd party token and the bypass authentication of Strapi apps. Users should upgrade @strapi/plugin-users-permissions to version 4.24.2 to receive a patch.",
+    "published": "2024-06-12T15:15:51.460",
+    "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-36840": {
+    "cvss": "-",
+    "description": "SQL Injection vulnerability in Boelter Blue System Management v.1.3 allows a remote attacker to execute arbitrary code and obtain sensitive information via the id parameter to news_details.php and location_details.php; and the section parameter to services.php.",
+    "published": "2024-06-12T15:15:52.493",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-37297": {
+    "url": "https://github.com/woocommerce/woocommerce/commit/915e32a42762916b745a7e663c8b69a698da8b67",
+    "cvss": 5.4,
+    "description": "WooCommerce is an open-source e-commerce platform built on WordPress. A vulnerability introduced in WooCommerce 8.8 allows for cross-site scripting. A bad actor can manipulate a link to include malicious HTML & JavaScript content. While the content is not saved to the database, the links may be sent to victims for malicious purposes. The injected JavaScript could hijack content & data stored in the browser, including the session. The URL content is read through the `Sourcebuster.js` library and then inserted without proper sanitization to the classic checkout and registration forms. Versions 8.8.5 and 8.9.3 contain a patch for the issue. As a workaround, one may disable the Order Attribution feature.",
+    "published": "2024-06-12T15:15:52.677"
   }
 }
