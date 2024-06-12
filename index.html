@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-06-12T20:10:00.144741
+Updated at UTC 2024-06-12T21:09:24.554975
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -171,8 +171,6 @@ NOTE: This vulnerability only affects products that are no longer supported by t
 			
 		
 			
-		
-			
 				<tr>
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-36702">CVE-2024-36702</a></td>
 					<td>-</td>
@@ -292,22 +290,6 @@ NOTE: This vulnerability only affects products that are no longer supported by t
 				</tr>
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4577">CVE-2024-4577</a></td>
-					<td>9.8</td>
-					<td><a target=_blank href="https://github.com/rapid7/metasploit-framework/pull/19247">https://github.com/rapid7/metasploit-framework/pull/19247</a></td>
-					<td class=date>2024-06-09T20:15:09.550</td>
-					<td class=description>In PHP versions 8.1.* before 8.1.29, 8.2.* before 8.2.20, 8.3.* before 8.3.8, when using Apache and PHP-CGI on Windows, if the system is set up to use certain code pages, Windows may use "Best-Fit" behavior to replace characters in command line given to Win32 API functions. PHP CGI module may misinterpret those characters as PHP options, which may allow a malicious user to pass options to PHP binary being run, and thus reveal the source code of scripts, run arbitrary PHP code on the server, etc.</td>
-
-
-				</tr>
-			
-		
-			
-		
-			
-		
 
 		<hr>
 		
@@ -383,16 +365,6 @@ when sending a malformed POST request and particular configuration parameters ar
 					<td>remote,bypass</td>
 					<td class=date>2024-06-11T21:15:54.933</td>
 					<td class=description>Policy bypass in CORS in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to bypass discretionary access control via a crafted HTML page. (Chromium security severity: Medium)</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37301">CVE-2024-37301</a></td>
-					<td>9.9</td>
-					<td>remote,execution</td>
-					<td class=date>2024-06-11T19:16:07.890</td>
-					<td class=description>Document Merge Service is a document template merge service providing an API to manage templates and merge them with given data. Versions 6.5.1 and prior are vulnerable to remote code execution via server-side template injection which, when executed as root, can result in full takeover of the affected system. As of time of publication, no patched version exists, nor have any known workarounds been disclosed.</td>
 				</tr>
 			
 		
@@ -771,28 +743,6 @@ confidentiality of the application.</td>
 		
 			
 		
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37570">CVE-2024-37570</a></td>
-					<td>8.8</td>
-					<td>execution,command</td>
-					<td class=date>2024-06-09T20:15:09.460</td>
-					<td class=description>On Mitel 6869i 4.5.0.41 devices, the Manual Firmware Update (upgrade.html) page does not perform sanitization on the username and path parameters (sent by an authenticated user) before appending flags to the busybox ftpget command. This leads to $() command execution.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37569">CVE-2024-37569</a></td>
-					<td>8.8</td>
-					<td>remote,execution,command</td>
-					<td class=date>2024-06-09T20:15:09.377</td>
-					<td class=description>An issue was discovered on Mitel 6869i through 4.5.0.41 and 5.x through 5.0.0.1018 devices. A command injection vulnerability exists in the hostname parameter taken in by the provis.html endpoint. The provis.html endpoint performs no sanitization on the hostname parameter (sent by an authenticated user), which is subsequently written to disk. During boot, the hostname parameter is executed as part of a series of shell commands. Attackers can achieve remote code execution in the root context by placing shell metacharacters in the hostname parameter.</td>
-				</tr>
 			
 		
 

@@ -1,22 +1,4 @@
 {
-  "CVE-2024-37569": {
-    "cvss": 8.8,
-    "description": "An issue was discovered on Mitel 6869i through 4.5.0.41 and 5.x through 5.0.0.1018 devices. A command injection vulnerability exists in the hostname parameter taken in by the provis.html endpoint. The provis.html endpoint performs no sanitization on the hostname parameter (sent by an authenticated user), which is subsequently written to disk. During boot, the hostname parameter is executed as part of a series of shell commands. Attackers can achieve remote code execution in the root context by placing shell metacharacters in the hostname parameter.",
-    "published": "2024-06-09T20:15:09.377",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-37570": {
-    "cvss": 8.8,
-    "description": "On Mitel 6869i 4.5.0.41 devices, the Manual Firmware Update (upgrade.html) page does not perform sanitization on the username and path parameters (sent by an authenticated user) before appending flags to the busybox ftpget command. This leads to $() command execution.",
-    "published": "2024-06-09T20:15:09.460",
-    "keywords": "execution,command"
-  },
-  "CVE-2024-4577": {
-    "url": "https://github.com/rapid7/metasploit-framework/pull/19247",
-    "cvss": 9.8,
-    "description": "In PHP versions\u00a08.1.* before 8.1.29, 8.2.* before 8.2.20, 8.3.* before 8.3.8, when using Apache and PHP-CGI on Windows, if the system is set up to use certain code pages, Windows may use \"Best-Fit\" behavior to replace characters in command line given to\u00a0Win32 API functions. PHP CGI module may misinterpret those characters as PHP options, which may allow a malicious user to pass options to PHP binary being run, and thus reveal the source code of scripts, run arbitrary PHP code on the server, etc.",
-    "published": "2024-06-09T20:15:09.550"
-  },
   "CVE-2024-37880": {
     "url": "https://github.com/pq-crystals/kyber/commit/9b8d30698a3e7449aeb34e62339d4176f11e3c6c",
     "cvss": 7.5,
@@ -256,12 +238,6 @@
     "cvss": "-",
     "description": "libiec61850 v1.5 was discovered to contain a heap overflow via the BerEncoder_encodeLength function at /asn1/ber_encoder.c.",
     "published": "2024-06-11T19:16:07.697"
-  },
-  "CVE-2024-37301": {
-    "cvss": 9.9,
-    "description": "Document Merge Service is a document template merge service providing an API to manage templates and merge them with given data. Versions 6.5.1 and prior are vulnerable to remote code execution via server-side template injection which, when executed as root, can result in full takeover of the affected system. As of time of publication, no patched version exists, nor have any known workarounds been disclosed.",
-    "published": "2024-06-11T19:16:07.890",
-    "keywords": "remote,execution"
   },
   "CVE-2024-5840": {
     "cvss": "-",
