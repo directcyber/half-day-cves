@@ -274,5 +274,11 @@
     "description": "Policy bypass in CORS in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to bypass discretionary access control via a crafted HTML page. (Chromium security severity: Medium)",
     "published": "2024-06-11T21:15:54.933",
     "keywords": "remote,bypass"
+  },
+  "CVE-2024-4315": {
+    "url": "https://github.com/parisneo/lollms/commit/95ad36eeffc6a6be3e3f35ed35a384d768f0ecf6",
+    "cvss": 9.1,
+    "description": "parisneo/lollms version 9.5 is vulnerable to Local File Inclusion (LFI) attacks due to insufficient path sanitization. The `sanitize_path_from_endpoint` function fails to properly sanitize Windows-style paths (backward slash `\\`), allowing attackers to perform directory traversal attacks on Windows systems. This vulnerability can be exploited through various routes, including `personalities` and `/del_preset`, to read or delete any file on the Windows filesystem, compromising the system's availability.",
+    "published": "2024-06-12T01:15:49.490"
   }
 }
