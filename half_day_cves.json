@@ -316,5 +316,23 @@
     "description": "The Dokan Pro plugin for WordPress is vulnerable to SQL Injection via the 'code' parameter in all versions up to, and including, 3.10.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
     "published": "2024-06-13T02:15:08.833",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-38293": {
+    "cvss": "-",
+    "description": "ALCASAR before 3.6.1 allows CSRF and remote code execution in activity.php.",
+    "published": "2024-06-13T05:15:50.517",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38294": {
+    "cvss": "-",
+    "description": "ALCASAR before 3.6.1 allows email_registration_back.php remote code execution.",
+    "published": "2024-06-13T05:15:50.667",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38295": {
+    "cvss": "-",
+    "description": "ALCASAR before 3.6.1 allows still_connected.php remote code execution.",
+    "published": "2024-06-13T05:15:50.760",
+    "keywords": "remote,execution"
   }
 }
