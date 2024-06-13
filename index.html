@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-06-13T20:10:44.912915
+Updated at UTC 2024-06-13T21:10:07.225768
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,18 @@ Updated at UTC 2024-06-13T20:10:44.912915
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -314,14 +326,80 @@ NOTE: This vulnerability only affects products that are no longer supported by t
 		
 			
 		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5952">CVE-2024-5952</a></td>
+					<td>4.3</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-06-13T20:15:17.350</td>
+					<td class=description>Deep Sea Electronics DSE855 Restart Missing Authentication Denial-of-Service Vulnerability. This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of Deep Sea Electronics DSE855 devices. Authentication is not required to exploit this vulnerability.
+
+The specific flaw exists within the web-based UI. The issue results from the lack of authentication prior to allowing access to functionality. An attacker can leverage this vulnerability to create a denial-of-service condition on the system. Was ZDI-CAN-23174.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5951">CVE-2024-5951</a></td>
+					<td>7.1</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-06-13T20:15:17.140</td>
+					<td class=description>Deep Sea Electronics DSE855 Factory Reset Missing Authentication Denial-of-Service Vulnerability. This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of Deep Sea Electronics DSE855 devices. Authentication is not required to exploit this vulnerability.
+
+The specific flaw exists within the web-based UI. The issue results from the lack of authentication prior to allowing access to functionality. An attacker can leverage this vulnerability to create a denial-of-service condition on the system. Was ZDI-CAN-23173.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5950">CVE-2024-5950</a></td>
+					<td>8.8</td>
+					<td>remote,execution,authentication</td>
+					<td class=date>2024-06-13T20:15:16.923</td>
+					<td class=description>Deep Sea Electronics DSE855 Multipart Value Handling Stack-Based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Deep Sea Electronics DSE855 devices. Authentication is not required to exploit this vulnerability.
+
+The specific flaw exists within the handling of multipart form variables. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the device. Was ZDI-CAN-23172.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5948">CVE-2024-5948</a></td>
+					<td>8.8</td>
+					<td>remote,execution,authentication</td>
+					<td class=date>2024-06-13T20:15:16.497</td>
+					<td class=description>Deep Sea Electronics DSE855 Multipart Boundary Stack-Based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Deep Sea Electronics DSE855 devices. Authentication is not required to exploit this vulnerability.
+
+The specific flaw exists within the handling of multipart boundaries. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the device. Was ZDI-CAN-23170.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5947">CVE-2024-5947</a></td>
+					<td>6.5</td>
+					<td>authentication,sensitive</td>
+					<td class=date>2024-06-13T20:15:16.277</td>
+					<td class=description>Deep Sea Electronics DSE855 Configuration Backup Missing Authentication Information Disclosure Vulnerability. This vulnerability allows network-adjacent attackers to disclose sensitive information on affected installations of Deep Sea Electronics DSE855 devices. Authentication is not required to exploit this vulnerability.
+
+The specific flaw exists within the web-based UI. The issue results from the lack of authentication prior to allowing access to functionality. An attacker can leverage this vulnerability to disclose stored credentials, leading to further compromise. Was ZDI-CAN-22679.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5924">CVE-2024-5924</a></td>
+					<td>8.8</td>
+					<td>remote,bypass</td>
+					<td class=date>2024-06-13T20:15:16.000</td>
+					<td class=description>Dropbox Desktop Folder Sharing Mark-of-the-Web Bypass Vulnerability. This vulnerability allows remote attackers to bypass the Mark-of-the-Web protection mechanism on affected installations of Dropbox Desktop. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the handling of shared folders. When syncing files from a shared folder belonging to an untrusted account, the Dropbox desktop application does not apply the Mark-of-the-Web to the local files. An attacker can leverage this vulnerability to execute arbitrary code in the context of the current user. Was ZDI-CAN-23991.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -892,36 +970,6 @@ confidentiality of the application.</td>
 					<td>authentication,leak</td>
 					<td class=date>2024-06-10T21:15:49.430</td>
 					<td class=description>An authentication issue was addressed with improved state management. This issue is fixed in macOS Sonoma 14.5, watchOS 10.5, iOS 17.5 and iPadOS 17.5, iOS 16.7.8 and iPadOS 16.7.8. An attacker with physical access may be able to leak Mail account credentials.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37393">CVE-2024-37393</a></td>
-					<td>7.5</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-06-10T20:15:15.293</td>
-					<td class=description>Multiple LDAP injections vulnerabilities exist in SecurEnvoy MFA before 9.4.514 due to improper validation of user-supplied input. An unauthenticated remote attacker could exfiltrate data from Active Directory through blind LDAP injection attacks against the DESKTOP service exposed on the /secserver HTTP endpoint. This may include ms-Mcs-AdmPwd, which has a cleartext password for the Local Administrator Password Solution (LAPS) feature.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37014">CVE-2024-37014</a></td>
-					<td>9.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-06-10T20:15:15.213</td>
-					<td class=description>Langflow through 0.6.19 allows remote code execution if untrusted users are able to reach the "POST /api/v1/custom_component" endpoint and provide a Python script.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-36415">CVE-2024-36415</a></td>
-					<td>9.1</td>
-					<td>remote,execution</td>
-					<td class=date>2024-06-10T20:15:14.503</td>
-					<td class=description>SuiteCRM is an open-source Customer Relationship Management (CRM) software application. Prior to versions 7.14.4 and 8.6.1, a vulnerability in uploaded file verification in products allows for remote code execution. Versions 7.14.4 and 8.6.1 contain a fix for this issue.</td>
 				</tr>
 			
 		

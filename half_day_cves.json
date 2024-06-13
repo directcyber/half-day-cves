@@ -1,22 +1,4 @@
 {
-  "CVE-2024-36415": {
-    "cvss": 9.1,
-    "description": "SuiteCRM is an open-source Customer Relationship Management (CRM) software application. Prior to versions 7.14.4 and 8.6.1, a vulnerability in uploaded file verification in products allows for remote code execution. Versions 7.14.4 and 8.6.1 contain a fix for this issue.",
-    "published": "2024-06-10T20:15:14.503",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-37014": {
-    "cvss": 9.8,
-    "description": "Langflow through 0.6.19 allows remote code execution if untrusted users are able to reach the \"POST /api/v1/custom_component\" endpoint and provide a Python script.",
-    "published": "2024-06-10T20:15:15.213",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-37393": {
-    "cvss": 7.5,
-    "description": "Multiple LDAP injections vulnerabilities exist in SecurEnvoy MFA before 9.4.514 due to improper validation of user-supplied input. An unauthenticated remote attacker could exfiltrate data from Active Directory through blind LDAP injection attacks against the DESKTOP service exposed on the /secserver HTTP endpoint. This may include ms-Mcs-AdmPwd, which has a cleartext password for the Local Administrator Password Solution (LAPS) feature.",
-    "published": "2024-06-10T20:15:15.293",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2024-23251": {
     "cvss": "-",
     "description": "An authentication issue was addressed with improved state management. This issue is fixed in macOS Sonoma 14.5, watchOS 10.5, iOS 17.5 and iPadOS 17.5, iOS 16.7.8 and iPadOS 16.7.8. An attacker with physical access may be able to leak Mail account credentials.",
@@ -405,6 +387,42 @@
     "cvss": "-",
     "description": "The affected product is vulnerable to an attacker modifying the bootloader by using custom arguments to bypass authentication and gain access to the file system and obtain password hashes.",
     "published": "2024-06-13T17:15:51.193",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-5924": {
+    "cvss": 8.8,
+    "description": "Dropbox Desktop Folder Sharing Mark-of-the-Web Bypass Vulnerability. This vulnerability allows remote attackers to bypass the Mark-of-the-Web protection mechanism on affected installations of Dropbox Desktop. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of shared folders. When syncing files from a shared folder belonging to an untrusted account, the Dropbox desktop application does not apply the Mark-of-the-Web to the local files. An attacker can leverage this vulnerability to execute arbitrary code in the context of the current user. Was ZDI-CAN-23991.",
+    "published": "2024-06-13T20:15:16.000",
+    "keywords": "remote,bypass"
+  },
+  "CVE-2024-5947": {
+    "cvss": 6.5,
+    "description": "Deep Sea Electronics DSE855 Configuration Backup Missing Authentication Information Disclosure Vulnerability. This vulnerability allows network-adjacent attackers to disclose sensitive information on affected installations of Deep Sea Electronics DSE855 devices. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the web-based UI. The issue results from the lack of authentication prior to allowing access to functionality. An attacker can leverage this vulnerability to disclose stored credentials, leading to further compromise. Was ZDI-CAN-22679.",
+    "published": "2024-06-13T20:15:16.277",
+    "keywords": "authentication,sensitive"
+  },
+  "CVE-2024-5948": {
+    "cvss": 8.8,
+    "description": "Deep Sea Electronics DSE855 Multipart Boundary Stack-Based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Deep Sea Electronics DSE855 devices. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of multipart boundaries. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the device. Was ZDI-CAN-23170.",
+    "published": "2024-06-13T20:15:16.497",
+    "keywords": "remote,execution,authentication"
+  },
+  "CVE-2024-5950": {
+    "cvss": 8.8,
+    "description": "Deep Sea Electronics DSE855 Multipart Value Handling Stack-Based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Deep Sea Electronics DSE855 devices. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of multipart form variables. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the device. Was ZDI-CAN-23172.",
+    "published": "2024-06-13T20:15:16.923",
+    "keywords": "remote,execution,authentication"
+  },
+  "CVE-2024-5951": {
+    "cvss": 7.1,
+    "description": "Deep Sea Electronics DSE855 Factory Reset Missing Authentication Denial-of-Service Vulnerability. This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of Deep Sea Electronics DSE855 devices. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the web-based UI. The issue results from the lack of authentication prior to allowing access to functionality. An attacker can leverage this vulnerability to create a denial-of-service condition on the system. Was ZDI-CAN-23173.",
+    "published": "2024-06-13T20:15:17.140",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-5952": {
+    "cvss": 4.3,
+    "description": "Deep Sea Electronics DSE855 Restart Missing Authentication Denial-of-Service Vulnerability. This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of Deep Sea Electronics DSE855 devices. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the web-based UI. The issue results from the lack of authentication prior to allowing access to functionality. An attacker can leverage this vulnerability to create a denial-of-service condition on the system. Was ZDI-CAN-23174.",
+    "published": "2024-06-13T20:15:17.350",
     "keywords": "authentication,bypass"
   }
 }
