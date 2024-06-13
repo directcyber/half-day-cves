@@ -1,10 +1,4 @@
 {
-  "CVE-2024-35307": {
-    "cvss": "-",
-    "description": "Argument Injection Leading to Remote Code Execution in Realtime Graph Extension,\u00a0allowing unauthenticated attackers to execute arbitrary code on the server.\u00a0This issue affects Pandora FMS: from 700 through <777.",
-    "published": "2024-06-10T15:15:51.803",
-    "keywords": "remote,execution,unauthenticated"
-  },
   "CVE-2024-35747": {
     "cvss": 5.3,
     "description": "Improper Restriction of Excessive Authentication Attempts vulnerability in wpdevart Contact Form Builder, Contact Widget allows Functionality Bypass.This issue affects Contact Form Builder, Contact Widget: from n/a through 2.1.7.",
@@ -358,5 +352,47 @@
     "cvss": "-",
     "description": "A stored cross-site scripting (XSS) vulnerability in Church CRM v5.8.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Family Name parameter under the Register a New Family page.",
     "published": "2024-06-13T14:15:12.590"
+  },
+  "CVE-2024-28965": {
+    "cvss": 5.4,
+    "description": "Dell SCG, versions prior to 5.24.00.00, contain an Improper Access Control vulnerability in the SCG exposed for an internal enable REST API (if enabled by Admin user from UI). A remote low privileged attacker could potentially exploit this vulnerability, leading to the execution of certain Internal APIs applicable only for Admin Users on the application's backend database that could potentially allow an unauthorized user access to restricted resources and change of state.",
+    "published": "2024-06-13T15:15:51.033",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-28966": {
+    "cvss": 5.4,
+    "description": "Dell SCG, versions prior to 5.24.00.00, contain an Improper Access Control vulnerability in the SCG exposed for an internal update REST API (if enabled by Admin user from UI). A remote low privileged attacker could potentially exploit this vulnerability, leading to the execution of certain APIs applicable only for Admin Users on the application's backend database that could potentially allow an unauthorized user access to restricted resources and change of state.",
+    "published": "2024-06-13T15:15:51.423",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-28967": {
+    "cvss": 5.4,
+    "description": "Dell SCG, versions prior to 5.24.00.00, contain an Improper Access Control vulnerability in the SCG exposed for an internal maintenance REST API (if enabled by Admin user from UI). A remote low privileged attacker could potentially exploit this vulnerability, leading to the execution of certain APIs applicable only for Admin Users on the application's backend database that could potentially allow an unauthorized user access to restricted resources and change of state.",
+    "published": "2024-06-13T15:15:51.660",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-28968": {
+    "cvss": 5.4,
+    "description": "Dell SCG, versions prior to 5.24.00.00, contain an Improper Access Control vulnerability in the SCG exposed for internal email and collection settings REST APIs (if enabled by Admin user from UI). A remote low privileged attacker could potentially exploit this vulnerability, leading to the execution of certain APIs applicable only for Admin Users on the application's backend database that could potentially allow an unauthorized user access to restricted resources and change of state.",
+    "published": "2024-06-13T15:15:51.890",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-28969": {
+    "cvss": 4.3,
+    "description": "Dell SCG, versions prior to 5.24.00.00, contain an Improper Access Control vulnerability in the SCG exposed for an internal update REST API (if enabled by Admin user from UI). A remote low privileged attacker could potentially exploit this vulnerability, leading to the execution of certain APIs applicable only for Admin Users on the application's backend database that could potentially allow an unauthorized user access to restricted resources.",
+    "published": "2024-06-13T15:15:52.183",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-29168": {
+    "cvss": 5.4,
+    "description": "Dell SCG, versions prior to 5.22.00.00, contain a SQL Injection Vulnerability in the SCG UI for an internal assets REST API. A remote authenticated attacker could potentially exploit this vulnerability, leading to the execution of certain SQL commands on the application's backend database causing potential unauthorized access and modification of application data.",
+    "published": "2024-06-13T15:15:52.433",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2024-37131": {
+    "cvss": 7.5,
+    "description": "SCG Policy Manager, all versions, contains an overly permissive Cross-Origin Resource Policy (CORP) vulnerability. A remote unauthenticated attacker could potentially exploit this vulnerability, leading to the execution of malicious actions on the application in the context of the authenticated user.",
+    "published": "2024-06-13T15:15:52.740",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
