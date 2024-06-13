@@ -1,10 +1,4 @@
 {
-  "CVE-2024-37880": {
-    "url": "https://github.com/pq-crystals/kyber/commit/9b8d30698a3e7449aeb34e62339d4176f11e3c6c",
-    "cvss": 7.5,
-    "description": "The Kyber reference implementation before 9b8d306, when compiled by LLVM Clang through 18.x with some common optimization options, has a timing side channel that allows attackers to recover an ML-KEM 512 secret key in minutes. This occurs because poly_frommsg in poly.c does not prevent Clang from emitting a vulnerable secret-dependent branch.",
-    "published": "2024-06-10T02:15:47.160"
-  },
   "CVE-2024-36405": {
     "url": "https://github.com/pq-crystals/kyber/commit/9b8d30698a3e7449aeb34e62339d4176f11e3c6c",
     "cvss": 5.9,
@@ -316,5 +310,11 @@
     "cvss": "-",
     "description": "An access control issue in Wvp GB28181 Pro 2.0 allows users to continue to access information in the application after deleting their own or administrator accounts. This is provided that the users do not log out of their deleted accounts.",
     "published": "2024-06-12T21:15:50.407"
+  },
+  "CVE-2024-3922": {
+    "cvss": 10.0,
+    "description": "The Dokan Pro plugin for WordPress is vulnerable to SQL Injection via the 'code' parameter in all versions up to, and including, 3.10.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2024-06-13T02:15:08.833",
+    "keywords": "unauthenticated,sensitive"
   }
 }
