@@ -352,5 +352,11 @@
     "description": "Media Encoder versions 23.6.5, 24.3 and earlier Answer: are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
     "published": "2024-06-13T10:15:09.110",
     "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-30472": {
+    "cvss": 7.5,
+    "description": "Telemetry Dashboard v1.0.0.8 for Dell ThinOS 2402 contains a sensitive information disclosure vulnerability. An unauthenticated user with local access to the device could exploit this vulnerability leading to information disclosure.",
+    "published": "2024-06-13T12:15:10.410",
+    "keywords": "unauthenticated,sensitive"
   }
 }
