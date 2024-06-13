@@ -1,28 +1,4 @@
 {
-  "CVE-2024-23251": {
-    "cvss": "-",
-    "description": "An authentication issue was addressed with improved state management. This issue is fixed in macOS Sonoma 14.5, watchOS 10.5, iOS 17.5 and iPadOS 17.5, iOS 16.7.8 and iPadOS 16.7.8. An attacker with physical access may be able to leak Mail account credentials.",
-    "published": "2024-06-10T21:15:49.430",
-    "keywords": "authentication,leak"
-  },
-  "CVE-2024-27840": {
-    "cvss": "-",
-    "description": "The issue was addressed with improved memory handling. This issue is fixed in macOS Ventura 13.6.7, macOS Monterey 12.7.5, iOS 16.7.8 and iPadOS 16.7.8, tvOS 17.5, visionOS 1.2, iOS 17.5 and iPadOS 17.5, watchOS 10.5. An attacker that has already achieved kernel code execution may be able to bypass kernel memory protections.",
-    "published": "2024-06-10T21:15:51.313",
-    "keywords": "execution,bypass"
-  },
-  "CVE-2024-27857": {
-    "cvss": "-",
-    "description": "An out-of-bounds access issue was addressed with improved bounds checking. This issue is fixed in visionOS 1.2, macOS Sonoma 14.5, tvOS 17.5, iOS 17.5 and iPadOS 17.5. A remote attacker may be able to cause unexpected app termination or arbitrary code execution.",
-    "published": "2024-06-10T21:15:51.833",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-36418": {
-    "cvss": 8.5,
-    "description": "SuiteCRM is an open-source Customer Relationship Management (CRM) software application. Prior to versions 7.14.4 and 8.6.1, a vulnerability in connectors allows an authenticated user to perform a remote code execution attack. Versions 7.14.4 and 8.6.1 contain a fix for this issue.",
-    "published": "2024-06-10T21:15:52.120",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-28164": {
     "cvss": 5.3,
     "description": "SAP NetWeaver AS Java (CAF - Guided Procedures)\nallows an unauthenticated user to access non-sensitive information about the\nserver which would otherwise be restricted causing low impact on\nconfidentiality of the application.",
@@ -424,5 +400,71 @@
     "description": "Deep Sea Electronics DSE855 Restart Missing Authentication Denial-of-Service Vulnerability. This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of Deep Sea Electronics DSE855 devices. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the web-based UI. The issue results from the lack of authentication prior to allowing access to functionality. An attacker can leverage this vulnerability to create a denial-of-service condition on the system. Was ZDI-CAN-23174.",
     "published": "2024-06-13T20:15:17.350",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-29781": {
+    "cvss": "-",
+    "description": "In ss_AnalyzeOssReturnResUssdArgIe of ss_OssAsnManagement.c, there is a possible out of bounds read due to improper input validation. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-06-13T21:15:52.027",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-29786": {
+    "cvss": "-",
+    "description": "In pktproc_fill_data_addr_without_bm of link_rx_pktproc.c, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-06-13T21:15:52.257",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-32894": {
+    "cvss": "-",
+    "description": "In bc_get_converted_received_bearer of bc_utilities.c, there is a possible out of bounds read due to a missing bounds check. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-06-13T21:15:53.923",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-32896": {
+    "cvss": "-",
+    "description": "there is a possible way to bypass  due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation.",
+    "published": "2024-06-13T21:15:54.080",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2024-32905": {
+    "cvss": "-",
+    "description": "In circ_read of link_device_memory_legacy.c, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-06-13T21:15:54.730",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-32908": {
+    "cvss": "-",
+    "description": "In sec_media_protect of media.c, there is a possible permission bypass due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-06-13T21:15:54.957",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2024-32911": {
+    "cvss": "-",
+    "description": "There is a possible escalation of privilege due to improperly used crypto. This could lead to remote escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-06-13T21:15:55.173",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-32913": {
+    "cvss": "-",
+    "description": "In wl_notify_rx_mgmt_frame of wl_cfg80211.c, there is a possible out of bounds write due to an integer overflow. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-06-13T21:15:55.327",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-32923": {
+    "cvss": "-",
+    "description": "there is a possible cellular denial of service due to a logic error in the code. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-06-13T21:15:56.040",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-32924": {
+    "cvss": "-",
+    "description": "In DeregAcceptProcINT of cn_NrmmStateDeregInit.cpp, there is a possible denial of service due to a logic error in the code. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-06-13T21:15:56.113",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-32925": {
+    "cvss": "-",
+    "description": "In dhd_prot_txstatus_process of dhd_msgbuf.c, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-06-13T21:15:56.187",
+    "keywords": "remote,execution"
   }
 }
