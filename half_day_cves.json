@@ -334,5 +334,17 @@
     "description": "ALCASAR before 3.6.1 allows still_connected.php remote code execution.",
     "published": "2024-06-13T05:15:50.760",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-30276": {
+    "cvss": 5.5,
+    "description": "Audition versions 24.2, 23.6.4 and earlier Answer: are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-06-13T09:15:09.760",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-4371": {
+    "cvss": 9.0,
+    "description": "The CoDesigner WooCommerce Builder for Elementor \u2013 Customize Checkout, Shop, Email, Products & More plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 4.4.1 via deserialization of untrusted input from the recently_viewed_products cookie. This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable plugin. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code.",
+    "published": "2024-06-13T09:15:14.617",
+    "keywords": "unauthenticated,sensitive"
   }
 }
