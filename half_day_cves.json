@@ -1,10 +1,4 @@
 {
-  "CVE-2024-28164": {
-    "cvss": 5.3,
-    "description": "SAP NetWeaver AS Java (CAF - Guided Procedures)\nallows an unauthenticated user to access non-sensitive information about the\nserver which would otherwise be restricted causing low impact on\nconfidentiality of the application.",
-    "published": "2024-06-11T03:15:09.953",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2024-29855": {
     "cvss": 9.0,
     "description": "Hard-coded JWT secret allows authentication bypass in Veeam Recovery Orchestrator",
@@ -472,5 +466,29 @@
     "description": "NVIDIA Triton Inference Server for Linux and Windows contains a vulnerability where a user can inject forged logs and executable commands by injecting arbitrary data as a new log entry. A successful exploit of this vulnerability might lead to code execution, denial of service, escalation of privileges, information disclosure, and data tampering.",
     "published": "2024-06-13T22:15:13.347",
     "keywords": "execution,command"
+  },
+  "CVE-2024-27143": {
+    "cvss": 9.8,
+    "description": "Toshiba printers use SNMP for configuration. Using the private community, it is possible to remotely execute commands as root on the remote printer. Using this vulnerability will allow any attacker to get a root access on a remote Toshiba printer. This vulnerability can be executed in combination with other vulnerabilities and  difficult to execute alone.\u00a0So, the CVSS score for this vulnerability alone is lower than the score listed in the \"Base Score\" of this vulnerability.\u00a0For detail on related other vulnerabilities, please ask to the below contact point.\n https://www.toshibatec.com/contacts/products/ \nAs for the affected products/models/versions, see the reference URL.",
+    "published": "2024-06-14T03:15:10.243",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-27144": {
+    "cvss": 9.8,
+    "description": "The Toshiba printers provide several ways to upload files using the web interface without authentication. An attacker can overwrite any insecure files. And the Toshiba printers are vulnerable to a Local Privilege Escalation vulnerability. An attacker can remotely compromise any Toshiba printer. The programs can be replaced by malicious programs by any local or remote attacker.\u00a0This vulnerability can be executed in combination with other vulnerabilities and  difficult to execute alone.\u00a0So, the CVSS score for this vulnerability alone is lower than the score listed in the \"Base Score\" of this vulnerability.\u00a0For detail on related other vulnerabilities, please ask to the below contact point.\n https://www.toshibatec.com/contacts/products/ \nAs for the affected products/models/versions, see the reference URL.",
+    "published": "2024-06-14T03:15:10.483",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2024-3079": {
+    "cvss": 7.2,
+    "description": "Certain models of ASUS routers have buffer overflow vulnerabilities, allowing remote attackers with administrative privileges to execute arbitrary commands on the device.",
+    "published": "2024-06-14T03:15:13.540",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-3080": {
+    "cvss": 9.8,
+    "description": "Certain ASUS router models have authentication bypass vulnerability, allowing unauthenticated remote attackers to log in the device.",
+    "published": "2024-06-14T03:15:13.807",
+    "keywords": "remote,unauthenticated,authentication,bypass"
   }
 }
