@@ -1,10 +1,4 @@
 {
-  "CVE-2024-36266": {
-    "cvss": 9.3,
-    "description": "A vulnerability has been identified in PowerSys (All versions < V3.11). The affected application insufficiently protects responses to authentication requests. This could allow a local attacker to bypass authentication, thereby gaining administrative privileges for the managed remote devices.",
-    "published": "2024-06-11T12:15:18.657",
-    "keywords": "remote,authentication,bypass"
-  },
   "CVE-2024-2012": {
     "cvss": 9.1,
     "description": "vulnerability exists in the FOXMAN-UN/UNEM server / API Gateway that if exploited an attacker could use to allow unintended commands or \ncode to be executed on the UNEM server allowing sensitive data to \nbe read or modified or could cause other unintended behavior",
@@ -274,6 +268,12 @@
     "cvss": "-",
     "description": "A stored cross-site scripting (XSS) vulnerability in Church CRM v5.8.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Family Name parameter under the Register a New Family page.",
     "published": "2024-06-13T14:15:12.590"
+  },
+  "CVE-2024-37309": {
+    "url": "https://github.com/crate/crate/commit/1dde03bdf031a20886065195527e368e4a3218b3",
+    "cvss": 5.3,
+    "description": "CrateDB is a distributed SQL database. A high-risk vulnerability has been identified in versions prior to 5.7.2 where the TLS endpoint (port 4200) permits client-initiated renegotiation. In this scenario, an attacker can exploit this feature to repeatedly request renegotiation of security parameters during an ongoing TLS session. This flaw could lead to excessive consumption of CPU resources, resulting in potential server overload and service disruption. The vulnerability was confirmed using an openssl client where the command `R` initiates renegotiation, followed by the server confirming with `RENEGOTIATING`. This vulnerability allows an attacker to perform a denial of service attack by exhausting server CPU resources through repeated TLS renegotiations. This impacts the availability of services running on the affected server, posing a significant risk to operational stability and security. TLS 1.3 explicitly forbids renegotiation, since it closes a window of opportunity for an attack. Version 5.7.2 of CrateDB contains the fix for the issue.\n",
+    "published": "2024-06-13T14:15:13.060"
   },
   "CVE-2024-28965": {
     "cvss": 5.4,
