@@ -269,12 +269,6 @@
     "description": "A stored cross-site scripting (XSS) vulnerability in Church CRM v5.8.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Family Name parameter under the Register a New Family page.",
     "published": "2024-06-13T14:15:12.590"
   },
-  "CVE-2024-37309": {
-    "url": "https://github.com/crate/crate/commit/1dde03bdf031a20886065195527e368e4a3218b3",
-    "cvss": 5.3,
-    "description": "CrateDB is a distributed SQL database. A high-risk vulnerability has been identified in versions prior to 5.7.2 where the TLS endpoint (port 4200) permits client-initiated renegotiation. In this scenario, an attacker can exploit this feature to repeatedly request renegotiation of security parameters during an ongoing TLS session. This flaw could lead to excessive consumption of CPU resources, resulting in potential server overload and service disruption. The vulnerability was confirmed using an openssl client where the command `R` initiates renegotiation, followed by the server confirming with `RENEGOTIATING`. This vulnerability allows an attacker to perform a denial of service attack by exhausting server CPU resources through repeated TLS renegotiations. This impacts the availability of services running on the affected server, posing a significant risk to operational stability and security. TLS 1.3 explicitly forbids renegotiation, since it closes a window of opportunity for an attack. Version 5.7.2 of CrateDB contains the fix for the issue.\n",
-    "published": "2024-06-13T14:15:13.060"
-  },
   "CVE-2024-28965": {
     "cvss": 5.4,
     "description": "Dell SCG, versions prior to 5.24.00.00, contain an Improper Access Control vulnerability in the SCG exposed for an internal enable REST API (if enabled by Admin user from UI). A remote low privileged attacker could potentially exploit this vulnerability, leading to the execution of certain Internal APIs applicable only for Admin Users on the application's backend database that could potentially allow an unauthorized user access to restricted resources and change of state.",
