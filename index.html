@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-06-14T14:10:44.071617
+Updated at UTC 2024-06-14T15:10:08.170851
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-06-14T14:10:44.071617
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -378,12 +380,18 @@ NOTE: This vulnerability only affects products that are no longer supported by t
 		
 			
 		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5671">CVE-2024-5671</a></td>
+					<td>9.8</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2024-06-14T14:15:11.213</td>
+					<td class=description>Insecure Deserialization in some workflows of the IPS Manager allows unauthenticated remote attackers to perform arbitrary code execution and access to the vulnerable Trellix IPS Manager.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -1292,31 +1300,6 @@ when sending a malformed POST request and particular configuration parameters ar
 					<td class=date>2024-06-11T15:16:07.473</td>
 					<td class=description>OpenPrinting CUPS is an open source printing system for Linux and other Unix-like operating systems. In versions 2.4.8 and earlier, when starting the cupsd server with a Listen configuration item pointing to a symbolic link, the cupsd process can be caused to perform an arbitrary chmod of the provided argument, providing world-writable access to the target. Given that cupsd is often running as root, this can result in the change of permission of any user or system files to be world writable. Given the aforementioned Ubuntu AppArmor context, on such systems this vulnerability is limited to those files modifiable by the cupsd process. In that specific case it was found to be possible to turn the configuration of the Listen argument into full control over the cupsd.conf and cups-files.conf configuration files. By later setting the User and Group arguments in cups-files.conf, and printing with a printer configured by PPD with a `FoomaticRIPCommandLine` argument, arbitrary user and group (not root) command execution could be achieved, which can further be used on Ubuntu systems to achieve full root command execution. Commit ff1f8a623e090dee8a8aadf12a6a4b25efac143d contains a patch for the issue.
 </td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-2013">CVE-2024-2013</a></td>
-					<td>10.0</td>
-					<td>authentication,bypass</td>
-					<td class=date>2024-06-11T14:15:11.503</td>
-					<td class=description>An authentication bypass vulnerability exists in the FOXMAN-UN/UNEM server /
-API Gateway component that if exploited allows attackers without 
-any access to interact with the services and the post-authentication 
-attack surface.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-2012">CVE-2024-2012</a></td>
-					<td>9.1</td>
-					<td>command,sensitive</td>
-					<td class=date>2024-06-11T14:15:11.273</td>
-					<td class=description>vulnerability exists in the FOXMAN-UN/UNEM server / API Gateway that if exploited an attacker could use to allow unintended commands or 
-code to be executed on the UNEM server allowing sensitive data to 
-be read or modified or could cause other unintended behavior</td>
 				</tr>
 			
 		
