@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-06-14T15:10:08.170851
+Updated at UTC 2024-06-14T16:11:22.271015
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,22 @@ Updated at UTC 2024-06-14T15:10:08.170851
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-36656">CVE-2024-36656</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/minthcm/minthcm/issues/67">https://github.com/minthcm/minthcm/issues/67</a></td>
+					<td class=date>2024-06-14T15:15:50.873</td>
+					<td class=description>In MintHCM 4.0.3, a registered user can execute arbitrary JavaScript code and achieve a reflected Cross-site Scripting (XSS) attack.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -378,10 +394,30 @@ NOTE: This vulnerability only affects products that are no longer supported by t
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37368">CVE-2024-37368</a></td>
+					<td>-</td>
+					<td>remote,authentication</td>
+					<td class=date>2024-06-14T15:15:52.100</td>
+					<td class=description>A user authentication vulnerability exists in the Rockwell Automation FactoryTalk® View SE. The vulnerability allows a user from a remote system with FTView to send a packet to the customer’s server to view an HMI project. Due to the lack of proper authentication, this action is allowed without proper authentication verification.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37367">CVE-2024-37367</a></td>
+					<td>-</td>
+					<td>remote,authentication</td>
+					<td class=date>2024-06-14T15:15:51.940</td>
+					<td class=description>A user authentication vulnerability exists in the Rockwell Automation FactoryTalk® View SE v12. The vulnerability allows a user from a remote system with FTView to send a packet to the customer’s server to view an HMI project.  This action is allowed without proper authentication verification.</td>
+				</tr>
+			
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -1289,17 +1325,6 @@ when sending a malformed POST request and particular configuration parameters ar
 					<td>remote,execution</td>
 					<td class=date>2024-06-11T17:15:51.600</td>
 					<td class=description>Visual Studio Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-35235">CVE-2024-35235</a></td>
-					<td>4.4</td>
-					<td>execution,command</td>
-					<td class=date>2024-06-11T15:16:07.473</td>
-					<td class=description>OpenPrinting CUPS is an open source printing system for Linux and other Unix-like operating systems. In versions 2.4.8 and earlier, when starting the cupsd server with a Listen configuration item pointing to a symbolic link, the cupsd process can be caused to perform an arbitrary chmod of the provided argument, providing world-writable access to the target. Given that cupsd is often running as root, this can result in the change of permission of any user or system files to be world writable. Given the aforementioned Ubuntu AppArmor context, on such systems this vulnerability is limited to those files modifiable by the cupsd process. In that specific case it was found to be possible to turn the configuration of the Listen argument into full control over the cupsd.conf and cups-files.conf configuration files. By later setting the User and Group arguments in cups-files.conf, and printing with a printer configured by PPD with a `FoomaticRIPCommandLine` argument, arbitrary user and group (not root) command execution could be achieved, which can further be used on Ubuntu systems to achieve full root command execution. Commit ff1f8a623e090dee8a8aadf12a6a4b25efac143d contains a patch for the issue.
-</td>
 				</tr>
 			
 		

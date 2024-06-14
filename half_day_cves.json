@@ -1,10 +1,4 @@
 {
-  "CVE-2024-35235": {
-    "cvss": 4.4,
-    "description": "OpenPrinting CUPS is an open source printing system for Linux and other Unix-like operating systems. In versions 2.4.8 and earlier, when starting the cupsd server with a Listen configuration item pointing to a symbolic link, the cupsd process can be caused to perform an arbitrary chmod of the provided argument, providing world-writable access to the target. Given that cupsd is often running as root, this can result in the change of permission of any user or system files to be world writable. Given the aforementioned Ubuntu AppArmor context, on such systems this vulnerability is limited to those files modifiable by the cupsd process. In that specific case it was found to be possible to turn the configuration of the Listen argument into full control over the cupsd.conf and cups-files.conf configuration files. By later setting the User and Group arguments in cups-files.conf, and printing with a printer configured by PPD with a `FoomaticRIPCommandLine` argument, arbitrary user and group (not root) command execution could be achieved, which can further be used on Ubuntu systems to achieve full root command execution. Commit ff1f8a623e090dee8a8aadf12a6a4b25efac143d contains a patch for the issue.\n",
-    "published": "2024-06-11T15:16:07.473",
-    "keywords": "execution,command"
-  },
   "CVE-2024-30052": {
     "cvss": 4.7,
     "description": "Visual Studio Remote Code Execution Vulnerability",
@@ -586,5 +580,23 @@
     "description": "Insecure Deserialization in some workflows of the IPS Manager allows unauthenticated remote attackers to perform arbitrary code execution and access to the vulnerable Trellix IPS Manager.",
     "published": "2024-06-14T14:15:11.213",
     "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-36656": {
+    "url": "https://github.com/minthcm/minthcm/issues/67",
+    "cvss": "-",
+    "description": "In MintHCM 4.0.3, a registered user can execute arbitrary JavaScript code and achieve a reflected Cross-site Scripting (XSS) attack.",
+    "published": "2024-06-14T15:15:50.873"
+  },
+  "CVE-2024-37367": {
+    "cvss": "-",
+    "description": "A user authentication vulnerability exists in the Rockwell Automation FactoryTalk\u00ae View SE v12. The vulnerability allows a user from a remote system with FTView to send a packet to the customer\u2019s server to view an HMI project.  This action is allowed without proper authentication verification.",
+    "published": "2024-06-14T15:15:51.940",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2024-37368": {
+    "cvss": "-",
+    "description": "A user authentication vulnerability exists in the Rockwell Automation\u00a0FactoryTalk\u00ae View SE. The vulnerability allows a user from a remote system with FTView to send a packet to the customer\u2019s server to view an HMI project. Due to the lack of proper authentication, this action is allowed without proper authentication verification.",
+    "published": "2024-06-14T15:15:52.100",
+    "keywords": "remote,authentication"
   }
 }
