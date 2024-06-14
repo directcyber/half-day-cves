@@ -1,10 +1,4 @@
 {
-  "CVE-2024-5851": {
-    "url": "https://github.com/playsms/playsms/commit/7a88920f6b536c6a91512e739bcb4e8adefeed2b",
-    "cvss": 3.5,
-    "description": "A vulnerability classified as problematic has been found in playSMS up to 1.4.7. Affected is an unknown function of the file /index.php?app=main&inc=feature_schedule&op=list of the component SMS Schedule Handler. The manipulation of the argument name/message leads to basic cross site scripting. It is possible to launch the attack remotely. Upgrading to version 1.4.8 is able to address this issue. The name of the patch is 7a88920f6b536c6a91512e739bcb4e8adefeed2b. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-267912. NOTE: The code maintainer was contacted early about this disclosure and was eager to prepare a fix as quickly as possible.",
-    "published": "2024-06-11T18:15:14.437"
-  },
   "CVE-2024-36702": {
     "url": "https://github.com/mz-automation/libiec61850/issues/505",
     "cvss": "-",
@@ -496,5 +490,11 @@
     "description": "An issue in the LB-LINK BL-W1210M v2.0 router allows attackers to bypass password complexity requirements and set single digit passwords for authentication. This vulnerability can allow attackers to access the router via a brute-force attack.",
     "published": "2024-06-14T16:15:11.223",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-24320": {
+    "cvss": "-",
+    "description": "Directory Traversal vulnerability in Mgt-commerce CloudPanel v.2.0.0 thru v.2.4.0 allows a remote attacker to obtain sensitive information and execute arbitrary code via the service parameter of the load-logfiles function.",
+    "published": "2024-06-14T18:15:27.200",
+    "keywords": "remote,sensitive"
   }
 }
