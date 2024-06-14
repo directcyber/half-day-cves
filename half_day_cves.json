@@ -574,5 +574,17 @@
     "description": "The Canto plugin for WordPress is vulnerable to Remote File Inclusion in all versions up to, and including, 3.0.8 via the abspath parameter. This makes it possible for unauthenticated attackers to include remote files on the server, resulting in code execution. This required allow_url_include to be enabled on the target site in order to exploit.",
     "published": "2024-06-14T05:15:49.400",
     "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-31162": {
+    "cvss": 7.2,
+    "description": "The specific function parameter of ASUS Download Master does not properly filter user input. An unauthenticated remote attacker with administrative privileges can exploit this vulnerability to execute arbitrary system commands on the device.",
+    "published": "2024-06-14T07:15:50.153",
+    "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2024-31163": {
+    "cvss": 7.2,
+    "description": "ASUS Download Master has a buffer overflow vulnerability. An unauthenticated remote attacker with administrative privileges can exploit this vulnerability to execute arbitrary system commands on the device.",
+    "published": "2024-06-14T07:15:50.713",
+    "keywords": "remote,unauthenticated,command"
   }
 }
