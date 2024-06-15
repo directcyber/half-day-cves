@@ -508,5 +508,23 @@
     "description": "The FooEvents for WooCommerce plugin for WordPress is vulnerable to unauthorized arbitrary file uploads due to an improper capability setting on the 'display_ticket_themes_page' function in versions up to, and including, 1.19.20. This makes it possible for authenticated attackers with contributor-level capabilities or above, to upload arbitrary files on the affected site's server which may make remote code execution possible. This was partially patched in 1.19.20, and fully patched in 1.19.21.",
     "published": "2024-06-15T04:15:14.313",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-3105": {
+    "cvss": 9.9,
+    "description": "The Woody code snippets \u2013 Insert Header Footer Code, AdSense Ads plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.5.0 via the 'insert_php' shortcode. This is due to the plugin not restricting the usage of the functionality to high level authorized users. This makes it possible for authenticated attackers, with contributor-level access and above, to execute code on the server.",
+    "published": "2024-06-15T09:15:11.947",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-4258": {
+    "cvss": 9.8,
+    "description": "The Video Gallery \u2013 YouTube Playlist, Channel Gallery by YotuWP plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.3.13 via the settings parameter. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
+    "published": "2024-06-15T09:15:12.370",
+    "keywords": "execution,unauthenticated,sensitive,bypass"
+  },
+  "CVE-2024-4551": {
+    "cvss": 6.4,
+    "description": "The Video Gallery \u2013 YouTube Playlist, Channel Gallery by YotuWP plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.3.13 via the display function. This makes it possible for authenticated attackers, with contributor access and higher, to include and execute arbitrary php files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
+    "published": "2024-06-15T09:15:12.587",
+    "keywords": "execution,sensitive,bypass"
   }
 }
