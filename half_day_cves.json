@@ -490,5 +490,23 @@
     "description": "The tagDiv Composer plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 4.8 via the 'td_block_title' shortcode 'block_template_id' attribute. This makes it possible for authenticated attackers, with contributor-level and above permissions, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where php file type can be uploaded and included.",
     "published": "2024-06-15T02:15:50.817",
     "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2024-5868": {
+    "cvss": 6.5,
+    "description": "The WooCommerce - Social Login plugin for WordPress is vulnerable to Email Verification in all versions up to, and including, 2.6.2 via the use of insufficiently random activation code. This makes it possible for unauthenticated attackers to bypass the email verification.",
+    "published": "2024-06-15T04:15:13.373",
+    "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2024-5871": {
+    "cvss": 9.8,
+    "description": "The WooCommerce - Social Login plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.6.2 via deserialization of untrusted input from the 'woo_slg_verify' vulnerable parameter. This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable software. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code.",
+    "published": "2024-06-15T04:15:13.693",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-6000": {
+    "cvss": 7.1,
+    "description": "The FooEvents for WooCommerce plugin for WordPress is vulnerable to unauthorized arbitrary file uploads due to an improper capability setting on the 'display_ticket_themes_page' function in versions up to, and including, 1.19.20. This makes it possible for authenticated attackers with contributor-level capabilities or above, to upload arbitrary files on the affected site's server which may make remote code execution possible. This was partially patched in 1.19.20, and fully patched in 1.19.21.",
+    "published": "2024-06-15T04:15:14.313",
+    "keywords": "remote,execution"
   }
 }
