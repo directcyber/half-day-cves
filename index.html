@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-06-15T00:43:09.014290
+Updated at UTC 2024-06-15T01:55:15.694289
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -331,18 +331,6 @@ NOTE: This vulnerability only affects products that are no longer supported by t
 					<td><a target=_blank href="https://github.com/mintplex-labs/anything-llm/commit/e208074ef4c240fe03e4147ab097ec3b52b97619">https://github.com/mintplex-labs/anything-llm/commit/e208074ef4c240fe03e4147ab097ec3b52b97619</a></td>
 					<td class=date>2024-06-12T12:15:10.520</td>
 					<td class=description>A path traversal vulnerability in mintplex-labs/anything-llm allowed a manager to bypass the `normalizePath()` function, intended to defend against path traversal attacks. This vulnerability enables the manager to read, delete, or overwrite the 'anythingllm.db' database file and other files stored in the 'storage' directory, such as internal communication keys and .env secrets. Exploitation of this vulnerability could lead to application compromise, denial of service (DoS) attacks, and unauthorized admin account takeover. The issue stems from improper validation of user-supplied input in the process of setting a custom logo for the app, which can be manipulated to achieve arbitrary file read, deletion, or overwrite, and to execute a DoS attack by deleting critical files required for the application's operation.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4315">CVE-2024-4315</a></td>
-					<td>9.1</td>
-					<td><a target=_blank href="https://github.com/parisneo/lollms/commit/95ad36eeffc6a6be3e3f35ed35a384d768f0ecf6">https://github.com/parisneo/lollms/commit/95ad36eeffc6a6be3e3f35ed35a384d768f0ecf6</a></td>
-					<td class=date>2024-06-12T01:15:49.490</td>
-					<td class=description>parisneo/lollms version 9.5 is vulnerable to Local File Inclusion (LFI) attacks due to insufficient path sanitization. The `sanitize_path_from_endpoint` function fails to properly sanitize Windows-style paths (backward slash `\`), allowing attackers to perform directory traversal attacks on Windows systems. This vulnerability can be exploited through various routes, including `personalities` and `/del_preset`, to read or delete any file on the Windows filesystem, compromising the system's availability.</td>
 
 
 				</tr>
@@ -1104,8 +1092,6 @@ when sending a malformed POST request and particular configuration parameters ar
 					<td class=date>2024-06-12T14:15:10.683</td>
 					<td class=description>Remote Code Execution vulnerability in MegaBIP software allows to execute arbitrary code on the server without requiring authentication by saving crafted by the attacker PHP code to one of the website files. This issue affects all versions of MegaBIP software.</td>
 				</tr>
-			
-		
 			
 		
 			
