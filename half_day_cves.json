@@ -424,5 +424,29 @@
     "cvss": "-",
     "description": "In International Color Consortium DemoIccMAX before 85ce74e, a logic flaw in CIccTagXmlProfileSequenceId::ParseXml in IccXML/IccLibXML/IccTagXml.cpp results in unconditionally returning false.",
     "published": "2024-06-16T02:15:08.557"
+  },
+  "CVE-2024-38439": {
+    "url": "https://github.com/netatalk/netatalk/issues/1096",
+    "cvss": "-",
+    "description": "Netatalk 3.2.0 has an off-by-one error and resultant heap-based buffer overflow because of setting ibuf[PASSWDLEN] to '\\0' in FPLoginExt in login in etc/uams/uams_pam.c.",
+    "published": "2024-06-16T13:15:53.030"
+  },
+  "CVE-2024-38440": {
+    "url": "https://github.com/netatalk/netatalk/issues/1097",
+    "cvss": "-",
+    "description": "Netatalk 3.2.0 has an off-by-one error and resultant heap-based buffer overflow because of incorrectly using FPLoginExt in BN_bin2bn in etc/uams/uams_dhx_pam.c.",
+    "published": "2024-06-16T13:15:53.147"
+  },
+  "CVE-2024-38441": {
+    "url": "https://github.com/netatalk/netatalk/issues/1098",
+    "cvss": "-",
+    "description": "Netatalk 3.2.0 has an off-by-one error and resultant heap-based buffer overflow because of setting ibuf[len] to '\\0' in FPMapName in afp_mapname in etc/afp/directory.c.",
+    "published": "2024-06-16T13:15:53.230"
+  },
+  "CVE-2024-38443": {
+    "url": "https://github.com/thealgorithms/c/issues/1394",
+    "cvss": "-",
+    "description": "C/sorting/binary_insertion_sort.c in The Algorithms - C through e5dad3f has a segmentation fault for deep recursion, which may affect common use cases such as sorting an array of 50 elements.",
+    "published": "2024-06-16T13:15:53.483"
   }
 }
