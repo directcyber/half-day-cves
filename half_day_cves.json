@@ -1,10 +1,4 @@
 {
-  "CVE-2024-3922": {
-    "cvss": 10.0,
-    "description": "The Dokan Pro plugin for WordPress is vulnerable to SQL Injection via the 'code' parameter in all versions up to, and including, 3.10.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
-    "published": "2024-06-13T02:15:08.833",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2024-38293": {
     "cvss": "-",
     "description": "ALCASAR before 3.6.1 allows CSRF and remote code execution in activity.php.",
@@ -466,5 +460,11 @@
     "description": "In iTerm2 before 3.5.2, the \"Terminal may report window title\" setting is not honored, and thus remote code execution might occur but \"is not trivially exploitable.\"",
     "published": "2024-06-16T01:15:48.537",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-38427": {
+    "url": "https://github.com/internationalcolorconsortium/demoiccmax/pull/66",
+    "cvss": "-",
+    "description": "In International Color Consortium DemoIccMAX before 85ce74e, a logic flaw in CIccTagXmlProfileSequenceId::ParseXml in IccXML/IccLibXML/IccTagXml.cpp results in unconditionally returning false.",
+    "published": "2024-06-16T02:15:08.557"
   }
 }
