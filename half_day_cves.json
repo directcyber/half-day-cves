@@ -1,16 +1,4 @@
 {
-  "CVE-2024-31162": {
-    "cvss": 7.2,
-    "description": "The specific function parameter of ASUS Download Master does not properly filter user input. An unauthenticated remote attacker with administrative privileges can exploit this vulnerability to execute arbitrary system commands on the device.",
-    "published": "2024-06-14T07:15:50.153",
-    "keywords": "remote,unauthenticated,command"
-  },
-  "CVE-2024-31163": {
-    "cvss": 7.2,
-    "description": "ASUS Download Master has a buffer overflow vulnerability. An unauthenticated remote attacker with administrative privileges can exploit this vulnerability to execute arbitrary system commands on the device.",
-    "published": "2024-06-14T07:15:50.713",
-    "keywords": "remote,unauthenticated,command"
-  },
   "CVE-2024-5577": {
     "cvss": 9.8,
     "description": "The Where I Was, Where I Will Be plugin for WordPress is vulnerable to Remote File Inclusion in version <= 1.1.1 via the WIW_HEADER parameter of the /system/include/include_user.php file. This makes it possible for unauthenticated attackers to include and execute arbitrary files hosted on external servers, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution. This requires allow_url_include to be set to true in order to exploit, which is not commonly enabled.",
