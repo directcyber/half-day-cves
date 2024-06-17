@@ -1,88 +1,4 @@
 {
-  "CVE-2024-27156": {
-    "cvss": 6.8,
-    "description": "The session cookies, used for authentication, are stored in clear-text logs. An attacker can retrieve authentication sessions. A remote attacker can retrieve the credentials and bypass the authentication mechanism. As for the affected products/models/versions, see the reference URL.",
-    "published": "2024-06-14T04:15:18.743",
-    "keywords": "remote,authentication,bypass"
-  },
-  "CVE-2024-27157": {
-    "cvss": 6.8,
-    "description": "The sessions are stored in clear-text logs. An attacker can retrieve authentication sessions. A remote attacker can retrieve the credentials and bypass the authentication mechanism. As for the affected products/models/versions, see the reference URL.",
-    "published": "2024-06-14T04:15:26.607",
-    "keywords": "remote,authentication,bypass"
-  },
-  "CVE-2024-27168": {
-    "cvss": 7.1,
-    "description": "It appears that some hardcoded keys are used for authentication to internal API. Knowing these private keys may allow attackers to bypass authentication and reach administrative interfaces. As for the affected products/models/versions, see the reference URL.",
-    "published": "2024-06-14T04:15:34.900",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-27169": {
-    "cvss": 8.4,
-    "description": "Toshiba printers provides API without authentication for internal access. A local attacker can bypass authentication in applications, providing administrative access. As for the affected products/models/versions, see the reference URL.",
-    "published": "2024-06-14T04:15:35.183",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-27171": {
-    "cvss": 7.4,
-    "description": "A remote attacker using the insecure upload functionality will be able to overwrite any Python file and get Remote Code Execution. As for the affected products/models/versions, see the reference URL.",
-    "published": "2024-06-14T04:15:35.910",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-27172": {
-    "cvss": 9.8,
-    "description": "Remote Command program allows an attacker to get Remote Code Execution. As for the affected products/models/versions, see the reference URL.",
-    "published": "2024-06-14T04:15:36.257",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-27173": {
-    "cvss": 9.8,
-    "description": "Remote Command program allows an attacker to get Remote Code Execution by overwriting existing Python files containing executable code.\u00a0This vulnerability can be executed in combination with other vulnerabilities and  difficult to execute alone. So, the CVSS score for this vulnerability alone is lower than the score listed in the \"Base Score\" of this vulnerability. For detail on related other vulnerabilities, please ask to the below contact point.\n https://www.toshibatec.com/contacts/products/ \nAs for the affected products/models/versions, see the reference URL.",
-    "published": "2024-06-14T04:15:36.540",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-27174": {
-    "cvss": 9.8,
-    "description": "Remote Command program allows an attacker to get Remote Code Execution. This vulnerability can be executed in combination with other vulnerabilities and  difficult to execute alone. So, the CVSS score for this vulnerability alone is lower than the score listed in the \"Base Score\" of this vulnerability. For detail on related other vulnerabilities, please ask to the below contact point.\n https://www.toshibatec.com/contacts/products/ \nAs for the affected products/models/versions, see the reference URL.",
-    "published": "2024-06-14T04:15:36.907",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-27175": {
-    "cvss": 4.4,
-    "description": "Remote Command program allows an attacker to read any file using a Local File Inclusion vulnerability. An attacker can read any file on the printer. As for the affected products/models/versions, see the reference URL.",
-    "published": "2024-06-14T04:15:37.280",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-27176": {
-    "cvss": 7.2,
-    "description": "An attacker can get Remote Code Execution by overwriting files. Overwriting files is enable by falsifying session ID variable. This vulnerability can be executed in combination with other vulnerabilities and  difficult to execute alone. So, the CVSS score for this vulnerability alone is lower than the score listed in the \"Base Score\" of this vulnerability. For detail on related other vulnerabilities, please ask to the below contact point.\n https://www.toshibatec.com/contacts/products/ \nAs for the affected products/models/versions, see the reference URL.",
-    "published": "2024-06-14T04:15:37.640",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-27177": {
-    "cvss": 7.2,
-    "description": "An attacker can get Remote Code Execution by overwriting files.  Overwriting files is enable by falsifying package name variable. This vulnerability can be executed in combination with other vulnerabilities and  difficult to execute alone. So, the CVSS score for this vulnerability alone is lower than the score listed in the \"Base Score\" of this vulnerability. For detail on related other vulnerabilities, please ask to the below contact point.\n https://www.toshibatec.com/contacts/products/ \nAs for the affected products/models/versions, see the reference URL.",
-    "published": "2024-06-14T04:15:38.500",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-27178": {
-    "cvss": 7.2,
-    "description": "An attacker can get Remote Code Execution by overwriting files.  Overwriting files is enable by falsifying file name variable. This vulnerability can be executed in combination with other vulnerabilities and  difficult to execute alone. So, the CVSS score for this vulnerability alone is lower than the score listed in the \"Base Score\" of this vulnerability. For detail on related other vulnerabilities, please ask to the below contact point.\n https://www.toshibatec.com/contacts/products/ \nAs for the affected products/models/versions, see the reference URL.",
-    "published": "2024-06-14T04:15:38.907",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-27179": {
-    "cvss": 4.7,
-    "description": "Admin cookies are written in clear-text in logs. An attacker can retrieve them and bypass the authentication mechanism. As for the affected products/models/versions, see the reference URL.",
-    "published": "2024-06-14T04:15:39.153",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-31161": {
-    "cvss": 7.2,
-    "description": "The upload functionality of ASUS Download Master does not properly filter user input. Remote attackers with administrative privilege can exploit this vulnerability to upload any file to any location. They may even upload malicious web page files to the website directory, allowing arbitrary system commands to be executed upon browsing the webpage.",
-    "published": "2024-06-14T04:15:42.323",
-    "keywords": "remote,command"
-  },
   "CVE-2024-3496": {
     "cvss": 8.8,
     "description": "Attackers can bypass the web login authentication process to gain access to the printer's system information and upload malicious drivers to the printer. As for the affected products/models/versions, see the reference URL.",
@@ -262,5 +178,11 @@
     "description": "Ghost through 5.85.1 allows remote attackers to bypass an authentication rate-limit protection mechanism by using many X-Forwarded-For headers with different values. NOTE: the vendor's position is that Ghost should be installed with a reverse proxy that allows only trusted X-Forwarded-For headers.",
     "published": "2024-06-16T22:15:09.130",
     "keywords": "remote,authentication,bypass"
+  },
+  "CVE-2024-6046": {
+    "cvss": 9.8,
+    "description": "SECOM WRTR-304GN-304TW-UPSC V02(unsupported-when-assigned) does not properly filter user input in the specific functionality. Unauthenticated remote attackers can exploit this vulnerability to inject and execute arbitrary system commands on the device.",
+    "published": "2024-06-17T04:15:09.867",
+    "keywords": "remote,unauthenticated,command"
   }
 }
