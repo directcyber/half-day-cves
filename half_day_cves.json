@@ -1,10 +1,4 @@
 {
-  "CVE-2024-37889": {
-    "url": "https://github.com/treyww/myfinances/commit/2c1e6d5b7ec8b2d6f660b260e3c5f4d3eaaa613f",
-    "cvss": 6.5,
-    "description": "MyFinances is a web application for managing finances. MyFinances has a way to access other customer invoices while signed in as a user. This method allows an actor to access PII and financial information from another account. The vulnerability is fixed in 0.4.6.",
-    "published": "2024-06-14T20:15:11.873"
-  },
   "CVE-2024-3813": {
     "cvss": 8.8,
     "description": "The tagDiv Composer plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 4.8 via the 'td_block_title' shortcode 'block_template_id' attribute. This makes it possible for authenticated attackers, with contributor-level and above permissions, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where php file type can be uploaded and included.",
@@ -190,5 +184,23 @@
     "cvss": "-",
     "description": "A Directory Traversal vulnerability in KasmVNC 1.3.1.230e50f7b89663316c70de7b0e3db6f6b9340489 and possibly earlier versions allows remote authenticated attackers to browse parent directories and read the content of files outside the scope of the application.",
     "published": "2024-06-17T19:15:58.567"
+  },
+  "CVE-2024-37896": {
+    "cvss": 8.8,
+    "description": "Gin-vue-admin is a backstage management system based on vue and gin. Gin-vue-admin <= v2.6.5 has SQL injection vulnerability. The SQL injection vulnerabilities occur when a web application allows users to input data into SQL queries without sufficiently validating or sanitizing the input. Failing to properly enforce restrictions on user input could mean that even a basic form input field can be used to inject arbitrary and potentially dangerous SQL commands. This could lead to unauthorized access to the database, data leakage, data manipulation, or even complete compromise of the database server. This vulnerability has been addressed in commit `53d033821` which has been included in release version 2.6.6. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+    "published": "2024-06-17T20:15:14.213",
+    "keywords": "command,leak"
+  },
+  "CVE-2024-6061": {
+    "url": "https://github.com/gpac/gpac/commit/20c0f29139a82779b86453ce7f68d0681ec7624c",
+    "cvss": 3.3,
+    "description": "A vulnerability has been found in GPAC 2.5-DEV-rev228-g11067ea92-master and classified as problematic. Affected by this vulnerability is the function isoffin_process of the file src/filters/isoffin_read.c of the component MP4Box. The manipulation leads to infinite loop. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used. The identifier of the patch is 20c0f29139a82779b86453ce7f68d0681ec7624c. It is recommended to apply a patch to fix this issue. The identifier VDB-268789 was assigned to this vulnerability.",
+    "published": "2024-06-17T20:15:14.850"
+  },
+  "CVE-2024-6062": {
+    "url": "https://github.com/gpac/gpac/commit/31e499d310a48bd17c8b055a0bfe0fe35887a7cd",
+    "cvss": 3.3,
+    "description": "A vulnerability was found in GPAC 2.5-DEV-rev228-g11067ea92-master and classified as problematic. Affected by this issue is the function swf_svg_add_iso_sample of the file src/filters/load_text.c of the component MP4Box. The manipulation leads to null pointer dereference. The attack needs to be approached locally. The exploit has been disclosed to the public and may be used. The patch is identified as 31e499d310a48bd17c8b055a0bfe0fe35887a7cd. It is recommended to apply a patch to fix this issue. VDB-268790 is the identifier assigned to this vulnerability.",
+    "published": "2024-06-17T20:15:15.170"
   }
 }
