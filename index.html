@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-06-17T08:14:02.489455
+Updated at UTC 2024-06-17T09:11:05.387792
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-06-17T08:14:02.489455
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -202,10 +204,18 @@ Updated at UTC 2024-06-17T08:14:02.489455
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6048">CVE-2024-6048</a></td>
+					<td>9.8</td>
+					<td>remote,unauthenticated,command</td>
+					<td class=date>2024-06-17T08:15:49.150</td>
+					<td class=description>Openfind's MailGates and MailAudit fail to properly filter user input when analyzing email attachments. An unauthenticated remote attacker can exploit this vulnerability to inject system commands and execute them on the remote server.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -402,16 +412,6 @@ Updated at UTC 2024-06-17T08:14:02.489455
 					<td>remote,unauthenticated,command</td>
 					<td class=date>2024-06-14T10:15:10.513</td>
 					<td class=description>Certain models of ASUS routers have an arbitrary firmware upload vulnerability. An unauthenticated remote attacker can exploit this vulnerability to execute arbitrary system commands on the device.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5577">CVE-2024-5577</a></td>
-					<td>9.8</td>
-					<td>remote,execution,unauthenticated,sensitive,bypass</td>
-					<td class=date>2024-06-14T08:15:42.157</td>
-					<td class=description>The Where I Was, Where I Will Be plugin for WordPress is vulnerable to Remote File Inclusion in version <= 1.1.1 via the WIW_HEADER parameter of the /system/include/include_user.php file. This makes it possible for unauthenticated attackers to include and execute arbitrary files hosted on external servers, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution. This requires allow_url_include to be set to true in order to exploit, which is not commonly enabled.</td>
 				</tr>
 			
 		
