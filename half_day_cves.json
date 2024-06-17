@@ -1,10 +1,4 @@
 {
-  "CVE-2024-5671": {
-    "cvss": 9.8,
-    "description": "Insecure Deserialization in some workflows of the IPS Manager allows unauthenticated remote attackers to perform arbitrary code execution and access to the vulnerable Trellix IPS Manager.",
-    "published": "2024-06-14T14:15:11.213",
-    "keywords": "remote,execution,unauthenticated"
-  },
   "CVE-2024-36656": {
     "url": "https://github.com/minthcm/minthcm/issues/67",
     "cvss": "-",
@@ -166,5 +160,53 @@
     "description": "Improper authentication in the vault password feature in Devolutions Remote Desktop Manager 2024.1.31.0 and earlier allows an attacker that has compromised an access to an RDM instance to bypass the vault master password via the offline mode feature.",
     "published": "2024-06-17T13:15:53.800",
     "keywords": "remote,authentication,bypass"
+  },
+  "CVE-2024-37158": {
+    "url": "https://github.com/evmos/evmos/commit/b2a09ca66613d8b04decd3f2dcba8e1e77709dcb",
+    "cvss": 3.5,
+    "description": "Evmos is the Ethereum Virtual Machine (EVM) Hub on the Cosmos Network. Preliminary checks on actions computed by the clawback vesting accounts are performed in the ante handler. Evmos core, implements two different ante handlers: one for Cosmos transactions and one for Ethereum transactions. Checks performed on the two implementation are different. The vulnerability discovered allowed a clawback account to bypass Cosmos ante handler checks by sending an Ethereum transaction targeting a precompile used to interact with a Cosmos SDK module. This vulnerability is fixed in 18.0.0.\n\n",
+    "published": "2024-06-17T14:15:10.430"
+  },
+  "CVE-2024-37159": {
+    "url": "https://github.com/evmos/evmos/commit/b2a09ca66613d8b04decd3f2dcba8e1e77709dcb",
+    "cvss": 3.5,
+    "description": "Evmos is the Ethereum Virtual Machine (EVM) Hub on the Cosmos Network. This vulnerability allowed a user to create a validator using vested tokens to deposit the self-bond. This vulnerability is fixed in 18.0.0.",
+    "published": "2024-06-17T14:15:10.693"
+  },
+  "CVE-2024-37622": {
+    "url": "https://github.com/rainrocka/xinhu/issues/4",
+    "cvss": "-",
+    "description": "Xinhu RockOA v2.6.3 was discovered to contain a reflected cross-site scripting (XSS) vulnerability via the num parameter at /flow/flow.php.",
+    "published": "2024-06-17T14:15:11.480"
+  },
+  "CVE-2024-37623": {
+    "url": "https://github.com/rainrocka/xinhu/issues/5",
+    "cvss": "-",
+    "description": "Xinhu RockOA v2.6.3 was discovered to contain a reflected cross-site scripting (XSS) vulnerability via the /kaoqin/tpl_kaoqin_locationchange.html component.",
+    "published": "2024-06-17T14:15:11.580"
+  },
+  "CVE-2024-37624": {
+    "url": "https://github.com/rainrocka/xinhu/issues/6",
+    "cvss": "-",
+    "description": "Xinhu RockOA v2.6.3 was discovered to contain a reflected cross-site scripting (XSS) vulnerability via the /chajian/inputChajian.php. component.",
+    "published": "2024-06-17T14:15:11.680"
+  },
+  "CVE-2024-37625": {
+    "url": "https://github.com/zhimengzhe/ibarn/issues/20",
+    "cvss": "-",
+    "description": "zhimengzhe iBarn v1.5 was discovered to contain a reflected cross-site scripting (XSS) vulnerability via the $search parameter at /index.php.",
+    "published": "2024-06-17T14:15:11.790"
+  },
+  "CVE-2024-38469": {
+    "url": "https://github.com/zhimengzhe/ibarn/issues/20",
+    "cvss": "-",
+    "description": "zhimengzhe iBarn v1.5 was discovered to contain a reflected cross-site scripting (XSS) vulnerability via the $search parameter at /pay.php.",
+    "published": "2024-06-17T14:15:12.070"
+  },
+  "CVE-2024-38470": {
+    "url": "https://github.com/zhimengzhe/ibarn/issues/20",
+    "cvss": "-",
+    "description": "zhimengzhe iBarn v1.5 was discovered to contain a reflected cross-site scripting (XSS) vulnerability via the $search parameter at /own.php.",
+    "published": "2024-06-17T14:15:12.183"
   }
 }
