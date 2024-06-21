@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-06-18T00:43:53.433382
+Updated at UTC 2024-06-21T00:42:55.198377
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -59,12 +59,47 @@ Updated at UTC 2024-06-18T00:43:53.433382
 
 		
 			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
 				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6064">CVE-2024-6064</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5213">CVE-2024-5213</a></td>
 					<td>5.3</td>
-					<td><a target=_blank href="https://github.com/gpac/gpac/commit/c1b9c794bad8f262c56f3cf690567980d96662f5">https://github.com/gpac/gpac/commit/c1b9c794bad8f262c56f3cf690567980d96662f5</a></td>
-					<td class=date>2024-06-17T21:15:51.727</td>
-					<td class=description>A vulnerability was found in GPAC 2.5-DEV-rev228-g11067ea92-master. It has been declared as problematic. This vulnerability affects the function xmt_node_end of the file src/scene_manager/loader_xmt.c of the component MP4Box. The manipulation leads to use after free. Local access is required to approach this attack. The exploit has been disclosed to the public and may be used. The name of the patch is f4b3e4d2f91bc1749e7a924a8ab171af03a355a8/c1b9c794bad8f262c56f3cf690567980d96662f5. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-268792.</td>
+					<td><a target=_blank href="https://github.com/mintplex-labs/anything-llm/commit/9df4521113ddb9a3adb5d0e3941e7d494992629c">https://github.com/mintplex-labs/anything-llm/commit/9df4521113ddb9a3adb5d0e3941e7d494992629c</a></td>
+					<td class=date>2024-06-20T03:15:09.067</td>
+					<td class=description>In mintplex-labs/anything-llm versions up to and including 1.5.3, an issue was discovered where the password hash of a user is returned in the response after login (`POST /api/request-token`) and after account creations (`POST /api/admin/users/new`). This exposure occurs because the entire User object, including the bcrypt password hash, is included in the response sent to the frontend. This practice could potentially lead to sensitive information exposure despite the use of bcrypt, a strong hashing algorithm. It is recommended not to expose any clues about passwords to the frontend. </td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38357">CVE-2024-38357</a></td>
+					<td>6.1</td>
+					<td><a target=_blank href="https://github.com/tinymce/tinymce/commit/5acb741665a98e83d62b91713c800abbff43b00d">https://github.com/tinymce/tinymce/commit/5acb741665a98e83d62b91713c800abbff43b00d</a></td>
+					<td class=date>2024-06-19T20:15:11.727</td>
+					<td class=description>TinyMCE is an open source rich text editor. A cross-site scripting (XSS) vulnerability was discovered in TinyMCE’s content parsing code. This allowed specially crafted noscript elements containing malicious code to be executed when that content was loaded into the editor. This vulnerability has been patched in TinyMCE 7.2.0, TinyMCE 6.8.4 and TinyMCE 5.11.0 LTS by ensuring that content within noscript elements are properly parsed. Users are advised to upgrade. There are no known workarounds for this vulnerability.
+</td>
 
 
 				</tr>
@@ -72,35 +107,12 @@ Updated at UTC 2024-06-18T00:43:53.433382
 		
 			
 				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6063">CVE-2024-6063</a></td>
-					<td>3.3</td>
-					<td><a target=_blank href="https://github.com/gpac/gpac/commit/8767ed0a77c4b02287db3723e92c2169f67c85d5">https://github.com/gpac/gpac/commit/8767ed0a77c4b02287db3723e92c2169f67c85d5</a></td>
-					<td class=date>2024-06-17T21:15:51.443</td>
-					<td class=description>A vulnerability was found in GPAC 2.5-DEV-rev228-g11067ea92-master. It has been classified as problematic. This affects the function m2tsdmx_on_event of the file src/filters/dmx_m2ts.c of the component MP4Box. The manipulation leads to null pointer dereference. An attack has to be approached locally. The exploit has been disclosed to the public and may be used. The patch is named 8767ed0a77c4b02287db3723e92c2169f67c85d5. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-268791.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6062">CVE-2024-6062</a></td>
-					<td>3.3</td>
-					<td><a target=_blank href="https://github.com/gpac/gpac/commit/31e499d310a48bd17c8b055a0bfe0fe35887a7cd">https://github.com/gpac/gpac/commit/31e499d310a48bd17c8b055a0bfe0fe35887a7cd</a></td>
-					<td class=date>2024-06-17T20:15:15.170</td>
-					<td class=description>A vulnerability was found in GPAC 2.5-DEV-rev228-g11067ea92-master and classified as problematic. Affected by this issue is the function swf_svg_add_iso_sample of the file src/filters/load_text.c of the component MP4Box. The manipulation leads to null pointer dereference. The attack needs to be approached locally. The exploit has been disclosed to the public and may be used. The patch is identified as 31e499d310a48bd17c8b055a0bfe0fe35887a7cd. It is recommended to apply a patch to fix this issue. VDB-268790 is the identifier assigned to this vulnerability.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6061">CVE-2024-6061</a></td>
-					<td>3.3</td>
-					<td><a target=_blank href="https://github.com/gpac/gpac/commit/20c0f29139a82779b86453ce7f68d0681ec7624c">https://github.com/gpac/gpac/commit/20c0f29139a82779b86453ce7f68d0681ec7624c</a></td>
-					<td class=date>2024-06-17T20:15:14.850</td>
-					<td class=description>A vulnerability has been found in GPAC 2.5-DEV-rev228-g11067ea92-master and classified as problematic. Affected by this vulnerability is the function isoffin_process of the file src/filters/isoffin_read.c of the component MP4Box. The manipulation leads to infinite loop. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used. The identifier of the patch is 20c0f29139a82779b86453ce7f68d0681ec7624c. It is recommended to apply a patch to fix this issue. The identifier VDB-268789 was assigned to this vulnerability.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38356">CVE-2024-38356</a></td>
+					<td>6.1</td>
+					<td><a target=_blank href="https://github.com/tinymce/tinymce/commit/5acb741665a98e83d62b91713c800abbff43b00d">https://github.com/tinymce/tinymce/commit/5acb741665a98e83d62b91713c800abbff43b00d</a></td>
+					<td class=date>2024-06-19T20:15:11.453</td>
+					<td class=description>TinyMCE is an open source rich text editor. A cross-site scripting (XSS) vulnerability was discovered in TinyMCE’s content extraction code. When using the `noneditable_regexp` option, specially crafted HTML attributes containing malicious code were able to be executed when content was extracted from the editor. This vulnerability has been patched in TinyMCE 7.2.0, TinyMCE 6.8.4 and TinyMCE 5.11.0 LTS by ensuring that, when using the `noneditable_regexp` option, any content within an attribute is properly verified to match the configured regular expression before being added. Users are advised to upgrade. There are no known workarounds for this vulnerability.
+</td>
 
 
 				</tr>
@@ -108,114 +120,6 @@ Updated at UTC 2024-06-18T00:43:53.433382
 		
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38449">CVE-2024-38449</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/kasmtech/kasmvnc/issues/254">https://github.com/kasmtech/kasmvnc/issues/254</a></td>
-					<td class=date>2024-06-17T19:15:58.567</td>
-					<td class=description>A Directory Traversal vulnerability in KasmVNC 1.3.1.230e50f7b89663316c70de7b0e3db6f6b9340489 and possibly earlier versions allows remote authenticated attackers to browse parent directories and read the content of files outside the scope of the application.</td>
-
-
-				</tr>
-			
-		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37795">CVE-2024-37795</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/cvc5/cvc5/issues/10813">https://github.com/cvc5/cvc5/issues/10813</a></td>
-					<td class=date>2024-06-17T18:15:17.953</td>
-					<td class=description>A segmentation fault in CVC5 Solver v1.1.3 allows attackers to cause a Denial of Service (DoS) via a crafted SMT-LIB input file containing the `set-logic` command with specific formatting errors.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37794">CVE-2024-37794</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/cvc5/cvc5/issues/10813">https://github.com/cvc5/cvc5/issues/10813</a></td>
-					<td class=date>2024-06-17T18:15:17.853</td>
-					<td class=description>Improper input validation in CVC5 Solver v1.1.3 allows attackers to cause a Denial of Service (DoS) via a crafted SMT2 input file.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38470">CVE-2024-38470</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/zhimengzhe/ibarn/issues/20">https://github.com/zhimengzhe/ibarn/issues/20</a></td>
-					<td class=date>2024-06-17T14:15:12.183</td>
-					<td class=description>zhimengzhe iBarn v1.5 was discovered to contain a reflected cross-site scripting (XSS) vulnerability via the $search parameter at /own.php.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38469">CVE-2024-38469</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/zhimengzhe/ibarn/issues/20">https://github.com/zhimengzhe/ibarn/issues/20</a></td>
-					<td class=date>2024-06-17T14:15:12.070</td>
-					<td class=description>zhimengzhe iBarn v1.5 was discovered to contain a reflected cross-site scripting (XSS) vulnerability via the $search parameter at /pay.php.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37625">CVE-2024-37625</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/zhimengzhe/ibarn/issues/20">https://github.com/zhimengzhe/ibarn/issues/20</a></td>
-					<td class=date>2024-06-17T14:15:11.790</td>
-					<td class=description>zhimengzhe iBarn v1.5 was discovered to contain a reflected cross-site scripting (XSS) vulnerability via the $search parameter at /index.php.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37624">CVE-2024-37624</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/rainrocka/xinhu/issues/6">https://github.com/rainrocka/xinhu/issues/6</a></td>
-					<td class=date>2024-06-17T14:15:11.680</td>
-					<td class=description>Xinhu RockOA v2.6.3 was discovered to contain a reflected cross-site scripting (XSS) vulnerability via the /chajian/inputChajian.php. component.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37623">CVE-2024-37623</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/rainrocka/xinhu/issues/5">https://github.com/rainrocka/xinhu/issues/5</a></td>
-					<td class=date>2024-06-17T14:15:11.580</td>
-					<td class=description>Xinhu RockOA v2.6.3 was discovered to contain a reflected cross-site scripting (XSS) vulnerability via the /kaoqin/tpl_kaoqin_locationchange.html component.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37622">CVE-2024-37622</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/rainrocka/xinhu/issues/4">https://github.com/rainrocka/xinhu/issues/4</a></td>
-					<td class=date>2024-06-17T14:15:11.480</td>
-					<td class=description>Xinhu RockOA v2.6.3 was discovered to contain a reflected cross-site scripting (XSS) vulnerability via the num parameter at /flow/flow.php.</td>
-
-
-				</tr>
 			
 		
 			
@@ -232,86 +136,26 @@ Updated at UTC 2024-06-18T00:43:53.433382
 		
 			
 				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38462">CVE-2024-38462</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/irods/irods/issues/7651">https://github.com/irods/irods/issues/7651</a></td>
-					<td class=date>2024-06-16T16:15:09.627</td>
-					<td class=description>iRODS before 4.3.2 provides an msiSendMail function with a problematic dependency on the mail binary, such as in the mailMS.cpp#L94-L106 reference.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5208">CVE-2024-5208</a></td>
+					<td>6.5</td>
+					<td><a target=_blank href="https://github.com/mintplex-labs/anything-llm/commit/e2439c6d4c3cfdacd96cd1b7b92d1f89c3cc8459">https://github.com/mintplex-labs/anything-llm/commit/e2439c6d4c3cfdacd96cd1b7b92d1f89c3cc8459</a></td>
+					<td class=date>2024-06-19T06:15:11.420</td>
+					<td class=description>An uncontrolled resource consumption vulnerability exists in the `upload-link` endpoint of mintplex-labs/anything-llm. This vulnerability allows attackers to cause a denial of service (DOS) by shutting down the server through sending invalid upload requests. Specifically, the server can be made to shut down by sending an empty body with a 'Content-Length: 0' header or by sending a body with arbitrary content, such as 'asdasdasd', with a 'Content-Length: 9' header. The vulnerability is reproducible by users with at least a 'Manager' role, sending a crafted request to any workspace. This issue indicates that a previous fix was not effective in mitigating the vulnerability.</td>
 
 
 				</tr>
 			
 		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38461">CVE-2024-38461</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/irods/irods/issues/7652">https://github.com/irods/irods/issues/7652</a></td>
-					<td class=date>2024-06-16T16:15:09.537</td>
-					<td class=description>irodsServerMonPerf in iRODS before 4.3.2 attempts to proceed with use of a path even if it is not a directory.</td>
-
-
-				</tr>
+		
 			
 		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38443">CVE-2024-38443</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/thealgorithms/c/issues/1394">https://github.com/thealgorithms/c/issues/1394</a></td>
-					<td class=date>2024-06-16T13:15:53.483</td>
-					<td class=description>C/sorting/binary_insertion_sort.c in The Algorithms - C through e5dad3f has a segmentation fault for deep recursion, which may affect common use cases such as sorting an array of 50 elements.</td>
-
-
-				</tr>
+		
 			
 		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38441">CVE-2024-38441</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/netatalk/netatalk/issues/1098">https://github.com/netatalk/netatalk/issues/1098</a></td>
-					<td class=date>2024-06-16T13:15:53.230</td>
-					<td class=description>Netatalk 3.2.0 has an off-by-one error and resultant heap-based buffer overflow because of setting ibuf[len] to '\0' in FPMapName in afp_mapname in etc/afp/directory.c.</td>
-
-
-				</tr>
-			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38440">CVE-2024-38440</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/netatalk/netatalk/issues/1097">https://github.com/netatalk/netatalk/issues/1097</a></td>
-					<td class=date>2024-06-16T13:15:53.147</td>
-					<td class=description>Netatalk 3.2.0 has an off-by-one error and resultant heap-based buffer overflow because of incorrectly using FPLoginExt in BN_bin2bn in etc/uams/uams_dhx_pam.c.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38439">CVE-2024-38439</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/netatalk/netatalk/issues/1096">https://github.com/netatalk/netatalk/issues/1096</a></td>
-					<td class=date>2024-06-16T13:15:53.030</td>
-					<td class=description>Netatalk 3.2.0 has an off-by-one error and resultant heap-based buffer overflow because of setting ibuf[PASSWDLEN] to '\0' in FPLoginExt in login in etc/uams/uams_pam.c.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38427">CVE-2024-38427</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/internationalcolorconsortium/demoiccmax/pull/66">https://github.com/internationalcolorconsortium/demoiccmax/pull/66</a></td>
-					<td class=date>2024-06-16T02:15:08.557</td>
-					<td class=description>In International Color Consortium DemoIccMAX before 85ce74e, a logic flaw in CIccTagXmlProfileSequenceId::ParseXml in IccXML/IccLibXML/IccTagXml.cpp results in unconditionally returning false.</td>
-
-
-				</tr>
 			
 		
 			
@@ -334,202 +178,366 @@ Updated at UTC 2024-06-18T00:43:53.433382
 		<hr>
 		
 			
-		
-			
-		
-			
-		
-			
-		
-			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37896">CVE-2024-37896</a></td>
-					<td>8.8</td>
-					<td>command,leak</td>
-					<td class=date>2024-06-17T20:15:14.213</td>
-					<td class=description>Gin-vue-admin is a backstage management system based on vue and gin. Gin-vue-admin <= v2.6.5 has SQL injection vulnerability. The SQL injection vulnerabilities occur when a web application allows users to input data into SQL queries without sufficiently validating or sanitizing the input. Failing to properly enforce restrictions on user input could mean that even a basic form input field can be used to inject arbitrary and potentially dangerous SQL commands. This could lead to unauthorized access to the database, data leakage, data manipulation, or even complete compromise of the database server. This vulnerability has been addressed in commit `53d033821` which has been included in release version 2.6.6. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37626">CVE-2024-37626</a></td>
+					<td>-</td>
+					<td>remote,command</td>
+					<td class=date>2024-06-20T17:15:52.353</td>
+					<td class=description>A command injection issue in TOTOLINK A6000R V1.0.1-B20201211.2000 firmware allows a remote attacker to execute arbitrary code via the iface parameter in the vif_enable function.</td>
 				</tr>
 			
 		
 			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6187">CVE-2024-6187</a></td>
+					<td>6.3</td>
+					<td>remote,command,vpn</td>
+					<td class=date>2024-06-20T13:15:50.320</td>
+					<td class=description>A vulnerability has been found in Ruijie RG-UAC 1.0 and classified as critical. This vulnerability affects unknown code of the file /view/vpn/autovpn/sub_commit.php. The manipulation of the argument key leads to os command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-269158 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6058">CVE-2024-6058</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6186">CVE-2024-6186</a></td>
+					<td>6.3</td>
+					<td>remote,authentication,command</td>
+					<td class=date>2024-06-20T13:15:50.007</td>
+					<td class=description>A vulnerability, which was classified as critical, was found in Ruijie RG-UAC 1.0. This affects an unknown part of the file /view/userAuthentication/SSO/commit.php. The manipulation of the argument ad_log_name leads to os command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-269157 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6185">CVE-2024-6185</a></td>
+					<td>6.3</td>
+					<td>remote,command</td>
+					<td class=date>2024-06-20T12:15:15.873</td>
+					<td class=description>A vulnerability, which was classified as critical, has been found in Ruijie RG-UAC 1.0. Affected by this issue is the function get_ip_addr_details of the file /view/dhcp/dhcpConfig/commit.php. The manipulation of the argument ethname leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-269156. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6184">CVE-2024-6184</a></td>
+					<td>6.3</td>
+					<td>remote,command</td>
+					<td class=date>2024-06-20T12:15:15.560</td>
+					<td class=description>A vulnerability classified as critical was found in Ruijie RG-UAC 1.0. Affected by this vulnerability is an unknown functionality of the file /view/systemConfig/reboot/reboot_commit.php. The manipulation of the argument servicename leads to os command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-269155. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6182">CVE-2024-6182</a></td>
 					<td>3.5</td>
 					<td>remote,command</td>
-					<td class=date>2024-06-17T18:15:18.520</td>
-					<td class=description>A vulnerability classified as problematic has been found in LabVantage LIMS 2017. This affects an unknown part of the file /labvantage/rc?command=page&page=SampleHistoricalList&_iframename=list&__crc=crc_1701669816260. The manipulation of the argument height/width leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-268785 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+					<td class=date>2024-06-20T11:15:57.117</td>
+					<td class=description>A vulnerability was found in LabVantage LIMS 2017. It has been rated as problematic. This issue affects some unknown processing of the file /labvantage/rc?command=page&page=LV_ViewSampleSpec&oosonly=Y&_sdialog=Y. The manipulation of the argument sdcid/keyid1 leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-269153 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
 				</tr>
 			
 		
 			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6181">CVE-2024-6181</a></td>
+					<td>3.5</td>
+					<td>remote,command</td>
+					<td class=date>2024-06-20T11:15:56.723</td>
+					<td class=description>A vulnerability was found in LabVantage LIMS 2017. It has been declared as problematic. This vulnerability affects unknown code of the file /labvantage/rc?command=file&file=WEB-CORE/elements/files/filesembedded.jsp&size=32. The manipulation of the argument height/width leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-269152. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6057">CVE-2024-6057</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-29013">CVE-2024-29013</a></td>
 					<td>-</td>
-					<td>remote,authentication,bypass</td>
-					<td class=date>2024-06-17T13:15:53.800</td>
-					<td class=description>Improper authentication in the vault password feature in Devolutions Remote Desktop Manager 2024.1.31.0 and earlier allows an attacker that has compromised an access to an RDM instance to bypass the vault master password via the offline mode feature.</td>
+					<td>remote,vpn</td>
+					<td class=date>2024-06-20T09:15:11.543</td>
+					<td class=description>Heap-based buffer overflow vulnerability in the SonicOS SSL-VPN allows an authenticated remote attacker to cause Denial of Service (DoS) via memcpy function.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6055">CVE-2024-6055</a></td>
-					<td>-</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-06-17T13:15:53.697</td>
-					<td class=description>Improper removal of sensitive information in data source export feature in Devolutions Remote Desktop Manager 2024.1.32.0 and earlier on Windows allows an attacker that obtains the exported settings to recover powershell credentials configured on the data source via stealing the configuration file.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6048">CVE-2024-6048</a></td>
-					<td>9.8</td>
-					<td>remote,unauthenticated,command</td>
-					<td class=date>2024-06-17T08:15:49.150</td>
-					<td class=description>Openfind's MailGates and MailAudit fail to properly filter user input when analyzing email attachments. An unauthenticated remote attacker can exploit this vulnerability to inject system commands and execute them on the remote server.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6047">CVE-2024-6047</a></td>
-					<td>9.8</td>
-					<td>remote,unauthenticated,command</td>
-					<td class=date>2024-06-17T06:15:09.237</td>
-					<td class=description>Certain EOL GeoVision devices fail to properly filter user input for the specific functionality. Unauthenticated remote attackers can exploit this vulnerability to inject and execute arbitrary system commands on the device.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6046">CVE-2024-6046</a></td>
-					<td>9.8</td>
-					<td>remote,unauthenticated,command</td>
-					<td class=date>2024-06-17T04:15:09.867</td>
-					<td class=description>SECOM WRTR-304GN-304TW-UPSC V02(unsupported-when-assigned) does not properly filter user input in the specific functionality. Unauthenticated remote attackers can exploit this vulnerability to inject and execute arbitrary system commands on the device.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-34451">CVE-2024-34451</a></td>
-					<td>-</td>
-					<td>remote,authentication,bypass</td>
-					<td class=date>2024-06-16T22:15:09.130</td>
-					<td class=description>Ghost through 5.85.1 allows remote attackers to bypass an authentication rate-limit protection mechanism by using many X-Forwarded-For headers with different values. NOTE: the vendor's position is that Ghost should be installed with a reverse proxy that allows only trusted X-Forwarded-For headers.</td>
-				</tr>
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38395">CVE-2024-38395</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2024-06-16T01:15:48.537</td>
-					<td class=description>In iTerm2 before 3.5.2, the "Terminal may report window title" setting is not honored, and thus remote code execution might occur but "is not trivially exploitable."</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4551">CVE-2024-4551</a></td>
-					<td>6.4</td>
-					<td>execution,sensitive,bypass</td>
-					<td class=date>2024-06-15T09:15:12.587</td>
-					<td class=description>The Video Gallery – YouTube Playlist, Channel Gallery by YotuWP plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.3.13 via the display function. This makes it possible for authenticated attackers, with contributor access and higher, to include and execute arbitrary php files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4258">CVE-2024-4258</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4098">CVE-2024-4098</a></td>
 					<td>9.8</td>
 					<td>execution,unauthenticated,sensitive,bypass</td>
-					<td class=date>2024-06-15T09:15:12.370</td>
-					<td class=description>The Video Gallery – YouTube Playlist, Channel Gallery by YotuWP plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.3.13 via the settings parameter. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included.</td>
+					<td class=date>2024-06-20T07:15:41.933</td>
+					<td class=description>The Shariff Wrapper plugin for WordPress is vulnerable to Local File Inclusion in versions up to, and including, 4.6.13 via the shariff3uu_fetch_sharecounts function. This allows unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5432">CVE-2024-5432</a></td>
+					<td>9.8</td>
+					<td>unauthenticated,authentication,bypass</td>
+					<td class=date>2024-06-20T02:15:11.737</td>
+					<td class=description>The Lifeline Donation plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.2.6. This is due to insufficient verification on the user being supplied during the checkout through the plugin. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-3105">CVE-2024-3105</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-3605">CVE-2024-3605</a></td>
+					<td>10.0</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2024-06-20T02:15:10.817</td>
+					<td class=description>The WP Hotel Booking plugin for WordPress is vulnerable to SQL Injection via the 'room_type' parameter of the /wphb/v1/rooms/search-rooms REST API endpoint in all versions up to, and including, 2.1.0 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-36116">CVE-2024-36116</a></td>
+					<td>7.5</td>
+					<td>remote,execution</td>
+					<td class=date>2024-06-19T18:15:10.910</td>
+					<td class=description>Reposilite is an open source, lightweight and easy-to-use repository manager for Maven based artifacts in JVM ecosystem. Reposilite provides support for JavaDocs files, which are archives that contain documentation for artifacts. Specifically, JavadocEndpoints.kt controller allows to expand the javadoc archive into the server's file system and return its content. The problem is in the way how the archives are expanded, specifically how the new filename is created. The `file.name` taken from the archive can contain path traversal characters, such as '/../../../anything.txt', so the resulting extraction path can be outside the target directory. If the archive is taken from an untrusted source, such as Maven Central or JitPack for example, an attacker can craft a special archive to overwrite any local file on Reposilite instance. This could lead to remote code execution, for example by placing a new plugin into the '$workspace$/plugins' directory. Alternatively, an attacker can overwrite the content of any other package. Note that the attacker can use its own malicious package from Maven Central to overwrite any other package on Reposilite. Reposilite has addressed this issue in version 3.5.12. Users are advised to upgrade. There are no known workarounds for this vulnerability. This issue was discovered and reported by the GitHub Security lab and is also tracked as GHSL-2024-073.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-36115">CVE-2024-36115</a></td>
+					<td>7.1</td>
+					<td>remote,execution,vpn</td>
+					<td class=date>2024-06-19T18:15:10.597</td>
+					<td class=description>Reposilite is an open source, lightweight and easy-to-use repository manager for Maven based artifacts in JVM ecosystem. As a Maven repository manager, Reposilite provides the ability to view the artifacts content in the browser, as well as perform administrative tasks via API. The problem lies in the fact that the artifact's content is served via the same origin (protocol/host/port) as the Admin UI. If the artifact contains HTML content with javascript inside, the javascript is executed within the same origin. Therefore, if an authenticated user is viewing the artifacts content, the javascript inside can access the browser's local storage where the user's password (aka 'token-secret') is stored. It is especially dangerous in scenarios where Reposilite is configured to mirror third party repositories, like the Maven Central Repository. Since anyone can publish an artifact to Maven Central under its own name, such malicious packages can be used to attack the Reposilite instance. This issue may lead to the full Reposilite instance compromise. If this attack is performed against the admin user, it's possible to use the admin API to modify settings and artifacts on the instance. In the worst case scenario, an attacker would be able to obtain the Remote code execution on all systems that use artifacts from Reposilite. It's important to note that the attacker does not need to lure a victim user to use a malicious artifact, but just open a link in the browser. This link can be silently loaded among the other HTML content, making this attack unnoticeable. Even if the Reposilite instance is located in an isolated environment, such as behind a VPN or in the local network, this attack is still possible as it can be performed from the admin browser. Reposilite has addressed this issue in version 3.5.12. Users are advised to upgrade. There are no known workarounds for this vulnerability. This issue was discovered and reported by the GitHub Security lab and is also tracked as GHSL-2024-072.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-32030">CVE-2024-32030</a></td>
+					<td>8.1</td>
+					<td>remote,execution,authentication</td>
+					<td class=date>2024-06-19T17:15:57.863</td>
+					<td class=description>Kafka UI is an Open-Source Web UI for Apache Kafka Management. Kafka UI API allows users to connect to different Kafka brokers by specifying their network address and port. As a separate feature, it also provides the ability to monitor the performance of Kafka brokers by connecting to their JMX ports. JMX is based on the RMI protocol, so it is inherently susceptible to deserialization attacks. A potential attacker can exploit this feature by connecting Kafka UI backend to its own malicious broker. This vulnerability affects the deployments where one of the following occurs: 1. dynamic.config.enabled property is set in settings. It's not enabled by default, but it's suggested to be enabled in many tutorials for Kafka UI, including its own README.md. OR  2. an attacker has access to the Kafka cluster that is being connected to Kafka UI. In this scenario the attacker can exploit this vulnerability to expand their access and execute code on Kafka UI as well. Instead of setting up a legitimate JMX port, an attacker can create an RMI listener that returns a malicious serialized object for any RMI call. In the worst case it could lead to remote code execution as Kafka UI has the required gadget chains in its classpath. This issue may lead to post-auth remote code execution. This is particularly dangerous as Kafka-UI does not have authentication enabled by default. This issue has been addressed in version 0.7.2. All users are advised to upgrade. There are no known workarounds for this vulnerability. These issues were discovered and reported by the GitHub Security lab and is also tracked as GHSL-2023-230.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38329">CVE-2024-38329</a></td>
+					<td>7.7</td>
+					<td>remote,bypass</td>
+					<td class=date>2024-06-19T14:15:13.723</td>
+					<td class=description>IBM Storage Protect for Virtual Environments: Data Protection for VMware 8.1.0.0 through 8.1.22.0 could allow a remote authenticated attacker to bypass security restrictions, caused by improper validation of user permission. By sending a specially crafted request, an attacker could exploit this vulnerability to change its settings, trigger backups, restore backups, and also delete all previous backups via log rotation.  IBM X-Force ID:  294994.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-0789">CVE-2024-0789</a></td>
+					<td>5.3</td>
+					<td>unauthenticated,bypass</td>
+					<td class=date>2024-06-19T08:15:48.873</td>
+					<td class=description>The WP Maintenance plugin for WordPress is vulnerable to IP Address Spoofing in all versions up to, and including, 6.1.9.2 due to insufficient IP address validation and use of user-supplied HTTP headers as a primary method for IP retrieval. This makes it possible for unauthenticated attackers to bypass maintenance mode.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6132">CVE-2024-6132</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-06-19T06:15:12.520</td>
+					<td class=description>The Pexels: Free Stock Photos plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'pexels_fsp_images_options_validate' function in all versions up to, and including, 1.2.2. This makes it possible for authenticated attackers, with contributor-level and above permissions, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5853">CVE-2024-5853</a></td>
 					<td>9.9</td>
 					<td>remote,execution</td>
-					<td class=date>2024-06-15T09:15:11.947</td>
-					<td class=description>The Woody code snippets – Insert Header Footer Code, AdSense Ads plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.5.0 via the 'insert_php' shortcode. This is due to the plugin not restricting the usage of the functionality to high level authorized users. This makes it possible for authenticated attackers, with contributor-level access and above, to execute code on the server.</td>
+					<td class=date>2024-06-19T06:15:12.287</td>
+					<td class=description>The Image Optimizer, Resizer and CDN – Sirv plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the sirv_upload_file_by_chanks AJAX action in all versions up to, and including, 7.2.6. This makes it possible for authenticated attackers, with Contributor-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6000">CVE-2024-6000</a></td>
-					<td>7.1</td>
-					<td>remote,execution</td>
-					<td class=date>2024-06-15T04:15:14.313</td>
-					<td class=description>The FooEvents for WooCommerce plugin for WordPress is vulnerable to unauthorized arbitrary file uploads due to an improper capability setting on the 'display_ticket_themes_page' function in versions up to, and including, 1.19.20. This makes it possible for authenticated attackers with contributor-level capabilities or above, to upload arbitrary files on the affected site's server which may make remote code execution possible. This was partially patched in 1.19.20, and fully patched in 1.19.21.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5871">CVE-2024-5871</a></td>
-					<td>9.8</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2024-06-15T04:15:13.693</td>
-					<td class=description>The WooCommerce - Social Login plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.6.2 via deserialization of untrusted input from the 'woo_slg_verify' vulnerable parameter. This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable software. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5868">CVE-2024-5868</a></td>
-					<td>6.5</td>
-					<td>unauthenticated,bypass</td>
-					<td class=date>2024-06-15T04:15:13.373</td>
-					<td class=description>The WooCommerce - Social Login plugin for WordPress is vulnerable to Email Verification in all versions up to, and including, 2.6.2 via the use of insufficiently random activation code. This makes it possible for unauthenticated attackers to bypass the email verification.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-3813">CVE-2024-3813</a></td>
-					<td>8.8</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5574">CVE-2024-5574</a></td>
+					<td>7.5</td>
 					<td>execution,sensitive,bypass</td>
-					<td class=date>2024-06-15T02:15:50.817</td>
-					<td class=description>The tagDiv Composer plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 4.8 via the 'td_block_title' shortcode 'block_template_id' attribute. This makes it possible for authenticated attackers, with contributor-level and above permissions, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where php file type can be uploaded and included.</td>
+					<td class=date>2024-06-19T06:15:11.993</td>
+					<td class=description>The WP Magazine Modules Lite plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.1.2 via the 'blockLayout' parameter. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-3229">CVE-2024-3229</a></td>
+					<td>9.8</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2024-06-19T05:15:52.067</td>
+					<td class=description>The Salon booking system plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the SLN_Action_Ajax_ImportAssistants function along with missing authorization checks in all versions up to, and including, 10.2. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-2381">CVE-2024-2381</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-06-19T04:15:10.753</td>
+					<td class=description>The AliExpress Dropshipping with AliNext Lite plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the ajax_save_image function in all versions up to, and including, 3.3.5. This makes it possible for authenticated attackers, with subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6146">CVE-2024-6146</a></td>
+					<td>8.8</td>
+					<td>remote,execution,authentication</td>
+					<td class=date>2024-06-19T00:15:50.703</td>
+					<td class=description>Actiontec WCB6200Q uh_get_postdata_withupload Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Actiontec WCB6200Q routers. Authentication is not required to exploit this vulnerability.
+
+The specific flaw exists within the HTTP server. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the HTTP server. Was ZDI-CAN-21418.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6145">CVE-2024-6145</a></td>
+					<td>8.8</td>
+					<td>remote,execution,authentication</td>
+					<td class=date>2024-06-19T00:15:50.413</td>
+					<td class=description>Actiontec WCB6200Q Cookie Format String Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Actiontec WCB6200Q routers. Authentication is not required to exploit this vulnerability.
+
+The specific flaw exists within the HTTP server. A crafted Cookie header in an HTTP request can trigger the use of a format specifier from a user-supplied string. An attacker can leverage this vulnerability to execute code in the context of the HTTP server. Was ZDI-CAN-21417.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6144">CVE-2024-6144</a></td>
+					<td>8.8</td>
+					<td>remote,execution,authentication</td>
+					<td class=date>2024-06-19T00:15:50.133</td>
+					<td class=description>Actiontec WCB6200Q Multipart Boundary Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Actiontec WCB6200Q routers. Authentication is not required to exploit this vulnerability.
+
+The specific flaw exists within the HTTP server. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the HTTP server. Was ZDI-CAN-21416.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6143">CVE-2024-6143</a></td>
+					<td>8.8</td>
+					<td>remote,execution,authentication</td>
+					<td class=date>2024-06-19T00:15:49.847</td>
+					<td class=description>Actiontec WCB6200Q uh_tcp_recv_header Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Actiontec WCB6200Q routers. Authentication is not required to exploit this vulnerability.
+
+The specific flaw exists within the HTTP server. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length buffer. An attacker can leverage this vulnerability to execute code in the context of the HTTP server. Was ZDI-CAN-21414.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6142">CVE-2024-6142</a></td>
+					<td>8.8</td>
+					<td>remote,execution,authentication</td>
+					<td class=date>2024-06-19T00:15:49.580</td>
+					<td class=description>Actiontec WCB6200Q uh_tcp_recv_content Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Actiontec WCB6200Q routers. Authentication is not required to exploit this vulnerability.
+
+The specific flaw exists within the HTTP server. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length buffer. An attacker can leverage this vulnerability to execute code in the context of the HTTP server. Was ZDI-CAN-21410.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-21685">CVE-2024-21685</a></td>
+					<td>7.4</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2024-06-18T17:15:51.243</td>
+					<td class=description>This High severity Information Disclosure vulnerability was introduced in versions 9.4.0, 9.12.0, and 9.15.0 of Jira Core Data Center. 
+	
+	This Information Disclosure vulnerability, with a CVSS Score of 7.4, allows an unauthenticated attacker to view sensitive information via an Information Disclosure vulnerability which has high impact to confidentiality, no impact to integrity, no impact to availability, and requires user interaction. 
+	
+	Atlassian recommends that Jira Core Data Center customers upgrade to latest version, if you are unable to do so, upgrade your instance to one of the specified supported fixed versions:
+		
+		Jira Core Data Center 9.4: Upgrade to a release greater than or equal to 9.4.21
+		
+		Jira Core Data Center 9.12: Upgrade to a release greater than or equal to 9.12.8
+		
+		Jira Core Data Center 9.16: Upgrade to a release greater than or equal to 9.16.0
+		
+		
+	
+	See the release notes. You can download the latest version of Jira Core Data Center from the download center. 
+	
+	This vulnerability was found internally.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37080">CVE-2024-37080</a></td>
+					<td>9.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-06-18T06:15:11.640</td>
+					<td class=description>vCenter Server contains a heap-overflow vulnerability in the implementation of the DCERPC protocol. A malicious actor with network access to vCenter Server may trigger this vulnerability by sending a specially crafted network packet potentially leading to remote code execution.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37079">CVE-2024-37079</a></td>
+					<td>9.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-06-18T06:15:11.350</td>
+					<td class=description>vCenter Server contains a heap-overflow vulnerability in the implementation of the DCERPC protocol. A malicious actor with network access to vCenter Server may trigger this vulnerability by sending a specially crafted network packet potentially leading to remote code execution.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-34024">CVE-2024-34024</a></td>
+					<td>-</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-06-18T06:15:11.257</td>
+					<td class=description>Observable response discrepancy issue exists in ID Link Manager and FUJITSU Software TIME CREATOR. If this vulnerability is exploited, an unauthenticated remote attacker may determine if a username is valid or not.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-33622">CVE-2024-33622</a></td>
+					<td>-</td>
+					<td>remote,authentication,sensitive</td>
+					<td class=date>2024-06-18T06:15:11.163</td>
+					<td class=description>Missing authentication for critical function vulnerability exists in ID Link Manager and FUJITSU Software TIME CREATOR. If this vulnerability is exploited, sensitive information may be obtained and/or the information stored in the database may be altered by a remote authenticated attacker.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-33620">CVE-2024-33620</a></td>
+					<td>-</td>
+					<td>remote,unauthenticated,sensitive</td>
+					<td class=date>2024-06-18T06:15:11.053</td>
+					<td class=description>Absolute path traversal vulnerability exists in ID Link Manager and FUJITSU Software TIME CREATOR. If this vulnerability is exploited, the file contents including sensitive information on the server may be retrieved by an unauthenticated remote attacker.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5541">CVE-2024-5541</a></td>
+					<td>5.3</td>
+					<td>unauthenticated,bypass</td>
+					<td class=date>2024-06-18T03:15:10.020</td>
+					<td class=description>The Ibtana – WordPress Website Builder plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'ibtana_visual_editor_register_ajax_json_endpont' function in all versions up to, and including, 1.2.3.3. This makes it possible for unauthenticated attackers to update option values for reCAPTCHA keys on the WordPress site. This can be leveraged to bypass reCAPTCHA on the site.</td>
 				</tr>
 			
 		
