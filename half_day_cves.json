@@ -202,5 +202,11 @@
     "description": "The Email Subscribers by Icegram Express \u2013 Email Marketing, Newsletters, Automation for WordPress & WooCommerce plugin for WordPress is vulnerable to time-based SQL Injection via the db parameter in all versions up to, and including, 5.7.23 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
     "published": "2024-06-21T05:15:10.120",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-38873": {
+    "cvss": 5.3,
+    "description": "An issue was discovered in the friendlycaptcha_official (aka Integration of Friendly Captcha) extension before 0.1.4 for TYPO3. The extension fails to check the requirement of the captcha field in submitted form data, allowing a remote user to bypass the captcha check. This only affects the captcha integration for the ext:form extension.",
+    "published": "2024-06-21T07:15:09.110",
+    "keywords": "remote,bypass"
   }
 }
