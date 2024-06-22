@@ -1,10 +1,4 @@
 {
-  "CVE-2024-2381": {
-    "cvss": 8.8,
-    "description": "The AliExpress Dropshipping with AliNext Lite plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the ajax_save_image function in all versions up to, and including, 3.3.5. This makes it possible for authenticated attackers, with subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2024-06-19T04:15:10.753",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-3229": {
     "cvss": 9.8,
     "description": "The Salon booking system plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the SLN_Action_Ajax_ImportAssistants function along with missing authorization checks in all versions up to, and including, 10.2. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
