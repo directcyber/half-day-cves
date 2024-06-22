@@ -1,34 +1,4 @@
 {
-  "CVE-2024-6142": {
-    "cvss": 8.8,
-    "description": "Actiontec WCB6200Q uh_tcp_recv_content Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Actiontec WCB6200Q routers. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the HTTP server. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length buffer. An attacker can leverage this vulnerability to execute code in the context of the HTTP server. Was ZDI-CAN-21410.",
-    "published": "2024-06-19T00:15:49.580",
-    "keywords": "remote,execution,authentication"
-  },
-  "CVE-2024-6143": {
-    "cvss": 8.8,
-    "description": "Actiontec WCB6200Q uh_tcp_recv_header Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Actiontec WCB6200Q routers. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the HTTP server. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length buffer. An attacker can leverage this vulnerability to execute code in the context of the HTTP server. Was ZDI-CAN-21414.",
-    "published": "2024-06-19T00:15:49.847",
-    "keywords": "remote,execution,authentication"
-  },
-  "CVE-2024-6144": {
-    "cvss": 8.8,
-    "description": "Actiontec WCB6200Q Multipart Boundary Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Actiontec WCB6200Q routers. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the HTTP server. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the HTTP server. Was ZDI-CAN-21416.",
-    "published": "2024-06-19T00:15:50.133",
-    "keywords": "remote,execution,authentication"
-  },
-  "CVE-2024-6145": {
-    "cvss": 8.8,
-    "description": "Actiontec WCB6200Q Cookie Format String Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Actiontec WCB6200Q routers. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the HTTP server. A crafted Cookie header in an HTTP request can trigger the use of a format specifier from a user-supplied string. An attacker can leverage this vulnerability to execute code in the context of the HTTP server. Was ZDI-CAN-21417.",
-    "published": "2024-06-19T00:15:50.413",
-    "keywords": "remote,execution,authentication"
-  },
-  "CVE-2024-6146": {
-    "cvss": 8.8,
-    "description": "Actiontec WCB6200Q uh_get_postdata_withupload Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Actiontec WCB6200Q routers. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the HTTP server. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the HTTP server. Was ZDI-CAN-21418.",
-    "published": "2024-06-19T00:15:50.703",
-    "keywords": "remote,execution,authentication"
-  },
   "CVE-2024-2381": {
     "cvss": 8.8,
     "description": "The AliExpress Dropshipping with AliNext Lite plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the ajax_save_image function in all versions up to, and including, 3.3.5. This makes it possible for authenticated attackers, with subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
