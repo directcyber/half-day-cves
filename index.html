@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-06-22T17:08:00.564576
+Updated at UTC 2024-06-22T18:12:05.802059
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-06-22T17:08:00.564576
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 				<tr>
@@ -184,10 +186,18 @@ Updated at UTC 2024-06-22T17:08:00.564576
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5443">CVE-2024-5443</a></td>
+					<td>9.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-06-22T17:15:34.410</td>
+					<td class=description>CVE-2024-4320 describes a vulnerability in the parisneo/lollms software, specifically within the `ExtensionBuilder().build_extension()` function. The vulnerability arises from the `/mount_extension` endpoint, where a path traversal issue allows attackers to navigate beyond the intended directory structure. This is facilitated by the `data.category` and `data.folder` parameters accepting empty strings (`""`), which, due to inadequate input sanitization, can lead to the construction of a `package_path` that points to the root directory. Consequently, if an attacker can create a `config.yaml` file in a controllable path, this path can be appended to the `extensions` list and trigger the execution of `__init__.py` in the current directory, leading to remote code execution. The vulnerability affects versions up to 5.9.0, and has been addressed in version 9.8.</td>
+				</tr>
+			
 		
 			
 		
@@ -400,16 +410,6 @@ Updated at UTC 2024-06-22T17:08:00.564576
 					<td>remote,execution,vpn</td>
 					<td class=date>2024-06-19T18:15:10.597</td>
 					<td class=description>Reposilite is an open source, lightweight and easy-to-use repository manager for Maven based artifacts in JVM ecosystem. As a Maven repository manager, Reposilite provides the ability to view the artifacts content in the browser, as well as perform administrative tasks via API. The problem lies in the fact that the artifact's content is served via the same origin (protocol/host/port) as the Admin UI. If the artifact contains HTML content with javascript inside, the javascript is executed within the same origin. Therefore, if an authenticated user is viewing the artifacts content, the javascript inside can access the browser's local storage where the user's password (aka 'token-secret') is stored. It is especially dangerous in scenarios where Reposilite is configured to mirror third party repositories, like the Maven Central Repository. Since anyone can publish an artifact to Maven Central under its own name, such malicious packages can be used to attack the Reposilite instance. This issue may lead to the full Reposilite instance compromise. If this attack is performed against the admin user, it's possible to use the admin API to modify settings and artifacts on the instance. In the worst case scenario, an attacker would be able to obtain the Remote code execution on all systems that use artifacts from Reposilite. It's important to note that the attacker does not need to lure a victim user to use a malicious artifact, but just open a link in the browser. This link can be silently loaded among the other HTML content, making this attack unnoticeable. Even if the Reposilite instance is located in an isolated environment, such as behind a VPN or in the local network, this attack is still possible as it can be performed from the admin browser. Reposilite has addressed this issue in version 3.5.12. Users are advised to upgrade. There are no known workarounds for this vulnerability. This issue was discovered and reported by the GitHub Security lab and is also tracked as GHSL-2024-072.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-32030">CVE-2024-32030</a></td>
-					<td>8.1</td>
-					<td>remote,execution,authentication</td>
-					<td class=date>2024-06-19T17:15:57.863</td>
-					<td class=description>Kafka UI is an Open-Source Web UI for Apache Kafka Management. Kafka UI API allows users to connect to different Kafka brokers by specifying their network address and port. As a separate feature, it also provides the ability to monitor the performance of Kafka brokers by connecting to their JMX ports. JMX is based on the RMI protocol, so it is inherently susceptible to deserialization attacks. A potential attacker can exploit this feature by connecting Kafka UI backend to its own malicious broker. This vulnerability affects the deployments where one of the following occurs: 1. dynamic.config.enabled property is set in settings. It's not enabled by default, but it's suggested to be enabled in many tutorials for Kafka UI, including its own README.md. OR  2. an attacker has access to the Kafka cluster that is being connected to Kafka UI. In this scenario the attacker can exploit this vulnerability to expand their access and execute code on Kafka UI as well. Instead of setting up a legitimate JMX port, an attacker can create an RMI listener that returns a malicious serialized object for any RMI call. In the worst case it could lead to remote code execution as Kafka UI has the required gadget chains in its classpath. This issue may lead to post-auth remote code execution. This is particularly dangerous as Kafka-UI does not have authentication enabled by default. This issue has been addressed in version 0.7.2. All users are advised to upgrade. There are no known workarounds for this vulnerability. These issues were discovered and reported by the GitHub Security lab and is also tracked as GHSL-2023-230.</td>
 				</tr>
 			
 		
