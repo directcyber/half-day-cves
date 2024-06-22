@@ -1,10 +1,4 @@
 {
-  "CVE-2024-3229": {
-    "cvss": 9.8,
-    "description": "The Salon booking system plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the SLN_Action_Ajax_ImportAssistants function along with missing authorization checks in all versions up to, and including, 10.2. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2024-06-19T05:15:52.067",
-    "keywords": "remote,execution,unauthenticated"
-  },
   "CVE-2024-5208": {
     "url": "https://github.com/mintplex-labs/anything-llm/commit/e2439c6d4c3cfdacd96cd1b7b92d1f89c3cc8459",
     "cvss": 6.5,
@@ -184,5 +178,29 @@
     "description": "ArcGIS Enterprise Server 10.8.0 allows a remote attacker to obtain sensitive information because /arcgis/rest/services does not require authentication.",
     "published": "2024-06-21T22:15:11.157",
     "keywords": "remote,authentication,sensitive"
+  },
+  "CVE-2024-21514": {
+    "url": "https://github.com/opencart/opencart/commit/46bd5f5a8056ff9aad0aa7d71729c4cf593d67e2",
+    "cvss": 7.4,
+    "description": "This affects versions of the package opencart/opencart from 0.0.0. An SQL Injection issue was identified in the Divido payment extension for OpenCart, which is included by default in version 3.0.3.9. As an anonymous unauthenticated user, if the Divido payment module is installed (it does not have to be enabled), it is possible to exploit SQL injection to gain unauthorised access to the backend database. For any site which is vulnerable, any unauthenticated user could exploit this to dump the entire OpenCart database, including customer PII data.",
+    "published": "2024-06-22T05:15:09.637"
+  },
+  "CVE-2024-21515": {
+    "url": "https://github.com/opencart/opencart/commit/c546199e8f100c1f3797a7a9d3cf4db1887399a2",
+    "cvss": 4.2,
+    "description": "This affects versions of the package opencart/opencart from 4.0.0.0. A reflected XSS issue was identified in the filename parameter of the admin tool/log route. An attacker could obtain a user's token by tricking the user to click on a maliciously crafted URL. The user is then prompted to login and redirected again upon authentication with the payload automatically executing. If the attacked user has admin privileges, this vulnerability could be used as the start of a chain of exploits like Zip Slip or arbitrary file write vulnerabilities in the admin functionality.\r\r**Notes:**\r\r1) This is only exploitable if the attacker knows the name or path of the admin directory. The name of the directory is \"admin\" by default but there is a pop-up in the dashboard warning users to rename it.\r\r2) The fix for this vulnerability is incomplete. The redirect is removed so that it is not possible for an attacker to control the redirect post admin login anymore, but it is still possible to exploit this issue in admin if the user is authenticated as an admin already.",
+    "published": "2024-06-22T05:15:10.730"
+  },
+  "CVE-2024-21516": {
+    "url": "https://github.com/opencart/opencart/commit/c546199e8f100c1f3797a7a9d3cf4db1887399a2",
+    "cvss": 4.2,
+    "description": "This affects versions of the package opencart/opencart from 4.0.0.0. A reflected XSS issue was identified in the directory parameter of admin common/filemanager.list route. An attacker could obtain a user's token by tricking the user to click on a maliciously crafted URL. The user is then prompted to login and redirected again upon authentication with the payload automatically executing. If the attacked user has admin privileges, this vulnerability could be used as the start of a chain of exploits like Zip Slip or arbitrary file write vulnerabilities in the admin functionality.\r\r**Notes:**\r\r1) This is only exploitable if the attacker knows the name or path of the admin directory. The name of the directory is \"admin\" by default but there is a pop-up in the dashboard warning users to rename it.\r\r2) The fix for this vulnerability is incomplete. The redirect is removed so that it is not possible for an attacker to control the redirect post admin login anymore, but it is still possible to exploit this issue in admin if the user is authenticated as an admin already.",
+    "published": "2024-06-22T05:15:10.967"
+  },
+  "CVE-2024-21517": {
+    "url": "https://github.com/opencart/opencart/commit/0fd1ee4b6c94366bf3e5d3831a8336f3275d1860",
+    "cvss": 4.2,
+    "description": "This affects versions of the package opencart/opencart from 4.0.0.0. A reflected XSS issue was identified in the redirect parameter of customer account/login route. An attacker can inject arbitrary HTML and Javascript into the page response. As this vulnerability is present in the account functionality it could be used to target and attack customers of the OpenCart shop.\r\r**Notes:**\r\r1) The fix for this vulnerability is incomplete",
+    "published": "2024-06-22T05:15:11.173"
   }
 }
