@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-06-22T06:13:02.393503
+Updated at UTC 2024-06-22T07:10:31.098399
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -188,24 +188,6 @@ Updated at UTC 2024-06-22T06:13:02.393503
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5208">CVE-2024-5208</a></td>
-					<td>6.5</td>
-					<td><a target=_blank href="https://github.com/mintplex-labs/anything-llm/commit/e2439c6d4c3cfdacd96cd1b7b92d1f89c3cc8459">https://github.com/mintplex-labs/anything-llm/commit/e2439c6d4c3cfdacd96cd1b7b92d1f89c3cc8459</a></td>
-					<td class=date>2024-06-19T06:15:11.420</td>
-					<td class=description>An uncontrolled resource consumption vulnerability exists in the `upload-link` endpoint of mintplex-labs/anything-llm. This vulnerability allows attackers to cause a denial of service (DOS) by shutting down the server through sending invalid upload requests. Specifically, the server can be made to shut down by sending an empty body with a 'Content-Length: 0' header or by sending a body with arbitrary content, such as 'asdasdasd', with a 'Content-Length: 9' header. The vulnerability is reproducible by users with at least a 'Manager' role, sending a crafted request to any workspace. This issue indicates that a previous fix was not effective in mitigating the vulnerability.</td>
-
-
-				</tr>
 			
 		
 
@@ -453,38 +435,6 @@ Updated at UTC 2024-06-22T06:13:02.393503
 					<td class=date>2024-06-19T08:15:48.873</td>
 					<td class=description>The WP Maintenance plugin for WordPress is vulnerable to IP Address Spoofing in all versions up to, and including, 6.1.9.2 due to insufficient IP address validation and use of user-supplied HTTP headers as a primary method for IP retrieval. This makes it possible for unauthenticated attackers to bypass maintenance mode.</td>
 				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6132">CVE-2024-6132</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-06-19T06:15:12.520</td>
-					<td class=description>The Pexels: Free Stock Photos plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'pexels_fsp_images_options_validate' function in all versions up to, and including, 1.2.2. This makes it possible for authenticated attackers, with contributor-level and above permissions, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5853">CVE-2024-5853</a></td>
-					<td>9.9</td>
-					<td>remote,execution</td>
-					<td class=date>2024-06-19T06:15:12.287</td>
-					<td class=description>The Image Optimizer, Resizer and CDN – Sirv plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the sirv_upload_file_by_chanks AJAX action in all versions up to, and including, 7.2.6. This makes it possible for authenticated attackers, with Contributor-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5574">CVE-2024-5574</a></td>
-					<td>7.5</td>
-					<td>execution,sensitive,bypass</td>
-					<td class=date>2024-06-19T06:15:11.993</td>
-					<td class=description>The WP Magazine Modules Lite plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.1.2 via the 'blockLayout' parameter. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included.</td>
-				</tr>
-			
-		
 			
 		
 
