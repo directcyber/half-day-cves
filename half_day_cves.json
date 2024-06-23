@@ -1,10 +1,4 @@
 {
-  "CVE-2024-5213": {
-    "url": "https://github.com/mintplex-labs/anything-llm/commit/9df4521113ddb9a3adb5d0e3941e7d494992629c",
-    "cvss": 5.3,
-    "description": "In mintplex-labs/anything-llm versions up to and including 1.5.3, an issue was discovered where the password hash of a user is returned in the response after login (`POST /api/request-token`) and after account creations (`POST /api/admin/users/new`). This exposure occurs because the entire User object, including the bcrypt password hash, is included in the response sent to the frontend. This practice could potentially lead to sensitive information exposure despite the use of bcrypt, a strong hashing algorithm. It is recommended not to expose any clues about passwords to the frontend. ",
-    "published": "2024-06-20T03:15:09.067"
-  },
   "CVE-2024-4098": {
     "cvss": 9.8,
     "description": "The Shariff Wrapper plugin for WordPress is vulnerable to Local File Inclusion in versions up to, and including, 4.6.13 via the shariff3uu_fetch_sharecounts function. This allows unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
