@@ -1,16 +1,4 @@
 {
-  "CVE-2024-3605": {
-    "cvss": 10.0,
-    "description": "The WP Hotel Booking plugin for WordPress is vulnerable to SQL Injection via the 'room_type' parameter of the /wphb/v1/rooms/search-rooms REST API endpoint in all versions up to, and including, 2.1.0 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
-    "published": "2024-06-20T02:15:10.817",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-5432": {
-    "cvss": 9.8,
-    "description": "The Lifeline Donation plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.2.6. This is due to insufficient verification on the user being supplied during the checkout through the plugin. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email.",
-    "published": "2024-06-20T02:15:11.737",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
   "CVE-2024-5213": {
     "url": "https://github.com/mintplex-labs/anything-llm/commit/9df4521113ddb9a3adb5d0e3941e7d494992629c",
     "cvss": 5.3,
