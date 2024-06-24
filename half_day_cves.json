@@ -1,10 +1,4 @@
 {
-  "CVE-2024-38873": {
-    "cvss": 5.3,
-    "description": "An issue was discovered in the friendlycaptcha_official (aka Integration of Friendly Captcha) extension before 0.1.4 for TYPO3. The extension fails to check the requirement of the captcha field in submitted form data, allowing a remote user to bypass the captcha check. This only affects the captcha integration for the ext:form extension.",
-    "published": "2024-06-21T07:15:09.110",
-    "keywords": "remote,bypass"
-  },
   "CVE-2024-6027": {
     "cvss": 9.8,
     "description": "The Themify \u2013 WooCommerce Product Filter plugin for WordPress is vulnerable to time-based SQL Injection via the \u2018conditions\u2019 parameter in all versions up to, and including, 1.4.9 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
@@ -64,5 +58,11 @@
     "description": "A remote code execution vulnerability exists in the create_conda_env function of the parisneo/lollms repository, version 5.9.0. The vulnerability arises from the use of shell=True in the subprocess.Popen function, which allows an attacker to inject arbitrary commands by manipulating the env_name and python_version parameters. This issue could lead to a serious security breach as demonstrated by the ability to execute the 'whoami' command among potentially other harmful commands.",
     "published": "2024-06-24T00:15:09.680",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2024-24552": {
+    "cvss": "-",
+    "description": "A session fixation vulnerability in Bludit allows an attacker to bypass the server's authentication if they can trick an administrator or any other user into authorizing a session ID of their choosing.",
+    "published": "2024-06-24T07:15:14.903",
+    "keywords": "authentication,bypass"
   }
 }
