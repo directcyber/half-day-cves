@@ -58,5 +58,11 @@
     "description": "A session fixation vulnerability in Bludit allows an attacker to bypass the server's authentication if they can trick an administrator or any other user into authorizing a session ID of their choosing.",
     "published": "2024-06-24T07:15:14.903",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-4748": {
+    "url": "https://github.com/jan-vandenberg/cruddiy/issues/67",
+    "cvss": 8.8,
+    "description": "The CRUDDIY project is vulnerable to shell command injection via sending a crafted POST request to the application server.\u00a0\nThe exploitation risk is limited since CRUDDIY is meant to be launched locally. Nevertheless, a user with the project running on their computer might visit a website which would send such a malicious request to the locally launched server.",
+    "published": "2024-06-24T14:15:13.030"
   }
 }
