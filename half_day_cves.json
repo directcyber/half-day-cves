@@ -1,16 +1,4 @@
 {
-  "CVE-2024-37654": {
-    "cvss": "-",
-    "description": "An issue in BAS-IP AV-01D, AV-01MD, AV-01MFD, AV-01ED, AV-01KD, AV-01BD, AV-01KBD, AV-02D, AV-02IDE, AV-02IDR, AV-02IPD, AV-02FDE, AV-02FDR, AV-03D, AV-03BD, AV-04AFD, AV-04ASD, AV-04FD, AV-04SD, AV-05FD, AV-05SD, AA-07BD, AA-07BDI, BA-04BD, BA-04MD, BA-08BD, BA-08MD, BA-12BD, BA-12MD, CR-02BD before 3.9.2 allows a remote attacker to obtain sensitive information via a crafted HTTP GET request.",
-    "published": "2024-06-21T22:15:11.087",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-37694": {
-    "cvss": "-",
-    "description": "ArcGIS Enterprise Server 10.8.0 allows a remote attacker to obtain sensitive information because /arcgis/rest/services does not require authentication.",
-    "published": "2024-06-21T22:15:11.157",
-    "keywords": "remote,authentication,sensitive"
-  },
   "CVE-2024-21514": {
     "url": "https://github.com/opencart/opencart/commit/46bd5f5a8056ff9aad0aa7d71729c4cf593d67e2",
     "cvss": 8.1,
@@ -76,5 +64,11 @@
     "description": "An issue in Wavlink WN551K1 allows a remote attacker to obtain sensitive information via the ExportAllSettings.sh component.",
     "published": "2024-06-24T21:15:26.050",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-33898": {
+    "cvss": "-",
+    "description": "Axiros AXESS Auto Configuration Server (ACS) 4.x and 5.0.0 has Incorrect Access Control. An authorization bypass allows remote attackers to achieve unauthenticated remote code execution.",
+    "published": "2024-06-24T22:15:10.207",
+    "keywords": "remote,execution,unauthenticated,bypass"
   }
 }
