@@ -64,5 +64,17 @@
     "cvss": 8.8,
     "description": "The CRUDDIY project is vulnerable to shell command injection via sending a crafted POST request to the application server.\u00a0\nThe exploitation risk is limited since CRUDDIY is meant to be launched locally. Nevertheless, a user with the project running on their computer might visit a website which would send such a malicious request to the locally launched server.",
     "published": "2024-06-24T14:15:13.030"
+  },
+  "CVE-2024-37759": {
+    "url": "https://github.com/datageartech/datagear/issues/32",
+    "cvss": "-",
+    "description": "DataGear v5.0.0 and earlier was discovered to contain a SpEL (Spring Expression Language) expression injection vulnerability via the Data Viewing interface.",
+    "published": "2024-06-24T21:15:25.940"
+  },
+  "CVE-2024-38892": {
+    "cvss": "-",
+    "description": "An issue in Wavlink WN551K1 allows a remote attacker to obtain sensitive information via the ExportAllSettings.sh component.",
+    "published": "2024-06-24T21:15:26.050",
+    "keywords": "remote,sensitive"
   }
 }
