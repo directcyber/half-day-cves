@@ -118,5 +118,23 @@
     "description": "Improper Authentication vulnerability in Progress MOVEit Transfer (SFTP module) can lead to Authentication Bypass in limited scenarios.This issue affects MOVEit Transfer: from 2023.0.0 before 2023.0.11, from 2023.1.0 before 2023.1.6, from 2024.0.0 before 2024.0.2.",
     "published": "2024-06-25T15:15:15.850",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-5988": {
+    "cvss": "-",
+    "description": "Due to an improper input validation, an unauthenticated threat actor can send a malicious message to invoke a local or remote executable and cause a remote code execution condition on the Rockwell Automation\u00a0ThinManager\u00ae ThinServer\u2122.",
+    "published": "2024-06-25T16:15:24.937",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-5989": {
+    "cvss": "-",
+    "description": "Due to an improper input validation, an unauthenticated threat actor can send a malicious message to invoke SQL injection into the program and cause a remote code execution condition on the Rockwell Automation\u00a0ThinManager\u00ae ThinServer\u2122.",
+    "published": "2024-06-25T16:15:25.363",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-6238": {
+    "url": "https://github.com/pgadmin-org/pgadmin4/issues/7605",
+    "cvss": 7.4,
+    "description": "pgAdmin <= 8.8 has an installation Directory permission issue.\u00a0Because of this issue,\u00a0attackers can gain unauthorised access to the installation directory on the Debian or RHEL 8 platforms.",
+    "published": "2024-06-25T16:15:25.727"
   }
 }
