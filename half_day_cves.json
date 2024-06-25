@@ -190,5 +190,11 @@
     "description": "In WhatsUp Gold versions released before 2023.1.3, Distributed Edition installations can be exploited by using a deserialization\u00a0tool to achieve a Remote Code Execution as SYSTEM.\u00a0\nThe vulnerability exists in the main message processing routines\u00a0NmDistributed.DistributedServiceBehavior.OnMessage for server and NmDistributed.DistributedClient.OnMessage for clients.",
     "published": "2024-06-25T21:16:01.163",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-37742": {
+    "cvss": "-",
+    "description": "An issue in Safe Exam Browser for Windows before 3.6 allows an attacker to share clipboard data between the SEB kiosk mode and the underlying system, compromising exam integrity which may lead to arbitrary code execution and obtaining sensitive information via the Clipboard Management component.",
+    "published": "2024-06-25T22:15:35.183",
+    "keywords": "execution,sensitive"
   }
 }
