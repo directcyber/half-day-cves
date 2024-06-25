@@ -130,5 +130,17 @@
     "cvss": 7.4,
     "description": "pgAdmin <= 8.8 has an installation Directory permission issue.\u00a0Because of this issue,\u00a0attackers can gain unauthorised access to the installation directory on the Debian or RHEL 8 platforms.",
     "published": "2024-06-25T16:15:25.727"
+  },
+  "CVE-2024-36819": {
+    "url": "https://github.com/ramonsilva20/mapos/commit/3559bae4782162faab94670f503fd35b0f331929",
+    "cvss": "-",
+    "description": "MAP-OS 4.45.0 and earlier is vulnerable to Cross-Site Scripting (XSS). This vulnerability allows malicious users to insert a malicious payload into the \"Client Name\" input. When a service order from this client is created, the malicious payload is displayed on the administrator and employee dashboards, resulting in unauthorized script execution whenever the dashboard is loaded.",
+    "published": "2024-06-25T19:15:11.837"
+  },
+  "CVE-2024-37820": {
+    "url": "https://github.com/pingcap/tidb/issues/53580",
+    "cvss": "-",
+    "description": "A nil pointer dereference in PingCAP TiDB v8.2.0-alpha-216-gfe5858b allows attackers to crash the application via expression.inferCollation.",
+    "published": "2024-06-25T19:15:11.943"
   }
 }
