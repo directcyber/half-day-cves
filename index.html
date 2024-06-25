@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-06-25T05:09:53.660848
+Updated at UTC 2024-06-25T06:13:26.708438
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -97,54 +97,6 @@ The exploitation risk is limited since CRUDDIY is meant to be launched locally. 
 		
 			
 		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-21517">CVE-2024-21517</a></td>
-					<td>6.1</td>
-					<td><a target=_blank href="https://github.com/opencart/opencart/commit/0fd1ee4b6c94366bf3e5d3831a8336f3275d1860">https://github.com/opencart/opencart/commit/0fd1ee4b6c94366bf3e5d3831a8336f3275d1860</a></td>
-					<td class=date>2024-06-22T05:15:11.173</td>
-					<td class=description>This affects versions of the package opencart/opencart from 4.0.0.0. A reflected XSS issue was identified in the redirect parameter of customer account/login route. An attacker can inject arbitrary HTML and Javascript into the page response. As this vulnerability is present in the account functionality it could be used to target and attack customers of the OpenCart shop.**Notes:**1) The fix for this vulnerability is incomplete</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-21516">CVE-2024-21516</a></td>
-					<td>4.7</td>
-					<td><a target=_blank href="https://github.com/opencart/opencart/commit/c546199e8f100c1f3797a7a9d3cf4db1887399a2">https://github.com/opencart/opencart/commit/c546199e8f100c1f3797a7a9d3cf4db1887399a2</a></td>
-					<td class=date>2024-06-22T05:15:10.967</td>
-					<td class=description>This affects versions of the package opencart/opencart from 4.0.0.0. A reflected XSS issue was identified in the directory parameter of admin common/filemanager.list route. An attacker could obtain a user's token by tricking the user to click on a maliciously crafted URL. The user is then prompted to login and redirected again upon authentication with the payload automatically executing. If the attacked user has admin privileges, this vulnerability could be used as the start of a chain of exploits like Zip Slip or arbitrary file write vulnerabilities in the admin functionality.**Notes:**1) This is only exploitable if the attacker knows the name or path of the admin directory. The name of the directory is "admin" by default but there is a pop-up in the dashboard warning users to rename it.2) The fix for this vulnerability is incomplete. The redirect is removed so that it is not possible for an attacker to control the redirect post admin login anymore, but it is still possible to exploit this issue in admin if the user is authenticated as an admin already.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-21515">CVE-2024-21515</a></td>
-					<td>4.7</td>
-					<td><a target=_blank href="https://github.com/opencart/opencart/commit/c546199e8f100c1f3797a7a9d3cf4db1887399a2">https://github.com/opencart/opencart/commit/c546199e8f100c1f3797a7a9d3cf4db1887399a2</a></td>
-					<td class=date>2024-06-22T05:15:10.730</td>
-					<td class=description>This affects versions of the package opencart/opencart from 4.0.0.0. A reflected XSS issue was identified in the filename parameter of the admin tool/log route. An attacker could obtain a user's token by tricking the user to click on a maliciously crafted URL. The user is then prompted to login and redirected again upon authentication with the payload automatically executing. If the attacked user has admin privileges, this vulnerability could be used as the start of a chain of exploits like Zip Slip or arbitrary file write vulnerabilities in the admin functionality.**Notes:**1) This is only exploitable if the attacker knows the name or path of the admin directory. The name of the directory is "admin" by default but there is a pop-up in the dashboard warning users to rename it.2) The fix for this vulnerability is incomplete. The redirect is removed so that it is not possible for an attacker to control the redirect post admin login anymore, but it is still possible to exploit this issue in admin if the user is authenticated as an admin already.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-21514">CVE-2024-21514</a></td>
-					<td>8.1</td>
-					<td><a target=_blank href="https://github.com/opencart/opencart/commit/46bd5f5a8056ff9aad0aa7d71729c4cf593d67e2">https://github.com/opencart/opencart/commit/46bd5f5a8056ff9aad0aa7d71729c4cf593d67e2</a></td>
-					<td class=date>2024-06-22T05:15:09.637</td>
-					<td class=description>This affects versions of the package opencart/opencart from 0.0.0. An SQL Injection issue was identified in the Divido payment extension for OpenCart, which is included by default in version 3.0.3.9. As an anonymous unauthenticated user, if the Divido payment module is installed (it does not have to be enabled), it is possible to exploit SQL injection to gain unauthorised access to the backend database. For any site which is vulnerable, any unauthenticated user could exploit this to dump the entire OpenCart database, including customer PII data.</td>
-
-
-				</tr>
 			
 		
 
@@ -232,14 +184,6 @@ The exploitation risk is limited since CRUDDIY is meant to be launched locally. 
 					<td class=date>2024-06-22T17:15:34.410</td>
 					<td class=description>CVE-2024-4320 describes a vulnerability in the parisneo/lollms software, specifically within the `ExtensionBuilder().build_extension()` function. The vulnerability arises from the `/mount_extension` endpoint, where a path traversal issue allows attackers to navigate beyond the intended directory structure. This is facilitated by the `data.category` and `data.folder` parameters accepting empty strings (`""`), which, due to inadequate input sanitization, can lead to the construction of a `package_path` that points to the root directory. Consequently, if an attacker can create a `config.yaml` file in a controllable path, this path can be appended to the `extensions` list and trigger the execution of `__init__.py` in the current directory, leading to remote code execution. The vulnerability affects versions up to 5.9.0, and has been addressed in version 9.8.</td>
 				</tr>
-			
-		
-			
-		
-			
-		
-			
-		
 			
 		
 
