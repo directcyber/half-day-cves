@@ -108,8 +108,8 @@
     "keywords": "authentication,bypass"
   },
   "CVE-2024-5806": {
-    "cvss": 7.4,
-    "description": "Improper Authentication vulnerability in Progress MOVEit Transfer (SFTP module) can lead to Authentication Bypass in limited scenarios.This issue affects MOVEit Transfer: from 2023.0.0 before 2023.0.11, from 2023.1.0 before 2023.1.6, from 2024.0.0 before 2024.0.2.",
+    "cvss": 9.1,
+    "description": "Improper Authentication vulnerability in Progress MOVEit Transfer (SFTP module) can lead to Authentication Bypass.This issue affects MOVEit Transfer: from 2023.0.0 before 2023.0.11, from 2023.1.0 before 2023.1.6, from 2024.0.0 before 2024.0.2.",
     "published": "2024-06-25T15:15:15.850",
     "keywords": "authentication,bypass"
   },
@@ -196,5 +196,11 @@
     "description": "An issue in Safe Exam Browser for Windows before 3.6 allows an attacker to share clipboard data between the SEB kiosk mode and the underlying system, compromising exam integrity which may lead to arbitrary code execution and obtaining sensitive information via the Clipboard Management component.",
     "published": "2024-06-25T22:15:35.183",
     "keywords": "execution,sensitive"
+  },
+  "CVE-2024-29954": {
+    "cvss": 5.9,
+    "description": "A vulnerability in a password management API in Brocade Fabric OS versions before v9.2.1, v9.2.0b, v9.1.1d, and v8.2.3e prints sensitive information in log files. This could allow an authenticated user to view the server passwords for protocols such as scp and sftp.\n\nDetail.\nWhen the firmwaredownload command is incorrectly entered or points to an erroneous file, the firmware download log captures the failed command, including any password entered in the command line.",
+    "published": "2024-06-26T00:15:10.263",
+    "keywords": "command,sensitive"
   }
 }
