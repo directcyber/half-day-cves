@@ -232,5 +232,11 @@
     "description": "A command injection vulnerability exists in the mudler/localai version 2.14.0. The vulnerability arises from the application's handling of the backend parameter in the configuration file, which is used in the name of the initialized process. An attacker can exploit this vulnerability by manipulating the path of the vulnerable binary file specified in the backend parameter, allowing the execution of arbitrary code on the system. This issue is due to improper neutralization of special elements used in an OS command, leading to potential full control over the affected system.",
     "published": "2024-06-26T03:15:10.987",
     "keywords": "execution,command"
+  },
+  "CVE-2024-37140": {
+    "cvss": 8.8,
+    "description": "Dell PowerProtect DD, versions prior to 8.0, LTS 7.13.1.0, LTS 7.10.1.30, LTS 7.7.5.40 contain an OS command injection vulnerability in an admin operation. A remote low privileged attacker could potentially exploit this vulnerability, leading to the execution of arbitrary OS commands on the system application's underlying OS with the privileges of the vulnerable application. Exploitation may lead to a system take over by an attacker.",
+    "published": "2024-06-26T04:15:13.667",
+    "keywords": "remote,execution,command"
   }
 }
