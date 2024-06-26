@@ -202,5 +202,35 @@
     "description": "A vulnerability in a password management API in Brocade Fabric OS versions before v9.2.1, v9.2.0b, v9.1.1d, and v8.2.3e prints sensitive information in log files. This could allow an authenticated user to view the server passwords for protocols such as scp and sftp.\n\nDetail.\nWhen the firmwaredownload command is incorrectly entered or points to an erroneous file, the firmware download log captures the failed command, including any password entered in the command line.",
     "published": "2024-06-26T00:15:10.263",
     "keywords": "command,sensitive"
+  },
+  "CVE-2024-29174": {
+    "cvss": 4.4,
+    "description": "Dell Data Domain, versions prior to 7.13.0.0, LTS 7.7.5.30, LTS 7.10.1.20 contain an SQL Injection vulnerability. A local low privileged attacker could potentially exploit this vulnerability, leading to the execution of certain SQL commands on the application's backend database causing unauthorized access to application data.",
+    "published": "2024-06-26T03:15:10.100",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-29175": {
+    "cvss": 5.9,
+    "description": "Dell PowerProtect Data Domain, versions prior to 7.13.0.0, LTS 7.7.5.40, LTS 7.10.1.30 contain an weak cryptographic algorithm vulnerability. A remote unauthenticated attacker could potentially exploit this vulnerability, leading to man-in-the-middle attack that exposes sensitive session information.",
+    "published": "2024-06-26T03:15:10.303",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2024-29176": {
+    "cvss": 8.8,
+    "description": "Dell PowerProtect DD, versions prior to 8.0, LTS 7.13.1.0, LTS 7.10.1.30, LTS 7.7.5.40 contain a buffer overflow vulnerability. A remote low privileged attacker could potentially exploit this vulnerability, leading to an application crash or execution of arbitrary code on the vulnerable application's underlying operating system with privileges of the vulnerable application.",
+    "published": "2024-06-26T03:15:10.533",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-29177": {
+    "cvss": 2.7,
+    "description": "Dell PowerProtect DD, versions prior to 8.0, LTS 7.13.1.0, LTS 7.10.1.30, LTS 7.7.5.40 contain a disclosure of temporary sensitive information vulnerability. A remote high privileged attacker could potentially exploit this vulnerability, leading to the reuse of disclosed information to gain unauthorized access to the application report.",
+    "published": "2024-06-26T03:15:10.767",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-5181": {
+    "cvss": 9.8,
+    "description": "A command injection vulnerability exists in the mudler/localai version 2.14.0. The vulnerability arises from the application's handling of the backend parameter in the configuration file, which is used in the name of the initialized process. An attacker can exploit this vulnerability by manipulating the path of the vulnerable binary file specified in the backend parameter, allowing the execution of arbitrary code on the system. This issue is due to improper neutralization of special elements used in an OS command, leading to potential full control over the affected system.",
+    "published": "2024-06-26T03:15:10.987",
+    "keywords": "execution,command"
   }
 }
