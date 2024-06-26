@@ -244,5 +244,17 @@
     "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection'), CWE - 200 - Exposure of Sensitive Information to an Unauthorized Actor, CWE - 522 - Insufficiently Protected Credentials vulnerability in Magarsus Consultancy SSO (Single Sign On) allows SQL Injection.This issue affects SSO (Single Sign On): from 1.0 before 1.1.",
     "published": "2024-06-26T15:15:19.977",
     "keywords": "command,sensitive"
+  },
+  "CVE-2024-38271": {
+    "url": "https://github.com/google/nearby/pull/2433",
+    "cvss": "-",
+    "description": "There exists a vulnerability in Quickshare/Nearby where an attacker can force the a victim to stay connected to a temporary hotspot created for the share. As part of the sequence of packets in a QuickShare connection over Bluetooth, the attacker forces the victim to connect to the attacker\u2019s WiFi network and then sends an OfflineFrame that crashes Quick Share.\nThis makes the Wifi connection to the attacker\u2019s network last instead of returning to the old network when the Quick Share session is done allowing the attacker to be a MiTM. We recommend upgrading to version\u00a01.0.1724.0 of Quickshare or above",
+    "published": "2024-06-26T16:15:11.560"
+  },
+  "CVE-2024-38272": {
+    "url": "https://github.com/google/nearby/pull/2402",
+    "cvss": "-",
+    "description": "There exists a vulnerability in Quickshare/Nearby where an attacker can bypass the accept file dialog on QuickShare Windows.\u00a0Normally in QuickShare Windows app we can't send a file without the user accept from the receiving device if the visibility is set to everyone mode or contacts mode.\u00a0We recommend upgrading to version 1.0.1724.0 of Quickshare or above",
+    "published": "2024-06-26T16:15:11.733"
   }
 }
