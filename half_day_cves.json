@@ -191,12 +191,6 @@
     "published": "2024-06-25T21:16:01.163",
     "keywords": "remote,execution"
   },
-  "CVE-2024-37742": {
-    "cvss": "-",
-    "description": "An issue in Safe Exam Browser for Windows before 3.6 allows an attacker to share clipboard data between the SEB kiosk mode and the underlying system, compromising exam integrity which may lead to arbitrary code execution and obtaining sensitive information via the Clipboard Management component.",
-    "published": "2024-06-25T22:15:35.183",
-    "keywords": "execution,sensitive"
-  },
   "CVE-2024-29954": {
     "cvss": 5.9,
     "description": "A vulnerability in a password management API in Brocade Fabric OS versions before v9.2.1, v9.2.0b, v9.1.1d, and v8.2.3e prints sensitive information in log files. This could allow an authenticated user to view the server passwords for protocols such as scp and sftp.\n\nDetail.\nWhen the firmwaredownload command is incorrectly entered or points to an erroneous file, the firmware download log captures the failed command, including any password entered in the command line.",
@@ -274,5 +268,17 @@
     "description": "A hardcoded privileged ID within Lumisxp v15.0.x to v16.1.x allows attackers to bypass authentication and access internal pages and other sensitive information.",
     "published": "2024-06-26T19:15:13.453",
     "keywords": "authentication,sensitive,bypass"
+  },
+  "CVE-2024-38949": {
+    "url": "https://github.com/strukturag/libde265/issues/460",
+    "cvss": "-",
+    "description": "Heap Buffer Overflow vulnerability in Libde265 v1.0.15 allows attackers to crash the application via crafted payload to display444as420 function at sdl.cc",
+    "published": "2024-06-26T20:15:16.263"
+  },
+  "CVE-2024-38950": {
+    "url": "https://github.com/strukturag/libde265/issues/460",
+    "cvss": "-",
+    "description": "Heap Buffer Overflow vulnerability in Libde265 v1.0.15 allows attackers to crash the application via crafted payload to __interceptor_memcpy function.",
+    "published": "2024-06-26T20:15:16.367"
   }
 }
