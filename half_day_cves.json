@@ -1,10 +1,4 @@
 {
-  "CVE-2024-33898": {
-    "cvss": "-",
-    "description": "Axiros AXESS Auto Configuration Server (ACS) 4.x and 5.0.0 has Incorrect Access Control. An authorization bypass allows remote attackers to achieve unauthenticated remote code execution.",
-    "published": "2024-06-24T22:15:10.207",
-    "keywords": "remote,execution,unauthenticated,bypass"
-  },
   "CVE-2024-4196": {
     "cvss": 10.0,
     "description": "An improper input validation vulnerability  was discovered in Avaya IP Office that could allow remote command or code execution via a specially crafted web request to the Web Control component. Affected versions include all versions prior to 11.1.3.1.",
@@ -430,5 +424,11 @@
     "cvss": "-",
     "description": "A Stack Buffer Overflow vulnerability in zziplibv 0.13.77 allows attackers to cause a denial of service via the __zzip_fetch_disk_trailer() function at /zzip/zip.c.",
     "published": "2024-06-27T21:15:15.883"
+  },
+  "CVE-2024-39705": {
+    "cvss": "-",
+    "description": "NLTK through 3.8.1 allows remote code execution if untrusted packages have pickled Python code, and the integrated data package download functionality is used. This affects, for example, averaged_perceptron_tagger and punkt.",
+    "published": "2024-06-27T22:15:10.543",
+    "keywords": "remote,execution"
   }
 }
