@@ -334,5 +334,47 @@
     "cvss": 7.5,
     "description": "Path Traversal in GitHub repository stitionai/devika prior to -.",
     "published": "2024-06-27T18:15:20.733"
+  },
+  "CVE-2024-2882": {
+    "cvss": "-",
+    "description": "SDG Technologies PnPSCADA allows a remote attacker to attach various entities without requiring system authentication. This breach could potentially lead to unauthorized control, data manipulation, and access to sensitive information within the SCADA system.",
+    "published": "2024-06-27T19:15:13.667",
+    "keywords": "remote,authentication,sensitive"
+  },
+  "CVE-2024-5751": {
+    "cvss": 9.8,
+    "description": "BerriAI/litellm version v1.35.8 contains a vulnerability where an attacker can achieve remote code execution. The vulnerability exists in the `add_deployment` function, which decodes and decrypts environment variables from base64 and assigns them to `os.environ`. An attacker can exploit this by sending a malicious payload to the `/config/update` endpoint, which is then processed and executed by the server when the `get_secret` function is triggered. This requires the server to use Google KMS and a database to store a model.",
+    "published": "2024-06-27T19:15:16.160",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-5822": {
+    "cvss": 7.3,
+    "description": "A Server-Side Request Forgery (SSRF) vulnerability exists in the upload processing interface of gaizhenbiao/ChuanhuChatGPT versions <= ChuanhuChatGPT-20240410-git.zip. This vulnerability allows attackers to send crafted requests from the vulnerable server to internal or external resources, potentially bypassing security controls and accessing sensitive data.",
+    "published": "2024-06-27T19:15:16.880",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-5824": {
+    "cvss": 7.4,
+    "description": "A path traversal vulnerability in the `/set_personality_config` endpoint of parisneo/lollms version 9.4.0 allows an attacker to overwrite the `configs/config.yaml` file. This can lead to remote code execution by changing server configuration properties such as `force_accept_remote_access` and `turn_on_code_validation`.",
+    "published": "2024-06-27T19:15:17.117",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-5826": {
+    "cvss": 9.8,
+    "description": "In the latest version of vanna-ai/vanna, the `vanna.ask` function is vulnerable to remote code execution due to prompt injection. The root cause is the lack of a sandbox when executing LLM-generated code, allowing an attacker to manipulate the code executed by the `exec` function in `src/vanna/base/base.py`. This vulnerability can be exploited by an attacker to achieve remote code execution on the app backend server, potentially gaining full control of the server.",
+    "published": "2024-06-27T19:15:17.350",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-5980": {
+    "cvss": 9.1,
+    "description": "A vulnerability in the /v1/runs API endpoint of lightning-ai/pytorch-lightning v2.2.4 allows attackers to exploit path traversal when extracting tar.gz files. When the LightningApp is running with the plugin_server, attackers can deploy malicious tar.gz plugins that embed arbitrary files with path traversal vulnerabilities. This can result in arbitrary files being written to any directory in the victim's local file system, potentially leading to remote code execution.",
+    "published": "2024-06-27T19:15:18.803",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-6085": {
+    "cvss": 8.6,
+    "description": "A path traversal vulnerability exists in the XTTS server included in the lollms package, version v9.6. This vulnerability arises from the ability to perform an unauthenticated root folder settings change. Although the read file endpoint is protected against path traversals, this protection can be bypassed by changing the root folder to '/'. This allows attackers to read arbitrary files on the system. Additionally, the output folders can be changed to write arbitrary audio files to any location on the system.",
+    "published": "2024-06-27T19:15:19.287",
+    "keywords": "unauthenticated,bypass"
   }
 }
