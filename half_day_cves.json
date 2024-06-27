@@ -292,5 +292,17 @@
     "description": "A vulnerability classified as problematic was found in LabVantage LIMS 2017. Affected by this vulnerability is an unknown functionality of the file /labvantage/rc?command=file&file=WEB-OPAL/pagetypes/bulletins/sendbulletin.jsp of the component POST Request Handler. The manipulation of the argument bulletinbody leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-269803.",
     "published": "2024-06-27T12:15:31.207",
     "keywords": "remote,command"
+  },
+  "CVE-2024-28820": {
+    "url": "https://github.com/threerings/openvpn-auth-ldap/pull/92",
+    "cvss": "-",
+    "description": "Buffer overflow in the extract_openvpn_cr function in openvpn-cr.c in openvpn-auth-ldap (aka the Three Rings Auth-LDAP plugin for OpenVPN) 2.0.4 allows attackers with a valid LDAP username and who can control the challenge/response password field to pass a string with more than 14 colons into this field and cause a buffer overflow.",
+    "published": "2024-06-27T16:15:10.950"
+  },
+  "CVE-2024-39375": {
+    "cvss": "-",
+    "description": "TELSAT marKoni FM Transmitters are vulnerable to an attacker bypassing authentication and gaining administrator privileges.",
+    "published": "2024-06-27T16:15:11.733",
+    "keywords": "authentication,bypass"
   }
 }
