@@ -1,16 +1,4 @@
 {
-  "CVE-2024-39337": {
-    "cvss": "-",
-    "description": "Click Studios Passwordstate Core before 9.8 build 9858 allows Authentication Bypass.",
-    "published": "2024-06-24T00:15:09.577",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-3121": {
-    "cvss": 6.8,
-    "description": "A remote code execution vulnerability exists in the create_conda_env function of the parisneo/lollms repository, version 5.9.0. The vulnerability arises from the use of shell=True in the subprocess.Popen function, which allows an attacker to inject arbitrary commands by manipulating the env_name and python_version parameters. This issue could lead to a serious security breach as demonstrated by the ability to execute the 'whoami' command among potentially other harmful commands.",
-    "published": "2024-06-24T00:15:09.680",
-    "keywords": "remote,execution,command"
-  },
   "CVE-2024-24552": {
     "cvss": "-",
     "description": "A session fixation vulnerability in Bludit allows an attacker to bypass the server's authentication if they can trick an administrator or any other user into authorizing a session ID of their choosing.",
