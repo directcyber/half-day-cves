@@ -1,40 +1,4 @@
 {
-  "CVE-2024-21827": {
-    "cvss": 7.2,
-    "description": "A leftover debug code vulnerability exists in the cli_server debug functionality of Tp-Link ER7206 Omada Gigabit VPN Router 1.4.1 Build 20240117 Rel.57421. A specially crafted series of network requests can lead to arbitrary command execution. An attacker can send a sequence of requests to trigger this vulnerability.",
-    "published": "2024-06-25T14:15:10.940",
-    "keywords": "execution,command,vpn"
-  },
-  "CVE-2024-38951": {
-    "url": "https://github.com/px4/px4-autopilot/issues/23251",
-    "cvss": "-",
-    "description": "A buffer overflow in PX4-Autopilot v1.12.3 allows attackers to cause a Denial of Service (DoS) via a crafted MavLink message.",
-    "published": "2024-06-25T14:15:12.403"
-  },
-  "CVE-2024-38952": {
-    "url": "https://github.com/px4/px4-autopilot/issues/23258",
-    "cvss": "-",
-    "description": "PX4-Autopilot v1.14.3 was discovered to contain a buffer overflow via the topic_name parameter at /logger/logged_topics.cpp.",
-    "published": "2024-06-25T14:15:12.517"
-  },
-  "CVE-2024-37085": {
-    "cvss": 6.8,
-    "description": "VMware ESXi contains an authentication bypass vulnerability.\u00a0A malicious actor with sufficient Active Directory (AD) permissions can gain full access to an ESXi host that was previously  configured to use AD for user management https://blogs.vmware.com/vsphere/2012/09/joining-vsphere-hosts-to-active-directory.html  by re-creating the configured AD group ('ESXi Admins' by default) after it was deleted from AD.",
-    "published": "2024-06-25T15:15:12.377",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-5805": {
-    "cvss": 9.1,
-    "description": "Improper Authentication vulnerability in Progress MOVEit Gateway (SFTP modules) allows Authentication Bypass.This issue affects MOVEit Gateway: 2024.0.0.",
-    "published": "2024-06-25T15:15:15.603",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-5806": {
-    "cvss": 9.1,
-    "description": "Improper Authentication vulnerability in Progress MOVEit Transfer (SFTP module) can lead to Authentication Bypass.This issue affects MOVEit Transfer: from 2023.0.0 before 2023.0.11, from 2023.1.0 before 2023.1.6, from 2024.0.0 before 2024.0.2.",
-    "published": "2024-06-25T15:15:15.850",
-    "keywords": "authentication,bypass"
-  },
   "CVE-2024-5988": {
     "cvss": "-",
     "description": "Due to an improper input validation, an unauthenticated threat actor can send a malicious message to invoke a local or remote executable and cause a remote code execution condition on the Rockwell Automation\u00a0ThinManager\u00ae ThinServer\u2122.",
@@ -400,5 +364,29 @@
     "description": "PTC Creo Elements/Direct License Server exposes a web interface which can be used by unauthenticated remote attackers to execute arbitrary OS commands on the server.",
     "published": "2024-06-27T23:15:50.470",
     "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2024-39351": {
+    "cvss": 7.2,
+    "description": "A vulnerability regarding improper neutralization of special elements used in an OS command ('OS Command Injection') is found in the NTP configuration. This allows remote authenticated users with administrator privileges to execute arbitrary commands via unspecified vectors. The following models with Synology Camera Firmware versions before 1.0.7-0298 may be affected: BC500 and TC500.",
+    "published": "2024-06-28T06:15:05.887",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-39352": {
+    "cvss": 4.9,
+    "description": "A vulnerability regarding incorrect authorization is found in the firmware upgrade functionality. This allows remote authenticated users with administrator privileges to bypass firmware integrity check via unspecified vectors. The following models with Synology Camera Firmware versions before 1.0.7-0298 may be affected: BC500 and TC500.",
+    "published": "2024-06-28T06:15:06.223",
+    "keywords": "remote,bypass"
+  },
+  "CVE-2024-39350": {
+    "cvss": 7.5,
+    "description": "A vulnerability regarding authentication bypass by spoofing is found in the RTSP functionality. This allows man-in-the-middle attackers to obtain privileges without consent via unspecified vectors. The following models with Synology Camera Firmware versions before 1.0.7-0298 may be affected: BC500 and TC500.",
+    "published": "2024-06-28T07:15:06.330",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-37741": {
+    "url": "https://github.com/thiagoralves/openplc_v3/issues/242",
+    "cvss": "-",
+    "description": "OpenPLC 3 through 9cd8f1b allows XSS via an SVG document as a profile picture.",
+    "published": "2024-06-28T13:15:02.860"
   }
 }
