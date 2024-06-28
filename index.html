@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-06-28T19:08:14.965266
+Updated at UTC 2024-06-28T20:10:01.021888
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,22 @@ Updated at UTC 2024-06-28T19:08:14.965266
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27629">CVE-2024-27629</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/rordenlab/dcm2niix/pull/789">https://github.com/rordenlab/dcm2niix/pull/789</a></td>
+					<td class=date>2024-06-28T19:15:05.243</td>
+					<td class=description>An issue in dc2niix before v.1.0.20240202 allows a local attacker to execute arbitrary code via the generated file name is not properly escaped and injected into a system call when certain types of compression are used.</td>
+
+
+				</tr>
+			
+		
+			
 		
 			
 		
@@ -331,32 +347,30 @@ This makes the Wifi connection to the attacker’s network last instead of retur
 		
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37820">CVE-2024-37820</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/pingcap/tidb/issues/53580">https://github.com/pingcap/tidb/issues/53580</a></td>
-					<td class=date>2024-06-25T19:15:11.943</td>
-					<td class=description>A nil pointer dereference in PingCAP TiDB v8.2.0-alpha-216-gfe5858b allows attackers to crash the application via expression.inferCollation.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-36819">CVE-2024-36819</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/ramonsilva20/mapos/commit/3559bae4782162faab94670f503fd35b0f331929">https://github.com/ramonsilva20/mapos/commit/3559bae4782162faab94670f503fd35b0f331929</a></td>
-					<td class=date>2024-06-25T19:15:11.837</td>
-					<td class=description>MAP-OS 4.45.0 and earlier is vulnerable to Cross-Site Scripting (XSS). This vulnerability allows malicious users to insert a malicious payload into the "Client Name" input. When a service order from this client is created, the malicious payload is displayed on the administrator and employee dashboards, resulting in unauthorized script execution whenever the dashboard is loaded.</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-35156">CVE-2024-35156</a></td>
+					<td>6.5</td>
+					<td>remote,sensitive</td>
+					<td class=date>2024-06-28T19:15:05.917</td>
+					<td class=description>IBM MQ 9.3 LTS and 9.3 CD could allow a remote attacker to obtain sensitive information when a detailed technical error message is returned in the browser.  This information could be used in further attacks against the system.  IBM X-Force ID:  292766.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-25041">CVE-2024-25041</a></td>
+					<td>5.4</td>
+					<td>remote,command</td>
+					<td class=date>2024-06-28T19:15:04.653</td>
+					<td class=description>IBM Cognos Analytics 11.2.0, 11.2.1, 11.2.2, 11.2.3, 11.2.4, 12.0.0, 12.0.1, and 12.0.2 is potentially vulnerable to cross site scripting (XSS). A remote attacker could execute malicious commands due to improper validation of column headings in Cognos Assistant.  IBM X-Force ID:  282780.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -901,10 +915,6 @@ WhatsUp.ExportUtilities.Export.GetFileWithoutZip
 					<td class=date>2024-06-25T20:15:12.127</td>
 					<td class=description>A Path Traversal and Remote File Inclusion (RFI) vulnerability exists in the parisneo/lollms-webui application, affecting versions v9.7 to the latest. The vulnerability arises from insufficient input validation in the `/apply_settings` function, allowing an attacker to manipulate the `discussion_db_name` parameter to traverse the file system and include arbitrary files. This issue is compounded by the bypass of input filtering in the `install_binding`, `reinstall_binding`, and `unInstall_binding` endpoints, despite the presence of a `sanitize_path_from_endpoint(data.name)` filter. Successful exploitation enables an attacker to upload and execute malicious code on the victim's system, leading to Remote Code Execution (RCE).</td>
 				</tr>
-			
-		
-			
-		
 			
 		
 
