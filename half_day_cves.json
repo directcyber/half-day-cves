@@ -1,34 +1,4 @@
 {
-  "CVE-2024-4498": {
-    "cvss": 7.7,
-    "description": "A Path Traversal and Remote File Inclusion (RFI) vulnerability exists in the parisneo/lollms-webui application, affecting versions v9.7 to the latest. The vulnerability arises from insufficient input validation in the `/apply_settings` function, allowing an attacker to manipulate the `discussion_db_name` parameter to traverse the file system and include arbitrary files. This issue is compounded by the bypass of input filtering in the `install_binding`, `reinstall_binding`, and `unInstall_binding` endpoints, despite the presence of a `sanitize_path_from_endpoint(data.name)` filter. Successful exploitation enables an attacker to upload and execute malicious code on the victim's system, leading to Remote Code Execution (RCE).",
-    "published": "2024-06-25T20:15:12.127",
-    "keywords": "remote,execution,bypass"
-  },
-  "CVE-2024-4883": {
-    "cvss": 9.8,
-    "description": "In WhatsUp Gold versions released before 2023.1.3, a Remote Code Execution issue exists in Progress WhatsUp Gold. This vulnerability allows an unauthenticated attacker to achieve the RCE as a service account through NmApi.exe.",
-    "published": "2024-06-25T20:15:12.320",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-4884": {
-    "cvss": 9.8,
-    "description": "In WhatsUp Gold versions released before 2023.1.3,\u00a0an unauthenticated Remote Code Execution vulnerability in Progress WhatsUpGold.\u00a0\u00a0The Apm.UI.Areas.APM.Controllers.CommunityController\n\n allows execution of commands with iisapppool\\nmconsole privileges.",
-    "published": "2024-06-25T20:15:12.547",
-    "keywords": "remote,execution,unauthenticated,command"
-  },
-  "CVE-2024-4885": {
-    "cvss": 9.8,
-    "description": "In WhatsUp Gold versions released before 2023.1.3,\u00a0an unauthenticated Remote Code Execution vulnerability in Progress WhatsUpGold.\u00a0\u00a0The \n\nWhatsUp.ExportUtilities.Export.GetFileWithoutZip\n\n\n\n allows execution of commands with iisapppool\\nmconsole privileges.",
-    "published": "2024-06-25T20:15:12.970",
-    "keywords": "remote,execution,unauthenticated,command"
-  },
-  "CVE-2024-5010": {
-    "cvss": 7.5,
-    "description": "In WhatsUp Gold versions released before 2023.1.3, a vulnerability exists in the TestController functionality.\u00a0 A specially crafted \n\nunauthenticated\n\nHTTP request can lead to a disclosure of sensitive information.",
-    "published": "2024-06-25T20:15:13.617",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2024-37855": {
     "cvss": "-",
     "description": "An issue in Nepstech Wifi Router xpon (terminal) NTPL-Xpon1GFEVN, hardware verstion 1.0 firmware 2.0.1 allows a remote attacker to execute arbitrary code via the router's Telnet port 2345 without requiring authentication credentials.",
@@ -382,5 +352,17 @@
     "description": "IBM MQ 9.3 LTS and 9.3 CD could allow a remote attacker to obtain sensitive information when a detailed technical error message is returned in the browser.  This information could be used in further attacks against the system.  IBM X-Force ID:  292766.",
     "published": "2024-06-28T19:15:05.917",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-38528": {
+    "cvss": 7.5,
+    "description": "nptd-rs is a tool for synchronizing your computer's clock, implementing the NTP and NTS protocols. There is a missing limit for accepted NTS-KE connections. This allows an unauthenticated remote attacker to crash ntpd-rs when an NTS-KE server is configured. Non NTS-KE server configurations, such as the default ntpd-rs configuration, are unaffected. This vulnerability has been patched in version 1.1.3.\n",
+    "published": "2024-06-28T20:15:02.533",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-5827": {
+    "cvss": 9.8,
+    "description": "Vanna v0.3.4 is vulnerable to SQL injection in its DuckDB integration exposed to its Flask Web APIs. Attackers can inject malicious SQL training data and generate corresponding queries to write arbitrary files on the victim's file system, such as backdoor.php with contents `<?php system($_GET[0]); ?>`. This can lead to command execution or the creation of backdoors.",
+    "published": "2024-06-28T20:15:03.217",
+    "keywords": "execution,command"
   }
 }

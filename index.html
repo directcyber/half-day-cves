@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-06-28T20:10:01.021888
+Updated at UTC 2024-06-28T21:10:55.561317
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-06-28T20:10:01.021888
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -337,18 +341,29 @@ This makes the Wifi connection to the attacker’s network last instead of retur
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5827">CVE-2024-5827</a></td>
+					<td>9.8</td>
+					<td>execution,command</td>
+					<td class=date>2024-06-28T20:15:03.217</td>
+					<td class=description>Vanna v0.3.4 is vulnerable to SQL injection in its DuckDB integration exposed to its Flask Web APIs. Attackers can inject malicious SQL training data and generate corresponding queries to write arbitrary files on the victim's file system, such as backdoor.php with contents `<?php system($_GET[0]); ?>`. This can lead to command execution or the creation of backdoors.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38528">CVE-2024-38528</a></td>
+					<td>7.5</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-06-28T20:15:02.533</td>
+					<td class=description>nptd-rs is a tool for synchronizing your computer's clock, implementing the NTP and NTS protocols. There is a missing limit for accepted NTS-KE connections. This allows an unauthenticated remote attacker to crash ntpd-rs when an NTS-KE server is configured. Non NTS-KE server configurations, such as the default ntpd-rs configuration, are unaffected. This vulnerability has been patched in version 1.1.3.
+</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -852,68 +867,6 @@ The vulnerability exists in the main message processing routines NmDistributed.
 					<td>remote,authentication</td>
 					<td class=date>2024-06-25T21:15:59.867</td>
 					<td class=description>An issue in Nepstech Wifi Router xpon (terminal) NTPL-Xpon1GFEVN, hardware verstion 1.0 firmware 2.0.1 allows a remote attacker to execute arbitrary code via the router's Telnet port 2345 without requiring authentication credentials.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5010">CVE-2024-5010</a></td>
-					<td>7.5</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2024-06-25T20:15:13.617</td>
-					<td class=description>In WhatsUp Gold versions released before 2023.1.3, a vulnerability exists in the TestController functionality.  A specially crafted 
-
-unauthenticated
-
-HTTP request can lead to a disclosure of sensitive information.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4885">CVE-2024-4885</a></td>
-					<td>9.8</td>
-					<td>remote,execution,unauthenticated,command</td>
-					<td class=date>2024-06-25T20:15:12.970</td>
-					<td class=description>In WhatsUp Gold versions released before 2023.1.3, an unauthenticated Remote Code Execution vulnerability in Progress WhatsUpGold.  The 
-
-WhatsUp.ExportUtilities.Export.GetFileWithoutZip
-
-
-
- allows execution of commands with iisapppool\nmconsole privileges.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4884">CVE-2024-4884</a></td>
-					<td>9.8</td>
-					<td>remote,execution,unauthenticated,command</td>
-					<td class=date>2024-06-25T20:15:12.547</td>
-					<td class=description>In WhatsUp Gold versions released before 2023.1.3, an unauthenticated Remote Code Execution vulnerability in Progress WhatsUpGold.  The Apm.UI.Areas.APM.Controllers.CommunityController
-
- allows execution of commands with iisapppool\nmconsole privileges.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4883">CVE-2024-4883</a></td>
-					<td>9.8</td>
-					<td>remote,execution,unauthenticated</td>
-					<td class=date>2024-06-25T20:15:12.320</td>
-					<td class=description>In WhatsUp Gold versions released before 2023.1.3, a Remote Code Execution issue exists in Progress WhatsUp Gold. This vulnerability allows an unauthenticated attacker to achieve the RCE as a service account through NmApi.exe.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4498">CVE-2024-4498</a></td>
-					<td>7.7</td>
-					<td>remote,execution,bypass</td>
-					<td class=date>2024-06-25T20:15:12.127</td>
-					<td class=description>A Path Traversal and Remote File Inclusion (RFI) vulnerability exists in the parisneo/lollms-webui application, affecting versions v9.7 to the latest. The vulnerability arises from insufficient input validation in the `/apply_settings` function, allowing an attacker to manipulate the `discussion_db_name` parameter to traverse the file system and include arbitrary files. This issue is compounded by the bypass of input filtering in the `install_binding`, `reinstall_binding`, and `unInstall_binding` endpoints, despite the presence of a `sanitize_path_from_endpoint(data.name)` filter. Successful exploitation enables an attacker to upload and execute malicious code on the victim's system, leading to Remote Code Execution (RCE).</td>
 				</tr>
 			
 		
