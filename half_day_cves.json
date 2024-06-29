@@ -1,10 +1,4 @@
 {
-  "CVE-2024-29954": {
-    "cvss": 5.9,
-    "description": "A vulnerability in a password management API in Brocade Fabric OS versions before v9.2.1, v9.2.0b, v9.1.1d, and v8.2.3e prints sensitive information in log files. This could allow an authenticated user to view the server passwords for protocols such as scp and sftp.\n\nDetail.\nWhen the firmwaredownload command is incorrectly entered or points to an erroneous file, the firmware download log captures the failed command, including any password entered in the command line.",
-    "published": "2024-06-26T00:15:10.263",
-    "keywords": "command,sensitive"
-  },
   "CVE-2024-29174": {
     "cvss": 4.4,
     "description": "Dell Data Domain, versions prior to 7.13.0.0, LTS 7.7.5.30, LTS 7.10.1.20 contain an SQL Injection vulnerability. A local low privileged attacker could potentially exploit this vulnerability, leading to the execution of certain SQL commands on the application's backend database causing unauthorized access to application data.",
@@ -142,12 +136,6 @@
     "description": "IBM OpenBMC FW1050.00 through FW1050.10 BMCWeb HTTPS server component could disclose sensitive URI content to an unauthorized actor that bypasses authentication channels.  IBM X-ForceID:  290026.",
     "published": "2024-06-27T18:15:17.857",
     "keywords": "authentication,sensitive,bypass"
-  },
-  "CVE-2024-35260": {
-    "cvss": 8.0,
-    "description": "Microsoft Dataverse Remote Code Execution Vulnerability",
-    "published": "2024-06-27T18:15:18.973",
-    "keywords": "remote,execution"
   },
   "CVE-2024-5334": {
     "url": "https://github.com/stitionai/devika/commit/6acce21fb08c3d1123ef05df6a33912bf0ee77c2",
