@@ -1,46 +1,4 @@
 {
-  "CVE-2024-2973": {
-    "cvss": 10.0,
-    "description": "An Authentication Bypass Using an Alternate Path or Channel vulnerability in Juniper Networks Session Smart Router or conductor running with a redundant peer allows a network based attacker to bypass authentication and take full control of the device.\nOnly routers or conductors that are running in high-availability redundant configurations are affected by this vulnerability.\n\n\n\n\nNo other Juniper Networks products or platforms are affected by this issue.\n\n\n\n\n\nThis issue affects:\n\nSession Smart Router:\u00a0\n\n\n\n  *  All versions before 5.6.15,\u00a0\n  *  from 6.0 before 6.1.9-lts,\u00a0\n  *  from 6.2 before 6.2.5-sts.\n\n\n\nSession Smart Conductor:\u00a0\n\n\n\n  *  All versions before 5.6.15,\u00a0\n  *  from 6.0 before 6.1.9-lts,\u00a0\n  *  from 6.2 before 6.2.5-sts.\u00a0\n\n\n\nWAN Assurance Router:\u00a0\n\n\n\n  *  6.0 versions before 6.1.9-lts,\u00a0\n  *  6.2 versions before 6.2.5-sts.",
-    "published": "2024-06-27T21:15:15.037",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-36072": {
-    "cvss": "-",
-    "description": "Netwrix CoSoSys Endpoint Protector through 5.9.3 and CoSoSys Unify through 7.0.6 contain a remote code execution vulnerability in the logging component of the Endpoint Protector and Unify server application which allows an unauthenticated remote attacker to send a malicious request, resulting in the ability to execute system commands with root privileges.",
-    "published": "2024-06-27T21:15:15.327",
-    "keywords": "remote,execution,unauthenticated,command"
-  },
-  "CVE-2024-36073": {
-    "cvss": "-",
-    "description": "Netwrix CoSoSys Endpoint Protector through 5.9.3 and CoSoSys Unify through 7.0.6 contain a remote code execution vulnerability in the shadowing component of the Endpoint Protector and Unify agent which allows an attacker with administrative access to the Endpoint Protector or Unify server to overwrite sensitive configuration and subsequently execute system commands with SYSTEM/root privileges on a chosen client endpoint.",
-    "published": "2024-06-27T21:15:15.420",
-    "keywords": "remote,execution,command,sensitive"
-  },
-  "CVE-2024-36074": {
-    "cvss": "-",
-    "description": "Netwrix CoSoSys Endpoint Protector through 5.9.3 and CoSoSys Unify through 7.0.6 contain a remote code execution vulnerability in the Endpoint Protector and Unify agent in the way that the EasyLock dependency is acquired from the server. An attacker with administrative access to the Endpoint Protector or Unify server can cause a client to acquire and execute a malicious file resulting in remote code execution.",
-    "published": "2024-06-27T21:15:15.520",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-36075": {
-    "cvss": "-",
-    "description": "Netwrix CoSoSys Endpoint Protector through 5.9.3 and CoSoSys Unify through 7.0.6 contain a remote code execution vulnerability in the application configuration component of the Endpoint Protector and Unify agent which allows a remote, unauthenticated attacker to manipulate the configuration of either their own or another client endpoint resulting in the bypass of certain configuration options. Manipulation of the application configuration can result in local policy bypass and in some scenarios remote code execution.",
-    "published": "2024-06-27T21:15:15.610",
-    "keywords": "remote,execution,unauthenticated,bypass"
-  },
-  "CVE-2024-39132": {
-    "url": "https://github.com/wangf1978/dumpts/issues/22",
-    "cvss": "-",
-    "description": "A NULL Pointer Dereference vulnerability in DumpTS v0.1.0-nightly allows attackers to cause a denial of service via the function VerifyCommandLine() at /src/DumpTS.cpp.",
-    "published": "2024-06-27T21:15:15.790"
-  },
-  "CVE-2024-39134": {
-    "url": "https://github.com/gdraheim/zziplib/issues/165",
-    "cvss": "-",
-    "description": "A Stack Buffer Overflow vulnerability in zziplibv 0.13.77 allows attackers to cause a denial of service via the __zzip_fetch_disk_trailer() function at /zzip/zip.c.",
-    "published": "2024-06-27T21:15:15.883"
-  },
   "CVE-2024-39705": {
     "cvss": "-",
     "description": "NLTK through 3.8.1 allows remote code execution if untrusted packages have pickled Python code, and the integrated data package download functionality is used. This affects, for example, averaged_perceptron_tagger and punkt.",
