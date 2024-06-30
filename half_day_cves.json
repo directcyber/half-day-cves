@@ -1,10 +1,4 @@
 {
-  "CVE-2024-6054": {
-    "cvss": 8.8,
-    "description": "The Auto Featured Image plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'create_post_attachment_from_url' function in all versions up to, and including, 1.2. This makes it possible for authenticated attackers, with contributor-level and above permissions, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2024-06-27T03:15:50.890",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-6367": {
     "cvss": 3.5,
     "description": "A vulnerability was found in LabVantage LIMS 2017. It has been declared as problematic. This vulnerability affects unknown code of the file /labvantage/rc?command=file&file=WEB-CORE/elements/files/filesembedded.jsp of the component POST Request Handler. The manipulation of the argument sdcid/keyid1/keyid2/keyid3 leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-269800. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
