@@ -1,16 +1,4 @@
 {
-  "CVE-2024-38528": {
-    "cvss": 7.5,
-    "description": "nptd-rs is a tool for synchronizing your computer's clock, implementing the NTP and NTS protocols. There is a missing limit for accepted NTS-KE connections. This allows an unauthenticated remote attacker to crash ntpd-rs when an NTS-KE server is configured. Non NTS-KE server configurations, such as the default ntpd-rs configuration, are unaffected. This vulnerability has been patched in version 1.1.3.\n",
-    "published": "2024-06-28T20:15:02.533",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-5827": {
-    "cvss": 9.8,
-    "description": "Vanna v0.3.4 is vulnerable to SQL injection in its DuckDB integration exposed to its Flask Web APIs. Attackers can inject malicious SQL training data and generate corresponding queries to write arbitrary files on the victim's file system, such as backdoor.php with contents `<?php system($_GET[0]); ?>`. This can lead to command execution or the creation of backdoors.",
-    "published": "2024-06-28T20:15:03.217",
-    "keywords": "execution,command"
-  },
   "CVE-2024-5598": {
     "cvss": 7.5,
     "description": "The Advanced File Manager plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 5.2.4 via the 'fma_local_file_system' function. This makes it possible for unauthenticated attackers to extract sensitive data including backups or other sensitive information if the files have been moved to the built-in Trash folder.",
@@ -147,6 +135,24 @@
     "cvss": "-",
     "description": "Encoding problem in mod_proxy in Apache HTTP Server 2.4.59 and earlier allows request URLs with incorrect encoding to be sent to backend services, potentially bypassing authentication via crafted requests.\nUsers are recommended to upgrade to version 2.4.60, which fixes this issue.",
     "published": "2024-07-01T19:15:04.657",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-28200": {
+    "cvss": 9.1,
+    "description": "The N-central server is vulnerable to an authentication bypass of the user interface. This vulnerability is present in all deployments of N-central prior to 2024.2.\n\nThis vulnerability was discovered through internal N-central source code review and N-able has not observed any exploitation in the wild.",
+    "published": "2024-07-01T21:15:03.143",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-38366": {
+    "cvss": 9.0,
+    "description": "trunk.cocoapods.org is the authentication server for the CoacoaPods dependency manager. The part of trunk which verifies whether a user has a real email address on signup used a rfc-822 library which executes a shell command to validate the email domain MX records validity. It works via an DNS MX. This lookup could be manipulated to also execute a command on the trunk server, effectively giving root access to the server and the infrastructure. This issue was patched server-side with commit 001cc3a430e75a16307f5fd6cdff1363ad2f40f3 in September 2023. This RCE triggered a full user-session reset, as an attacker could have used this method to write to any Podspec in trunk.",
+    "published": "2024-07-01T21:15:03.797",
+    "keywords": "authentication,command"
+  },
+  "CVE-2024-5322": {
+    "cvss": 9.1,
+    "description": "The N-central server is vulnerable to session rebinding of already authenticated users when using Entra SSO, which can lead to authentication bypass.\n \nThis vulnerability is present in all Entra-supported deployments of N-central prior to 2024.3.",
+    "published": "2024-07-01T21:15:04.810",
     "keywords": "authentication,bypass"
   }
 }
