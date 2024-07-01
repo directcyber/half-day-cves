@@ -1,10 +1,4 @@
 {
-  "CVE-2024-37741": {
-    "url": "https://github.com/thiagoralves/openplc_v3/issues/242",
-    "cvss": "-",
-    "description": "OpenPLC 3 through 9cd8f1b allows XSS via an SVG document as a profile picture.",
-    "published": "2024-06-28T13:15:02.860"
-  },
   "CVE-2024-35155": {
     "cvss": 6.5,
     "description": "IBM MQ Console 9.3 LTS and 9.3 CD could disclose could allow a remote attacker to obtain sensitive information when a detailed technical error message is returned in the browser.  This information could be used in further attacks against the system.  IBM X-Force ID:  292765.",
@@ -100,5 +94,23 @@
     "description": "CHANGING Mobile One Time Password's uploading function in a hidden page does not filter file type properly. Remote attackers with  administrator privilege can exploit this vulnerability to upload and run malicious file to execute system commands.",
     "published": "2024-07-01T05:15:04.973",
     "keywords": "remote,command"
+  },
+  "CVE-2024-6424": {
+    "cvss": 9.3,
+    "description": "External server-side request vulnerability in MESbook 20221021.03 version, which could allow a remote, unauthenticated attacker to exploit the endpoint \"/api/Proxy/Post?userName=&password=&uri=<FILE|INTERNAL URL|IP/HOST\" or \"/api/Proxy/Get?userName=&password=&uri=<ARCHIVO|URL INTERNA|IP/HOST\" to read the source code of web files, read internal files or access network resources.",
+    "published": "2024-07-01T13:15:06.690",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-6425": {
+    "cvss": 9.1,
+    "description": "Incorrect Provision of Specified Functionality vulnerability in MESbook 20221021.03 version. An unauthenticated remote attacker can register user accounts without being authenticated from the route \"/account/Register/\" and in the parameters \"UserName=<RANDOMUSER>&Password=<PASSWORD>&ConfirmPassword=<PASSWORD-REPEAT>\".",
+    "published": "2024-07-01T13:15:06.927",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-38953": {
+    "url": "https://github.com/qinggan/phpok/issues/17",
+    "cvss": "-",
+    "description": "phpok 6.4.003 contains a Cross Site Scripting (XSS) vulnerability in the ok_f() method under the framework/api/upload_control.php file.",
+    "published": "2024-07-01T14:15:05.600"
   }
 }
