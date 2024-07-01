@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-01T19:08:48.493622
+Updated at UTC 2024-07-01T20:11:50.448405
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,14 @@ Updated at UTC 2024-07-01T19:08:48.493622
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -120,24 +128,49 @@ Updated at UTC 2024-07-01T19:08:48.493622
 		
 			
 		
-			
+
+		<hr>
 		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27629">CVE-2024-27629</a></td>
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38473">CVE-2024-38473</a></td>
 					<td>-</td>
-					<td><a target=_blank href="https://github.com/rordenlab/dcm2niix/pull/789">https://github.com/rordenlab/dcm2niix/pull/789</a></td>
-					<td class=date>2024-06-28T19:15:05.243</td>
-					<td class=description>An issue in dc2niix before v.1.0.20240202 allows a local attacker to execute arbitrary code via the generated file name is not properly escaped and injected into a system call when certain types of compression are used.</td>
-
-
+					<td>authentication,bypass</td>
+					<td class=date>2024-07-01T19:15:04.657</td>
+					<td class=description>Encoding problem in mod_proxy in Apache HTTP Server 2.4.59 and earlier allows request URLs with incorrect encoding to be sent to backend services, potentially bypassing authentication via crafted requests.
+Users are recommended to upgrade to version 2.4.60, which fixes this issue.</td>
 				</tr>
 			
 		
 			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37146">CVE-2024-37146</a></td>
+					<td>6.1</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2024-07-01T19:15:04.070</td>
+					<td class=description>Flowise is a drag & drop user interface to build a customized large language model flow. In version 1.4.3 of Flowise, a reflected cross-site scripting vulnerability occurs in the `/api/v1/credentials/id` endpoint. If the default configuration is used (unauthenticated), an attacker may be able to craft a specially crafted URL that injects Javascript into the user sessions, allowing the attacker to steal information, create false popups, or even redirect the user to other websites without interaction. If the chatflow ID is not found, its value is reflected in the 404 page, which has type text/html. This allows an attacker to attach arbitrary scripts to the page, allowing an attacker to steal sensitive information. This XSS may be chained with the path injection to allow an attacker without direct access to Flowise to read arbitrary files from the Flowise server. As of time of publication, no known patches are available.</td>
+				</tr>
+			
 		
-
-		<hr>
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37145">CVE-2024-37145</a></td>
+					<td>6.1</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2024-07-01T19:15:03.853</td>
+					<td class=description>Flowise is a drag & drop user interface to build a customized large language model flow. In version 1.4.3 of Flowise, a reflected cross-site scripting vulnerability occurs in the `/api/v1/chatflows-streaming/id` endpoint. If the default configuration is used (unauthenticated), an attacker may be able to craft a specially crafted URL that injects Javascript into the user sessions, allowing the attacker to steal information, create false popups, or even redirect the user to other websites without interaction. If the chatflow ID is not found, its value is reflected in the 404 page, which has type text/html. This allows an attacker to attach arbitrary scripts to the page, allowing an attacker to steal sensitive information. This XSS may be chained with the path injection to allow an attacker without direct access to Flowise to read arbitrary files from the Flowise server. As of time of publication, no known patches are available.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-36423">CVE-2024-36423</a></td>
+					<td>6.1</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2024-07-01T19:15:03.627</td>
+					<td class=description>Flowise is a drag & drop user interface to build a customized large language model flow. In version 1.4.3 of Flowise, a reflected cross-site scripting vulnerability occurs in the `/api/v1/public-chatflows/id` endpoint. If the default configuration is used (unauthenticated), an attacker may be able to craft a specially crafted URL that injects Javascript into the user sessions, allowing the attacker to steal information, create false popups, or even redirect the user to other websites without interaction. If the chatflow ID is not found, its value is reflected in the 404 page, which has type text/html. This allows an attacker to attach arbitrary scripts to the page, allowing an attacker to steal sensitive information. This XSS may be chained with the path injection to allow an attacker without direct access to Flowise to read arbitrary files from the Flowise server. As of time of publication, no known patches are available.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -335,28 +368,6 @@ Versions 2.23.6, 2.24.4, and 2.25.2 contain a patch for the issue. A workaround 
 					<td class=date>2024-06-28T20:15:02.533</td>
 					<td class=description>nptd-rs is a tool for synchronizing your computer's clock, implementing the NTP and NTS protocols. There is a missing limit for accepted NTS-KE connections. This allows an unauthenticated remote attacker to crash ntpd-rs when an NTS-KE server is configured. Non NTS-KE server configurations, such as the default ntpd-rs configuration, are unaffected. This vulnerability has been patched in version 1.1.3.
 </td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-35156">CVE-2024-35156</a></td>
-					<td>6.5</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-06-28T19:15:05.917</td>
-					<td class=description>IBM MQ 9.3 LTS and 9.3 CD could allow a remote attacker to obtain sensitive information when a detailed technical error message is returned in the browser.  This information could be used in further attacks against the system.  IBM X-Force ID:  292766.</td>
-				</tr>
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-25041">CVE-2024-25041</a></td>
-					<td>5.4</td>
-					<td>remote,command</td>
-					<td class=date>2024-06-28T19:15:04.653</td>
-					<td class=description>IBM Cognos Analytics 11.2.0, 11.2.1, 11.2.2, 11.2.3, 11.2.4, 12.0.0, 12.0.1, and 12.0.2 is potentially vulnerable to cross site scripting (XSS). A remote attacker could execute malicious commands due to improper validation of column headings in Cognos Assistant.  IBM X-Force ID:  282780.</td>
 				</tr>
 			
 		
