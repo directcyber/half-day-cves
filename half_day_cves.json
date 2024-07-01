@@ -1,10 +1,4 @@
 {
-  "CVE-2024-35155": {
-    "cvss": 6.5,
-    "description": "IBM MQ Console 9.3 LTS and 9.3 CD could disclose could allow a remote attacker to obtain sensitive information when a detailed technical error message is returned in the browser.  This information could be used in further attacks against the system.  IBM X-Force ID:  292765.",
-    "published": "2024-06-28T18:15:04.170",
-    "keywords": "remote,sensitive"
-  },
   "CVE-2024-25041": {
     "cvss": 5.4,
     "description": "IBM Cognos Analytics 11.2.0, 11.2.1, 11.2.2, 11.2.3, 11.2.4, 12.0.0, 12.0.1, and 12.0.2 is potentially vulnerable to cross site scripting (XSS). A remote attacker could execute malicious commands due to improper validation of column headings in Cognos Assistant.  IBM X-Force ID:  282780.",
@@ -94,6 +88,12 @@
     "description": "CHANGING Mobile One Time Password's uploading function in a hidden page does not filter file type properly. Remote attackers with  administrator privilege can exploit this vulnerability to upload and run malicious file to execute system commands.",
     "published": "2024-07-01T05:15:04.973",
     "keywords": "remote,command"
+  },
+  "CVE-2024-6387": {
+    "url": "https://github.com/rapier1/hpn-ssh/issues/87",
+    "cvss": 8.1,
+    "description": "A signal handler race condition was found in OpenSSH's server (sshd), where a client does not authenticate within LoginGraceTime seconds (120 by default, 600 in old OpenSSH versions), then sshd's SIGALRM handler is called asynchronously. However, this signal handler calls various functions that are not async-signal-safe, for example, syslog().",
+    "published": "2024-07-01T13:15:06.467"
   },
   "CVE-2024-6424": {
     "cvss": 9.3,

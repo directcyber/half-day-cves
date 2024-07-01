@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-01T18:14:24.814927
+Updated at UTC 2024-07-01T19:08:48.493622
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -85,6 +85,18 @@ Updated at UTC 2024-07-01T18:14:24.814927
 			
 		
 			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6387">CVE-2024-6387</a></td>
+					<td>8.1</td>
+					<td><a target=_blank href="https://github.com/rapier1/hpn-ssh/issues/87">https://github.com/rapier1/hpn-ssh/issues/87</a></td>
+					<td class=date>2024-07-01T13:15:06.467</td>
+					<td class=description>A signal handler race condition was found in OpenSSH's server (sshd), where a client does not authenticate within LoginGraceTime seconds (120 by default, 600 in old OpenSSH versions), then sshd's SIGALRM handler is called asynchronously. However, this signal handler calls various functions that are not async-signal-safe, for example, syslog().</td>
+
+
+				</tr>
+			
+		
+			
 		
 			
 		
@@ -120,8 +132,6 @@ Updated at UTC 2024-07-01T18:14:24.814927
 
 
 				</tr>
-			
-		
 			
 		
 			
@@ -203,6 +213,8 @@ Versions 2.23.6, 2.24.4, and 2.25.2 contain a patch for the issue. A workaround 
 					<td class=date>2024-07-01T13:15:06.690</td>
 					<td class=description>External server-side request vulnerability in MESbook 20221021.03 version, which could allow a remote, unauthenticated attacker to exploit the endpoint "/api/Proxy/Post?userName=&password=&uri=<FILE|INTERNAL URL|IP/HOST" or "/api/Proxy/Get?userName=&password=&uri=<ARCHIVO|URL INTERNA|IP/HOST" to read the source code of web files, read internal files or access network resources.</td>
 				</tr>
+			
+		
 			
 		
 			
@@ -345,16 +357,6 @@ Versions 2.23.6, 2.24.4, and 2.25.2 contain a patch for the issue. A workaround 
 					<td>remote,command</td>
 					<td class=date>2024-06-28T19:15:04.653</td>
 					<td class=description>IBM Cognos Analytics 11.2.0, 11.2.1, 11.2.2, 11.2.3, 11.2.4, 12.0.0, 12.0.1, and 12.0.2 is potentially vulnerable to cross site scripting (XSS). A remote attacker could execute malicious commands due to improper validation of column headings in Cognos Assistant.  IBM X-Force ID:  282780.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-35155">CVE-2024-35155</a></td>
-					<td>6.5</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-06-28T18:15:04.170</td>
-					<td class=description>IBM MQ Console 9.3 LTS and 9.3 CD could disclose could allow a remote attacker to obtain sensitive information when a detailed technical error message is returned in the browser.  This information could be used in further attacks against the system.  IBM X-Force ID:  292765.</td>
 				</tr>
 			
 		
