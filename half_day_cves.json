@@ -94,5 +94,29 @@
     "description": "IBM InfoSphere Information Server 11.7 could allow an authenticated user to read or modify sensitive information by bypassing authentication using insecure direct object references.   IBM X-Force ID:  288182.",
     "published": "2024-06-30T18:15:03.693",
     "keywords": "authentication,sensitive,bypass"
+  },
+  "CVE-2024-20076": {
+    "cvss": "-",
+    "description": "In Modem, there is a possible system crash due to incorrect error handling. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01297806; Issue ID: MSV-1481.",
+    "published": "2024-07-01T05:15:03.957",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-20077": {
+    "cvss": "-",
+    "description": "In Modem, there is a possible system crash due to incorrect error handling. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01297807; Issue ID: MSV-1482.",
+    "published": "2024-07-01T05:15:04.133",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-20080": {
+    "cvss": "-",
+    "description": "In gnss service, there is a possible escalation of privilege due to improper certificate validation. This could lead to remote escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS08720039; Issue ID: MSV-1424.",
+    "published": "2024-07-01T05:15:04.430",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-3123": {
+    "cvss": 7.2,
+    "description": "CHANGING Mobile One Time Password's uploading function in a hidden page does not filter file type properly. Remote attackers with  administrator privilege can exploit this vulnerability to upload and run malicious file to execute system commands.",
+    "published": "2024-07-01T05:15:04.973",
+    "keywords": "remote,command"
   }
 }
