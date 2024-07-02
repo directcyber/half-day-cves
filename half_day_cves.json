@@ -196,5 +196,17 @@
     "description": "Web services managed by Edito CMS (Content Management System) in versions from 3.5 through 3.25 leak sensitive data as they allow downloading configuration files by an unauthenticated user.\nThe issue in versions 3.5 - 3.25 was removed in releases which dates from 10th of January 2014. Higher versions were never affected.",
     "published": "2024-07-02T09:15:19.553",
     "keywords": "unauthenticated,sensitive,leak"
+  },
+  "CVE-2024-20894": {
+    "cvss": 4.3,
+    "description": "Improper handling of exceptional conditions in Secure Folder prior to SMR Jul-2024 Release 1 allows physical attackers to bypass authentication under certain condition. User interaction is required for triggering this vulnerability.",
+    "published": "2024-07-02T10:15:04.630",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-34596": {
+    "cvss": 5.9,
+    "description": "Improper authentication in SmartThings prior to version 1.8.17 allows remote attackers to bypass the expiration date for members set by the owner.",
+    "published": "2024-07-02T10:15:08.320",
+    "keywords": "remote,authentication,bypass"
   }
 }
