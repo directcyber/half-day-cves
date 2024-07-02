@@ -208,5 +208,23 @@
     "description": "Improper authentication in SmartThings prior to version 1.8.17 allows remote attackers to bypass the expiration date for members set by the owner.",
     "published": "2024-07-02T10:15:08.320",
     "keywords": "remote,authentication,bypass"
+  },
+  "CVE-2024-6088": {
+    "cvss": 5.3,
+    "description": "The LearnPress \u2013 WordPress LMS Plugin plugin for WordPress is vulnerable to unauthorized user registration due to a missing capability check on the 'register' function in all versions up to, and including, 4.2.6.8.1. This makes it possible for unauthenticated attackers to bypass disabled user registration to create a new account with the default role.",
+    "published": "2024-07-02T11:15:10.463",
+    "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2024-6099": {
+    "cvss": 5.3,
+    "description": "The LearnPress \u2013 WordPress LMS Plugin plugin for WordPress is vulnerable to unauthenticated bypass to user registration in versions up to, and including, 4.2.6.8.1. This is due to missing checks in the 'check_validate_fields' function in the checkout. This makes it possible for unauthenticated attackers to register as the default role on the site, even if registration is disabled.",
+    "published": "2024-07-02T11:15:10.650",
+    "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2024-6438": {
+    "url": "https://github.com/hitout/carsale/issues/23",
+    "cvss": 6.3,
+    "description": "A vulnerability has been found in Hitout Carsale 1.0 and classified as critical. This vulnerability affects unknown code of the file OrderController.java. The manipulation of the argument orderBy leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-270166 is the identifier assigned to this vulnerability.",
+    "published": "2024-07-02T11:15:11.027"
   }
 }
