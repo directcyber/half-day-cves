@@ -160,5 +160,41 @@
     "description": "The Email Subscribers by Icegram Express \u2013 Email Marketing, Newsletters, Automation for WordPress & WooCommerce plugin for WordPress is vulnerable to time-based SQL Injection via the db parameter in all versions up to, and including, 5.7.25 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
     "published": "2024-07-02T07:15:04.080",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-36243": {
+    "cvss": 8.2,
+    "description": "in OpenHarmony v4.0.0 and prior versions allow a remote attacker arbitrary code execution in pre-installed apps through out-of-bounds read and write.",
+    "published": "2024-07-02T09:15:18.323",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-36260": {
+    "cvss": 8.2,
+    "description": "in OpenHarmony v4.0.0 and prior versions allow a remote attacker arbitrary code execution in pre-installed apps through out-of-bounds write.",
+    "published": "2024-07-02T09:15:18.557",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-37030": {
+    "cvss": 8.2,
+    "description": "in OpenHarmony v4.0.0 and prior versions allow a remote attacker arbitrary code execution in pre-installed apps through use after free.",
+    "published": "2024-07-02T09:15:18.963",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-37077": {
+    "cvss": 8.2,
+    "description": "in OpenHarmony v4.0.0 and prior versions allow a remote attacker arbitrary code execution in pre-installed apps through out-of-bounds write.",
+    "published": "2024-07-02T09:15:19.157",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-37185": {
+    "cvss": 8.2,
+    "description": "in OpenHarmony v4.0.0 and prior versions allow a remote attacker arbitrary code execution in pre-installed apps through out-of-bounds write.",
+    "published": "2024-07-02T09:15:19.353",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-4836": {
+    "cvss": 7.5,
+    "description": "Web services managed by Edito CMS (Content Management System) in versions from 3.5 through 3.25 leak sensitive data as they allow downloading configuration files by an unauthenticated user.\nThe issue in versions 3.5 - 3.25 was removed in releases which dates from 10th of January 2014. Higher versions were never affected.",
+    "published": "2024-07-02T09:15:19.553",
+    "keywords": "unauthenticated,sensitive,leak"
   }
 }
