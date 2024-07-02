@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-02T12:18:34.955782
+Updated at UTC 2024-07-02T17:08:51.721217
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,24 @@ Updated at UTC 2024-07-02T12:18:34.955782
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-39143">CVE-2024-39143</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/coderberg/residencecms/issues/128">https://github.com/coderberg/residencecms/issues/128</a></td>
+					<td class=date>2024-07-02T14:15:13.990</td>
+					<td class=description>A stored cross-site scripting (XSS) vulnerability exists in ResidenceCMS 2.10.1 that allows a low-privilege user to create malicious property content with HTML inside which acts as a stored XSS payload.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
 		
 			
 				<tr>
@@ -162,10 +180,40 @@ Updated at UTC 2024-07-02T12:18:34.955782
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4897">CVE-2024-4897</a></td>
+					<td>8.4</td>
+					<td>remote,execution</td>
+					<td class=date>2024-07-02T15:15:11.853</td>
+					<td class=description>parisneo/lollms-webui, in its latest version, is vulnerable to remote code execution due to an insecure dependency on llama-cpp-python version llama_cpp_python-0.2.61+cpuavx2-cp311-cp311-manylinux_2_31_x86_64. The vulnerability arises from the application's 'binding_zoo' feature, which allows attackers to upload and interact with a malicious model file hosted on hugging-face, leading to remote code execution. The issue is linked to a known vulnerability in llama-cpp-python, CVE-2024-34359, which has not been patched in lollms-webui as of commit b454f40a. The vulnerability is exploitable through the application's handling of model files in the 'bindings_zoo' feature, specifically when processing gguf format model files.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38519">CVE-2024-38519</a></td>
+					<td>7.8</td>
+					<td>command,sensitive</td>
+					<td class=date>2024-07-02T14:15:13.737</td>
+					<td class=description>`yt-dlp` is a command-line audio/video downloader. Prior to version 2024.07.01, `yt-dlp` does not limit the extensions of downloaded files, which could lead to aribitrary filenames being created in the download folder (and path traversal on Windows). Since `yt-dlp` also reads config from the working directory (and on Windows executables will be executed from the yt-dlp directory) this could lead to arbitrary code being executed. `yt-dlp` version 2024.07.01 fixes this issue by whitelisting the allowed extensions. This might mean some very uncommon extensions might not get downloaded, however it will also limit the possible exploitation surface. In addition to upgrading, have `.%(ext)s` at the end of the output template and make sure the user trusts the websites that they are downloading from. Also, make sure to never download to a directory within PATH or other sensitive locations like one's user directory, `system32`, or other binaries locations. For users who are not able to upgrade, keep the default output template (`-o "%(title)s [%(id)s].%(ext)s`); make sure the extension of the media to download is a common video/audio/sub/... one; try to avoid the generic extractor; and/or use `--ignore-config --config-location ...` to not load config from common locations.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-36404">CVE-2024-36404</a></td>
+					<td>9.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-07-02T14:15:13.450</td>
+					<td class=description>GeoTools is an open source Java library that provides tools for geospatial data. Prior to versions 31.2, 30.4, and 29.6, Remote Code Execution (RCE) is possible if an application uses certain GeoTools functionality to evaluate XPath expressions supplied by user input. Versions 31.2, 30.4, and 29.6 contain a fix for this issue. As a workaround, GeoTools can operate with reduced functionality by removing the `gt-complex` jar from one's application. As an example of the impact, application schema `datastore` would not function without the ability to use XPath expressions to query complex content. Alternatively, one may utilize a drop-in replacement GeoTools jar from SourceForge for versions 31.1, 30.3, 30.2, 29.2, 28.2, 27.5, 27.4, 26.7, 26.4, 25.2, and 24.0. These jars are for download only and are not available from maven central, intended to quickly provide a fix to affected applications.</td>
+				</tr>
+			
 		
 			
 		
@@ -520,16 +568,6 @@ Versions 2.23.6, 2.24.4, and 2.25.2 contain a patch for the issue. A workaround 
 					<td>authentication,bypass</td>
 					<td class=date>2024-06-29T22:15:02.263</td>
 					<td class=description>Internet2 Grouper before 5.6 allows authentication bypass when LDAP authentication is used in certain ways. This is related to internet2.middleware.grouper.ws.security.WsGrouperLdapAuthentication and the use of the UyY29r password for the M3vwHr account. This also affects "Grouper for Web Services" before 4.13.1.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-25943">CVE-2024-25943</a></td>
-					<td>7.6</td>
-					<td>remote,execution</td>
-					<td class=date>2024-06-29T13:15:10.403</td>
-					<td class=description>iDRAC9, versions prior to 7.00.00.172 for 14th Generation and 7.10.50.00 for 15th and 16th Generations, contains a session hijacking vulnerability in IPMI. A remote attacker could potentially exploit this vulnerability, leading to arbitrary code execution on the vulnerable application.</td>
 				</tr>
 			
 		

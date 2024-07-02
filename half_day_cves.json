@@ -1,10 +1,4 @@
 {
-  "CVE-2024-25943": {
-    "cvss": 7.6,
-    "description": "iDRAC9, versions prior to 7.00.00.172 for 14th Generation and 7.10.50.00 for 15th and 16th Generations, contains a session hijacking vulnerability in IPMI. A remote attacker could potentially exploit this vulnerability, leading to arbitrary code execution on the vulnerable application.",
-    "published": "2024-06-29T13:15:10.403",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-39848": {
     "cvss": "-",
     "description": "Internet2 Grouper before 5.6 allows authentication bypass when LDAP authentication is used in certain ways. This is related to internet2.middleware.grouper.ws.security.WsGrouperLdapAuthentication and the use of the UyY29r password for the M3vwHr account. This also affects \"Grouper for Web Services\" before 4.13.1.",
@@ -226,5 +220,29 @@
     "cvss": 6.3,
     "description": "A vulnerability has been found in Hitout Carsale 1.0 and classified as critical. This vulnerability affects unknown code of the file OrderController.java. The manipulation of the argument orderBy leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-270166 is the identifier assigned to this vulnerability.",
     "published": "2024-07-02T11:15:11.027"
+  },
+  "CVE-2024-36404": {
+    "cvss": 9.8,
+    "description": "GeoTools is an open source Java library that provides tools for geospatial data. Prior to versions 31.2, 30.4, and 29.6, Remote Code Execution (RCE) is possible if an application uses certain GeoTools functionality to evaluate XPath expressions supplied by user input. Versions 31.2, 30.4, and 29.6 contain a fix for this issue. As a workaround, GeoTools can operate with reduced functionality by removing the `gt-complex` jar from one's application. As an example of the impact, application schema `datastore` would not function without the ability to use XPath expressions to query complex content. Alternatively, one may utilize a drop-in replacement GeoTools jar from SourceForge for versions 31.1, 30.3, 30.2, 29.2, 28.2, 27.5, 27.4, 26.7, 26.4, 25.2, and 24.0. These jars are for download only and are not available from maven central, intended to quickly provide a fix to affected applications.",
+    "published": "2024-07-02T14:15:13.450",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38519": {
+    "cvss": 7.8,
+    "description": "`yt-dlp` is a command-line audio/video downloader. Prior to version 2024.07.01, `yt-dlp` does not limit the extensions of downloaded files, which could lead to aribitrary filenames being created in the download folder (and path traversal on Windows). Since `yt-dlp` also reads config from the working directory (and on Windows executables will be executed from the yt-dlp directory) this could lead to arbitrary code being executed. `yt-dlp` version 2024.07.01 fixes this issue by whitelisting the allowed extensions. This might mean some very uncommon extensions might not get downloaded, however it will also limit the possible exploitation surface. In addition to upgrading, have `.%(ext)s` at the end of the output template and make sure the user trusts the websites that they are downloading from. Also, make sure to never download to a directory within PATH or other sensitive locations like one's user directory, `system32`, or other binaries locations. For users who are not able to upgrade, keep the default output template (`-o \"%(title)s [%(id)s].%(ext)s`); make sure the extension of the media to download is a common video/audio/sub/... one; try to avoid the generic extractor; and/or use `--ignore-config --config-location ...` to not load config from common locations.",
+    "published": "2024-07-02T14:15:13.737",
+    "keywords": "command,sensitive"
+  },
+  "CVE-2024-39143": {
+    "url": "https://github.com/coderberg/residencecms/issues/128",
+    "cvss": "-",
+    "description": "A stored cross-site scripting (XSS) vulnerability exists in ResidenceCMS 2.10.1 that allows a low-privilege user to create malicious property content with HTML inside which acts as a stored XSS payload.",
+    "published": "2024-07-02T14:15:13.990"
+  },
+  "CVE-2024-4897": {
+    "cvss": 8.4,
+    "description": "parisneo/lollms-webui, in its latest version, is vulnerable to remote code execution due to an insecure dependency on llama-cpp-python version llama_cpp_python-0.2.61+cpuavx2-cp311-cp311-manylinux_2_31_x86_64. The vulnerability arises from the application's 'binding_zoo' feature, which allows attackers to upload and interact with a malicious model file hosted on hugging-face, leading to remote code execution. The issue is linked to a known vulnerability in llama-cpp-python, CVE-2024-34359, which has not been patched in lollms-webui as of commit b454f40a. The vulnerability is exploitable through the application's handling of model files in the 'bindings_zoo' feature, specifically when processing gguf format model files.",
+    "published": "2024-07-02T15:15:11.853",
+    "keywords": "remote,execution"
   }
 }
