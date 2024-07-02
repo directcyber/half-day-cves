@@ -66,7 +66,7 @@
     "published": "2024-07-01T14:15:05.600"
   },
   "CVE-2024-21482": {
-    "cvss": 6.8,
+    "cvss": 7.8,
     "description": "Memory corruption during the secure boot process, when the `bootm` command is used, it bypasses the authentication of the kernel/rootfs image.",
     "published": "2024-07-01T15:15:15.497",
     "keywords": "authentication,command,bypass"
@@ -126,7 +126,7 @@
     "keywords": "authentication,bypass"
   },
   "CVE-2024-38366": {
-    "cvss": 9.0,
+    "cvss": 10.0,
     "description": "trunk.cocoapods.org is the authentication server for the CoacoaPods dependency manager. The part of trunk which verifies whether a user has a real email address on signup used a rfc-822 library which executes a shell command to validate the email domain MX records validity. It works via an DNS MX. This lookup could be manipulated to also execute a command on the trunk server, effectively giving root access to the server and the infrastructure. This issue was patched server-side with commit 001cc3a430e75a16307f5fd6cdff1363ad2f40f3 in September 2023. This RCE triggered a full user-session reset, as an attacker could have used this method to write to any Podspec in trunk.",
     "published": "2024-07-01T21:15:03.797",
     "keywords": "authentication,command"
@@ -198,7 +198,7 @@
     "keywords": "authentication,bypass"
   },
   "CVE-2024-34596": {
-    "cvss": 5.9,
+    "cvss": 7.5,
     "description": "Improper authentication in SmartThings prior to version 1.8.17 allows remote attackers to bypass the expiration date for members set by the owner.",
     "published": "2024-07-02T10:15:08.320",
     "keywords": "remote,authentication,bypass"
@@ -217,7 +217,7 @@
   },
   "CVE-2024-6438": {
     "url": "https://github.com/hitout/carsale/issues/23",
-    "cvss": 6.3,
+    "cvss": 6.5,
     "description": "A vulnerability has been found in Hitout Carsale 1.0 and classified as critical. This vulnerability affects unknown code of the file OrderController.java. The manipulation of the argument orderBy leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-270166 is the identifier assigned to this vulnerability.",
     "published": "2024-07-02T11:15:11.027"
   },
