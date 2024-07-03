@@ -250,5 +250,17 @@
     "description": "Security check loophole in HAProxy release (in combination with routing release) in Cloud Foundry prior to v40.17.0 potentially allows bypass of mTLS authentication to applications hosted on Cloud Foundry.",
     "published": "2024-07-03T06:15:03.633",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-6427": {
+    "cvss": 7.5,
+    "description": "Uncontrolled Resource Consumption vulnerability in MESbook\u00a020221021.03 version. An unauthenticated remote attacker can use the \"message\" parameter to inject a payload with dangerous JavaScript code, causing the application to loop requests on itself, which could lead to resource consumption and disable the application.",
+    "published": "2024-07-03T12:15:03.430",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-5672": {
+    "cvss": 7.2,
+    "description": "A high privileged remote attacker can\u00a0execute arbitrary system commands via GET requests due to improper neutralization of special elements used in an OS command.\n",
+    "published": "2024-07-03T13:15:03.043",
+    "keywords": "remote,command"
   }
 }
