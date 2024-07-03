@@ -12,13 +12,13 @@
     "keywords": "authentication,sensitive,bypass"
   },
   "CVE-2024-20076": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "In Modem, there is a possible system crash due to incorrect error handling. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01297806; Issue ID: MSV-1481.",
     "published": "2024-07-01T05:15:03.957",
     "keywords": "remote,execution"
   },
   "CVE-2024-20077": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "In Modem, there is a possible system crash due to incorrect error handling. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01297807; Issue ID: MSV-1482.",
     "published": "2024-07-01T05:15:04.133",
     "keywords": "remote,execution"
@@ -36,10 +36,10 @@
     "keywords": "remote,command"
   },
   "CVE-2024-6387": {
-    "url": "https://github.com/rapier1/hpn-ssh/issues/87",
     "cvss": 8.1,
-    "description": "A signal handler race condition was found in OpenSSH's server (sshd), where a client does not authenticate within LoginGraceTime seconds (120 by default, 600 in old OpenSSH versions), then sshd's SIGALRM handler is called asynchronously. However, this signal handler calls various functions that are not async-signal-safe, for example, syslog().",
-    "published": "2024-07-01T13:15:06.467"
+    "description": "A security regression (CVE-2006-5051) was discovered in OpenSSH's server (sshd). There is a race condition which can lead to sshd to handle some signals in an unsafe manner. An unauthenticated, remote attacker may be able to trigger it by failing to authenticate within a set time period.",
+    "published": "2024-07-01T13:15:06.467",
+    "keywords": "remote,unauthenticated"
   },
   "CVE-2024-6424": {
     "cvss": 9.3,

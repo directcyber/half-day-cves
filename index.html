@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-02T23:10:12.330782
+Updated at UTC 2024-07-03T04:12:22.269711
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -166,16 +166,6 @@ Updated at UTC 2024-07-02T23:10:12.330782
 		
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6387">CVE-2024-6387</a></td>
-					<td>8.1</td>
-					<td><a target=_blank href="https://github.com/rapier1/hpn-ssh/issues/87">https://github.com/rapier1/hpn-ssh/issues/87</a></td>
-					<td class=date>2024-07-01T13:15:06.467</td>
-					<td class=description>A signal handler race condition was found in OpenSSH's server (sshd), where a client does not authenticate within LoginGraceTime seconds (120 by default, 600 in old OpenSSH versions), then sshd's SIGALRM handler is called asynchronously. However, this signal handler calls various functions that are not async-signal-safe, for example, syslog().</td>
-
-
-				</tr>
 			
 		
 			
@@ -512,6 +502,14 @@ Versions 2.23.6, 2.24.4, and 2.25.2 contain a patch for the issue. A workaround 
 			
 		
 			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6387">CVE-2024-6387</a></td>
+					<td>8.1</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-07-01T13:15:06.467</td>
+					<td class=description>A security regression (CVE-2006-5051) was discovered in OpenSSH's server (sshd). There is a race condition which can lead to sshd to handle some signals in an unsafe manner. An unauthenticated, remote attacker may be able to trigger it by failing to authenticate within a set time period.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -536,7 +534,7 @@ Versions 2.23.6, 2.24.4, and 2.25.2 contain a patch for the issue. A workaround 
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20077">CVE-2024-20077</a></td>
-					<td>-</td>
+					<td>7.5</td>
 					<td>remote,execution</td>
 					<td class=date>2024-07-01T05:15:04.133</td>
 					<td class=description>In Modem, there is a possible system crash due to incorrect error handling. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01297807; Issue ID: MSV-1482.</td>
@@ -546,7 +544,7 @@ Versions 2.23.6, 2.24.4, and 2.25.2 contain a patch for the issue. A workaround 
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20076">CVE-2024-20076</a></td>
-					<td>-</td>
+					<td>7.5</td>
 					<td>remote,execution</td>
 					<td class=date>2024-07-01T05:15:03.957</td>
 					<td class=description>In Modem, there is a possible system crash due to incorrect error handling. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01297806; Issue ID: MSV-1481.</td>
