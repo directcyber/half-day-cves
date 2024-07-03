@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-03T17:09:01.869111
+Updated at UTC 2024-07-03T21:11:31.687294
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,22 @@ Updated at UTC 2024-07-03T17:09:01.869111
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31223">CVE-2024-31223</a></td>
+					<td>5.3</td>
+					<td><a target=_blank href="https://github.com/ethyca/fides/commit/0555080541f18a5aacff452c590ac9a1b56d7097">https://github.com/ethyca/fides/commit/0555080541f18a5aacff452c590ac9a1b56d7097</a></td>
+					<td class=date>2024-07-03T18:15:05.097</td>
+					<td class=description>Fides is an open-source privacy engineering platform, and `SERVER_SIDE_FIDES_API_URL` is a server-side configuration environment variable used by the Fides Privacy Center to communicate with the Fides webserver backend. The value of this variable is a URL which typically includes a private IP address, private domain name, and/or port. A vulnerability present starting in version 2.19.0 and prior to version 2.39.2rc0 allows an unauthenticated attacker to make a HTTP GET request from the Privacy Center that discloses the value of this server-side URL. This could result in disclosure of server-side configuration giving an attacker information on server-side ports, private IP addresses, and/or private domain names. The vulnerability has been patched in Fides version 2.39.2rc0. No known workarounds are available.</td>
+
+
+				</tr>
+			
+		
+			
 		
 			
 		
@@ -85,7 +101,7 @@ Updated at UTC 2024-07-03T17:09:01.869111
 			
 				<tr>
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-39143">CVE-2024-39143</a></td>
-					<td>-</td>
+					<td>5.4</td>
 					<td><a target=_blank href="https://github.com/coderberg/residencecms/issues/128">https://github.com/coderberg/residencecms/issues/128</a></td>
 					<td class=date>2024-07-02T14:15:13.990</td>
 					<td class=description>A stored cross-site scripting (XSS) vulnerability exists in ResidenceCMS 2.10.1 that allows a low-privilege user to create malicious property content with HTML inside which acts as a stored XSS payload.</td>
@@ -186,12 +202,30 @@ Updated at UTC 2024-07-03T17:09:01.869111
 		
 			
 		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-33869">CVE-2024-33869</a></td>
+					<td>-</td>
+					<td>execution,command,bypass</td>
+					<td class=date>2024-07-03T19:15:03.767</td>
+					<td class=description>An issue was discovered in Artifex Ghostscript before 10.03.1. Path traversal and command execution can occur (via a crafted PostScript document) because of path reduction in base/gpmisc.c. For example, restrictions on use of %pipe% can be bypassed via the aa/../%pipe%command# output filename.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-39844">CVE-2024-39844</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2024-07-03T17:15:04.403</td>
+					<td class=description>In ZNC before 1.9.1, remote code execution can occur in modtcl via a KICK.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -334,7 +368,7 @@ The issue in versions 3.5 - 3.25 was removed in releases which dates from 10th o
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37185">CVE-2024-37185</a></td>
-					<td>8.2</td>
+					<td>9.8</td>
 					<td>remote,execution</td>
 					<td class=date>2024-07-02T09:15:19.353</td>
 					<td class=description>in OpenHarmony v4.0.0 and prior versions allow a remote attacker arbitrary code execution in pre-installed apps through out-of-bounds write.</td>
@@ -344,7 +378,7 @@ The issue in versions 3.5 - 3.25 was removed in releases which dates from 10th o
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37077">CVE-2024-37077</a></td>
-					<td>8.2</td>
+					<td>9.8</td>
 					<td>remote,execution</td>
 					<td class=date>2024-07-02T09:15:19.157</td>
 					<td class=description>in OpenHarmony v4.0.0 and prior versions allow a remote attacker arbitrary code execution in pre-installed apps through out-of-bounds write.</td>
@@ -354,7 +388,7 @@ The issue in versions 3.5 - 3.25 was removed in releases which dates from 10th o
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37030">CVE-2024-37030</a></td>
-					<td>8.2</td>
+					<td>9.8</td>
 					<td>remote,execution</td>
 					<td class=date>2024-07-02T09:15:18.963</td>
 					<td class=description>in OpenHarmony v4.0.0 and prior versions allow a remote attacker arbitrary code execution in pre-installed apps through use after free.</td>
@@ -364,7 +398,7 @@ The issue in versions 3.5 - 3.25 was removed in releases which dates from 10th o
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-36260">CVE-2024-36260</a></td>
-					<td>8.2</td>
+					<td>9.8</td>
 					<td>remote,execution</td>
 					<td class=date>2024-07-02T09:15:18.557</td>
 					<td class=description>in OpenHarmony v4.0.0 and prior versions allow a remote attacker arbitrary code execution in pre-installed apps through out-of-bounds write.</td>
@@ -374,7 +408,7 @@ The issue in versions 3.5 - 3.25 was removed in releases which dates from 10th o
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-36243">CVE-2024-36243</a></td>
-					<td>8.2</td>
+					<td>9.8</td>
 					<td>remote,execution</td>
 					<td class=date>2024-07-02T09:15:18.323</td>
 					<td class=description>in OpenHarmony v4.0.0 and prior versions allow a remote attacker arbitrary code execution in pre-installed apps through out-of-bounds read and write.</td>
@@ -609,26 +643,6 @@ Versions 2.23.6, 2.24.4, and 2.25.2 contain a patch for the issue. A workaround 
 					<td>remote,execution</td>
 					<td class=date>2024-07-01T05:15:03.957</td>
 					<td class=description>In Modem, there is a possible system crash due to incorrect error handling. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01297806; Issue ID: MSV-1481.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31898">CVE-2024-31898</a></td>
-					<td>5.4</td>
-					<td>authentication,sensitive,bypass</td>
-					<td class=date>2024-06-30T18:15:03.693</td>
-					<td class=description>IBM InfoSphere Information Server 11.7 could allow an authenticated user to read or modify sensitive information by bypassing authentication using insecure direct object references.   IBM X-Force ID:  288182.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-35119">CVE-2024-35119</a></td>
-					<td>5.3</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-06-30T17:15:03.153</td>
-					<td class=description>IBM InfoSphere Information Server 11.7 could allow a remote attacker to obtain sensitive information when a detailed technical error message is returned in a stack trace.  This information could be used in further attacks against the system.  IBM X-Force ID:  290342.</td>
 				</tr>
 			
 		
