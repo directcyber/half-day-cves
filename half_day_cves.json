@@ -286,5 +286,11 @@
     "description": "The IMGspider plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'upload' function in all versions up to, and including, 2.3.10. This makes it possible for authenticated attackers, with contributor-level and above permissions, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
     "published": "2024-07-04T09:15:05.087",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-6507": {
+    "cvss": 8.1,
+    "description": "Command injection when ingesting a remote Kaggle dataset due to a lack of input sanitization in the ingest_kaggle() API",
+    "published": "2024-07-04T12:15:03.963",
+    "keywords": "remote,command"
   }
 }
