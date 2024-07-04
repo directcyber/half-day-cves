@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-04T17:10:22.855894
+Updated at UTC 2024-07-04T18:13:03.352433
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -156,10 +156,6 @@ The bug was fixed in the next released version:  https://pkg.go.dev/github.com/
 
 
 				</tr>
-			
-		
-			
-		
 			
 		
 			
@@ -607,26 +603,6 @@ Users are recommended to upgrade to version 2.4.60, which fixes this issue.</td>
 					<td>unauthenticated,sensitive</td>
 					<td class=date>2024-07-01T19:15:03.627</td>
 					<td class=description>Flowise is a drag & drop user interface to build a customized large language model flow. In version 1.4.3 of Flowise, a reflected cross-site scripting vulnerability occurs in the `/api/v1/public-chatflows/id` endpoint. If the default configuration is used (unauthenticated), an attacker may be able to craft a specially crafted URL that injects Javascript into the user sessions, allowing the attacker to steal information, create false popups, or even redirect the user to other websites without interaction. If the chatflow ID is not found, its value is reflected in the 404 page, which has type text/html. This allows an attacker to attach arbitrary scripts to the page, allowing an attacker to steal sensitive information. This XSS may be chained with the path injection to allow an attacker without direct access to Flowise to read arbitrary files from the Flowise server. As of time of publication, no known patches are available.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-36986">CVE-2024-36986</a></td>
-					<td>6.3</td>
-					<td>command,bypass</td>
-					<td class=date>2024-07-01T17:15:06.910</td>
-					<td class=description>In Splunk Enterprise versions below 9.2.2, 9.1.5, and 9.0.10 and Splunk Cloud Platform versions below 9.1.2312.200 and 9.1.2308.207, an authenticated user could run risky commands using the permissions of a higher-privileged user to bypass SPL safeguards for risky commands in the Analytics Workspace. The vulnerability requires the authenticated user to phish the victim by tricking them into initiating a request within their browser. The authenticated user should not be able to exploit the vulnerability at will.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-36985">CVE-2024-36985</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-07-01T17:15:06.703</td>
-					<td class=description>In Splunk Enterprise versions below 9.2.2, 9.1.5, and 9.0.10, a low-privileged user that does not hold the admin or power Splunk roles could cause a Remote Code Execution through an external lookup that references the “splunk_archiver“ application.</td>
 				</tr>
 			
 		
