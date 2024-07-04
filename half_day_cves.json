@@ -1,22 +1,4 @@
 {
-  "CVE-2024-6387": {
-    "cvss": 8.1,
-    "description": "A security regression (CVE-2006-5051) was discovered in OpenSSH's server (sshd). There is a race condition which can lead to sshd to handle some signals in an unsafe manner. An unauthenticated, remote attacker may be able to trigger it by failing to authenticate within a set time period.",
-    "published": "2024-07-01T13:15:06.467",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-6424": {
-    "cvss": 9.3,
-    "description": "External server-side request vulnerability in MESbook 20221021.03 version, which could allow a remote, unauthenticated attacker to exploit the endpoint \"/api/Proxy/Post?userName=&password=&uri=<FILE|INTERNAL URL|IP/HOST\" or \"/api/Proxy/Get?userName=&password=&uri=<ARCHIVO|URL INTERNA|IP/HOST\" to read the source code of web files, read internal files or access network resources.",
-    "published": "2024-07-01T13:15:06.690",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-6425": {
-    "cvss": 9.1,
-    "description": "Incorrect Provision of Specified Functionality vulnerability in MESbook 20221021.03 version. An unauthenticated remote attacker can register user accounts without being authenticated from the route \"/account/Register/\" and in the parameters \"UserName=<RANDOMUSER>&Password=<PASSWORD>&ConfirmPassword=<PASSWORD-REPEAT>\".",
-    "published": "2024-07-01T13:15:06.927",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2024-38953": {
     "url": "https://github.com/qinggan/phpok/issues/17",
     "cvss": "-",
@@ -292,5 +274,11 @@
     "description": "Command injection when ingesting a remote Kaggle dataset due to a lack of input sanitization in the ingest_kaggle() API",
     "published": "2024-07-04T12:15:03.963",
     "keywords": "remote,command"
+  },
+  "CVE-2024-6506": {
+    "cvss": 8.2,
+    "description": "Information exposure vulnerability in the MRW plugin, in its\u00a05.4.3 version,\u00a0affecting the \"mrw_log\" functionality. This vulnerability could allow a remote attacker to obtain other customers' order information and access sensitive information such as name and phone number. This vulnerability also allows an attacker to create or overwrite shipping labels.",
+    "published": "2024-07-04T13:15:10.240",
+    "keywords": "remote,sensitive"
   }
 }
