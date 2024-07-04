@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-03T23:11:52.661552
+Updated at UTC 2024-07-04T01:58:27.645331
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,22 @@ Updated at UTC 2024-07-03T23:11:52.661552
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6284">CVE-2024-6284</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/google/nftables/issues/225">https://github.com/google/nftables/issues/225</a></td>
+					<td class=date>2024-07-03T23:15:02.333</td>
+					<td class=description>In  https://github.com/google/nftables  IP addresses were encoded in the wrong byte order, resulting in an nftables configuration which does not work as intended (might block or not block the desired addresses).
+
+This issue affects:  https://pkg.go.dev/github.com/google/nftables@v0.1.0 
+
+The bug was fixed in the next released version:  https://pkg.go.dev/github.com/google/nftables@v0.2.0</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -206,6 +222,8 @@ Updated at UTC 2024-07-03T23:11:52.661552
 		<hr>
 		
 			
+		
+			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-33869">CVE-2024-33869</a></td>
 					<td>-</td>
@@ -298,7 +316,12 @@ Updated at UTC 2024-07-03T23:11:52.661552
 					<td>7.8</td>
 					<td>command,sensitive</td>
 					<td class=date>2024-07-02T14:15:13.737</td>
-					<td class=description>`yt-dlp` is a command-line audio/video downloader. Prior to version 2024.07.01, `yt-dlp` does not limit the extensions of downloaded files, which could lead to aribitrary filenames being created in the download folder (and path traversal on Windows). Since `yt-dlp` also reads config from the working directory (and on Windows executables will be executed from the yt-dlp directory) this could lead to arbitrary code being executed. `yt-dlp` version 2024.07.01 fixes this issue by whitelisting the allowed extensions. This might mean some very uncommon extensions might not get downloaded, however it will also limit the possible exploitation surface. In addition to upgrading, have `.%(ext)s` at the end of the output template and make sure the user trusts the websites that they are downloading from. Also, make sure to never download to a directory within PATH or other sensitive locations like one's user directory, `system32`, or other binaries locations. For users who are not able to upgrade, keep the default output template (`-o "%(title)s [%(id)s].%(ext)s`); make sure the extension of the media to download is a common video/audio/sub/... one; try to avoid the generic extractor; and/or use `--ignore-config --config-location ...` to not load config from common locations.</td>
+					<td class=description>`yt-dlp` and `youtube-dl` are command-line audio/video downloaders. Prior to the fixed versions, `yt-dlp` and `youtube-dl` do not limit the extensions of downloaded files, which could lead to arbitrary filenames being created in the download folder (and path traversal on Windows). Since `yt-dlp` and `youtube-dl` also read config from the working directory (and on Windows executables will be executed from the `yt-dlp` or `youtube-dl` directory), this could lead to arbitrary code being executed.
+
+
+
+
+`yt-dlp` version 2024.07.01 fixes this issue by whitelisting the allowed extensions. `youtube-dl` fixes this issue in commit `d42a222` on the `master` branch and in nightly builds tagged 2024-07-03 or later. This might mean some very uncommon extensions might not get downloaded, however it will also limit the possible exploitation surface. In addition to upgrading, have `.%(ext)s` at the end of the output template and make sure the user trusts the websites that they are downloading from. Also, make sure to never download to a directory within PATH or other sensitive locations like one's user directory, `system32`, or other binaries locations. For users who are not able to upgrade, keep the default output template (`-o "%(title)s [%(id)s].%(ext)s`); make sure the extension of the media to download is a common video/audio/sub/... one; try to avoid the generic extractor; and/or use `--ignore-config --config-location ...` to not load config from common locations.</td>
 				</tr>
 			
 		
