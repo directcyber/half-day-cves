@@ -1,22 +1,4 @@
 {
-  "CVE-2024-28200": {
-    "cvss": 9.1,
-    "description": "The N-central server is vulnerable to an authentication bypass of the user interface. This vulnerability is present in all deployments of N-central prior to 2024.2.\n\nThis vulnerability was discovered through internal N-central source code review and N-able has not observed any exploitation in the wild.",
-    "published": "2024-07-01T21:15:03.143",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-38366": {
-    "cvss": 10.0,
-    "description": "trunk.cocoapods.org is the authentication server for the CoacoaPods dependency manager. The part of trunk which verifies whether a user has a real email address on signup used a rfc-822 library which executes a shell command to validate the email domain MX records validity. It works via an DNS MX. This lookup could be manipulated to also execute a command on the trunk server, effectively giving root access to the server and the infrastructure. This issue was patched server-side with commit 001cc3a430e75a16307f5fd6cdff1363ad2f40f3 in September 2023. This RCE triggered a full user-session reset, as an attacker could have used this method to write to any Podspec in trunk.",
-    "published": "2024-07-01T21:15:03.797",
-    "keywords": "authentication,command"
-  },
-  "CVE-2024-5322": {
-    "cvss": 9.1,
-    "description": "The N-central server is vulnerable to session rebinding of already authenticated users when using Entra SSO, which can lead to authentication bypass.\n \nThis vulnerability is present in all Entra-supported deployments of N-central prior to 2024.3.",
-    "published": "2024-07-01T21:15:04.810",
-    "keywords": "authentication,bypass"
-  },
   "CVE-2024-37762": {
     "cvss": "-",
     "description": "MachForm up to version 21 is affected by an authenticated unrestricted file upload which leads to a remote code execution.",

@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-04T21:09:08.882023
+Updated at UTC 2024-07-04T22:09:47.901492
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -156,12 +156,6 @@ The bug was fixed in the next released version:  https://pkg.go.dev/github.com/
 
 
 				</tr>
-			
-		
-			
-		
-			
-		
 			
 		
 			
@@ -520,40 +514,6 @@ The issue in versions 3.5 - 3.25 was removed in releases which dates from 10th o
 					<td>remote,execution</td>
 					<td class=date>2024-07-01T22:15:02.983</td>
 					<td class=description>MachForm up to version 21 is affected by an authenticated unrestricted file upload which leads to a remote code execution.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5322">CVE-2024-5322</a></td>
-					<td>9.1</td>
-					<td>authentication,bypass</td>
-					<td class=date>2024-07-01T21:15:04.810</td>
-					<td class=description>The N-central server is vulnerable to session rebinding of already authenticated users when using Entra SSO, which can lead to authentication bypass.
- 
-This vulnerability is present in all Entra-supported deployments of N-central prior to 2024.3.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38366">CVE-2024-38366</a></td>
-					<td>10.0</td>
-					<td>authentication,command</td>
-					<td class=date>2024-07-01T21:15:03.797</td>
-					<td class=description>trunk.cocoapods.org is the authentication server for the CoacoaPods dependency manager. The part of trunk which verifies whether a user has a real email address on signup used a rfc-822 library which executes a shell command to validate the email domain MX records validity. It works via an DNS MX. This lookup could be manipulated to also execute a command on the trunk server, effectively giving root access to the server and the infrastructure. This issue was patched server-side with commit 001cc3a430e75a16307f5fd6cdff1363ad2f40f3 in September 2023. This RCE triggered a full user-session reset, as an attacker could have used this method to write to any Podspec in trunk.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28200">CVE-2024-28200</a></td>
-					<td>9.1</td>
-					<td>authentication,bypass</td>
-					<td class=date>2024-07-01T21:15:03.143</td>
-					<td class=description>The N-central server is vulnerable to an authentication bypass of the user interface. This vulnerability is present in all deployments of N-central prior to 2024.2.
-
-This vulnerability was discovered through internal N-central source code review and N-able has not observed any exploitation in the wild.</td>
 				</tr>
 			
 		
