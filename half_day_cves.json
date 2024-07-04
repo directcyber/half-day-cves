@@ -1,16 +1,4 @@
 {
-  "CVE-2024-38953": {
-    "url": "https://github.com/qinggan/phpok/issues/17",
-    "cvss": "-",
-    "description": "phpok 6.4.003 contains a Cross Site Scripting (XSS) vulnerability in the ok_f() method under the framework/api/upload_control.php file.",
-    "published": "2024-07-01T14:15:05.600"
-  },
-  "CVE-2024-21482": {
-    "cvss": 7.8,
-    "description": "Memory corruption during the secure boot process, when the `bootm` command is used, it bypasses the authentication of the kernel/rootfs image.",
-    "published": "2024-07-01T15:15:15.497",
-    "keywords": "authentication,command,bypass"
-  },
   "CVE-2024-36401": {
     "cvss": 9.8,
     "description": "GeoServer is an open source server that allows users to share and edit geospatial data. Prior to versions 2.23.6, 2.24.4, and 2.25.2, multiple OGC request parameters allow Remote Code Execution (RCE) by unauthenticated users through specially crafted input against a default GeoServer installation due to unsafely evaluating property names as XPath expressions.\n\nThe GeoTools library API that GeoServer calls evaluates property/attribute names for feature types in a way that unsafely passes them to the commons-jxpath library which can execute arbitrary code when evaluating XPath expressions. This XPath evaluation is intended to be used only by complex feature types (i.e., Application Schema data stores) but is incorrectly being applied to simple feature types as well which makes this vulnerability apply to **ALL** GeoServer instances. No public PoC is provided but this vulnerability has been confirmed to be exploitable through WFS GetFeature, WFS GetPropertyValue, WMS GetMap, WMS GetFeatureInfo, WMS GetLegendGraphic and WPS Execute requests. This vulnerability can lead to executing arbitrary code.\n\nVersions 2.23.6, 2.24.4, and 2.25.2 contain a patch for the issue. A workaround exists by removing the `gt-complex-x.y.jar` file from the GeoServer where `x.y` is the GeoTools version (e.g., `gt-complex-31.1.jar` if running GeoServer 2.25.1). This will remove the vulnerable code from GeoServer but may break some GeoServer functionality or prevent GeoServer from deploying if the gt-complex module is needed.",
@@ -280,5 +268,11 @@
     "description": "Information exposure vulnerability in the MRW plugin, in its\u00a05.4.3 version,\u00a0affecting the \"mrw_log\" functionality. This vulnerability could allow a remote attacker to obtain other customers' order information and access sensitive information such as name and phone number. This vulnerability also allows an attacker to create or overwrite shipping labels.",
     "published": "2024-07-04T13:15:10.240",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-39929": {
+    "cvss": "-",
+    "description": "Exim through 4.97.1 misparses a multiline RFC 2231 header filename, and thus remote attackers can bypass a $mime_filename extension-blocking protection mechanism, and potentially deliver executable attachments to the mailboxes of end users.",
+    "published": "2024-07-04T15:15:10.323",
+    "keywords": "remote,bypass"
   }
 }
