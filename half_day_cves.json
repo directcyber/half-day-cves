@@ -208,5 +208,11 @@
     "description": "The built-in SSH server of Gogs through 0.13.0 allows argument injection in internal/ssh/ssh.go, leading to remote code execution. Authenticated attackers can exploit this by opening an SSH connection and sending a malicious --split-string env request if the built-in SSH server is activated. Windows installations are unaffected.",
     "published": "2024-07-04T16:15:02.277",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-39943": {
+    "cvss": 9.9,
+    "description": "rejetto HFS (aka HTTP File Server) 3 before 0.52.10 on Linux, UNIX, and macOS allows OS command execution by remote authenticated users (if they have Upload permissions). This occurs because a shell is used to execute df (i.e., with execSync instead of spawnSync in child_process in Node.js).",
+    "published": "2024-07-04T23:15:09.940",
+    "keywords": "remote,execution,command"
   }
 }
