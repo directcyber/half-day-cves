@@ -1,52 +1,4 @@
 {
-  "CVE-2024-20894": {
-    "cvss": 4.3,
-    "description": "Improper handling of exceptional conditions in Secure Folder prior to SMR Jul-2024 Release 1 allows physical attackers to bypass authentication under certain condition. User interaction is required for triggering this vulnerability.",
-    "published": "2024-07-02T10:15:04.630",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-34596": {
-    "cvss": 7.5,
-    "description": "Improper authentication in SmartThings prior to version 1.8.17 allows remote attackers to bypass the expiration date for members set by the owner.",
-    "published": "2024-07-02T10:15:08.320",
-    "keywords": "remote,authentication,bypass"
-  },
-  "CVE-2024-6088": {
-    "cvss": 5.3,
-    "description": "The LearnPress \u2013 WordPress LMS Plugin plugin for WordPress is vulnerable to unauthorized user registration due to a missing capability check on the 'register' function in all versions up to, and including, 4.2.6.8.1. This makes it possible for unauthenticated attackers to bypass disabled user registration to create a new account with the default role.",
-    "published": "2024-07-02T11:15:10.463",
-    "keywords": "unauthenticated,bypass"
-  },
-  "CVE-2024-6099": {
-    "cvss": 5.3,
-    "description": "The LearnPress \u2013 WordPress LMS Plugin plugin for WordPress is vulnerable to unauthenticated bypass to user registration in versions up to, and including, 4.2.6.8.1. This is due to missing checks in the 'check_validate_fields' function in the checkout. This makes it possible for unauthenticated attackers to register as the default role on the site, even if registration is disabled.",
-    "published": "2024-07-02T11:15:10.650",
-    "keywords": "unauthenticated,bypass"
-  },
-  "CVE-2024-6438": {
-    "url": "https://github.com/hitout/carsale/issues/23",
-    "cvss": 6.5,
-    "description": "A vulnerability has been found in Hitout Carsale 1.0 and classified as critical. This vulnerability affects unknown code of the file OrderController.java. The manipulation of the argument orderBy leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-270166 is the identifier assigned to this vulnerability.",
-    "published": "2024-07-02T11:15:11.027"
-  },
-  "CVE-2024-36404": {
-    "cvss": 9.8,
-    "description": "GeoTools is an open source Java library that provides tools for geospatial data. Prior to versions 31.2, 30.4, and 29.6, Remote Code Execution (RCE) is possible if an application uses certain GeoTools functionality to evaluate XPath expressions supplied by user input. Versions 31.2, 30.4, and 29.6 contain a fix for this issue. As a workaround, GeoTools can operate with reduced functionality by removing the `gt-complex` jar from one's application. As an example of the impact, application schema `datastore` would not function without the ability to use XPath expressions to query complex content. Alternatively, one may utilize a drop-in replacement GeoTools jar from SourceForge for versions 31.1, 30.3, 30.2, 29.2, 28.2, 27.5, 27.4, 26.7, 26.4, 25.2, and 24.0. These jars are for download only and are not available from maven central, intended to quickly provide a fix to affected applications.",
-    "published": "2024-07-02T14:15:13.450",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-38519": {
-    "cvss": 7.8,
-    "description": "`yt-dlp` and `youtube-dl` are command-line audio/video downloaders. Prior to the fixed versions,\u00a0`yt-dlp` and `youtube-dl` do not limit the extensions of downloaded files, which could lead to arbitrary filenames being created in the download folder (and path traversal on Windows). Since `yt-dlp` and `youtube-dl` also read config from the working directory (and on Windows executables will be executed from the `yt-dlp` or `youtube-dl` directory), this could lead to arbitrary code being executed.\n\n\n\n\n`yt-dlp` version 2024.07.01 fixes this issue by whitelisting the allowed extensions. `youtube-dl` fixes this issue in commit `d42a222` on the `master` branch and in nightly builds tagged 2024-07-03 or later. This might mean some very uncommon extensions might not get downloaded, however it will also limit the possible exploitation surface. In addition to upgrading, have `.%(ext)s` at the end of the output template and make sure the user trusts the websites that they are downloading from. Also, make sure to never download to a directory within PATH or other sensitive locations like one's user directory, `system32`, or other binaries locations. For users who are not able to upgrade, keep the default output template (`-o \"%(title)s [%(id)s].%(ext)s`); make sure the extension of the media to download is a common video/audio/sub/... one; try to avoid the generic extractor; and/or use `--ignore-config --config-location ...` to not load config from common locations.",
-    "published": "2024-07-02T14:15:13.737",
-    "keywords": "command,sensitive"
-  },
-  "CVE-2024-39143": {
-    "url": "https://github.com/coderberg/residencecms/issues/128",
-    "cvss": 5.4,
-    "description": "A stored cross-site scripting (XSS) vulnerability exists in ResidenceCMS 2.10.1 that allows a low-privilege user to create malicious property content with HTML inside which acts as a stored XSS payload.",
-    "published": "2024-07-02T14:15:13.990"
-  },
   "CVE-2024-4897": {
     "cvss": 8.4,
     "description": "parisneo/lollms-webui, in its latest version, is vulnerable to remote code execution due to an insecure dependency on llama-cpp-python version llama_cpp_python-0.2.61+cpuavx2-cp311-cp311-manylinux_2_31_x86_64. The vulnerability arises from the application's 'binding_zoo' feature, which allows attackers to upload and interact with a malicious model file hosted on hugging-face, leading to remote code execution. The issue is linked to a known vulnerability in llama-cpp-python, CVE-2024-34359, which has not been patched in lollms-webui as of commit b454f40a. The vulnerability is exploitable through the application's handling of model files in the 'bindings_zoo' feature, specifically when processing gguf format model files.",
@@ -166,5 +118,29 @@
     "description": "rejetto HFS (aka HTTP File Server) 3 before 0.52.10 on Linux, UNIX, and macOS allows OS command execution by remote authenticated users (if they have Upload permissions). This occurs because a shell is used to execute df (i.e., with execSync instead of spawnSync in child_process in Node.js).",
     "published": "2024-07-04T23:15:09.940",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2024-38346": {
+    "cvss": "-",
+    "description": "The CloudStack cluster service runs on unauthenticated port (default 9090) that can be misused to run arbitrary commands on targeted hypervisors and CloudStack management server hosts. Some of these commands were found to have command injection vulnerabilities that can result in arbitrary code execution via agents on the hosts that may run as a privileged user.\u00a0An attacker that can reach the cluster service on the unauthenticated\u00a0port (default 9090), can exploit this to perform remote code execution on CloudStack managed hosts and result in complete\u00a0compromise of the confidentiality, integrity, and availability of CloudStack managed infrastructure.\n\nUsers are recommended to restrict the network access to the cluster service port (default 9090) on a CloudStack management server host to only its peer CloudStack management server hosts.\u00a0Users are recommended to upgrade to version 4.18.2.1, 4.19.0.2 or later, which addresses this issue.\n\n",
+    "published": "2024-07-05T14:15:02.867",
+    "keywords": "remote,execution,unauthenticated,command"
+  },
+  "CVE-2024-39027": {
+    "cvss": "-",
+    "description": "SeaCMS v12.9 has an unauthorized SQL injection vulnerability. The vulnerability is caused by the SQL injection through the cid parameter at /js/player/dmplayer/dmku/index.php?ac=edit, which can cause sensitive database information to be leaked.",
+    "published": "2024-07-05T14:15:02.997",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2024-39864": {
+    "cvss": "-",
+    "description": "The CloudStack integration API service allows running its unauthenticated API server (usually on port 8096 when configured and enabled via integration.api.port global setting) for internal portal integrations and for testing purposes. By default, the integration API service port is disabled and is considered disabled when integration.api.port is set to 0 or negative. Due to an improper initialisation logic, the integration API service would listen on a random port when its port value is set to 0 (default value).\u00a0An attacker that can access the CloudStack management network could scan and find the randomised integration API service port and exploit it to perform unauthorised administrative actions and perform remote code execution on CloudStack managed hosts and result in complete\u00a0compromise of the confidentiality, integrity, and availability of CloudStack managed infrastructure.\n\nUsers are recommended to restrict the network access on the CloudStack management server hosts to only essential ports. Users are recommended to upgrade to version 4.18.2.1, 4.19.0.2 or later, which addresses this issue.\n\n",
+    "published": "2024-07-05T14:15:03.203",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-6526": {
+    "url": "https://github.com/kirilkirkov/ecommerce-codeigniter-bootstrap/commit/1b3da45308bb6c3f55247d0e99620b600bd85277",
+    "cvss": 3.5,
+    "description": "A vulnerability classified as problematic has been found in CodeIgniter Ecommerce-CodeIgniter-Bootstrap up to 1998845073cf433bc6c250b0354461fbd84d0e03. This affects an unknown part. The manipulation of the argument search_title/catName/sub/name/categorie leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of the patch is 1b3da45308bb6c3f55247d0e99620b600bd85277. It is recommended to apply a patch to fix this issue. The identifier VDB-270369 was assigned to this vulnerability.",
+    "published": "2024-07-05T14:15:03.910"
   }
 }
