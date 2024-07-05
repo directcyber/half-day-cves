@@ -1,10 +1,4 @@
 {
-  "CVE-2024-6452": {
-    "url": "https://github.com/linlinjava/litemall/issues/548",
-    "cvss": 6.3,
-    "description": "A vulnerability classified as critical was found in linlinjava litemall up to 1.8.0. Affected by this vulnerability is an unknown functionality of the file AdminGoodscontroller.java. The manipulation of the argument goodsId/goodsSn/name leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-270235.",
-    "published": "2024-07-02T20:15:06.860"
-  },
   "CVE-2024-37082": {
     "cvss": 9.0,
     "description": "Security check loophole in HAProxy release (in combination with routing release) in Cloud Foundry prior to v40.17.0 potentially allows bypass of mTLS authentication to applications hosted on Cloud Foundry.",
@@ -178,5 +172,11 @@
     "cvss": 8.8,
     "description": "Evmos is a decentralized Ethereum Virtual Machine chain on the Cosmos Network. Prior to version 19.0.0, a user can create a vesting account with a 3rd party account (EOA or contract) as funder. Then, this user can create an authorization for the contract.CallerAddress, this is the authorization checked in the code. But the funds are taken from the funder address provided in the message. Consequently, the user can fund a vesting account with a 3rd party account without its permission. The funder address can be any address, so this vulnerability can be used to drain all the accounts in the chain. The issue has been patched in version 19.0.0.",
     "published": "2024-07-05T19:15:10.673"
+  },
+  "CVE-2024-5753": {
+    "cvss": 7.5,
+    "description": "vanna-ai/vanna version v0.3.4 is vulnerable to SQL injection in some file-critical functions such as `pg_read_file()`. This vulnerability allows unauthenticated remote users to read arbitrary local files on the victim server, including sensitive files like `/etc/passwd`, by exploiting the exposed SQL queries via a Python Flask API.",
+    "published": "2024-07-05T20:15:02.343",
+    "keywords": "remote,unauthenticated,sensitive"
   }
 }

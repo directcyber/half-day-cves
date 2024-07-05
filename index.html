@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-05T20:12:03.047816
+Updated at UTC 2024-07-05T21:10:34.300402
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-07-05T20:12:03.047816
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 				<tr>
@@ -190,20 +192,18 @@ The bug was fixed in the next released version:  https://pkg.go.dev/github.com/
 		
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6452">CVE-2024-6452</a></td>
-					<td>6.3</td>
-					<td><a target=_blank href="https://github.com/linlinjava/litemall/issues/548">https://github.com/linlinjava/litemall/issues/548</a></td>
-					<td class=date>2024-07-02T20:15:06.860</td>
-					<td class=description>A vulnerability classified as critical was found in linlinjava litemall up to 1.8.0. Affected by this vulnerability is an unknown functionality of the file AdminGoodscontroller.java. The manipulation of the argument goodsId/goodsSn/name leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-270235.</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5753">CVE-2024-5753</a></td>
+					<td>7.5</td>
+					<td>remote,unauthenticated,sensitive</td>
+					<td class=date>2024-07-05T20:15:02.343</td>
+					<td class=description>vanna-ai/vanna version v0.3.4 is vulnerable to SQL injection in some file-critical functions such as `pg_read_file()`. This vulnerability allows unauthenticated remote users to read arbitrary local files on the victim server, including sensitive files like `/etc/passwd`, by exploiting the exposed SQL queries via a Python Flask API.</td>
+				</tr>
+			
 		
 			
 		
@@ -449,8 +449,6 @@ Users are recommended to restrict the network access to the cluster service port
 					<td class=date>2024-07-03T06:15:03.633</td>
 					<td class=description>Security check loophole in HAProxy release (in combination with routing release) in Cloud Foundry prior to v40.17.0 potentially allows bypass of mTLS authentication to applications hosted on Cloud Foundry.</td>
 				</tr>
-			
-		
 			
 		
 
