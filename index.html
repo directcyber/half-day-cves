@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-06T18:12:29.155203
+Updated at UTC 2024-07-06T19:08:37.791190
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -168,18 +168,6 @@ The bug was fixed in the next released version:  https://pkg.go.dev/github.com/
 				</tr>
 			
 		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31223">CVE-2024-31223</a></td>
-					<td>5.3</td>
-					<td><a target=_blank href="https://github.com/ethyca/fides/commit/0555080541f18a5aacff452c590ac9a1b56d7097">https://github.com/ethyca/fides/commit/0555080541f18a5aacff452c590ac9a1b56d7097</a></td>
-					<td class=date>2024-07-03T18:15:05.097</td>
-					<td class=description>Fides is an open-source privacy engineering platform, and `SERVER_SIDE_FIDES_API_URL` is a server-side configuration environment variable used by the Fides Privacy Center to communicate with the Fides webserver backend. The value of this variable is a URL which typically includes a private IP address, private domain name, and/or port. A vulnerability present starting in version 2.19.0 and prior to version 2.39.2rc0 allows an unauthenticated attacker to make a HTTP GET request from the Privacy Center that discloses the value of this server-side URL. This could result in disclosure of server-side configuration giving an attacker information on server-side ports, private IP addresses, and/or private domain names. The vulnerability has been patched in Fides version 2.39.2rc0. No known workarounds are available.</td>
-
-
-				</tr>
 			
 		
 
@@ -386,8 +374,6 @@ Users are recommended to restrict the network access to the cluster service port
 					<td class=date>2024-07-03T19:15:03.767</td>
 					<td class=description>An issue was discovered in Artifex Ghostscript before 10.03.1. Path traversal and command execution can occur (via a crafted PostScript document) because of path reduction in base/gpmisc.c. For example, restrictions on use of %pipe% can be bypassed via the aa/../%pipe%command# output filename.</td>
 				</tr>
-			
-		
 			
 		
 
