@@ -1,10 +1,4 @@
 {
-  "CVE-2024-2385": {
-    "cvss": 8.8,
-    "description": "The Elementor Addons by Livemesh plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 8.3.7 via several of the plugin's widgets through the 'style' attribute. This makes it possible for authenticated attackers, with contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
-    "published": "2024-07-04T04:15:14.000",
-    "keywords": "execution,sensitive,bypass"
-  },
   "CVE-2024-1573": {
     "cvss": 5.9,
     "description": "Improper Authentication vulnerability in the mobile monitoring feature of ICONICS GENESIS64 versions 10.97 to 10.97.2, Mitsubishi Electric GENESIS64 versions 10.97 to 10.97.2 and Mitsubishi Electric MC Works64 all versions allows a remote unauthenticated attacker to bypass proper authentication and log in to the system when all of the following conditions are met:  *  Active Directory is used in the security setting.\n  *  \u201cAutomatic log in\u201d option is enabled in the security setting.\n  *  The IcoAnyGlass IIS Application Pool is running under an Active Directory Domain Account.\n  *  The IcoAnyGlass IIS Application Pool account is included in GENESIS64TM and MC Works64 Security and has permission to log in.",
