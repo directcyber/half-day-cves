@@ -1,10 +1,4 @@
 {
-  "CVE-2024-6284": {
-    "url": "https://github.com/google/nftables/issues/225",
-    "cvss": "-",
-    "description": "In  https://github.com/google/nftables \u00a0IP addresses were encoded in the wrong byte order,\u00a0resulting in an nftables configuration which does not work as intended (might block or not block the desired addresses).\n\nThis issue affects:\u00a0 https://pkg.go.dev/github.com/google/nftables@v0.1.0 \n\nThe bug was fixed in the next released version:\u00a0 https://pkg.go.dev/github.com/google/nftables@v0.2.0",
-    "published": "2024-07-03T23:15:02.333"
-  },
   "CVE-2024-2385": {
     "cvss": 8.8,
     "description": "The Elementor Addons by Livemesh plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 8.3.7 via several of the plugin's widgets through the 'style' attribute. This makes it possible for authenticated attackers, with contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
