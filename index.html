@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-08T12:19:30.561759
+Updated at UTC 2024-07-08T15:10:25.482272
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-07-08T12:19:30.561759
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -130,26 +134,28 @@ Updated at UTC 2024-07-08T12:19:30.561759
 				</tr>
 			
 		
+
+		<hr>
+		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6526">CVE-2024-6526</a></td>
-					<td>3.5</td>
-					<td><a target=_blank href="https://github.com/kirilkirkov/ecommerce-codeigniter-bootstrap/commit/1b3da45308bb6c3f55247d0e99620b600bd85277">https://github.com/kirilkirkov/ecommerce-codeigniter-bootstrap/commit/1b3da45308bb6c3f55247d0e99620b600bd85277</a></td>
-					<td class=date>2024-07-05T14:15:03.910</td>
-					<td class=description>A vulnerability classified as problematic has been found in CodeIgniter Ecommerce-CodeIgniter-Bootstrap up to 1998845073cf433bc6c250b0354461fbd84d0e03. This affects an unknown part. The manipulation of the argument search_title/catName/sub/name/categorie leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of the patch is 1b3da45308bb6c3f55247d0e99620b600bd85277. It is recommended to apply a patch to fix this issue. The identifier VDB-270369 was assigned to this vulnerability.</td>
-
-
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-39742">CVE-2024-39742</a></td>
+					<td>8.1</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-07-08T14:15:02.550</td>
+					<td class=description>IBM MQ Operator 3.2.2 and IBM MQ Operator 2.0.24 could allow a user to bypass authentication under certain configurations due to a partial string comparison vulnerability.  IBM X-Force ID:  297169.</td>
 				</tr>
 			
 		
 			
-		
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6163">CVE-2024-6163</a></td>
+					<td>5.3</td>
+					<td>remote,authentication,bypass</td>
+					<td class=date>2024-07-08T13:15:10.593</td>
+					<td class=description>Certain http endpoints of Checkmk in Checkmk < 2.3.0p10 < 2.2.0p31, < 2.1.0p46, <= 2.0.0p39 allows remote attacker to bypass authentication and access data</td>
+				</tr>
 			
-		
-			
-		
-
-		<hr>
 		
 			
 				<tr class=keywords style="display: none">
@@ -219,46 +225,6 @@ Updated at UTC 2024-07-08T12:19:30.561759
 		
 			
 		
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-39864">CVE-2024-39864</a></td>
-					<td>-</td>
-					<td>remote,execution,unauthenticated</td>
-					<td class=date>2024-07-05T14:15:03.203</td>
-					<td class=description>The CloudStack integration API service allows running its unauthenticated API server (usually on port 8096 when configured and enabled via integration.api.port global setting) for internal portal integrations and for testing purposes. By default, the integration API service port is disabled and is considered disabled when integration.api.port is set to 0 or negative. Due to an improper initialisation logic, the integration API service would listen on a random port when its port value is set to 0 (default value). An attacker that can access the CloudStack management network could scan and find the randomised integration API service port and exploit it to perform unauthorised administrative actions and perform remote code execution on CloudStack managed hosts and result in complete compromise of the confidentiality, integrity, and availability of CloudStack managed infrastructure.
-
-Users are recommended to restrict the network access on the CloudStack management server hosts to only essential ports. Users are recommended to upgrade to version 4.18.2.1, 4.19.0.2 or later, which addresses this issue.
-
-</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-39027">CVE-2024-39027</a></td>
-					<td>-</td>
-					<td>sensitive,leak</td>
-					<td class=date>2024-07-05T14:15:02.997</td>
-					<td class=description>SeaCMS v12.9 has an unauthorized SQL injection vulnerability. The vulnerability is caused by the SQL injection through the cid parameter at /js/player/dmplayer/dmku/index.php?ac=edit, which can cause sensitive database information to be leaked.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38346">CVE-2024-38346</a></td>
-					<td>-</td>
-					<td>remote,execution,unauthenticated,command</td>
-					<td class=date>2024-07-05T14:15:02.867</td>
-					<td class=description>The CloudStack cluster service runs on unauthenticated port (default 9090) that can be misused to run arbitrary commands on targeted hypervisors and CloudStack management server hosts. Some of these commands were found to have command injection vulnerabilities that can result in arbitrary code execution via agents on the hosts that may run as a privileged user. An attacker that can reach the cluster service on the unauthenticated port (default 9090), can exploit this to perform remote code execution on CloudStack managed hosts and result in complete compromise of the confidentiality, integrity, and availability of CloudStack managed infrastructure.
-
-Users are recommended to restrict the network access to the cluster service port (default 9090) on a CloudStack management server host to only its peer CloudStack management server hosts. Users are recommended to upgrade to version 4.18.2.1, 4.19.0.2 or later, which addresses this issue.
-
-</td>
-				</tr>
 			
 		
 

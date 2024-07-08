@@ -1,28 +1,4 @@
 {
-  "CVE-2024-38346": {
-    "cvss": "-",
-    "description": "The CloudStack cluster service runs on unauthenticated port (default 9090) that can be misused to run arbitrary commands on targeted hypervisors and CloudStack management server hosts. Some of these commands were found to have command injection vulnerabilities that can result in arbitrary code execution via agents on the hosts that may run as a privileged user.\u00a0An attacker that can reach the cluster service on the unauthenticated\u00a0port (default 9090), can exploit this to perform remote code execution on CloudStack managed hosts and result in complete\u00a0compromise of the confidentiality, integrity, and availability of CloudStack managed infrastructure.\n\nUsers are recommended to restrict the network access to the cluster service port (default 9090) on a CloudStack management server host to only its peer CloudStack management server hosts.\u00a0Users are recommended to upgrade to version 4.18.2.1, 4.19.0.2 or later, which addresses this issue.\n\n",
-    "published": "2024-07-05T14:15:02.867",
-    "keywords": "remote,execution,unauthenticated,command"
-  },
-  "CVE-2024-39027": {
-    "cvss": "-",
-    "description": "SeaCMS v12.9 has an unauthorized SQL injection vulnerability. The vulnerability is caused by the SQL injection through the cid parameter at /js/player/dmplayer/dmku/index.php?ac=edit, which can cause sensitive database information to be leaked.",
-    "published": "2024-07-05T14:15:02.997",
-    "keywords": "sensitive,leak"
-  },
-  "CVE-2024-39864": {
-    "cvss": "-",
-    "description": "The CloudStack integration API service allows running its unauthenticated API server (usually on port 8096 when configured and enabled via integration.api.port global setting) for internal portal integrations and for testing purposes. By default, the integration API service port is disabled and is considered disabled when integration.api.port is set to 0 or negative. Due to an improper initialisation logic, the integration API service would listen on a random port when its port value is set to 0 (default value).\u00a0An attacker that can access the CloudStack management network could scan and find the randomised integration API service port and exploit it to perform unauthorised administrative actions and perform remote code execution on CloudStack managed hosts and result in complete\u00a0compromise of the confidentiality, integrity, and availability of CloudStack managed infrastructure.\n\nUsers are recommended to restrict the network access on the CloudStack management server hosts to only essential ports. Users are recommended to upgrade to version 4.18.2.1, 4.19.0.2 or later, which addresses this issue.\n\n",
-    "published": "2024-07-05T14:15:03.203",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-6526": {
-    "url": "https://github.com/kirilkirkov/ecommerce-codeigniter-bootstrap/commit/1b3da45308bb6c3f55247d0e99620b600bd85277",
-    "cvss": 3.5,
-    "description": "A vulnerability classified as problematic has been found in CodeIgniter Ecommerce-CodeIgniter-Bootstrap up to 1998845073cf433bc6c250b0354461fbd84d0e03. This affects an unknown part. The manipulation of the argument search_title/catName/sub/name/categorie leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of the patch is 1b3da45308bb6c3f55247d0e99620b600bd85277. It is recommended to apply a patch to fix this issue. The identifier VDB-270369 was assigned to this vulnerability.",
-    "published": "2024-07-05T14:15:03.910"
-  },
   "CVE-2024-37768": {
     "url": "https://github.com/b1ackc4t/14finger/issues/12",
     "cvss": "-",
@@ -88,5 +64,17 @@
     "description": "The interactive service in OpenVPN 2.6.9 and earlier allows the OpenVPN service pipe to be accessed remotely, which allows a remote attacker to interact with the privileged OpenVPN interactive service.",
     "published": "2024-07-08T11:15:10.103",
     "keywords": "remote,vpn"
+  },
+  "CVE-2024-6163": {
+    "cvss": 5.3,
+    "description": "Certain http endpoints of Checkmk in Checkmk < 2.3.0p10 < 2.2.0p31, < 2.1.0p46, <= 2.0.0p39 allows remote attacker to bypass authentication and access data",
+    "published": "2024-07-08T13:15:10.593",
+    "keywords": "remote,authentication,bypass"
+  },
+  "CVE-2024-39742": {
+    "cvss": 8.1,
+    "description": "IBM MQ Operator 3.2.2 and IBM MQ Operator 2.0.24 could allow a user to bypass authentication under certain configurations due to a partial string comparison vulnerability.  IBM X-Force ID:  297169.",
+    "published": "2024-07-08T14:15:02.550",
+    "keywords": "authentication,bypass"
   }
 }
