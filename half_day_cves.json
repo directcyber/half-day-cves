@@ -1,16 +1,4 @@
 {
-  "CVE-2024-34361": {
-    "cvss": 8.5,
-    "description": "Pi-hole is a DNS sinkhole that protects devices from unwanted content without installing any client-side software. A vulnerability in versions prior to 5.18.3 allows an authenticated user to make internal requests to the server via the `gravity_DownloadBlocklistFromUrl()` function. Depending on some circumstances, the vulnerability could lead to remote command execution. Version 5.18.3 contains a patch for this issue.",
-    "published": "2024-07-05T19:15:09.610",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-39696": {
-    "url": "https://github.com/evmos/evmos/commit/0a620e176617a835ac697eea494afea09185dfaf",
-    "cvss": 8.8,
-    "description": "Evmos is a decentralized Ethereum Virtual Machine chain on the Cosmos Network. Prior to version 19.0.0, a user can create a vesting account with a 3rd party account (EOA or contract) as funder. Then, this user can create an authorization for the contract.CallerAddress, this is the authorization checked in the code. But the funds are taken from the funder address provided in the message. Consequently, the user can fund a vesting account with a 3rd party account without its permission. The funder address can be any address, so this vulnerability can be used to drain all the accounts in the chain. The issue has been patched in version 19.0.0.",
-    "published": "2024-07-05T19:15:10.673"
-  },
   "CVE-2024-5753": {
     "cvss": 7.5,
     "description": "vanna-ai/vanna version v0.3.4 is vulnerable to SQL injection in some file-critical functions such as `pg_read_file()`. This vulnerability allows unauthenticated remote users to read arbitrary local files on the victim server, including sensitive files like `/etc/passwd`, by exploiting the exposed SQL queries via a Python Flask API.",
