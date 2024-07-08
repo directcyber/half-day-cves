@@ -1,10 +1,4 @@
 {
-  "CVE-2024-39943": {
-    "cvss": 9.9,
-    "description": "rejetto HFS (aka HTTP File Server) 3 before 0.52.10 on Linux, UNIX, and macOS allows OS command execution by remote authenticated users (if they have Upload permissions). This occurs because a shell is used to execute df (i.e., with execSync instead of spawnSync in child_process in Node.js).",
-    "published": "2024-07-04T23:15:09.940",
-    "keywords": "remote,execution,command"
-  },
   "CVE-2024-38346": {
     "cvss": "-",
     "description": "The CloudStack cluster service runs on unauthenticated port (default 9090) that can be misused to run arbitrary commands on targeted hypervisors and CloudStack management server hosts. Some of these commands were found to have command injection vulnerabilities that can result in arbitrary code execution via agents on the hosts that may run as a privileged user.\u00a0An attacker that can reach the cluster service on the unauthenticated\u00a0port (default 9090), can exploit this to perform remote code execution on CloudStack managed hosts and result in complete\u00a0compromise of the confidentiality, integrity, and availability of CloudStack managed infrastructure.\n\nUsers are recommended to restrict the network access to the cluster service port (default 9090) on a CloudStack management server host to only its peer CloudStack management server hosts.\u00a0Users are recommended to upgrade to version 4.18.2.1, 4.19.0.2 or later, which addresses this issue.\n\n",
@@ -82,5 +76,11 @@
     "description": "An information disclosure vulnerability in ISPmanager v6.98.0 allows attackers to access sensitive details of the root user's session via an arbitrary command (ISP6-1779).",
     "published": "2024-07-05T23:15:10.137",
     "keywords": "command,sensitive"
+  },
+  "CVE-2024-5711": {
+    "url": "https://github.com/stitionai/devika/commit/6acce21fb08c3d1123ef05df6a33912bf0ee77c2",
+    "cvss": 8.1,
+    "description": "Cross-site Scripting (XSS) - Stored in GitHub repository stitionai/devika prior to -.",
+    "published": "2024-07-08T00:15:01.940"
   }
 }
