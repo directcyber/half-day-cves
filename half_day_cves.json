@@ -1,16 +1,4 @@
 {
-  "CVE-2024-37768": {
-    "url": "https://github.com/b1ackc4t/14finger/issues/12",
-    "cvss": "-",
-    "description": "14Finger v1.1 was discovered to contain an arbitrary user deletion vulnerability via the component /api/admin/user?id.",
-    "published": "2024-07-05T16:15:05.010"
-  },
-  "CVE-2024-37769": {
-    "url": "https://github.com/b1ackc4t/14finger/issues/12",
-    "cvss": "-",
-    "description": "Insecure permissions in 14Finger v1.1 allow attackers to escalate privileges from normal user to Administrator via a crafted POST request.",
-    "published": "2024-07-05T16:15:05.110"
-  },
   "CVE-2024-27710": {
     "cvss": "-",
     "description": "An issue in Eskooly Free Online School management Software v.3.0 and before allows a remote attacker to escalate privileges via the authentication mechanism.",
@@ -76,5 +64,17 @@
     "description": "IBM MQ Operator 3.2.2 and IBM MQ Operator 2.0.24 could allow a user to bypass authentication under certain configurations due to a partial string comparison vulnerability.  IBM X-Force ID:  297169.",
     "published": "2024-07-08T14:15:02.550",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-23562": {
+    "cvss": 5.3,
+    "description": "A security vulnerability in HCL Domino could allow disclosure of sensitive configuration information.  A remote unauthenticated attacker could exploit this vulnerability to obtain information to launch further attacks against the affected system.",
+    "published": "2024-07-08T16:15:07.797",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2024-39202": {
+    "cvss": "-",
+    "description": "D-Link DIR-823X firmware - 240126 was discovered to contain a remote command execution (RCE) vulnerability via the dhcpd_startip parameter at /goform/set_lan_settings.",
+    "published": "2024-07-08T16:15:08.490",
+    "keywords": "remote,execution,command"
   }
 }
