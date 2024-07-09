@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-09T19:07:34.928154
+Updated at UTC 2024-07-09T20:11:30.228840
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,18 @@ Updated at UTC 2024-07-09T19:07:34.928154
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38517">CVE-2024-38517</a></td>
+					<td>7.8</td>
+					<td><a target=_blank href="https://github.com/tencent/rapidjson/pull/1261/commits/8269bc2bc289e9d343bae51cdf6d23ef0950e001">https://github.com/tencent/rapidjson/pull/1261/commits/8269bc2bc289e9d343bae51cdf6d23ef0950e001</a></td>
+					<td class=date>2024-07-09T19:15:12.470</td>
+					<td class=description>Tencent RapidJSON is vulnerable to privilege escalation due to an integer underflow in the `GenericReader::ParseNumber()` function of `include/rapidjson/reader.h` when parsing JSON text from a stream. An attacker needs to send the victim a crafted file which needs to be opened; this triggers the integer underflow vulnerability (when the file is parsed), leading to elevation of privilege.</td>
+
+
+				</tr>
+			
 		
 			
 				<tr>
@@ -300,6 +312,8 @@ Updated at UTC 2024-07-09T19:07:34.928154
 		
 
 		<hr>
+		
+			
 		
 			
 		
