@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-09T15:09:47.004226
+Updated at UTC 2024-07-09T16:12:31.532587
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-07-09T15:09:47.004226
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -145,6 +147,8 @@ Updated at UTC 2024-07-09T15:09:47.004226
 			
 		
 			
+		
+			
 				<tr>
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5711">CVE-2024-5711</a></td>
 					<td>8.1</td>
@@ -158,6 +162,16 @@ Updated at UTC 2024-07-09T15:09:47.004226
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38363">CVE-2024-38363</a></td>
+					<td>8.5</td>
+					<td>remote,sensitive</td>
+					<td class=date>2024-07-09T15:15:11.043</td>
+					<td class=description>Airbyte is a data integration platform for ELT pipelines. Airbyte connection builder docker image is vulnerable to RCE via SSTI which allows an authenticated remote attacker to execute arbitrary code on the server as the web server user. The connection builder is used to create and test new connectors. Sensitive information, such as credentials, could be exposed if a user tested a new connector on a compromised instance. The connection builder does not have access to any data processes. This vulnerability is fixed in 0.62.2.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -490,6 +504,16 @@ information with low impact on confidentiality of the application.</td>
 				</tr>
 			
 		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6409">CVE-2024-6409</a></td>
+					<td>7.0</td>
+					<td>remote,execution</td>
+					<td class=date>2024-07-08T18:15:09.487</td>
+					<td class=description>A signal handler race condition vulnerability was found in OpenSSH's server (sshd) in Red Hat Enterprise Linux 9, where a client does not authenticate within LoginGraceTime seconds (120 by default, 600 in old OpenSSH versions), then sshd's SIGALRM handler is called asynchronously. However, this signal handler calls various functions that are not async-signal-safe, for example, syslog(). This issue leaves it vulnerable to a signal handler race condition on the cleanup_exit() function, which introduces the same vulnerability as CVE-2024-6387 in the unprivileged child of the SSHD server. As a consequence of a successful attack, in the worst case scenario, the attacker may be able to perform a remote code execution (RCE) within unprivileged user running the sshd server. This vulnerability affects only the sshd server shipped with Red Hat Enterprise Linux 9, while upstream versions of sshd are not impact by this flaw.</td>
+				</tr>
 			
 		
 			

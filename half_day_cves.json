@@ -35,6 +35,12 @@
     "published": "2024-07-08T16:15:08.490",
     "keywords": "remote,execution,command"
   },
+  "CVE-2024-6409": {
+    "cvss": 7.0,
+    "description": "A signal handler race condition vulnerability was found in OpenSSH's server (sshd) in Red Hat Enterprise Linux 9, where a client does not authenticate within LoginGraceTime seconds (120 by default, 600 in old OpenSSH versions), then sshd's SIGALRM handler is called asynchronously. However, this signal handler calls various functions that are not async-signal-safe, for example, syslog(). This issue leaves it vulnerable to a signal handler race condition on the cleanup_exit() function, which introduces the same vulnerability as CVE-2024-6387 in the unprivileged child of the SSHD server. As a consequence of a successful attack, in the worst case scenario, the attacker may be able to perform a remote code execution (RCE) within unprivileged user running the sshd server. This vulnerability affects only the sshd server shipped with Red Hat Enterprise Linux 9, while upstream versions of sshd are not impact by this flaw.",
+    "published": "2024-07-08T18:15:09.487",
+    "keywords": "remote,execution"
+  },
   "CVE-2024-5549": {
     "url": "https://github.com/stitionai/devika/commit/6acce21fb08c3d1123ef05df6a33912bf0ee77c2",
     "cvss": 8.1,
@@ -232,5 +238,11 @@
     "description": "A vulnerability has been identified in SINEMA Remote Connect Server (All versions < V3.2 SP1). Affected applications do not properly handle log rotation. This could allow an unauthenticated remote attacker to cause a denial of service condition through resource exhaustion on the device.",
     "published": "2024-07-09T12:15:20.047",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-38363": {
+    "cvss": 8.5,
+    "description": "Airbyte is a data integration platform for ELT pipelines. Airbyte connection builder docker image is vulnerable to RCE via SSTI which allows an authenticated remote attacker to execute arbitrary code on the server as the web server user. The connection builder is used to create and test new connectors. Sensitive information, such as credentials, could be exposed if a user tested a new connector on a compromised instance. The connection builder does not have access to any data processes. This vulnerability is fixed in 0.62.2.",
+    "published": "2024-07-09T15:15:11.043",
+    "keywords": "remote,sensitive"
   }
 }
