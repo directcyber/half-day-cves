@@ -23,12 +23,6 @@
     "published": "2024-07-08T14:15:02.550",
     "keywords": "authentication,bypass"
   },
-  "CVE-2024-23562": {
-    "cvss": 5.3,
-    "description": "A security vulnerability in HCL Domino could allow disclosure of sensitive configuration information.  A remote unauthenticated attacker could exploit this vulnerability to obtain information to launch further attacks against the affected system.",
-    "published": "2024-07-08T16:15:07.797",
-    "keywords": "remote,unauthenticated,sensitive"
-  },
   "CVE-2024-39202": {
     "cvss": "-",
     "description": "D-Link DIR-823X firmware - 240126 was discovered to contain a remote command execution (RCE) vulnerability via the dhcpd_startip parameter at /goform/set_lan_settings.",
@@ -628,5 +622,11 @@
     "description": "Windows Fax Service Remote Code Execution Vulnerability",
     "published": "2024-07-09T17:15:47.410",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-6237": {
+    "url": "https://github.com/389ds/389-ds-base/issues/5989",
+    "cvss": 5.3,
+    "description": "A flaw was found in the 389 Directory Server. This flaw allows an unauthenticated user to cause a systematic server crash while sending a specific extended search request, leading to a denial of service.",
+    "published": "2024-07-09T17:15:48.960"
   }
 }
