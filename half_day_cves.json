@@ -160,5 +160,77 @@
     "description": "The Panda Video plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.4.0 via the 'selected_button' parameter. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
     "published": "2024-07-09T09:15:06.310",
     "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2024-37430": {
+    "cvss": 5.3,
+    "description": "Authentication Bypass by Spoofing vulnerability in Patreon Patreon WordPress allows Functionality Misuse.This issue affects Patreon WordPress: from n/a through 1.9.0.",
+    "published": "2024-07-09T11:15:14.263",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-5633": {
+    "cvss": "-",
+    "description": "Longse model\u00a0LBH30FE200W cameras, as well as products based on this device, provide an unrestricted access for an attacker located in the same local network to an undocumented binary service CoolView on one of the ports.\u00a0\nAn attacker with a knowledge of the available commands is able to perform read/write operations on the device's memory, which might result in e.g. bypassing telnet login and obtaining full access to the device.",
+    "published": "2024-07-09T11:15:16.157",
+    "keywords": "command,bypass"
+  },
+  "CVE-2024-30321": {
+    "cvss": 5.9,
+    "description": "A vulnerability has been identified in SIMATIC PCS 7 V9.1 (All versions), SIMATIC WinCC Runtime Professional V18 (All versions), SIMATIC WinCC Runtime Professional V19 (All versions < V19 Update 2), SIMATIC WinCC V7.4 (All versions < V7.4 SP1 Update 23), SIMATIC WinCC V7.5 (All versions < V7.5 SP2 Update 17), SIMATIC WinCC V8.0 (All versions < V8.0 Update 5). The affected products do not properly handle certain requests to their web application, which may lead to the leak of privileged information.\r\nThis could allow an unauthenticated remote attacker to retrieve information such as users and passwords.",
+    "published": "2024-07-09T12:15:11.707",
+    "keywords": "remote,unauthenticated,leak"
+  },
+  "CVE-2024-39567": {
+    "cvss": 7.8,
+    "description": "A vulnerability has been identified in SINEMA Remote Connect Client (All versions < V3.2 HF1). The system service of affected applications is vulnerable to command injection due to missing server side input sanitation when loading VPN configurations. This could allow an authenticated local attacker to execute arbitrary code with system privileges.",
+    "published": "2024-07-09T12:15:16.053",
+    "keywords": "remote,command,vpn"
+  },
+  "CVE-2024-39568": {
+    "cvss": 7.8,
+    "description": "A vulnerability has been identified in SINEMA Remote Connect Client (All versions < V3.2 HF1). The system service of affected applications is vulnerable to command injection due to missing server side input sanitation when loading proxy configurations. This could allow an authenticated local attacker to execute arbitrary code with system privileges.",
+    "published": "2024-07-09T12:15:16.263",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-39569": {
+    "cvss": 6.6,
+    "description": "A vulnerability has been identified in SINEMA Remote Connect Client (All versions < V3.2 HF1). The system service of affected applications is vulnerable to command injection due to missing server side input sanitation when loading VPN configurations. This could allow an administrative remote attacker running a corresponding SINEMA Remote Connect Server to execute arbitrary code with system privileges on the client system.",
+    "published": "2024-07-09T12:15:16.490",
+    "keywords": "remote,command,vpn"
+  },
+  "CVE-2024-39570": {
+    "cvss": 8.8,
+    "description": "A vulnerability has been identified in SINEMA Remote Connect Server (All versions < V3.2 HF1). Affected applications are vulnerable to command injection due to missing server side input sanitation when loading VxLAN configurations. This could allow an authenticated attacker to execute arbitrary code with root privileges.",
+    "published": "2024-07-09T12:15:16.723",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-39571": {
+    "cvss": 8.8,
+    "description": "A vulnerability has been identified in SINEMA Remote Connect Server (All versions < V3.2 HF1). Affected applications are vulnerable to command injection due to missing server side input sanitation when loading SNMP configurations. This could allow an attacker with the right to modify the SNMP configuration to execute arbitrary code with root privileges.",
+    "published": "2024-07-09T12:15:16.953",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-39865": {
+    "cvss": 8.8,
+    "description": "A vulnerability has been identified in SINEMA Remote Connect Server (All versions < V3.2 SP1). The affected application allows users to upload encrypted backup files. As part of this backup, files can be restored without correctly checking the path of the restored file. This could allow an attacker with access to the backup encryption key to upload malicious files, that could potentially lead to remote code execution.",
+    "published": "2024-07-09T12:15:17.443",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-39867": {
+    "cvss": 7.6,
+    "description": "A vulnerability has been identified in SINEMA Remote Connect Server (All versions < V3.2 SP1). Affected devices do not properly validate the authentication when performing certain actions in the web interface allowing an unauthenticated attacker to access and edit device configuration information of devices for which they have no privileges.",
+    "published": "2024-07-09T12:15:17.917",
+    "keywords": "remote,unauthenticated,authentication"
+  },
+  "CVE-2024-39868": {
+    "cvss": 7.6,
+    "description": "A vulnerability has been identified in SINEMA Remote Connect Server (All versions < V3.2 SP1). Affected devices do not properly validate the authentication when performing certain actions in the web interface allowing an unauthenticated attacker to access and edit VxLAN configuration information of networks for which they have no privileges.",
+    "published": "2024-07-09T12:15:18.157",
+    "keywords": "remote,unauthenticated,authentication"
+  },
+  "CVE-2024-39876": {
+    "cvss": 4.0,
+    "description": "A vulnerability has been identified in SINEMA Remote Connect Server (All versions < V3.2 SP1). Affected applications do not properly handle log rotation. This could allow an unauthenticated remote attacker to cause a denial of service condition through resource exhaustion on the device.",
+    "published": "2024-07-09T12:15:20.047",
+    "keywords": "remote,unauthenticated"
   }
 }
