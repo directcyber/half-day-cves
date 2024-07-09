@@ -688,5 +688,23 @@
     "description": "Cross Site Scripting vulnerability in Creativeitem Academy LMS Learning Management System v.6.8.1 allows a remote attacker to execute arbitrary code and obtain sensitive information via the string parameter.",
     "published": "2024-07-09T21:15:15.040",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-36676": {
+    "url": "https://github.com/bookstackapp/bookstack/issues/4993",
+    "cvss": "-",
+    "description": "Incorrect access control in BookStack before v24.05.1 allows attackers to confirm existing system users and perform targeted notification email DoS via public facing forms.",
+    "published": "2024-07-09T22:15:02.467"
+  },
+  "CVE-2024-38963": {
+    "url": "https://github.com/nopsolutions/nopcommerce/issues/7224",
+    "cvss": "-",
+    "description": "Nopcommerce 4.70.1 is vulnerable to Cross Site Scripting (XSS) via the combined \"AddProductReview.Title\" and \"AddProductReview.ReviewText\" parameter(s) (Reviews) when creating a new review.",
+    "published": "2024-07-09T22:15:02.560"
+  },
+  "CVE-2024-39901": {
+    "url": "https://github.com/opensearch-project/observability/commit/014423178f8f61d90442dde03cbdcd754c70a84e",
+    "cvss": 5.4,
+    "description": "OpenSearch Observability is collection of plugins and applications that visualize data-driven events. An issue in the OpenSearch observability plugins allows unintended access to private tenant resources like notebooks. The system did not properly check if the user was the resource author when accessing resources in a private tenant, leading to potential data being revealed. The patches are included in OpenSearch 2.14.",
+    "published": "2024-07-09T22:15:03.450"
   }
 }
