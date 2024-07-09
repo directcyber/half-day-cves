@@ -244,5 +244,35 @@
     "description": "Airbyte is a data integration platform for ELT pipelines. Airbyte connection builder docker image is vulnerable to RCE via SSTI which allows an authenticated remote attacker to execute arbitrary code on the server as the web server user. The connection builder is used to create and test new connectors. Sensitive information, such as credentials, could be exposed if a user tested a new connector on a compromised instance. The connection builder does not have access to any data processes. This vulnerability is fixed in 0.62.2.",
     "published": "2024-07-09T15:15:11.043",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-26015": {
+    "cvss": 3.4,
+    "description": "An incorrect parsing of numbers with different radices vulnerability [CWE-1389] in FortiProxy version 7.4.3 and below, version 7.2.10 and below, version 7.0.17 and below and FortiOS version 7.4.3 and below, version 7.2.8 and below, version 7.0.15 and below IP address validation feature may permit an unauthenticated attacker to bypass the IP blocklist via crafted requests.",
+    "published": "2024-07-09T16:15:04.810",
+    "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2024-27783": {
+    "cvss": 7.6,
+    "description": "Multiple cross-site request forgery (CSRF) vulnerabilities [CWE-352]  in FortiAIOps version 2.0.0 may allow an unauthenticated remote attacker to perform arbitrary actions on behalf of an authenticated user via tricking the victim to execute malicious GET requests.",
+    "published": "2024-07-09T16:15:05.240",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-27784": {
+    "cvss": 8.8,
+    "description": "Multiple Exposure of sensitive information to an unauthorized actor vulnerabilities [CWE-200] in FortiAIOps version 2.0.0 may allow an authenticated, remote attacker to retrieve sensitive information from the API endpoint or log files.",
+    "published": "2024-07-09T16:15:05.470",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-27785": {
+    "cvss": 5.4,
+    "description": "An improper neutralization of formula elements in a CSV File vulnerability [CWE-1236] in FortiAIOps version 2.0.0 may allow a remote authenticated attacker to execute arbitrary commands on a client's workstation via poisoned CSV reports.",
+    "published": "2024-07-09T16:15:05.687",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-33509": {
+    "cvss": 4.8,
+    "description": "An improper certificate validation vulnerability [CWE-295] in FortiWeb 7.2.0 through 7.2.1, 7.0 all versions, 6.4 all versions and 6.3 all versions may allow a remote and unauthenticated attacker in a Man-in-the-Middle position to decipher and/or tamper with the communication channel between the device and different endpoints used to fetch data for Web Application Firewall (WAF).",
+    "published": "2024-07-09T16:15:05.950",
+    "keywords": "remote,unauthenticated"
   }
 }
