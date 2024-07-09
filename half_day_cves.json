@@ -640,5 +640,53 @@
     "description": "Bridge versions 14.0.4, 13.0.7, 14.1 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
     "published": "2024-07-09T20:15:11.360",
     "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-31312": {
+    "cvss": "-",
+    "description": "In multiple locations, there is a possible information leak due to a missing permission check. This could lead to local information disclosure exposing played media with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-07-09T21:15:12.900",
+    "keywords": "execution,leak"
+  },
+  "CVE-2024-31319": {
+    "cvss": "-",
+    "description": "In updateNotificationChannelFromPrivilegedListener of NotificationManagerService.java, there is a possible cross-user data leak due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-07-09T21:15:13.313",
+    "keywords": "execution,leak"
+  },
+  "CVE-2024-31324": {
+    "cvss": "-",
+    "description": "In hide of WindowState.java, there is a possible way to bypass tapjacking/overlay protection by launching the activity in portrait mode first and then rotating it to landscape mode. This could lead to local escalation of privilege with User execution privileges needed. User interaction is needed for exploitation.",
+    "published": "2024-07-09T21:15:13.563",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2024-31332": {
+    "cvss": "-",
+    "description": "In multiple locations, there is a possible way to bypass a restriction on adding new Wi-Fi connections due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-07-09T21:15:13.947",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2024-34720": {
+    "cvss": "-",
+    "description": "In com_android_internal_os_ZygoteCommandBuffer_nativeForkRepeatedly of com_android_internal_os_ZygoteCommandBuffer.cpp, there is a possible method to perform arbitrary code execution in any app zygote processes due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-07-09T21:15:14.213",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-34722": {
+    "cvss": "-",
+    "description": "In smp_proc_rand of smp_act.cc, there is a possible authentication bypass during legacy BLE pairing due to incorrect implementation of a protocol. This could lead to remote escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-07-09T21:15:14.343",
+    "keywords": "remote,execution,authentication,bypass"
+  },
+  "CVE-2024-37865": {
+    "cvss": "-",
+    "description": "An issue in S3Browser v.11.4.5 and v.10.9.9 and fixed in v.11.5.7 allows a remote attacker to obtain sensitive information via the S3 compatible storage component.",
+    "published": "2024-07-09T21:15:14.860",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-38959": {
+    "cvss": "-",
+    "description": "Cross Site Scripting vulnerability in Creativeitem Academy LMS Learning Management System v.6.8.1 allows a remote attacker to execute arbitrary code and obtain sensitive information via the string parameter.",
+    "published": "2024-07-09T21:15:15.040",
+    "keywords": "remote,sensitive"
   }
 }
