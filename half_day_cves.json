@@ -64,5 +64,11 @@
     "description": "The Unlimited Elements For Elementor (Free Widgets, Addons, Templates) plugin for WordPress is vulnerable to IP Address Spoofing in all versions up to, and including, 1.5.112 due to insufficient IP address validation and/or use of user-supplied HTTP headers as a primary method for IP retrieval. This makes it possible for unauthenticated attackers  to bypass antispam functionality in the Form Builder widgets.",
     "published": "2024-07-09T05:15:14.140",
     "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2024-5441": {
+    "cvss": 8.8,
+    "description": "The Modern Events Calendar plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the set_featured_image function in all versions up to, and including, 7.11.0. This makes it possible for authenticated attackers, with subscriber access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. The plugin allows administrators (via its settings) to extend the ability to submit events to unauthenticated users, which would allow unauthenticated attackers to exploit this vulnerability.",
+    "published": "2024-07-09T06:15:02.710",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
