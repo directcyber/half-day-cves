@@ -154,5 +154,11 @@
     "description": "The ScrollTo Bottom plugin for WordPress is vulnerable to Cross-Site Request Forgery to Arbitrary File Upload in versions up to, and including, 1.1.1. This is due to missing nonce validation and missing file type validation in the 'options_page' function. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.",
     "published": "2024-07-09T08:15:12.843",
     "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-5456": {
+    "cvss": 8.8,
+    "description": "The Panda Video plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.4.0 via the 'selected_button' parameter. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
+    "published": "2024-07-09T09:15:06.310",
+    "keywords": "execution,sensitive,bypass"
   }
 }
