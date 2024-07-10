@@ -29,12 +29,6 @@
     "published": "2024-07-08T16:15:08.490",
     "keywords": "remote,execution,command"
   },
-  "CVE-2024-6409": {
-    "cvss": 7.0,
-    "description": "A signal handler race condition vulnerability was found in OpenSSH's server (sshd) in Red Hat Enterprise Linux 9, where a client does not authenticate within LoginGraceTime seconds (120 by default, 600 in old OpenSSH versions), then sshd's SIGALRM handler is called asynchronously. However, this signal handler calls various functions that are not async-signal-safe, for example, syslog(). This issue leaves it vulnerable to a signal handler race condition on the cleanup_exit() function, which introduces the same vulnerability as CVE-2024-6387 in the unprivileged child of the SSHD server. As a consequence of a successful attack, in the worst case scenario, the attacker may be able to perform a remote code execution (RCE) within unprivileged user running the sshd server. This vulnerability affects only the sshd server shipped with Red Hat Enterprise Linux 9, while upstream versions of sshd are not impact by this flaw.",
-    "published": "2024-07-08T18:15:09.487",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-5549": {
     "url": "https://github.com/stitionai/devika/commit/6acce21fb08c3d1123ef05df6a33912bf0ee77c2",
     "cvss": 8.1,
@@ -766,5 +760,17 @@
     "description": "Open redirect vulnerability allows a remote unauthenticated attacker to redirect users to arbitrary websites\u00a0in NetScaler ADC and NetScaler Gateway",
     "published": "2024-07-10T19:15:11.293",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-25077": {
+    "cvss": "-",
+    "description": "An issue was discovered on Renesas SmartBond DA14691, DA14695, DA14697, and DA14699 devices. The Nonce used for on-the-fly decryption of flash images is stored in an unsigned header, allowing its value to be modified without invalidating the signature used for secureboot image verification. Because the encryption engine for on-the-fly decryption uses AES in CTR mode without authentication, an attacker-modified Nonce can result in execution of arbitrary code.",
+    "published": "2024-07-10T20:15:03.023",
+    "keywords": "execution,authentication"
+  },
+  "CVE-2024-38353": {
+    "cvss": 5.3,
+    "description": "CodiMD allows realtime collaborative markdown notes on all platforms. CodiMD before 2.5.4 is missing authentication and access control vulnerability allowing an unauthenticated attacker to gain unauthorised access to image data uploaded to CodiMD. CodiMD does not require valid authentication to access uploaded images or to upload new image data. An attacker who can determine an uploaded image's URL can gain unauthorised access to uploaded image data. Due to the insecure random filename generation in the underlying Formidable library, an attacker can determine the filenames for previously uploaded images and the likelihood of this issue being exploited is increased. This vulnerability is fixed in 2.5.4.\n",
+    "published": "2024-07-10T20:15:04.053",
+    "keywords": "unauthenticated,authentication"
   }
 }
