@@ -706,5 +706,17 @@
     "cvss": 5.4,
     "description": "OpenSearch Observability is collection of plugins and applications that visualize data-driven events. An issue in the OpenSearch observability plugins allows unintended access to private tenant resources like notebooks. The system did not properly check if the user was the resource author when accessing resources in a private tenant, leading to potential data being revealed. The patches are included in OpenSearch 2.14.",
     "published": "2024-07-09T22:15:03.450"
+  },
+  "CVE-2024-6421": {
+    "cvss": 7.5,
+    "description": "An unauthenticated remote attacker can read out sensitive device information through a incorrectly configured FTP service.",
+    "published": "2024-07-10T08:15:11.720",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2024-6422": {
+    "cvss": 9.8,
+    "description": "An unauthenticated remote attacker can manipulate the device via Telnet, stop processes, read, delete and change data.",
+    "published": "2024-07-10T08:15:11.970",
+    "keywords": "remote,unauthenticated"
   }
 }
