@@ -1,10 +1,4 @@
 {
-  "CVE-2024-39742": {
-    "cvss": 8.1,
-    "description": "IBM MQ Operator 3.2.2 and IBM MQ Operator 2.0.24 could allow a user to bypass authentication under certain configurations due to a partial string comparison vulnerability.  IBM X-Force ID:  297169.",
-    "published": "2024-07-08T14:15:02.550",
-    "keywords": "authentication,bypass"
-  },
   "CVE-2024-39202": {
     "cvss": "-",
     "description": "D-Link DIR-823X firmware - 240126 was discovered to contain a remote command execution (RCE) vulnerability via the dhcpd_startip parameter at /goform/set_lan_settings.",
@@ -630,13 +624,13 @@
     "keywords": "execution,leak"
   },
   "CVE-2024-31324": {
-    "cvss": "-",
+    "cvss": 7.8,
     "description": "In hide of WindowState.java, there is a possible way to bypass tapjacking/overlay protection by launching the activity in portrait mode first and then rotating it to landscape mode. This could lead to local escalation of privilege with User execution privileges needed. User interaction is needed for exploitation.",
     "published": "2024-07-09T21:15:13.563",
     "keywords": "execution,bypass"
   },
   "CVE-2024-31332": {
-    "cvss": "-",
+    "cvss": 8.4,
     "description": "In multiple locations, there is a possible way to bypass a restriction on adding new Wi-Fi connections due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
     "published": "2024-07-09T21:15:13.947",
     "keywords": "execution,bypass"
@@ -660,14 +654,14 @@
     "keywords": "remote,sensitive"
   },
   "CVE-2024-38959": {
-    "cvss": "-",
+    "cvss": 6.1,
     "description": "Cross Site Scripting vulnerability in Creativeitem Academy LMS Learning Management System v.6.8.1 allows a remote attacker to execute arbitrary code and obtain sensitive information via the string parameter.",
     "published": "2024-07-09T21:15:15.040",
     "keywords": "remote,sensitive"
   },
   "CVE-2024-36676": {
     "url": "https://github.com/bookstackapp/bookstack/issues/4993",
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "Incorrect access control in BookStack before v24.05.1 allows attackers to confirm existing system users and perform targeted notification email DoS via public facing forms.",
     "published": "2024-07-09T22:15:02.467"
   },
@@ -732,7 +726,7 @@
     "published": "2024-07-10T17:15:13.320"
   },
   "CVE-2024-37770": {
-    "cvss": "-",
+    "cvss": 9.1,
     "description": "14Finger v1.1 was discovered to contain a remote command execution (RCE) vulnerability in the fingerprint function. This vulnerability allows attackers to execute arbitrary commands via a crafted payload.",
     "published": "2024-07-10T18:15:04.983",
     "keywords": "remote,execution,command"
