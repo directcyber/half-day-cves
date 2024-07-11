@@ -838,5 +838,11 @@
     "description": "The InstaWP Connect \u2013 1-click WP Staging & Migration plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 0.1.0.44. This is due to insufficient verification of the API key. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the username, and to perform a variety of other administrative tasks. NOTE: This vulnerability was partially fixed in 0.1.0.44, but was still exploitable via Cross-Site Request Forgery.",
     "published": "2024-07-11T04:15:05.997",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-38433": {
+    "cvss": 6.7,
+    "description": "Nuvoton - CWE-305: Authentication Bypass by Primary Weakness\n\nAn attacker with write access to the SPI-Flash on an NPCM7xx BMC subsystem that uses the Nuvoton BootBlock\n\nreference code can modify the u-boot image header on flash parsed by the BootBlock which could lead to arbitrary code\n\nexecution.",
+    "published": "2024-07-11T08:15:10.623",
+    "keywords": "execution,authentication,bypass"
   }
 }
