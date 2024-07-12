@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-12T16:12:09.186173
+Updated at UTC 2024-07-12T17:09:56.152193
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,32 @@ Updated at UTC 2024-07-12T16:12:09.186173
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-39917">CVE-2024-39917</a></td>
+					<td>7.2</td>
+					<td><a target=_blank href="https://github.com/neutrinolabs/xrdp/commit/19c111c74c913ecc6e4ba9a738ed929a79d2ae8f">https://github.com/neutrinolabs/xrdp/commit/19c111c74c913ecc6e4ba9a738ed929a79d2ae8f</a></td>
+					<td class=date>2024-07-12T16:15:04.620</td>
+					<td class=description>xrdp is an open source RDP server. xrdp versions prior to 0.10.0 have a vulnerability that allows attackers to make an infinite number of login attempts. The number of max login attempts is supposed to be  limited by a configuration parameter `MaxLoginRetry` in `/etc/xrdp/sesman.ini`. However, this mechanism was not effectively working. As a result, xrdp allows an infinite number of login attempts. </td>
+
+
+				</tr>
+			
+		
+			
 		
 			
 				<tr>
@@ -376,18 +402,80 @@ Updated at UTC 2024-07-12T16:12:09.186173
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40552">CVE-2024-40552</a></td>
+					<td>-</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-07-12T16:15:05.850</td>
+					<td class=description>PublicCMS v4.0.202302.e was discovered to contain a remote commande execution (RCE) vulnerability via the cmdarray parameter at /site/ScriptComponent.java.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40522">CVE-2024-40522</a></td>
+					<td>-</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-07-12T16:15:05.080</td>
+					<td class=description>There is a remote code execution vulnerability in SeaCMS 12.9. The vulnerability is caused by phomebak.php writing some variable names passed in without filtering them before writing them into the php file. An authenticated attacker can exploit this vulnerability to execute arbitrary commands and obtain system permissions.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40521">CVE-2024-40521</a></td>
+					<td>-</td>
+					<td>remote,execution,command,bypass</td>
+					<td class=date>2024-07-12T16:15:05.020</td>
+					<td class=description>SeaCMS 12.9 has a remote code execution vulnerability. The vulnerability is due to the fact that although admin_template.php imposes certain restrictions on the edited file, attackers can still bypass the restrictions and write code in some way, allowing authenticated attackers to exploit the vulnerability to execute arbitrary commands and gain system privileges.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40520">CVE-2024-40520</a></td>
+					<td>-</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-07-12T16:15:04.967</td>
+					<td class=description>SeaCMS 12.9 has a remote code execution vulnerability. The vulnerability is caused by admin_config_mark.php directly splicing and writing the user input data into inc_photowatermark_config.php without processing it, which allows authenticated attackers to exploit the vulnerability to execute arbitrary commands and obtain system permissions.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40519">CVE-2024-40519</a></td>
+					<td>-</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-07-12T16:15:04.903</td>
+					<td class=description>SeaCMS 12.9 has a remote code execution vulnerability. The vulnerability is caused by admin_smtp.php directly splicing and writing the user input data into weixin.php without processing it, which allows authenticated attackers to exploit the vulnerability to execute arbitrary commands and obtain system permissions.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40518">CVE-2024-40518</a></td>
+					<td>-</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-07-12T16:15:04.850</td>
+					<td class=description>SeaCMS 12.9 has a remote code execution vulnerability. The vulnerability is caused by admin_weixin.php directly splicing and writing the user input data into weixin.php without processing it, which allows authenticated attackers to exploit the vulnerability to execute arbitrary commands and obtain system permissions.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37405">CVE-2024-37405</a></td>
+					<td>6.5</td>
+					<td>authentication,leak</td>
+					<td class=date>2024-07-12T16:15:03.207</td>
+					<td class=description>Livechat messages can be leaked by combining two NoSQL injections affecting livechat:loginByToken (pre-authentication) and livechat:loadHistory.</td>
+				</tr>
+			
 		
 			
 		
@@ -819,7 +907,7 @@ Junos OS Evolved:
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-2602">CVE-2024-2602</a></td>
-					<td>7.3</td>
+					<td>7.8</td>
 					<td>remote,execution</td>
 					<td class=date>2024-07-11T09:15:03.030</td>
 					<td class=description>CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path
@@ -2037,56 +2125,6 @@ Phoniebox in version 3.0 and higher are not affected.</td>
 					<td>remote,execution</td>
 					<td class=date>2024-07-09T17:15:10.737</td>
 					<td class=description>SQL Server Native Client OLE DB Provider Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-33509">CVE-2024-33509</a></td>
-					<td>4.8</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-07-09T16:15:05.950</td>
-					<td class=description>An improper certificate validation vulnerability [CWE-295] in FortiWeb 7.2.0 through 7.2.1, 7.0 all versions, 6.4 all versions and 6.3 all versions may allow a remote and unauthenticated attacker in a Man-in-the-Middle position to decipher and/or tamper with the communication channel between the device and different endpoints used to fetch data for Web Application Firewall (WAF).</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27785">CVE-2024-27785</a></td>
-					<td>5.4</td>
-					<td>remote,command</td>
-					<td class=date>2024-07-09T16:15:05.687</td>
-					<td class=description>An improper neutralization of formula elements in a CSV File vulnerability [CWE-1236] in FortiAIOps version 2.0.0 may allow a remote authenticated attacker to execute arbitrary commands on a client's workstation via poisoned CSV reports.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27784">CVE-2024-27784</a></td>
-					<td>8.8</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-07-09T16:15:05.470</td>
-					<td class=description>Multiple Exposure of sensitive information to an unauthorized actor vulnerabilities [CWE-200] in FortiAIOps version 2.0.0 may allow an authenticated, remote attacker to retrieve sensitive information from the API endpoint or log files.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27783">CVE-2024-27783</a></td>
-					<td>7.6</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-07-09T16:15:05.240</td>
-					<td class=description>Multiple cross-site request forgery (CSRF) vulnerabilities [CWE-352]  in FortiAIOps version 2.0.0 may allow an unauthenticated remote attacker to perform arbitrary actions on behalf of an authenticated user via tricking the victim to execute malicious GET requests.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-26015">CVE-2024-26015</a></td>
-					<td>3.4</td>
-					<td>unauthenticated,bypass</td>
-					<td class=date>2024-07-09T16:15:04.810</td>
-					<td class=description>An incorrect parsing of numbers with different radices vulnerability [CWE-1389] in FortiProxy version 7.4.3 and below, version 7.2.10 and below, version 7.0.17 and below and FortiOS version 7.4.3 and below, version 7.2.8 and below, version 7.0.15 and below IP address validation feature may permit an unauthenticated attacker to bypass the IP blocklist via crafted requests.</td>
 				</tr>
 			
 		
