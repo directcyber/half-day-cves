@@ -1,64 +1,4 @@
 {
-  "CVE-2024-6123": {
-    "cvss": 7.2,
-    "description": "The Bit Form plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'iconUpload' function in all versions up to, and including, 2.12.2. This makes it possible for authenticated attackers, with administrator-level and above permissions, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2024-07-09T08:15:10.983",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-6161": {
-    "cvss": 8.8,
-    "description": "The Default Thumbnail Plus plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'get_cache_image' function in all versions up to, and including, 1.0.2.3. This makes it possible for authenticated attackers, with contributor-level and above permissions, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2024-07-09T08:15:11.160",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-6309": {
-    "cvss": 8.8,
-    "description": "The Attachment File Icons (AF Icons) plugin for WordPress is vulnerable to Cross-Site Request Forgery to Arbitrary File Upload in versions up to, and including, 1.3. This is due to missing nonce validation in the 'afi_overview' function and missing file type validation in the 'upload_icons' function. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.",
-    "published": "2024-07-09T08:15:11.550",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-6310": {
-    "cvss": 8.8,
-    "description": "The Advanced AJAX Page Loader plugin for WordPress is vulnerable to Cross-Site Request Forgery to Arbitrary File Upload in versions up to, and including, 2.7.7. This is due to missing nonce validation in the 'admin_init_AAPL' function and missing file type validation in the 'AAPL_options_validate' function. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.",
-    "published": "2024-07-09T08:15:11.733",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-6313": {
-    "cvss": 9.8,
-    "description": "The Gutenberg Forms plugin for WordPress is vulnerable to arbitrary file uploads due to the users can specify the allowed file types in the 'upload' function in versions up to, and including, 2.2.9. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2024-07-09T08:15:11.907",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-6314": {
-    "cvss": 9.8,
-    "description": "The IQ Testimonials plugin for WordPress is vulnerable to arbitrary file uploads due to insufficient file type validation in the 'process_image_upload' function in versions up to, and including, 2.2.7. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible. This can only be exploited if the 'gd' php extension is not loaded on the server.",
-    "published": "2024-07-09T08:15:12.090",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-6316": {
-    "cvss": 8.8,
-    "description": "The Generate PDF using Contact Form 7 plugin for WordPress is vulnerable to Cross-Site Request Forgery to Arbitrary File Upload in versions up to, and including, 4.0.6. This is due to missing nonce validation and missing file type validation in the 'wp_cf7_pdf_dashboard_html_page' function. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.",
-    "published": "2024-07-09T08:15:12.270",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-6317": {
-    "cvss": 8.8,
-    "description": "The Generate PDF using Contact Form 7 plugin for WordPress is vulnerable to Cross-Site Request Forgery to Arbitrary File Upload in versions up to, and including, 4.0.6. This is due to missing nonce validation and the plugin not properly validating a file or its path prior to deleting it in the 'wp_cf7_pdf_dashboard_html_page' function. This makes it possible for unauthenticated attackers to delete arbitrary files, including the wp-config.php file, which can make site takeover and remote code execution possible via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.",
-    "published": "2024-07-09T08:15:12.470",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-6320": {
-    "cvss": 8.8,
-    "description": "The ScrollTo Top plugin for WordPress is vulnerable to Cross-Site Request Forgery to Arbitrary File Upload in versions up to, and including, 1.2.2. This is due to missing nonce validation and missing file type validation in the 'options_page' function. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.",
-    "published": "2024-07-09T08:15:12.643",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-6321": {
-    "cvss": 8.8,
-    "description": "The ScrollTo Bottom plugin for WordPress is vulnerable to Cross-Site Request Forgery to Arbitrary File Upload in versions up to, and including, 1.1.1. This is due to missing nonce validation and missing file type validation in the 'options_page' function. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.",
-    "published": "2024-07-09T08:15:12.843",
-    "keywords": "remote,execution,unauthenticated"
-  },
   "CVE-2024-5456": {
     "cvss": 8.8,
     "description": "The Panda Video plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.4.0 via the 'selected_button' parameter. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
@@ -808,5 +748,11 @@
     "description": "An issue was discovered on Supermicro BMC firmware in select X11, X12, H12, B12, X13, H13, and B13 motherboards (and CMM6 modules). An unauthenticated user can post crafted data to the interface that triggers a stack buffer overflow, and may lead to arbitrary remote code execution on a BMC.",
     "published": "2024-07-11T21:15:12.507",
     "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-6396": {
+    "cvss": 9.8,
+    "description": "A vulnerability in the `_backup_run` function in aimhubio/aim version 3.19.3 allows remote attackers to overwrite any file on the host server and exfiltrate arbitrary data. The vulnerability arises due to improper handling of the `run_hash` and `repo.path` parameters, which can be manipulated to create and write to arbitrary file paths. This can lead to denial of service by overwriting critical system files, loss of private data, and potential remote code execution. ",
+    "published": "2024-07-12T00:15:01.647",
+    "keywords": "remote,execution"
   }
 }
