@@ -1,10 +1,4 @@
 {
-  "CVE-2024-6365": {
-    "cvss": 9.8,
-    "description": "The Product Table by WBW plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.0.1 via the 'saveCustomTitle' function. This is due to missing authorization and lack of sanitization of appended data in the languages/customTitle.php file. This makes it possible for unauthenticated attackers to execute code on the server.",
-    "published": "2024-07-09T04:15:15.333",
-    "keywords": "remote,execution,unauthenticated"
-  },
   "CVE-2024-37180": {
     "cvss": 4.1,
     "description": "Under certain conditions SAP NetWeaver\nApplication Server for ABAP and ABAP Platform allows an attacker to access\nremote-enabled function module with no further authorization which would\notherwise be restricted, the function can be used to read non-sensitive\ninformation with low impact on confidentiality of the application.",
