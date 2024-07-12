@@ -1,10 +1,4 @@
 {
-  "CVE-2024-38363": {
-    "cvss": 8.5,
-    "description": "Airbyte is a data integration platform for ELT pipelines. Airbyte connection builder docker image is vulnerable to RCE via SSTI which allows an authenticated remote attacker to execute arbitrary code on the server as the web server user. The connection builder is used to create and test new connectors. Sensitive information, such as credentials, could be exposed if a user tested a new connector on a compromised instance. The connection builder does not have access to any data processes. This vulnerability is fixed in 0.62.2.",
-    "published": "2024-07-09T15:15:11.043",
-    "keywords": "remote,sensitive"
-  },
   "CVE-2024-26015": {
     "cvss": 3.4,
     "description": "An incorrect parsing of numbers with different radices vulnerability [CWE-1389] in FortiProxy version 7.4.3 and below, version 7.2.10 and below, version 7.0.17 and below and FortiOS version 7.4.3 and below, version 7.2.8 and below, version 7.0.15 and below IP address validation feature may permit an unauthenticated attacker to bypass the IP blocklist via crafted requests.",
@@ -414,7 +408,7 @@
     "keywords": "execution,leak"
   },
   "CVE-2024-31319": {
-    "cvss": "-",
+    "cvss": 8.4,
     "description": "In updateNotificationChannelFromPrivilegedListener of NotificationManagerService.java, there is a possible cross-user data leak due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
     "published": "2024-07-09T21:15:13.313",
     "keywords": "execution,leak"
@@ -432,13 +426,13 @@
     "keywords": "execution,bypass"
   },
   "CVE-2024-34720": {
-    "cvss": "-",
+    "cvss": 7.4,
     "description": "In com_android_internal_os_ZygoteCommandBuffer_nativeForkRepeatedly of com_android_internal_os_ZygoteCommandBuffer.cpp, there is a possible method to perform arbitrary code execution in any app zygote processes due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
     "published": "2024-07-09T21:15:14.213",
     "keywords": "execution,command"
   },
   "CVE-2024-34722": {
-    "cvss": "-",
+    "cvss": 7.4,
     "description": "In smp_proc_rand of smp_act.cc, there is a possible authentication bypass during legacy BLE pairing due to incorrect implementation of a protocol. This could lead to remote escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
     "published": "2024-07-09T21:15:14.343",
     "keywords": "remote,execution,authentication,bypass"
@@ -631,7 +625,7 @@
   },
   "CVE-2024-39536": {
     "cvss": 5.3,
-    "description": "A Missing Release of Memory after Effective Lifetime vulnerability in the Periodic Packet Management Daemon (ppmd) of Juniper Networks Junos OS and Junos OS Evolved allows an unauthenticated adjacent attacker to cause a \n\nDenial-of-Service (DoS).\n\n\nWhen a\u00a0BFD session configured with authentication flaps,\u00a0ppmd memory can leak. Whether the leak happens depends on a\u00a0race condition which is outside the attackers control. This issue only affects BFD operating in distributed aka delegated (which is the default behavior) or inline mode.\n\n\n\nWhether the leak occurs can be monitored with the following CLI command:\n\n> show ppm request-queue\n\n\nFPC \u00a0 \u00a0 Pending-request\nfpc0\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a02\nrequest-total-pending: 2\n\n\nwhere a continuously increasing number of pending requests is indicative of the leak.\u00a0\n\n\n\n\nThis issue affects:\n\nJunos OS:\n\n\n  *  All versions before 21.2R3-S8,\n  *  21.4 versions before 21.4R3-S7,\n  *  22.1 versions before 22.1R3-S4,\n  *  22.2 versions before 22.2R3-S4,\u00a0\n  *  22.3 versions before 22.3R3,\n  *  22.4 versions before 22.4R2-S2, 22.4R3,\n  *  23.1 versions before 23.1R2.\n\n\n\nJunos OS Evolved:\n  *  All versions before 21.2R3-S8-EVO,\n  *  21.4-EVO versions before 21.4R3-S7-EVO,\n  *  22.2-EVO versions before 22.2R3-S4-EVO,\n  *  22.3-EVO versions before 22.3R3-EVO,\n  *  22.4-EVO versions before 22.4R3-EVO,\n  *  23.2-EVO versions before 23.2R1-EVO.",
+    "description": "A Missing Release of Memory after Effective Lifetime vulnerability in the Periodic Packet Management Daemon (ppmd) of Juniper Networks Junos OS and Junos OS Evolved allows an unauthenticated adjacent attacker to cause a \n\nDenial-of-Service (DoS).\n\n\nWhen a\u00a0BFD session configured with authentication flaps,\u00a0ppmd memory can leak. Whether the leak happens depends on a\u00a0race condition which is outside the attackers control. This issue only affects BFD operating in distributed aka delegated (which is the default behavior) or inline mode.\n\n\n\nWhether the leak occurs can be monitored with the following CLI command:\n\n> show ppm request-queue\n\n\nFPC \u00a0 \u00a0 Pending-request\nfpc0\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a02\nrequest-total-pending: 2\n\n\nwhere a continuously increasing number of pending requests is indicative of the leak.\u00a0\n\n\n\n\n\n\n\n\nThis issue affects:\n\nJunos OS:\n\n\n  *  All versions before 21.2R3-S8,\n  *  21.4 versions before 21.4R3-S7,\n  *  22.1 versions before 22.1R3-S4,\n  *  22.2 versions before 22.2R3-S4, \n  *  22.3 versions before 22.3R3,\n  *  22.4 versions before 22.4R2-S2, 22.4R3.\n\n\n\nJunos OS Evolved:\n  *  All versions before 21.2R3-S8-EVO,\n  *  21.4-EVO versions before 21.4R3-S7-EVO,\n  *  22.2-EVO versions before 22.2R3-S4-EVO,\n  *  22.3-EVO versions before 22.3R3-EVO,\n  *  22.4-EVO versions before 22.4R3-EVO.",
     "published": "2024-07-11T17:15:11.190",
     "keywords": "unauthenticated,authentication,command,leak"
   },
@@ -706,5 +700,17 @@
     "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring/sqpoll: work around a potential audit memory leak\n\nkmemleak complains that there's a memory leak related to connect\nhandling:\n\nunreferenced object 0xffff0001093bdf00 (size 128):\ncomm \"iou-sqp-455\", pid 457, jiffies 4294894164\nhex dump (first 32 bytes):\n02 00 fa ea 7f 00 00 01 00 00 00 00 00 00 00 00  ................\n00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................\nbacktrace (crc 2e481b1a):\n[<00000000c0a26af4>] kmemleak_alloc+0x30/0x38\n[<000000009c30bb45>] kmalloc_trace+0x228/0x358\n[<000000009da9d39f>] __audit_sockaddr+0xd0/0x138\n[<0000000089a93e34>] move_addr_to_kernel+0x1a0/0x1f8\n[<000000000b4e80e6>] io_connect_prep+0x1ec/0x2d4\n[<00000000abfbcd99>] io_submit_sqes+0x588/0x1e48\n[<00000000e7c25e07>] io_sq_thread+0x8a4/0x10e4\n[<00000000d999b491>] ret_from_fork+0x10/0x20\n\nwhich can can happen if:\n\n1) The command type does something on the prep side that triggers an\n   audit call.\n2) The thread hasn't done any operations before this that triggered\n   an audit call inside ->issue(), where we have audit_uring_entry()\n   and audit_uring_exit().\n\nWork around this by issuing a blanket NOP operation before the SQPOLL\ndoes anything.",
     "published": "2024-07-12T13:15:21.053",
     "keywords": "command,leak"
+  },
+  "CVE-2024-39914": {
+    "url": "https://github.com/fogproject/fogproject/commit/2413bc034753c32799785e9bf08164ccd0a2759f",
+    "cvss": 9.8,
+    "description": "FOG is a cloning/imaging/rescue suite/inventory management system. Prior to 1.5.10.34, packages/web/lib/fog/reportmaker.class.php in FOG was affected by a command injection via the filename parameter to /fog/management/export.php. This vulnerability is fixed in 1.5.10.34.",
+    "published": "2024-07-12T15:15:11.607"
+  },
+  "CVE-2024-39916": {
+    "url": "https://github.com/fogproject/fogproject/commit/2de209bc57a177a052b4a877f000c591740b2f88",
+    "cvss": 6.4,
+    "description": "FOG is a free open-source cloning/imaging/rescue suite/inventory management system. There is a security issue with the NFS configuration in /etc/exports generated by the installer that allows an attacker to modify files outside the export in the default installation. The exports have the no_subtree_check option. The no_subtree_check option means that if a client performs a file operation, the server will only check if the requested file is on the correct filesystem, not if it is in the correct directory. This enables modifying files in /images, accessing other files on the same filesystem, and accessing files on other filesystems. This vulnerability is fixed in 1.5.10.30.",
+    "published": "2024-07-12T15:15:11.813"
   }
 }
