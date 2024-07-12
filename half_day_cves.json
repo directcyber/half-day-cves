@@ -1,16 +1,4 @@
 {
-  "CVE-2024-37180": {
-    "cvss": 4.1,
-    "description": "Under certain conditions SAP NetWeaver\nApplication Server for ABAP and ABAP Platform allows an attacker to access\nremote-enabled function module with no further authorization which would\notherwise be restricted, the function can be used to read non-sensitive\ninformation with low impact on confidentiality of the application.",
-    "published": "2024-07-09T05:15:12.033",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-6171": {
-    "cvss": 5.3,
-    "description": "The Unlimited Elements For Elementor (Free Widgets, Addons, Templates) plugin for WordPress is vulnerable to IP Address Spoofing in all versions up to, and including, 1.5.112 due to insufficient IP address validation and/or use of user-supplied HTTP headers as a primary method for IP retrieval. This makes it possible for unauthenticated attackers  to bypass antispam functionality in the Form Builder widgets.",
-    "published": "2024-07-09T05:15:14.140",
-    "keywords": "unauthenticated,bypass"
-  },
   "CVE-2024-5441": {
     "cvss": 8.8,
     "description": "The Modern Events Calendar plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the set_featured_image function in all versions up to, and including, 7.11.0. This makes it possible for authenticated attackers, with subscriber access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. The plugin allows administrators (via its settings) to extend the ability to submit events to unauthenticated users, which would allow unauthenticated attackers to exploit this vulnerability.",
