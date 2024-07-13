@@ -1,16 +1,4 @@
 {
-  "CVE-2024-25077": {
-    "cvss": "-",
-    "description": "An issue was discovered on Renesas SmartBond DA14691, DA14695, DA14697, and DA14699 devices. The Nonce used for on-the-fly decryption of flash images is stored in an unsigned header, allowing its value to be modified without invalidating the signature used for secureboot image verification. Because the encryption engine for on-the-fly decryption uses AES in CTR mode without authentication, an attacker-modified Nonce can result in execution of arbitrary code.",
-    "published": "2024-07-10T20:15:03.023",
-    "keywords": "execution,authentication"
-  },
-  "CVE-2024-38353": {
-    "cvss": 5.3,
-    "description": "CodiMD allows realtime collaborative markdown notes on all platforms. CodiMD before 2.5.4 is missing authentication and access control vulnerability allowing an unauthenticated attacker to gain unauthorised access to image data uploaded to CodiMD. CodiMD does not require valid authentication to access uploaded images or to upload new image data. An attacker who can determine an uploaded image's URL can gain unauthorised access to uploaded image data. Due to the insecure random filename generation in the underlying Formidable library, an attacker can determine the filenames for previously uploaded images and the likelihood of this issue being exploited is increased. This vulnerability is fixed in 2.5.4.\n",
-    "published": "2024-07-10T20:15:04.053",
-    "keywords": "unauthenticated,authentication"
-  },
   "CVE-2024-39511": {
     "cvss": 5.5,
     "description": "An Improper Input Validation vulnerability in the 802.1X Authentication (dot1x) Daemon of Juniper Networks Junos OS allows a local, low-privileged attacker with access to the CLI to cause a Denial of Service (DoS).\n\nOn running a specific operational dot1x command, the dot1x daemon crashes. An attacker can cause a sustained DoS condition by running this command repeatedly.\n\nWhen the crash occurs, the authentication status of any 802.1x clients is cleared, and any authorized dot1x port becomes unauthorized.  The client cannot re-authenticate until the dot1x daemon restarts.\n\nThis issue affects Junos OS:\n  *  All versions before 20.4R3-S10;\n  *  21.2 versions before 21.2R3-S7;\n  *  21.4 versions before 21.4R3-S6;\n  *  22.1 versions before 22.1R3-S5;\n  *  22.2 versions before 22.2R3-S3;\n  *  22.3 versions before 22.3R3-S2;\n  *  22.4 versions before 22.4R3-S1;\n  *  23.2 versions before 23.2R2.",
