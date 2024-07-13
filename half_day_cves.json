@@ -1,28 +1,4 @@
 {
-  "CVE-2024-4879": {
-    "cvss": 9.8,
-    "description": "ServiceNow has addressed an input validation vulnerability that was identified in Vancouver and Washington DC Now Platform releases. This vulnerability could enable an unauthenticated user to remotely execute code within the context of the Now Platform.\u00a0ServiceNow applied an update to hosted instances, and ServiceNow released the update to our partners and self-hosted customers. Listed below are the patches and hot fixes that address the vulnerability. If you have not done so already, we recommend applying security patches relevant to your instance as soon as possible.",
-    "published": "2024-07-10T17:15:12.117",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-5217": {
-    "cvss": 9.8,
-    "description": "ServiceNow has addressed an input validation vulnerability that was identified in the Washington DC, Vancouver, and earlier Now Platform releases. This vulnerability could enable an unauthenticated user to remotely execute code within the context of the Now Platform.\u00a0The vulnerability is addressed in the listed patches and hot fixes below, which were released during the June 2024 patching cycle. If you have not done so already, we recommend applying security patches relevant to your instance as soon as possible.",
-    "published": "2024-07-10T17:15:12.373",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-6644": {
-    "url": "https://github.com/zmops/argusdbm/issues/64",
-    "cvss": 6.3,
-    "description": "A vulnerability was found in zmops ArgusDBM up to 0.1.0. It has been classified as critical. Affected is the function getDefaultClassLoader of the file CalculateAlarm.java of the component AviatorScript Handler. The manipulation leads to deserialization. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-271050 is the identifier assigned to this vulnerability.",
-    "published": "2024-07-10T17:15:12.980"
-  },
-  "CVE-2024-6645": {
-    "url": "https://github.com/wukongopensource/wukong_nocode/issues/4",
-    "cvss": 6.3,
-    "description": "A vulnerability was found in WuKongOpenSource Wukong_nocode up to 20230807. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file ExpressionUtil.java of the component AviatorScript Handler. The manipulation leads to deserialization. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. This product does not use versioning. This is why information about affected and unaffected releases are unavailable. The associated identifier of this vulnerability is VDB-271051.",
-    "published": "2024-07-10T17:15:13.320"
-  },
   "CVE-2024-37770": {
     "cvss": 9.1,
     "description": "14Finger v1.1 was discovered to contain a remote command execution (RCE) vulnerability in the fingerprint function. This vulnerability allows attackers to execute arbitrary commands via a crafted payload.",
