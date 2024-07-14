@@ -1,10 +1,4 @@
 {
-  "CVE-2024-38433": {
-    "cvss": 6.7,
-    "description": "Nuvoton - CWE-305: Authentication Bypass by Primary Weakness\n\nAn attacker with write access to the SPI-Flash on an NPCM7xx BMC subsystem that uses the Nuvoton BootBlock\n\nreference code can modify the u-boot image header on flash parsed by the BootBlock which could lead to arbitrary code\n\nexecution.",
-    "published": "2024-07-11T08:15:10.623",
-    "keywords": "execution,authentication,bypass"
-  },
   "CVE-2024-2602": {
     "cvss": 7.8,
     "description": "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path\nTraversal') vulnerability exists that could result in remote code execution when an authenticated\nuser executes a saved project file that has been tampered by a malicious actor.",
