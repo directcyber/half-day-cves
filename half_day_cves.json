@@ -142,5 +142,11 @@
     "description": "Openfind's Mail2000 does not properly validate email atachments, allowing unauthenticated remote attackers to inject JavaScript code within the attachment and perform Stored Cross-site scripting attacks.",
     "published": "2024-07-15T08:15:03.087",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-6741": {
+    "cvss": 5.8,
+    "description": "Openfind's Mail2000 has a vulnerability that allows the HttpOnly flag to be bypassed. Unauthenticated remote attackers can exploit this vulnerability using specific JavaScript code to obtain the session cookie with the HttpOnly flag enabled.",
+    "published": "2024-07-15T09:15:03.117",
+    "keywords": "remote,unauthenticated,bypass"
   }
 }
