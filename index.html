@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-15T05:10:10.163105
+Updated at UTC 2024-07-15T06:15:44.159210
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-07-15T05:10:10.163105
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -130,6 +132,16 @@ Updated at UTC 2024-07-15T05:10:10.163105
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-21513">CVE-2024-21513</a></td>
+					<td>8.5</td>
+					<td>remote,execution</td>
+					<td class=date>2024-07-15T05:15:01.857</td>
+					<td class=description>Versions of the package langchain-experimental from 0.0.15 and before 0.0.21 are vulnerable to Arbitrary Code Execution when retrieving values from the database, the code will attempt to call 'eval' on all values. An attacker can exploit this vulnerability and execute arbitrary python code if they can control the input prompt and the server is configured with VectorSQLDatabaseChain.**Notes:**Impact on the Confidentiality, Integrity and Availability of the vulnerable component:Confidentiality: Code execution happens within the impacted component, in this case langchain-experimental, so all resources are necessarily accessible.Integrity: There is nothing protected by the impacted component inherently. Although anything returned from the component counts as 'information' for which the trustworthiness can be compromised.Availability: The loss of availability isn't caused by the attack itself, but it happens as a result during the attacker's post-exploitation steps.Impact on the Confidentiality, Integrity and Availability of the subsequent system:As a legitimate low-privileged user of the package (PR:L) the attacker does not have more access to data owned by the package as a result of this vulnerability than they did with normal usage (e.g. can query the DB). The unintended action that one can perform by breaking out of the app environment and exfiltrating files, making remote connections etc. happens during the post exploitation phase in the subsequent system - in this case, the OS.AT:P: An attacker needs to be able to influence the input prompt, whilst the server is configured with the VectorSQLDatabaseChain plugin.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
