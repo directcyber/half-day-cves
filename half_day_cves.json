@@ -106,5 +106,11 @@
     "description": "A vulnerability in the package_index module of pypa/setuptools versions up to 69.1.1 allows for remote code execution via its download functions. These functions, which are used to download packages from URLs provided by users or retrieved from package index servers, are susceptible to code injection. If these functions are exposed to user-controlled inputs, such as package URLs, they can execute arbitrary commands on the system. The issue is fixed in version 70.0.",
     "published": "2024-07-15T01:15:01.730",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2024-39737": {
+    "cvss": 5.4,
+    "description": "IBM Datacap Navigator 9.1.5, 9.1.6, 9.1.7, 9.1.8, and 9.1.9 could allow a remote attacker to obtain sensitive information when a detailed technical error message is returned in the browser.  This information could be used in further attacks against the system.  IBM X-Force ID:  296004.",
+    "published": "2024-07-15T02:15:06.173",
+    "keywords": "remote,sensitive"
   }
 }
