@@ -94,5 +94,17 @@
     "description": "Mengshen Wireless Door Alarm M70 2024-05-24 allows Authentication Bypass via a Capture-Replay approach.",
     "published": "2024-07-15T18:15:04.337",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-40624": {
+    "url": "https://github.com/torrentpier/torrentpier/commit/ed37e6e522f345f2b46147c6f53c1ab6dec1db9e",
+    "cvss": 9.8,
+    "description": "TorrentPier is an open source BitTorrent Public/Private tracker engine, written in php. In `torrentpier/library/includes/functions.php`, `get_tracks()` uses the unsafe native PHP serialization format to deserialize user-controlled cookies. One can use phpggc and the chain Guzzle/FW1 to write PHP code to an arbitrary file, and execute commands on the system. For instance, the cookie bb_t will be deserialized when browsing to viewforum.php. This issue has been addressed in commit `ed37e6e52` which is expected to be included in release version 2.4.4. Users are advised to upgrade as soon as the new release is available. There are no known workarounds for this vulnerability.",
+    "published": "2024-07-15T20:15:04.810"
+  },
+  "CVE-2024-40627": {
+    "cvss": 5.8,
+    "description": "Fastapi OPA is an opensource fastapi middleware which includes auth flow. HTTP `OPTIONS` requests are always allowed by `OpaMiddleware`, even when they lack authentication, and are passed through directly to the application. `OpaMiddleware` allows all HTTP `OPTIONS` requests without evaluating it against any policy. If an application provides different responses to HTTP `OPTIONS` requests based on an entity existing (such as to indicate whether an entity is writable on a system level), an unauthenticated attacker could discover which entities exist within an application. This issue has been addressed in release version 2.0.1. All users are advised to upgrade. There are no known workarounds for this vulnerability.",
+    "published": "2024-07-15T20:15:05.033",
+    "keywords": "unauthenticated,authentication"
   }
 }
