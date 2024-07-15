@@ -1,10 +1,4 @@
 {
-  "CVE-2024-6328": {
-    "cvss": 9.8,
-    "description": "The MStore API \u2013 Create Native Android & iOS Apps On The Cloud plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 4.14.7. This is due to insufficient verification on the 'phone' parameter of the 'firebase_sms_login' and 'firebase_sms_login_v2' functions. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email address or phone number.  Additionally, if a new email address is supplied, a new user account is created with the default role, even if registration is disabled.",
-    "published": "2024-07-12T11:15:11.630",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
   "CVE-2024-36522": {
     "cvss": "-",
     "description": "The default configuration of XSLTResourceStream.java is vulnerable to remote code execution via XSLT injection when processing input from an untrusted source without validation.\nUsers are recommended to upgrade to versions 10.1.0, 9.18.0 or 8.16.0, which fix this issue.",
@@ -148,5 +142,11 @@
     "description": "Openfind's Mail2000 has a vulnerability that allows the HttpOnly flag to be bypassed. Unauthenticated remote attackers can exploit this vulnerability using specific JavaScript code to obtain the session cookie with the HttpOnly flag enabled.",
     "published": "2024-07-15T09:15:03.117",
     "keywords": "remote,unauthenticated,bypass"
+  },
+  "CVE-2024-6746": {
+    "url": "https://github.com/naibowang/easyspider/issues/466",
+    "cvss": 4.3,
+    "description": "A vulnerability classified as problematic was found in NaiboWang EasySpider 0.6.2 on Windows. Affected by this vulnerability is an unknown functionality of the file \\EasySpider\\resources\\app\\server.js of the component HTTP GET Request Handler. The manipulation with the input /../../../../../../../../../Windows/win.ini leads to path traversal: '../filedir'. The attack needs to be done within the local network. The exploit has been disclosed to the public and may be used. The identifier VDB-271477 was assigned to this vulnerability. NOTE: The code maintainer explains, that this is not a big issue \"because the default is that the software runs locally without going through the Internet\".",
+    "published": "2024-07-15T12:15:02.707"
   }
 }
