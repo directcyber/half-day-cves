@@ -136,5 +136,11 @@
     "description": "The SMTP Listener of Secure Email Gateway from Cellopoint does not properly validate user input, leading to a Buffer Overflow vulnerability. An unauthenticated remote attacker can exploit this vulnerability to execute arbitrary system commands on the remote server.",
     "published": "2024-07-15T07:15:25.573",
     "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2024-6740": {
+    "cvss": 6.1,
+    "description": "Openfind's Mail2000 does not properly validate email atachments, allowing unauthenticated remote attackers to inject JavaScript code within the attachment and perform Stored Cross-site scripting attacks.",
+    "published": "2024-07-15T08:15:03.087",
+    "keywords": "remote,unauthenticated"
   }
 }
