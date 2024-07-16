@@ -124,5 +124,17 @@
     "description": "Outline is an open source, collaborative document editor. A type confusion issue was found in ProseMirror\u2019s rendering process that leads to a Stored Cross-Site Scripting (XSS) vulnerability in Outline. An authenticated user can create a document containing a malicious JavaScript payload. When other users view this document, the malicious Javascript can execute in the origin of Outline. Outline includes CSP rules to prevent third-party code execution, however in the case of self-hosting and having your file storage on the same domain as Outline a malicious payload can be uploaded as a file attachment and bypass those CSP restrictions. This issue has been addressed in release version 0.77.3. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n",
     "published": "2024-07-16T17:15:11.580",
     "keywords": "execution,bypass"
+  },
+  "CVE-2024-39036": {
+    "url": "https://github.com/seacms-net/cms/issues/18",
+    "cvss": "-",
+    "description": "SeaCMS v12.9 is vulnerable to Arbitrary File Read via admin_safe.php.",
+    "published": "2024-07-16T19:15:12.460"
+  },
+  "CVE-2024-6492": {
+    "cvss": "-",
+    "description": "Exposure of Sensitive Information in edge browser session proxy feature in Devolutions Remote Desktop Manager 2024.2.14.0 and earlier on Windows allows an attacker to intercept proxy credentials via a specially crafted website.",
+    "published": "2024-07-16T19:15:13.567",
+    "keywords": "remote,sensitive"
   }
 }
