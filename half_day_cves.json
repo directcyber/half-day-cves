@@ -1,10 +1,4 @@
 {
-  "CVE-2024-30213": {
-    "cvss": "-",
-    "description": "StoneFly Storage Concentrator (SC and SCVM) before 8.0.4.26 allows remote authenticated users to achieve Command Injection via a Ping URL, leading to remote code execution.",
-    "published": "2024-07-12T23:15:09.927",
-    "keywords": "remote,execution,command"
-  },
   "CVE-2024-6345": {
     "cvss": 8.8,
     "description": "A vulnerability in the package_index module of pypa/setuptools versions up to 69.1.1 allows for remote code execution via its download functions. These functions, which are used to download packages from URLs provided by users or retrieved from package index servers, are susceptible to code injection. If these functions are exposed to user-controlled inputs, such as package URLs, they can execute arbitrary commands on the system. The issue is fixed in version 70.0.",
