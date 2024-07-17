@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-17T09:12:20.192922
+Updated at UTC 2024-07-17T10:11:08.087601
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,14 @@ Updated at UTC 2024-07-17T09:12:20.192922
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -144,6 +152,58 @@ Updated at UTC 2024-07-17T09:12:20.192922
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40617">CVE-2024-40617</a></td>
+					<td>-</td>
+					<td>remote,sensitive</td>
+					<td class=date>2024-07-17T09:15:03.163</td>
+					<td class=description>Path traversal vulnerability exists in FUJITSU Network Edgiot GW1500 (M2M-GW for FENICS). If a remote authenticated attacker with User Class privilege sends a specially crafted request to the affected product, access restricted files containing sensitive information may be accessed. As a result, Administrator Class privileges of the product may be hijacked.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-36491">CVE-2024-36491</a></td>
+					<td>-</td>
+					<td>remote,unauthenticated,command,sensitive</td>
+					<td class=date>2024-07-17T09:15:03.090</td>
+					<td class=description>FutureNet NXR series, VXR series and WXR series provided by Century Systems Co., Ltd. allow a remote unauthenticated attacker to execute an arbitrary OS command, obtain and/or alter sensitive information, and be able to cause a denial of service (DoS) condition.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31070">CVE-2024-31070</a></td>
+					<td>-</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-07-17T09:15:02.813</td>
+					<td class=description>Initialization of a resource with an insecure default vulnerability in FutureNet NXR series, VXR series and WXR series provided by Century Systems Co., Ltd. allows a remote unauthenticated attacker to access telnet service unlimitedly.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-29737">CVE-2024-29737</a></td>
+					<td>-</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-07-17T09:15:02.527</td>
+					<td class=description>In streampark, the project module integrates Maven's compilation capabilities. The input parameter validation is not strict, allowing attackers to insert commands for remote command execution, The prerequisite for a successful attack is that the user needs to log in to the streampark system and have system-level permissions. Generally, only users of that system have the authorization to log in, and users would not manually input a dangerous operation command. Therefore, the risk level of this vulnerability is very low.
+
+Mitigation:
+
+all users should upgrade to 2.1.4
+
+Background info:
+
+Log in to Streampark using the default username (e.g. test1, test2, test3) and the default password (streampark). Navigate to the Project module, then add a new project. Enter the git repository address of the project and input `touch /tmp/success_2.1.2` as the "Build Argument". Note that there is no verification and interception of the special character "`". As a result, you will find that this injection command will be successfully executed after executing the build.
+
+In the latest version, the special symbol ` is intercepted.
+
+</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
