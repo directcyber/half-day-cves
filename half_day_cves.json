@@ -184,5 +184,11 @@
     "description": "Path traversal vulnerability exists in FUJITSU Network Edgiot GW1500 (M2M-GW for FENICS). If a remote authenticated attacker with User Class privilege sends a specially crafted request to the affected product, access restricted files containing sensitive information may be accessed. As a result, Administrator Class privileges of the product may be hijacked.",
     "published": "2024-07-17T09:15:03.163",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-31411": {
+    "cvss": "-",
+    "description": "Unrestricted Upload of File with dangerous type vulnerability in Apache StreamPipes.\nSuch a dangerous type might be an executable file that may lead to a remote code execution (RCE).\nThe unrestricted upload is only possible for authenticated and authorized users.\nThis issue affects Apache StreamPipes: through 0.93.0.\n\nUsers are recommended to upgrade to version 0.95.0, which fixes the issue.\n\n",
+    "published": "2024-07-17T10:15:01.810",
+    "keywords": "remote,execution"
   }
 }
