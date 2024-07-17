@@ -190,5 +190,65 @@
     "description": "Unrestricted Upload of File with dangerous type vulnerability in Apache StreamPipes.\nSuch a dangerous type might be an executable file that may lead to a remote code execution (RCE).\nThe unrestricted upload is only possible for authenticated and authorized users.\nThis issue affects Apache StreamPipes: through 0.93.0.\n\nUsers are recommended to upgrade to version 0.95.0, which fixes the issue.\n\n",
     "published": "2024-07-17T10:15:01.810",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-23465": {
+    "cvss": 8.3,
+    "description": "The SolarWinds Access Rights Manager was found to be susceptible to an authentication bypass vulnerability. This vulnerability allows an unauthenticated user to gain domain admin access within the Active Directory environment.  \u00a0  ",
+    "published": "2024-07-17T15:15:10.977",
+    "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-23466": {
+    "cvss": 9.6,
+    "description": "SolarWinds Access Rights Manager (ARM) is susceptible to a Directory Traversal Remote Code Execution vulnerability. If exploited, this vulnerability allows an unauthenticated user to perform the actions with SYSTEM privileges.  ",
+    "published": "2024-07-17T15:15:11.270",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-23467": {
+    "cvss": 9.6,
+    "description": "The SolarWinds Access Rights Manager was susceptible to a Directory Traversal and Information Disclosure Vulnerability. This vulnerability allows an unauthenticated user to perform remote code execution.",
+    "published": "2024-07-17T15:15:11.500",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-23468": {
+    "cvss": 7.6,
+    "description": "The SolarWinds Access Rights Manager was susceptible to a Directory Traversal and Information Disclosure Vulnerability. This vulnerability allows an unauthenticated user to perform arbitrary file deletion and leak sensitive information.",
+    "published": "2024-07-17T15:15:11.730",
+    "keywords": "unauthenticated,sensitive,leak"
+  },
+  "CVE-2024-23469": {
+    "cvss": 9.6,
+    "description": "SolarWinds Access Rights Manager (ARM) is susceptible to a Remote Code Execution vulnerability. If exploited, this vulnerability allows an unauthenticated user to perform the actions with SYSTEM privileges. ",
+    "published": "2024-07-17T15:15:11.947",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-23470": {
+    "cvss": 9.6,
+    "description": "The SolarWinds Access Rights Manager was found to be susceptible to a pre-authentication remote code execution vulnerability. If exploited, this vulnerability allows an unauthenticated user to run commands and executables. ",
+    "published": "2024-07-17T15:15:12.167",
+    "keywords": "remote,execution,unauthenticated,authentication,command"
+  },
+  "CVE-2024-23471": {
+    "cvss": 9.6,
+    "description": "The SolarWinds Access Rights Manager was found to be susceptible to a Remote Code Execution Vulnerability. If exploited, this vulnerability allows an authenticated user to abuse a SolarWinds service resulting in remote code execution. ",
+    "published": "2024-07-17T15:15:12.403",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-23475": {
+    "cvss": 9.6,
+    "description": "The SolarWinds Access Rights Manager was susceptible to a Directory Traversal and Information Disclosure Vulnerability. This vulnerability allows an unauthenticated user to perform arbitrary file deletion and leak sensitive information.",
+    "published": "2024-07-17T15:15:13.057",
+    "keywords": "unauthenticated,sensitive,leak"
+  },
+  "CVE-2024-28992": {
+    "cvss": 7.6,
+    "description": "The SolarWinds Access Rights Manager was susceptible to a Directory Traversal and Information Disclosure Vulnerability. This vulnerability allows an unauthenticated user to perform arbitrary file deletion and leak sensitive information.",
+    "published": "2024-07-17T15:15:13.623",
+    "keywords": "unauthenticated,sensitive,leak"
+  },
+  "CVE-2024-28993": {
+    "cvss": 7.6,
+    "description": "The SolarWinds Access Rights Manager was susceptible to a Directory Traversal and Information Disclosure Vulnerability. This vulnerability allows an unauthenticated user to perform arbitrary file deletion and leak sensitive information.",
+    "published": "2024-07-17T15:15:13.860",
+    "keywords": "unauthenticated,sensitive,leak"
   }
 }
