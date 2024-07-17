@@ -148,5 +148,11 @@
     "description": "A flaw was found in Skupper. When Skupper is initialized with the console-enabled and with console-auth set to Openshift, it configures the openshift oauth-proxy with a static cookie-secret. In certain circumstances, this may allow an attacker to bypass authentication to the Skupper console via a specially-crafted cookie.",
     "published": "2024-07-17T03:15:01.890",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-6467": {
+    "cvss": 8.8,
+    "description": "The BookingPress \u2013 Appointment Booking Calendar Plugin and Online Scheduling Plugin plugin for WordPress is vulnerable to Arbitrary File Read to Arbitrary File Creation in all versions up to, and including, 1.1.5 via the 'bookingpress_save_lite_wizard_settings_func' function. This makes it possible for authenticated attackers, with Subscriber-level access and above, to create arbitrary files that contain the content of files on the server, allowing the execution of any PHP code in those files or the exposure of sensitive information.",
+    "published": "2024-07-17T07:15:03.493",
+    "keywords": "execution,sensitive"
   }
 }
