@@ -250,5 +250,59 @@
     "description": "The SolarWinds Access Rights Manager was susceptible to a Directory Traversal and Information Disclosure Vulnerability. This vulnerability allows an unauthenticated user to perform arbitrary file deletion and leak sensitive information.",
     "published": "2024-07-17T15:15:13.860",
     "keywords": "unauthenticated,sensitive,leak"
+  },
+  "CVE-2024-20296": {
+    "cvss": 4.7,
+    "description": "A vulnerability in the web-based management interface of Cisco Identity Services Engine (ISE) could allow an authenticated, remote attacker to upload arbitrary files to an affected device. To exploit this vulnerability, an attacker would need at least valid Policy Admin credentials on the affected device.\r\n\r This vulnerability is due to improper validation of files that are uploaded to the web-based management interface. An attacker could exploit this vulnerability by uploading arbitrary files to an affected device. A successful exploit could allow the attacker to store malicious files on the system, execute arbitrary commands on the operating system, and elevate privileges to root.",
+    "published": "2024-07-17T17:15:12.367",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-20323": {
+    "cvss": 7.5,
+    "description": "A vulnerability in Cisco Intelligent Node (iNode) Software could allow an unauthenticated, remote attacker to hijack the TLS connection between Cisco iNode Manager and associated intelligent nodes and send arbitrary traffic to an affected device.\r\n\r This vulnerability is due to the presence of hard-coded cryptographic material. An attacker in a man-in-the-middle position between Cisco iNode Manager and associated deployed nodes could exploit this vulnerability by using the static cryptographic key to generate a trusted certificate and impersonate an affected device. A successful exploit could allow the attacker to read data that is meant for a legitimate device, modify the startup configuration of an associated node, and, consequently, cause a denial of service (DoS) condition for downstream devices that are connected to the affected node.",
+    "published": "2024-07-17T17:15:12.607",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-20395": {
+    "cvss": 6.4,
+    "description": "A vulnerability in the media retrieval functionality of Cisco Webex App could allow an unauthenticated, adjacent attacker to gain access to sensitive session information.\r\n\r This vulnerability is due to insecure transmission of requests to backend services when the app accesses embedded media, such as images. An attacker could exploit this vulnerability by sending a message with embedded media that is stored on a messaging server to a targeted user. If the attacker can observe transmitted traffic in a privileged network position, a successful exploit could allow the attacker to capture session token information from insecurely transmitted requests and possibly reuse the captured session information to take further actions as the targeted user.",
+    "published": "2024-07-17T17:15:12.833",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-20396": {
+    "cvss": 5.3,
+    "description": "A vulnerability in the protocol handlers of Cisco Webex App could allow an unauthenticated, remote attacker to gain access to sensitive information.\r\n\r This vulnerability exists because the affected application does not safely handle file protocol handlers. An attacker could exploit this vulnerability by persuading a user to follow a link that is designed to cause the application to send requests. If the attacker can observe transmitted traffic in a privileged network position, a successful exploit could allow the attacker to capture sensitive information, including credential information, from the requests.",
+    "published": "2024-07-17T17:15:13.070",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2024-20400": {
+    "cvss": 4.7,
+    "description": "A vulnerability in the web-based management interface of Cisco Expressway Series could allow an unauthenticated, remote attacker to redirect a user to a malicious web page.\r\n\r This vulnerability is due to improper input validation of HTTP request parameters. An attacker could exploit this vulnerability by intercepting and modifying an HTTP request from a user. A successful exploit could allow the attacker to redirect the user to a malicious web page.\r\n\r Note: Cisco Expressway Series refers to Cisco Expressway Control (Expressway-C) devices and Cisco Expressway Edge (Expressway-E) devices.",
+    "published": "2024-07-17T17:15:13.300",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-20401": {
+    "cvss": 9.8,
+    "description": "A vulnerability in the content scanning and message filtering features of Cisco Secure Email Gateway could allow an unauthenticated, remote attacker to overwrite arbitrary files on the underlying operating system.\r\n\r This vulnerability is due to improper handling of email attachments when file analysis and content filters are enabled. An attacker could exploit this vulnerability by sending an email that contains a crafted attachment through an affected device. A successful exploit could allow the attacker to replace any file on the underlying file system. The attacker could then perform any of the following actions: add users with root privileges, modify the device configuration, execute arbitrary code, or cause a permanent denial of service (DoS) condition on the affected device.\r\n\r Note: Manual intervention is required to recover from the DoS condition. Customers are advised to contact the Cisco Technical Assistance Center (TAC) to help recover a device in this condition.",
+    "published": "2024-07-17T17:15:13.540",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-20416": {
+    "cvss": 6.5,
+    "description": "A vulnerability in the upload module of Cisco RV340 and RV345 Dual WAN Gigabit VPN Routers could allow an authenticated, remote attacker to execute arbitrary code on an affected device.\r\n\r This vulnerability is due to insufficient boundary checks when processing specific HTTP requests. An attacker could exploit this vulnerability by sending crafted HTTP requests to an affected device. A successful exploit could allow the attacker to execute arbitrary code as the root user on the underlying operating system of the device.",
+    "published": "2024-07-17T17:15:13.877",
+    "keywords": "remote,vpn"
+  },
+  "CVE-2024-20419": {
+    "cvss": 10.0,
+    "description": "A vulnerability in the authentication system of Cisco Smart Software Manager On-Prem (SSM On-Prem) could allow an unauthenticated, remote attacker to change the password of any user, including administrative users.\r\n\r This vulnerability is due to improper implementation of the password-change process. An attacker could exploit this vulnerability by sending crafted HTTP requests to an affected device. A successful exploit could allow an attacker to access the web UI or API with the privileges of the compromised user.",
+    "published": "2024-07-17T17:15:14.143",
+    "keywords": "remote,unauthenticated,authentication"
+  },
+  "CVE-2024-20429": {
+    "cvss": 6.5,
+    "description": "A vulnerability in the web-based management interface of Cisco AsyncOS for Secure Email Gateway could allow an authenticated, remote attacker to execute arbitrary system commands on an affected device.\r\n\r This vulnerability is due to insufficient input validation in certain portions of the web-based management interface. An attacker could exploit this vulnerability by sending a crafted HTTP request to the affected device. A successful exploit could allow the attacker to execute arbitrary commands on the underlying operating system with root privileges. To successfully exploit this vulnerability, an attacker would need at least valid Operator credentials.",
+    "published": "2024-07-17T17:15:14.497",
+    "keywords": "remote,command"
   }
 }
