@@ -1,10 +1,4 @@
 {
-  "CVE-2024-6345": {
-    "cvss": 8.8,
-    "description": "A vulnerability in the package_index module of pypa/setuptools versions up to 69.1.1 allows for remote code execution via its download functions. These functions, which are used to download packages from URLs provided by users or retrieved from package index servers, are susceptible to code injection. If these functions are exposed to user-controlled inputs, such as package URLs, they can execute arbitrary commands on the system. The issue is fixed in version 70.0.",
-    "published": "2024-07-15T01:15:01.730",
-    "keywords": "remote,execution,command"
-  },
   "CVE-2024-39737": {
     "cvss": 5.4,
     "description": "IBM Datacap Navigator 9.1.5, 9.1.6, 9.1.7, 9.1.8, and 9.1.9 could allow a remote attacker to obtain sensitive information when a detailed technical error message is returned in the browser.  This information could be used in further attacks against the system.  IBM X-Force ID:  296004.",
@@ -304,5 +298,11 @@
     "description": "A vulnerability in the web-based management interface of Cisco AsyncOS for Secure Email Gateway could allow an authenticated, remote attacker to execute arbitrary system commands on an affected device.\r\n\r This vulnerability is due to insufficient input validation in certain portions of the web-based management interface. An attacker could exploit this vulnerability by sending a crafted HTTP request to the affected device. A successful exploit could allow the attacker to execute arbitrary commands on the underlying operating system with root privileges. To successfully exploit this vulnerability, an attacker would need at least valid Operator credentials.",
     "published": "2024-07-17T17:15:14.497",
     "keywords": "remote,command"
+  },
+  "CVE-2024-41184": {
+    "url": "https://github.com/acassen/keepalived/issues/2447#issuecomment-2231329734",
+    "cvss": "-",
+    "description": "In the vrrp_ipsets_handler handler (fglobal_parser.c) of keepalived through 2.3.1, an integer overflow can occur. NOTE: this CVE Record might not be worthwhile because an empty ipset name must be configured by the user.",
+    "published": "2024-07-18T01:15:15.253"
   }
 }
