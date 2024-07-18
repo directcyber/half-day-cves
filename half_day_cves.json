@@ -1,10 +1,4 @@
 {
-  "CVE-2024-6741": {
-    "cvss": 5.8,
-    "description": "Openfind's Mail2000 has a vulnerability that allows the HttpOnly flag to be bypassed. Unauthenticated remote attackers can exploit this vulnerability using specific JavaScript code to obtain the session cookie with the HttpOnly flag enabled.",
-    "published": "2024-07-15T09:15:03.117",
-    "keywords": "remote,unauthenticated,bypass"
-  },
   "CVE-2024-6746": {
     "url": "https://github.com/naibowang/easyspider/issues/466",
     "cvss": 4.3,
@@ -280,5 +274,11 @@
     "description": "Heap-based buffer overflow vulnerability in the SonicOS IPSec VPN allows an unauthenticated remote attacker to cause Denial of Service (DoS).",
     "published": "2024-07-18T08:15:02.340",
     "keywords": "remote,unauthenticated,vpn"
+  },
+  "CVE-2024-3242": {
+    "cvss": 8.8,
+    "description": "The Brizy \u2013 Page Builder plugin for WordPress is vulnerable to arbitrary file uploads due to missing file extension validation in the validateImageContent function called via storeImages in all versions up to, and including, 2.4.43. This makes it possible for authenticated attackers, with contributor access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. Version 2.4.44 prevents the upload of files ending in .sh and .php. Version 2.4.45 fully patches the issue.",
+    "published": "2024-07-18T09:15:02.337",
+    "keywords": "remote,execution"
   }
 }
