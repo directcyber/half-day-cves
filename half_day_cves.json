@@ -1,10 +1,4 @@
 {
-  "CVE-2024-6740": {
-    "cvss": 6.1,
-    "description": "Openfind's Mail2000 does not properly validate email atachments, allowing unauthenticated remote attackers to inject JavaScript code within the attachment and perform Stored Cross-site scripting attacks.",
-    "published": "2024-07-15T08:15:03.087",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2024-6741": {
     "cvss": 5.8,
     "description": "Openfind's Mail2000 has a vulnerability that allows the HttpOnly flag to be bypassed. Unauthenticated remote attackers can exploit this vulnerability using specific JavaScript code to obtain the session cookie with the HttpOnly flag enabled.",
@@ -280,5 +274,11 @@
     "description": "The Filter & Grids WordPress plugin before 2.8.33 is vulnerable to Local File Inclusion via the post_layout parameter. This makes it possible for an unauthenticated attacker to include and execute PHP files on the server, allowing the execution of any PHP code in those files.",
     "published": "2024-07-18T06:15:02.233",
     "keywords": "execution,unauthenticated"
+  },
+  "CVE-2024-40764": {
+    "cvss": "-",
+    "description": "Heap-based buffer overflow vulnerability in the SonicOS IPSec VPN allows an unauthenticated remote attacker to cause Denial of Service (DoS).",
+    "published": "2024-07-18T08:15:02.340",
+    "keywords": "remote,unauthenticated,vpn"
   }
 }
