@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-18T20:10:45.534978
+Updated at UTC 2024-07-18T21:09:11.421853
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-07-18T20:10:45.534978
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 				<tr>
@@ -174,22 +176,18 @@ Updated at UTC 2024-07-18T20:10:45.534978
 		
 			
 		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40624">CVE-2024-40624</a></td>
-					<td>9.8</td>
-					<td><a target=_blank href="https://github.com/torrentpier/torrentpier/commit/ed37e6e522f345f2b46147c6f53c1ab6dec1db9e">https://github.com/torrentpier/torrentpier/commit/ed37e6e522f345f2b46147c6f53c1ab6dec1db9e</a></td>
-					<td class=date>2024-07-15T20:15:04.810</td>
-					<td class=description>TorrentPier is an open source BitTorrent Public/Private tracker engine, written in php. In `torrentpier/library/includes/functions.php`, `get_tracks()` uses the unsafe native PHP serialization format to deserialize user-controlled cookies. One can use phpggc and the chain Guzzle/FW1 to write PHP code to an arbitrary file, and execute commands on the system. For instance, the cookie bb_t will be deserialized when browsing to viewforum.php. This issue has been addressed in commit `ed37e6e52` which is expected to be included in release version 2.4.4. Users are advised to upgrade as soon as the new release is available. There are no known workarounds for this vulnerability.</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-39173">CVE-2024-39173</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2024-07-18T20:15:04.227</td>
+					<td class=description>calculator-boilerplate v1.0 was discovered to contain a remote code execution (RCE) vulnerability via the eval function at /routes/calculator.js. This vulnerability allows attackers to execute arbitrary code via a crafted payload injected into the input field.</td>
+				</tr>
+			
 		
 			
 		
@@ -638,18 +636,6 @@ Users are recommended to upgrade to version 4.0.2, which fixes the issue.
 
 </td>
 				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40627">CVE-2024-40627</a></td>
-					<td>5.8</td>
-					<td>unauthenticated,authentication</td>
-					<td class=date>2024-07-15T20:15:05.033</td>
-					<td class=description>Fastapi OPA is an opensource fastapi middleware which includes auth flow. HTTP `OPTIONS` requests are always allowed by `OpaMiddleware`, even when they lack authentication, and are passed through directly to the application. `OpaMiddleware` allows all HTTP `OPTIONS` requests without evaluating it against any policy. If an application provides different responses to HTTP `OPTIONS` requests based on an entity existing (such as to indicate whether an entity is writable on a system level), an unauthenticated attacker could discover which entities exist within an application. This issue has been addressed in release version 2.0.1. All users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-				</tr>
-			
-		
 			
 		
 
