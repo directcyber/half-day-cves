@@ -286,5 +286,11 @@
     "cvss": "-",
     "description": "In the vrrp_ipsets_handler handler (fglobal_parser.c) of keepalived through 2.3.1, an integer overflow can occur. NOTE: this CVE Record might not be worthwhile because an empty ipset name must be configured by the user.",
     "published": "2024-07-18T01:15:15.253"
+  },
+  "CVE-2024-6164": {
+    "cvss": "-",
+    "description": "The Filter & Grids WordPress plugin before 2.8.33 is vulnerable to Local File Inclusion via the post_layout parameter. This makes it possible for an unauthenticated attacker to include and execute PHP files on the server, allowing the execution of any PHP code in those files.",
+    "published": "2024-07-18T06:15:02.233",
+    "keywords": "execution,unauthenticated"
   }
 }
