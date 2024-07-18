@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-18T11:09:12.333574
+Updated at UTC 2024-07-18T12:18:45.777459
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-07-18T11:09:12.333574
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -180,20 +182,24 @@ Updated at UTC 2024-07-18T11:09:12.333574
 		
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6746">CVE-2024-6746</a></td>
-					<td>4.3</td>
-					<td><a target=_blank href="https://github.com/naibowang/easyspider/issues/466">https://github.com/naibowang/easyspider/issues/466</a></td>
-					<td class=date>2024-07-15T12:15:02.707</td>
-					<td class=description>A vulnerability classified as problematic was found in NaiboWang EasySpider 0.6.2 on Windows. Affected by this vulnerability is an unknown functionality of the file \EasySpider\resources\app\server.js of the component HTTP GET Request Handler. The manipulation with the input /../../../../../../../../../Windows/win.ini leads to path traversal: '../filedir'. The attack needs to be done within the local network. The exploit has been disclosed to the public and may be used. The identifier VDB-271477 was assigned to this vulnerability. NOTE: The code maintainer explains, that this is not a big issue "because the default is that the software runs locally without going through the Internet".</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-29178">CVE-2024-29178</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2024-07-18T12:15:02.960</td>
+					<td class=description>On versions before 2.1.4, a user could log in and perform a template injection attack resulting in Remote Code Execution on the server, The attacker must successfully log into the system to launch an attack, so this is a moderate-impact vulnerability.
+
+Mitigation:
+
+all users should upgrade to 2.1.4
+
+</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -666,8 +672,6 @@ Users are recommended to upgrade to version 4.0.2, which fixes the issue.
 					<td class=date>2024-07-15T14:15:02.700</td>
 					<td class=description>An improper input validation allows an unauthenticated attacker to achieve remote command execution on the affected PAM system by sending a specially crafted HTTP request.</td>
 				</tr>
-			
-		
 			
 		
 

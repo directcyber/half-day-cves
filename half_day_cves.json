@@ -1,10 +1,4 @@
 {
-  "CVE-2024-6746": {
-    "url": "https://github.com/naibowang/easyspider/issues/466",
-    "cvss": 4.3,
-    "description": "A vulnerability classified as problematic was found in NaiboWang EasySpider 0.6.2 on Windows. Affected by this vulnerability is an unknown functionality of the file \\EasySpider\\resources\\app\\server.js of the component HTTP GET Request Handler. The manipulation with the input /../../../../../../../../../Windows/win.ini leads to path traversal: '../filedir'. The attack needs to be done within the local network. The exploit has been disclosed to the public and may be used. The identifier VDB-271477 was assigned to this vulnerability. NOTE: The code maintainer explains, that this is not a big issue \"because the default is that the software runs locally without going through the Internet\".",
-    "published": "2024-07-15T12:15:02.707"
-  },
   "CVE-2024-36455": {
     "cvss": "-",
     "description": "An improper input validation allows an unauthenticated attacker to achieve remote command execution on the affected PAM system by sending a specially crafted HTTP request.",
@@ -279,6 +273,12 @@
     "cvss": 8.8,
     "description": "The Brizy \u2013 Page Builder plugin for WordPress is vulnerable to arbitrary file uploads due to missing file extension validation in the validateImageContent function called via storeImages in all versions up to, and including, 2.4.43. This makes it possible for authenticated attackers, with contributor access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. Version 2.4.44 prevents the upload of files ending in .sh and .php. Version 2.4.45 fully patches the issue.",
     "published": "2024-07-18T09:15:02.337",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-29178": {
+    "cvss": "-",
+    "description": "On versions before 2.1.4, a user could log in and perform a template injection attack resulting in Remote Code Execution on the server,\u00a0The attacker must successfully log into the system to launch an attack, so this is a moderate-impact vulnerability.\n\nMitigation:\n\nall users should upgrade to 2.1.4\n\n",
+    "published": "2024-07-18T12:15:02.960",
     "keywords": "remote,execution"
   }
 }
