@@ -1,10 +1,4 @@
 {
-  "CVE-2024-39887": {
-    "cvss": 4.3,
-    "description": "An SQL Injection vulnerability in Apache Superset exists due to improper neutralization of special elements used in SQL commands. Specifically, certain engine-specific functions are not checked, which allows attackers to bypass Apache Superset's SQL authorization. To mitigate this, a new configuration key named DISALLOWED_SQL_FUNCTIONS has been introduced. This key disallows the use of the following PostgreSQL functions: version, query_to_xml, inet_server_addr, and inet_client_addr. Additional functions can be added to this list for increased protection.\n\nThis issue affects Apache Superset: before 4.0.2.\n\nUsers are recommended to upgrade to version 4.0.2, which fixes the issue.\n\n",
-    "published": "2024-07-16T10:15:03.380",
-    "keywords": "command,bypass"
-  },
   "CVE-2024-6457": {
     "cvss": 9.8,
     "description": "The HUSKY \u2013 Products Filter Professional for WooCommerce plugin for WordPress is vulnerable to time-based SQL Injection via the \u2018woof_author\u2019 parameter in all versions up to, and including, 1.3.6 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
