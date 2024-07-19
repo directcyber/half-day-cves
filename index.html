@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-19T11:09:18.557488
+Updated at UTC 2024-07-19T12:17:36.282650
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-07-19T11:09:18.557488
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -172,10 +174,22 @@ Updated at UTC 2024-07-19T11:09:18.557488
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41107">CVE-2024-41107</a></td>
+					<td>-</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-07-19T11:15:03.323</td>
+					<td class=description>The CloudStack SAML authentication (disabled by default) does not enforce signature check. In CloudStack environments where SAML authentication is enabled, an attacker that initiates CloudStack SAML single sign-on authentication can bypass SAML authentication by submitting a spoofed SAML response with no signature and known or guessed username and other user details of a SAML-enabled CloudStack user-account. In such environments, this can result in a complete compromise of the resources owned and/or accessible by a SAML enabled user-account.
+
+Affected users are recommended to disable the SAML authentication plugin by setting the "saml2.enabled" global setting to "false", or upgrade to version 4.18.2.2, 4.19.1.0 or later, which addresses this issue.
+
+</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -607,16 +621,6 @@ In the latest version, the special symbol ` is intercepted.
 					<td>remote,authentication,bypass</td>
 					<td class=date>2024-07-16T16:15:04.017</td>
 					<td class=description>The vulnerability could be remotely exploited to bypass authentication.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6457">CVE-2024-6457</a></td>
-					<td>9.8</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2024-07-16T11:15:10.097</td>
-					<td class=description>The HUSKY – Products Filter Professional for WooCommerce plugin for WordPress is vulnerable to time-based SQL Injection via the ‘woof_author’ parameter in all versions up to, and including, 1.3.6 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
 				</tr>
 			
 		
