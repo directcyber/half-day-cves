@@ -1,10 +1,4 @@
 {
-  "CVE-2024-40626": {
-    "cvss": 7.3,
-    "description": "Outline is an open source, collaborative document editor. A type confusion issue was found in ProseMirror\u2019s rendering process that leads to a Stored Cross-Site Scripting (XSS) vulnerability in Outline. An authenticated user can create a document containing a malicious JavaScript payload. When other users view this document, the malicious Javascript can execute in the origin of Outline. Outline includes CSP rules to prevent third-party code execution, however in the case of self-hosting and having your file storage on the same domain as Outline a malicious payload can be uploaded as a file attachment and bypass those CSP restrictions. This issue has been addressed in release version 0.77.3. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n",
-    "published": "2024-07-16T17:15:11.580",
-    "keywords": "execution,bypass"
-  },
   "CVE-2024-39036": {
     "url": "https://github.com/seacms-net/cms/issues/18",
     "cvss": "-",
@@ -262,5 +256,11 @@
     "description": "AX3000 Dual-Band Gigabit Wi-Fi 6 Router AX9 V22.03.01.46 and AX3000 Dual-Band Gigabit Wi-Fi 6 Router AX12 V1.0 V22.03.01.46 were discovered to contain an authenticated remote command execution (RCE) vulnerability via the macFilterType parameter at /goform/setMacFilterCfg.",
     "published": "2024-07-19T15:15:10.383",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2024-41601": {
+    "cvss": "-",
+    "description": "Insecure Permissions vulnerability in lin-CMS v.0.2.0 and before allows a remote attacker to obtain sensitive information via the login method in the UserController.java component.",
+    "published": "2024-07-19T17:15:03.490",
+    "keywords": "remote,sensitive"
   }
 }
