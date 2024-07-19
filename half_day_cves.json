@@ -43,12 +43,12 @@
   },
   "CVE-2024-6220": {
     "cvss": 9.8,
-    "description": "The \u7b80\u6570\u91c7\u96c6\u5668 (Keydatas) plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the keydatas_downloadImages function in all versions up to, and including, 2.5.2. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "description": "The ????? (Keydatas) plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the keydatas_downloadImages function in all versions up to, and including, 2.5.2. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
     "published": "2024-07-17T08:15:02.730",
     "keywords": "remote,execution,unauthenticated"
   },
   "CVE-2024-29737": {
-    "cvss": "-",
+    "cvss": 4.7,
     "description": "In streampark, the project module integrates Maven's compilation capabilities. The input parameter validation is not strict, allowing attackers to insert commands for remote command execution, The prerequisite for a successful attack is that the user needs to log in to the streampark system and have system-level permissions. Generally, only users of that system have the authorization to log in, and users would not manually input a dangerous operation command. Therefore, the risk level of this vulnerability is very low.\n\nMitigation:\n\nall users should upgrade to 2.1.4\n\nBackground info:\n\nLog in to Streampark using the default username (e.g. test1, test2, test3) and the default password (streampark). Navigate to the Project module, then add a new project. Enter the git repository address of the project and input `touch /tmp/success_2.1.2` as the \"Build Argument\". Note that there is no verification and interception of the special character \"`\". As a result, you will find that this injection command will be successfully executed after executing the build.\n\nIn the latest version, the special symbol ` is intercepted.\n\n",
     "published": "2024-07-17T09:15:02.527",
     "keywords": "remote,execution,command"
@@ -256,5 +256,17 @@
     "description": "The CloudStack SAML authentication (disabled by default) does not enforce signature check. In CloudStack environments where SAML authentication is enabled, an attacker that initiates CloudStack SAML single sign-on authentication can bypass SAML authentication by submitting a spoofed SAML response with no signature and known or guessed username and other user details of a SAML-enabled CloudStack user-account.\u00a0In such environments, this can result in a complete compromise of the resources owned and/or accessible by a SAML enabled user-account.\n\nAffected users are recommended to disable the SAML authentication plugin by setting the\u00a0\"saml2.enabled\" global setting to \"false\", or upgrade to version 4.18.2.2, 4.19.1.0 or later, which addresses this issue.\n\n",
     "published": "2024-07-19T11:15:03.323",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-39962": {
+    "cvss": "-",
+    "description": "D-Link DIR-823X AX3000 Dual-Band Gigabit Wireless Router v21_D240126 was discovered to contain a remote code execution (RCE) vulnerability in the ntp_zone_val parameter at /goform/set_ntp. This vulnerability is exploited via a crafted HTTP request.",
+    "published": "2024-07-19T15:15:10.320",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-39963": {
+    "cvss": "-",
+    "description": "AX3000 Dual-Band Gigabit Wi-Fi 6 Router AX9 V22.03.01.46 and AX3000 Dual-Band Gigabit Wi-Fi 6 Router AX12 V1.0 V22.03.01.46 were discovered to contain an authenticated remote command execution (RCE) vulnerability via the macFilterType parameter at /goform/setMacFilterCfg.",
+    "published": "2024-07-19T15:15:10.383",
+    "keywords": "remote,execution,command"
   }
 }
