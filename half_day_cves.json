@@ -94,5 +94,41 @@
     "description": "A deserialization of untrusted data vulnerability exists in NI VeriStand that may result in remote code execution.  Successful exploitation requires an attacker to get a user to open a specially crafted project file.  This vulnerability affects VeriStand 2024 Q2 and prior versions.",
     "published": "2024-07-22T20:15:04.940",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-6791": {
+    "cvss": 7.8,
+    "description": "A directory path traversal vulnerability exists when loading a vsmodel file in NI VeriStand that may result in remote code execution.  Successful exploitation requires an attacker to get a user to open a specially crafted .vsmodel file.  This vulnerability affects VeriStand 2024 Q2 and prior versions.",
+    "published": "2024-07-22T21:15:04.360",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-6793": {
+    "cvss": 9.8,
+    "description": "A\u00a0deserialization of untrusted data\u00a0vulnerability\u00a0exists in NI VeriStand  DataLogging Server that may result in remote code execution.  Successful exploitation requires an attacker to send a specially crafted message.  These vulnerabilities affect NI VeriStand 2024 Q2 and prior versions.",
+    "published": "2024-07-22T21:15:04.547",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-6794": {
+    "cvss": 9.8,
+    "description": "A deserialization of untrusted data vulnerability exists in NI VeriStand Waveform Streaming  Server that may result in remote code execution. Successful exploitation requires an attacker to send a specially crafted message. These vulnerabilities affect NI VeriStand 2024 Q2 and prior versions.",
+    "published": "2024-07-22T21:15:04.733",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-6805": {
+    "cvss": 7.5,
+    "description": "The NI VeriStand Gateway is missing authorization checks when an actor attempts to access File Transfer resources.  These missing checks may result in information disclosure or remote code execution.  This affects NI VeriStand 2024 Q2 and prior versions.",
+    "published": "2024-07-22T21:15:04.940",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-6806": {
+    "cvss": 9.8,
+    "description": "The NI VeriStand Gateway is missing authorization checks when an actor attempts to access Project resources.  These missing checks may result in remote code execution.  This affects NI VeriStand 2024 Q2 and prior versions.",
+    "published": "2024-07-22T21:15:05.133",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-6913": {
+    "cvss": "-",
+    "description": "Execution with unnecessary privileges in PerkinElmer ProcessPlus allows an attacker to spawn a remote shell on the windows system.This issue affects ProcessPlus: through 1.11.6507.0.",
+    "published": "2024-07-22T21:15:05.560",
+    "keywords": "remote,execution"
   }
 }
