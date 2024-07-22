@@ -1,266 +1,98 @@
 {
-  "CVE-2024-5500": {
-    "cvss": 6.5,
-    "description": "Inappropriate implementation in Sign-In in Google Chrome prior to 1.3.36.351 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page. (Chromium security severity: Medium)",
-    "published": "2024-07-16T23:15:24.487",
-    "keywords": "remote,bypass"
-  },
-  "CVE-2024-6535": {
-    "cvss": 5.9,
-    "description": "A flaw was found in Skupper. When Skupper is initialized with the console-enabled and with console-auth set to Openshift, it configures the openshift oauth-proxy with a static cookie-secret. In certain circumstances, this may allow an attacker to bypass authentication to the Skupper console via a specially-crafted cookie.",
-    "published": "2024-07-17T03:15:01.890",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-6467": {
-    "cvss": 8.8,
-    "description": "The BookingPress \u2013 Appointment Booking Calendar Plugin and Online Scheduling Plugin plugin for WordPress is vulnerable to Arbitrary File Read to Arbitrary File Creation in all versions up to, and including, 1.1.5 via the 'bookingpress_save_lite_wizard_settings_func' function. This makes it possible for authenticated attackers, with Subscriber-level access and above, to create arbitrary files that contain the content of files on the server, allowing the execution of any PHP code in those files or the exposure of sensitive information.",
-    "published": "2024-07-17T07:15:03.493",
-    "keywords": "execution,sensitive"
-  },
-  "CVE-2024-6220": {
-    "cvss": 9.8,
-    "description": "The ????? (Keydatas) plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the keydatas_downloadImages function in all versions up to, and including, 2.5.2. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2024-07-17T08:15:02.730",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-29737": {
-    "cvss": 4.7,
-    "description": "In streampark, the project module integrates Maven's compilation capabilities. The input parameter validation is not strict, allowing attackers to insert commands for remote command execution, The prerequisite for a successful attack is that the user needs to log in to the streampark system and have system-level permissions. Generally, only users of that system have the authorization to log in, and users would not manually input a dangerous operation command. Therefore, the risk level of this vulnerability is very low.\n\nMitigation:\n\nall users should upgrade to 2.1.4\n\nBackground info:\n\nLog in to Streampark using the default username (e.g. test1, test2, test3) and the default password (streampark). Navigate to the Project module, then add a new project. Enter the git repository address of the project and input `touch /tmp/success_2.1.2` as the \"Build Argument\". Note that there is no verification and interception of the special character \"`\". As a result, you will find that this injection command will be successfully executed after executing the build.\n\nIn the latest version, the special symbol ` is intercepted.\n\n",
-    "published": "2024-07-17T09:15:02.527",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-31070": {
-    "cvss": "-",
-    "description": "Initialization of a resource with an insecure default vulnerability in FutureNet NXR series, VXR series and WXR series provided by Century Systems Co., Ltd. allows a remote unauthenticated attacker to access telnet service unlimitedly.",
-    "published": "2024-07-17T09:15:02.813",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-36491": {
-    "cvss": "-",
-    "description": "FutureNet NXR series, VXR series and WXR series provided by Century Systems Co., Ltd. allow a remote unauthenticated attacker to execute an arbitrary OS command, obtain and/or alter sensitive information, and be able to cause a denial of service (DoS) condition.",
-    "published": "2024-07-17T09:15:03.090",
-    "keywords": "remote,unauthenticated,command,sensitive"
-  },
-  "CVE-2024-40617": {
-    "cvss": "-",
-    "description": "Path traversal vulnerability exists in FUJITSU Network Edgiot GW1500 (M2M-GW for FENICS). If a remote authenticated attacker with User Class privilege sends a specially crafted request to the affected product, access restricted files containing sensitive information may be accessed. As a result, Administrator Class privileges of the product may be hijacked.",
-    "published": "2024-07-17T09:15:03.163",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-31411": {
-    "cvss": "-",
-    "description": "Unrestricted Upload of File with dangerous type vulnerability in Apache StreamPipes.\nSuch a dangerous type might be an executable file that may lead to a remote code execution (RCE).\nThe unrestricted upload is only possible for authenticated and authorized users.\nThis issue affects Apache StreamPipes: through 0.93.0.\n\nUsers are recommended to upgrade to version 0.95.0, which fixes the issue.\n\n",
-    "published": "2024-07-17T10:15:01.810",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-23465": {
-    "cvss": 8.3,
-    "description": "The SolarWinds Access Rights Manager was found to be susceptible to an authentication bypass vulnerability. This vulnerability allows an unauthenticated user to gain domain admin access within the Active Directory environment.  \u00a0  ",
-    "published": "2024-07-17T15:15:10.977",
+  "CVE-2024-6635": {
+    "cvss": 7.3,
+    "description": "The WooCommerce - Social Login plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 2.7.3. This is due to insufficient controls in the 'woo_slg_login_email' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, excluding an administrator, if they know the email of user.",
+    "published": "2024-07-20T08:15:16.177",
     "keywords": "unauthenticated,authentication,bypass"
   },
-  "CVE-2024-23466": {
-    "cvss": 9.6,
-    "description": "SolarWinds Access Rights Manager (ARM) is susceptible to a Directory Traversal Remote Code Execution vulnerability. If exploited, this vulnerability allows an unauthenticated user to perform the actions with SYSTEM privileges.  ",
-    "published": "2024-07-17T15:15:11.270",
-    "keywords": "remote,execution,unauthenticated"
+  "CVE-2024-6938": {
+    "url": "https://github.com/siyuan-note/siyuan/issues/11949",
+    "cvss": 3.5,
+    "description": "A vulnerability has been found in SiYuan 3.1.0 and classified as problematic. Affected by this vulnerability is an unknown functionality of the file PDF.js of the component PDF Handler. The manipulation leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-271993 was assigned to this vulnerability.",
+    "published": "2024-07-21T05:15:03.077"
   },
-  "CVE-2024-23467": {
-    "cvss": 9.6,
-    "description": "The SolarWinds Access Rights Manager was susceptible to a Directory Traversal and Information Disclosure Vulnerability. This vulnerability allows an unauthenticated user to perform remote code execution.",
-    "published": "2024-07-17T15:15:11.500",
-    "keywords": "remote,execution,unauthenticated"
+  "CVE-2024-6939": {
+    "url": "https://github.com/rainrocka/xinhu/issues/7",
+    "cvss": 3.5,
+    "description": "A vulnerability was found in Xinhu RockOA 2.6.3 and classified as problematic. Affected by this issue is the function okla of the file /webmain/public/upload/tpl_upload.html. The manipulation of the argument callback leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-271994 is the identifier assigned to this vulnerability.",
+    "published": "2024-07-21T05:15:04.310"
   },
-  "CVE-2024-23468": {
-    "cvss": 7.6,
-    "description": "The SolarWinds Access Rights Manager was susceptible to a Directory Traversal and Information Disclosure Vulnerability. This vulnerability allows an unauthenticated user to perform arbitrary file deletion and leak sensitive information.",
-    "published": "2024-07-17T15:15:11.730",
-    "keywords": "unauthenticated,sensitive,leak"
+  "CVE-2024-6941": {
+    "url": "https://github.com/thinksaas/thinksaas/issues/36",
+    "cvss": 3.5,
+    "description": "A vulnerability, which was classified as problematic, has been found in ThinkSAAS 3.7.0. This issue affects some unknown processing of the file app/system/action/do.php. The manipulation of the argument site_title/site_subtitle/site_key/site_desc/site_url/site_email/site_icp leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-272063.",
+    "published": "2024-07-21T06:15:05.550"
   },
-  "CVE-2024-23469": {
-    "cvss": 9.6,
-    "description": "SolarWinds Access Rights Manager (ARM) is susceptible to a Remote Code Execution vulnerability. If exploited, this vulnerability allows an unauthenticated user to perform the actions with SYSTEM privileges. ",
-    "published": "2024-07-17T15:15:11.947",
-    "keywords": "remote,execution,unauthenticated"
+  "CVE-2024-6942": {
+    "url": "https://github.com/thinksaas/thinksaas/issues/37",
+    "cvss": 3.5,
+    "description": "A vulnerability, which was classified as problematic, was found in ThinkSAAS 3.7.0. Affected is an unknown function of the file app/system/action/anti.php of the component Admin Panel Security Center. The manipulation of the argument ip/email/phone leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-272064.",
+    "published": "2024-07-21T07:15:05.887"
   },
-  "CVE-2024-23470": {
-    "cvss": 9.6,
-    "description": "The SolarWinds Access Rights Manager was found to be susceptible to a pre-authentication remote code execution vulnerability. If exploited, this vulnerability allows an unauthenticated user to run commands and executables. ",
-    "published": "2024-07-17T15:15:12.167",
-    "keywords": "remote,execution,unauthenticated,authentication,command"
-  },
-  "CVE-2024-23471": {
-    "cvss": 9.6,
-    "description": "The SolarWinds Access Rights Manager was found to be susceptible to a Remote Code Execution Vulnerability. If exploited, this vulnerability allows an authenticated user to abuse a SolarWinds service resulting in remote code execution. ",
-    "published": "2024-07-17T15:15:12.403",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-23475": {
-    "cvss": 9.6,
-    "description": "The SolarWinds Access Rights Manager was susceptible to a Directory Traversal and Information Disclosure Vulnerability. This vulnerability allows an unauthenticated user to perform arbitrary file deletion and leak sensitive information.",
-    "published": "2024-07-17T15:15:13.057",
-    "keywords": "unauthenticated,sensitive,leak"
-  },
-  "CVE-2024-28992": {
-    "cvss": 7.6,
-    "description": "The SolarWinds Access Rights Manager was susceptible to a Directory Traversal and Information Disclosure Vulnerability. This vulnerability allows an unauthenticated user to perform arbitrary file deletion and leak sensitive information.",
-    "published": "2024-07-17T15:15:13.623",
-    "keywords": "unauthenticated,sensitive,leak"
-  },
-  "CVE-2024-28993": {
-    "cvss": 7.6,
-    "description": "The SolarWinds Access Rights Manager was susceptible to a Directory Traversal and Information Disclosure Vulnerability. This vulnerability allows an unauthenticated user to perform arbitrary file deletion and leak sensitive information.",
-    "published": "2024-07-17T15:15:13.860",
-    "keywords": "unauthenticated,sensitive,leak"
-  },
-  "CVE-2024-20296": {
-    "cvss": 4.7,
-    "description": "A vulnerability in the web-based management interface of Cisco Identity Services Engine (ISE) could allow an authenticated, remote attacker to upload arbitrary files to an affected device. To exploit this vulnerability, an attacker would need at least valid Policy Admin credentials on the affected device.\r\n\r This vulnerability is due to improper validation of files that are uploaded to the web-based management interface. An attacker could exploit this vulnerability by uploading arbitrary files to an affected device. A successful exploit could allow the attacker to store malicious files on the system, execute arbitrary commands on the operating system, and elevate privileges to root.",
-    "published": "2024-07-17T17:15:12.367",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-20323": {
-    "cvss": 7.5,
-    "description": "A vulnerability in Cisco Intelligent Node (iNode) Software could allow an unauthenticated, remote attacker to hijack the TLS connection between Cisco iNode Manager and associated intelligent nodes and send arbitrary traffic to an affected device.\r\n\r This vulnerability is due to the presence of hard-coded cryptographic material. An attacker in a man-in-the-middle position between Cisco iNode Manager and associated deployed nodes could exploit this vulnerability by using the static cryptographic key to generate a trusted certificate and impersonate an affected device. A successful exploit could allow the attacker to read data that is meant for a legitimate device, modify the startup configuration of an associated node, and, consequently, cause a denial of service (DoS) condition for downstream devices that are connected to the affected node.",
-    "published": "2024-07-17T17:15:12.607",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-20395": {
-    "cvss": 6.4,
-    "description": "A vulnerability in the media retrieval functionality of Cisco Webex App could allow an unauthenticated, adjacent attacker to gain access to sensitive session information.\r\n\r This vulnerability is due to insecure transmission of requests to backend services when the app accesses embedded media, such as images. An attacker could exploit this vulnerability by sending a message with embedded media that is stored on a messaging server to a targeted user. If the attacker can observe transmitted traffic in a privileged network position, a successful exploit could allow the attacker to capture session token information from insecurely transmitted requests and possibly reuse the captured session information to take further actions as the targeted user.",
-    "published": "2024-07-17T17:15:12.833",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-20396": {
-    "cvss": 5.3,
-    "description": "A vulnerability in the protocol handlers of Cisco Webex App could allow an unauthenticated, remote attacker to gain access to sensitive information.\r\n\r This vulnerability exists because the affected application does not safely handle file protocol handlers. An attacker could exploit this vulnerability by persuading a user to follow a link that is designed to cause the application to send requests. If the attacker can observe transmitted traffic in a privileged network position, a successful exploit could allow the attacker to capture sensitive information, including credential information, from the requests.",
-    "published": "2024-07-17T17:15:13.070",
-    "keywords": "remote,unauthenticated,sensitive"
-  },
-  "CVE-2024-20400": {
-    "cvss": 4.7,
-    "description": "A vulnerability in the web-based management interface of Cisco Expressway Series could allow an unauthenticated, remote attacker to redirect a user to a malicious web page.\r\n\r This vulnerability is due to improper input validation of HTTP request parameters. An attacker could exploit this vulnerability by intercepting and modifying an HTTP request from a user. A successful exploit could allow the attacker to redirect the user to a malicious web page.\r\n\r Note: Cisco Expressway Series refers to Cisco Expressway Control (Expressway-C) devices and Cisco Expressway Edge (Expressway-E) devices.",
-    "published": "2024-07-17T17:15:13.300",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-20401": {
+  "CVE-2024-38437": {
     "cvss": 9.8,
-    "description": "A vulnerability in the content scanning and message filtering features of Cisco Secure Email Gateway could allow an unauthenticated, remote attacker to overwrite arbitrary files on the underlying operating system.\r\n\r This vulnerability is due to improper handling of email attachments when file analysis and content filters are enabled. An attacker could exploit this vulnerability by sending an email that contains a crafted attachment through an affected device. A successful exploit could allow the attacker to replace any file on the underlying file system. The attacker could then perform any of the following actions: add users with root privileges, modify the device configuration, execute arbitrary code, or cause a permanent denial of service (DoS) condition on the affected device.\r\n\r Note: Manual intervention is required to recover from the DoS condition. Customers are advised to contact the Cisco Technical Assistance Center (TAC) to help recover a device in this condition.",
-    "published": "2024-07-17T17:15:13.540",
-    "keywords": "remote,unauthenticated"
+    "description": "D-Link - CWE-288:Authentication Bypass Using an Alternate Path or Channel",
+    "published": "2024-07-21T08:15:06.243",
+    "keywords": "authentication,bypass"
   },
-  "CVE-2024-20416": {
-    "cvss": 6.5,
-    "description": "A vulnerability in the upload module of Cisco RV340 and RV345 Dual WAN Gigabit VPN Routers could allow an authenticated, remote attacker to execute arbitrary code on an affected device.\r\n\r This vulnerability is due to insufficient boundary checks when processing specific HTTP requests. An attacker could exploit this vulnerability by sending crafted HTTP requests to an affected device. A successful exploit could allow the attacker to execute arbitrary code as the root user on the underlying operating system of the device.",
-    "published": "2024-07-17T17:15:13.877",
-    "keywords": "remote,vpn"
+  "CVE-2024-38438": {
+    "cvss": 9.8,
+    "description": "D-Link - \n\nCWE-294: Authentication Bypass by Capture-replay",
+    "published": "2024-07-21T08:15:06.467",
+    "keywords": "authentication,bypass"
   },
-  "CVE-2024-20419": {
-    "cvss": 10.0,
-    "description": "A vulnerability in the authentication system of Cisco Smart Software Manager On-Prem (SSM On-Prem) could allow an unauthenticated, remote attacker to change the password of any user, including administrative users.\r\n\r This vulnerability is due to improper implementation of the password-change process. An attacker could exploit this vulnerability by sending crafted HTTP requests to an affected device. A successful exploit could allow an attacker to access the web UI or API with the privileges of the compromised user.",
-    "published": "2024-07-17T17:15:14.143",
-    "keywords": "remote,unauthenticated,authentication"
-  },
-  "CVE-2024-20429": {
-    "cvss": 6.5,
-    "description": "A vulnerability in the web-based management interface of Cisco AsyncOS for Secure Email Gateway could allow an authenticated, remote attacker to execute arbitrary system commands on an affected device.\r\n\r This vulnerability is due to insufficient input validation in certain portions of the web-based management interface. An attacker could exploit this vulnerability by sending a crafted HTTP request to the affected device. A successful exploit could allow the attacker to execute arbitrary commands on the underlying operating system with root privileges. To successfully exploit this vulnerability, an attacker would need at least valid Operator credentials.",
-    "published": "2024-07-17T17:15:14.497",
+  "CVE-2024-6963": {
+    "cvss": 8.8,
+    "description": "A vulnerability, which was classified as critical, has been found in Tenda O3 1.0.0.10. This issue affects the function formexeCommand. The manipulation of the argument cmdinput leads to stack-based buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-272117 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-07-22T00:15:02.777",
     "keywords": "remote,command"
   },
-  "CVE-2024-41184": {
-    "url": "https://github.com/acassen/keepalived/issues/2447#issuecomment-2231329734",
+  "CVE-2024-41703": {
+    "url": "https://github.com/danny-avila/librechat/pull/3363",
     "cvss": "-",
-    "description": "In the vrrp_ipsets_handler handler (fglobal_parser.c) of keepalived through 2.3.1, an integer overflow can occur. NOTE: this CVE Record might not be worthwhile because an empty ipset name must be configured by the user.",
-    "published": "2024-07-18T01:15:15.253"
+    "description": "LibreChat through 0.7.4-rc1 has incorrect access control for message updates. (Work on a fixed version release has started in PR 3363.)",
+    "published": "2024-07-22T05:15:03.450"
   },
-  "CVE-2024-6164": {
+  "CVE-2024-41704": {
+    "url": "https://github.com/danny-avila/librechat/pull/3363",
     "cvss": "-",
-    "description": "The Filter & Grids WordPress plugin before 2.8.33 is vulnerable to Local File Inclusion via the post_layout parameter. This makes it possible for an unauthenticated attacker to include and execute PHP files on the server, allowing the execution of any PHP code in those files.",
-    "published": "2024-07-18T06:15:02.233",
-    "keywords": "execution,unauthenticated"
+    "description": "LibreChat through 0.7.4-rc1 does not validate the normalized pathnames of images. (Work on a fixed version release has started in PR 3363.)",
+    "published": "2024-07-22T05:15:03.537"
   },
-  "CVE-2024-40764": {
+  "CVE-2024-23321": {
     "cvss": "-",
-    "description": "Heap-based buffer overflow vulnerability in the SonicOS IPSec VPN allows an unauthenticated remote attacker to cause Denial of Service (DoS).",
-    "published": "2024-07-18T08:15:02.340",
-    "keywords": "remote,unauthenticated,vpn"
+    "description": "For RocketMQ versions 5.2.0 and below, under certain conditions, there is a risk of exposure of sensitive Information to an unauthorized actor even if RocketMQ is enabled with authentication and authorization functions.\n\nAn attacker, possessing regular user privileges or listed in the IP whitelist, could potentially acquire the administrator's account and password through specific interfaces. Such an action would grant them full control over RocketMQ, provided they have access to the broker IP address list.\n\nTo mitigate these security threats, it is strongly advised that users upgrade to version 5.3.0 or newer. Additionally, we recommend users to use RocketMQ ACL 2.0 instead of the original RocketMQ ACL when upgrading to version Apache RocketMQ 5.3.0.\n\n",
+    "published": "2024-07-22T10:15:02.540",
+    "keywords": "authentication,sensitive"
   },
-  "CVE-2024-3242": {
-    "cvss": 8.8,
-    "description": "The Brizy \u2013 Page Builder plugin for WordPress is vulnerable to arbitrary file uploads due to missing file extension validation in the validateImageContent function called via storeImages in all versions up to, and including, 2.4.43. This makes it possible for authenticated attackers, with contributor access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. Version 2.4.44 prevents the upload of files ending in .sh and .php. Version 2.4.45 fully patches the issue.",
-    "published": "2024-07-18T09:15:02.337",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-29178": {
-    "cvss": "-",
-    "description": "On versions before 2.1.4, a user could log in and perform a template injection attack resulting in Remote Code Execution on the server,\u00a0The attacker must successfully log into the system to launch an attack, so this is a moderate-impact vulnerability.\n\nMitigation:\n\nall users should upgrade to 2.1.4\n\n",
-    "published": "2024-07-18T12:15:02.960",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-40628": {
-    "cvss": 10.0,
-    "description": "JumpServer is an open-source Privileged Access Management (PAM) tool that provides DevOps and IT teams with on-demand and secure access to SSH, RDP, Kubernetes, Database and RemoteApp endpoints through a web browser. An attacker can exploit the ansible playbook to read arbitrary files in the celery container, leading to sensitive information disclosure. The Celery container runs as root and has database access, allowing the attacker to steal all secrets for hosts, create a new JumpServer account with admin privileges, or manipulate the database in other ways. This issue has been addressed in release versions 3.10.12 and 4.0.0. It is recommended to upgrade the safe versions. There is no known workarounds for this vulnerability.",
-    "published": "2024-07-18T17:15:04.370",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-40629": {
-    "cvss": 10.0,
-    "description": "JumpServer is an open-source Privileged Access Management (PAM) tool that provides DevOps and IT teams with on-demand and secure access to SSH, RDP, Kubernetes, Database and RemoteApp endpoints through a web browser. An attacker can exploit the Ansible playbook to write arbitrary files, leading to remote code execution (RCE) in the Celery container. The Celery container runs as root and has database access, allowing an attacker to steal all secrets for hosts, create a new JumpServer account with admin privileges, or manipulate the database in other ways. This issue has been patched in release versions 3.10.12 and 4.0.0. It is recommended to upgrade the safe versions. There are no known workarounds for this vulnerability.",
-    "published": "2024-07-18T17:15:04.613",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-5620": {
+  "CVE-2024-6542": {
     "cvss": 6.5,
-    "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in PruvaSoft Informatics Apinizer Management Console allows Authentication Bypass.This issue affects Apinizer Management Console: before 2024.05.1.",
-    "published": "2024-07-18T17:15:06.187",
-    "keywords": "authentication,bypass"
+    "description": "Improper neutralization of livestatus command delimiters in mknotifyd in Checkmk <= 2.0.0p39, < 2.1.0p47, < 2.2.0p32 and < 2.3.0p11 allows arbitrary livestatus command execution.",
+    "published": "2024-07-22T10:15:08.827",
+    "keywords": "execution,command"
   },
-  "CVE-2024-5321": {
-    "url": "https://github.com/kubernetes/kubernetes/issues/126161",
-    "cvss": 6.1,
-    "description": "A security issue was discovered in Kubernetes clusters with Windows nodes where BUILTIN\\Users\u00a0may be able to read container logs and NT AUTHORITY\\Authenticated Users\u00a0may be able to modify container logs.",
-    "published": "2024-07-18T19:15:12.607"
+  "CVE-2024-39601": {
+    "cvss": 6.5,
+    "description": "A vulnerability has been identified in CPCI85 Central Processing/Communication (All versions < V5.40), SICORE Base system (All versions < V1.4.0). Affected devices allow a remote authenticated user or an unauthenticated user with physical access to downgrade the firmware of the device. This could allow an attacker to downgrade the device to older versions with known vulnerabilities.",
+    "published": "2024-07-22T14:15:06.107",
+    "keywords": "remote,unauthenticated"
   },
-  "CVE-2024-39173": {
-    "cvss": "-",
-    "description": "calculator-boilerplate v1.0 was discovered to contain a remote code execution (RCE) vulnerability via the eval function at /routes/calculator.js. This vulnerability allows attackers to execute arbitrary code via a crafted payload injected into the input field.",
-    "published": "2024-07-18T20:15:04.227",
+  "CVE-2024-39685": {
+    "cvss": 9.8,
+    "description": "Bert-VITS2 is the VITS2 Backbone with multilingual bert. User input supplied to the data_dir variable is used directly in a command executed with subprocess.run(cmd, shell=True) in the resample function, which leads to arbitrary command execution. This affects fishaudio/Bert-VITS2 2.3 and earlier.",
+    "published": "2024-07-22T16:15:03.417",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-39686": {
+    "cvss": 9.8,
+    "description": "Bert-VITS2 is the VITS2 Backbone with multilingual bert. User input supplied to the data_dir variable is used directly in a command executed with subprocess.run(cmd, shell=True) in the bert_gen function, which leads to arbitrary command execution. This affects fishaudio/Bert-VITS2 2.3 and earlier.",
+    "published": "2024-07-22T16:15:03.657",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-6675": {
+    "cvss": 7.8,
+    "description": "A deserialization of untrusted data vulnerability exists in NI VeriStand that may result in remote code execution.  Successful exploitation requires an attacker to get a user to open a specially crafted project file.  This vulnerability affects VeriStand 2024 Q2 and prior versions.",
+    "published": "2024-07-22T20:15:04.940",
     "keywords": "remote,execution"
-  },
-  "CVE-2024-41107": {
-    "cvss": "-",
-    "description": "The CloudStack SAML authentication (disabled by default) does not enforce signature check. In CloudStack environments where SAML authentication is enabled, an attacker that initiates CloudStack SAML single sign-on authentication can bypass SAML authentication by submitting a spoofed SAML response with no signature and known or guessed username and other user details of a SAML-enabled CloudStack user-account.\u00a0In such environments, this can result in a complete compromise of the resources owned and/or accessible by a SAML enabled user-account.\n\nAffected users are recommended to disable the SAML authentication plugin by setting the\u00a0\"saml2.enabled\" global setting to \"false\", or upgrade to version 4.18.2.2, 4.19.1.0 or later, which addresses this issue.\n\n",
-    "published": "2024-07-19T11:15:03.323",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-39962": {
-    "cvss": "-",
-    "description": "D-Link DIR-823X AX3000 Dual-Band Gigabit Wireless Router v21_D240126 was discovered to contain a remote code execution (RCE) vulnerability in the ntp_zone_val parameter at /goform/set_ntp. This vulnerability is exploited via a crafted HTTP request.",
-    "published": "2024-07-19T15:15:10.320",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-39963": {
-    "cvss": "-",
-    "description": "AX3000 Dual-Band Gigabit Wi-Fi 6 Router AX9 V22.03.01.46 and AX3000 Dual-Band Gigabit Wi-Fi 6 Router AX12 V1.0 V22.03.01.46 were discovered to contain an authenticated remote command execution (RCE) vulnerability via the macFilterType parameter at /goform/setMacFilterCfg.",
-    "published": "2024-07-19T15:15:10.383",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-41601": {
-    "cvss": "-",
-    "description": "Insecure Permissions vulnerability in lin-CMS v.0.2.0 and before allows a remote attacker to obtain sensitive information via the login method in the UserController.java component.",
-    "published": "2024-07-19T17:15:03.490",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-41600": {
-    "cvss": "-",
-    "description": "Insecure Permissions vulnerability in lin-CMS Springboot v.0.2.1 and before allows a remote attacker to obtain sensitive information via the login method in the UserController.java component.",
-    "published": "2024-07-19T18:15:05.727",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-40400": {
-    "url": "https://github.com/marcantondahmen/automad/issues/106",
-    "cvss": "-",
-    "description": "An arbitrary file upload vulnerability in the image upload function of Automad v2.0.0 allows attackers to execute arbitrary code via a crafted file.",
-    "published": "2024-07-19T19:15:09.147"
   }
 }
