@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-23T02:35:20.216717
+Updated at UTC 2024-07-25T05:10:29.945999
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,98 @@ Updated at UTC 2024-07-23T02:35:20.216717
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41672">CVE-2024-41672</a></td>
+					<td>7.5</td>
+					<td><a target=_blank href="https://github.com/duckdb/duckdb/pull/13133">https://github.com/duckdb/duckdb/pull/13133</a></td>
+					<td class=date>2024-07-24T18:15:05.527</td>
+					<td class=description>DuckDB is a SQL database management system. In versions 1.0.0 and prior, content in filesystem is accessible for reading using `sniff_csv`, even with `enable_external_access=false`. This vulnerability provides an attacker with access to filesystem even when access is expected to be disabled and other similar functions do NOT provide access. There seem to be two vectors to this vulnerability. First, access to files that should otherwise not be allowed. Second, the content from a file can be read (e.g. `/etc/hosts`, `proc/self/environ`, etc) even though that doesn't seem to be the intent of the sniff_csv function. A fix for this issue is available in commit c9b7c98aa0e1cd7363fe8bb8543a95f38e980d8a and is expected to be part of version 1.1.0.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41667">CVE-2024-41667</a></td>
+					<td>8.8</td>
+					<td><a target=_blank href="https://github.com/openidentityplatform/openam/commit/fcb8432aa77d5b2e147624fe954cb150c568e0b8">https://github.com/openidentityplatform/openam/commit/fcb8432aa77d5b2e147624fe954cb150c568e0b8</a></td>
+					<td class=date>2024-07-24T18:15:05.310</td>
+					<td class=description>OpenAM is an open access management solution. In versions 15.0.3 and prior, the `getCustomLoginUrlTemplate` method in RealmOAuth2ProviderSettings.java is vulnerable to template injection due to its usage of user input. Although the developer intended to implement a custom URL for handling login to override the default PingOne Advanced Identity Cloud login page,they did not restrict the `CustomLoginUrlTemplate`, allowing it to be set freely. Commit fcb8432aa77d5b2e147624fe954cb150c568e0b8 introduces `TemplateClassResolver.SAFER_RESOLVER` to disable the resolution of commonly exploited classes in FreeMarker template injection. As of time of publication, this fix is expected to be part of version 15.0.4.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40422">CVE-2024-40422</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/stitionai/devika/pull/619">https://github.com/stitionai/devika/pull/619</a></td>
+					<td class=date>2024-07-24T16:15:07.087</td>
+					<td class=description>The snapshot_path parameter in the /api/get-browser-snapshot endpoint in stitionai devika v1 is susceptible to a path traversal attack. An attacker can manipulate the snapshot_path parameter to traverse directories and access sensitive files on the server. This can potentially lead to unauthorized access to critical system files and compromise the confidentiality and integrity of the system.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7067">CVE-2024-7067</a></td>
+					<td>6.3</td>
+					<td><a target=_blank href="https://github.com/kirilkirkov/ecommerce-laravel-bootstrap/commit/a02111a674ab49f65018b31da3011b1e396f59b1">https://github.com/kirilkirkov/ecommerce-laravel-bootstrap/commit/a02111a674ab49f65018b31da3011b1e396f59b1</a></td>
+					<td class=date>2024-07-24T14:15:06.593</td>
+					<td class=description>A vulnerability was found in kirilkirkov Ecommerce-Laravel-Bootstrap up to 1f1097a3448ce8ec53e034ea0f70b8e2a0e64a87. It has been rated as critical. Affected by this issue is the function getCartProductsIds of the file app/Cart.php. The manipulation of the argument laraCart leads to deserialization. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. This product is using a rolling release to provide continious delivery. Therefore, no version details for affected nor updated releases are available. The name of the patch is a02111a674ab49f65018b31da3011b1e396f59b1. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-272348.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6714">CVE-2024-6714</a></td>
+					<td>8.8</td>
+					<td><a target=_blank href="https://github.com/canonical/ubuntu-desktop-provision/commit/8d9086de0f82894ff27a9e429ff4f45231020092">https://github.com/canonical/ubuntu-desktop-provision/commit/8d9086de0f82894ff27a9e429ff4f45231020092</a></td>
+					<td class=date>2024-07-23T16:15:06.543</td>
+					<td class=description>An issue was discovered in provd before version 0.1.5 with a setuid binary, which allows a local attacker to escalate their privilege.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -110,64 +202,189 @@ Updated at UTC 2024-07-23T02:35:20.216717
 				</tr>
 			
 		
-			
-		
-			
-		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6942">CVE-2024-6942</a></td>
-					<td>3.5</td>
-					<td><a target=_blank href="https://github.com/thinksaas/thinksaas/issues/37">https://github.com/thinksaas/thinksaas/issues/37</a></td>
-					<td class=date>2024-07-21T07:15:05.887</td>
-					<td class=description>A vulnerability, which was classified as problematic, was found in ThinkSAAS 3.7.0. Affected is an unknown function of the file app/system/action/anti.php of the component Admin Panel Security Center. The manipulation of the argument ip/email/phone leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-272064.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6941">CVE-2024-6941</a></td>
-					<td>3.5</td>
-					<td><a target=_blank href="https://github.com/thinksaas/thinksaas/issues/36">https://github.com/thinksaas/thinksaas/issues/36</a></td>
-					<td class=date>2024-07-21T06:15:05.550</td>
-					<td class=description>A vulnerability, which was classified as problematic, has been found in ThinkSAAS 3.7.0. This issue affects some unknown processing of the file app/system/action/do.php. The manipulation of the argument site_title/site_subtitle/site_key/site_desc/site_url/site_email/site_icp leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-272063.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6939">CVE-2024-6939</a></td>
-					<td>3.5</td>
-					<td><a target=_blank href="https://github.com/rainrocka/xinhu/issues/7">https://github.com/rainrocka/xinhu/issues/7</a></td>
-					<td class=date>2024-07-21T05:15:04.310</td>
-					<td class=description>A vulnerability was found in Xinhu RockOA 2.6.3 and classified as problematic. Affected by this issue is the function okla of the file /webmain/public/upload/tpl_upload.html. The manipulation of the argument callback leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-271994 is the identifier assigned to this vulnerability.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6938">CVE-2024-6938</a></td>
-					<td>3.5</td>
-					<td><a target=_blank href="https://github.com/siyuan-note/siyuan/issues/11949">https://github.com/siyuan-note/siyuan/issues/11949</a></td>
-					<td class=date>2024-07-21T05:15:03.077</td>
-					<td class=description>A vulnerability has been found in SiYuan 3.1.0 and classified as problematic. Affected by this vulnerability is an unknown functionality of the file PDF.js of the component PDF Handler. The manipulation leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-271993 was assigned to this vulnerability.</td>
-
-
-				</tr>
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41135">CVE-2024-41135</a></td>
+					<td>7.2</td>
+					<td>remote,command</td>
+					<td class=date>2024-07-24T20:15:04.600</td>
+					<td class=description>A vulnerability exists in the HPE Aruba Networking EdgeConnect SD-WAN gateway's Command Line Interface that allows remote authenticated users to run arbitrary commands on the underlying host. Successful exploitation of this vulnerability will result in the ability to execute arbitrary commands as root on the underlying operating system leading to complete system compromise</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41134">CVE-2024-41134</a></td>
+					<td>7.2</td>
+					<td>remote,command</td>
+					<td class=date>2024-07-24T20:15:04.427</td>
+					<td class=description>A vulnerability exists in the HPE Aruba Networking EdgeConnect SD-WAN gateway's Command Line Interface that allows remote authenticated users to run arbitrary commands on the underlying host. Successful exploitation of this vulnerability will result in the ability to execute arbitrary commands as root on the underlying operating system leading to complete system compromise</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41133">CVE-2024-41133</a></td>
+					<td>7.2</td>
+					<td>remote,command</td>
+					<td class=date>2024-07-24T20:15:04.237</td>
+					<td class=description>A vulnerability exists in the HPE Aruba Networking EdgeConnect SD-WAN gateway's Command Line Interface that allows remote authenticated users to run arbitrary commands on the underlying host. Successful exploitation of this vulnerability will result in the ability to execute arbitrary commands as root on the underlying operating system leading to complete system compromise</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-33519">CVE-2024-33519</a></td>
+					<td>7.2</td>
+					<td>remote,command</td>
+					<td class=date>2024-07-24T20:15:03.640</td>
+					<td class=description>A vulnerability in the web-based management interface of HPE Aruba Networking EdgeConnect SD-WAN gateway could allow an authenticated remote attacker to conduct a server-side prototype pollution attack. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary commands on the underlying operating system leading to complete system compromise.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40137">CVE-2024-40137</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2024-07-24T19:15:04.637</td>
+					<td class=description>Dolibarr ERP CRM before 19.0.2-php8.2 was discovered to contain a remote code execution (RCE) vulnerability via the Computed field parameter under the Users Module Setup function.</td>
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41666">CVE-2024-41666</a></td>
+					<td>4.7</td>
+					<td>sensitive,leak</td>
+					<td class=date>2024-07-24T18:15:05.090</td>
+					<td class=description>Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes. Argo CD has a Web-based terminal that allows users to get a shell inside a running pod, just as they would with kubectl exec. Starting in version 2.6.0, when the administrator enables this function and grants permission to the user `p, role:myrole, exec, create, */*, allow`, even if the user revokes this permission, the user can still perform operations in the container, as long as the user keeps the terminal view open for a long time. Although the token expiration and revocation of the user are fixed, however, the fix does not address the situation of revocation of only user `p, role:myrole, exec, create, */*, allow` permissions, which may still lead to the leakage of sensitive information. A patch for this vulnerability has been released in Argo CD versions 2.11.7, 2.10.16, and 2.9.21.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41662">CVE-2024-41662</a></td>
+					<td>8.6</td>
+					<td>remote,execution</td>
+					<td class=date>2024-07-24T17:15:11.310</td>
+					<td class=description>VNote is a note-taking platform. A Cross-Site Scripting (XSS) vulnerability has been identified in the Markdown rendering functionality of versions 3.18.1 and prior of the VNote note-taking application. This vulnerability allows the injection and execution of arbitrary JavaScript code through which remote code execution can be achieved. A patch for this issue is available at commit f1af78573a0ef51d6ef6a0bc4080cddc8f30a545. Other mitigation strategies include implementing rigorous input sanitization for all Markdown content and utilizing a secure Markdown parser that appropriately escapes or strips potentially dangerous content.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7079">CVE-2024-7079</a></td>
+					<td>5.4</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-07-24T16:15:07.613</td>
+					<td class=description>A flaw was found in the Openshift console. The /API/helm/verify endpoint is tasked to fetch and verify the installation of a Helm chart from a URI that is remote HTTP/HTTPS or local. Access to this endpoint is gated by the authHandlerWithUser() middleware function. Contrary to its name, this middleware function does not verify the validity of the user's credentials. As a result, unauthenticated users can access this endpoint.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-22443">CVE-2024-22443</a></td>
+					<td>7.2</td>
+					<td>remote,command</td>
+					<td class=date>2024-07-24T15:15:11.370</td>
+					<td class=description>A vulnerability in the web-based management interface of EdgeConnect SD-WAN Orchestrator could allow an authenticated remote attacker to conduct a server-side prototype pollution attack. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary commands on the underlying operating system leading to complete system compromise.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6327">CVE-2024-6327</a></td>
+					<td>9.9</td>
+					<td>remote,execution</td>
+					<td class=date>2024-07-24T14:15:06.283</td>
+					<td class=description>In Progress® Telerik® Report Server versions prior to 2024 Q2 (10.1.24.709), a remote code execution attack is possible through an insecure deserialization vulnerability.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7066">CVE-2024-7066</a></td>
+					<td>7.3</td>
+					<td>remote,command</td>
+					<td class=date>2024-07-24T11:15:11.960</td>
+					<td class=description>A vulnerability was found in F-logic DataCube3 1.0. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file /admin/config_time_sync.php of the component HTTP POST Request Handler. The manipulation of the argument ntp_server leads to os command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-272347.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-39676">CVE-2024-39676</a></td>
+					<td>-</td>
+					<td>authentication,sensitive</td>
+					<td class=date>2024-07-24T08:15:02.773</td>
+					<td class=description>Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Apache Pinot.
+
+This issue affects Apache Pinot: from 0.1 before 1.0.0.
+
+Users are recommended to upgrade to version 1.0.0 and configure RBAC, which fixes the issue.
+
+Details: 
+
+When using a request to path “/appconfigs” to the controller, it can lead to the disclosure of sensitive information such as system information (e.g. arch, os version), environment information (e.g. maxHeapSize) and Pinot configurations (e.g. zookeeper path). This issue was addressed by the  Role-based Access Control https://docs.pinot.apache.org/operators/tutorials/authentication/basic-auth-access-control , so that /appConfigs` and all other APIs can be access controlled. Only authorized users have access to it. Note the user needs to add the admin role accordingly to the RBAC guide to control access to this endpoint, and in the future version of Pinot, a default admin role is planned to be added.
+
+</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7027">CVE-2024-7027</a></td>
+					<td>7.3</td>
+					<td>unauthenticated,authentication,bypass</td>
+					<td class=date>2024-07-24T03:15:05.117</td>
+					<td class=description>The WooCommerce - PDF Vouchers plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 4.9.3. This is due to insufficient verification on the user being supplied during a QR code login through the plugin. This makes it possible for unauthenticated attackers to log in as any existing Voucher Vendor user on the site, if they have access to the user id.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6756">CVE-2024-6756</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-07-24T03:15:04.897</td>
+					<td class=description>The Social Auto Poster plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'wpw_auto_poster_get_image_path' function in all versions up to, and including, 5.3.14. This makes it possible for authenticated attackers, with Contributor-level and above permissions, to upload arbitrary files on the affected site's server which may make remote code execution possible. An attacker can use CVE-2024-6754 to exploit with subscriber-level access.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38176">CVE-2024-38176</a></td>
+					<td>8.1</td>
+					<td>unauthenticated,authentication</td>
+					<td class=date>2024-07-23T22:15:08.660</td>
+					<td class=description>An improper restriction of excessive authentication attempts in GroupMe allows a unauthenticated attacker to elevate privileges over a network.
+</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41661">CVE-2024-41661</a></td>
+					<td>8.8</td>
+					<td>remote,command</td>
+					<td class=date>2024-07-23T18:15:06.577</td>
+					<td class=description>reNgine is an automated reconnaissance framework for web applications. In versions 1.2.0 through 2.1.1, an authenticated command injection vulnerability in the WAF detection tool allows an authenticated attacker to remotely execute arbitrary commands as root user. The URL query parameter `url` is passed to `subprocess.check_output` without any sanitization, resulting in a command injection vulnerability. This API endpoint is accessible by authenticated users with any use role. Because the process runs as `root`, an attacker has root access. Commit edd3c85ee16f93804ad38dac5602549d2d30a93e contains a patch for the issue.</td>
+				</tr>
+			
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -317,56 +534,6 @@ To mitigate these security threats, it is strongly advised that users upgrade to
 		
 			
 		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6963">CVE-2024-6963</a></td>
-					<td>8.8</td>
-					<td>remote,command</td>
-					<td class=date>2024-07-22T00:15:02.777</td>
-					<td class=description>A vulnerability, which was classified as critical, has been found in Tenda O3 1.0.0.10. This issue affects the function formexeCommand. The manipulation of the argument cmdinput leads to stack-based buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-272117 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38438">CVE-2024-38438</a></td>
-					<td>9.8</td>
-					<td>authentication,bypass</td>
-					<td class=date>2024-07-21T08:15:06.467</td>
-					<td class=description>D-Link - 
-
-CWE-294: Authentication Bypass by Capture-replay</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38437">CVE-2024-38437</a></td>
-					<td>9.8</td>
-					<td>authentication,bypass</td>
-					<td class=date>2024-07-21T08:15:06.243</td>
-					<td class=description>D-Link - CWE-288:Authentication Bypass Using an Alternate Path or Channel</td>
-				</tr>
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6635">CVE-2024-6635</a></td>
-					<td>7.3</td>
-					<td>unauthenticated,authentication,bypass</td>
-					<td class=date>2024-07-20T08:15:16.177</td>
-					<td class=description>The WooCommerce - Social Login plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 2.7.3. This is due to insufficient controls in the 'woo_slg_login_email' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, excluding an administrator, if they know the email of user.</td>
-				</tr>
 			
 		
 
