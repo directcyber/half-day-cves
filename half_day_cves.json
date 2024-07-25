@@ -1,10 +1,4 @@
 {
-  "CVE-2024-6675": {
-    "cvss": 7.8,
-    "description": "A deserialization of untrusted data vulnerability exists in NI VeriStand that may result in remote code execution.  Successful exploitation requires an attacker to get a user to open a specially crafted project file.  This vulnerability affects VeriStand 2024 Q2 and prior versions.",
-    "published": "2024-07-22T20:15:04.940",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-6791": {
     "cvss": 7.8,
     "description": "A directory path traversal vulnerability exists when loading a vsmodel file in NI VeriStand that may result in remote code execution.  Successful exploitation requires an attacker to get a user to open a specially crafted .vsmodel file.  This vulnerability affects VeriStand 2024 Q2 and prior versions.",
@@ -196,5 +190,17 @@
     "description": "Positron Broadcast Signal Processor TRA7005 v1.20 is vulnerable to an authentication bypass exploit that could allow an attacker to have unauthorized access to protected areas of the application.",
     "published": "2024-07-25T17:15:11.837",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-38287": {
+    "cvss": "-",
+    "description": "The password-reset mechanism in the Forgot Password functionality in R-HUB TurboMeeting through 8.x allows unauthenticated remote attackers to force the application into resetting the administrator's password to a random insecure 8-digit value.",
+    "published": "2024-07-25T20:15:04.887",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-38289": {
+    "cvss": "-",
+    "description": "A boolean-based SQL injection issue in the Virtual Meeting Password (VMP) endpoint in R-HUB TurboMeeting through 8.x allows unauthenticated remote attackers to extract hashed passwords from the database, and authenticate to the application, via crafted SQL input.",
+    "published": "2024-07-25T20:15:05.017",
+    "keywords": "remote,unauthenticated"
   }
 }
