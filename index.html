@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-25T15:10:05.836081
+Updated at UTC 2024-07-25T16:12:41.981039
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,18 @@ Updated at UTC 2024-07-25T15:10:05.836081
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41806">CVE-2024-41806</a></td>
+					<td>5.3</td>
+					<td><a target=_blank href="https://github.com/openedx/edx-platform/commit/cb729a3ced0404736dfa0ae768526c82b608657b">https://github.com/openedx/edx-platform/commit/cb729a3ced0404736dfa0ae768526c82b608657b</a></td>
+					<td class=date>2024-07-25T15:15:11.210</td>
+					<td class=description>The Open edX Platform is a learning management platform. Instructors can upload csv files containing learner information to create cohorts in the instructor dashboard. These files are uploaded using the django default storage. With certain storage backends, uploads may become publicly available when the uploader uses versions master, palm, olive, nutmeg, maple, lilac, koa, or juniper. The patch in commit cb729a3ced0404736dfa0ae768526c82b608657b ensures that cohorts data uploaded to AWS S3 buckets is written with a private ACL. Beyond patching, deployers should also ensure that existing cohorts uploads have a private ACL, or that other precautions are taken to avoid public access.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -164,6 +176,8 @@ Updated at UTC 2024-07-25T15:10:05.836081
 		
 
 		<hr>
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
