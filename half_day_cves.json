@@ -1,10 +1,4 @@
 {
-  "CVE-2024-39601": {
-    "cvss": 6.5,
-    "description": "A vulnerability has been identified in CPCI85 Central Processing/Communication (All versions < V5.40), SICORE Base system (All versions < V1.4.0). Affected devices allow a remote authenticated user or an unauthenticated user with physical access to downgrade the firmware of the device. This could allow an attacker to downgrade the device to older versions with known vulnerabilities.",
-    "published": "2024-07-22T14:15:06.107",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2024-39685": {
     "cvss": 9.8,
     "description": "Bert-VITS2 is the VITS2 Backbone with multilingual bert. User input supplied to the data_dir variable is used directly in a command executed with subprocess.run(cmd, shell=True) in the resample function, which leads to arbitrary command execution. This affects fishaudio/Bert-VITS2 2.3 and earlier.",
