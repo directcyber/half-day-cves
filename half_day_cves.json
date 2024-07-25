@@ -1,16 +1,4 @@
 {
-  "CVE-2024-23321": {
-    "cvss": "-",
-    "description": "For RocketMQ versions 5.2.0 and below, under certain conditions, there is a risk of exposure of sensitive Information to an unauthorized actor even if RocketMQ is enabled with authentication and authorization functions.\n\nAn attacker, possessing regular user privileges or listed in the IP whitelist, could potentially acquire the administrator's account and password through specific interfaces. Such an action would grant them full control over RocketMQ, provided they have access to the broker IP address list.\n\nTo mitigate these security threats, it is strongly advised that users upgrade to version 5.3.0 or newer. Additionally, we recommend users to use RocketMQ ACL 2.0 instead of the original RocketMQ ACL when upgrading to version Apache RocketMQ 5.3.0.\n\n",
-    "published": "2024-07-22T10:15:02.540",
-    "keywords": "authentication,sensitive"
-  },
-  "CVE-2024-6542": {
-    "cvss": 6.5,
-    "description": "Improper neutralization of livestatus command delimiters in mknotifyd in Checkmk <= 2.0.0p39, < 2.1.0p47, < 2.2.0p32 and < 2.3.0p11 allows arbitrary livestatus command execution.",
-    "published": "2024-07-22T10:15:08.827",
-    "keywords": "execution,command"
-  },
   "CVE-2024-39601": {
     "cvss": 6.5,
     "description": "A vulnerability has been identified in CPCI85 Central Processing/Communication (All versions < V5.40), SICORE Base system (All versions < V1.4.0). Affected devices allow a remote authenticated user or an unauthenticated user with physical access to downgrade the firmware of the device. This could allow an attacker to downgrade the device to older versions with known vulnerabilities.",
