@@ -1,10 +1,4 @@
 {
-  "CVE-2024-6714": {
-    "url": "https://github.com/canonical/ubuntu-desktop-provision/commit/8d9086de0f82894ff27a9e429ff4f45231020092",
-    "cvss": 8.8,
-    "description": "An issue was discovered in provd before version 0.1.5 with a setuid binary, which allows a local attacker to escalate their privilege.",
-    "published": "2024-07-23T16:15:06.543"
-  },
   "CVE-2024-41661": {
     "cvss": 8.8,
     "description": "reNgine is an automated reconnaissance framework for web applications. In versions 1.2.0 through 2.1.1, an authenticated command injection vulnerability in the WAF detection tool allows an authenticated attacker to remotely execute arbitrary commands as root user. The URL query parameter `url` is passed to `subprocess.check_output` without any sanitization, resulting in a command injection vulnerability. This API endpoint is accessible by authenticated users with any use role. Because the process runs as `root`, an attacker has root access. Commit edd3c85ee16f93804ad38dac5602549d2d30a93e contains a patch for the issue.",
@@ -184,5 +178,29 @@
     "description": "This vulnerability exists in SyroTech SY-GPON-1110-WDONT Router due to missing HTTPOnly flag for the session cookies associated with the router's web management interface. An attacker with remote access could exploit this by intercepting transmission within an HTTP session on the vulnerable system.\n\nSuccessful exploitation of this vulnerability could allow the attacker to capture cookies and obtain sensitive information on the targeted system.",
     "published": "2024-07-26T12:15:02.977",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-41355": {
+    "url": "https://github.com/phpipam/phpipam/issues/4151",
+    "cvss": "-",
+    "description": "phpipam 1.6 is vulnerable to Cross Site Scripting (XSS) via /app/tools/request-ip/index.php.",
+    "published": "2024-07-26T16:15:03.277"
+  },
+  "CVE-2024-41356": {
+    "url": "https://github.com/phpipam/phpipam/issues/4146",
+    "cvss": "-",
+    "description": "phpipam 1.6 is vulnerable to Cross Site Scripting (XSS) via app\\admin\\firewall-zones\\zones-edit-network.php.",
+    "published": "2024-07-26T16:15:03.357"
+  },
+  "CVE-2024-41357": {
+    "url": "https://github.com/phpipam/phpipam/issues/4149",
+    "cvss": "-",
+    "description": "phpipam 1.6 is vulnerable to Cross Site Scripting (XSS) via /app/admin/powerDNS/record-edit.php.",
+    "published": "2024-07-26T16:15:03.427"
+  },
+  "CVE-2024-7050": {
+    "cvss": "-",
+    "description": "Improper Authentication vulnerability in OpenText OpenText Directory Services may allow Multi-factor Authentication Bypass in particular scenarios.This issue affects OpenText Directory Services: 24.2.",
+    "published": "2024-07-26T16:15:03.847",
+    "keywords": "authentication,bypass"
   }
 }
