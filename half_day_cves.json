@@ -66,7 +66,7 @@
     "published": "2024-07-24T16:15:07.087"
   },
   "CVE-2024-7079": {
-    "cvss": 6.5,
+    "cvss": 7.1,
     "description": "A flaw was found in the Openshift console. The /API/helm/verify endpoint is tasked to fetch and verify the installation of a Helm chart from a URI that is remote HTTP/HTTPS or local. Access to this endpoint is gated by the authHandlerWithUser() middleware function. Contrary to its name, this middleware function does not verify the validity of the user's credentials. As a result, unauthenticated users can access this endpoint.",
     "published": "2024-07-24T16:15:07.613",
     "keywords": "remote,unauthenticated"
