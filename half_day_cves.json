@@ -220,5 +220,17 @@
     "cvss": 5.8,
     "description": "SPX (aka php-spx) through 0.4.15 allows SPX_UI_URI Directory Traversal to read arbitrary files.",
     "published": "2024-07-26T19:15:10.917"
+  },
+  "CVE-2024-41112": {
+    "cvss": 9.8,
+    "description": "streamlit-geospatial is a streamlit multipage app for geospatial applications. Prior to commit c4f81d9616d40c60584e36abb15300853a66e489, the palette variable in `pages/1_\ud83d\udcf7_Timelapse.py` takes user input, which is later used in the `eval()` function on line 380, leading to remote code execution. Commit c4f81d9616d40c60584e36abb15300853a66e489 fixes this issue.",
+    "published": "2024-07-26T20:15:05.237",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-41113": {
+    "cvss": 9.8,
+    "description": "streamlit-geospatial is a streamlit multipage app for geospatial applications. Prior to commit c4f81d9616d40c60584e36abb15300853a66e489, the `vis_params` variable on line 383 or line 390 in `pages/1_\ud83d\udcf7_Timelapse.py` takes user input, which is later used in the `eval()` function on line 395, leading to remote code execution. Commit c4f81d9616d40c60584e36abb15300853a66e489 fixes this issue.",
+    "published": "2024-07-26T20:15:05.560",
+    "keywords": "remote,execution"
   }
 }
