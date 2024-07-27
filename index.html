@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-27T16:11:55.452196
+Updated at UTC 2024-07-27T17:08:58.685134
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -234,20 +234,6 @@ Updated at UTC 2024-07-27T16:11:55.452196
 		
 			
 		
-			
-		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40422">CVE-2024-40422</a></td>
-					<td>9.1</td>
-					<td><a target=_blank href="https://github.com/stitionai/devika/pull/619">https://github.com/stitionai/devika/pull/619</a></td>
-					<td class=date>2024-07-24T16:15:07.087</td>
-					<td class=description>The snapshot_path parameter in the /api/get-browser-snapshot endpoint in stitionai devika v1 is susceptible to a path traversal attack. An attacker can manipulate the snapshot_path parameter to traverse directories and access sensitive files on the server. This can potentially lead to unauthorized access to critical system files and compromise the confidentiality and integrity of the system.</td>
-
-
-				</tr>
 			
 		
 
@@ -563,18 +549,6 @@ Successful exploitation of this vulnerability could allow the attacker to captur
 					<td class=date>2024-07-24T17:15:11.310</td>
 					<td class=description>VNote is a note-taking platform. A Cross-Site Scripting (XSS) vulnerability has been identified in the Markdown rendering functionality of versions 3.18.1 and prior of the VNote note-taking application. This vulnerability allows the injection and execution of arbitrary JavaScript code through which remote code execution can be achieved. A patch for this issue is available at commit f1af78573a0ef51d6ef6a0bc4080cddc8f30a545. Other mitigation strategies include implementing rigorous input sanitization for all Markdown content and utilizing a secure Markdown parser that appropriately escapes or strips potentially dangerous content.</td>
 				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7079">CVE-2024-7079</a></td>
-					<td>7.1</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-07-24T16:15:07.613</td>
-					<td class=description>A flaw was found in the Openshift console. The /API/helm/verify endpoint is tasked to fetch and verify the installation of a Helm chart from a URI that is remote HTTP/HTTPS or local. Access to this endpoint is gated by the authHandlerWithUser() middleware function. Contrary to its name, this middleware function does not verify the validity of the user's credentials. As a result, unauthenticated users can access this endpoint.</td>
-				</tr>
-			
-		
 			
 		
 
