@@ -1,16 +1,4 @@
 {
-  "CVE-2024-6756": {
-    "cvss": 8.8,
-    "description": "The Social Auto Poster plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'wpw_auto_poster_get_image_path' function in all versions up to, and including, 5.3.14. This makes it possible for authenticated attackers, with Contributor-level and above permissions, to upload arbitrary files on the affected site's server which may make remote code execution possible. An attacker can use CVE-2024-6754 to exploit with subscriber-level access.",
-    "published": "2024-07-24T03:15:04.897",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-7027": {
-    "cvss": 7.3,
-    "description": "The WooCommerce - PDF Vouchers plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 4.9.3. This is due to insufficient verification on the user being supplied during a QR code login through the plugin. This makes it possible for unauthenticated attackers to log in as any existing Voucher Vendor user on the site, if they have access to the user id.",
-    "published": "2024-07-24T03:15:05.117",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
   "CVE-2024-39676": {
     "cvss": "-",
     "description": "Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Apache Pinot.\n\nThis issue affects Apache Pinot: from 0.1 before 1.0.0.\n\nUsers are recommended to upgrade to version 1.0.0\u00a0and configure RBAC, which fixes the issue.\n\nDetails:\u00a0\n\nWhen using a request to path \u201c/appconfigs\u201d to the controller, it can lead to the disclosure of sensitive information such as system information (e.g. arch, os version), environment information (e.g. maxHeapSize) and Pinot configurations (e.g. zookeeper path). This issue was addressed by the  Role-based Access Control https://docs.pinot.apache.org/operators/tutorials/authentication/basic-auth-access-control , so that /appConfigs` and all other APIs can be access controlled. Only authorized users have access to it. Note the user needs to add the admin role accordingly to the RBAC guide to control access to this endpoint, and in the future version of Pinot, a default admin role is planned to be added.\n\n",

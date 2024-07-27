@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-27T03:12:33.249879
+Updated at UTC 2024-07-27T04:11:46.636833
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -258,10 +258,6 @@ Updated at UTC 2024-07-27T03:12:33.249879
 
 
 				</tr>
-			
-		
-			
-		
 			
 		
 			
@@ -626,26 +622,6 @@ Details: 
 When using a request to path “/appconfigs” to the controller, it can lead to the disclosure of sensitive information such as system information (e.g. arch, os version), environment information (e.g. maxHeapSize) and Pinot configurations (e.g. zookeeper path). This issue was addressed by the  Role-based Access Control https://docs.pinot.apache.org/operators/tutorials/authentication/basic-auth-access-control , so that /appConfigs` and all other APIs can be access controlled. Only authorized users have access to it. Note the user needs to add the admin role accordingly to the RBAC guide to control access to this endpoint, and in the future version of Pinot, a default admin role is planned to be added.
 
 </td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7027">CVE-2024-7027</a></td>
-					<td>7.3</td>
-					<td>unauthenticated,authentication,bypass</td>
-					<td class=date>2024-07-24T03:15:05.117</td>
-					<td class=description>The WooCommerce - PDF Vouchers plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 4.9.3. This is due to insufficient verification on the user being supplied during a QR code login through the plugin. This makes it possible for unauthenticated attackers to log in as any existing Voucher Vendor user on the site, if they have access to the user id.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6756">CVE-2024-6756</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-07-24T03:15:04.897</td>
-					<td class=description>The Social Auto Poster plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'wpw_auto_poster_get_image_path' function in all versions up to, and including, 5.3.14. This makes it possible for authenticated attackers, with Contributor-level and above permissions, to upload arbitrary files on the affected site's server which may make remote code execution possible. An attacker can use CVE-2024-6754 to exploit with subscriber-level access.</td>
 				</tr>
 			
 		
