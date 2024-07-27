@@ -268,5 +268,11 @@
     "cvss": 9.8,
     "description": "streamlit-geospatial is a streamlit multipage app for geospatial applications. Prior to commit c4f81d9616d40c60584e36abb15300853a66e489, the `url` variable on line 63 of `pages/9_\ud83d\udd32_Vector_Data_Visualization.py` takes user input, which is later passed to the `gpd.read_file` method. `gpd.read_file` method creates a request to arbitrary destinations, leading to blind server-side request forgery. Commit c4f81d9616d40c60584e36abb15300853a66e489 fixes this issue.",
     "published": "2024-07-26T21:15:14.070"
+  },
+  "CVE-2024-6431": {
+    "cvss": 8.8,
+    "description": "The Media.net Ads Manager plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation and missing capability check in the 'sendMail' function in all versions up to, and including, 2.10.13. This makes it possible for authenticated attackers, with subscriber-level and above permissions, to upload arbitrary files on the affected site's server which may make remote code execution possible. The vulnerability is only exploitable if anyone has ever logged in through the API.",
+    "published": "2024-07-27T02:15:10.677",
+    "keywords": "remote,execution"
   }
 }
