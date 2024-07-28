@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-28T15:09:26.287165
+Updated at UTC 2024-07-28T16:12:36.708287
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-07-28T15:09:26.287165
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -222,20 +224,18 @@ Updated at UTC 2024-07-28T15:09:26.287165
 		
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41806">CVE-2024-41806</a></td>
-					<td>5.3</td>
-					<td><a target=_blank href="https://github.com/openedx/edx-platform/commit/cb729a3ced0404736dfa0ae768526c82b608657b">https://github.com/openedx/edx-platform/commit/cb729a3ced0404736dfa0ae768526c82b608657b</a></td>
-					<td class=date>2024-07-25T15:15:11.210</td>
-					<td class=description>The Open edX Platform is a learning management platform. Instructors can upload csv files containing learner information to create cohorts in the instructor dashboard. These files are uploaded using the django default storage. With certain storage backends, uploads may become publicly available when the uploader uses versions master, palm, olive, nutmeg, maple, lilac, koa, or juniper. The patch in commit cb729a3ced0404736dfa0ae768526c82b608657b ensures that cohorts data uploaded to AWS S3 buckets is written with a private ACL. Beyond patching, deployers should also ensure that existing cohorts uploads have a private ACL, or that other precautions are taken to avoid public access.</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7160">CVE-2024-7160</a></td>
+					<td>6.3</td>
+					<td>remote,command</td>
+					<td class=date>2024-07-28T15:15:10.163</td>
+					<td class=description>A vulnerability classified as critical has been found in TOTOLINK A3700R 9.1.2u.5822_B20200513. Affected is the function setWanCfg of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument hostName leads to command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-272574 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -477,8 +477,6 @@ Successful exploitation of this vulnerability could allow the attacker to captur
 					<td class=date>2024-07-25T16:15:04.720</td>
 					<td class=description>A vulnerability, which was classified as critical, has been found in ForIP Tecnologia Administração PABX 1.x. This issue affects some unknown processing of the file /login of the component Authentication Form. The manipulation of the argument usuario leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-272423. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
 				</tr>
-			
-		
 			
 		
 
