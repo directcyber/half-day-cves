@@ -1,10 +1,4 @@
 {
-  "CVE-2024-42007": {
-    "url": "https://github.com/noisebynorthwest/php-spx/issues/251",
-    "cvss": 5.8,
-    "description": "SPX (aka php-spx) through 0.4.15 allows SPX_UI_URI Directory Traversal to read arbitrary files.",
-    "published": "2024-07-26T19:15:10.917"
-  },
   "CVE-2024-41112": {
     "cvss": 9.8,
     "description": "streamlit-geospatial is a streamlit multipage app for geospatial applications. Prior to commit c4f81d9616d40c60584e36abb15300853a66e489, the palette variable in `pages/1_?_Timelapse.py` takes user input, which is later used in the `eval()` function on line 380, leading to remote code execution. Commit c4f81d9616d40c60584e36abb15300853a66e489 fixes this issue.",
@@ -196,5 +190,11 @@
     "description": "Versions of Delphix Engine prior to Release 25.0.0.0 contain a flaw which results in Remote Code Execution (RCE).",
     "published": "2024-07-29T18:15:12.433",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-28806": {
+    "cvss": "-",
+    "description": "An issue was discovered in Italtel i-MCS NFV 12.1.0-20211215. Remote unauthenticated attackers can upload files at an arbitrary path.",
+    "published": "2024-07-29T19:15:12.050",
+    "keywords": "remote,unauthenticated"
   }
 }
