@@ -142,5 +142,11 @@
     "description": "An issue was discovered in Italtel i-MCS NFV 12.1.0-20211215. Remote unauthenticated attackers can upload files at an arbitrary path.",
     "published": "2024-07-29T19:15:12.050",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-3219": {
+    "url": "https://github.com/python/cpython/pull/122134",
+    "cvss": "-",
+    "description": "There is a MEDIUM severity vulnerability affecting CPython.\n\nThe\n \u201csocket\u201d module provides a pure-Python fallback to the \nsocket.socketpair() function for platforms that don\u2019t support AF_UNIX, \nsuch as Windows. This pure-Python implementation uses AF_INET or \nAF_INET6 to create a local connected pair of sockets. The connection \nbetween the two sockets was not verified before passing the two sockets \nback to the user, which leaves the server socket vulnerable to a \nconnection race from a malicious local peer.\n\nPlatforms that support AF_UNIX such as Linux and macOS are not affected by this vulnerability. Versions prior to CPython 3.5 are not affected due to the vulnerable API not being included.",
+    "published": "2024-07-29T22:15:04.970"
   }
 }
