@@ -202,5 +202,17 @@
     "description": "The login functionality of WinMatrix3 Web package from Simopro Technology lacks proper validation of user input, allowing unauthenticated remote attackers to inject SQL commands to read, modify, and delete database contents.",
     "published": "2024-07-29T03:15:03.267",
     "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2024-7181": {
+    "cvss": 6.3,
+    "description": "A vulnerability classified as critical was found in TOTOLINK A3600R 4.1.2cu.5182_B20201102. This vulnerability affects the function setTelnetCfg of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument telnet_enabled leads to command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-272602 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-07-29T04:15:02.087",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-7202": {
+    "cvss": 9.8,
+    "description": "The query functionality of WinMatrix3 Web package from Simopro Technology lacks proper validation of user input, allowing unauthenticated remote attackers to inject SQL commands to read, modify, and delete database contents.",
+    "published": "2024-07-29T04:15:02.807",
+    "keywords": "remote,unauthenticated,command"
   }
 }
