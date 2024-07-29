@@ -1,16 +1,4 @@
 {
-  "CVE-2024-41112": {
-    "cvss": 9.8,
-    "description": "streamlit-geospatial is a streamlit multipage app for geospatial applications. Prior to commit c4f81d9616d40c60584e36abb15300853a66e489, the palette variable in `pages/1_?_Timelapse.py` takes user input, which is later used in the `eval()` function on line 380, leading to remote code execution. Commit c4f81d9616d40c60584e36abb15300853a66e489 fixes this issue.",
-    "published": "2024-07-26T20:15:05.237",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-41113": {
-    "cvss": 9.8,
-    "description": "streamlit-geospatial is a streamlit multipage app for geospatial applications. Prior to commit c4f81d9616d40c60584e36abb15300853a66e489, the `vis_params` variable on line 383 or line 390 in `pages/1_?_Timelapse.py` takes user input, which is later used in the `eval()` function on line 395, leading to remote code execution. Commit c4f81d9616d40c60584e36abb15300853a66e489 fixes this issue.",
-    "published": "2024-07-26T20:15:05.560",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-41114": {
     "cvss": 9.8,
     "description": "streamlit-geospatial is a streamlit multipage app for geospatial applications. Prior to commit c4f81d9616d40c60584e36abb15300853a66e489, the `palette` variable on line 430 in `pages/1_?_Timelapse.py` takes user input, which is later used in the `eval()` function on line 435, leading to remote code execution. Commit c4f81d9616d40c60584e36abb15300853a66e489 fixes this issue.",
