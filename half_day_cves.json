@@ -160,5 +160,11 @@
     "description": "This issue was addressed by adding an additional prompt for user consent. This issue is fixed in macOS Sonoma 14.6, macOS Monterey 12.7.6, macOS Ventura 13.6.8. A shortcut may be able to bypass sensitive Shortcuts app settings.",
     "published": "2024-07-29T23:15:14.413",
     "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-7214": {
+    "cvss": 6.3,
+    "description": "A vulnerability has been found in TOTOLINK LR350 9.3.5u.6369_B20220309 and classified as critical. Affected by this vulnerability is the function setWanCfg of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument hostName leads to command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-272785 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-07-30T03:15:02.127",
+    "keywords": "remote,command"
   }
 }
