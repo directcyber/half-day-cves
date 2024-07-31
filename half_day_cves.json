@@ -1,16 +1,4 @@
 {
-  "CVE-2024-7161": {
-    "url": "https://github.com/huaqipro/seacms/issues/30",
-    "cvss": 4.3,
-    "description": "A vulnerability classified as problematic was found in SeaCMS 13.0. Affected by this vulnerability is an unknown functionality of the file /member.php?action=chgpwdsubmit of the component Password Change Handler. The manipulation of the argument newpwd/newpwd2 leads to cross-site request forgery. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-272575.",
-    "published": "2024-07-28T16:15:02.047"
-  },
-  "CVE-2024-7162": {
-    "url": "https://github.com/huaqipro/seacms/issues/29",
-    "cvss": 3.5,
-    "description": "A vulnerability, which was classified as problematic, has been found in SeaCMS 12.9/13.0. Affected by this issue is some unknown functionality of the file js/player/dmplayer/admin/post.php?act=setting. The manipulation of the argument yzm leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-272576.",
-    "published": "2024-07-28T16:15:02.347"
-  },
   "CVE-2024-7163": {
     "url": "https://github.com/huaqipro/seacms/issues/28",
     "cvss": 3.5,
@@ -178,5 +166,29 @@
     "description": "The Weave server API allows remote users to fetch files from a specific directory, but due to a lack of input validation, it is possible to traverse and leak arbitrary files remotely. In various common scenarios, this allows a low-privileged user to assume the role of the server admin.",
     "published": "2024-07-31T15:15:11.203",
     "keywords": "remote,leak"
+  },
+  "CVE-2024-37898": {
+    "url": "https://github.com/xwiki/xwiki-platform/commit/e4968fe268e5644ffd9bfa4ef6257d2796446009",
+    "cvss": 4.3,
+    "description": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. When a user has view but not edit right on a page in XWiki, that user can delete the page and replace it by a page with new content without having delete right. The previous version of the page is moved into the recycle bin and can be restored from there by an admin. As the user is recorded as deleter, the user would in theory also be able to view the deleted content, but this is not directly possible as rights of the previous version are transferred to the new page and thus the user still doesn't have view right on the page. It therefore doesn't seem to be possible to exploit this to gain any rights. This has been patched in XWiki 14.10.21, 15.5.5 and 15.10.6 by cancelling save operations by users when a new document shall be saved despite the document's existing already.",
+    "published": "2024-07-31T16:15:03.197"
+  },
+  "CVE-2024-37901": {
+    "cvss": 9.9,
+    "description": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. Any user with edit right on any page can perform arbitrary remote code execution by adding instances of `XWiki.SearchSuggestConfig` and `XWiki.SearchSuggestSourceClass` to their user profile or any other page. This compromises the confidentiality, integrity and availability of the whole XWiki installation. This vulnerability has been patched in XWiki 14.10.21, 15.5.5 and 15.10.2.",
+    "published": "2024-07-31T16:15:03.683",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-41947": {
+    "url": "https://github.com/xwiki/xwiki-platform/commit/e00e159d3737397eebd1f6ff925c1f5cb7cdec34",
+    "cvss": 9.0,
+    "description": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. By creating a conflict when another user with more rights is currently editing a page, it is possible to execute JavaScript snippets on the side of the other user, which compromises the confidentiality, integrity and availability of the whole XWiki installation. This has been patched in XWiki 15.10.8 and 16.3.0RC1.",
+    "published": "2024-07-31T16:15:04.540"
+  },
+  "CVE-2024-41950": {
+    "cvss": 7.5,
+    "description": "Haystack is an end-to-end LLM framework that allows you to build applications powered by LLMs, Transformer models, vector search and more. Haystack clients that let their users create and run Pipelines from scratch are vulnerable to remote code executions. Certain Components in Haystack use Jinja2 templates, if anyone can create and render that template on the client machine they run any code. The vulnerability has been fixed with Haystack `2.3.1`.",
+    "published": "2024-07-31T16:15:04.797",
+    "keywords": "remote,execution"
   }
 }

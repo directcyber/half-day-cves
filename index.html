@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-31T16:12:11.933798
+Updated at UTC 2024-07-31T17:10:17.283851
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,34 @@ Updated at UTC 2024-07-31T16:12:11.933798
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41947">CVE-2024-41947</a></td>
+					<td>9.0</td>
+					<td><a target=_blank href="https://github.com/xwiki/xwiki-platform/commit/e00e159d3737397eebd1f6ff925c1f5cb7cdec34">https://github.com/xwiki/xwiki-platform/commit/e00e159d3737397eebd1f6ff925c1f5cb7cdec34</a></td>
+					<td class=date>2024-07-31T16:15:04.540</td>
+					<td class=description>XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. By creating a conflict when another user with more rights is currently editing a page, it is possible to execute JavaScript snippets on the side of the other user, which compromises the confidentiality, integrity and availability of the whole XWiki installation. This has been patched in XWiki 15.10.8 and 16.3.0RC1.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37898">CVE-2024-37898</a></td>
+					<td>4.3</td>
+					<td><a target=_blank href="https://github.com/xwiki/xwiki-platform/commit/e4968fe268e5644ffd9bfa4ef6257d2796446009">https://github.com/xwiki/xwiki-platform/commit/e4968fe268e5644ffd9bfa4ef6257d2796446009</a></td>
+					<td class=date>2024-07-31T16:15:03.197</td>
+					<td class=description>XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. When a user has view but not edit right on a page in XWiki, that user can delete the page and replace it by a page with new content without having delete right. The previous version of the page is moved into the recycle bin and can be restored from there by an admin. As the user is recorded as deleter, the user would in theory also be able to view the deleted content, but this is not directly possible as rights of the previous version are transferred to the new page and thus the user still doesn't have view right on the page. It therefore doesn't seem to be possible to exploit this to gain any rights. This has been patched in XWiki 14.10.21, 15.5.5 and 15.10.6 by cancelling save operations by users when a new document shall be saved despite the document's existing already.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -155,32 +183,32 @@ Platforms that support AF_UNIX such as Linux and macOS are not affected by this 
 				</tr>
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7162">CVE-2024-7162</a></td>
-					<td>3.5</td>
-					<td><a target=_blank href="https://github.com/huaqipro/seacms/issues/29">https://github.com/huaqipro/seacms/issues/29</a></td>
-					<td class=date>2024-07-28T16:15:02.347</td>
-					<td class=description>A vulnerability, which was classified as problematic, has been found in SeaCMS 12.9/13.0. Affected by this issue is some unknown functionality of the file js/player/dmplayer/admin/post.php?act=setting. The manipulation of the argument yzm leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-272576.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7161">CVE-2024-7161</a></td>
-					<td>4.3</td>
-					<td><a target=_blank href="https://github.com/huaqipro/seacms/issues/30">https://github.com/huaqipro/seacms/issues/30</a></td>
-					<td class=date>2024-07-28T16:15:02.047</td>
-					<td class=description>A vulnerability classified as problematic was found in SeaCMS 13.0. Affected by this vulnerability is an unknown functionality of the file /member.php?action=chgpwdsubmit of the component Password Change Handler. The manipulation of the argument newpwd/newpwd2 leads to cross-site request forgery. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-272575.</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41950">CVE-2024-41950</a></td>
+					<td>7.5</td>
+					<td>remote,execution</td>
+					<td class=date>2024-07-31T16:15:04.797</td>
+					<td class=description>Haystack is an end-to-end LLM framework that allows you to build applications powered by LLMs, Transformer models, vector search and more. Haystack clients that let their users create and run Pipelines from scratch are vulnerable to remote code executions. Certain Components in Haystack use Jinja2 templates, if anyone can create and render that template on the client machine they run any code. The vulnerability has been fixed with Haystack `2.3.1`.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37901">CVE-2024-37901</a></td>
+					<td>9.9</td>
+					<td>remote,execution</td>
+					<td class=date>2024-07-31T16:15:03.683</td>
+					<td class=description>XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. Any user with edit right on any page can perform arbitrary remote code execution by adding instances of `XWiki.SearchSuggestConfig` and `XWiki.SearchSuggestSourceClass` to their user profile or any other page. This compromises the confidentiality, integrity and availability of the whole XWiki installation. This vulnerability has been patched in XWiki 14.10.21, 15.5.5 and 15.10.2.</td>
+				</tr>
+			
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -476,10 +504,6 @@ reference count is properly decremented when the timer is canceled.</td>
 					<td class=date>2024-07-28T23:15:09.837</td>
 					<td class=description>A vulnerability classified as critical has been found in TOTOLINK A3600R 4.1.2cu.5182_B20201102. Affected is the function NTPSyncWithHost of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument hostTime leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-272592. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
 				</tr>
-			
-		
-			
-		
 			
 		
 			
