@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-07-31T15:10:05.819099
+Updated at UTC 2024-07-31T16:12:11.933798
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-07-31T15:10:05.819099
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -177,10 +179,18 @@ Platforms that support AF_UNIX such as Linux and macOS are not affected by this 
 				</tr>
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7340">CVE-2024-7340</a></td>
+					<td>8.8</td>
+					<td>remote,leak</td>
+					<td class=date>2024-07-31T15:15:11.203</td>
+					<td class=description>The Weave server API allows remote users to fetch files from a specific directory, but due to a lack of input validation, it is possible to traverse and leak arbitrary files remotely. In various common scenarios, this allows a low-privileged user to assume the role of the server admin.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -472,16 +482,6 @@ reference count is properly decremented when the timer is canceled.</td>
 		
 			
 		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7160">CVE-2024-7160</a></td>
-					<td>6.3</td>
-					<td>remote,command</td>
-					<td class=date>2024-07-28T15:15:10.163</td>
-					<td class=description>A vulnerability classified as critical has been found in TOTOLINK A3700R 9.1.2u.5822_B20200513. Affected is the function setWanCfg of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument hostName leads to command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-272574 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-				</tr>
 			
 		
 

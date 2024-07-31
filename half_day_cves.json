@@ -1,10 +1,4 @@
 {
-  "CVE-2024-7160": {
-    "cvss": 6.3,
-    "description": "A vulnerability classified as critical has been found in TOTOLINK A3700R 9.1.2u.5822_B20200513. Affected is the function setWanCfg of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument hostName leads to command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-272574 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2024-07-28T15:15:10.163",
-    "keywords": "remote,command"
-  },
   "CVE-2024-7161": {
     "url": "https://github.com/huaqipro/seacms/issues/30",
     "cvss": 4.3,
@@ -178,5 +172,11 @@
     "description": "In D-Link DIR-860L REVA FIRMWARE PATCH 1.10..B04, the Telnet service contains hardcoded credentials, enabling attackers to log in remotely to the Telnet service and perform arbitrary commands.",
     "published": "2024-07-30T20:15:04.810",
     "keywords": "remote,command"
+  },
+  "CVE-2024-7340": {
+    "cvss": 8.8,
+    "description": "The Weave server API allows remote users to fetch files from a specific directory, but due to a lack of input validation, it is possible to traverse and leak arbitrary files remotely. In various common scenarios, this allows a low-privileged user to assume the role of the server admin.",
+    "published": "2024-07-31T15:15:11.203",
+    "keywords": "remote,leak"
   }
 }
