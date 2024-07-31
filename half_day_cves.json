@@ -185,10 +185,22 @@
     "published": "2024-07-31T16:15:04.797",
     "keywords": "remote,execution"
   },
+  "CVE-2024-6973": {
+    "cvss": 7.5,
+    "description": "Remote Code Execution in Cato Windows SDP client via crafted URLs.\nThis issue affects Windows SDP Client before 5.10.34.",
+    "published": "2024-07-31T17:15:11.153",
+    "keywords": "remote,execution"
+  },
   "CVE-2024-6977": {
     "cvss": 6.5,
     "description": "A vulnerability in Cato Networks SDP Client on Windows allows the insertion of sensitive information into the log file, which can lead to an account takeover. However, the attack requires bypassing protections on modifying the tunnel token on a the attacker's system.This issue affects SDP Client: before 5.10.34.",
     "published": "2024-07-31T17:15:11.860",
     "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-41955": {
+    "url": "https://github.com/mobsf/mobile-security-framework-mobsf/commit/fdaad81314f393d324c1ede79627e9d47986c8c8",
+    "cvss": 5.2,
+    "description": "Mobile Security Framework (MobSF) is a security research platform for mobile applications in Android, iOS and Windows Mobile. An open redirect vulnerability exist in MobSF authentication view. Update to MobSF v4.0.5.",
+    "published": "2024-07-31T20:15:06.793"
   }
 }
