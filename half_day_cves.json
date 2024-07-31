@@ -1,10 +1,4 @@
 {
-  "CVE-2024-7163": {
-    "url": "https://github.com/huaqipro/seacms/issues/28",
-    "cvss": 3.5,
-    "description": "A vulnerability, which was classified as problematic, was found in SeaCMS 12.9. This affects an unknown part of the file /js/player/dmplayer/player/index.php. The manipulation of the argument color/vid/url leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-272577 was assigned to this vulnerability.",
-    "published": "2024-07-28T17:15:09.797"
-  },
   "CVE-2024-7171": {
     "cvss": 6.3,
     "description": "A vulnerability classified as critical has been found in TOTOLINK A3600R 4.1.2cu.5182_B20201102. Affected is the function NTPSyncWithHost of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument hostTime leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-272592. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
@@ -190,5 +184,11 @@
     "description": "Haystack is an end-to-end LLM framework that allows you to build applications powered by LLMs, Transformer models, vector search and more. Haystack clients that let their users create and run Pipelines from scratch are vulnerable to remote code executions. Certain Components in Haystack use Jinja2 templates, if anyone can create and render that template on the client machine they run any code. The vulnerability has been fixed with Haystack `2.3.1`.",
     "published": "2024-07-31T16:15:04.797",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-6977": {
+    "cvss": 6.5,
+    "description": "A vulnerability in Cato Networks SDP Client on Windows allows the insertion of sensitive information into the log file, which can lead to an account takeover. However, the attack requires bypassing protections on modifying the tunnel token on a the attacker's system.This issue affects SDP Client: before 5.10.34.",
+    "published": "2024-07-31T17:15:11.860",
+    "keywords": "sensitive,bypass"
   }
 }
