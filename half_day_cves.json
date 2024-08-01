@@ -72,19 +72,19 @@
     "keywords": "remote,command"
   },
   "CVE-2024-1286": {
-    "cvss": "-",
+    "cvss": 6.5,
     "description": "The pmpro-membership-maps WordPress plugin before 0.7 does not prevent users with at least the contributor role from leaking sensitive information about users with a membership on the site.",
     "published": "2024-07-30T06:15:01.777",
     "keywords": "sensitive,leak"
   },
   "CVE-2024-1287": {
-    "cvss": "-",
+    "cvss": 6.5,
     "description": "The pmpro-member-directory WordPress plugin before 1.2.6 does not prevent users with at least the contributor role from leaking other users' sensitive information, including password hashes.",
     "published": "2024-07-30T06:15:02.210",
     "keywords": "sensitive,leak"
   },
   "CVE-2024-40895": {
-    "cvss": "-",
+    "cvss": 6.4,
     "description": "FFRI AMC versions 3.4.0 to 3.5.3 and some OEM products that implement/bundle FFRI AMC versions 3.4.0 to 3.5.3 allow a remote unauthenticated attacker to execute arbitrary OS commands when certain conditions are met in an environment where the notification program setting is enabled and the executable file path is set to a batch file (.bat) or command file (.cmd) extension.",
     "published": "2024-07-30T09:15:03.987",
     "keywords": "remote,unauthenticated,command"
@@ -96,13 +96,13 @@
     "keywords": "remote,sensitive"
   },
   "CVE-2024-41610": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "D-Link DIR-820LW REVB FIRMWARE PATCH 2.03.B01_TC contains hardcoded credentials in the Telnet service, enabling attackers to log in remotely to the Telnet service and perform arbitrary commands.",
     "published": "2024-07-30T20:15:04.713",
     "keywords": "remote,command"
   },
   "CVE-2024-41611": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "In D-Link DIR-860L REVA FIRMWARE PATCH 1.10..B04, the Telnet service contains hardcoded credentials, enabling attackers to log in remotely to the Telnet service and perform arbitrary commands.",
     "published": "2024-07-30T20:15:04.810",
     "keywords": "remote,command"
@@ -172,5 +172,11 @@
     "description": "Dell InsightIQ, Verion 5.0.0, contains a use of a broken or risky cryptographic algorithm vulnerability. An unauthenticated remote attacker could potentially exploit this vulnerability, leading to information disclosure.",
     "published": "2024-08-01T08:15:02.520",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-7357": {
+    "cvss": 6.3,
+    "description": "** UNSUPPORTED WHEN ASSIGNED ** A vulnerability was found in D-Link DIR-600 up to 2.18. It has been rated as critical. This issue affects the function soapcgi_main of the file /soap.cgi. The manipulation of the argument service leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-273329 was assigned to this vulnerability. NOTE: This vulnerability only affects products that are no longer supported by the maintainer. NOTE: Vendor was contacted early and confirmed immediately that the product is end-of-life. It should be retired and replaced.",
+    "published": "2024-08-01T13:15:10.950",
+    "keywords": "remote,command"
   }
 }
