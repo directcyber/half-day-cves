@@ -1,10 +1,4 @@
 {
-  "CVE-2024-7171": {
-    "cvss": 6.3,
-    "description": "A vulnerability classified as critical has been found in TOTOLINK A3600R 4.1.2cu.5182_B20201102. Affected is the function NTPSyncWithHost of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument hostTime leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-272592. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2024-07-28T23:15:09.837",
-    "keywords": "remote,command"
-  },
   "CVE-2024-7175": {
     "cvss": 6.3,
     "description": "A vulnerability has been found in TOTOLINK A3600R 4.1.2cu.5182_B20201102 and classified as critical. This vulnerability affects the function setDiagnosisCfg of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument ipDoamin leads to os command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-272596. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
@@ -202,5 +196,11 @@
     "cvss": 5.2,
     "description": "Mobile Security Framework (MobSF) is a security research platform for mobile applications in Android, iOS and Windows Mobile. An open redirect vulnerability exist in MobSF authentication view. Update to MobSF v4.0.5.",
     "published": "2024-07-31T20:15:06.793"
+  },
+  "CVE-2024-38182": {
+    "cvss": 9.0,
+    "description": "Weak authentication in Microsoft Dynamics 365 allows an unauthenticated attacker to elevate privileges over a network.",
+    "published": "2024-07-31T23:15:13.560",
+    "keywords": "unauthenticated,authentication"
   }
 }
