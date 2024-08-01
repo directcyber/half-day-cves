@@ -160,5 +160,17 @@
     "cvss": "-",
     "description": "Concrete CMS versions 9.0.0 through 9.3.2 are affected by a stored XSS vulnerability in the generate dashboard board\ninstance functionality. The Name input field does not check the input sufficiently letting a rogue administrator hav the capability to inject malicious\nJavaScript code. The Concrete CMS security team gave this vulnerability a CVSS v3.1 score of 3.1 with a vector of  AV:N/AC:H/PR:H/UI:R/S:U/C:L/I:L/A:N https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator \u00a0and a CVSS v4 score of 1.8 with a vector of CVSS:4.0/AV:N/AC:H/AT:N/PR:H/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N Thanks fhAnso for reporting.",
     "published": "2024-08-01T19:15:52.313"
+  },
+  "CVE-2024-38770": {
+    "cvss": 9.8,
+    "description": "Improper Privilege Management vulnerability in Revmakx Backup and Staging by WP Time Capsule allows Privilege Escalation, Authentication Bypass.This issue affects Backup and Staging by WP Time Capsule: from n/a through 1.22.20.",
+    "published": "2024-08-01T21:15:27.880",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-7093": {
+    "cvss": "-",
+    "description": "Dispatch's notification service uses Jinja templates to generate messages to users. Jinja permits code execution within blocks, which were neither properly sanitized nor sandboxed. This vulnerability enables users to construct command line scripts in their custom message templates, which are then executed whenever these notifications are rendered and sent out.",
+    "published": "2024-08-01T21:16:05.100",
+    "keywords": "execution,command"
   }
 }
