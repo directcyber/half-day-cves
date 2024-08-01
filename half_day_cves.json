@@ -1,10 +1,4 @@
 {
-  "CVE-2024-6984": {
-    "cvss": 8.8,
-    "description": "An issue was discovered in Juju that resulted in the leak of the sensitive context ID, which allows a local unprivileged attacker to access other sensitive data or relation accessible to the local charm.",
-    "published": "2024-07-29T14:15:04.477",
-    "keywords": "sensitive,leak"
-  },
   "CVE-2024-38529": {
     "cvss": 9.0,
     "description": "Admidio is a free, open source user management system for websites of organizations and groups. In Admidio before version 4.3.10, there is a Remote Code Execution Vulnerability in the Message module of the Admidio Application, where it is possible to upload a PHP file in the attachment. The uploaded file can be accessed publicly through the URL `{admidio_base_url}/adm_my_files/messages_attachments/{file_name}`. The vulnerability is caused due to the lack of file extension verification, allowing malicious files to be uploaded to the server and public availability of the uploaded file. This vulnerability is fixed in 4.3.10.",
@@ -162,7 +156,7 @@
     "keywords": "unauthenticated,authentication"
   },
   "CVE-2024-34021": {
-    "cvss": "-",
+    "cvss": 6.8,
     "description": "Unrestricted upload of file with dangerous type vulnerability exists in ELECOM wireless LAN routers. A specially crafted file may be uploaded to the affected product by a logged-in user with an administrative privilege, resulting in an arbitrary OS command execution.",
     "published": "2024-08-01T02:15:01.873",
     "keywords": "execution,command"
