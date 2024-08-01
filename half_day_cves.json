@@ -172,5 +172,11 @@
     "description": "Dispatch's notification service uses Jinja templates to generate messages to users. Jinja permits code execution within blocks, which were neither properly sanitized nor sandboxed. This vulnerability enables users to construct command line scripts in their custom message templates, which are then executed whenever these notifications are rendered and sent out.",
     "published": "2024-08-01T21:16:05.100",
     "keywords": "execution,command"
+  },
+  "CVE-2024-41956": {
+    "cvss": 8.1,
+    "description": "Soft Serve is a self-hostable Git server for the command line. Prior to 0.7.5, it is possible for a user who can commit files to a repository hosted by Soft Serve to execute arbitrary code via environment manipulation and Git. The issue is that Soft Serve passes all environment variables given by the client to git subprocesses. This includes environment variables that control program execution, such as LD_PRELOAD. This vulnerability is fixed in 0.7.5.",
+    "published": "2024-08-01T22:15:29.153",
+    "keywords": "execution,command"
   }
 }
