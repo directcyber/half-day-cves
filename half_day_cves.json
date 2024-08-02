@@ -1,16 +1,4 @@
 {
-  "CVE-2024-41610": {
-    "cvss": 9.8,
-    "description": "D-Link DIR-820LW REVB FIRMWARE PATCH 2.03.B01_TC contains hardcoded credentials in the Telnet service, enabling attackers to log in remotely to the Telnet service and perform arbitrary commands.",
-    "published": "2024-07-30T20:15:04.713",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-41611": {
-    "cvss": 9.8,
-    "description": "In D-Link DIR-860L REVA FIRMWARE PATCH 1.10..B04, the Telnet service contains hardcoded credentials, enabling attackers to log in remotely to the Telnet service and perform arbitrary commands.",
-    "published": "2024-07-30T20:15:04.810",
-    "keywords": "remote,command"
-  },
   "CVE-2024-7340": {
     "cvss": 8.8,
     "description": "The Weave server API allows remote users to fetch files from a specific directory, but due to a lack of input validation, it is possible to traverse and leak arbitrary files remotely. In various common scenarios, this allows a low-privileged user to assume the role of the server admin.",
@@ -226,5 +214,11 @@
     "description": "An issue in Horizon Business Services Inc. Caterease 16.0.1.1663 through 24.0.1.2405 and possibly later versions, allows a local attacker to perform an Authentication Bypass attack due to improperly implemented security checks for standard authentication mechanisms",
     "published": "2024-08-02T18:16:19.487",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-38889": {
+    "cvss": "-",
+    "description": "An issue in Horizon Business Services Inc. Caterease 16.0.1.1663 through 24.0.1.2405 and possibly later versions, allows a remote attacker to perform SQL Injection due to improper neutralization of special elements used in an SQL command.",
+    "published": "2024-08-02T20:17:00.407",
+    "keywords": "remote,command"
   }
 }
