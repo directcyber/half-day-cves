@@ -148,5 +148,29 @@
     "description": "The Forminator plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.29.1 via class-forminator-addon-hubspot-wp-api.php. This makes it possible for unauthenticated attackers to extract the HubSpot integration developer API key and make unauthorized changes to the plugin's HubSpot integration or expose personally identifiable information from plugin users using the HubSpot integration.",
     "published": "2024-08-02T05:15:51.510",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-39396": {
+    "cvss": 5.5,
+    "description": "InDesign Desktop versions ID18.5.2, ID19.3 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-08-02T07:16:09.270",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-42459": {
+    "url": "https://github.com/indutny/elliptic/pull/317",
+    "cvss": "-",
+    "description": "In the Elliptic package 6.5.6 for Node.js, EDDSA signature malleability occurs because there is a missing signature length check, and thus zero-valued bytes can be removed or appended.",
+    "published": "2024-08-02T07:16:10.003"
+  },
+  "CVE-2024-42460": {
+    "url": "https://github.com/indutny/elliptic/pull/317",
+    "cvss": "-",
+    "description": "In the Elliptic package 6.5.6 for Node.js, ECDSA signature malleability occurs because there is a missing check for whether the leading bit of r and s is zero.",
+    "published": "2024-08-02T07:16:10.120"
+  },
+  "CVE-2024-42461": {
+    "url": "https://github.com/indutny/elliptic/pull/317",
+    "cvss": "-",
+    "description": "In the Elliptic package 6.5.6 for Node.js, ECDSA signature malleability occurs because BER-encoded signatures are allowed.",
+    "published": "2024-08-02T07:16:10.230"
   }
 }
