@@ -1,10 +1,4 @@
 {
-  "CVE-2024-41915": {
-    "cvss": 7.2,
-    "description": "A vulnerability in the web-based management interface of ClearPass Policy Manager could allow an authenticated remote attacker to conduct SQL injection attacks against the ClearPass Policy Manager instance. An attacker could exploit this vulnerability to obtain and modify sensitive information in the underlying database potentially leading to complete compromise of the ClearPass Policy Manager cluster.",
-    "published": "2024-07-30T17:15:13.450",
-    "keywords": "remote,sensitive"
-  },
   "CVE-2024-41610": {
     "cvss": 9.8,
     "description": "D-Link DIR-820LW REVB FIRMWARE PATCH 2.03.B01_TC contains hardcoded credentials in the Telnet service, enabling attackers to log in remotely to the Telnet service and perform arbitrary commands.",
@@ -214,5 +208,11 @@
     "description": "Commands can be injected over the network and executed without authentication.",
     "published": "2024-08-02T15:16:37.163",
     "keywords": "authentication,command"
+  },
+  "CVE-2024-7314": {
+    "cvss": 9.8,
+    "description": "anji-plus AJ-Report is affected by an authentication bypass vulnerability. A remote and unauthenticated attacker can append \";swagger-ui\" to HTTP requests to bypass authentication and execute arbitrary Java on the victim server.",
+    "published": "2024-08-02T17:16:41.400",
+    "keywords": "remote,unauthenticated,authentication,bypass"
   }
 }
