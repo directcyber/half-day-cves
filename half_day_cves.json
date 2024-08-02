@@ -220,5 +220,23 @@
     "description": "An issue in Horizon Business Services Inc. Caterease 16.0.1.1663 through 24.0.1.2405 and possibly later versions, allows a remote attacker to perform SQL Injection due to improper neutralization of special elements used in an SQL command.",
     "published": "2024-08-02T20:17:00.407",
     "keywords": "remote,command"
+  },
+  "CVE-2024-38887": {
+    "cvss": "-",
+    "description": "An issue in Horizon Business Services Inc. Caterease 16.0.1.1663 through 24.0.1.2405 and possibly later versions, allows a remote attacker to expand control over the operating system from the database due to the execution of commands with unnecessary privileges.",
+    "published": "2024-08-02T21:16:30.760",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2024-38891": {
+    "cvss": "-",
+    "description": "An issue in Horizon Business Services Inc. Caterease 16.0.1.1663 through 24.0.1.2405 and possibly later versions, allows a remote attacker to perform a Sniffing Network Traffic attack due to the cleartext transmission of sensitive information.",
+    "published": "2024-08-02T21:16:30.853",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-7319": {
+    "cvss": 7.4,
+    "description": "An incomplete fix for CVE-2023-1625 was found in openstack-heat. Sensitive information may possibly be disclosed through the OpenStack stack abandon command with the hidden feature set to True and the CVE-2023-1625 fix applied.",
+    "published": "2024-08-02T21:16:31.180",
+    "keywords": "command,sensitive"
   }
 }
