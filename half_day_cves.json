@@ -151,7 +151,7 @@
   },
   "CVE-2024-42459": {
     "url": "https://github.com/indutny/elliptic/pull/317",
-    "cvss": "-",
+    "cvss": 5.3,
     "description": "In the Elliptic package 6.5.6 for Node.js, EDDSA signature malleability occurs because there is a missing signature length check, and thus zero-valued bytes can be removed or appended.",
     "published": "2024-08-02T07:16:10.003"
   },
@@ -202,5 +202,17 @@
     "description": "Ai3 QbiBot does not properly filter user input, allowing unauthenticated remote attackers to insert JavaScript code into the chat box. Once the recipient views the message, they will be subject to a Stored XSS attack.",
     "published": "2024-08-02T11:16:43.987",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-38890": {
+    "cvss": "-",
+    "description": "An issue in Horizon Business Services Inc. Caterease Software 16.0.1.1663 through 24.0.1.2405 and possibly later versions allows a local attacker to perform an Authentication Bypass by Capture-replay attack due to insufficient protection against capture-replay attacks.",
+    "published": "2024-08-02T15:16:35.320",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-7029": {
+    "cvss": 8.8,
+    "description": "Commands can be injected over the network and executed without authentication.",
+    "published": "2024-08-02T15:16:37.163",
+    "keywords": "authentication,command"
   }
 }
