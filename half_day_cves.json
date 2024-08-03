@@ -1,10 +1,4 @@
 {
-  "CVE-2024-7340": {
-    "cvss": 8.8,
-    "description": "The Weave server API allows remote users to fetch files from a specific directory, but due to a lack of input validation, it is possible to traverse and leak arbitrary files remotely. In various common scenarios, this allows a low-privileged user to assume the role of the server admin.",
-    "published": "2024-07-31T15:15:11.203",
-    "keywords": "remote,leak"
-  },
   "CVE-2024-37898": {
     "url": "https://github.com/xwiki/xwiki-platform/commit/e4968fe268e5644ffd9bfa4ef6257d2796446009",
     "cvss": 4.3,
