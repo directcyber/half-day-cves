@@ -1,16 +1,4 @@
 {
-  "CVE-2024-6973": {
-    "cvss": 7.5,
-    "description": "Remote Code Execution in Cato Windows SDP client via crafted URLs.\nThis issue affects Windows SDP Client before 5.10.34.",
-    "published": "2024-07-31T17:15:11.153",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-6977": {
-    "cvss": 6.5,
-    "description": "A vulnerability in Cato Networks SDP Client on Windows allows the insertion of sensitive information into the log file, which can lead to an account takeover. However, the attack requires bypassing protections on modifying the tunnel token on a the attacker's system.This issue affects SDP Client: before 5.10.34.",
-    "published": "2024-07-31T17:15:11.860",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2024-41955": {
     "url": "https://github.com/mobsf/mobile-security-framework-mobsf/commit/fdaad81314f393d324c1ede79627e9d47986c8c8",
     "cvss": 5.2,
@@ -225,6 +213,12 @@
     "cvss": 6.3,
     "description": "A vulnerability, which was classified as critical, has been found in D-Link DI-8100 16.07. This issue affects the function msp_info_htm of the file msp_info.htm. The manipulation of the argument cmd leads to command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-273521 was assigned to this vulnerability.",
     "published": "2024-08-03T14:15:48.247",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-7440": {
+    "cvss": 6.3,
+    "description": "** UNSUPPORTED WHEN ASSIGNED ** A vulnerability was found in Vivotek CC8160 VVTK-0100d. It has been classified as critical. This affects the function getenv of the file upload_file.cgi. The manipulation of the argument QUERY_STRING leads to command injection. It is possible to initiate the attack remotely. The identifier VDB-273525 was assigned to this vulnerability. NOTE: This vulnerability only affects products that are no longer supported by the maintainer. NOTE: Vendor was contacted early and confirmed that the affected release tree is end-of-life.",
+    "published": "2024-08-03T17:15:49.667",
     "keywords": "remote,command"
   }
 }
