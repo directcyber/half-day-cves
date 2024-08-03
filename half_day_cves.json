@@ -238,5 +238,11 @@
     "description": "An incomplete fix for CVE-2023-1625 was found in openstack-heat. Sensitive information may possibly be disclosed through the OpenStack stack abandon command with the hidden feature set to True and the CVE-2023-1625 fix applied.",
     "published": "2024-08-02T21:16:31.180",
     "keywords": "command,sensitive"
+  },
+  "CVE-2024-6477": {
+    "cvss": "-",
+    "description": "The UsersWP  WordPress plugin before 1.2.12 uses predictable filenames when an admin generates an export, which could allow unauthenticated attackers to download them and retrieve sensitive information such as IP, username, and email address",
+    "published": "2024-08-03T06:16:29.427",
+    "keywords": "unauthenticated,sensitive"
   }
 }
