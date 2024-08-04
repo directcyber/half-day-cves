@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-08-04T22:09:56.710432
+Updated at UTC 2024-08-04T23:10:38.310589
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,18 @@ Updated at UTC 2024-08-04T22:09:56.710432
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7458">CVE-2024-7458</a></td>
+					<td>5.5</td>
+					<td><a target=_blank href="https://github.com/elunez/eladmin/issues/851">https://github.com/elunez/eladmin/issues/851</a></td>
+					<td class=date>2024-08-04T22:15:50.837</td>
+					<td class=description>A vulnerability was found in elunez eladmin up to 2.7 and classified as critical. This issue affects some unknown processing of the file /api/deploy/upload /api/database/upload of the component Database Management/Deployment Management. The manipulation of the argument file leads to path traversal: 'dir/../../filename'. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-273551.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -146,10 +158,10 @@ Updated at UTC 2024-08-04T22:09:56.710432
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -418,16 +430,6 @@ This issue affects Apache InLong: from 1.10.0 through 1.12.0, which could lead t
 					<td>remote,sensitive</td>
 					<td class=date>2024-08-02T04:17:27.750</td>
 					<td class=description>CloudLink, versions 7.1.x and 8.x, contain an Improper check or handling of Exceptional Conditions Vulnerability in Cluster Component. A highly privileged malicious user with remote access could potentially exploit this vulnerability, leading to execute unauthorized actions and retrieve sensitive information from the database.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41956">CVE-2024-41956</a></td>
-					<td>8.1</td>
-					<td>execution,command</td>
-					<td class=date>2024-08-01T22:15:29.153</td>
-					<td class=description>Soft Serve is a self-hostable Git server for the command line. Prior to 0.7.5, it is possible for a user who can commit files to a repository hosted by Soft Serve to execute arbitrary code via environment manipulation and Git. The issue is that Soft Serve passes all environment variables given by the client to git subprocesses. This includes environment variables that control program execution, such as LD_PRELOAD. This vulnerability is fixed in 0.7.5.</td>
 				</tr>
 			
 		

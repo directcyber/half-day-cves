@@ -1,10 +1,4 @@
 {
-  "CVE-2024-41956": {
-    "cvss": 8.1,
-    "description": "Soft Serve is a self-hostable Git server for the command line. Prior to 0.7.5, it is possible for a user who can commit files to a repository hosted by Soft Serve to execute arbitrary code via environment manipulation and Git. The issue is that Soft Serve passes all environment variables given by the client to git subprocesses. This includes environment variables that control program execution, such as LD_PRELOAD. This vulnerability is fixed in 0.7.5.",
-    "published": "2024-08-01T22:15:29.153",
-    "keywords": "execution,command"
-  },
   "CVE-2024-38482": {
     "cvss": 6.6,
     "description": "CloudLink, versions 7.1.x and 8.x, contain an Improper check or handling of Exceptional Conditions Vulnerability in Cluster Component. A highly privileged malicious user with remote access could potentially exploit this vulnerability, leading to execute unauthorized actions and retrieve sensitive information from the database.",
@@ -178,5 +172,11 @@
     "description": "IBM Planning Analytics Local 2.0 and 2.1 connects to a MongoDB server. MongoDB, a document-oriented database system, is listening on the remote port, and it is configured to allow connections without password authentication. A remote attacker can gain unauthorized access to the database.  IBM X-Force ID:  292420.",
     "published": "2024-08-04T13:15:57.480",
     "keywords": "remote,authentication"
+  },
+  "CVE-2024-7458": {
+    "url": "https://github.com/elunez/eladmin/issues/851",
+    "cvss": 5.5,
+    "description": "A vulnerability was found in elunez eladmin up to 2.7 and classified as critical. This issue affects some unknown processing of the file /api/deploy/upload /api/database/upload of the component Database Management/Deployment Management. The manipulation of the argument file leads to path traversal: 'dir/../../filename'. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-273551.",
+    "published": "2024-08-04T22:15:50.837"
   }
 }
