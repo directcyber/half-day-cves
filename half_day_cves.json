@@ -1,10 +1,4 @@
 {
-  "CVE-2024-7357": {
-    "cvss": 6.3,
-    "description": "** UNSUPPORTED WHEN ASSIGNED ** A vulnerability was found in D-Link DIR-600 up to 2.18. It has been rated as critical. This issue affects the function soapcgi_main of the file /soap.cgi. The manipulation of the argument service leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-273329 was assigned to this vulnerability. NOTE: This vulnerability only affects products that are no longer supported by the maintainer. NOTE: Vendor was contacted early and confirmed immediately that the product is end-of-life. It should be retired and replaced.",
-    "published": "2024-08-01T13:15:10.950",
-    "keywords": "remote,command"
-  },
   "CVE-2024-41961": {
     "url": "https://github.com/sapcc/elektra/commit/8bce00be93b95a6512ff68fe86bf9554e486bc02",
     "cvss": 9.6,
@@ -214,5 +208,11 @@
     "description": "stitionai/devika main branch as of commit cdfb782b0e634b773b10963c8034dc9207ba1f9f is vulnerable to Local File Read (LFI) by Prompt Injection. The integration of Google Gimini 1.0 Pro with `HarmBlockThreshold.BLOCK_NONE` for `HarmCategory.HARM_CATEGORY_HATE_SPEECH` and `HarmCategory.HARM_CATEGORY_HARASSMENT` in `safety_settings` disables content protection. This allows malicious commands to be executed, such as reading sensitive file contents like `/etc/passwd`.",
     "published": "2024-08-04T00:15:47.863",
     "keywords": "command,sensitive"
+  },
+  "CVE-2024-35143": {
+    "cvss": 6.7,
+    "description": "IBM Planning Analytics Local 2.0 and 2.1 connects to a MongoDB server. MongoDB, a document-oriented database system, is listening on the remote port, and it is configured to allow connections without password authentication. A remote attacker can gain unauthorized access to the database.  IBM X-Force ID:  292420.",
+    "published": "2024-08-04T13:15:57.480",
+    "keywords": "remote,authentication"
   }
 }
