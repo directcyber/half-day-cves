@@ -1,10 +1,4 @@
 {
-  "CVE-2024-38182": {
-    "cvss": 9.0,
-    "description": "Weak authentication in Microsoft Dynamics 365 allows an unauthenticated attacker to elevate privileges over a network.",
-    "published": "2024-07-31T23:15:13.560",
-    "keywords": "unauthenticated,authentication"
-  },
   "CVE-2024-34021": {
     "cvss": 6.8,
     "description": "Unrestricted upload of file with dangerous type vulnerability exists in ELECOM wireless LAN routers. A specially crafted file may be uploaded to the affected product by a logged-in user with an administrative privilege, resulting in an arbitrary OS command execution.",
@@ -226,5 +220,11 @@
     "description": "** UNSUPPORTED WHEN ASSIGNED ** A vulnerability classified as critical has been found in Vivotek IB8367A VVTK-0100b. Affected is the function getenv of the file upload_file.cgi. The manipulation of the argument QUERY_STRING leads to command injection. It is possible to launch the attack remotely. The identifier of this vulnerability is VDB-273528. NOTE: This vulnerability only affects products that are no longer supported by the maintainer. NOTE: Vendor was contacted early and confirmed that the affected release tree is end-of-life.",
     "published": "2024-08-03T19:15:42.590",
     "keywords": "remote,command"
+  },
+  "CVE-2024-6331": {
+    "cvss": 7.5,
+    "description": "stitionai/devika main branch as of commit cdfb782b0e634b773b10963c8034dc9207ba1f9f is vulnerable to Local File Read (LFI) by Prompt Injection. The integration of Google Gimini 1.0 Pro with `HarmBlockThreshold.BLOCK_NONE` for `HarmCategory.HARM_CATEGORY_HATE_SPEECH` and `HarmCategory.HARM_CATEGORY_HARASSMENT` in `safety_settings` disables content protection. This allows malicious commands to be executed, such as reading sensitive file contents like `/etc/passwd`.",
+    "published": "2024-08-04T00:15:47.863",
+    "keywords": "command,sensitive"
   }
 }
