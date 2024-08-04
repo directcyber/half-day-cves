@@ -1,10 +1,4 @@
 {
-  "CVE-2024-41961": {
-    "url": "https://github.com/sapcc/elektra/commit/8bce00be93b95a6512ff68fe86bf9554e486bc02",
-    "cvss": 9.6,
-    "description": "Elektra is an opinionated Openstack Dashboard for Operators and Consumers of Openstack Services. A code injection vulnerability was found in the live search functionality of the Ruby on Rails based Elektra web application. An authenticated user can craft a search term containing Ruby code, which later flows into an `eval` sink which executes the code. Fixed in commit 8bce00be93b95a6512ff68fe86bf9554e486bc02.",
-    "published": "2024-08-01T15:15:14.310"
-  },
   "CVE-2024-6242": {
     "cvss": "-",
     "description": "A vulnerability exists in Rockwell Automation affected products that allows a threat actor to bypass the Trusted\u00ae Slot feature in a ControlLogix\u00ae controller. If exploited on any affected module in a 1756 chassis, a threat actor could potentially execute CIP commands that modify user projects and/or device configuration on a Logix controller in the chassis.",
