@@ -1,10 +1,4 @@
 {
-  "CVE-2024-7314": {
-    "cvss": 9.8,
-    "description": "anji-plus AJ-Report is affected by an authentication bypass vulnerability. A remote and unauthenticated attacker can append \";swagger-ui\" to HTTP requests to bypass authentication and execute arbitrary Java on the victim server.",
-    "published": "2024-08-02T17:16:41.400",
-    "keywords": "remote,unauthenticated,authentication,bypass"
-  },
   "CVE-2024-38882": {
     "cvss": 9.8,
     "description": "An issue in Horizon Business Services Inc. Caterease 16.0.1.1663 through 24.0.1.2405 and possibly later versions, allows a remote attacker to perform command line execution through SQL Injection due to improper neutralization of special elements used in an OS command.",
@@ -148,5 +142,17 @@
     "description": "An authentication bypass vulnerability in Korenix JetPort 5601v3 allows an attacker to access functionality on the device without specifying a password.This issue affects JetPort 5601v3: through 1.2.",
     "published": "2024-08-05T14:15:35.483",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-41376": {
+    "url": "https://github.com/zyx0814/dzzoffice/issues/252",
+    "cvss": "-",
+    "description": "dzzoffice 2.02.1 is vulnerable to Directory Traversal via user/space/about.php.",
+    "published": "2024-08-05T17:15:41.803"
+  },
+  "CVE-2024-41380": {
+    "url": "https://github.com/microweber/microweber/issues/1111",
+    "cvss": "-",
+    "description": "microweber 2.0.16 was discovered to contain a Cross Site Scripting (XSS) vulnerability via userfiles\\modules\\tags\\add_tagging_tagged.php.",
+    "published": "2024-08-05T17:15:41.860"
   }
 }
