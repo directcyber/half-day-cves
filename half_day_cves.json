@@ -184,5 +184,17 @@
     "description": "A vulnerability, which was classified as critical, has been found in TOTOLINK CP900 6.3c.566. This issue affects the function setTelnetCfg of the component Telnet Service. The manipulation of the argument telnet_enabled leads to command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-273557 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2024-08-05T01:16:08.157",
     "keywords": "remote,command"
+  },
+  "CVE-2024-7467": {
+    "cvss": 6.3,
+    "description": "A vulnerability was found in Raisecom MSG1200, MSG2100E, MSG2200 and MSG2300 3.90 and classified as critical. Affected by this issue is the function sslvpn_config_mod of the file /vpn/list_ip_network.php of the component Web Interface. The manipulation of the argument template/stylenum leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-273560. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-08-05T03:16:08.040",
+    "keywords": "remote,command,vpn"
+  },
+  "CVE-2024-7468": {
+    "cvss": 6.3,
+    "description": "A vulnerability was found in Raisecom MSG1200, MSG2100E, MSG2200 and MSG2300 3.90. It has been classified as critical. This affects the function sslvpn_config_mod of the file /vpn/list_service_manage.php of the component Web Interface. The manipulation of the argument template/stylenum leads to os command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-273561 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-08-05T03:16:08.363",
+    "keywords": "remote,command,vpn"
   }
 }
