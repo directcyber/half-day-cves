@@ -1,34 +1,4 @@
 {
-  "CVE-2024-40720": {
-    "cvss": 8.8,
-    "description": "The specific API in TCBServiSign Windows Version from CHANGING Information Technology does not properly validate server-side input. When a user visits a spoofed website, unauthenticated remote attackers can modify the `HKEY_CURRENT_USER` registry to execute arbitrary commands.",
-    "published": "2024-08-02T11:16:42.763",
-    "keywords": "remote,unauthenticated,command"
-  },
-  "CVE-2024-40721": {
-    "cvss": 8.8,
-    "description": "The specific API in TCBServiSign Windows Version from CHANGING Information Technology does not properly validate server-side input. When a user visits a spoofed website, unauthenticated remote attackers can cause the TCBServiSign to load a DLL from an arbitrary path.",
-    "published": "2024-08-02T11:16:43.020",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-40722": {
-    "cvss": 4.3,
-    "description": "The specific API in TCBServiSign Windows Version from CHANGING Information Technology does does not properly validate the length of server-side input. When a user visits a spoofed website, unauthenticated remote attackers can cause a stack-based buffer overflow in the TCBServiSign, temporarily disrupting its service.",
-    "published": "2024-08-02T11:16:43.283",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-40723": {
-    "cvss": 4.3,
-    "description": "The specific API in HWATAIServiSign Windows Version from CHANGING Information Technology does not properly validate the length of server-side inputs. When a user visits a spoofed website, unauthenticated remote attackers can cause a stack-based buffer overflow in the HWATAIServiSign, temporarily disrupting its service.",
-    "published": "2024-08-02T11:16:43.520",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-7204": {
-    "cvss": 6.1,
-    "description": "Ai3 QbiBot does not properly filter user input, allowing unauthenticated remote attackers to insert JavaScript code into the chat box. Once the recipient views the message, they will be subject to a Stored XSS attack.",
-    "published": "2024-08-02T11:16:43.987",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2024-38890": {
     "cvss": 8.4,
     "description": "An issue in Horizon Business Services Inc. Caterease Software 16.0.1.1663 through 24.0.1.2405 and possibly later versions allows a local attacker to perform an Authentication Bypass by Capture-replay attack due to insufficient protection against capture-replay attacks.",
