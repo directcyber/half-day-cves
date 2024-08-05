@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-08-05T21:10:44.714958
+Updated at UTC 2024-08-05T22:09:22.843452
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-08-05T21:10:44.714958
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 				<tr>
@@ -158,14 +162,28 @@ Updated at UTC 2024-08-05T21:10:44.714958
 		
 			
 		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-34344">CVE-2024-34344</a></td>
+					<td>8.8</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-08-05T21:15:38.457</td>
+					<td class=description>Nuxt is a free and open-source framework to create full-stack web applications and websites with Vue.js. Due to the insufficient validation of the `path` parameter in the NuxtTestComponentWrapper, an attacker can execute arbitrary JavaScript on the server side, which allows them to execute arbitrary commands. Users who open a malicious web page in the browser while running the test locally are affected by this vulnerability, which results in the remote code execution from the malicious web page. Since web pages can send requests to arbitrary addresses, a malicious web page can repeatedly try to exploit this vulnerability, which then triggers the exploit when the test server starts.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-23657">CVE-2024-23657</a></td>
+					<td>8.8</td>
+					<td>authentication,leak</td>
+					<td class=date>2024-08-05T21:15:37.880</td>
+					<td class=description>Nuxt is a free and open-source framework to create full-stack web applications and websites with Vue.js. Nuxt Devtools is missing authentication on the `getTextAssetContent` RPC function which is vulnerable to path traversal.  Combined with a lack of Origin checks on the WebSocket handler,  an attacker is able to interact with a locally running devtools instance and exfiltrate data abusing this vulnerability. In certain configurations an attacker could leak the devtools authentication token and then abuse other RPC functions to achieve RCE. The `getTextAssetContent` function does not check for path traversals, this could allow an attacker to read arbitrary files over the RPC WebSocket. The WebSocket server does not check the origin of the request leading to cross-site-websocket-hijacking. This may be intentional to allow certain configurations to work correctly. Nuxt Devtools authentication tokens are placed within the home directory of the current user. The malicious webpage can connect to the Devtools WebSocket, perform a directory traversal brute force to find the authentication token, then use the *authenticated* `writeStaticAssets` function to create a new Component, Nitro Handler or `app.vue` file which will run automatically as the file is changed. This vulnerability has been addressed in release version 1.3.9. All users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+				</tr>
+			
 		
 			
 		
@@ -380,36 +398,6 @@ Unauthenticated endpoints could allow execution of screen rendering code of scre
 					<td>unauthenticated,sensitive</td>
 					<td class=date>2024-08-03T06:16:29.427</td>
 					<td class=description>The UsersWP  WordPress plugin before 1.2.12 uses predictable filenames when an admin generates an export, which could allow unauthenticated attackers to download them and retrieve sensitive information such as IP, username, and email address</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7319">CVE-2024-7319</a></td>
-					<td>7.4</td>
-					<td>command,sensitive</td>
-					<td class=date>2024-08-02T21:16:31.180</td>
-					<td class=description>An incomplete fix for CVE-2023-1625 was found in openstack-heat. Sensitive information may possibly be disclosed through the OpenStack stack abandon command with the hidden feature set to True and the CVE-2023-1625 fix applied.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38891">CVE-2024-38891</a></td>
-					<td>-</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-08-02T21:16:30.853</td>
-					<td class=description>An issue in Horizon Business Services Inc. Caterease 16.0.1.1663 through 24.0.1.2405 and possibly later versions, allows a remote attacker to perform a Sniffing Network Traffic attack due to the cleartext transmission of sensitive information.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38887">CVE-2024-38887</a></td>
-					<td>-</td>
-					<td>remote,execution,command</td>
-					<td class=date>2024-08-02T21:16:30.760</td>
-					<td class=description>An issue in Horizon Business Services Inc. Caterease 16.0.1.1663 through 24.0.1.2405 and possibly later versions, allows a remote attacker to expand control over the operating system from the database due to the execution of commands with unnecessary privileges.</td>
 				</tr>
 			
 		
