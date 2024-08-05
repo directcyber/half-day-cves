@@ -1,10 +1,4 @@
 {
-  "CVE-2024-38889": {
-    "cvss": "-",
-    "description": "An issue in Horizon Business Services Inc. Caterease 16.0.1.1663 through 24.0.1.2405 and possibly later versions, allows a remote attacker to perform SQL Injection due to improper neutralization of special elements used in an SQL command.",
-    "published": "2024-08-02T20:17:00.407",
-    "keywords": "remote,command"
-  },
   "CVE-2024-38887": {
     "cvss": "-",
     "description": "An issue in Horizon Business Services Inc. Caterease 16.0.1.1663 through 24.0.1.2405 and possibly later versions, allows a remote attacker to expand control over the operating system from the database due to the execution of commands with unnecessary privileges.",
@@ -160,5 +154,17 @@
     "description": "Improper Neutralization vulnerability (XSS) has been discovered in OpenText\u2122 ALM Octane. The vulnerability affects all version prior to version 23.4.\u00a0The vulnerability could cause remote code execution attack.",
     "published": "2024-08-05T19:15:38.333",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-41958": {
+    "cvss": 6.6,
+    "description": "mailcow: dockerized is an open source groupware/email suite based on docker. A vulnerability has been discovered in the two-factor authentication (2FA) mechanism. This flaw allows an authenticated attacker to bypass the 2FA protection, enabling unauthorized access to other accounts that are otherwise secured with 2FA. To exploit this vulnerability, the attacker must first have access to an account within the system and possess the credentials of the target account that has 2FA enabled. By leveraging these credentials, the attacker can circumvent the 2FA process and gain access to the protected account. This issue has been addressed in the `2024-07` release. All users are advised to upgrade. There are no known workarounds for this vulnerability.",
+    "published": "2024-08-05T20:15:36.063",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-42350": {
+    "url": "https://github.com/biscuit-auth/biscuit/commit/c87cbb5d778964d6574df3e9e6579567cad12fff",
+    "cvss": 3.0,
+    "description": "Biscuit is an authorization token with decentralized verification, offline attenuation and strong security policy enforcement based on a logic language. Third-party blocks can be generated without transferring the whole token to the third-party authority. Instead, a `ThirdPartyBlock` request can be sent, providing only the necessary info to generate a third-party block and to sign it: 1. the public key of the previous block (used in the signature), 2. the public keys part of the token symbol table (for public key interning in datalog expressions). A third-part block request forged by a malicious user can trick the third-party authority into generating datalog trusting the wrong keypair. Tokens with third-party blocks containing `trusted` annotations generated through a third party block request. This has been addressed in version 4 of the specification. Users are advised to update their implementations to conform. There are no known workarounds for this vulnerability.",
+    "published": "2024-08-05T20:15:36.697"
   }
 }
