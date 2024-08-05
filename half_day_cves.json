@@ -1,10 +1,4 @@
 {
-  "CVE-2024-7389": {
-    "cvss": 7.5,
-    "description": "The Forminator plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.29.1 via class-forminator-addon-hubspot-wp-api.php. This makes it possible for unauthenticated attackers to extract the HubSpot integration developer API key and make unauthorized changes to the plugin's HubSpot integration or expose personally identifiable information from plugin users using the HubSpot integration.",
-    "published": "2024-08-02T05:15:51.510",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2024-39396": {
     "cvss": 5.5,
     "description": "InDesign Desktop versions ID18.5.2, ID19.3 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
@@ -202,5 +196,17 @@
     "description": "A vulnerability was found in Raisecom MSG1200, MSG2100E, MSG2200 and MSG2300 3.90. It has been rated as critical. This issue affects the function sslvpn_config_mod of the file /vpn/vpn_template_style.php of the component Web Interface. The manipulation of the argument template/stylenum leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-273563. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2024-08-05T04:15:59.730",
     "keywords": "remote,command,vpn"
+  },
+  "CVE-2024-41889": {
+    "cvss": "-",
+    "description": "Multiple Pimax products accept WebSocket connections from unintended endpoints. If this vulnerability is exploited, arbitrary code may be executed by a remote unauthenticated attacker.",
+    "published": "2024-08-05T05:15:39.697",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-6117": {
+    "cvss": "-",
+    "description": "A Unrestricted upload of file with dangerous type vulnerability in meeting management function in Hamastar MeetingHub Paperless Meetings 2021 allows remote authenticated users to perform arbitrary system commands via a crafted ASP file.",
+    "published": "2024-08-05T05:15:39.760",
+    "keywords": "remote,command"
   }
 }
