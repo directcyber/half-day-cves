@@ -262,5 +262,11 @@
     "description": "There is a vulnerability in the AP Certificate Management Service which could allow a threat actor to execute an unauthenticated RCE attack. Successful exploitation could allow an attacker to execute arbitrary commands on the underlying operating system leading to complete system compromise.",
     "published": "2024-08-06T19:15:57.017",
     "keywords": "unauthenticated,command"
+  },
+  "CVE-2024-38206": {
+    "cvss": 8.5,
+    "description": "An authenticated attacker can bypass Server-Side Request Forgery (SSRF) protection in Microsoft Copilot Studio to leak sensitive information over a network.",
+    "published": "2024-08-06T22:15:54.430",
+    "keywords": "sensitive,bypass,leak"
   }
 }
