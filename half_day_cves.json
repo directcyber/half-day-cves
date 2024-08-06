@@ -1,10 +1,4 @@
 {
-  "CVE-2024-7443": {
-    "cvss": 9.8,
-    "description": "** UNSUPPORTED WHEN ASSIGNED ** A vulnerability classified as critical has been found in Vivotek IB8367A VVTK-0100b. Affected is the function getenv of the file upload_file.cgi. The manipulation of the argument QUERY_STRING leads to command injection. It is possible to launch the attack remotely. The identifier of this vulnerability is VDB-273528. NOTE: This vulnerability only affects products that are no longer supported by the maintainer. NOTE: Vendor was contacted early and confirmed that the affected release tree is end-of-life.",
-    "published": "2024-08-03T19:15:42.590",
-    "keywords": "remote,command"
-  },
   "CVE-2024-6331": {
     "cvss": 7.5,
     "description": "stitionai/devika main branch as of commit cdfb782b0e634b773b10963c8034dc9207ba1f9f is vulnerable to Local File Read (LFI) by Prompt Injection. The integration of Google Gimini 1.0 Pro with `HarmBlockThreshold.BLOCK_NONE` for `HarmCategory.HARM_CATEGORY_HATE_SPEECH` and `HarmCategory.HARM_CATEGORY_HARASSMENT` in `safety_settings` disables content protection. This allows malicious commands to be executed, such as reading sensitive file contents like `/etc/passwd`.",
@@ -250,5 +244,23 @@
     "description": "Logsign Unified SecOps Platform Directory Traversal Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Logsign Unified SecOps Platform. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the get_response_json_result endpoint. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to disclose information in the context of root. Was ZDI-CAN-24680.",
     "published": "2024-08-06T16:15:51.000",
     "keywords": "remote,authentication,sensitive"
+  },
+  "CVE-2024-42393": {
+    "cvss": 9.8,
+    "description": "There are vulnerabilities in the Soft AP Daemon Service which could allow a threat actor to execute an unauthenticated RCE attack. Successful exploitation could allow an attacker to execute arbitrary commands on the underlying operating system leading to complete system compromise.",
+    "published": "2024-08-06T19:15:56.640",
+    "keywords": "unauthenticated,command"
+  },
+  "CVE-2024-42394": {
+    "cvss": 9.8,
+    "description": "There are vulnerabilities in the Soft AP Daemon Service which could allow a threat actor to execute an unauthenticated RCE attack. Successful exploitation could allow an attacker to execute arbitrary commands on the underlying operating system leading to complete system compromise.",
+    "published": "2024-08-06T19:15:56.830",
+    "keywords": "unauthenticated,command"
+  },
+  "CVE-2024-42395": {
+    "cvss": 9.8,
+    "description": "There is a vulnerability in the AP Certificate Management Service which could allow a threat actor to execute an unauthenticated RCE attack. Successful exploitation could allow an attacker to execute arbitrary commands on the underlying operating system leading to complete system compromise.",
+    "published": "2024-08-06T19:15:57.017",
+    "keywords": "unauthenticated,command"
   }
 }
