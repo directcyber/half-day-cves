@@ -1,10 +1,4 @@
 {
-  "CVE-2024-7436": {
-    "cvss": 6.3,
-    "description": "A vulnerability, which was classified as critical, has been found in D-Link DI-8100 16.07. This issue affects the function msp_info_htm of the file msp_info.htm. The manipulation of the argument cmd leads to command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-273521 was assigned to this vulnerability.",
-    "published": "2024-08-03T14:15:48.247",
-    "keywords": "remote,command"
-  },
   "CVE-2024-7440": {
     "cvss": 6.3,
     "description": "** UNSUPPORTED WHEN ASSIGNED ** A vulnerability was found in Vivotek CC8160 VVTK-0100d. It has been classified as critical. This affects the function getenv of the file upload_file.cgi. The manipulation of the argument QUERY_STRING leads to command injection. It is possible to initiate the attack remotely. The identifier VDB-273525 was assigned to this vulnerability. NOTE: This vulnerability only affects products that are no longer supported by the maintainer. NOTE: Vendor was contacted early and confirmed that the affected release tree is end-of-life.",
@@ -114,7 +108,7 @@
     "published": "2024-08-05T18:15:32.397"
   },
   "CVE-2024-42010": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "mod_css_styles in Roundcube through 1.5.7 and 1.6.x through 1.6.7 allows a insufficiently filters Cascading Style Sheets (CSS) token sequences in rendered e-mail messages, allowing a remote attacker to obtain sensitive information.",
     "published": "2024-08-05T19:15:38.273",
     "keywords": "remote,sensitive"
@@ -232,5 +226,11 @@
     "description": "ANGLE failed to initialize parameters which lead to reading from uninitialized memory. This could be leveraged to leak sensitive data from memory. This vulnerability affects Firefox < 129, Firefox ESR < 115.14, and Firefox ESR < 128.1.",
     "published": "2024-08-06T13:15:57.483",
     "keywords": "sensitive,leak"
+  },
+  "CVE-2024-40101": {
+    "cvss": "-",
+    "description": "A Reflected Cross-site scripting (XSS) vulnerability exists in '/search' in microweber 2.0.15 and earlier allowing unauthenticated remote attackers to inject arbitrary web script or HTML via the 'keywords' parameter.",
+    "published": "2024-08-06T14:16:04.117",
+    "keywords": "remote,unauthenticated"
   }
 }
