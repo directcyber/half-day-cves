@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-08-06T06:15:23.552843
+Updated at UTC 2024-08-06T07:10:34.347109
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-08-06T06:15:23.552843
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -180,10 +184,28 @@ Updated at UTC 2024-08-06T06:15:23.552843
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6201">CVE-2024-6201</a></td>
+					<td>5.3</td>
+					<td>sensitive,leak</td>
+					<td class=date>2024-08-06T06:15:35.283</td>
+					<td class=description>HaloITSM versions up to 2.146.1 are affected by a Template Injection vulnerability within the engine used to generate emails. This can lead to the leakage of potentially sensitive information. HaloITSM versions past 2.146.1 (and patches starting from 2.143.61 ) fix the mentioned vulnerability.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5709">CVE-2024-5709</a></td>
+					<td>8.8</td>
+					<td>execution,sensitive,bypass</td>
+					<td class=date>2024-08-06T06:15:34.793</td>
+					<td class=description>The WPBakery Visual Composer plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 7.7 via the 'layout_name' parameter. This makes it possible for authenticated attackers, with Author-level access and above, and with post permissions granted by an Administrator, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -520,16 +542,6 @@ Unauthenticated endpoints could allow execution of screen rendering code of scre
 					<td>remote,execution,unauthenticated</td>
 					<td class=date>2024-08-03T10:15:50.710</td>
 					<td class=description>The YayExtra – WooCommerce Extra Product Options plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the handle_upload_file function in all versions up to, and including, 1.3.7. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6477">CVE-2024-6477</a></td>
-					<td>-</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2024-08-03T06:16:29.427</td>
-					<td class=description>The UsersWP  WordPress plugin before 1.2.12 uses predictable filenames when an admin generates an export, which could allow unauthenticated attackers to download them and retrieve sensitive information such as IP, username, and email address</td>
 				</tr>
 			
 		
