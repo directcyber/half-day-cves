@@ -328,5 +328,59 @@
     "description": "An Incorrect Access Control vulnerability was found in /smsa/admin_student_register_approval.php and /smsa/admin_student_register_approval_submit.php in Kashipara Responsive School Management System v3.2.0, which allows remote unauthenticated attackers to view and approve student registration.",
     "published": "2024-08-07T16:15:45.910",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-20443": {
+    "cvss": 5.4,
+    "description": "A vulnerability in the web-based management interface of Cisco ISE could allow an authenticated, remote attacker to conduct an XSS attack against a user of the interface.\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input by the web-based management interface of an affected system. An attacker could exploit this vulnerability by injecting malicious code into specific pages of the interface. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information. To exploit this vulnerability, the attacker must have at least a low-privileged account on an affected device.",
+    "published": "2024-08-07T17:15:50.053",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-20450": {
+    "cvss": 9.8,
+    "description": "Multiple vulnerabilities in the web-based management interface of Cisco Small Business SPA300 Series IP Phones and Cisco Small Business SPA500 Series IP Phones could allow an unauthenticated, remote attacker to execute arbitrary commands on the underlying operating system with root privileges.\r\n\r\nThese vulnerabilities exist because incoming HTTP packets are not properly checked for errors, which could result in a buffer overflow. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. A successful exploit could allow the attacker to overflow an internal buffer and execute arbitrary commands at the root privilege level.",
+    "published": "2024-08-07T17:15:50.283",
+    "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2024-20451": {
+    "cvss": 7.5,
+    "description": "Multiple vulnerabilities in the web-based management interface of Cisco Small Business SPA300 Series IP Phones and Cisco Small Business SPA500 Series IP Phones could allow an unauthenticated, remote attacker to cause an affected device to reload unexpectedly.\r\n\r\nThese vulnerabilities exist because HTTP packets are not properly checked for errors. An attacker could exploit this vulnerability by sending a crafted HTTP packet to the remote interface of an affected device. A successful exploit could allow the attacker to cause a DoS condition on the device.",
+    "published": "2024-08-07T17:15:50.493",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-20454": {
+    "cvss": 9.8,
+    "description": "Multiple vulnerabilities in the web-based management interface of Cisco Small Business SPA300 Series IP Phones and Cisco Small Business SPA500 Series IP Phones could allow an unauthenticated, remote attacker to execute arbitrary commands on the underlying operating system with root privileges.\r\n\r\nThese vulnerabilities exist because incoming HTTP packets are not properly checked for errors, which could result in a buffer overflow. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. A successful exploit could allow the attacker to overflow an internal buffer and execute arbitrary commands at the root privilege level.",
+    "published": "2024-08-07T17:15:50.713",
+    "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2024-20479": {
+    "cvss": 4.8,
+    "description": "A vulnerability in the web-based management interface of Cisco ISE could allow an authenticated, remote attacker to conduct an XSS attack against a user of the interface.\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input by the web-based management interface of an affected system. An attacker could exploit this vulnerability by injecting malicious code into specific pages of the interface. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information. To exploit this vulnerability, the attacker must have Admin privileges on an affected device.",
+    "published": "2024-08-07T17:15:50.930",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-41243": {
+    "cvss": "-",
+    "description": "An Incorrect Access Control vulnerability was found in /smsa/view_marks.php in Kashipara Responsive School Management System v3.2.0, which allows remote unauthenticated attackers to view MARKS details.",
+    "published": "2024-08-07T17:15:51.620",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-41244": {
+    "cvss": "-",
+    "description": "An Incorrect Access Control vulnerability was found in /smsa/view_class.php in Kashipara Responsive School Management System v3.2.0, which allows remote unauthenticated attackers to view CLASS details.",
+    "published": "2024-08-07T17:15:51.687",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-41245": {
+    "cvss": "-",
+    "description": "An Incorrect Access Control vulnerability was found in /smsa/view_teachers.php in Kashipara Responsive School Management System v3.2.0, which allows remote unauthenticated attackers to view TEACHER details.",
+    "published": "2024-08-07T17:15:51.763",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-41250": {
+    "cvss": "-",
+    "description": "An Incorrect Access Control vulnerability was found in /smsa/view_students.php in Kashipara Responsive School Management System v3.2.0, which allows remote unauthenticated attackers to view STUDENT details.",
+    "published": "2024-08-07T17:15:51.837",
+    "keywords": "remote,unauthenticated"
   }
 }
