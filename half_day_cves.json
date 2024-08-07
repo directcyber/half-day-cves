@@ -36,7 +36,7 @@
     "keywords": "remote,command,vpn"
   },
   "CVE-2024-41889": {
-    "cvss": "-",
+    "cvss": 8.8,
     "description": "Multiple Pimax products accept WebSocket connections from unintended endpoints. If this vulnerability is exploited, arbitrary code may be executed by a remote unauthenticated attacker.",
     "published": "2024-08-05T05:15:39.697",
     "keywords": "remote,unauthenticated"
@@ -67,13 +67,13 @@
   },
   "CVE-2024-41380": {
     "url": "https://github.com/microweber/microweber/issues/1111",
-    "cvss": "-",
+    "cvss": 6.1,
     "description": "microweber 2.0.16 was discovered to contain a Cross Site Scripting (XSS) vulnerability via userfiles\\modules\\tags\\add_tagging_tagged.php.",
     "published": "2024-08-05T17:15:41.860"
   },
   "CVE-2024-41381": {
     "url": "https://github.com/microweber/microweber/issues/1110",
-    "cvss": "-",
+    "cvss": 6.1,
     "description": "microweber 2.0.16 was discovered to contain a Cross Site Scripting (XSS) vulnerability via userfiles\\modules\\settings\\admin.php.",
     "published": "2024-08-05T18:15:32.397"
   },
@@ -228,7 +228,7 @@
     "keywords": "remote,bypass"
   },
   "CVE-2024-7564": {
-    "cvss": 4.3,
+    "cvss": 6.5,
     "description": "Logsign Unified SecOps Platform Directory Traversal Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Logsign Unified SecOps Platform. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the get_response_json_result endpoint. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to disclose information in the context of root. Was ZDI-CAN-24680.",
     "published": "2024-08-06T16:15:51.000",
     "keywords": "remote,authentication,sensitive"
@@ -324,7 +324,7 @@
     "keywords": "remote,unauthenticated"
   },
   "CVE-2024-41252": {
-    "cvss": "-",
+    "cvss": 5.3,
     "description": "An Incorrect Access Control vulnerability was found in /smsa/admin_student_register_approval.php and /smsa/admin_student_register_approval_submit.php in Kashipara Responsive School Management System v3.2.0, which allows remote unauthenticated attackers to view and approve student registration.",
     "published": "2024-08-07T16:15:45.910",
     "keywords": "remote,unauthenticated"
