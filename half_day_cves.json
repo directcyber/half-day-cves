@@ -1,10 +1,4 @@
 {
-  "CVE-2024-6331": {
-    "cvss": 7.5,
-    "description": "stitionai/devika main branch as of commit cdfb782b0e634b773b10963c8034dc9207ba1f9f is vulnerable to Local File Read (LFI) by Prompt Injection. The integration of Google Gimini 1.0 Pro with `HarmBlockThreshold.BLOCK_NONE` for `HarmCategory.HARM_CATEGORY_HATE_SPEECH` and `HarmCategory.HARM_CATEGORY_HARASSMENT` in `safety_settings` disables content protection. This allows malicious commands to be executed, such as reading sensitive file contents like `/etc/passwd`.",
-    "published": "2024-08-04T00:15:47.863",
-    "keywords": "command,sensitive"
-  },
   "CVE-2024-35143": {
     "cvss": 6.7,
     "description": "IBM Planning Analytics Local 2.0 and 2.1 connects to a MongoDB server. MongoDB, a document-oriented database system, is listening on the remote port, and it is configured to allow connections without password authentication. A remote attacker can gain unauthorized access to the database.  IBM X-Force ID:  292420.",
@@ -205,7 +199,7 @@
   },
   "CVE-2024-7526": {
     "cvss": "-",
-    "description": "ANGLE failed to initialize parameters which lead to reading from uninitialized memory. This could be leveraged to leak sensitive data from memory. This vulnerability affects Firefox < 129, Firefox ESR < 115.14, and Firefox ESR < 128.1.",
+    "description": "ANGLE failed to initialize parameters which led to reading from uninitialized memory. This could be leveraged to leak sensitive data from memory. This vulnerability affects Firefox < 129, Firefox ESR < 115.14, Firefox ESR < 128.1, Thunderbird < 128.1, and Thunderbird < 115.14.",
     "published": "2024-08-06T13:15:57.483",
     "keywords": "sensitive,leak"
   },
