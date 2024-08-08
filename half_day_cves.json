@@ -300,7 +300,7 @@
     "keywords": "remote,sensitive"
   },
   "CVE-2024-41243": {
-    "cvss": "-",
+    "cvss": 5.3,
     "description": "An Incorrect Access Control vulnerability was found in /smsa/view_marks.php in Kashipara Responsive School Management System v3.2.0, which allows remote unauthenticated attackers to view MARKS details.",
     "published": "2024-08-07T17:15:51.620",
     "keywords": "remote,unauthenticated"
@@ -318,7 +318,7 @@
     "keywords": "remote,unauthenticated"
   },
   "CVE-2024-41250": {
-    "cvss": "-",
+    "cvss": 5.3,
     "description": "An Incorrect Access Control vulnerability was found in /smsa/view_students.php in Kashipara Responsive School Management System v3.2.0, which allows remote unauthenticated attackers to view STUDENT details.",
     "published": "2024-08-07T17:15:51.837",
     "keywords": "remote,unauthenticated"
@@ -334,5 +334,11 @@
     "description": "The Appointment Booking Calendar Plugin and Online Scheduling Plugin \u2013 BookingPress plugin for WordPress is vulnerable to authentication bypass in versions 1.1.6 to 1.1.7. This is due to the plugin not properly verifying a user's identity prior to logging them in when completing a booking. This makes it possible for unauthenticated attackers to log in as registered users, including administrators, if they have access to that user's email.  This is only exploitable when the 'Auto login user after successful booking' setting is enabled.",
     "published": "2024-08-08T03:15:34.800",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-7490": {
+    "cvss": "-",
+    "description": "Improper Input Validation vulnerability in Microchip Techology Advanced Software Framework example DHCP server can cause remote code execution through a buffer overflow.\n This vulnerability is associated with program files tinydhcpserver.C and program routines lwip_dhcp_find_option.\n\nThis issue affects Advanced Software Framework: through 3.52.0.2574.",
+    "published": "2024-08-08T15:15:19.057",
+    "keywords": "remote,execution"
   }
 }
