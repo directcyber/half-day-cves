@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-08-08T17:09:04.601587
+Updated at UTC 2024-08-08T18:14:12.927971
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-08-08T17:09:04.601587
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -214,32 +218,28 @@ Please update to a fixed version of gRPC as soon as possible. This bug has been 
 				</tr>
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41380">CVE-2024-41380</a></td>
-					<td>6.1</td>
-					<td><a target=_blank href="https://github.com/microweber/microweber/issues/1111">https://github.com/microweber/microweber/issues/1111</a></td>
-					<td class=date>2024-08-05T17:15:41.860</td>
-					<td class=description>microweber 2.0.16 was discovered to contain a Cross Site Scripting (XSS) vulnerability via userfiles\modules\tags\add_tagging_tagged.php.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41376">CVE-2024-41376</a></td>
-					<td>8.8</td>
-					<td><a target=_blank href="https://github.com/zyx0814/dzzoffice/issues/252">https://github.com/zyx0814/dzzoffice/issues/252</a></td>
-					<td class=date>2024-08-05T17:15:41.803</td>
-					<td class=description>dzzoffice 2.02.1 is vulnerable to Directory Traversal via user/space/about.php.</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-42366">CVE-2024-42366</a></td>
+					<td>9.0</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-08-08T17:15:19.590</td>
+					<td class=description>VRCX is an assistant/companion application for VRChat. In versions prior to 2024.03.23, a CefSharp browser with over-permission and cross-site scripting via overlay notification can be combined to result in remote command execution. These vulnerabilities are patched in VRCX 2023.12.24. In addition to the patch, VRCX maintainers worked with the VRC team and blocked the older version of VRCX on the VRC's API side. Users who use the older version of VRCX must update their installation to continue using VRCX.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-42365">CVE-2024-42365</a></td>
+					<td>7.4</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-08T17:15:19.340</td>
+					<td class=description>Asterisk is an open source private branch exchange (PBX) and telephony toolkit. Prior to asterisk versions 18.24.2, 20.9.2, and 21.4.2 and certified-asterisk versions 18.9-cert11 and 20.7-cert2, an AMI user with `write=originate` may change all configuration files in the `/etc/asterisk/` directory. This occurs because they are able to curl remote files and write them to disk, but are also able to append to existing files using the `FILE` function inside the `SET` application. This issue may result in privilege escalation, remote code execution and/or blind server-side request forgery with arbitrary protocol. Asterisk versions 18.24.2, 20.9.2, and 21.4.2 and certified-asterisk versions 18.9-cert11 and 20.7-cert2 contain a fix for this issue.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -815,10 +815,6 @@ The specific flaw exists within the processing of SMS message lists. The issue r
 					<td class=date>2024-08-05T19:15:38.273</td>
 					<td class=description>mod_css_styles in Roundcube through 1.5.7 and 1.6.x through 1.6.7 allows a insufficiently filters Cascading Style Sheets (CSS) token sequences in rendered e-mail messages, allowing a remote attacker to obtain sensitive information.</td>
 				</tr>
-			
-		
-			
-		
 			
 		
 			
