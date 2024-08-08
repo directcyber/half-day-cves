@@ -1,16 +1,4 @@
 {
-  "CVE-2024-41889": {
-    "cvss": 8.8,
-    "description": "Multiple Pimax products accept WebSocket connections from unintended endpoints. If this vulnerability is exploited, arbitrary code may be executed by a remote unauthenticated attacker.",
-    "published": "2024-08-05T05:15:39.697",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-6117": {
-    "cvss": "-",
-    "description": "A Unrestricted upload of file with dangerous type vulnerability in meeting management function in Hamastar MeetingHub Paperless Meetings 2021 allows remote authenticated users to perform arbitrary system commands via a crafted ASP file.",
-    "published": "2024-08-05T05:15:39.760",
-    "keywords": "remote,command"
-  },
   "CVE-2024-38856": {
     "cvss": 8.1,
     "description": "Incorrect Authorization vulnerability in Apache OFBiz.\n\nThis issue affects Apache OFBiz: through 18.12.14.\n\nUsers are recommended to upgrade to version 18.12.15, which fixes the issue.\n\nUnauthenticated endpoints could allow execution of screen rendering code of screens if some preconditions are met (such as when the screen definitions don't explicitly check user's permissions because they rely on the configuration of their endpoints).",
