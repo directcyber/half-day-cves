@@ -1,10 +1,4 @@
 {
-  "CVE-2024-41381": {
-    "url": "https://github.com/microweber/microweber/issues/1110",
-    "cvss": 6.1,
-    "description": "microweber 2.0.16 was discovered to contain a Cross Site Scripting (XSS) vulnerability via userfiles\\modules\\settings\\admin.php.",
-    "published": "2024-08-05T18:15:32.397"
-  },
   "CVE-2024-42010": {
     "cvss": 7.5,
     "description": "mod_css_styles in Roundcube through 1.5.7 and 1.6.x through 1.6.7 allows a insufficiently filters Cascading Style Sheets (CSS) token sequences in rendered e-mail messages, allowing a remote attacker to obtain sensitive information.",
@@ -340,5 +334,17 @@
     "description": "VRCX is an assistant/companion application for VRChat. In versions prior to 2024.03.23, a CefSharp browser with over-permission and cross-site scripting via overlay notification can be combined to result in remote command execution. These vulnerabilities are patched in VRCX 2023.12.24. In addition to the patch, VRCX maintainers worked with the VRC team and blocked the older version of VRCX on the VRC's API side. Users who use the older version of VRCX must update their installation to continue using VRCX.",
     "published": "2024-08-08T17:15:19.590",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2024-41161": {
+    "cvss": 7.5,
+    "description": "Use of hard-coded credentials vulnerability affecting Vonets industrial wifi bridge relays and WiFi bridge repeaters, software versions \n3.3.23.6.9 and prior, enables an unauthenticated remote attacker to \nbypass authentication using hard-coded administrator credentials. These \naccounts cannot be disabled.",
+    "published": "2024-08-08T18:15:10.640",
+    "keywords": "remote,unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-42493": {
+    "cvss": 5.3,
+    "description": "Dorsett Controls InfoScan is vulnerable due to a leak of possible \nsensitive information through the response headers and the rendered \nJavaScript prior to user login.",
+    "published": "2024-08-08T18:15:11.207",
+    "keywords": "sensitive,leak"
   }
 }
