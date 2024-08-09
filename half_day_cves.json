@@ -1,16 +1,4 @@
 {
-  "CVE-2024-5709": {
-    "cvss": 8.8,
-    "description": "The WPBakery Visual Composer plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 7.7 via the 'layout_name' parameter. This makes it possible for authenticated attackers, with Author-level access and above, and with post permissions granted by an Administrator, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
-    "published": "2024-08-06T06:15:34.793",
-    "keywords": "execution,sensitive,bypass"
-  },
-  "CVE-2024-6201": {
-    "cvss": 5.3,
-    "description": "HaloITSM versions up to 2.146.1 are affected by a Template Injection vulnerability within the engine used to generate emails. This can lead to the leakage of potentially sensitive information. HaloITSM versions past 2.146.1 (and patches starting from 2.143.61 ) fix the mentioned vulnerability.",
-    "published": "2024-08-06T06:15:35.283",
-    "keywords": "sensitive,leak"
-  },
   "CVE-2024-7246": {
     "url": "https://github.com/grpc/grpc/issues/36245",
     "cvss": "-",
