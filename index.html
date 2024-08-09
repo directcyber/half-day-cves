@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-08-08T23:10:29.148205
+Updated at UTC 2024-08-09T00:46:41.605375
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -162,18 +162,6 @@ Please update to a fixed version of gRPC as soon as possible. This bug has been 
 
 
 				</tr>
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
 			
 		
 			
@@ -685,78 +673,6 @@ The specific flaw exists within the get_response_json_result endpoint. The issue
 					<td>remote,execution</td>
 					<td class=date>2024-08-06T02:15:35.277</td>
 					<td class=description>The Blox Page Builder plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'handleUploadFile' function in all versions up to, and including, 1.0.65. This makes it possible for authenticated attackers, with contributor-level and above permissions, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7542">CVE-2024-7542</a></td>
-					<td>3.3</td>
-					<td>command,sensitive</td>
-					<td class=date>2024-08-06T00:15:35.663</td>
-					<td class=description>oFono AT CMGR Command Uninitialized Variable Information Disclosure Vulnerability. This vulnerability allows local attackers to disclose sensitive information on affected installations of oFono. An attacker must first obtain the ability to execute code on the target modem in order to exploit this vulnerability.
-
-The specific flaw exists within the parsing of responses from AT+CMGR commands. The issue results from the lack of proper initialization of memory prior to accessing it. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of root. Was ZDI-CAN-23309.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7541">CVE-2024-7541</a></td>
-					<td>3.3</td>
-					<td>command,sensitive</td>
-					<td class=date>2024-08-06T00:15:35.470</td>
-					<td class=description>oFono AT CMT Command Uninitialized Variable Information Disclosure Vulnerability. This vulnerability allows local attackers to disclose sensitive information on affected installations of oFono. An attacker must first obtain the ability to execute code on the target modem in order to exploit this vulnerability.
-
-The specific flaw exists within the parsing of responses from AT+CMT commands. The issue results from the lack of proper initialization of memory prior to accessing it. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of root. Was ZDI-CAN-23308.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7540">CVE-2024-7540</a></td>
-					<td>3.3</td>
-					<td>command,sensitive</td>
-					<td class=date>2024-08-06T00:15:35.270</td>
-					<td class=description>oFono AT CMGL Command Uninitialized Variable Information Disclosure Vulnerability. This vulnerability allows local attackers to disclose sensitive information on affected installations of oFono. An attacker must first obtain the ability to execute code on the target modem in order to exploit this vulnerability.
-
-The specific flaw exists within the parsing of responses from AT+CMGL commands. The issue results from the lack of proper initialization of memory prior to accessing it. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of root. Was ZDI-CAN-23307.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7539">CVE-2024-7539</a></td>
-					<td>7.8</td>
-					<td>execution,command</td>
-					<td class=date>2024-08-06T00:15:35.053</td>
-					<td class=description>oFono CUSD Stack-based Buffer Overflow Code Execution Vulnerability. This vulnerability allows local attackers to execute arbitrary code on affected installations of oFono. An attacker must first obtain the ability to execute code on the target modem in order to exploit this vulnerability.
-
-The specific flaw exists within the parsing of responses from AT+CUSD commands. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-23195.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7538">CVE-2024-7538</a></td>
-					<td>7.8</td>
-					<td>execution,command</td>
-					<td class=date>2024-08-06T00:15:34.860</td>
-					<td class=description>oFono CUSD AT Command Stack-based Buffer Overflow Code Execution Vulnerability. This vulnerability allows local attackers to execute arbitrary code on affected installations of oFono. An attacker must first obtain the ability to execute code on the target modem in order to exploit this vulnerability.
-
-The specific flaw exists within the parsing of responses from AT Commands. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-23190.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7537">CVE-2024-7537</a></td>
-					<td>3.3</td>
-					<td>authentication,sensitive</td>
-					<td class=date>2024-08-06T00:15:34.653</td>
-					<td class=description>oFono QMI SMS Handling Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows local attackers to disclose sensitive information on affected installations of oFono. Authentication is not required to exploit this vulnerability.
-
-The specific flaw exists within the processing of SMS message lists. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of root. Was ZDI-CAN-23157.</td>
 				</tr>
 			
 		
