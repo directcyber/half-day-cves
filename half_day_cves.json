@@ -1,34 +1,4 @@
 {
-  "CVE-2024-39225": {
-    "cvss": 9.8,
-    "description": "GL-iNet products AR750/AR750S/AR300M/AR300M16/MT300N-V2/B1300/MT1300/SFT1200/X750 v4.3.11, MT3000/MT2500/AXT1800/AX1800/A1300/X300B v4.5.16, XE300 v4.3.16, E750 v4.3.12, AP1300/S1300 v4.3.13, and XE3000/X3000 v4.4 were discovered to contain a remote code execution (RCE) vulnerability.",
-    "published": "2024-08-06T16:15:48.647",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-39751": {
-    "cvss": 4.3,
-    "description": "IBM InfoSphere Information Server 11.7 could allow a remote attacker to obtain sensitive information when a detailed technical error message is returned in the browser.  This information could be used in further attacks against the system.  IBM X-Force ID:  297429",
-    "published": "2024-08-06T16:15:48.930",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-7004": {
-    "cvss": 4.3,
-    "description": "Insufficient validation of untrusted input in Safe Browsing in Google Chrome prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to bypass discretionary access control via a malicious file. (Chromium security severity: Low)",
-    "published": "2024-08-06T16:15:50.760",
-    "keywords": "remote,bypass"
-  },
-  "CVE-2024-7005": {
-    "cvss": 8.8,
-    "description": "Insufficient validation of untrusted input in Safe Browsing in Google Chrome prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to bypass discretionary access control via a malicious file. (Chromium security severity: Low)",
-    "published": "2024-08-06T16:15:50.837",
-    "keywords": "remote,bypass"
-  },
-  "CVE-2024-7564": {
-    "cvss": 6.5,
-    "description": "Logsign Unified SecOps Platform Directory Traversal Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Logsign Unified SecOps Platform. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the get_response_json_result endpoint. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to disclose information in the context of root. Was ZDI-CAN-24680.",
-    "published": "2024-08-06T16:15:51.000",
-    "keywords": "remote,authentication,sensitive"
-  },
   "CVE-2024-42393": {
     "cvss": 9.8,
     "description": "There are vulnerabilities in the Soft AP Daemon Service which could allow a threat actor to execute an unauthenticated RCE attack. Successful exploitation could allow an attacker to execute arbitrary commands on the underlying operating system leading to complete system compromise.",
