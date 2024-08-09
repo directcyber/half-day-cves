@@ -1,16 +1,4 @@
 {
-  "CVE-2024-28962": {
-    "cvss": 6.5,
-    "description": "Dell Command | Update, Dell Update, and Alienware Update UWP, versions prior to 5.4, contain an Exposed Dangerous Method or Function vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to denial of service.",
-    "published": "2024-08-06T04:16:45.810",
-    "keywords": "remote,unauthenticated,command"
-  },
-  "CVE-2024-6782": {
-    "cvss": 9.8,
-    "description": "Improper access control in Calibre 6.9.0 ~ 7.14.0 allow unauthenticated attackers to achieve remote code execution.",
-    "published": "2024-08-06T04:16:46.450",
-    "keywords": "remote,execution,unauthenticated"
-  },
   "CVE-2024-5709": {
     "cvss": 8.8,
     "description": "The WPBakery Visual Composer plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 7.7 via the 'layout_name' parameter. This makes it possible for authenticated attackers, with Author-level access and above, and with post permissions granted by an Administrator, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
