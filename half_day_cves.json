@@ -1,16 +1,4 @@
 {
-  "CVE-2024-42365": {
-    "cvss": 7.4,
-    "description": "Asterisk is an open source private branch exchange (PBX) and telephony toolkit. Prior to asterisk versions 18.24.2, 20.9.2, and 21.4.2 and certified-asterisk versions 18.9-cert11 and 20.7-cert2, an AMI user with `write=originate` may change all configuration files in the `/etc/asterisk/` directory. This occurs because they are able to curl remote files and write them to disk, but are also able to append to existing files using the `FILE` function inside the `SET` application. This issue may result in privilege escalation, remote code execution and/or blind server-side request forgery with arbitrary protocol. Asterisk versions 18.24.2, 20.9.2, and 21.4.2 and certified-asterisk versions 18.9-cert11 and 20.7-cert2 contain a fix for this issue.",
-    "published": "2024-08-08T17:15:19.340",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-42366": {
-    "cvss": 9.0,
-    "description": "VRCX is an assistant/companion application for VRChat. In versions prior to 2024.03.23, a CefSharp browser with over-permission and cross-site scripting via overlay notification can be combined to result in remote command execution. These vulnerabilities are patched in VRCX 2023.12.24. In addition to the patch, VRCX maintainers worked with the VRC team and blocked the older version of VRCX on the VRC's API side. Users who use the older version of VRCX must update their installation to continue using VRCX.",
-    "published": "2024-08-08T17:15:19.590",
-    "keywords": "remote,execution,command"
-  },
   "CVE-2024-41161": {
     "cvss": 7.5,
     "description": "Use of hard-coded credentials vulnerability affecting Vonets industrial wifi bridge relays and WiFi bridge repeaters, software versions \n3.3.23.6.9 and prior, enables an unauthenticated remote attacker to \nbypass authentication using hard-coded administrator credentials. These \naccounts cannot be disabled.",
