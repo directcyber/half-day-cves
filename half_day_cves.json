@@ -574,5 +574,17 @@
     "description": "Command injection vulnerability in Asus RT-N15U 3.0.0.4.376_3754 allows a remote attacker to execute arbitrary code via the netstat function page.",
     "published": "2024-08-15T19:15:19.977",
     "keywords": "remote,command"
+  },
+  "CVE-2024-34727": {
+    "cvss": "-",
+    "description": "In sdpu_compare_uuid_with_attr of sdp_utils.cc, there is a possible out of bounds read due to a heap buffer overflow. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-08-15T22:15:06.190",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-34734": {
+    "cvss": "-",
+    "description": "In onForegroundServiceButtonClicked of FooterActionsViewModel.kt, there is a possible way to disable the active VPN app from the lockscreen due to an insecure default value. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2024-08-15T22:15:06.337",
+    "keywords": "execution,vpn"
   }
 }
