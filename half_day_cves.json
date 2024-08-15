@@ -534,7 +534,7 @@
     "published": "2024-08-15T17:15:18.303"
   },
   "CVE-2024-22218": {
-    "cvss": "-",
+    "cvss": 8.8,
     "description": "XML External Entity (XXE) vulnerability in Terminalfour 8.0.0001 through 8.3.18 and XML JDBC versions up to 1.0.4 allows authenticated users to submit malicious XML via unspecified features which could lead to various actions such as accessing the underlying server, remote code execution (RCE), or performing Server-Side Request Forgery (SSRF) attacks.",
     "published": "2024-08-15T18:15:19.197",
     "keywords": "remote,execution"
@@ -544,5 +544,41 @@
     "description": "XML External Entity (XXE) vulnerability in Terminalfour 8.0.0001 through 8.3.18 and XML JDBC versions up to 1.0.4 allows authenticated users to submit malicious XML via unspecified features which could lead to various actions such as accessing the underlying server, remote code execution (RCE), or performing Server-Side Request Forgery (SSRF) attacks.",
     "published": "2024-08-15T18:15:19.290",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-23168": {
+    "cvss": "-",
+    "description": "Vulnerability in Xiexe XSOverlay before build 647 allows non-local websites to send the malicious commands to the WebSocket API, resulting in the arbitrary code execution.",
+    "published": "2024-08-15T19:15:18.070",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-27728": {
+    "cvss": "-",
+    "description": "Cross Site Scripting vulnerability in Friendica v.2023.12 allows a remote attacker to obtain sensitive information via the text parameter of the babel debug feature.",
+    "published": "2024-08-15T19:15:18.477",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-27729": {
+    "cvss": "-",
+    "description": "Cross Site Scripting vulnerability in Friendica v.2023.12 allows a remote attacker to obtain sensitive information via the location parameter of the calendar event feature.",
+    "published": "2024-08-15T19:15:18.573",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-27730": {
+    "cvss": "-",
+    "description": "Insecure Permissions vulnerability in Friendica v.2023.12 allows a remote attacker to obtain sensitive information and execute arbitrary code via the cid parameter of the calendar event feature.",
+    "published": "2024-08-15T19:15:18.663",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-27731": {
+    "cvss": "-",
+    "description": "Cross Site Scripting vulnerability in Friendica v.2023.12 allows a remote attacker to obtain sensitive information via the lack of file type filtering in the file attachment parameter.",
+    "published": "2024-08-15T19:15:18.770",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-42757": {
+    "cvss": "-",
+    "description": "Command injection vulnerability in Asus RT-N15U 3.0.0.4.376_3754 allows a remote attacker to execute arbitrary code via the netstat function page.",
+    "published": "2024-08-15T19:15:19.977",
+    "keywords": "remote,command"
   }
 }
