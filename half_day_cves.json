@@ -1,1 +1,518 @@
-{}
+{
+  "CVE-2024-33535": {
+    "cvss": 7.5,
+    "description": "An issue was discovered in Zimbra Collaboration (ZCS) 9.0 and 10.0. The vulnerability involves unauthenticated local file inclusion (LFI) in a web application, specifically impacting the handling of the packages parameter. Attackers can exploit this flaw to include arbitrary local files without authentication, potentially leading to unauthorized access to sensitive information. The vulnerability is limited to files within a specific directory.",
+    "published": "2024-08-12T15:15:20.570",
+    "keywords": "unauthenticated,authentication,sensitive"
+  },
+  "CVE-2024-41909": {
+    "url": "https://github.com/apache/mina-sshd/issues/445",
+    "cvss": "-",
+    "description": "Like many other SSH implementations, Apache MINA SSHD suffered from the issue that is more widely known as CVE-2023-48795. An attacker that can intercept traffic between client and server could drop certain packets from the stream, potentially causing client and server to consequently end up with a connection for which \nsome security features have been downgraded or disabled, aka a Terrapin \nattack\n\nThe mitigations to prevent this type of attack were implemented in Apache MINA SSHD 2.12.0, both client and server side. Users are recommended to upgrade to at least this version. Note that both the client and the server implementation must have mitigations applied against this issue, otherwise the connection may still be affected.",
+    "published": "2024-08-12T16:15:15.533"
+  },
+  "CVE-2024-7700": {
+    "cvss": 6.5,
+    "description": "A command injection flaw was found in the \"Host Init Config\" template in the Foreman application via the \"Install Packages\" field on the \"Register Host\" page. This flaw allows an attacker with the necessary privileges to inject arbitrary commands into the configuration, potentially allowing unauthorized command execution during host registration. Although this issue requires user interaction to execute injected commands, it poses a significant risk if an unsuspecting user runs the generated registration script.",
+    "published": "2024-08-12T17:15:18.607",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-42744": {
+    "cvss": 8.8,
+    "description": "In TOTOLINK X5000r v9.1.0cu.2350_b20230313, the file /cgi-bin/cstecgi.cgi contains an OS command injection vulnerability in setModifyVpnUser. Authenticated Attackers can send malicious packet to execute arbitrary commands.",
+    "published": "2024-08-12T20:15:09.110",
+    "keywords": "command,vpn"
+  },
+  "CVE-2024-7094": {
+    "cvss": 9.8,
+    "description": "The JS Help Desk \u2013 The Ultimate Help Desk & Support Plugin plugin for WordPress is vulnerable to PHP Code Injection leading to Remote Code Execution in all versions up to, and including, 2.8.6 via the 'storeTheme' function. This is due to a lack of sanitization on user-supplied values, which replace values in the style.php file, along with missing capability checks. This makes it possible for unauthenticated attackers to execute code on the server. This issue was partially patched in 2.8.6 when the code injection issue was resolved, and fully patched in 2.8.7 when the missing authorization and cross-site request forgery protection was added.",
+    "published": "2024-08-13T03:15:04.400",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-41732": {
+    "cvss": 4.7,
+    "description": "SAP NetWeaver Application Server ABAP allows\n  an unauthenticated attacker to craft a URL link that could bypass allowlist\n  controls. Depending on the web applications provided by this server, the\n  attacker might inject CSS code or links into the web application that could\n  allow the attacker to read or modify information. There is no impact on\n  availability of application.",
+    "published": "2024-08-13T04:15:08.637",
+    "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2024-42377": {
+    "cvss": 4.3,
+    "description": "SAP shared service framework allows an\nauthenticated non-administrative user to call a remote-enabled function, which\nwill allow them to insert value entries into a non-sensitive table, causing low\nimpact on integrity of the application",
+    "published": "2024-08-13T04:15:11.290",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-6823": {
+    "cvss": 8.8,
+    "description": "The Media Library Assistant plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation involving the mla-inline-edit-upload-scripts AJAX action in all versions up to, and including, 3.18. This makes it possible for authenticated attackers, with Author-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-08-13T06:15:05.120",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-7715": {
+    "cvss": 6.3,
+    "description": "** UNSUPPORTED WHEN ASSIGNED ** A vulnerability was found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726-4, DNS-1100-4, DNS-1200-05 and DNS-1550-04 up to 20240812. It has been classified as critical. This affects the function sprintf of the file /cgi-bin/photocenter_mgr.cgi. The manipulation of the argument filter leads to command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. NOTE: This vulnerability only affects products that are no longer supported by the maintainer. NOTE: Vendor was contacted early and confirmed that the product is end-of-life. It should be retired and replaced.",
+    "published": "2024-08-13T07:15:13.677",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-41682": {
+    "cvss": 5.3,
+    "description": "A vulnerability has been identified in Location Intelligence family (All versions < V4.4). Affected products do not properly enforce restriction of  excessive authentication attempts. This could allow an unauthenticated remote attacker to conduct brute force attacks against legitimate user passwords.",
+    "published": "2024-08-13T08:15:12.167",
+    "keywords": "remote,unauthenticated,authentication"
+  },
+  "CVE-2024-41904": {
+    "cvss": 7.5,
+    "description": "A vulnerability has been identified in SINEC Traffic Analyzer (6GK8822-1BG01-0BA0) (All versions < V2.0). The affected application do not properly enforce restriction of  excessive authentication attempts. This could allow an unauthenticated attacker to conduct brute force attacks against legitimate user credentials or keys.",
+    "published": "2024-08-13T08:15:13.003",
+    "keywords": "unauthenticated,authentication"
+  },
+  "CVE-2024-41976": {
+    "cvss": 7.2,
+    "description": "A vulnerability has been identified in RUGGEDCOM RM1224 LTE(4G) EU (6GK6108-4AM00-2BA2) (All versions < V8.1), RUGGEDCOM RM1224 LTE(4G) NAM (6GK6108-4AM00-2DA2) (All versions < V8.1), SCALANCE M804PB (6GK5804-0AP00-2AA2) (All versions < V8.1), SCALANCE M812-1 ADSL-Router family (All versions < V8.1), SCALANCE M816-1 ADSL-Router family (All versions < V8.1), SCALANCE M826-2 SHDSL-Router (6GK5826-2AB00-2AB2) (All versions < V8.1), SCALANCE M874-2 (6GK5874-2AA00-2AA2) (All versions < V8.1), SCALANCE M874-3 (6GK5874-3AA00-2AA2) (All versions < V8.1), SCALANCE M874-3 3G-Router (CN) (6GK5874-3AA00-2FA2) (All versions < V8.1), SCALANCE M876-3 (6GK5876-3AA02-2BA2) (All versions < V8.1), SCALANCE M876-3 (ROK) (6GK5876-3AA02-2EA2) (All versions < V8.1), SCALANCE M876-4 (6GK5876-4AA10-2BA2) (All versions < V8.1), SCALANCE M876-4 (EU) (6GK5876-4AA00-2BA2) (All versions < V8.1), SCALANCE M876-4 (NAM) (6GK5876-4AA00-2DA2) (All versions < V8.1), SCALANCE MUM853-1 (A1) (6GK5853-2EA10-2AA1) (All versions < V8.1), SCALANCE MUM853-1 (B1) (6GK5853-2EA10-2BA1) (All versions < V8.1), SCALANCE MUM853-1 (EU) (6GK5853-2EA00-2DA1) (All versions < V8.1), SCALANCE MUM856-1 (A1) (6GK5856-2EA10-3AA1) (All versions < V8.1), SCALANCE MUM856-1 (B1) (6GK5856-2EA10-3BA1) (All versions < V8.1), SCALANCE MUM856-1 (CN) (6GK5856-2EA00-3FA1) (All versions < V8.1), SCALANCE MUM856-1 (EU) (6GK5856-2EA00-3DA1) (All versions < V8.1), SCALANCE MUM856-1 (RoW) (6GK5856-2EA00-3AA1) (All versions < V8.1), SCALANCE S615 EEC LAN-Router (6GK5615-0AA01-2AA2) (All versions < V8.1), SCALANCE S615 LAN-Router (6GK5615-0AA00-2AA2) (All versions < V8.1). Affected devices do not properly validate input in specific VPN configuration fields. This could allow an authenticated remote attacker to execute arbitrary code on the device.",
+    "published": "2024-08-13T08:15:15.403",
+    "keywords": "remote,vpn"
+  },
+  "CVE-2024-41978": {
+    "cvss": 6.5,
+    "description": "A vulnerability has been identified in RUGGEDCOM RM1224 LTE(4G) EU (6GK6108-4AM00-2BA2) (All versions < V8.1), RUGGEDCOM RM1224 LTE(4G) NAM (6GK6108-4AM00-2DA2) (All versions < V8.1), SCALANCE M804PB (6GK5804-0AP00-2AA2) (All versions < V8.1), SCALANCE M812-1 ADSL-Router family (All versions < V8.1), SCALANCE M816-1 ADSL-Router family (All versions < V8.1), SCALANCE M826-2 SHDSL-Router (6GK5826-2AB00-2AB2) (All versions < V8.1), SCALANCE M874-2 (6GK5874-2AA00-2AA2) (All versions < V8.1), SCALANCE M874-3 (6GK5874-3AA00-2AA2) (All versions < V8.1), SCALANCE M874-3 3G-Router (CN) (6GK5874-3AA00-2FA2) (All versions < V8.1), SCALANCE M876-3 (6GK5876-3AA02-2BA2) (All versions < V8.1), SCALANCE M876-3 (ROK) (6GK5876-3AA02-2EA2) (All versions < V8.1), SCALANCE M876-4 (6GK5876-4AA10-2BA2) (All versions < V8.1), SCALANCE M876-4 (EU) (6GK5876-4AA00-2BA2) (All versions < V8.1), SCALANCE M876-4 (NAM) (6GK5876-4AA00-2DA2) (All versions < V8.1), SCALANCE MUM853-1 (A1) (6GK5853-2EA10-2AA1) (All versions < V8.1), SCALANCE MUM853-1 (B1) (6GK5853-2EA10-2BA1) (All versions < V8.1), SCALANCE MUM853-1 (EU) (6GK5853-2EA00-2DA1) (All versions < V8.1), SCALANCE MUM856-1 (A1) (6GK5856-2EA10-3AA1) (All versions < V8.1), SCALANCE MUM856-1 (B1) (6GK5856-2EA10-3BA1) (All versions < V8.1), SCALANCE MUM856-1 (CN) (6GK5856-2EA00-3FA1) (All versions < V8.1), SCALANCE MUM856-1 (EU) (6GK5856-2EA00-3DA1) (All versions < V8.1), SCALANCE MUM856-1 (RoW) (6GK5856-2EA00-3AA1) (All versions < V8.1), SCALANCE S615 EEC LAN-Router (6GK5615-0AA01-2AA2) (All versions < V8.1), SCALANCE S615 LAN-Router (6GK5615-0AA00-2AA2) (All versions < V8.1). Affected devices insert sensitive information about the generation of 2FA tokens into log files. This could allow an authenticated remote attacker to forge 2FA tokens of other users.",
+    "published": "2024-08-13T08:15:15.903",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-38501": {
+    "cvss": 6.1,
+    "description": "An unauthenticated remote attacker may use a HTML injection vulnerability with limited length to inject malicious HTML code and gain low-privileged access on the affected device.",
+    "published": "2024-08-13T13:15:12.130",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-38502": {
+    "cvss": 7.1,
+    "description": "An unauthenticated remote attacker may use stored XSS vulnerability to obtain information from a user or reboot the affected device once.",
+    "published": "2024-08-13T13:15:12.460",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-3913": {
+    "cvss": 7.5,
+    "description": "An unauthenticated remote attacker can use this vulnerability to change the device configuration due to a file writeable for short time after system startup.",
+    "published": "2024-08-13T13:15:12.750",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-5849": {
+    "cvss": 7.1,
+    "description": "An unauthenticated remote attacker may use a reflected XSS vulnerability to obtain information from a user or reboot the affected device once.",
+    "published": "2024-08-13T13:15:13.067",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-6788": {
+    "cvss": 8.6,
+    "description": "A remote unauthenticated attacker can use the firmware update feature on the LAN interface of the device to reset the password for the predefined, low-privileged user \u201cuser-app\u201d to the default password.",
+    "published": "2024-08-13T14:15:16.457",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-7746": {
+    "cvss": "-",
+    "description": "Use of Default Credentials vulnerability in Tananaev Solutions Traccar Server on Administrator Panel modules allows Authentication Abuse.This issue affects the privileged transactions implemented by the Traccar solution that should otherwise be protected by the authentication mechanism.\u00a0\nThese transactions could have an impact on any sensitive aspect of the platform, including Confidentiality, Integrity and Availability.",
+    "published": "2024-08-13T16:15:09.573",
+    "keywords": "authentication,sensitive"
+  },
+  "CVE-2024-36446": {
+    "cvss": "-",
+    "description": "The provisioning manager component of Mitel MiVoice MX-ONE through 7.6 SP1 could allow an authenticated attacker to conduct an authentication bypass attack due to improper access control. A successful exploit could allow an attacker to bypass the authorization schema.",
+    "published": "2024-08-13T17:15:23.403",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-41711": {
+    "cvss": 6.8,
+    "description": "A vulnerability in the Mitel 6800 Series, 6900 Series, and 6900w Series SIP Phones, including the 6970 Conference Unit, through R6.4.0.HF1 (R6.4.0.136) could allow an unauthenticated attacker with physical access to the phone to conduct an argument injection attack, due to insufficient parameter sanitization. A successful exploit could allow an attacker to execute arbitrary commands within the context of the system.",
+    "published": "2024-08-13T17:15:24.237",
+    "keywords": "unauthenticated,command"
+  },
+  "CVE-2024-6618": {
+    "cvss": "-",
+    "description": "In Ocean Data Systems Dream Report, a path traversal vulnerability could allow an attacker to perform remote code execution through the injection of a malicious dynamic-link library (DLL).",
+    "published": "2024-08-13T17:15:24.377",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38063": {
+    "cvss": 9.8,
+    "description": "Windows TCP/IP Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:10.007",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38114": {
+    "cvss": 8.8,
+    "description": "Windows IP Routing Management Snapin Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:11.820",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38115": {
+    "cvss": 8.8,
+    "description": "Windows IP Routing Management Snapin Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:12.080",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38116": {
+    "cvss": 8.8,
+    "description": "Windows IP Routing Management Snapin Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:12.333",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38120": {
+    "cvss": 8.8,
+    "description": "Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:13.047",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38121": {
+    "cvss": 8.8,
+    "description": "Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:13.320",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38128": {
+    "cvss": 8.8,
+    "description": "Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:14.877",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38130": {
+    "cvss": 8.8,
+    "description": "Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:15.580",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38131": {
+    "cvss": 8.8,
+    "description": "Clipboard Virtual Channel Extension Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:15.833",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38138": {
+    "cvss": 7.5,
+    "description": "Windows Deployment Services Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:17.450",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38140": {
+    "cvss": 9.8,
+    "description": "Windows Reliable Multicast Transport Driver (RMCAST) Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:17.687",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38152": {
+    "cvss": 7.8,
+    "description": "Windows OLE Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:20.380",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38154": {
+    "cvss": 8.8,
+    "description": "Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:21.273",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38157": {
+    "cvss": 7.0,
+    "description": "Azure IoT SDK Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:22.440",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38158": {
+    "cvss": 7.0,
+    "description": "Azure IoT SDK Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:22.727",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38159": {
+    "cvss": 9.1,
+    "description": "Windows Network Virtualization Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:22.950",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38160": {
+    "cvss": 9.1,
+    "description": "Windows Network Virtualization Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:23.207",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38161": {
+    "cvss": 6.8,
+    "description": "Windows Mobile Broadband Driver Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:23.437",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38169": {
+    "cvss": 7.8,
+    "description": "Microsoft Office Visio Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:24.857",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38170": {
+    "cvss": 7.1,
+    "description": "Microsoft Excel Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:25.070",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38171": {
+    "cvss": 7.8,
+    "description": "Microsoft PowerPoint Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:25.300",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38172": {
+    "cvss": 7.8,
+    "description": "Microsoft Excel Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:25.530",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38173": {
+    "cvss": 6.7,
+    "description": "Microsoft Outlook Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:25.750",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38189": {
+    "cvss": 8.8,
+    "description": "Microsoft Project Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:27.733",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38195": {
+    "cvss": 7.8,
+    "description": "Azure CycleCloud Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:28.470",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-38199": {
+    "cvss": 9.8,
+    "description": "Windows Line Printer Daemon (LPD) Service Remote Code Execution Vulnerability",
+    "published": "2024-08-13T18:15:29.443",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-6079": {
+    "cvss": "-",
+    "description": "A vulnerability exists in the Rockwell Automation Emulate3D\u2122,\u00a0which could be leveraged to execute a DLL Hijacking attack. The application loads shared libraries, which are readable and writable by any user. If exploited, a malicious user could leverage a malicious dll and perform a remote code execution attack.",
+    "published": "2024-08-13T18:15:32.443",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-7593": {
+    "cvss": 9.8,
+    "description": "Incorrect implementation of an authentication algorithm in Ivanti vTM other than versions 22.2R1 or 22.7R2 allows a remote unauthenticated attacker to bypass authentication of the admin panel.",
+    "published": "2024-08-13T19:15:16.940",
+    "keywords": "remote,unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-28986": {
+    "cvss": 9.8,
+    "description": "SolarWinds Web Help Desk was found to be susceptible to a Java Deserialization Remote Code Execution vulnerability that, if exploited, would allow an attacker to run commands on the host machine. \n\nWhile it was reported as an unauthenticated\u00a0vulnerability, SolarWinds has been unable to reproduce it\u00a0without authentication\u00a0after thorough testing. \u00a0\n\nHowever, out of an abundance of caution, we recommend all Web Help Desk customers apply the patch, which is now available.",
+    "published": "2024-08-13T23:15:16.627",
+    "keywords": "remote,execution,unauthenticated,authentication,command"
+  },
+  "CVE-2024-20082": {
+    "cvss": 9.8,
+    "description": "In Modem, there is a possible memory corruption due to a missing bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01182594; Issue ID: MSV-1529.",
+    "published": "2024-08-14T03:15:04.120",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-36136": {
+    "cvss": 7.5,
+    "description": "An off-by-one error in WLInfoRailService in Ivanti Avalanche 6.3.1 allows a remote unauthenticated attacker to crash the service, resulting in a DoS.",
+    "published": "2024-08-14T03:15:04.390",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-37399": {
+    "cvss": 7.5,
+    "description": "A NULL pointer dereference in WLAvalancheService in Ivanti Avalanche 6.3.1 allows a remote unauthenticated attacker to crash the service, resulting in a DoS.",
+    "published": "2024-08-14T03:15:04.850",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-38652": {
+    "cvss": 8.2,
+    "description": "Path traversal in the skin management component of Ivanti Avalanche 6.3.1 allows a remote unauthenticated attacker to achieve denial of service via arbitrary file deletion.",
+    "published": "2024-08-14T03:15:05.020",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-38653": {
+    "cvss": 8.2,
+    "description": "XXE in SmartDeviceServer in Ivanti Avalanche 6.3.1 allows a remote unauthenticated attacker to read arbitrary files on the server.",
+    "published": "2024-08-14T03:15:05.200",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-7728": {
+    "cvss": 7.2,
+    "description": "The specific CGI of the CAYIN Technology CMS does not properly validate user input, allowing a remote attacker with administrator privileges to inject OS commands into the specific parameter and execute them on the remote server.",
+    "published": "2024-08-14T04:15:06.757",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-7729": {
+    "cvss": 7.5,
+    "description": "The CAYIN Technology CMS lacks proper access control, allowing unauthenticated remote attackers to download arbitrary CGI files.",
+    "published": "2024-08-14T04:15:07.150",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-7731": {
+    "cvss": 9.8,
+    "description": "Dr.ID Access Control System from SECOM does not properly validate a specific page parameter, allowing unauthenticated remote attackers to inject SQL commands to read, modify, and delete database contents.",
+    "published": "2024-08-14T07:15:13.920",
+    "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2024-7732": {
+    "cvss": 9.8,
+    "description": "Dr.ID Access Control System from SECOM does not properly validate a specific page parameter, allowing unauthenticated remote attackers to inject SQL commands to read, modify, and delete database contents.",
+    "published": "2024-08-14T07:15:16.477",
+    "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2024-41860": {
+    "cvss": 5.5,
+    "description": "Substance3D - Sampler versions 4.5 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-08-14T09:15:12.850",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-41861": {
+    "cvss": 5.5,
+    "description": "Substance3D - Sampler versions 4.5 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-08-14T09:15:13.100",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-41862": {
+    "cvss": 5.5,
+    "description": "Substance3D - Sampler versions 4.5 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-08-14T09:15:13.320",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-41863": {
+    "cvss": 5.5,
+    "description": "Substance3D - Sampler versions 4.5 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-08-14T09:15:13.557",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-4389": {
+    "cvss": 8.8,
+    "description": "The Slider and Carousel slider by Depicter plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the uploadFile function in all versions up to, and including, 3.1.1. This makes it possible for authenticated attackers, with contributor access or higher, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-08-14T09:15:14.007",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-39398": {
+    "cvss": 7.4,
+    "description": "Adobe Commerce versions 2.4.7-p1, 2.4.6-p6, 2.4.5-p8, 2.4.4-p9 and earlier are affected by an Improper Restriction of Excessive Authentication Attempts vulnerability that could result in a security feature bypass. An attacker could exploit this vulnerability to perform brute force attacks and potentially gain unauthorized access to accounts. Exploitation of this issue does not require user interaction, but attack complexity is high.",
+    "published": "2024-08-14T12:15:24.377",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-39401": {
+    "cvss": 8.4,
+    "description": "Adobe Commerce versions 2.4.7-p1, 2.4.6-p6, 2.4.5-p8, 2.4.4-p9 and earlier are affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could lead in arbitrary code execution by an admin attacker. Exploitation of this issue requires user interaction and scope is changed.",
+    "published": "2024-08-14T12:15:25.097",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-39402": {
+    "cvss": 8.4,
+    "description": "Adobe Commerce versions 2.4.7-p1, 2.4.6-p6, 2.4.5-p8, 2.4.4-p9 and earlier are affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could lead in arbitrary code execution by an admin attacker. Exploitation of this issue requires user interaction and scope is changed.",
+    "published": "2024-08-14T12:15:25.317",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-20790": {
+    "cvss": 5.5,
+    "description": "Dimension versions 3.4.11 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-08-14T15:15:17.580",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-25157": {
+    "cvss": 6.5,
+    "description": "An authentication bypass vulnerability in GoAnywhere MFT prior to 7.6.0 allows Admin Users with access to the Agent Console to circumvent some permission checks when attempting to visit other pages. This could lead to unauthorized information disclosure or modification.",
+    "published": "2024-08-14T15:15:18.023",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-34125": {
+    "cvss": 5.5,
+    "description": "Dimension versions 3.4.11 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-08-14T15:15:19.163",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-34126": {
+    "cvss": 5.5,
+    "description": "Dimension versions 3.4.11 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-08-14T15:15:19.397",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-34127": {
+    "cvss": 5.5,
+    "description": "InDesign Desktop versions ID19.4, ID18.5.2 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-08-14T15:15:19.623",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-34134": {
+    "cvss": 6.1,
+    "description": "Illustrator versions 28.5, 27.9.4 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-08-14T15:15:20.107",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-34135": {
+    "cvss": 5.5,
+    "description": "Illustrator versions 28.5, 27.9.4 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-08-14T15:15:20.347",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-39387": {
+    "cvss": 5.5,
+    "description": "Bridge versions 13.0.8, 14.1.1 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-08-14T15:15:22.233",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-41832": {
+    "cvss": 5.5,
+    "description": "Acrobat Reader versions 20.005.30636, 24.002.20965, 24.002.20964, 24.001.30123 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-08-14T15:15:28.530",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-41833": {
+    "cvss": 5.5,
+    "description": "Acrobat Reader versions 20.005.30636, 24.002.20965, 24.002.20964, 24.001.30123 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-08-14T15:15:28.757",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-41834": {
+    "cvss": 5.5,
+    "description": "Acrobat Reader versions 20.005.30636, 24.002.20965, 24.002.20964, 24.001.30123 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-08-14T15:15:28.983",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-41835": {
+    "cvss": 5.5,
+    "description": "Acrobat Reader versions 20.005.30636, 24.002.20965, 24.002.20964, 24.001.30123 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-08-14T15:15:29.207",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-41854": {
+    "cvss": 5.5,
+    "description": "InDesign Desktop versions ID19.4, ID18.5.2 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-08-14T15:15:30.613",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-28799": {
+    "cvss": 5.6,
+    "description": "IBM QRadar Suite Software 1.10.12.0 through 1.10.23.0 and IBM Cloud Pak for Security 1.10.0.0 through 1.10.11.0 displays sensitive data improperly during back-end commands which may result in the unexpected disclosure of this information.  IBM X-Force ID:  287173.",
+    "published": "2024-08-14T16:15:11.220",
+    "keywords": "command,sensitive"
+  },
+  "CVE-2024-5914": {
+    "cvss": "-",
+    "description": "A command injection issue in Palo Alto Networks Cortex XSOAR CommonScripts Pack allows an unauthenticated attacker to execute arbitrary commands within the context of an integration container.",
+    "published": "2024-08-14T17:15:18.220",
+    "keywords": "unauthenticated,command"
+  },
+  "CVE-2024-27120": {
+    "cvss": "-",
+    "description": "A Local File Inclusion vulnerability has been found in ComfortKey, a product of Celsius Benelux. Using this vulnerability, an unauthenticated attacker may retrieve sensitive information about the underlying system. The vulnerability has been remediated in version 24.1.2.",
+    "published": "2024-08-14T20:15:11.730",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-43368": {
+    "cvss": 6.5,
+    "description": "The Trix editor, versions prior to 2.1.4, is vulnerable to XSS when pasting malicious code. This vulnerability is a bypass of the fix put in place for GHSA-qjqp-xr96-cj99. In pull request 1149, sanitation was added for Trix attachments with a `text/html` content type. However, Trix only checks the content type on the paste event's `dataTransfer` object. As long as the `dataTransfer` has a content type of `text/html`, Trix parses its contents and creates an `Attachment` with them, even if the attachment itself doesn't have a `text/html` content type. Trix then uses the attachment content to set the attachment element's `innerHTML`. An attacker could trick a user to copy and paste malicious code that would execute arbitrary JavaScript code within the context of the user's session, potentially leading to unauthorized actions being performed or sensitive information being disclosed. This vulnerability was fixed in version 2.1.4.",
+    "published": "2024-08-14T22:15:04.497",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-7628": {
+    "cvss": 8.1,
+    "description": "The MStore API \u2013 Create Native Android & iOS Apps On The Cloud plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 4.15.2. This is due to the use of loose comparison in the 'verify_id_token' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to an @flutter.io email address or phone number. This also requires firebase to be configured on the website and the user to have set up firebase for their account.",
+    "published": "2024-08-15T03:15:05.310",
+    "keywords": "unauthenticated,authentication,bypass"
+  }
+}

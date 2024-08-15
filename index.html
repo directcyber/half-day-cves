@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-08-12T13:16:12.198565
+Updated at UTC 2024-08-15T14:09:15.173200
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -58,8 +58,1059 @@ Updated at UTC 2024-08-12T13:16:12.198565
 		</tr>
 
 		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41909">CVE-2024-41909</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/apache/mina-sshd/issues/445">https://github.com/apache/mina-sshd/issues/445</a></td>
+					<td class=date>2024-08-12T16:15:15.533</td>
+					<td class=description>Like many other SSH implementations, Apache MINA SSHD suffered from the issue that is more widely known as CVE-2023-48795. An attacker that can intercept traffic between client and server could drop certain packets from the stream, potentially causing client and server to consequently end up with a connection for which 
+some security features have been downgraded or disabled, aka a Terrapin 
+attack
+
+The mitigations to prevent this type of attack were implemented in Apache MINA SSHD 2.12.0, both client and server side. Users are recommended to upgrade to at least this version. Note that both the client and the server implementation must have mitigations applied against this issue, otherwise the connection may still be affected.</td>
+
+
+				</tr>
+			
+		
+			
+		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7628">CVE-2024-7628</a></td>
+					<td>8.1</td>
+					<td>unauthenticated,authentication,bypass</td>
+					<td class=date>2024-08-15T03:15:05.310</td>
+					<td class=description>The MStore API – Create Native Android & iOS Apps On The Cloud plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 4.15.2. This is due to the use of loose comparison in the 'verify_id_token' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to an @flutter.io email address or phone number. This also requires firebase to be configured on the website and the user to have set up firebase for their account.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43368">CVE-2024-43368</a></td>
+					<td>6.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-08-14T22:15:04.497</td>
+					<td class=description>The Trix editor, versions prior to 2.1.4, is vulnerable to XSS when pasting malicious code. This vulnerability is a bypass of the fix put in place for GHSA-qjqp-xr96-cj99. In pull request 1149, sanitation was added for Trix attachments with a `text/html` content type. However, Trix only checks the content type on the paste event's `dataTransfer` object. As long as the `dataTransfer` has a content type of `text/html`, Trix parses its contents and creates an `Attachment` with them, even if the attachment itself doesn't have a `text/html` content type. Trix then uses the attachment content to set the attachment element's `innerHTML`. An attacker could trick a user to copy and paste malicious code that would execute arbitrary JavaScript code within the context of the user's session, potentially leading to unauthorized actions being performed or sensitive information being disclosed. This vulnerability was fixed in version 2.1.4.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27120">CVE-2024-27120</a></td>
+					<td>-</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2024-08-14T20:15:11.730</td>
+					<td class=description>A Local File Inclusion vulnerability has been found in ComfortKey, a product of Celsius Benelux. Using this vulnerability, an unauthenticated attacker may retrieve sensitive information about the underlying system. The vulnerability has been remediated in version 24.1.2.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5914">CVE-2024-5914</a></td>
+					<td>-</td>
+					<td>unauthenticated,command</td>
+					<td class=date>2024-08-14T17:15:18.220</td>
+					<td class=description>A command injection issue in Palo Alto Networks Cortex XSOAR CommonScripts Pack allows an unauthenticated attacker to execute arbitrary commands within the context of an integration container.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28799">CVE-2024-28799</a></td>
+					<td>5.6</td>
+					<td>command,sensitive</td>
+					<td class=date>2024-08-14T16:15:11.220</td>
+					<td class=description>IBM QRadar Suite Software 1.10.12.0 through 1.10.23.0 and IBM Cloud Pak for Security 1.10.0.0 through 1.10.11.0 displays sensitive data improperly during back-end commands which may result in the unexpected disclosure of this information.  IBM X-Force ID:  287173.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41854">CVE-2024-41854</a></td>
+					<td>5.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-08-14T15:15:30.613</td>
+					<td class=description>InDesign Desktop versions ID19.4, ID18.5.2 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41835">CVE-2024-41835</a></td>
+					<td>5.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-08-14T15:15:29.207</td>
+					<td class=description>Acrobat Reader versions 20.005.30636, 24.002.20965, 24.002.20964, 24.001.30123 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41834">CVE-2024-41834</a></td>
+					<td>5.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-08-14T15:15:28.983</td>
+					<td class=description>Acrobat Reader versions 20.005.30636, 24.002.20965, 24.002.20964, 24.001.30123 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41833">CVE-2024-41833</a></td>
+					<td>5.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-08-14T15:15:28.757</td>
+					<td class=description>Acrobat Reader versions 20.005.30636, 24.002.20965, 24.002.20964, 24.001.30123 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41832">CVE-2024-41832</a></td>
+					<td>5.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-08-14T15:15:28.530</td>
+					<td class=description>Acrobat Reader versions 20.005.30636, 24.002.20965, 24.002.20964, 24.001.30123 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-39387">CVE-2024-39387</a></td>
+					<td>5.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-08-14T15:15:22.233</td>
+					<td class=description>Bridge versions 13.0.8, 14.1.1 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-34135">CVE-2024-34135</a></td>
+					<td>5.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-08-14T15:15:20.347</td>
+					<td class=description>Illustrator versions 28.5, 27.9.4 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-34134">CVE-2024-34134</a></td>
+					<td>6.1</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-08-14T15:15:20.107</td>
+					<td class=description>Illustrator versions 28.5, 27.9.4 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-34127">CVE-2024-34127</a></td>
+					<td>5.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-08-14T15:15:19.623</td>
+					<td class=description>InDesign Desktop versions ID19.4, ID18.5.2 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-34126">CVE-2024-34126</a></td>
+					<td>5.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-08-14T15:15:19.397</td>
+					<td class=description>Dimension versions 3.4.11 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-34125">CVE-2024-34125</a></td>
+					<td>5.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-08-14T15:15:19.163</td>
+					<td class=description>Dimension versions 3.4.11 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-25157">CVE-2024-25157</a></td>
+					<td>6.5</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-08-14T15:15:18.023</td>
+					<td class=description>An authentication bypass vulnerability in GoAnywhere MFT prior to 7.6.0 allows Admin Users with access to the Agent Console to circumvent some permission checks when attempting to visit other pages. This could lead to unauthorized information disclosure or modification.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20790">CVE-2024-20790</a></td>
+					<td>5.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-08-14T15:15:17.580</td>
+					<td class=description>Dimension versions 3.4.11 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-39402">CVE-2024-39402</a></td>
+					<td>8.4</td>
+					<td>execution,command</td>
+					<td class=date>2024-08-14T12:15:25.317</td>
+					<td class=description>Adobe Commerce versions 2.4.7-p1, 2.4.6-p6, 2.4.5-p8, 2.4.4-p9 and earlier are affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could lead in arbitrary code execution by an admin attacker. Exploitation of this issue requires user interaction and scope is changed.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-39401">CVE-2024-39401</a></td>
+					<td>8.4</td>
+					<td>execution,command</td>
+					<td class=date>2024-08-14T12:15:25.097</td>
+					<td class=description>Adobe Commerce versions 2.4.7-p1, 2.4.6-p6, 2.4.5-p8, 2.4.4-p9 and earlier are affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could lead in arbitrary code execution by an admin attacker. Exploitation of this issue requires user interaction and scope is changed.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-39398">CVE-2024-39398</a></td>
+					<td>7.4</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-08-14T12:15:24.377</td>
+					<td class=description>Adobe Commerce versions 2.4.7-p1, 2.4.6-p6, 2.4.5-p8, 2.4.4-p9 and earlier are affected by an Improper Restriction of Excessive Authentication Attempts vulnerability that could result in a security feature bypass. An attacker could exploit this vulnerability to perform brute force attacks and potentially gain unauthorized access to accounts. Exploitation of this issue does not require user interaction, but attack complexity is high.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4389">CVE-2024-4389</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-14T09:15:14.007</td>
+					<td class=description>The Slider and Carousel slider by Depicter plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the uploadFile function in all versions up to, and including, 3.1.1. This makes it possible for authenticated attackers, with contributor access or higher, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41863">CVE-2024-41863</a></td>
+					<td>5.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-08-14T09:15:13.557</td>
+					<td class=description>Substance3D - Sampler versions 4.5 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41862">CVE-2024-41862</a></td>
+					<td>5.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-08-14T09:15:13.320</td>
+					<td class=description>Substance3D - Sampler versions 4.5 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41861">CVE-2024-41861</a></td>
+					<td>5.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-08-14T09:15:13.100</td>
+					<td class=description>Substance3D - Sampler versions 4.5 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41860">CVE-2024-41860</a></td>
+					<td>5.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-08-14T09:15:12.850</td>
+					<td class=description>Substance3D - Sampler versions 4.5 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7732">CVE-2024-7732</a></td>
+					<td>9.8</td>
+					<td>remote,unauthenticated,command</td>
+					<td class=date>2024-08-14T07:15:16.477</td>
+					<td class=description>Dr.ID Access Control System from SECOM does not properly validate a specific page parameter, allowing unauthenticated remote attackers to inject SQL commands to read, modify, and delete database contents.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7731">CVE-2024-7731</a></td>
+					<td>9.8</td>
+					<td>remote,unauthenticated,command</td>
+					<td class=date>2024-08-14T07:15:13.920</td>
+					<td class=description>Dr.ID Access Control System from SECOM does not properly validate a specific page parameter, allowing unauthenticated remote attackers to inject SQL commands to read, modify, and delete database contents.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7729">CVE-2024-7729</a></td>
+					<td>7.5</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-08-14T04:15:07.150</td>
+					<td class=description>The CAYIN Technology CMS lacks proper access control, allowing unauthenticated remote attackers to download arbitrary CGI files.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7728">CVE-2024-7728</a></td>
+					<td>7.2</td>
+					<td>remote,command</td>
+					<td class=date>2024-08-14T04:15:06.757</td>
+					<td class=description>The specific CGI of the CAYIN Technology CMS does not properly validate user input, allowing a remote attacker with administrator privileges to inject OS commands into the specific parameter and execute them on the remote server.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38653">CVE-2024-38653</a></td>
+					<td>8.2</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-08-14T03:15:05.200</td>
+					<td class=description>XXE in SmartDeviceServer in Ivanti Avalanche 6.3.1 allows a remote unauthenticated attacker to read arbitrary files on the server.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38652">CVE-2024-38652</a></td>
+					<td>8.2</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-08-14T03:15:05.020</td>
+					<td class=description>Path traversal in the skin management component of Ivanti Avalanche 6.3.1 allows a remote unauthenticated attacker to achieve denial of service via arbitrary file deletion.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37399">CVE-2024-37399</a></td>
+					<td>7.5</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-08-14T03:15:04.850</td>
+					<td class=description>A NULL pointer dereference in WLAvalancheService in Ivanti Avalanche 6.3.1 allows a remote unauthenticated attacker to crash the service, resulting in a DoS.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-36136">CVE-2024-36136</a></td>
+					<td>7.5</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-08-14T03:15:04.390</td>
+					<td class=description>An off-by-one error in WLInfoRailService in Ivanti Avalanche 6.3.1 allows a remote unauthenticated attacker to crash the service, resulting in a DoS.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20082">CVE-2024-20082</a></td>
+					<td>9.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-14T03:15:04.120</td>
+					<td class=description>In Modem, there is a possible memory corruption due to a missing bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01182594; Issue ID: MSV-1529.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28986">CVE-2024-28986</a></td>
+					<td>9.8</td>
+					<td>remote,execution,unauthenticated,authentication,command</td>
+					<td class=date>2024-08-13T23:15:16.627</td>
+					<td class=description>SolarWinds Web Help Desk was found to be susceptible to a Java Deserialization Remote Code Execution vulnerability that, if exploited, would allow an attacker to run commands on the host machine. 
+
+While it was reported as an unauthenticated vulnerability, SolarWinds has been unable to reproduce it without authentication after thorough testing.  
+
+However, out of an abundance of caution, we recommend all Web Help Desk customers apply the patch, which is now available.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7593">CVE-2024-7593</a></td>
+					<td>9.8</td>
+					<td>remote,unauthenticated,authentication,bypass</td>
+					<td class=date>2024-08-13T19:15:16.940</td>
+					<td class=description>Incorrect implementation of an authentication algorithm in Ivanti vTM other than versions 22.2R1 or 22.7R2 allows a remote unauthenticated attacker to bypass authentication of the admin panel.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6079">CVE-2024-6079</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:32.443</td>
+					<td class=description>A vulnerability exists in the Rockwell Automation Emulate3D™, which could be leveraged to execute a DLL Hijacking attack. The application loads shared libraries, which are readable and writable by any user. If exploited, a malicious user could leverage a malicious dll and perform a remote code execution attack.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38199">CVE-2024-38199</a></td>
+					<td>9.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:29.443</td>
+					<td class=description>Windows Line Printer Daemon (LPD) Service Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38195">CVE-2024-38195</a></td>
+					<td>7.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:28.470</td>
+					<td class=description>Azure CycleCloud Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38189">CVE-2024-38189</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:27.733</td>
+					<td class=description>Microsoft Project Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38173">CVE-2024-38173</a></td>
+					<td>6.7</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:25.750</td>
+					<td class=description>Microsoft Outlook Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38172">CVE-2024-38172</a></td>
+					<td>7.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:25.530</td>
+					<td class=description>Microsoft Excel Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38171">CVE-2024-38171</a></td>
+					<td>7.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:25.300</td>
+					<td class=description>Microsoft PowerPoint Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38170">CVE-2024-38170</a></td>
+					<td>7.1</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:25.070</td>
+					<td class=description>Microsoft Excel Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38169">CVE-2024-38169</a></td>
+					<td>7.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:24.857</td>
+					<td class=description>Microsoft Office Visio Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38161">CVE-2024-38161</a></td>
+					<td>6.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:23.437</td>
+					<td class=description>Windows Mobile Broadband Driver Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38160">CVE-2024-38160</a></td>
+					<td>9.1</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:23.207</td>
+					<td class=description>Windows Network Virtualization Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38159">CVE-2024-38159</a></td>
+					<td>9.1</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:22.950</td>
+					<td class=description>Windows Network Virtualization Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38158">CVE-2024-38158</a></td>
+					<td>7.0</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:22.727</td>
+					<td class=description>Azure IoT SDK Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38157">CVE-2024-38157</a></td>
+					<td>7.0</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:22.440</td>
+					<td class=description>Azure IoT SDK Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38154">CVE-2024-38154</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:21.273</td>
+					<td class=description>Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38152">CVE-2024-38152</a></td>
+					<td>7.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:20.380</td>
+					<td class=description>Windows OLE Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38140">CVE-2024-38140</a></td>
+					<td>9.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:17.687</td>
+					<td class=description>Windows Reliable Multicast Transport Driver (RMCAST) Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38138">CVE-2024-38138</a></td>
+					<td>7.5</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:17.450</td>
+					<td class=description>Windows Deployment Services Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38131">CVE-2024-38131</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:15.833</td>
+					<td class=description>Clipboard Virtual Channel Extension Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38130">CVE-2024-38130</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:15.580</td>
+					<td class=description>Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38128">CVE-2024-38128</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:14.877</td>
+					<td class=description>Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38121">CVE-2024-38121</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:13.320</td>
+					<td class=description>Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38120">CVE-2024-38120</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:13.047</td>
+					<td class=description>Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38116">CVE-2024-38116</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:12.333</td>
+					<td class=description>Windows IP Routing Management Snapin Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38115">CVE-2024-38115</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:12.080</td>
+					<td class=description>Windows IP Routing Management Snapin Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38114">CVE-2024-38114</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:11.820</td>
+					<td class=description>Windows IP Routing Management Snapin Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38063">CVE-2024-38063</a></td>
+					<td>9.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T18:15:10.007</td>
+					<td class=description>Windows TCP/IP Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6618">CVE-2024-6618</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T17:15:24.377</td>
+					<td class=description>In Ocean Data Systems Dream Report, a path traversal vulnerability could allow an attacker to perform remote code execution through the injection of a malicious dynamic-link library (DLL).</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41711">CVE-2024-41711</a></td>
+					<td>6.8</td>
+					<td>unauthenticated,command</td>
+					<td class=date>2024-08-13T17:15:24.237</td>
+					<td class=description>A vulnerability in the Mitel 6800 Series, 6900 Series, and 6900w Series SIP Phones, including the 6970 Conference Unit, through R6.4.0.HF1 (R6.4.0.136) could allow an unauthenticated attacker with physical access to the phone to conduct an argument injection attack, due to insufficient parameter sanitization. A successful exploit could allow an attacker to execute arbitrary commands within the context of the system.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-36446">CVE-2024-36446</a></td>
+					<td>-</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-08-13T17:15:23.403</td>
+					<td class=description>The provisioning manager component of Mitel MiVoice MX-ONE through 7.6 SP1 could allow an authenticated attacker to conduct an authentication bypass attack due to improper access control. A successful exploit could allow an attacker to bypass the authorization schema.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7746">CVE-2024-7746</a></td>
+					<td>-</td>
+					<td>authentication,sensitive</td>
+					<td class=date>2024-08-13T16:15:09.573</td>
+					<td class=description>Use of Default Credentials vulnerability in Tananaev Solutions Traccar Server on Administrator Panel modules allows Authentication Abuse.This issue affects the privileged transactions implemented by the Traccar solution that should otherwise be protected by the authentication mechanism. 
+These transactions could have an impact on any sensitive aspect of the platform, including Confidentiality, Integrity and Availability.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6788">CVE-2024-6788</a></td>
+					<td>8.6</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-08-13T14:15:16.457</td>
+					<td class=description>A remote unauthenticated attacker can use the firmware update feature on the LAN interface of the device to reset the password for the predefined, low-privileged user “user-app” to the default password.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5849">CVE-2024-5849</a></td>
+					<td>7.1</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-08-13T13:15:13.067</td>
+					<td class=description>An unauthenticated remote attacker may use a reflected XSS vulnerability to obtain information from a user or reboot the affected device once.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-3913">CVE-2024-3913</a></td>
+					<td>7.5</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-08-13T13:15:12.750</td>
+					<td class=description>An unauthenticated remote attacker can use this vulnerability to change the device configuration due to a file writeable for short time after system startup.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38502">CVE-2024-38502</a></td>
+					<td>7.1</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-08-13T13:15:12.460</td>
+					<td class=description>An unauthenticated remote attacker may use stored XSS vulnerability to obtain information from a user or reboot the affected device once.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38501">CVE-2024-38501</a></td>
+					<td>6.1</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-08-13T13:15:12.130</td>
+					<td class=description>An unauthenticated remote attacker may use a HTML injection vulnerability with limited length to inject malicious HTML code and gain low-privileged access on the affected device.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41978">CVE-2024-41978</a></td>
+					<td>6.5</td>
+					<td>remote,sensitive</td>
+					<td class=date>2024-08-13T08:15:15.903</td>
+					<td class=description>A vulnerability has been identified in RUGGEDCOM RM1224 LTE(4G) EU (6GK6108-4AM00-2BA2) (All versions < V8.1), RUGGEDCOM RM1224 LTE(4G) NAM (6GK6108-4AM00-2DA2) (All versions < V8.1), SCALANCE M804PB (6GK5804-0AP00-2AA2) (All versions < V8.1), SCALANCE M812-1 ADSL-Router family (All versions < V8.1), SCALANCE M816-1 ADSL-Router family (All versions < V8.1), SCALANCE M826-2 SHDSL-Router (6GK5826-2AB00-2AB2) (All versions < V8.1), SCALANCE M874-2 (6GK5874-2AA00-2AA2) (All versions < V8.1), SCALANCE M874-3 (6GK5874-3AA00-2AA2) (All versions < V8.1), SCALANCE M874-3 3G-Router (CN) (6GK5874-3AA00-2FA2) (All versions < V8.1), SCALANCE M876-3 (6GK5876-3AA02-2BA2) (All versions < V8.1), SCALANCE M876-3 (ROK) (6GK5876-3AA02-2EA2) (All versions < V8.1), SCALANCE M876-4 (6GK5876-4AA10-2BA2) (All versions < V8.1), SCALANCE M876-4 (EU) (6GK5876-4AA00-2BA2) (All versions < V8.1), SCALANCE M876-4 (NAM) (6GK5876-4AA00-2DA2) (All versions < V8.1), SCALANCE MUM853-1 (A1) (6GK5853-2EA10-2AA1) (All versions < V8.1), SCALANCE MUM853-1 (B1) (6GK5853-2EA10-2BA1) (All versions < V8.1), SCALANCE MUM853-1 (EU) (6GK5853-2EA00-2DA1) (All versions < V8.1), SCALANCE MUM856-1 (A1) (6GK5856-2EA10-3AA1) (All versions < V8.1), SCALANCE MUM856-1 (B1) (6GK5856-2EA10-3BA1) (All versions < V8.1), SCALANCE MUM856-1 (CN) (6GK5856-2EA00-3FA1) (All versions < V8.1), SCALANCE MUM856-1 (EU) (6GK5856-2EA00-3DA1) (All versions < V8.1), SCALANCE MUM856-1 (RoW) (6GK5856-2EA00-3AA1) (All versions < V8.1), SCALANCE S615 EEC LAN-Router (6GK5615-0AA01-2AA2) (All versions < V8.1), SCALANCE S615 LAN-Router (6GK5615-0AA00-2AA2) (All versions < V8.1). Affected devices insert sensitive information about the generation of 2FA tokens into log files. This could allow an authenticated remote attacker to forge 2FA tokens of other users.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41976">CVE-2024-41976</a></td>
+					<td>7.2</td>
+					<td>remote,vpn</td>
+					<td class=date>2024-08-13T08:15:15.403</td>
+					<td class=description>A vulnerability has been identified in RUGGEDCOM RM1224 LTE(4G) EU (6GK6108-4AM00-2BA2) (All versions < V8.1), RUGGEDCOM RM1224 LTE(4G) NAM (6GK6108-4AM00-2DA2) (All versions < V8.1), SCALANCE M804PB (6GK5804-0AP00-2AA2) (All versions < V8.1), SCALANCE M812-1 ADSL-Router family (All versions < V8.1), SCALANCE M816-1 ADSL-Router family (All versions < V8.1), SCALANCE M826-2 SHDSL-Router (6GK5826-2AB00-2AB2) (All versions < V8.1), SCALANCE M874-2 (6GK5874-2AA00-2AA2) (All versions < V8.1), SCALANCE M874-3 (6GK5874-3AA00-2AA2) (All versions < V8.1), SCALANCE M874-3 3G-Router (CN) (6GK5874-3AA00-2FA2) (All versions < V8.1), SCALANCE M876-3 (6GK5876-3AA02-2BA2) (All versions < V8.1), SCALANCE M876-3 (ROK) (6GK5876-3AA02-2EA2) (All versions < V8.1), SCALANCE M876-4 (6GK5876-4AA10-2BA2) (All versions < V8.1), SCALANCE M876-4 (EU) (6GK5876-4AA00-2BA2) (All versions < V8.1), SCALANCE M876-4 (NAM) (6GK5876-4AA00-2DA2) (All versions < V8.1), SCALANCE MUM853-1 (A1) (6GK5853-2EA10-2AA1) (All versions < V8.1), SCALANCE MUM853-1 (B1) (6GK5853-2EA10-2BA1) (All versions < V8.1), SCALANCE MUM853-1 (EU) (6GK5853-2EA00-2DA1) (All versions < V8.1), SCALANCE MUM856-1 (A1) (6GK5856-2EA10-3AA1) (All versions < V8.1), SCALANCE MUM856-1 (B1) (6GK5856-2EA10-3BA1) (All versions < V8.1), SCALANCE MUM856-1 (CN) (6GK5856-2EA00-3FA1) (All versions < V8.1), SCALANCE MUM856-1 (EU) (6GK5856-2EA00-3DA1) (All versions < V8.1), SCALANCE MUM856-1 (RoW) (6GK5856-2EA00-3AA1) (All versions < V8.1), SCALANCE S615 EEC LAN-Router (6GK5615-0AA01-2AA2) (All versions < V8.1), SCALANCE S615 LAN-Router (6GK5615-0AA00-2AA2) (All versions < V8.1). Affected devices do not properly validate input in specific VPN configuration fields. This could allow an authenticated remote attacker to execute arbitrary code on the device.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41904">CVE-2024-41904</a></td>
+					<td>7.5</td>
+					<td>unauthenticated,authentication</td>
+					<td class=date>2024-08-13T08:15:13.003</td>
+					<td class=description>A vulnerability has been identified in SINEC Traffic Analyzer (6GK8822-1BG01-0BA0) (All versions < V2.0). The affected application do not properly enforce restriction of  excessive authentication attempts. This could allow an unauthenticated attacker to conduct brute force attacks against legitimate user credentials or keys.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41682">CVE-2024-41682</a></td>
+					<td>5.3</td>
+					<td>remote,unauthenticated,authentication</td>
+					<td class=date>2024-08-13T08:15:12.167</td>
+					<td class=description>A vulnerability has been identified in Location Intelligence family (All versions < V4.4). Affected products do not properly enforce restriction of  excessive authentication attempts. This could allow an unauthenticated remote attacker to conduct brute force attacks against legitimate user passwords.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7715">CVE-2024-7715</a></td>
+					<td>6.3</td>
+					<td>remote,command</td>
+					<td class=date>2024-08-13T07:15:13.677</td>
+					<td class=description>** UNSUPPORTED WHEN ASSIGNED ** A vulnerability was found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726-4, DNS-1100-4, DNS-1200-05 and DNS-1550-04 up to 20240812. It has been classified as critical. This affects the function sprintf of the file /cgi-bin/photocenter_mgr.cgi. The manipulation of the argument filter leads to command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. NOTE: This vulnerability only affects products that are no longer supported by the maintainer. NOTE: Vendor was contacted early and confirmed that the product is end-of-life. It should be retired and replaced.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6823">CVE-2024-6823</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-08-13T06:15:05.120</td>
+					<td class=description>The Media Library Assistant plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation involving the mla-inline-edit-upload-scripts AJAX action in all versions up to, and including, 3.18. This makes it possible for authenticated attackers, with Author-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-42377">CVE-2024-42377</a></td>
+					<td>4.3</td>
+					<td>remote,sensitive</td>
+					<td class=date>2024-08-13T04:15:11.290</td>
+					<td class=description>SAP shared service framework allows an
+authenticated non-administrative user to call a remote-enabled function, which
+will allow them to insert value entries into a non-sensitive table, causing low
+impact on integrity of the application</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41732">CVE-2024-41732</a></td>
+					<td>4.7</td>
+					<td>unauthenticated,bypass</td>
+					<td class=date>2024-08-13T04:15:08.637</td>
+					<td class=description>SAP NetWeaver Application Server ABAP allows
+  an unauthenticated attacker to craft a URL link that could bypass allowlist
+  controls. Depending on the web applications provided by this server, the
+  attacker might inject CSS code or links into the web application that could
+  allow the attacker to read or modify information. There is no impact on
+  availability of application.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7094">CVE-2024-7094</a></td>
+					<td>9.8</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2024-08-13T03:15:04.400</td>
+					<td class=description>The JS Help Desk – The Ultimate Help Desk & Support Plugin plugin for WordPress is vulnerable to PHP Code Injection leading to Remote Code Execution in all versions up to, and including, 2.8.6 via the 'storeTheme' function. This is due to a lack of sanitization on user-supplied values, which replace values in the style.php file, along with missing capability checks. This makes it possible for unauthenticated attackers to execute code on the server. This issue was partially patched in 2.8.6 when the code injection issue was resolved, and fully patched in 2.8.7 when the missing authorization and cross-site request forgery protection was added.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-42744">CVE-2024-42744</a></td>
+					<td>8.8</td>
+					<td>command,vpn</td>
+					<td class=date>2024-08-12T20:15:09.110</td>
+					<td class=description>In TOTOLINK X5000r v9.1.0cu.2350_b20230313, the file /cgi-bin/cstecgi.cgi contains an OS command injection vulnerability in setModifyVpnUser. Authenticated Attackers can send malicious packet to execute arbitrary commands.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7700">CVE-2024-7700</a></td>
+					<td>6.5</td>
+					<td>execution,command</td>
+					<td class=date>2024-08-12T17:15:18.607</td>
+					<td class=description>A command injection flaw was found in the "Host Init Config" template in the Foreman application via the "Install Packages" field on the "Register Host" page. This flaw allows an attacker with the necessary privileges to inject arbitrary commands into the configuration, potentially allowing unauthorized command execution during host registration. Although this issue requires user interaction to execute injected commands, it poses a significant risk if an unsuspecting user runs the generated registration script.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-33535">CVE-2024-33535</a></td>
+					<td>7.5</td>
+					<td>unauthenticated,authentication,sensitive</td>
+					<td class=date>2024-08-12T15:15:20.570</td>
+					<td class=description>An issue was discovered in Zimbra Collaboration (ZCS) 9.0 and 10.0. The vulnerability involves unauthenticated local file inclusion (LFI) in a web application, specifically impacting the handling of the packages parameter. Attackers can exploit this flaw to include arbitrary local files without authentication, potentially leading to unauthorized access to sensitive information. The vulnerability is limited to files within a specific directory.</td>
+				</tr>
+			
 		
 
 		</div>
