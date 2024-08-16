@@ -1,10 +1,4 @@
 {
-  "CVE-2024-6788": {
-    "cvss": 8.6,
-    "description": "A remote unauthenticated attacker can use the firmware update feature on the LAN interface of the device to reset the password for the predefined, low-privileged user \u201cuser-app\u201d to the default password.",
-    "published": "2024-08-13T14:15:16.457",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2024-7746": {
     "cvss": "-",
     "description": "Use of Default Credentials vulnerability in Tananaev Solutions Traccar Server on Administrator Panel modules allows Authentication Abuse.This issue affects the privileged transactions implemented by the Traccar solution that should otherwise be protected by the authentication mechanism.\u00a0\nThese transactions could have an impact on any sensitive aspect of the platform, including Confidentiality, Integrity and Availability.",
@@ -420,7 +414,7 @@
     "keywords": "remote,command"
   },
   "CVE-2024-6347": {
-    "cvss": "-",
+    "cvss": 6.5,
     "description": "*  Unprotected privileged mode access through UDS session in the Blind Spot Detection Sensor ECU firmware in Nissan Altima (2022) allows attackers to trigger denial-of-service (DoS) by unauthorized access to the ECU's programming session.\n  *  No preconditions implemented for ECU management functionality through UDS session in the Blind Spot Detection Sensor ECU in Nissan Altima (2022) allows attackers to disrupt normal ECU operations by triggering a control command without authentication.",
     "published": "2024-08-15T15:15:22.093",
     "keywords": "authentication,command"
@@ -519,6 +513,30 @@
     "cvss": 8.8,
     "description": "The JetTabs for Elementor plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.2.3 via the 'switcher_preset' parameter. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
     "published": "2024-08-16T11:15:04.230",
+    "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2024-42462": {
+    "cvss": "-",
+    "description": "Improper Authentication vulnerability in upKeeper Solutions product upKeeper Manager allows Authentication Bypass.This issue affects upKeeper Manager: through 5.1.9.",
+    "published": "2024-08-16T14:15:13.253",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-42463": {
+    "cvss": "-",
+    "description": "Authorization Bypass Through User-Controlled Key vulnerability in upKeeper Solutions product upKeeper Manager allows Utilizing REST's Trust in the System Resource to Obtain Sensitive Data.This issue affects upKeeper Manager: through 5.1.9.",
+    "published": "2024-08-16T14:15:13.650",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-42464": {
+    "cvss": "-",
+    "description": "Authorization Bypass Through User-Controlled Key vulnerability in upKeeper Solutions product upKeeper Manager allows Utilizing REST's Trust in the System Resource to Obtain Sensitive Data.This issue affects upKeeper Manager: through 5.1.9.",
+    "published": "2024-08-16T14:15:13.933",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-7145": {
+    "cvss": 8.8,
+    "description": "The JetElements plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.6.20 via the 'progress_type' parameter. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
+    "published": "2024-08-16T14:15:15.187",
     "keywords": "execution,sensitive,bypass"
   }
 }
