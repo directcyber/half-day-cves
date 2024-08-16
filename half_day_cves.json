@@ -538,5 +538,11 @@
     "description": "The Relevanssi \u2013 A Better Search plugin for WordPress is vulnerable to Information Exposure in all versions up to, and including, 4.22.2 via the relevanssi_do_query() due to insufficient limitations on the posts that are returned when searching. This makes it possible for unauthenticated attackers to extract potentially sensitive information from password protected posts.",
     "published": "2024-08-16T03:15:10.093",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-7146": {
+    "cvss": 8.8,
+    "description": "The JetTabs for Elementor plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.2.3 via the 'switcher_preset' parameter. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
+    "published": "2024-08-16T11:15:04.230",
+    "keywords": "execution,sensitive,bypass"
   }
 }
