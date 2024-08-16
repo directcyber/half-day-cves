@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-08-16T03:13:19.186232
+Updated at UTC 2024-08-16T04:12:21.106482
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-08-16T03:13:19.186232
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -262,10 +264,18 @@ Updated at UTC 2024-08-16T03:13:19.186232
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7630">CVE-2024-7630</a></td>
+					<td>5.3</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2024-08-16T03:15:10.093</td>
+					<td class=description>The Relevanssi – A Better Search plugin for WordPress is vulnerable to Information Exposure in all versions up to, and including, 4.22.2 via the relevanssi_do_query() due to insufficient limitations on the posts that are returned when searching. This makes it possible for unauthenticated attackers to extract potentially sensitive information from password protected posts.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -1240,16 +1250,6 @@ impact on integrity of the application</td>
   attacker might inject CSS code or links into the web application that could
   allow the attacker to read or modify information. There is no impact on
   availability of application.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7094">CVE-2024-7094</a></td>
-					<td>9.8</td>
-					<td>remote,execution,unauthenticated</td>
-					<td class=date>2024-08-13T03:15:04.400</td>
-					<td class=description>The JS Help Desk – The Ultimate Help Desk & Support Plugin plugin for WordPress is vulnerable to PHP Code Injection leading to Remote Code Execution in all versions up to, and including, 2.8.6 via the 'storeTheme' function. This is due to a lack of sanitization on user-supplied values, which replace values in the style.php file, along with missing capability checks. This makes it possible for unauthenticated attackers to execute code on the server. This issue was partially patched in 2.8.6 when the code injection issue was resolved, and fully patched in 2.8.7 when the missing authorization and cross-site request forgery protection was added.</td>
 				</tr>
 			
 		
