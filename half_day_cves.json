@@ -1,16 +1,4 @@
 {
-  "CVE-2024-41732": {
-    "cvss": 4.7,
-    "description": "SAP NetWeaver Application Server ABAP allows\n  an unauthenticated attacker to craft a URL link that could bypass allowlist\n  controls. Depending on the web applications provided by this server, the\n  attacker might inject CSS code or links into the web application that could\n  allow the attacker to read or modify information. There is no impact on\n  availability of application.",
-    "published": "2024-08-13T04:15:08.637",
-    "keywords": "unauthenticated,bypass"
-  },
-  "CVE-2024-42377": {
-    "cvss": 4.3,
-    "description": "SAP shared service framework allows an\nauthenticated non-administrative user to call a remote-enabled function, which\nwill allow them to insert value entries into a non-sensitive table, causing low\nimpact on integrity of the application",
-    "published": "2024-08-13T04:15:11.290",
-    "keywords": "remote,sensitive"
-  },
   "CVE-2024-6823": {
     "cvss": 8.8,
     "description": "The Media Library Assistant plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation involving the mla-inline-edit-upload-scripts AJAX action in all versions up to, and including, 3.18. This makes it possible for authenticated attackers, with Author-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
