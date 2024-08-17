@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-08-17T20:10:25.665452
+Updated at UTC 2024-08-17T21:08:33.324474
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -110,8 +110,6 @@ Updated at UTC 2024-08-17T20:10:25.665452
 
 
 				</tr>
-			
-		
 			
 		
 			
@@ -411,16 +409,6 @@ Updated at UTC 2024-08-17T20:10:25.665452
 					<td>sensitive,bypass</td>
 					<td class=date>2024-08-14T22:15:04.497</td>
 					<td class=description>The Trix editor, versions prior to 2.1.4, is vulnerable to XSS when pasting malicious code. This vulnerability is a bypass of the fix put in place for GHSA-qjqp-xr96-cj99. In pull request 1149, sanitation was added for Trix attachments with a `text/html` content type. However, Trix only checks the content type on the paste event's `dataTransfer` object. As long as the `dataTransfer` has a content type of `text/html`, Trix parses its contents and creates an `Attachment` with them, even if the attachment itself doesn't have a `text/html` content type. Trix then uses the attachment content to set the attachment element's `innerHTML`. An attacker could trick a user to copy and paste malicious code that would execute arbitrary JavaScript code within the context of the user's session, potentially leading to unauthorized actions being performed or sensitive information being disclosed. This vulnerability was fixed in version 2.1.4.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27120">CVE-2024-27120</a></td>
-					<td>-</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2024-08-14T20:15:11.730</td>
-					<td class=description>A Local File Inclusion vulnerability has been found in ComfortKey, a product of Celsius Benelux. Using this vulnerability, an unauthenticated attacker may retrieve sensitive information about the underlying system. The vulnerability has been remediated in version 24.1.2.</td>
 				</tr>
 			
 		
