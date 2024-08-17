@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-08-17T22:08:54.817287
+Updated at UTC 2024-08-17T23:09:17.299623
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -110,8 +110,6 @@ Updated at UTC 2024-08-17T22:08:54.817287
 
 
 				</tr>
-			
-		
 			
 		
 			
@@ -399,16 +397,6 @@ Updated at UTC 2024-08-17T22:08:54.817287
 					<td>unauthenticated,authentication,bypass</td>
 					<td class=date>2024-08-15T03:15:05.310</td>
 					<td class=description>The MStore API – Create Native Android & iOS Apps On The Cloud plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 4.15.2. This is due to the use of loose comparison in the 'verify_id_token' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to an @flutter.io email address or phone number. This also requires firebase to be configured on the website and the user to have set up firebase for their account.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43368">CVE-2024-43368</a></td>
-					<td>6.5</td>
-					<td>sensitive,bypass</td>
-					<td class=date>2024-08-14T22:15:04.497</td>
-					<td class=description>The Trix editor, versions prior to 2.1.4, is vulnerable to XSS when pasting malicious code. This vulnerability is a bypass of the fix put in place for GHSA-qjqp-xr96-cj99. In pull request 1149, sanitation was added for Trix attachments with a `text/html` content type. However, Trix only checks the content type on the paste event's `dataTransfer` object. As long as the `dataTransfer` has a content type of `text/html`, Trix parses its contents and creates an `Attachment` with them, even if the attachment itself doesn't have a `text/html` content type. Trix then uses the attachment content to set the attachment element's `innerHTML`. An attacker could trick a user to copy and paste malicious code that would execute arbitrary JavaScript code within the context of the user's session, potentially leading to unauthorized actions being performed or sensitive information being disclosed. This vulnerability was fixed in version 2.1.4.</td>
 				</tr>
 			
 		
