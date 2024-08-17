@@ -1,34 +1,4 @@
 {
-  "CVE-2024-20082": {
-    "cvss": 9.8,
-    "description": "In Modem, there is a possible memory corruption due to a missing bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01182594; Issue ID: MSV-1529.",
-    "published": "2024-08-14T03:15:04.120",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-36136": {
-    "cvss": 7.5,
-    "description": "An off-by-one error in WLInfoRailService in Ivanti Avalanche 6.3.1 allows a remote unauthenticated attacker to crash the service, resulting in a DoS.",
-    "published": "2024-08-14T03:15:04.390",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-37399": {
-    "cvss": 7.5,
-    "description": "A NULL pointer dereference in WLAvalancheService in Ivanti Avalanche 6.3.1 allows a remote unauthenticated attacker to crash the service, resulting in a DoS.",
-    "published": "2024-08-14T03:15:04.850",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-38652": {
-    "cvss": 9.1,
-    "description": "Path traversal in the skin management component of Ivanti Avalanche 6.3.1 allows a remote unauthenticated attacker to achieve denial of service via arbitrary file deletion.",
-    "published": "2024-08-14T03:15:05.020",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-38653": {
-    "cvss": 8.2,
-    "description": "XXE in SmartDeviceServer in Ivanti Avalanche 6.3.1 allows a remote unauthenticated attacker to read arbitrary files on the server.",
-    "published": "2024-08-14T03:15:05.200",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2024-7728": {
     "cvss": 7.2,
     "description": "The specific CGI of the CAYIN Technology CMS does not properly validate user input, allowing a remote attacker with administrator privileges to inject OS commands into the specific parameter and execute them on the remote server.",
