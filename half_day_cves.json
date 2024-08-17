@@ -256,5 +256,11 @@
     "description": "The News Element Elementor Blog Magazine WordPress plugin before 1.0.6 is vulnerable to Local File Inclusion via the template parameter. This makes it possible for unauthenticated attacker to include and execute PHP files on the server, allowing the execution of any PHP code in those files.",
     "published": "2024-08-17T06:15:03.973",
     "keywords": "execution,unauthenticated"
+  },
+  "CVE-2024-7896": {
+    "cvss": 6.3,
+    "description": "A vulnerability was found in Tosei Online Store Management System \u30cd\u30c3\u30c8\u5e97\u8217\u7ba1\u7406\u30b7\u30b9\u30c6\u30e0 4.02/4.03/4.04. It has been rated as critical. Affected by this issue is some unknown functionality of the file /cgi-bin/p1_ftpserver.php. The manipulation of the argument adr_txt leads to command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-08-17T14:15:12.303",
+    "keywords": "remote,command"
   }
 }
