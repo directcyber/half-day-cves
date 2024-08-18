@@ -1,16 +1,4 @@
 {
-  "CVE-2024-34727": {
-    "cvss": "-",
-    "description": "In sdpu_compare_uuid_with_attr of sdp_utils.cc, there is a possible out of bounds read due to a heap buffer overflow. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
-    "published": "2024-08-15T22:15:06.190",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-34734": {
-    "cvss": 7.7,
-    "description": "In onForegroundServiceButtonClicked of FooterActionsViewModel.kt, there is a possible way to disable the active VPN app from the lockscreen due to an insecure default value. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
-    "published": "2024-08-15T22:15:06.337",
-    "keywords": "execution,vpn"
-  },
   "CVE-2024-7630": {
     "cvss": 5.3,
     "description": "The Relevanssi \u2013 A Better Search plugin for WordPress is vulnerable to Information Exposure in all versions up to, and including, 4.22.2 via the relevanssi_do_query() due to insufficient limitations on the posts that are returned when searching. This makes it possible for unauthenticated attackers to extract potentially sensitive information from password protected posts.",
