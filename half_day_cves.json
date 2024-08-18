@@ -1,10 +1,4 @@
 {
-  "CVE-2024-7628": {
-    "cvss": 8.1,
-    "description": "The MStore API \u2013 Create Native Android & iOS Apps On The Cloud plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 4.15.2. This is due to the use of loose comparison in the 'verify_id_token' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to an @flutter.io email address or phone number. This also requires firebase to be configured on the website and the user to have set up firebase for their account.",
-    "published": "2024-08-15T03:15:05.310",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
   "CVE-2024-7833": {
     "cvss": 6.3,
     "description": "A vulnerability was found in D-Link DI-8100 16.07. It has been classified as critical. This affects the function upgrade_filter_asp of the file upgrade_filter.asp. The manipulation of the argument path leads to command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
