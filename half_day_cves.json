@@ -1,40 +1,4 @@
 {
-  "CVE-2024-23168": {
-    "cvss": 9.8,
-    "description": "Vulnerability in Xiexe XSOverlay before build 647 allows non-local websites to send the malicious commands to the WebSocket API, resulting in the arbitrary code execution.",
-    "published": "2024-08-15T19:15:18.070",
-    "keywords": "execution,command"
-  },
-  "CVE-2024-27728": {
-    "cvss": "-",
-    "description": "Cross Site Scripting vulnerability in Friendica v.2023.12 allows a remote attacker to obtain sensitive information via the text parameter of the babel debug feature.",
-    "published": "2024-08-15T19:15:18.477",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-27729": {
-    "cvss": "-",
-    "description": "Cross Site Scripting vulnerability in Friendica v.2023.12 allows a remote attacker to obtain sensitive information via the location parameter of the calendar event feature.",
-    "published": "2024-08-15T19:15:18.573",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-27730": {
-    "cvss": 9.8,
-    "description": "Insecure Permissions vulnerability in Friendica v.2023.12 allows a remote attacker to obtain sensitive information and execute arbitrary code via the cid parameter of the calendar event feature.",
-    "published": "2024-08-15T19:15:18.663",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-27731": {
-    "cvss": 6.1,
-    "description": "Cross Site Scripting vulnerability in Friendica v.2023.12 allows a remote attacker to obtain sensitive information via the lack of file type filtering in the file attachment parameter.",
-    "published": "2024-08-15T19:15:18.770",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-42757": {
-    "cvss": "-",
-    "description": "Command injection vulnerability in Asus RT-N15U 3.0.0.4.376_3754 allows a remote attacker to execute arbitrary code via the netstat function page.",
-    "published": "2024-08-15T19:15:19.977",
-    "keywords": "remote,command"
-  },
   "CVE-2024-34727": {
     "cvss": "-",
     "description": "In sdpu_compare_uuid_with_attr of sdp_utils.cc, there is a possible out of bounds read due to a heap buffer overflow. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
