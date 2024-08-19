@@ -1,10 +1,4 @@
 {
-  "CVE-2024-7146": {
-    "cvss": 8.8,
-    "description": "The JetTabs for Elementor plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.2.3 via the 'switcher_preset' parameter. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
-    "published": "2024-08-16T11:15:04.230",
-    "keywords": "execution,sensitive,bypass"
-  },
   "CVE-2024-42462": {
     "cvss": "-",
     "description": "Improper Authentication vulnerability in upKeeper Solutions product upKeeper Manager allows Authentication Bypass.This issue affects upKeeper Manager: through 5.1.9.",
