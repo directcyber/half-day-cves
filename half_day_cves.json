@@ -1,10 +1,4 @@
 {
-  "CVE-2024-7630": {
-    "cvss": 5.3,
-    "description": "The Relevanssi \u2013 A Better Search plugin for WordPress is vulnerable to Information Exposure in all versions up to, and including, 4.22.2 via the relevanssi_do_query() due to insufficient limitations on the posts that are returned when searching. This makes it possible for unauthenticated attackers to extract potentially sensitive information from password protected posts.",
-    "published": "2024-08-16T03:15:10.093",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2024-7146": {
     "cvss": 8.8,
     "description": "The JetTabs for Elementor plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.2.3 via the 'switcher_preset' parameter. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
@@ -76,5 +70,11 @@
     "cvss": "-",
     "description": "Pi-hole before 6 allows unauthenticated admin/api.php?setTempUnit= calls to change the temperature units of the web dashboard. NOTE: the supplier reportedly does \"not consider the bug a security issue\" but the specific motivation for letting arbitrary persons change the value (Celsius, Fahrenheit, or Kelvin), seen by the device owner, is unclear.",
     "published": "2024-08-19T02:15:04.437"
+  },
+  "CVE-2024-44076": {
+    "url": "https://github.com/microcks/microcks/issues/1212",
+    "cvss": "-",
+    "description": "In Microcks before 1.10.0, the POST /api/import and POST /api/export endpoints allow non-administrator access.",
+    "published": "2024-08-19T03:15:03.883"
   }
 }
