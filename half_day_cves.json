@@ -70,5 +70,11 @@
     "description": "An issue in wishnet Nepstech Wifi Router NTPL-XPON1GFEVN v1.0 allows a remote attacker to obtain sensitive information via the cookie's parameter",
     "published": "2024-08-19T17:15:08.027",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-7592": {
+    "url": "https://github.com/python/cpython/pull/123075",
+    "cvss": "-",
+    "description": "There is a LOW severity vulnerability affecting CPython, specifically the\n'http.cookies' standard library module.\n\n\nWhen parsing cookies that contained backslashes for quoted characters in\nthe cookie value, the parser would use an algorithm with quadratic\ncomplexity, resulting in excess CPU resources being used while parsing the\nvalue.",
+    "published": "2024-08-19T19:15:08.180"
   }
 }
