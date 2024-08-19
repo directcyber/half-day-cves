@@ -1,28 +1,4 @@
 {
-  "CVE-2024-42462": {
-    "cvss": "-",
-    "description": "Improper Authentication vulnerability in upKeeper Solutions product upKeeper Manager allows Authentication Bypass.This issue affects upKeeper Manager: through 5.1.9.",
-    "published": "2024-08-16T14:15:13.253",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-42463": {
-    "cvss": "-",
-    "description": "Authorization Bypass Through User-Controlled Key vulnerability in upKeeper Solutions product upKeeper Manager allows Utilizing REST's Trust in the System Resource to Obtain Sensitive Data.This issue affects upKeeper Manager: through 5.1.9.",
-    "published": "2024-08-16T14:15:13.650",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-42464": {
-    "cvss": "-",
-    "description": "Authorization Bypass Through User-Controlled Key vulnerability in upKeeper Solutions product upKeeper Manager allows Utilizing REST's Trust in the System Resource to Obtain Sensitive Data.This issue affects upKeeper Manager: through 5.1.9.",
-    "published": "2024-08-16T14:15:13.933",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-7145": {
-    "cvss": 8.8,
-    "description": "The JetElements plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.6.20 via the 'progress_type' parameter. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
-    "published": "2024-08-16T14:15:15.187",
-    "keywords": "execution,sensitive,bypass"
-  },
   "CVE-2024-43381": {
     "cvss": 5.0,
     "description": "reNgine is an automated reconnaissance framework for web applications. Versions 2.1.2 and prior are susceptible to Stored Cross-Site Scripting (XSS) attacks. This vulnerability occurs when scanning a domain, and if the target domain's DNS record contains an XSS payload, it leads to the execution of malicious scripts in the reNgine's dashboard view when any user views the scan results. The XSS payload is directly fetched from the DNS record of the remote target domain. Consequently, an attacker can execute the attack without requiring any additional input from the target or the reNgine user. A patch is available and expected to be part of version 2.1.3.",
