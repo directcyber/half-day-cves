@@ -76,5 +76,23 @@
     "cvss": "-",
     "description": "There is a LOW severity vulnerability affecting CPython, specifically the\n'http.cookies' standard library module.\n\n\nWhen parsing cookies that contained backslashes for quoted characters in\nthe cookie value, the parser would use an algorithm with quadratic\ncomplexity, resulting in excess CPU resources being used while parsing the\nvalue.",
     "published": "2024-08-19T19:15:08.180"
+  },
+  "CVE-2024-42812": {
+    "cvss": "-",
+    "description": "In D-Link DIR-860L v2.03, there is a buffer overflow vulnerability due to the lack of length verification for the SID field in gena.cgi. Attackers who successfully exploit this vulnerability can cause the remote target device to crash or execute arbitrary commands.",
+    "published": "2024-08-19T20:15:07.070",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-42813": {
+    "cvss": "-",
+    "description": "In TRENDnet TEW-752DRU FW1.03B01, there is a buffer overflow vulnerability due to the lack of length verification for the service field in gena.cgi. Attackers who successfully exploit this vulnerability can cause the remote target device to crash or execute arbitrary commands.",
+    "published": "2024-08-19T20:15:07.147",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-42815": {
+    "cvss": "-",
+    "description": "In the TP-Link RE365 V1_180213, there is a buffer overflow vulnerability due to the lack of length verification for the USER_AGENT field in /usr/bin/httpd. Attackers who successfully exploit this vulnerability can cause the remote target device to crash or execute arbitrary commands.",
+    "published": "2024-08-19T20:15:07.193",
+    "keywords": "remote,command"
   }
 }
