@@ -13,13 +13,13 @@
   },
   "CVE-2024-7896": {
     "cvss": 6.3,
-    "description": "A vulnerability was found in Tosei Online Store Management System ??????????? 4.02/4.03/4.04. It has been rated as critical. Affected by this issue is some unknown functionality of the file /cgi-bin/p1_ftpserver.php. The manipulation of the argument adr_txt leads to command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "description": "A vulnerability was found in Tosei Online Store Management System \u30cd\u30c3\u30c8\u5e97\u8217\u7ba1\u7406\u30b7\u30b9\u30c6\u30e0 4.02/4.03/4.04. It has been rated as critical. Affected by this issue is some unknown functionality of the file /cgi-bin/p1_ftpserver.php. The manipulation of the argument adr_txt leads to command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2024-08-17T14:15:12.303",
     "keywords": "remote,command"
   },
   "CVE-2024-7897": {
     "cvss": 6.3,
-    "description": "A vulnerability classified as critical has been found in Tosei Online Store Management System ??????????? 4.02/4.03/4.04. This affects an unknown part of the file /cgi-bin/tosei_kikai.php. The manipulation of the argument kikaibangou leads to command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "description": "A vulnerability classified as critical has been found in Tosei Online Store Management System \u30cd\u30c3\u30c8\u5e97\u8217\u7ba1\u7406\u30b7\u30b9\u30c6\u30e0 4.02/4.03/4.04. This affects an unknown part of the file /cgi-bin/tosei_kikai.php. The manipulation of the argument kikaibangou leads to command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2024-08-17T15:15:11.597",
     "keywords": "remote,command"
   },
@@ -48,7 +48,7 @@
     "keywords": "remote,execution,unauthenticated"
   },
   "CVE-2024-6451": {
-    "cvss": "-",
+    "cvss": 7.2,
     "description": "AI Engine < 2.4.3 is susceptible to remote-code-execution (RCE) via Log Poisoning. The AI Engine WordPress plugin before 2.5.1 fails to validate the file extension of \"logs_path\", allowing Administrators to change log filetypes from .log to .php.",
     "published": "2024-08-19T06:15:05.880",
     "keywords": "remote,execution"
@@ -64,5 +64,17 @@
     "description": "A vulnerability was found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726-4, DNS-1100-4, DNS-1200-05 and DNS-1550-04 up to 20240814 and classified as critical. Affected by this issue is the function cgi_audio_search/cgi_create_playlist/cgi_get_album_all_tracks/cgi_get_alltracks_editlist/cgi_get_artist_all_album/cgi_get_genre_all_tracks/cgi_get_tracks_list/cgi_set_airplay_content/cgi_write_playlist of the file /cgi-bin/myMusic.cgi. The manipulation leads to command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. NOTE: This vulnerability only affects products that are no longer supported by the maintainer. NOTE: Vendor was contacted early and confirmed that the product is end-of-life. It should be retired and replaced.",
     "published": "2024-08-19T15:15:09.403",
     "keywords": "remote,command"
+  },
+  "CVE-2024-42657": {
+    "cvss": "-",
+    "description": "An issue in wishnet Nepstech Wifi Router NTPL-XPON1GFEVN v1.0 allows a remote attacker to obtain sensitive information via the lack of encryption during login process",
+    "published": "2024-08-19T17:15:07.967",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-42658": {
+    "cvss": "-",
+    "description": "An issue in wishnet Nepstech Wifi Router NTPL-XPON1GFEVN v1.0 allows a remote attacker to obtain sensitive information via the cookie's parameter",
+    "published": "2024-08-19T17:15:08.027",
+    "keywords": "remote,sensitive"
   }
 }
