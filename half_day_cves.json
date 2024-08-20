@@ -1,10 +1,4 @@
 {
-  "CVE-2024-6459": {
-    "cvss": "-",
-    "description": "The News Element Elementor Blog Magazine WordPress plugin before 1.0.6 is vulnerable to Local File Inclusion via the template parameter. This makes it possible for unauthenticated attacker to include and execute PHP files on the server, allowing the execution of any PHP code in those files.",
-    "published": "2024-08-17T06:15:03.973",
-    "keywords": "execution,unauthenticated"
-  },
   "CVE-2024-7896": {
     "cvss": 6.3,
     "description": "A vulnerability was found in Tosei Online Store Management System \u30cd\u30c3\u30c8\u5e97\u8217\u7ba1\u7406\u30b7\u30b9\u30c6\u30e0 4.02/4.03/4.04. It has been rated as critical. Affected by this issue is some unknown functionality of the file /cgi-bin/p1_ftpserver.php. The manipulation of the argument adr_txt leads to command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
@@ -112,5 +106,11 @@
     "description": "The Contact Form by Bit Form: Multi Step Form, Calculation Contact Form, Payment Contact Form & Custom Contact Form builder plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the iconRemove function in versions 2.0 to 2.13.4. This makes it possible for authenticated attackers, with Administrator-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
     "published": "2024-08-20T04:15:11.203",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-43688": {
+    "url": "https://github.com/vixie/cron/commit/9cc8ab1087bb9ab861dd5595c41200683c9f6712",
+    "cvss": "-",
+    "description": "cron/entry.c in vixie cron before 9cc8ab1, as used in OpenBSD 7.4 and 7.5, allows a heap-based buffer underflow and memory corruption. NOTE: this issue was introduced during a May 2023 refactoring.",
+    "published": "2024-08-20T06:15:04.983"
   }
 }
