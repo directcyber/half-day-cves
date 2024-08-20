@@ -1,10 +1,4 @@
 {
-  "CVE-2024-7897": {
-    "cvss": 6.3,
-    "description": "A vulnerability classified as critical has been found in Tosei Online Store Management System \u30cd\u30c3\u30c8\u5e97\u8217\u7ba1\u7406\u30b7\u30b9\u30c6\u30e0 4.02/4.03/4.04. This affects an unknown part of the file /cgi-bin/tosei_kikai.php. The manipulation of the argument kikaibangou leads to command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2024-08-17T15:15:11.597",
-    "keywords": "remote,command"
-  },
   "CVE-2024-7907": {
     "cvss": 9.8,
     "description": "A vulnerability, which was classified as critical, has been found in TOTOLINK X6000R 9.4.0cu.852_20230719. This issue affects the function setSyslogCfg of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument rtLogServer leads to command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
@@ -48,7 +42,7 @@
     "keywords": "remote,command"
   },
   "CVE-2024-42657": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "An issue in wishnet Nepstech Wifi Router NTPL-XPON1GFEVN v1.0 allows a remote attacker to obtain sensitive information via the lack of encryption during login process",
     "published": "2024-08-19T17:15:07.967",
     "keywords": "remote,sensitive"
@@ -61,7 +55,7 @@
   },
   "CVE-2024-7592": {
     "url": "https://github.com/python/cpython/pull/123075",
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "There is a LOW severity vulnerability affecting CPython, specifically the\n'http.cookies' standard library module.\n\n\nWhen parsing cookies that contained backslashes for quoted characters in\nthe cookie value, the parser would use an algorithm with quadratic\ncomplexity, resulting in excess CPU resources being used while parsing the\nvalue.",
     "published": "2024-08-19T19:15:08.180"
   },
@@ -130,5 +124,23 @@
     "cvss": "-",
     "description": "Friendica 2024.03 is vulnerable to Cross Site Scripting (XSS) in settings/profile via the homepage, xmpp, and matrix parameters.",
     "published": "2024-08-20T14:15:09.330"
+  },
+  "CVE-2024-39690": {
+    "url": "https://github.com/projectcapsule/capsule/commit/d620b0457ddec01616b8eab8512a10611611f584",
+    "cvss": 8.4,
+    "description": "Capsule is a multi-tenancy and policy-based framework for Kubernetes. In Capsule v0.7.0 and earlier, the tenant-owner can patch any arbitrary namespace that has not been taken over by a tenant (i.e., namespaces without the ownerReference field), thereby gaining control of that namespace.",
+    "published": "2024-08-20T15:15:21.340"
+  },
+  "CVE-2024-42662": {
+    "cvss": "-",
+    "description": "An issue in apollocongif apollo v.2.2.0 allows a remote attacker to obtain sensitive information via a crafted request.",
+    "published": "2024-08-20T15:15:23.090",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-43406": {
+    "url": "https://github.com/lf-edge/ekuiper/commit/1a9c745649438feaac357d282959687012b65503",
+    "cvss": 8.8,
+    "description": "LF Edge eKuiper is a lightweight IoT data analytics and stream processing engine running on resource-constraint edge devices. A user could utilize and exploit SQL Injection to allow the execution of malicious SQL query via Get method in sqlKvStore. This vulnerability is fixed in 1.14.2.",
+    "published": "2024-08-20T15:15:24.070"
   }
 }
