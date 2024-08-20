@@ -94,5 +94,11 @@
     "description": "In the TP-Link RE365 V1_180213, there is a buffer overflow vulnerability due to the lack of length verification for the USER_AGENT field in /usr/bin/httpd. Attackers who successfully exploit this vulnerability can cause the remote target device to crash or execute arbitrary commands.",
     "published": "2024-08-19T20:15:07.193",
     "keywords": "remote,command"
+  },
+  "CVE-2024-5932": {
+    "cvss": 10.0,
+    "description": "The GiveWP \u2013 Donation Plugin and Fundraising Platform plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.14.1 via deserialization of untrusted input from the 'give_title' parameter. This makes it possible for unauthenticated attackers to inject a PHP Object. The additional presence of a POP chain allows attackers to execute code remotely, and to delete arbitrary files.",
+    "published": "2024-08-20T02:15:04.240",
+    "keywords": "remote,unauthenticated"
   }
 }
