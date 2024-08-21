@@ -292,5 +292,11 @@
     "description": "Magnet Forensics AXIOM Command Injection Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Magnet Forensics AXIOM. User interaction is required to exploit this vulnerability in that the target must acquire data from a malicious mobile device.\n\nThe specific flaw exists within the Android device image acquisition functionality. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-23964.",
     "published": "2024-08-21T17:15:09.860",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2024-42781": {
+    "cvss": "-",
+    "description": "A SQL injection vulnerability in \"/music/ajax.php?action=login\" of Kashipara Music Management System v1.0 allows remote attackers to execute arbitrary SQL commands and bypass Login via the email parameter.",
+    "published": "2024-08-21T18:15:10.227",
+    "keywords": "remote,command,bypass"
   }
 }
