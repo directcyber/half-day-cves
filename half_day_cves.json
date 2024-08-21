@@ -1,10 +1,4 @@
 {
-  "CVE-2024-7907": {
-    "cvss": 9.8,
-    "description": "A vulnerability, which was classified as critical, has been found in TOTOLINK X6000R 9.4.0cu.852_20230719. This issue affects the function setSyslogCfg of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument rtLogServer leads to command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2024-08-18T16:15:04.193",
-    "keywords": "remote,command"
-  },
   "CVE-2024-44069": {
     "url": "https://github.com/pi-hole/web/pull/3077",
     "cvss": "-",
@@ -178,5 +172,89 @@
     "description": "The Ultimate Store Kit Elementor Addons, Woocommerce Builder, EDD Builder, Elementor Store Builder, Product Grid, Product Table, Woocommerce Slider plugin is vulnerable to PHP Object Injection via deserialization of untrusted input via the _ultimate_store_kit_compare_products cookie in versions up to , and including, 1.6.4. This makes it possible for an unauthenticated attacker to inject a PHP Object.\r\n\r\nNo POP chain is present in the vulnerable plugin. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker or above to delete arbitrary files, retrieve sensitive data, or execute code.",
     "published": "2024-08-21T09:15:04.563",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-6811": {
+    "cvss": 7.8,
+    "description": "IrfanView WSQ File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of IrfanView. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of WSQ files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-24192.",
+    "published": "2024-08-21T16:15:08.783",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-6812": {
+    "cvss": 7.8,
+    "description": "IrfanView WSQ File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of IrfanView. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of WSQ files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23273.",
+    "published": "2024-08-21T16:15:08.970",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-6813": {
+    "cvss": 8.8,
+    "description": "NETGEAR ProSAFE Network Management System getSortString SQL Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of NETGEAR ProSAFE Network Management System. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the getSortString method. The issue results from the lack of proper validation of a user-supplied string before using it to construct SQL queries. An attacker can leverage this vulnerability to execute code in the context of SYSTEM. Was ZDI-CAN-23207.",
+    "published": "2024-08-21T16:15:09.163",
+    "keywords": "remote,execution,authentication"
+  },
+  "CVE-2024-6814": {
+    "cvss": 8.8,
+    "description": "NETGEAR ProSAFE Network Management System getFilterString SQL Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of NETGEAR ProSAFE Network Management System. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the getFilterString method. The issue results from the lack of proper validation of a user-supplied string before using it to construct SQL queries. An attacker can leverage this vulnerability to execute code in the context of SYSTEM. Was ZDI-CAN-23399.",
+    "published": "2024-08-21T16:15:09.357",
+    "keywords": "remote,execution,authentication"
+  },
+  "CVE-2024-7600": {
+    "cvss": 7.1,
+    "description": "Logsign Unified SecOps Platform Directory Traversal Arbitrary File Deletion Vulnerability. This vulnerability allows remote attackers to delete arbitrary files on affected installations of Logsign Unified SecOps Platform. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the HTTP API service, which listens on TCP port 443 by default. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to delete files in the context of root. Was ZDI-CAN-25025.",
+    "published": "2024-08-21T16:15:09.570",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2024-7601": {
+    "cvss": 7.1,
+    "description": "Logsign Unified SecOps Platform Directory data_export_delete_all Traversal Arbitrary File Deletion Vulnerability. This vulnerability allows remote attackers to delete arbitrary files on affected installations of Logsign Unified SecOps Platform. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the HTTP API service, which listens on TCP port 443 by default. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to delete files in the context of root. Was ZDI-CAN-25026.",
+    "published": "2024-08-21T16:15:09.757",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2024-7602": {
+    "cvss": 6.5,
+    "description": "Logsign Unified SecOps Platform Directory Traversal Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Logsign Unified SecOps Platform. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the HTTP API service, which listens on TCP port 443 by default. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to disclose information in the context of root. Was ZDI-CAN-25027.",
+    "published": "2024-08-21T16:15:09.940",
+    "keywords": "remote,authentication,sensitive"
+  },
+  "CVE-2024-7603": {
+    "cvss": 7.1,
+    "description": "Logsign Unified SecOps Platform Directory Traversal Arbitrary Directory Deletion Vulnerability. This vulnerability allows remote attackers to delete arbitrary directories on affected installations of Logsign Unified SecOps Platform. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the HTTP API service, which listens on TCP port 443 by default. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to delete directories in the context of root. Was ZDI-CAN-25028.",
+    "published": "2024-08-21T16:15:10.123",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2024-7604": {
+    "cvss": 5.1,
+    "description": "Logsign Unified SecOps Platform Incorrect Authorization Authentication Bypass Vulnerability. This vulnerability allows local attackers to bypass authentication on affected installations of Logsign Unified SecOps Platform. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the HTTP API service, which listens on TCP port 443 by default. The issue results from the lack of proper validation of the user's license expiration date. An attacker can leverage this vulnerability to bypass authentication on the system. Was ZDI-CAN-25029.",
+    "published": "2024-08-21T16:15:10.330",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-7722": {
+    "cvss": 3.3,
+    "description": "Foxit PDF Reader Doc Object Use-After-Free Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of Doc objects. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-23702.",
+    "published": "2024-08-21T16:15:10.580",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-7723": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23736.",
+    "published": "2024-08-21T16:15:10.760",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-7724": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23900.",
+    "published": "2024-08-21T16:15:10.933",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-7725": {
+    "cvss": 7.8,
+    "description": "Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23928.",
+    "published": "2024-08-21T16:15:11.120",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-7795": {
+    "cvss": 8.8,
+    "description": "Autel MaxiCharger AC Elite Business C50 AppAuthenExchangeRandomNum Stack-Based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Autel MaxiCharger AC Elite Business C50 EV chargers. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of the AppAuthenExchangeRandomNum BLE command. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the device. Was ZDI-CAN-23384.",
+    "published": "2024-08-21T16:15:11.380",
+    "keywords": "remote,execution,authentication,command"
   }
 }
