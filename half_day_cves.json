@@ -316,5 +316,17 @@
     "description": "A vulnerability in the web-based management interface of Cisco Identity Services Engine (ISE) could allow an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack and perform arbitrary actions on an affected device.\r\n\r\nThis vulnerability is due to insufficient CSRF protections for the web-based management interface of an affected device. An attacker could exploit this vulnerability by persuading a user of the interface to follow a crafted link. A successful exploit could allow the attacker to perform arbitrary actions on the affected device with the privileges of the targeted user.",
     "published": "2024-08-21T20:15:08.933",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-6386": {
+    "cvss": 9.9,
+    "description": "The WPML plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 4.6.12 via the Twig Server-Side Template Injection. This is due to missing input validation and sanitization on the render function. This makes it possible for authenticated attackers, with Contributor-level access and above, to execute code on the server.",
+    "published": "2024-08-21T21:15:08.577",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-7978": {
+    "cvss": "-",
+    "description": "Insufficient policy enforcement in Data Transfer in Google Chrome prior to 128.0.6613.84 allowed a remote attacker who convinced a user to engage in specific UI gestures to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)",
+    "published": "2024-08-21T21:15:09.697",
+    "keywords": "remote,leak"
   }
 }
