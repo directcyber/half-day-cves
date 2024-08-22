@@ -102,7 +102,7 @@
     "published": "2024-08-20T15:15:24.070"
   },
   "CVE-2024-42598": {
-    "cvss": "-",
+    "cvss": 6.7,
     "description": "SeaCMS 13.0 has a remote code execution vulnerability. The reason for this vulnerability is that although admin_editplayer.php imposes restrictions on edited files, attackers can still bypass these restrictions and write code, allowing authenticated attackers to exploit the vulnerability to execute arbitrary commands and gain system privileges.",
     "published": "2024-08-20T16:15:11.727",
     "keywords": "remote,execution,command,bypass"
@@ -301,7 +301,7 @@
   },
   "CVE-2024-43033": {
     "url": "https://github.com/jpressprojects/jpress/issues/188",
-    "cvss": "-",
+    "cvss": 8.8,
     "description": "JPress through 5.1.1 on Windows has an arbitrary file upload vulnerability that could cause arbitrary code execution via ::$DATA to AttachmentController, such as a .jsp::$DATA file to io.jpress.web.commons.controller.AttachmentController#upload. NOTE: this is unrelated to the attack vector for CVE-2024-32358.",
     "published": "2024-08-22T01:15:03.540"
   },
