@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-08-22T15:12:21.675015
+Updated at UTC 2024-08-22T16:12:25.758163
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-08-22T15:12:21.675015
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -241,22 +245,28 @@ value.</td>
 		
 			
 		
-			
+
+		<hr>
 		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43399">CVE-2024-43399</a></td>
-					<td>9.8</td>
-					<td><a target=_blank href="https://github.com/mobsf/mobile-security-framework-mobsf/commit/cc625fe8430f3437a473e82aa2966d100a4dc883">https://github.com/mobsf/mobile-security-framework-mobsf/commit/cc625fe8430f3437a473e82aa2966d100a4dc883</a></td>
-					<td class=date>2024-08-19T15:15:09.073</td>
-					<td class=description>Mobile Security Framework (MobSF) is a pen-testing, malware analysis and security assessment framework capable of performing static and dynamic analysis. Before 4.0.7, there is a flaw in the Static Libraries analysis section. Specifically, during the extraction of .a extension files, the measure intended to prevent Zip Slip attacks is improperly implemented. Since the implemented measure can be bypassed, the vulnerability allows an attacker to extract files to any desired location within the server running MobSF. This vulnerability is fixed in 4.0.7.</td>
-
-
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43787">CVE-2024-43787</a></td>
+					<td>5.0</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2024-08-22T15:15:16.857</td>
+					<td class=description>Hono is a Web application framework that provides support for any JavaScript runtime. Hono CSRF middleware can be bypassed using crafted Content-Type header. MIME types are case insensitive, but isRequestedByFormElementRe only matches lower-case. As a result, attacker can bypass csrf middleware using upper-case form-like MIME type. This vulnerability is fixed in 4.5.8.</td>
 				</tr>
 			
 		
-
-		<hr>
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-36445">CVE-2024-36445</a></td>
+					<td>-</td>
+					<td>remote,authentication</td>
+					<td class=date>2024-08-22T15:15:16.187</td>
+					<td class=description>Swissphone DiCal-RED 4009 devices allow a remote attacker to gain a root shell via TELNET without authentication.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -281,7 +291,7 @@ value.</td>
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45169">CVE-2024-45169</a></td>
-					<td>-</td>
+					<td>9.8</td>
 					<td>remote,execution</td>
 					<td class=date>2024-08-22T04:15:27.583</td>
 					<td class=description>An issue was discovered in UCI IDOL 2 (aka uciIDOL or IDOL2) through 2.12. Due to improper input validation, improper deserialization, and improper restriction of operations within the bounds of a memory buffer, IDOL2 is vulnerable to Denial-of-Service (DoS) attacks and possibly remote code execution via the \xB0\x00\x3c byte sequence.</td>
@@ -311,7 +321,7 @@ value.</td>
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45163">CVE-2024-45163</a></td>
-					<td>-</td>
+					<td>9.1</td>
 					<td>unauthenticated,command</td>
 					<td class=date>2024-08-22T04:15:20.247</td>
 					<td class=description>The Mirai botnet through 2024-08-19 mishandles simultaneous TCP connections to the CNC (command and control) server. Unauthenticated sessions remain open, causing resource consumption. For example, an attacker can send a recognized username (such as root), or can send arbitrary data.</td>
@@ -848,18 +858,6 @@ We recommend users to upgrade Apache DolphinScheduler to version 3.2.2, which fi
 					<td class=date>2024-08-19T17:15:07.967</td>
 					<td class=description>An issue in wishnet Nepstech Wifi Router NTPL-XPON1GFEVN v1.0 allows a remote attacker to obtain sensitive information via the lack of encryption during login process</td>
 				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7922">CVE-2024-7922</a></td>
-					<td>9.8</td>
-					<td>remote,command</td>
-					<td class=date>2024-08-19T15:15:09.403</td>
-					<td class=description>A vulnerability was found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726-4, DNS-1100-4, DNS-1200-05 and DNS-1550-04 up to 20240814 and classified as critical. Affected by this issue is the function cgi_audio_search/cgi_create_playlist/cgi_get_album_all_tracks/cgi_get_alltracks_editlist/cgi_get_artist_all_album/cgi_get_genre_all_tracks/cgi_get_tracks_list/cgi_set_airplay_content/cgi_write_playlist of the file /cgi-bin/myMusic.cgi. The manipulation leads to command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. NOTE: This vulnerability only affects products that are no longer supported by the maintainer. NOTE: Vendor was contacted early and confirmed that the product is end-of-life. It should be retired and replaced.</td>
-				</tr>
-			
-		
 			
 		
 
