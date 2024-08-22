@@ -346,5 +346,11 @@
     "description": "An issue was discovered in UCI IDOL 2 (aka uciIDOL or IDOL2) through 2.12. Due to improper input validation, improper deserialization, and improper restriction of operations within the bounds of a memory buffer, IDOL2 is vulnerable to Denial-of-Service (DoS) attacks and possibly remote code execution via the \\xB0\\x00\\x3c byte sequence.",
     "published": "2024-08-22T04:15:27.583",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-8072": {
+    "cvss": 5.3,
+    "description": "Mage AI allows remote unauthenticated attackers to leak the terminal server command history of arbitrary users",
+    "published": "2024-08-22T08:15:04.360",
+    "keywords": "remote,unauthenticated,command,leak"
   }
 }
