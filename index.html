@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-08-22T19:09:19.493728
+Updated at UTC 2024-08-22T20:11:55.279274
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,30 @@ Updated at UTC 2024-08-22T19:09:19.493728
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8088">CVE-2024-8088</a></td>
+					<td>7.5</td>
+					<td><a target=_blank href="https://github.com/python/cpython/pull/122906">https://github.com/python/cpython/pull/122906</a></td>
+					<td class=date>2024-08-22T19:15:09.720</td>
+					<td class=description>There is a HIGH severity vulnerability affecting the CPython "zipfile"
+module.
+
+
+
+
+
+When iterating over names of entries in a zip archive (for example, methods
+of "zipfile.ZipFile" like "namelist()", "iterdir()", "extractall()", etc)
+the process can be put into an infinite loop with a maliciously crafted
+zip archive. This defect applies when reading only metadata or extracting
+the contents of the zip archive. Programs that are not handling
+user-controlled zip archives are not affected.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -222,27 +246,10 @@ Updated at UTC 2024-08-22T19:09:19.493728
 		
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7592">CVE-2024-7592</a></td>
-					<td>7.5</td>
-					<td><a target=_blank href="https://github.com/python/cpython/pull/123075">https://github.com/python/cpython/pull/123075</a></td>
-					<td class=date>2024-08-19T19:15:08.180</td>
-					<td class=description>There is a LOW severity vulnerability affecting CPython, specifically the
-'http.cookies' standard library module.
-
-
-When parsing cookies that contained backslashes for quoted characters in
-the cookie value, the parser would use an algorithm with quadratic
-complexity, resulting in excess CPU resources being used while parsing the
-value.</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -832,8 +839,6 @@ We recommend users to upgrade Apache DolphinScheduler to version 3.2.2, which fi
 					<td class=date>2024-08-19T20:15:07.070</td>
 					<td class=description>In D-Link DIR-860L v2.03, there is a buffer overflow vulnerability due to the lack of length verification for the SID field in gena.cgi. Attackers who successfully exploit this vulnerability can cause the remote target device to crash or execute arbitrary commands.</td>
 				</tr>
-			
-		
 			
 		
 
