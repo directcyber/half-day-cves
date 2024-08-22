@@ -1,22 +1,4 @@
 {
-  "CVE-2024-42812": {
-    "cvss": "-",
-    "description": "In D-Link DIR-860L v2.03, there is a buffer overflow vulnerability due to the lack of length verification for the SID field in gena.cgi. Attackers who successfully exploit this vulnerability can cause the remote target device to crash or execute arbitrary commands.",
-    "published": "2024-08-19T20:15:07.070",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-42813": {
-    "cvss": 9.8,
-    "description": "In TRENDnet TEW-752DRU FW1.03B01, there is a buffer overflow vulnerability due to the lack of length verification for the service field in gena.cgi. Attackers who successfully exploit this vulnerability can cause the remote target device to crash or execute arbitrary commands.",
-    "published": "2024-08-19T20:15:07.147",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-42815": {
-    "cvss": 9.8,
-    "description": "In the TP-Link RE365 V1_180213, there is a buffer overflow vulnerability due to the lack of length verification for the USER_AGENT field in /usr/bin/httpd. Attackers who successfully exploit this vulnerability can cause the remote target device to crash or execute arbitrary commands.",
-    "published": "2024-08-19T20:15:07.193",
-    "keywords": "remote,command"
-  },
   "CVE-2024-5932": {
     "cvss": 10.0,
     "description": "The GiveWP \u2013 Donation Plugin and Fundraising Platform plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.14.1 via deserialization of untrusted input from the 'give_title' parameter. This makes it possible for unauthenticated attackers to inject a PHP Object. The additional presence of a POP chain allows attackers to execute code remotely, and to delete arbitrary files.",
@@ -306,7 +288,7 @@
     "keywords": "remote,execution"
   },
   "CVE-2024-45167": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "An issue was discovered in UCI IDOL 2 (aka uciIDOL or IDOL2) through 2.12. Due to improper input validation, improper deserialization, and improper restriction of operations within the bounds of a memory buffer, IDOL2 is vulnerable to Denial-of-Service (DoS) attacks and possibly remote code execution. A certain XmlMessage document causes 100% CPU consumption.",
     "published": "2024-08-22T04:15:25.710",
     "keywords": "remote,execution"
@@ -330,7 +312,7 @@
     "keywords": "remote,sensitive"
   },
   "CVE-2024-36445": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "Swissphone DiCal-RED 4009 devices allow a remote attacker to gain a root shell via TELNET without authentication.",
     "published": "2024-08-22T15:15:16.187",
     "keywords": "remote,authentication"
@@ -346,5 +328,23 @@
     "cvss": 7.5,
     "description": "There is a HIGH severity vulnerability affecting the CPython \"zipfile\"\nmodule.\n\n\n\n\n\nWhen iterating over names of entries in a zip archive (for example, methods\nof \"zipfile.ZipFile\" like \"namelist()\", \"iterdir()\", \"extractall()\", etc)\nthe process can be put into an infinite loop with a maliciously crafted\nzip archive. This defect applies when reading only metadata or extracting\nthe contents of the zip archive. Programs that are not handling\nuser-controlled zip archives are not affected.",
     "published": "2024-08-22T19:15:09.720"
+  },
+  "CVE-2024-42599": {
+    "cvss": "-",
+    "description": "SeaCMS 13.0 has a remote code execution vulnerability. The reason for this vulnerability is that although admin_files.php imposes restrictions on edited files, attackers can still bypass these restrictions and write code, allowing authenticated attackers to exploit the vulnerability to execute arbitrary commands and gain system privileges.",
+    "published": "2024-08-22T20:15:09.730",
+    "keywords": "remote,execution,command,bypass"
+  },
+  "CVE-2024-8075": {
+    "cvss": 6.3,
+    "description": "A vulnerability has been found in TOTOLINK AC1200 T8 4.1.5cu.862_B20230228 and classified as critical. Affected by this vulnerability is the function setDiagnosisCfg. The manipulation leads to os command injection. The attack can be launched remotely. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-08-22T20:15:10.210",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-8077": {
+    "cvss": 6.3,
+    "description": "A vulnerability was found in TOTOLINK AC1200 T8 4.1.5cu.862_B20230228. It has been classified as critical. This affects the function setTracerouteCfg. The manipulation leads to os command injection. It is possible to initiate the attack remotely. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-08-22T20:15:11.690",
+    "keywords": "remote,command"
   }
 }
