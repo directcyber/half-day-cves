@@ -334,5 +334,11 @@
     "description": "The SolarWinds Web Help Desk (WHD) software is affected by a hardcoded credential vulnerability, allowing remote unauthenticated user to access internal functionality and modify data.",
     "published": "2024-08-21T22:15:04.350",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-43033": {
+    "url": "https://github.com/jpressprojects/jpress/issues/188",
+    "cvss": "-",
+    "description": "JPress through 5.1.1 on Windows has an arbitrary file upload vulnerability that could cause arbitrary code execution via ::$DATA to AttachmentController, such as a .jsp::$DATA file to io.jpress.web.commons.controller.AttachmentController#upload. NOTE: this is unrelated to the attack vector for CVE-2024-32358.",
+    "published": "2024-08-22T01:15:03.540"
   }
 }
