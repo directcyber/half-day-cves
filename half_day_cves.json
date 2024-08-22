@@ -1,10 +1,4 @@
 {
-  "CVE-2024-44076": {
-    "url": "https://github.com/microcks/microcks/issues/1212",
-    "cvss": 9.8,
-    "description": "In Microcks before 1.10.0, the POST /api/import and POST /api/export endpoints allow non-administrator access.",
-    "published": "2024-08-19T03:15:03.883"
-  },
   "CVE-2024-6330": {
     "cvss": 9.8,
     "description": "The GEO my WP WordPress plugin before 4.5.0.2 does not prevent unauthenticated attackers from including arbitrary files in PHP's execution context, which leads to Remote Code Execution.",
@@ -334,5 +328,11 @@
     "cvss": "-",
     "description": "JPress through 5.1.1 on Windows has an arbitrary file upload vulnerability that could cause arbitrary code execution via ::$DATA to AttachmentController, such as a .jsp::$DATA file to io.jpress.web.commons.controller.AttachmentController#upload. NOTE: this is unrelated to the attack vector for CVE-2024-32358.",
     "published": "2024-08-22T01:15:03.540"
+  },
+  "CVE-2024-7384": {
+    "cvss": 7.5,
+    "description": "The AcyMailing \u2013 An Ultimate Newsletter Plugin and Marketing Automation Solution for WordPress plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the acym_extractArchive function in all versions up to, and including, 9.7.2. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-08-22T03:15:04.130",
+    "keywords": "remote,execution"
   }
 }
