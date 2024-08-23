@@ -346,5 +346,23 @@
     "description": "The porte_plume plugin used by SPIP before 4.30-alpha2, 4.2.13, and 4.1.16 is vulnerable to an arbitrary code execution vulnerability. A remote and unauthenticated attacker can execute arbitrary PHP as the SPIP user by sending a crafted HTTP request.",
     "published": "2024-08-23T18:15:07.677",
     "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-45188": {
+    "cvss": 6.5,
+    "description": "Mage AI allows remote users with the \"Viewer\" role to leak arbitrary files from the Mage server due to a path traversal in the \"File Content\" request",
+    "published": "2024-08-23T20:15:07.937",
+    "keywords": "remote,leak"
+  },
+  "CVE-2024-45189": {
+    "cvss": 6.5,
+    "description": "Mage AI allows remote users with the \"Viewer\" role to leak arbitrary files from the Mage server due to a path traversal in the \"Git Content\" request",
+    "published": "2024-08-23T20:15:08.197",
+    "keywords": "remote,leak"
+  },
+  "CVE-2024-45190": {
+    "cvss": 6.5,
+    "description": "Mage AI allows remote users with the \"Viewer\" role to leak arbitrary files from the Mage server due to a path traversal in the \"Pipeline Interaction\" request",
+    "published": "2024-08-23T20:15:08.403",
+    "keywords": "remote,leak"
   }
 }
