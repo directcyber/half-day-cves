@@ -364,5 +364,11 @@
     "description": "The File Manager Pro plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation and capability checks in the mk_file_folder_manager AJAX action in all versions up to, and including, 8.3.7. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
     "published": "2024-08-23T03:15:04.060",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-7258": {
+    "cvss": 8.8,
+    "description": "The WooCommerce Google Feed Manager plugin for WordPress is vulnerable to unauthorized loss of data due to a missing capability check on the 'wppfm_removeFeedFile' function in all versions up to, and including, 2.8.0. This makes it possible for authenticated attackers, with Contributor-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
+    "published": "2024-08-23T05:15:15.437",
+    "keywords": "remote,execution"
   }
 }
