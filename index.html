@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-08-23T21:09:25.140407
+Updated at UTC 2024-08-23T22:09:30.772243
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -146,8 +146,6 @@ user-controlled zip archives are not affected.</td>
 
 
 				</tr>
-			
-		
 			
 		
 			
@@ -841,16 +839,6 @@ No POP chain is present in the vulnerable plugin. If a POP chain is present via 
 					<td>unauthenticated,sensitive</td>
 					<td class=date>2024-08-21T06:15:07.633</td>
 					<td class=description>The Hide My Site plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.2 due to the plugin not restricting access to the REST API when password protection is enabled. This makes it possible for unauthenticated attackers to gain unauthorized access to the site.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-42363">CVE-2024-42363</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-08-20T21:15:14.543</td>
-					<td class=description>Prior to 3385, the user-controlled role parameter enters the application in the Kubernetes::RoleVerificationsController. The role parameter flows into the RoleConfigFile initializer and then into the Kubernetes::Util.parse_file method where it is unsafely deserialized using the YAML.load_stream method. This issue may lead to Remote Code Execution (RCE). This vulnerability is fixed in 3385.</td>
 				</tr>
 			
 		
