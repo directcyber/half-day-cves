@@ -1,10 +1,4 @@
 {
-  "CVE-2024-42598": {
-    "cvss": 6.7,
-    "description": "SeaCMS 13.0 has a remote code execution vulnerability. The reason for this vulnerability is that although admin_editplayer.php imposes restrictions on edited files, attackers can still bypass these restrictions and write code, allowing authenticated attackers to exploit the vulnerability to execute arbitrary commands and gain system privileges.",
-    "published": "2024-08-20T16:15:11.727",
-    "keywords": "remote,execution,command,bypass"
-  },
   "CVE-2024-42363": {
     "cvss": 8.8,
     "description": "Prior to 3385, the user-controlled role parameter enters the application in the Kubernetes::RoleVerificationsController. The role parameter flows into the RoleConfigFile initializer and then into the Kubernetes::Util.parse_file method where it is unsafely deserialized using the YAML.load_stream method. This issue may lead to Remote Code Execution (RCE). This vulnerability is fixed in 3385.",
@@ -60,13 +54,13 @@
     "keywords": "remote,execution,authentication"
   },
   "CVE-2024-7600": {
-    "cvss": 7.1,
+    "cvss": 8.1,
     "description": "Logsign Unified SecOps Platform Directory Traversal Arbitrary File Deletion Vulnerability. This vulnerability allows remote attackers to delete arbitrary files on affected installations of Logsign Unified SecOps Platform. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the HTTP API service, which listens on TCP port 443 by default. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to delete files in the context of root. Was ZDI-CAN-25025.",
     "published": "2024-08-21T16:15:09.570",
     "keywords": "remote,authentication"
   },
   "CVE-2024-7601": {
-    "cvss": 7.1,
+    "cvss": 8.1,
     "description": "Logsign Unified SecOps Platform Directory data_export_delete_all Traversal Arbitrary File Deletion Vulnerability. This vulnerability allows remote attackers to delete arbitrary files on affected installations of Logsign Unified SecOps Platform. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the HTTP API service, which listens on TCP port 443 by default. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to delete files in the context of root. Was ZDI-CAN-25026.",
     "published": "2024-08-21T16:15:09.757",
     "keywords": "remote,authentication"
@@ -78,13 +72,13 @@
     "keywords": "remote,authentication,sensitive"
   },
   "CVE-2024-7603": {
-    "cvss": 7.1,
+    "cvss": 8.1,
     "description": "Logsign Unified SecOps Platform Directory Traversal Arbitrary Directory Deletion Vulnerability. This vulnerability allows remote attackers to delete arbitrary directories on affected installations of Logsign Unified SecOps Platform. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the HTTP API service, which listens on TCP port 443 by default. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to delete directories in the context of root. Was ZDI-CAN-25028.",
     "published": "2024-08-21T16:15:10.123",
     "keywords": "remote,authentication"
   },
   "CVE-2024-7604": {
-    "cvss": 5.1,
+    "cvss": 7.8,
     "description": "Logsign Unified SecOps Platform Incorrect Authorization Authentication Bypass Vulnerability. This vulnerability allows local attackers to bypass authentication on affected installations of Logsign Unified SecOps Platform. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the HTTP API service, which listens on TCP port 443 by default. The issue results from the lack of proper validation of the user's license expiration date. An attacker can leverage this vulnerability to bypass authentication on the system. Was ZDI-CAN-25029.",
     "published": "2024-08-21T16:15:10.330",
     "keywords": "authentication,bypass"
@@ -328,5 +322,23 @@
     "description": "Stored XSS in organizer and event settings of pretix up to 2024.7.0 allows malicious event organizers to inject HTML tags into e-mail previews on settings page. The default Content Security Policy of pretix prevents execution of attacker-provided scripts, making exploitation unlikely. However, combined with a CSP bypass (which is not currently known) the vulnerability could be used to impersonate other organizers or staff users.",
     "published": "2024-08-23T15:15:17.593",
     "keywords": "execution,bypass"
+  },
+  "CVE-2024-43032": {
+    "cvss": "-",
+    "description": "autMan v2.9.6 allows attackers to bypass authentication via a crafted web request.",
+    "published": "2024-08-23T16:15:06.953",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-44381": {
+    "cvss": "-",
+    "description": "D-Link DI_8004W 16.07.26A1 contains a command execution vulnerability in jhttpd msp_info_htm function.",
+    "published": "2024-08-23T16:15:07.013",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-44382": {
+    "cvss": "-",
+    "description": "D-Link DI_8004W 16.07.26A1 contains a command execution vulnerability in the jhttpd upgrade_filter_asp function.",
+    "published": "2024-08-23T16:15:07.070",
+    "keywords": "execution,command"
   }
 }

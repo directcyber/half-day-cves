@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-08-23T16:13:05.641587
+Updated at UTC 2024-08-23T17:09:14.813509
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,12 @@ Updated at UTC 2024-08-23T16:13:05.641587
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -198,10 +204,38 @@ user-controlled zip archives are not affected.</td>
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-44382">CVE-2024-44382</a></td>
+					<td>-</td>
+					<td>execution,command</td>
+					<td class=date>2024-08-23T16:15:07.070</td>
+					<td class=description>D-Link DI_8004W 16.07.26A1 contains a command execution vulnerability in the jhttpd upgrade_filter_asp function.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-44381">CVE-2024-44381</a></td>
+					<td>-</td>
+					<td>execution,command</td>
+					<td class=date>2024-08-23T16:15:07.013</td>
+					<td class=description>D-Link DI_8004W 16.07.26A1 contains a command execution vulnerability in jhttpd msp_info_htm function.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43032">CVE-2024-43032</a></td>
+					<td>-</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-08-23T16:15:06.953</td>
+					<td class=description>autMan v2.9.6 allows attackers to bypass authentication via a crafted web request.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -615,7 +649,7 @@ The specific flaw exists within the handling of Doc objects. The issue results f
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7604">CVE-2024-7604</a></td>
-					<td>5.1</td>
+					<td>7.8</td>
 					<td>authentication,bypass</td>
 					<td class=date>2024-08-21T16:15:10.330</td>
 					<td class=description>Logsign Unified SecOps Platform Incorrect Authorization Authentication Bypass Vulnerability. This vulnerability allows local attackers to bypass authentication on affected installations of Logsign Unified SecOps Platform. Authentication is required to exploit this vulnerability.
@@ -627,7 +661,7 @@ The specific flaw exists within the HTTP API service, which listens on TCP port 
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7603">CVE-2024-7603</a></td>
-					<td>7.1</td>
+					<td>8.1</td>
 					<td>remote,authentication</td>
 					<td class=date>2024-08-21T16:15:10.123</td>
 					<td class=description>Logsign Unified SecOps Platform Directory Traversal Arbitrary Directory Deletion Vulnerability. This vulnerability allows remote attackers to delete arbitrary directories on affected installations of Logsign Unified SecOps Platform. Authentication is required to exploit this vulnerability.
@@ -651,7 +685,7 @@ The specific flaw exists within the HTTP API service, which listens on TCP port 
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7601">CVE-2024-7601</a></td>
-					<td>7.1</td>
+					<td>8.1</td>
 					<td>remote,authentication</td>
 					<td class=date>2024-08-21T16:15:09.757</td>
 					<td class=description>Logsign Unified SecOps Platform Directory data_export_delete_all Traversal Arbitrary File Deletion Vulnerability. This vulnerability allows remote attackers to delete arbitrary files on affected installations of Logsign Unified SecOps Platform. Authentication is required to exploit this vulnerability.
@@ -663,7 +697,7 @@ The specific flaw exists within the HTTP API service, which listens on TCP port 
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7600">CVE-2024-7600</a></td>
-					<td>7.1</td>
+					<td>8.1</td>
 					<td>remote,authentication</td>
 					<td class=date>2024-08-21T16:15:09.570</td>
 					<td class=description>Logsign Unified SecOps Platform Directory Traversal Arbitrary File Deletion Vulnerability. This vulnerability allows remote attackers to delete arbitrary files on affected installations of Logsign Unified SecOps Platform. Authentication is required to exploit this vulnerability.
@@ -769,16 +803,6 @@ No POP chain is present in the vulnerable plugin. If a POP chain is present via 
 					<td>remote,execution</td>
 					<td class=date>2024-08-20T21:15:14.543</td>
 					<td class=description>Prior to 3385, the user-controlled role parameter enters the application in the Kubernetes::RoleVerificationsController. The role parameter flows into the RoleConfigFile initializer and then into the Kubernetes::Util.parse_file method where it is unsafely deserialized using the YAML.load_stream method. This issue may lead to Remote Code Execution (RCE). This vulnerability is fixed in 3385.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-42598">CVE-2024-42598</a></td>
-					<td>6.7</td>
-					<td>remote,execution,command,bypass</td>
-					<td class=date>2024-08-20T16:15:11.727</td>
-					<td class=description>SeaCMS 13.0 has a remote code execution vulnerability. The reason for this vulnerability is that although admin_editplayer.php imposes restrictions on edited files, attackers can still bypass these restrictions and write code, allowing authenticated attackers to exploit the vulnerability to execute arbitrary commands and gain system privileges.</td>
 				</tr>
 			
 		
