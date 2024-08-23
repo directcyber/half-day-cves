@@ -1,34 +1,4 @@
 {
-  "CVE-2024-39690": {
-    "url": "https://github.com/projectcapsule/capsule/commit/d620b0457ddec01616b8eab8512a10611611f584",
-    "cvss": 8.8,
-    "description": "Capsule is a multi-tenancy and policy-based framework for Kubernetes. In Capsule v0.7.0 and earlier, the tenant-owner can patch any arbitrary namespace that has not been taken over by a tenant (i.e., namespaces without the ownerReference field), thereby gaining control of that namespace.",
-    "published": "2024-08-20T15:15:21.340"
-  },
-  "CVE-2024-42662": {
-    "cvss": "-",
-    "description": "An issue in apollocongif apollo v.2.2.0 allows a remote attacker to obtain sensitive information via a crafted request.",
-    "published": "2024-08-20T15:15:23.090",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-43376": {
-    "url": "https://github.com/umbraco/umbraco-cms/commit/b76070c794925932cb159ef50b851db6e966a004",
-    "cvss": 4.3,
-    "description": "Umbraco is an ASP.NET CMS. Some endpoints in the Management API can return stack trace information, even when Umbraco is not in debug mode. This vulnerability is fixed in 14.1.2.",
-    "published": "2024-08-20T15:15:23.277"
-  },
-  "CVE-2024-43377": {
-    "url": "https://github.com/umbraco/umbraco-cms/commit/72bef8861d94a39d5cc9530a04c4797b91fcbecf",
-    "cvss": 5.4,
-    "description": "Umbraco CMS is an ASP.NET CMS. An authenticated user can access a few unintended endpoints. This issue is fixed in 14.1.2.",
-    "published": "2024-08-20T15:15:23.490"
-  },
-  "CVE-2024-43406": {
-    "url": "https://github.com/lf-edge/ekuiper/commit/1a9c745649438feaac357d282959687012b65503",
-    "cvss": 8.8,
-    "description": "LF Edge eKuiper is a lightweight IoT data analytics and stream processing engine running on resource-constraint edge devices. A user could utilize and exploit SQL Injection to allow the execution of malicious SQL query via Get method in sqlKvStore. This vulnerability is fixed in 1.14.2.",
-    "published": "2024-08-20T15:15:24.070"
-  },
   "CVE-2024-42598": {
     "cvss": 6.7,
     "description": "SeaCMS 13.0 has a remote code execution vulnerability. The reason for this vulnerability is that although admin_editplayer.php imposes restrictions on edited files, attackers can still bypass these restrictions and write code, allowing authenticated attackers to exploit the vulnerability to execute arbitrary commands and gain system privileges.",
@@ -346,5 +316,17 @@
     "description": "Zohocorp ManageEngine OpManager and\u00a0Remote Monitoring and Management versions\u00a0128329 and below are vulnerable to the authenticated remote code execution in the deploy agent option.",
     "published": "2024-08-23T14:15:11.073",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-42765": {
+    "cvss": 9.8,
+    "description": "A SQL injection vulnerability in \"/login.php\" of the Kashipara Bus Ticket Reservation System v1.0 allows remote attackers to execute arbitrary SQL commands and bypass Login via the \"email\" or \"password\" Login page parameters.",
+    "published": "2024-08-23T15:15:16.447",
+    "keywords": "remote,command,bypass"
+  },
+  "CVE-2024-8113": {
+    "cvss": "-",
+    "description": "Stored XSS in organizer and event settings of pretix up to 2024.7.0 allows malicious event organizers to inject HTML tags into e-mail previews on settings page. The default Content Security Policy of pretix prevents execution of attacker-provided scripts, making exploitation unlikely. However, combined with a CSP bypass (which is not currently known) the vulnerability could be used to impersonate other organizers or staff users.",
+    "published": "2024-08-23T15:15:17.593",
+    "keywords": "execution,bypass"
   }
 }

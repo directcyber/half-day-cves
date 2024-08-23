@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-08-23T15:12:00.135193
+Updated at UTC 2024-08-23T16:13:05.641587
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-08-23T15:12:00.135193
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -196,58 +200,28 @@ user-controlled zip archives are not affected.</td>
 		
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43406">CVE-2024-43406</a></td>
-					<td>8.8</td>
-					<td><a target=_blank href="https://github.com/lf-edge/ekuiper/commit/1a9c745649438feaac357d282959687012b65503">https://github.com/lf-edge/ekuiper/commit/1a9c745649438feaac357d282959687012b65503</a></td>
-					<td class=date>2024-08-20T15:15:24.070</td>
-					<td class=description>LF Edge eKuiper is a lightweight IoT data analytics and stream processing engine running on resource-constraint edge devices. A user could utilize and exploit SQL Injection to allow the execution of malicious SQL query via Get method in sqlKvStore. This vulnerability is fixed in 1.14.2.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43377">CVE-2024-43377</a></td>
-					<td>5.4</td>
-					<td><a target=_blank href="https://github.com/umbraco/umbraco-cms/commit/72bef8861d94a39d5cc9530a04c4797b91fcbecf">https://github.com/umbraco/umbraco-cms/commit/72bef8861d94a39d5cc9530a04c4797b91fcbecf</a></td>
-					<td class=date>2024-08-20T15:15:23.490</td>
-					<td class=description>Umbraco CMS is an ASP.NET CMS. An authenticated user can access a few unintended endpoints. This issue is fixed in 14.1.2.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43376">CVE-2024-43376</a></td>
-					<td>4.3</td>
-					<td><a target=_blank href="https://github.com/umbraco/umbraco-cms/commit/b76070c794925932cb159ef50b851db6e966a004">https://github.com/umbraco/umbraco-cms/commit/b76070c794925932cb159ef50b851db6e966a004</a></td>
-					<td class=date>2024-08-20T15:15:23.277</td>
-					<td class=description>Umbraco is an ASP.NET CMS. Some endpoints in the Management API can return stack trace information, even when Umbraco is not in debug mode. This vulnerability is fixed in 14.1.2.</td>
-
-
-				</tr>
-			
-		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-39690">CVE-2024-39690</a></td>
-					<td>8.8</td>
-					<td><a target=_blank href="https://github.com/projectcapsule/capsule/commit/d620b0457ddec01616b8eab8512a10611611f584">https://github.com/projectcapsule/capsule/commit/d620b0457ddec01616b8eab8512a10611611f584</a></td>
-					<td class=date>2024-08-20T15:15:21.340</td>
-					<td class=description>Capsule is a multi-tenancy and policy-based framework for Kubernetes. In Capsule v0.7.0 and earlier, the tenant-owner can patch any arbitrary namespace that has not been taken over by a tenant (i.e., namespaces without the ownerReference field), thereby gaining control of that namespace.</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8113">CVE-2024-8113</a></td>
+					<td>-</td>
+					<td>execution,bypass</td>
+					<td class=date>2024-08-23T15:15:17.593</td>
+					<td class=description>Stored XSS in organizer and event settings of pretix up to 2024.7.0 allows malicious event organizers to inject HTML tags into e-mail previews on settings page. The default Content Security Policy of pretix prevents execution of attacker-provided scripts, making exploitation unlikely. However, combined with a CSP bypass (which is not currently known) the vulnerability could be used to impersonate other organizers or staff users.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-42765">CVE-2024-42765</a></td>
+					<td>9.8</td>
+					<td>remote,command,bypass</td>
+					<td class=date>2024-08-23T15:15:16.447</td>
+					<td class=description>A SQL injection vulnerability in "/login.php" of the Kashipara Bus Ticket Reservation System v1.0 allows remote attackers to execute arbitrary SQL commands and bypass Login via the "email" or "password" Login page parameters.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -806,24 +780,6 @@ No POP chain is present in the vulnerable plugin. If a POP chain is present via 
 					<td class=date>2024-08-20T16:15:11.727</td>
 					<td class=description>SeaCMS 13.0 has a remote code execution vulnerability. The reason for this vulnerability is that although admin_editplayer.php imposes restrictions on edited files, attackers can still bypass these restrictions and write code, allowing authenticated attackers to exploit the vulnerability to execute arbitrary commands and gain system privileges.</td>
 				</tr>
-			
-		
-			
-		
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-42662">CVE-2024-42662</a></td>
-					<td>-</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-08-20T15:15:23.090</td>
-					<td class=description>An issue in apollocongif apollo v.2.2.0 allows a remote attacker to obtain sensitive information via a crafted request.</td>
-				</tr>
-			
-		
 			
 		
 
