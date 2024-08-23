@@ -1,16 +1,4 @@
 {
-  "CVE-2024-33872": {
-    "cvss": 9.8,
-    "description": "Keyfactor Command 10.5.x before 10.5.1 and 11.5.x before 11.5.1 allows SQL Injection which could result in code execution and escalation of privileges.",
-    "published": "2024-08-20T14:15:08.750",
-    "keywords": "execution,command"
-  },
-  "CVE-2024-39094": {
-    "url": "https://github.com/friendica/friendica/issues/14220",
-    "cvss": 5.4,
-    "description": "Friendica 2024.03 is vulnerable to Cross Site Scripting (XSS) in settings/profile via the homepage, xmpp, and matrix parameters.",
-    "published": "2024-08-20T14:15:09.330"
-  },
   "CVE-2024-39690": {
     "url": "https://github.com/projectcapsule/capsule/commit/d620b0457ddec01616b8eab8512a10611611f584",
     "cvss": 8.8,
@@ -351,6 +339,12 @@
     "cvss": 8.8,
     "description": "The WooCommerce Google Feed Manager plugin for WordPress is vulnerable to unauthorized loss of data due to a missing capability check on the 'wppfm_removeFeedFile' function in all versions up to, and including, 2.8.0. This makes it possible for authenticated attackers, with Contributor-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
     "published": "2024-08-23T05:15:15.437",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-5466": {
+    "cvss": 8.8,
+    "description": "Zohocorp ManageEngine OpManager and\u00a0Remote Monitoring and Management versions\u00a0128329 and below are vulnerable to the authenticated remote code execution in the deploy agent option.",
+    "published": "2024-08-23T14:15:11.073",
     "keywords": "remote,execution"
   }
 }
