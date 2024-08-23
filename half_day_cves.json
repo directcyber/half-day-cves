@@ -330,15 +330,21 @@
     "keywords": "authentication,bypass"
   },
   "CVE-2024-44381": {
-    "cvss": "-",
+    "cvss": 8.8,
     "description": "D-Link DI_8004W 16.07.26A1 contains a command execution vulnerability in jhttpd msp_info_htm function.",
     "published": "2024-08-23T16:15:07.013",
     "keywords": "execution,command"
   },
   "CVE-2024-44382": {
-    "cvss": "-",
+    "cvss": 8.8,
     "description": "D-Link DI_8004W 16.07.26A1 contains a command execution vulnerability in the jhttpd upgrade_filter_asp function.",
     "published": "2024-08-23T16:15:07.070",
     "keywords": "execution,command"
+  },
+  "CVE-2024-7954": {
+    "cvss": 9.8,
+    "description": "The porte_plume plugin used by SPIP before 4.30-alpha2, 4.2.13, and 4.1.16 is vulnerable to an arbitrary code execution vulnerability. A remote and unauthenticated attacker can execute arbitrary PHP as the SPIP user by sending a crafted HTTP request.",
+    "published": "2024-08-23T18:15:07.677",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
