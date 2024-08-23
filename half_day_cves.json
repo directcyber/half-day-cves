@@ -1,16 +1,4 @@
 {
-  "CVE-2024-7777": {
-    "cvss": 9.0,
-    "description": "The Contact Form by Bit Form: Multi Step Form, Calculation Contact Form, Payment Contact Form & Custom Contact Form builder plugin for WordPress is vulnerable to arbitrary file read and deletion due to insufficient file path validation in multiple functions in versions 2.0 to 2.13.9. This makes it possible for authenticated attackers, with Administrator-level access and above, to read and delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
-    "published": "2024-08-20T04:15:10.363",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-7782": {
-    "cvss": 8.7,
-    "description": "The Contact Form by Bit Form: Multi Step Form, Calculation Contact Form, Payment Contact Form & Custom Contact Form builder plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the iconRemove function in versions 2.0 to 2.13.4. This makes it possible for authenticated attackers, with Administrator-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
-    "published": "2024-08-20T04:15:11.203",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-43688": {
     "url": "https://github.com/vixie/cron/commit/9cc8ab1087bb9ab861dd5595c41200683c9f6712",
     "cvss": "-",
@@ -52,6 +40,18 @@
     "description": "An issue in apollocongif apollo v.2.2.0 allows a remote attacker to obtain sensitive information via a crafted request.",
     "published": "2024-08-20T15:15:23.090",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-43376": {
+    "url": "https://github.com/umbraco/umbraco-cms/commit/b76070c794925932cb159ef50b851db6e966a004",
+    "cvss": 4.3,
+    "description": "Umbraco is an ASP.NET CMS. Some endpoints in the Management API can return stack trace information, even when Umbraco is not in debug mode. This vulnerability is fixed in 14.1.2.",
+    "published": "2024-08-20T15:15:23.277"
+  },
+  "CVE-2024-43377": {
+    "url": "https://github.com/umbraco/umbraco-cms/commit/72bef8861d94a39d5cc9530a04c4797b91fcbecf",
+    "cvss": 5.4,
+    "description": "Umbraco CMS is an ASP.NET CMS. An authenticated user can access a few unintended endpoints. This issue is fixed in 14.1.2.",
+    "published": "2024-08-20T15:15:23.490"
   },
   "CVE-2024-43406": {
     "url": "https://github.com/lf-edge/ekuiper/commit/1a9c745649438feaac357d282959687012b65503",
