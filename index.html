@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-08-24T17:09:03.070074
+Updated at UTC 2024-08-24T18:11:52.186195
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-08-24T17:09:03.070074
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -168,20 +170,18 @@ user-controlled zip archives are not affected.</td>
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8130">CVE-2024-8130</a></td>
+					<td>6.3</td>
+					<td>remote,command</td>
+					<td class=date>2024-08-24T17:15:03.290</td>
+					<td class=description>A vulnerability has been found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726-4, DNS-1100-4, DNS-1200-05 and DNS-1550-04 up to 20240814 and classified as critical. Affected by this vulnerability is the function cgi_s3 of the file /cgi-bin/s3.cgi of the component HTTP POST Request Handler. The manipulation of the argument f_a_key leads to command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. NOTE: This vulnerability only affects products that are no longer supported by the maintainer. NOTE: Vendor was contacted early and confirmed that the product is end-of-life. It should be retired and replaced.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -560,75 +560,6 @@ This vulnerability exists because the web-based management interface does not pr
 					<td>remote,command,bypass</td>
 					<td class=date>2024-08-21T18:15:10.227</td>
 					<td class=description>A SQL injection vulnerability in "/music/ajax.php?action=login" of Kashipara Music Management System v1.0 allows remote attackers to execute arbitrary SQL commands and bypass Login via the email parameter.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7448">CVE-2024-7448</a></td>
-					<td>8.0</td>
-					<td>remote,execution,command</td>
-					<td class=date>2024-08-21T17:15:09.860</td>
-					<td class=description>Magnet Forensics AXIOM Command Injection Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Magnet Forensics AXIOM. User interaction is required to exploit this vulnerability in that the target must acquire data from a malicious mobile device.
-
-The specific flaw exists within the Android device image acquisition functionality. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-23964.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5762">CVE-2024-5762</a></td>
-					<td>8.1</td>
-					<td>remote,execution,authentication</td>
-					<td class=date>2024-08-21T17:15:08.810</td>
-					<td class=description>Zen Cart findPluginAdminPage Local File Inclusion Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Zen Cart. Authentication is not required to exploit this vulnerability.
-
-The specific flaw exists within the findPluginAdminPage function. The issue results from the lack of proper validation of user-supplied data prior to passing it to a PHP include function. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the service account. Was ZDI-CAN-21408.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5725">CVE-2024-5725</a></td>
-					<td>8.8</td>
-					<td>remote,execution,authentication</td>
-					<td class=date>2024-08-21T17:15:08.607</td>
-					<td class=description>Centreon initCurveList SQL Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Centreon. Authentication is required to exploit this vulnerability.
-
-The specific flaw exists within the initCurveList function. The issue results from the lack of proper validation of a user-supplied string before using it to construct SQL queries. An attacker can leverage this vulnerability to execute code in the context of the apache user. Was ZDI-CAN-22683.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5723">CVE-2024-5723</a></td>
-					<td>8.8</td>
-					<td>remote,execution,authentication</td>
-					<td class=date>2024-08-21T17:15:08.413</td>
-					<td class=description>Centreon updateServiceHost SQL Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Centreon. Authentication is required to exploit this vulnerability.
-
-The specific flaw exists within the updateServiceHost function. The issue results from the lack of proper validation of a user-supplied string before using it to construct SQL queries. An attacker can leverage this vulnerability to execute code in the context of the apache user. Was ZDI-CAN-23294.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-33656">CVE-2024-33656</a></td>
-					<td>7.8</td>
-					<td>execution,bypass,leak</td>
-					<td class=date>2024-08-21T17:15:07.567</td>
-					<td class=description>The DXE module SmmComputrace contains a vulnerability that allows local attackers to leak stack or global memory. This could lead to privilege escalation, arbitrary code execution, and bypassing OS security mechanisms</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20375">CVE-2024-20375</a></td>
-					<td>8.6</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-08-21T17:15:07.303</td>
-					<td class=description>A vulnerability in the SIP call processing function of Cisco Unified Communications Manager (Unified CM) and Cisco Unified Communications Manager Session Management Edition (Unified CM SME) could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.
- This vulnerability is due to improper parsing of SIP messages. An attacker could exploit this vulnerability by sending a crafted SIP message to an affected Cisco Unified CM or Cisco Unified CM SME device. A successful exploit could allow the attacker to cause the device to reload, resulting in a DoS condition that interrupts the communications of reliant voice and video devices.</td>
 				</tr>
 			
 		

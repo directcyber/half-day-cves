@@ -1,40 +1,4 @@
 {
-  "CVE-2024-20375": {
-    "cvss": 8.6,
-    "description": "A vulnerability in the SIP call processing function of Cisco Unified Communications Manager (Unified CM) and Cisco Unified Communications Manager Session Management Edition (Unified CM SME) could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.\r\n\r This vulnerability is due to improper parsing of SIP messages. An attacker could exploit this vulnerability by sending a crafted SIP message to an affected Cisco Unified CM or Cisco Unified CM SME device. A successful exploit could allow the attacker to cause the device to reload, resulting in a DoS condition that interrupts the communications of reliant voice and video devices.",
-    "published": "2024-08-21T17:15:07.303",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-33656": {
-    "cvss": 7.8,
-    "description": "The DXE module SmmComputrace contains a vulnerability that allows local attackers to leak stack or global memory. This could lead to privilege escalation, arbitrary code execution, and bypassing OS security mechanisms",
-    "published": "2024-08-21T17:15:07.567",
-    "keywords": "execution,bypass,leak"
-  },
-  "CVE-2024-5723": {
-    "cvss": 8.8,
-    "description": "Centreon updateServiceHost SQL Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Centreon. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the updateServiceHost function. The issue results from the lack of proper validation of a user-supplied string before using it to construct SQL queries. An attacker can leverage this vulnerability to execute code in the context of the apache user. Was ZDI-CAN-23294.",
-    "published": "2024-08-21T17:15:08.413",
-    "keywords": "remote,execution,authentication"
-  },
-  "CVE-2024-5725": {
-    "cvss": 8.8,
-    "description": "Centreon initCurveList SQL Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Centreon. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the initCurveList function. The issue results from the lack of proper validation of a user-supplied string before using it to construct SQL queries. An attacker can leverage this vulnerability to execute code in the context of the apache user. Was ZDI-CAN-22683.",
-    "published": "2024-08-21T17:15:08.607",
-    "keywords": "remote,execution,authentication"
-  },
-  "CVE-2024-5762": {
-    "cvss": 8.1,
-    "description": "Zen Cart findPluginAdminPage Local File Inclusion Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Zen Cart. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the findPluginAdminPage function. The issue results from the lack of proper validation of user-supplied data prior to passing it to a PHP include function. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the service account. Was ZDI-CAN-21408.",
-    "published": "2024-08-21T17:15:08.810",
-    "keywords": "remote,execution,authentication"
-  },
-  "CVE-2024-7448": {
-    "cvss": 8.0,
-    "description": "Magnet Forensics AXIOM Command Injection Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Magnet Forensics AXIOM. User interaction is required to exploit this vulnerability in that the target must acquire data from a malicious mobile device.\n\nThe specific flaw exists within the Android device image acquisition functionality. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-23964.",
-    "published": "2024-08-21T17:15:09.860",
-    "keywords": "remote,execution,command"
-  },
   "CVE-2024-42781": {
     "cvss": 9.8,
     "description": "A SQL injection vulnerability in \"/music/ajax.php?action=login\" of Kashipara Music Management System v1.0 allows remote attackers to execute arbitrary SQL commands and bypass Login via the email parameter.",
@@ -267,6 +231,12 @@
     "cvss": 6.3,
     "description": "A vulnerability, which was classified as critical, was found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726-4, DNS-1100-4, DNS-1200-05 and DNS-1550-04 up to 20240814. Affected is the function cgi_s3_modify of the file /cgi-bin/s3.cgi of the component HTTP POST Request Handler. The manipulation of the argument f_job_name leads to command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. NOTE: This vulnerability only affects products that are no longer supported by the maintainer. NOTE: Vendor was contacted early and confirmed that the product is end-of-life. It should be retired and replaced.",
     "published": "2024-08-24T16:15:04.057",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-8130": {
+    "cvss": 6.3,
+    "description": "A vulnerability has been found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726-4, DNS-1100-4, DNS-1200-05 and DNS-1550-04 up to 20240814 and classified as critical. Affected by this vulnerability is the function cgi_s3 of the file /cgi-bin/s3.cgi of the component HTTP POST Request Handler. The manipulation of the argument f_a_key leads to command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. NOTE: This vulnerability only affects products that are no longer supported by the maintainer. NOTE: Vendor was contacted early and confirmed that the product is end-of-life. It should be retired and replaced.",
+    "published": "2024-08-24T17:15:03.290",
     "keywords": "remote,command"
   }
 }
