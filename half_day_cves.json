@@ -1,28 +1,4 @@
 {
-  "CVE-2024-45163": {
-    "cvss": 9.1,
-    "description": "The Mirai botnet through 2024-08-19 mishandles simultaneous TCP connections to the CNC (command and control) server. Unauthenticated sessions remain open, causing resource consumption. For example, an attacker can send a recognized username (such as root), or can send arbitrary data.",
-    "published": "2024-08-22T04:15:20.247",
-    "keywords": "unauthenticated,command"
-  },
-  "CVE-2024-45166": {
-    "cvss": 9.8,
-    "description": "An issue was discovered in UCI IDOL 2 (aka uciIDOL or IDOL2) through 2.12. Due to improper input validation, improper deserialization, and improper restriction of operations within the bounds of a memory buffer, IDOL2 is vulnerable to Denial-of-Service (DoS) attacks and possibly remote code execution. There is an access violation and EIP overwrite after five logins.",
-    "published": "2024-08-22T04:15:24.467",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-45167": {
-    "cvss": 9.8,
-    "description": "An issue was discovered in UCI IDOL 2 (aka uciIDOL or IDOL2) through 2.12. Due to improper input validation, improper deserialization, and improper restriction of operations within the bounds of a memory buffer, IDOL2 is vulnerable to Denial-of-Service (DoS) attacks and possibly remote code execution. A certain XmlMessage document causes 100% CPU consumption.",
-    "published": "2024-08-22T04:15:25.710",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-45169": {
-    "cvss": 9.8,
-    "description": "An issue was discovered in UCI IDOL 2 (aka uciIDOL or IDOL2) through 2.12. Due to improper input validation, improper deserialization, and improper restriction of operations within the bounds of a memory buffer, IDOL2 is vulnerable to Denial-of-Service (DoS) attacks and possibly remote code execution via the \\xB0\\x00\\x3c byte sequence.",
-    "published": "2024-08-22T04:15:27.583",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-8072": {
     "cvss": 5.3,
     "description": "Mage AI allows remote unauthenticated attackers to leak the terminal server command history of arbitrary users",
