@@ -1,22 +1,4 @@
 {
-  "CVE-2024-42599": {
-    "cvss": "-",
-    "description": "SeaCMS 13.0 has a remote code execution vulnerability. The reason for this vulnerability is that although admin_files.php imposes restrictions on edited files, attackers can still bypass these restrictions and write code, allowing authenticated attackers to exploit the vulnerability to execute arbitrary commands and gain system privileges.",
-    "published": "2024-08-22T20:15:09.730",
-    "keywords": "remote,execution,command,bypass"
-  },
-  "CVE-2024-8075": {
-    "cvss": 6.3,
-    "description": "A vulnerability has been found in TOTOLINK AC1200 T8 4.1.5cu.862_B20230228 and classified as critical. Affected by this vulnerability is the function setDiagnosisCfg. The manipulation leads to os command injection. The attack can be launched remotely. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2024-08-22T20:15:10.210",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-8077": {
-    "cvss": 6.3,
-    "description": "A vulnerability was found in TOTOLINK AC1200 T8 4.1.5cu.862_B20230228. It has been classified as critical. This affects the function setTracerouteCfg. The manipulation leads to os command injection. It is possible to initiate the attack remotely. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2024-08-22T20:15:11.690",
-    "keywords": "remote,command"
-  },
   "CVE-2024-8079": {
     "cvss": 8.8,
     "description": "A vulnerability was found in TOTOLINK AC1200 T8 4.1.5cu.862_B20230228. It has been rated as critical. This issue affects the function exportOvpn. The manipulation leads to buffer overflow. The attack may be initiated remotely. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
