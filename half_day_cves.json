@@ -1,16 +1,4 @@
 {
-  "CVE-2024-36445": {
-    "cvss": 9.8,
-    "description": "Swissphone DiCal-RED 4009 devices allow a remote attacker to gain a root shell via TELNET without authentication.",
-    "published": "2024-08-22T15:15:16.187",
-    "keywords": "remote,authentication"
-  },
-  "CVE-2024-43787": {
-    "cvss": 5.0,
-    "description": "Hono is a Web application framework that provides support for any JavaScript runtime. Hono CSRF middleware can be bypassed using crafted Content-Type header. MIME types are case insensitive, but isRequestedByFormElementRe only matches lower-case. As a result, attacker can bypass csrf middleware using upper-case form-like MIME type. This vulnerability is fixed in 4.5.8.",
-    "published": "2024-08-22T15:15:16.857",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2024-8088": {
     "url": "https://github.com/python/cpython/pull/122906",
     "cvss": 7.5,
