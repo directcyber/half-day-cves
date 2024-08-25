@@ -1,10 +1,4 @@
 {
-  "CVE-2024-8088": {
-    "url": "https://github.com/python/cpython/pull/122906",
-    "cvss": 7.5,
-    "description": "There is a HIGH severity vulnerability affecting the CPython \"zipfile\"\nmodule.\n\n\n\n\n\nWhen iterating over names of entries in a zip archive (for example, methods\nof \"zipfile.ZipFile\" like \"namelist()\", \"iterdir()\", \"extractall()\", etc)\nthe process can be put into an infinite loop with a maliciously crafted\nzip archive. This defect applies when reading only metadata or extracting\nthe contents of the zip archive. Programs that are not handling\nuser-controlled zip archives are not affected.",
-    "published": "2024-08-22T19:15:09.720"
-  },
   "CVE-2024-42599": {
     "cvss": "-",
     "description": "SeaCMS 13.0 has a remote code execution vulnerability. The reason for this vulnerability is that although admin_files.php imposes restrictions on edited files, attackers can still bypass these restrictions and write code, allowing authenticated attackers to exploit the vulnerability to execute arbitrary commands and gain system privileges.",
