@@ -1,10 +1,4 @@
 {
-  "CVE-2024-7384": {
-    "cvss": 7.5,
-    "description": "The AcyMailing \u2013 An Ultimate Newsletter Plugin and Marketing Automation Solution for WordPress plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the acym_extractArchive function in all versions up to, and including, 9.7.2. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2024-08-22T03:15:04.130",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-45163": {
     "cvss": 9.1,
     "description": "The Mirai botnet through 2024-08-19 mishandles simultaneous TCP connections to the CNC (command and control) server. Unauthenticated sessions remain open, causing resource consumption. For example, an attacker can send a recognized username (such as root), or can send arbitrary data.",
