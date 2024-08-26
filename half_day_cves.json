@@ -1,10 +1,4 @@
 {
-  "CVE-2024-7954": {
-    "cvss": 9.8,
-    "description": "The porte_plume plugin used by SPIP before 4.30-alpha2, 4.2.13, and 4.1.16 is vulnerable to an arbitrary code execution vulnerability. A remote and unauthenticated attacker can execute arbitrary PHP as the SPIP user by sending a crafted HTTP request.",
-    "published": "2024-08-23T18:15:07.677",
-    "keywords": "remote,execution,unauthenticated"
-  },
   "CVE-2024-45188": {
     "cvss": 6.5,
     "description": "Mage AI allows remote users with the \"Viewer\" role to leak arbitrary files from the Mage server due to a path traversal in the \"File Content\" request",
@@ -102,7 +96,7 @@
     "keywords": "remote,execution"
   },
   "CVE-2024-7988": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "A remote code execution vulnerability exists in the Rockwell Automation ThinManager\u00ae ThinServer\u2122 that allows a threat actor to execute arbitrary code with System privileges. This vulnerability exists due to the lack of proper data input validation, which allows files to be overwritten.",
     "published": "2024-08-26T15:15:09.140",
     "keywords": "remote,execution"
@@ -121,7 +115,7 @@
   },
   "CVE-2024-42818": {
     "url": "https://github.com/fastapi-admin/fastapi-admin/issues/172",
-    "cvss": "-",
+    "cvss": 6.1,
     "description": "A cross-site scripting (XSS) vulnerability in the Config-Create function of fastapi-admin pro v0.1.4 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Product Name parameter.",
     "published": "2024-08-26T16:15:09.360"
   },
@@ -130,5 +124,11 @@
     "description": "Netskope was notified about a security gap in Netskope Client enrollment process where NSClient is using a static token \u201cOrgkey\u201d as authentication parameter. Since this a static token, if leaked, cannot be rotated or revoked. A malicious actor can use this token to enroll NSClient from a customer\u2019s tenant and impersonate a user.",
     "published": "2024-08-26T17:15:06.987",
     "keywords": "authentication,leak"
+  },
+  "CVE-2024-45265": {
+    "cvss": "-",
+    "description": "A SQL injection vulnerability in the poll component in SkySystem Arfa-CMS before 5.1.3124 allows remote attackers to execute arbitrary SQL commands via the psid parameter.",
+    "published": "2024-08-26T18:15:07.380",
+    "keywords": "remote,command"
   }
 }
