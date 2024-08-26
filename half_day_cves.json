@@ -1,16 +1,4 @@
 {
-  "CVE-2024-42765": {
-    "cvss": 9.8,
-    "description": "A SQL injection vulnerability in \"/login.php\" of the Kashipara Bus Ticket Reservation System v1.0 allows remote attackers to execute arbitrary SQL commands and bypass Login via the \"email\" or \"password\" Login page parameters.",
-    "published": "2024-08-23T15:15:16.447",
-    "keywords": "remote,command,bypass"
-  },
-  "CVE-2024-8113": {
-    "cvss": "-",
-    "description": "Stored XSS in organizer and event settings of pretix up to 2024.7.0 allows malicious event organizers to inject HTML tags into e-mail previews on settings page. The default Content Security Policy of pretix prevents execution of attacker-provided scripts, making exploitation unlikely. However, combined with a CSP bypass (which is not currently known) the vulnerability could be used to impersonate other organizers or staff users.",
-    "published": "2024-08-23T15:15:17.593",
-    "keywords": "execution,bypass"
-  },
   "CVE-2024-43032": {
     "cvss": 4.3,
     "description": "autMan v2.9.6 allows attackers to bypass authentication via a crafted web request.",
@@ -118,5 +106,23 @@
     "description": "An arbitrary file write issue in the exfiltration endpoint in BYOB (Build Your Own Botnet) 2.0 allows attackers to overwrite SQLite databases and bypass authentication via an unauthenticated HTTP request with a crafted parameter. This occurs in file_add in api/files/routes.py.",
     "published": "2024-08-26T07:15:04.420",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-39097": {
+    "url": "https://github.com/gnuboard/g6/issues/582",
+    "cvss": "-",
+    "description": "There is an Open Redirect vulnerability in Gnuboard v6.0.4 and below via the `url` parameter in login path.",
+    "published": "2024-08-26T15:15:08.333"
+  },
+  "CVE-2024-7987": {
+    "cvss": "-",
+    "description": "A remote code execution vulnerability exists in the Rockwell Automation\u00a0ThinManager\u00ae ThinServer\u2122\nthat allows a threat actor to execute arbitrary code with System privileges. To exploit this vulnerability and a threat actor must abuse the ThinServer\u2122 service by creating a junction and use it to upload arbitrary files.",
+    "published": "2024-08-26T15:15:09.047",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-7988": {
+    "cvss": "-",
+    "description": "A remote code execution vulnerability exists in the Rockwell Automation ThinManager\u00ae ThinServer\u2122 that allows a threat actor to execute arbitrary code with System privileges. This vulnerability exists due to the lack of proper data input validation, which allows files to be overwritten.",
+    "published": "2024-08-26T15:15:09.140",
+    "keywords": "remote,execution"
   }
 }
