@@ -1,10 +1,4 @@
 {
-  "CVE-2024-7258": {
-    "cvss": 8.8,
-    "description": "The WooCommerce Google Feed Manager plugin for WordPress is vulnerable to unauthorized loss of data due to a missing capability check on the 'wppfm_removeFeedFile' function in all versions up to, and including, 2.8.0. This makes it possible for authenticated attackers, with Contributor-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
-    "published": "2024-08-23T05:15:15.437",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-5466": {
     "cvss": 8.8,
     "description": "Zohocorp ManageEngine OpManager and\u00a0Remote Monitoring and Management versions\u00a0128329 and below are vulnerable to the authenticated remote code execution in the deploy agent option.",
