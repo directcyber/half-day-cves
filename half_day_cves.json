@@ -150,7 +150,7 @@
     "keywords": "execution,command"
   },
   "CVE-2024-34195": {
-    "cvss": 8.8,
+    "cvss": 9.8,
     "description": "TOTOLINK AC1200 Wireless Router A3002R Firmware V1.1.1-B20200824 is vulnerable to Buffer Overflow. In the boa server program's CGI handling function formWlEncrypt, there is a lack of length restriction on the wlan_ssid field. This oversight leads to potential buffer overflow under specific circumstances. For instance, by invoking the formWlanRedirect function with specific parameters to alter wlan_idx's value and subsequently invoking the formWlEncrypt function, an attacker can trigger buffer overflow, enabling arbitrary command execution or denial of service attacks.",
     "published": "2024-08-28T20:15:07.580",
     "keywords": "execution,command"
@@ -246,37 +246,37 @@
     "published": "2024-08-29T20:15:08.873"
   },
   "CVE-2024-41361": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "RPi-Jukebox-RFID v2.7.0 was discovered to contain a remote code execution (RCE) vulnerability via htdocs\\manageFilesFolders.php",
     "published": "2024-08-29T20:15:08.953",
     "keywords": "remote,execution"
   },
   "CVE-2024-41364": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "RPi-Jukebox-RFID v2.7.0 was discovered to contain a remote code execution (RCE) vulnerability via htdocs\\trackEdit.php",
     "published": "2024-08-29T20:15:09.033",
     "keywords": "remote,execution"
   },
   "CVE-2024-41366": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "RPi-Jukebox-RFID v2.7.0 was discovered to contain a remote code execution (RCE) vulnerability via htdocs\\userScripts.php",
     "published": "2024-08-29T20:15:09.113",
     "keywords": "remote,execution"
   },
   "CVE-2024-41367": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "RPi-Jukebox-RFID v2.7.0 was discovered to contain a remote code execution (RCE) vulnerability via htdocs\\api\\playlist\\appendFileToPlaylist.php",
     "published": "2024-08-29T20:15:09.193",
     "keywords": "remote,execution"
   },
   "CVE-2024-41368": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "RPi-Jukebox-RFID v2.7.0 was discovered to contain a remote code execution (RCE) vulnerability via htdocs\\inc.setWlanIpMail.php",
     "published": "2024-08-29T20:15:09.277",
     "keywords": "remote,execution"
   },
   "CVE-2024-41369": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "RPi-Jukebox-RFID v2.7.0 was discovered to contain a remote code execution (RCE) vulnerability via htdocs\\inc.setWifi.php",
     "published": "2024-08-29T20:15:09.350",
     "keywords": "remote,execution"
@@ -289,7 +289,7 @@
   },
   "CVE-2024-41371": {
     "url": "https://github.com/causefx/organizr/issues/1997",
-    "cvss": "-",
+    "cvss": 6.1,
     "description": "Organizr v1.90 is vulnerable to Cross Site Scripting (XSS) via api.php.",
     "published": "2024-08-29T20:15:09.493"
   },
@@ -348,7 +348,7 @@
     "keywords": "remote,command"
   },
   "CVE-2024-39300": {
-    "cvss": "-",
+    "cvss": 8.1,
     "description": "Missing authentication vulnerability exists in Telnet function of WAB-I1750-PS v1.5.10 and earlier. When Telnet function of the product is enabled, a remote attacker may login to the product without authentication and alter the product's settings.",
     "published": "2024-08-30T07:15:11.837",
     "keywords": "remote,authentication"
