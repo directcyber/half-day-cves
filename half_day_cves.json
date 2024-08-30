@@ -1,10 +1,4 @@
 {
-  "CVE-2024-45049": {
-    "url": "https://github.com/nixos/nixpkgs/pull/337766",
-    "cvss": 7.5,
-    "description": "Hydra is a Continuous Integration service for Nix based projects. It is possible to trigger evaluations in Hydra without any authentication. Depending on the size of evaluations, this can impact the availability of systems. The problem can be fixed by applying https://github.com/NixOS/hydra/commit/f73043378907c2c7e44f633ad764c8bdd1c947d5 to any Hydra package. Users are advised to upgrade. Users unable to upgrade should deny the `/api/push` route in a reverse proxy. This also breaks the \"Evaluate jobset\" button in the frontend.",
-    "published": "2024-08-27T21:15:07.603"
-  },
   "CVE-2024-7573": {
     "cvss": 5.3,
     "description": "The Relevanssi Live Ajax Search plugin for WordPress is vulnerable to argument injection in all versions up to, and including, 2.4. This is due to insufficient validation of input supplied via POST data in the 'search' function. This makes it possible for unauthenticated attackers to inject arbitrary arguments into a WP_Query query and potentially expose sensitive information such as attachments or private posts.",
