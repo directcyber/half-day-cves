@@ -1,28 +1,4 @@
 {
-  "CVE-2024-41622": {
-    "cvss": 9.8,
-    "description": "D-Link DIR-846W A1 FW100A43 was discovered to contain a remote command execution (RCE) vulnerability via the tomography_ping_address parameter in /HNAP1/ interface.",
-    "published": "2024-08-27T16:15:07.673",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-44340": {
-    "cvss": 8.8,
-    "description": "D-Link DIR-846W A1 FW100A43 was discovered to contain a remote command execution (RCE) vulnerability via keys smartqos_express_devices and smartqos_normal_devices in SetSmartQoSSettings.",
-    "published": "2024-08-27T16:15:07.760",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-44341": {
-    "cvss": 9.8,
-    "description": "D-Link DIR-846W A1 FW100A43 was discovered to contain a remote command execution (RCE) vulnerability via the lan(0)_dhcps_staticlist parameter. This vulnerability is exploited via a crafted POST request.",
-    "published": "2024-08-27T16:15:07.860",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-44342": {
-    "cvss": 9.8,
-    "description": "D-Link DIR-846W A1 FW100A43 was discovered to contain a remote command execution (RCE) vulnerability via the wl(0).(0)_ssid parameter. This vulnerability is exploited via a crafted POST request.",
-    "published": "2024-08-27T16:15:07.993",
-    "keywords": "remote,execution,command"
-  },
   "CVE-2024-7720": {
     "cvss": 9.8,
     "description": "HP Security Manager is potentially vulnerable to Remote Code Execution as a result of code vulnerability within the product's solution open-source libraries.",
@@ -358,5 +334,11 @@
     "description": "The Clean Login plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.14.5 via the 'template' attribute of the clean-login-register shortcode. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
     "published": "2024-08-30T10:15:07.657",
     "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2024-44916": {
+    "cvss": "-",
+    "description": "Vulnerability in admin_ip.php in Seacms v13.1, when action=set, allows attackers to control IP parameters that are written to the data/admin/ip.php file and could result in arbitrary command execution.",
+    "published": "2024-08-30T16:15:09.623",
+    "keywords": "execution,command"
   }
 }
