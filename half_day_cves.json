@@ -1,28 +1,4 @@
 {
-  "CVE-2024-20284": {
-    "cvss": 5.3,
-    "description": "A vulnerability in the Python interpreter of Cisco NX-OS Software could allow an authenticated, low-privileged, local attacker to escape the Python sandbox and gain unauthorized access to the underlying operating system of the device.\r\n\r\nThe vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by manipulating specific functions within the Python interpreter. A successful exploit could allow an attacker to escape the Python sandbox and execute arbitrary commands on the underlying operating system with the privileges of the authenticated user.&nbsp;\r\nNote: An attacker must be authenticated with Python execution privileges to exploit these vulnerabilities. For more information regarding Python execution privileges, see product-specific documentation, such as the  section of the Cisco Nexus 9000 Series NX-OS Programmability Guide.",
-    "published": "2024-08-28T17:15:06.893",
-    "keywords": "execution,command"
-  },
-  "CVE-2024-20285": {
-    "cvss": 5.3,
-    "description": "A vulnerability in the Python interpreter of Cisco NX-OS Software could allow an authenticated, low-privileged, local attacker to escape the Python sandbox and gain unauthorized access to the underlying operating system of the device.\r\n\r\nThe vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by manipulating specific functions within the Python interpreter. A successful exploit could allow an attacker to escape the Python sandbox and execute arbitrary commands on the underlying operating system with the privileges of the authenticated user.&nbsp;\r\nNote: An attacker must be authenticated with Python execution privileges to exploit these vulnerabilities. For more information regarding Python execution privileges, see product-specific documentation, such as the  section of the Cisco Nexus 9000 Series NX-OS Programmability Guide.",
-    "published": "2024-08-28T17:15:07.687",
-    "keywords": "execution,command"
-  },
-  "CVE-2024-20286": {
-    "cvss": 5.3,
-    "description": "A vulnerability in the Python interpreter of Cisco NX-OS Software could allow an authenticated, low-privileged, local attacker to escape the Python sandbox and gain unauthorized access to the underlying operating system of the device.\r\n\r\nThe vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by manipulating specific functions within the Python interpreter. A successful exploit could allow an attacker to escape the Python sandbox and execute arbitrary commands on the underlying operating system with the privileges of the authenticated user.&nbsp;\r\nNote: An attacker must be authenticated with Python execution privileges to exploit these vulnerabilities. For more information regarding Python execution privileges, see product-specific documentation, such as the  section of the Cisco Nexus 9000 Series NX-OS Programmability Guide.",
-    "published": "2024-08-28T17:15:08.400",
-    "keywords": "execution,command"
-  },
-  "CVE-2024-20446": {
-    "cvss": 8.6,
-    "description": "A vulnerability in the DHCPv6 relay agent of Cisco NX-OS Software could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.\r\n\r\nThis vulnerability is due to improper handling of specific fields in a DHCPv6 RELAY-REPLY message. An attacker could exploit this vulnerability by sending a crafted DHCPv6 packet to any IPv6 address that is configured on an affected device. A successful exploit could allow the attacker to cause the dhcp_snoop process to crash and restart multiple times, causing the affected device to reload and resulting in a DoS condition.",
-    "published": "2024-08-28T17:15:09.997",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2024-42905": {
     "cvss": 9.8,
     "description": "Beijing Digital China Cloud Technology Co., Ltd. DCME-320 v.7.4.12.60 has a command execution vulnerability, which can be exploited to obtain device administrator privileges via the getVar function in the code/function/system/tool/ping.php file.",
