@@ -1,22 +1,4 @@
 {
-  "CVE-2024-45346": {
-    "cvss": 8.8,
-    "description": "A code execution vulnerability exists in the XiaomiGetApps application product. This vulnerability is caused by the verification logic being bypassed, and an attacker can exploit this vulnerability to execute malicious code.",
-    "published": "2024-08-28T07:15:08.823",
-    "keywords": "execution,bypass"
-  },
-  "CVE-2024-6311": {
-    "cvss": 7.2,
-    "description": "The Funnelforms Free plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'af2_add_font' function in all versions up to, and including, 3.7.3.2. This makes it possible for authenticated attackers, with administrator-level and above permissions, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2024-08-28T07:15:10.800",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-6312": {
-    "cvss": 6.5,
-    "description": "The Funnelforms Free plugin for WordPress is vulnerable to arbitrary file deletion in all versions up to, and including, 3.7.3.2 via the 'af2DeleteFontFile' function. This is due to the plugin not properly validating a file or its path prior to deleting it. This makes it possible for unauthenticated attackers to delete arbitrary files, including the wp-config.php file, which can make site takeover and remote code execution possible.",
-    "published": "2024-08-28T07:15:11.413",
-    "keywords": "remote,execution,unauthenticated"
-  },
   "CVE-2024-6449": {
     "cvss": "-",
     "description": "HyperView\u00a0Geoportal Toolkit in versions though\u00a08.2.4 does not restrict cross-domain requests when fetching remote content pointed by one of GET request parameters.\nAn unauthenticated remote attacker can prepare links, which upon opening will load scripts from a remote location controlled by the attacker and execute them in the user space.\nBy manipulating this parameter it is also possible to enumerate some of the devices in Local Area Network in which the server resides.",
