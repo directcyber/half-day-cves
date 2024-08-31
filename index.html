@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-08-31T20:11:20.295606
+Updated at UTC 2024-08-31T21:08:54.740923
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -288,10 +288,6 @@ Updated at UTC 2024-08-31T20:11:20.295606
 				</tr>
 			
 		
-			
-		
-			
-		
 
 		<hr>
 		
@@ -517,26 +513,6 @@ Online Learning and Testing Platform from HWA JIUH DIGITAL TECHNOLOGY does not 
 		
 			
 		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45043">CVE-2024-45043</a></td>
-					<td>5.3</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-08-28T20:15:08.347</td>
-					<td class=description>The OpenTelemetry Collector module AWS firehose receiver is for ingesting AWS Kinesis Data Firehose delivery stream messages and parsing the records received based on the configured record type. `awsfirehosereceiver` allows unauthenticated remote requests, even when configured to require a key. OpenTelemetry Collector can be configured to receive CloudWatch metrics via an AWS Firehose Stream. Firehose sets the header `X-Amz-Firehose-Access-Key` with an arbitrary configured string. The OpenTelemetry Collector awsfirehosereceiver can optionally be configured to require this key on incoming requests. However, when this is configured it **still accepts incoming requests with no key**. Only OpenTelemetry Collector users configured with the “alpha” `awsfirehosereceiver` module are affected. This module was added in version v0.49.0 of the “Contrib” distribution (or may be included in custom builds). There is a risk of unauthorized users writing metrics. Carefully crafted metrics could hide other malicious activity. There is no risk of exfiltrating data. It’s likely these endpoints will be exposed to the public internet, as Firehose does not support private HTTP endpoints. A fix was introduced in PR #34847 and released with v0.108.0. All users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-34195">CVE-2024-34195</a></td>
-					<td>9.8</td>
-					<td>execution,command</td>
-					<td class=date>2024-08-28T20:15:07.580</td>
-					<td class=description>TOTOLINK AC1200 Wireless Router A3002R Firmware V1.1.1-B20200824 is vulnerable to Buffer Overflow. In the boa server program's CGI handling function formWlEncrypt, there is a lack of length restriction on the wlan_ssid field. This oversight leads to potential buffer overflow under specific circumstances. For instance, by invoking the formWlanRedirect function with specific parameters to alter wlan_idx's value and subsequently invoking the formWlEncrypt function, an attacker can trigger buffer overflow, enabling arbitrary command execution or denial of service attacks.</td>
-				</tr>
 			
 		
 
