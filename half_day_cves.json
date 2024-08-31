@@ -1,16 +1,4 @@
 {
-  "CVE-2024-7573": {
-    "cvss": 5.3,
-    "description": "The Relevanssi Live Ajax Search plugin for WordPress is vulnerable to argument injection in all versions up to, and including, 2.4. This is due to insufficient validation of input supplied via POST data in the 'search' function. This makes it possible for unauthenticated attackers to inject arbitrary arguments into a WP_Query query and potentially expose sensitive information such as attachments or private posts.",
-    "published": "2024-08-28T03:15:03.803",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-8030": {
-    "cvss": 9.8,
-    "description": "The Ultimate Store Kit Elementor Addons, Woocommerce Builder, EDD Builder, Elementor Store Builder, Product Grid, Product Table, Woocommerce Slider plugin is vulnerable to PHP Object Injection via deserialization of untrusted input via the _ultimate_store_kit_wishlist cookie in versions up to , and including, 2.0.3. This makes it possible for an unauthenticated attacker to inject a PHP Object. No POP chain is present in the vulnerable plugin. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker or above to delete arbitrary files, retrieve sensitive data, or execute code.",
-    "published": "2024-08-28T03:15:04.040",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2024-39584": {
     "cvss": 8.2,
     "description": "Dell Client Platform BIOS contains a Use of Default Cryptographic Key Vulnerability.  A high privileged attacker with local access could potentially exploit this vulnerability, leading to Secure Boot bypass and arbitrary code execution.",
