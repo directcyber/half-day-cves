@@ -46,5 +46,65 @@
     "cvss": "-",
     "description": "Linen before cd37c3e does not verify that the domain is linen.dev or www.linen.dev when resetting a password. This occurs in create in apps/web/pages/api/forgot-password/index.ts.",
     "published": "2024-09-02T00:15:11.830"
+  },
+  "CVE-2024-20089": {
+    "cvss": "-",
+    "description": "In wlan, there is a possible denial of service due to incorrect error handling. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS08861558; Issue ID: MSV-1526.",
+    "published": "2024-09-02T05:15:15.277",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-39775": {
+    "cvss": 6.5,
+    "description": "in OpenHarmony v4.1.0 and prior versions allow a remote attacker cause information leak through out-of-bounds Read.",
+    "published": "2024-09-02T05:15:16.160",
+    "keywords": "remote,leak"
+  },
+  "CVE-2024-41157": {
+    "cvss": 8.8,
+    "description": "in OpenHarmony v4.1.0 and prior versions allow a local attacker cause the common permission is upgraded to root and sensitive information leak through use after free.",
+    "published": "2024-09-02T05:15:16.740",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2024-41160": {
+    "cvss": 8.8,
+    "description": "in OpenHarmony v4.1.0 and prior versions allow a local attacker cause the common permission is upgraded to root and sensitive information leak through use after free.",
+    "published": "2024-09-02T05:15:16.923",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2024-43772": {
+    "cvss": "-",
+    "description": "SQL Injection in download student learning course function of Easytest Online Test Platform ver.24E01 and earlier allow remote attackers to execute arbitrary SQL commands via the uid parameter.",
+    "published": "2024-09-02T05:15:17.120",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-43773": {
+    "cvss": "-",
+    "description": "SQL Injection in download class learning course function of Easytest Online Test Platform ver.24E01 and earlier allow remote attackers to execute arbitrary SQL commands via the cstr parameter.",
+    "published": "2024-09-02T05:15:17.237",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-43774": {
+    "cvss": "-",
+    "description": "SQL Injection in download personal learning course function of Easytest Online Test Platform ver.24E01 and earlier allow remote authenticated users to execute arbitrary SQL commands via the uid parameter.",
+    "published": "2024-09-02T05:15:17.330",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-43775": {
+    "cvss": "-",
+    "description": "SQL Injection in search course titles function of Easytest Online Test Platform ver.24E01 and earlier allow remote authenticated users to execute arbitrary SQL commands via the search parameter.",
+    "published": "2024-09-02T05:15:17.420",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-43776": {
+    "cvss": "-",
+    "description": "SQL Injection in mock exam function of Easytest Online Test Platform ver.24E01 and earlier allow remote authenticated users to execute arbitrary SQL commands via the qlevel parameter.",
+    "published": "2024-09-02T05:15:17.520",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-7871": {
+    "cvss": "-",
+    "description": "SQL Injection in online dictionary function of Easytest Online Test Platform ver.24E01 and earlier allow remote authenticated users to execute arbitrary SQL commands via the word parameter.",
+    "published": "2024-09-02T05:15:17.733",
+    "keywords": "remote,command"
   }
 }
