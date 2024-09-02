@@ -1,10 +1,4 @@
 {
-  "CVE-2024-8252": {
-    "cvss": 8.8,
-    "description": "The Clean Login plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.14.5 via the 'template' attribute of the clean-login-register shortcode. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
-    "published": "2024-08-30T10:15:07.657",
-    "keywords": "execution,sensitive,bypass"
-  },
   "CVE-2024-44916": {
     "cvss": 7.2,
     "description": "Vulnerability in admin_ip.php in Seacms v13.1, when action=set, allows attackers to control IP parameters that are written to the data/admin/ip.php file and could result in arbitrary command execution.",
