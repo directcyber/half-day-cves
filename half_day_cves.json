@@ -23,12 +23,6 @@
     "description": "HTMLDOC before 1.9.19 has an out-of-bounds write in parse_paragraph in ps-pdf.cxx because of an attempt to strip leading whitespace from a whitespace-only node.",
     "published": "2024-09-01T22:15:13.987"
   },
-  "CVE-2024-45509": {
-    "url": "https://github.com/misp/misp/commit/3f3b9a574f349182a545636e12efa39267e9db04",
-    "cvss": "-",
-    "description": "In MISP through 2.4.196, app/Controller/BookmarksController.php does not properly restrict access to bookmarks data in the case where the user is not an org admin.",
-    "published": "2024-09-01T22:15:14.053"
-  },
   "CVE-2024-8370": {
     "cvss": 3.5,
     "description": "A vulnerability classified as problematic was found in Grocy up to 4.2.0. This vulnerability affects unknown code of the file /api/files/recipepictures/ of the component SVG File Upload Handler. The manipulation of the argument force_serve_as with the input picture' leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. NOTE: The project maintainer explains that \"this is 'nonsense' and practically irrelevant according to the project's security policy\" which expects additional authentication for the software.",
