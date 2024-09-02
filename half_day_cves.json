@@ -82,5 +82,11 @@
     "description": "A vulnerability classified as problematic was found in Grocy up to 4.2.0. This vulnerability affects unknown code of the file /api/files/recipepictures/ of the component SVG File Upload Handler. The manipulation of the argument force_serve_as with the input picture' leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. NOTE: The project maintainer explains that \"this is 'nonsense' and practically irrelevant according to the project's security policy\" which expects additional authentication for the software.",
     "published": "2024-09-01T22:15:14.117",
     "keywords": "remote,authentication"
+  },
+  "CVE-2024-45522": {
+    "url": "https://github.com/linen-dev/linen.dev/commit/cd37c3e88ec29f4e7baae7e32fe80d0137848d10",
+    "cvss": "-",
+    "description": "Linen before cd37c3e does not verify that the domain is linen.dev or www.linen.dev when resetting a password. This occurs in create in apps/web/pages/api/forgot-password/index.ts.",
+    "published": "2024-09-02T00:15:11.830"
   }
 }
