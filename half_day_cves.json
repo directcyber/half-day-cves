@@ -138,7 +138,7 @@
     "keywords": "execution,command"
   },
   "CVE-2024-7012": {
-    "cvss": 8.1,
+    "cvss": 9.8,
     "description": "An authentication bypass vulnerability has been identified in Foreman when deployed with External Authentication, due to the puppet-foreman configuration. This issue arises from Apache's mod_proxy not properly unsetting headers because of restrictions on underscores in HTTP headers, allowing authentication through a malformed header. This flaw impacts all active Satellite deployments (6.13, 6.14 and 6.15) and could potentially enable unauthorized users to gain administrative access.",
     "published": "2024-09-04T14:15:14.570",
     "keywords": "authentication,bypass"
@@ -228,25 +228,25 @@
     "keywords": "remote,execution,unauthenticated"
   },
   "CVE-2024-42416": {
-    "cvss": 8.4,
+    "cvss": 8.8,
     "description": "The ctl_report_supported_opcodes function did not sufficiently validate a field provided by userspace, allowing an arbitrary write to a limited amount of kernel help memory.\n\nMalicious software running in a guest VM that exposes virtio_scsi can exploit the vulnerabilities to achieve code execution on the host in the bhyve userspace process, which typically runs as root.  Note that bhyve runs in a Capsicum sandbox, so malicious code is constrained by the capabilities available to the bhyve process.  A malicious iSCSI initiator could achieve remote code execution on the iSCSI target host.",
     "published": "2024-09-05T05:15:13.600",
     "keywords": "remote,execution"
   },
   "CVE-2024-43110": {
-    "cvss": 8.4,
+    "cvss": 8.8,
     "description": "The ctl_request_sense function could expose up to three bytes of the kernel heap to userspace.\n\nMalicious software running in a guest VM that exposes virtio_scsi can exploit the vulnerabilities to achieve code execution on the host in the bhyve userspace process, which typically runs as root.  Note that bhyve runs in a Capsicum sandbox, so malicious code is constrained by the capabilities available to the bhyve process.  A malicious iSCSI initiator could achieve remote code execution on the iSCSI target host.",
     "published": "2024-09-05T05:15:13.757",
     "keywords": "remote,execution"
   },
   "CVE-2024-45063": {
-    "cvss": "-",
+    "cvss": 8.8,
     "description": "The function ctl_write_buffer incorrectly set a flag which resulted in a kernel Use-After-Free when a command finished processing.\n\nMalicious software running in a guest VM that exposes virtio_scsi can exploit the vulnerabilities to achieve code execution on the host in the bhyve userspace process, which typically runs as root.  Note that bhyve runs in a Capsicum sandbox, so malicious code is constrained by the capabilities available to the bhyve process.  A malicious iSCSI initiator could achieve remote code execution on the iSCSI target host.",
     "published": "2024-09-05T05:15:13.830",
     "keywords": "remote,execution,command"
   },
   "CVE-2024-8178": {
-    "cvss": "-",
+    "cvss": 8.8,
     "description": "The ctl_write_buffer and ctl_read_buffer functions allocated memory to be returned to userspace, without initializing it.\n\nMalicious software running in a guest VM that exposes virtio_scsi can exploit the vulnerabilities to achieve code execution on the host in the bhyve userspace process, which typically runs as root.  Note that bhyve runs in a Capsicum sandbox, so malicious code is constrained by the capabilities available to the bhyve process.  A malicious iSCSI initiator could achieve remote code execution on the iSCSI target host.",
     "published": "2024-09-05T05:15:13.907",
     "keywords": "remote,execution"
