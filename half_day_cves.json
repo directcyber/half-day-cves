@@ -1,34 +1,4 @@
 {
-  "CVE-2024-42057": {
-    "cvss": 8.1,
-    "description": "A command injection vulnerability in the IPSec VPN feature of Zyxel ATP series firmware versions from V4.32 through V5.38, USG FLEX series firmware versions from V4.50 through V5.38, USG FLEX 50(W) series firmware versions from V4.16 through V5.38, and USG20(W)-VPN series firmware versions from V4.16 through V5.38 could allow an unauthenticated attacker to execute some OS commands on an affected device by sending a crafted username to the vulnerable device. Note that this attack could be successful only if the device was configured in User-Based-PSK authentication mode and a valid user with a long username exceeding 28 characters exists.",
-    "published": "2024-09-03T02:15:04.213",
-    "keywords": "unauthenticated,authentication,command,vpn"
-  },
-  "CVE-2024-42058": {
-    "cvss": 7.5,
-    "description": "A null pointer dereference vulnerability in Zyxel ATP series firmware versions from V4.32 through V5.38, USG FLEX series firmware versions from V4.50 through V5.38, USG FLEX 50(W) series firmware versions from V5.20 through V5.38, and USG20(W)-VPN series firmware versions from V5.20 through V5.38 could allow an unauthenticated attacker to cause DoS conditions by sending crafted packets to a vulnerable device.",
-    "published": "2024-09-03T02:15:04.467",
-    "keywords": "unauthenticated,vpn"
-  },
-  "CVE-2024-42059": {
-    "cvss": 7.2,
-    "description": "A post-authentication command injection vulnerability in Zyxel ATP series firmware versions from V5.00 through V5.38, USG FLEX series firmware versions from V5.00 through V5.38, USG FLEX 50(W) series firmware versions from V5.00 through V5.38, and USG20(W)-VPN series firmware versions from V5.00 through V5.38 could allow an authenticated attacker with administrator privileges to execute some OS commands on an affected device by uploading a crafted compressed language file via FTP.",
-    "published": "2024-09-03T02:15:04.690",
-    "keywords": "authentication,command,vpn"
-  },
-  "CVE-2024-42060": {
-    "cvss": 7.2,
-    "description": "A post-authentication command injection vulnerability in Zyxel ATP series firmware versions from V4.32 through V5.38, USG FLEX series firmware versions from V4.50 through V5.38, USG FLEX 50(W) series firmware versions from V4.16 through V5.38, and USG20(W)-VPN series firmware versions from V4.16 through V5.38 could allow an authenticated attacker with administrator privileges to execute some OS commands on an affected device by uploading a crafted internal user agreement file to the vulnerable device.",
-    "published": "2024-09-03T02:15:04.900",
-    "keywords": "authentication,command,vpn"
-  },
-  "CVE-2024-7203": {
-    "cvss": 7.2,
-    "description": "A post-authentication command injection vulnerability in Zyxel ATP series firmware versions from V4.60 through V5.38 and USG FLEX series firmware versions from V4.60 through V5.38 could allow an authenticated attacker with administrator privileges to execute some operating system (OS) commands on an affected device by executing a crafted CLI command.",
-    "published": "2024-09-03T02:15:05.520",
-    "keywords": "authentication,command"
-  },
   "CVE-2024-7261": {
     "cvss": 9.8,
     "description": "The improper neutralization of special elements in the parameter \"host\" in the CGI program of Zyxel NWA1123ACv3 firmware version 6.70(ABVT.4) and earlier, WAC500 firmware version 6.70(ABVS.4) \n\nand earlier, WAX655E firmware version 7.00(ACDO.1) and earlier, WBE530 firmware version 7.00(ACLE.1) \n\nand earlier, and\u00a0USG LITE 60AX firmware version\u00a0V2.00(ACIP.2) could allow an unauthenticated attacker to execute OS commands by sending a crafted cookie to a vulnerable device.",
