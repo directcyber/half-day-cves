@@ -174,13 +174,13 @@
     "keywords": "remote,execution"
   },
   "CVE-2024-45063": {
-    "cvss": 8.8,
+    "cvss": 9.8,
     "description": "The function ctl_write_buffer incorrectly set a flag which resulted in a kernel Use-After-Free when a command finished processing.\n\nMalicious software running in a guest VM that exposes virtio_scsi can exploit the vulnerabilities to achieve code execution on the host in the bhyve userspace process, which typically runs as root.  Note that bhyve runs in a Capsicum sandbox, so malicious code is constrained by the capabilities available to the bhyve process.  A malicious iSCSI initiator could achieve remote code execution on the iSCSI target host.",
     "published": "2024-09-05T05:15:13.830",
     "keywords": "remote,execution,command"
   },
   "CVE-2024-8178": {
-    "cvss": 8.8,
+    "cvss": 9.3,
     "description": "The ctl_write_buffer and ctl_read_buffer functions allocated memory to be returned to userspace, without initializing it.\n\nMalicious software running in a guest VM that exposes virtio_scsi can exploit the vulnerabilities to achieve code execution on the host in the bhyve userspace process, which typically runs as root.  Note that bhyve runs in a Capsicum sandbox, so malicious code is constrained by the capabilities available to the bhyve process.  A malicious iSCSI initiator could achieve remote code execution on the iSCSI target host.",
     "published": "2024-09-05T05:15:13.907",
     "keywords": "remote,execution"
