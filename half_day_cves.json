@@ -1,10 +1,4 @@
 {
-  "CVE-2024-44809": {
-    "cvss": 9.8,
-    "description": "A remote code execution (RCE) vulnerability exists in the Pi Camera project, version 1.0, maintained by RECANTHA. The issue arises from improper sanitization of user input passed to the \"position\" GET parameter in the tilt.php script. An attacker can exploit this by sending crafted input data that includes malicious command sequences, allowing arbitrary commands to be executed on the server with the privileges of the web server user. This vulnerability is exploitable remotely and poses significant risk if the application is exposed to untrusted networks.",
-    "published": "2024-09-03T22:15:04.590",
-    "keywords": "remote,execution,command"
-  },
   "CVE-2024-41927": {
     "cvss": "-",
     "description": "Cleartext transmission of sensitive information vulnerability exists in multiple IDEC PLCs. If an attacker sends a specific command to PLC's serial communication port, user credentials may be obtained. As a result, the program of the PLC may be obtained, and the PLC may be manipulated.",
