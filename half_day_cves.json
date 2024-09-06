@@ -1,16 +1,4 @@
 {
-  "CVE-2024-41434": {
-    "url": "https://github.com/pingcap/tidb/issues/53733",
-    "cvss": 4.3,
-    "description": "PingCAP TiDB v8.1.0 was discovered to contain a buffer overflow via the component (*Column).GetDecimal. This allows attackers to cause a Denial of Service (DoS) via a crafted input to the 'RemoveUnnecessaryFirstRow', it will check the expression between 'Agg' and 'GroupBy', but does not check the return type.",
-    "published": "2024-09-03T20:15:07.573"
-  },
-  "CVE-2024-45391": {
-    "cvss": 7.5,
-    "description": "Tina is an open-source content management system (CMS). Sites building with Tina CMS's command line interface (CLI) prior to version 1.6.2 that use a search token may be vulnerable to the search token being leaked via lock file (tina-lock.json). Administrators of Tina-enabled websites with search setup should rotate their key immediately. This issue has been patched in @tinacms/cli version 1.6.2. Upgrading and rotating the search token is required for the proper fix.",
-    "published": "2024-09-03T20:15:08.627",
-    "keywords": "command,leak"
-  },
   "CVE-2024-41433": {
     "url": "https://github.com/pingcap/tidb/issues/53796",
     "cvss": 9.8,
