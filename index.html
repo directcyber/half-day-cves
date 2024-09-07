@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-09-07T15:10:14.955750
+Updated at UTC 2024-09-07T16:11:09.916389
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,8 +57,6 @@ Updated at UTC 2024-09-07T15:10:14.955750
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
-		
-			
 		
 			
 		
@@ -441,16 +439,6 @@ This vulnerability is due to an undocumented static user credential for an admin
 					<td>command,bypass</td>
 					<td class=date>2024-09-04T16:15:06.640</td>
 					<td class=description>Rust is a programming language. The fix for CVE-2024-24576, where `std::process::Command` incorrectly escaped arguments when invoking batch files on Windows, was incomplete. Prior to Rust version 1.81.0, it was possible to bypass the fix when the batch file name had trailing whitespace or periods (which are ignored and stripped by Windows). To determine whether to apply the `cmd.exe` escaping rules, the original fix for the vulnerability checked whether the command name ended with `.bat` or `.cmd`. At the time that seemed enough, as we refuse to invoke batch scripts with no file extension. Windows removes trailing whitespace and periods when parsing file paths. For example, `.bat. .` is interpreted by Windows as `.bat`, but the original fix didn't check for that. Affected users who are using Rust 1.77.2 or greater can remove the trailing whitespace (ASCII 0x20) and trailing periods (ASCII 0x2E) from the batch file name to bypass the incomplete fix and enable the mitigations. Users are affected if their code or one of their dependencies invoke a batch script on Windows with trailing whitespace or trailing periods in the name, and pass untrusted arguments to it. Rust 1.81.0 will update the standard library to apply the CVE-2024-24576 mitigations to all batch files invocations, regardless of the trailing chars in the file name.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-44819">CVE-2024-44819</a></td>
-					<td>6.1</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-09-04T15:15:13.910</td>
-					<td class=description>Cross Site Scripting vulnerability in ZZCMS v.2023 and before allows a remote attacker to obtain sensitive information via a crafted script to the pagename parameter of the admin/del.php component.</td>
 				</tr>
 			
 		
