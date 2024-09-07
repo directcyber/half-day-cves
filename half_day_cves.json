@@ -196,5 +196,11 @@
     "description": "A vulnerability was found in lmxcms up to 1.4 and classified as critical. Affected by this issue is the function formatData of the file /admin.php?m=Acquisi&a=testcj&lid=1 of the component SQL Command Execution Module. The manipulation of the argument data leads to code injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2024-09-07T09:15:02.807",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2024-7620": {
+    "cvss": 6.6,
+    "description": "The Customizer Export/Import plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the '_import' function in all versions up to, and including, 0.9.7. This makes it possible for authenticated attackers, with Administrator-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. NOTE: This vulnerability is only exploitable when used in conjunction with a race condition as the uploaded file is deleted shortly after it is created.",
+    "published": "2024-09-07T12:15:12.550",
+    "keywords": "remote,execution"
   }
 }
