@@ -1,22 +1,4 @@
 {
-  "CVE-2024-20439": {
-    "cvss": 9.8,
-    "description": "A vulnerability in Cisco Smart Licensing Utility could allow an unauthenticated, remote attacker to log in to an affected system by using a static administrative credential.\r\n\r\nThis vulnerability is due to an undocumented static user credential for an administrative account. An attacker could exploit this vulnerability by using the static credentials to log in to the affected system. A successful exploit could allow the attacker to log in to the affected system with administrative privileges over the API of the Cisco Smart Licensing Utility application.",
-    "published": "2024-09-04T17:15:13.210",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-20440": {
-    "cvss": 7.5,
-    "description": "A vulnerability in Cisco Smart Licensing Utility could allow an unauthenticated, remote attacker to access sensitive information.\r\n\r\nThis vulnerability is due to excessive verbosity in a debug log file. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. A successful exploit could allow the attacker to obtain log files that contain sensitive data, including credentials that can be used to access the API.",
-    "published": "2024-09-04T17:15:13.517",
-    "keywords": "remote,unauthenticated,sensitive"
-  },
-  "CVE-2024-20497": {
-    "cvss": 4.3,
-    "description": "A vulnerability in Cisco Expressway Edge (Expressway-E) could allow an authenticated, remote attacker to masquerade as another user on an affected system.\r\n\r\nThis vulnerability is due to inadequate authorization checks for Mobile and Remote Access (MRA) users. An attacker could exploit this vulnerability by running a series of crafted commands. A successful exploit could allow the attacker to intercept calls that are destined for a particular phone number or to make phone calls and have that phone number appear on the caller ID. To successfully exploit this vulnerability, the attacker must be an MRA user on an affected system.",
-    "published": "2024-09-04T17:15:13.970",
-    "keywords": "remote,command"
-  },
   "CVE-2024-8417": {
     "cvss": 3.1,
     "description": "A vulnerability was found in ?????????? Yunke Online School System up to 1.5.5. It has been declared as problematic. This vulnerability affects unknown code of the file /admin/educloud/videobind.html. The manipulation leads to inclusion of sensitive information in source code. The attack can be initiated remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. Upgrading to version 1.5.6 is able to address this issue. It is recommended to upgrade the affected component.",
@@ -148,5 +130,53 @@
     "description": "Bypass incomplete fix of CVE-2024-27980, that arises from improper handling of batch files with all possible extensions on Windows via child_process.spawn / child_process.spawnSync. A malicious command line argument can inject arbitrary commands and achieve code execution even if the shell option is not enabled.",
     "published": "2024-09-07T16:15:02.620",
     "keywords": "execution,command,bypass"
+  },
+  "CVE-2024-38650": {
+    "cvss": 9.9,
+    "description": "An authentication bypass vulnerability can allow a low privileged attacker to access the NTLM hash of service account on the VSPC server.",
+    "published": "2024-09-07T17:15:12.183",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-38651": {
+    "cvss": 8.5,
+    "description": "A code injection vulnerability can allow a low-privileged user to overwrite files on that VSPC server, which can lead to remote code execution on VSPC server.",
+    "published": "2024-09-07T17:15:12.347",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-39714": {
+    "cvss": 9.9,
+    "description": "A code injection vulnerability that permits a low-privileged user to upload arbitrary files to the server, leading to remote code execution on VSPC server.",
+    "published": "2024-09-07T17:15:12.507",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-39715": {
+    "cvss": 8.5,
+    "description": "A code injection vulnerability that allows a low-privileged user with REST API access granted to remotely upload arbitrary files to the VSPC server using REST API, leading to remote code execution on VSPC server.",
+    "published": "2024-09-07T17:15:12.663",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-40710": {
+    "cvss": 8.8,
+    "description": "A series of related high-severity vulnerabilities, the most notable enabling remote code execution (RCE) as the service account and extraction of sensitive information (savedcredentials and passwords). Exploiting these vulnerabilities requires a user who has been assigned a low-privileged role within Veeam Backup & Replication.",
+    "published": "2024-09-07T17:15:13.110",
+    "keywords": "remote,execution,sensitive"
+  },
+  "CVE-2024-40711": {
+    "cvss": 9.8,
+    "description": "A deserialization of untrusted data vulnerability with a malicious payload can allow an unauthenticated remote code execution (RCE).",
+    "published": "2024-09-07T17:15:13.260",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-40713": {
+    "cvss": 7.8,
+    "description": "A vulnerability that allows a user who has been assigned a low-privileged role within Veeam Backup & Replication to alter Multi-Factor Authentication (MFA) settings and bypass MFA.",
+    "published": "2024-09-07T17:15:13.550",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-42024": {
+    "cvss": 9.1,
+    "description": "A vulnerability that allows an attacker in possession of the Veeam ONE Agent service account credentials to perform remote code execution on the machine where the Veeam ONE Agent is installed.",
+    "published": "2024-09-07T17:15:14.700",
+    "keywords": "remote,execution"
   }
 }
