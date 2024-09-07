@@ -1,10 +1,4 @@
 {
-  "CVE-2024-7870": {
-    "cvss": 6.5,
-    "description": "The PixelYourSite \u2013 Your smart PIXEL (TAG) & API Manager and the PixelYourSite PRO plugins for WordPress are vulnerable to Sensitive Information Exposure in all versions up to, and including, 9.7.1 and 10.4.2, respectively, through publicly exposed log files. This makes it possible for unauthenticated attackers to view potentially sensitive information contained in the exposed log files, and to delete log files.",
-    "published": "2024-09-04T09:15:04.660",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2024-44383": {
     "cvss": 8.0,
     "description": "WAYOS FBM-291W v19.09.11 is vulnerable to Command Execution via msp_info_htm.",
@@ -196,5 +190,11 @@
     "description": "SPIP before 4.3.2, 4.2.16, and \n4.1.18 is vulnerable to a command injection issue. A \nremote and unauthenticated attacker can execute arbitrary operating system commands by sending a crafted multipart file upload HTTP request.",
     "published": "2024-09-06T16:15:03.793",
     "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2024-8523": {
+    "cvss": 4.7,
+    "description": "A vulnerability was found in lmxcms up to 1.4 and classified as critical. Affected by this issue is the function formatData of the file /admin.php?m=Acquisi&a=testcj&lid=1 of the component SQL Command Execution Module. The manipulation of the argument data leads to code injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-09-07T09:15:02.807",
+    "keywords": "remote,execution,command"
   }
 }
