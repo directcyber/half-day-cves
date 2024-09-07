@@ -1,16 +1,4 @@
 {
-  "CVE-2024-7012": {
-    "cvss": 9.8,
-    "description": "An authentication bypass vulnerability has been identified in Foreman when deployed with External Authentication, due to the puppet-foreman configuration. This issue arises from Apache's mod_proxy not properly unsetting headers because of restrictions on underscores in HTTP headers, allowing authentication through a malformed header. This flaw impacts all active Satellite deployments (6.13, 6.14 and 6.15) and could potentially enable unauthorized users to gain administrative access.",
-    "published": "2024-09-04T14:15:14.570",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-7923": {
-    "cvss": 9.8,
-    "description": "An authentication bypass vulnerability has been identified in Pulpcore when deployed with Gunicorn versions prior to 22.0, due to the puppet-pulpcore configuration. This issue arises from Apache's mod_proxy not properly unsetting headers because of restrictions on underscores in HTTP headers, allowing authentication through a malformed header. This flaw impacts all active Satellite deployments (6.13, 6.14 and 6.15) which are using Pulpcore version 3.0+ and could potentially enable unauthorized users to gain administrative access.",
-    "published": "2024-09-04T14:15:14.800",
-    "keywords": "authentication,bypass"
-  },
   "CVE-2024-44819": {
     "cvss": 6.1,
     "description": "Cross Site Scripting vulnerability in ZZCMS v.2023 and before allows a remote attacker to obtain sensitive information via a crafted script to the pagename parameter of the admin/del.php component.",
