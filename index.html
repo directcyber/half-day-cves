@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-09-07T16:11:09.916389
+Updated at UTC 2024-09-07T17:09:21.907923
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -108,18 +108,18 @@ Updated at UTC 2024-09-07T16:11:09.916389
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-36138">CVE-2024-36138</a></td>
+					<td>8.1</td>
+					<td>execution,command,bypass</td>
+					<td class=date>2024-09-07T16:15:02.620</td>
+					<td class=description>Bypass incomplete fix of CVE-2024-27980, that arises from improper handling of batch files with all possible extensions on Windows via child_process.spawn / child_process.spawnSync. A malicious command line argument can inject arbitrary commands and achieve code execution even if the shell option is not enabled.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -379,66 +379,6 @@ This vulnerability is due to excessive verbosity in a debug log file. An attacke
 					<td class=description>A vulnerability in Cisco Smart Licensing Utility could allow an unauthenticated, remote attacker to log in to an affected system by using a static administrative credential.
 
 This vulnerability is due to an undocumented static user credential for an administrative account. An attacker could exploit this vulnerability by using the static credentials to log in to the affected system. A successful exploit could allow the attacker to log in to the affected system with administrative privileges over the API of the Cisco Smart Licensing Utility application.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45053">CVE-2024-45053</a></td>
-					<td>9.1</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-04T16:15:07.910</td>
-					<td class=description>Fides is an open-source privacy engineering platform. Starting in version 2.19.0 and prior to version 2.44.0, the Email Templating feature uses Jinja2 without proper input sanitization or rendering environment restrictions, allowing for Server-Side Template Injection that grants Remote Code Execution to privileged users. A privileged user refers to an Admin UI user with the default `Owner` or `Contributor` role, who can escalate their access and execute code on the underlying Fides Webserver container where the Jinja template rendering function is executed. The vulnerability has been patched in Fides version `2.44.0`. Users are advised to upgrade to this version or later to secure their systems against this threat. There are no workarounds.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45052">CVE-2024-45052</a></td>
-					<td>5.3</td>
-					<td>unauthenticated,authentication</td>
-					<td class=date>2024-09-04T16:15:07.697</td>
-					<td class=description>Fides is an open-source privacy engineering platform. Prior to version 2.44.0, a timing-based username enumeration vulnerability exists in Fides Webserver authentication. This vulnerability allows an unauthenticated attacker to determine the existence of valid usernames by analyzing the time it takes for the server to respond to login requests. The discrepancy in response times between valid and invalid usernames can be leveraged to enumerate users on the system. This vulnerability enables a timing-based username enumeration attack. An attacker can systematically guess and verify which usernames are valid by measuring the server's response time to authentication requests. This information can be used to conduct further attacks on authentication such as password brute-forcing and credential stuffing. The vulnerability has been patched in Fides version `2.44.0`. Users are advised to upgrade to this version or later to secure their systems against this threat. There are no workarounds.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-44818">CVE-2024-44818</a></td>
-					<td>5.4</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-09-04T16:15:07.237</td>
-					<td class=description>Cross Site Scripting vulnerability in ZZCMS v.2023 and before allows a remote attacker to obtain sensitive information via the HTTP_Referer header of the caina.php component.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-44817">CVE-2024-44817</a></td>
-					<td>8.8</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-09-04T16:15:07.143</td>
-					<td class=description>SQL Injection vulnerability in ZZCMS v.2023 and before allows a remote attacker to obtain sensitive information via the id parameter in the adv2.php component.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43405">CVE-2024-43405</a></td>
-					<td>7.4</td>
-					<td>execution,bypass</td>
-					<td class=date>2024-09-04T16:15:06.853</td>
-					<td class=description>Nuclei is a vulnerability scanner powered by YAML based templates. Starting in version 3.0.0 and prior to version 3.3.2, a vulnerability in Nuclei's template signature verification system could allow an attacker to bypass the signature check and possibly execute malicious code via custom code template. The vulnerability is present in the template signature verification process, specifically in the `signer` package. The vulnerability stems from a discrepancy between how the signature verification process and the YAML parser handle newline characters, combined with the way multiple signatures are processed. This allows an attacker to inject malicious content into a template while maintaining a valid signature for the benign part of the template. CLI users are affected if they execute custom code templates from unverified sources. This includes templates authored by third parties or obtained from unverified repositories. SDK Users are affected if they are developers integrating Nuclei into their platforms, particularly if they permit the execution of custom code templates by end-users. The vulnerability is addressed in Nuclei v3.3.2. Users are strongly recommended to update to this version to mitigate the security risk. As an interim measure, users should refrain from using custom templates if unable to upgrade immediately. Only trusted, verified templates should be executed. Those who are unable to upgrade Nuclei should disable running custom code templates as a workaround.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43402">CVE-2024-43402</a></td>
-					<td>8.1</td>
-					<td>command,bypass</td>
-					<td class=date>2024-09-04T16:15:06.640</td>
-					<td class=description>Rust is a programming language. The fix for CVE-2024-24576, where `std::process::Command` incorrectly escaped arguments when invoking batch files on Windows, was incomplete. Prior to Rust version 1.81.0, it was possible to bypass the fix when the batch file name had trailing whitespace or periods (which are ignored and stripped by Windows). To determine whether to apply the `cmd.exe` escaping rules, the original fix for the vulnerability checked whether the command name ended with `.bat` or `.cmd`. At the time that seemed enough, as we refuse to invoke batch scripts with no file extension. Windows removes trailing whitespace and periods when parsing file paths. For example, `.bat. .` is interpreted by Windows as `.bat`, but the original fix didn't check for that. Affected users who are using Rust 1.77.2 or greater can remove the trailing whitespace (ASCII 0x20) and trailing periods (ASCII 0x2E) from the batch file name to bypass the incomplete fix and enable the mitigations. Users are affected if their code or one of their dependencies invoke a batch script on Windows with trailing whitespace or trailing periods in the name, and pass untrusted arguments to it. Rust 1.81.0 will update the standard library to apply the CVE-2024-24576 mitigations to all batch files invocations, regardless of the trailing chars in the file name.</td>
 				</tr>
 			
 		
