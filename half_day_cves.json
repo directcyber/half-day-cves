@@ -1,10 +1,4 @@
 {
-  "CVE-2024-45589": {
-    "cvss": 6.5,
-    "description": "RapidIdentity LTS through 2023.0.2 and Cloud through 2024.08.0 improperly restricts excessive authentication attempts and allows a remote attacker to cause a denial of service via the username parameters.",
-    "published": "2024-09-05T16:15:08.737",
-    "keywords": "remote,authentication"
-  },
   "CVE-2024-8480": {
     "cvss": 8.8,
     "description": "The Image Optimizer, Resizer and CDN \u2013 Sirv plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'sirv_save_prevented_sizes' function in all versions up to, and including, 7.2.7. This makes it possible for authenticated attackers, with Contributor-level access and above, to exploit the 'sirv_upload_file_by_chunks_callback' function, which lacks proper file type validation, allowing attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
