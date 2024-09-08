@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-09-08T11:08:00.209588
+Updated at UTC 2024-09-08T12:17:35.302891
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -96,12 +96,18 @@ Updated at UTC 2024-09-08T11:08:00.209588
 		
 			
 		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8574">CVE-2024-8574</a></td>
+					<td>6.3</td>
+					<td>remote,command</td>
+					<td class=date>2024-09-08T11:15:10.430</td>
+					<td class=description>A vulnerability has been found in TOTOLINK AC1200 T8 4.1.5cu.861_B20230220 and classified as critical. This vulnerability affects the function setParentalRules of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument slaveIpList leads to os command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -285,36 +291,6 @@ remote and unauthenticated attacker can execute arbitrary operating system comma
 Impact Canisters built in Rust with ic_cdk and ic_cdk_timers are affected. If these canisters call a canister method, use timers or heartbeat, they will likely leak a small amount of memory on every such operation. In the worst case, this could lead to heap memory exhaustion triggered by an attacker. Motoko based canisters are not affected by the bug.
 PatchesThe patch has been backported to all minor versions between >= 0.8.0, <= 0.15.0. The patched versions available are 0.8.2, 0.9.3, 0.10.1, 0.11.6, 0.12.2, 0.13.5, 0.14.1, 0.15.1 and their previous versions have been yanked. WorkaroundsThere are no known workarounds at the moment. Developers are recommended to upgrade their canister as soon as possible to the latest available patched version of ic_cdk to avoid running out of Wasm heap memory. 
 Upgrading the canisters (without updating `ic_cdk`) also frees the leaked memory but it's only a temporary solution.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7381">CVE-2024-7381</a></td>
-					<td>5.3</td>
-					<td>execution,unauthenticated</td>
-					<td class=date>2024-09-05T11:15:13.043</td>
-					<td class=description>The Geo Controller plugin for WordPress is vulnerable to unauthorized shortcode execution due to missing authorization and capability checks on the ajax__shortcode_cache function in all versions up to, and including, 8.6.9. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes available on the target site.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5957">CVE-2024-5957</a></td>
-					<td>7.5</td>
-					<td>remote,unauthenticated,authentication,bypass</td>
-					<td class=date>2024-09-05T11:15:12.610</td>
-					<td class=description>This vulnerability allows unauthenticated remote attackers to bypass authentication and gain APIs access of the Manager.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5956">CVE-2024-5956</a></td>
-					<td>6.5</td>
-					<td>remote,unauthenticated,authentication,bypass</td>
-					<td class=date>2024-09-05T11:15:12.387</td>
-					<td class=description>This vulnerability allows unauthenticated remote attackers to bypass authentication and gain partial data access to the vulnerable Trellix IPS Manager with garbage data in response mostly</td>
 				</tr>
 			
 		
