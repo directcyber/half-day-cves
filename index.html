@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-09-08T13:13:43.736602
+Updated at UTC 2024-09-08T14:09:49.976307
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,10 +57,6 @@ Updated at UTC 2024-09-08T13:13:43.736602
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
-		
-			
-		
-			
 		
 			
 		
@@ -268,29 +264,6 @@ remote and unauthenticated attacker can execute arbitrary operating system comma
 					<td>remote,authentication</td>
 					<td class=date>2024-09-05T16:15:08.737</td>
 					<td class=description>RapidIdentity LTS through 2023.0.2 and Cloud through 2024.08.0 improperly restricts excessive authentication attempts and allows a remote attacker to cause a denial of service via the username parameters.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8462">CVE-2024-8462</a></td>
-					<td>3.7</td>
-					<td>remote,authentication</td>
-					<td class=date>2024-09-05T13:15:12.050</td>
-					<td class=description>A vulnerability was found in Windmill 1.380.0. It has been classified as problematic. Affected is an unknown function of the file backend/windmill-api/src/users.rs of the component HTTP Request Handler. The manipulation leads to improper restriction of excessive authentication attempts. It is possible to launch the attack remotely. The complexity of an attack is rather high. The exploitability is told to be difficult. Upgrading to version 1.390.1 is able to address this issue. The patch is identified as acfe7786152f036f2476f93ab5536571514fa9e3. It is recommended to upgrade the affected component.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7884">CVE-2024-7884</a></td>
-					<td>7.5</td>
-					<td>execution,leak</td>
-					<td class=date>2024-09-05T13:15:11.390</td>
-					<td class=description>When a canister method is called via ic_cdk::call* , a new Future CallFuture is created  and can be awaited by the caller to get the execution result. Internally, the state of the Future is tracked and stored in a struct called CallFutureState.  A bug in the polling implementation of the CallFuture allows multiple references to be held for this internal state and not all references were dropped before the Future is resolved. Since we have unaccounted references held, a copy of the internal state ended up being persisted in the canister's heap and thus causing a memory leak. 
-Impact Canisters built in Rust with ic_cdk and ic_cdk_timers are affected. If these canisters call a canister method, use timers or heartbeat, they will likely leak a small amount of memory on every such operation. In the worst case, this could lead to heap memory exhaustion triggered by an attacker. Motoko based canisters are not affected by the bug.
-PatchesThe patch has been backported to all minor versions between >= 0.8.0, <= 0.15.0. The patched versions available are 0.8.2, 0.9.3, 0.10.1, 0.11.6, 0.12.2, 0.13.5, 0.14.1, 0.15.1 and their previous versions have been yanked. WorkaroundsThere are no known workarounds at the moment. Developers are recommended to upgrade their canister as soon as possible to the latest available patched version of ic_cdk to avoid running out of Wasm heap memory. 
-Upgrading the canisters (without updating `ic_cdk`) also frees the leaked memory but it's only a temporary solution.</td>
 				</tr>
 			
 		
