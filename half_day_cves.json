@@ -66,7 +66,7 @@
     "keywords": "remote,execution"
   },
   "CVE-2024-8574": {
-    "cvss": 6.3,
+    "cvss": 8.8,
     "description": "A vulnerability has been found in TOTOLINK AC1200 T8 4.1.5cu.861_B20230220 and classified as critical. This vulnerability affects the function setParentalRules of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument slaveIpList leads to os command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2024-09-08T11:15:10.430",
     "keywords": "remote,command"
@@ -91,7 +91,7 @@
   },
   "CVE-2024-44721": {
     "url": "https://github.com/seacms-net/cms/issues/23",
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "SeaCMS v13.1 was discovered to a Server-Side Request Forgery (SSRF) via the url parameter at /admin_reslib.php.",
     "published": "2024-09-09T16:15:02.853"
   },
@@ -100,5 +100,23 @@
     "description": "D-Link DI-7003GV2 v24.04.18D1, DI-7100G+V2 v24.04.18D1, DI-7100GV2 v24.04.18D1, DI-7200GV2 v24.04.18E1, DI-7300G+V2 v24.04.18D1, and DI-7400G+V2 v24.04.18D1 are vulnerable to Remote Command Execution. An attacker can achieve arbitrary command execution by sending a carefully crafted malicious string to the CGI function responsible for handling usb_paswd.asp.",
     "published": "2024-09-09T17:15:13.120",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2024-44334": {
+    "cvss": "-",
+    "description": "D-Link DI-7003GV2 v24.04.18D1, DI-7100G+V2 v24.04.18D1, DI-7100GV2 v24.04.18D1, DI-7200GV2 v24.04.18E1, DI-7300G+V2 v24.04.18D1, and DI-7400G+V2 v24.04.18D1 are vulnerable to Remote Command Execution due to insufficient parameter filtering in the CGI handling function of upgrade_filter.asp.",
+    "published": "2024-09-09T18:15:03.837",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2024-44335": {
+    "cvss": "-",
+    "description": "D-Link DI-7003G v19.12.24A1, DI-7003GV2 v24.04.18D1, DI-7100G+V2 v24.04.18D1, DI-7100GV2 v24.04.18D1, DI-7200GV2 v24.04.18E1, DI-7300G+V2 v24.04.18D1, and DI-7400G+V2 v24.04.18D1 are vulnerable to Remote Command Execution (RCE) via version_upgrade.asp.",
+    "published": "2024-09-09T18:15:03.893",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2024-44849": {
+    "cvss": "-",
+    "description": "Qualitor up to 8.24 is vulnerable to Remote Code Execution (RCE) via Arbitrary File Upload in checkAcesso.php.",
+    "published": "2024-09-09T18:15:03.957",
+    "keywords": "remote,execution"
   }
 }
