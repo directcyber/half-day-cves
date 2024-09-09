@@ -1,10 +1,4 @@
 {
-  "CVE-2024-38486": {
-    "cvss": 7.5,
-    "description": "Dell SmartFabric OS10 Software, version(s) 10.5.5.4 through 10.5.5.10 and 10.5.6.x , contain(s) an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to Command execution.",
-    "published": "2024-09-06T05:15:13.370",
-    "keywords": "remote,execution,command"
-  },
   "CVE-2024-45758": {
     "cvss": 9.1,
     "description": "H2O.ai H2O through 3.46.0.4 allows attackers to arbitrarily set the JDBC URL, leading to deserialization attacks, file reads, and command execution. Exploitation can occur when an attacker has access to post to the ImportSQLTable URI with a JSON document containing a connection_url property with any typical JDBC Connection URL attack payload such as one that uses queryInterceptors.",
