@@ -1,16 +1,4 @@
 {
-  "CVE-2024-45758": {
-    "cvss": 9.1,
-    "description": "H2O.ai H2O through 3.46.0.4 allows attackers to arbitrarily set the JDBC URL, leading to deserialization attacks, file reads, and command execution. Exploitation can occur when an attacker has access to post to the ImportSQLTable URI with a JSON document containing a connection_url property with any typical JDBC Connection URL attack payload such as one that uses queryInterceptors.",
-    "published": "2024-09-06T16:15:03.517",
-    "keywords": "execution,command"
-  },
-  "CVE-2024-8517": {
-    "cvss": 9.8,
-    "description": "SPIP before 4.3.2, 4.2.16, and \n4.1.18 is vulnerable to a command injection issue. A \nremote and unauthenticated attacker can execute arbitrary operating system commands by sending a crafted multipart file upload HTTP request.",
-    "published": "2024-09-06T16:15:03.793",
-    "keywords": "remote,unauthenticated,command"
-  },
   "CVE-2024-8523": {
     "cvss": 4.7,
     "description": "A vulnerability was found in lmxcms up to 1.4 and classified as critical. Affected by this issue is the function formatData of the file /admin.php?m=Acquisi&a=testcj&lid=1 of the component SQL Command Execution Module. The manipulation of the argument data leads to code injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
@@ -94,5 +82,17 @@
     "description": "This vulnerability exists in TechExcel Back Office Software versions prior to 1.0.0 due to improper access controls on certain API endpoints. An authenticated remote attacker could exploit this vulnerability by manipulating a parameter through API request URL which could lead to unauthorized access to sensitive information belonging to other users.",
     "published": "2024-09-09T10:15:03.027",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-44720": {
+    "url": "https://github.com/seacms-net/cms/issues/22",
+    "cvss": "-",
+    "description": "SeaCMS v13.1 was discovered to an arbitrary file read vulnerability via the component admin_safe.php.",
+    "published": "2024-09-09T16:15:02.780"
+  },
+  "CVE-2024-44721": {
+    "url": "https://github.com/seacms-net/cms/issues/23",
+    "cvss": "-",
+    "description": "SeaCMS v13.1 was discovered to a Server-Side Request Forgery (SSRF) via the url parameter at /admin_reslib.php.",
+    "published": "2024-09-09T16:15:02.853"
   }
 }
