@@ -1,10 +1,4 @@
 {
-  "CVE-2024-7620": {
-    "cvss": 6.6,
-    "description": "The Customizer Export/Import plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the '_import' function in all versions up to, and including, 0.9.7. This makes it possible for authenticated attackers, with Administrator-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. NOTE: This vulnerability is only exploitable when used in conjunction with a race condition as the uploaded file is deleted shortly after it is created.",
-    "published": "2024-09-07T12:15:12.550",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-36138": {
     "cvss": 8.1,
     "description": "Bypass incomplete fix of CVE-2024-27980, that arises from improper handling of batch files with all possible extensions on Windows via child_process.spawn / child_process.spawnSync. A malicious command line argument can inject arbitrary commands and achieve code execution even if the shell option is not enabled.",
@@ -238,5 +232,17 @@
     "cvss": 6.4,
     "description": "The Nova Blocks by Pixelgrade plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'align' attribute of the 'wp:separator' Gutenberg block in all versions up to, and including, 2.1.7 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
     "published": "2024-09-10T10:15:13.653"
+  },
+  "CVE-2024-40754": {
+    "url": "https://github.com/samsung/escargot/pull/1369",
+    "cvss": "-",
+    "description": "Heap-based Buffer Overflow vulnerability in Samsung Open Source Escargot JavaScript engine allows Overflow Buffers.This issue affects Escargot: 4.0.0.",
+    "published": "2024-09-10T11:15:10.503"
+  },
+  "CVE-2024-7770": {
+    "cvss": 8.8,
+    "description": "The Bit File Manager \u2013 100% Free & Open Source File Manager and Code Editor for WordPress plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'upload' function in all versions up to, and including, 6.5.5. This makes it possible for authenticated attackers, with Subscriber-level access and above, and granted upload permissions by an administrator, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-09-10T11:15:10.780",
+    "keywords": "remote,execution"
   }
 }
