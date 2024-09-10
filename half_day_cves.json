@@ -1,10 +1,4 @@
 {
-  "CVE-2024-36138": {
-    "cvss": 8.1,
-    "description": "Bypass incomplete fix of CVE-2024-27980, that arises from improper handling of batch files with all possible extensions on Windows via child_process.spawn / child_process.spawnSync. A malicious command line argument can inject arbitrary commands and achieve code execution even if the shell option is not enabled.",
-    "published": "2024-09-07T16:15:02.620",
-    "keywords": "execution,command,bypass"
-  },
   "CVE-2024-38650": {
     "cvss": 9.9,
     "description": "An authentication bypass vulnerability can allow a low privileged attacker to access the NTLM hash of service account on the VSPC server.",
@@ -246,7 +240,7 @@
     "keywords": "remote,execution"
   },
   "CVE-2024-37728": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "Arbitrary File Read vulnerability in Xi'an Daxi Information Technology Co., Ltd OfficeWeb365 v.7.18.23.0 and v8.6.1.0 allows a remote attacker to obtain sensitive information via the \"Pic/Indexes\" interface",
     "published": "2024-09-10T14:15:12.463",
     "keywords": "remote,sensitive"
@@ -274,5 +268,11 @@
     "description": "Citrix Workspace App version 23.9.0.24.4 on Dell ThinOS 2311 contains an Incorrect Authorization vulnerability when Citrix CEB is enabled for WebLogin. A local unauthenticated user with low privileges may potentially exploit this vulnerability to bypass existing controls and perform unauthorized actions leading to information disclosure and tampering.",
     "published": "2024-09-10T15:15:17.013",
     "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2024-45595": {
+    "cvss": 6.1,
+    "description": "D-Tale is a visualizer for Pandas data structures. Users hosting D-Tale publicly can be vulnerable to remote code execution allowing attackers to run malicious code on the server. Users should upgrade to version 3.14.1 where the \"Custom Filter\" input is turned off by default.",
+    "published": "2024-09-10T16:15:21.970",
+    "keywords": "remote,execution"
   }
 }
