@@ -250,5 +250,29 @@
     "description": "Arbitrary File Read vulnerability in Xi'an Daxi Information Technology Co., Ltd OfficeWeb365 v.7.18.23.0 and v8.6.1.0 allows a remote attacker to obtain sensitive information via the \"Pic/Indexes\" interface",
     "published": "2024-09-10T14:15:12.463",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-31489": {
+    "cvss": 6.8,
+    "description": "AAn improper certificate validation vulnerability [CWE-295] in FortiClientWindows 7.2.0 through 7.2.2, 7.0.0 through 7.0.11,  FortiClientLinux 7.2.0, 7.0.0 through 7.0.11 and FortiClientMac 7.0.0 through 7.0.11, 7.2.0 through 7.2.4 may allow a remote and unauthenticated attacker to perform a Man-in-the-Middle attack on the communication channel between the FortiGate and the FortiClient during the ZTNA tunnel creation",
+    "published": "2024-09-10T15:15:15.787",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-33508": {
+    "cvss": 7.3,
+    "description": "An improper neutralization of special elements used in a command\u00a0('Command Injection') vulnerability [CWE-77] in Fortinet FortiClientEMS 7.2.0 through 7.2.4, 7.0.0 through 7.0.12 may allow an unauthenticated attacker to execute limited and temporary operations on the underlying database via crafted requests.",
+    "published": "2024-09-10T15:15:16.187",
+    "keywords": "unauthenticated,command"
+  },
+  "CVE-2024-35282": {
+    "cvss": 4.2,
+    "description": "A cleartext storage of sensitive information in memory vulnerability [CWE-316] affecting FortiClient VPN iOS 7.2 all versions, 7.0 all versions, 6.4 all versions, 6.2 all versions, 6.0 all versions may allow an unauthenticated attacker that has physical access to a jailbroken device to obtain cleartext passwords via keychain dump.",
+    "published": "2024-09-10T15:15:16.397",
+    "keywords": "unauthenticated,sensitive,vpn"
+  },
+  "CVE-2024-42423": {
+    "cvss": 6.1,
+    "description": "Citrix Workspace App version 23.9.0.24.4 on Dell ThinOS 2311 contains an Incorrect Authorization vulnerability when Citrix CEB is enabled for WebLogin. A local unauthenticated user with low privileges may potentially exploit this vulnerability to bypass existing controls and perform unauthorized actions leading to information disclosure and tampering.",
+    "published": "2024-09-10T15:15:17.013",
+    "keywords": "unauthenticated,bypass"
   }
 }
