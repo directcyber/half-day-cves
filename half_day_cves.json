@@ -370,5 +370,11 @@
     "cvss": "-",
     "description": "An issue in the component /jeecg-boot/jmreport/dict/list of JimuReport v1.7.8 allows attacker to escalate privileges via a crafted GET request.",
     "published": "2024-09-10T17:15:37.597"
+  },
+  "CVE-2024-45596": {
+    "cvss": 7.4,
+    "description": "Directus is a real-time API and App dashboard for managing SQL database content. An unauthenticated user can access credentials of last authenticated user via OpenID or OAuth2 where the authentication URL did not include redirect query string. This happens because on that endpoint for both OpenId and Oauth2 Directus is using the respond middleware, which by default will try to cache GET requests that met some conditions. Although, those conditions do not include this scenario, when an unauthenticated request returns user credentials. This vulnerability is fixed in 10.13.3 and 11.1.0.",
+    "published": "2024-09-10T19:15:22.303",
+    "keywords": "unauthenticated,authentication"
   }
 }
