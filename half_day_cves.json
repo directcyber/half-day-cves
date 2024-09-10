@@ -235,7 +235,7 @@
   },
   "CVE-2024-40754": {
     "url": "https://github.com/samsung/escargot/pull/1369",
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "Heap-based Buffer Overflow vulnerability in Samsung Open Source Escargot JavaScript engine allows Overflow Buffers.This issue affects Escargot: 4.0.0.",
     "published": "2024-09-10T11:15:10.503"
   },
@@ -244,5 +244,11 @@
     "description": "The Bit File Manager \u2013 100% Free & Open Source File Manager and Code Editor for WordPress plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'upload' function in all versions up to, and including, 6.5.5. This makes it possible for authenticated attackers, with Subscriber-level access and above, and granted upload permissions by an administrator, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
     "published": "2024-09-10T11:15:10.780",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-37728": {
+    "cvss": "-",
+    "description": "Arbitrary File Read vulnerability in Xi'an Daxi Information Technology Co., Ltd OfficeWeb365 v.7.18.23.0 and v8.6.1.0 allows a remote attacker to obtain sensitive information via the \"Pic/Indexes\" interface",
+    "published": "2024-09-10T14:15:12.463",
+    "keywords": "remote,sensitive"
   }
 }
