@@ -418,5 +418,11 @@
     "description": "Weak authentication in Patch Management of Ivanti EPM before 2022 SU6, or the 2024 September update allows a remote authenticated attacker to access restricted functionality.",
     "published": "2024-09-10T21:15:15.427",
     "keywords": "remote,authentication"
+  },
+  "CVE-2024-45597": {
+    "url": "https://github.com/plutolang/pluto/pull/945",
+    "cvss": 5.3,
+    "description": "Pluto is a superset of Lua 5.4 with a focus on general-purpose programming. Scripts passing user-controlled values to http.request header values are affected. An attacker could use this to send arbitrary requests, potentially leveraging authentication tokens provided in the same headers table.",
+    "published": "2024-09-10T22:15:01.967"
   }
 }
