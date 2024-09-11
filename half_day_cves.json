@@ -514,5 +514,35 @@
     "description": "Audition versions 24.4.1, 23.6.6 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
     "published": "2024-09-11T16:15:06.140",
     "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-20304": {
+    "cvss": 8.6,
+    "description": "A vulnerability in the multicast traceroute version 2 (Mtrace2) feature of Cisco IOS XR Software could allow an unauthenticated, remote attacker to exhaust the UDP packet memory of an affected device.\r\n\r\nThis vulnerability exists because the Mtrace2 code does not properly handle packet memory. An attacker could exploit this vulnerability by sending crafted packets to an affected device. A successful exploit could allow the attacker to exhaust the incoming UDP packet memory. The affected device would not be able to process higher-level UDP-based protocols packets, possibly causing a denial of service (DoS) condition.\r\nNote: This vulnerability can be exploited using IPv4 or IPv6.",
+    "published": "2024-09-11T17:15:11.853",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-20381": {
+    "cvss": 8.8,
+    "description": "A vulnerability in the JSON-RPC API feature in ConfD that is used by the web-based management interfaces of Cisco Crosswork Network Services Orchestrator (NSO), Cisco Optical Site Manager, and Cisco RV340 Dual WAN Gigabit VPN Routers could allow an authenticated, remote attacker to modify the configuration of an affected application or device.\r\n\r\nThis vulnerability is due to improper authorization checks on the API. An attacker with privileges sufficient to access the affected application or device could exploit this vulnerability by sending malicious requests to the JSON-RPC API. A successful exploit could allow the attacker to make unauthorized modifications to the configuration of the affected application or device, including creating new user accounts or elevating their own privileges on an affected system.",
+    "published": "2024-09-11T17:15:12.403",
+    "keywords": "remote,vpn"
+  },
+  "CVE-2024-20390": {
+    "cvss": 5.3,
+    "description": "A vulnerability in the Dedicated XML Agent feature of Cisco IOS XR Software could allow an unauthenticated, remote attacker to cause a denial of service (DoS) on XML TCP listen port 38751.\r\n\r\nThis vulnerability is due to a lack of proper error validation of ingress XML packets. An attacker could exploit this vulnerability by sending a sustained, crafted stream of XML traffic to a targeted device. A successful exploit could allow the attacker to cause XML TCP port 38751 to become unreachable while the attack traffic persists.",
+    "published": "2024-09-11T17:15:12.613",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-20483": {
+    "cvss": 7.2,
+    "description": "Multiple vulnerabilities in Cisco Routed PON Controller Software, which runs as a docker container on hardware that is supported by Cisco IOS XR Software, could allow an authenticated, remote attacker with Administrator-level privileges on the PON Manager or direct access to the PON Manager MongoDB instance to perform command injection attacks on the PON Controller container and execute arbitrary commands as root.\r\n\r\nThese vulnerabilities are due to insufficient validation of arguments that are passed to specific configuration commands. An attacker could exploit these vulnerabilities by including crafted input as the argument of an affected configuration command. A successful exploit could allow the attacker to execute arbitrary commands as root on the PON controller.",
+    "published": "2024-09-11T17:15:13.213",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-8686": {
+    "cvss": "-",
+    "description": "A command injection vulnerability in Palo Alto Networks PAN-OS software enables an authenticated administrator to bypass system restrictions and run arbitrary commands as root on the firewall.",
+    "published": "2024-09-11T17:15:14.033",
+    "keywords": "command,bypass"
   }
 }
