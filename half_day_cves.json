@@ -508,5 +508,11 @@
     "description": "A unauthenticated Remote Code Execution (RCE) vulnerability is found in the SO Planning online planning tool. With this vulnerability, an attacker can upload executable files that are moved to a publicly accessible folder before verifying any requirements. This leads to the possibility of execution of code on the underlying system when the file is triggered. The vulnerability has been remediated in version 1.52.02.",
     "published": "2024-09-11T14:15:13.147",
     "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-41868": {
+    "cvss": 5.5,
+    "description": "Audition versions 24.4.1, 23.6.6 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-09-11T16:15:06.140",
+    "keywords": "sensitive,bypass"
   }
 }
