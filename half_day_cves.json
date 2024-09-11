@@ -496,5 +496,17 @@
     "description": "A vulnerability in significant-gravitas/autogpt version 0.5.1 allows an attacker to bypass the shell commands denylist settings. The issue arises when the denylist is configured to block specific commands, such as 'whoami' and '/bin/whoami'. An attacker can circumvent this restriction by executing commands with a modified path, such as '/bin/./whoami', which is not recognized by the denylist.",
     "published": "2024-09-11T13:15:03.440",
     "keywords": "command,bypass"
+  },
+  "CVE-2024-27114": {
+    "cvss": "-",
+    "description": "A unauthenticated Remote Code Execution (RCE) vulnerability is found in the SO Planning online planning tool. If the public view setting is enabled, a attacker can upload a PHP-file that will be available for execution for a few milliseconds before it is removed, leading to execution of code on the underlying system. The vulnerability has been remediated in version 1.52.02.",
+    "published": "2024-09-11T14:15:13.040",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-27115": {
+    "cvss": "-",
+    "description": "A unauthenticated Remote Code Execution (RCE) vulnerability is found in the SO Planning online planning tool. With this vulnerability, an attacker can upload executable files that are moved to a publicly accessible folder before verifying any requirements. This leads to the possibility of execution of code on the underlying system when the file is triggered. The vulnerability has been remediated in version 1.52.02.",
+    "published": "2024-09-11T14:15:13.147",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
