@@ -448,5 +448,11 @@
     "description": "In getRegistration of RemoteProvisioningService.java, there is a possible way to permanently disable the AndroidKeyStore key generation feature by updating the attestation keys of all installed apps due to improper input validation. This could lead to local denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.",
     "published": "2024-09-11T00:15:11.473",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-43690": {
+    "cvss": 8.0,
+    "description": "Inclusion of Functionality from Untrusted Control Sphere(CWE-829) in the Command Centre Server and Workstations may allow an attacker to perform Remote Code Execution (RCE).\n\nThis issue affects: Command Centre Server and Command Centre Workstations\u00a09.10 prior to vEL9.10.1530 (MR2), 9.00 prior to vEL9.00.2168 (MR4), 8.90 prior to vEL8.90.2155 (MR5), 8.80 prior to vEL8.80.1938 (MR6), all versions of 8.70 and prior.",
+    "published": "2024-09-11T05:15:02.843",
+    "keywords": "remote,execution,command"
   }
 }
