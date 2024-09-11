@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-09-11T11:11:12.701533
+Updated at UTC 2024-09-11T12:19:37.092365
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,12 @@ Updated at UTC 2024-09-11T11:11:12.701533
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -272,10 +278,40 @@ Updated at UTC 2024-09-11T11:11:12.701533
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45789">CVE-2024-45789</a></td>
+					<td>-</td>
+					<td>remote,bypass</td>
+					<td class=date>2024-09-11T12:15:02.343</td>
+					<td class=description>This vulnerability exists in Reedos aiM-Star version 2.0.1 due to improper validation of the ‘mode’ parameter in the API endpoint used during the registration process. An authenticated remote attacker could exploit this vulnerability by manipulating parameter in the API request body on the vulnerable application.
+
+Successful exploitation of this vulnerability could allow the attacker to bypass certain constraints in the registration process leading to creation of multiple accounts.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45787">CVE-2024-45787</a></td>
+					<td>-</td>
+					<td>remote,sensitive</td>
+					<td class=date>2024-09-11T12:15:02.123</td>
+					<td class=description>This vulnerability exists in Reedos aiM-Star version 2.0.1 due to transmission of sensitive information in plain text in certain API endpoints. An authenticated remote attacker could exploit this vulnerability by manipulating a parameter through API request URL and intercepting response of the API request leading to exposure of sensitive information belonging to other users.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45786">CVE-2024-45786</a></td>
+					<td>-</td>
+					<td>remote,sensitive</td>
+					<td class=date>2024-09-11T12:15:01.943</td>
+					<td class=description>This vulnerability exists in Reedos aiM-Star version 2.0.1 due to improper access controls on its certain API endpoints. An authenticated remote attacker could exploit this vulnerability by manipulating a parameter through API request URL which could lead to gain unauthorized access to sensitive information belonging to other users.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -998,16 +1034,6 @@ This issue affects: Command Centre Server and Command Centre Workstations 9.10 
 					<td>remote,unauthenticated</td>
 					<td class=date>2024-09-09T03:15:09.723</td>
 					<td class=description>Orca HCM from LEARNING DIGITAL does not properly restrict access to a specific functionality, allowing unauthenticated remote attacker to exploit this functionality to create an account with administrator privilege and subsequently use it to log in.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8574">CVE-2024-8574</a></td>
-					<td>8.8</td>
-					<td>remote,command</td>
-					<td class=date>2024-09-08T11:15:10.430</td>
-					<td class=description>A vulnerability has been found in TOTOLINK AC1200 T8 4.1.5cu.861_B20230220 and classified as critical. This vulnerability affects the function setParentalRules of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument slaveIpList leads to os command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
 				</tr>
 			
 		
