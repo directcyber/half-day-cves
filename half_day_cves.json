@@ -215,6 +215,12 @@
     "published": "2024-09-10T15:15:17.013",
     "keywords": "unauthenticated,bypass"
   },
+  "CVE-2024-45593": {
+    "url": "https://github.com/nixos/nix/commit/eb11c1499876cd4c9c188cbda5b1003b36ce2e59",
+    "cvss": 9.0,
+    "description": "Nix is a package manager for Linux and other Unix systems. A bug in Nix 2.24 prior to 2.24.6 allows a substituter or malicious user to craft a NAR that, when unpacked by Nix, causes Nix to write to arbitrary file system locations to which the Nix process has access. This will be with root permissions when using the Nix daemon. This issue is fixed in Nix 2.24.6.",
+    "published": "2024-09-10T16:15:21.760"
+  },
   "CVE-2024-45595": {
     "cvss": 6.1,
     "description": "D-Tale is a visualizer for Pandas data structures. Users hosting D-Tale publicly can be vulnerable to remote code execution allowing attackers to run malicious code on the server. Users should upgrade to version 3.14.1 where the \"Custom Filter\" input is turned off by default.",
@@ -478,5 +484,17 @@
     "description": "This vulnerability exists in Reedos aiM-Star version 2.0.1 due to improper validation of the \u2018mode\u2019 parameter in the API endpoint used during the registration process. An authenticated remote attacker could exploit this vulnerability by manipulating parameter in the API request body on the vulnerable application.\n\nSuccessful exploitation of this vulnerability could allow the attacker to bypass certain constraints in the registration process leading to creation of multiple accounts.",
     "published": "2024-09-11T12:15:02.343",
     "keywords": "remote,bypass"
+  },
+  "CVE-2024-45790": {
+    "cvss": "-",
+    "description": "This vulnerability exists in Reedos aiM-Star version 2.0.1 due to missing restrictions for excessive failed authentication attempts on its API based login. A remote attacker could exploit this vulnerability by conducting a brute force attack against legitimate user passwords, which could lead to gain unauthorized access and compromise other user accounts.",
+    "published": "2024-09-11T13:15:03.290",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2024-6091": {
+    "cvss": 9.8,
+    "description": "A vulnerability in significant-gravitas/autogpt version 0.5.1 allows an attacker to bypass the shell commands denylist settings. The issue arises when the denylist is configured to block specific commands, such as 'whoami' and '/bin/whoami'. An attacker can circumvent this restriction by executing commands with a modified path, such as '/bin/./whoami', which is not recognized by the denylist.",
+    "published": "2024-09-11T13:15:03.440",
+    "keywords": "command,bypass"
   }
 }

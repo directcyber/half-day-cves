@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-09-11T12:19:37.092365
+Updated at UTC 2024-09-11T13:18:31.593868
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-09-11T12:19:37.092365
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -164,6 +168,18 @@ Updated at UTC 2024-09-11T12:19:37.092365
 		
 			
 		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45593">CVE-2024-45593</a></td>
+					<td>9.0</td>
+					<td><a target=_blank href="https://github.com/nixos/nix/commit/eb11c1499876cd4c9c188cbda5b1003b36ce2e59">https://github.com/nixos/nix/commit/eb11c1499876cd4c9c188cbda5b1003b36ce2e59</a></td>
+					<td class=date>2024-09-10T16:15:21.760</td>
+					<td class=description>Nix is a package manager for Linux and other Unix systems. A bug in Nix 2.24 prior to 2.24.6 allows a substituter or malicious user to craft a NAR that, when unpacked by Nix, causes Nix to write to arbitrary file system locations to which the Nix process has access. This will be with root permissions when using the Nix daemon. This issue is fixed in Nix 2.24.6.</td>
+
+
+				</tr>
 			
 		
 			
@@ -280,6 +296,26 @@ Updated at UTC 2024-09-11T12:19:37.092365
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6091">CVE-2024-6091</a></td>
+					<td>9.8</td>
+					<td>command,bypass</td>
+					<td class=date>2024-09-11T13:15:03.440</td>
+					<td class=description>A vulnerability in significant-gravitas/autogpt version 0.5.1 allows an attacker to bypass the shell commands denylist settings. The issue arises when the denylist is configured to block specific commands, such as 'whoami' and '/bin/whoami'. An attacker can circumvent this restriction by executing commands with a modified path, such as '/bin/./whoami', which is not recognized by the denylist.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45790">CVE-2024-45790</a></td>
+					<td>-</td>
+					<td>remote,authentication</td>
+					<td class=date>2024-09-11T13:15:03.290</td>
+					<td class=description>This vulnerability exists in Reedos aiM-Star version 2.0.1 due to missing restrictions for excessive failed authentication attempts on its API based login. A remote attacker could exploit this vulnerability by conducting a brute force attack against legitimate user passwords, which could lead to gain unauthorized access and compromise other user accounts.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -707,6 +743,8 @@ This issue affects: Command Centre Server and Command Centre Workstations 9.10 
 					<td class=date>2024-09-10T16:15:21.970</td>
 					<td class=description>D-Tale is a visualizer for Pandas data structures. Users hosting D-Tale publicly can be vulnerable to remote code execution allowing attackers to run malicious code on the server. Users should upgrade to version 3.14.1 where the "Custom Filter" input is turned off by default.</td>
 				</tr>
+			
+		
 			
 		
 			
