@@ -1,22 +1,4 @@
 {
-  "CVE-2024-44334": {
-    "cvss": 8.8,
-    "description": "D-Link DI-7003GV2 v24.04.18D1, DI-7100G+V2 v24.04.18D1, DI-7100GV2 v24.04.18D1, DI-7200GV2 v24.04.18E1, DI-7300G+V2 v24.04.18D1, and DI-7400G+V2 v24.04.18D1 are vulnerable to Remote Command Execution due to insufficient parameter filtering in the CGI handling function of upgrade_filter.asp.",
-    "published": "2024-09-09T18:15:03.837",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-44335": {
-    "cvss": 8.8,
-    "description": "D-Link DI-7003G v19.12.24A1, DI-7003GV2 v24.04.18D1, DI-7100G+V2 v24.04.18D1, DI-7100GV2 v24.04.18D1, DI-7200GV2 v24.04.18E1, DI-7300G+V2 v24.04.18D1, and DI-7400G+V2 v24.04.18D1 are vulnerable to Remote Command Execution (RCE) via version_upgrade.asp.",
-    "published": "2024-09-09T18:15:03.893",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-44849": {
-    "cvss": 9.8,
-    "description": "Qualitor up to 8.24 is vulnerable to Remote Code Execution (RCE) via Arbitrary File Upload in checkAcesso.php.",
-    "published": "2024-09-09T18:15:03.957",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-6342": {
     "cvss": 9.8,
     "description": "**UNSUPPORTED WHEN ASSIGNED** A command injection vulnerability in the export-cgi program of Zyxel NAS326 firmware versions through V5.21(AAZF.18)C0 and NAS542 firmware versions through V5.21(ABAG.15)C0 could allow an unauthenticated attacker to execute some operating system (OS) commands by sending a crafted HTTP POST request.",
@@ -651,6 +633,18 @@
     "cvss": 6.8,
     "description": "CVE-2024-45826 IMPACT\nDue to improper input validation, a path traversal and remote code execution vulnerability exists when the ThinManager\u00ae processes a crafted POST request. If exploited, a user can install an executable file.",
     "published": "2024-09-12T15:18:24.287",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-8695": {
+    "cvss": "-",
+    "description": "A remote code execution (RCE) vulnerability via crafted extension description/changelog could be abused by a malicious extension in Docker Desktop before 4.34.2.",
+    "published": "2024-09-12T18:15:11.333",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-8696": {
+    "cvss": "-",
+    "description": "A remote code execution (RCE) vulnerability via crafted extension publisher-url/additional-urls could be abused by a malicious extension in Docker Desktop before 4.34.2.",
+    "published": "2024-09-12T18:15:11.490",
     "keywords": "remote,execution"
   }
 }
