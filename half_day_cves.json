@@ -616,5 +616,17 @@
     "description": "An External XML Entity (XXE) vulnerability in the provisioning web service of Ivanti EPM before 2022 SU6, or the 2024 September update allows a remote unauthenticated attacker to leak API secrets.",
     "published": "2024-09-12T02:15:03.700",
     "keywords": "remote,unauthenticated,leak"
+  },
+  "CVE-2024-8522": {
+    "cvss": 10.0,
+    "description": "The LearnPress \u2013 WordPress LMS Plugin plugin for WordPress is vulnerable to SQL Injection via the 'c_only_fields' parameter of the /wp-json/learnpress/v1/courses REST API endpoint in all versions up to, and including, 4.2.7 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2024-09-12T09:15:05.480",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-8529": {
+    "cvss": 10.0,
+    "description": "The LearnPress \u2013 WordPress LMS Plugin plugin for WordPress is vulnerable to SQL Injection via the 'c_fields' parameter of the /wp-json/lp/v1/courses/archive-course REST API endpoint in all versions up to, and including, 4.2.7 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2024-09-12T09:15:05.720",
+    "keywords": "unauthenticated,sensitive"
   }
 }
