@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-09-12T14:11:42.547069
+Updated at UTC 2024-09-12T15:11:22.648008
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,12 @@ Updated at UTC 2024-09-12T14:11:42.547069
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -229,6 +235,18 @@ Updated at UTC 2024-09-12T14:11:42.547069
 			
 		
 			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43799">CVE-2024-43799</a></td>
+					<td>5.0</td>
+					<td><a target=_blank href="https://github.com/pillarjs/send/commit/ae4f2989491b392ae2ef3b0015a019770ae65d35">https://github.com/pillarjs/send/commit/ae4f2989491b392ae2ef3b0015a019770ae65d35</a></td>
+					<td class=date>2024-09-10T15:15:17.727</td>
+					<td class=description>Send is a library for streaming files from the file system as a http response. Send passes untrusted user input to SendStream.redirect() which executes untrusted code. This issue is patched in send 0.19.0.</td>
+
+
+				</tr>
+			
+		
+			
 		
 			
 		
@@ -338,6 +356,46 @@ Updated at UTC 2024-09-12T14:11:42.547069
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45824">CVE-2024-45824</a></td>
+					<td>9.8</td>
+					<td>remote,execution,unauthenticated,command</td>
+					<td class=date>2024-09-12T14:16:06.953</td>
+					<td class=description>CVE-2024-45824 IMPACT
+
+
+
+A remote
+code vulnerability exists in the affected products. The vulnerability occurs
+when chained with Path Traversal, Command Injection, and XSS Vulnerabilities
+and allows for full unauthenticated remote code execution. The link in the
+mitigations section below contains patches to fix this issue.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28991">CVE-2024-28991</a></td>
+					<td>9.0</td>
+					<td>remote,execution</td>
+					<td class=date>2024-09-12T14:16:06.540</td>
+					<td class=description>SolarWinds Access Rights Manager (ARM) was found to be susceptible to a remote code execution vulnerability. If exploited, this vulnerability would allow an authenticated user to abuse the service, resulting in remote code execution.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-28990">CVE-2024-28990</a></td>
+					<td>6.3</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-09-12T14:16:06.273</td>
+					<td class=description>SolarWinds Access Rights Manager (ARM) was found to contain a hard-coded credential authentication bypass vulnerability. If exploited, this vulnerability would allow access to the RabbitMQ management console.
+
+We thank Trend Micro Zero Day Initiative (ZDI) for its ongoing partnership in coordinating with SolarWinds on responsible disclosure of this and other potential vulnerabilities.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -571,7 +629,7 @@ Note: This vulnerability can be exploited using IPv4 or IPv6.</td>
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-27114">CVE-2024-27114</a></td>
-					<td>-</td>
+					<td>9.8</td>
 					<td>remote,execution,unauthenticated</td>
 					<td class=date>2024-09-11T14:15:13.040</td>
 					<td class=description>A unauthenticated Remote Code Execution (RCE) vulnerability is found in the SO Planning online planning tool. If the public view setting is enabled, a attacker can upload a PHP-file that will be available for execution for a few milliseconds before it is removed, leading to execution of code on the underlying system. The vulnerability has been remediated in version 1.52.02.</td>
@@ -695,7 +753,7 @@ This issue affects: Command Centre Server and Command Centre Workstations 9.10 
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40650">CVE-2024-40650</a></td>
-					<td>-</td>
+					<td>7.8</td>
 					<td>execution,bypass</td>
 					<td class=date>2024-09-11T00:15:11.080</td>
 					<td class=description>In wifi_item_edit_content of styles.xml , there is a possible FRP bypass due to Missing check for FRP state. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
@@ -767,7 +825,7 @@ This issue affects: Command Centre Server and Command Centre Workstations 9.10 
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8504">CVE-2024-8504</a></td>
-					<td>-</td>
+					<td>8.8</td>
 					<td>unauthenticated,command</td>
 					<td class=date>2024-09-10T20:15:05.363</td>
 					<td class=description>An attacker with authenticated access to VICIdial as an "agent" can execute arbitrary shell commands as the "root" user. This attack can be chained with CVE-2024-8503 to execute arbitrary shell commands starting from an unauthenticated perspective.</td>
@@ -1024,6 +1082,8 @@ This issue affects: Command Centre Server and Command Centre Workstations 9.10 
 					<td class=date>2024-09-10T16:15:21.970</td>
 					<td class=description>D-Tale is a visualizer for Pandas data structures. Users hosting D-Tale publicly can be vulnerable to remote code execution allowing attackers to run malicious code on the server. Users should upgrade to version 3.14.1 where the "Custom Filter" input is turned off by default.</td>
 				</tr>
+			
+		
 			
 		
 			

@@ -203,6 +203,12 @@
     "published": "2024-09-10T15:15:17.013",
     "keywords": "unauthenticated,bypass"
   },
+  "CVE-2024-43799": {
+    "url": "https://github.com/pillarjs/send/commit/ae4f2989491b392ae2ef3b0015a019770ae65d35",
+    "cvss": 5.0,
+    "description": "Send is a library for streaming files from the file system as a http response. Send passes untrusted user input to SendStream.redirect() which executes untrusted code. This issue is patched in send 0.19.0.",
+    "published": "2024-09-10T15:15:17.727"
+  },
   "CVE-2024-45593": {
     "url": "https://github.com/nixos/nix/commit/eb11c1499876cd4c9c188cbda5b1003b36ce2e59",
     "cvss": 9.0,
@@ -366,7 +372,7 @@
     "keywords": "unauthenticated,authentication"
   },
   "CVE-2024-8504": {
-    "cvss": "-",
+    "cvss": 8.8,
     "description": "An attacker with authenticated access to VICIdial as an \"agent\" can execute arbitrary shell commands as the \"root\" user. This attack can be chained with CVE-2024-8503 to execute arbitrary shell commands starting from an unauthenticated perspective.",
     "published": "2024-09-10T20:15:05.363",
     "keywords": "unauthenticated,command"
@@ -414,7 +420,7 @@
     "published": "2024-09-10T22:15:01.967"
   },
   "CVE-2024-40650": {
-    "cvss": "-",
+    "cvss": 7.8,
     "description": "In wifi_item_edit_content of styles.xml , there is a possible FRP bypass due to Missing check for FRP state. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
     "published": "2024-09-11T00:15:11.080",
     "keywords": "execution,bypass"
@@ -486,7 +492,7 @@
     "keywords": "command,bypass"
   },
   "CVE-2024-27114": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "A unauthenticated Remote Code Execution (RCE) vulnerability is found in the SO Planning online planning tool. If the public view setting is enabled, a attacker can upload a PHP-file that will be available for execution for a few milliseconds before it is removed, leading to execution of code on the underlying system. The vulnerability has been remediated in version 1.52.02.",
     "published": "2024-09-11T14:15:13.040",
     "keywords": "remote,execution,unauthenticated"
@@ -622,5 +628,23 @@
     "description": "The LearnPress \u2013 WordPress LMS Plugin plugin for WordPress is vulnerable to SQL Injection via the 'c_fields' parameter of the /wp-json/lp/v1/courses/archive-course REST API endpoint in all versions up to, and including, 4.2.7 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
     "published": "2024-09-12T09:15:05.720",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-28990": {
+    "cvss": 6.3,
+    "description": "SolarWinds Access Rights Manager (ARM) was found to contain a hard-coded credential authentication bypass vulnerability. If exploited, this vulnerability would allow access to the RabbitMQ management console.\n\nWe thank Trend Micro Zero Day Initiative (ZDI) for its ongoing partnership in coordinating with SolarWinds on responsible disclosure of this and other potential vulnerabilities.",
+    "published": "2024-09-12T14:16:06.273",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-28991": {
+    "cvss": 9.0,
+    "description": "SolarWinds Access Rights Manager (ARM) was found to be susceptible to a remote code execution vulnerability. If exploited, this vulnerability would allow an authenticated user to abuse the service, resulting in remote code execution.",
+    "published": "2024-09-12T14:16:06.540",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-45824": {
+    "cvss": 9.8,
+    "description": "CVE-2024-45824 IMPACT\n\n\n\nA remote\ncode vulnerability exists in the affected products. The vulnerability occurs\nwhen chained with Path Traversal, Command Injection, and XSS Vulnerabilities\nand allows for full unauthenticated remote code execution. The link in the\nmitigations section below contains patches to fix this issue.",
+    "published": "2024-09-12T14:16:06.953",
+    "keywords": "remote,execution,unauthenticated,command"
   }
 }
