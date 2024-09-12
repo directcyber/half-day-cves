@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-09-12T15:11:22.648008
+Updated at UTC 2024-09-12T16:12:49.118032
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,34 @@ Updated at UTC 2024-09-12T15:11:22.648008
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-42484">CVE-2024-42484</a></td>
+					<td>6.5</td>
+					<td><a target=_blank href="https://github.com/espressif/esp-now/commit/b03a1b4593713fa4bf0038a87edca01f10114a7a">https://github.com/espressif/esp-now/commit/b03a1b4593713fa4bf0038a87edca01f10114a7a</a></td>
+					<td class=date>2024-09-12T15:18:22.320</td>
+					<td class=description>ESP-NOW Component provides a connectionless Wi-Fi communication protocol. An Out-of-Bound (OOB) vulnerability was discovered in the implementation of the ESP-NOW group type message because there is no check for the addrs_num field of the group type message. This can result in memory corruption related attacks. Normally there are two fields in the group information that need to be checked, i.e., the addrs_num field and the addrs_list fileld. Since we only checked the addrs_list field, an attacker can send a group type message with an invalid addrs_num field, which will cause the message handled by the firmware to be much larger than the current buffer, thus causing a memory corruption issue that goes beyond the payload length.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-42483">CVE-2024-42483</a></td>
+					<td>6.5</td>
+					<td><a target=_blank href="https://github.com/espressif/esp-now/commit/4e30db50d541b2909d278ef0db05de1a3d7190ef">https://github.com/espressif/esp-now/commit/4e30db50d541b2909d278ef0db05de1a3d7190ef</a></td>
+					<td class=date>2024-09-12T15:18:22.093</td>
+					<td class=description>ESP-NOW Component provides a connectionless Wi-Fi communication protocol. An replay attacks vulnerability was discovered in the implementation of the ESP-NOW because the caches is not differentiated by message types, it is a single, shared resource for all kinds of messages, whether they are broadcast or unicast, and regardless of whether they are ciphertext or plaintext. This can result an attacker to clear the cache of its legitimate entries, there by creating an opportunity to re-inject previously captured packets. This vulnerability is fixed in 2.5.2.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -356,6 +384,39 @@ Updated at UTC 2024-09-12T15:11:22.648008
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45826">CVE-2024-45826</a></td>
+					<td>6.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-09-12T15:18:24.287</td>
+					<td class=description>CVE-2024-45826 IMPACT
+Due to improper input validation, a path traversal and remote code execution vulnerability exists when the ThinManager® processes a crafted POST request. If exploited, a user can install an executable file.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45823">CVE-2024-45823</a></td>
+					<td>8.1</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-09-12T15:18:22.547</td>
+					<td class=description>CVE-2024-45823 IMPACT
+
+
+
+An
+authentication bypass vulnerability exists in the affected product. The
+vulnerability exists due to shared secrets across accounts and could allow a threat
+actor to impersonate a user if the threat actor is able to enumerate additional
+information required during authentication.</td>
+				</tr>
+			
+		
+			
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
