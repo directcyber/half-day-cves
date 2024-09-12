@@ -1,16 +1,4 @@
 {
-  "CVE-2024-44720": {
-    "url": "https://github.com/seacms-net/cms/issues/22",
-    "cvss": 7.5,
-    "description": "SeaCMS v13.1 was discovered to an arbitrary file read vulnerability via the component admin_safe.php.",
-    "published": "2024-09-09T16:15:02.780"
-  },
-  "CVE-2024-44721": {
-    "url": "https://github.com/seacms-net/cms/issues/23",
-    "cvss": 9.8,
-    "description": "SeaCMS v13.1 was discovered to a Server-Side Request Forgery (SSRF) via the url parameter at /admin_reslib.php.",
-    "published": "2024-09-09T16:15:02.853"
-  },
   "CVE-2024-44333": {
     "cvss": 8.8,
     "description": "D-Link DI-7003GV2 v24.04.18D1, DI-7100G+V2 v24.04.18D1, DI-7100GV2 v24.04.18D1, DI-7200GV2 v24.04.18E1, DI-7300G+V2 v24.04.18D1, and DI-7400G+V2 v24.04.18D1 are vulnerable to Remote Command Execution. An attacker can achieve arbitrary command execution by sending a carefully crafted malicious string to the CGI function responsible for handling usb_paswd.asp.",
@@ -540,7 +528,7 @@
     "keywords": "command,bypass"
   },
   "CVE-2024-42760": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "SQL Injection vulnerability in Ellevo v.6.2.0.38160 allows a remote attacker to obtain sensitive information via the /api/mob/instrucao/conta/destinatarios component.",
     "published": "2024-09-11T19:15:14.983",
     "keywords": "remote,sensitive"
