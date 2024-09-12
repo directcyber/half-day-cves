@@ -354,7 +354,7 @@
     "keywords": "remote,execution,command"
   },
   "CVE-2024-8191": {
-    "cvss": 7.8,
+    "cvss": 9.8,
     "description": "SQL injection in the management console of Ivanti EPM before 2022 SU6, or the 2024 September update allows a remote unauthenticated attacker to achieve remote code execution.",
     "published": "2024-09-10T21:15:14.880",
     "keywords": "remote,execution,unauthenticated"
@@ -366,13 +366,13 @@
     "keywords": "remote,unauthenticated,authentication"
   },
   "CVE-2024-8321": {
-    "cvss": 5.8,
+    "cvss": 8.6,
     "description": "Missing authentication in Network Isolation of Ivanti EPM before 2022 SU6, or the 2024 September update allows a remote unauthenticated attacker to isolate managed devices from the network.",
     "published": "2024-09-10T21:15:15.247",
     "keywords": "remote,unauthenticated,authentication"
   },
   "CVE-2024-8322": {
-    "cvss": 4.3,
+    "cvss": 8.8,
     "description": "Weak authentication in Patch Management of Ivanti EPM before 2022 SU6, or the 2024 September update allows a remote authenticated attacker to access restricted functionality.",
     "published": "2024-09-10T21:15:15.427",
     "keywords": "remote,authentication"
@@ -658,5 +658,11 @@
     "description": "An issue was discovered with pipeline execution policies in GitLab EE affecting all versions from 17.2 prior to 17.2.5, 17.3 prior to 17.3.2 which allows authenticated users to bypass variable overwrite protection via inclusion of a CI/CD template.",
     "published": "2024-09-12T19:15:04.683",
     "keywords": "execution,bypass"
+  },
+  "CVE-2024-7961": {
+    "cvss": "-",
+    "description": "A path traversal vulnerability exists in the Rockwell Automation affected product.  If exploited, the threat actor could upload arbitrary files to the server that could result in a remote code execution.",
+    "published": "2024-09-12T21:15:03.357",
+    "keywords": "remote,execution"
   }
 }
