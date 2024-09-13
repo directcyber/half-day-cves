@@ -1,10 +1,4 @@
 {
-  "CVE-2024-45597": {
-    "url": "https://github.com/plutolang/pluto/pull/945",
-    "cvss": 5.3,
-    "description": "Pluto is a superset of Lua 5.4 with a focus on general-purpose programming. Scripts passing user-controlled values to http.request header values are affected. An attacker could use this to send arbitrary requests, potentially leveraging authentication tokens provided in the same headers table.",
-    "published": "2024-09-10T22:15:01.967"
-  },
   "CVE-2024-40650": {
     "cvss": 7.8,
     "description": "In wifi_item_edit_content of styles.xml , there is a possible FRP bypass due to Missing check for FRP state. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
