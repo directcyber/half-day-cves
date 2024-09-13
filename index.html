@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-09-13T17:09:32.750276
+Updated at UTC 2024-09-13T18:14:33.234350
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-09-13T17:09:32.750276
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -226,66 +228,18 @@ Updated at UTC 2024-09-13T17:09:32.750276
 		
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-44893">CVE-2024-44893</a></td>
-					<td>9.8</td>
-					<td><a target=_blank href="https://github.com/jeecgboot/jimureport/issues/2904">https://github.com/jeecgboot/jimureport/issues/2904</a></td>
-					<td class=date>2024-09-10T17:15:37.597</td>
-					<td class=description>An issue in the component /jeecg-boot/jmreport/dict/list of JimuReport v1.7.8 allows attacker to escalate privileges via a crafted GET request.</td>
-
-
-				</tr>
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45368">CVE-2024-45368</a></td>
+					<td>8.8</td>
+					<td>execution,authentication</td>
+					<td class=date>2024-09-13T17:15:12.800</td>
+					<td class=description>The H2-DM1E PLC's authentication protocol appears to utilize either a custom encoding scheme or a challenge-response protocol. However, there's an observed anomaly in the H2-DM1E PLC's protocol execution, namely its acceptance of multiple distinct packets as valid authentication responses. This behavior deviates from standard security practices where a single, specific response or encoding pattern is expected for successful authentication.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -924,238 +878,6 @@ This issue affects: Command Centre Server and Command Centre Workstations 9.10 
 					<td>unauthenticated,authentication</td>
 					<td class=date>2024-09-10T19:15:22.303</td>
 					<td class=description>Directus is a real-time API and App dashboard for managing SQL database content. An unauthenticated user can access credentials of last authenticated user via OpenID or OAuth2 where the authentication URL did not include redirect query string. This happens because on that endpoint for both OpenId and Oauth2 Directus is using the respond middleware, which by default will try to cache GET requests that met some conditions. Although, those conditions do not include this scenario, when an unauthenticated request returns user credentials. This vulnerability is fixed in 10.13.3 and 11.1.0.</td>
-				</tr>
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-44667">CVE-2024-44667</a></td>
-					<td>8.0</td>
-					<td>unauthenticated,command</td>
-					<td class=date>2024-09-10T17:15:37.030</td>
-					<td class=description>Shenzhen Haichangxing Technology Co., Ltd HCX H822 4G LTE Router M7628NNxISPxUIv2_v1.0.1557.15.35_P0 is vulnerable to Incorrect Access Control. Unauthenticated factory mode reset and command injection leads to information exposure and root shell access.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43495">CVE-2024-43495</a></td>
-					<td>7.3</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-10T17:15:36.837</td>
-					<td class=description>Windows libarchive Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43479">CVE-2024-43479</a></td>
-					<td>8.5</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-10T17:15:35.830</td>
-					<td class=description>Microsoft Power Automate Desktop Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43469">CVE-2024-43469</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-10T17:15:34.760</td>
-					<td class=description>Azure CycleCloud Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43467">CVE-2024-43467</a></td>
-					<td>7.5</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-10T17:15:34.540</td>
-					<td class=description>Windows Remote Desktop Licensing Service Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43464">CVE-2024-43464</a></td>
-					<td>7.2</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-10T17:15:33.813</td>
-					<td class=description>Microsoft SharePoint Server Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43463">CVE-2024-43463</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-10T17:15:33.627</td>
-					<td class=description>Microsoft Office Visio Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43454">CVE-2024-43454</a></td>
-					<td>7.1</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-10T17:15:32.583</td>
-					<td class=description>Windows Remote Desktop Licensing Service Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38263">CVE-2024-38263</a></td>
-					<td>7.5</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-10T17:15:32.383</td>
-					<td class=description>Windows Remote Desktop Licensing Service Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38260">CVE-2024-38260</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-10T17:15:32.183</td>
-					<td class=description>Windows Remote Desktop Licensing Service Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38259">CVE-2024-38259</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-10T17:15:31.990</td>
-					<td class=description>Microsoft Management Console Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38228">CVE-2024-38228</a></td>
-					<td>7.2</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-10T17:15:25.710</td>
-					<td class=description>Microsoft SharePoint Server Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38227">CVE-2024-38227</a></td>
-					<td>7.2</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-10T17:15:25.483</td>
-					<td class=description>Microsoft SharePoint Server Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38119">CVE-2024-38119</a></td>
-					<td>7.5</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-10T17:15:23.737</td>
-					<td class=description>Windows Network Address Translation (NAT) Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38045">CVE-2024-38045</a></td>
-					<td>8.1</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-10T17:15:21.433</td>
-					<td class=description>Windows TCP/IP Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38018">CVE-2024-38018</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-10T17:15:20.660</td>
-					<td class=description>Microsoft SharePoint Server Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37340">CVE-2024-37340</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-10T17:15:18.417</td>
-					<td class=description>Microsoft SQL Server Native Scoring Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37339">CVE-2024-37339</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-10T17:15:18.207</td>
-					<td class=description>Microsoft SQL Server Native Scoring Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37338">CVE-2024-37338</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-10T17:15:18.017</td>
-					<td class=description>Microsoft SQL Server Native Scoring Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37335">CVE-2024-37335</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-10T17:15:17.603</td>
-					<td class=description>Microsoft SQL Server Native Scoring Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-26191">CVE-2024-26191</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-10T17:15:16.223</td>
-					<td class=description>Microsoft SQL Server Native Scoring Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-26186">CVE-2024-26186</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-10T17:15:16.010</td>
-					<td class=description>Microsoft SQL Server Native Scoring Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-21416">CVE-2024-21416</a></td>
-					<td>8.1</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-10T17:15:15.677</td>
-					<td class=description>Windows TCP/IP Remote Code Execution Vulnerability</td>
 				</tr>
 			
 		
