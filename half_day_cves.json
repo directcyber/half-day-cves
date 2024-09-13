@@ -1,16 +1,4 @@
 {
-  "CVE-2024-45593": {
-    "url": "https://github.com/nixos/nix/commit/eb11c1499876cd4c9c188cbda5b1003b36ce2e59",
-    "cvss": 9.0,
-    "description": "Nix is a package manager for Linux and other Unix systems. A bug in Nix 2.24 prior to 2.24.6 allows a substituter or malicious user to craft a NAR that, when unpacked by Nix, causes Nix to write to arbitrary file system locations to which the Nix process has access. This will be with root permissions when using the Nix daemon. This issue is fixed in Nix 2.24.6.",
-    "published": "2024-09-10T16:15:21.760"
-  },
-  "CVE-2024-45595": {
-    "cvss": 6.1,
-    "description": "D-Tale is a visualizer for Pandas data structures. Users hosting D-Tale publicly can be vulnerable to remote code execution allowing attackers to run malicious code on the server. Users should upgrade to version 3.14.1 where the \"Custom Filter\" input is turned off by default.",
-    "published": "2024-09-10T16:15:21.970",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-21416": {
     "cvss": 8.1,
     "description": "Windows TCP/IP Remote Code Execution Vulnerability",
