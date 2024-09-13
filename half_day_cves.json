@@ -1,34 +1,4 @@
 {
-  "CVE-2024-31489": {
-    "cvss": 6.8,
-    "description": "AAn improper certificate validation vulnerability [CWE-295] in FortiClientWindows 7.2.0 through 7.2.2, 7.0.0 through 7.0.11,  FortiClientLinux 7.2.0, 7.0.0 through 7.0.11 and FortiClientMac 7.0.0 through 7.0.11, 7.2.0 through 7.2.4 may allow a remote and unauthenticated attacker to perform a Man-in-the-Middle attack on the communication channel between the FortiGate and the FortiClient during the ZTNA tunnel creation",
-    "published": "2024-09-10T15:15:15.787",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-33508": {
-    "cvss": 7.3,
-    "description": "An improper neutralization of special elements used in a command\u00a0('Command Injection') vulnerability [CWE-77] in Fortinet FortiClientEMS 7.2.0 through 7.2.4, 7.0.0 through 7.0.12 may allow an unauthenticated attacker to execute limited and temporary operations on the underlying database via crafted requests.",
-    "published": "2024-09-10T15:15:16.187",
-    "keywords": "unauthenticated,command"
-  },
-  "CVE-2024-35282": {
-    "cvss": 4.2,
-    "description": "A cleartext storage of sensitive information in memory vulnerability [CWE-316] affecting FortiClient VPN iOS 7.2 all versions, 7.0 all versions, 6.4 all versions, 6.2 all versions, 6.0 all versions may allow an unauthenticated attacker that has physical access to a jailbroken device to obtain cleartext passwords via keychain dump.",
-    "published": "2024-09-10T15:15:16.397",
-    "keywords": "unauthenticated,sensitive,vpn"
-  },
-  "CVE-2024-42423": {
-    "cvss": 6.1,
-    "description": "Citrix Workspace App version 23.9.0.24.4 on Dell ThinOS 2311 contains an Incorrect Authorization vulnerability when Citrix CEB is enabled for WebLogin. A local unauthenticated user with low privileges may potentially exploit this vulnerability to bypass existing controls and perform unauthorized actions leading to information disclosure and tampering.",
-    "published": "2024-09-10T15:15:17.013",
-    "keywords": "unauthenticated,bypass"
-  },
-  "CVE-2024-43799": {
-    "url": "https://github.com/pillarjs/send/commit/ae4f2989491b392ae2ef3b0015a019770ae65d35",
-    "cvss": 5.0,
-    "description": "Send is a library for streaming files from the file system as a http response. Send passes untrusted user input to SendStream.redirect() which executes untrusted code. This issue is patched in send 0.19.0.",
-    "published": "2024-09-10T15:15:17.727"
-  },
   "CVE-2024-45593": {
     "url": "https://github.com/nixos/nix/commit/eb11c1499876cd4c9c188cbda5b1003b36ce2e59",
     "cvss": 9.0,
@@ -492,13 +462,13 @@
     "keywords": "remote,execution"
   },
   "CVE-2024-8695": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "A remote code execution (RCE) vulnerability via crafted extension description/changelog could be abused by a malicious extension in Docker Desktop before 4.34.2.",
     "published": "2024-09-12T18:15:11.333",
     "keywords": "remote,execution"
   },
   "CVE-2024-8696": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "A remote code execution (RCE) vulnerability via crafted extension publisher-url/additional-urls could be abused by a malicious extension in Docker Desktop before 4.34.2.",
     "published": "2024-09-12T18:15:11.490",
     "keywords": "remote,execution"
@@ -562,5 +532,11 @@
     "description": "Illustrator versions 28.6, 27.9.5 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
     "published": "2024-09-13T09:15:13.263",
     "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-8242": {
+    "cvss": 4.3,
+    "description": "The MStore API \u2013 Create Native Android & iOS Apps On The Cloud plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the update_user_profile() function in all versions up to, and including, 4.15.3. This makes it possible for authenticated attackers, with subscriber-level access and above, to upload arbitrary files (not including PHP files) on the affected site's server which may make remote code execution possible. This can be paired with a registration endpoint for unauthenticated users to exploit the issue.",
+    "published": "2024-09-13T15:15:16.767",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
