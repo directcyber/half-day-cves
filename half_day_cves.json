@@ -1,34 +1,4 @@
 {
-  "CVE-2024-39581": {
-    "cvss": 7.3,
-    "description": "Dell PowerScale InsightIQ, versions 5.0 through 5.1, contains a File or Directories Accessible to External Parties vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability to read, modify, and delete arbitrary files.",
-    "published": "2024-09-10T09:15:02.993",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-39583": {
-    "cvss": 8.1,
-    "description": "Dell PowerScale InsightIQ, versions 5.0 through 5.1, contains a Use of a Broken or Risky Cryptographic Algorithm vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Elevation of privileges.",
-    "published": "2024-09-10T09:15:03.513",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-43385": {
-    "cvss": 8.8,
-    "description": "A low privileged remote attacker can trigger the\u00a0execution of arbitrary OS commands as root due to improper neutralization of special elements in\u00a0the variable PROXY_HTTP_PORT in\u00a0mGuard devices.",
-    "published": "2024-09-10T09:15:04.150",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-43386": {
-    "cvss": 8.8,
-    "description": "A low privileged remote attacker can trigger the execution of arbitrary OS commands as root due to improper neutralization of special elements in the variable EMAIL_NOTIFICATION.TO in\u00a0mGuard devices.",
-    "published": "2024-09-10T09:15:04.400",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-7699": {
-    "cvss": 8.8,
-    "description": "An low privileged remote attacker can execute OS commands with root privileges due to improper neutralization of special elements in user data.",
-    "published": "2024-09-10T09:15:07.180",
-    "keywords": "remote,command"
-  },
   "CVE-2024-32006": {
     "cvss": 4.3,
     "description": "A vulnerability has been identified in SINEMA Remote Connect Client (All versions < V3.2 SP2). The affected application does not expire the user session on reboot without logout. This could allow an attacker to bypass Multi-Factor Authentication.",
@@ -645,6 +615,24 @@
     "cvss": 5.5,
     "description": "Media Encoder versions 24.5, 23.6.8 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
     "published": "2024-09-13T07:15:04.790",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-39382": {
+    "cvss": 5.5,
+    "description": "After Effects versions 23.6.6, 24.5 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-09-13T09:15:05.770",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-39385": {
+    "cvss": 5.5,
+    "description": "Premiere Pro versions 24.5, 23.6.8 and earlier are affected by a Use After Free vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-09-13T09:15:07.470",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-45111": {
+    "cvss": 5.5,
+    "description": "Illustrator versions 28.6, 27.9.5 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-09-13T09:15:13.263",
     "keywords": "sensitive,bypass"
   }
 }
