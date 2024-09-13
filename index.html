@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-09-13T19:08:48.429916
+Updated at UTC 2024-09-13T20:11:21.593607
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -212,8 +212,6 @@ Updated at UTC 2024-09-13T19:08:48.429916
 
 
 				</tr>
-			
-		
 			
 		
 			
@@ -880,16 +878,6 @@ This issue affects: Command Centre Server and Command Centre Workstations 9.10 
 					<td>unauthenticated,command</td>
 					<td class=date>2024-09-10T20:15:05.363</td>
 					<td class=description>An attacker with authenticated access to VICIdial as an "agent" can execute arbitrary shell commands as the "root" user. This attack can be chained with CVE-2024-8503 to execute arbitrary shell commands starting from an unauthenticated perspective.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45596">CVE-2024-45596</a></td>
-					<td>7.4</td>
-					<td>unauthenticated,authentication</td>
-					<td class=date>2024-09-10T19:15:22.303</td>
-					<td class=description>Directus is a real-time API and App dashboard for managing SQL database content. An unauthenticated user can access credentials of last authenticated user via OpenID or OAuth2 where the authentication URL did not include redirect query string. This happens because on that endpoint for both OpenId and Oauth2 Directus is using the respond middleware, which by default will try to cache GET requests that met some conditions. Although, those conditions do not include this scenario, when an unauthenticated request returns user credentials. This vulnerability is fixed in 10.13.3 and 11.1.0.</td>
 				</tr>
 			
 		
