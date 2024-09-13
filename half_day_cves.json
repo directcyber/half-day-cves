@@ -1,10 +1,4 @@
 {
-  "CVE-2024-8504": {
-    "cvss": 8.8,
-    "description": "An attacker with authenticated access to VICIdial as an \"agent\" can execute arbitrary shell commands as the \"root\" user. This attack can be chained with CVE-2024-8503 to execute arbitrary shell commands starting from an unauthenticated perspective.",
-    "published": "2024-09-10T20:15:05.363",
-    "keywords": "unauthenticated,command"
-  },
   "CVE-2024-8012": {
     "cvss": 7.8,
     "description": "An authentication bypass weakness in the message broker service of Ivanti Workspace Control version 10.18.0.0 and below allows a local authenticated attacker to escalate their privileges.",
@@ -384,7 +378,7 @@
     "keywords": "execution,authentication"
   },
   "CVE-2024-39924": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "An issue was discovered in Vaultwarden (formerly Bitwarden_RS) 1.30.3. A vulnerability has been identified in the authentication and authorization process of the endpoint responsible for altering the metadata of an emergency access. It permits an attacker with granted emergency access to escalate their privileges by changing the access level and modifying the wait time. Consequently, the attacker can gain full control over the vault (when only intended to have read access) while bypassing the necessary wait period.",
     "published": "2024-09-13T18:15:03.810",
     "keywords": "authentication,bypass"
