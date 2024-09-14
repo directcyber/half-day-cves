@@ -1,10 +1,4 @@
 {
-  "CVE-2024-41868": {
-    "cvss": 5.5,
-    "description": "Audition versions 24.4.1, 23.6.6 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-09-11T16:15:06.140",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2024-20304": {
     "cvss": 8.6,
     "description": "A vulnerability in the multicast traceroute version 2 (Mtrace2) feature of Cisco IOS XR Software could allow an unauthenticated, remote attacker to exhaust the UDP packet memory of an affected device.\r\n\r\nThis vulnerability exists because the Mtrace2 code does not properly handle packet memory. An attacker could exploit this vulnerability by sending crafted packets to an affected device. A successful exploit could allow the attacker to exhaust the incoming UDP packet memory. The affected device would not be able to process higher-level UDP-based protocols packets, possibly causing a denial of service (DoS) condition.\r\nNote: This vulnerability can be exploited using IPv4 or IPv6.",
