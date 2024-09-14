@@ -1,16 +1,4 @@
 {
-  "CVE-2024-27114": {
-    "cvss": 9.8,
-    "description": "A unauthenticated Remote Code Execution (RCE) vulnerability is found in the SO Planning online planning tool. If the public view setting is enabled, a attacker can upload a PHP-file that will be available for execution for a few milliseconds before it is removed, leading to execution of code on the underlying system. The vulnerability has been remediated in version 1.52.02.",
-    "published": "2024-09-11T14:15:13.040",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-27115": {
-    "cvss": "-",
-    "description": "A unauthenticated Remote Code Execution (RCE) vulnerability is found in the SO Planning online planning tool. With this vulnerability, an attacker can upload executable files that are moved to a publicly accessible folder before verifying any requirements. This leads to the possibility of execution of code on the underlying system when the file is triggered. The vulnerability has been remediated in version 1.52.02.",
-    "published": "2024-09-11T14:15:13.147",
-    "keywords": "remote,execution,unauthenticated"
-  },
   "CVE-2024-41868": {
     "cvss": 5.5,
     "description": "Audition versions 24.4.1, 23.6.6 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
