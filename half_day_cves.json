@@ -1,10 +1,4 @@
 {
-  "CVE-2024-43690": {
-    "cvss": 8.0,
-    "description": "Inclusion of Functionality from Untrusted Control Sphere(CWE-829) in the Command Centre Server and Workstations may allow an attacker to perform Remote Code Execution (RCE).\n\nThis issue affects: Command Centre Server and Command Centre Workstations\u00a09.10 prior to vEL9.10.1530 (MR2), 9.00 prior to vEL9.00.2168 (MR4), 8.90 prior to vEL8.90.2155 (MR5), 8.80 prior to vEL8.80.1938 (MR6), all versions of 8.70 and prior.",
-    "published": "2024-09-11T05:15:02.843",
-    "keywords": "remote,execution,command"
-  },
   "CVE-2024-7626": {
     "cvss": 8.1,
     "description": "The WP Delicious \u2013 Recipe Plugin for Food Bloggers (formerly Delicious Recipes) plugin for WordPress is vulnerable to arbitrary file movement and reading due to insufficient file path validation in the save_edit_profile_details() function in all versions up to, and including, 1.6.9. This makes it possible for authenticated attackers, with subscriber-level access and above, to move arbitrary files on the server, which can easily lead to remote code execution when the right file is moved (such as wp-config.php). This can also lead to the reading of arbitrary files that may contain sensitive information like wp-config.php.",
