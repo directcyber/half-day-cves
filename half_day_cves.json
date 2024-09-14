@@ -316,5 +316,17 @@
     "description": "An issue was discovered in Vaultwarden (formerly Bitwarden_RS) 1.30.3. A vulnerability has been identified in the authentication and authorization process of the endpoint responsible for altering the metadata of an emergency access. It permits an attacker with granted emergency access to escalate their privileges by changing the access level and modifying the wait time. Consequently, the attacker can gain full control over the vault (when only intended to have read access) while bypassing the necessary wait period.",
     "published": "2024-09-13T18:15:03.810",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-8271": {
+    "cvss": 7.3,
+    "description": "The The FOX \u2013 Currency Switcher Professional for WooCommerce plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 1.4.2.1. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode in the 'woocs_get_custom_price_html' function. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+    "published": "2024-09-14T03:15:08.730",
+    "keywords": "execution,unauthenticated"
+  },
+  "CVE-2024-8775": {
+    "cvss": 5.5,
+    "description": "A flaw was found in Ansible, where sensitive information stored in Ansible Vault files can be exposed in plaintext during the execution of a playbook. This occurs when using tasks such as include_vars to load vaulted variables without setting the no_log: true parameter, resulting in sensitive data being printed in the playbook output or logs. This can lead to the unintentional disclosure of secrets like passwords or API keys, compromising security and potentially allowing unauthorized access or actions.",
+    "published": "2024-09-14T03:15:08.987",
+    "keywords": "execution,sensitive"
   }
 }
