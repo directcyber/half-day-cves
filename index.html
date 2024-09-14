@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-09-14T08:13:25.522588
+Updated at UTC 2024-09-14T09:10:28.938044
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -130,8 +130,6 @@ Updated at UTC 2024-09-14T08:13:25.522588
 
 
 				</tr>
-			
-		
 			
 		
 			
@@ -744,16 +742,6 @@ Successful exploitation of this vulnerability could allow the attacker to bypass
 					<td>unauthenticated,authentication,bypass</td>
 					<td class=date>2024-09-11T09:15:02.680</td>
 					<td class=description>The WooCommerce Photo Reviews Premium plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 1.3.13.2. This is due to the plugin not properly validating what user transient is being used in the login() function and not properly verifying the user's identity. This makes it possible for unauthenticated attackers to log in as user that has dismissed an admin notice in the past 30 days, which is often an administrator. Alternatively, a user can log in as any user with any transient that has a valid user_id as the value, though it would be more difficult to exploit this successfully.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7626">CVE-2024-7626</a></td>
-					<td>8.1</td>
-					<td>remote,execution,sensitive</td>
-					<td class=date>2024-09-11T08:15:01.950</td>
-					<td class=description>The WP Delicious – Recipe Plugin for Food Bloggers (formerly Delicious Recipes) plugin for WordPress is vulnerable to arbitrary file movement and reading due to insufficient file path validation in the save_edit_profile_details() function in all versions up to, and including, 1.6.9. This makes it possible for authenticated attackers, with subscriber-level access and above, to move arbitrary files on the server, which can easily lead to remote code execution when the right file is moved (such as wp-config.php). This can also lead to the reading of arbitrary files that may contain sensitive information like wp-config.php.</td>
 				</tr>
 			
 		
