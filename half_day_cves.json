@@ -1,22 +1,4 @@
 {
-  "CVE-2024-45786": {
-    "cvss": "-",
-    "description": "This vulnerability exists in Reedos aiM-Star version 2.0.1 due to improper access controls on its certain API endpoints. An authenticated remote attacker could exploit this vulnerability by manipulating a parameter through API request URL which could lead to gain unauthorized access to sensitive information belonging to other users.",
-    "published": "2024-09-11T12:15:01.943",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-45787": {
-    "cvss": "-",
-    "description": "This vulnerability exists in Reedos aiM-Star version 2.0.1 due to transmission of sensitive information in plain text in certain API endpoints. An authenticated remote attacker could exploit this vulnerability by manipulating a parameter through API request URL and intercepting response of the API request leading to exposure of sensitive information belonging to other users.",
-    "published": "2024-09-11T12:15:02.123",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-45789": {
-    "cvss": "-",
-    "description": "This vulnerability exists in Reedos aiM-Star version 2.0.1 due to improper validation of the \u2018mode\u2019 parameter in the API endpoint used during the registration process. An authenticated remote attacker could exploit this vulnerability by manipulating parameter in the API request body on the vulnerable application.\n\nSuccessful exploitation of this vulnerability could allow the attacker to bypass certain constraints in the registration process leading to creation of multiple accounts.",
-    "published": "2024-09-11T12:15:02.343",
-    "keywords": "remote,bypass"
-  },
   "CVE-2024-45790": {
     "cvss": "-",
     "description": "This vulnerability exists in Reedos aiM-Star version 2.0.1 due to missing restrictions for excessive failed authentication attempts on its API based login. A remote attacker could exploit this vulnerability by conducting a brute force attack against legitimate user passwords, which could lead to gain unauthorized access and compromise other user accounts.",
