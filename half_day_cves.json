@@ -1,16 +1,4 @@
 {
-  "CVE-2024-8522": {
-    "cvss": 10.0,
-    "description": "The LearnPress \u2013 WordPress LMS Plugin plugin for WordPress is vulnerable to SQL Injection via the 'c_only_fields' parameter of the /wp-json/learnpress/v1/courses REST API endpoint in all versions up to, and including, 4.2.7 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
-    "published": "2024-09-12T09:15:05.480",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-8529": {
-    "cvss": 10.0,
-    "description": "The LearnPress \u2013 WordPress LMS Plugin plugin for WordPress is vulnerable to SQL Injection via the 'c_fields' parameter of the /wp-json/lp/v1/courses/archive-course REST API endpoint in all versions up to, and including, 4.2.7 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
-    "published": "2024-09-12T09:15:05.720",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2024-28990": {
     "cvss": 6.3,
     "description": "SolarWinds Access Rights Manager (ARM) was found to contain a hard-coded credential authentication bypass vulnerability. If exploited, this vulnerability would allow access to the RabbitMQ management console.\n\nWe thank Trend Micro Zero Day Initiative (ZDI) for its ongoing partnership in coordinating with SolarWinds on responsible disclosure of this and other potential vulnerabilities.",
