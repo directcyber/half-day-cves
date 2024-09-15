@@ -1,16 +1,4 @@
 {
-  "CVE-2024-45303": {
-    "url": "https://github.com/discourse/discourse-calendar/commit/81e1c8e3c4c02276fb890da7e3f684259aeb685c",
-    "cvss": 6.1,
-    "description": "Discourse Calendar plugin adds the ability to create a dynamic calendar in the first post of a topic to Discourse. Rendering event names can be susceptible to XSS attacks. This vulnerability only affects sites which have modified or disabled Discourse\u2019s default Content Security Policy. The issue is patched in version 0.5 of the Discourse Calendar plugin.",
-    "published": "2024-09-12T19:15:03.793"
-  },
-  "CVE-2024-8311": {
-    "cvss": 6.5,
-    "description": "An issue was discovered with pipeline execution policies in GitLab EE affecting all versions from 17.2 prior to 17.2.5, 17.3 prior to 17.3.2 which allows authenticated users to bypass variable overwrite protection via inclusion of a CI/CD template.",
-    "published": "2024-09-12T19:15:04.683",
-    "keywords": "execution,bypass"
-  },
   "CVE-2024-7961": {
     "cvss": "-",
     "description": "A path traversal vulnerability exists in the Rockwell Automation affected product.  If exploited, the threat actor could upload arbitrary files to the server that could result in a remote code execution.",
