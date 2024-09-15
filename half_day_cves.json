@@ -1,28 +1,4 @@
 {
-  "CVE-2024-42483": {
-    "url": "https://github.com/espressif/esp-now/commit/4e30db50d541b2909d278ef0db05de1a3d7190ef",
-    "cvss": 6.5,
-    "description": "ESP-NOW Component provides a connectionless Wi-Fi communication protocol. An replay attacks vulnerability was discovered in the implementation of the ESP-NOW because the caches is not differentiated by message types, it is a single, shared resource for all kinds of messages, whether they are broadcast or unicast, and regardless of whether they are ciphertext or plaintext. This can result an attacker to clear the cache of its legitimate entries, there by creating an opportunity to re-inject previously captured packets. This vulnerability is fixed in 2.5.2.",
-    "published": "2024-09-12T15:18:22.093"
-  },
-  "CVE-2024-42484": {
-    "url": "https://github.com/espressif/esp-now/commit/b03a1b4593713fa4bf0038a87edca01f10114a7a",
-    "cvss": 6.5,
-    "description": "ESP-NOW Component provides a connectionless Wi-Fi communication protocol. An Out-of-Bound (OOB) vulnerability was discovered in the implementation of the ESP-NOW group type message because there is no check for the addrs_num field of the group type message. This can result in memory corruption related attacks. Normally there are two fields in the group information that need to be checked, i.e., the addrs_num field and the addrs_list fileld. Since we only checked the addrs_list field, an attacker can send a group type message with an invalid addrs_num field, which will cause the message handled by the firmware to be much larger than the current buffer, thus causing a memory corruption issue that goes beyond the payload length.",
-    "published": "2024-09-12T15:18:22.320"
-  },
-  "CVE-2024-45823": {
-    "cvss": 8.1,
-    "description": "CVE-2024-45823 IMPACT\n\n\n\nAn\nauthentication bypass vulnerability exists in the affected product. The\nvulnerability exists due to shared secrets across accounts and could allow a threat\nactor to impersonate a user if the threat actor is able to enumerate additional\ninformation required during authentication.",
-    "published": "2024-09-12T15:18:22.547",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-45826": {
-    "cvss": 6.8,
-    "description": "CVE-2024-45826 IMPACT\nDue to improper input validation, a path traversal and remote code execution vulnerability exists when the ThinManager\u00ae processes a crafted POST request. If exploited, a user can install an executable file.",
-    "published": "2024-09-12T15:18:24.287",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-8695": {
     "cvss": 9.8,
     "description": "A remote code execution (RCE) vulnerability via crafted extension description/changelog could be abused by a malicious extension in Docker Desktop before 4.34.2.",
