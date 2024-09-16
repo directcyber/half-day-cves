@@ -1,22 +1,4 @@
 {
-  "CVE-2024-39382": {
-    "cvss": 5.5,
-    "description": "After Effects versions 23.6.6, 24.5 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-09-13T09:15:05.770",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-39385": {
-    "cvss": 5.5,
-    "description": "Premiere Pro versions 24.5, 23.6.8 and earlier are affected by a Use After Free vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-09-13T09:15:07.470",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-45111": {
-    "cvss": 5.5,
-    "description": "Illustrator versions 28.6, 27.9.5 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-09-13T09:15:13.263",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2024-8242": {
     "cvss": 4.3,
     "description": "The MStore API \u2013 Create Native Android & iOS Apps On The Cloud plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the update_user_profile() function in all versions up to, and including, 4.15.3. This makes it possible for authenticated attackers, with subscriber-level access and above, to upload arbitrary files (not including PHP files) on the affected site's server which may make remote code execution possible. This can be paired with a registration endpoint for unauthenticated users to exploit the issue.",
