@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-09-16T19:08:32.005622
+Updated at UTC 2024-09-16T20:11:23.459980
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,30 @@ Updated at UTC 2024-09-16T19:08:32.005622
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-39910">CVE-2024-39910</a></td>
+					<td>5.4</td>
+					<td><a target=_blank href="https://github.com/decidim/decidim/commit/47adca81cabea898005ec07b130b008f2a2be99f">https://github.com/decidim/decidim/commit/47adca81cabea898005ec07b130b008f2a2be99f</a></td>
+					<td class=date>2024-09-16T19:16:10.540</td>
+					<td class=description>decidim is a Free Open-Source participatory democracy, citizen participation and open government for cities and organizations. The WYSWYG editor QuillJS is subject to potential XSS attach in case the attacker manages to modify the HTML before being uploaded to the server. The attacker is able to change e.g. to <svg onload=alert('XSS')> if they know how to craft these requests themselves. This issue has been addressed in release version 0.27.7. All users are advised to upgrade. Users unable to upgrade should review the user accounts that have access to the admin panel (i.e. general Administrators, and participatory space's Administrators) and remove access to them if they don't need it. Disable the "Enable rich text editor for participants" setting in the admin dashboard</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-32034">CVE-2024-32034</a></td>
+					<td>6.8</td>
+					<td><a target=_blank href="https://github.com/decidim/decidim/commit/ff755e23814aeb56e9089fc08006a5d3faee47b6">https://github.com/decidim/decidim/commit/ff755e23814aeb56e9089fc08006a5d3faee47b6</a></td>
+					<td class=date>2024-09-16T19:16:10.300</td>
+					<td class=description>decidim is a Free Open-Source participatory democracy, citizen participation and open government for cities and organizations. The admin panel is subject to potential Cross-site scripting (XSS) attach in case an admin assigns a valuator to a proposal, or does any other action that generates an admin activity log where one of the resources has an XSS crafted. This issue has been addressed in release version 0.27.7, 0.28.2, and newer. Users are advised to upgrade. Users unable to upgrade may redirect the pages /admin and /admin/logs to other admin pages to prevent this access (i.e. `/admin/organization/edit`).</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -82,6 +106,10 @@ Updated at UTC 2024-09-16T19:08:32.005622
 		
 
 		<hr>
+		
+			
+		
+			
 		
 			
 				<tr class=keywords style="display: none">

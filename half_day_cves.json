@@ -64,5 +64,17 @@
     "description": "An improper access control (IDOR) vulnerability in the /api-selfportal/get-info-token-properties endpoint in MFASOFT Secure Authentication Server (SAS) 1.8.x through 1.9.x before 1.9.040924 allows remote attackers gain access to user tokens without authentication. The is a brute-force attack on the serial parameter by number identifier: GA00001, GA00002, GA00003, etc.",
     "published": "2024-09-16T13:15:10.917",
     "keywords": "remote,authentication"
+  },
+  "CVE-2024-32034": {
+    "url": "https://github.com/decidim/decidim/commit/ff755e23814aeb56e9089fc08006a5d3faee47b6",
+    "cvss": 6.8,
+    "description": "decidim is a Free Open-Source participatory democracy, citizen participation and open government for cities and organizations. The admin panel is subject to potential Cross-site scripting (XSS) attach in case an admin assigns a valuator to a proposal, or does any other action that generates an admin activity log where one of the resources has an XSS crafted. This issue has been addressed in release version 0.27.7, 0.28.2, and newer. Users are advised to upgrade. Users unable to upgrade may redirect the pages /admin and /admin/logs to other admin pages to prevent this access (i.e. `/admin/organization/edit`).",
+    "published": "2024-09-16T19:16:10.300"
+  },
+  "CVE-2024-39910": {
+    "url": "https://github.com/decidim/decidim/commit/47adca81cabea898005ec07b130b008f2a2be99f",
+    "cvss": 5.4,
+    "description": "decidim is a Free Open-Source participatory democracy, citizen participation and open government for cities and organizations. The WYSWYG editor QuillJS is subject to potential XSS attach in case the attacker manages to modify the HTML before being uploaded to the server. The attacker is able to change e.g. to <svg onload=alert('XSS')> if they know how to craft these requests themselves. This issue has been addressed in release version 0.27.7. All users are advised to upgrade. Users unable to upgrade should review the user accounts that have access to the admin panel (i.e. general Administrators, and participatory space's Administrators) and remove access to them if they don't need it. Disable the \"Enable rich text editor for participants\" setting in the admin dashboard",
+    "published": "2024-09-16T19:16:10.540"
   }
 }
