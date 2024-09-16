@@ -1,22 +1,4 @@
 {
-  "CVE-2024-41870": {
-    "cvss": 5.5,
-    "description": "Media Encoder versions 24.5, 23.6.8 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-09-13T07:15:03.750",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-41872": {
-    "cvss": 5.5,
-    "description": "Media Encoder versions 24.5, 23.6.8 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-09-13T07:15:04.440",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-41873": {
-    "cvss": 5.5,
-    "description": "Media Encoder versions 24.5, 23.6.8 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-09-13T07:15:04.790",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2024-39382": {
     "cvss": 5.5,
     "description": "After Effects versions 23.6.6, 24.5 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
@@ -82,5 +64,35 @@
     "description": "OMFLOW from The SYSCOM Group has an information leakage vulnerability, allowing unauthorized remote attackers to read arbitrary system configurations. If LDAP authentication is enabled, attackers can obtain plaintext credentials.",
     "published": "2024-09-16T06:15:11.483",
     "keywords": "remote,authentication,leak"
+  },
+  "CVE-2024-39613": {
+    "cvss": 5.3,
+    "description": "Mattermost Desktop App versions <=5.8.0 fail to\u00a0specify an absolute path when searching the cmd.exe file,  which allows a local attacker who is able to put an cmd.exe file in the Downloads folder of a user's machine to cause remote code execution on that machine.",
+    "published": "2024-09-16T07:15:02.373",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-45694": {
+    "cvss": 9.8,
+    "description": "The web service of certain models of D-Link wireless routers contains a Stack-based Buffer Overflow vulnerability, which allows unauthenticated remote attackers to exploit this vulnerability to execute arbitrary code on the device.",
+    "published": "2024-09-16T07:15:02.610",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-45695": {
+    "cvss": 9.8,
+    "description": "The web service of certain models of D-Link wireless routers contains a Stack-based Buffer Overflow vulnerability, which allows unauthenticated remote attackers to exploit this vulnerability to execute arbitrary code on the device.",
+    "published": "2024-09-16T07:15:02.840",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-45697": {
+    "cvss": 9.8,
+    "description": "Certain models of D-Link wireless routers have a hidden functionality where the telnet service is enabled when the WAN port is plugged in. Unauthorized remote attackers can log in and execute OS commands using hard-coded credentials.",
+    "published": "2024-09-16T07:15:03.233",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-45698": {
+    "cvss": 8.8,
+    "description": "Certain models of D-Link wireless routers do not properly validate user input in the telnet service, allowing unauthenticated remote attackers to use hard-coded credentials to log into telnet and inject arbitrary OS commands, which can then be executed on the device.",
+    "published": "2024-09-16T07:15:03.450",
+    "keywords": "remote,unauthenticated,command"
   }
 }
