@@ -1,10 +1,4 @@
 {
-  "CVE-2024-7129": {
-    "cvss": 8.8,
-    "description": "The Appointment Booking Calendar \u2014 Simply Schedule Appointments Booking Plugin WordPress plugin before 1.6.7.43 does not escape template syntax provided via user input, leading to Twig Template Injection which further exploited can result to remote code Execution by high privilege such as admins",
-    "published": "2024-09-13T06:15:15.507",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-41870": {
     "cvss": 5.5,
     "description": "Media Encoder versions 24.5, 23.6.8 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
@@ -82,5 +76,11 @@
     "description": "A vulnerability classified as critical has been found in TOTOLINK A720R 4.1.5. Affected is the function exportOvpn. The manipulation leads to os command injection. It is possible to launch the attack remotely. The complexity of an attack is rather high. The exploitability is told to be difficult. The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2024-09-15T11:15:13.323",
     "keywords": "remote,command,vpn"
+  },
+  "CVE-2024-8777": {
+    "cvss": 7.5,
+    "description": "OMFLOW from The SYSCOM Group has an information leakage vulnerability, allowing unauthorized remote attackers to read arbitrary system configurations. If LDAP authentication is enabled, attackers can obtain plaintext credentials.",
+    "published": "2024-09-16T06:15:11.483",
+    "keywords": "remote,authentication,leak"
   }
 }
