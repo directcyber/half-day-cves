@@ -1,10 +1,4 @@
 {
-  "CVE-2024-8242": {
-    "cvss": 4.3,
-    "description": "The MStore API \u2013 Create Native Android & iOS Apps On The Cloud plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the update_user_profile() function in all versions up to, and including, 4.15.3. This makes it possible for authenticated attackers, with subscriber-level access and above, to upload arbitrary files (not including PHP files) on the affected site's server which may make remote code execution possible. This can be paired with a registration endpoint for unauthenticated users to exploit the issue.",
-    "published": "2024-09-13T15:15:16.767",
-    "keywords": "remote,execution,unauthenticated"
-  },
   "CVE-2024-45368": {
     "cvss": 8.8,
     "description": "The H2-DM1E PLC's authentication protocol appears to utilize either a custom encoding scheme or a challenge-response protocol. However, there's an observed anomaly in the H2-DM1E PLC's protocol execution, namely its acceptance of multiple distinct packets as valid authentication responses. This behavior deviates from standard security practices where a single, specific response or encoding pattern is expected for successful authentication.",
