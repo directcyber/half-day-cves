@@ -76,5 +76,11 @@
     "description": "Certain models of D-Link wireless routers do not properly validate user input in the telnet service, allowing unauthenticated remote attackers to use hard-coded credentials to log into telnet and inject arbitrary OS commands, which can then be executed on the device.",
     "published": "2024-09-16T07:15:03.450",
     "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2024-46937": {
+    "cvss": "-",
+    "description": "An improper access control (IDOR) vulnerability in the /api-selfportal/get-info-token-properties endpoint in MFASOFT Secure Authentication Server (SAS) 1.8.x through 1.9.x before 1.9.040924 allows remote attackers gain access to user tokens without authentication. The is a brute-force attack on the serial parameter by number identifier: GA00001, GA00002, GA00003, etc.",
+    "published": "2024-09-16T13:15:10.917",
+    "keywords": "remote,authentication"
   }
 }
