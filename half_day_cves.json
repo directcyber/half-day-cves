@@ -1,10 +1,4 @@
 {
-  "CVE-2024-45368": {
-    "cvss": 8.8,
-    "description": "The H2-DM1E PLC's authentication protocol appears to utilize either a custom encoding scheme or a challenge-response protocol. However, there's an observed anomaly in the H2-DM1E PLC's protocol execution, namely its acceptance of multiple distinct packets as valid authentication responses. This behavior deviates from standard security practices where a single, specific response or encoding pattern is expected for successful authentication.",
-    "published": "2024-09-13T17:15:12.800",
-    "keywords": "execution,authentication"
-  },
   "CVE-2024-39924": {
     "cvss": 7.5,
     "description": "An issue was discovered in Vaultwarden (formerly Bitwarden_RS) 1.30.3. A vulnerability has been identified in the authentication and authorization process of the endpoint responsible for altering the metadata of an emergency access. It permits an attacker with granted emergency access to escalate their privileges by changing the access level and modifying the wait time. Consequently, the attacker can gain full control over the vault (when only intended to have read access) while bypassing the necessary wait period.",
