@@ -94,5 +94,17 @@
     "description": "A vulnerability in the FAISS.deserialize_from_bytes function of langchain-ai/langchain allows for pickle deserialization of untrusted data. This can lead to the execution of arbitrary commands via the os.system function. The issue affects the latest version of the product.",
     "published": "2024-09-17T12:15:02.977",
     "keywords": "execution,command"
+  },
+  "CVE-2024-38812": {
+    "cvss": 9.8,
+    "description": "The\u00a0vCenter Server contains a heap-overflow vulnerability in the implementation of the DCERPC protocol.\u00a0A malicious actor with network access to vCenter Server may trigger this vulnerability by sending a specially crafted network packet potentially leading to remote code execution.",
+    "published": "2024-09-17T18:15:03.920",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-42503": {
+    "cvss": 7.2,
+    "description": "Authenticated command execution vulnerability exist in the  ArubaOS command line interface (CLI). Successful exploitation of this vulnerabilities result in the ability to run arbitrary commands as a priviledge user on the underlying operating system.",
+    "published": "2024-09-17T18:15:04.710",
+    "keywords": "execution,command"
   }
 }
