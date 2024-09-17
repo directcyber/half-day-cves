@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-09-17T19:08:33.561946
+Updated at UTC 2024-09-17T20:11:34.389218
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,32 @@ Updated at UTC 2024-09-17T19:08:33.561946
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8948">CVE-2024-8948</a></td>
+					<td>7.3</td>
+					<td><a target=_blank href="https://github.com/micropython/micropython/commit/908ab1ceca15ee6fd0ef82ca4cba770a3ec41894">https://github.com/micropython/micropython/commit/908ab1ceca15ee6fd0ef82ca4cba770a3ec41894</a></td>
+					<td class=date>2024-09-17T19:15:29.747</td>
+					<td class=description>A vulnerability was found in MicroPython 1.23.0. It has been rated as critical. Affected by this issue is the function mpz_as_bytes of the file py/objint.c. The manipulation leads to heap-based buffer overflow. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The patch is identified as 908ab1ceca15ee6fd0ef82ca4cba770a3ec41894. It is recommended to apply a patch to fix this issue. In micropython objint component, converting zero from int to bytes leads to heap buffer-overflow-write at mpz_as_bytes.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8946">CVE-2024-8946</a></td>
+					<td>7.3</td>
+					<td><a target=_blank href="https://github.com/micropython/micropython/commit/29943546343c92334e8518695a11fc0e2ceea68b">https://github.com/micropython/micropython/commit/29943546343c92334e8518695a11fc0e2ceea68b</a></td>
+					<td class=date>2024-09-17T19:15:29.220</td>
+					<td class=description>A vulnerability was found in MicroPython 1.23.0. It has been classified as critical. Affected is the function mp_vfs_umount of the file extmod/vfs.c of the component VFS Unmount Handler. The manipulation leads to heap-based buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The name of the patch is 29943546343c92334e8518695a11fc0e2ceea68b. It is recommended to apply a patch to fix this issue. In the VFS unmount process, the comparison between the mounted path string and the unmount requested string is based solely on the length of the unmount string, which can lead to a heap buffer overflow read.</td>
+
+
+				</tr>
+			
+		
+			
 		
 			
 		
@@ -116,6 +142,20 @@ Updated at UTC 2024-09-17T19:08:33.561946
 		
 
 		<hr>
+		
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45803">CVE-2024-45803</a></td>
+					<td>-</td>
+					<td>execution,sensitive</td>
+					<td class=date>2024-09-17T19:15:28.660</td>
+					<td class=description>Wire UI is a library of components and resources to empower Laravel and Livewire application development. A potential Cross-Site Scripting (XSS) vulnerability has been identified in the `/wireui/button` endpoint, specifically through the `label` query parameter. Malicious actors could exploit this vulnerability by injecting JavaScript into the `label` parameter, leading to the execution of arbitrary code in the victim's browser. The `/wireui/button` endpoint dynamically renders button labels based on user-provided input via the `label` query parameter. Due to insufficient sanitization or escaping of this input, an attacker can inject malicious JavaScript. By crafting such a request, an attacker can inject arbitrary code that will be executed by the browser when the endpoint is accessed. If exploited, this vulnerability could allow an attacker to execute arbitrary JavaScript code in the context of the affected website. This could lead to: **Session Hijacking**: Stealing session cookies, tokens, or other sensitive information. **User Impersonation**: Performing unauthorized actions on behalf of authenticated users. **Phishing**: Redirecting users to malicious websites. **Content Manipulation**: Altering the appearance or behavior of the affected page to mislead users or execute further attacks. The severity of this vulnerability depends on the context of where the affected component is used, but in all cases, it poses a significant risk to user security. This issue has been addressed in release versions 1.19.3 and 2.1.3. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
