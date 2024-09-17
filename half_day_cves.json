@@ -88,5 +88,11 @@
     "description": "A flaw was found in OpenShift. This issue occurs due to the misuse of elevated privileges in the OpenShift Container Platform's build process. During the build initialization step, the git-clone container is run with a privileged security context, allowing unrestricted access to the node. An attacker with developer-level access can provide a crafted .gitconfig file containing commands executed during the cloning process, leading to arbitrary command execution on the worker node. An attacker running code in a privileged container could escalate their permissions on the node running the container.",
     "published": "2024-09-17T00:15:52.433",
     "keywords": "execution,command"
+  },
+  "CVE-2024-5998": {
+    "cvss": 5.2,
+    "description": "A vulnerability in the FAISS.deserialize_from_bytes function of langchain-ai/langchain allows for pickle deserialization of untrusted data. This can lead to the execution of arbitrary commands via the os.system function. The issue affects the latest version of the product.",
+    "published": "2024-09-17T12:15:02.977",
+    "keywords": "execution,command"
   }
 }
