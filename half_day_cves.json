@@ -130,5 +130,17 @@
     "description": "PTZOptics PT30X-SDI/NDI-xx before firmware 6.3.40 is vulnerable to an insufficient authentication issue. The camera does not properly enforce authentication to /cgi-bin/param.cgi when requests are sent without an HTTP Authorization header. The result is a remote and unauthenticated attacker can leak sensitive data such as usernames, password hashes, and configurations details. Additionally, the attacker can update individual configuration values or overwrite the whole file.",
     "published": "2024-09-17T20:15:07.287",
     "keywords": "remote,unauthenticated,authentication,sensitive,leak"
+  },
+  "CVE-2024-45816": {
+    "cvss": 6.5,
+    "description": "Backstage is an open framework for building developer portals. When using the AWS S3 or GCS storage provider for TechDocs it is possible to access content in the entire storage bucket. This can leak contents of the bucket that are not intended to be accessible, as well as bypass permission checks in Backstage. This has been fixed in the 1.10.13 release of the `@backstage/plugin-techdocs-backend` package. All users are advised to upgrade. There are no known workarounds for this vulnerability.",
+    "published": "2024-09-17T21:15:12.553",
+    "keywords": "bypass,leak"
+  },
+  "CVE-2024-8957": {
+    "cvss": 7.2,
+    "description": "PTZOptics PT30X-SDI/NDI-xx before firmware 6.3.40 is vulnerable to an OS command injection issue. The camera does not sufficiently validate the ntp_addr configuration value which may lead to arbitrary command execution when ntp_client is started. When chained with CVE-2024-8956, a remote and unauthenticated attacker can execute arbitrary OS commands on affected devices.",
+    "published": "2024-09-17T21:15:13.423",
+    "keywords": "remote,execution,unauthenticated,command"
   }
 }

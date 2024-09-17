@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-09-17T21:10:14.427178
+Updated at UTC 2024-09-17T22:09:52.719062
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-09-17T21:10:14.427178
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -144,6 +148,26 @@ Updated at UTC 2024-09-17T21:10:14.427178
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8957">CVE-2024-8957</a></td>
+					<td>7.2</td>
+					<td>remote,execution,unauthenticated,command</td>
+					<td class=date>2024-09-17T21:15:13.423</td>
+					<td class=description>PTZOptics PT30X-SDI/NDI-xx before firmware 6.3.40 is vulnerable to an OS command injection issue. The camera does not sufficiently validate the ntp_addr configuration value which may lead to arbitrary command execution when ntp_client is started. When chained with CVE-2024-8956, a remote and unauthenticated attacker can execute arbitrary OS commands on affected devices.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45816">CVE-2024-45816</a></td>
+					<td>6.5</td>
+					<td>bypass,leak</td>
+					<td class=date>2024-09-17T21:15:12.553</td>
+					<td class=description>Backstage is an open framework for building developer portals. When using the AWS S3 or GCS storage provider for TechDocs it is possible to access content in the entire storage bucket. This can leak contents of the bucket that are not intended to be accessible, as well as bypass permission checks in Backstage. This has been fixed in the 1.10.13 release of the `@backstage/plugin-techdocs-backend` package. All users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
