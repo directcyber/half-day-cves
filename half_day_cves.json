@@ -76,5 +76,35 @@
     "cvss": 5.4,
     "description": "decidim is a Free Open-Source participatory democracy, citizen participation and open government for cities and organizations. The WYSWYG editor QuillJS is subject to potential XSS attach in case the attacker manages to modify the HTML before being uploaded to the server. The attacker is able to change e.g. to <svg onload=alert('XSS')> if they know how to craft these requests themselves. This issue has been addressed in release version 0.27.7. All users are advised to upgrade. Users unable to upgrade should review the user accounts that have access to the admin panel (i.e. general Administrators, and participatory space's Administrators) and remove access to them if they don't need it. Disable the \"Enable rich text editor for participants\" setting in the admin dashboard",
     "published": "2024-09-16T19:16:10.540"
+  },
+  "CVE-2024-40863": {
+    "cvss": "-",
+    "description": "This issue was addressed with improved data protection. This issue is fixed in iOS 18 and iPadOS 18. An app may be able to leak sensitive user information.",
+    "published": "2024-09-17T00:15:49.793",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2024-44125": {
+    "cvss": "-",
+    "description": "The issue was addressed with improved checks. This issue is fixed in macOS Sonoma 14.7, macOS Sequoia 15. A malicious application may be able to leak sensitive user information.",
+    "published": "2024-09-17T00:15:49.940",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2024-44129": {
+    "cvss": "-",
+    "description": "The issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.7, macOS Sequoia 15. An app may be able to leak sensitive user information.",
+    "published": "2024-09-17T00:15:50.090",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2024-44165": {
+    "cvss": "-",
+    "description": "A logic issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.7, iOS 17.7 and iPadOS 17.7, visionOS 2, iOS 18 and iPadOS 18, macOS Sonoma 14.7, macOS Sequoia 15. Network traffic may leak outside a VPN tunnel.",
+    "published": "2024-09-17T00:15:51.207",
+    "keywords": "vpn,leak"
+  },
+  "CVE-2024-45496": {
+    "cvss": 9.9,
+    "description": "A flaw was found in OpenShift. This issue occurs due to the misuse of elevated privileges in the OpenShift Container Platform's build process. During the build initialization step, the git-clone container is run with a privileged security context, allowing unrestricted access to the node. An attacker with developer-level access can provide a crafted .gitconfig file containing commands executed during the cloning process, leading to arbitrary command execution on the worker node. An attacker running code in a privileged container could escalate their permissions on the node running the container.",
+    "published": "2024-09-17T00:15:52.433",
+    "keywords": "execution,command"
   }
 }
