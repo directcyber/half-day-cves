@@ -150,7 +150,7 @@
     "keywords": "remote,authentication,command"
   },
   "CVE-2024-43778": {
-    "cvss": "-",
+    "cvss": 8.8,
     "description": "OS command injection vulnerability in multiple digital video recorders provided by TAKENAKA ENGINEERING CO., LTD. allows a remote authenticated attacker to execute an arbitrary OS command on the device or alter the device settings.",
     "published": "2024-09-18T07:15:03.007",
     "keywords": "remote,command"
@@ -172,5 +172,17 @@
     "description": "CIRCUTOR Q-SMT in its firmware version 1.0.4, could be affected by a denial of service (DoS) attack if an attacker with access to the web service bypasses the authentication mechanisms on the login page, allowing the attacker to use all the functionalities implemented at web level that allow interacting with the device.",
     "published": "2024-09-18T11:15:10.530",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-34026": {
+    "cvss": 9.0,
+    "description": "A stack-based buffer overflow vulnerability exists in the OpenPLC Runtime EtherNet/IP parser functionality of OpenPLC _v3 b4702061dc14d1024856f71b4543298d77007b88. A specially crafted EtherNet/IP request can lead to remote code execution. An attacker can send a series of EtherNet/IP requests to trigger this vulnerability.",
+    "published": "2024-09-18T15:15:14.623",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-5958": {
+    "cvss": "-",
+    "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Eliz Software Panel allows Command Line Execution through SQL Injection.This issue affects Panel: before v2.3.24.",
+    "published": "2024-09-18T15:15:18.510",
+    "keywords": "execution,command"
   }
 }
