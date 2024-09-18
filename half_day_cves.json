@@ -184,5 +184,23 @@
     "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Eliz Software Panel allows Command Line Execution through SQL Injection.This issue affects Panel: before v2.3.24.",
     "published": "2024-09-18T15:15:18.510",
     "keywords": "execution,command"
+  },
+  "CVE-2024-34399": {
+    "cvss": "-",
+    "description": "**UNSUPPORTED WHEN ASSIGNED** An issue was discovered in BMC Remedy Mid Tier 7.6.04. An unauthenticated remote attacker is able to access any user account without using any password. NOTE: This vulnerability only affects products that are no longer supported by the maintainer and the impacted version for this vulnerability is 7.6.04 only.",
+    "published": "2024-09-18T18:15:06.163",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-45523": {
+    "cvss": "-",
+    "description": "An issue was discovered in Bravura Security Fabric versions 12.3.x before 12.3.5.32784, 12.4.x before 12.4.3.35110, 12.5.x before 12.5.2.35950, 12.6.x before 12.6.2.37183, and 12.7.x before 12.7.1.38241. An unauthenticated attacker can cause a resource leak by issuing multiple failed login attempts through API SOAP.",
+    "published": "2024-09-18T18:15:06.420",
+    "keywords": "unauthenticated,leak"
+  },
+  "CVE-2024-46986": {
+    "cvss": 9.9,
+    "description": "Camaleon CMS is a dynamic and advanced content management system based on Ruby on Rails. An arbitrary file write vulnerability accessible via the upload method of the MediaController allows authenticated users to write arbitrary files to any location on the web server Camaleon CMS is running on (depending on the permissions of the underlying filesystem). E.g. This can lead to a delayed remote code execution in case an attacker is able to write a Ruby file into the config/initializers/ subfolder of the Ruby on Rails application. This issue has been addressed in release version 2.8.2. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+    "published": "2024-09-18T18:15:07.223",
+    "keywords": "remote,execution"
   }
 }
