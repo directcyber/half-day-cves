@@ -142,5 +142,11 @@
     "description": "PTZOptics PT30X-SDI/NDI-xx before firmware 6.3.40 is vulnerable to an OS command injection issue. The camera does not sufficiently validate the ntp_addr configuration value which may lead to arbitrary command execution when ntp_client is started. When chained with CVE-2024-8956, a remote and unauthenticated attacker can execute arbitrary OS commands on affected devices.",
     "published": "2024-09-17T21:15:13.423",
     "keywords": "remote,execution,unauthenticated,command"
+  },
+  "CVE-2024-6641": {
+    "cvss": 5.3,
+    "description": "The WP Hardening \u2013 Fix Your WordPress Security plugin for WordPress is vulnerable to Security Feature Bypass in all versions up to, and including, 1.2.6. This is due to use of an incorrect regular expression within the \"Stop User Enumeration\" feature. This makes it possible for unauthenticated attackers to bypass intended security restrictions and expose site usernames.",
+    "published": "2024-09-18T06:15:02.490",
+    "keywords": "unauthenticated,bypass"
   }
 }
