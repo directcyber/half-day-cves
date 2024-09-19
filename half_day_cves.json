@@ -1,10 +1,4 @@
 {
-  "CVE-2024-8777": {
-    "cvss": 7.5,
-    "description": "OMFLOW from The SYSCOM Group has an information leakage vulnerability, allowing unauthorized remote attackers to read arbitrary system configurations. If LDAP authentication is enabled, attackers can obtain plaintext credentials.",
-    "published": "2024-09-16T06:15:11.483",
-    "keywords": "remote,authentication,leak"
-  },
   "CVE-2024-39613": {
     "cvss": 5.3,
     "description": "Mattermost Desktop App versions <=5.8.0 fail to\u00a0specify an absolute path when searching the cmd.exe file,  which allows a local attacker who is able to put an cmd.exe file in the Downloads folder of a user's machine to cause remote code execution on that machine.",
@@ -208,5 +202,17 @@
     "description": "A vulnerability has been discovered in all versions of Smartplay headunits, which are widely used in Suzuki and Toyota cars. This misconfiguration can lead to information disclosure, leaking sensitive details such as diagnostic log traces, system logs, headunit passwords, and personally identifiable information (PII). The exposure of such information may have serious implications for user privacy and system integrity.",
     "published": "2024-09-18T20:15:03.197",
     "keywords": "sensitive,leak"
+  },
+  "CVE-2024-47085": {
+    "cvss": "-",
+    "description": "This vulnerability exists in LD DP Back Office due to improper validation of certain parameters \u201ccCdslClicentcode\u201d and \u201ccLdClientCode\u201d in the API endpoint. An authenticated remote attacker could exploit this vulnerability by manipulating parameters in the API request body leading to exposure of sensitive information belonging to other users.",
+    "published": "2024-09-19T06:15:02.960",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-47086": {
+    "cvss": "-",
+    "description": "This vulnerability exists in LD DP Back Office due to improper implementation of OTP validation mechanism in certain API endpoints. An authenticated remote attacker could exploit this vulnerability by providing arbitrary OTP value for authentication and subsequently changing its API response.  \n\nSuccessful exploitation of this vulnerability could allow the attacker to bypass OTP verification for other user accounts.",
+    "published": "2024-09-19T06:15:03.227",
+    "keywords": "remote,authentication,bypass"
   }
 }
