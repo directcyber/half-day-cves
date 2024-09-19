@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-09-19T07:11:03.117567
+Updated at UTC 2024-09-19T08:15:30.178038
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-09-19T07:11:03.117567
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -160,18 +164,28 @@ Updated at UTC 2024-09-19T07:11:03.117567
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-47088">CVE-2024-47088</a></td>
+					<td>-</td>
+					<td>remote,authentication</td>
+					<td class=date>2024-09-19T07:15:02.507</td>
+					<td class=description>This vulnerability exists in Apex Softcell LD Geo due to missing restrictions for excessive failed authentication attempts on its API based login. A remote attacker could exploit this vulnerability by conducting a brute force attack on login OTP, which could lead to gain unauthorized access to other user accounts.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-47087">CVE-2024-47087</a></td>
+					<td>-</td>
+					<td>remote,sensitive</td>
+					<td class=date>2024-09-19T07:15:02.360</td>
+					<td class=description>This vulnerability exists in Apex Softcell LD Geo due to improper validation of the certain parameters (Client ID, DPID or BOID) in the API endpoint. An authenticated remote attacker could exploit this vulnerability by manipulating parameters in the API request body leading to exposure of sensitive information belonging to other users.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -179,7 +193,7 @@ Updated at UTC 2024-09-19T07:11:03.117567
 					<td>-</td>
 					<td>remote,authentication,bypass</td>
 					<td class=date>2024-09-19T06:15:03.227</td>
-					<td class=description>This vulnerability exists in LD DP Back Office due to improper implementation of OTP validation mechanism in certain API endpoints. An authenticated remote attacker could exploit this vulnerability by providing arbitrary OTP value for authentication and subsequently changing its API response.  
+					<td class=description>This vulnerability exists in Apex Softcell LD DP Back Office due to improper implementation of OTP validation mechanism in certain API endpoints. An authenticated remote attacker could exploit this vulnerability by providing arbitrary OTP value for authentication and subsequently changing its API response.  
 
 Successful exploitation of this vulnerability could allow the attacker to bypass OTP verification for other user accounts.</td>
 				</tr>
@@ -191,7 +205,7 @@ Successful exploitation of this vulnerability could allow the attacker to bypass
 					<td>-</td>
 					<td>remote,sensitive</td>
 					<td class=date>2024-09-19T06:15:02.960</td>
-					<td class=description>This vulnerability exists in LD DP Back Office due to improper validation of certain parameters “cCdslClicentcode” and “cLdClientCode” in the API endpoint. An authenticated remote attacker could exploit this vulnerability by manipulating parameters in the API request body leading to exposure of sensitive information belonging to other users.</td>
+					<td class=description>This vulnerability exists in Apex Softcell LD DP Back Office due to improper validation of certain parameters “cCdslClicentcode” and “cLdClientCode” in the API endpoint. An authenticated remote attacker could exploit this vulnerability by manipulating parameters in the API request body leading to exposure of sensitive information belonging to other users.</td>
 				</tr>
 			
 		
@@ -450,56 +464,6 @@ Successful exploitation of this vulnerability could allow the attacker to bypass
 					<td>remote,authentication</td>
 					<td class=date>2024-09-16T13:15:10.917</td>
 					<td class=description>An improper access control (IDOR) vulnerability in the /api-selfportal/get-info-token-properties endpoint in MFASOFT Secure Authentication Server (SAS) 1.8.x through 1.9.x before 1.9.040924 allows remote attackers gain access to user tokens without authentication. The is a brute-force attack on the serial parameter by number identifier: GA00001, GA00002, GA00003, etc.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45698">CVE-2024-45698</a></td>
-					<td>8.8</td>
-					<td>remote,unauthenticated,command</td>
-					<td class=date>2024-09-16T07:15:03.450</td>
-					<td class=description>Certain models of D-Link wireless routers do not properly validate user input in the telnet service, allowing unauthenticated remote attackers to use hard-coded credentials to log into telnet and inject arbitrary OS commands, which can then be executed on the device.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45697">CVE-2024-45697</a></td>
-					<td>9.8</td>
-					<td>remote,command</td>
-					<td class=date>2024-09-16T07:15:03.233</td>
-					<td class=description>Certain models of D-Link wireless routers have a hidden functionality where the telnet service is enabled when the WAN port is plugged in. Unauthorized remote attackers can log in and execute OS commands using hard-coded credentials.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45695">CVE-2024-45695</a></td>
-					<td>9.8</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-09-16T07:15:02.840</td>
-					<td class=description>The web service of certain models of D-Link wireless routers contains a Stack-based Buffer Overflow vulnerability, which allows unauthenticated remote attackers to exploit this vulnerability to execute arbitrary code on the device.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45694">CVE-2024-45694</a></td>
-					<td>9.8</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-09-16T07:15:02.610</td>
-					<td class=description>The web service of certain models of D-Link wireless routers contains a Stack-based Buffer Overflow vulnerability, which allows unauthenticated remote attackers to exploit this vulnerability to execute arbitrary code on the device.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-39613">CVE-2024-39613</a></td>
-					<td>5.3</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-16T07:15:02.373</td>
-					<td class=description>Mattermost Desktop App versions <=5.8.0 fail to specify an absolute path when searching the cmd.exe file,  which allows a local attacker who is able to put an cmd.exe file in the Downloads folder of a user's machine to cause remote code execution on that machine.</td>
 				</tr>
 			
 		
