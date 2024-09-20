@@ -1,34 +1,4 @@
 {
-  "CVE-2024-40863": {
-    "cvss": "-",
-    "description": "This issue was addressed with improved data protection. This issue is fixed in iOS 18 and iPadOS 18. An app may be able to leak sensitive user information.",
-    "published": "2024-09-17T00:15:49.793",
-    "keywords": "sensitive,leak"
-  },
-  "CVE-2024-44125": {
-    "cvss": "-",
-    "description": "The issue was addressed with improved checks. This issue is fixed in macOS Sonoma 14.7, macOS Sequoia 15. A malicious application may be able to leak sensitive user information.",
-    "published": "2024-09-17T00:15:49.940",
-    "keywords": "sensitive,leak"
-  },
-  "CVE-2024-44129": {
-    "cvss": "-",
-    "description": "The issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.7, macOS Sequoia 15. An app may be able to leak sensitive user information.",
-    "published": "2024-09-17T00:15:50.090",
-    "keywords": "sensitive,leak"
-  },
-  "CVE-2024-44165": {
-    "cvss": "-",
-    "description": "A logic issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.7, iOS 17.7 and iPadOS 17.7, visionOS 2, iOS 18 and iPadOS 18, macOS Sonoma 14.7, macOS Sequoia 15. Network traffic may leak outside a VPN tunnel.",
-    "published": "2024-09-17T00:15:51.207",
-    "keywords": "vpn,leak"
-  },
-  "CVE-2024-45496": {
-    "cvss": 9.9,
-    "description": "A flaw was found in OpenShift. This issue occurs due to the misuse of elevated privileges in the OpenShift Container Platform's build process. During the build initialization step, the git-clone container is run with a privileged security context, allowing unrestricted access to the node. An attacker with developer-level access can provide a crafted .gitconfig file containing commands executed during the cloning process, leading to arbitrary command execution on the worker node. An attacker running code in a privileged container could escalate their permissions on the node running the container.",
-    "published": "2024-09-17T00:15:52.433",
-    "keywords": "execution,command"
-  },
   "CVE-2024-5998": {
     "cvss": 5.2,
     "description": "A vulnerability in the FAISS.deserialize_from_bytes function of langchain-ai/langchain allows for pickle deserialization of untrusted data. This can lead to the execution of arbitrary commands via the os.system function. The issue affects the latest version of the product.",
@@ -226,5 +196,11 @@
     "description": "A vulnerability classified as critical has been found in D-Link DAR-7000 up to 20240912. Affected is an unknown function of the file /view/DBManage/Backup_Server_commit.php. The manipulation of the argument host leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. NOTE: This vulnerability only affects products that are no longer supported by the maintainer.",
     "published": "2024-09-19T21:15:16.383",
     "keywords": "remote,command"
+  },
+  "CVE-2024-45806": {
+    "cvss": 6.5,
+    "description": "Envoy is a cloud-native high-performance edge/middle/service proxy. A security vulnerability in Envoy allows external clients to manipulate Envoy headers, potentially leading to unauthorized access or other malicious actions within the mesh. This issue arises due to Envoy's default configuration of internal trust boundaries, which considers all RFC1918 private address ranges as internal. The default behavior for handling internal addresses in Envoy has been changed. Previously, RFC1918 IP addresses were automatically considered internal, even if the internal_address_config was empty.  The default configuration of Envoy will continue to trust internal addresses while in this release and it will not trust them by default in next release. If you have tooling such as probes on your private network which need to be treated as trusted (e.g. changing arbitrary x-envoy headers) please explicitly include those addresses or CIDR ranges into `internal_address_config`. Successful exploitation could allow attackers to bypass security controls, access sensitive data, or disrupt services within the mesh, like Istio. This issue has been addressed in versions 1.31.2, 1.30.6, 1.29.9, and 1.28.7. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+    "published": "2024-09-20T00:15:02.293",
+    "keywords": "sensitive,bypass"
   }
 }
