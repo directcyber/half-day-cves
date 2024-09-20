@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-09-20T21:10:02.565082
+Updated at UTC 2024-09-20T22:11:30.567320
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-09-20T21:10:02.565082
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 				<tr>
@@ -136,12 +138,18 @@ Updated at UTC 2024-09-20T21:10:02.565082
 		
 			
 		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-46640">CVE-2024-46640</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2024-09-20T21:15:12.700</td>
+					<td class=description>SeaCMS 13.2 has a remote code execution vulnerability located in the file sql.class.chp. Although the system has a check function, the check function is not executed during execution, allowing remote code execution by writing to the file through the MySQL slow query method.</td>
+				</tr>
+			
 		
 			
 		
@@ -416,26 +424,6 @@ Successful exploitation of this vulnerability could allow the attacker to bypass
 					<td>unauthenticated,bypass</td>
 					<td class=date>2024-09-18T06:15:02.490</td>
 					<td class=description>The WP Hardening – Fix Your WordPress Security plugin for WordPress is vulnerable to Security Feature Bypass in all versions up to, and including, 1.2.6. This is due to use of an incorrect regular expression within the "Stop User Enumeration" feature. This makes it possible for unauthenticated attackers to bypass intended security restrictions and expose site usernames.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8957">CVE-2024-8957</a></td>
-					<td>7.2</td>
-					<td>remote,execution,unauthenticated,command</td>
-					<td class=date>2024-09-17T21:15:13.423</td>
-					<td class=description>PTZOptics PT30X-SDI/NDI-xx before firmware 6.3.40 is vulnerable to an OS command injection issue. The camera does not sufficiently validate the ntp_addr configuration value which may lead to arbitrary command execution when ntp_client is started. When chained with CVE-2024-8956, a remote and unauthenticated attacker can execute arbitrary OS commands on affected devices.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45816">CVE-2024-45816</a></td>
-					<td>6.5</td>
-					<td>bypass,leak</td>
-					<td class=date>2024-09-17T21:15:12.553</td>
-					<td class=description>Backstage is an open framework for building developer portals. When using the AWS S3 or GCS storage provider for TechDocs it is possible to access content in the entire storage bucket. This can leak contents of the bucket that are not intended to be accessible, as well as bypass permission checks in Backstage. This has been fixed in the 1.10.13 release of the `@backstage/plugin-techdocs-backend` package. All users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
 				</tr>
 			
 		

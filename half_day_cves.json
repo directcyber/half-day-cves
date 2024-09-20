@@ -1,16 +1,4 @@
 {
-  "CVE-2024-45816": {
-    "cvss": 6.5,
-    "description": "Backstage is an open framework for building developer portals. When using the AWS S3 or GCS storage provider for TechDocs it is possible to access content in the entire storage bucket. This can leak contents of the bucket that are not intended to be accessible, as well as bypass permission checks in Backstage. This has been fixed in the 1.10.13 release of the `@backstage/plugin-techdocs-backend` package. All users are advised to upgrade. There are no known workarounds for this vulnerability.",
-    "published": "2024-09-17T21:15:12.553",
-    "keywords": "bypass,leak"
-  },
-  "CVE-2024-8957": {
-    "cvss": 7.2,
-    "description": "PTZOptics PT30X-SDI/NDI-xx before firmware 6.3.40 is vulnerable to an OS command injection issue. The camera does not sufficiently validate the ntp_addr configuration value which may lead to arbitrary command execution when ntp_client is started. When chained with CVE-2024-8956, a remote and unauthenticated attacker can execute arbitrary OS commands on affected devices.",
-    "published": "2024-09-17T21:15:13.423",
-    "keywords": "remote,execution,unauthenticated,command"
-  },
   "CVE-2024-6641": {
     "cvss": 5.3,
     "description": "The WP Hardening \u2013 Fix Your WordPress Security plugin for WordPress is vulnerable to Security Feature Bypass in all versions up to, and including, 1.2.6. This is due to use of an incorrect regular expression within the \"Stop User Enumeration\" feature. This makes it possible for unauthenticated attackers to bypass intended security restrictions and expose site usernames.",
@@ -184,5 +172,11 @@
     "cvss": 4.8,
     "description": "A stored cross-site scripting (XSS) vulnerability in the Add Scheduled Task module of Maccms10 v2024.1000.4040 allows attackers to execute arbitrary web scripts or HTML via a crafted payload.",
     "published": "2024-09-20T19:15:16.473"
+  },
+  "CVE-2024-46640": {
+    "cvss": "-",
+    "description": "SeaCMS 13.2 has a remote code execution vulnerability located in the file sql.class.chp. Although the system has a check function, the check function is not executed during execution, allowing remote code execution by writing to the file through the MySQL slow query method.",
+    "published": "2024-09-20T21:15:12.700",
+    "keywords": "remote,execution"
   }
 }
