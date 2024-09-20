@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-09-20T11:09:36.614819
+Updated at UTC 2024-09-20T12:20:21.064241
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-09-20T11:09:36.614819
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -156,10 +158,18 @@ Updated at UTC 2024-09-20T11:09:36.614819
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9043">CVE-2024-9043</a></td>
+					<td>9.8</td>
+					<td>remote,unauthenticated,authentication,bypass</td>
+					<td class=date>2024-09-20T11:15:13.280</td>
+					<td class=description>Secure Email Gateway from Cellopoint has Buffer Overflow Vulnerability in authentication process. Remote unauthenticated attackers can send crafted packets to crash the process, thereby bypassing authentication and obtaining system administrator privileges.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -476,16 +486,6 @@ Successful exploitation of this vulnerability could allow the attacker to bypass
 					<td>remote,execution</td>
 					<td class=date>2024-09-17T18:15:03.920</td>
 					<td class=description>The vCenter Server contains a heap-overflow vulnerability in the implementation of the DCERPC protocol. A malicious actor with network access to vCenter Server may trigger this vulnerability by sending a specially crafted network packet potentially leading to remote code execution.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5998">CVE-2024-5998</a></td>
-					<td>5.2</td>
-					<td>execution,command</td>
-					<td class=date>2024-09-17T12:15:02.977</td>
-					<td class=description>A vulnerability in the FAISS.deserialize_from_bytes function of langchain-ai/langchain allows for pickle deserialization of untrusted data. This can lead to the execution of arbitrary commands via the os.system function. The issue affects the latest version of the product.</td>
 				</tr>
 			
 		
