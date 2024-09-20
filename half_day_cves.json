@@ -1,10 +1,4 @@
 {
-  "CVE-2024-8956": {
-    "cvss": 9.1,
-    "description": "PTZOptics PT30X-SDI/NDI-xx before firmware 6.3.40 is vulnerable to an insufficient authentication issue. The camera does not properly enforce authentication to /cgi-bin/param.cgi when requests are sent without an HTTP Authorization header. The result is a remote and unauthenticated attacker can leak sensitive data such as usernames, password hashes, and configurations details. Additionally, the attacker can update individual configuration values or overwrite the whole file.",
-    "published": "2024-09-17T20:15:07.287",
-    "keywords": "remote,unauthenticated,authentication,sensitive,leak"
-  },
   "CVE-2024-45816": {
     "cvss": 6.5,
     "description": "Backstage is an open framework for building developer portals. When using the AWS S3 or GCS storage provider for TechDocs it is possible to access content in the entire storage bucket. This can leak contents of the bucket that are not intended to be accessible, as well as bypass permission checks in Backstage. This has been fixed in the 1.10.13 release of the `@backstage/plugin-techdocs-backend` package. All users are advised to upgrade. There are no known workarounds for this vulnerability.",
@@ -187,7 +181,7 @@
   },
   "CVE-2024-46654": {
     "url": "https://github.com/magicblack/maccms10/issues/1183",
-    "cvss": "-",
+    "cvss": 4.8,
     "description": "A stored cross-site scripting (XSS) vulnerability in the Add Scheduled Task module of Maccms10 v2024.1000.4040 allows attackers to execute arbitrary web scripts or HTML via a crafted payload.",
     "published": "2024-09-20T19:15:16.473"
   }
