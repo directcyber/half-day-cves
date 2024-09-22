@@ -1,16 +1,4 @@
 {
-  "CVE-2024-47087": {
-    "cvss": "-",
-    "description": "This vulnerability exists in Apex Softcell LD Geo due to improper validation of the certain parameters (Client ID, DPID or BOID) in the API endpoint. An authenticated remote attacker could exploit this vulnerability by manipulating parameters in the API request body leading to exposure of sensitive information belonging to other users.",
-    "published": "2024-09-19T07:15:02.360",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-47088": {
-    "cvss": "-",
-    "description": "This vulnerability exists in Apex Softcell LD Geo due to missing restrictions for excessive failed authentication attempts on its API based login. A remote attacker could exploit this vulnerability by conducting a brute force attack on login OTP, which could lead to gain unauthorized access to other user accounts.",
-    "published": "2024-09-19T07:15:02.507",
-    "keywords": "remote,authentication"
-  },
   "CVE-2024-46382": {
     "cvss": 6.5,
     "description": "A SQL injection vulnerability in linlinjava litemall 1.8.0 allows a remote attacker to obtain sensitive information via the goodsId, goodsSn, and name parameters in AdminGoodscontroller.java.",
