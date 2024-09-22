@@ -106,5 +106,35 @@
     "description": "SeaCMS 13.2 has a remote code execution vulnerability located in the file sql.class.chp. Although the system has a check function, the check function is not executed during execution, allowing remote code execution by writing to the file through the MySQL slow query method.",
     "published": "2024-09-20T21:15:12.700",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-47218": {
+    "cvss": "-",
+    "description": "An issue was discovered in vesoft NebulaGraph through 3.8.0. It allows bypassing authentication.",
+    "published": "2024-09-22T01:15:11.583",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-47219": {
+    "url": "https://github.com/vesoft-inc/nebula/pull/5936",
+    "cvss": "-",
+    "description": "An issue was discovered in vesoft NebulaGraph through 3.8.0. It allows shell command injection.",
+    "published": "2024-09-22T01:15:11.890"
+  },
+  "CVE-2024-47220": {
+    "url": "https://github.com/ruby/webrick/pull/146/commits/d88321da45dcd230ac2b4585cad4833d6d5e8841",
+    "cvss": "-",
+    "description": "An issue was discovered in the WEBrick toolkit through 1.8.1 for Ruby. It allows HTTP request smuggling by providing both a Content-Length header and a Transfer-Encoding header, e.g., \"GET /admin HTTP/1.1\\r\\n\" inside of a \"POST /user HTTP/1.1\\r\\n\" request. NOTE: the supplier's position is \"Webrick should not be used in production.\"",
+    "published": "2024-09-22T01:15:11.950"
+  },
+  "CVE-2024-47221": {
+    "url": "https://github.com/rapidscada/scada/commit/b14cbdfa6cf3a205e57f2383c915365adc3859a7",
+    "cvss": "-",
+    "description": "CheckUser in ScadaServerEngine/MainLogic.cs in Rapid SCADA through 5.8.4 allows an empty password.",
+    "published": "2024-09-22T01:15:12.013"
+  },
+  "CVE-2024-9076": {
+    "cvss": 6.3,
+    "description": "A vulnerability was found in DedeCMS up to 5.7.115. It has been rated as critical. This issue affects some unknown processing of the file article_string_mix.php. The manipulation leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-09-22T01:15:12.070",
+    "keywords": "remote,command"
   }
 }
