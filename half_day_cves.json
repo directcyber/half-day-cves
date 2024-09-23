@@ -88,5 +88,23 @@
     "cvss": 9.9,
     "description": "pgAdmin versions 8.11 and earlier are vulnerable to a security flaw in OAuth2 authentication. This vulnerability allows an attacker to potentially obtain the client ID and secret, leading to unauthorized access to user data.",
     "published": "2024-09-23T17:15:14.000"
+  },
+  "CVE-2024-0004": {
+    "cvss": 9.1,
+    "description": "A condition exists in FlashArray Purity whereby an user with array admin role can execute arbitrary commands remotely to escalate privilege on the array.",
+    "published": "2024-09-23T18:15:04.973",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-0005": {
+    "cvss": 9.1,
+    "description": "A condition exists in FlashArray and FlashBlade Purity whereby a malicious user could execute arbitrary commands remotely through a specifically crafted SNMP configuration.",
+    "published": "2024-09-23T18:15:05.233",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-39341": {
+    "cvss": "-",
+    "description": "Entrust Instant Financial Issuance (On Premise) Software (formerly known as Cardwizard) 6.10.0, 6.9.0, 6.9.1, 6.9.2, and 6.8.x and earlier leaves behind a configuration file (i.e. WebAPI.cfg.xml) after the installation process. This file can be accessed without authentication on HTTP port 80 by guessing the correct IIS webroot path. It includes system configuration parameter names and values with sensitive configuration values encrypted.",
+    "published": "2024-09-23T18:15:05.507",
+    "keywords": "authentication,sensitive"
   }
 }
