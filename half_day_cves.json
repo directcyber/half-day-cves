@@ -1,10 +1,4 @@
 {
-  "CVE-2024-9043": {
-    "cvss": 9.8,
-    "description": "Secure Email Gateway from Cellopoint has Buffer Overflow Vulnerability in authentication process. Remote unauthenticated attackers can send crafted packets to crash the process, thereby bypassing authentication and obtaining system administrator privileges.",
-    "published": "2024-09-20T11:15:13.280",
-    "keywords": "remote,unauthenticated,authentication,bypass"
-  },
   "CVE-2024-45489": {
     "cvss": 9.8,
     "description": "Arc before 2024-08-26 allows remote code execution in JavaScript boosts. Boosts that run JavaScript cannot be shared by default; however (because of misconfigured Firebase ACLs), it is possible to create or update a boost using another user's ID. This installs the boost in the victim's browser and runs arbitrary Javascript on that browser in a privileged context. NOTE: this is a no-action cloud vulnerability with zero affected users.",
