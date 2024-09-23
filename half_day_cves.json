@@ -1,10 +1,4 @@
 {
-  "CVE-2024-46654": {
-    "url": "https://github.com/magicblack/maccms10/issues/1183",
-    "cvss": 4.8,
-    "description": "A stored cross-site scripting (XSS) vulnerability in the Add Scheduled Task module of Maccms10 v2024.1000.4040 allows attackers to execute arbitrary web scripts or HTML via a crafted payload.",
-    "published": "2024-09-20T19:15:16.473"
-  },
   "CVE-2024-46640": {
     "cvss": 9.8,
     "description": "SeaCMS 13.2 has a remote code execution vulnerability located in the file sql.class.chp. Although the system has a check function, the check function is not executed during execution, allowing remote code execution by writing to the file through the MySQL slow query method.",
@@ -106,5 +100,17 @@
     "description": "Entrust Instant Financial Issuance (On Premise) Software (formerly known as Cardwizard) 6.10.0, 6.9.0, 6.9.1, 6.9.2, and 6.8.x and earlier leaves behind a configuration file (i.e. WebAPI.cfg.xml) after the installation process. This file can be accessed without authentication on HTTP port 80 by guessing the correct IIS webroot path. It includes system configuration parameter names and values with sensitive configuration values encrypted.",
     "published": "2024-09-23T18:15:05.507",
     "keywords": "authentication,sensitive"
+  },
+  "CVE-2024-39842": {
+    "cvss": 7.2,
+    "description": "A SQL injection vulnerability in Centreon 24.04.2 allows a remote high-privileged attacker to execute arbitrary SQL command via user massive changes inputs.",
+    "published": "2024-09-23T19:15:13.437",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-39843": {
+    "cvss": "-",
+    "description": "A SQL injection vulnerability in Centreon 24.04.2 allows a remote high-privileged attacker to execute arbitrary SQL command via create user form inputs.",
+    "published": "2024-09-23T19:15:13.510",
+    "keywords": "remote,command"
   }
 }
