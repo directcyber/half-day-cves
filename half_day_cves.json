@@ -1,10 +1,4 @@
 {
-  "CVE-2024-45489": {
-    "cvss": 9.8,
-    "description": "Arc before 2024-08-26 allows remote code execution in JavaScript boosts. Boosts that run JavaScript cannot be shared by default; however (because of misconfigured Firebase ACLs), it is possible to create or update a boost using another user's ID. This installs the boost in the victim's browser and runs arbitrary Javascript on that browser in a privileged context. NOTE: this is a no-action cloud vulnerability with zero affected users.",
-    "published": "2024-09-20T17:15:15.060",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-46654": {
     "url": "https://github.com/magicblack/maccms10/issues/1183",
     "cvss": 4.8,
@@ -88,5 +82,11 @@
     "description": "DataEase is an open source data visualization analysis tool. Prior to version 2.10.1, an attacker can achieve remote command execution by adding a carefully constructed h2 data source connection string. The vulnerability has been fixed in v2.10.1.",
     "published": "2024-09-23T16:15:06.387",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2024-9014": {
+    "url": "https://github.com/pgadmin-org/pgadmin4/issues/7945",
+    "cvss": 9.9,
+    "description": "pgAdmin versions 8.11 and earlier are vulnerable to a security flaw in OAuth2 authentication. This vulnerability allows an attacker to potentially obtain the client ID and secret, leading to unauthorized access to user data.",
+    "published": "2024-09-23T17:15:14.000"
   }
 }
