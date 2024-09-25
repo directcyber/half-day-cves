@@ -268,5 +268,17 @@
     "description": "A vulnerability in the Central Web Authentication (CWA) feature of Cisco IOS XE Software for Wireless Controllers could allow an unauthenticated, adjacent attacker to bypass the pre-authentication access control list (ACL), which could allow access to network resources before user authentication.\r\n\r This vulnerability is due to a logic error when activating the pre-authentication ACL that is received from the authentication, authorization, and accounting (AAA) server. An attacker could exploit this vulnerability by connecting to a wireless network that is configured for CWA and sending traffic through an affected device that should be denied by the configured ACL before user authentication. A successful exploit could allow the attacker to bypass configured ACL protections on the affected device before the user authentication is completed, allowing the attacker to access trusted networks that the device might be protecting.",
     "published": "2024-09-25T17:15:18.470",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-45750": {
+    "cvss": "-",
+    "description": "An issue in TheGreenBow Windows Standard VPN Client 6.87.108 (and older), Windows Enterprise VPN Client 6.87.109 (and older), Windows Enterprise VPN Client 7.5.007 (and older), Android VPN Client 6.4.5 (and older) VPN Client Linux 3.4 (and older), VPN Client MacOS 2.4.10 (and older) allows a remote attacker to execute arbitrary code via the IKEv2 Authentication phase, it accepts malformed ECDSA signatures and establishes the tunnel.",
+    "published": "2024-09-25T18:15:05.043",
+    "keywords": "remote,authentication,vpn"
+  },
+  "CVE-2024-46489": {
+    "cvss": "-",
+    "description": "A remote command execution (RCE) vulnerability in promptr v6.0.7 allows attackers to execute arbitrary commands via a crafted URL.",
+    "published": "2024-09-25T18:15:05.227",
+    "keywords": "remote,execution,command"
   }
 }
