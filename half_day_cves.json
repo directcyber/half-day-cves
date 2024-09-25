@@ -160,5 +160,23 @@
     "description": "An unauthenticated remote attacker can\u00a0causes the CODESYS web server to access invalid memory which results in a DoS.",
     "published": "2024-09-25T08:15:04.727",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-7479": {
+    "cvss": 8.8,
+    "description": "Improper verification of cryptographic signature during installation of a VPN driver via the TeamViewer_service.exe component of TeamViewer Remote Clients prior version 15.58.4 for Windows allows an attacker with local unprivileged access on a Windows system to elevate their privileges and install drivers.",
+    "published": "2024-09-25T11:15:12.330",
+    "keywords": "remote,vpn"
+  },
+  "CVE-2024-6592": {
+    "cvss": 9.1,
+    "description": "Incorrect Authorization vulnerability in the protocol communication between the WatchGuard Authentication Gateway (aka Single Sign-On Agent) on Windows and the WatchGuard Single Sign-On Client on Windows and MacOS allows Authentication Bypass.This issue affects the Authentication Gateway: through 12.10.2; Windows Single Sign-On Client: through 12.7; MacOS Single Sign-On Client: through 12.5.4.",
+    "published": "2024-09-25T12:15:05.027",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-6593": {
+    "cvss": 9.1,
+    "description": "Incorrect Authorization vulnerability in WatchGuard Authentication Gateway (aka Single Sign-On Agent) on Windows allows an attacker with network access to execute restricted management commands.\nThis issue affects Authentication Gateway: through 12.10.2.",
+    "published": "2024-09-25T12:15:05.217",
+    "keywords": "authentication,command"
   }
 }
