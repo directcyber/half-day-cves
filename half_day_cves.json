@@ -150,7 +150,7 @@
     "keywords": "unauthenticated,sensitive"
   },
   "CVE-2024-6845": {
-    "cvss": "-",
+    "cvss": 5.3,
     "description": "The Chatbot with ChatGPT WordPress plugin before 2.4.6 does not have proper authorization in one of its REST endpoint, allowing unauthenticated users to retrieve the encoded key and then decode it, thereby leaking the OpenAI API key",
     "published": "2024-09-25T06:15:05.557",
     "keywords": "unauthenticated,leak"
