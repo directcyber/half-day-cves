@@ -130,5 +130,17 @@
     "description": "Path traversal vulnerability in Scriptcase version 9.4.019, in /scriptcase/devel/compat/nm_edit_php_edit.php (in the \u201csubpage\u201d parameter), which allows unauthenticated remote users to bypass SecurityManager's intended restrictions and list and/or read a parent directory via a \u201c/...\u201d or directly into a path used in the POST parameter \u201cfield_file\u201d by a web application.",
     "published": "2024-09-25T01:15:48.287",
     "keywords": "remote,unauthenticated,bypass"
+  },
+  "CVE-2024-8481": {
+    "cvss": 7.3,
+    "description": "The The Special Text Boxes plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 6.2.2. This is due to the plugin adding the filter add_filter('comment_text', 'do_shortcode'); which will run all shortcodes in comments. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+    "published": "2024-09-25T03:15:04.593",
+    "keywords": "execution,unauthenticated"
+  },
+  "CVE-2024-8484": {
+    "cvss": 7.5,
+    "description": "The REST API TO MiniProgram plugin for WordPress is vulnerable to SQL Injection via the 'order' parameter of the /wp-json/watch-life-net/v1/comment/getcomments REST API endpoint in all versions up to, and including, 4.7.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2024-09-25T03:15:04.990",
+    "keywords": "unauthenticated,sensitive"
   }
 }
