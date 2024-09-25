@@ -154,5 +154,11 @@
     "description": "The Chatbot with ChatGPT WordPress plugin before 2.4.6 does not have proper authorization in one of its REST endpoint, allowing unauthenticated users to retrieve the encoded key and then decode it, thereby leaking the OpenAI API key",
     "published": "2024-09-25T06:15:05.557",
     "keywords": "unauthenticated,leak"
+  },
+  "CVE-2024-8175": {
+    "cvss": 7.5,
+    "description": "An unauthenticated remote attacker can\u00a0causes the CODESYS web server to access invalid memory which results in a DoS.",
+    "published": "2024-09-25T08:15:04.727",
+    "keywords": "remote,unauthenticated"
   }
 }
