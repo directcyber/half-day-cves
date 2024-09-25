@@ -142,5 +142,17 @@
     "description": "The REST API TO MiniProgram plugin for WordPress is vulnerable to SQL Injection via the 'order' parameter of the /wp-json/watch-life-net/v1/comment/getcomments REST API endpoint in all versions up to, and including, 4.7.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
     "published": "2024-09-25T03:15:04.990",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-8275": {
+    "cvss": 9.8,
+    "description": "The The Events Calendar plugin for WordPress is vulnerable to SQL Injection via the 'order' parameter of the 'tribe_has_next_event' function in all versions up to, and including, 6.6.4 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. Only sites that have manually added tribe_has_next_event() will be vulnerable to this SQL injection.",
+    "published": "2024-09-25T05:15:11.497",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-6845": {
+    "cvss": "-",
+    "description": "The Chatbot with ChatGPT WordPress plugin before 2.4.6 does not have proper authorization in one of its REST endpoint, allowing unauthenticated users to retrieve the encoded key and then decode it, thereby leaking the OpenAI API key",
+    "published": "2024-09-25T06:15:05.557",
+    "keywords": "unauthenticated,leak"
   }
 }
