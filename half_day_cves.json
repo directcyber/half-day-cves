@@ -184,5 +184,17 @@
     "description": "HCL Nomad server on Domino is affected by an open proxy vulnerability in which an unauthenticated attacker can mask their original source IP address.  This may enable an attacker to trick the user into exposing sensitive information.",
     "published": "2024-09-25T15:15:13.717",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-47078": {
+    "cvss": 8.1,
+    "description": "Meshtastic is an open source, off-grid, decentralized, mesh network. Meshtastic uses MQTT to communicate over an internet connection to a shared or private MQTT Server. Nodes can communicate directly via an internet connection or proxied through a connected phone (i.e., via bluetooth). Prior to version 2.5.1, multiple weaknesses in the MQTT implementation allow for authentication and authorization bypasses resulting in unauthorized control of MQTT-connected nodes. Version 2.5.1 contains a patch.",
+    "published": "2024-09-25T16:15:10.907",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-7421": {
+    "cvss": "-",
+    "description": "An information exposure in Devolutions Remote Desktop Manager 2024.2.20.0 and earlier on Windows allows local attackers with access to system logs to obtain session credentials via passwords included in command-line arguments when launching WinSCP sessions",
+    "published": "2024-09-25T16:15:11.187",
+    "keywords": "remote,command"
   }
 }
