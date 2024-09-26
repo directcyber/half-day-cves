@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-09-26T20:11:43.403259
+Updated at UTC 2024-09-26T21:09:39.071605
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,22 @@ Updated at UTC 2024-09-26T20:11:43.403259
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-47179">CVE-2024-47179</a></td>
+					<td>8.8</td>
+					<td><a target=_blank href="https://github.com/diygod/rsshub/commit/64e00e743aba2a239508fea97825994e3d687ecc">https://github.com/diygod/rsshub/commit/64e00e743aba2a239508fea97825994e3d687ecc</a></td>
+					<td class=date>2024-09-26T20:15:06.950</td>
+					<td class=description>RSSHub is an RSS network. Prior to commit 64e00e7, RSSHub's `docker-test-cont.yml` workflow is vulnerable to Artifact Poisoning, which could have lead to a full repository takeover. Downstream users of RSSHub are not vulnerable to this issue, and commit 64e00e7 fixed the underlying issue and made the repository no longer vulnerable. The `docker-test-cont.yml` workflow gets triggered when the `PR - Docker build test` workflow completes successfully. It then collects some information about the Pull Request that triggered the triggering workflow and set some labels depending on the PR body and sender. If the PR also contains a `routes` markdown block, it will set the `TEST_CONTINUE` environment variable to `true`. The workflow then downloads and extracts an artifact uploaded by the triggering workflow which is expected to contain a single `rsshub.tar.zst` file. However, prior to commit 64e00e7, it did not validate and the contents were extracted in the root of the workspace overriding any existing files. Since the contents of the artifact were not validated, it is possible for a malicious actor to send a Pull Request which uploads, not just the `rsshub.tar.zst` compressed docker image, but also a malicious `package.json` file with a script to run arbitrary code in the context of the privileged workflow. As of commit 64e00e7, this scenario has been addressed and the RSSHub repository is no longer vulnerable.</td>
+
+
+				</tr>
+			
+		
+			
 		
 			
 		
@@ -162,10 +178,30 @@ Updated at UTC 2024-09-26T20:11:43.403259
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-47180">CVE-2024-47180</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-09-26T20:15:07.310</td>
+					<td class=description>Shields.io is a service for concise, consistent, and legible badges in SVG and raster format. Shields.io and users self-hosting their own instance of shields using version < `server-2024-09-25` are vulnerable to a remote execution vulnerability via the JSONPath library used by the Dynamic JSON/Toml/Yaml badges. This vulnerability would allow any user with access to make a request to a URL on the instance to the ability to execute code by crafting a malicious JSONPath expression. All users who self-host an instance are vulnerable. This problem was fixed in server-2024-09-25. Those who follow the tagged releases should update to `server-2024-09-25` or later. Those who follow the rolling tag on DockerHub, `docker pull shieldsio/shields:next` to update to the latest version. As a workaround, blocking access to the endpoints `/badge/dynamic/json`, `/badge/dynamic/toml`, and `/badge/dynamic/yaml` (e.g: via a firewall or reverse proxy in front of your instance) would prevent the exploitable endpoints from being accessed.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-46628">CVE-2024-46628</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2024-09-26T20:15:06.857</td>
+					<td class=description>Tenda G3 Router firmware v15.03.05.05 was discovered to contain a remote code execution (RCE) vulnerability via the usbPartitionName parameter in the formSetUSBPartitionUmount function.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -663,16 +699,6 @@ commands.</td>
 					<td>execution,unauthenticated</td>
 					<td class=date>2024-09-24T03:15:02.330</td>
 					<td class=description>The The MDTF – Meta Data and Taxonomies Filter plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 1.3.3.3. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37779">CVE-2024-37779</a></td>
-					<td>5.7</td>
-					<td>remote,execution,command</td>
-					<td class=date>2024-09-23T20:15:04.637</td>
-					<td class=description>WoodWing Elvis DAM v6.98.1 was discovered to contain an authenticated remote command execution (RCE) vulnerability via the Apache Ant script functionality.</td>
 				</tr>
 			
 		
