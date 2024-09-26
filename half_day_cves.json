@@ -1,22 +1,4 @@
 {
-  "CVE-2024-0004": {
-    "cvss": 9.1,
-    "description": "A condition exists in FlashArray Purity whereby an user with array admin role can execute arbitrary commands remotely to escalate privilege on the array.",
-    "published": "2024-09-23T18:15:04.973",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-0005": {
-    "cvss": 9.1,
-    "description": "A condition exists in FlashArray and FlashBlade Purity whereby a malicious user could execute arbitrary commands remotely through a specifically crafted SNMP configuration.",
-    "published": "2024-09-23T18:15:05.233",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-39341": {
-    "cvss": "-",
-    "description": "Entrust Instant Financial Issuance (On Premise) Software (formerly known as Cardwizard) 6.10.0, 6.9.0, 6.9.1, 6.9.2, and 6.8.x and earlier leaves behind a configuration file (i.e. WebAPI.cfg.xml) after the installation process. This file can be accessed without authentication on HTTP port 80 by guessing the correct IIS webroot path. It includes system configuration parameter names and values with sensitive configuration values encrypted.",
-    "published": "2024-09-23T18:15:05.507",
-    "keywords": "authentication,sensitive"
-  },
   "CVE-2024-39842": {
     "cvss": 7.2,
     "description": "A SQL injection vulnerability in Centreon 24.04.2 allows a remote high-privileged attacker to execute arbitrary SQL command via user massive changes inputs.",
@@ -292,5 +274,29 @@
     "description": "Dell SmartFabric OS10 Software, versions 10.5.6.x, 10.5.5.x, 10.5.4.x,10.5.3.x, contains an Uncontrolled Resource Consumption vulnerability. A remote unauthenticated host could potentially exploit this vulnerability leading to a denial of service.",
     "published": "2024-09-26T17:15:03.400",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-39577": {
+    "cvss": 7.1,
+    "description": "Dell SmartFabric OS10 Software, versions 10.5.6.x, 10.5.5.x, 10.5.4.x, 10.5.3.x, contains an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability leading to code execution.",
+    "published": "2024-09-26T18:15:05.717",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2024-47130": {
+    "cvss": "-",
+    "description": "The goTenna Pro series allows unauthenticated attackers to remotely update the local public keys used for P2P and Group messages.",
+    "published": "2024-09-26T18:15:10.040",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-47169": {
+    "cvss": 8.8,
+    "description": "Agnai is an artificial-intelligence-agnostic multi-user, mult-bot roleplaying chat system. A vulnerability in versions prior to 1.0.330 permits attackers to upload arbitrary files to attacker-chosen locations on the server, including JavaScript, enabling the execution of commands within those files. This issue could result in unauthorized access, full server compromise, data leakage, and other critical security threats. This does not affect `agnai.chat`, installations using S3-compatible storage, or self-hosting that is not publicly exposed. This does affect publicly hosted installs without S3-compatible storage. Version 1.0.330 fixes this vulnerability.",
+    "published": "2024-09-26T18:15:10.157",
+    "keywords": "execution,command,leak"
+  },
+  "CVE-2024-47174": {
+    "cvss": 5.9,
+    "description": "Nix is a package manager for Linux and other Unix systems. Starting in version 1.11 and prior to versions 2.18.8 and 2.24.8, `<nix/fetchurl.nix>` did not verify TLS certificates on HTTPS connections. This could lead to connection details such as full URLs or credentials leaking in case of a man-in-the-middle (MITM) attack. `<nix/fetchurl.nix>` is also known as the builtin derivation builder `builtin:fetchurl`. It's not to be confused with the evaluation-time function `builtins.fetchurl`, which was not affected by this issue. A user may be affected by the risk of leaking credentials if they have a `netrc` file for authentication, or rely on derivations with `impureEnvVars` set to use credentials from the environment. In addition, the commonplace trust-on-first-use (TOFU) technique of updating dependencies by specifying an invalid hash and obtaining it from a remote  store was also vulnerable to a MITM injecting arbitrary store objects. This also applied to the impure derivations experimental feature. Note that this may also happen when using Nixpkgs fetchers to obtain new hashes when not using the fake hash method, although that mechanism is not implemented in Nix itself but rather in Nixpkgs using a fixed-output derivation. The behavior was introduced in version 1.11 to make it consistent with the Nixpkgs `pkgs.fetchurl` and to make `<nix/fetchurl.nix>` work in the derivation builder sandbox, which back then did not have access to the CA bundles by default. Nowadays, CA bundles are bind-mounted on Linux. This issue has been fixed in Nix 2.18.8 and 2.24.8. As a workaround, implement (authenticated) fetching with `pkgs.fetchurl` from Nixpkgs, using `impureEnvVars` and `curlOpts` as needed.",
+    "published": "2024-09-26T18:15:10.840",
+    "keywords": "remote,authentication,leak"
   }
 }
