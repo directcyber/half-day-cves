@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-09-26T08:14:33.509047
+Updated at UTC 2024-09-26T09:11:48.443441
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-09-26T08:14:33.509047
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -166,6 +168,32 @@ Updated at UTC 2024-09-26T08:14:33.509047
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-47197">CVE-2024-47197</a></td>
+					<td>-</td>
+					<td>remote,sensitive</td>
+					<td class=date>2024-09-26T08:15:06.587</td>
+					<td class=description>Exposure of Sensitive Information to an Unauthorized Actor, Insecure Storage of Sensitive Information vulnerability in Maven Archetype Plugin.
+
+This issue affects Maven Archetype Plugin: from 3.2.1 before 3.3.0.
+
+Users are recommended to upgrade to version 3.3.0, which fixes the issue.
+
+Archetype integration testing creates a file
+called ./target/classes/archetype-it/archetype-settings.xml
+This file contains all the content from the users ~/.m2/settings.xml file,
+which often contains information they do not want to publish. We expect that on many developer machines, this also contains
+credentials.
+
+When the user runs mvn verify again (without a mvn clean), this file becomes part of
+the final artifact.
+
+If a developer were to publish this into Maven Central or any other remote repository (whether as a release
+or a snapshot) their credentials would be published without them knowing.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">

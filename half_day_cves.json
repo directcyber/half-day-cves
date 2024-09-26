@@ -286,5 +286,11 @@
     "description": "The Jupiter X Core plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 4.7.5. This is due to improper authentication via the Social Login widget. This makes it possible for unauthenticated attackers to log in as the first user to have logged in with a social media account, including administrator accounts. Attackers can exploit the vulnerability even if the Social Login element has been disabled, as long as it was previously enabled and used. The vulnerability was partially patched in version 4.7.5, and fully patched in version 4.7.8.",
     "published": "2024-09-26T05:15:12.470",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-47197": {
+    "cvss": "-",
+    "description": "Exposure of Sensitive Information to an Unauthorized Actor, Insecure Storage of Sensitive Information vulnerability in Maven Archetype Plugin.\n\nThis issue affects Maven Archetype Plugin: from 3.2.1 before 3.3.0.\n\nUsers are recommended to upgrade to version 3.3.0, which fixes the issue.\n\nArchetype integration testing creates a file\ncalled ./target/classes/archetype-it/archetype-settings.xml\nThis file contains all the content from the users ~/.m2/settings.xml file,\nwhich often contains information they do not want to publish. We expect that on many developer machines, this also contains\ncredentials.\n\nWhen the user runs mvn verify again (without a mvn clean), this file becomes part of\nthe final artifact.\n\nIf a developer were to publish this into Maven Central or any other remote repository (whether as a release\nor a snapshot) their credentials would be published without them knowing.",
+    "published": "2024-09-26T08:15:06.587",
+    "keywords": "remote,sensitive"
   }
 }
