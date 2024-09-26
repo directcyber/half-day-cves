@@ -1,10 +1,4 @@
 {
-  "CVE-2024-46997": {
-    "cvss": 9.8,
-    "description": "DataEase is an open source data visualization analysis tool. Prior to version 2.10.1, an attacker can achieve remote command execution by adding a carefully constructed h2 data source connection string. The vulnerability has been fixed in v2.10.1.",
-    "published": "2024-09-23T16:15:06.387",
-    "keywords": "remote,execution,command"
-  },
   "CVE-2024-9014": {
     "url": "https://github.com/pgadmin-org/pgadmin4/issues/7945",
     "cvss": 9.9,
@@ -240,7 +234,7 @@
     "keywords": "remote,authentication,vpn"
   },
   "CVE-2024-46489": {
-    "cvss": "-",
+    "cvss": 8.8,
     "description": "A remote command execution (RCE) vulnerability in promptr v6.0.7 allows attackers to execute arbitrary commands via a crafted URL.",
     "published": "2024-09-25T18:15:05.227",
     "keywords": "remote,execution,command"
@@ -286,5 +280,17 @@
     "description": "IBM Cognos Command Center 10.2.4.1 and 10.2.5 could disclose highly sensitive user information to an authenticated user with physical access to the device.",
     "published": "2024-09-26T14:15:08.433",
     "keywords": "command,sensitive"
+  },
+  "CVE-2024-43191": {
+    "cvss": 7.2,
+    "description": "IBM ManageIQ could allow a remote authenticated attacker to execute arbitrary commands on the system by sending a specially crafted yaml file request.",
+    "published": "2024-09-26T16:15:08.347",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-46632": {
+    "url": "https://github.com/assimp/assimp/issues/5771",
+    "cvss": "-",
+    "description": "Assimp v5.4.3 is vulnerable to Buffer Overflow via the MD5Importer::LoadMD5MeshFile function.",
+    "published": "2024-09-26T16:15:08.783"
   }
 }
