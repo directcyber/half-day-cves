@@ -1,28 +1,4 @@
 {
-  "CVE-2024-23922": {
-    "cvss": 6.8,
-    "description": "Sony XAV-AX5500 Insufficient Firmware Update Validation Remote Code Execution Vulnerability. This vulnerability allows physically present attackers to execute arbitrary code on affected installations of Sony XAV-AX5500 devices. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of software updates. The issue results from the lack of proper validation of software update packages. An attacker can leverage this vulnerability to execute code in the context of the device.\n\nWas ZDI-CAN-22939",
-    "published": "2024-09-23T15:15:13.010",
-    "keywords": "remote,execution,authentication"
-  },
-  "CVE-2024-23933": {
-    "cvss": 6.8,
-    "description": "Sony XAV-AX5500 CarPlay TLV Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows physically present attackers to execute arbitrary code on affected installations of \tSony XAV-AX5500 devices. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the implementation of the Apple CarPlay protocol. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the device.\n\nWas ZDI-CAN-23238",
-    "published": "2024-09-23T15:15:13.297",
-    "keywords": "remote,execution,authentication"
-  },
-  "CVE-2024-23934": {
-    "cvss": 8.8,
-    "description": "Sony XAV-AX5500 WMV/ASF Parsing Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Sony XAV-AX5500 devices. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of WMV/ASF files. A crafted Extended Content Description Object in a WMV media file can trigger an overflow of a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the device.\n\n. Was ZDI-CAN-22994.",
-    "published": "2024-09-23T15:15:13.500",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-23972": {
-    "cvss": 6.8,
-    "description": "Sony XAV-AX5500 USB Configuration Descriptor Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows physically present attackers to execute arbitrary code on affected installations of Sony XAV-AX5500 devices. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the USB host driver. A crafted USB configuration descriptor can trigger an overflow of a fixed-length buffer. An attacker can leverage this vulnerability to execute code in the context of the device.\n\nWas ZDI-CAN-23185",
-    "published": "2024-09-23T15:15:13.703",
-    "keywords": "remote,execution,authentication"
-  },
   "CVE-2024-46997": {
     "cvss": 9.8,
     "description": "DataEase is an open source data visualization analysis tool. Prior to version 2.10.1, an attacker can achieve remote command execution by adding a carefully constructed h2 data source connection string. The vulnerability has been fixed in v2.10.1.",
