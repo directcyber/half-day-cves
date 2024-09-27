@@ -334,5 +334,17 @@
     "description": "In UMTS RLC driver, there is a possible out of bounds read due to a missing bounds check. This could lead to remote denial of service with System execution privileges needed.",
     "published": "2024-09-27T08:15:03.530",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-9281": {
+    "url": "https://github.com/bg5sbk/minicms/issues/51",
+    "cvss": 4.3,
+    "description": "A vulnerability was found in bg5sbk MiniCMS up to 1.11 and classified as problematic. This issue affects some unknown processing of the file post-edit.php. The manipulation leads to cross-site request forgery. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The initial researcher advisory mentions confusing version and file name information. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-09-27T13:15:18.153"
+  },
+  "CVE-2024-9282": {
+    "url": "https://github.com/bg5sbk/minicms/issues/52",
+    "cvss": 4.3,
+    "description": "A vulnerability was found in bg5sbk MiniCMS 1.11. It has been classified as problematic. Affected is an unknown function of the file page-edit.php. The manipulation leads to cross-site request forgery. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The initial researcher advisory mentions confusing version and file name information. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-09-27T13:15:18.443"
   }
 }
