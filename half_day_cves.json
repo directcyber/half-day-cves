@@ -322,5 +322,17 @@
     "description": "CUPS is a standards-based, open-source printing system, and cups-filters provides backends, filters, and other software for CUPS 2.x to use on non-Mac OS systems. Any value passed to `FoomaticRIPCommandLine` via a PPD file will be executed as a user controlled command. When combined with other logic bugs as described in CVE_2024-47176, this can lead to remote command execution.",
     "published": "2024-09-26T22:15:04.740",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2024-39431": {
+    "cvss": 8.3,
+    "description": "In UMTS RLC driver, there is a possible out of bounds write due to a missing bounds check. This could lead to remote denial of service with System execution privileges needed.",
+    "published": "2024-09-27T08:15:02.513",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-39432": {
+    "cvss": 8.3,
+    "description": "In UMTS RLC driver, there is a possible out of bounds read due to a missing bounds check. This could lead to remote denial of service with System execution privileges needed.",
+    "published": "2024-09-27T08:15:03.530",
+    "keywords": "remote,execution"
   }
 }
