@@ -1,16 +1,4 @@
 {
-  "CVE-2024-39364": {
-    "cvss": 6.3,
-    "description": "Advantech ADAM-5630 \nhas built-in commands that can be executed without authenticating the \nuser. These commands allow for restarting the operating system, \nrebooting the hardware, and stopping the execution. The commands can be \nsent to a simple HTTP request and are executed by the device \nautomatically, without discrimination of origin or level of privileges \nof the user sending the commands.",
-    "published": "2024-09-27T18:15:05.417",
-    "keywords": "execution,command"
-  },
-  "CVE-2024-46257": {
-    "cvss": "-",
-    "description": "A Command injection vulnerability in requestLetsEncryptSslWithDnsChallenge in NginxProxyManager 2.11.3 allows an attacker to achieve remote code execution via Add Let's Encrypt Certificate. NOTE: this is not part of any NGINX software shipped by F5.",
-    "published": "2024-09-27T18:15:05.870",
-    "keywords": "remote,execution,command"
-  },
   "CVE-2024-8353": {
     "cvss": 10.0,
     "description": "The GiveWP \u2013 Donation Plugin and Fundraising Platform plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.16.1 via deserialization of untrusted input via several parameters like 'give_title' and 'card_address'. This makes it possible for unauthenticated attackers to inject a PHP Object. The additional presence of a POP chain allows attackers to delete arbitrary files and achieve remote code execution. This is essentially the same vulnerability as CVE-2024-5932, however, it was discovered the the presence of stripslashes_deep on user_info allows the is_serialized check to be bypassed. This issue was mostly patched in 3.16.1, but further hardening was added in 3.16.2.",
@@ -84,7 +72,7 @@
     "keywords": "remote,command"
   },
   "CVE-2024-45200": {
-    "cvss": "-",
+    "cvss": 6.3,
     "description": "In Nintendo Mario Kart 8 Deluxe before 3.0.3, the LAN/LDN local multiplayer implementation allows a remote attacker to exploit a stack-based buffer overflow upon deserialization of session information via a malformed browse-reply packet, aka KartLANPwn. The victim is not required to join a game session with an attacker. The victim must open the \"Wireless Play\" (or \"LAN Play\") menu from the game's title screen, and an attacker nearby (LDN) or on the same LAN network as the victim can send a crafted reply packet to the victim's console. This enables a remote attacker to obtain complete denial-of-service on the game's process, or potentially, remote code execution on the victim's console. The issue is caused by incorrect use of the Nintendo Pia library,",
     "published": "2024-09-30T08:15:03.760",
     "keywords": "remote,execution"
@@ -114,9 +102,15 @@
     "keywords": "remote,unauthenticated"
   },
   "CVE-2024-46540": {
-    "cvss": "-",
+    "cvss": 6.3,
     "description": "A remote code execution (RCE) vulnerability in the component /admin/store.php of Emlog Pro before v2.3.15 allows attackers to use remote file downloads and self-extract fucntions to upload webshells to the target server, thereby obtaining system privileges.",
     "published": "2024-09-30T17:15:04.550",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-42017": {
+    "cvss": 10.0,
+    "description": "An issue was discovered in Atos Eviden iCare 2.7.1 through 2.7.11. The application exposes a web interface locally. In the worst-case scenario, if the application is remotely accessible, it allows an attacker to execute arbitrary commands with system privilege on the endpoint hosting the application, without any authentication.",
+    "published": "2024-09-30T18:15:05.827",
+    "keywords": "remote,authentication,command"
   }
 }
