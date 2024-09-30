@@ -1,34 +1,4 @@
 {
-  "CVE-2024-40509": {
-    "cvss": 7.3,
-    "description": "Cross Site Scripting vulnerability in openPetra v.2023.02 allows a remote attacker to obtain sensitive information via the serverMFinDev.asmx function.",
-    "published": "2024-09-27T15:15:14.740",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-40510": {
-    "cvss": "-",
-    "description": "Cross Site Scripting vulnerability in openPetra v.2023.02 allows a remote attacker to obtain sensitive information via the serverMCommon.asmx function.",
-    "published": "2024-09-27T15:15:14.820",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-44910": {
-    "url": "https://github.com/nasa/cryptolib/issues/268",
-    "cvss": "-",
-    "description": "NASA CryptoLib v1.3.0 was discovered to contain an Out-of-Bounds read via the AOS subsystem (crypto_aos.c).",
-    "published": "2024-09-27T15:15:14.907"
-  },
-  "CVE-2024-44911": {
-    "url": "https://github.com/nasa/cryptolib/issues/268",
-    "cvss": "-",
-    "description": "NASA CryptoLib v1.3.0 was discovered to contain an Out-of-Bounds read via the TC subsystem (crypto_aos.c).",
-    "published": "2024-09-27T15:15:14.990"
-  },
-  "CVE-2024-44912": {
-    "url": "https://github.com/nasa/cryptolib/issues/268",
-    "cvss": "-",
-    "description": "NASA CryptoLib v1.3.0 was discovered to contain an Out-of-Bounds read via the TM subsystem (crypto_tm.c).",
-    "published": "2024-09-27T15:15:15.063"
-  },
   "CVE-2024-6983": {
     "cvss": 8.8,
     "description": "mudler/localai version 2.17.1 is vulnerable to remote code execution. The vulnerability arises because the localai backend receives inputs not only from the configuration file but also from other inputs, allowing an attacker to upload a binary file and execute malicious code. This can lead to the attacker gaining full control over the system.",
