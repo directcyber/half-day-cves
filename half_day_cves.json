@@ -106,5 +106,11 @@
     "description": "An issue was discovered in Atos Eviden iCare 2.7.1 through 2.7.11. The application exposes a web interface locally. In the worst-case scenario, if the application is remotely accessible, it allows an attacker to execute arbitrary commands with system privilege on the endpoint hosting the application, without any authentication.",
     "published": "2024-09-30T18:15:05.827",
     "keywords": "remote,authentication,command"
+  },
+  "CVE-2024-47295": {
+    "cvss": 8.1,
+    "description": "Insecure initial password configuration issue in SEIKO EPSON Web Config allows a remote unauthenticated attacker to set an arbitrary password and operate the device with an administrative privilege. As for the details of the affected versions, see the information provided by the vendor under [References].",
+    "published": "2024-10-01T04:15:18.040",
+    "keywords": "remote,unauthenticated"
   }
 }
