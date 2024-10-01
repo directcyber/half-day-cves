@@ -88,5 +88,17 @@
     "cvss": 7.1,
     "description": "Decidim is a participatory democracy framework. The version control feature used in resources is subject to potential XSS attack through a malformed URL. This vulnerability is fixed in 0.27.8.",
     "published": "2024-10-01T15:15:07.873"
+  },
+  "CVE-2024-25660": {
+    "cvss": "-",
+    "description": "The WebDAV service in Infinera TNMS (Transcend Network Management System) 19.10.3 allows a low-privileged remote attacker to conduct unauthorized file operations, because of execution with unnecessary privileges.",
+    "published": "2024-10-01T16:15:09.463",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-47604": {
+    "url": "https://github.com/nuget/nugetgallery/pull/10193",
+    "cvss": 8.2,
+    "description": "NuGet Gallery is a package repository that powers nuget.org. The NuGetGallery has a security vulnerability in its handling of HTML element attributes, which allows an attacker to execute arbitrary HTML or Javascript code in a victim's browser.",
+    "published": "2024-10-01T16:15:10.003"
   }
 }
