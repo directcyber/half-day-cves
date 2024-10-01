@@ -78,9 +78,15 @@
     "keywords": "unauthenticated,sensitive"
   },
   "CVE-2024-41276": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "A vulnerability in Kaiten version 57.131.12 and earlier allows attackers to bypass the PIN code authentication mechanism. The application requires users to input a 6-digit PIN code sent to their email for authorization after entering their login credentials. However, the request limiting mechanism can be easily bypassed, enabling attackers to perform a brute force attack to guess the correct PIN and gain unauthorized access to the application.",
     "published": "2024-10-01T14:15:05.477",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-41673": {
+    "url": "https://github.com/decidim/decidim/commit/8a18c8b1ee85a1b35ee0d8d5893f218695d15637",
+    "cvss": 7.1,
+    "description": "Decidim is a participatory democracy framework. The version control feature used in resources is subject to potential XSS attack through a malformed URL. This vulnerability is fixed in 0.27.8.",
+    "published": "2024-10-01T15:15:07.873"
   }
 }
