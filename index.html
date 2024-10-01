@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-10-01T07:11:29.791539
+Updated at UTC 2024-10-01T08:15:13.889226
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,22 +57,6 @@ Updated at UTC 2024-10-01T07:11:29.791539
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
 		
 			
 		
@@ -182,118 +166,6 @@ Updated at UTC 2024-10-01T07:11:29.791539
 					<td>remote,command</td>
 					<td class=date>2024-09-30T07:15:03.507</td>
 					<td class=description>Certain switch models from PLANET Technology have a hard-coded credential in the specific command-line interface, allowing remote attackers with regular privilege to log in with this credential and obtain a Linux root shell.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-23967">CVE-2024-23967</a></td>
-					<td>8.0</td>
-					<td>remote,execution,authentication,bypass</td>
-					<td class=date>2024-09-28T07:15:03.937</td>
-					<td class=description>Autel MaxiCharger AC Elite Business C50 WebSocket Base64 Decoding Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Autel MaxiCharger AC Elite Business C50 chargers. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed.
-
-The specific flaw exists within the handling of base64-encoded data within WebSocket messages. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the device.
-
-Was ZDI-CAN-23230</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-23961">CVE-2024-23961</a></td>
-					<td>6.8</td>
-					<td>remote,execution,authentication,command</td>
-					<td class=date>2024-09-28T07:15:03.740</td>
-					<td class=description>Alpine Halo9 UPDM_wemCmdUpdFSpeDecomp Command Injection Remote Code Execution Vulnerability. This vulnerability allows physically present attackers to execute arbitrary code on affected installations of Alpine Halo9 devices. Authentication is not required to exploit this vulnerability.
-
-The specific flaw exists within the UPDM_wemCmdUpdFSpeDecomp function. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of root.
-
-Was ZDI-CAN-23306</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-23960">CVE-2024-23960</a></td>
-					<td>4.6</td>
-					<td>authentication,bypass</td>
-					<td class=date>2024-09-28T07:15:03.550</td>
-					<td class=description>Alpine Halo9 Improper Verification of Cryptographic Signature Vulnerability. This vulnerability allows physically present attackers to bypass signature validation mechanism on affected installations of Alpine Halo9 devices. Authentication is not required to exploit this vulnerability.
-
-The specific flaw exists within the firmware metadata signature validation mechanism. The issue results from the lack of proper verification of a cryptographic signature. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of root.
-
-Was ZDI-CAN-23102</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-23959">CVE-2024-23959</a></td>
-					<td>8.0</td>
-					<td>remote,execution,authentication,command,bypass</td>
-					<td class=date>2024-09-28T07:15:03.367</td>
-					<td class=description>Autel MaxiCharger AC Elite Business C50 BLE AppChargingControl Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Autel MaxiCharger AC Elite Business C50 charging stations. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed.
-
-The specific flaw exists within the handling of the AppChargingControl BLE command. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the device.
-
-Was ZDI-CAN-23194</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-23958">CVE-2024-23958</a></td>
-					<td>6.5</td>
-					<td>authentication,command,bypass</td>
-					<td class=date>2024-09-28T07:15:03.183</td>
-					<td class=description>Autel MaxiCharger AC Elite Business C50 BLE Hardcoded Credentials Authentication Bypass Vulnerability. This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of Autel MaxiCharger AC Elite Business C50 charging stations. Authentication is not required to exploit this vulnerability.
-
-The specific flaw exists within the BLE AppAuthenRequest command handler. The handler uses hardcoded credentials as a fallback in case of an authentication request failure. An attacker can leverage this vulnerability to bypass authentication on the system.
-
-Was ZDI-CAN-23196</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-23935">CVE-2024-23935</a></td>
-					<td>8.0</td>
-					<td>remote,execution</td>
-					<td class=date>2024-09-28T07:15:02.997</td>
-					<td class=description>Alpine Halo9 DecodeUTF7 Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Alpine Halo9 devices. An attacker must first obtain the ability to pair a malicious Bluetooth device with the target system in order to exploit this vulnerability.
-
-The specific flaw exists within the DecodeUTF7 function. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of root.
-
-Was ZDI-CAN-23249</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-23924">CVE-2024-23924</a></td>
-					<td>6.8</td>
-					<td>remote,execution,authentication,command</td>
-					<td class=date>2024-09-28T07:15:02.790</td>
-					<td class=description>Alpine Halo9 UPDM_wemCmdCreatSHA256Hash Command Injection Remote Code Execution Vulnerability. This vulnerability allows physically present attackers to execute arbitrary code on affected installations of Alpine Halo9 devices. Authentication is not required to exploit this vulnerability.
-
-The specific flaw exists within the UPDM_wemCmdCreatSHA256Hash function. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of root.
-
-Was ZDI-CAN-23105</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-23923">CVE-2024-23923</a></td>
-					<td>8.8</td>
-					<td>remote,execution,authentication</td>
-					<td class=date>2024-09-28T07:15:02.440</td>
-					<td class=description>Alpine Halo9 prh_l2_sar_data_ind Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Alpine Halo9 devices. Authentication is not required to exploit this vulnerability.
-
-The specific flaw exists within the prh_l2_sar_data_ind function. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of root.
-
-Was ZDI-CAN-22945</td>
 				</tr>
 			
 		
