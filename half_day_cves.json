@@ -130,5 +130,29 @@
     "description": "A vulnerability exists in the bind-propagation option of the Dockerfile RUN --mount instruction. The system does not properly validate the input passed to this option, allowing users to pass arbitrary parameters to the mount instruction. This issue can be exploited to mount sensitive directories from the host into a container during the build process and, in some cases, modify the contents of those mounted files. Even if SELinux is used, this vulnerability can bypass its protection by allowing the source directory to be relabeled to give the container access to host files.",
     "published": "2024-10-01T21:15:08.530",
     "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-21530": {
+    "url": "https://github.com/fadeevab/cocoon/commit/1b6392173ce35db4736a94b62b2d2973f9a71441",
+    "cvss": 4.5,
+    "description": "Versions of the package cocoon before 0.4.0 are vulnerable to Reusing a Nonce, Key Pair in Encryption when the encrypt, wrap, and dump functions are sequentially called. An attacker can generate the same ciphertext by creating a new encrypted message with the same cocoon object.\r\r**Note:**\rThe issue does NOT affect objects created with Cocoon::new which utilizes ThreadRng.",
+    "published": "2024-10-02T05:15:11.300"
+  },
+  "CVE-2024-33662": {
+    "url": "https://github.com/portainer/portainer/issues/11737",
+    "cvss": "-",
+    "description": "Portainer before 2.20.2 improperly uses an encryption algorithm in the AesEncrypt function.",
+    "published": "2024-10-02T05:15:11.643"
+  },
+  "CVE-2024-7855": {
+    "cvss": 8.8,
+    "description": "The WP Hotel Booking plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the update_review() function in all versions up to, and including, 2.1.2. This makes it possible for authenticated attackers, with subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-10-02T05:15:11.843",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-7315": {
+    "cvss": "-",
+    "description": "The Migration, Backup, Staging  WordPress plugin before 0.9.106 does not use sufficient randomness in the filename that is created when generating a backup, which could be bruteforced by attackers to leak sensitive information about said backups.",
+    "published": "2024-10-02T06:15:09.963",
+    "keywords": "sensitive,leak"
   }
 }
