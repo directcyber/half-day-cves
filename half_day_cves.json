@@ -144,7 +144,7 @@
     "keywords": "remote,execution"
   },
   "CVE-2024-7315": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "The Migration, Backup, Staging  WordPress plugin before 0.9.106 does not use sufficient randomness in the filename that is created when generating a backup, which could be bruteforced by attackers to leak sensitive information about said backups.",
     "published": "2024-10-02T06:15:09.963",
     "keywords": "sensitive,leak"
@@ -160,5 +160,65 @@
     "description": "An unauthenticated remote attacker may use the devices traffic capture without authentication to grab plaintext administrative credentials.",
     "published": "2024-10-02T11:15:10.780",
     "keywords": "remote,unauthenticated,authentication"
+  },
+  "CVE-2024-20365": {
+    "cvss": 6.5,
+    "description": "A vulnerability in the Redfish API of Cisco UCS B-Series, Cisco UCS Managed C-Series, and Cisco UCS X-Series Servers could allow an authenticated, remote attacker with administrative privileges to perform command injection attacks on an affected system and elevate privileges to root.\r\n\r\nThis vulnerability is due to insufficient input validation. An attacker with administrative privileges could exploit this vulnerability by sending crafted commands through the Redfish API on an affected device. A successful exploit could allow the attacker to elevate privileges to root.",
+    "published": "2024-10-02T17:15:14.863",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-20385": {
+    "cvss": 5.9,
+    "description": "A vulnerability in the SSL/TLS implementation of Cisco Nexus Dashboard Orchestrator (NDO) could allow an unauthenticated, remote attacker to intercept sensitive information from an affected device.&nbsp;\r\n\r\nThis vulnerability exists because the Cisco NDO Validate Peer Certificate site management feature validates the certificates for Cisco Application Policy Infrastructure Controller (APIC), Cisco Cloud Network Controller (CNC), and Cisco Nexus Dashboard only when a new site is added or an existing one is reregistered. An attacker could exploit this vulnerability by using machine-in-the-middle techniques to intercept the traffic between the affected device and Cisco NDO and then using a crafted certificate to impersonate the affected device. A successful exploit could allow the attacker to learn sensitive information during communications between these devices.",
+    "published": "2024-10-02T17:15:15.110",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2024-20393": {
+    "cvss": 8.8,
+    "description": "A vulnerability in the web-based management interface of Cisco Small Business RV340, RV340W, RV345, and RV345P Dual WAN Gigabit VPN Routers could allow an authenticated, remote attacker to elevate privileges on an affected device.\r\n\r\nThis vulnerability exists because the web-based management interface discloses sensitive information. An attacker could exploit this vulnerability by sending crafted HTTP input to an affected device. A successful exploit could allow an attacker to elevate privileges from guest to admin.",
+    "published": "2024-10-02T17:15:15.337",
+    "keywords": "remote,sensitive,vpn"
+  },
+  "CVE-2024-20432": {
+    "cvss": 9.9,
+    "description": "A vulnerability in the REST API and web UI of Cisco Nexus Dashboard Fabric Controller (NDFC) could allow an authenticated, low-privileged, remote attacker to perform a command injection attack against an affected device.\r\n&nbsp;\r\nThis vulnerability is due to improper user authorization and insufficient validation of command arguments. An attacker could exploit this vulnerability by submitting crafted commands to an affected REST API endpoint or through the web UI. A successful exploit could allow the attacker to execute arbitrary commands on the CLI of a Cisco NDFC-managed device with network-admin privileges.\r\n&nbsp;\r\nNote: This vulnerability does not affect Cisco NDFC when it is configured for storage area network (SAN) controller deployment.",
+    "published": "2024-10-02T17:15:15.550",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-20441": {
+    "cvss": 5.7,
+    "description": "A vulnerability in a specific REST API endpoint of Cisco NDFC could allow an authenticated, low-privileged, remote attacker to learn sensitive information on an affected device.\r\n\r\nThis vulnerability is due to insufficient authorization controls on the affected REST API endpoint. An attacker could exploit this vulnerability by sending crafted API requests to the&nbsp;affected endpoint. A successful exploit could allow the attacker to download config only or full backup files and learn sensitive configuration information. This vulnerability only affects a specific REST API endpoint and does not affect the web-based management interface.",
+    "published": "2024-10-02T17:15:15.967",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-20444": {
+    "cvss": 5.5,
+    "description": "A vulnerability in Cisco Nexus Dashboard Fabric Controller (NDFC), formerly Cisco Data Center Network Manager (DCNM), could allow an authenticated, remote attacker with network-admin privileges to perform a command injection attack against an affected device.\r\n&nbsp;\r\nThis vulnerability is due to insufficient validation of command arguments. An attacker could exploit this vulnerability by submitting crafted command arguments to a specific REST API endpoint. A successful exploit could allow the attacker to overwrite sensitive files or crash a specific container, which would restart on its own, causing a low-impact denial of service (DoS) condition.",
+    "published": "2024-10-02T17:15:16.390",
+    "keywords": "remote,command,sensitive"
+  },
+  "CVE-2024-20470": {
+    "cvss": "-",
+    "description": "A vulnerability in the web-based management interface of Cisco Small Business RV340, RV340W, RV345, and RV345P Dual WAN Gigabit VPN Routers could allow an authenticated, remote attacker to execute arbitrary code on an affected device. In order to exploit this vulnerability, the attacker must have valid admin credentials.\r\n\r\nThis vulnerability exists because the web-based management interface does not sufficiently validate user-supplied input. An attacker could exploit this vulnerability by sending crafted HTTP input to an affected device. A successful exploit could allow the attacker to execute arbitrary code as the root user on the underlying operating system.",
+    "published": "2024-10-02T17:15:17.027",
+    "keywords": "remote,vpn"
+  },
+  "CVE-2024-20491": {
+    "cvss": 6.3,
+    "description": "A vulnerability in a logging function of Cisco Nexus Dashboard Insights could allow an attacker with access to a tech support file to view sensitive information.\r\n\r\nThis vulnerability exists because remote controller credentials are recorded in an internal log that is stored in the tech support file. An attacker could exploit this vulnerability by accessing a tech support file that is generated from an affected system. A successful exploit could allow the attacker to view remote controller admin credentials in clear text.\r\nNote: Best practice is to store debug logs and tech support files safely and to share them only with trusted parties because they may contain sensitive information.",
+    "published": "2024-10-02T17:15:17.563",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-20515": {
+    "cvss": 6.5,
+    "description": "A vulnerability in the web-based management interface of Cisco Identity Services Engine (ISE) could allow an authenticated, remote attacker to obtain sensitive information from an affected device.\r\n\r\nThis vulnerability is due to a lack of proper data protection mechanisms for certain configuration settings. An attacker with Read-Only Administrator privileges could exploit this vulnerability by browsing to a page that contains sensitive data. A successful exploit could allow the attacker to view device credentials that are normally not visible to Read-Only Administrators.",
+    "published": "2024-10-02T17:15:17.973",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-24122": {
+    "cvss": "-",
+    "description": "A remote code execution vulnerability in the project management of Wanxing Technology's Yitu project which allows an attacker to use the exp.adpx file as a zip compressed file to construct a special file name, which can be used to decompress the project file into the system startup folder, restart the system, and automatically execute the constructed attack script.",
+    "published": "2024-10-02T18:15:04.957",
+    "keywords": "remote,execution"
   }
 }
