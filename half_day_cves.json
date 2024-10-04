@@ -250,5 +250,11 @@
     "description": "** UNSUPPORTED WHEN ASSIGNED ** This vulnerability exists in D3D Security IP Camera due to usage of weak authentication scheme of the HTTP header protocol where authorization tag contain a Base-64 encoded username and password. A remote attacker could exploit this vulnerability by crafting a HTTP packet leading to exposure of user credentials of the targeted device. NOTE: This vulnerability only affects products that are no longer supported by the maintainer.",
     "published": "2024-10-04T13:15:12.137",
     "keywords": "remote,authentication"
+  },
+  "CVE-2024-47769": {
+    "url": "https://github.com/idurar/idurar-erp-crm/commit/949bc6fe31f3175c9e1864d30cf6c8110179ac14",
+    "cvss": 7.5,
+    "description": "IDURAR is open source ERP CRM accounting invoicing software. The vulnerability exists in the corePublicRouter.js file. Using the reference usage here, it is identified that the public endpoint is accessible to an unauthenticated user. The user's input is directly appended to the join statement without additional checks. This allows an attacker to send URL encoded malicious payload. The directory structure can be escaped to read system files by adding an encoded string (payload) at subpath location.",
+    "published": "2024-10-04T15:15:13.427"
   }
 }
