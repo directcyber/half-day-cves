@@ -1,10 +1,4 @@
 {
-  "CVE-2024-9405": {
-    "cvss": 5.3,
-    "description": "An incorrect limitation of a path to a restricted directory (path traversal) has been detected in Pluck CMS, affecting version 4.7.18. An unauthenticated attacker could extract sensitive information from the server via the absolute path of a file located in the same directory or subdirectory as the module, but not from recursive directories.",
-    "published": "2024-10-01T12:15:03.893",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2024-41276": {
     "cvss": 9.8,
     "description": "A vulnerability in Kaiten version 57.131.12 and earlier allows attackers to bypass the PIN code authentication mechanism. The application requires users to input a 6-digit PIN code sent to their email for authorization after entering their login credentials. However, the request limiting mechanism can be easily bypassed, enabling attackers to perform a brute force attack to guess the correct PIN and gain unauthorized access to the application.",
@@ -226,5 +220,11 @@
     "description": "The web service for ONS-S8 - Spectra Aggregation Switch includes functions which do not properly validate user input, allowing an attacker to traverse directories, bypass authentication, and execute remote code.",
     "published": "2024-10-03T23:15:02.970",
     "keywords": "remote,authentication,bypass"
+  },
+  "CVE-2024-47651": {
+    "cvss": "-",
+    "description": "This vulnerability exists in Shilpi Client Dashboard due to improper handling of multiple parameters in the API endpoint. An authenticated remote attacker could exploit this vulnerability by including multiple \u201cuserid\u201d parameters in the API request body leading to unauthorized access of sensitive information belonging to other users.",
+    "published": "2024-10-04T12:15:12.710",
+    "keywords": "remote,sensitive"
   }
 }

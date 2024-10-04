@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-10-04T11:09:47.012572
+Updated at UTC 2024-10-04T12:20:38.687576
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-10-04T11:09:47.012572
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -182,10 +184,18 @@ Updated at UTC 2024-10-04T11:09:47.012572
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-47651">CVE-2024-47651</a></td>
+					<td>-</td>
+					<td>remote,sensitive</td>
+					<td class=date>2024-10-04T12:15:12.710</td>
+					<td class=description>This vulnerability exists in Shilpi Client Dashboard due to improper handling of multiple parameters in the API endpoint. An authenticated remote attacker could exploit this vulnerability by including multiple “userid” parameters in the API request body leading to unauthorized access of sensitive information belonging to other users.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -554,16 +564,6 @@ This vulnerability is due to insufficient input validation. An attacker with adm
 					<td>authentication,bypass</td>
 					<td class=date>2024-10-01T14:15:05.477</td>
 					<td class=description>A vulnerability in Kaiten version 57.131.12 and earlier allows attackers to bypass the PIN code authentication mechanism. The application requires users to input a 6-digit PIN code sent to their email for authorization after entering their login credentials. However, the request limiting mechanism can be easily bypassed, enabling attackers to perform a brute force attack to guess the correct PIN and gain unauthorized access to the application.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9405">CVE-2024-9405</a></td>
-					<td>5.3</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2024-10-01T12:15:03.893</td>
-					<td class=description>An incorrect limitation of a path to a restricted directory (path traversal) has been detected in Pluck CMS, affecting version 4.7.18. An unauthenticated attacker could extract sensitive information from the server via the absolute path of a file located in the same directory or subdirectory as the module, but not from recursive directories.</td>
 				</tr>
 			
 		
