@@ -1,10 +1,4 @@
 {
-  "CVE-2024-41276": {
-    "cvss": 9.8,
-    "description": "A vulnerability in Kaiten version 57.131.12 and earlier allows attackers to bypass the PIN code authentication mechanism. The application requires users to input a 6-digit PIN code sent to their email for authorization after entering their login credentials. However, the request limiting mechanism can be easily bypassed, enabling attackers to perform a brute force attack to guess the correct PIN and gain unauthorized access to the application.",
-    "published": "2024-10-01T14:15:05.477",
-    "keywords": "authentication,bypass"
-  },
   "CVE-2024-25660": {
     "cvss": 9.0,
     "description": "The WebDAV service in Infinera TNMS (Transcend Network Management System) 19.10.3 allows a low-privileged remote attacker to conduct unauthorized file operations, because of execution with unnecessary privileges.",
