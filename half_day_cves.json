@@ -250,5 +250,53 @@
     "description": "TP-LINK TL-WDR5620 v2.3 was discovered to contain a remote code execution (RCE) vulnerability via the httpProcDataSrv function.",
     "published": "2024-10-04T17:15:17.173",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-25691": {
+    "cvss": 6.1,
+    "description": "There is a reflected XSS vulnerability in Esri Portal for ArcGIS versions 11.1, 10.9.1 and 10.8.1 which may allow a remote, unauthenticated attacker to create a crafted link which when clicked could potentially execute arbitrary JavaScript code in the victim\u2019s browser.",
+    "published": "2024-10-04T18:15:05.840",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-38036": {
+    "cvss": 4.6,
+    "description": "There is a reflected XSS vulnerability in Esri Portal for ArcGIS versions 10.9.1, 10.8.1 and 10.7.1 which may allow a remote, unauthenticated attacker to create a crafted link which when clicked could potentially execute arbitrary JavaScript code in the victim\u2019s browser.",
+    "published": "2024-10-04T18:15:06.973",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-38037": {
+    "cvss": 6.1,
+    "description": "There is an unvalidated redirect vulnerability in Esri Portal for ArcGIS 11.0 and 10.9.1 that may allow a remote, unauthenticated attacker to craft a URL that could redirect a victim to an arbitrary website, simplifying phishing attacks.",
+    "published": "2024-10-04T18:15:07.207",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-38038": {
+    "cvss": 6.1,
+    "description": "There is a reflected XSS vulnerability in Esri Portal for ArcGIS versions 10.9.1, 10.8.1 and 10.7.1 which may allow a remote, unauthenticated attacker to create a crafted link which when clicked could potentially execute arbitrary JavaScript code in the victim\u2019s browser.",
+    "published": "2024-10-04T18:15:07.413",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-38040": {
+    "cvss": 7.5,
+    "description": "There is a local file inclusion vulnerability in Esri Portal for ArcGIS 11.2. 11.1, 11.0 and 10.9.1 that may allow a remote, unauthenticated attacker to craft a URL that could potentially disclose sensitive configuration information by reading internal files.",
+    "published": "2024-10-04T18:15:07.897",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2024-41512": {
+    "cvss": "-",
+    "description": "A SQL Injection vulnerability in \"ccHandler.aspx\" in all versions of CADClick v.1.11.0 and before allows remote attackers to execute arbitrary SQL commands via the \"bomid\" parameter.",
+    "published": "2024-10-04T18:15:08.153",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-8148": {
+    "cvss": 6.1,
+    "description": "There is an unvalidated redirect vulnerability in Esri Portal for ArcGIS 10.8.1 - 11.2 that may allow a remote, unauthenticated attacker to craft a URL that could redirect a victim to an arbitrary website, simplifying phishing attacks.",
+    "published": "2024-10-04T18:15:08.633",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-8149": {
+    "cvss": 4.6,
+    "description": "There is a reflected XSS vulnerability in Esri Portal for ArcGIS versions 11.1 and 11.2 which may allow a remote, unauthenticated attacker to create a crafted link which when clicked could potentially execute arbitrary JavaScript code in the victim\u2019s browser.",
+    "published": "2024-10-04T18:15:08.833",
+    "keywords": "remote,unauthenticated"
   }
 }
