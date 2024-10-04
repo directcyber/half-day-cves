@@ -1,22 +1,4 @@
 {
-  "CVE-2024-46080": {
-    "cvss": 8.0,
-    "description": "Scriptcase v9.10.023 and before is vulnerable to Remote Code Execution (RCE) via the nm_zip function.",
-    "published": "2024-10-01T21:15:06.767",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-46084": {
-    "cvss": 8.0,
-    "description": "Scriptcase 9.10.023 and before is vulnerable to Remote Code Execution (RCE) via the nm_unzip function.",
-    "published": "2024-10-01T21:15:06.950",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-9407": {
-    "cvss": 4.7,
-    "description": "A vulnerability exists in the bind-propagation option of the Dockerfile RUN --mount instruction. The system does not properly validate the input passed to this option, allowing users to pass arbitrary parameters to the mount instruction. This issue can be exploited to mount sensitive directories from the host into a container during the build process and, in some cases, modify the contents of those mounted files. Even if SELinux is used, this vulnerability can bypass its protection by allowing the source directory to be relabeled to give the container access to host files.",
-    "published": "2024-10-01T21:15:08.530",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2024-21530": {
     "url": "https://github.com/fadeevab/cocoon/commit/1b6392173ce35db4736a94b62b2d2973f9a71441",
     "cvss": 4.5,
