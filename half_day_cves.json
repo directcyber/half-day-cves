@@ -1,16 +1,4 @@
 {
-  "CVE-2024-42514": {
-    "cvss": 9.1,
-    "description": "A vulnerability in the legacy chat component of Mitel MiContact Center Business through 10.1.0.4 could allow an unauthenticated attacker to conduct an unauthorized access attack due to inadequate access control checks. A successful exploit requires user interaction and could allow an attacker to access sensitive information and send unauthorized messages during an active chat session.",
-    "published": "2024-10-01T19:15:07.883",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-9341": {
-    "cvss": 5.4,
-    "description": "A flaw was found in Go. When FIPS mode is enabled on a system, container runtimes may incorrectly handle certain file paths due to improper validation in the containers/common Go library. This flaw allows an attacker to exploit symbolic links and trick the system into mounting sensitive host directories inside a container. This issue also allows attackers to access critical host files, bypassing the intended isolation between containers and the host system.",
-    "published": "2024-10-01T19:15:09.500",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2024-46080": {
     "cvss": 8.0,
     "description": "Scriptcase v9.10.023 and before is vulnerable to Remote Code Execution (RCE) via the nm_zip function.",
