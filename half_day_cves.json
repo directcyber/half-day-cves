@@ -1,10 +1,4 @@
 {
-  "CVE-2024-47651": {
-    "cvss": "-",
-    "description": "This vulnerability exists in Shilpi Client Dashboard due to improper handling of multiple parameters in the API endpoint. An authenticated remote attacker could exploit this vulnerability by including multiple \u201cuserid\u201d parameters in the API request body leading to unauthorized access of sensitive information belonging to other users.",
-    "published": "2024-10-04T12:15:12.710",
-    "keywords": "remote,sensitive"
-  },
   "CVE-2024-47652": {
     "cvss": "-",
     "description": "This vulnerability exists in Shilpi Client Dashboard due to implementation of inadequate authentication mechanism in the login module wherein access to any users account is granted with just their corresponding mobile number. A remote attacker could exploit this vulnerability by providing mobile number of targeted user, to obtain complete access to the targeted user account.",
