@@ -1,10 +1,4 @@
 {
-  "CVE-2024-47769": {
-    "url": "https://github.com/idurar/idurar-erp-crm/commit/949bc6fe31f3175c9e1864d30cf6c8110179ac14",
-    "cvss": 7.5,
-    "description": "IDURAR is open source ERP CRM accounting invoicing software. The vulnerability exists in the corePublicRouter.js file. Using the reference usage here, it is identified that the public endpoint is accessible to an unauthenticated user. The user's input is directly appended to the join statement without additional checks. This allows an attacker to send URL encoded malicious payload. The directory structure can be escaped to read system files by adding an encoded string (payload) at subpath location.",
-    "published": "2024-10-04T15:15:13.427"
-  },
   "CVE-2024-46486": {
     "cvss": "-",
     "description": "TP-LINK TL-WDR5620 v2.3 was discovered to contain a remote code execution (RCE) vulnerability via the httpProcDataSrv function.",
