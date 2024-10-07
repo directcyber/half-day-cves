@@ -1,34 +1,4 @@
 {
-  "CVE-2024-47652": {
-    "cvss": "-",
-    "description": "This vulnerability exists in Shilpi Client Dashboard due to implementation of inadequate authentication mechanism in the login module wherein access to any users account is granted with just their corresponding mobile number. A remote attacker could exploit this vulnerability by providing mobile number of targeted user, to obtain complete access to the targeted user account.",
-    "published": "2024-10-04T13:15:11.417",
-    "keywords": "remote,authentication"
-  },
-  "CVE-2024-47654": {
-    "cvss": "-",
-    "description": "This vulnerability exists in Shilpi Client Dashboard due to lack of rate limiting and Captcha protection for OTP requests in certain API endpoint. An unauthenticated remote attacker could exploit this vulnerability by sending multiple OTP request through vulnerable API endpoints, which could lead to the OTP bombing on the targeted system.",
-    "published": "2024-10-04T13:15:11.680",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-47655": {
-    "cvss": "-",
-    "description": "This vulnerability exists in the Shilpi Client Dashboard due to improper validation of files being uploaded other than the specified extension. An authenticated remote attacker could exploit this vulnerability by uploading malicious file, which could lead to remote code execution on targeted application.",
-    "published": "2024-10-04T13:15:11.797",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-47657": {
-    "cvss": "-",
-    "description": "This vulnerability exists in the Shilpi Net Back Office due to improper access controls on certain API endpoints. An authenticated remote attacker could exploit this vulnerability by manipulating a parameter dfclientid through API request URLs which could lead to unauthorized access to sensitive information belonging to other users.",
-    "published": "2024-10-04T13:15:12.023",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-47789": {
-    "cvss": "-",
-    "description": "** UNSUPPORTED WHEN ASSIGNED ** This vulnerability exists in D3D Security IP Camera due to usage of weak authentication scheme of the HTTP header protocol where authorization tag contain a Base-64 encoded username and password. A remote attacker could exploit this vulnerability by crafting a HTTP packet leading to exposure of user credentials of the targeted device. NOTE: This vulnerability only affects products that are no longer supported by the maintainer.",
-    "published": "2024-10-04T13:15:12.137",
-    "keywords": "remote,authentication"
-  },
   "CVE-2024-47769": {
     "url": "https://github.com/idurar/idurar-erp-crm/commit/949bc6fe31f3175c9e1864d30cf6c8110179ac14",
     "cvss": 7.5,
