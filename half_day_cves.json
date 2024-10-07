@@ -1,10 +1,4 @@
 {
-  "CVE-2024-9054": {
-    "cvss": "-",
-    "description": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection'), Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Microchip TimeProvider 4100 (Configuration modules) allows Command Injection.This issue affects TimeProvider 4100: from 1.0 before 2.4.7.",
-    "published": "2024-10-04T20:15:07.587",
-    "keywords": "command,sensitive"
-  },
   "CVE-2024-47848": {
     "cvss": "-",
     "description": "Exposure of Sensitive Information to an Unauthorized Actor vulnerability in The Wikimedia Foundation Mediawiki - PageTriage allows Authentication Bypass.This issue affects Mediawiki - PageTriage: from 1.39.X before 1.39.9, from 1.41.X before 1.41.3, from 1.42.X before 1.42.2.",
@@ -54,9 +48,33 @@
     "keywords": "remote,execution"
   },
   "CVE-2024-46041": {
-    "cvss": "-",
+    "cvss": 8.8,
     "description": "IoT Haat Smart Plug IH-IN-16A-S v5.16.1 is vulnerable to Authentication Bypass by Capture-replay.",
     "published": "2024-10-07T16:15:05.477",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-31227": {
+    "url": "https://github.com/redis/redis/commit/b351d5a3210e61cc3b22ba38a723d6da8f3c298a",
+    "cvss": 4.4,
+    "description": "Redis is an open source, in-memory database that persists on disk. An authenticated with sufficient privileges may create a malformed ACL selector which, when accessed, triggers a server panic and subsequent denial of service. The problem exists in Redis 7 prior to versions 7.2.6 and 7.4.1. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+    "published": "2024-10-07T20:15:05.050"
+  },
+  "CVE-2024-31228": {
+    "url": "https://github.com/redis/redis/commit/9317bf64659b33166a943ec03d5d9b954e86afb0",
+    "cvss": 5.5,
+    "description": "Redis is an open source, in-memory database that persists on disk. Authenticated users can trigger a denial-of-service by using specially crafted, long string match patterns on supported commands such as `KEYS`, `SCAN`, `PSUBSCRIBE`, `FUNCTION LIST`, `COMMAND LIST` and ACL definitions. Matching of extremely long patterns may result in unbounded recursion, leading to stack overflow and process crash. This problem has been fixed in Redis versions 6.2.16, 7.2.6, and 7.4.1. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+    "published": "2024-10-07T20:15:05.277"
+  },
+  "CVE-2024-31449": {
+    "cvss": 7.0,
+    "description": "Redis is an open source, in-memory database that persists on disk. An authenticated user may use a specially crafted Lua script to trigger a stack buffer overflow in the bit library, which may potentially lead to remote code execution. The problem exists in all versions of Redis with Lua scripting. This problem has been fixed in Redis versions 6.2.16, 7.2.6, and 7.4.1. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+    "published": "2024-10-07T20:15:05.507",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-45293": {
+    "cvss": 7.5,
+    "description": "PHPSpreadsheet is a pure PHP library for reading and writing spreadsheet files. The security scanner responsible for preventing XXE attacks in the XLSX reader can be bypassed by slightly modifying the XML structure, utilizing white-spaces. On servers that allow users to upload their own Excel (XLSX) sheets, Server files and sensitive information can be disclosed by providing a crafted sheet. The security scan function in src/PhpSpreadsheet/Reader/Security/XmlScanner.php contains a flawed XML encoding check to retrieve the input file's XML encoding in the toUtf8 function. The function searches for the XML encoding through a defined regex which looks for `encoding=\"*\"` and/or `encoding='*'`, if not found, it defaults to the UTF-8 encoding which bypasses the conversion logic. This logic can be used to pass a UTF-7 encoded XXE payload, by utilizing a whitespace before or after the = in the attribute definition. Sensitive information disclosure through the XXE on sites that allow users to upload their own excel spreadsheets, and parse them using PHPSpreadsheet's Excel parser. This issue has been addressed in release versions 1.29.1, 2.1.1, and 2.3.0. All users are advised to upgrade. There are no known workarounds for this vulnerability.",
+    "published": "2024-10-07T20:15:06.100",
+    "keywords": "sensitive,bypass"
   }
 }
