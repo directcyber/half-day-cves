@@ -118,5 +118,35 @@
     "description": "A vulnerability was found in ESAFENET CDG V5. It has been rated as critical. Affected by this issue is the function delCatelogs of the file /CDGServer3/document/Catelogs;logindojojs?command=DelCatelogs. The manipulation of the argument id leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.",
     "published": "2024-10-06T22:15:02.677",
     "keywords": "remote,command"
+  },
+  "CVE-2024-20094": {
+    "cvss": "-",
+    "description": "In Modem, there is a possible system crash due to a missing bounds check. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY00843282; Issue ID: MSV-1535.",
+    "published": "2024-10-07T03:15:02.823",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-20100": {
+    "cvss": "-",
+    "description": "In wlan driver, there is a possible out of bounds write due to improper input validation. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS08998449; Issue ID: MSV-1603.",
+    "published": "2024-10-07T03:15:03.273",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-20101": {
+    "cvss": "-",
+    "description": "In wlan driver, there is a possible out of bounds write due to improper input validation. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS08998901; Issue ID: MSV-1602.",
+    "published": "2024-10-07T03:15:03.350",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-20102": {
+    "cvss": "-",
+    "description": "In wlan driver, there is a possible out of bounds read due to improper input validation. This could lead to remote information disclosure with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS08998892; Issue ID: MSV-1601.",
+    "published": "2024-10-07T03:15:03.427",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-20103": {
+    "cvss": "-",
+    "description": "In wlan firmware, there is a possible out of bounds write due to improper input validation. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS09001358; Issue ID: MSV-1599.",
+    "published": "2024-10-07T03:15:03.500",
+    "keywords": "remote,execution"
   }
 }
