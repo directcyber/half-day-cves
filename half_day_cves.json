@@ -130,5 +130,53 @@
     "description": "An exposure of sensitive information to an unauthorized actor vulnerability [CWE-200] in FortiManager 7.4.2 and below, 7.2.5 and below, 7.0.12 and below allows a remote authenticated attacker assigned to an Administrative Domain (ADOM) to access device summary of unauthorized ADOMs via crafted HTTP requests.",
     "published": "2024-10-08T15:15:14.717",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-44349": {
+    "cvss": "-",
+    "description": "A SQL injection vulnerability in login portal in AnteeoWMS before v4.7.34 allows unauthenticated attackers to execute arbitrary SQL commands via the username parameter and disclosure of some data in the underlying DB.",
+    "published": "2024-10-08T17:15:54.027",
+    "keywords": "unauthenticated,command"
+  },
+  "CVE-2024-47007": {
+    "cvss": 7.5,
+    "description": "A NULL pointer dereference in WLAvalancheService.exe of Ivanti Avalanche before version 6.4.5 allows a remote unauthenticated attacker to cause a denial of service.",
+    "published": "2024-10-08T17:15:54.210",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-47008": {
+    "cvss": 7.5,
+    "description": "Server-side request forgery in Ivanti Avalanche before version 6.4.5 allows a remote unauthenticated attacker to leak sensitive information.",
+    "published": "2024-10-08T17:15:54.463",
+    "keywords": "remote,unauthenticated,sensitive,leak"
+  },
+  "CVE-2024-47009": {
+    "cvss": 7.3,
+    "description": "Path Traversal in Ivanti Avalanche before version 6.4.5 allows a remote unauthenticated attacker to bypass authentication.",
+    "published": "2024-10-08T17:15:54.777",
+    "keywords": "remote,unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-47010": {
+    "cvss": 7.3,
+    "description": "Path Traversal in Ivanti Avalanche before version 6.4.5 allows a remote unauthenticated attacker to bypass authentication.",
+    "published": "2024-10-08T17:15:55.240",
+    "keywords": "remote,unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-47011": {
+    "cvss": 7.5,
+    "description": "Path Traversal in Ivanti Avalanche before version 6.4.5 allows a remote unauthenticated attacker to leak sensitive information",
+    "published": "2024-10-08T17:15:55.533",
+    "keywords": "remote,unauthenticated,sensitive,leak"
+  },
+  "CVE-2024-9380": {
+    "cvss": 7.2,
+    "description": "An OS command injection vulnerability in the admin web console of Ivanti CSA before version 5.0.2 allows a remote authenticated attacker with admin privileges to obtain remote code execution.",
+    "published": "2024-10-08T17:15:56.970",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2024-9381": {
+    "cvss": 7.2,
+    "description": "Path traversal in Ivanti CSA before version 5.0.2 allows a remote authenticated attacker with admin privileges to bypass restrictions.",
+    "published": "2024-10-08T17:15:57.183",
+    "keywords": "remote,bypass"
   }
 }
