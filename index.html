@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-10-09T17:10:21.187306
+Updated at UTC 2024-10-09T18:13:44.105877
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -59,9 +59,15 @@ Updated at UTC 2024-10-09T17:10:21.187306
 
 		
 			
+		
+			
+		
+			
+		
+			
 				<tr>
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-46304">CVE-2024-46304</a></td>
-					<td>-</td>
+					<td>7.5</td>
 					<td><a target=_blank href="https://github.com/obgm/libcoap/issues/1509">https://github.com/obgm/libcoap/issues/1509</a></td>
 					<td class=date>2024-10-09T16:15:04.437</td>
 					<td class=description>A Buffer Overflow vulnerability in libcoap v4.3.5-rc2 and below allows a remote attacker to cause a denial of service via the coap_handle_request_put_block function in src/coap_block.c.</td>
@@ -256,6 +262,36 @@ Updated at UTC 2024-10-09T17:10:21.187306
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9463">CVE-2024-9463</a></td>
+					<td>-</td>
+					<td>unauthenticated,command</td>
+					<td class=date>2024-10-09T17:15:19.973</td>
+					<td class=description>An OS command injection vulnerability in Palo Alto Networks Expedition allows an unauthenticated attacker to run arbitrary OS commands as root in Expedition, resulting in disclosure of usernames, cleartext passwords, device configurations, and device API keys of PAN-OS firewalls.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45746">CVE-2024-45746</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2024-10-09T17:15:19.727</td>
+					<td class=description>An issue was discovered in Trusted Firmware-M through 2.1.0. User provided (and controlled) mailbox messages contain a pointer to a list of input arguments (in_vec) and output arguments (out_vec). These list pointers are never validated. Each argument list contains a buffer pointer and a buffer length field. After a PSA call, the length of the output arguments behind the unchecked pointer is updated in mailbox_direct_reply, regardless of the call result. This allows an attacker to write anywhere in the secure firmware, which can be used to take over the control flow, leading to remote code execution (RCE).</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43610">CVE-2024-43610</a></td>
+					<td>7.4</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2024-10-09T17:15:19.397</td>
+					<td class=description>Exposure of Sensitive Information to an Unauthorized Actor in Copilot Studio allows a unauthenticated attacker to view sensitive information through network attack vector</td>
+				</tr>
+			
 		
 			
 		
