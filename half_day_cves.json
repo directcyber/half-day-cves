@@ -526,5 +526,23 @@
     "cvss": "-",
     "description": "ssoready is a single sign on provider implemented via docker. Affected versions are vulnerable to XML signature bypass attacks. An attacker can carry out signature bypass if you have access to certain IDP-signed messages. The underlying mechanism exploits differential behavior between XML parsers. Users of https://ssoready.com, the public hosted instance of SSOReady, are unaffected. We advise folks who self-host SSOReady to upgrade to 7f92a06 or later. Do so by updating your SSOReady Docker images from sha-... to sha-7f92a06. There are no known workarounds for this vulnerability.",
     "published": "2024-10-09T19:15:14.647"
+  },
+  "CVE-2024-38815": {
+    "cvss": 4.3,
+    "description": "VMware NSX contains a content spoofing vulnerability.\u00a0\n\nAn unauthenticated malicious actor may be able to craft a URL and redirect a victim to an attacker controlled domain leading to sensitive information disclosure.",
+    "published": "2024-10-09T20:15:07.820",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-39515": {
+    "cvss": 7.5,
+    "description": "An Improper Validation of Consistency within Input vulnerability in the routing protocol daemon (rpd) of Juniper Networks Junos OS and Junos OS Evolved allows an unauthenticated network-based attacker sending a specifically malformed BGP packet to cause rpd to crash and restart, resulting in a Denial of Service (DoS). Continued receipt and processing of this packet will create a sustained Denial of Service (DoS) condition.\n\nIn some cases, rpd fails to restart requiring a manual restart via the 'restart routing' CLI command.\n\nThis issue only affects systems with BGP traceoptions enabled and \n\nrequires a BGP session to be already established.  Systems without BGP traceoptions enabled are not affected by this issue.\n\nThis issue affects iBGP and eBGP, and both IPv4 and IPv6 are affected by this vulnerability.\n\nThis issue affects:\n\nJunos OS:\u00a0\n\n  *  All versions before 21.4R3-S8,\u00a0\n  *  22.2 before 22.2R3-S5,\u00a0\n  *  22.3 before 22.3R3-S4,\u00a0\n  *  22.4 before 22.4R3-S3,\u00a0\n  *  23.2 before 23.2R2-S2,\u00a0\n  *  23.4 before 23.4R2;\u00a0\n\n\nJunos OS Evolved:\u00a0\n\n  *  All versions before 21.4R3-S8-EVO,\u00a0\n  *  22.2-EVO before 22.2R3-S5-EVO,\u00a0\n  *  22.3-EVO before 22.3R3-S4-EVO,\u00a0\n  *  22.4-EVO before 22.4R3-S3-EVO,\u00a0\n  *  23.2-EVO before 23.2R2-S2-EVO,\u00a0\n  *  23.4-EVO before 23.4R2-EVO.",
+    "published": "2024-10-09T20:15:08.430",
+    "keywords": "unauthenticated,command"
+  },
+  "CVE-2024-7037": {
+    "cvss": 6.5,
+    "description": "In version v0.3.8 of open-webui/open-webui, the endpoint /api/pipelines/upload is vulnerable to arbitrary file write and delete due to unsanitized file.filename concatenation with CACHE_DIR. This vulnerability allows attackers to overwrite and delete system files, potentially leading to remote code execution.",
+    "published": "2024-10-09T20:15:09.477",
+    "keywords": "remote,execution"
   }
 }
