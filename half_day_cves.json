@@ -490,5 +490,11 @@
     "description": "In Progress Telerik Report Server versions prior to 2024 Q3 (10.2.24.924), a remote code execution attack is possible through object injection via an insecure type resolution vulnerability.",
     "published": "2024-10-09T15:15:17.097",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-46304": {
+    "url": "https://github.com/obgm/libcoap/issues/1509",
+    "cvss": "-",
+    "description": "A Buffer Overflow vulnerability in libcoap v4.3.5-rc2 and below allows a remote attacker to cause a denial of service via the coap_handle_request_put_block function in src/coap_block.c.",
+    "published": "2024-10-09T16:15:04.437"
   }
 }
