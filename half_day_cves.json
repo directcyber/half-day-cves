@@ -1,34 +1,4 @@
 {
-  "CVE-2024-20094": {
-    "cvss": 7.5,
-    "description": "In Modem, there is a possible system crash due to a missing bounds check. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY00843282; Issue ID: MSV-1535.",
-    "published": "2024-10-07T03:15:02.823",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-20100": {
-    "cvss": 9.8,
-    "description": "In wlan driver, there is a possible out of bounds write due to improper input validation. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS08998449; Issue ID: MSV-1603.",
-    "published": "2024-10-07T03:15:03.273",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-20101": {
-    "cvss": 9.8,
-    "description": "In wlan driver, there is a possible out of bounds write due to improper input validation. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS08998901; Issue ID: MSV-1602.",
-    "published": "2024-10-07T03:15:03.350",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-20102": {
-    "cvss": "-",
-    "description": "In wlan driver, there is a possible out of bounds read due to improper input validation. This could lead to remote information disclosure with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS08998892; Issue ID: MSV-1601.",
-    "published": "2024-10-07T03:15:03.427",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-20103": {
-    "cvss": 9.8,
-    "description": "In wlan firmware, there is a possible out of bounds write due to improper input validation. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS09001358; Issue ID: MSV-1599.",
-    "published": "2024-10-07T03:15:03.500",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-46041": {
     "cvss": 8.8,
     "description": "IoT Haat Smart Plug IH-IN-16A-S v5.16.1 is vulnerable to Authentication Bypass by Capture-replay.",
@@ -544,5 +514,17 @@
     "description": "The Syracom Secure Login (2FA) plugin for Jira, Confluence, and Bitbucket through 3.1.4.5 allows remote attackers to bypass 2FA by interacting with the /rest endpoint of Jira, Confluence, or Bitbucket. In the default configuration, /rest is allowlisted.",
     "published": "2024-10-10T00:15:02.673",
     "keywords": "remote,bypass"
+  },
+  "CVE-2024-9522": {
+    "cvss": 8.8,
+    "description": "The WP Users Masquerade plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 2.0.0. This is due to incorrect authentication and capability checking in the 'ajax_masq_login' function. This makes it possible for authenticated attackers, with subscriber-level permissions and above, to log in as any existing user on the site, such as an administrator.",
+    "published": "2024-10-10T02:15:06.013",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-9581": {
+    "cvss": 7.3,
+    "description": "The Shortcodes AnyWhere plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 1.0.1. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+    "published": "2024-10-10T02:15:06.227",
+    "keywords": "execution,unauthenticated"
   }
 }
