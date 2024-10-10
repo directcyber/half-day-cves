@@ -1,10 +1,4 @@
 {
-  "CVE-2024-46041": {
-    "cvss": 8.8,
-    "description": "IoT Haat Smart Plug IH-IN-16A-S v5.16.1 is vulnerable to Authentication Bypass by Capture-replay.",
-    "published": "2024-10-07T16:15:05.477",
-    "keywords": "authentication,bypass"
-  },
   "CVE-2024-31227": {
     "url": "https://github.com/redis/redis/commit/b351d5a3210e61cc3b22ba38a723d6da8f3c298a",
     "cvss": 4.4,
@@ -544,5 +538,11 @@
     "description": "Adobe Commerce versions 2.4.7-p2, 2.4.6-p7, 2.4.5-p9, 2.4.4-p10 and earlier are affected by an Improper Authentication vulnerability that could result in a security feature bypass. A low-privileged attacker could leverage this vulnerability to gain unauthorized access without proper credentials. Exploitation of this issue does not require user interaction.",
     "published": "2024-10-10T10:15:07.963",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-9793": {
+    "cvss": 6.3,
+    "description": "A vulnerability classified as critical was found in Tenda AC1206 up to 15.03.06.23. This vulnerability affects the function ate_iwpriv_set/ate_ifconfig_set of the file /goform/ate. The manipulation leads to command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-10-10T16:15:09.080",
+    "keywords": "remote,command"
   }
 }
