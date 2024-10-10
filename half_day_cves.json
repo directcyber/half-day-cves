@@ -1,22 +1,4 @@
 {
-  "CVE-2024-45290": {
-    "cvss": 7.7,
-    "description": "PHPSpreadsheet is a pure PHP library for reading and writing spreadsheet files. It's possible for an attacker to construct an XLSX file which links media from external URLs. When opening the XLSX file, PhpSpreadsheet retrieves the image size and type by reading the file contents, if the provided path is a URL. By using specially crafted `php://filter` URLs an attacker can leak the contents of any file or URL. Note that this vulnerability is different from GHSA-w9xv-qf98-ccq4, and resides in a different component. An attacker can access any file on the server, or leak information form arbitrary URLs, potentially exposing sensitive information such as AWS IAM credentials. This issue has been addressed in release versions 1.29.2, 2.1.1, and 2.3.0. All users are advised to upgrade. There are no known workarounds for this vulnerability.",
-    "published": "2024-10-07T21:15:17.397",
-    "keywords": "sensitive,leak"
-  },
-  "CVE-2024-45291": {
-    "cvss": 6.3,
-    "description": "PHPSpreadsheet is a pure PHP library for reading and writing spreadsheet files. It's possible for an attacker to construct an XLSX file that links images from arbitrary paths. When embedding images has been enabled in HTML writer with `$writer->setEmbedImages(true);` those files will be included in the output as `data:` URLs, regardless of the file's type. Also URLs can be used for embedding, resulting in a Server-Side Request Forgery vulnerability. When embedding images has been enabled, an attacker can read arbitrary files on the server and perform arbitrary HTTP GET requests. Note that any PHP protocol wrappers can be used, meaning that if for example the `expect://` wrapper is enabled, also remote code execution is possible. This issue has been addressed in release versions 1.29.2, 2.1.1, and 2.3.0. All users are advised to upgrade. there are no known workarounds for this vulnerability.",
-    "published": "2024-10-07T21:15:17.633",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-45919": {
-    "cvss": 6.5,
-    "description": "A security flaw has been discovered in Solvait version 24.4.2 that allows an attacker to elevate their privileges. By manipulating the Request ID and Action Type parameters in /AssignToMe/SetAction, an attacker can bypass approval workflows leading to unauthorized access to sensitive information or approval of fraudulent requests.",
-    "published": "2024-10-07T21:15:18.083",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2024-8926": {
     "cvss": 8.1,
     "description": "In PHP versions 8.1.* before 8.1.30, 8.2.* before 8.2.24, 8.3.* before 8.3.12,\u00a0when using a certain non-standard configurations of Windows codepages, the fixes for\u00a0 CVE-2024-4577 https://github.com/advisories/GHSA-vxpp-6299-mxw3 \u00a0may still be bypassed and the same command injection related to Windows \"Best Fit\" codepage behavior can be achieved. This\u00a0may allow a malicious user to pass options to PHP binary being run, and thus reveal the source code of scripts, run arbitrary PHP code on the server, etc.",
