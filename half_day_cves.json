@@ -532,5 +532,11 @@
     "description": "The TI WooCommerce Wishlist WordPress plugin through 2.8.2 is vulnerable to SQL Injection due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
     "published": "2024-10-10T06:15:11.290",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-6747": {
+    "cvss": 5.3,
+    "description": "Information leakage in mknotifyd in Checkmk before 2.3.0p18, 2.2.0p36, 2.1.0p49 and in 2.0.0p39 (EOL) allows attacker to get potentially sensitive data",
+    "published": "2024-10-10T08:15:03.630",
+    "keywords": "sensitive,leak"
   }
 }
