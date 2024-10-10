@@ -526,5 +526,11 @@
     "description": "The Shortcodes AnyWhere plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 1.0.1. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
     "published": "2024-10-10T02:15:06.227",
     "keywords": "execution,unauthenticated"
+  },
+  "CVE-2024-9156": {
+    "cvss": "-",
+    "description": "The TI WooCommerce Wishlist WordPress plugin through 2.8.2 is vulnerable to SQL Injection due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2024-10-10T06:15:11.290",
+    "keywords": "unauthenticated,sensitive"
   }
 }
