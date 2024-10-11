@@ -1,10 +1,4 @@
 {
-  "CVE-2024-21533": {
-    "cvss": 6.5,
-    "description": "All versions of the package ggit are vulnerable to Arbitrary Argument Injection via the clone() API, which allows specifying the remote URL to clone and the file on disk to clone to. The library does not sanitize for user input or validate a given URL scheme, nor does it properly pass command-line flags to the git binary using the double-dash POSIX characters (--) to communicate the end of options.",
-    "published": "2024-10-08T05:15:14.180",
-    "keywords": "remote,command"
-  },
   "CVE-2024-46887": {
     "cvss": 5.3,
     "description": "The web server of affected devices do not properly authenticate user request to the '/ClientArea/RuntimeInfoData.mwsl' endpoint. This could allow an unauthenticated remote attacker to gain knowledge about current actual and configured maximum cycle times as well as about configured maximum communication load.",
