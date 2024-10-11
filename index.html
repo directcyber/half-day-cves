@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-10-11T21:14:44.536622
+Updated at UTC 2024-10-11T22:10:04.053329
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,22 @@ Updated at UTC 2024-10-11T21:14:44.536622
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-46468">CVE-2024-46468</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/jpressprojects/jpress/issues/190">https://github.com/jpressprojects/jpress/issues/190</a></td>
+					<td class=date>2024-10-11T21:15:07.040</td>
+					<td class=description>A Server-Side Request Forgery (SSRF) vulnerability exists in the jpress <= v5.1.1, which can be exploited by an attacker to obtain sensitive information, resulting in an information disclosure.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -300,6 +316,28 @@ Updated at UTC 2024-10-11T21:14:44.536622
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48788">CVE-2024-48788</a></td>
+					<td>-</td>
+					<td>remote,sensitive</td>
+					<td class=date>2024-10-11T21:15:07.220</td>
+					<td class=description>An issue in YESCAM (com.yescom.YesCam.zwave) 1.0.2 allows a remote attacker to obtain sensitive information via the firmware update process.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48772">CVE-2024-48772</a></td>
+					<td>-</td>
+					<td>remote,sensitive</td>
+					<td class=date>2024-10-11T21:15:07.127</td>
+					<td class=description>An issue in C-CHIP (com.cchip.cchipamaota) v.1.2.8 allows a remote attacker to obtain sensitive information via the firmware update process.</td>
+				</tr>
+			
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -860,7 +898,7 @@ This issue affects Junos OS on SRX Series: 
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48987">CVE-2024-48987</a></td>
-					<td>-</td>
+					<td>6.6</td>
 					<td>remote,execution</td>
 					<td class=date>2024-10-11T13:15:16.197</td>
 					<td class=description>Snipe-IT before 7.0.10 allows remote code execution (associated with cookie serialization) when an attacker knows the APP_KEY. This is exacerbated by .env files, available from the product's repository, that have default APP_KEY values.</td>
@@ -1010,7 +1048,7 @@ This issue affects Junos OS on SRX Series: 
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48941">CVE-2024-48941</a></td>
-					<td>5.4</td>
+					<td>9.1</td>
 					<td>remote,bypass</td>
 					<td class=date>2024-10-10T00:15:02.673</td>
 					<td class=description>The Syracom Secure Login (2FA) plugin for Jira, Confluence, and Bitbucket through 3.1.4.5 allows remote attackers to bypass 2FA by interacting with the /rest endpoint of Jira, Confluence, or Bitbucket. In the default configuration, /rest is allowlisted.</td>
@@ -1095,7 +1133,7 @@ An unauthenticated malicious actor may be able to craft a URL and redirect a vic
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45746">CVE-2024-45746</a></td>
-					<td>-</td>
+					<td>9.8</td>
 					<td>remote,execution</td>
 					<td class=date>2024-10-09T17:15:19.727</td>
 					<td class=description>An issue was discovered in Trusted Firmware-M through 2.1.0. User provided (and controlled) mailbox messages contain a pointer to a list of input arguments (in_vec) and output arguments (out_vec). These list pointers are never validated. Each argument list contains a buffer pointer and a buffer length field. After a PSA call, the length of the output arguments behind the unchecked pointer is updated in mailbox_direct_reply, regardless of the call result. This allows an attacker to write anywhere in the secure firmware, which can be used to take over the control flow, leading to remote code execution (RCE).</td>

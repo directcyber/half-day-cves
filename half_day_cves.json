@@ -78,7 +78,7 @@
     "keywords": "unauthenticated,sensitive"
   },
   "CVE-2024-45746": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "An issue was discovered in Trusted Firmware-M through 2.1.0. User provided (and controlled) mailbox messages contain a pointer to a list of input arguments (in_vec) and output arguments (out_vec). These list pointers are never validated. Each argument list contains a buffer pointer and a buffer length field. After a PSA call, the length of the output arguments behind the unchecked pointer is updated in mailbox_direct_reply, regardless of the call result. This allows an attacker to write anywhere in the secure firmware, which can be used to take over the control flow, leading to remote code execution (RCE).",
     "published": "2024-10-09T17:15:19.727",
     "keywords": "remote,execution"
@@ -120,7 +120,7 @@
     "keywords": "remote,execution"
   },
   "CVE-2024-48941": {
-    "cvss": 5.4,
+    "cvss": 9.1,
     "description": "The Syracom Secure Login (2FA) plugin for Jira, Confluence, and Bitbucket through 3.1.4.5 allows remote attackers to bypass 2FA by interacting with the /rest endpoint of Jira, Confluence, or Bitbucket. In the default configuration, /rest is allowlisted.",
     "published": "2024-10-10T00:15:02.673",
     "keywords": "remote,bypass"
@@ -210,7 +210,7 @@
     "keywords": "remote,unauthenticated"
   },
   "CVE-2024-48987": {
-    "cvss": "-",
+    "cvss": 6.6,
     "description": "Snipe-IT before 7.0.10 allows remote code execution (associated with cookie serialization) when an attacker knows the APP_KEY. This is exacerbated by .env files, available from the product's repository, that have default APP_KEY values.",
     "published": "2024-10-11T13:15:16.197",
     "keywords": "remote,execution"
@@ -417,6 +417,24 @@
     "cvss": "-",
     "description": "An issue in Revic Optics Revic Ops (us.revic.revicops) 1.12.5 allows a remote attacker to obtain sensitive information via the firmware update process.",
     "published": "2024-10-11T20:15:06.407",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-46468": {
+    "url": "https://github.com/jpressprojects/jpress/issues/190",
+    "cvss": "-",
+    "description": "A Server-Side Request Forgery (SSRF) vulnerability exists in the jpress <= v5.1.1, which can be exploited by an attacker to obtain sensitive information, resulting in an information disclosure.",
+    "published": "2024-10-11T21:15:07.040"
+  },
+  "CVE-2024-48772": {
+    "cvss": "-",
+    "description": "An issue in C-CHIP (com.cchip.cchipamaota) v.1.2.8 allows a remote attacker to obtain sensitive information via the firmware update process.",
+    "published": "2024-10-11T21:15:07.127",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-48788": {
+    "cvss": "-",
+    "description": "An issue in YESCAM (com.yescom.YesCam.zwave) 1.0.2 allows a remote attacker to obtain sensitive information via the firmware update process.",
+    "published": "2024-10-11T21:15:07.220",
     "keywords": "remote,sensitive"
   }
 }
