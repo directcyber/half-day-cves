@@ -1,22 +1,4 @@
 {
-  "CVE-2024-43610": {
-    "cvss": 7.4,
-    "description": "Exposure of Sensitive Information to an Unauthorized Actor in Copilot Studio allows a unauthenticated attacker to view sensitive information through network attack vector",
-    "published": "2024-10-09T17:15:19.397",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-45746": {
-    "cvss": 9.8,
-    "description": "An issue was discovered in Trusted Firmware-M through 2.1.0. User provided (and controlled) mailbox messages contain a pointer to a list of input arguments (in_vec) and output arguments (out_vec). These list pointers are never validated. Each argument list contains a buffer pointer and a buffer length field. After a PSA call, the length of the output arguments behind the unchecked pointer is updated in mailbox_direct_reply, regardless of the call result. This allows an attacker to write anywhere in the secure firmware, which can be used to take over the control flow, leading to remote code execution (RCE).",
-    "published": "2024-10-09T17:15:19.727",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-9463": {
-    "cvss": "-",
-    "description": "An OS command injection vulnerability in Palo Alto Networks Expedition allows an unauthenticated attacker to run arbitrary OS commands as root in Expedition, resulting in disclosure of usernames, cleartext passwords, device configurations, and device API keys of PAN-OS firewalls.",
-    "published": "2024-10-09T17:15:19.973",
-    "keywords": "unauthenticated,command"
-  },
   "CVE-2024-47816": {
     "url": "https://github.com/miraheze/mw-config/commit/e5664995fbb8644f9a80b450b4326194f20f9ddc",
     "cvss": 6.4,
