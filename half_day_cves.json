@@ -1,16 +1,4 @@
 {
-  "CVE-2024-42934": {
-    "cvss": "-",
-    "description": "OpenIPMI before 2.0.36 has an out-of-bounds array access (for authentication type) in the ipmi_sim simulator, resulting in denial of service or (with very low probability) authentication bypass or code execution.",
-    "published": "2024-10-09T05:15:13.270",
-    "keywords": "execution,authentication,bypass"
-  },
-  "CVE-2024-45160": {
-    "cvss": 9.1,
-    "description": "Incorrect credential validation in LemonLDAP::NG 2.18.x and 2.19.x before 2.19.2 allows attackers to bypass OAuth2 client authentication via an empty client_password parameter (client secret).",
-    "published": "2024-10-09T05:15:13.343",
-    "keywords": "authentication,bypass"
-  },
   "CVE-2024-39436": {
     "cvss": 6.5,
     "description": "In linkturbonative service, there is a possible command injection due to improper input validation. This could lead to local escalation of privilege with System execution privileges needed.",
