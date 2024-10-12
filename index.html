@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-10-12T20:11:18.489891
+Updated at UTC 2024-10-12T21:11:36.477702
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -208,12 +208,6 @@ Updated at UTC 2024-10-12T20:11:18.489891
 
 
 				</tr>
-			
-		
-			
-		
-			
-		
 			
 		
 			
@@ -1000,67 +994,6 @@ This issue affects Junos OS on SRX Series: 
 					<td>remote,bypass</td>
 					<td class=date>2024-10-10T00:15:02.673</td>
 					<td class=description>The Syracom Secure Login (2FA) plugin for Jira, Confluence, and Bitbucket through 3.1.4.5 allows remote attackers to bypass 2FA by interacting with the /rest endpoint of Jira, Confluence, or Bitbucket. In the default configuration, /rest is allowlisted.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7037">CVE-2024-7037</a></td>
-					<td>6.5</td>
-					<td>remote,execution</td>
-					<td class=date>2024-10-09T20:15:09.477</td>
-					<td class=description>In version v0.3.8 of open-webui/open-webui, the endpoint /api/pipelines/upload is vulnerable to arbitrary file write and delete due to unsanitized file.filename concatenation with CACHE_DIR. This vulnerability allows attackers to overwrite and delete system files, potentially leading to remote code execution.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-39515">CVE-2024-39515</a></td>
-					<td>7.5</td>
-					<td>unauthenticated,command</td>
-					<td class=date>2024-10-09T20:15:08.430</td>
-					<td class=description>An Improper Validation of Consistency within Input vulnerability in the routing protocol daemon (rpd) of Juniper Networks Junos OS and Junos OS Evolved allows an unauthenticated network-based attacker sending a specifically malformed BGP packet to cause rpd to crash and restart, resulting in a Denial of Service (DoS). Continued receipt and processing of this packet will create a sustained Denial of Service (DoS) condition.
-
-In some cases, rpd fails to restart requiring a manual restart via the 'restart routing' CLI command.
-
-This issue only affects systems with BGP traceoptions enabled and 
-
-requires a BGP session to be already established.  Systems without BGP traceoptions enabled are not affected by this issue.
-
-This issue affects iBGP and eBGP, and both IPv4 and IPv6 are affected by this vulnerability.
-
-This issue affects:
-
-Junos OS: 
-
-  *  All versions before 21.4R3-S8, 
-  *  22.2 before 22.2R3-S5, 
-  *  22.3 before 22.3R3-S4, 
-  *  22.4 before 22.4R3-S3, 
-  *  23.2 before 23.2R2-S2, 
-  *  23.4 before 23.4R2; 
-
-
-Junos OS Evolved: 
-
-  *  All versions before 21.4R3-S8-EVO, 
-  *  22.2-EVO before 22.2R3-S5-EVO, 
-  *  22.3-EVO before 22.3R3-S4-EVO, 
-  *  22.4-EVO before 22.4R3-S3-EVO, 
-  *  23.2-EVO before 23.2R2-S2-EVO, 
-  *  23.4-EVO before 23.4R2-EVO.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38815">CVE-2024-38815</a></td>
-					<td>4.3</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2024-10-09T20:15:07.820</td>
-					<td class=description>VMware NSX contains a content spoofing vulnerability. 
-
-An unauthenticated malicious actor may be able to craft a URL and redirect a victim to an attacker controlled domain leading to sensitive information disclosure.</td>
 				</tr>
 			
 		
