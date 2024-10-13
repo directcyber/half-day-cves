@@ -1,16 +1,4 @@
 {
-  "CVE-2024-9522": {
-    "cvss": 8.8,
-    "description": "The WP Users Masquerade plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 2.0.0. This is due to incorrect authentication and capability checking in the 'ajax_masq_login' function. This makes it possible for authenticated attackers, with subscriber-level permissions and above, to log in as any existing user on the site, such as an administrator.",
-    "published": "2024-10-10T02:15:06.013",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-9581": {
-    "cvss": 7.3,
-    "description": "The Shortcodes AnyWhere plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 1.0.1. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
-    "published": "2024-10-10T02:15:06.227",
-    "keywords": "execution,unauthenticated"
-  },
   "CVE-2024-9156": {
     "cvss": 5.9,
     "description": "The TI WooCommerce Wishlist WordPress plugin through 2.8.2 is vulnerable to SQL Injection due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
