@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-10-14T16:13:05.813452
+Updated at UTC 2024-10-14T17:10:05.402337
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -59,57 +59,16 @@ Updated at UTC 2024-10-14T16:13:05.813452
 
 		
 			
+		
+			
+		
+			
 				<tr>
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9823">CVE-2024-9823</a></td>
 					<td>5.3</td>
 					<td><a target=_blank href="https://github.com/jetty/jetty.project/issues/1256">https://github.com/jetty/jetty.project/issues/1256</a></td>
 					<td class=date>2024-10-14T15:15:14.560</td>
-					<td class=description>Description
-There exists a security vulnerability in Jetty's DosFilter which can be exploited by unauthorized
-
-users to cause remote denial-of-service (DoS) attack on the server using DosFilter. By repeatedly sending crafted requests,
-
-attackers can trigger OutofMemory errors and exhaust the server's memory finally.
-
-
-Vulnerability details
-The Jetty DoSFilter (Denial of Service Filter) is a security filter designed to protect web
-
-applications against certain types of Denial of Service (DoS) attacks and other abusive behavior. It
-
-helps to mitigate excessive resource consumption by limiting the rate at which clients can make
-
-requests to the server.  The DoSFilter monitors and tracks client request patterns, including
-
-request rates, and can take actions such as blocking or delaying requests from clients that exceed
-
-predefined thresholds.  The internal tracking of requests in DoSFilter is the source of this OutOfMemory
-
-condition.
-
-
-Impact
-Users of the DoSFilter may be subject to DoS attacks that 
-will ultimately exhaust the memory of the server if they have not 
-configured session passivation or an aggressive session inactivation 
-timeout.
-
-
-Patches
-The DoSFilter has been patched in all active releases to no longer support the session tracking mode, even if configured.
-
-
-Patched releases:
-
-
-
-  *  9.4.54
-
-  *  10.0.18
-
-  *  11.0.18
-
-  *  12.0.3</td>
+					<td class=description>There exists a security vulnerability in Jetty's DosFilter which can be exploited by unauthorized users to cause remote denial-of-service (DoS) attack on the server using DosFilter. By repeatedly sending crafted requests, attackers can trigger OutofMemory errors and exhaust the server's memory finally.</td>
 
 
 				</tr>
@@ -169,46 +128,29 @@ Patched releases:
 		
 			
 		
+
+		<hr>
+		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6985">CVE-2024-6985</a></td>
-					<td>4.4</td>
-					<td><a target=_blank href="https://github.com/parisneo/lollms/commit/28ee567a9a120967215ff19b96ab7515ce469620">https://github.com/parisneo/lollms/commit/28ee567a9a120967215ff19b96ab7515ce469620</a></td>
-					<td class=date>2024-10-11T16:15:14.657</td>
-					<td class=description>A path traversal vulnerability exists in the api open_personality_folder endpoint of parisneo/lollms-webui. This vulnerability allows an attacker to read any folder in the personality_folder on the victim's computer, even though sanitize_path is set. The issue arises due to improper sanitization of the personality_folder parameter, which can be exploited to traverse directories and access arbitrary files.</td>
-
-
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6762">CVE-2024-6762</a></td>
+					<td>3.1</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-10-14T16:15:03.930</td>
+					<td class=description>Jetty PushSessionCacheFilter can be exploited by unauthenticated users 
+to launch remote DoS attacks by exhausting the server’s memory.</td>
 				</tr>
 			
 		
 			
-		
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41997">CVE-2024-41997</a></td>
+					<td>-</td>
+					<td>execution,command</td>
+					<td class=date>2024-10-14T16:15:03.640</td>
+					<td class=description>An issue was discovered in version of Warp Terminal prior to 2024.07.18 (v0.2024.07.16.08.02). A command injection vulnerability exists in the Docker integration functionality. An attacker can create a specially crafted hyperlink using the `warp://action/docker/open_subshell` intent that when clicked by the victim results in command execution on the victim's machine.</td>
+				</tr>
 			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-
-		<hr>
 		
 			
 		
@@ -425,410 +367,6 @@ A feature in the affected products enables users to prepare a project file with 
 					<td>remote,sensitive</td>
 					<td class=date>2024-10-11T18:15:08.133</td>
 					<td class=description>A directory listing issue in the baserCMS plugin in D-ZERO CO., LTD. BurgerEditor and BurgerEditor Limited Edition before 2.25.1 allows remote attackers to obtain sensitive information by exposing a list of the uploaded files.</td>
-				</tr>
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-47509">CVE-2024-47509</a></td>
-					<td>6.5</td>
-					<td>command,leak</td>
-					<td class=date>2024-10-11T16:15:13.187</td>
-					<td class=description>An Allocation of Resources Without Limits or Throttling vulnerability in the PFE management daemon (evo-pfemand) of Juniper Networks Junos OS Evolved allows an authenticated, network-based attacker to cause an FPC crash leading to a Denial of Service (DoS).When specific SNMP GET operations or specific low-priviledged CLI commands are executed, a GUID resource leak will occur, eventually leading to exhaustion and resulting in FPCs to hang. Affected FPCs need to be manually restarted to recover.
-
-GUID exhaustion will trigger a syslog message like one of the following:
-
-evo-pfemand[<pid>]: get_next_guid: Ran out of Guid Space ...
-evo-aftmand-zx[<pid>]: get_next_guid: Ran out of Guid Space ...
-The leak can be monitored by running the following command and taking note of the values in the rightmost column labeled Guids:
-
-
-
-
-
-user@host> show platform application-info allocations app evo-pfemand/evo-pfemand
-
-
-
-In case one or more of these values are constantly increasing the leak is happening.
-
-This issue affects Junos OS Evolved:
-
-
-
-  *  All versions before 21.4R2-EVO,
-  *  22.1 versions before 22.1R2-EVO.
-
-
-
-
-
-Please note that this issue is similar to, but different from CVE-2024-47505 and CVE-2024-47508.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-47508">CVE-2024-47508</a></td>
-					<td>6.5</td>
-					<td>command,leak</td>
-					<td class=date>2024-10-11T16:15:12.957</td>
-					<td class=description>An Allocation of Resources Without Limits or Throttling vulnerability in the PFE management daemon (evo-pfemand) of Juniper Networks Junos OS Evolved allows an authenticated, network-based attacker to cause an FPC crash leading to a Denial of Service (DoS).When specific SNMP GET operations or specific low-priviledged CLI commands are executed, a GUID resource leak will occur, eventually leading to exhaustion and resulting in FPCs to hang. Affected FPCs need to be manually restarted to recover.
-
-GUID exhaustion will trigger a syslog message like one of the following:
-
-evo-pfemand[<pid>]: get_next_guid: Ran out of Guid Space ...
-evo-aftmand-zx[<pid>]: get_next_guid: Ran out of Guid Space ...
-The leak can be monitored by running the following command and taking note of the values in the rightmost column labeled Guids:
-
-
-
-
-
-user@host> show platform application-info allocations app evo-pfemand/evo-pfemand
-
-
-
-In case one or more of these values are constantly increasing the leak is happening.
-
-This issue affects Junos OS Evolved:
-
-
-
-  *  All versions before 21.2R3-S8-EVO,
-  *  21.3 versions before 21.3R3-EVO;
-  *  21.4 versions before 22.1R2-EVO,
-
-  *  22.1 versions before 22.1R1-S1-EVO, 22.1R2-EVO.
-
-
-
-
-
-Please note that this issue is similar to, but different from CVE-2024-47505 and CVE-2024-47509.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-47505">CVE-2024-47505</a></td>
-					<td>6.5</td>
-					<td>command,leak</td>
-					<td class=date>2024-10-11T16:15:12.210</td>
-					<td class=description>An Allocation of Resources Without Limits or Throttling vulnerability in the PFE management daemon (evo-pfemand) of Juniper Networks Junos OS Evolved allows an authenticated, network-based attacker to cause an FPC crash leading to a Denial of Service (DoS).When specific SNMP GET operations or specific low-priviledged CLI commands are executed, a GUID resource leak will occur, eventually leading to exhaustion and resulting in FPCs to hang. Affected FPCs need to be manually restarted to recover.
-
-GUID exhaustion will trigger a syslog message like one of the following:
-
-evo-pfemand[<pid>]: get_next_guid: Ran out of Guid Space ...
-evo-aftmand-zx[<pid>]: get_next_guid: Ran out of Guid Space ...
-The leak can be monitored by running the following command and taking note of the values in the rightmost column labeled Guids:
-
-
-
-
-
-user@host> show platform application-info allocations app evo-pfemand/evo-pfemand
-
-
-
-In case one or more of these values are constantly increasing the leak is happening.
-
-This issue affects Junos OS Evolved:
-
-
-
-  *  All versions before 21.4R3-S7-EVO,
-  *  22.1 versions before 22.1R3-S6-EVO,
-  *  22.2 versions before 22.2R3-EVO, 
-
-  *  22.3 versions before 22.3R3-EVO,
-  *  22.4 versions before 22.4R2-EVO.
-
-
-
-Please note that this issue is similar to, but different from CVE-2024-47508 and CVE-2024-47509.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-47501">CVE-2024-47501</a></td>
-					<td>5.5</td>
-					<td>execution,command</td>
-					<td class=date>2024-10-11T16:15:11.167</td>
-					<td class=description>A NULL Pointer Dereference vulnerability in the 
-
-packet forwarding engine (pfe) of Juniper Networks Junos OS on MX304, MX with MPC10/11/LC9600, and EX9200 with EX9200-15C allows a locally authenticated attacker with low privileges to cause a Denial of Service (DoS).
-
-In a VPLS or Junos Fusion scenario, the execution of specific show commands will cause all FPCs hosting VPLS sessions or connecting to satellites to crash and restart.
-
-This issue affects Junos on MX304, MX with MPC10/11/LC9600 and EX9200 with EX9200-15C: 
-
-
-
-  *  All version before 21.2R3-S1,
-  *  21.3 versions before 21.3R3, 
-  *  21.4 versions before 21.4R2.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-47497">CVE-2024-47497</a></td>
-					<td>7.5</td>
-					<td>unauthenticated,command</td>
-					<td class=date>2024-10-11T16:15:10.340</td>
-					<td class=description>An Uncontrolled Resource Consumption vulnerability in the http daemon (httpd) of Juniper Networks Junos OS on SRX Series, QFX Series, MX Series and EX Series allows an unauthenticated, network-based attacker to cause Denial-of-Service (DoS).
-
-An attacker can send specific HTTPS connection requests to the device, triggering the creation of processes that are not properly terminated. Over time, this leads to resource exhaustion, ultimately causing the device to crash and restart.
-
-The following command can be used to monitor the resource usage:
-user@host> show system processes extensive | match mgd | count
-
-This issue affects Junos OS on SRX Series and EX Series:
-All versions before 21.4R3-S7,
-from 22.2 before 22.2R3-S4,
-from 22.3 before 22.3R3-S3,
-from 22.4 before 22.4R3-S2,
-from 23.2 before 23.2R2-S1,
-from 23.4 before 23.4R1-S2, 23.4R2.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-47496">CVE-2024-47496</a></td>
-					<td>5.5</td>
-					<td>execution,command</td>
-					<td class=date>2024-10-11T16:15:10.080</td>
-					<td class=description>A NULL Pointer Dereference vulnerability in the Packet Forwarding Engine (pfe) of Juniper Networks Junos OS allows a local, low-privileged attacker to cause a Denial-of-Service (DoS).
-
-When a specific command is executed, the pfe crashes. This will cause traffic forwarding to be interrupted until the system self-recovers. Repeated execution will create a sustained DoS condition.
-
- This issue only affects MX Series devices with Line cards MPC1-MPC9.
-This issue affects:
-Junos OS on MX Series: 
-
-
-  *  All versions before 21.4R3-S9, 
-  *  from 22.2 before 22.2R3-S5, 
-  *  from 22.3 before 22.3R3-S4, 
-  *  from 22.4 before 22.4R3-S2, 
-  *  from 23.2 before 23.2R2-S1, 
-  *  from 23.4 before 23.4R2.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-47493">CVE-2024-47493</a></td>
-					<td>6.5</td>
-					<td>unauthenticated,command,leak</td>
-					<td class=date>2024-10-11T16:15:09.320</td>
-					<td class=description>A Missing Release of Memory after Effective Lifetime vulnerability in the Packet Forwarding Engine (PFE) of the Juniper Networks Junos OS on the SRX5K, SRX4600 and MX Series platforms with Trio-based FPCs allows an unauthenticated, adjacent attacker to cause a Denial of Service (DoS).
-
-In case of channelized Modular Interface Cards (MICs), every physical interface flap operation will leak heap memory. Over a period of time, continuous physical interface flap operations causes local FPC  to eventually run out of memory and crash.  
-
-Below CLI command can be used to check the memory usage over a period of time:
-
-  user@host> show chassis fpc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                Temp  CPU Utilization (%)   CPU Utilization (%)  Memory   
-Utilization (%)
-  Slot State      (C)  Total  Interrupt      1min   5min  
-15min DRAM (MB) Heap     Buffer
-
-  0 
-Online       43     41         
-2                           2048       49         14
-
-  1 
-Online       43     41         
-2                          
-2048       49         14
-
-  2 
-Online       43     41         
-2                          
-2048       49         14
-
-
-
-
-
-
-
-
-
-This issue affects Junos OS on SRX5K, SRX4600 and MX Series: 
-
-
-
-
-  *  All versions before 21.2R3-S7, 
-  *  from 21.4 before 21.4R3-S6, 
-  *  from 22.1 before 22.1R3-S5, 
-  *  from 22.2 before 22.2R3-S3, 
-  *  from 22.3 before 22.3R3-S2, 
-  *  from 22.4 before 22.4R3, 
-  *  from 23.2 before 23.2R2, 
-  *  from 23.4 before 23.4R2.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-47489">CVE-2024-47489</a></td>
-					<td>5.8</td>
-					<td>unauthenticated,command</td>
-					<td class=date>2024-10-11T16:15:08.533</td>
-					<td class=description>An Improper Handling of Exceptional Conditions vulnerability in the Packet Forwarding Engine (pfe) of the Juniper Networks Junos OS Evolved on ACX Series devices allows an unauthenticated, network based attacker sending specific transit protocol traffic to cause a partial Denial of Service (DoS) to downstream devices.
-
-Receipt of specific transit protocol packets is incorrectly processed by the Routing Engine (RE), filling up the DDoS protection queue which is shared between routing protocols. This influx of transit protocol packets causes DDoS protection violations, resulting in protocol flaps which can affect connectivity to networking devices.
-
-This issue affects both IPv4 and IPv6. This issue does not require any specific routing protocol to be configured or enabled.
-
-The following commands can be used to monitor the DDoS protection queue:
-
-       labuser@re0> show evo-pfemand host pkt-stats
-
-    labuser@re0> show host-path ddos all-policers
-
-This issue affects Junos OS Evolved: 
-
-
-
-  *  All versions before 21.4R3-S8-EVO, 
-  *  from 22.2 before 22.2R3-S4-EVO, 
-  *  from 22.3 before 22.3R3-S4-EVO, 
-  *  from 22.4 before 22.4R3-S3-EVO, 
-  *  from 23.2 before 23.2R2-EVO, 
-  *  from 23.4 before 23.4R1-S1-EVO, 23.4R2-EVO, 
-  *  from 24.2 before 24.2R2-EVO.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-42640">CVE-2024-42640</a></td>
-					<td>-</td>
-					<td>remote,execution,unauthenticated</td>
-					<td class=date>2024-10-11T16:15:08.040</td>
-					<td class=description>angular-base64-upload prior to v0.1.21 is vulnerable to unauthenticated remote code execution via demo/server.php. Exploiting this vulnerability allows an attacker to upload arbitrary content to the server, which can subsequently be accessed through demo/uploads. This leads to the execution of previously uploaded content and enables the attacker to achieve code execution on the server. NOTE: This vulnerability only affects products that are no longer supported by the maintainer.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-39563">CVE-2024-39563</a></td>
-					<td>7.3</td>
-					<td>remote,execution,unauthenticated,command</td>
-					<td class=date>2024-10-11T16:15:07.740</td>
-					<td class=description>A Command Injection vulnerability in Juniper Networks Junos Space allows an unauthenticated, network-based attacker sending a specially crafted request to execute arbitrary shell commands on the Junos Space Appliance, leading to remote command execution by the web application, gaining complete control of the device.
-
-A specific script in the Junos Space web application allows attacker-controlled input from a GET request without sufficient input sanitization. A specially crafted request can exploit this vulnerability to execute arbitrary shell commands on the Junos Space Appliance.
-
-This issue affects Junos Space 24.1R1. Previous versions of Junos Space are unaffected by this vulnerability.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-39544">CVE-2024-39544</a></td>
-					<td>5.0</td>
-					<td>command,sensitive</td>
-					<td class=date>2024-10-11T16:15:07.240</td>
-					<td class=description>An Incorrect Default Permissions vulnerability in the command line interface (CLI) of Juniper Networks Junos OS Evolved allows a low privileged local attacker to view NETCONF traceoptions files, representing an exposure of sensitive information.
-
-
-
-On all Junos OS Evolved platforms, when NETCONF traceoptions are configured, NETCONF traceoptions files get created with an incorrect group permission, which allows 
-
-a low-privileged user can access sensitive information compromising the confidentiality of the system.
-
-
-
-Junos OS Evolved: 
-
-
-
-
-  *  All versions before 20.4R3-S9-EVO, 
-  *  21.2-EVO before 21.2R3-S7-EVO, 
-  *  21.4-EVO before 21.4R3-S5-EVO, 
-  *  22.1-EVO before 22.1R3-S5-EVO, 
-  *  22.2-EVO before 22.2R3-S3-EVO, 
-  *  22.3-EVO before 22.3R3-EVO, 22.3R3-S2-EVO, 
-  *  22.4-EVO before 22.4R3-EVO, 
-  *  23.2-EVO before 23.2R1-S2-EVO, 23.2R2-EVO.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-39534">CVE-2024-39534</a></td>
-					<td>5.4</td>
-					<td>unauthenticated,bypass</td>
-					<td class=date>2024-10-11T16:15:06.970</td>
-					<td class=description>An Incorrect Comparison vulnerability in the local address verification API of Juniper Networks Junos OS Evolved allows an unauthenticated network-adjacent attacker to create sessions or send traffic to the device using the network and broadcast address of the subnet assigned to an interface. This is unintended and unexpected behavior and can allow an attacker to bypass certain compensating controls, such as stateless firewall filters.
-
-This issue affects Junos OS Evolved: 
-
-
-
-  *  All versions before 21.4R3-S8-EVO, 
-  *  22.2-EVO before 22.2R3-S4-EVO, 
-  *  22.3-EVO before 22.3R3-S4-EVO, 
-  *  22.4-EVO before 22.4R3-S3-EVO, 
-  *  23.2-EVO before 23.2R2-S1-EVO, 
-  *  23.4-EVO before 23.4R1-S2-EVO, 23.4R2-EVO.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-39527">CVE-2024-39527</a></td>
-					<td>5.5</td>
-					<td>execution,command,sensitive</td>
-					<td class=date>2024-10-11T16:15:06.707</td>
-					<td class=description>An Exposure of Sensitive Information to an Unauthorized Actor vulnerability in the command-line interface (CLI) of Juniper Networks Junos OS on SRX Series devices allows a local, low-privileged user with access to the Junos CLI to view the contents of protected files on the file system.
-
-Through the execution of crafted CLI commands, a user with limited permissions (e.g., a low privilege login class user) can access protected files that should not be accessible to the user. These files may contain sensitive information that can be used to cause further impact to the system.
-
-This issue affects Junos OS on SRX Series: 
-
-
-
-  *  All versions before 21.4R3-S8, 
-  *  22.2 before 22.2R3-S5, 
-  *  22.3 before 22.3R3-S4, 
-  *  22.4 before 22.4R3-S4, 
-  *  23.2 before 23.2R2-S2, 
-  *  23.4 before 23.4R2.</td>
 				</tr>
 			
 		
