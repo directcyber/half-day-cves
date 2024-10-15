@@ -202,5 +202,29 @@
     "description": "Enterprise Cloud Database from Ragic does not authenticate access to specific functionality, allowing unauthenticated remote attackers to use this functionality to obtain any user's session cookie.",
     "published": "2024-10-15T09:15:04.480",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-45272": {
+    "cvss": 7.5,
+    "description": "An unauthenticated remote attacker can perform a brute-force attack on the credentials of the remote service portal with a high chance of success, resulting in connection lost.",
+    "published": "2024-10-15T11:15:11.673",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-45274": {
+    "cvss": 9.8,
+    "description": "An unauthenticated remote attacker can execute OS commands via UDP on the device due to missing authentication.",
+    "published": "2024-10-15T11:15:12.247",
+    "keywords": "remote,unauthenticated,authentication,command"
+  },
+  "CVE-2024-45275": {
+    "cvss": 9.8,
+    "description": "The devices contain two hard coded user accounts with hardcoded passwords that allow an unauthenticated remote attacker for full control of the affected devices.",
+    "published": "2024-10-15T11:15:12.487",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-45276": {
+    "cvss": 7.5,
+    "description": "An unauthenticated remote attacker can get read access to files in the \"/tmp\" directory due to missing authentication.",
+    "published": "2024-10-15T11:15:12.760",
+    "keywords": "remote,unauthenticated,authentication"
   }
 }
