@@ -124,5 +124,11 @@
     "description": "An issue in Automatic Systems Maintenance SlimLane 29565_d74ecce0c1081d50546db573a499941b10799fb7 allows a remote attacker to obtain sensitive information via the Racine & FileName parameters in the download-file.php component.",
     "published": "2024-10-14T21:15:11.997",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-9546": {
+    "cvss": 5.3,
+    "description": "The WPIDE \u2013 File Manager & Code Editor plugin for WordPress is vulnerable to Full Path Disclosure in all versions up to, and including, 3.4.9. This is due to the plugin utilizing the PHP-Parser library, which outputs parser rebuild command execution results. This makes it possible for unauthenticated attackers to retrieve the full path of the web application, which can be used to aid other attacks. The information displayed is not useful on its own, and requires another vulnerability to be present for damage to an affected website.",
+    "published": "2024-10-15T00:15:21.763",
+    "keywords": "execution,unauthenticated,command"
   }
 }
