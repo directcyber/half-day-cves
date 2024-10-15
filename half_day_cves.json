@@ -66,7 +66,7 @@
     "keywords": "remote,sensitive"
   },
   "CVE-2024-48797": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "An issue in PCS Engineering Preston Cinema (com.prestoncinema.app) 0.2.0 allows a remote attacker to obtain sensitive information via the firmware update process.",
     "published": "2024-10-14T17:15:13.690",
     "keywords": "remote,sensitive"
@@ -78,7 +78,7 @@
     "keywords": "remote,sensitive"
   },
   "CVE-2024-48799": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "An issue in LOREX TECHNOLOGY INC com.lorexcorp.lorexping 1.4.22 allows a remote attacker to obtain sensitive information via the firmware update process.",
     "published": "2024-10-14T17:15:13.857",
     "keywords": "remote,sensitive"
@@ -96,13 +96,13 @@
     "keywords": "remote,sensitive"
   },
   "CVE-2024-48791": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "An issue in Plug n Play Camera com.starvedia.mCamView.zwave 5.5.1 allows a remote attacker to obtain sensitive information via the firmware update process",
     "published": "2024-10-14T18:15:05.420",
     "keywords": "remote,sensitive"
   },
   "CVE-2024-48792": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "An issue in Hideez com.hideez 2.7.8.3 allows a remote attacker to obtain sensitive information via the firmware update process.",
     "published": "2024-10-14T18:15:05.520",
     "keywords": "remote,sensitive"
@@ -120,7 +120,7 @@
     "keywords": "remote,sensitive"
   },
   "CVE-2024-48824": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "An issue in Automatic Systems Maintenance SlimLane 29565_d74ecce0c1081d50546db573a499941b10799fb7 allows a remote attacker to obtain sensitive information via the Racine & FileName parameters in the download-file.php component.",
     "published": "2024-10-14T21:15:11.997",
     "keywords": "remote,sensitive"
@@ -234,7 +234,7 @@
     "keywords": "remote,command"
   },
   "CVE-2024-48282": {
-    "cvss": "-",
+    "cvss": 7.6,
     "description": "A SQL Injection vulnerability was found in /password-recovery.php of PHPGurukul User Registration & Login and User Management System 3.2, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the femail parameter in a POST HTTP request.",
     "published": "2024-10-15T13:15:11.227",
     "keywords": "remote,command"
@@ -250,5 +250,11 @@
     "cvss": "-",
     "description": "The Elliptic package 6.5.7 for Node.js, in its for ECDSA implementation, does not correctly verify valid signatures if the hash contains at least four leading 0 bytes and when the order of the elliptic curve's base point is smaller than the hash, because of an _truncateToN anomaly. This leads to valid signatures being rejected. Legitimate transactions or communications may be incorrectly flagged as invalid.",
     "published": "2024-10-15T14:15:05.280"
+  },
+  "CVE-2024-47080": {
+    "url": "https://github.com/matrix-org/matrix-spec-proposals/pull/3061",
+    "cvss": "-",
+    "description": "matrix-js-sdk is the Matrix Client-Server SDK for JavaScript and TypeScript. In matrix-js-sdk versions versions 9.11.0 through 34.7.0, the method `MatrixClient.sendSharedHistoryKeys` is vulnerable to interception by malicious homeservers.  The method was introduced by MSC3061) and is commonly used to share historical message keys with newly invited users, granting them access to past messages in the room. However, it unconditionally sends these \"shared\" keys to all of the invited user's devices, regardless of whether the user's cryptographic identity is verified or whether the user's devices are signed by that identity. This allows the attacker to potentially inject its own devices to receive sensitive historical keys without proper security checks. Note that this only affects clients running the SDK with the legacy crypto stack. Clients using the new Rust cryptography stack (i.e. those that call `MatrixClient.initRustCrypto()` instead of `MatrixClient.initCrypto()`) are unaffected by this vulnerability, because `MatrixClient.sendSharedHistoryKeys()` raises an exception in such environments. The vulnerability was fixed in matrix-js-sdk 34.8.0 by removing the vulnerable functionality. As a workaround, remove use of affected functionality from clients.",
+    "published": "2024-10-15T15:15:12.653"
   }
 }

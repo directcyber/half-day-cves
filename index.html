@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-10-15T15:12:14.211681
+Updated at UTC 2024-10-15T16:13:45.218302
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,18 @@ Updated at UTC 2024-10-15T15:12:14.211681
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-47080">CVE-2024-47080</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/matrix-org/matrix-spec-proposals/pull/3061">https://github.com/matrix-org/matrix-spec-proposals/pull/3061</a></td>
+					<td class=date>2024-10-15T15:15:12.653</td>
+					<td class=description>matrix-js-sdk is the Matrix Client-Server SDK for JavaScript and TypeScript. In matrix-js-sdk versions versions 9.11.0 through 34.7.0, the method `MatrixClient.sendSharedHistoryKeys` is vulnerable to interception by malicious homeservers.  The method was introduced by MSC3061) and is commonly used to share historical message keys with newly invited users, granting them access to past messages in the room. However, it unconditionally sends these "shared" keys to all of the invited user's devices, regardless of whether the user's cryptographic identity is verified or whether the user's devices are signed by that identity. This allows the attacker to potentially inject its own devices to receive sensitive historical keys without proper security checks. Note that this only affects clients running the SDK with the legacy crypto stack. Clients using the new Rust cryptography stack (i.e. those that call `MatrixClient.initRustCrypto()` instead of `MatrixClient.initCrypto()`) are unaffected by this vulnerability, because `MatrixClient.sendSharedHistoryKeys()` raises an exception in such environments. The vulnerability was fixed in matrix-js-sdk 34.8.0 by removing the vulnerable functionality. As a workaround, remove use of affected functionality from clients.</td>
+
+
+				</tr>
+			
 		
 			
 				<tr>
@@ -178,6 +190,8 @@ Updated at UTC 2024-10-15T15:12:14.211681
 			
 		
 			
+		
+			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9977">CVE-2024-9977</a></td>
 					<td>4.7</td>
@@ -190,7 +204,7 @@ Updated at UTC 2024-10-15T15:12:14.211681
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48282">CVE-2024-48282</a></td>
-					<td>-</td>
+					<td>7.6</td>
 					<td>remote,command</td>
 					<td class=date>2024-10-15T13:15:11.227</td>
 					<td class=description>A SQL Injection vulnerability was found in /password-recovery.php of PHPGurukul User Registration & Login and User Management System 3.2, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the femail parameter in a POST HTTP request.</td>
@@ -382,7 +396,7 @@ NewType does not properly validate user input, allowing remote attackers with r
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48824">CVE-2024-48824</a></td>
-					<td>-</td>
+					<td>7.5</td>
 					<td>remote,sensitive</td>
 					<td class=date>2024-10-14T21:15:11.997</td>
 					<td class=description>An issue in Automatic Systems Maintenance SlimLane 29565_d74ecce0c1081d50546db573a499941b10799fb7 allows a remote attacker to obtain sensitive information via the Racine & FileName parameters in the download-file.php component.</td>
@@ -412,7 +426,7 @@ NewType does not properly validate user input, allowing remote attackers with r
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48792">CVE-2024-48792</a></td>
-					<td>-</td>
+					<td>7.5</td>
 					<td>remote,sensitive</td>
 					<td class=date>2024-10-14T18:15:05.520</td>
 					<td class=description>An issue in Hideez com.hideez 2.7.8.3 allows a remote attacker to obtain sensitive information via the firmware update process.</td>
@@ -422,7 +436,7 @@ NewType does not properly validate user input, allowing remote attackers with r
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48791">CVE-2024-48791</a></td>
-					<td>-</td>
+					<td>7.5</td>
 					<td>remote,sensitive</td>
 					<td class=date>2024-10-14T18:15:05.420</td>
 					<td class=description>An issue in Plug n Play Camera com.starvedia.mCamView.zwave 5.5.1 allows a remote attacker to obtain sensitive information via the firmware update process</td>
@@ -444,7 +458,7 @@ NewType does not properly validate user input, allowing remote attackers with r
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48799">CVE-2024-48799</a></td>
-					<td>-</td>
+					<td>7.5</td>
 					<td>remote,sensitive</td>
 					<td class=date>2024-10-14T17:15:13.857</td>
 					<td class=description>An issue in LOREX TECHNOLOGY INC com.lorexcorp.lorexping 1.4.22 allows a remote attacker to obtain sensitive information via the firmware update process.</td>
@@ -464,7 +478,7 @@ NewType does not properly validate user input, allowing remote attackers with r
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48797">CVE-2024-48797</a></td>
-					<td>-</td>
+					<td>7.5</td>
 					<td>remote,sensitive</td>
 					<td class=date>2024-10-14T17:15:13.690</td>
 					<td class=description>An issue in PCS Engineering Preston Cinema (com.prestoncinema.app) 0.2.0 allows a remote attacker to obtain sensitive information via the firmware update process.</td>
