@@ -108,7 +108,7 @@
     "keywords": "remote,sensitive"
   },
   "CVE-2024-48793": {
-    "cvss": "-",
+    "cvss": 5.9,
     "description": "An issue in INATRONIC com.inatronic.bmw 2.7.1 allows a remote attacker to obtain sensitive information via the firmware update process.",
     "published": "2024-10-14T18:15:05.620",
     "keywords": "remote,sensitive"
@@ -265,13 +265,13 @@
   },
   "CVE-2024-48622": {
     "url": "https://github.com/domainmod/domainmod/issues/174",
-    "cvss": "-",
+    "cvss": 6.6,
     "description": "A cross-site scripting (XSS) issue in DomainMOD below v4.12.0 allows remote attackers to inject JavaScript code via admin/domain-fields/edit.php and the cdfid parameter.",
     "published": "2024-10-15T16:15:05.680"
   },
   "CVE-2024-48623": {
     "url": "https://github.com/domainmod/domainmod/issues/176",
-    "cvss": "-",
+    "cvss": 5.3,
     "description": "In queue\\index.php of DomainMOD below v4.12.0, the list_id and domain_id parameters in the GET request can be exploited to cause a reflected Cross Site Scripting (XSS).",
     "published": "2024-10-15T16:15:05.767"
   },
@@ -292,5 +292,23 @@
     "cvss": "-",
     "description": "The package `github.com/gomarkdown/markdown` is a Go library for parsing Markdown text and rendering as HTML. Prior to pseudoversion `v0.0.0-20240729232818-a2a9c4f`, which corresponds with commit `a2a9c4f76ef5a5c32108e36f7c47f8d310322252`, there was a logical problem in the paragraph function of the parser/block.go file, which allowed a remote attacker to cause a denial of service (DoS) condition by providing a tailor-made input that caused an infinite loop, causing the program to hang and consume resources indefinitely. Submit `a2a9c4f76ef5a5c32108e36f7c47f8d310322252` contains fixes to this problem.",
     "published": "2024-10-15T20:15:21.850"
+  },
+  "CVE-2024-48783": {
+    "cvss": "-",
+    "description": "An issue in Ruijie NBR3000D-E Gateway allows a remote attacker to obtain sensitive information via the /tool/shell/postgresql.conf component.",
+    "published": "2024-10-15T21:15:11.510",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-9955": {
+    "cvss": "-",
+    "description": "Use after free in WebAuthentication in Google Chrome prior to 130.0.6723.58 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)",
+    "published": "2024-10-15T21:15:12.193",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2024-9966": {
+    "cvss": "-",
+    "description": "Inappropriate implementation in Navigations in Google Chrome prior to 130.0.6723.58 allowed a remote attacker to bypass content security policy via a crafted HTML page. (Chromium security severity: Low)",
+    "published": "2024-10-15T21:15:12.890",
+    "keywords": "remote,bypass"
   }
 }
