@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-10-15T14:11:05.325757
+Updated at UTC 2024-10-15T15:12:14.211681
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,18 @@ Updated at UTC 2024-10-15T14:11:05.325757
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48948">CVE-2024-48948</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/indutny/elliptic/pull/322">https://github.com/indutny/elliptic/pull/322</a></td>
+					<td class=date>2024-10-15T14:15:05.280</td>
+					<td class=description>The Elliptic package 6.5.7 for Node.js, in its for ECDSA implementation, does not correctly verify valid signatures if the hash contains at least four leading 0 bytes and when the order of the elliptic curve's base point is smaller than the hash, because of an _truncateToN anomaly. This leads to valid signatures being rejected. Legitimate transactions or communications may be incorrectly flagged as invalid.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -164,6 +176,8 @@ Updated at UTC 2024-10-15T14:11:05.325757
 		<hr>
 		
 			
+		
+			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9977">CVE-2024-9977</a></td>
 					<td>4.7</td>
@@ -256,7 +270,7 @@ Updated at UTC 2024-10-15T14:11:05.325757
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-47944">CVE-2024-47944</a></td>
-					<td>-</td>
+					<td>9.8</td>
 					<td>execution,unauthenticated,authentication</td>
 					<td class=date>2024-10-15T09:15:03.580</td>
 					<td class=description>The device directly executes .patch firmware upgrade files on a USB stick without any prior authentication in the admin interface. This leads to an unauthenticated code execution via the firmware upgrade function.</td>
