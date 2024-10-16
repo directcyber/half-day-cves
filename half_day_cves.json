@@ -342,7 +342,7 @@
     "keywords": "remote,execution,unauthenticated"
   },
   "CVE-2024-45216": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "Improper Authentication vulnerability in Apache Solr.\n\nSolr instances using the PKIAuthenticationPlugin, which is enabled by default when Solr Authentication is used, are vulnerable to Authentication bypass.\nA fake ending at the end of any Solr API URL path, will allow requests to skip Authentication while maintaining the API contract with the original URL Path.\nThis fake ending looks like an unprotected API path, however it is stripped off internally after authentication but before API routing.\n\n\nThis issue affects Apache Solr: from 5.3.0 before 8.11.4, from 9.0.0 before 9.7.0.\n\nUsers are recommended to upgrade to version 9.7.0, or 8.11.4, which fix the issue.",
     "published": "2024-10-16T08:15:05.233",
     "keywords": "authentication,bypass"
@@ -382,5 +382,65 @@
     "description": "The Nextend Social Login Pro plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 3.1.14. This is due to insufficient verification on the user being returned by the social login token. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email and the user does not have an already-existing account for the service returning the token.",
     "published": "2024-10-16T14:15:12.097",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-20280": {
+    "cvss": 6.3,
+    "description": "A vulnerability in the backup feature of Cisco UCS Central Software could allow an attacker with access to a backup file to learn sensitive information that is stored in the full state and configuration backup files.\r\n\r\nThis vulnerability is due to a weakness in the encryption method that is used for the backup function. An attacker could exploit this vulnerability by accessing a backup file and leveraging a static key that is used for the backup configuration feature. A successful exploit could allow an attacker with access to a backup file to learn sensitive information that is stored in full state backup files and configuration backup files, such as local user credentials, authentication server passwords, Simple Network Management Protocol (SNMP) community names, and the device SSL server certificate and key.",
+    "published": "2024-10-16T17:15:13.697",
+    "keywords": "authentication,sensitive"
+  },
+  "CVE-2024-20420": {
+    "cvss": 5.4,
+    "description": "A vulnerability in the web-based management interface of Cisco ATA 190 Series Analog Telephone Adapter firmware could allow an authenticated, remote attacker with low privileges to run commands as an Admin user. \r\n\r\nThis vulnerability is due to incorrect authorization verification by the HTTP server. An attacker could exploit this vulnerability by sending a malicious request to the web-based management interface. A successful exploit could allow the attacker to run commands as the Admin user.",
+    "published": "2024-10-16T17:15:13.957",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-20421": {
+    "cvss": 7.1,
+    "description": "A vulnerability in the web-based management interface of Cisco ATA 190 Series Analog Telephone Adapter firmware could allow an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack and perform arbitrary actions on an affected device.\r\n\r\nThis vulnerability is due to insufficient CSRF protections for the web-based management interface of an affected device. An attacker could exploit this vulnerability by persuading a user to follow a crafted link. A successful exploit could allow the attacker to perform arbitrary actions on the affected device with the privileges of the targeted user.",
+    "published": "2024-10-16T17:15:14.193",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-20458": {
+    "cvss": 8.2,
+    "description": "A vulnerability in the web-based management interface of Cisco ATA 190 Series Analog Telephone Adapter firmware could allow an unauthenticated, remote attacker to view or delete the configuration or change the firmware on an affected device.\r\n\r\nThis vulnerability is due to a lack of authentication on specific HTTP endpoints. An attacker could exploit this vulnerability by browsing to a specific URL. A successful exploit could allow the attacker to view or delete the configuration or change the firmware.",
+    "published": "2024-10-16T17:15:14.423",
+    "keywords": "remote,unauthenticated,authentication"
+  },
+  "CVE-2024-20459": {
+    "cvss": 6.5,
+    "description": "A vulnerability in the web-based management interface of Cisco ATA 190 Multiplatform Series Analog Telephone Adapter firmware could allow an authenticated, remote attacker with high privileges to execute arbitrary commands as the root user on the underlying operating system.\r\n\r\nThis vulnerability is due to a lack of input sanitization in the web-based management interface. An attacker could exploit this vulnerability by sending a malicious request to the web-based management interface. A successful exploit could allow the attacker to execute arbitrary commands on the underlying operating system as the root user.",
+    "published": "2024-10-16T17:15:14.657",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-20460": {
+    "cvss": 6.1,
+    "description": "A vulnerability in the web-based management interface of Cisco ATA 190 Series Analog Telephone Adapter firmware could allow an unauthenticated, remote attacker to conduct a reflected cross-site scripting (XSS) attack against a user.\r\n\r\nThis vulnerability is due to insufficient validation of user input. An attacker could exploit this vulnerability by persuading a user&nbsp;to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information on an affected device.",
+    "published": "2024-10-16T17:15:14.880",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2024-20463": {
+    "cvss": 5.4,
+    "description": "A vulnerability in the web-based management interface of Cisco ATA 190 Series Analog Telephone Adapter firmware could allow an unauthenticated, remote attacker to modify the configuration or reboot an affected device.\r\n\r\nThis vulnerability is due to the HTTP server allowing state changes in GET requests. An attacker could exploit this vulnerability by sending a malicious request to the web-based management interface on an affected device. A successful exploit could allow the attacker to make limited modifications to the configuration or reboot the device, resulting in a denial of service (DoS) condition.&nbsp;",
+    "published": "2024-10-16T17:15:15.670",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-20512": {
+    "cvss": 6.1,
+    "description": "A vulnerability in the web-based management interface of Cisco Unified Contact Center Management Portal (Unified CCMP) could allow an unauthenticated, remote attacker to conduct a reflected cross-site scripting (XSS) attack against a user of the interface.\r\n\r\nThis vulnerability exists because the web-based management interface does not properly validate user-supplied input. An attacker could exploit this vulnerability by persuading a user of the interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive browser-based information.",
+    "published": "2024-10-16T17:15:15.913",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2024-38814": {
+    "cvss": 8.8,
+    "description": "An authenticated SQL injection vulnerability in VMware HCX was privately reported to VMware. A\n malicious authenticated user with non-administrator privileges may be \nable to enter specially crafted SQL queries and perform unauthorized \nremote code execution on the HCX manager.\u00a0\nUpdates are available to remediate this vulnerability in affected VMware products.",
+    "published": "2024-10-16T17:15:16.237",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-9143": {
+    "cvss": "-",
+    "description": "Issue summary: Use of the low-level GF(2^m) elliptic curve APIs with untrusted\nexplicit values for the field polynomial can lead to out-of-bounds memory reads\nor writes.\n\nImpact summary: Out of bound memory writes can lead to an application crash or\neven a possibility of a remote code execution, however, in all the protocols\ninvolving Elliptic Curve Cryptography that we're aware of, either only \"named\ncurves\" are supported, or, if explicit curve parameters are supported, they\nspecify an X9.62 encoding of binary (GF(2^m)) curves that can't represent\nproblematic input values. Thus the likelihood of existence of a vulnerable\napplication is low.\n\nIn particular, the X9.62 encoding is used for ECC keys in X.509 certificates,\nso problematic inputs cannot occur in the context of processing X.509\ncertificates.  Any problematic use-cases would have to be using an \"exotic\"\ncurve encoding.\n\nThe affected APIs include: EC_GROUP_new_curve_GF2m(), EC_GROUP_new_from_params(),\nand various supporting BN_GF2m_*() functions.\n\nApplications working with \"exotic\" explicit binary (GF(2^m)) curve parameters,\nthat make it possible to represent invalid field polynomials with a zero\nconstant term, via the above or similar APIs, may terminate abruptly as a\nresult of reading or writing outside of array bounds.  Remote code execution\ncannot easily be ruled out.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
+    "published": "2024-10-16T17:15:18.130",
+    "keywords": "remote,execution"
   }
 }
