@@ -316,5 +316,23 @@
     "description": "Missing authorization in Power Platform allows an unauthenticated attacker to view sensitive information through a network attack vector.",
     "published": "2024-10-15T23:15:15.647",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-9104": {
+    "cvss": 5.6,
+    "description": "The UltimateAI plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 2.8.3. This is due to the improper empty value check and a missing default activated value check in the 'ultimate_ai_change_pass' function. This makes it possible for unauthenticated attackers to reset the password of the first user, whose account is not yet activated or the first user who activated their account, who are subscribers.",
+    "published": "2024-10-16T02:15:06.607",
+    "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-9105": {
+    "cvss": 9.8,
+    "description": "The UltimateAI plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 2.8.3. This is due to insufficient verification on the user being supplied in the 'ultimate_ai_register_or_login_with_google' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email.",
+    "published": "2024-10-16T02:15:06.840",
+    "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-9634": {
+    "cvss": 9.8,
+    "description": "The GiveWP \u2013 Donation Plugin and Fundraising Platform plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.16.3 via deserialization of untrusted input from the give_company_name parameter. This makes it possible for unauthenticated attackers to inject a PHP Object. The additional presence of a POP chain allows attackers to achieve remote code execution.",
+    "published": "2024-10-16T02:15:07.487",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
