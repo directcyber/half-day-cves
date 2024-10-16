@@ -376,5 +376,11 @@
     "description": ": Authentication Bypass Using an Alternate Path or Channel vulnerability in sooskriszta, webforza BuddyPress Better Registration allows : Authentication Bypass.This issue affects BuddyPress Better Registration: from n/a through 1.6.",
     "published": "2024-10-16T13:15:14.277",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-9893": {
+    "cvss": 9.8,
+    "description": "The Nextend Social Login Pro plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 3.1.14. This is due to insufficient verification on the user being returned by the social login token. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email and the user does not have an already-existing account for the service returning the token.",
+    "published": "2024-10-16T14:15:12.097",
+    "keywords": "unauthenticated,authentication,bypass"
   }
 }
