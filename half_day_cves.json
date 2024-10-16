@@ -334,5 +334,11 @@
     "description": "The GiveWP \u2013 Donation Plugin and Fundraising Platform plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.16.3 via deserialization of untrusted input from the give_company_name parameter. This makes it possible for unauthenticated attackers to inject a PHP Object. The additional presence of a POP chain allows attackers to achieve remote code execution.",
     "published": "2024-10-16T02:15:07.487",
     "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-8746": {
+    "cvss": 7.5,
+    "description": "The File Manager Pro plugin for WordPress is vulnerable to arbitrary backup file downloads and uploads due to missing file type validation via the 'mk_file_folder_manager_shortcode' ajax action in all versions up to, and including, 8.3.9. This makes it possible for unauthenticated attackers, if granted access to the File Manager by an administrator, to download and upload arbitrary backup files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-10-16T07:15:16.537",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
