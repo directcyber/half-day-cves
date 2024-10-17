@@ -1,16 +1,4 @@
 {
-  "CVE-2024-9921": {
-    "cvss": 9.8,
-    "description": "The Team+ from TEAMPLUS TECHNOLOGY does not properly validate specific page parameter, allowing unauthenticated remote attackers to inject arbitrary SQL commands to read, modify and delete database contents.",
-    "published": "2024-10-14T03:15:10.400",
-    "keywords": "remote,unauthenticated,command"
-  },
-  "CVE-2024-9922": {
-    "cvss": 7.5,
-    "description": "The Team+ from TEAMPLUS TECHNOLOGY does not properly validate a specific page parameter, allowing unauthenticated remote attackers to exploit this vulnerability to read arbitrary system files.",
-    "published": "2024-10-14T03:15:10.683",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2024-9924": {
     "cvss": 9.8,
     "description": "The fix for CVE-2024-26261 was incomplete, and and the specific package for OAKlouds from Hgiga remains at risk. Unauthenticated remote attackers still can download arbitrary system files, which may be deleted subsequently .",
@@ -436,5 +424,29 @@
     "description": "REDAXO CMS v2.11.0 was discovered to contain a remote code execution (RCE) vulnerability.",
     "published": "2024-10-16T21:15:12.947",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-45766": {
+    "cvss": 8.0,
+    "description": "Dell OpenManage Enterprise, version(s) OME 4.1 and prior, contain(s) an Improper Control of Generation of Code ('Code Injection') vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to Code execution.",
+    "published": "2024-10-17T02:15:02.273",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-45767": {
+    "cvss": 4.3,
+    "description": "Dell OpenManage Enterprise, version(s) OME 4.1 and prior, contain(s) an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to Information disclosure.",
+    "published": "2024-10-17T02:15:02.587",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-9861": {
+    "cvss": 8.1,
+    "description": "The Miniorange OTP Verification with Firebase plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 3.6.0. This is due to missing validation on the token being supplied during the otp login through the plugin. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they know the phone number associated with that user.",
+    "published": "2024-10-17T02:15:03.493",
+    "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-9862": {
+    "cvss": 9.8,
+    "description": "The Miniorange OTP Verification with Firebase plugin for WordPress is vulnerable to Arbitrary User Password Change in versions up to, and including, 3.6.0. This is due to the plugin providing user-controlled access to objects, letting a user bypass authorization and access system resources, and the user current password check is missing. This makes it possible for unauthenticated attackers to change user passwords and potentially take over administrator accounts.",
+    "published": "2024-10-17T02:15:03.767",
+    "keywords": "unauthenticated,bypass"
   }
 }
