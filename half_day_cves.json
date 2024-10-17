@@ -442,5 +442,11 @@
     "description": "The Miniorange OTP Verification with Firebase plugin for WordPress is vulnerable to Arbitrary User Password Change in versions up to, and including, 3.6.0. This is due to the plugin providing user-controlled access to objects, letting a user bypass authorization and access system resources, and the user current password check is missing. This makes it possible for unauthenticated attackers to change user passwords and potentially take over administrator accounts.",
     "published": "2024-10-17T02:15:03.767",
     "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2024-3187": {
+    "cvss": 5.9,
+    "description": "This issue tracks two CWE-416 Use After Free (UAF) and one CWE-415 Double Free vulnerabilities in Goahead versions <= 6.0.0. These are caused by JST values not being nulled when freed during parsing of JST templates. If the ME_GOAHEAD_JAVASCRIPT flag is enabled, a remote attacker with the privileges to modify JavaScript template (JST) files could exploit this by providing malicious templates. This may lead to memory corruption, potentially causing a Denial of Service (DoS) or, in rare cases, code execution, though the latter is highly context-dependent.",
+    "published": "2024-10-17T08:15:02.760",
+    "keywords": "remote,execution"
   }
 }
