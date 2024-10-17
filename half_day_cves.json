@@ -1,40 +1,4 @@
 {
-  "CVE-2024-47831": {
-    "url": "https://github.com/vercel/next.js/commit/d11cbc9ff0b1aaefabcba9afe1e562e0b1fde65a",
-    "cvss": 5.9,
-    "description": "Next.js is a React Framework for the Web. Cersions on the 10.x, 11.x, 12.x, 13.x, and 14.x branches before version 14.2.7 contain a vulnerability in the image optimization feature which allows for a potential Denial of Service (DoS) condition which could lead to excessive CPU consumption. Neither the `next.config.js` file that is configured with `images.unoptimized` set to `true` or `images.loader` set to a non-default value nor the Next.js application that is hosted on Vercel are affected. This issue was fully patched in Next.js `14.2.7`. As a workaround, ensure that the `next.config.js` file has either `images.unoptimized`, `images.loader` or `images.loaderFile` assigned.",
-    "published": "2024-10-14T18:15:05.013"
-  },
-  "CVE-2024-48790": {
-    "cvss": 5.3,
-    "description": "An issue in ILIFE com.ilife.home.global 1.8.7 allows a remote attacker to obtain sensitive information via the firmware update process.",
-    "published": "2024-10-14T18:15:05.323",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-48791": {
-    "cvss": 7.5,
-    "description": "An issue in Plug n Play Camera com.starvedia.mCamView.zwave 5.5.1 allows a remote attacker to obtain sensitive information via the firmware update process",
-    "published": "2024-10-14T18:15:05.420",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-48792": {
-    "cvss": 7.5,
-    "description": "An issue in Hideez com.hideez 2.7.8.3 allows a remote attacker to obtain sensitive information via the firmware update process.",
-    "published": "2024-10-14T18:15:05.520",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-48793": {
-    "cvss": 5.9,
-    "description": "An issue in INATRONIC com.inatronic.bmw 2.7.1 allows a remote attacker to obtain sensitive information via the firmware update process.",
-    "published": "2024-10-14T18:15:05.620",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-48795": {
-    "cvss": 5.3,
-    "description": "An issue in Creative Labs Pte Ltd com.creative.apps.xficonnect 2.00.02 allows a remote attacker to obtain sensitive information via the firmware update process.",
-    "published": "2024-10-14T18:15:05.717",
-    "keywords": "remote,sensitive"
-  },
   "CVE-2024-48824": {
     "cvss": 7.5,
     "description": "An issue in Automatic Systems Maintenance SlimLane 29565_d74ecce0c1081d50546db573a499941b10799fb7 allows a remote attacker to obtain sensitive information via the Racine & FileName parameters in the download-file.php component.",
@@ -246,7 +210,7 @@
     "keywords": "remote,execution,unauthenticated"
   },
   "CVE-2024-8746": {
-    "cvss": 7.5,
+    "cvss": 8.8,
     "description": "The File Manager Pro plugin for WordPress is vulnerable to arbitrary backup file downloads and uploads due to missing file type validation via the 'mk_file_folder_manager_shortcode' ajax action in all versions up to, and including, 8.3.9. This makes it possible for unauthenticated attackers, if granted access to the File Manager by an administrator, to download and upload arbitrary backup files on the affected site's server which may make remote code execution possible.",
     "published": "2024-10-16T07:15:16.537",
     "keywords": "remote,execution,unauthenticated"
