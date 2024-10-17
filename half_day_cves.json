@@ -180,7 +180,7 @@
     "keywords": "remote,authentication"
   },
   "CVE-2024-9966": {
-    "cvss": "-",
+    "cvss": 5.3,
     "description": "Inappropriate implementation in Navigations in Google Chrome prior to 130.0.6723.58 allowed a remote attacker to bypass content security policy via a crafted HTML page. (Chromium security severity: Low)",
     "published": "2024-10-15T21:15:12.890",
     "keywords": "remote,bypass"
@@ -370,5 +370,11 @@
     "description": "The affected product is vulnerable to an attacker being able to use commands without providing a password which may allow an attacker to leak information.",
     "published": "2024-10-17T17:15:12.800",
     "keywords": "command,leak"
+  },
+  "CVE-2024-10101": {
+    "cvss": 8.2,
+    "description": "A stored cross-site scripting (XSS) vulnerability exists in binary-husky/gpt_academic version 3.83. The vulnerability occurs at the /file endpoint, which renders HTML files. Malicious HTML files containing XSS payloads can be uploaded and stored in the backend, leading to the execution of the payload in the victim's browser when the file is accessed. This can result in the theft of session cookies or other sensitive information.",
+    "published": "2024-10-17T19:15:21.713",
+    "keywords": "execution,sensitive"
   }
 }
