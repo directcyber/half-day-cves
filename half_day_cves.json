@@ -1,10 +1,4 @@
 {
-  "CVE-2024-7847": {
-    "cvss": 7.7,
-    "description": "VULNERABILITY DETAILS\n\nRockwell Automation used the latest versions of the CVSS scoring system to assess the following vulnerabilities. The following vulnerabilities were reported to us by Sharon Brizinov of Claroty Research - Team82. \n\nA feature in the affected products enables users to prepare a project file with an embedded VBA script and can be configured to run once the project file has been opened without user intervention.  This feature can be abused to trick a legitimate user into executing malicious code upon opening an infected RSP/RSS project file. If exploited, a threat actor may be able to perform a remote code execution. Connected devices may also be impacted by exploitation of this vulnerability.",
-    "published": "2024-10-14T14:15:12.020",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-9823": {
     "url": "https://github.com/jetty/jetty.project/issues/1256",
     "cvss": 5.3,
@@ -441,6 +435,12 @@
     "cvss": 5.9,
     "description": "This issue tracks two CWE-416 Use After Free (UAF) and one CWE-415 Double Free vulnerabilities in Goahead versions <= 6.0.0. These are caused by JST values not being nulled when freed during parsing of JST templates. If the ME_GOAHEAD_JAVASCRIPT flag is enabled, a remote attacker with the privileges to modify JavaScript template (JST) files could exploit this by providing malicious templates. This may lead to memory corruption, potentially causing a Denial of Service (DoS) or, in rare cases, code execution, though the latter is highly context-dependent.",
     "published": "2024-10-17T08:15:02.760",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-6333": {
+    "cvss": 7.2,
+    "description": "Authenticated Remote Code Execution in Altalink, Versalink & WorkCentre Products.",
+    "published": "2024-10-17T14:15:14.287",
     "keywords": "remote,execution"
   }
 }
