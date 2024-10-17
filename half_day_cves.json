@@ -1,16 +1,4 @@
 {
-  "CVE-2024-41997": {
-    "cvss": 6.6,
-    "description": "An issue was discovered in version of Warp Terminal prior to 2024.07.18 (v0.2024.07.16.08.02). A command injection vulnerability exists in the Docker integration functionality. An attacker can create a specially crafted hyperlink using the `warp://action/docker/open_subshell` intent that when clicked by the victim results in command execution on the victim's machine.",
-    "published": "2024-10-14T16:15:03.640",
-    "keywords": "execution,command"
-  },
-  "CVE-2024-6762": {
-    "cvss": 3.1,
-    "description": "Jetty PushSessionCacheFilter can be exploited by unauthenticated users \nto launch remote DoS attacks by exhausting the server\u2019s memory.",
-    "published": "2024-10-14T16:15:03.930",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2024-45733": {
     "cvss": 8.8,
     "description": "In Splunk Enterprise for Windows versions below 9.2.3 and 9.1.6, a low-privileged user that does not hold the \"admin\" or \"power\" Splunk roles could perform a Remote Code Execution (RCE) due to an insecure session storage configuration.",
