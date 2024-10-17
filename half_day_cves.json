@@ -370,5 +370,23 @@
     "description": "A stored cross-site scripting (XSS) vulnerability exists in binary-husky/gpt_academic version 3.83. The vulnerability occurs at the /file endpoint, which renders HTML files. Malicious HTML files containing XSS payloads can be uploaded and stored in the backend, leading to the execution of the payload in the victim's browser when the file is accessed. This can result in the theft of session cookies or other sensitive information.",
     "published": "2024-10-17T19:15:21.713",
     "keywords": "execution,sensitive"
+  },
+  "CVE-2024-30875": {
+    "cvss": "-",
+    "description": "Cross Site Scripting vulnerability in JavaScript Library jquery-ui v.1.13.1 allows a remote attacker to obtain sensitive information and execute arbitrary code via a crafted payload to the window.addEventListener component.",
+    "published": "2024-10-17T22:15:02.977",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-33453": {
+    "cvss": "-",
+    "description": "Buffer Overflow vulnerability in esp-idf v.5.1 allows a remote attacker to obtain sensitive information via the externalId component.",
+    "published": "2024-10-17T22:15:03.040",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-7316": {
+    "cvss": 5.9,
+    "description": "Improper Validation of Specified Quantity in Input vulnerability in Mitsubishi Electric CNC Series allows a remote unauthenticated attacker to cause Denial of Service (DoS) condition on the product by sending specially crafted packets to TCP port 683, causing an emergency stop.",
+    "published": "2024-10-17T22:15:03.313",
+    "keywords": "remote,unauthenticated"
   }
 }
