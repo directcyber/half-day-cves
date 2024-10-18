@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-10-18T15:12:11.026867
+Updated at UTC 2024-10-18T16:13:53.973535
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -207,18 +207,6 @@ Updated at UTC 2024-10-18T15:12:11.026867
 					<td><a target=_blank href="https://github.com/domainmod/domainmod/issues/174">https://github.com/domainmod/domainmod/issues/174</a></td>
 					<td class=date>2024-10-15T16:15:05.680</td>
 					<td class=description>A cross-site scripting (XSS) issue in DomainMOD below v4.12.0 allows remote attackers to inject JavaScript code via admin/domain-fields/edit.php and the cdfid parameter.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-47080">CVE-2024-47080</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/matrix-org/matrix-spec-proposals/pull/3061">https://github.com/matrix-org/matrix-spec-proposals/pull/3061</a></td>
-					<td class=date>2024-10-15T15:15:12.653</td>
-					<td class=description>matrix-js-sdk is the Matrix Client-Server SDK for JavaScript and TypeScript. In matrix-js-sdk versions versions 9.11.0 through 34.7.0, the method `MatrixClient.sendSharedHistoryKeys` is vulnerable to interception by malicious homeservers.  The method was introduced by MSC3061) and is commonly used to share historical message keys with newly invited users, granting them access to past messages in the room. However, it unconditionally sends these "shared" keys to all of the invited user's devices, regardless of whether the user's cryptographic identity is verified or whether the user's devices are signed by that identity. This allows the attacker to potentially inject its own devices to receive sensitive historical keys without proper security checks. Note that this only affects clients running the SDK with the legacy crypto stack. Clients using the new Rust cryptography stack (i.e. those that call `MatrixClient.initRustCrypto()` instead of `MatrixClient.initCrypto()`) are unaffected by this vulnerability, because `MatrixClient.sendSharedHistoryKeys()` raises an exception in such environments. The vulnerability was fixed in matrix-js-sdk 34.8.0 by removing the vulnerable functionality. As a workaround, remove use of affected functionality from clients.</td>
 
 
 				</tr>
@@ -772,8 +760,6 @@ Users are recommended to upgrade to version 9.7.0, or 8.11.4, which fix the issu
 					<td class=date>2024-10-15T21:15:11.510</td>
 					<td class=description>An issue in Ruijie NBR3000D-E Gateway allows a remote attacker to obtain sensitive information via the /tool/shell/postgresql.conf component.</td>
 				</tr>
-			
-		
 			
 		
 			
