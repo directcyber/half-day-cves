@@ -1,10 +1,4 @@
 {
-  "CVE-2024-9971": {
-    "cvss": 8.8,
-    "description": "The specific query functionality in the FlowMaster BPM Plus from NewType does not properly restrict user input, allowing remote attackers with regular privileges to inject SQL commands to read, modify, or delete database contents.",
-    "published": "2024-10-15T04:15:05.080",
-    "keywords": "remote,command"
-  },
   "CVE-2024-9972": {
     "cvss": 9.8,
     "description": "Property Management System from ChanGate has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL commands to read, modify, and delete database contents.",
@@ -406,5 +400,11 @@
     "description": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
     "published": "2024-10-18T01:15:40.747",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-10118": {
+    "cvss": 9.8,
+    "description": "SECOM WRTR-304GN-304TW-UPSC does not properly filter user input in the specific functionality. Unauthenticated remote attackers can exploit this vulnerability to inject and execute arbitrary system commands on the device.",
+    "published": "2024-10-18T04:15:03.290",
+    "keywords": "remote,unauthenticated,command"
   }
 }
