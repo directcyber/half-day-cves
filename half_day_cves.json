@@ -1,10 +1,4 @@
 {
-  "CVE-2024-44337": {
-    "url": "https://github.com/gomarkdown/markdown/commit/a2a9c4f76ef5a5c32108e36f7c47f8d310322252",
-    "cvss": "-",
-    "description": "The package `github.com/gomarkdown/markdown` is a Go library for parsing Markdown text and rendering as HTML. Prior to pseudoversion `v0.0.0-20240729232818-a2a9c4f`, which corresponds with commit `a2a9c4f76ef5a5c32108e36f7c47f8d310322252`, there was a logical problem in the paragraph function of the parser/block.go file, which allowed a remote attacker to cause a denial of service (DoS) condition by providing a tailor-made input that caused an infinite loop, causing the program to hang and consume resources indefinitely. Submit `a2a9c4f76ef5a5c32108e36f7c47f8d310322252` contains fixes to this problem.",
-    "published": "2024-10-15T20:15:21.850"
-  },
   "CVE-2024-48783": {
     "cvss": "-",
     "description": "An issue in Ruijie NBR3000D-E Gateway allows a remote attacker to obtain sensitive information via the /tool/shell/postgresql.conf component.",
@@ -216,7 +210,7 @@
     "keywords": "execution,sensitive"
   },
   "CVE-2024-30875": {
-    "cvss": "-",
+    "cvss": 7.1,
     "description": "Cross Site Scripting vulnerability in JavaScript Library jquery-ui v.1.13.1 allows a remote attacker to obtain sensitive information and execute arbitrary code via a crafted payload to the window.addEventListener component.",
     "published": "2024-10-17T22:15:02.977",
     "keywords": "remote,sensitive"
