@@ -1,10 +1,4 @@
 {
-  "CVE-2024-9546": {
-    "cvss": 5.3,
-    "description": "The WPIDE \u2013 File Manager & Code Editor plugin for WordPress is vulnerable to Full Path Disclosure in all versions up to, and including, 3.4.9. This is due to the plugin utilizing the PHP-Parser library, which outputs parser rebuild command execution results. This makes it possible for unauthenticated attackers to retrieve the full path of the web application, which can be used to aid other attacks. The information displayed is not useful on its own, and requires another vulnerability to be present for damage to an affected website.",
-    "published": "2024-10-15T00:15:21.763",
-    "keywords": "execution,unauthenticated,command"
-  },
   "CVE-2024-9687": {
     "cvss": 8.8,
     "description": "The WP 2FA with Telegram plugin for WordPress is vulnerable to Authentication Bypass in versions up to, and including, 3.0. This is due to insufficient validation of the user-controlled key on the 'validate_tg' action. This makes it possible for authenticated attackers, with subscriber-level permissions and above, to log in as any existing user on the site, such as an administrator.",
@@ -388,5 +382,41 @@
     "description": "Improper Validation of Specified Quantity in Input vulnerability in Mitsubishi Electric CNC Series allows a remote unauthenticated attacker to cause Denial of Service (DoS) condition on the product by sending specially crafted packets to TCP port 683, causing an emergency stop.",
     "published": "2024-10-17T22:15:03.313",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-43566": {
+    "cvss": 7.5,
+    "description": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "published": "2024-10-17T23:15:14.940",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-43578": {
+    "cvss": 7.6,
+    "description": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "published": "2024-10-17T23:15:15.370",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-43579": {
+    "cvss": 7.6,
+    "description": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "published": "2024-10-17T23:15:15.570",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-43587": {
+    "cvss": 5.9,
+    "description": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "published": "2024-10-17T23:15:16.123",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-43595": {
+    "cvss": 6.5,
+    "description": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "published": "2024-10-17T23:15:16.463",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-43596": {
+    "cvss": 6.5,
+    "description": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "published": "2024-10-17T23:15:16.657",
+    "keywords": "remote,execution"
   }
 }
