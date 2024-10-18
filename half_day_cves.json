@@ -1,28 +1,4 @@
 {
-  "CVE-2024-9837": {
-    "cvss": 7.3,
-    "description": "The The AADMY \u2013 Add Auto Date Month Year Into Posts plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 2.0.1. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
-    "published": "2024-10-15T08:15:02.910",
-    "keywords": "execution,unauthenticated"
-  },
-  "CVE-2024-9980": {
-    "cvss": 8.8,
-    "description": "The ee-class from FormosaSoft does not properly validate a specific page parameter, allowing remote attackers with regular privileges to inject arbitrary SQL commands to read, modify and delete database contents.",
-    "published": "2024-10-15T08:15:03.163",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-9981": {
-    "cvss": 8.8,
-    "description": "The ee-class from FormosaSoft does not properly validate a specific page parameter, allowing remote attackers with regular privileges to upload a malicious PHP file first and then exploit this vulnerability to include the file, resulting in arbitrary code execution on the server.",
-    "published": "2024-10-15T08:15:03.377",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-9982": {
-    "cvss": 9.8,
-    "description": "AIM LINE Marketing Platform from Esi Technology does not properly validate a specific query parameter. When the LINE Campaign Module is enabled, unauthenticated remote attackers can inject arbitrary FetchXml commands to read, modify, and delete database content.",
-    "published": "2024-10-15T08:15:03.603",
-    "keywords": "remote,unauthenticated,command"
-  },
   "CVE-2024-47944": {
     "cvss": 6.8,
     "description": "The device directly executes .patch firmware upgrade files on a USB stick without any prior authentication in the admin interface. This leads to an unauthenticated code execution via the\u00a0firmware upgrade function.",
