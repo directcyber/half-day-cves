@@ -1,10 +1,4 @@
 {
-  "CVE-2024-38190": {
-    "cvss": 8.6,
-    "description": "Missing authorization in Power Platform allows an unauthenticated attacker to view sensitive information through a network attack vector.",
-    "published": "2024-10-15T23:15:15.647",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2024-9104": {
     "cvss": 5.6,
     "description": "The UltimateAI plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 2.8.3. This is due to the improper empty value check and a missing default activated value check in the 'ultimate_ai_change_pass' function. This makes it possible for unauthenticated attackers to reset the password of the first user, whose account is not yet activated or the first user who activated their account, who are subscribers.",
@@ -286,5 +280,11 @@
     "description": "ACON is a widely-used library of tools for machine learning that focuses on adaptive correlation optimization. A potential vulnerability has been identified in the input validation process, which could lead to arbitrary code execution if exploited. This issue could allow an attacker to submit malicious input data, bypassing input validation, resulting in remote code execution in certain machine learning applications using the ACON library. All users utilizing ACON\u2019s input-handling functions are potentially at risk. Specifically, machine learning models or applications that ingest user-generated data without proper sanitization are the most vulnerable. Users running ACON on production servers are at heightened risk, as the vulnerability could be exploited remotely. As of time of publication, it is unclear whether a fix is available.",
     "published": "2024-10-18T19:15:14.393",
     "keywords": "remote,execution,bypass"
+  },
+  "CVE-2024-37404": {
+    "cvss": 9.1,
+    "description": "Improper Input Validation in the admin portal of Ivanti Connect Secure before 22.7R2.1 and 9.1R18.9, or Ivanti Policy Secure before 22.7R1.1 allows a remote authenticated attacker to achieve remote code execution.",
+    "published": "2024-10-18T23:15:03.580",
+    "keywords": "remote,execution"
   }
 }
