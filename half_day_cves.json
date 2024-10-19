@@ -268,5 +268,11 @@
     "description": "Improper Input Validation in the admin portal of Ivanti Connect Secure before 22.7R2.1 and 9.1R18.9, or Ivanti Policy Secure before 22.7R1.1 allows a remote authenticated attacker to achieve remote code execution.",
     "published": "2024-10-18T23:15:03.580",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-10131": {
+    "cvss": 9.8,
+    "description": "The `add_llm` function in `llm_app.py` in infiniflow/ragflow version 0.11.0 contains a remote code execution (RCE) vulnerability. The function uses user-supplied input `req['llm_factory']` and `req['llm_name']` to dynamically instantiate classes from various model dictionaries. This approach allows an attacker to potentially execute arbitrary code due to the lack of comprehensive input validation or sanitization. An attacker could provide a malicious value for 'llm_factory' that, when used as an index to these model dictionaries, results in the execution of arbitrary code.",
+    "published": "2024-10-19T04:15:05.300",
+    "keywords": "remote,execution"
   }
 }
