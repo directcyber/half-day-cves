@@ -1,10 +1,4 @@
 {
-  "CVE-2024-9893": {
-    "cvss": 9.8,
-    "description": "The Nextend Social Login Pro plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 3.1.14. This is due to insufficient verification on the user being returned by the social login token. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email and the user does not have an already-existing account for the service returning the token.",
-    "published": "2024-10-16T14:15:12.097",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
   "CVE-2024-20280": {
     "cvss": 6.3,
     "description": "A vulnerability in the backup feature of Cisco UCS Central Software could allow an attacker with access to a backup file to learn sensitive information that is stored in the full state and configuration backup files.\r\n\r\nThis vulnerability is due to a weakness in the encryption method that is used for the backup function. An attacker could exploit this vulnerability by accessing a backup file and leveraging a static key that is used for the backup configuration feature. A successful exploit could allow an attacker with access to a backup file to learn sensitive information that is stored in full state backup files and configuration backup files, such as local user credentials, authentication server passwords, Simple Network Management Protocol (SNMP) community names, and the device SSL server certificate and key.",
