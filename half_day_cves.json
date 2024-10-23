@@ -253,7 +253,7 @@
   },
   "CVE-2024-40493": {
     "url": "https://github.com/keith-cullen/freecoap/issues/37",
-    "cvss": "-",
+    "cvss": 5.3,
     "description": "Null Pointer Dereference in `coap_client_exchange_blockwise2` function in Keith Cullen FreeCoAP 1.0 allows remote attackers to cause a denial of service and potentially execute arbitrary code via a specially crafted CoAP packet that causes `coap_msg_get_payload(resp)` to return a null pointer, which is then dereferenced in a call to `memcpy`.",
     "published": "2024-10-22T22:15:04.407"
   },
@@ -298,5 +298,11 @@
     "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Vitalii Bryl iBryl Switch User allows Authentication Bypass.This issue affects iBryl Switch User: from n/a through 1.0.1.",
     "published": "2024-10-23T15:15:32.120",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-49751": {
+    "url": "https://github.com/frappe/press/commit/5d118a902872d7941f099ad1fb918e2421e79ccd",
+    "cvss": "-",
+    "description": "Press, a Frappe custom app that runs Frappe Cloud, manages infrastructure, subscription, marketplace, and software-as-a-service (SaaS). Prior to commit 5d118a902872d7941f099ad1fb918e2421e79ccd, a user could inject HTML through SaaS signup inputs. The user who injected the unsafe HTML code would only affect themselves and would not affect other users. Commit 5d118a902872d7941f099ad1fb918e2421e79ccd patches this bug.",
+    "published": "2024-10-23T16:15:10.310"
   }
 }
