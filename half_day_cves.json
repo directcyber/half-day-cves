@@ -175,7 +175,7 @@
   },
   "CVE-2024-9050": {
     "cvss": 7.8,
-    "description": "A flaw was found in the libreswan client plugin for NetworkManager (NetkworkManager-libreswan), where it fails to properly sanitize the VPN configuration from the local unprivileged user. In this configuration, composed by a key-value format, the plugin fails to escape special characters, leading the application to interpret values as keys. One of the most critical parameters that could be abused by a malicious user is the `leftupdown`key. This key takes an executable command as a value and is used to specify what executes as a callback in NetworkManager-libreswan to retrieve configuration settings back to NetworkManager. As NetworkManager uses Polkit to allow an unprivileged user to control the system's network configuration, a malicious actor could achieve local privilege escalation and potential code execution as root in the targeted machine.",
+    "description": "A flaw was found in the libreswan client plugin for NetworkManager (NetkworkManager-libreswan), where it fails to properly sanitize the VPN configuration from the local unprivileged user. In this configuration, composed by a key-value format, the plugin fails to escape special characters, leading the application to interpret values as keys. One of the most critical parameters that could be abused by a malicious user is the `leftupdown`key. This key takes an executable command as a value and is used to specify what executes as a callback in NetworkManager-libreswan to retrieve configuration settings back to NetworkManager. As NetworkManager uses Polkit to allow an unprivileged user to control the system's network configuration, a malicious actor could achieve local privilege escalation and potential code execution as root in the targeted machine by creating a malicious configuration.",
     "published": "2024-10-22T13:15:02.410",
     "keywords": "execution,command,vpn"
   },
@@ -268,5 +268,17 @@
     "description": "The ProfilePress Pro plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 4.11.1. This is due to insufficient verification on the user being returned by the social login token. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email and the user does not have an already-existing account for the service returning the token.",
     "published": "2024-10-23T07:15:04.560",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-10041": {
+    "cvss": 4.7,
+    "description": "A vulnerability was found in PAM. The secret information is stored in memory, where the attacker can trigger the victim program to execute by sending characters to its standard input (stdin). As this occurs, the attacker can train the branch predictor to execute an ROP chain speculatively. This flaw could result in leaked passwords, such as those found in /etc/shadow while performing authentications.",
+    "published": "2024-10-23T14:15:03.970",
+    "keywords": "authentication,leak"
+  },
+  "CVE-2024-50050": {
+    "cvss": "-",
+    "description": "Llama Stack prior to revision 7a8aa775e5a267cf8660d83140011a0b7f91e005 used pickle as a serialization format for socket communication, potentially allowing for remote code execution. Socket communication has been changed to use JSON instead.",
+    "published": "2024-10-23T14:15:05.087",
+    "keywords": "remote,execution"
   }
 }
