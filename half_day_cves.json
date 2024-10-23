@@ -18,7 +18,7 @@
     "published": "2024-10-21T12:15:08.380"
   },
   "CVE-2024-49851": {
-    "cvss": "-",
+    "cvss": 5.5,
     "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ntpm: Clean up TPM space after command failure\n\ntpm_dev_transmit prepares the TPM space before attempting command\ntransmission. However if the command fails no rollback of this\npreparation is done. This can result in transient handles being leaked\nif the device is subsequently closed with no further commands performed.\n\nFix this by flushing the space in the event of command transmission\nfailure.",
     "published": "2024-10-21T13:15:05.883",
     "keywords": "command,leak"
@@ -280,5 +280,23 @@
     "description": "Llama Stack prior to revision 7a8aa775e5a267cf8660d83140011a0b7f91e005 used pickle as a serialization format for socket communication, potentially allowing for remote code execution. Socket communication has been changed to use JSON instead.",
     "published": "2024-10-23T14:15:05.087",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-47575": {
+    "cvss": 9.8,
+    "description": "A missing authentication for critical function in FortiManager 7.6.0, FortiManager 7.4.0 through 7.4.4, FortiManager 7.2.0 through 7.2.7, FortiManager 7.0.0 through 7.0.12, FortiManager 6.4.0 through 6.4.14, FortiManager 6.2.0 through 6.2.12, Fortinet FortiManager Cloud 7.4.1 through 7.4.4, FortiManager Cloud 7.2.1 through 7.2.7, FortiManager Cloud 7.0.1 through 7.0.13, FortiManager Cloud 6.4.1 through 6.4.7 allows attacker to execute arbitrary code or commands via specially crafted requests.",
+    "published": "2024-10-23T15:15:30.707",
+    "keywords": "authentication,command"
+  },
+  "CVE-2024-47901": {
+    "cvss": 10.0,
+    "description": "A vulnerability has been identified in InterMesh 7177 Hybrid 2.0 Subscriber (All versions < V8.2.12), InterMesh 7707 Fire Subscriber (All versions < V7.2.12 only if the IP interface is enabled (which is not the default configuration)). The web server of affected devices does not sanitize the input parameters in specific GET requests that allow for code execution on operating system level. In combination with other vulnerabilities (CVE-2024-47902, CVE-2024-47903, CVE-2024-47904) this could allow an unauthenticated remote attacker to execute arbitrary code with root privileges.",
+    "published": "2024-10-23T15:15:30.930",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-49675": {
+    "cvss": 8.8,
+    "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Vitalii Bryl iBryl Switch User allows Authentication Bypass.This issue affects iBryl Switch User: from n/a through 1.0.1.",
+    "published": "2024-10-23T15:15:32.120",
+    "keywords": "authentication,bypass"
   }
 }
