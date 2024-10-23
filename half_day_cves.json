@@ -286,5 +286,11 @@
     "cvss": "-",
     "description": "Integer Overflow in fast_ping.c in SmartDNS Release46 allows remote attackers to cause a Denial of Service via misaligned memory access.",
     "published": "2024-10-22T22:15:04.860"
+  },
+  "CVE-2024-9947": {
+    "cvss": 8.1,
+    "description": "The ProfilePress Pro plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 4.11.1. This is due to insufficient verification on the user being returned by the social login token. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email and the user does not have an already-existing account for the service returning the token.",
+    "published": "2024-10-23T07:15:04.560",
+    "keywords": "unauthenticated,authentication,bypass"
   }
 }
