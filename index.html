@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-10-20T04:13:28.164885
+Updated at UTC 2024-10-23T05:11:48.303923
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -60,11 +60,77 @@ Updated at UTC 2024-10-20T04:13:28.164885
 		
 			
 				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10141">CVE-2024-10141</a></td>
-					<td>3.7</td>
-					<td><a target=_blank href="https://github.com/jsbroks/coco-annotator/issues/626#issue-2582440109">https://github.com/jsbroks/coco-annotator/issues/626#issue-2582440109</a></td>
-					<td class=date>2024-10-19T15:15:14.973</td>
-					<td class=description>A vulnerability, which was classified as problematic, was found in jsbroks COCO Annotator 0.11.1. This affects an unknown part of the component Session Handler. The manipulation of the argument SECRET_KEY leads to predictable from observable state. It is possible to initiate the attack remotely. The complexity of an attack is rather high. The exploitability is told to be difficult. The exploit has been disclosed to the public and may be used.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-42643">CVE-2024-42643</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/pymumu/smartdns/issues/1779">https://github.com/pymumu/smartdns/issues/1779</a></td>
+					<td class=date>2024-10-22T22:15:04.860</td>
+					<td class=description>Integer Overflow in fast_ping.c in SmartDNS Release46 allows remote attackers to cause a Denial of Service via misaligned memory access.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40493">CVE-2024-40493</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/keith-cullen/freecoap/issues/37">https://github.com/keith-cullen/freecoap/issues/37</a></td>
+					<td class=date>2024-10-22T22:15:04.407</td>
+					<td class=description>Null Pointer Dereference in `coap_client_exchange_blockwise2` function in Keith Cullen FreeCoAP 1.0 allows remote attackers to cause a denial of service and potentially execute arbitrary code via a specially crafted CoAP packet that causes `coap_msg_get_payload(resp)` to return a null pointer, which is then dereferenced in a call to `memcpy`.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-31029">CVE-2024-31029</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/keith-cullen/freecoap/issues/36">https://github.com/keith-cullen/freecoap/issues/36</a></td>
+					<td class=date>2024-10-22T22:15:04.313</td>
+					<td class=description>An issue in the server_handle_regular function of the test_coap_server.c file within the FreeCoAP project allows remote attackers to cause a Denial of Service through specially crafted packets.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9287">CVE-2024-9287</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/python/cpython/pull/124712">https://github.com/python/cpython/pull/124712</a></td>
+					<td class=date>2024-10-22T17:15:06.697</td>
+					<td class=description>A vulnerability has been found in the CPython `venv` module and CLI where path names provided when creating a virtual environment were not quoted properly, allowing the creator to inject commands into virtual environment "activation" scripts (ie "source venv/bin/activate"). This means that attacker-controlled virtual environments are able to run commands when the virtual environment is activated. Virtual environments which are not created by an attacker or which aren't activated before being used (ie "./venv/bin/python") are not affected.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50312">CVE-2024-50312</a></td>
+					<td>5.3</td>
+					<td><a target=_blank href="https://github.com/openshift/console/pull/14409/files">https://github.com/openshift/console/pull/14409/files</a></td>
+					<td class=date>2024-10-22T14:15:19.973</td>
+					<td class=description>A vulnerability was found in GraphQL due to improper access controls on the GraphQL introspection query. This flaw allows unauthorized users to retrieve a comprehensive list of available queries and mutations. Exposure to this flaw increases the attack surface, as it can facilitate the discovery of flaws or errors specific to the application's GraphQL implementation.</td>
 
 
 				</tr>
@@ -100,6 +166,50 @@ Updated at UTC 2024-10-20T04:13:28.164885
 		
 			
 		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-46326">CVE-2024-46326</a></td>
+					<td>6.1</td>
+					<td><a target=_blank href="https://github.com/pkp/pkp-lib/issues/10478">https://github.com/pkp/pkp-lib/issues/10478</a></td>
+					<td class=date>2024-10-21T20:15:14.637</td>
+					<td class=description>Public Knowledge Project pkp-lib 3.4.0-7 and earlier is vulnerable to Open redirect due to a lack of input sanitization in the logout function.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48231">CVE-2024-48231</a></td>
+					<td>7.2</td>
+					<td><a target=_blank href="https://github.com/funadmin/funadmin/issues/29">https://github.com/funadmin/funadmin/issues/29</a></td>
+					<td class=date>2024-10-21T12:15:08.380</td>
+					<td class=description>Funadmin 5.0.2 is vulnerable to SQL Injection via the selectFields parameter in the index method of \backend\controller\auth\Auth.php.</td>
+
+
+				</tr>
 			
 		
 			
@@ -122,232 +232,520 @@ Updated at UTC 2024-10-20T04:13:28.164885
 			
 		
 			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10131">CVE-2024-10131</a></td>
-					<td>9.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-10-19T04:15:05.300</td>
-					<td class=description>The `add_llm` function in `llm_app.py` in infiniflow/ragflow version 0.11.0 contains a remote code execution (RCE) vulnerability. The function uses user-supplied input `req['llm_factory']` and `req['llm_name']` to dynamically instantiate classes from various model dictionaries. This approach allows an attacker to potentially execute arbitrary code due to the lack of comprehensive input validation or sanitization. An attacker could provide a malicious value for 'llm_factory' that, when used as an index to these model dictionaries, results in the execution of arbitrary code.</td>
-				</tr>
+		
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37404">CVE-2024-37404</a></td>
-					<td>9.1</td>
-					<td>remote,execution</td>
-					<td class=date>2024-10-18T23:15:03.580</td>
-					<td class=description>Improper Input Validation in the admin portal of Ivanti Connect Secure before 22.7R2.1 and 9.1R18.9, or Ivanti Policy Secure before 22.7R1.1 allows a remote authenticated attacker to achieve remote code execution.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-49361">CVE-2024-49361</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10229">CVE-2024-10229</a></td>
 					<td>-</td>
-					<td>remote,execution,bypass</td>
-					<td class=date>2024-10-18T19:15:14.393</td>
-					<td class=description>ACON is a widely-used library of tools for machine learning that focuses on adaptive correlation optimization. A potential vulnerability has been identified in the input validation process, which could lead to arbitrary code execution if exploited. This issue could allow an attacker to submit malicious input data, bypassing input validation, resulting in remote code execution in certain machine learning applications using the ACON library. All users utilizing ACON’s input-handling functions are potentially at risk. Specifically, machine learning models or applications that ingest user-generated data without proper sanitization are the most vulnerable. Users running ACON on production servers are at heightened risk, as the vulnerability could be exploited remotely. As of time of publication, it is unclear whether a fix is available.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45944">CVE-2024-45944</a></td>
-					<td>-</td>
-					<td>execution,sensitive</td>
-					<td class=date>2024-10-18T19:15:14.293</td>
-					<td class=description>In J2eeFAST <=2.7, the backend function has unsafe filtering, which allows an attacker to trigger certain sensitive functions resulting in arbitrary code execution.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10121">CVE-2024-10121</a></td>
-					<td>7.3</td>
 					<td>remote,bypass</td>
-					<td class=date>2024-10-18T19:15:13.707</td>
-					<td class=description>A vulnerability was found in wfh45678 Radar up to 1.0.8 and classified as critical. This issue affects some unknown processing of the component Interface Handler. The manipulation with the input /../ leads to authorization bypass. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. This appears not to be a path traversal weakness. The vendor was contacted early about this disclosure but did not respond in any way.</td>
+					<td class=date>2024-10-22T22:15:03.180</td>
+					<td class=description>Inappropriate implementation in Extensions in Google Chrome prior to 130.0.6723.69 allowed a remote attacker to bypass site isolation via a crafted Chrome Extension. (Chromium security severity: High)</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9593">CVE-2024-9593</a></td>
-					<td>8.3</td>
-					<td>remote,execution,unauthenticated</td>
-					<td class=date>2024-10-18T18:15:04.540</td>
-					<td class=description>The Time Clock plugin and Time Clock Pro plugin for WordPress are vulnerable to Remote Code Execution in versions up to, and including, 1.2.2 (for Time Clock) and 1.1.4 (for Time Clock Pro) via the 'etimeclockwp_load_function_callback' function. This allows unauthenticated attackers to execute code on the server. The invoked function's parameters cannot be specified.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48919">CVE-2024-48919</a></td>
+					<td>-</td>
+					<td>execution,command</td>
+					<td class=date>2024-10-22T21:15:06.813</td>
+					<td class=description>Cursor is a code editor built for programming with AI. Prior to Sep 27, 2024, if a user generated a terminal command via Cursor's Terminal Cmd-K/Ctrl-K feature and if the user explicitly imported a malicious web page into the Terminal Cmd-K prompt, an attacker with control over the referenced web page could have a significant chance of influencing a language model to output arbitrary commands for execution in the user's terminal. This scenario would require the user explicitly opt-in to including the contents of a compromised webpage, and it would require that the attacker display prompt injection text in the the contents of the compromised webpage.
+
+A server-side patch to not stream back newlines or control characters was released on September 27, 2024, within two hours of the issue being reported. Additionally, Cursor 0.42 includes client-side mitigations to prevent any newline or control character from being streamed into the terminal directly. It also contains a new setting, `"cursor.terminal.usePreviewBox"`, which, if set to true, streams the response into a preview box whose contents then have to be manually accepted before being inserted into the terminal. This setting is useful if you're working in a shell environment where commands can be executed without pressing enter or any control character. The patch has been applied server-side, so no additional action is needed, even on older versions of Cursor. Separately, Cursor's maintainers also recommend, as best practice, to only include trusted pieces of context in prompts.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10119">CVE-2024-10119</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48904">CVE-2024-48904</a></td>
 					<td>9.8</td>
-					<td>remote,unauthenticated,command</td>
-					<td class=date>2024-10-18T05:15:05.200</td>
-					<td class=description>The wireless router WRTM326 from SECOM does not properly validate a specific parameter. An unauthenticated remote attacker could execute arbitrary system commands by sending crafted requests.</td>
+					<td>remote,authentication,command</td>
+					<td class=date>2024-10-22T19:15:06.763</td>
+					<td class=description>An command injection vulnerability in Trend Micro Cloud Edge could allow a remote attacker to execute arbitrary code on affected appliances.
+
+Please note: authentication is not required in order to exploit this vulnerability.</td>
 				</tr>
 			
 		
 			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10118">CVE-2024-10118</a></td>
-					<td>9.8</td>
-					<td>remote,unauthenticated,command</td>
-					<td class=date>2024-10-18T04:15:03.290</td>
-					<td class=description>SECOM WRTR-304GN-304TW-UPSC does not properly filter user input in the specific functionality. Unauthenticated remote attackers can exploit this vulnerability to inject and execute arbitrary system commands on the device.</td>
-				</tr>
-			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-49023">CVE-2024-49023</a></td>
-					<td>5.9</td>
-					<td>remote,execution</td>
-					<td class=date>2024-10-18T01:15:40.747</td>
-					<td class=description>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43596">CVE-2024-43596</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-10-17T23:15:16.657</td>
-					<td class=description>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43595">CVE-2024-43595</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-10-17T23:15:16.463</td>
-					<td class=description>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43587">CVE-2024-43587</a></td>
-					<td>8.1</td>
-					<td>remote,execution</td>
-					<td class=date>2024-10-17T23:15:16.123</td>
-					<td class=description>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43579">CVE-2024-43579</a></td>
-					<td>8.3</td>
-					<td>remote,execution</td>
-					<td class=date>2024-10-17T23:15:15.570</td>
-					<td class=description>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43578">CVE-2024-43578</a></td>
-					<td>8.3</td>
-					<td>remote,execution</td>
-					<td class=date>2024-10-17T23:15:15.370</td>
-					<td class=description>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43566">CVE-2024-43566</a></td>
-					<td>9.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-10-17T23:15:14.940</td>
-					<td class=description>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7316">CVE-2024-7316</a></td>
-					<td>5.9</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-49211">CVE-2024-49211</a></td>
+					<td>5.2</td>
 					<td>remote,unauthenticated</td>
-					<td class=date>2024-10-17T22:15:03.313</td>
-					<td class=description>Improper Validation of Specified Quantity in Input vulnerability in Mitsubishi Electric CNC Series allows a remote unauthenticated attacker to cause Denial of Service (DoS) condition on the product by sending specially crafted packets to TCP port 683, causing an emergency stop.</td>
+					<td class=date>2024-10-22T17:15:06.193</td>
+					<td class=description>Reflected XSS was discovered in a Dashboard Listing Archer Platform UX page in Archer Platform 6.x before version 2024.08. A remote unauthenticated attacker could potentially exploit this by tricking a victim application user into supplying malicious HTML or JavaScript code to the vulnerable web application; the malicious code is then reflected back to the victim and executed by the web browser in the context of the vulnerable web application.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-33453">CVE-2024-33453</a></td>
-					<td>8.1</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-10-17T22:15:03.040</td>
-					<td class=description>Buffer Overflow vulnerability in esp-idf v.5.1 allows a remote attacker to obtain sensitive information via the externalId component.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-49210">CVE-2024-49210</a></td>
+					<td>5.2</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-10-22T17:15:05.970</td>
+					<td class=description>Reflected XSS was discovered in an iView List Archer Platform UX page in Archer Platform 6.x before version 2024.09. A remote unauthenticated attacker could potentially exploit this by tricking a victim application user into supplying malicious HTML or JavaScript code to the vulnerable web application; the malicious code is then reflected back to the victim and executed by the web browser in the context of the vulnerable web application.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-30875">CVE-2024-30875</a></td>
-					<td>7.1</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-10-17T22:15:02.977</td>
-					<td class=description>Cross Site Scripting vulnerability in JavaScript Library jquery-ui v.1.13.1 allows a remote attacker to obtain sensitive information and execute arbitrary code via a crafted payload to the window.addEventListener component.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-49209">CVE-2024-49209</a></td>
+					<td>6.5</td>
+					<td>remote,bypass</td>
+					<td class=date>2024-10-22T17:15:05.763</td>
+					<td class=description>Archer Platform 2024.03 before version 2024.09 is affected by an API authorization bypass vulnerability related to supporting application files. A remote unprivileged attacker could potentially exploit this vulnerability to elevate their privileges and upload additional system icons.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10101">CVE-2024-10101</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-49208">CVE-2024-49208</a></td>
+					<td>5.9</td>
+					<td>remote,bypass</td>
+					<td class=date>2024-10-22T17:15:04.503</td>
+					<td class=description>Archer Platform 2024.03 before version 2024.08 is affected by an authorization bypass vulnerability related to supporting application files. A remote unprivileged attacker could potentially exploit this vulnerability to elevate their privileges and delete system icons.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45518">CVE-2024-45518</a></td>
+					<td>7.5</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-10-22T17:15:03.837</td>
+					<td class=description>An issue was discovered in Zimbra Collaboration (ZCS) 10.1.x before 10.1.1, 10.0.x before 10.0.9, 9.0.0 before Patch 41, and 8.8.15 before Patch 46. It allows authenticated users to exploit Server-Side Request Forgery (SSRF) due to improper input sanitization and misconfigured domain whitelisting. This issue permits unauthorized HTTP requests to be sent to internal services, which can lead to Remote Code Execution (RCE) by chaining Command Injection within the internal service. When combined with existing XSS vulnerabilities, this SSRF issue can further facilitate Remote Code Execution (RCE).</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48927">CVE-2024-48927</a></td>
+					<td>4.6</td>
+					<td>remote,execution</td>
+					<td class=date>2024-10-22T16:15:08.360</td>
+					<td class=description>Umbraco, a free and open source .NET content management system, has a remote code execution issue in versions on the 13.x branch prior to 13.5.2, 10.x prior to 10.8.7, and 8.x prior to 8.18.15. There is a potential risk of code execution for Backoffice users when they “preview” SVG files in full screen mode. Versions 13.5.2, 10.8,7, and 8.18.15 contain a patch for the issue. As a workaround, derver-side file validation is available to strip script tags from file's content during the file upload process.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9050">CVE-2024-9050</a></td>
+					<td>7.8</td>
+					<td>execution,command,vpn</td>
+					<td class=date>2024-10-22T13:15:02.410</td>
+					<td class=description>A flaw was found in the libreswan client plugin for NetworkManager (NetkworkManager-libreswan), where it fails to properly sanitize the VPN configuration from the local unprivileged user. In this configuration, composed by a key-value format, the plugin fails to escape special characters, leading the application to interpret values as keys. One of the most critical parameters that could be abused by a malicious user is the `leftupdown`key. This key takes an executable command as a value and is used to specify what executes as a callback in NetworkManager-libreswan to retrieve configuration settings back to NetworkManager. As NetworkManager uses Polkit to allow an unprivileged user to control the system's network configuration, a malicious actor could achieve local privilege escalation and potential code execution as root in the targeted machine.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9627">CVE-2024-9627</a></td>
+					<td>8.6</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2024-10-22T07:15:02.687</td>
+					<td class=description>The TeploBot - Telegram Bot for WP plugin for WordPress is vulnerable to sensitive information disclosure due to missing authorization checks on the 'service_process' function in all versions up to, and including, 1.3. This makes it possible for unauthenticated attackers to view the Telegram Bot Token, which is a secret token to control the bot.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8852">CVE-2024-8852</a></td>
+					<td>5.3</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2024-10-22T06:15:04.890</td>
+					<td class=description>The All-in-One WP Migration and Backup plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 7.86 through publicly exposed log files. This makes it possible for unauthenticated attackers to view potentially sensitive information such as full paths contained in the exposed log files.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10002">CVE-2024-10002</a></td>
+					<td>8.8</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-10-22T05:15:03.513</td>
+					<td class=description>The Rover IDX plugin for WordPress is vulnerable to Authentication Bypass in versions up to, and including, 3.0.0.2905. This is due to insufficient validation and capability check on the 'rover_idx_refresh_social_callback' function. This makes it possible for authenticated attackers, with subscriber-level permissions and above, to log in to administrator. The vulnerability is partially patched in version 3.0.0.2905 and fully patched in version 3.0.0.2906.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9677">CVE-2024-9677</a></td>
+					<td>5.5</td>
+					<td>authentication,command</td>
+					<td class=date>2024-10-22T02:15:04.380</td>
+					<td class=description>The insufficiently protected credentials vulnerability in the CLI command of the USG FLEX H series uOS firmware version V1.21 and earlier versions could allow an authenticated local attacker to gain privilege escalation by stealing the authentication token of a login administrator. Note that this attack could be successful only if the administrator has not logged out.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8901">CVE-2024-8901</a></td>
+					<td>7.5</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-10-22T00:15:03.667</td>
+					<td class=description>The  AWS ALB Route Directive Adapter For Istio repo https://github.com/awslabs/aws-alb-route-directive-adapter-for-istio/tree/master  provides an OIDC authentication mechanism that was integrated into the open source Kubeflow project. The adapter uses JWT for authentication, but lacks proper signer and issuer validation. In uncommon deployments of ALB, wherein endpoints are exposed to internet traffic, an actor can provide a JWT signed by an untrusted entity in order to spoof OIDC-federated sessions and successfully bypass authentication.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40091">CVE-2024-40091</a></td>
+					<td>5.3</td>
+					<td>remote,unauthenticated,authentication,sensitive</td>
+					<td class=date>2024-10-21T21:15:06.313</td>
+					<td class=description>Vilo 5 Mesh WiFi System <= 5.16.1.33 lacks authentication in the Boa webserver, which allows remote, unauthenticated attackers to retrieve logs with sensitive system.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40090">CVE-2024-40090</a></td>
+					<td>4.3</td>
+					<td>remote,unauthenticated,leak</td>
+					<td class=date>2024-10-21T21:15:06.223</td>
+					<td class=description>Vilo 5 Mesh WiFi System <= 5.16.1.33 is vulnerable to Information Disclosure. An information leak in the Boa webserver allows remote, unauthenticated attackers to leak memory addresses of uClibc and the stack via sending a GET request to the index page.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40089">CVE-2024-40089</a></td>
+					<td>9.1</td>
+					<td>remote,command</td>
+					<td class=date>2024-10-21T21:15:06.150</td>
+					<td class=description>A Command Injection vulnerability in Vilo 5 Mesh WiFi System <= 5.16.1.33 allows remote, authenticated attackers to execute arbitrary code by injecting shell commands into the name of the Vilo device.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40088">CVE-2024-40088</a></td>
+					<td>5.3</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-10-21T21:15:06.080</td>
+					<td class=description>A Directory Traversal vulnerability in the Boa webserver of Vilo 5 Mesh WiFi System <= 5.16.1.33 allows remote, unauthenticated attackers to enumerate the existence and length of any file in the filesystem by placing malicious payloads in the path of any HTTP request.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40087">CVE-2024-40087</a></td>
+					<td>9.6</td>
+					<td>remote,unauthenticated,authentication</td>
+					<td class=date>2024-10-21T21:15:06.003</td>
+					<td class=description>Vilo 5 Mesh WiFi System <= 5.16.1.33 is vulnerable to Insecure Permissions. Lack of authentication in the custom TCP service on port 5432 allows remote, unauthenticated attackers to gain administrative access over the router.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40086">CVE-2024-40086</a></td>
+					<td>9.6</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-10-21T21:15:05.923</td>
+					<td class=description>A Buffer Overflow vulnerability in the local_app_set_router_wifi_SSID_PWD function of Vilo 5 Mesh WiFi System <= 5.16.1.33 allows remote, unauthenticated attackers to execute arbitrary code via a password field larger than 64 bytes in length.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40085">CVE-2024-40085</a></td>
+					<td>9.6</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-10-21T21:15:05.853</td>
+					<td class=description>A Buffer Overflow vulnerability in the local_app_set_router_wan function of Vilo 5 Mesh WiFi System <= 5.16.1.33 allows remote, unauthenticated attackers to execute arbitrary code via pppoe_username and pppoe_password fields being larger than 128 bytes in length.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40084">CVE-2024-40084</a></td>
+					<td>9.6</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-10-21T21:15:05.770</td>
+					<td class=description>A Buffer Overflow in the Boa webserver of Vilo 5 Mesh WiFi System <= 5.16.1.33 allows remote, unauthenticated attackers to execute arbitrary code via exceptionally long HTTP methods or paths.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40083">CVE-2024-40083</a></td>
+					<td>9.6</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-10-21T21:15:05.703</td>
+					<td class=description>A Buffer Overflow vulnerabilty in the local_app_set_router_token function of Vilo 5 Mesh WiFi System <= 5.16.1.33 allows remote, unauthenticated attackers to execute arbitrary code via sscanf reading the token and timezone JSON fields into a fixed-length buffer.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-35314">CVE-2024-35314</a></td>
+					<td>9.8</td>
+					<td>unauthenticated,command</td>
+					<td class=date>2024-10-21T21:15:05.533</td>
+					<td class=description>A vulnerability in the Desktop Client of Mitel MiCollab through 9.7.1.110, and MiVoice Business Solution Virtual Instance (MiVB SVI) 1.0.0.25, could allow an unauthenticated attacker to conduct a command injection attack due to insufficient parameter sanitization. A successful exploit could allow an attacker to execute arbitrary scripts.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-35287">CVE-2024-35287</a></td>
+					<td>6.7</td>
+					<td>execution,command</td>
+					<td class=date>2024-10-21T21:15:05.450</td>
+					<td class=description>A vulnerability in the NuPoint Messenger (NPM) component of Mitel MiCollab through version 9.8 SP1 (9.8.1.5) could allow an authenticated attacker with administrative privilege to conduct a privilege escalation attack due to the execution of a resource with unnecessary privileges. A successful exploit could allow an attacker to execute arbitrary commands with elevated privileges.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-35286">CVE-2024-35286</a></td>
+					<td>9.8</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2024-10-21T21:15:05.367</td>
+					<td class=description>A vulnerability in NuPoint Messenger (NPM) of Mitel MiCollab through 9.8.0.33 allows an unauthenticated attacker to conduct a SQL injection attack due to insufficient sanitization of user input. A successful exploit could allow an attacker to access sensitive information and execute arbitrary database and management operations.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-35285">CVE-2024-35285</a></td>
+					<td>9.8</td>
+					<td>unauthenticated,command</td>
+					<td class=date>2024-10-21T21:15:05.307</td>
+					<td class=description>A vulnerability in NuPoint Messenger (NPM) of Mitel MiCollab through 9.8.0.33 allows an unauthenticated attacker to conduct a command injection attack due to insufficient parameter sanitization.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48509">CVE-2024-48509</a></td>
+					<td>9.8</td>
+					<td>command,sensitive</td>
+					<td class=date>2024-10-21T20:15:14.943</td>
+					<td class=description>Learning with Texts (LWT) 2.0.3 is vulnerable to SQL Injection. This occurs when the application fails to properly sanitize user inputs, allowing attackers to manipulate SQL queries by injecting malicious SQL statements into URL parameters. By exploiting this vulnerability, an attacker could gain unauthorized access to the database, retrieve sensitive information, modify or delete data, and execute arbitrary commands.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-47912">CVE-2024-47912</a></td>
 					<td>8.2</td>
-					<td>execution,sensitive</td>
-					<td class=date>2024-10-17T19:15:21.713</td>
-					<td class=description>A stored cross-site scripting (XSS) vulnerability exists in binary-husky/gpt_academic version 3.83. The vulnerability occurs at the /file endpoint, which renders HTML files. Malicious HTML files containing XSS payloads can be uploaded and stored in the backend, leading to the execution of the payload in the victim's browser when the file is accessed. This can result in the theft of session cookies or other sensitive information.</td>
+					<td>unauthenticated,authentication,sensitive</td>
+					<td class=date>2024-10-21T20:15:14.877</td>
+					<td class=description>A vulnerability in the AWV (Audio, Web, and Video) Conferencing component of Mitel MiCollab through 9.8 SP1 FP2 (9.8.1.201) could allow an unauthenticated attacker to perform unauthorized data-access attacks due to missing authentication mechanisms. A successful exploit could allow an attacker to access and delete sensitive information.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-49399">CVE-2024-49399</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-47223">CVE-2024-47223</a></td>
+					<td>9.4</td>
+					<td>unauthenticated,command,sensitive</td>
+					<td class=date>2024-10-21T20:15:14.770</td>
+					<td class=description>A vulnerability in the AWV (Audio, Web and Video Conferencing) component of Mitel MiCollab through 9.8 SP1 FP2 (9.8.1.201) could allow an unauthenticated attacker to conduct a SQL injection attack due to insufficient sanitization of user input. A successful exploit could allow an attacker to access non-sensitive user provisioning information and execute arbitrary SQL database commands.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-47189">CVE-2024-47189</a></td>
+					<td>-</td>
+					<td>unauthenticated,command,sensitive</td>
+					<td class=date>2024-10-21T20:15:14.697</td>
+					<td class=description>The API Interface of the AWV (Audio, Web and Video Conferencing) component of Mitel MiCollab through 9.8 SP1 FP2 (9.8.1.201) could allow an unauthenticated attacker to conduct SQL injection due to insufficient sanitization of user input. A successful exploit could allow an attacker with knowledge of specific details to access non-sensitive user provisioning information and execute arbitrary SQL database commands.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-49878">CVE-2024-49878</a></td>
+					<td>-</td>
+					<td>execution,command</td>
+					<td class=date>2024-10-21T18:15:09.863</td>
+					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
+
+resource: fix region_intersects() vs add_memory_driver_managed()
+
+On a system with CXL memory, the resource tree (/proc/iomem) related to
+CXL memory may look like something as follows.
+
+490000000-50fffffff : CXL Window 0
+  490000000-50fffffff : region0
+    490000000-50fffffff : dax0.0
+      490000000-50fffffff : System RAM (kmem)
+
+Because drivers/dax/kmem.c calls add_memory_driver_managed() during
+onlining CXL memory, which makes "System RAM (kmem)" a descendant of "CXL
+Window X".  This confuses region_intersects(), which expects all "System
+RAM" resources to be at the top level of iomem_resource.  This can lead to
+bugs.
+
+For example, when the following command line is executed to write some
+memory in CXL memory range via /dev/mem,
+
+ $ dd if=data of=/dev/mem bs=$((1 << 10)) seek=$((0x490000000 >> 10)) count=1
+ dd: error writing '/dev/mem': Bad address
+ 1+0 records in
+ 0+0 records out
+ 0 bytes copied, 0.0283507 s, 0.0 kB/s
+
+the command fails as expected.  However, the error code is wrong.  It
+should be "Operation not permitted" instead of "Bad address".  More
+seriously, the /dev/mem permission checking in devmem_is_allowed() passes
+incorrectly.  Although the accessing is prevented later because ioremap()
+isn't allowed to map system RAM, it is a potential security issue.  During
+command executing, the following warning is reported in the kernel log for
+calling ioremap() on system RAM.
+
+ ioremap on RAM at 0x0000000490000000 - 0x0000000490000fff
+ WARNING: CPU: 2 PID: 416 at arch/x86/mm/ioremap.c:216 __ioremap_caller.constprop.0+0x131/0x35d
+ Call Trace:
+  memremap+0xcb/0x184
+  xlate_dev_mem_ptr+0x25/0x2f
+  write_mem+0x94/0xfb
+  vfs_write+0x128/0x26d
+  ksys_write+0xac/0xfe
+  do_syscall_64+0x9a/0xfd
+  entry_SYSCALL_64_after_hwframe+0x4b/0x53
+
+The details of command execution process are as follows.  In the above
+resource tree, "System RAM" is a descendant of "CXL Window 0" instead of a
+top level resource.  So, region_intersects() will report no System RAM
+resources in the CXL memory region incorrectly, because it only checks the
+top level resources.  Consequently, devmem_is_allowed() will return 1
+(allow access via /dev/mem) for CXL memory region incorrectly. 
+Fortunately, ioremap() doesn't allow to map System RAM and reject the
+access.
+
+So, region_intersects() needs to be fixed to work correctly with the
+resource tree with "System RAM" not at top level as above.  To fix it, if
+we found a unmatched resource in the top level, we will continue to search
+matched resources in its descendant resources.  So, we will not miss any
+matched resources in resource tree anymore.
+
+In the new implementation, an example resource tree
+
+|------------- "CXL Window 0" ------------|
+|-- "System RAM" --|
+
+will behave similar as the following fake resource tree for
+region_intersects(, IORESOURCE_SYSTEM_RAM, ),
+
+|-- "System RAM" --||-- "CXL Window 0a" --|
+
+Where "CXL Window 0a" is part of the original "CXL Window 0" that
+isn't covered by "System RAM".</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-49368">CVE-2024-49368</a></td>
+					<td>-</td>
+					<td>execution,command</td>
+					<td class=date>2024-10-21T17:15:03.960</td>
+					<td class=description>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.0.0-beta.36, when Nginx UI configures logrotate, it does not verify the input and directly passes it to exec.Command, causing arbitrary command execution. Version 2.0.0-beta.36 fixes this issue.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-49851">CVE-2024-49851</a></td>
 					<td>-</td>
 					<td>command,leak</td>
-					<td class=date>2024-10-17T17:15:12.800</td>
-					<td class=description>The affected product is vulnerable to an attacker being able to use commands without providing a password which may allow an attacker to leak information.</td>
+					<td class=date>2024-10-21T13:15:05.883</td>
+					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
+
+tpm: Clean up TPM space after command failure
+
+tpm_dev_transmit prepares the TPM space before attempting command
+transmission. However if the command fails no rollback of this
+preparation is done. This can result in transient handles being leaked
+if the device is subsequently closed with no further commands performed.
+
+Fix this by flushing the space in the event of command transmission
+failure.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10202">CVE-2024-10202</a></td>
+					<td>8.8</td>
+					<td>remote,command</td>
+					<td class=date>2024-10-21T04:15:03.900</td>
+					<td class=description>Administrative Management System from Wellchoose has an OS Command Injection vulnerability, allowing remote attackers with regular privileges to inject and execute arbitrary OS commands.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-49397">CVE-2024-49397</a></td>
-					<td>-</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10200">CVE-2024-10200</a></td>
+					<td>7.5</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-10-21T04:15:02.513</td>
+					<td class=description>Administrative Management System from Wellchoose has a Path Traversal vulnerability, allowing unauthenticated remote attackers to exploit this vulnerability to download arbitrary files on the server.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-44000">CVE-2024-44000</a></td>
+					<td>9.8</td>
 					<td>authentication,bypass</td>
-					<td class=date>2024-10-17T17:15:12.573</td>
-					<td class=description>The affected product is vulnerable to a cross-site scripting attack which may allow an attacker to bypass authentication and takeover admin accounts.</td>
+					<td class=date>2024-10-20T12:15:03.287</td>
+					<td class=description>Insufficiently Protected Credentials vulnerability in LiteSpeed Technologies LiteSpeed Cache allows Authentication Bypass.This issue affects LiteSpeed Cache: from n/a before 6.5.0.1.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6333">CVE-2024-6333</a></td>
-					<td>7.2</td>
-					<td>remote,execution</td>
-					<td class=date>2024-10-17T14:15:14.287</td>
-					<td class=description>Authenticated Remote Code Execution in Altalink, Versalink & WorkCentre Products.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-49604">CVE-2024-49604</a></td>
+					<td>9.8</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-10-20T08:15:04.117</td>
+					<td class=description>Authentication Bypass Using an Alternate Path or Channel vulnerability in Najeeb Ahmad Simple User Registration allows Authentication Bypass.This issue affects Simple User Registration: from n/a through 5.5.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-3187">CVE-2024-3187</a></td>
-					<td>5.9</td>
-					<td>remote,execution</td>
-					<td class=date>2024-10-17T08:15:02.760</td>
-					<td class=description>This issue tracks two CWE-416 Use After Free (UAF) and one CWE-415 Double Free vulnerabilities in Goahead versions <= 6.0.0. These are caused by JST values not being nulled when freed during parsing of JST templates. If the ME_GOAHEAD_JAVASCRIPT flag is enabled, a remote attacker with the privileges to modify JavaScript template (JST) files could exploit this by providing malicious templates. This may lead to memory corruption, potentially causing a Denial of Service (DoS) or, in rare cases, code execution, though the latter is highly context-dependent.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-49328">CVE-2024-49328</a></td>
+					<td>9.8</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-10-20T08:15:03.667</td>
+					<td class=description>Authentication Bypass Using an Alternate Path or Channel vulnerability in Vivek Tamrakar WP REST API FNS allows Authentication Bypass.This issue affects WP REST API FNS: from n/a through 1.0.0.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10193">CVE-2024-10193</a></td>
+					<td>4.7</td>
+					<td>remote,command</td>
+					<td class=date>2024-10-20T08:15:02.300</td>
+					<td class=description>A vulnerability was found in WAVLINK WN530H4, WN530HG4 and WN572HG3 up to 20221028 and classified as critical. This issue affects the function ping_ddns of the file internet.cgi. The manipulation of the argument DDNS leads to command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10173">CVE-2024-10173</a></td>
+					<td>7.5</td>
+					<td>remote,authentication</td>
+					<td class=date>2024-10-20T05:15:02.830</td>
+					<td class=description>A vulnerability has been found in didi DDMQ 1.0 and classified as critical. Affected by this vulnerability is an unknown functionality of the component Console Module. The manipulation with the input /;login leads to improper authentication. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. This product takes the approach of rolling releases to provide continious delivery. Therefore, version details for affected and updated releases are not available. The vendor was contacted early about this disclosure but did not respond in any way.</td>
 				</tr>
 			
 		
