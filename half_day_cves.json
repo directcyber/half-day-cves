@@ -1,82 +1,4 @@
 {
-  "CVE-2024-35285": {
-    "cvss": 9.8,
-    "description": "A vulnerability in NuPoint Messenger (NPM) of Mitel MiCollab through 9.8.0.33 allows an unauthenticated attacker to conduct a command injection attack due to insufficient parameter sanitization.",
-    "published": "2024-10-21T21:15:05.307",
-    "keywords": "unauthenticated,command"
-  },
-  "CVE-2024-35286": {
-    "cvss": 9.8,
-    "description": "A vulnerability in NuPoint Messenger (NPM) of Mitel MiCollab through 9.8.0.33 allows an unauthenticated attacker to conduct a SQL injection attack due to insufficient sanitization of user input. A successful exploit could allow an attacker to access sensitive information and execute arbitrary database and management operations.",
-    "published": "2024-10-21T21:15:05.367",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-35287": {
-    "cvss": 6.7,
-    "description": "A vulnerability in the NuPoint Messenger (NPM) component of Mitel MiCollab through version 9.8 SP1 (9.8.1.5) could allow an authenticated attacker with administrative privilege to conduct a privilege escalation attack due to the execution of a resource with unnecessary privileges. A successful exploit could allow an attacker to execute arbitrary commands with elevated privileges.",
-    "published": "2024-10-21T21:15:05.450",
-    "keywords": "execution,command"
-  },
-  "CVE-2024-35314": {
-    "cvss": 9.8,
-    "description": "A vulnerability in the Desktop Client of Mitel MiCollab through 9.7.1.110, and MiVoice Business Solution Virtual Instance (MiVB SVI) 1.0.0.25, could allow an unauthenticated attacker to conduct a command injection attack due to insufficient parameter sanitization. A successful exploit could allow an attacker to execute arbitrary scripts.",
-    "published": "2024-10-21T21:15:05.533",
-    "keywords": "unauthenticated,command"
-  },
-  "CVE-2024-40083": {
-    "cvss": 9.6,
-    "description": "A Buffer Overflow vulnerabilty in the local_app_set_router_token function of Vilo 5 Mesh WiFi System <= 5.16.1.33 allows remote, unauthenticated attackers to execute arbitrary code via sscanf reading the token and timezone JSON fields into a fixed-length buffer.",
-    "published": "2024-10-21T21:15:05.703",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-40084": {
-    "cvss": 9.6,
-    "description": "A Buffer Overflow in the Boa webserver of Vilo 5 Mesh WiFi System <= 5.16.1.33 allows remote, unauthenticated attackers to execute arbitrary code via exceptionally long HTTP methods or paths.",
-    "published": "2024-10-21T21:15:05.770",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-40085": {
-    "cvss": 9.6,
-    "description": "A Buffer Overflow vulnerability in the local_app_set_router_wan function of Vilo 5 Mesh WiFi System <= 5.16.1.33 allows remote, unauthenticated attackers to execute arbitrary code via pppoe_username and pppoe_password fields being larger than 128 bytes in length.",
-    "published": "2024-10-21T21:15:05.853",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-40086": {
-    "cvss": 9.6,
-    "description": "A Buffer Overflow vulnerability in the local_app_set_router_wifi_SSID_PWD function of Vilo 5 Mesh WiFi System <= 5.16.1.33 allows remote, unauthenticated attackers to execute arbitrary code via a password field larger than 64 bytes in length.",
-    "published": "2024-10-21T21:15:05.923",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-40087": {
-    "cvss": 9.6,
-    "description": "Vilo 5 Mesh WiFi System <= 5.16.1.33 is vulnerable to Insecure Permissions. Lack of authentication in the custom TCP service on port 5432 allows remote, unauthenticated attackers to gain administrative access over the router.",
-    "published": "2024-10-21T21:15:06.003",
-    "keywords": "remote,unauthenticated,authentication"
-  },
-  "CVE-2024-40088": {
-    "cvss": 5.3,
-    "description": "A Directory Traversal vulnerability in the Boa webserver of Vilo 5 Mesh WiFi System <= 5.16.1.33 allows remote, unauthenticated attackers to enumerate the existence and length of any file in the filesystem by placing malicious payloads in the path of any HTTP request.",
-    "published": "2024-10-21T21:15:06.080",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-40089": {
-    "cvss": 9.1,
-    "description": "A Command Injection vulnerability in Vilo 5 Mesh WiFi System <= 5.16.1.33 allows remote, authenticated attackers to execute arbitrary code by injecting shell commands into the name of the Vilo device.",
-    "published": "2024-10-21T21:15:06.150",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-40090": {
-    "cvss": 4.3,
-    "description": "Vilo 5 Mesh WiFi System <= 5.16.1.33 is vulnerable to Information Disclosure. An information leak in the Boa webserver allows remote, unauthenticated attackers to leak memory addresses of uClibc and the stack via sending a GET request to the index page.",
-    "published": "2024-10-21T21:15:06.223",
-    "keywords": "remote,unauthenticated,leak"
-  },
-  "CVE-2024-40091": {
-    "cvss": 5.3,
-    "description": "Vilo 5 Mesh WiFi System <= 5.16.1.33 lacks authentication in the Boa webserver, which allows remote, unauthenticated attackers to retrieve logs with sensitive system.",
-    "published": "2024-10-21T21:15:06.313",
-    "keywords": "remote,unauthenticated,authentication,sensitive"
-  },
   "CVE-2024-8901": {
     "cvss": 7.5,
     "description": "The  AWS ALB Route Directive Adapter For Istio repo https://github.com/awslabs/aws-alb-route-directive-adapter-for-istio/tree/master  provides an OIDC authentication mechanism that was integrated into the open source Kubeflow project. The adapter uses JWT for authentication, but lacks proper signer and issuer validation. In deployments of ALB that ignore security best practices, where ALB targets are directly exposed to internet traffic, an actor can provide a JWT signed by an untrusted entity in order to spoof OIDC-federated sessions and successfully bypass authentication.\n\n\n\nThe repository/package has been deprecated, is end of life, and is no longer supported. As a security best practice, ensure that your ELB targets (e.g. EC2 Instances, Fargate Tasks etc.) do not have public IP addresses. Ensure any forked or derivative code validate that the signer\u00a0attribute in the JWT match the ARN of the Application Load Balancer that the service is configured to use.",
@@ -526,5 +448,47 @@
     "description": "A SQL injection vulnerability in Sourcecodester Packers and Movers Management System v1.0 allows remote authenticated users to execute arbitrary SQL commands via the id parameter in /mpms/admin/?page=services/manage_service&id",
     "published": "2024-10-24T19:15:15.703",
     "keywords": "remote,command"
+  },
+  "CVE-2024-45261": {
+    "cvss": "-",
+    "description": "An issue was discovered on certain GL-iNet devices, including MT6000, MT3000, MT2500, AXT1800, and AX1800 4.6.2. The SID generated for a specific user is not tied to that user itself, which allows other users to potentially use it for authentication. Once an attacker bypasses the application's authentication procedures, they can generate a valid SID, escalate privileges, and gain full control.",
+    "published": "2024-10-24T21:15:12.057",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-48423": {
+    "url": "https://github.com/assimp/assimp/issues/5788",
+    "cvss": "-",
+    "description": "An issue in assimp v.5.4.3 allows a local attacker to execute arbitrary code via the CallbackToLogRedirector function within the Assimp library.",
+    "published": "2024-10-24T21:15:14.143"
+  },
+  "CVE-2024-48424": {
+    "url": "https://github.com/assimp/assimp/issues/5787",
+    "cvss": "-",
+    "description": "A heap-buffer-overflow vulnerability has been identified in the OpenDDLParser::parseStructure function within the Assimp library, specifically during the processing of OpenGEX files.",
+    "published": "2024-10-24T21:15:14.223"
+  },
+  "CVE-2024-48425": {
+    "url": "https://github.com/assimp/assimp/issues/5791",
+    "cvss": "-",
+    "description": "A segmentation fault (SEGV) was detected in the Assimp::SplitLargeMeshesProcess_Triangle::UpdateNode function within the Assimp library during fuzz testing using AddressSanitizer. The crash occurs due to a read access violation at address 0x000000000460, which points to the zero page, indicating a null or invalid pointer dereference.",
+    "published": "2024-10-24T21:15:14.303"
+  },
+  "CVE-2024-48426": {
+    "url": "https://github.com/assimp/assimp/issues/5789",
+    "cvss": "-",
+    "description": "A segmentation fault (SEGV) was detected in the SortByPTypeProcess::Execute function in the Assimp library during fuzz testing with AddressSanitizer. The crash occurred due to a read access to an invalid memory address (0x1000c9714971).",
+    "published": "2024-10-24T21:15:14.387"
+  },
+  "CVE-2024-48932": {
+    "cvss": 5.3,
+    "description": "ZimaOS is a fork of CasaOS, an operating system for Zima devices and x86-64 systems with UEFI. In version 1.2.4 and all prior versions, the API endpoint `http://<Server-ip>/v1/users/name` allows unauthenticated users to access sensitive information, such as usernames, without any authorization. This vulnerability could be exploited by an attacker to enumerate usernames and leverage them for further attacks, such as brute-force or phishing campaigns. As of time of publication, no known patched versions are available.",
+    "published": "2024-10-24T21:15:14.790",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-7763": {
+    "cvss": 9.8,
+    "description": "In WhatsUp Gold versions released before 2024.0.0,\u00a0\n\nan Authentication Bypass issue exists which allows an attacker to obtain encrypted user credentials.",
+    "published": "2024-10-24T21:15:15.033",
+    "keywords": "authentication,bypass"
   }
 }

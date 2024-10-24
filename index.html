@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-10-24T21:10:45.877048
+Updated at UTC 2024-10-24T22:10:37.934730
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,60 @@ Updated at UTC 2024-10-24T21:10:45.877048
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48426">CVE-2024-48426</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/assimp/assimp/issues/5789">https://github.com/assimp/assimp/issues/5789</a></td>
+					<td class=date>2024-10-24T21:15:14.387</td>
+					<td class=description>A segmentation fault (SEGV) was detected in the SortByPTypeProcess::Execute function in the Assimp library during fuzz testing with AddressSanitizer. The crash occurred due to a read access to an invalid memory address (0x1000c9714971).</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48425">CVE-2024-48425</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/assimp/assimp/issues/5791">https://github.com/assimp/assimp/issues/5791</a></td>
+					<td class=date>2024-10-24T21:15:14.303</td>
+					<td class=description>A segmentation fault (SEGV) was detected in the Assimp::SplitLargeMeshesProcess_Triangle::UpdateNode function within the Assimp library during fuzz testing using AddressSanitizer. The crash occurs due to a read access violation at address 0x000000000460, which points to the zero page, indicating a null or invalid pointer dereference.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48424">CVE-2024-48424</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/assimp/assimp/issues/5787">https://github.com/assimp/assimp/issues/5787</a></td>
+					<td class=date>2024-10-24T21:15:14.223</td>
+					<td class=description>A heap-buffer-overflow vulnerability has been identified in the OpenDDLParser::parseStructure function within the Assimp library, specifically during the processing of OpenGEX files.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48423">CVE-2024-48423</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/assimp/assimp/issues/5788">https://github.com/assimp/assimp/issues/5788</a></td>
+					<td class=date>2024-10-24T21:15:14.143</td>
+					<td class=description>An issue in assimp v.5.4.3 allows a local attacker to execute arbitrary code via the CallbackToLogRedirector function within the Assimp library.</td>
+
+
+				</tr>
+			
+		
+			
 		
 			
 		
@@ -278,34 +332,48 @@ Updated at UTC 2024-10-24T21:10:45.877048
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7763">CVE-2024-7763</a></td>
+					<td>9.8</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-10-24T21:15:15.033</td>
+					<td class=description>In WhatsUp Gold versions released before 2024.0.0, 
+
+an Authentication Bypass issue exists which allows an attacker to obtain encrypted user credentials.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48932">CVE-2024-48932</a></td>
+					<td>5.3</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2024-10-24T21:15:14.790</td>
+					<td class=description>ZimaOS is a fork of CasaOS, an operating system for Zima devices and x86-64 systems with UEFI. In version 1.2.4 and all prior versions, the API endpoint `http://<Server-ip>/v1/users/name` allows unauthenticated users to access sensitive information, such as usernames, without any authorization. This vulnerability could be exploited by an attacker to enumerate usernames and leverage them for further attacks, such as brute-force or phishing campaigns. As of time of publication, no known patched versions are available.</td>
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45261">CVE-2024-45261</a></td>
+					<td>-</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-10-24T21:15:12.057</td>
+					<td class=description>An issue was discovered on certain GL-iNet devices, including MT6000, MT3000, MT2500, AXT1800, and AX1800 4.6.2. The SID generated for a specific user is not tied to that user itself, which allows other users to potentially use it for authentication. Once an attacker bypasses the application's authentication procedures, they can generate a valid SID, escalate privileges, and gain full control.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -1045,136 +1113,6 @@ Please note: authentication is not required in order to exploit this vulnerabili
 
 
 The repository/package has been deprecated, is end of life, and is no longer supported. As a security best practice, ensure that your ELB targets (e.g. EC2 Instances, Fargate Tasks etc.) do not have public IP addresses. Ensure any forked or derivative code validate that the signer attribute in the JWT match the ARN of the Application Load Balancer that the service is configured to use.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40091">CVE-2024-40091</a></td>
-					<td>5.3</td>
-					<td>remote,unauthenticated,authentication,sensitive</td>
-					<td class=date>2024-10-21T21:15:06.313</td>
-					<td class=description>Vilo 5 Mesh WiFi System <= 5.16.1.33 lacks authentication in the Boa webserver, which allows remote, unauthenticated attackers to retrieve logs with sensitive system.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40090">CVE-2024-40090</a></td>
-					<td>4.3</td>
-					<td>remote,unauthenticated,leak</td>
-					<td class=date>2024-10-21T21:15:06.223</td>
-					<td class=description>Vilo 5 Mesh WiFi System <= 5.16.1.33 is vulnerable to Information Disclosure. An information leak in the Boa webserver allows remote, unauthenticated attackers to leak memory addresses of uClibc and the stack via sending a GET request to the index page.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40089">CVE-2024-40089</a></td>
-					<td>9.1</td>
-					<td>remote,command</td>
-					<td class=date>2024-10-21T21:15:06.150</td>
-					<td class=description>A Command Injection vulnerability in Vilo 5 Mesh WiFi System <= 5.16.1.33 allows remote, authenticated attackers to execute arbitrary code by injecting shell commands into the name of the Vilo device.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40088">CVE-2024-40088</a></td>
-					<td>5.3</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-10-21T21:15:06.080</td>
-					<td class=description>A Directory Traversal vulnerability in the Boa webserver of Vilo 5 Mesh WiFi System <= 5.16.1.33 allows remote, unauthenticated attackers to enumerate the existence and length of any file in the filesystem by placing malicious payloads in the path of any HTTP request.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40087">CVE-2024-40087</a></td>
-					<td>9.6</td>
-					<td>remote,unauthenticated,authentication</td>
-					<td class=date>2024-10-21T21:15:06.003</td>
-					<td class=description>Vilo 5 Mesh WiFi System <= 5.16.1.33 is vulnerable to Insecure Permissions. Lack of authentication in the custom TCP service on port 5432 allows remote, unauthenticated attackers to gain administrative access over the router.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40086">CVE-2024-40086</a></td>
-					<td>9.6</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-10-21T21:15:05.923</td>
-					<td class=description>A Buffer Overflow vulnerability in the local_app_set_router_wifi_SSID_PWD function of Vilo 5 Mesh WiFi System <= 5.16.1.33 allows remote, unauthenticated attackers to execute arbitrary code via a password field larger than 64 bytes in length.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40085">CVE-2024-40085</a></td>
-					<td>9.6</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-10-21T21:15:05.853</td>
-					<td class=description>A Buffer Overflow vulnerability in the local_app_set_router_wan function of Vilo 5 Mesh WiFi System <= 5.16.1.33 allows remote, unauthenticated attackers to execute arbitrary code via pppoe_username and pppoe_password fields being larger than 128 bytes in length.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40084">CVE-2024-40084</a></td>
-					<td>9.6</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-10-21T21:15:05.770</td>
-					<td class=description>A Buffer Overflow in the Boa webserver of Vilo 5 Mesh WiFi System <= 5.16.1.33 allows remote, unauthenticated attackers to execute arbitrary code via exceptionally long HTTP methods or paths.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40083">CVE-2024-40083</a></td>
-					<td>9.6</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-10-21T21:15:05.703</td>
-					<td class=description>A Buffer Overflow vulnerabilty in the local_app_set_router_token function of Vilo 5 Mesh WiFi System <= 5.16.1.33 allows remote, unauthenticated attackers to execute arbitrary code via sscanf reading the token and timezone JSON fields into a fixed-length buffer.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-35314">CVE-2024-35314</a></td>
-					<td>9.8</td>
-					<td>unauthenticated,command</td>
-					<td class=date>2024-10-21T21:15:05.533</td>
-					<td class=description>A vulnerability in the Desktop Client of Mitel MiCollab through 9.7.1.110, and MiVoice Business Solution Virtual Instance (MiVB SVI) 1.0.0.25, could allow an unauthenticated attacker to conduct a command injection attack due to insufficient parameter sanitization. A successful exploit could allow an attacker to execute arbitrary scripts.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-35287">CVE-2024-35287</a></td>
-					<td>6.7</td>
-					<td>execution,command</td>
-					<td class=date>2024-10-21T21:15:05.450</td>
-					<td class=description>A vulnerability in the NuPoint Messenger (NPM) component of Mitel MiCollab through version 9.8 SP1 (9.8.1.5) could allow an authenticated attacker with administrative privilege to conduct a privilege escalation attack due to the execution of a resource with unnecessary privileges. A successful exploit could allow an attacker to execute arbitrary commands with elevated privileges.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-35286">CVE-2024-35286</a></td>
-					<td>9.8</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2024-10-21T21:15:05.367</td>
-					<td class=description>A vulnerability in NuPoint Messenger (NPM) of Mitel MiCollab through 9.8.0.33 allows an unauthenticated attacker to conduct a SQL injection attack due to insufficient sanitization of user input. A successful exploit could allow an attacker to access sensitive information and execute arbitrary database and management operations.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-35285">CVE-2024-35285</a></td>
-					<td>9.8</td>
-					<td>unauthenticated,command</td>
-					<td class=date>2024-10-21T21:15:05.307</td>
-					<td class=description>A vulnerability in NuPoint Messenger (NPM) of Mitel MiCollab through 9.8.0.33 allows an unauthenticated attacker to conduct a command injection attack due to insufficient parameter sanitization.</td>
 				</tr>
 			
 		
