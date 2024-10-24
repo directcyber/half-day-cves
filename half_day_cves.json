@@ -544,5 +544,11 @@
     "description": "A vulnerability in the SSH server of Cisco Adaptive Security Appliance (ASA) Software could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition for the SSH server of an affected device.\r\n\r This vulnerability is due to a logic error when an SSH session is established. An attacker could exploit this vulnerability by sending crafted SSH messages to an affected device. A successful exploit could allow the attacker to exhaust available SSH resources on the affected device so that new SSH connections to the device are denied, resulting in a DoS condition. Existing SSH connections to the device would continue to function normally. The device must be rebooted manually to recover. However, user traffic would not be impacted and could be managed using a remote application such as Cisco Adaptive Security Device Manager (ASDM).",
     "published": "2024-10-23T18:15:13.303",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-40595": {
+    "cvss": "-",
+    "description": "An authentication-bypass issue in the RDP component of One Identity Safeguard for Privileged Sessions (SPS) On Premise before 7.5.1 (and LTS before 7.0.5.1) allows man-in-the-middle attackers to obtain access to privileged sessions on target resources by intercepting cleartext RDP protocol information.",
+    "published": "2024-10-24T06:15:11.703",
+    "keywords": "authentication,bypass"
   }
 }
