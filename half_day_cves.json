@@ -240,7 +240,7 @@
     "keywords": "authentication,leak"
   },
   "CVE-2024-50050": {
-    "cvss": "-",
+    "cvss": 6.3,
     "description": "Llama Stack prior to revision 7a8aa775e5a267cf8660d83140011a0b7f91e005 used pickle as a serialization format for socket communication, potentially allowing for remote code execution. Socket communication has been changed to use JSON instead.",
     "published": "2024-10-23T14:15:05.087",
     "keywords": "remote,execution"
@@ -550,5 +550,11 @@
     "description": "php-heic-to-jpg <= 1.0.5 is vulnerable to remote code execution. An attacker who can upload heic images is able to execute code on the remote server via the file name. As a result, the CIA is no longer guaranteed. This affects php-heic-to-jpg 1.0.5 and below.",
     "published": "2024-10-24T18:15:10.227",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-48427": {
+    "cvss": "-",
+    "description": "A SQL injection vulnerability in Sourcecodester Packers and Movers Management System v1.0 allows remote authenticated users to execute arbitrary SQL commands via the id parameter in /mpms/admin/?page=services/manage_service&id",
+    "published": "2024-10-24T19:15:15.703",
+    "keywords": "remote,command"
   }
 }
