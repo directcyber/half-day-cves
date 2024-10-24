@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-10-24T18:14:54.462138
+Updated at UTC 2024-10-24T19:08:49.618320
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,22 @@ Updated at UTC 2024-10-24T18:14:54.462138
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-46478">CVE-2024-46478</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/michaelrsweet/htmldoc/commit/683bec548e642cf4a17e003fb34f6bbaf2d27b98">https://github.com/michaelrsweet/htmldoc/commit/683bec548e642cf4a17e003fb34f6bbaf2d27b98</a></td>
+					<td class=date>2024-10-24T18:15:08.863</td>
+					<td class=description>HTMLDOC v1.9.18 contains a buffer overflow in parse_pre function,ps-pdf.cxx:5681.</td>
+
+
+				</tr>
+			
+		
+			
 		
 			
 		
@@ -306,10 +322,30 @@ Updated at UTC 2024-10-24T18:14:54.462138
 				</tr>
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48514">CVE-2024-48514</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2024-10-24T18:15:10.227</td>
+					<td class=description>php-heic-to-jpg <= 1.0.5 is vulnerable to remote code execution. An attacker who can upload heic images is able to execute code on the remote server via the file name. As a result, the CIA is no longer guaranteed. This affects php-heic-to-jpg 1.0.5 and below.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10295">CVE-2024-10295</a></td>
+					<td>5.9</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-10-24T18:15:05.597</td>
+					<td class=description>A flaw was found in Gateway. Sending a non-base64 'basic' auth with special characters can cause APICast to incorrectly authenticate a request. A malformed basic authentication header containing special characters bypasses authentication and allows unauthorized access to the backend. This issue can occur due to a failure in the base64 decoding process, which causes APICast to skip the rest of the authentication checks and proceed with routing the request upstream.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -1190,88 +1226,6 @@ The repository/package has been deprecated, is end of life, and is no longer sup
 				</tr>
 			
 		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-49878">CVE-2024-49878</a></td>
-					<td>-</td>
-					<td>execution,command</td>
-					<td class=date>2024-10-21T18:15:09.863</td>
-					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
-
-resource: fix region_intersects() vs add_memory_driver_managed()
-
-On a system with CXL memory, the resource tree (/proc/iomem) related to
-CXL memory may look like something as follows.
-
-490000000-50fffffff : CXL Window 0
-  490000000-50fffffff : region0
-    490000000-50fffffff : dax0.0
-      490000000-50fffffff : System RAM (kmem)
-
-Because drivers/dax/kmem.c calls add_memory_driver_managed() during
-onlining CXL memory, which makes "System RAM (kmem)" a descendant of "CXL
-Window X".  This confuses region_intersects(), which expects all "System
-RAM" resources to be at the top level of iomem_resource.  This can lead to
-bugs.
-
-For example, when the following command line is executed to write some
-memory in CXL memory range via /dev/mem,
-
- $ dd if=data of=/dev/mem bs=$((1 << 10)) seek=$((0x490000000 >> 10)) count=1
- dd: error writing '/dev/mem': Bad address
- 1+0 records in
- 0+0 records out
- 0 bytes copied, 0.0283507 s, 0.0 kB/s
-
-the command fails as expected.  However, the error code is wrong.  It
-should be "Operation not permitted" instead of "Bad address".  More
-seriously, the /dev/mem permission checking in devmem_is_allowed() passes
-incorrectly.  Although the accessing is prevented later because ioremap()
-isn't allowed to map system RAM, it is a potential security issue.  During
-command executing, the following warning is reported in the kernel log for
-calling ioremap() on system RAM.
-
- ioremap on RAM at 0x0000000490000000 - 0x0000000490000fff
- WARNING: CPU: 2 PID: 416 at arch/x86/mm/ioremap.c:216 __ioremap_caller.constprop.0+0x131/0x35d
- Call Trace:
-  memremap+0xcb/0x184
-  xlate_dev_mem_ptr+0x25/0x2f
-  write_mem+0x94/0xfb
-  vfs_write+0x128/0x26d
-  ksys_write+0xac/0xfe
-  do_syscall_64+0x9a/0xfd
-  entry_SYSCALL_64_after_hwframe+0x4b/0x53
-
-The details of command execution process are as follows.  In the above
-resource tree, "System RAM" is a descendant of "CXL Window 0" instead of a
-top level resource.  So, region_intersects() will report no System RAM
-resources in the CXL memory region incorrectly, because it only checks the
-top level resources.  Consequently, devmem_is_allowed() will return 1
-(allow access via /dev/mem) for CXL memory region incorrectly. 
-Fortunately, ioremap() doesn't allow to map System RAM and reject the
-access.
-
-So, region_intersects() needs to be fixed to work correctly with the
-resource tree with "System RAM" not at top level as above.  To fix it, if
-we found a unmatched resource in the top level, we will continue to search
-matched resources in its descendant resources.  So, we will not miss any
-matched resources in resource tree anymore.
-
-In the new implementation, an example resource tree
-
-|------------- "CXL Window 0" ------------|
-|-- "System RAM" --|
-
-will behave similar as the following fake resource tree for
-region_intersects(, IORESOURCE_SYSTEM_RAM, ),
-
-|-- "System RAM" --||-- "CXL Window 0a" --|
-
-Where "CXL Window 0a" is part of the original "CXL Window 0" that
-isn't covered by "System RAM".</td>
-				</tr>
 			
 		
 

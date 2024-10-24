@@ -1,10 +1,4 @@
 {
-  "CVE-2024-49878": {
-    "cvss": "-",
-    "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nresource: fix region_intersects() vs add_memory_driver_managed()\n\nOn a system with CXL memory, the resource tree (/proc/iomem) related to\nCXL memory may look like something as follows.\n\n490000000-50fffffff : CXL Window 0\n  490000000-50fffffff : region0\n    490000000-50fffffff : dax0.0\n      490000000-50fffffff : System RAM (kmem)\n\nBecause drivers/dax/kmem.c calls add_memory_driver_managed() during\nonlining CXL memory, which makes \"System RAM (kmem)\" a descendant of \"CXL\nWindow X\".  This confuses region_intersects(), which expects all \"System\nRAM\" resources to be at the top level of iomem_resource.  This can lead to\nbugs.\n\nFor example, when the following command line is executed to write some\nmemory in CXL memory range via /dev/mem,\n\n $ dd if=data of=/dev/mem bs=$((1 << 10)) seek=$((0x490000000 >> 10)) count=1\n dd: error writing '/dev/mem': Bad address\n 1+0 records in\n 0+0 records out\n 0 bytes copied, 0.0283507 s, 0.0 kB/s\n\nthe command fails as expected.  However, the error code is wrong.  It\nshould be \"Operation not permitted\" instead of \"Bad address\".  More\nseriously, the /dev/mem permission checking in devmem_is_allowed() passes\nincorrectly.  Although the accessing is prevented later because ioremap()\nisn't allowed to map system RAM, it is a potential security issue.  During\ncommand executing, the following warning is reported in the kernel log for\ncalling ioremap() on system RAM.\n\n ioremap on RAM at 0x0000000490000000 - 0x0000000490000fff\n WARNING: CPU: 2 PID: 416 at arch/x86/mm/ioremap.c:216 __ioremap_caller.constprop.0+0x131/0x35d\n Call Trace:\n  memremap+0xcb/0x184\n  xlate_dev_mem_ptr+0x25/0x2f\n  write_mem+0x94/0xfb\n  vfs_write+0x128/0x26d\n  ksys_write+0xac/0xfe\n  do_syscall_64+0x9a/0xfd\n  entry_SYSCALL_64_after_hwframe+0x4b/0x53\n\nThe details of command execution process are as follows.  In the above\nresource tree, \"System RAM\" is a descendant of \"CXL Window 0\" instead of a\ntop level resource.  So, region_intersects() will report no System RAM\nresources in the CXL memory region incorrectly, because it only checks the\ntop level resources.  Consequently, devmem_is_allowed() will return 1\n(allow access via /dev/mem) for CXL memory region incorrectly. \nFortunately, ioremap() doesn't allow to map System RAM and reject the\naccess.\n\nSo, region_intersects() needs to be fixed to work correctly with the\nresource tree with \"System RAM\" not at top level as above.  To fix it, if\nwe found a unmatched resource in the top level, we will continue to search\nmatched resources in its descendant resources.  So, we will not miss any\nmatched resources in resource tree anymore.\n\nIn the new implementation, an example resource tree\n\n|------------- \"CXL Window 0\" ------------|\n|-- \"System RAM\" --|\n\nwill behave similar as the following fake resource tree for\nregion_intersects(, IORESOURCE_SYSTEM_RAM, ),\n\n|-- \"System RAM\" --||-- \"CXL Window 0a\" --|\n\nWhere \"CXL Window 0a\" is part of the original \"CXL Window 0\" that\nisn't covered by \"System RAM\".",
-    "published": "2024-10-21T18:15:09.863",
-    "keywords": "execution,command"
-  },
   "CVE-2024-46326": {
     "url": "https://github.com/pkp/pkp-lib/issues/10478",
     "cvss": 6.1,
@@ -538,5 +532,23 @@
     "description": "The web server of Lawo AG vsm LTC Time Sync (vTimeSync) is affected by a \"...\" (triple dot) path traversal vulnerability. By sending a specially crafted HTTP request, an unauthenticated remote attacker could download arbitrary files from the operating system. As a limitation, the exploitation is only possible if the requested file has some file extension, e. g. .exe or .txt.",
     "published": "2024-10-24T08:15:02.297",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-10295": {
+    "cvss": 5.9,
+    "description": "A flaw was found in Gateway. Sending a non-base64 'basic' auth with special characters can cause APICast to incorrectly authenticate a request. A malformed basic authentication header containing special characters bypasses authentication and allows unauthorized access to the backend. This issue can occur due to a failure in the base64 decoding process, which causes APICast to skip the rest of the authentication checks and proceed with routing the request upstream.",
+    "published": "2024-10-24T18:15:05.597",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-46478": {
+    "url": "https://github.com/michaelrsweet/htmldoc/commit/683bec548e642cf4a17e003fb34f6bbaf2d27b98",
+    "cvss": "-",
+    "description": "HTMLDOC v1.9.18 contains a buffer overflow in parse_pre function,ps-pdf.cxx:5681.",
+    "published": "2024-10-24T18:15:08.863"
+  },
+  "CVE-2024-48514": {
+    "cvss": "-",
+    "description": "php-heic-to-jpg <= 1.0.5 is vulnerable to remote code execution. An attacker who can upload heic images is able to execute code on the remote server via the file name. As a result, the CIA is no longer guaranteed. This affects php-heic-to-jpg 1.0.5 and below.",
+    "published": "2024-10-24T18:15:10.227",
+    "keywords": "remote,execution"
   }
 }
