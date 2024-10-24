@@ -1,34 +1,4 @@
 {
-  "CVE-2024-46326": {
-    "url": "https://github.com/pkp/pkp-lib/issues/10478",
-    "cvss": 6.1,
-    "description": "Public Knowledge Project pkp-lib 3.4.0-7 and earlier is vulnerable to Open redirect due to a lack of input sanitization in the logout function.",
-    "published": "2024-10-21T20:15:14.637"
-  },
-  "CVE-2024-47189": {
-    "cvss": "-",
-    "description": "The API Interface of the AWV (Audio, Web and Video Conferencing) component of Mitel MiCollab through 9.8 SP1 FP2 (9.8.1.201) could allow an unauthenticated attacker to conduct SQL injection due to insufficient sanitization of user input. A successful exploit could allow an attacker with knowledge of specific details to access non-sensitive user provisioning information and execute arbitrary SQL database commands.",
-    "published": "2024-10-21T20:15:14.697",
-    "keywords": "unauthenticated,command,sensitive"
-  },
-  "CVE-2024-47223": {
-    "cvss": 9.4,
-    "description": "A vulnerability in the AWV (Audio, Web and Video Conferencing) component of Mitel MiCollab through 9.8 SP1 FP2 (9.8.1.201) could allow an unauthenticated attacker to conduct a SQL injection attack due to insufficient sanitization of user input. A successful exploit could allow an attacker to access non-sensitive user provisioning information and execute arbitrary SQL database commands.",
-    "published": "2024-10-21T20:15:14.770",
-    "keywords": "unauthenticated,command,sensitive"
-  },
-  "CVE-2024-47912": {
-    "cvss": 8.2,
-    "description": "A vulnerability in the AWV (Audio, Web, and Video) Conferencing component of Mitel MiCollab through 9.8 SP1 FP2 (9.8.1.201) could allow an unauthenticated attacker to perform unauthorized data-access attacks due to missing authentication mechanisms. A successful exploit could allow an attacker to access and delete sensitive information.",
-    "published": "2024-10-21T20:15:14.877",
-    "keywords": "unauthenticated,authentication,sensitive"
-  },
-  "CVE-2024-48509": {
-    "cvss": 9.8,
-    "description": "Learning with Texts (LWT) 2.0.3 is vulnerable to SQL Injection. This occurs when the application fails to properly sanitize user inputs, allowing attackers to manipulate SQL queries by injecting malicious SQL statements into URL parameters. By exploiting this vulnerability, an attacker could gain unauthorized access to the database, retrieve sensitive information, modify or delete data, and execute arbitrary commands.",
-    "published": "2024-10-21T20:15:14.943",
-    "keywords": "command,sensitive"
-  },
   "CVE-2024-35285": {
     "cvss": 9.8,
     "description": "A vulnerability in NuPoint Messenger (NPM) of Mitel MiCollab through 9.8.0.33 allows an unauthenticated attacker to conduct a command injection attack due to insufficient parameter sanitization.",
