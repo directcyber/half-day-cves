@@ -1,10 +1,4 @@
 {
-  "CVE-2024-49851": {
-    "cvss": 5.5,
-    "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ntpm: Clean up TPM space after command failure\n\ntpm_dev_transmit prepares the TPM space before attempting command\ntransmission. However if the command fails no rollback of this\npreparation is done. This can result in transient handles being leaked\nif the device is subsequently closed with no further commands performed.\n\nFix this by flushing the space in the event of command transmission\nfailure.",
-    "published": "2024-10-21T13:15:05.883",
-    "keywords": "command,leak"
-  },
   "CVE-2024-49368": {
     "cvss": "-",
     "description": "Nginx UI is a web user interface for the Nginx web server. Prior to version 2.0.0-beta.36, when Nginx UI configures logrotate, it does not verify the input and directly passes it to exec.Command, causing arbitrary command execution. Version 2.0.0-beta.36 fixes this issue.",
