@@ -1,10 +1,4 @@
 {
-  "CVE-2024-48231": {
-    "url": "https://github.com/funadmin/funadmin/issues/29",
-    "cvss": 7.2,
-    "description": "Funadmin 5.0.2 is vulnerable to SQL Injection via the selectFields parameter in the index method of \\backend\\controller\\auth\\Auth.php.",
-    "published": "2024-10-21T12:15:08.380"
-  },
   "CVE-2024-49851": {
     "cvss": 5.5,
     "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ntpm: Clean up TPM space after command failure\n\ntpm_dev_transmit prepares the TPM space before attempting command\ntransmission. However if the command fails no rollback of this\npreparation is done. This can result in transient handles being leaked\nif the device is subsequently closed with no further commands performed.\n\nFix this by flushing the space in the event of command transmission\nfailure.",
