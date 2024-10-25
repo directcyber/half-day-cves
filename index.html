@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-10-24T23:11:35.880079
+Updated at UTC 2024-10-25T00:53:21.628091
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -324,8 +324,6 @@ Updated at UTC 2024-10-24T23:11:35.880079
 
 
 				</tr>
-			
-		
 			
 		
 			
@@ -1135,20 +1133,6 @@ Please note: authentication is not required in order to exploit this vulnerabili
 					<td>authentication,command</td>
 					<td class=date>2024-10-22T02:15:04.380</td>
 					<td class=description>The insufficiently protected credentials vulnerability in the CLI command of the USG FLEX H series uOS firmware version V1.21 and earlier versions could allow an authenticated local attacker to gain privilege escalation by stealing the authentication token of a login administrator. Note that this attack could be successful only if the administrator has not logged out.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8901">CVE-2024-8901</a></td>
-					<td>7.5</td>
-					<td>authentication,bypass</td>
-					<td class=date>2024-10-22T00:15:03.667</td>
-					<td class=description>The  AWS ALB Route Directive Adapter For Istio repo https://github.com/awslabs/aws-alb-route-directive-adapter-for-istio/tree/master  provides an OIDC authentication mechanism that was integrated into the open source Kubeflow project. The adapter uses JWT for authentication, but lacks proper signer and issuer validation. In deployments of ALB that ignore security best practices, where ALB targets are directly exposed to internet traffic, an actor can provide a JWT signed by an untrusted entity in order to spoof OIDC-federated sessions and successfully bypass authentication.
-
-
-
-The repository/package has been deprecated, is end of life, and is no longer supported. As a security best practice, ensure that your ELB targets (e.g. EC2 Instances, Fargate Tasks etc.) do not have public IP addresses. Ensure any forked or derivative code validate that the signer attribute in the JWT match the ARN of the Application Load Balancer that the service is configured to use.</td>
 				</tr>
 			
 		
