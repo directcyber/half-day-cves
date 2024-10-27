@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-10-27T22:10:56.072424
+Updated at UTC 2024-10-27T23:11:48.513717
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,66 @@ Updated at UTC 2024-10-27T22:10:56.072424
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50615">CVE-2024-50615</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/leethomason/tinyxml2/issues/997">https://github.com/leethomason/tinyxml2/issues/997</a></td>
+					<td class=date>2024-10-27T22:15:03.760</td>
+					<td class=description>TinyXML2 through 10.0.0 has a reachable assertion for UINT_MAX/digit, that may lead to application exit, in tinyxml2.cpp XMLUtil::GetCharacterRef.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50614">CVE-2024-50614</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/leethomason/tinyxml2/issues/996">https://github.com/leethomason/tinyxml2/issues/996</a></td>
+					<td class=date>2024-10-27T22:15:03.713</td>
+					<td class=description>TinyXML2 through 10.0.0 has a reachable assertion for UINT_MAX/16, that may lead to application exit, in tinyxml2.cpp XMLUtil::GetCharacterRef.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50613">CVE-2024-50613</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/libsndfile/libsndfile/issues/1034">https://github.com/libsndfile/libsndfile/issues/1034</a></td>
+					<td class=date>2024-10-27T22:15:03.660</td>
+					<td class=description>libsndfile through 1.2.2 has a reachable assertion, that may lead to application exit, in mpeg_l3_encode.c mpeg_l3_encoder_close.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50612">CVE-2024-50612</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/libsndfile/libsndfile/issues/1035">https://github.com/libsndfile/libsndfile/issues/1035</a></td>
+					<td class=date>2024-10-27T22:15:03.613</td>
+					<td class=description>libsndfile through 1.2.2 has an ogg_vorbis.c vorbis_analysis_wrote out-of-bounds read.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50611">CVE-2024-50611</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/cyclonedx/cdxgen/issues/1328">https://github.com/cyclonedx/cdxgen/issues/1328</a></td>
+					<td class=date>2024-10-27T22:15:03.557</td>
+					<td class=description>CycloneDX cdxgen through 10.10.7, when run against an untrusted codebase, may execute code contained within build-related files such as build.gradle.kts, a similar issue to CVE-2022-24441. cdxgen is used by, for example, OWASP dep-scan. NOTE: this has been characterized as a design limitation, rather than an implementation mistake.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -298,14 +358,18 @@ Updated at UTC 2024-10-27T22:10:56.072424
 		
 			
 		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -576,36 +640,6 @@ Updated at UTC 2024-10-27T22:10:56.072424
 					<td>unauthenticated,authentication,bypass</td>
 					<td class=date>2024-10-25T06:15:13.727</td>
 					<td class=description>The Comments – wpDiscuz plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 7.6.24. This is due to insufficient verification on the user being returned by the social login token. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email and the user does not have an already-existing account for the service returning the token.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-49762">CVE-2024-49762</a></td>
-					<td>4.6</td>
-					<td>authentication,sensitive</td>
-					<td class=date>2024-10-24T22:15:04.897</td>
-					<td class=description>Pterodactyl is a free, open-source game server management panel. When a user disables two-factor authentication via the Panel, a `DELETE` request with their current password in a query parameter will be sent.  While query parameters are encrypted when using TLS, many webservers (including ones officially documented for use with Pterodactyl) will log query parameters in plain-text, storing a user's password in plain text. Prior to version 1.11.8, if a malicious user obtains access to these logs they could potentially authenticate against a user's account; assuming they are able to discover the account's email address or username separately. This problem has been patched in version 1.11.8. There are no workarounds at this time. There is not a direct vulnerability within the software as it relates to logs generated by intermediate components such as web servers or Layer 7 proxies. Updating to `v1.11.8` or adding the linked patch manually are the only ways to avoid this problem. As this vulnerability relates to historical logging of sensitive data, users who have ever disabled 2FA on a Panel (self-hosted or operated by a company) should change their passwords and consider enabling 2FA if it was left disabled. While it's unlikely that their account swill be compromised by this vulnerability, it's not impossible. Panel administrators should consider clearing any access logs that may contain sensitive data.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-49357">CVE-2024-49357</a></td>
-					<td>7.5</td>
-					<td>authentication,sensitive,leak</td>
-					<td class=date>2024-10-24T22:15:03.880</td>
-					<td class=description>ZimaOS is a fork of CasaOS, an operating system for Zima devices and x86-64 systems with UEFI. In version 1.2.4 and all prior versions, the API endpoints in ZimaOS, such as `http://<Server-IP>/v1/users/image?path=/var/lib/casaos/1/app_order.json` and `http://<Server-IP>/v1/users/image?path=/var/lib/casaos/1/system.json`, expose sensitive data like installed applications and system information without requiring any authentication or authorization. This sensitive data leak can be exploited by attackers to gain detailed knowledge about the system setup, installed applications, and other critical information. As of time of publication, no known patched versions are available.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41617">CVE-2024-41617</a></td>
-					<td>-</td>
-					<td>remote,execution,unauthenticated</td>
-					<td class=date>2024-10-24T22:15:03.687</td>
-					<td class=description>Money Manager EX WebApp (web-money-manager-ex) 1.2.2 is vulnerable to Incorrect Access Control. The `redirect_if_not_loggedin` function in `functions_security.php` fails to terminate script execution after redirecting unauthenticated users. This flaw allows an unauthenticated attacker to upload arbitrary files, potentially leading to Remote Code Execution.</td>
 				</tr>
 			
 		
