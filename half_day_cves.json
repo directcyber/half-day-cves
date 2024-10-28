@@ -43,19 +43,19 @@
   },
   "CVE-2024-48229": {
     "url": "https://github.com/funadmin/funadmin/issues/28",
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "funadmin 5.0.2 has a SQL injection vulnerability in the Curd one click command mode plugin.",
     "published": "2024-10-25T21:15:04.063"
   },
   "CVE-2024-48230": {
     "url": "https://github.com/funadmin/funadmin/issues/30",
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "funadmin 5.0.2 is vulnerable to SQL Injection via the parentField parameter in the index method of \\backend\\controller\\auth\\Auth.php.",
     "published": "2024-10-25T21:15:04.123"
   },
   "CVE-2024-48228": {
     "url": "https://github.com/funadmin/funadmin/issues/31",
-    "cvss": "-",
+    "cvss": 6.1,
     "description": "An issue was found in funadmin 5.0.2. The selectfiles method in \\backend\\controller\\sys\\Attachh.php directly stores the passed parameters and values into the param parameter without filtering, resulting in Cross Site Scripting (XSS).",
     "published": "2024-10-25T22:15:02.383"
   },
@@ -250,5 +250,35 @@
     "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Priyabrata Sarkar Token Login allows Authentication Bypass.This issue affects Token Login: from n/a through 1.0.3.",
     "published": "2024-10-28T13:15:06.617",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-48195": {
+    "cvss": "-",
+    "description": "Cross Site Scripting vulnerability in eyouCMS v.1.6.7 allows a remote attacker to obtain sensitive information via a crafted script to the post parameter.",
+    "published": "2024-10-28T20:15:05.903",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-48196": {
+    "cvss": "-",
+    "description": "An issue in eyouCMS v.1.6.7 allows a remote attacker to obtain sensitive information via a crafted script to the post parameter.",
+    "published": "2024-10-28T20:15:05.960",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-48825": {
+    "cvss": "-",
+    "description": "Tenda AC7 v.15.03.06.44 ate_ifconfig_set has pre-authentication command injection allowing remote attackers to execute arbitrary code.",
+    "published": "2024-10-28T20:15:06.173",
+    "keywords": "remote,authentication,command"
+  },
+  "CVE-2024-48826": {
+    "cvss": "-",
+    "description": "Tenda AC7 v.15.03.06.44 ate_iwpriv_set has pre-authentication command injection allowing remote attackers to execute arbitrary code.",
+    "published": "2024-10-28T20:15:06.237",
+    "keywords": "remote,authentication,command"
+  },
+  "CVE-2024-49755": {
+    "cvss": 3.1,
+    "description": "Duende IdentityServer is an OpenID Connect and OAuth 2.x framework for ASP.NET Core. IdentityServer's local API authentication handler performs insufficient validation of the cnf claim in DPoP access tokens. This allows an attacker to use leaked DPoP access tokens at local api endpoints even without possessing the private key for signing proof tokens. Note that this only impacts custom endpoints within an IdentityServer implementation that have explicitly used the LocalApiAuthenticationHandler for authentication. This vulnerability is patched in IdentityServer 7.0.8. Version 6.3 and below are unaffected, as they do not support DPoP in Local APIs.",
+    "published": "2024-10-28T20:15:06.297",
+    "keywords": "authentication,leak"
   }
 }
