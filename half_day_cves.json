@@ -1,34 +1,4 @@
 {
-  "CVE-2024-44099": {
-    "cvss": 5.5,
-    "description": "There is a possible Local bypass of user interaction due to an insecure default value. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
-    "published": "2024-10-25T11:15:16.237",
-    "keywords": "execution,bypass"
-  },
-  "CVE-2024-44101": {
-    "cvss": 7.5,
-    "description": "there is a possible Null Pointer Dereference (modem crash) due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.",
-    "published": "2024-10-25T11:15:16.343",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-47021": {
-    "cvss": "-",
-    "description": "In sms_ExtractCbLanguage of sms_CellBroadcast.c, there is a possible out of bounds read due to a missing bounds check. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
-    "published": "2024-10-25T11:15:16.900",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-47023": {
-    "cvss": "-",
-    "description": "there is a possible man-in-the-middle attack due to a logic error in the code. This could lead to remote escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
-    "published": "2024-10-25T11:15:17.003",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-47483": {
-    "cvss": 2.9,
-    "description": "Dell Data Lakehouse, version(s) 1.0.0.0 and 1.1.0.0, contain(s) an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability. An unauthenticated attacker with local access could potentially exploit this vulnerability, leading to Information disclosure.",
-    "published": "2024-10-25T11:15:17.930",
-    "keywords": "unauthenticated,command"
-  },
   "CVE-2024-49380": {
     "cvss": "-",
     "description": "Plenti, a static site generator, has an arbitrary file write vulnerability in versions prior to 0.7.2. The `/postLocal` endpoint is vulnerable to an arbitrary file write vulnerability when a plenti user serves their website. This issue may lead to Remote Code Execution. Version 0.7.2 fixes the vulnerability.",
@@ -274,5 +244,29 @@
     "description": "The All-in-One WP Migration and Backup plugin for WordPress is vulnerable to arbitrary PHP Code Injection due to missing file type validation during the export in all versions up to, and including, 7.86. This makes it possible for authenticated attackers, with Administrator-level access and above, to create an export file with the .php extension on the affected site's server, adding an arbitrary PHP code to it, which may make remote code execution possible.",
     "published": "2024-10-28T06:15:04.593",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-50477": {
+    "cvss": 9.8,
+    "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Stacks Stacks Mobile App Builder stacks-mobile-app-builder allows Authentication Bypass.This issue affects Stacks Mobile App Builder: from n/a through 5.2.3.",
+    "published": "2024-10-28T12:15:16.137",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-50486": {
+    "cvss": 9.8,
+    "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Acnoo Acnoo Flutter API allows Authentication Bypass.This issue affects Acnoo Flutter API: from n/a through 1.0.5.",
+    "published": "2024-10-28T12:15:16.353",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-50487": {
+    "cvss": 9.8,
+    "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in MaanTheme MaanStore API allows Authentication Bypass.This issue affects MaanStore API: from n/a through 1.0.1.",
+    "published": "2024-10-28T12:15:16.550",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-50489": {
+    "cvss": 9.8,
+    "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Realty Workstation allows Authentication Bypass.This issue affects Realty Workstation: from n/a through 1.0.45.",
+    "published": "2024-10-28T12:15:16.757",
+    "keywords": "authentication,bypass"
   }
 }
