@@ -1,10 +1,4 @@
 {
-  "CVE-2024-9488": {
-    "cvss": 9.8,
-    "description": "The Comments \u2013 wpDiscuz plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 7.6.24. This is due to insufficient verification on the user being returned by the social login token. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email and the user does not have an already-existing account for the service returning the token.",
-    "published": "2024-10-25T06:15:13.727",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
   "CVE-2024-47406": {
     "cvss": 9.1,
     "description": "Sharp and Toshiba Tec MFPs improperly process HTTP authentication requests, resulting in an authentication bypass vulnerability.",
@@ -292,5 +286,11 @@
     "description": "The eHDR CTMS from Sunnet has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL command to read, modify, and delete database contents.",
     "published": "2024-10-28T03:15:02.920",
     "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2024-9162": {
+    "cvss": 7.2,
+    "description": "The All-in-One WP Migration and Backup plugin for WordPress is vulnerable to arbitrary PHP Code Injection due to missing file type validation during the export in all versions up to, and including, 7.86. This makes it possible for authenticated attackers, with Administrator-level access and above, to create an export file with the .php extension on the affected site's server, adding an arbitrary PHP code to it, which may make remote code execution possible.",
+    "published": "2024-10-28T06:15:04.593",
+    "keywords": "remote,execution"
   }
 }

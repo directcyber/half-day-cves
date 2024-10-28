@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-10-28T05:12:47.855528
+Updated at UTC 2024-10-28T06:16:56.149727
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-10-28T05:12:47.855528
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -364,10 +366,18 @@ Updated at UTC 2024-10-28T05:12:47.855528
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9162">CVE-2024-9162</a></td>
+					<td>7.2</td>
+					<td>remote,execution</td>
+					<td class=date>2024-10-28T06:15:04.593</td>
+					<td class=description>The All-in-One WP Migration and Backup plugin for WordPress is vulnerable to arbitrary PHP Code Injection due to missing file type validation during the export in all versions up to, and including, 7.86. This makes it possible for authenticated attackers, with Administrator-level access and above, to create an export file with the .php extension on the affected site's server, adding an arbitrary PHP code to it, which may make remote code execution possible.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -678,16 +688,6 @@ Updated at UTC 2024-10-28T05:12:47.855528
 					<td>authentication,bypass</td>
 					<td class=date>2024-10-25T07:15:04.257</td>
 					<td class=description>Sharp and Toshiba Tec MFPs improperly process HTTP authentication requests, resulting in an authentication bypass vulnerability.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9488">CVE-2024-9488</a></td>
-					<td>9.8</td>
-					<td>unauthenticated,authentication,bypass</td>
-					<td class=date>2024-10-25T06:15:13.727</td>
-					<td class=description>The Comments – wpDiscuz plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 7.6.24. This is due to insufficient verification on the user being returned by the social login token. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email and the user does not have an already-existing account for the service returning the token.</td>
 				</tr>
 			
 		
