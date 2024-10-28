@@ -1,16 +1,4 @@
 {
-  "CVE-2024-49380": {
-    "cvss": "-",
-    "description": "Plenti, a static site generator, has an arbitrary file write vulnerability in versions prior to 0.7.2. The `/postLocal` endpoint is vulnerable to an arbitrary file write vulnerability when a plenti user serves their website. This issue may lead to Remote Code Execution. Version 0.7.2 fixes the vulnerability.",
-    "published": "2024-10-25T14:15:12.040",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-49753": {
-    "cvss": 5.9,
-    "description": "Zitadel is open-source identity infrastructure software. Versions prior to 2.64.1, 2.63.6, 2.62.8, 2.61.4, 2.60.4, 2.59.5, and 2.58.7 have a flaw in the URL validation mechanism of Zitadel actions allows bypassing restrictions intended to block requests to localhost (127.0.0.1). The isHostBlocked check, designed to prevent such requests, can be circumvented by creating a DNS record that resolves to 127.0.0.1. This enables actions to send requests to localhost despite the intended security measures. This vulnerability potentially allows unauthorized access to unsecured internal endpoints, which may contain sensitive information or functionalities. Versions 2.64.1, 2.63.6, 2.62.8, 2.61.4, 2.60.4, 2.59.5, and 2.58.7 contain a patch. No known workarounds are available.",
-    "published": "2024-10-25T14:15:12.280",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2024-48459": {
     "cvss": "-",
     "description": "A command execution vulnerability exists in the AX2 Pro home router produced by Shenzhen Tenda Technology Co., Ltd. (Jixiang Tenda) v.DI_7003G-19.12.24A1V16.03.29.50;V16.03.29.50;V16.03.29.50. An attacker can exploit this vulnerability by constructing a malicious payload to execute commands and further obtain shell access to the router's file system with the highest privileges.",
