@@ -1,58 +1,4 @@
 {
-  "CVE-2024-48218": {
-    "url": "https://github.com/funadmin/funadmin/issues/21",
-    "cvss": "-",
-    "description": "Funadmin v5.0.2 has a SQL injection vulnerability in /curd/table/list.",
-    "published": "2024-10-25T21:15:03.603"
-  },
-  "CVE-2024-48222": {
-    "url": "https://github.com/funadmin/funadmin/issues/22",
-    "cvss": "-",
-    "description": "Funadmin v5.0.2 has a SQL injection vulnerability in /curd/table/edit.",
-    "published": "2024-10-25T21:15:03.680"
-  },
-  "CVE-2024-48223": {
-    "url": "https://github.com/funadmin/funadmin/issues/23",
-    "cvss": "-",
-    "description": "Funadmin v5.0.2 has a SQL injection vulnerability in /curd/table/fieldlist.",
-    "published": "2024-10-25T21:15:03.740"
-  },
-  "CVE-2024-48224": {
-    "url": "https://github.com/funadmin/funadmin/issues/24",
-    "cvss": "-",
-    "description": "Funadmin v5.0.2 has an arbitrary file read vulnerability in /curd/index/editfile.",
-    "published": "2024-10-25T21:15:03.793"
-  },
-  "CVE-2024-48225": {
-    "url": "https://github.com/funadmin/funadmin/issues/25",
-    "cvss": "-",
-    "description": "Funadmin v5.0.2 has an arbitrary file deletion vulnerability in /curd/index/delfile.",
-    "published": "2024-10-25T21:15:03.893"
-  },
-  "CVE-2024-48226": {
-    "url": "https://github.com/funadmin/funadmin/issues/26",
-    "cvss": "-",
-    "description": "Funadmin 5.0.2 is vulnerable to SQL Injection in curd/table/savefield.",
-    "published": "2024-10-25T21:15:03.953"
-  },
-  "CVE-2024-48227": {
-    "url": "https://github.com/funadmin/funadmin/issues/27",
-    "cvss": "-",
-    "description": "Funadmin 5.0.2 has a logical flaw in the Curd one click command deletion function, which can result in a Denial of Service (DOS).",
-    "published": "2024-10-25T21:15:04.010"
-  },
-  "CVE-2024-48229": {
-    "url": "https://github.com/funadmin/funadmin/issues/28",
-    "cvss": 9.8,
-    "description": "funadmin 5.0.2 has a SQL injection vulnerability in the Curd one click command mode plugin.",
-    "published": "2024-10-25T21:15:04.063"
-  },
-  "CVE-2024-48230": {
-    "url": "https://github.com/funadmin/funadmin/issues/30",
-    "cvss": 9.8,
-    "description": "funadmin 5.0.2 is vulnerable to SQL Injection via the parentField parameter in the index method of \\backend\\controller\\auth\\Auth.php.",
-    "published": "2024-10-25T21:15:04.123"
-  },
   "CVE-2024-48228": {
     "url": "https://github.com/funadmin/funadmin/issues/31",
     "cvss": 6.1,
@@ -185,6 +131,12 @@
     "description": "TinyXML2 through 10.0.0 has a reachable assertion for UINT_MAX/digit, that may lead to application exit, in tinyxml2.cpp XMLUtil::GetCharacterRef.",
     "published": "2024-10-27T22:15:03.760"
   },
+  "CVE-2024-50623": {
+    "cvss": "-",
+    "description": "In Cleo Harmony before 5.8.0.20, VLTrader before 5.8.0.20, and LexiCom before 5.8.0.20, there is a JavaScript Injection vulnerability: unrestricted file upload and download could lead to remote code execution.",
+    "published": "2024-10-28T00:15:03.657",
+    "keywords": "remote,execution"
+  },
   "CVE-2024-10435": {
     "cvss": 6.3,
     "description": "A vulnerability was found in didi Super-Jacoco 1.0. It has been declared as critical. This vulnerability affects unknown code of the file /cov/triggerEnvCov. The manipulation of the argument uuid leads to command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
@@ -280,5 +232,23 @@
     "description": "Duende IdentityServer is an OpenID Connect and OAuth 2.x framework for ASP.NET Core. IdentityServer's local API authentication handler performs insufficient validation of the cnf claim in DPoP access tokens. This allows an attacker to use leaked DPoP access tokens at local api endpoints even without possessing the private key for signing proof tokens. Note that this only impacts custom endpoints within an IdentityServer implementation that have explicitly used the LocalApiAuthenticationHandler for authentication. This vulnerability is patched in IdentityServer 7.0.8. Version 6.3 and below are unaffected, as they do not support DPoP in Local APIs.",
     "published": "2024-10-28T20:15:06.297",
     "keywords": "authentication,leak"
+  },
+  "CVE-2024-44213": {
+    "cvss": "-",
+    "description": "An issue existed in the parsing of URLs. This issue was addressed with improved input validation. This issue is fixed in macOS Ventura 13.7.1, macOS Sonoma 14.7.1. An attacker in a privileged network position may be able to leak sensitive user information.",
+    "published": "2024-10-28T21:15:06.110",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2024-44239": {
+    "cvss": "-",
+    "description": "An information disclosure issue was addressed with improved private data redaction for log entries. This issue is fixed in tvOS 18.1, iOS 18.1 and iPadOS 18.1, iOS 17.7.1 and iPadOS 17.7.1, macOS Ventura 13.7.1, macOS Sonoma 14.7.1, watchOS 11.1, visionOS 2.1. An app may be able to leak sensitive kernel state.",
+    "published": "2024-10-28T21:15:06.580",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2024-44274": {
+    "cvss": "-",
+    "description": "The issue was addressed with improved authentication. This issue is fixed in iOS 17.7.1 and iPadOS 17.7.1, watchOS 11.1, iOS 18.1 and iPadOS 18.1. An attacker with physical access to a locked device may be able to view sensitive user information.",
+    "published": "2024-10-28T21:15:07.807",
+    "keywords": "authentication,sensitive"
   }
 }
