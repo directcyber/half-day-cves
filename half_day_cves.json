@@ -274,5 +274,23 @@
     "description": "A vulnerability was found in didi Super-Jacoco 1.0. It has been declared as critical. This vulnerability affects unknown code of the file /cov/triggerEnvCov. The manipulation of the argument uuid leads to command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
     "published": "2024-10-28T01:15:02.600",
     "keywords": "remote,command"
+  },
+  "CVE-2024-10438": {
+    "cvss": 7.5,
+    "description": "The eHRD CTMS from Sunnet has an Authentication Bypass vulnerability, allowing unauthenticated remote attackers to bypass authentication by satisfying specific conditions in order to access certain functionalities.",
+    "published": "2024-10-28T03:15:02.423",
+    "keywords": "remote,unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-10439": {
+    "cvss": 5.3,
+    "description": "The eHRD CTMS from Sunnet has an Insecure Direct Object Reference (IDOR) vulnerability, allowing unauthenticated remote attackers to modify a specific parameter to access arbitrary files uploaded by any user.",
+    "published": "2024-10-28T03:15:02.700",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-10440": {
+    "cvss": 9.8,
+    "description": "The eHDR CTMS from Sunnet has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL command to read, modify, and delete database contents.",
+    "published": "2024-10-28T03:15:02.920",
+    "keywords": "remote,unauthenticated,command"
   }
 }
