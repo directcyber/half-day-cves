@@ -244,5 +244,11 @@
     "description": "The Crypto plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 2.15. This is due a to limited arbitrary method call to 'crypto_connect_ajax_process::log_in' function in the 'crypto_connect_ajax_process' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the username.",
     "published": "2024-10-29T17:15:05.463",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-48138": {
+    "cvss": "-",
+    "description": "A remote code execution (RCE) vulnerability in the component /PluXml/core/admin/parametres_edittpl.php of PluXml v5.8.16 and lower allows attackers to execute arbitrary code via injecting a crafted payload into a template.",
+    "published": "2024-10-29T22:15:03.810",
+    "keywords": "remote,execution"
   }
 }
