@@ -214,5 +214,11 @@
     "description": "lunary-ai/lunary v1.2.26 contains an email injection vulnerability in the Send email verification API (/v1/users/send-verification) and Sign up API (/auth/signup). An unauthenticated attacker can inject data into outgoing emails by bypassing the extractFirstName function using a different whitespace character (e.g., \\xa0). This vulnerability can be exploited to conduct phishing attacks, damage the application's brand, cause legal and compliance issues, and result in financial impact due to unauthorized email usage.",
     "published": "2024-10-29T13:15:09.093",
     "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2024-50334": {
+    "cvss": "-",
+    "description": "Scoold is a Q&A and a knowledge sharing platform for teams. A semicolon path injection vulnerability was found on the /api;/config endpoint. By appending a semicolon in the URL, attackers can bypass authentication and gain unauthorised access to sensitive configuration data. Furthermore, PUT requests on the /api;/config endpoint while setting the Content-Type: application/hocon header allow unauthenticated attackers to file reading via HOCON file inclusion. This allows attackers to retrieve sensitive information such as configuration files from the server, which can be leveraged for further exploitation. The vulnerability has been fixed in Scoold 1.64.0. A workaround would be to disable the Scoold API with scoold.api_enabled = false.",
+    "published": "2024-10-29T15:15:12.560",
+    "keywords": "unauthenticated,authentication,sensitive,bypass"
   }
 }
