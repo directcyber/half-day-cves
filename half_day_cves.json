@@ -1,34 +1,4 @@
 {
-  "CVE-2024-9890": {
-    "cvss": 8.8,
-    "description": "The User Toolkit plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.2.3. This is due to an improper capability check in the 'switchUser' function. This makes it possible for authenticated attackers, with subscriber-level permissions and above, to log in as any existing user on the site, such as an administrator.",
-    "published": "2024-10-26T03:15:04.340",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-9930": {
-    "cvss": 9.8,
-    "description": "The Extensions by HocWP Team plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 0.2.3.2. This is due to missing validation on the user being supplied in the 'verify_email' action. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator. The vulnerability is in the Account extension.",
-    "published": "2024-10-26T03:15:04.553",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
-  "CVE-2024-9931": {
-    "cvss": 9.8,
-    "description": "The Wux Blog Editor plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 3.0.0. This is due to missing validation on the token being supplied during the autologin through the plugin. This makes it possible for unauthenticated attackers to log in to the first administrator user.",
-    "published": "2024-10-26T03:15:04.770",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
-  "CVE-2024-9932": {
-    "cvss": 9.8,
-    "description": "The Wux Blog Editor plugin for WordPress is vulnerable to arbitrary file uploads due to insufficient file type validation in the 'wuxbt_insertImageNew' function in versions up to, and including, 3.0.0. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2024-10-26T03:15:04.980",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-9933": {
-    "cvss": 9.8,
-    "description": "The WatchTowerHQ plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 3.9.6. This is due to the 'watchtower_ota_token' default value is empty, and the not empty check is missing in the 'Password_Less_Access::login' function. This makes it possible for unauthenticated attackers to log in to the WatchTowerHQ client administrator user.",
-    "published": "2024-10-26T03:15:05.207",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
   "CVE-2024-8392": {
     "cvss": 7.2,
     "description": "The WordPress Post Grid Layouts with Pagination \u2013 Sogrid plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.5.2 via the 'tab' parameter. This makes it possible for authenticated attackers, with Administrator-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included. This can also be exploited via CSRF techniques.",
