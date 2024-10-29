@@ -1,10 +1,4 @@
 {
-  "CVE-2024-9772": {
-    "cvss": 7.3,
-    "description": "The The Uix Shortcodes \u2013 Compatible with Gutenberg plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 1.9.9. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
-    "published": "2024-10-26T10:15:10.747",
-    "keywords": "execution,unauthenticated"
-  },
   "CVE-2024-9501": {
     "cvss": 9.8,
     "description": "The Wp Social Login and Register Social Counter plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 3.0.7. This is due to insufficient verification on the user being returned by the social login token. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email and the user does not have an already-existing account for the service returning the token.",
@@ -184,5 +178,11 @@
     "description": "The issue was addressed with improved authentication. This issue is fixed in iOS 17.7.1 and iPadOS 17.7.1, watchOS 11.1, iOS 18.1 and iPadOS 18.1. An attacker with physical access to a locked device may be able to view sensitive user information.",
     "published": "2024-10-28T21:15:07.807",
     "keywords": "authentication,sensitive"
+  },
+  "CVE-2024-10436": {
+    "cvss": 8.8,
+    "description": "The WPC Smart Messages for WooCommerce plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 4.2.1 via the get_condition_value function. This makes it possible for authenticated attackers, with Subscriber-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
+    "published": "2024-10-29T10:15:03.900",
+    "keywords": "execution,sensitive,bypass"
   }
 }
