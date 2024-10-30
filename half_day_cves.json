@@ -286,5 +286,23 @@
     "description": "The W3SPEEDSTER plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 7.26 via the 'script' parameter of the hookBeforeStartOptimization() function. This is due to the plugin passing user supplied input to eval(). This makes it possible for authenticated attackers, with Administrator-level access and above, to execute code on the server.",
     "published": "2024-10-30T11:15:15.963",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-23309": {
+    "cvss": 9.0,
+    "description": "The LevelOne WBR-6012 router with firmware R0.40e6 has an authentication bypass vulnerability in its web application due to reliance on client IP addresses for authentication. Attackers could spoof an IP address to gain unauthorized access without needing a session token.",
+    "published": "2024-10-30T14:15:04.153",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-33603": {
+    "cvss": 5.3,
+    "description": "The LevelOne WBR-6012 router has an information disclosure vulnerability in its web application, which allows unauthenticated users to access a verbose system log page and obtain sensitive data, such as memory addresses and IP addresses for login attempts. This flaw could lead to session hijacking due to the device's reliance on IP address for authentication.",
+    "published": "2024-10-30T14:15:06.330",
+    "keywords": "unauthenticated,authentication,sensitive"
+  },
+  "CVE-2024-33626": {
+    "cvss": 5.3,
+    "description": "The LevelOne WBR-6012 router contains a vulnerability within its web application that allows unauthenticated disclosure of sensitive information, such as the WiFi WPS PIN, through a hidden page accessible by an HTTP request. Disclosure of this information could enable attackers to connect to the device's WiFi network.",
+    "published": "2024-10-30T14:15:06.850",
+    "keywords": "unauthenticated,sensitive"
   }
 }
