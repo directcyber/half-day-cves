@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-10-29T23:11:14.823018
+Updated at UTC 2024-10-30T00:53:29.554440
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,24 @@ Updated at UTC 2024-10-29T23:11:14.823018
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50348">CVE-2024-50348</a></td>
+					<td>5.4</td>
+					<td><a target=_blank href="https://github.com/instantsoft/icms2/commit/e02de2fa1850bb40c9b2050b9256c838a0ea7aa3">https://github.com/instantsoft/icms2/commit/e02de2fa1850bb40c9b2050b9256c838a0ea7aa3</a></td>
+					<td class=date>2024-10-29T23:15:03.863</td>
+					<td class=description>InstantCMS is a free and open source content management system. In photo upload function in the photo album page there is no input validation taking place. Due to this attackers are able to inject the XSS (Cross Site Scripting) payload and execute. This vulnerability is fixed in 2.16.3.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -214,6 +232,38 @@ Updated at UTC 2024-10-29T23:11:14.823018
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-51568">CVE-2024-51568</a></td>
+					<td>10.0</td>
+					<td>remote,execution,unauthenticated,command</td>
+					<td class=date>2024-10-29T23:15:04.520</td>
+					<td class=description>CyberPanel (aka Cyber Panel) before 2.3.5 allows Command Injection via completePath in the ProcessUtilities.outputExecutioner() sink. There is /filemanager/upload (aka File Manager upload) unauthenticated remote code execution via shell metacharacters.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-51567">CVE-2024-51567</a></td>
+					<td>10.0</td>
+					<td>remote,authentication,command,bypass</td>
+					<td class=date>2024-10-29T23:15:04.307</td>
+					<td class=description>upgrademysqlstatus in databases/views.py in CyberPanel (aka Cyber Panel) before 5b08cd6 allows remote attackers to bypass authentication and execute arbitrary commands via /dataBases/upgrademysqlstatus by bypassing secMiddleware (which is only for a POST request) and using shell metacharacters in the statusfile property, as exploited in the wild in October 2024 by PSAUX. Versions through 2.3.6 and (unpatched) 2.3.7 are affected.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-51378">CVE-2024-51378</a></td>
+					<td>10.0</td>
+					<td>remote,authentication,command,bypass</td>
+					<td class=date>2024-10-29T23:15:04.083</td>
+					<td class=description>getresetstatus in dns/views.py and ftp/views.py in CyberPanel (aka Cyber Panel) before 1c0c6cb allows remote attackers to bypass authentication and execute arbitrary commands via /dns/getresetstatus or /ftp/getresetstatus by bypassing secMiddleware (which is only for a POST request) and using shell metacharacters in the statusfile property, as exploited in the wild in October 2024 by PSAUX. Versions through 2.3.6 and (unpatched) 2.3.7 are affected.</td>
+				</tr>
+			
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
