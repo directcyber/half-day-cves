@@ -144,13 +144,13 @@
     "keywords": "authentication,leak"
   },
   "CVE-2024-44213": {
-    "cvss": "-",
+    "cvss": 5.9,
     "description": "An issue existed in the parsing of URLs. This issue was addressed with improved input validation. This issue is fixed in macOS Ventura 13.7.1, macOS Sonoma 14.7.1. An attacker in a privileged network position may be able to leak sensitive user information.",
     "published": "2024-10-28T21:15:06.110",
     "keywords": "sensitive,leak"
   },
   "CVE-2024-44239": {
-    "cvss": "-",
+    "cvss": 5.5,
     "description": "An information disclosure issue was addressed with improved private data redaction for log entries. This issue is fixed in tvOS 18.1, iOS 18.1 and iPadOS 18.1, iOS 17.7.1 and iPadOS 17.7.1, macOS Ventura 13.7.1, macOS Sonoma 14.7.1, watchOS 11.1, visionOS 2.1. An app may be able to leak sensitive kernel state.",
     "published": "2024-10-28T21:15:06.580",
     "keywords": "sensitive,leak"
@@ -304,5 +304,29 @@
     "description": "The LevelOne WBR-6012 router contains a vulnerability within its web application that allows unauthenticated disclosure of sensitive information, such as the WiFi WPS PIN, through a hidden page accessible by an HTTP request. Disclosure of this information could enable attackers to connect to the device's WiFi network.",
     "published": "2024-10-30T14:15:06.850",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-31972": {
+    "cvss": "-",
+    "description": "EnGenius ESR580 A8J-EMR5000 devices allow a remote attacker to conduct stored XSS attacks that could lead to arbitrary JavaScript code execution (under the context of the user's session) via the Wi-Fi SSID input fields. Web scripts embedded into the vulnerable fields this way are executed immediately when a user logs into the admin page. This affects /admin/wifi/wlan1 and /admin/wifi/wlan_guest.",
+    "published": "2024-10-30T18:15:06.760",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-48214": {
+    "cvss": "-",
+    "description": "KERUI HD 3MP 1080P Tuya Camera 1.0.4 has a command injection vulnerability in the module that connects to the local network via a QR code. This vulnerability allows an attacker to create a custom, unauthenticated QR code and abuse one of the parameters, either SSID or PASSWORD, in the JSON data contained within the QR code. By that, the attacker can execute arbitrary code on the camera.",
+    "published": "2024-10-30T18:15:07.420",
+    "keywords": "unauthenticated,command"
+  },
+  "CVE-2024-48647": {
+    "cvss": "-",
+    "description": "A file disclosure vulnerability exists in Sage 1000 v7.0.0. This vulnerability allows remote attackers to retrieve arbitrary files from the server's file system by manipulating the URL parameter in HTTP requests. The attacker can exploit this flaw to access sensitive information, including configuration files that may contain credentials and system settings, which could lead to further compromise of the server.",
+    "published": "2024-10-30T18:15:07.743",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-9419": {
+    "cvss": 7.8,
+    "description": "Client / Server PCs with the HP Smart Universal Printing Driver installed are potentially vulnerable to Remote Code Execution and/or Elevation of Privilege. A client using the HP Smart Universal Printing Driver that sends a print job comprised of a malicious XPS file could potentially lead to Remote Code Execution and/or Elevation of Privilege on the PC.",
+    "published": "2024-10-30T18:15:08.260",
+    "keywords": "remote,execution"
   }
 }
