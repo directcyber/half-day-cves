@@ -1,16 +1,4 @@
 {
-  "CVE-2024-10428": {
-    "cvss": 7.2,
-    "description": "A vulnerability was found in WAVLINK WN530H4, WN530HG4 and WN572HG3 up to 20221028. It has been rated as critical. This issue affects the function set_ipv6 of the file firewall.cgi. The manipulation of the argument dhcpGateway leads to command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2024-10-27T21:15:02.333",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-10429": {
-    "cvss": 7.2,
-    "description": "A vulnerability classified as critical has been found in WAVLINK WN530H4, WN530HG4 and WN572HG3 up to 20221028. Affected is the function set_ipv6 of the file internet.cgi. The manipulation of the argument IPv6OpMode/IPv6IPAddr/IPv6WANIPAddr/IPv6GWAddr leads to command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2024-10-27T21:15:02.603",
-    "keywords": "remote,command"
-  },
   "CVE-2024-50611": {
     "url": "https://github.com/cyclonedx/cdxgen/issues/1328",
     "cvss": 7.2,
@@ -42,7 +30,7 @@
     "published": "2024-10-27T22:15:03.760"
   },
   "CVE-2024-50623": {
-    "cvss": "-",
+    "cvss": 8.8,
     "description": "In Cleo Harmony before 5.8.0.20, VLTrader before 5.8.0.20, and LexiCom before 5.8.0.20, there is a JavaScript Injection vulnerability: unrestricted file upload and download could lead to remote code execution.",
     "published": "2024-10-28T00:15:03.657",
     "keywords": "remote,execution"
@@ -334,5 +322,29 @@
     "description": "D-Link DSL6740C v6.TR069.20211230 was discovered to use insecure default credentials for Administrator access, possibly allowing attackers to bypass authentication and escalate privileges on the device via a bruteforce attack.",
     "published": "2024-10-30T20:15:04.553",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-48093": {
+    "cvss": "-",
+    "description": "Unrestricted File Upload in the Discussions tab in Operately v.0.1.0 allows a privileged user to achieve Remote Code Execution via uploading and executing malicious files without validating file extensions or content types.",
+    "published": "2024-10-30T21:15:14.337",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-48346": {
+    "url": "https://github.com/xtreme1-io/xtreme1/issues/284",
+    "cvss": "-",
+    "description": "xtreme1 <= v0.9.1 contains a Server-Side Request Forgery (SSRF) vulnerability in the /api/data/upload path. The vulnerability is triggered through the fileUrl parameter, which allows an attacker to make arbitrary requests to internal or external systems.",
+    "published": "2024-10-30T21:15:14.450"
+  },
+  "CVE-2024-48733": {
+    "cvss": "-",
+    "description": "SQL injection vulnerability in /SASStudio/sasexec/sessions/{sessionID}/sql in SAS Studio 9.4 allows remote attacker to execute arbitrary SQL commands via the POST body request.",
+    "published": "2024-10-30T21:15:14.507",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-51243": {
+    "cvss": "-",
+    "description": "The eladmin v2.7 and before contains a remote code execution (RCE) vulnerability that can control all application deployment servers of this management system via DeployController.java.",
+    "published": "2024-10-30T21:15:14.860",
+    "keywords": "remote,execution"
   }
 }
