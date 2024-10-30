@@ -13,7 +13,7 @@
   },
   "CVE-2024-50611": {
     "url": "https://github.com/cyclonedx/cdxgen/issues/1328",
-    "cvss": "-",
+    "cvss": 7.2,
     "description": "CycloneDX cdxgen through 10.10.7, when run against an untrusted codebase, may execute code contained within build-related files such as build.gradle.kts, a similar issue to CVE-2022-24441. cdxgen is used by, for example, OWASP dep-scan. NOTE: this has been characterized as a design limitation, rather than an implementation mistake.",
     "published": "2024-10-27T22:15:03.557"
   },
@@ -144,7 +144,7 @@
     "keywords": "authentication,leak"
   },
   "CVE-2024-44213": {
-    "cvss": 5.9,
+    "cvss": 7.5,
     "description": "An issue existed in the parsing of URLs. This issue was addressed with improved input validation. This issue is fixed in macOS Ventura 13.7.1, macOS Sonoma 14.7.1. An attacker in a privileged network position may be able to leak sensitive user information.",
     "published": "2024-10-28T21:15:06.110",
     "keywords": "sensitive,leak"
