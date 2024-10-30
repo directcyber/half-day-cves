@@ -280,5 +280,11 @@
     "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Deryck O\u00f1ate User Toolkit allows Authentication Bypass.This issue affects User Toolkit: from n/a through 1.2.3.",
     "published": "2024-10-30T08:15:02.813",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-8512": {
+    "cvss": 9.1,
+    "description": "The W3SPEEDSTER plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 7.26 via the 'script' parameter of the hookBeforeStartOptimization() function. This is due to the plugin passing user supplied input to eval(). This makes it possible for authenticated attackers, with Administrator-level access and above, to execute code on the server.",
+    "published": "2024-10-30T11:15:15.963",
+    "keywords": "remote,execution"
   }
 }
