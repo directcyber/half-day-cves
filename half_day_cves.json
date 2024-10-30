@@ -1,10 +1,4 @@
 {
-  "CVE-2024-10412": {
-    "url": "https://github.com/poco-z/guns-medical/issues/15",
-    "cvss": 5.4,
-    "description": "A vulnerability was found in Poco-z Guns-Medical 1.0. It has been declared as problematic. Affected by this vulnerability is the function upload of the file /mgr/upload of the component File Upload. The manipulation of the argument picture leads to cross site scripting. The attack can be launched remotely.",
-    "published": "2024-10-27T08:15:02.540"
-  },
   "CVE-2024-10428": {
     "cvss": 7.2,
     "description": "A vulnerability was found in WAVLINK WN530H4, WN530HG4 and WN572HG3 up to 20221028. It has been rated as critical. This issue affects the function set_ipv6 of the file firewall.cgi. The manipulation of the argument dhcpGateway leads to command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
@@ -280,5 +274,11 @@
     "description": "The The Enable Shortcodes inside Widgets,Comments and Experts plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 1.0.0. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
     "published": "2024-10-30T03:15:04.820",
     "keywords": "execution,unauthenticated"
+  },
+  "CVE-2024-50503": {
+    "cvss": 9.8,
+    "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Deryck O\u00f1ate User Toolkit allows Authentication Bypass.This issue affects User Toolkit: from n/a through 1.2.3.",
+    "published": "2024-10-30T08:15:02.813",
+    "keywords": "authentication,bypass"
   }
 }
