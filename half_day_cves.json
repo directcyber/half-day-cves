@@ -1,10 +1,4 @@
 {
-  "CVE-2024-9162": {
-    "cvss": 7.2,
-    "description": "The All-in-One WP Migration and Backup plugin for WordPress is vulnerable to arbitrary PHP Code Injection due to missing file type validation during the export in all versions up to, and including, 7.86. This makes it possible for authenticated attackers, with Administrator-level access and above, to create an export file with the .php extension on the affected site's server, adding an arbitrary PHP code to it, which may make remote code execution possible.",
-    "published": "2024-10-28T06:15:04.593",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-50477": {
     "cvss": 9.8,
     "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Stacks Stacks Mobile App Builder stacks-mobile-app-builder allows Authentication Bypass.This issue affects Stacks Mobile App Builder: from n/a through 5.2.3.",
@@ -298,5 +292,11 @@
     "description": "The Woo Manage Fraud Orders plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 6.1.7 through publicly exposed log files. This makes it possible for unauthenticated attackers to view potentially sensitive information about users contained in the exposed log files.",
     "published": "2024-10-31T02:15:03.080",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-10392": {
+    "cvss": 9.8,
+    "description": "The AI Power: Complete AI Pack plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'handle_image_upload' function in all versions up to, and including, 1.8.89. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-10-31T06:15:04.400",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
