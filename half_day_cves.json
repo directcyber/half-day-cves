@@ -1,34 +1,4 @@
 {
-  "CVE-2024-48195": {
-    "cvss": 6.1,
-    "description": "Cross Site Scripting vulnerability in eyouCMS v.1.6.7 allows a remote attacker to obtain sensitive information via a crafted script to the post parameter.",
-    "published": "2024-10-28T20:15:05.903",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-48196": {
-    "cvss": 7.5,
-    "description": "An issue in eyouCMS v.1.6.7 allows a remote attacker to obtain sensitive information via a crafted script to the post parameter.",
-    "published": "2024-10-28T20:15:05.960",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-48825": {
-    "cvss": 8.0,
-    "description": "Tenda AC7 v.15.03.06.44 ate_ifconfig_set has pre-authentication command injection allowing remote attackers to execute arbitrary code.",
-    "published": "2024-10-28T20:15:06.173",
-    "keywords": "remote,authentication,command"
-  },
-  "CVE-2024-48826": {
-    "cvss": 8.0,
-    "description": "Tenda AC7 v.15.03.06.44 ate_iwpriv_set has pre-authentication command injection allowing remote attackers to execute arbitrary code.",
-    "published": "2024-10-28T20:15:06.237",
-    "keywords": "remote,authentication,command"
-  },
-  "CVE-2024-49755": {
-    "cvss": 3.1,
-    "description": "Duende IdentityServer is an OpenID Connect and OAuth 2.x framework for ASP.NET Core. IdentityServer's local API authentication handler performs insufficient validation of the cnf claim in DPoP access tokens. This allows an attacker to use leaked DPoP access tokens at local api endpoints even without possessing the private key for signing proof tokens. Note that this only impacts custom endpoints within an IdentityServer implementation that have explicitly used the LocalApiAuthenticationHandler for authentication. This vulnerability is patched in IdentityServer 7.0.8. Version 6.3 and below are unaffected, as they do not support DPoP in Local APIs.",
-    "published": "2024-10-28T20:15:06.297",
-    "keywords": "authentication,leak"
-  },
   "CVE-2024-44213": {
     "cvss": 7.5,
     "description": "An issue existed in the parsing of URLs. This issue was addressed with improved input validation. This issue is fixed in macOS Ventura 13.7.1, macOS Sonoma 14.7.1. An attacker in a privileged network position may be able to leak sensitive user information.",
@@ -289,7 +259,7 @@
   },
   "CVE-2024-50356": {
     "url": "https://github.com/frappe/press/commit/ba0007c28ac814260f836849bc07d29beea7deb6",
-    "cvss": 0.0,
+    "cvss": 6.5,
     "description": "Press, a Frappe custom app that runs Frappe Cloud, manages infrastructure, subscription, marketplace, and software-as-a-service (SaaS). The password could be reset by anyone who have access to the mail inbox circumventing the 2FA. Even though they wouldn't be able to login by bypassing the 2FA. Only users who have enabled 2FA are affected. Commit ba0007c28ac814260f836849bc07d29beea7deb6 patches this bug.",
     "published": "2024-10-31T18:15:05.750"
   },
@@ -303,6 +273,12 @@
     "cvss": "-",
     "description": "Webswing 23.2.2 allows remote attackers to modify client-side JavaScript code to achieve path traversal, likely leading to remote code execution via modification of shell scripts on the server.",
     "published": "2024-10-31T19:15:12.897",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-48359": {
+    "cvss": "-",
+    "description": "Qualitor v8.24 was discovered to contain a remote code execution (RCE) vulnerability via the gridValoresPopHidden parameter.",
+    "published": "2024-10-31T20:15:05.340",
     "keywords": "remote,execution"
   }
 }
