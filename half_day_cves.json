@@ -84,7 +84,7 @@
     "keywords": "remote,execution,bypass"
   },
   "CVE-2024-7472": {
-    "cvss": 5.3,
+    "cvss": 6.5,
     "description": "lunary-ai/lunary v1.2.26 contains an email injection vulnerability in the Send email verification API (/v1/users/send-verification) and Sign up API (/auth/signup). An unauthenticated attacker can inject data into outgoing emails by bypassing the extractFirstName function using a different whitespace character (e.g., \\xa0). This vulnerability can be exploited to conduct phishing attacks, damage the application's brand, cause legal and compliance issues, and result in financial impact due to unauthorized email usage.",
     "published": "2024-10-29T13:15:09.093",
     "keywords": "unauthenticated,bypass"
@@ -204,7 +204,7 @@
     "keywords": "unauthenticated,command"
   },
   "CVE-2024-48647": {
-    "cvss": "-",
+    "cvss": 7.2,
     "description": "A file disclosure vulnerability exists in Sage 1000 v7.0.0. This vulnerability allows remote attackers to retrieve arbitrary files from the server's file system by manipulating the URL parameter in HTTP requests. The attacker can exploit this flaw to access sensitive information, including configuration files that may contain credentials and system settings, which could lead to further compromise of the server.",
     "published": "2024-10-30T18:15:07.743",
     "keywords": "remote,sensitive"
@@ -286,5 +286,17 @@
     "cvss": 5.5,
     "description": "gnark is a fast zk-SNARK library that offers a high-level API to design circuits. In gnark 0.11.0 and earlier, deserialization of Groth16 verification keys allocate excessive memory, consuming a lot of resources and triggering a crash with the error fatal error: runtime: out of memory.",
     "published": "2024-10-31T16:15:05.763"
+  },
+  "CVE-2024-50356": {
+    "url": "https://github.com/frappe/press/commit/ba0007c28ac814260f836849bc07d29beea7deb6",
+    "cvss": 0.0,
+    "description": "Press, a Frappe custom app that runs Frappe Cloud, manages infrastructure, subscription, marketplace, and software-as-a-service (SaaS). The password could be reset by anyone who have access to the mail inbox circumventing the 2FA. Even though they wouldn't be able to login by bypassing the 2FA. Only users who have enabled 2FA are affected. Commit ba0007c28ac814260f836849bc07d29beea7deb6 patches this bug.",
+    "published": "2024-10-31T18:15:05.750"
+  },
+  "CVE-2024-51482": {
+    "url": "https://github.com/zoneminder/zoneminder/commit/9e7d31841ed9678a7dd06869037686fc9925e59f",
+    "cvss": 9.9,
+    "description": "ZoneMinder is a free, open source closed-circuit television software application. ZoneMinder v1.37.* <= 1.37.64 is vulnerable to boolean-based SQL Injection in function of web/ajax/event.php. This is fixed in 1.37.64.",
+    "published": "2024-10-31T18:15:05.997"
   }
 }

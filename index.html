@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-10-31T18:15:07.568879
+Updated at UTC 2024-10-31T19:08:46.703049
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,30 @@ Updated at UTC 2024-10-31T18:15:07.568879
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-51482">CVE-2024-51482</a></td>
+					<td>9.9</td>
+					<td><a target=_blank href="https://github.com/zoneminder/zoneminder/commit/9e7d31841ed9678a7dd06869037686fc9925e59f">https://github.com/zoneminder/zoneminder/commit/9e7d31841ed9678a7dd06869037686fc9925e59f</a></td>
+					<td class=date>2024-10-31T18:15:05.997</td>
+					<td class=description>ZoneMinder is a free, open source closed-circuit television software application. ZoneMinder v1.37.* <= 1.37.64 is vulnerable to boolean-based SQL Injection in function of web/ajax/event.php. This is fixed in 1.37.64.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50356">CVE-2024-50356</a></td>
+					<td>0.0</td>
+					<td><a target=_blank href="https://github.com/frappe/press/commit/ba0007c28ac814260f836849bc07d29beea7deb6">https://github.com/frappe/press/commit/ba0007c28ac814260f836849bc07d29beea7deb6</a></td>
+					<td class=date>2024-10-31T18:15:05.750</td>
+					<td class=description>Press, a Frappe custom app that runs Frappe Cloud, manages infrastructure, subscription, marketplace, and software-as-a-service (SaaS). The password could be reset by anyone who have access to the mail inbox circumventing the 2FA. Even though they wouldn't be able to login by bypassing the 2FA. Only users who have enabled 2FA are affected. Commit ba0007c28ac814260f836849bc07d29beea7deb6 patches this bug.</td>
+
+
+				</tr>
+			
 		
 			
 				<tr>
@@ -210,6 +234,10 @@ Updated at UTC 2024-10-31T18:15:07.568879
 			
 		
 			
+		
+			
+		
+			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8553">CVE-2024-8553</a></td>
 					<td>6.3</td>
@@ -323,7 +351,7 @@ Users are recommended to upgrade to version 4.8.0-beta00017, which fixes the iss
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48647">CVE-2024-48647</a></td>
-					<td>-</td>
+					<td>7.2</td>
 					<td>remote,sensitive</td>
 					<td class=date>2024-10-30T18:15:07.743</td>
 					<td class=description>A file disclosure vulnerability exists in Sage 1000 v7.0.0. This vulnerability allows remote attackers to retrieve arbitrary files from the server's file system by manipulating the URL parameter in HTTP requests. The attacker can exploit this flaw to access sensitive information, including configuration files that may contain credentials and system settings, which could lead to further compromise of the server.</td>
@@ -507,7 +535,7 @@ Users are recommended to upgrade to version 4.8.0-beta00017, which fixes the iss
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7472">CVE-2024-7472</a></td>
-					<td>5.3</td>
+					<td>6.5</td>
 					<td>unauthenticated,bypass</td>
 					<td class=date>2024-10-29T13:15:09.093</td>
 					<td class=description>lunary-ai/lunary v1.2.26 contains an email injection vulnerability in the Send email verification API (/v1/users/send-verification) and Sign up API (/auth/signup). An unauthenticated attacker can inject data into outgoing emails by bypassing the extractFirstName function using a different whitespace character (e.g., \xa0). This vulnerability can be exploited to conduct phishing attacks, damage the application's brand, cause legal and compliance issues, and result in financial impact due to unauthorized email usage.</td>
