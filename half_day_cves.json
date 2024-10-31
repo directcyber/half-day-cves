@@ -1,22 +1,4 @@
 {
-  "CVE-2024-10438": {
-    "cvss": 7.5,
-    "description": "The eHRD CTMS from Sunnet has an Authentication Bypass vulnerability, allowing unauthenticated remote attackers to bypass authentication by satisfying specific conditions in order to access certain functionalities.",
-    "published": "2024-10-28T03:15:02.423",
-    "keywords": "remote,unauthenticated,authentication,bypass"
-  },
-  "CVE-2024-10439": {
-    "cvss": 7.5,
-    "description": "The eHRD CTMS from Sunnet has an Insecure Direct Object Reference (IDOR) vulnerability, allowing unauthenticated remote attackers to modify a specific parameter to access arbitrary files uploaded by any user.",
-    "published": "2024-10-28T03:15:02.700",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-10440": {
-    "cvss": 9.8,
-    "description": "The eHDR CTMS from Sunnet has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL command to read, modify, and delete database contents.",
-    "published": "2024-10-28T03:15:02.920",
-    "keywords": "remote,unauthenticated,command"
-  },
   "CVE-2024-9162": {
     "cvss": 7.2,
     "description": "The All-in-One WP Migration and Backup plugin for WordPress is vulnerable to arbitrary PHP Code Injection due to missing file type validation during the export in all versions up to, and including, 7.86. This makes it possible for authenticated attackers, with Administrator-level access and above, to create an export file with the .php extension on the affected site's server, adding an arbitrary PHP code to it, which may make remote code execution possible.",
