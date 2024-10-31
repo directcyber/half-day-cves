@@ -1,22 +1,4 @@
 {
-  "CVE-2024-44213": {
-    "cvss": 7.5,
-    "description": "An issue existed in the parsing of URLs. This issue was addressed with improved input validation. This issue is fixed in macOS Ventura 13.7.1, macOS Sonoma 14.7.1. An attacker in a privileged network position may be able to leak sensitive user information.",
-    "published": "2024-10-28T21:15:06.110",
-    "keywords": "sensitive,leak"
-  },
-  "CVE-2024-44239": {
-    "cvss": 5.5,
-    "description": "An information disclosure issue was addressed with improved private data redaction for log entries. This issue is fixed in tvOS 18.1, iOS 18.1 and iPadOS 18.1, iOS 17.7.1 and iPadOS 17.7.1, macOS Ventura 13.7.1, macOS Sonoma 14.7.1, watchOS 11.1, visionOS 2.1. An app may be able to leak sensitive kernel state.",
-    "published": "2024-10-28T21:15:06.580",
-    "keywords": "sensitive,leak"
-  },
-  "CVE-2024-44274": {
-    "cvss": 4.6,
-    "description": "The issue was addressed with improved authentication. This issue is fixed in iOS 17.7.1 and iPadOS 17.7.1, watchOS 11.1, iOS 18.1 and iPadOS 18.1. An attacker with physical access to a locked device may be able to view sensitive user information.",
-    "published": "2024-10-28T21:15:07.807",
-    "keywords": "authentication,sensitive"
-  },
   "CVE-2024-10436": {
     "cvss": 8.8,
     "description": "The WPC Smart Messages for WooCommerce plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 4.2.1 via the get_condition_value function. This makes it possible for authenticated attackers, with Subscriber-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
