@@ -229,7 +229,7 @@
   },
   "CVE-2024-48346": {
     "url": "https://github.com/xtreme1-io/xtreme1/issues/284",
-    "cvss": "-",
+    "cvss": 6.1,
     "description": "xtreme1 <= v0.9.1 contains a Server-Side Request Forgery (SSRF) vulnerability in the /api/data/upload path. The vulnerability is triggered through the fileUrl parameter, which allows an attacker to make arbitrary requests to internal or external systems.",
     "published": "2024-10-30T21:15:14.450"
   },
@@ -247,7 +247,7 @@
   },
   "CVE-2024-48307": {
     "url": "https://github.com/jeecgboot/jeecgboot/issues/7237",
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "JeecgBoot v3.7.1 was discovered to contain a SQL injection vulnerability via the component /onlDragDatasetHead/getTotalData.",
     "published": "2024-10-31T01:15:14.803"
   },
@@ -270,7 +270,7 @@
     "keywords": "remote,execution"
   },
   "CVE-2024-42835": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "langflow v1.0.12 was discovered to contain a remote code execution (RCE) vulnerability via the PythonCodeTool component.",
     "published": "2024-10-31T14:15:05.610",
     "keywords": "remote,execution"
@@ -298,5 +298,11 @@
     "cvss": 9.9,
     "description": "ZoneMinder is a free, open source closed-circuit television software application. ZoneMinder v1.37.* <= 1.37.64 is vulnerable to boolean-based SQL Injection in function of web/ajax/event.php. This is fixed in 1.37.64.",
     "published": "2024-10-31T18:15:05.997"
+  },
+  "CVE-2024-39332": {
+    "cvss": "-",
+    "description": "Webswing 23.2.2 allows remote attackers to modify client-side JavaScript code to achieve path traversal, likely leading to remote code execution via modification of shell scripts on the server.",
+    "published": "2024-10-31T19:15:12.897",
+    "keywords": "remote,execution"
   }
 }
