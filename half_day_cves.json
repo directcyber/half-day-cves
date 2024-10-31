@@ -222,7 +222,7 @@
     "keywords": "authentication,bypass"
   },
   "CVE-2024-48093": {
-    "cvss": "-",
+    "cvss": 8.0,
     "description": "Unrestricted File Upload in the Discussions tab in Operately v.0.1.0 allows a privileged user to achieve Remote Code Execution via uploading and executing malicious files without validating file extensions or content types.",
     "published": "2024-10-30T21:15:14.337",
     "keywords": "remote,execution"
@@ -240,7 +240,7 @@
     "keywords": "remote,command"
   },
   "CVE-2024-51243": {
-    "cvss": "-",
+    "cvss": 7.2,
     "description": "The eladmin v2.7 and before contains a remote code execution (RCE) vulnerability that can control all application deployment servers of this management system via DeployController.java.",
     "published": "2024-10-30T21:15:14.860",
     "keywords": "remote,execution"
@@ -274,5 +274,11 @@
     "description": "langflow v1.0.12 was discovered to contain a remote code execution (RCE) vulnerability via the PythonCodeTool component.",
     "published": "2024-10-31T14:15:05.610",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-8553": {
+    "cvss": 6.3,
+    "description": "A vulnerability was found in Foreman's loader macros introduced with report templates. These macros may allow an authenticated user with permissions to view and create templates to read any field from Foreman's database. By using specific strings in the loader macros, users can bypass permissions and access sensitive information.",
+    "published": "2024-10-31T15:15:17.243",
+    "keywords": "sensitive,bypass"
   }
 }
