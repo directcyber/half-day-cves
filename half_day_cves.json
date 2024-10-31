@@ -1,10 +1,4 @@
 {
-  "CVE-2024-10435": {
-    "cvss": 6.3,
-    "description": "A vulnerability was found in didi Super-Jacoco 1.0. It has been declared as critical. This vulnerability affects unknown code of the file /cov/triggerEnvCov. The manipulation of the argument uuid leads to command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2024-10-28T01:15:02.600",
-    "keywords": "remote,command"
-  },
   "CVE-2024-10438": {
     "cvss": 7.5,
     "description": "The eHRD CTMS from Sunnet has an Authentication Bypass vulnerability, allowing unauthenticated remote attackers to bypass authentication by satisfying specific conditions in order to access certain functionalities.",
@@ -310,5 +304,17 @@
     "description": "The eladmin v2.7 and before contains a remote code execution (RCE) vulnerability that can control all application deployment servers of this management system via DeployController.java.",
     "published": "2024-10-30T21:15:14.860",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-48307": {
+    "url": "https://github.com/jeecgboot/jeecgboot/issues/7237",
+    "cvss": "-",
+    "description": "JeecgBoot v3.7.1 was discovered to contain a SQL injection vulnerability via the component /onlDragDatasetHead/getTotalData.",
+    "published": "2024-10-31T01:15:14.803"
+  },
+  "CVE-2024-10544": {
+    "cvss": 5.3,
+    "description": "The Woo Manage Fraud Orders plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 6.1.7 through publicly exposed log files. This makes it possible for unauthenticated attackers to view potentially sensitive information about users contained in the exposed log files.",
+    "published": "2024-10-31T02:15:03.080",
+    "keywords": "unauthenticated,sensitive"
   }
 }
