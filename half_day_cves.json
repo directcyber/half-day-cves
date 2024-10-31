@@ -192,13 +192,13 @@
     "keywords": "unauthenticated,sensitive"
   },
   "CVE-2024-31972": {
-    "cvss": "-",
+    "cvss": 4.3,
     "description": "EnGenius ESR580 A8J-EMR5000 devices allow a remote attacker to conduct stored XSS attacks that could lead to arbitrary JavaScript code execution (under the context of the user's session) via the Wi-Fi SSID input fields. Web scripts embedded into the vulnerable fields this way are executed immediately when a user logs into the admin page. This affects /admin/wifi/wlan1 and /admin/wifi/wlan_guest.",
     "published": "2024-10-30T18:15:06.760",
     "keywords": "remote,execution"
   },
   "CVE-2024-48214": {
-    "cvss": "-",
+    "cvss": 8.4,
     "description": "KERUI HD 3MP 1080P Tuya Camera 1.0.4 has a command injection vulnerability in the module that connects to the local network via a QR code. This vulnerability allows an attacker to create a custom, unauthenticated QR code and abuse one of the parameters, either SSID or PASSWORD, in the JSON data contained within the QR code. By that, the attacker can execute arbitrary code on the camera.",
     "published": "2024-10-30T18:15:07.420",
     "keywords": "unauthenticated,command"
@@ -216,7 +216,7 @@
     "keywords": "remote,execution"
   },
   "CVE-2024-48271": {
-    "cvss": "-",
+    "cvss": 8.8,
     "description": "D-Link DSL6740C v6.TR069.20211230 was discovered to use insecure default credentials for Administrator access, possibly allowing attackers to bypass authentication and escalate privileges on the device via a bruteforce attack.",
     "published": "2024-10-30T20:15:04.553",
     "keywords": "authentication,bypass"
@@ -280,5 +280,11 @@
     "description": "A vulnerability was found in Foreman's loader macros introduced with report templates. These macros may allow an authenticated user with permissions to view and create templates to read any field from Foreman's database. By using specific strings in the loader macros, users can bypass permissions and access sensitive information.",
     "published": "2024-10-31T15:15:17.243",
     "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-50354": {
+    "url": "https://github.com/consensys/gnark/pull/1307",
+    "cvss": 5.5,
+    "description": "gnark is a fast zk-SNARK library that offers a high-level API to design circuits. In gnark 0.11.0 and earlier, deserialization of Groth16 verification keys allocate excessive memory, consuming a lot of resources and triggering a crash with the error fatal error: runtime: out of memory.",
+    "published": "2024-10-31T16:15:05.763"
   }
 }
