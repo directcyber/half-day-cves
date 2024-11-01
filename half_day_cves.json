@@ -1,10 +1,4 @@
 {
-  "CVE-2024-48063": {
-    "url": "https://github.com/pytorch/pytorch/issues/129228",
-    "cvss": 9.8,
-    "description": "In PyTorch <=2.4.1, the RemoteModule has Deserialization RCE. NOTE: this is disputed by multiple parties because this is intended behavior in PyTorch distributed computing.",
-    "published": "2024-10-29T21:15:04.080"
-  },
   "CVE-2024-48138": {
     "cvss": 9.8,
     "description": "A remote code execution (RCE) vulnerability in the component /PluXml/core/admin/parametres_edittpl.php of PluXml v5.8.16 and lower allows attackers to execute arbitrary code via injecting a crafted payload into a template.",
@@ -192,7 +186,7 @@
     "keywords": "remote,execution"
   },
   "CVE-2024-48359": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "Qualitor v8.24 was discovered to contain a remote code execution (RCE) vulnerability via the gridValoresPopHidden parameter.",
     "published": "2024-10-31T20:15:05.340",
     "keywords": "remote,execution"
