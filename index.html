@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-01T12:20:29.269051
+Updated at UTC 2024-11-01T13:19:08.408039
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -227,13 +227,15 @@ Updated at UTC 2024-11-01T12:20:29.269051
 			
 		
 			
-		
-			
-		
-			
-		
-			
-		
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48063">CVE-2024-48063</a></td>
+					<td>9.8</td>
+					<td><a target=_blank href="https://github.com/pytorch/pytorch/issues/129228">https://github.com/pytorch/pytorch/issues/129228</a></td>
+					<td class=date>2024-10-29T21:15:04.080</td>
+					<td class=description>In PyTorch <=2.4.1, the RemoteModule has Deserialization RCE. NOTE: this is disputed by multiple parties because this is intended behavior in PyTorch distributed computing.</td>
+
+
+				</tr>
 			
 		
 			
@@ -402,9 +404,9 @@ Users are recommended to upgrade to version 4.8.0-beta00017, which fixes the iss
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48733">CVE-2024-48733</a></td>
 					<td>-</td>
-					<td>remote,command</td>
+					<td>remote,execution,command</td>
 					<td class=date>2024-10-30T21:15:14.507</td>
-					<td class=description>SQL injection vulnerability in /SASStudio/sasexec/sessions/{sessionID}/sql in SAS Studio 9.4 allows remote attacker to execute arbitrary SQL commands via the POST body request.</td>
+					<td class=description>SQL injection vulnerability in /SASStudio/sasexec/sessions/{sessionID}/sql in SAS Studio 9.4 allows remote attacker to execute arbitrary SQL commands via the POST body request. NOTE: this is disputed by the vendor because SQL statement execution is allowed for authorized users.</td>
 				</tr>
 			
 		
@@ -575,6 +577,8 @@ Users are recommended to upgrade to version 4.8.0-beta00017, which fixes the iss
 			
 		
 			
+		
+			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9989">CVE-2024-9989</a></td>
 					<td>9.8</td>
@@ -621,59 +625,6 @@ Users are recommended to upgrade to version 4.8.0-beta00017, which fixes the iss
 					<td>unauthenticated,authentication,sensitive,bypass</td>
 					<td class=date>2024-10-29T15:15:12.560</td>
 					<td class=description>Scoold is a Q&A and a knowledge sharing platform for teams. A semicolon path injection vulnerability was found on the /api;/config endpoint. By appending a semicolon in the URL, attackers can bypass authentication and gain unauthorised access to sensitive configuration data. Furthermore, PUT requests on the /api;/config endpoint while setting the Content-Type: application/hocon header allow unauthenticated attackers to file reading via HOCON file inclusion. This allows attackers to retrieve sensitive information such as configuration files from the server, which can be leveraged for further exploitation. The vulnerability has been fixed in Scoold 1.64.0. A workaround would be to disable the Scoold API with scoold.api_enabled = false.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7472">CVE-2024-7472</a></td>
-					<td>6.5</td>
-					<td>unauthenticated,bypass</td>
-					<td class=date>2024-10-29T13:15:09.093</td>
-					<td class=description>lunary-ai/lunary v1.2.26 contains an email injection vulnerability in the Send email verification API (/v1/users/send-verification) and Sign up API (/auth/signup). An unauthenticated attacker can inject data into outgoing emails by bypassing the extractFirstName function using a different whitespace character (e.g., \xa0). This vulnerability can be exploited to conduct phishing attacks, damage the application's brand, cause legal and compliance issues, and result in financial impact due to unauthorized email usage.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6868">CVE-2024-6868</a></td>
-					<td>8.1</td>
-					<td>remote,execution,bypass</td>
-					<td class=date>2024-10-29T13:15:08.473</td>
-					<td class=description>mudler/LocalAI version 2.17.1 allows for arbitrary file write due to improper handling of automatic archive extraction. When model configurations specify additional files as archives (e.g., .tar), these archives are automatically extracted after downloading. This behavior can be exploited to perform a 'tarslip' attack, allowing files to be written to arbitrary locations on the server, bypassing checks that normally restrict files to the models directory. This vulnerability can lead to remote code execution (RCE) by overwriting backend assets used by the server.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6581">CVE-2024-6581</a></td>
-					<td>6.5</td>
-					<td>remote,execution</td>
-					<td class=date>2024-10-29T13:15:07.840</td>
-					<td class=description>A vulnerability in the discussion image upload function of the Lollms application, version v9.9, allows for the uploading of SVG files. Due to incomplete filtering in the sanitize_svg function, this can lead to cross-site scripting (XSS) vulnerabilities, which in turn pose a risk of remote code execution. The sanitize_svg function only removes script elements and 'on*' event attributes, but does not account for other potential vectors for XSS within SVG files. This vulnerability can be exploited when authorized users access a malicious URL containing the crafted SVG file.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5982">CVE-2024-5982</a></td>
-					<td>9.1</td>
-					<td>remote,execution,leak</td>
-					<td class=date>2024-10-29T13:15:07.637</td>
-					<td class=description>A path traversal vulnerability exists in the latest version of gaizhenbiao/chuanhuchatgpt. The vulnerability arises from unsanitized input handling in multiple features, including user upload, directory creation, and template loading. Specifically, the load_chat_history function in modules/models/base_model.py allows arbitrary file uploads, potentially leading to remote code execution (RCE). The get_history_names function in utils.py permits arbitrary directory creation. Additionally, the load_template function in utils.py can be exploited to leak the first column of CSV files. These issues stem from improper sanitization of user inputs concatenated with directory paths using os.path.join.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41153">CVE-2024-41153</a></td>
-					<td>7.2</td>
-					<td>execution,command</td>
-					<td class=date>2024-10-29T13:15:04.600</td>
-					<td class=description>Command injection vulnerability in the Edge Computing UI for the
-TRO600 series radios that allows for the execution of arbitrary system commands. If exploited, an attacker with write access to the
-web UI can execute commands on the device with root privileges,
-far more extensive than what the write privilege intends.</td>
 				</tr>
 			
 		
