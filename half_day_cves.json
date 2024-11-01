@@ -1,16 +1,4 @@
 {
-  "CVE-2024-7985": {
-    "cvss": 7.5,
-    "description": "The FileOrganizer \u2013 Manage WordPress and Website Files plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the \"fileorganizer_ajax_handler\" function in all versions up to, and including, 1.0.9. This makes it possible for authenticated attackers, with Subscriber-level access and above, and permissions granted by an administrator, to upload arbitrary files on the affected site's server which may make remote code execution possible. NOTE: The FileOrganizer Pro plugin must be installed and active to allow Subscriber+ users to upload files.",
-    "published": "2024-10-29T16:15:06.180",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-8923": {
-    "cvss": 9.8,
-    "description": "ServiceNow has addressed an input validation vulnerability that was identified in the Now Platform. This vulnerability could enable an unauthenticated user to remotely execute code within the context of the Now Platform.\u00a0ServiceNow deployed an update to hosted instances and ServiceNow provided the update to our partners and self-hosted customers.\u00a0Further, the vulnerability is addressed in the listed patches and hot fixes.",
-    "published": "2024-10-29T16:15:06.417",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2024-9988": {
     "cvss": 9.8,
     "description": "The Crypto plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 2.15. This is due to missing validation on the user being supplied in the 'crypto_connect_ajax_process::register' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the username.",
@@ -210,7 +198,7 @@
     "published": "2024-10-31T18:15:05.997"
   },
   "CVE-2024-39332": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "Webswing 23.2.2 allows remote attackers to modify client-side JavaScript code to achieve path traversal, likely leading to remote code execution via modification of shell scripts on the server.",
     "published": "2024-10-31T19:15:12.897",
     "keywords": "remote,execution"
@@ -268,5 +256,23 @@
     "cvss": "-",
     "description": "Floodlight SDN OpenFlow Controller v.1.2 has an issue that allows local hosts to construct false broadcast ports causing inter-host communication anomalies.",
     "published": "2024-11-01T14:15:07.193"
+  },
+  "CVE-2024-22733": {
+    "cvss": "-",
+    "description": "TP Link MR200 V4 Firmware version 210201 was discovered to contain a null-pointer-dereference in the web administration panel on /cgi/login via the sign, Action or LoginStatus query parameters which could lead to a denial of service by a local or remote unauthenticated attacker.",
+    "published": "2024-11-01T16:15:08.077",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-40490": {
+    "cvss": "-",
+    "description": "An issue in Sourcebans++ before v.1.8.0 allows a remote attacker to obtain sensitive information via a crafted XAJAX call to the Forgot Password function.",
+    "published": "2024-11-01T16:15:08.793",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-51377": {
+    "url": "https://github.com/ladybirdweb/faveo-helpdesk/issues/8303",
+    "cvss": "-",
+    "description": "An issue in Ladybird Web Solution Faveo Helpdesk & Servicedesk (On-Premise and Cloud) 9.2.0 allows a remote attacker to execute arbitrary code via the Subject and Identifier fields",
+    "published": "2024-11-01T16:15:09.400"
   }
 }
