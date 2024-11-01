@@ -211,7 +211,7 @@
   },
   "CVE-2024-50356": {
     "url": "https://github.com/frappe/press/commit/ba0007c28ac814260f836849bc07d29beea7deb6",
-    "cvss": 6.5,
+    "cvss": 0.0,
     "description": "Press, a Frappe custom app that runs Frappe Cloud, manages infrastructure, subscription, marketplace, and software-as-a-service (SaaS). The password could be reset by anyone who have access to the mail inbox circumventing the 2FA. Even though they wouldn't be able to login by bypassing the 2FA. Only users who have enabled 2FA are affected. Commit ba0007c28ac814260f836849bc07d29beea7deb6 patches this bug.",
     "published": "2024-10-31T18:15:05.750"
   },
@@ -268,5 +268,17 @@
     "description": "A vulnerability has been found in TOTOLINK LR350 up to 9.3.5u.6369 and classified as critical. Affected by this vulnerability is an unknown functionality of the file /formLoginAuth.htm. The manipulation of the argument authCode with the input 1 leads to authorization bypass. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
     "published": "2024-11-01T12:15:03.077",
     "keywords": "remote,bypass"
+  },
+  "CVE-2024-51406": {
+    "url": "https://github.com/floodlight/floodlight/issues/870",
+    "cvss": "-",
+    "description": "Floodlight SDN Open Flow Controller v.1.2 has an issue that allows local hosts to build fake LLDP packets that allow specific clusters to be missed by Floodlight, which in turn leads to missed hosts inside and outside the cluster.",
+    "published": "2024-11-01T14:15:07.073"
+  },
+  "CVE-2024-51407": {
+    "url": "https://github.com/floodlight/floodlight/issues/869",
+    "cvss": "-",
+    "description": "Floodlight SDN OpenFlow Controller v.1.2 has an issue that allows local hosts to construct false broadcast ports causing inter-host communication anomalies.",
+    "published": "2024-11-01T14:15:07.193"
   }
 }
