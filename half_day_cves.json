@@ -268,5 +268,17 @@
     "description": "The SIP Reviews Shortcode for WooCommerce plugin for WordPress is vulnerable to SQL Injection via the 'no_of_reviews' attribute in the woocommerce_reviews shortcode in all versions up to, and including, 1.2.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
     "published": "2024-10-31T22:15:03.577",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-10620": {
+    "cvss": 5.3,
+    "description": "A vulnerability was found in knightliao Disconf 2.6.36. It has been classified as critical. This affects an unknown part of the file /api/config/list of the component Configuration Center. The manipulation leads to improper authentication. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2024-11-01T05:15:05.167",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2024-21510": {
+    "url": "https://github.com/sinatra/sinatra/pull/2010",
+    "cvss": 5.4,
+    "description": "Versions of the package sinatra from 0.0.0 are vulnerable to Reliance on Untrusted Inputs in a Security Decision via the X-Forwarded-Host (XFH) header. When making a request to a method with redirect applied, it is possible to trigger an Open Redirect Attack by inserting an arbitrary address into this header. If used for caching purposes, such as with servers like Nginx, or as a reverse proxy, without handling the X-Forwarded-Host header, attackers can potentially exploit Cache Poisoning or Routing-based SSRF.",
+    "published": "2024-11-01T05:15:05.640"
   }
 }
