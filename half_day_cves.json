@@ -1,22 +1,4 @@
 {
-  "CVE-2024-23309": {
-    "cvss": 9.0,
-    "description": "The LevelOne WBR-6012 router with firmware R0.40e6 has an authentication bypass vulnerability in its web application due to reliance on client IP addresses for authentication. Attackers could spoof an IP address to gain unauthorized access without needing a session token.",
-    "published": "2024-10-30T14:15:04.153",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-33603": {
-    "cvss": 5.3,
-    "description": "The LevelOne WBR-6012 router has an information disclosure vulnerability in its web application, which allows unauthenticated users to access a verbose system log page and obtain sensitive data, such as memory addresses and IP addresses for login attempts. This flaw could lead to session hijacking due to the device's reliance on IP address for authentication.",
-    "published": "2024-10-30T14:15:06.330",
-    "keywords": "unauthenticated,authentication,sensitive"
-  },
-  "CVE-2024-33626": {
-    "cvss": 5.3,
-    "description": "The LevelOne WBR-6012 router contains a vulnerability within its web application that allows unauthenticated disclosure of sensitive information, such as the WiFi WPS PIN, through a hidden page accessible by an HTTP request. Disclosure of this information could enable attackers to connect to the device's WiFi network.",
-    "published": "2024-10-30T14:15:06.850",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2024-31972": {
     "cvss": 4.3,
     "description": "EnGenius ESR580 A8J-EMR5000 devices allow a remote attacker to conduct stored XSS attacks that could lead to arbitrary JavaScript code execution (under the context of the user's session) via the Wi-Fi SSID input fields. Web scripts embedded into the vulnerable fields this way are executed immediately when a user logs into the admin page. This affects /admin/wifi/wlan1 and /admin/wifi/wlan_guest.",
