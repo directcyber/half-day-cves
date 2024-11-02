@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-02T11:08:40.212667
+Updated at UTC 2024-11-02T12:19:23.882344
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-11-02T11:08:40.212667
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -218,10 +220,18 @@ Updated at UTC 2024-11-02T11:08:40.212667
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10697">CVE-2024-10697</a></td>
+					<td>6.3</td>
+					<td>remote,command</td>
+					<td class=date>2024-11-02T12:15:15.780</td>
+					<td class=description>A vulnerability has been found in Tenda AC6 15.03.05.19 and classified as critical. Affected by this vulnerability is the function formWriteFacMac of the file /goform/WriteFacMac of the component API Endpoint. The manipulation of the argument The leads to command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -505,16 +515,6 @@ Users are recommended to upgrade to version 4.8.0-beta00017, which fixes the iss
 					<td>authentication,bypass</td>
 					<td class=date>2024-10-30T14:15:04.153</td>
 					<td class=description>The LevelOne WBR-6012 router with firmware R0.40e6 has an authentication bypass vulnerability in its web application due to reliance on client IP addresses for authentication. Attackers could spoof an IP address to gain unauthorized access without needing a session token.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8512">CVE-2024-8512</a></td>
-					<td>9.1</td>
-					<td>remote,execution</td>
-					<td class=date>2024-10-30T11:15:15.963</td>
-					<td class=description>The W3SPEEDSTER plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 7.26 via the 'script' parameter of the hookBeforeStartOptimization() function. This is due to the plugin passing user supplied input to eval(). This makes it possible for authenticated attackers, with Administrator-level access and above, to execute code on the server.</td>
 				</tr>
 			
 		
