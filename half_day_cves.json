@@ -1,28 +1,4 @@
 {
-  "CVE-2024-48093": {
-    "cvss": 8.0,
-    "description": "Unrestricted File Upload in the Discussions tab in Operately v.0.1.0 allows a privileged user to achieve Remote Code Execution via uploading and executing malicious files without validating file extensions or content types.",
-    "published": "2024-10-30T21:15:14.337",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-48346": {
-    "url": "https://github.com/xtreme1-io/xtreme1/issues/284",
-    "cvss": 6.1,
-    "description": "xtreme1 <= v0.9.1 contains a Server-Side Request Forgery (SSRF) vulnerability in the /api/data/upload path. The vulnerability is triggered through the fileUrl parameter, which allows an attacker to make arbitrary requests to internal or external systems.",
-    "published": "2024-10-30T21:15:14.450"
-  },
-  "CVE-2024-48733": {
-    "cvss": "-",
-    "description": "SQL injection vulnerability in /SASStudio/sasexec/sessions/{sessionID}/sql in SAS Studio 9.4 allows remote attacker to execute arbitrary SQL commands via the POST body request. NOTE: this is disputed by the vendor because SQL statement execution is allowed for authorized users.",
-    "published": "2024-10-30T21:15:14.507",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-51243": {
-    "cvss": 7.2,
-    "description": "The eladmin v2.7 and before contains a remote code execution (RCE) vulnerability that can control all application deployment servers of this management system via DeployController.java.",
-    "published": "2024-10-30T21:15:14.860",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-48307": {
     "url": "https://github.com/jeecgboot/jeecgboot/issues/7237",
     "cvss": 9.8,
