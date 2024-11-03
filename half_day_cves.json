@@ -1,10 +1,4 @@
 {
-  "CVE-2024-6479": {
-    "cvss": 6.5,
-    "description": "The SIP Reviews Shortcode for WooCommerce plugin for WordPress is vulnerable to SQL Injection via the 'no_of_reviews' attribute in the woocommerce_reviews shortcode in all versions up to, and including, 1.2.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
-    "published": "2024-10-31T22:15:03.577",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2024-10620": {
     "cvss": 5.3,
     "description": "A vulnerability was found in knightliao Disconf 2.6.36. It has been classified as critical. This affects an unknown part of the file /api/config/list of the component Configuration Center. The manipulation leads to improper authentication. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
