@@ -1,22 +1,4 @@
 {
-  "CVE-2024-22733": {
-    "cvss": "-",
-    "description": "TP Link MR200 V4 Firmware version 210201 was discovered to contain a null-pointer-dereference in the web administration panel on /cgi/login via the sign, Action or LoginStatus query parameters which could lead to a denial of service by a local or remote unauthenticated attacker.",
-    "published": "2024-11-01T16:15:08.077",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-40490": {
-    "cvss": "-",
-    "description": "An issue in Sourcebans++ before v.1.8.0 allows a remote attacker to obtain sensitive information via a crafted XAJAX call to the Forgot Password function.",
-    "published": "2024-11-01T16:15:08.793",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-51377": {
-    "url": "https://github.com/ladybirdweb/faveo-helpdesk/issues/8303",
-    "cvss": "-",
-    "description": "An issue in Ladybird Web Solution Faveo Helpdesk & Servicedesk (On-Premise and Cloud) 9.2.0 allows a remote attacker to execute arbitrary code via the Subject and Identifier fields",
-    "published": "2024-11-01T16:15:09.400"
-  },
   "CVE-2024-49770": {
     "cvss": "-",
     "description": "`oak` is a middleware framework for Deno's native HTTP server, Deno Deploy, Node.js 16.5 and later, Cloudflare Workers and Bun. By default `oak` does not allow transferring of hidden files with `Context.send` API. However, prior to version 17.1.3, this can be bypassed by encoding `/` as its URL encoded form `%2F`. For an attacker this has potential to read sensitive user data or to gain access to server secrets. Version 17.1.3 fixes the issue.",
@@ -31,7 +13,7 @@
   },
   "CVE-2024-10389": {
     "url": "https://github.com/google/safearchive/commit/f7ce9d7b6f9c6ecd72d0b0f16216b046e55e44dc",
-    "cvss": "-",
+    "cvss": 5.3,
     "description": "There exists a Path Traversal vulnerability in Safearchive on Platforms with Case-Insensitive Filesystems (e.g., NTFS). This allows Attackers to Write Arbitrary Files via Archive Extraction containing symbolic links. We recommend upgrading past commit\u00a0f7ce9d7b6f9c6ecd72d0b0f16216b046e55e44dc",
     "published": "2024-11-04T11:15:04.647"
   },
