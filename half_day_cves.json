@@ -1,16 +1,4 @@
 {
-  "CVE-2024-51406": {
-    "url": "https://github.com/floodlight/floodlight/issues/870",
-    "cvss": "-",
-    "description": "Floodlight SDN Open Flow Controller v.1.2 has an issue that allows local hosts to build fake LLDP packets that allow specific clusters to be missed by Floodlight, which in turn leads to missed hosts inside and outside the cluster.",
-    "published": "2024-11-01T14:15:07.073"
-  },
-  "CVE-2024-51407": {
-    "url": "https://github.com/floodlight/floodlight/issues/869",
-    "cvss": "-",
-    "description": "Floodlight SDN OpenFlow Controller v.1.2 has an issue that allows local hosts to construct false broadcast ports causing inter-host communication anomalies.",
-    "published": "2024-11-01T14:15:07.193"
-  },
   "CVE-2024-22733": {
     "cvss": "-",
     "description": "TP Link MR200 V4 Firmware version 210201 was discovered to contain a null-pointer-dereference in the web administration panel on /cgi/login via the sign, Action or LoginStatus query parameters which could lead to a denial of service by a local or remote unauthenticated attacker.",
@@ -36,7 +24,7 @@
     "keywords": "sensitive,bypass"
   },
   "CVE-2024-10697": {
-    "cvss": 6.3,
+    "cvss": 9.8,
     "description": "A vulnerability has been found in Tenda AC6 15.03.05.19 and classified as critical. Affected by this vulnerability is the function formWriteFacMac of the file /goform/WriteFacMac of the component API Endpoint. The manipulation of the argument The leads to command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
     "published": "2024-11-02T12:15:15.780",
     "keywords": "remote,command"
