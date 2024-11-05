@@ -78,7 +78,7 @@
     "published": "2024-11-04T17:15:08.050"
   },
   "CVE-2024-51327": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "SQL Injection in loginform.php in ProjectWorld's Travel Management System v1.0 allows remote attackers to bypass authentication via SQL Injection in the 'username' and 'password' fields.",
     "published": "2024-11-04T18:15:05.310",
     "keywords": "remote,authentication,bypass"
@@ -166,5 +166,11 @@
     "description": "The LSC Smart Connect Indoor IP Camera V7.6.32 is vulnerable to an information disclosure issue where live camera footage can be accessed through the RTSP protocol on port 8554 without requiring authentication. This allows unauthorized users with network access to view the camera's feed, potentially compromising user privacy and security. No credentials or special permissions are required, and access can be gained remotely over the network.",
     "published": "2024-11-05T17:15:07.383",
     "keywords": "remote,authentication"
+  },
+  "CVE-2024-50102": {
+    "cvss": "-",
+    "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nx86: fix user address masking non-canonical speculation issue\n\nIt turns out that AMD has a \"Meltdown Lite(tm)\" issue with non-canonical\naccesses in kernel space.  And so using just the high bit to decide\nwhether an access is in user space or kernel space ends up with the good\nold \"leak speculative data\" if you have the right gadget using the\nresult:\n\n  CVE-2020-12965 \u201cTransient Execution of Non-Canonical Accesses\u201c\n\nNow, the kernel surrounds the access with a STAC/CLAC pair, and those\ninstructions end up serializing execution on older Zen architectures,\nwhich closes the speculation window.\n\nBut that was true only up until Zen 5, which renames the AC bit [1].\nThat improves performance of STAC/CLAC a lot, but also means that the\nspeculation window is now open.\n\nNote that this affects not just the new address masking, but also the\nregular valid_user_address() check used by access_ok(), and the asm\nversion of the sign bit check in the get_user() helpers.\n\nIt does not affect put_user() or clear_user() variants, since there's no\nspeculative result to be used in a gadget for those operations.",
+    "published": "2024-11-05T18:15:13.877",
+    "keywords": "execution,leak"
   }
 }

@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-05T18:14:35.789562
+Updated at UTC 2024-11-05T19:08:22.620201
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-11-05T18:14:35.789562
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -146,6 +148,41 @@ Updated at UTC 2024-11-05T18:14:35.789562
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50102">CVE-2024-50102</a></td>
+					<td>-</td>
+					<td>execution,leak</td>
+					<td class=date>2024-11-05T18:15:13.877</td>
+					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
+
+x86: fix user address masking non-canonical speculation issue
+
+It turns out that AMD has a "Meltdown Lite(tm)" issue with non-canonical
+accesses in kernel space.  And so using just the high bit to decide
+whether an access is in user space or kernel space ends up with the good
+old "leak speculative data" if you have the right gadget using the
+result:
+
+  CVE-2020-12965 “Transient Execution of Non-Canonical Accesses“
+
+Now, the kernel surrounds the access with a STAC/CLAC pair, and those
+instructions end up serializing execution on older Zen architectures,
+which closes the speculation window.
+
+But that was true only up until Zen 5, which renames the AC bit [1].
+That improves performance of STAC/CLAC a lot, but also means that the
+speculation window is now open.
+
+Note that this affects not just the new address masking, but also the
+regular valid_user_address() check used by access_ok(), and the asm
+version of the sign bit check in the get_user() helpers.
+
+It does not affect put_user() or clear_user() variants, since there's no
+speculative result to be used in a gadget for those operations.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -300,7 +337,7 @@ code execution with root permissions.</td>
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-51327">CVE-2024-51327</a></td>
-					<td>-</td>
+					<td>9.8</td>
 					<td>remote,authentication,bypass</td>
 					<td class=date>2024-11-04T18:15:05.310</td>
 					<td class=description>SQL Injection in loginform.php in ProjectWorld's Travel Management System v1.0 allows remote attackers to bypass authentication via SQL Injection in the 'username' and 'password' fields.</td>
