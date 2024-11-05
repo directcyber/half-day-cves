@@ -1,10 +1,4 @@
 {
-  "CVE-2024-10697": {
-    "cvss": 9.8,
-    "description": "A vulnerability has been found in Tenda AC6 15.03.05.19 and classified as critical. Affected by this vulnerability is the function formWriteFacMac of the file /goform/WriteFacMac of the component API Endpoint. The manipulation of the argument The leads to command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2024-11-02T12:15:15.780",
-    "keywords": "remote,command"
-  },
   "CVE-2024-10389": {
     "url": "https://github.com/google/safearchive/commit/f7ce9d7b6f9c6ecd72d0b0f16216b046e55e44dc",
     "cvss": 5.3,
@@ -139,7 +133,7 @@
   },
   "CVE-2024-47253": {
     "cvss": 7.2,
-    "description": "In 2N Access Commander versions 3.1.1.2 and prior, a Path Traversal \nvulnerability could allow an attacker to write files on the filesystem \nto achieve arbitrary remote code execution.",
+    "description": "In 2N Access Commander versions 3.1.1.2 and prior, a Path Traversal vulnerability could allow an attacker with administrative privileges to write files on the filesystem and potentially achieve arbitrary remote code execution. This vulnerability cannot be exploited by users with lower privilege roles.",
     "published": "2024-11-05T10:20:03.973",
     "keywords": "remote,execution,command"
   },
