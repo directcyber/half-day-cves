@@ -148,5 +148,11 @@
     "description": "The Tickera \u2013 WordPress Event Ticketing plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 3.5.4.4. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
     "published": "2024-11-05T13:15:03.203",
     "keywords": "execution,unauthenticated"
+  },
+  "CVE-2024-51005": {
+    "cvss": "-",
+    "description": "Netgear R8500 v1.0.2.160 was discovered to contain a command injection vulnerability in the share_name parameter at usb_remote_smb_conf.cgi. This vulnerability allows attackers to execute arbitrary OS commands via a crafted request.",
+    "published": "2024-11-05T15:15:24.470",
+    "keywords": "remote,command"
   }
 }
