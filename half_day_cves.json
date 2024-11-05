@@ -154,5 +154,17 @@
     "description": "Netgear R8500 v1.0.2.160 was discovered to contain a command injection vulnerability in the share_name parameter at usb_remote_smb_conf.cgi. This vulnerability allows attackers to execute arbitrary OS commands via a crafted request.",
     "published": "2024-11-05T15:15:24.470",
     "keywords": "remote,command"
+  },
+  "CVE-2024-50096": {
+    "cvss": "-",
+    "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnouveau/dmem: Fix vulnerability in migrate_to_ram upon copy error\n\nThe `nouveau_dmem_copy_one` function ensures that the copy push command is\nsent to the device firmware but does not track whether it was executed\nsuccessfully.\n\nIn the case of a copy error (e.g., firmware or hardware failure), the\ncopy push command will be sent via the firmware channel, and\n`nouveau_dmem_copy_one` will likely report success, leading to the\n`migrate_to_ram` function returning a dirty HIGH_USER page to the user.\n\nThis can result in a security vulnerability, as a HIGH_USER page that may\ncontain sensitive or corrupted data could be returned to the user.\n\nTo prevent this vulnerability, we allocate a zero page. Thus, in case of\nan error, a non-dirty (zero) page will be returned to the user.",
+    "published": "2024-11-05T17:15:06.870",
+    "keywords": "command,sensitive"
+  },
+  "CVE-2024-51362": {
+    "cvss": "-",
+    "description": "The LSC Smart Connect Indoor IP Camera V7.6.32 is vulnerable to an information disclosure issue where live camera footage can be accessed through the RTSP protocol on port 8554 without requiring authentication. This allows unauthorized users with network access to view the camera's feed, potentially compromising user privacy and security. No credentials or special permissions are required, and access can be gained remotely over the network.",
+    "published": "2024-11-05T17:15:07.383",
+    "keywords": "remote,authentication"
   }
 }

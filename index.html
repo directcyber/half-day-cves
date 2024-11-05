@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-05T17:11:22.475712
+Updated at UTC 2024-11-05T18:14:35.789562
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-11-05T17:11:22.475712
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -142,6 +146,43 @@ Updated at UTC 2024-11-05T17:11:22.475712
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-51362">CVE-2024-51362</a></td>
+					<td>-</td>
+					<td>remote,authentication</td>
+					<td class=date>2024-11-05T17:15:07.383</td>
+					<td class=description>The LSC Smart Connect Indoor IP Camera V7.6.32 is vulnerable to an information disclosure issue where live camera footage can be accessed through the RTSP protocol on port 8554 without requiring authentication. This allows unauthorized users with network access to view the camera's feed, potentially compromising user privacy and security. No credentials or special permissions are required, and access can be gained remotely over the network.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50096">CVE-2024-50096</a></td>
+					<td>-</td>
+					<td>command,sensitive</td>
+					<td class=date>2024-11-05T17:15:06.870</td>
+					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
+
+nouveau/dmem: Fix vulnerability in migrate_to_ram upon copy error
+
+The `nouveau_dmem_copy_one` function ensures that the copy push command is
+sent to the device firmware but does not track whether it was executed
+successfully.
+
+In the case of a copy error (e.g., firmware or hardware failure), the
+copy push command will be sent via the firmware channel, and
+`nouveau_dmem_copy_one` will likely report success, leading to the
+`migrate_to_ram` function returning a dirty HIGH_USER page to the user.
+
+This can result in a security vulnerability, as a HIGH_USER page that may
+contain sensitive or corrupted data could be returned to the user.
+
+To prevent this vulnerability, we allocate a zero page. Thus, in case of
+an error, a non-dirty (zero) page will be returned to the user.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
