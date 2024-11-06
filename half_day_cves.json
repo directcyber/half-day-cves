@@ -244,5 +244,17 @@
     "description": "The JobSearch WP Job Board plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the jobsearch_location_load_excel_file_callback() function in all versions up to, and including, 2.6.7. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
     "published": "2024-11-06T09:15:04.773",
     "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-10914": {
+    "cvss": 8.1,
+    "description": "A vulnerability was found in D-Link DNS-320, DNS-320LW, DNS-325 and DNS-340L up to 20241028. It has been declared as critical. Affected by this vulnerability is the function cgi_user_add of the file /cgi-bin/account_mgr.cgi?cmd=cgi_user_add. The manipulation of the argument name leads to os command injection. The attack can be launched remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used.",
+    "published": "2024-11-06T14:15:05.310",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-10915": {
+    "cvss": 8.1,
+    "description": "A vulnerability was found in D-Link DNS-320, DNS-320LW, DNS-325 and DNS-340L up to 20241028. It has been rated as critical. Affected by this issue is the function cgi_user_add of the file /cgi-bin/account_mgr.cgi?cmd=cgi_user_add. The manipulation of the argument group leads to os command injection. The attack may be launched remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used.",
+    "published": "2024-11-06T14:15:05.783",
+    "keywords": "remote,command"
   }
 }
