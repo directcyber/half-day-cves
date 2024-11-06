@@ -232,5 +232,17 @@
     "description": "The Social Share, Social Login and Social Comments Plugin \u2013 Super Socializer plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 7.13.68. This is due to insufficient verification on the user being returned by the social login token. This makes it possible for unauthenticated attackers to log in as any existing user on the site, if they have access to the email and the user does not have an already-existing account for the service returning the token. An attacker cannot authenticate as an administrator by default, but these accounts are also at risk if authentication for administrators has explicitly been allowed via the social login. The vulnerability was partially patched in version 7.13.68.",
     "published": "2024-11-06T07:15:04.977",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-8614": {
+    "cvss": 9.9,
+    "description": "The JobSearch WP Job Board plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the jobsearch_wp_handle_upload() function in all versions up to, and including, 2.6.7. This makes it possible for authenticated attackers, with subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-11-06T09:15:04.520",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-8615": {
+    "cvss": 10.0,
+    "description": "The JobSearch WP Job Board plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the jobsearch_location_load_excel_file_callback() function in all versions up to, and including, 2.6.7. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-11-06T09:15:04.773",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
