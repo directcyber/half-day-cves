@@ -172,5 +172,41 @@
     "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nx86: fix user address masking non-canonical speculation issue\n\nIt turns out that AMD has a \"Meltdown Lite(tm)\" issue with non-canonical\naccesses in kernel space.  And so using just the high bit to decide\nwhether an access is in user space or kernel space ends up with the good\nold \"leak speculative data\" if you have the right gadget using the\nresult:\n\n  CVE-2020-12965 \u201cTransient Execution of Non-Canonical Accesses\u201c\n\nNow, the kernel surrounds the access with a STAC/CLAC pair, and those\ninstructions end up serializing execution on older Zen architectures,\nwhich closes the speculation window.\n\nBut that was true only up until Zen 5, which renames the AC bit [1].\nThat improves performance of STAC/CLAC a lot, but also means that the\nspeculation window is now open.\n\nNote that this affects not just the new address masking, but also the\nregular valid_user_address() check used by access_ok(), and the asm\nversion of the sign bit check in the get_user() helpers.\n\nIt does not affect put_user() or clear_user() variants, since there's no\nspeculative result to be used in a gadget for those operations.",
     "published": "2024-11-05T18:15:13.877",
     "keywords": "execution,leak"
+  },
+  "CVE-2024-42509": {
+    "cvss": 9.8,
+    "description": "Command injection vulnerability in the underlying CLI service could lead to unauthenticated remote code execution by sending specially crafted packets destined to the PAPI (Aruba's Access Point management protocol) UDP port (8211). Successful exploitation of this vulnerability results in the ability to execute arbitrary code as a privileged user on the underlying operating system.",
+    "published": "2024-11-05T23:15:03.423",
+    "keywords": "remote,execution,unauthenticated,command"
+  },
+  "CVE-2024-47460": {
+    "cvss": 9.0,
+    "description": "Command injection vulnerability in the underlying CLI service could lead to unauthenticated remote code execution by sending specially crafted packets destined to the PAPI (Aruba's Access Point management protocol) UDP port (8211). Successful exploitation of this vulnerability results in the ability to execute arbitrary code as a privileged user on the underlying operating system.",
+    "published": "2024-11-05T23:15:03.610",
+    "keywords": "remote,execution,unauthenticated,command"
+  },
+  "CVE-2024-47462": {
+    "cvss": 7.2,
+    "description": "An arbitrary file creation vulnerability exists in the Instant AOS-8 and AOS-10 command line interface. Successful exploitation of this vulnerability could allow an authenticated remote attacker to create arbitrary files, which could lead to a remote command execution (RCE) on the underlying operating system.",
+    "published": "2024-11-05T23:15:03.957",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2024-47463": {
+    "cvss": 7.2,
+    "description": "An arbitrary file creation vulnerability exists in the Instant AOS-8 and AOS-10 command line interface. Successful exploitation of this vulnerability could allow an authenticated remote attacker to create arbitrary files, which could lead to a remote command execution (RCE) on the underlying operating system.",
+    "published": "2024-11-05T23:15:04.123",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2024-47464": {
+    "cvss": 6.8,
+    "description": "An authenticated Path Traversal vulnerability exists in Instant AOS-8 and AOS-10. Successful exploitation of this vulnerability allows an attacker to copy arbitrary files to a user readable location from the command line interface of the underlying operating system, which could lead to a remote unauthorized access to files.",
+    "published": "2024-11-05T23:15:04.300",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-10028": {
+    "cvss": 7.5,
+    "description": "The Everest Backup \u2013 WordPress Cloud Backup, Migration, Restore & Cloning Plugin plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.2.13 via the exposed process stats file during the backup process. This makes it possible for unauthenticated attackers to obtain an archive file name and download the site's backup.",
+    "published": "2024-11-06T00:15:13.000",
+    "keywords": "unauthenticated,sensitive"
   }
 }
