@@ -24,7 +24,7 @@
     "keywords": "remote,sensitive"
   },
   "CVE-2024-51561": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "This vulnerability exists in Aero due to improper implementation of OTP validation mechanism in certain API endpoints. An authenticated remote attacker could exploit this vulnerability by intercepting and manipulating the responses exchanged during the second factor authentication process.  \n\nSuccessful exploitation of this vulnerability could allow the attacker to bypass OTP verification for accessing other user accounts.",
     "published": "2024-11-04T13:17:05.963",
     "keywords": "remote,authentication,bypass"
@@ -256,5 +256,17 @@
     "description": "A vulnerability was found in D-Link DNS-320, DNS-320LW, DNS-325 and DNS-340L up to 20241028. It has been rated as critical. Affected by this issue is the function cgi_user_add of the file /cgi-bin/account_mgr.cgi?cmd=cgi_user_add. The manipulation of the argument group leads to os command injection. The attack may be launched remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used.",
     "published": "2024-11-06T14:15:05.783",
     "keywords": "remote,command"
+  },
+  "CVE-2024-10081": {
+    "cvss": 10.0,
+    "description": "CodeChecker is an analyzer tooling, defect database and viewer extension for the Clang Static Analyzer and Clang Tidy. \nAuthentication bypass occurs when the API URL ends with Authentication. This bypass allows superuser access to all API endpoints other than Authentication. These endpoints include the ability to add, edit, and remove products, among others. All endpoints, apart from the /Authentication is affected by the vulnerability.\n\nThis issue affects CodeChecker: through 6.24.1.",
+    "published": "2024-11-06T15:15:11.480",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-6861": {
+    "cvss": 7.5,
+    "description": "A disclosure of sensitive information flaw was found in foreman via the GraphQL API. If the introspection feature is enabled, it is possible for attackers to retrieve sensitive admin authentication keys which could result in a compromise of the entire product's API.",
+    "published": "2024-11-06T15:15:20.187",
+    "keywords": "authentication,sensitive"
   }
 }
