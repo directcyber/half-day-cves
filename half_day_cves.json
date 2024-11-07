@@ -366,13 +366,13 @@
     "keywords": "authentication,bypass,leak"
   },
   "CVE-2024-48953": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "An issue was discovered in Logpoint before 7.5.0. Endpoints for creating, editing, or deleting third-party authentication modules lacked proper authorization checks. This allowed unauthenticated users to register their own authentication plugins in Logpoint, resulting in unauthorized access.",
     "published": "2024-11-07T17:15:08.570",
     "keywords": "unauthenticated,authentication"
   },
   "CVE-2024-48954": {
-    "cvss": "-",
+    "cvss": 6.4,
     "description": "An issue was discovered in Logpoint before 7.5.0. Unvalidated input during the EventHub Collector setup by an authenticated user leads to Remote Code execution.",
     "published": "2024-11-07T17:15:08.650",
     "keywords": "remote,execution"
