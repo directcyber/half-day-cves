@@ -1,46 +1,4 @@
 {
-  "CVE-2024-45884": {
-    "cvss": 8.0,
-    "description": "DrayTek Vigor3900 1.5.1.3 contains a post-authentication command injection vulnerability. This vulnerability occurs when the `action` parameter in `cgi-bin/mainfunction.cgi` is set to `setSWMGroup.`",
-    "published": "2024-11-04T15:15:21.937",
-    "keywords": "authentication,command"
-  },
-  "CVE-2024-45885": {
-    "cvss": 8.0,
-    "description": "DrayTek Vigor3900 1.5.1.3 contains a post-authentication command injection vulnerability. This vulnerability occurs when the `action` parameter in `cgi-bin/mainfunction.cgi` is set to `autodiscovery_clear.`",
-    "published": "2024-11-04T15:15:22.040",
-    "keywords": "authentication,command"
-  },
-  "CVE-2024-45887": {
-    "cvss": 8.0,
-    "description": "DrayTek Vigor3900 1.5.1.3 contains a post-authentication command injection vulnerability. This vulnerability occurs when the `action` parameter in `cgi-bin/mainfunction.cgi` is set to `doOpenVPN.`",
-    "published": "2024-11-04T15:15:22.123",
-    "keywords": "authentication,command,vpn"
-  },
-  "CVE-2024-45889": {
-    "cvss": 8.0,
-    "description": "DrayTek Vigor3900 1.5.1.3 contains a post-authentication command injection vulnerability. This vulnerability occurs when the `action` parameter in `cgi-bin/mainfunction.cgi` is set to `commandTable.`",
-    "published": "2024-11-04T15:15:22.297",
-    "keywords": "authentication,command"
-  },
-  "CVE-2024-45890": {
-    "cvss": 8.0,
-    "description": "DrayTek Vigor3900 1.5.1.3 contains a post-authentication command injection vulnerability This vulnerability occurs when the `action` parameter in `cgi-bin/mainfunction.cgi` is set to `download_ovpn.`",
-    "published": "2024-11-04T15:15:22.400",
-    "keywords": "authentication,command,vpn"
-  },
-  "CVE-2024-45891": {
-    "cvss": 8.0,
-    "description": "DrayTek Vigor3900 1.5.1.3 contains a post-authentication command injection vulnerability. This vulnerability occurs when the `action` parameter in `cgi-bin/mainfunction.cgi` is set to `delete_wlan_profile.`",
-    "published": "2024-11-04T15:15:22.477",
-    "keywords": "authentication,command"
-  },
-  "CVE-2024-45893": {
-    "cvss": 8.0,
-    "description": "DrayTek Vigor3900 1.5.1.3 contains a post-authentication command injection vulnerability. This vulnerability occurs when the `action` parameter in `cgi-bin/mainfunction.cgi` is set to `setSWMOption.`",
-    "published": "2024-11-04T15:15:22.560",
-    "keywords": "authentication,command"
-  },
   "CVE-2024-51136": {
     "url": "https://github.com/openimaj/openimaj/issues/382",
     "cvss": 9.8,
@@ -378,7 +336,7 @@
     "published": "2024-11-06T17:15:20.680"
   },
   "CVE-2024-48325": {
-    "cvss": "-",
+    "cvss": 8.1,
     "description": "Portabilis i-Educar 2.8.0 is vulnerable to SQL Injection in the \"getDocuments\" function of the \"InstituicaoDocumentacaoController\" class. The \"instituicao_id\" parameter in \"/module/Api/InstituicaoDocumentacao?oper=get&resource=getDocuments&instituicao_id\" is not properly sanitized, allowing an unauthenticated remote attacker to inject malicious SQL commands.",
     "published": "2024-11-06T23:15:04.367",
     "keywords": "remote,unauthenticated,command"
