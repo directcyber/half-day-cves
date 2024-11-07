@@ -1,10 +1,4 @@
 {
-  "CVE-2024-51136": {
-    "url": "https://github.com/openimaj/openimaj/issues/382",
-    "cvss": 9.8,
-    "description": "An XML External Entity (XXE) vulnerability in Dmoz2CSV in openimaj v1.3.10 allows attackers to access sensitive information or execute arbitrary code via supplying a crafted XML file.",
-    "published": "2024-11-04T17:15:08.050"
-  },
   "CVE-2024-51327": {
     "cvss": 9.8,
     "description": "SQL Injection in loginform.php in ProjectWorld's Travel Management System v1.0 allows remote attackers to bypass authentication via SQL Injection in the 'username' and 'password' fields.",
@@ -342,7 +336,7 @@
     "keywords": "remote,unauthenticated,command"
   },
   "CVE-2024-51504": {
-    "cvss": "-",
+    "cvss": 9.1,
     "description": "When using IPAuthenticationProvider in ZooKeeper Admin Server there is a possibility of Authentication Bypass by Spoofing -- this only impacts IP based authentication implemented in ZooKeeper Admin Server. Default configuration of client's IP address detection in\u00a0IPAuthenticationProvider, which uses HTTP request headers, is weak\u00a0and allows an attacker to bypass authentication via spoofing client's IP address in request headers. Default configuration honors X-Forwarded-For HTTP header to read client's IP address. X-Forwarded-For request header is mainly used by proxy servers to identify the client and can be easily spoofed by an attacker pretending that the request comes from a different IP address. Admin Server commands, such as snapshot and restore arbitrarily can be executed on successful exploitation which could potentially lead to information leakage or service availability issues. Users are recommended to upgrade to version 3.9.3, which fixes this issue.",
     "published": "2024-11-07T10:15:08.297",
     "keywords": "authentication,command,bypass,leak"
@@ -358,5 +352,35 @@
     "cvss": "-",
     "description": "There exists an auth bypass in Google Quickshare where an attacker can upload an unknown file type to a victim.\u00a0The root cause of the vulnerability lies in the fact that when a Payload Transfer frame of type FILE is sent to Quick Share, the file that is contained in this frame is written to disk in the Downloads folder. Quickshare normally deletes unkown files, however an attacker can send two Payload transfer frames of type FILE and the same payload ID. The deletion logic will only delete the first file and not the second. We recommend upgrading past commit\u00a05d8b9156e0c339d82d3dab0849187e8819ad92c0 or\u00a0Quick Share Windows v1.0.2002.2",
     "published": "2024-11-07T16:15:16.923"
+  },
+  "CVE-2024-40715": {
+    "cvss": 7.7,
+    "description": "A vulnerability in Veeam Backup & Replication Enterprise Manager has been identified, which allows attackers to perform authentication bypass. Attackers must be able to perform Man-in-the-Middle (MITM) attack to exploit this vulnerability.",
+    "published": "2024-11-07T17:15:08.083",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-48950": {
+    "cvss": "-",
+    "description": "An issue was discovered in Logpoint before 7.5.0. An endpoint used by Distributed Logpoint Setup was exposed, allowing unauthenticated attackers to bypass CSRF protections and authentication.",
+    "published": "2024-11-07T17:15:08.373",
+    "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-48951": {
+    "cvss": "-",
+    "description": "An issue was discovered in Logpoint before 7.5.0. Server-Side Request Forgery (SSRF) on SOAR can be used to leak Logpoint's API Token leading to authentication bypass.",
+    "published": "2024-11-07T17:15:08.443",
+    "keywords": "authentication,bypass,leak"
+  },
+  "CVE-2024-48953": {
+    "cvss": "-",
+    "description": "An issue was discovered in Logpoint before 7.5.0. Endpoints for creating, editing, or deleting third-party authentication modules lacked proper authorization checks. This allowed unauthenticated users to register their own authentication plugins in Logpoint, resulting in unauthorized access.",
+    "published": "2024-11-07T17:15:08.570",
+    "keywords": "unauthenticated,authentication"
+  },
+  "CVE-2024-48954": {
+    "cvss": "-",
+    "description": "An issue was discovered in Logpoint before 7.5.0. Unvalidated input during the EventHub Collector setup by an authenticated user leads to Remote Code execution.",
+    "published": "2024-11-07T17:15:08.650",
+    "keywords": "remote,execution"
   }
 }

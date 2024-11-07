@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-07T17:09:41.564541
+Updated at UTC 2024-11-07T18:14:32.122694
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,16 @@ Updated at UTC 2024-11-07T17:09:41.564541
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 				<tr>
@@ -206,20 +216,58 @@ Updated at UTC 2024-11-07T17:09:41.564541
 		
 			
 		
+
+		<hr>
+		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-51136">CVE-2024-51136</a></td>
-					<td>9.8</td>
-					<td><a target=_blank href="https://github.com/openimaj/openimaj/issues/382">https://github.com/openimaj/openimaj/issues/382</a></td>
-					<td class=date>2024-11-04T17:15:08.050</td>
-					<td class=description>An XML External Entity (XXE) vulnerability in Dmoz2CSV in openimaj v1.3.10 allows attackers to access sensitive information or execute arbitrary code via supplying a crafted XML file.</td>
-
-
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48954">CVE-2024-48954</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2024-11-07T17:15:08.650</td>
+					<td class=description>An issue was discovered in Logpoint before 7.5.0. Unvalidated input during the EventHub Collector setup by an authenticated user leads to Remote Code execution.</td>
 				</tr>
 			
 		
-
-		<hr>
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48953">CVE-2024-48953</a></td>
+					<td>-</td>
+					<td>unauthenticated,authentication</td>
+					<td class=date>2024-11-07T17:15:08.570</td>
+					<td class=description>An issue was discovered in Logpoint before 7.5.0. Endpoints for creating, editing, or deleting third-party authentication modules lacked proper authorization checks. This allowed unauthenticated users to register their own authentication plugins in Logpoint, resulting in unauthorized access.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48951">CVE-2024-48951</a></td>
+					<td>-</td>
+					<td>authentication,bypass,leak</td>
+					<td class=date>2024-11-07T17:15:08.443</td>
+					<td class=description>An issue was discovered in Logpoint before 7.5.0. Server-Side Request Forgery (SSRF) on SOAR can be used to leak Logpoint's API Token leading to authentication bypass.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48950">CVE-2024-48950</a></td>
+					<td>-</td>
+					<td>unauthenticated,authentication,bypass</td>
+					<td class=date>2024-11-07T17:15:08.373</td>
+					<td class=description>An issue was discovered in Logpoint before 7.5.0. An endpoint used by Distributed Logpoint Setup was exposed, allowing unauthenticated attackers to bypass CSRF protections and authentication.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40715">CVE-2024-40715</a></td>
+					<td>7.7</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-11-07T17:15:08.083</td>
+					<td class=description>A vulnerability in Veeam Backup & Replication Enterprise Manager has been identified, which allows attackers to perform authentication bypass. Attackers must be able to perform Man-in-the-Middle (MITM) attack to exploit this vulnerability.</td>
+				</tr>
+			
 		
 			
 		
@@ -236,7 +284,7 @@ Updated at UTC 2024-11-07T17:09:41.564541
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-51504">CVE-2024-51504</a></td>
-					<td>-</td>
+					<td>9.1</td>
 					<td>authentication,command,bypass,leak</td>
 					<td class=date>2024-11-07T10:15:08.297</td>
 					<td class=description>When using IPAuthenticationProvider in ZooKeeper Admin Server there is a possibility of Authentication Bypass by Spoofing -- this only impacts IP based authentication implemented in ZooKeeper Admin Server. Default configuration of client's IP address detection in IPAuthenticationProvider, which uses HTTP request headers, is weak and allows an attacker to bypass authentication via spoofing client's IP address in request headers. Default configuration honors X-Forwarded-For HTTP header to read client's IP address. X-Forwarded-For request header is mainly used by proxy servers to identify the client and can be easily spoofed by an attacker pretending that the request comes from a different IP address. Admin Server commands, such as snapshot and restore arbitrarily can be executed on successful exploitation which could potentially lead to information leakage or service availability issues. Users are recommended to upgrade to version 3.9.3, which fixes this issue.</td>
@@ -874,8 +922,6 @@ code execution with root permissions.</td>
 					<td class=date>2024-11-04T18:15:05.310</td>
 					<td class=description>SQL Injection in loginform.php in ProjectWorld's Travel Management System v1.0 allows remote attackers to bypass authentication via SQL Injection in the 'username' and 'password' fields.</td>
 				</tr>
-			
-		
 			
 		
 
