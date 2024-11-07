@@ -1,10 +1,4 @@
 {
-  "CVE-2024-10389": {
-    "url": "https://github.com/google/safearchive/commit/f7ce9d7b6f9c6ecd72d0b0f16216b046e55e44dc",
-    "cvss": 5.3,
-    "description": "There exists a Path Traversal vulnerability in Safearchive on Platforms with Case-Insensitive Filesystems (e.g., NTFS). This allows Attackers to Write Arbitrary Files via Archive Extraction containing symbolic links. We recommend upgrading past commit\u00a0f7ce9d7b6f9c6ecd72d0b0f16216b046e55e44dc",
-    "published": "2024-11-04T11:15:04.647"
-  },
   "CVE-2024-51556": {
     "cvss": "-",
     "description": "This vulnerability exists in the Wave 2.0 due to weak encryption of sensitive data received at the API response. An authenticated remote attacker could exploit this vulnerability by manipulating a parameter \u201cuser_id\u201d through API request URLs leading to unauthorized access to sensitive information belonging to other users.",
