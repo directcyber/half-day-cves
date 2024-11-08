@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-08T09:11:46.320693
+Updated at UTC 2024-11-08T10:11:35.441981
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-11-08T09:11:46.320693
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -198,10 +200,24 @@ Updated at UTC 2024-11-08T09:11:46.320693
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50588">CVE-2024-50588</a></td>
+					<td>-</td>
+					<td>remote,unauthenticated,sensitive</td>
+					<td class=date>2024-11-08T09:15:07.680</td>
+					<td class=description>An unauthenticated attacker with access to the local network of the 
+medical office can use known default credentials to gain remote DBA 
+access to the Elefant Firebird database. The data in the database 
+includes patient data and login credentials among other sensitive data. 
+In addition, this enables an attacker to create and overwrite arbitrary 
+files on the server filesystem with the rights of the Firebird database 
+("NT AUTHORITY\SYSTEM").</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -873,16 +889,6 @@ code execution with root permissions.</td>
 					<td>unauthenticated,sensitive</td>
 					<td class=date>2024-11-05T10:15:24.760</td>
 					<td class=description>The Photos, Files, YouTube, Twitter, Instagram, TikTok, Ecommerce Contest Gallery – Upload, Vote, Sell via PayPal, Social Share Buttons plugin for WordPress is vulnerable to time-based SQL Injection via the $collectedIds parameter in all versions up to, and including, 24.0.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10114">CVE-2024-10114</a></td>
-					<td>8.1</td>
-					<td>unauthenticated,authentication,bypass</td>
-					<td class=date>2024-11-05T09:15:03.333</td>
-					<td class=description>The WooCommerce - Social Login plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 2.7.7. This is due to insufficient verification on the user being returned by the social login token. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email and the user does not have an already-existing account for the service returning the token.</td>
 				</tr>
 			
 		

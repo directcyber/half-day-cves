@@ -1,10 +1,4 @@
 {
-  "CVE-2024-10114": {
-    "cvss": 8.1,
-    "description": "The WooCommerce - Social Login plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 2.7.7. This is due to insufficient verification on the user being returned by the social login token. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email and the user does not have an already-existing account for the service returning the token.",
-    "published": "2024-11-05T09:15:03.333",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
   "CVE-2024-10687": {
     "cvss": 9.8,
     "description": "The Photos, Files, YouTube, Twitter, Instagram, TikTok, Ecommerce Contest Gallery \u2013 Upload, Vote, Sell via PayPal, Social Share Buttons plugin for WordPress is vulnerable to time-based SQL Injection via the $collectedIds parameter in all versions up to, and including, 24.0.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
@@ -364,5 +358,11 @@
     "description": "Dell PowerProtect DD, versions prior to 7.7.5.50, contains an Exposure of Sensitive Information to an Unauthorized Actor vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to Information disclosure.",
     "published": "2024-11-08T03:15:04.160",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-50588": {
+    "cvss": "-",
+    "description": "An unauthenticated attacker with access to the local network of the \nmedical office can use known default credentials to gain remote DBA \naccess to the Elefant Firebird database. The data in the database \nincludes patient data and login credentials among other sensitive data. \nIn addition, this enables an attacker to create and overwrite arbitrary \nfiles on the server filesystem with the rights of the Firebird database \n(\"NT AUTHORITY\\SYSTEM\").",
+    "published": "2024-11-08T09:15:07.680",
+    "keywords": "remote,unauthenticated,sensitive"
   }
 }
