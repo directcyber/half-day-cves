@@ -72,13 +72,13 @@
     "keywords": "remote,execution,unauthenticated"
   },
   "CVE-2024-10914": {
-    "cvss": 8.1,
+    "cvss": 9.8,
     "description": "A vulnerability was found in D-Link DNS-320, DNS-320LW, DNS-325 and DNS-340L up to 20241028. It has been declared as critical. Affected by this vulnerability is the function cgi_user_add of the file /cgi-bin/account_mgr.cgi?cmd=cgi_user_add. The manipulation of the argument name leads to os command injection. The attack can be launched remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used.",
     "published": "2024-11-06T14:15:05.310",
     "keywords": "remote,command"
   },
   "CVE-2024-10915": {
-    "cvss": 8.1,
+    "cvss": 9.8,
     "description": "A vulnerability was found in D-Link DNS-320, DNS-320LW, DNS-325 and DNS-340L up to 20241028. It has been rated as critical. Affected by this issue is the function cgi_user_add of the file /cgi-bin/account_mgr.cgi?cmd=cgi_user_add. The manipulation of the argument group leads to os command injection. The attack may be launched remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used.",
     "published": "2024-11-06T14:15:05.783",
     "keywords": "remote,command"
@@ -346,5 +346,23 @@
     "description": "A SQL injection vulnerability in manage_client.php and view_cab.php of Sourcecodester Cab Management System 1.0 allows remote attackers to execute arbitrary SQL commands via the id parameter, leading to unauthorized access and potential compromise of sensitive data within the database.",
     "published": "2024-11-08T18:15:17.463",
     "keywords": "remote,command,sensitive"
+  },
+  "CVE-2024-50810": {
+    "url": "https://github.com/hopetree/izone/issues/289",
+    "cvss": "-",
+    "description": "hopetree izone lts c011b48 contains a Cross Site Scripting (XSS) vulnerability in the article comment function. In \\apps\\comment\\views.py, AddCommintView() does not securely filter user input and renders it directly to the frontend page through templates.",
+    "published": "2024-11-08T19:15:05.877"
+  },
+  "CVE-2024-50811": {
+    "url": "https://github.com/hopetree/izone/issues/290",
+    "cvss": "-",
+    "description": "hopetree izone lts c011b48 contains a server-side request forgery (SSRF) vulnerability in the active push function as \\\\apps\\\\tool\\\\apis\\\\bd_push.py does not securely filter user input through push_urls() and get_urls().",
+    "published": "2024-11-08T19:15:06.020"
+  },
+  "CVE-2024-51055": {
+    "url": "https://github.com/havok89/hoosk/issues/66",
+    "cvss": "-",
+    "description": "An issue Hoosk v1.7.1 allows a remote attacker to execute arbitrary code via a crafted script to the config.php component.",
+    "published": "2024-11-08T19:15:06.190"
   }
 }
