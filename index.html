@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-08T17:10:26.535480
+Updated at UTC 2024-11-08T18:14:30.111765
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-11-08T17:10:26.535480
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -192,12 +194,18 @@ Updated at UTC 2024-11-08T17:10:26.535480
 		
 			
 		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45763">CVE-2024-45763</a></td>
+					<td>9.1</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-11-08T17:15:06.243</td>
+					<td class=description>Dell Enterprise SONiC OS, version(s) 4.1.x, 4.2.x, contain(s) an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Command execution. This is a critical severity vulnerability so Dell recommends customers to upgrade at the earliest opportunity.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -830,43 +838,6 @@ version of the sign bit check in the get_user() helpers.
 
 It does not affect put_user() or clear_user() variants, since there's no
 speculative result to be used in a gadget for those operations.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-51362">CVE-2024-51362</a></td>
-					<td>6.5</td>
-					<td>remote,authentication</td>
-					<td class=date>2024-11-05T17:15:07.383</td>
-					<td class=description>The LSC Smart Connect Indoor IP Camera V7.6.32 is vulnerable to an information disclosure issue where live camera footage can be accessed through the RTSP protocol on port 8554 without requiring authentication. This allows unauthorized users with network access to view the camera's feed, potentially compromising user privacy and security. No credentials or special permissions are required, and access can be gained remotely over the network.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50096">CVE-2024-50096</a></td>
-					<td>-</td>
-					<td>command,sensitive</td>
-					<td class=date>2024-11-05T17:15:06.870</td>
-					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
-
-nouveau/dmem: Fix vulnerability in migrate_to_ram upon copy error
-
-The `nouveau_dmem_copy_one` function ensures that the copy push command is
-sent to the device firmware but does not track whether it was executed
-successfully.
-
-In the case of a copy error (e.g., firmware or hardware failure), the
-copy push command will be sent via the firmware channel, and
-`nouveau_dmem_copy_one` will likely report success, leading to the
-`migrate_to_ram` function returning a dirty HIGH_USER page to the user.
-
-This can result in a security vulnerability, as a HIGH_USER page that may
-contain sensitive or corrupted data could be returned to the user.
-
-To prevent this vulnerability, we allocate a zero page. Thus, in case of
-an error, a non-dirty (zero) page will be returned to the user.</td>
 				</tr>
 			
 		

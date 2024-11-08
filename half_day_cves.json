@@ -1,16 +1,4 @@
 {
-  "CVE-2024-50096": {
-    "cvss": "-",
-    "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnouveau/dmem: Fix vulnerability in migrate_to_ram upon copy error\n\nThe `nouveau_dmem_copy_one` function ensures that the copy push command is\nsent to the device firmware but does not track whether it was executed\nsuccessfully.\n\nIn the case of a copy error (e.g., firmware or hardware failure), the\ncopy push command will be sent via the firmware channel, and\n`nouveau_dmem_copy_one` will likely report success, leading to the\n`migrate_to_ram` function returning a dirty HIGH_USER page to the user.\n\nThis can result in a security vulnerability, as a HIGH_USER page that may\ncontain sensitive or corrupted data could be returned to the user.\n\nTo prevent this vulnerability, we allocate a zero page. Thus, in case of\nan error, a non-dirty (zero) page will be returned to the user.",
-    "published": "2024-11-05T17:15:06.870",
-    "keywords": "command,sensitive"
-  },
-  "CVE-2024-51362": {
-    "cvss": 6.5,
-    "description": "The LSC Smart Connect Indoor IP Camera V7.6.32 is vulnerable to an information disclosure issue where live camera footage can be accessed through the RTSP protocol on port 8554 without requiring authentication. This allows unauthorized users with network access to view the camera's feed, potentially compromising user privacy and security. No credentials or special permissions are required, and access can be gained remotely over the network.",
-    "published": "2024-11-05T17:15:07.383",
-    "keywords": "remote,authentication"
-  },
   "CVE-2024-50102": {
     "cvss": "-",
     "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nx86: fix user address masking non-canonical speculation issue\n\nIt turns out that AMD has a \"Meltdown Lite(tm)\" issue with non-canonical\naccesses in kernel space.  And so using just the high bit to decide\nwhether an access is in user space or kernel space ends up with the good\nold \"leak speculative data\" if you have the right gadget using the\nresult:\n\n  CVE-2020-12965 \u201cTransient Execution of Non-Canonical Accesses\u201c\n\nNow, the kernel surrounds the access with a STAC/CLAC pair, and those\ninstructions end up serializing execution on older Zen architectures,\nwhich closes the speculation window.\n\nBut that was true only up until Zen 5, which renames the AC bit [1].\nThat improves performance of STAC/CLAC a lot, but also means that the\nspeculation window is now open.\n\nNote that this affects not just the new address masking, but also the\nregular valid_user_address() check used by access_ok(), and the asm\nversion of the sign bit check in the get_user() helpers.\n\nIt does not affect put_user() or clear_user() variants, since there's no\nspeculative result to be used in a gadget for those operations.",
@@ -351,6 +339,12 @@
     "cvss": 9.1,
     "description": "Dell Enterprise SONiC OS, version(s) 4.1.x, 4.2.x, contain(s) an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Command execution. This is a critical severity vulnerability as it allows high privilege OS commands to be executed with a less privileged role; so Dell recommends customers to upgrade at the earliest opportunity.",
     "published": "2024-11-08T16:15:23.350",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2024-45763": {
+    "cvss": 9.1,
+    "description": "Dell Enterprise SONiC OS, version(s) 4.1.x, 4.2.x, contain(s) an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Command execution. This is a critical severity vulnerability so Dell recommends customers to upgrade at the earliest opportunity.",
+    "published": "2024-11-08T17:15:06.243",
     "keywords": "remote,execution,command"
   }
 }
