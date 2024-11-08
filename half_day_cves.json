@@ -1,10 +1,4 @@
 {
-  "CVE-2024-10097": {
-    "cvss": 8.1,
-    "description": "The Loginizer Security and Loginizer plugins for WordPress are vulnerable to authentication bypass in all versions up to, and including, 1.9.2. This is due to insufficient verification on the user being returned by the social login token. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email and the user does not have an already-existing account for the service returning the token.",
-    "published": "2024-11-05T07:15:13.327",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
   "CVE-2024-47137": {
     "cvss": 8.4,
     "description": "in OpenHarmony v4.1.0 and prior versions allow a local attacker cause the common permission is upgraded to root and sensitive information leak through out-of-bounds write.",
