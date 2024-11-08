@@ -1,22 +1,4 @@
 {
-  "CVE-2024-10687": {
-    "cvss": 9.8,
-    "description": "The Photos, Files, YouTube, Twitter, Instagram, TikTok, Ecommerce Contest Gallery \u2013 Upload, Vote, Sell via PayPal, Social Share Buttons plugin for WordPress is vulnerable to time-based SQL Injection via the $collectedIds parameter in all versions up to, and including, 24.0.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
-    "published": "2024-11-05T10:15:24.760",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-47253": {
-    "cvss": 7.2,
-    "description": "In 2N Access Commander versions 3.1.1.2 and prior, a Path Traversal vulnerability could allow an attacker with administrative privileges to write files on the filesystem and potentially achieve arbitrary remote code execution. This vulnerability cannot be exploited by users with lower privilege roles.",
-    "published": "2024-11-05T10:20:03.973",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-47255": {
-    "cvss": 7.8,
-    "description": "In 2N Access Commander versions 3.1.1.2 and prior, a local attacker can escalate their privileges in the system which could allow for arbitrary \ncode execution with root permissions.",
-    "published": "2024-11-05T10:20:05.300",
-    "keywords": "execution,command"
-  },
   "CVE-2024-10263": {
     "cvss": 7.3,
     "description": "The Tickera \u2013 WordPress Event Ticketing plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 3.5.4.4. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
