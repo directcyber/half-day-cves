@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-08T18:14:30.111765
+Updated at UTC 2024-11-08T19:08:42.449831
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-11-08T18:14:30.111765
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -192,10 +194,18 @@ Updated at UTC 2024-11-08T18:14:30.111765
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-51030">CVE-2024-51030</a></td>
+					<td>-</td>
+					<td>remote,command,sensitive</td>
+					<td class=date>2024-11-08T18:15:17.463</td>
+					<td class=description>A SQL injection vulnerability in manage_client.php and view_cab.php of Sourcecodester Cab Management System 1.0 allows remote attackers to execute arbitrary SQL commands via the id parameter, leading to unauthorized access and potential compromise of sensitive data within the database.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -803,41 +813,6 @@ This issue affects CodeChecker: through 6.24.1.</td>
 					<td>remote,execution,unauthenticated,command</td>
 					<td class=date>2024-11-05T23:15:03.423</td>
 					<td class=description>Command injection vulnerability in the underlying CLI service could lead to unauthenticated remote code execution by sending specially crafted packets destined to the PAPI (Aruba's Access Point management protocol) UDP port (8211). Successful exploitation of this vulnerability results in the ability to execute arbitrary code as a privileged user on the underlying operating system.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50102">CVE-2024-50102</a></td>
-					<td>-</td>
-					<td>execution,leak</td>
-					<td class=date>2024-11-05T18:15:13.877</td>
-					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
-
-x86: fix user address masking non-canonical speculation issue
-
-It turns out that AMD has a "Meltdown Lite(tm)" issue with non-canonical
-accesses in kernel space.  And so using just the high bit to decide
-whether an access is in user space or kernel space ends up with the good
-old "leak speculative data" if you have the right gadget using the
-result:
-
-  CVE-2020-12965 “Transient Execution of Non-Canonical Accesses“
-
-Now, the kernel surrounds the access with a STAC/CLAC pair, and those
-instructions end up serializing execution on older Zen architectures,
-which closes the speculation window.
-
-But that was true only up until Zen 5, which renames the AC bit [1].
-That improves performance of STAC/CLAC a lot, but also means that the
-speculation window is now open.
-
-Note that this affects not just the new address masking, but also the
-regular valid_user_address() check used by access_ok(), and the asm
-version of the sign bit check in the get_user() helpers.
-
-It does not affect put_user() or clear_user() variants, since there's no
-speculative result to be used in a gadget for those operations.</td>
 				</tr>
 			
 		
