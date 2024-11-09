@@ -496,5 +496,17 @@
     "description": "The Th Shop Mania theme for WordPress is vulnerable to unauthorized arbitrary plugin installation due to a missing capability check on the th_shop_mania_install_and_activate_callback() function in all versions up to, and including, 1.4.9. This makes it possible for authenticated attackers, with Subscriber-level access and above, to install arbitrary plugins which can be leveraged to exploit other vulnerabilities and achieve remote code execution and privilege escalation.",
     "published": "2024-11-09T04:15:04.677",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-10470": {
+    "cvss": 9.8,
+    "description": "The WPLMS Learning Management System for WordPress, WordPress LMS theme for WordPress is vulnerable to arbitrary file read and deletion due to insufficient file path validation and permissions checks in the readfile and unlink functions in all versions up to, and including, 4.962. This makes it possible for unauthenticated attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php). The theme is vulnerable even when it is not activated.",
+    "published": "2024-11-09T06:15:15.967",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-8756": {
+    "cvss": 5.3,
+    "description": "The Quform - WordPress Form Builder plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.20.0 via the 'saveUploadedFile' function. This makes it possible for unauthenticated attackers to extract sensitive data, such as Personally Identifiable Information, from files uploaded by users. Files uploaded via forms created before version 2.21.0 will remain vulnerable to exposure after upgrading. To fully patch the plugin, site administrators should download any previously uploaded files, delete previously existing files and forms, and create the forms again after upgrading to version 2.21.0.",
+    "published": "2024-11-09T06:15:16.383",
+    "keywords": "unauthenticated,sensitive"
   }
 }

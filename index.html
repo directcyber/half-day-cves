@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-09T06:14:05.408221
+Updated at UTC 2024-11-09T07:09:43.304440
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-11-09T06:14:05.408221
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -436,6 +440,26 @@ Updated at UTC 2024-11-09T06:14:05.408221
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8756">CVE-2024-8756</a></td>
+					<td>5.3</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2024-11-09T06:15:16.383</td>
+					<td class=description>The Quform - WordPress Form Builder plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.20.0 via the 'saveUploadedFile' function. This makes it possible for unauthenticated attackers to extract sensitive data, such as Personally Identifiable Information, from files uploaded by users. Files uploaded via forms created before version 2.21.0 will remain vulnerable to exposure after upgrading. To fully patch the plugin, site administrators should download any previously uploaded files, delete previously existing files and forms, and create the forms again after upgrading to version 2.21.0.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10470">CVE-2024-10470</a></td>
+					<td>9.8</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2024-11-09T06:15:15.967</td>
+					<td class=description>The WPLMS Learning Management System for WordPress, WordPress LMS theme for WordPress is vulnerable to arbitrary file read and deletion due to insufficient file path validation and permissions checks in the readfile and unlink functions in all versions up to, and including, 4.962. This makes it possible for unauthenticated attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php). The theme is vulnerable even when it is not activated.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
