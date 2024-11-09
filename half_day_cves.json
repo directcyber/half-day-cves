@@ -442,5 +442,11 @@
     "description": "MediaCMS is an open source video and media CMS, written in Python/Django and React, featuring a REST API. MediaCMS has been prone to vulnerabilities that upon special cases can lead to remote code execution. All versions before v4.1.0 are susceptible, and users are highly recommended to upgrade.\u00a0The vulnerabilities are related with insufficient input validation while uploading media content. The condition to exploit the vulnerability is that the portal allows users to upload content. This issue has been patched in version 4.1.0. There are no known workarounds for this vulnerability.",
     "published": "2024-11-08T23:15:04.627",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-52311": {
+    "cvss": 6.3,
+    "description": "Authentication tokens issued via Cognito in data.all are not invalidated on log out, allowing for previously authenticated user to continue execution of authorized API Requests until token is expired.",
+    "published": "2024-11-09T01:15:04.133",
+    "keywords": "execution,authentication"
   }
 }
