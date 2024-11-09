@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-09T03:14:31.033716
+Updated at UTC 2024-11-09T04:13:01.525064
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,14 @@ Updated at UTC 2024-11-09T03:14:31.033716
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -416,10 +424,48 @@ Updated at UTC 2024-11-09T03:14:31.033716
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9262">CVE-2024-9262</a></td>
+					<td>6.5</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2024-11-09T03:15:05.970</td>
+					<td class=description>The User Meta – User Profile Builder and User management plugin plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 3.1 via the getUser() due to missing validation on a user controlled key. This makes it possible for authenticated attackers, with Contributor-level access and above, to obtain user meta values from form fields. Please note that this requires a site administrator to create a form that displays potentially sensitive information like password hashes. This may also be exploited by unauthenticated users if the  'user-meta-public-profile' shortcode is used insecurely.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10586">CVE-2024-10586</a></td>
+					<td>9.8</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2024-11-09T03:15:04.940</td>
+					<td class=description>The Debug Tool plugin for WordPress is vulnerable to arbitrary file creation due to a missing capability check on the dbt_pull_image() function and missing file type validation in all versions up to, and including, 2.2. This makes it possible for unauthenticated attackers to to create arbitrary files such as .php files that can be leveraged for remote code execution.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10285">CVE-2024-10285</a></td>
+					<td>9.8</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2024-11-09T03:15:04.410</td>
+					<td class=description>The CE21 Suite plugin for WordPress is vulnerable to sensitive information disclosure via the plugin-log.txt in versions up to, and including, 2.2.0. This makes it possible for unauthenticated attackers to log in the user associated with the JWT token.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10284">CVE-2024-10284</a></td>
+					<td>9.8</td>
+					<td>unauthenticated,authentication,bypass</td>
+					<td class=date>2024-11-09T03:15:03.943</td>
+					<td class=description>The CE21 Suite plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 2.2.0. This is due to hardcoded encryption key in the 'ce21_authentication_phrase' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -1045,16 +1091,6 @@ This issue affects CodeChecker: through 6.24.1.</td>
 					<td>unauthenticated,authentication,bypass</td>
 					<td class=date>2024-11-06T07:15:03.377</td>
 					<td class=description>The Heateor Social Login WordPress plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 1.1.35. This is due to insufficient verification on the user being returned by the social login token. This makes it possible for unauthenticated attackers to log in as any existing user on the site, if they have access to the email and the user does not have an already-existing account for the service returning the token. An attacker cannot authenticate as an administrator by default, but these accounts are also at risk if authentication for administrators has explicitly been allowed via the social login.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-49405">CVE-2024-49405</a></td>
-					<td>5.3</td>
-					<td>authentication,sensitive</td>
-					<td class=date>2024-11-06T03:15:05.660</td>
-					<td class=description>Improper authentication in Private Info in Samsung Pass in prior to version 4.4.04.7 allows physical attackers to access sensitive information in a specific scenario.</td>
 				</tr>
 			
 		
