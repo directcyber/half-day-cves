@@ -1,16 +1,4 @@
 {
-  "CVE-2024-10914": {
-    "cvss": 9.8,
-    "description": "A vulnerability was found in D-Link DNS-320, DNS-320LW, DNS-325 and DNS-340L up to 20241028. It has been declared as critical. Affected by this vulnerability is the function cgi_user_add of the file /cgi-bin/account_mgr.cgi?cmd=cgi_user_add. The manipulation of the argument name leads to os command injection. The attack can be launched remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used.",
-    "published": "2024-11-06T14:15:05.310",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-10915": {
-    "cvss": 9.8,
-    "description": "A vulnerability was found in D-Link DNS-320, DNS-320LW, DNS-325 and DNS-340L up to 20241028. It has been rated as critical. Affected by this issue is the function cgi_user_add of the file /cgi-bin/account_mgr.cgi?cmd=cgi_user_add. The manipulation of the argument group leads to os command injection. The attack may be launched remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used.",
-    "published": "2024-11-06T14:15:05.783",
-    "keywords": "remote,command"
-  },
   "CVE-2024-10081": {
     "cvss": 10.0,
     "description": "CodeChecker is an analyzer tooling, defect database and viewer extension for the Clang Static Analyzer and Clang Tidy. \nAuthentication bypass occurs when the API URL ends with Authentication. This bypass allows superuser access to all API endpoints other than Authentication. These endpoints include the ability to add, edit, and remove products, among others. All endpoints, apart from the /Authentication is affected by the vulnerability.\n\nThis issue affects CodeChecker: through 6.24.1.",
