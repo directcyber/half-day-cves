@@ -466,5 +466,35 @@
     "description": "The User Meta \u2013 User Profile Builder and User management plugin plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 3.1 via the getUser() due to missing validation on a user controlled key. This makes it possible for authenticated attackers, with Contributor-level access and above, to obtain user meta values from form fields. Please note that this requires a site administrator to create a form that displays potentially sensitive information like password hashes. This may also be exploited by unauthenticated users if the  'user-meta-public-profile' shortcode is used insecurely.",
     "published": "2024-11-09T03:15:05.970",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-10625": {
+    "cvss": 9.8,
+    "description": "The WooCommerce Support Ticket System plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the delete_tmp_uploaded_file() function in all versions up to, and including, 17.7. This makes it possible for unauthenticated attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
+    "published": "2024-11-09T04:15:03.393",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-10626": {
+    "cvss": 8.8,
+    "description": "The WooCommerce Support Ticket System plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the delete_uploaded_file() function in all versions up to, and including, 17.7. This makes it possible for authenticated attackers, with Subscriber-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
+    "published": "2024-11-09T04:15:03.747",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-10627": {
+    "cvss": 9.8,
+    "description": "The WooCommerce Support Ticket System plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the ajax_manage_file_chunk_upload() function in all versions up to, and including, 17.7. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-11-09T04:15:04.053",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-10673": {
+    "cvss": 8.8,
+    "description": "The Top Store theme for WordPress is vulnerable to unauthorized arbitrary plugin installation due to a missing capability check on the top_store_install_and_activate_callback() function in all versions up to, and including, 1.5.4. This makes it possible for authenticated attackers, with subscriber-level access and above, to install arbitrary plugins which can contain other exploitable vulnerabilities to elevate privileges and gain remote code execution.",
+    "published": "2024-11-09T04:15:04.363",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-10674": {
+    "cvss": 8.8,
+    "description": "The Th Shop Mania theme for WordPress is vulnerable to unauthorized arbitrary plugin installation due to a missing capability check on the th_shop_mania_install_and_activate_callback() function in all versions up to, and including, 1.4.9. This makes it possible for authenticated attackers, with Subscriber-level access and above, to install arbitrary plugins which can be leveraged to exploit other vulnerabilities and achieve remote code execution and privilege escalation.",
+    "published": "2024-11-09T04:15:04.677",
+    "keywords": "remote,execution"
   }
 }
