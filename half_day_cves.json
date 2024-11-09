@@ -1,40 +1,4 @@
 {
-  "CVE-2024-42509": {
-    "cvss": 9.8,
-    "description": "Command injection vulnerability in the underlying CLI service could lead to unauthenticated remote code execution by sending specially crafted packets destined to the PAPI (Aruba's Access Point management protocol) UDP port (8211). Successful exploitation of this vulnerability results in the ability to execute arbitrary code as a privileged user on the underlying operating system.",
-    "published": "2024-11-05T23:15:03.423",
-    "keywords": "remote,execution,unauthenticated,command"
-  },
-  "CVE-2024-47460": {
-    "cvss": 9.0,
-    "description": "Command injection vulnerability in the underlying CLI service could lead to unauthenticated remote code execution by sending specially crafted packets destined to the PAPI (Aruba's Access Point management protocol) UDP port (8211). Successful exploitation of this vulnerability results in the ability to execute arbitrary code as a privileged user on the underlying operating system.",
-    "published": "2024-11-05T23:15:03.610",
-    "keywords": "remote,execution,unauthenticated,command"
-  },
-  "CVE-2024-47462": {
-    "cvss": 7.2,
-    "description": "An arbitrary file creation vulnerability exists in the Instant AOS-8 and AOS-10 command line interface. Successful exploitation of this vulnerability could allow an authenticated remote attacker to create arbitrary files, which could lead to a remote command execution (RCE) on the underlying operating system.",
-    "published": "2024-11-05T23:15:03.957",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-47463": {
-    "cvss": 7.2,
-    "description": "An arbitrary file creation vulnerability exists in the Instant AOS-8 and AOS-10 command line interface. Successful exploitation of this vulnerability could allow an authenticated remote attacker to create arbitrary files, which could lead to a remote command execution (RCE) on the underlying operating system.",
-    "published": "2024-11-05T23:15:04.123",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-47464": {
-    "cvss": 6.8,
-    "description": "An authenticated Path Traversal vulnerability exists in Instant AOS-8 and AOS-10. Successful exploitation of this vulnerability allows an attacker to copy arbitrary files to a user readable location from the command line interface of the underlying operating system, which could lead to a remote unauthorized access to files.",
-    "published": "2024-11-05T23:15:04.300",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-10028": {
-    "cvss": 7.5,
-    "description": "The Everest Backup \u2013 WordPress Cloud Backup, Migration, Restore & Cloning Plugin plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.2.13 via the exposed process stats file during the backup process. This makes it possible for unauthenticated attackers to obtain an archive file name and download the site's backup.",
-    "published": "2024-11-06T00:15:13.000",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2024-49405": {
     "cvss": 5.3,
     "description": "Improper authentication in Private Info in Samsung Pass in prior to version 4.4.04.7 allows physical attackers to access sensitive information in a specific scenario.",
@@ -460,5 +424,23 @@
     "description": "sunniwell HT3300 before 1.0.0.B022.2 is vulnerable to Insecure Permissions. The /usr/local/bin/update program, which is responsible for updating the software in the HT3300 device, is given the execution mode of sudo NOPASSWD. This program is vulnerable to a command injection vulnerability, which could allow an attacker to pass commands to this program via command line arguments to gain elevated root privileges.",
     "published": "2024-11-08T22:15:20.787",
     "keywords": "execution,command"
+  },
+  "CVE-2024-35426": {
+    "url": "https://github.com/andoma/vmir/issues/24",
+    "cvss": "-",
+    "description": "vmir e8117 was discovered to contain a stack overflow via the init_local_vars function at /src/vmir_wasm_parser.c.",
+    "published": "2024-11-08T23:15:03.580"
+  },
+  "CVE-2024-35427": {
+    "url": "https://github.com/andoma/vmir/issues/20",
+    "cvss": "-",
+    "description": "vmir e8117 was discovered to contain a segmentation violation via the export_function function at /src/vmir_wasm_parser.c.",
+    "published": "2024-11-08T23:15:03.680"
+  },
+  "CVE-2024-52004": {
+    "cvss": "-",
+    "description": "MediaCMS is an open source video and media CMS, written in Python/Django and React, featuring a REST API. MediaCMS has been prone to vulnerabilities that upon special cases can lead to remote code execution. All versions before v4.1.0 are susceptible, and users are highly recommended to upgrade.\u00a0The vulnerabilities are related with insufficient input validation while uploading media content. The condition to exploit the vulnerability is that the portal allows users to upload content. This issue has been patched in version 4.1.0. There are no known workarounds for this vulnerability.",
+    "published": "2024-11-08T23:15:04.627",
+    "keywords": "remote,execution"
   }
 }
