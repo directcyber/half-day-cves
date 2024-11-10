@@ -1,10 +1,4 @@
 {
-  "CVE-2024-10824": {
-    "cvss": "-",
-    "description": "An authorization bypass vulnerability was identified in GitHub Enterprise Server that allowed unauthorized internal users to access sensitive secret scanning alert data intended only for business owners. This issue could be exploited only by organization members with a personal access token (PAT) and required that secret scanning be enabled on user-owned repositories. This vulnerability affected GitHub Enterprise Server versions after 3.13.0 but prior to 3.14.0 and was fixed in version 3.13.2.",
-    "published": "2024-11-07T22:15:20.450",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2024-45759": {
     "cvss": 6.8,
     "description": "Dell PowerProtect Data Domain, versions prior to 8.1.0.0, 7.13.1.10, 7.10.1.40, and 7.7.5.50, contains an escalation of privilege vulnerability. A local low privileged attacker could potentially exploit this vulnerability, leading to unauthorized execution of certain commands to overwrite system config of the application. Exploitation may lead to denial of service of system.",
