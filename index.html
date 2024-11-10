@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-09T23:10:44.244838
+Updated at UTC 2024-11-10T00:55:26.361009
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -368,8 +368,6 @@ Updated at UTC 2024-11-09T23:10:44.244838
 
 
 				</tr>
-			
-		
 			
 		
 			
@@ -875,16 +873,6 @@ files on the server filesystem with the rights of the Firebird database
 					<td>authentication,command,bypass,leak</td>
 					<td class=date>2024-11-07T10:15:08.297</td>
 					<td class=description>When using IPAuthenticationProvider in ZooKeeper Admin Server there is a possibility of Authentication Bypass by Spoofing -- this only impacts IP based authentication implemented in ZooKeeper Admin Server. Default configuration of client's IP address detection in IPAuthenticationProvider, which uses HTTP request headers, is weak and allows an attacker to bypass authentication via spoofing client's IP address in request headers. Default configuration honors X-Forwarded-For HTTP header to read client's IP address. X-Forwarded-For request header is mainly used by proxy servers to identify the client and can be easily spoofed by an attacker pretending that the request comes from a different IP address. Admin Server commands, such as snapshot and restore arbitrarily can be executed on successful exploitation which could potentially lead to information leakage or service availability issues. Users are recommended to upgrade to version 3.9.3, which fixes this issue.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48325">CVE-2024-48325</a></td>
-					<td>8.1</td>
-					<td>remote,unauthenticated,command</td>
-					<td class=date>2024-11-06T23:15:04.367</td>
-					<td class=description>Portabilis i-Educar 2.8.0 is vulnerable to SQL Injection in the "getDocuments" function of the "InstituicaoDocumentacaoController" class. The "instituicao_id" parameter in "/module/Api/InstituicaoDocumentacao?oper=get&resource=getDocuments&instituicao_id" is not properly sanitized, allowing an unauthenticated remote attacker to inject malicious SQL commands.</td>
 				</tr>
 			
 		
