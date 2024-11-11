@@ -298,5 +298,29 @@
     "description": "Wi-Fi Alliance wfa_dut (in Wi-Fi Test Suite) through 9.0.0 allows OS command injection via 802.11x frames because the system() library function is used. For example, on Arcadyan FMIMG51AX000J devices, this leads to wfaTGSendPing remote code execution as root via traffic to TCP port 8000 or 8080 on a LAN interface. On other devices, this may be exploitable over a WAN interface.",
     "published": "2024-11-11T01:15:04.813",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2024-11016": {
+    "cvss": 9.8,
+    "description": "Webopac from Grand Vice info has a SQL Injection vulnerability, allowing unauthenticated remote attacks to inject arbitrary SQL commands to read, modify, and delete database contents.",
+    "published": "2024-11-11T07:15:04.400",
+    "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2024-11017": {
+    "cvss": 8.8,
+    "description": "Webopac from Grand Vice info does not properly validate uploaded file types, allowing remote attackers with regular privileges to upload and execute webshells, which could lead to arbitrary code execution on the server.",
+    "published": "2024-11-11T07:15:04.910",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-11018": {
+    "cvss": 9.8,
+    "description": "Webopac from Grand Vice info does not properly validate uploaded file types, allowing unauthenticated remote attackers to upload and execute webshells, which could lead to arbitrary code execution on the server.",
+    "published": "2024-11-11T07:15:05.210",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-11019": {
+    "cvss": 6.1,
+    "description": "Webopac from Grand Vice info has a Reflected Cross-site Scripting vulnerability, allowing unauthenticated remote attackers to execute arbitrary JavaScript code in the user's browser through phishing techniques.",
+    "published": "2024-11-11T07:15:05.517",
+    "keywords": "remote,unauthenticated"
   }
 }
