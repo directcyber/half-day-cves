@@ -18,7 +18,7 @@
     "published": "2024-11-10T21:15:14.790"
   },
   "CVE-2024-41992": {
-    "cvss": "-",
+    "cvss": 8.8,
     "description": "Wi-Fi Alliance wfa_dut (in Wi-Fi Test Suite) through 9.0.0 allows OS command injection via 802.11x frames because the system() library function is used. For example, on Arcadyan FMIMG51AX000J devices, this leads to wfaTGSendPing remote code execution as root via traffic to TCP port 8000 or 8080 on a LAN interface. On other devices, this may be exploitable over a WAN interface.",
     "published": "2024-11-11T01:15:04.813",
     "keywords": "remote,execution,command"
@@ -376,5 +376,323 @@
     "description": "Animate versions 23.0.7, 24.0.4 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
     "published": "2024-11-12T17:15:09.240",
     "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-38255": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:21.043",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-43447": {
+    "cvss": 8.1,
+    "description": "Windows SMBv3 Server Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:21.707",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-43459": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:23.090",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-43462": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:23.370",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-43498": {
+    "cvss": 9.8,
+    "description": ".NET and Visual Studio Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:24.110",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-43598": {
+    "cvss": 7.5,
+    "description": "LightGBM Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:28.277",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-43602": {
+    "cvss": 9.9,
+    "description": "Azure CycleCloud Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:28.563",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-43620": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:29.037",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-43621": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:29.270",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-43622": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:29.513",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-43627": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:30.663",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-43628": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:30.900",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-43635": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:32.287",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-43639": {
+    "cvss": 9.8,
+    "description": "Windows Kerberos Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:33.267",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-48993": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:35.840",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-48994": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:36.117",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-48995": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:36.360",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-48996": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:36.637",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-48997": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:36.870",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-48998": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:37.110",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-48999": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:37.340",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49000": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:37.577",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49001": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:37.807",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49002": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:38.040",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49003": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:38.257",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49004": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:38.500",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49005": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:38.740",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49006": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:38.963",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49007": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:39.203",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49008": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:39.423",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49009": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:39.650",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49010": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:39.870",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49011": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:40.087",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49012": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:40.307",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49013": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:40.530",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49014": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:40.737",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49015": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:40.953",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49016": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:41.177",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49017": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:41.407",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49018": {
+    "cvss": 8.8,
+    "description": "SQL Server Native Client Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:41.637",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49021": {
+    "cvss": 7.8,
+    "description": "Microsoft SQL Server Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:42.100",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49026": {
+    "cvss": 7.8,
+    "description": "Microsoft Excel Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:42.357",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49027": {
+    "cvss": 7.8,
+    "description": "Microsoft Excel Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:42.590",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49028": {
+    "cvss": 7.8,
+    "description": "Microsoft Excel Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:42.810",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49029": {
+    "cvss": 7.8,
+    "description": "Microsoft Excel Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:43.017",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49030": {
+    "cvss": 7.8,
+    "description": "Microsoft Excel Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:43.260",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49031": {
+    "cvss": 7.8,
+    "description": "Microsoft Office Graphics Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:43.483",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49032": {
+    "cvss": 7.8,
+    "description": "Microsoft Office Graphics Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:43.737",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49043": {
+    "cvss": 7.8,
+    "description": "Microsoft.SqlServer.XEvent.Configuration.dll Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:44.637",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49048": {
+    "cvss": 8.1,
+    "description": "TorchGeo Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:45.353",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49050": {
+    "cvss": 8.8,
+    "description": "Visual Studio Code Python Extension Remote Code Execution Vulnerability",
+    "published": "2024-11-12T18:15:45.810",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-49056": {
+    "cvss": 7.3,
+    "description": "Authentication bypass by assumed-immutable data on airlift.microsoft.com allows an authorized attacker to elevate privileges over a network.",
+    "published": "2024-11-12T18:15:46.273",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-8069": {
+    "cvss": "-",
+    "description": "Limited remote code execution with privilege of a NetworkService Account access\u00a0in\u00a0Citrix Session Recording if the attacker is an authenticated user on the same intranet as the session recording server",
+    "published": "2024-11-12T18:15:47.603",
+    "keywords": "remote,execution"
   }
 }
