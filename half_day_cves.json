@@ -184,5 +184,11 @@
     "description": "Dell SmartFabric OS10 Software, version(s) 10.5.6.x, 10.5.5.x, 10.5.4.x, 10.5.3.x, contain(s) a command injection vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Command execution.",
     "published": "2024-11-12T04:15:06.443",
     "keywords": "execution,command"
+  },
+  "CVE-2024-10245": {
+    "cvss": 9.8,
+    "description": "The Relais 2FA plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.0. This is due to incorrect authentication and capability checking in the 'rl_do_ajax' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email.",
+    "published": "2024-11-12T10:15:04.003",
+    "keywords": "unauthenticated,authentication,bypass"
   }
 }
