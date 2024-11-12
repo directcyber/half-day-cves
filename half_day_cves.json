@@ -1,22 +1,4 @@
 {
-  "CVE-2024-35426": {
-    "url": "https://github.com/andoma/vmir/issues/24",
-    "cvss": "-",
-    "description": "vmir e8117 was discovered to contain a stack overflow via the init_local_vars function at /src/vmir_wasm_parser.c.",
-    "published": "2024-11-08T23:15:03.580"
-  },
-  "CVE-2024-35427": {
-    "url": "https://github.com/andoma/vmir/issues/20",
-    "cvss": "-",
-    "description": "vmir e8117 was discovered to contain a segmentation violation via the export_function function at /src/vmir_wasm_parser.c.",
-    "published": "2024-11-08T23:15:03.680"
-  },
-  "CVE-2024-52004": {
-    "cvss": "-",
-    "description": "MediaCMS is an open source video and media CMS, written in Python/Django and React, featuring a REST API. MediaCMS has been prone to vulnerabilities that upon special cases can lead to remote code execution. All versions before v4.1.0 are susceptible, and users are highly recommended to upgrade.\u00a0The vulnerabilities are related with insufficient input validation while uploading media content. The condition to exploit the vulnerability is that the portal allows users to upload content. This issue has been patched in version 4.1.0. There are no known workarounds for this vulnerability.",
-    "published": "2024-11-08T23:15:04.627",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-52311": {
     "cvss": 6.3,
     "description": "Authentication tokens issued via Cognito in data.all are not invalidated on log out, allowing for previously authenticated user to continue execution of authorized API Requests until token is expired.",
@@ -256,5 +238,17 @@
     "description": "libosdp is an implementation of IEC 60839-11-5 OSDP (Open Supervised Device Protocol) and provides a C library with support for C++, Rust and Python3. In affected versions an unexpected `REPLY_CCRYPT` or `REPLY_RMAC_I` may be introduced into an active stream when they should not be. Once RMAC_I message can be sent during a session, attacker with MITM access to the communication may intercept the original RMAC_I reply and save it. While the session continues, the attacker will record all of the replies and save them, till capturing the message to be replied (can be detected by ID, length or time based on inspection of visual activity next to the reader) Once attacker captures a session with the message to be replayed, he stops resetting the connection and waits for signal to perform the replay to of the PD to CP message (ex: by signaling remotely to the MIMT device or setting a specific timing). In order to replay, the attacker will craft a specific RMAC_I message in the proper seq of the execution, which will result in reverting the RMAC to the beginning of the session. At that phase - attacker can replay all the messages from the beginning of the session. This issue has been addressed in commit `298576d9` which is included in release version 3.0.0. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
     "published": "2024-11-11T20:15:20.013",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-50636": {
+    "cvss": "-",
+    "description": "PyMOL 2.5.0 contains a vulnerability in its \"Run Script\" function, which allows the execution of arbitrary Python code embedded within .PYM files. Attackers can craft a malicious .PYM file containing a Python reverse shell payload and exploit the function to achieve Remote Command Execution (RCE). This vulnerability arises because PyMOL treats .PYM files as Python scripts without properly validating or restricting the commands within the script, enabling attackers to run unauthorized commands in the context of the user running the application.",
+    "published": "2024-11-11T23:15:05.833",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2024-11079": {
+    "cvss": 5.5,
+    "description": "A flaw was found in Ansible-Core. This vulnerability allows attackers to bypass unsafe content protections using the hostvars object to reference and execute templated content. This issue can lead to arbitrary code execution if remote data or module outputs are improperly templated within playbooks.",
+    "published": "2024-11-12T00:15:15.543",
+    "keywords": "remote,execution,bypass"
   }
 }

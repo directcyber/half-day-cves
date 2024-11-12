@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-11T23:10:10.428871
+Updated at UTC 2024-11-12T00:51:28.494081
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-11-11T23:10:10.428871
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -148,34 +152,28 @@ Updated at UTC 2024-11-11T23:10:10.428871
 		
 			
 		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-35427">CVE-2024-35427</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/andoma/vmir/issues/20">https://github.com/andoma/vmir/issues/20</a></td>
-					<td class=date>2024-11-08T23:15:03.680</td>
-					<td class=description>vmir e8117 was discovered to contain a segmentation violation via the export_function function at /src/vmir_wasm_parser.c.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-35426">CVE-2024-35426</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/andoma/vmir/issues/24">https://github.com/andoma/vmir/issues/24</a></td>
-					<td class=date>2024-11-08T23:15:03.580</td>
-					<td class=description>vmir e8117 was discovered to contain a stack overflow via the init_local_vars function at /src/vmir_wasm_parser.c.</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-11079">CVE-2024-11079</a></td>
+					<td>5.5</td>
+					<td>remote,execution,bypass</td>
+					<td class=date>2024-11-12T00:15:15.543</td>
+					<td class=description>A flaw was found in Ansible-Core. This vulnerability allows attackers to bypass unsafe content protections using the hostvars object to reference and execute templated content. This issue can lead to arbitrary code execution if remote data or module outputs are improperly templated within playbooks.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50636">CVE-2024-50636</a></td>
+					<td>-</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-11-11T23:15:05.833</td>
+					<td class=description>PyMOL 2.5.0 contains a vulnerability in its "Run Script" function, which allows the execution of arbitrary Python code embedded within .PYM files. Attackers can craft a malicious .PYM file containing a Python reverse shell payload and exploit the function to achieve Remote Command Execution (RCE). This vulnerability arises because PyMOL treats .PYM files as Python scripts without properly validating or restricting the commands within the script, enabling attackers to run unauthorized commands in the context of the user running the application.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -637,20 +635,6 @@ unreferenced object 0xffff898081f597a0 (size 32):
 					<td class=date>2024-11-09T01:15:04.133</td>
 					<td class=description>Authentication tokens issued via Cognito in data.all are not invalidated on log out, allowing for previously authenticated user to continue execution of authorized API Requests until token is expired.</td>
 				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-52004">CVE-2024-52004</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-08T23:15:04.627</td>
-					<td class=description>MediaCMS is an open source video and media CMS, written in Python/Django and React, featuring a REST API. MediaCMS has been prone to vulnerabilities that upon special cases can lead to remote code execution. All versions before v4.1.0 are susceptible, and users are highly recommended to upgrade. The vulnerabilities are related with insufficient input validation while uploading media content. The condition to exploit the vulnerability is that the portal allows users to upload content. This issue has been patched in version 4.1.0. There are no known workarounds for this vulnerability.</td>
-				</tr>
-			
-		
-			
-		
 			
 		
 
