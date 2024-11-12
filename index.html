@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-12T03:13:30.087844
+Updated at UTC 2024-11-12T04:13:31.509325
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -112,14 +112,6 @@ Updated at UTC 2024-11-12T03:13:30.087844
 
 
 				</tr>
-			
-		
-			
-		
-			
-		
-			
-		
 			
 		
 			
@@ -594,46 +586,6 @@ unreferenced object 0xffff898081f597a0 (size 32):
 					<td>remote,execution,unauthenticated</td>
 					<td class=date>2024-11-09T04:15:03.393</td>
 					<td class=description>The WooCommerce Support Ticket System plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the delete_tmp_uploaded_file() function in all versions up to, and including, 17.7. This makes it possible for unauthenticated attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9262">CVE-2024-9262</a></td>
-					<td>6.5</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2024-11-09T03:15:05.970</td>
-					<td class=description>The User Meta – User Profile Builder and User management plugin plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 3.1 via the getUser() due to missing validation on a user controlled key. This makes it possible for authenticated attackers, with Contributor-level access and above, to obtain user meta values from form fields. Please note that this requires a site administrator to create a form that displays potentially sensitive information like password hashes. This may also be exploited by unauthenticated users if the  'user-meta-public-profile' shortcode is used insecurely.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10586">CVE-2024-10586</a></td>
-					<td>9.8</td>
-					<td>remote,execution,unauthenticated</td>
-					<td class=date>2024-11-09T03:15:04.940</td>
-					<td class=description>The Debug Tool plugin for WordPress is vulnerable to arbitrary file creation due to a missing capability check on the dbt_pull_image() function and missing file type validation in all versions up to, and including, 2.2. This makes it possible for unauthenticated attackers to to create arbitrary files such as .php files that can be leveraged for remote code execution.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10285">CVE-2024-10285</a></td>
-					<td>9.8</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2024-11-09T03:15:04.410</td>
-					<td class=description>The CE21 Suite plugin for WordPress is vulnerable to sensitive information disclosure via the plugin-log.txt in versions up to, and including, 2.2.0. This makes it possible for unauthenticated attackers to log in the user associated with the JWT token.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10284">CVE-2024-10284</a></td>
-					<td>9.8</td>
-					<td>unauthenticated,authentication,bypass</td>
-					<td class=date>2024-11-09T03:15:03.943</td>
-					<td class=description>The CE21 Suite plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 2.2.0. This is due to hardcoded encryption key in the 'ce21_authentication_phrase' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email.</td>
 				</tr>
 			
 		
