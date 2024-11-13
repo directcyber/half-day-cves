@@ -976,5 +976,11 @@
     "description": "A authentication bypass using an alternate path or channel in Fortinet FortiClientWindows version 7.4.0, versions 7.2.4 through 7.2.0, versions 7.0.12 through 7.0.0, and 6.4.10 through 6.4.0 allows low privilege attacker to execute arbitrary code with high privilege via spoofed named pipe messages.",
     "published": "2024-11-13T12:15:16.313",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-11165": {
+    "cvss": "-",
+    "description": "An information disclosure vulnerability exists in the backup configuration process where the SAS token is not masked in the configuration response. This oversight results in sensitive information leakage within the yb_backup log files, exposing the SAS token in plaintext. The leakage occurs during the backup procedure, leading to potential unauthorized access to resources associated with the SAS token.\u00a0This issue affects YugabyteDB Anywhere: from 2.20.0.0 before 2.20.7.0, from 2.23.0.0 before 2.23.1.0, from 2024.1.0.0 before 2024.1.3.0.",
+    "published": "2024-11-13T15:15:06.877",
+    "keywords": "sensitive,leak"
   }
 }
