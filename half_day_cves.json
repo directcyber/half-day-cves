@@ -678,7 +678,7 @@
     "keywords": "authentication,bypass"
   },
   "CVE-2024-8069": {
-    "cvss": "-",
+    "cvss": 8.8,
     "description": "Limited remote code execution with privilege of a NetworkService Account access\u00a0in\u00a0Citrix Session Recording if the attacker is an authenticated user on the same intranet as the session recording server",
     "published": "2024-11-12T18:15:47.603",
     "keywords": "remote,execution"
@@ -780,13 +780,13 @@
     "keywords": "sensitive,bypass"
   },
   "CVE-2024-11110": {
-    "cvss": "-",
+    "cvss": 6.5,
     "description": "Inappropriate implementation in Extensions in Google Chrome prior to 131.0.6778.69 allowed a remote attacker to bypass site isolation via a crafted Chrome Extension. (Chromium security severity: High)",
     "published": "2024-11-12T21:15:10.920",
     "keywords": "remote,bypass"
   },
   "CVE-2024-11117": {
-    "cvss": "-",
+    "cvss": 4.3,
     "description": "Inappropriate implementation in FileSystem in Google Chrome prior to 131.0.6778.69 allowed a remote attacker to bypass filesystem restrictions via a crafted HTML page. (Chromium security severity: Low)",
     "published": "2024-11-12T21:15:11.393",
     "keywords": "remote,bypass"
@@ -982,5 +982,35 @@
     "description": "An information disclosure vulnerability exists in the backup configuration process where the SAS token is not masked in the configuration response. This oversight results in sensitive information leakage within the yb_backup log files, exposing the SAS token in plaintext. The leakage occurs during the backup procedure, leading to potential unauthorized access to resources associated with the SAS token.\u00a0This issue affects YugabyteDB Anywhere: from 2.20.0.0 before 2.20.7.0, from 2.23.0.0 before 2.23.1.0, from 2024.1.0.0 before 2024.1.3.0.",
     "published": "2024-11-13T15:15:06.877",
     "keywords": "sensitive,leak"
+  },
+  "CVE-2024-50970": {
+    "cvss": "-",
+    "description": "A SQL injection vulnerability in orderview1.php of Itsourcecode Online Furniture Shopping Project 1.0 allows remote attackers to execute arbitrary SQL commands via the id parameter.",
+    "published": "2024-11-13T16:15:19.043",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-50971": {
+    "cvss": "-",
+    "description": "A SQL injection vulnerability in print.php of Itsourcecode Construction Management System 1.0 allows remote attackers to execute arbitrary SQL commands via the map_id parameter.",
+    "published": "2024-11-13T16:15:19.113",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-50972": {
+    "cvss": "-",
+    "description": "A SQL injection vulnerability in printtool.php of Itsourcecode Construction Management System 1.0 allows remote attackers to execute arbitrary SQL commands via the borrow_id parameter.",
+    "published": "2024-11-13T16:15:19.180",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-52293": {
+    "cvss": 7.2,
+    "description": "Craft is a content management system (CMS). Prior to 4.12.2 and 5.4.3, Craft is missing normalizePath in the function FileHelper::absolutePath could lead to Remote Code Execution on the server via twig SSTI. This is a sequel to CVE-2023-40035. This vulnerability is fixed in 4.12.2 and 5.4.3.",
+    "published": "2024-11-13T16:15:19.307",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-52306": {
+    "cvss": 7.6,
+    "description": "FileManager provides a Backpack admin interface for files and folder. Prior to 3.0.9, deserialization of untrusted data from the mimes parameter could lead to remote code execution. This vulnerability is fixed in 3.0.9.",
+    "published": "2024-11-13T16:15:20.723",
+    "keywords": "remote,execution"
   }
 }
