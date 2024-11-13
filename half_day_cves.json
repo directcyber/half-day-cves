@@ -952,5 +952,23 @@
     "description": "The Advanced Order Export For WooCommerce plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.5.5 via deserialization of untrusted input during Order export when the \"Try to convert serialized values\" option is enabled. This makes it possible for unauthenticated attackers to inject a PHP Object. The additional presence of a POP chain allows attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
     "published": "2024-11-13T04:15:04.727",
     "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-11150": {
+    "cvss": 9.8,
+    "description": "The WordPress User Extra Fields plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the delete_tmp_uploaded_file() function in all versions up to, and including, 16.6. This makes it possible for unauthenticated attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
+    "published": "2024-11-13T05:15:12.337",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-8935": {
+    "cvss": 7.5,
+    "description": "CWE-290: Authentication Bypass by Spoofing vulnerability exists that could cause a denial of service and loss\nof confidentiality and integrity of controllers when conducting a Man-In-The-Middle attack between the\ncontroller and the engineering workstation while a valid user is establishing a communication session. This\nvulnerability is inherent to Diffie Hellman algorithm which does not protect against Man-In-The-Middle attacks.",
+    "published": "2024-11-13T05:15:19.673",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-8937": {
+    "cvss": 6.5,
+    "description": "CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer vulnerability exists that could\ncause a potential arbitrary code execution after a successful Man-In-The Middle attack followed by sending a\ncrafted Modbus function call to tamper with memory area involved in the authentication process.",
+    "published": "2024-11-13T05:15:22.613",
+    "keywords": "execution,authentication"
   }
 }
