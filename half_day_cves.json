@@ -934,5 +934,23 @@
     "description": "The Hide Links plugin for WordPress is vulnerable to unauthorized shortcode execution due to do_shortcode being hooked through the comment_text filter in all versions up to and including 1.4.2. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes available on the target site.",
     "published": "2024-11-13T02:15:20.340",
     "keywords": "execution,unauthenticated"
+  },
+  "CVE-2024-10816": {
+    "cvss": 7.5,
+    "description": "The LUNA RADIO PLAYER plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 6.24.01.24 via the js/fallback.php file. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensitive information.",
+    "published": "2024-11-13T04:15:04.300",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-10820": {
+    "cvss": 9.8,
+    "description": "The WooCommerce Upload Files plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the upload_files() function in all versions up to, and including, 84.3. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-11-13T04:15:04.510",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-10828": {
+    "cvss": 8.1,
+    "description": "The Advanced Order Export For WooCommerce plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.5.5 via deserialization of untrusted input during Order export when the \"Try to convert serialized values\" option is enabled. This makes it possible for unauthenticated attackers to inject a PHP Object. The additional presence of a POP chain allows attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
+    "published": "2024-11-13T04:15:04.727",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
