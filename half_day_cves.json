@@ -1048,5 +1048,11 @@
     "description": "In shouldHideDocument of ExternalStorageProvider.java, there is a possible bypass of a file path filter designed to prevent access to sensitive directories due to  incorrect unicode normalization. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation.",
     "published": "2024-11-13T18:15:21.713",
     "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2024-51027": {
+    "cvss": "-",
+    "description": "Ruijie NBR800G gateway NBR_RGOS_11.1(6)B4P9 is vulnerable to command execution in /itbox_pi/networksafe.php via the province parameter.",
+    "published": "2024-11-13T22:15:15.823",
+    "keywords": "execution,command"
   }
 }
