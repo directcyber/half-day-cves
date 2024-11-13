@@ -1,10 +1,4 @@
 {
-  "CVE-2024-46613": {
-    "url": "https://github.com/weechat/weechat/issues/2178",
-    "cvss": "-",
-    "description": "WeeChat before 4.4.2 has an integer overflow and resultant buffer overflow at core/core-string.c when there are more than two billion items in a list. This affects string_free_split_shared , string_free_split, string_free_split_command, and string_free_split_tags.",
-    "published": "2024-11-10T21:15:14.790"
-  },
   "CVE-2024-41992": {
     "cvss": 8.8,
     "description": "Wi-Fi Alliance wfa_dut (in Wi-Fi Test Suite) through 9.0.0 allows OS command injection via 802.11x frames because the system() library function is used. For example, on Arcadyan FMIMG51AX000J devices, this leads to wfaTGSendPing remote code execution as root via traffic to TCP port 8000 or 8080 on a LAN interface. On other devices, this may be exploitable over a WAN interface.",
@@ -324,7 +318,7 @@
     "keywords": "remote,execution"
   },
   "CVE-2024-10923": {
-    "cvss": "-",
+    "cvss": 5.9,
     "description": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in OpenText\u2122 ALM Octane Management allows Stored XSS.\u00a0The vulnerability could result in a remote code execution attack. \n\nThis issue affects ALM Octane Management: from 16.2.100 through 24.4.",
     "published": "2024-11-12T17:15:05.947",
     "keywords": "remote,execution"
