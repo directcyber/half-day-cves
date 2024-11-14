@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-14T18:15:22.873556
+Updated at UTC 2024-11-14T19:09:22.240837
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,12 @@ Updated at UTC 2024-11-14T18:15:22.873556
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -406,6 +412,36 @@ Updated at UTC 2024-11-14T18:15:22.873556
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-52524">CVE-2024-52524</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2024-11-14T18:15:26.610</td>
+					<td class=description>Giskard is an evaluation and testing framework for AI systems. A Remote Code Execution (ReDoS) vulnerability was discovered in Giskard component by the GitHub Security Lab team. When processing datasets with specific text patterns with Giskard detectors, this vulnerability could trigger exponential regex evaluation times, potentially leading to denial of service. Giskard versions prior to 2.15.5 are affected.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-4343">CVE-2024-4343</a></td>
+					<td>9.8</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-11-14T18:15:19.687</td>
+					<td class=description>A Python command injection vulnerability exists in the `SagemakerLLM` class's `complete()` method within `./private_gpt/components/llm/custom/sagemaker.py` of the imartinez/privategpt application, versions up to and including 0.3.0. The vulnerability arises due to the use of the `eval()` function to parse a string received from a remote AWS SageMaker LLM endpoint into a dictionary. This method of parsing is unsafe as it can execute arbitrary Python code contained within the response. An attacker can exploit this vulnerability by manipulating the response from the AWS SageMaker LLM endpoint to include malicious Python code, leading to potential execution of arbitrary commands on the system hosting the application. The issue is fixed in version 0.6.0.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-49362">CVE-2024-49362</a></td>
+					<td>7.7</td>
+					<td>remote,execution,command</td>
+					<td class=date>2024-11-14T18:15:19.243</td>
+					<td class=description>Joplin is a free, open source note taking and to-do application. Joplin-desktop has a vulnerability that leads to remote code execution (RCE) when a user clicks on an <a> link within untrusted notes. The issue arises due to insufficient sanitization of <a> tag attributes introduced by the Mermaid. This vulnerability allows the execution of untrusted HTML content within the Electron window, which has full access to Node.js APIs, enabling arbitrary shell command execution.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
