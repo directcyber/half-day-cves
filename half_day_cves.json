@@ -870,7 +870,7 @@
     "keywords": "authentication,bypass"
   },
   "CVE-2024-11165": {
-    "cvss": "-",
+    "cvss": 3.9,
     "description": "An information disclosure vulnerability exists in the backup configuration process where the SAS token is not masked in the configuration response. This oversight results in sensitive information leakage within the yb_backup log files, exposing the SAS token in plaintext. The leakage occurs during the backup procedure, leading to potential unauthorized access to resources associated with the SAS token.\u00a0This issue affects YugabyteDB Anywhere: from 2.20.0.0 before 2.20.7.0, from 2.23.0.0 before 2.23.1.0, from 2024.1.0.0 before 2024.1.3.0.",
     "published": "2024-11-13T15:15:06.877",
     "keywords": "sensitive,leak"
@@ -924,13 +924,13 @@
     "keywords": "execution,bypass"
   },
   "CVE-2024-43081": {
-    "cvss": "-",
+    "cvss": 7.8,
     "description": "In installExistingPackageAsUser of InstallPackageHelper.java, there is a possible carrier restriction bypass due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
     "published": "2024-11-13T18:15:20.863",
     "keywords": "execution,bypass"
   },
   "CVE-2024-43086": {
-    "cvss": "-",
+    "cvss": 5.5,
     "description": "In validateAccountsInternal of AccountManagerService.java, there is a possible way to leak account credentials to a third party app due to a confused deputy. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
     "published": "2024-11-13T18:15:21.240",
     "keywords": "execution,leak"
@@ -954,7 +954,7 @@
     "keywords": "execution,command"
   },
   "CVE-2024-5082": {
-    "cvss": "-",
+    "cvss": 4.3,
     "description": "A Remote Code Execution vulnerability has been discovered in Sonatype Nexus Repository 2.\u00a0\n\nThis issue affects Nexus Repository 2 OSS/Pro versions up to and including 2.15.1.",
     "published": "2024-11-14T03:15:03.533",
     "keywords": "remote,execution"
@@ -1000,5 +1000,11 @@
     "description": "A Directory listing issue was found in PHPGurukul User Registration & Login and User Management System 3.2, which allows remote attackers attacker to access sensitive files and directories via /loginsystem/assets.",
     "published": "2024-11-14T14:15:19.050",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-52505": {
+    "cvss": 5.4,
+    "description": "matrix-appservice-irc is a Node.js IRC bridge for the Matrix messaging protocol. The provisioning API of the matrix-appservice-irc bridge up to version 3.0.2 contains a vulnerability which can lead to arbitrary IRC command execution as the bridge IRC bot. The vulnerability has been patched in matrix-appservice-irc version 3.0.3.",
+    "published": "2024-11-14T16:15:20.220",
+    "keywords": "execution,command"
   }
 }
