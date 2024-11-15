@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-15T15:11:55.579755
+Updated at UTC 2024-11-15T16:14:20.321298
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-11-15T15:11:55.579755
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 				<tr>
@@ -478,12 +482,32 @@ Updated at UTC 2024-11-15T15:11:55.579755
 		
 			
 		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43189">CVE-2024-43189</a></td>
+					<td>5.9</td>
+					<td>remote,sensitive</td>
+					<td class=date>2024-11-15T15:15:07.307</td>
+					<td class=description>IBM Concert Software 1.0.0 through 1.0.1 could allow a remote attacker to obtain sensitive information, caused by the failure to properly enable HTTP Strict Transport Security. An attacker could exploit this vulnerability to obtain sensitive information using man in the middle techniques.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20373">CVE-2024-20373</a></td>
+					<td>5.3</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-11-15T15:15:06.823</td>
+					<td class=description>A vulnerability in the implementation of the Simple Network Management Protocol (SNMP) IPv4 access control list (ACL) feature of Cisco IOS Software and Cisco IOS XE Software could allow an unauthenticated, remote attacker to perform SNMP polling of an affected device, even if it is configured to deny SNMP traffic.&nbsp;
+
+This vulnerability exists because Cisco IOS Software and Cisco IOS XE Software do not support extended IPv4 ACLs for SNMP, but they do allow administrators to configure extended named IPv4 ACLs that are attached to the SNMP server configuration without a warning message. This can result in no ACL being applied to the SNMP listening process. An attacker could exploit this vulnerability by performing SNMP polling of an affected device. A successful exploit could allow the attacker to perform SNMP operations that should be denied. The attacker has no control of the SNMP ACL configuration and would still need a valid SNMP version 2c (SNMPv2c) community string or SNMP version 3 (SNMPv3) user credentials.
+SNMP with IPv6 ACL configurations is not affected.
+For more information, see the  section of this advisory.</td>
+				</tr>
+			
 		
 			
 		
@@ -2143,42 +2167,6 @@ This issue affects ALM Octane Management: from 16.2.100 through 24.4.</td>
 					<td>remote,execution,command</td>
 					<td class=date>2024-11-12T16:15:20.050</td>
 					<td class=description>Command injection in Ivanti Connect Secure before version 22.7R2.1 and Ivanti Policy Secure before version 22.7R1.1 allows a remote authenticated attacker with admin privileges to achieve remote code execution.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50386">CVE-2024-50386</a></td>
-					<td>8.5</td>
-					<td>execution,command</td>
-					<td class=date>2024-11-12T15:15:10.397</td>
-					<td class=description>Account users in Apache CloudStack by default are allowed to register templates to be downloaded directly to the primary storage for deploying instances. Due to missing validation checks for KVM-compatible templates in CloudStack 4.0.0 through 4.18.2.4 and 4.19.0.0 through 4.19.1.2, an attacker that can register templates, can use them to deploy malicious instances on KVM-based environments and exploit this to gain access to the host filesystems that could result in the compromise of resource integrity and confidentiality, data loss, denial of service, and availability of KVM-based infrastructure managed by CloudStack.
-
-
-Users are recommended to upgrade to Apache CloudStack 4.18.2.5 or 4.19.1.3, or later, which addresses this issue. 
-
-Additionally, all user-registered KVM-compatible templates can be scanned and checked that they are flat files that should not be using any additional or unnecessary features. For example, operators can run the following command on their file-based primary storage(s) and inspect the output. An empty output for the disk being validated means it has no references to the host filesystems; on the other hand, if the output for the disk being validated is not empty, it might indicate a compromised disk. However, bear in mind that (i) volumes created from templates will have references for the templates at first and (ii) volumes can be consolidated while migrating, losing their references to the templates. Therefore, the command execution for the primary storages can show both false positives and false negatives.
-
-
-for file in $(find /path/to/storage/ -type f -regex [a-f0-9\-]*.*); do echo "Retrieving file [$file] info. If the output is not empty, that might indicate a compromised disk; check it carefully."; qemu-img info -U $file | grep file: ; printf "\n\n"; done
-For checking the whole template/volume features of each disk, operators can run the following command:
-
-
-for file in $(find /path/to/storage/ -type f -regex [a-f0-9\-]*.*); do echo "Retrieving file [$file] info."; qemu-img info -U $file; printf "\n\n"; done</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37365">CVE-2024-37365</a></td>
-					<td>7.3</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-12T15:15:08.923</td>
-					<td class=description>A remote code execution vulnerability exists in the affected
-product. The vulnerability allows users to save projects within the public
-directory allowing anyone with local access to modify and/or delete files. Additionally,
-a malicious user could potentially leverage this vulnerability to escalate
-their privileges by changing the macro to execute arbitrary code.</td>
 				</tr>
 			
 		
