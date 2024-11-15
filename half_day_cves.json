@@ -1,46 +1,4 @@
 {
-  "CVE-2024-10923": {
-    "cvss": 5.9,
-    "description": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in OpenText\u2122 ALM Octane Management allows Stored XSS.\u00a0The vulnerability could result in a remote code execution attack. \n\nThis issue affects ALM Octane Management: from 16.2.100 through 24.4.",
-    "published": "2024-11-12T17:15:05.947",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-10943": {
-    "cvss": 9.1,
-    "description": "An\nauthentication bypass vulnerability exists in the affected product. The\nvulnerability exists due to shared secrets across accounts and could allow a threat\nactor to impersonate a user if the threat actor is able to enumerate additional\ninformation required during authentication.",
-    "published": "2024-11-12T17:15:06.147",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-10944": {
-    "cvss": 8.4,
-    "description": "A Remote\nCode Execution vulnerability exists in the affected product. The vulnerability requires\na high level of permissions and exists due to improper input validation resulting\nin the possibility of a malicious Updated Agent being deployed.",
-    "published": "2024-11-12T17:15:06.397",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-11004": {
-    "cvss": 8.4,
-    "description": "Reflected XSS in Ivanti Connect Secure before version 22.7R2.1 and Ivanti Policy Secure before version 22.7R1.1 allows a remote unauthenticated attacker to obtain admin privileges. User interaction is required.",
-    "published": "2024-11-12T17:15:06.943",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-11005": {
-    "cvss": 9.1,
-    "description": "Command injection in Ivanti Connect Secure before version 22.7R2.1 and Ivanti Policy Secure before version 22.7R1.1 allows a remote authenticated attacker with admin privileges to achieve remote code execution.",
-    "published": "2024-11-12T17:15:07.130",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-11006": {
-    "cvss": 9.1,
-    "description": "Command injection in Ivanti Connect Secure before version 22.7R2.1 and Ivanti Policy Secure before version 22.7R1.1 allows a remote authenticated attacker with admin privileges to achieve remote code execution.",
-    "published": "2024-11-12T17:15:07.333",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-49527": {
-    "cvss": 5.5,
-    "description": "Animate versions 23.0.7, 24.0.4 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-11-12T17:15:09.240",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2024-38255": {
     "cvss": 8.8,
     "description": "SQL Server Native Client Remote Code Execution Vulnerability",
@@ -928,5 +886,11 @@
     "description": "The python_food ordering system V1.0 has an unauthorized vulnerability that leads to the leakage of sensitive user information. Attackers can access it through https://ip:port/api/myapp/index/user/info?id=1 And modify the ID value to obtain sensitive user information beyond authorization.",
     "published": "2024-11-15T16:15:36.467",
     "keywords": "sensitive,leak"
+  },
+  "CVE-2024-39726": {
+    "cvss": 8.2,
+    "description": "IBM Engineering Lifecycle Optimization - Engineering Insights 7.0.2 and 7.0.3 is vulnerable to an XML External Entity Injection (XXE) attack when processing XML data. A remote attacker could exploit this vulnerability to expose sensitive information or consume memory resources.",
+    "published": "2024-11-15T17:15:19.983",
+    "keywords": "remote,sensitive"
   }
 }
