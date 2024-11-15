@@ -1,16 +1,4 @@
 {
-  "CVE-2024-50636": {
-    "cvss": "-",
-    "description": "PyMOL 2.5.0 contains a vulnerability in its \"Run Script\" function, which allows the execution of arbitrary Python code embedded within .PYM files. Attackers can craft a malicious .PYM file containing a Python reverse shell payload and exploit the function to achieve Remote Command Execution (RCE). This vulnerability arises because PyMOL treats .PYM files as Python scripts without properly validating or restricting the commands within the script, enabling attackers to run unauthorized commands in the context of the user running the application.",
-    "published": "2024-11-11T23:15:05.833",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-11079": {
-    "cvss": 5.5,
-    "description": "A flaw was found in Ansible-Core. This vulnerability allows attackers to bypass unsafe content protections using the hostvars object to reference and execute templated content. This issue can lead to arbitrary code execution if remote data or module outputs are improperly templated within playbooks.",
-    "published": "2024-11-12T00:15:15.543",
-    "keywords": "remote,execution,bypass"
-  },
   "CVE-2024-8881": {
     "cvss": 6.8,
     "description": "A post-authentication command injection vulnerability in the CGI program in the Zyxel GS1900-48 switch firmware version V2.80(AAHN.1)C0 and earlier could allow an authenticated, LAN-based attacker with administrator privileges to execute some operating system (OS) commands on an affected device by sending a crafted HTTP request.",
@@ -1030,5 +1018,53 @@
     "description": "Cross Site Scripting vulnerability in Virtuozzo Hybrid Server for WHMCS Open Source v.1.7.1 allows a remote attacker to obtain sensitive information via modification of the hostname parameter.",
     "published": "2024-11-14T22:15:16.230",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-41206": {
+    "url": "https://github.com/justdan96/tsmuxer/issues/859",
+    "cvss": "-",
+    "description": "A stack-based buffer over-read in tsMuxer version nightly-2024-03-14-01-51-12 allows attackers to cause Information Disclosure via a crafted TS video file.",
+    "published": "2024-11-14T23:15:05.197"
+  },
+  "CVE-2024-41209": {
+    "url": "https://github.com/justdan96/tsmuxer/issues/841",
+    "cvss": "-",
+    "description": "A heap-based buffer overflow in tsMuxer version nightly-2024-03-14-01-51-12 allows attackers to cause Denial of Service (DoS) and Code Execution via a crafted MOV video file.",
+    "published": "2024-11-14T23:15:05.277"
+  },
+  "CVE-2024-41217": {
+    "url": "https://github.com/justdan96/tsmuxer/issues/846",
+    "cvss": "-",
+    "description": "A heap-based buffer overflow in tsMuxer version nightly-2024-05-10-02-00-45 allows attackers to cause Denial of Service (DoS) via a crafted MKV video file.",
+    "published": "2024-11-14T23:15:05.370"
+  },
+  "CVE-2024-49776": {
+    "url": "https://github.com/justdan96/tsmuxer/issues/862",
+    "cvss": "-",
+    "description": "A negative-size-param in tsMuxer version nightly-2024-04-05-01-53-02 allows attackers to cause Denial of Service (DoS) via a crafted TS video file.",
+    "published": "2024-11-14T23:15:05.457"
+  },
+  "CVE-2024-49777": {
+    "url": "https://github.com/justdan96/tsmuxer/issues/842",
+    "cvss": "-",
+    "description": "A heap-based buffer overflow in tsMuxer version nightly-2024-03-14-01-51-12 allows attackers to cause Denial of Service (DoS), Information Disclosure and Code Execution via a crafted MKV video file.",
+    "published": "2024-11-14T23:15:05.547"
+  },
+  "CVE-2024-49778": {
+    "url": "https://github.com/justdan96/tsmuxer/issues/879",
+    "cvss": "-",
+    "description": "A heap-based buffer overflow in tsMuxer version nightly-2024-05-12-02-01-18 allows attackers to cause Denial of Service (DoS) and Code Execution via a crafted MOV video file.",
+    "published": "2024-11-14T23:15:05.643"
+  },
+  "CVE-2024-52308": {
+    "cvss": 8.0,
+    "description": "The GitHub CLI version 2.6.1 and earlier are vulnerable to remote code execution through a malicious codespace SSH server when using `gh codespace ssh` or `gh codespace logs` commands. This has been patched in the cli v2.62.0.\n\nDevelopers connect to remote codespaces through an SSH server running within the devcontainer, which is generally provided through the [default devcontainer image](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers#using-the-default-dev-container-configuration). GitHub CLI [retrieves SSH connection details](https://github.com/cli/cli/blob/30066b0042d0c5928d959e288144300cb28196c9/internal/codespaces/rpc/invoker.go#L230-L244), such as remote username, which is used in [executing `ssh` commands](https://github.com/cli/cli/blob/e356c69a6f0125cfaac782c35acf77314f18908d/pkg/cmd/codespace/ssh.go#L263) for `gh codespace ssh` or `gh codespace logs` commands.\n\nThis exploit occurs when a malicious third-party devcontainer contains a modified SSH server that injects `ssh` arguments within the SSH connection details. `gh codespace ssh` and `gh codespace logs` commands could execute arbitrary code on the user's workstation if the remote username contains something like `-oProxyCommand=\"echo hacked\" #`.  The `-oProxyCommand` flag causes `ssh` to execute the provided command while `#` shell comment causes any other `ssh` arguments to be ignored.\n\nIn `2.62.0`, the remote username information is being validated before being used.",
+    "published": "2024-11-14T23:15:05.727",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2024-52613": {
+    "url": "https://github.com/justdan96/tsmuxer/issues/881",
+    "cvss": "-",
+    "description": "A heap-based buffer under-read in tsMuxer version nightly-2024-05-12-02-01-18 allows attackers to cause Denial of Service (DoS) via a crafted MOV video file.",
+    "published": "2024-11-14T23:15:05.967"
   }
 }
