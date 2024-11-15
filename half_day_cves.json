@@ -1,10 +1,4 @@
 {
-  "CVE-2024-10245": {
-    "cvss": 9.8,
-    "description": "The Relais 2FA plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.0. This is due to incorrect authentication and capability checking in the 'rl_do_ajax' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email.",
-    "published": "2024-11-12T10:15:04.003",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
   "CVE-2024-44102": {
     "cvss": 10.0,
     "description": "A vulnerability has been identified in PP TeleControl Server Basic 1000 to 5000 V3.1 (6NH9910-0AA31-0AE1) (All versions < V3.1.2.1 with redundancy configured), PP TeleControl Server Basic 256 to 1000 V3.1 (6NH9910-0AA31-0AD1) (All versions < V3.1.2.1 with redundancy configured), PP TeleControl Server Basic 32 to 64 V3.1 (6NH9910-0AA31-0AF1) (All versions < V3.1.2.1 with redundancy configured), PP TeleControl Server Basic 64 to 256 V3.1 (6NH9910-0AA31-0AC1) (All versions < V3.1.2.1 with redundancy configured), PP TeleControl Server Basic 8 to 32 V3.1 (6NH9910-0AA31-0AB1) (All versions < V3.1.2.1 with redundancy configured), TeleControl Server Basic 1000 V3.1 (6NH9910-0AA31-0AD0) (All versions < V3.1.2.1 with redundancy configured), TeleControl Server Basic 256 V3.1 (6NH9910-0AA31-0AC0) (All versions < V3.1.2.1 with redundancy configured), TeleControl Server Basic 32 V3.1 (6NH9910-0AA31-0AF0) (All versions < V3.1.2.1 with redundancy configured), TeleControl Server Basic 5000 V3.1 (6NH9910-0AA31-0AE0) (All versions < V3.1.2.1 with redundancy configured), TeleControl Server Basic 64 V3.1 (6NH9910-0AA31-0AB0) (All versions < V3.1.2.1 with redundancy configured), TeleControl Server Basic 8 V3.1 (6NH9910-0AA31-0AA0) (All versions < V3.1.2.1 with redundancy configured), TeleControl Server Basic Serv Upgr (6NH9910-0AA31-0GA1) (All versions < V3.1.2.1 with redundancy configured), TeleControl Server Basic Upgr V3.1 (6NH9910-0AA31-0GA0) (All versions < V3.1.2.1 with redundancy configured). The affected system allows remote users to send maliciously crafted objects. Due to insecure deserialization of user-supplied content by the affected software, an unauthenticated attacker could exploit this vulnerability by sending a maliciously crafted serialized object. This could allow the attacker to execute arbitrary code on the device with SYSTEM privileges.",
@@ -1054,5 +1048,11 @@
     "description": "The Really Simple Security (Free, Pro, and Pro Multisite) plugins for WordPress are vulnerable to authentication bypass in versions 9.0.0 to 9.1.1.1. This is due to improper user check error handling in the two-factor REST API actions with the 'check_login_and_get_user' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, when the \"Two-Factor Authentication\" setting is enabled (disabled by default).",
     "published": "2024-11-15T04:15:03.613",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-10311": {
+    "cvss": 7.5,
+    "description": "The External Database Based Actions plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 0.1. This is due to a missing capability check in the 'edba_admin_handle' function. This makes it possible for authenticated attackers, with subscriber-level permissions and above, to update the plugin settings and log in as any existing user on the site, such as an administrator.",
+    "published": "2024-11-15T10:15:03.980",
+    "keywords": "authentication,bypass"
   }
 }

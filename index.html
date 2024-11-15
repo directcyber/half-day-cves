@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-15T10:12:33.653539
+Updated at UTC 2024-11-15T11:10:34.479799
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-11-15T10:12:33.653539
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -488,10 +490,18 @@ Updated at UTC 2024-11-15T10:12:33.653539
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10311">CVE-2024-10311</a></td>
+					<td>7.5</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-11-15T10:15:03.980</td>
+					<td class=description>The External Database Based Actions plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 0.1. This is due to a missing capability check in the 'edba_admin_handle' function. This makes it possible for authenticated attackers, with subscriber-level permissions and above, to update the plugin settings and log in as any existing user on the site, such as an administrator.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -2217,16 +2227,6 @@ their privileges by changing the macro to execute arbitrary code.</td>
 					<td>remote,unauthenticated</td>
 					<td class=date>2024-11-12T13:15:08.203</td>
 					<td class=description>A vulnerability has been identified in PP TeleControl Server Basic 1000 to 5000 V3.1 (6NH9910-0AA31-0AE1) (All versions < V3.1.2.1 with redundancy configured), PP TeleControl Server Basic 256 to 1000 V3.1 (6NH9910-0AA31-0AD1) (All versions < V3.1.2.1 with redundancy configured), PP TeleControl Server Basic 32 to 64 V3.1 (6NH9910-0AA31-0AF1) (All versions < V3.1.2.1 with redundancy configured), PP TeleControl Server Basic 64 to 256 V3.1 (6NH9910-0AA31-0AC1) (All versions < V3.1.2.1 with redundancy configured), PP TeleControl Server Basic 8 to 32 V3.1 (6NH9910-0AA31-0AB1) (All versions < V3.1.2.1 with redundancy configured), TeleControl Server Basic 1000 V3.1 (6NH9910-0AA31-0AD0) (All versions < V3.1.2.1 with redundancy configured), TeleControl Server Basic 256 V3.1 (6NH9910-0AA31-0AC0) (All versions < V3.1.2.1 with redundancy configured), TeleControl Server Basic 32 V3.1 (6NH9910-0AA31-0AF0) (All versions < V3.1.2.1 with redundancy configured), TeleControl Server Basic 5000 V3.1 (6NH9910-0AA31-0AE0) (All versions < V3.1.2.1 with redundancy configured), TeleControl Server Basic 64 V3.1 (6NH9910-0AA31-0AB0) (All versions < V3.1.2.1 with redundancy configured), TeleControl Server Basic 8 V3.1 (6NH9910-0AA31-0AA0) (All versions < V3.1.2.1 with redundancy configured), TeleControl Server Basic Serv Upgr (6NH9910-0AA31-0GA1) (All versions < V3.1.2.1 with redundancy configured), TeleControl Server Basic Upgr V3.1 (6NH9910-0AA31-0GA0) (All versions < V3.1.2.1 with redundancy configured). The affected system allows remote users to send maliciously crafted objects. Due to insecure deserialization of user-supplied content by the affected software, an unauthenticated attacker could exploit this vulnerability by sending a maliciously crafted serialized object. This could allow the attacker to execute arbitrary code on the device with SYSTEM privileges.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10245">CVE-2024-10245</a></td>
-					<td>9.8</td>
-					<td>unauthenticated,authentication,bypass</td>
-					<td class=date>2024-11-12T10:15:04.003</td>
-					<td class=description>The Relais 2FA plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.0. This is due to incorrect authentication and capability checking in the 'rl_do_ajax' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email.</td>
 				</tr>
 			
 		
