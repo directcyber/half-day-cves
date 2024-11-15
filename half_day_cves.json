@@ -1,10 +1,4 @@
 {
-  "CVE-2024-8881": {
-    "cvss": 6.8,
-    "description": "A post-authentication command injection vulnerability in the CGI program in the Zyxel GS1900-48 switch firmware version V2.80(AAHN.1)C0 and earlier could allow an authenticated, LAN-based attacker with administrator privileges to execute some operating system (OS) commands on an affected device by sending a crafted HTTP request.",
-    "published": "2024-11-12T02:15:18.817",
-    "keywords": "authentication,command"
-  },
   "CVE-2024-48837": {
     "cvss": 7.8,
     "description": "Dell SmartFabric OS10 Software, version(s) 10.5.6.x, 10.5.5.x, 10.5.4.x, 10.5.3.x, contain(s) an Execution with Unnecessary Privileges vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Command execution",
@@ -1057,7 +1051,7 @@
   },
   "CVE-2024-52308": {
     "cvss": 8.0,
-    "description": "The GitHub CLI version 2.6.1 and earlier are vulnerable to remote code execution through a malicious codespace SSH server when using `gh codespace ssh` or `gh codespace logs` commands. This has been patched in the cli v2.62.0.\n\nDevelopers connect to remote codespaces through an SSH server running within the devcontainer, which is generally provided through the [default devcontainer image](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers#using-the-default-dev-container-configuration). GitHub CLI [retrieves SSH connection details](https://github.com/cli/cli/blob/30066b0042d0c5928d959e288144300cb28196c9/internal/codespaces/rpc/invoker.go#L230-L244), such as remote username, which is used in [executing `ssh` commands](https://github.com/cli/cli/blob/e356c69a6f0125cfaac782c35acf77314f18908d/pkg/cmd/codespace/ssh.go#L263) for `gh codespace ssh` or `gh codespace logs` commands.\n\nThis exploit occurs when a malicious third-party devcontainer contains a modified SSH server that injects `ssh` arguments within the SSH connection details. `gh codespace ssh` and `gh codespace logs` commands could execute arbitrary code on the user's workstation if the remote username contains something like `-oProxyCommand=\"echo hacked\" #`.  The `-oProxyCommand` flag causes `ssh` to execute the provided command while `#` shell comment causes any other `ssh` arguments to be ignored.\n\nIn `2.62.0`, the remote username information is being validated before being used.",
+    "description": "The GitHub CLI version 2.6.1 and earlier are vulnerable to remote code execution through a malicious codespace SSH server when using `gh codespace ssh` or `gh codespace logs` commands. This has been patched in the cli v2.62.0.\n\nDevelopers connect to remote codespaces through an SSH server running within the devcontainer, which is generally provided through the [default devcontainer image]( https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-... https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers#using-the-default-dev-container-configuration) . GitHub CLI [retrieves SSH connection details]( https://github.com/cli/cli/blob/30066b0042d0c5928d959e288144300cb28196c9/internal/codespaces/rpc/inv... https://github.com/cli/cli/blob/30066b0042d0c5928d959e288144300cb28196c9/internal/codespaces/rpc/invoker.go#L230-L244 ), such as remote username, which is used in [executing `ssh` commands]( https://github.com/cli/cli/blob/e356c69a6f0125cfaac782c35acf77314f18908d/pkg/cmd/codespace/ssh.go#L2... https://github.com/cli/cli/blob/e356c69a6f0125cfaac782c35acf77314f18908d/pkg/cmd/codespace/ssh.go#L263 ) for `gh codespace ssh` or `gh codespace logs` commands.\n\nThis exploit occurs when a malicious third-party devcontainer contains a modified SSH server that injects `ssh` arguments within the SSH connection details. `gh codespace ssh` and `gh codespace logs` commands could execute arbitrary code on the user's workstation if the remote username contains something like `-oProxyCommand=\"echo hacked\" #`.  The `-oProxyCommand` flag causes `ssh` to execute the provided command while `#` shell comment causes any other `ssh` arguments to be ignored.\n\nIn `2.62.0`, the remote username information is being validated before being used.",
     "published": "2024-11-14T23:15:05.727",
     "keywords": "remote,execution,command"
   },
@@ -1066,5 +1060,11 @@
     "cvss": "-",
     "description": "A heap-based buffer under-read in tsMuxer version nightly-2024-05-12-02-01-18 allows attackers to cause Denial of Service (DoS) via a crafted MOV video file.",
     "published": "2024-11-14T23:15:05.967"
+  },
+  "CVE-2024-11120": {
+    "cvss": 9.8,
+    "description": "Certain EOL GeoVision devices have an OS Command Injection vulnerability. Unauthenticated remote attackers can exploit this vulnerability to inject and execute arbitrary system commands on the device. Moreover, this vulnerability has already been exploited by attackers, and we have received related reports.",
+    "published": "2024-11-15T02:15:17.757",
+    "keywords": "remote,unauthenticated,command"
   }
 }
