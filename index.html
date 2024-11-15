@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-15T04:14:53.183476
+Updated at UTC 2024-11-15T05:12:23.509948
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-11-15T04:14:53.183476
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -488,14 +490,18 @@ Updated at UTC 2024-11-15T04:14:53.183476
 		
 			
 		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10924">CVE-2024-10924</a></td>
+					<td>9.8</td>
+					<td>unauthenticated,authentication,bypass</td>
+					<td class=date>2024-11-15T04:15:03.613</td>
+					<td class=description>The Really Simple Security (Free, Pro, and Pro Multisite) plugins for WordPress are vulnerable to authentication bypass in versions 9.0.0 to 9.1.1.1. This is due to improper user check error handling in the two-factor REST API actions with the 'check_login_and_get_user' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, when the "Two-Factor Authentication" setting is enabled (disabled by default).</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -2221,36 +2227,6 @@ their privileges by changing the macro to execute arbitrary code.</td>
 					<td>unauthenticated,authentication,bypass</td>
 					<td class=date>2024-11-12T10:15:04.003</td>
 					<td class=description>The Relais 2FA plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.0. This is due to incorrect authentication and capability checking in the 'rl_do_ajax' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-49560">CVE-2024-49560</a></td>
-					<td>7.8</td>
-					<td>execution,command</td>
-					<td class=date>2024-11-12T04:15:06.443</td>
-					<td class=description>Dell SmartFabric OS10 Software, version(s) 10.5.6.x, 10.5.5.x, 10.5.4.x, 10.5.3.x, contain(s) a command injection vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Command execution.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-49557">CVE-2024-49557</a></td>
-					<td>7.8</td>
-					<td>execution,command</td>
-					<td class=date>2024-11-12T04:15:06.040</td>
-					<td class=description>Dell SmartFabric OS10 Software, version(s) 10.5.6.x, 10.5.5.x, 10.5.4.x, 10.5.3.x, contain(s) an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Code execution.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48837">CVE-2024-48837</a></td>
-					<td>7.8</td>
-					<td>execution,command</td>
-					<td class=date>2024-11-12T04:15:05.613</td>
-					<td class=description>Dell SmartFabric OS10 Software, version(s) 10.5.6.x, 10.5.5.x, 10.5.4.x, 10.5.3.x, contain(s) an Execution with Unnecessary Privileges vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Command execution</td>
 				</tr>
 			
 		

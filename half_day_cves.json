@@ -1,22 +1,4 @@
 {
-  "CVE-2024-48837": {
-    "cvss": 7.8,
-    "description": "Dell SmartFabric OS10 Software, version(s) 10.5.6.x, 10.5.5.x, 10.5.4.x, 10.5.3.x, contain(s) an Execution with Unnecessary Privileges vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Command execution",
-    "published": "2024-11-12T04:15:05.613",
-    "keywords": "execution,command"
-  },
-  "CVE-2024-49557": {
-    "cvss": 7.8,
-    "description": "Dell SmartFabric OS10 Software, version(s) 10.5.6.x, 10.5.5.x, 10.5.4.x, 10.5.3.x, contain(s) an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Code execution.",
-    "published": "2024-11-12T04:15:06.040",
-    "keywords": "execution,command"
-  },
-  "CVE-2024-49560": {
-    "cvss": 7.8,
-    "description": "Dell SmartFabric OS10 Software, version(s) 10.5.6.x, 10.5.5.x, 10.5.4.x, 10.5.3.x, contain(s) a command injection vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Command execution.",
-    "published": "2024-11-12T04:15:06.443",
-    "keywords": "execution,command"
-  },
   "CVE-2024-10245": {
     "cvss": 9.8,
     "description": "The Relais 2FA plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.0. This is due to incorrect authentication and capability checking in the 'rl_do_ajax' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email.",
@@ -1066,5 +1048,11 @@
     "description": "Certain EOL GeoVision devices have an OS Command Injection vulnerability. Unauthenticated remote attackers can exploit this vulnerability to inject and execute arbitrary system commands on the device. Moreover, this vulnerability has already been exploited by attackers, and we have received related reports.",
     "published": "2024-11-15T02:15:17.757",
     "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2024-10924": {
+    "cvss": 9.8,
+    "description": "The Really Simple Security (Free, Pro, and Pro Multisite) plugins for WordPress are vulnerable to authentication bypass in versions 9.0.0 to 9.1.1.1. This is due to improper user check error handling in the two-factor REST API actions with the 'check_login_and_get_user' function. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, when the \"Two-Factor Authentication\" setting is enabled (disabled by default).",
+    "published": "2024-11-15T04:15:03.613",
+    "keywords": "unauthenticated,authentication,bypass"
   }
 }
