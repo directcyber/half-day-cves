@@ -1,34 +1,4 @@
 {
-  "CVE-2024-47435": {
-    "cvss": 5.5,
-    "description": "Substance3D - Painter versions 10.1.0 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-11-12T20:15:10.117",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-47436": {
-    "cvss": 5.5,
-    "description": "Substance3D - Painter versions 10.1.0 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-11-12T20:15:10.317",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-47437": {
-    "cvss": 5.5,
-    "description": "Substance3D - Painter versions 10.1.0 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-11-12T20:15:10.513",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-47438": {
-    "cvss": 5.5,
-    "description": "Substance3D - Painter versions 10.1.0 and earlier are affected by a Write-what-where Condition vulnerability that could lead to a memory leak. This vulnerability allows an attacker to write a controlled value at a controlled memory location, which could result in the disclosure of sensitive memory content. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-11-12T20:15:10.720",
-    "keywords": "sensitive,leak"
-  },
-  "CVE-2024-47440": {
-    "cvss": 5.5,
-    "description": "Substance3D - Painter versions 10.1.0 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-11-12T20:15:11.140",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2024-11110": {
     "cvss": 6.5,
     "description": "Inappropriate implementation in Extensions in Google Chrome prior to 131.0.6778.69 allowed a remote attacker to bypass site isolation via a crafted Chrome Extension. (Chromium security severity: High)",
@@ -514,5 +484,11 @@
     "description": "An issue in kodbox v.1.52.04 and before allows a remote attacker to obtain sensitive information via the captcha feature in the password reset function.",
     "published": "2024-11-15T19:15:07.803",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-49536": {
+    "cvss": 5.5,
+    "description": "Audition versions 23.6.9, 24.4.6 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2024-11-15T20:15:20.683",
+    "keywords": "sensitive,bypass"
   }
 }
