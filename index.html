@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-16T05:11:07.216097
+Updated at UTC 2024-11-16T06:15:51.849865
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-11-16T05:11:07.216097
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -246,14 +250,28 @@ Updated at UTC 2024-11-16T05:11:07.216097
 		
 			
 		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8856">CVE-2024-8856</a></td>
+					<td>9.8</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2024-11-16T05:15:13.920</td>
+					<td class=description>The Backup and Staging by WP Time Capsule plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the the UploadHandler.php file and no direct file access prevention in all versions up to, and including, 1.22.21. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10728">CVE-2024-10728</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-11-16T05:15:12.510</td>
+					<td class=description>The Post Grid Gutenberg Blocks and WordPress Blog Plugin – PostX plugin for WordPress is vulnerable to unauthorized plugin installation/activation due to a missing capability check on the 'install_required_plugin_callback' function in all versions up to, and including, 4.1.16. This makes it possible for authenticated attackers, with Subscriber-level access and above, to install and activate arbitrary plugins which can be leveraged to achieve remote code execution if another vulnerable plugin is installed and activated.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -743,41 +761,6 @@ This issue affects Nexus Repository 2 OSS/Pro versions up to and including 2.15.
 					<td>unauthenticated,authentication,bypass</td>
 					<td class=date>2024-11-13T10:15:04.237</td>
 					<td class=description>The MultiManager WP – Manage All Your WordPress Sites Easily plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 1.0.5. This is due to the user impersonation feature inappropriately determining the current user via user-supplied input. This makes it possible for unauthenticated attackers to generate an impersonation link that will allow them to log in as any existing user, such as an administrator. NOTE: The user impersonation feature was disabled in version 1.1.0 and re-enabled with a patch in version 1.1.2.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8937">CVE-2024-8937</a></td>
-					<td>6.5</td>
-					<td>execution,authentication</td>
-					<td class=date>2024-11-13T05:15:22.613</td>
-					<td class=description>CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer vulnerability exists that could
-cause a potential arbitrary code execution after a successful Man-In-The Middle attack followed by sending a
-crafted Modbus function call to tamper with memory area involved in the authentication process.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8935">CVE-2024-8935</a></td>
-					<td>7.5</td>
-					<td>authentication,bypass</td>
-					<td class=date>2024-11-13T05:15:19.673</td>
-					<td class=description>CWE-290: Authentication Bypass by Spoofing vulnerability exists that could cause a denial of service and loss
-of confidentiality and integrity of controllers when conducting a Man-In-The-Middle attack between the
-controller and the engineering workstation while a valid user is establishing a communication session. This
-vulnerability is inherent to Diffie Hellman algorithm which does not protect against Man-In-The-Middle attacks.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-11150">CVE-2024-11150</a></td>
-					<td>9.8</td>
-					<td>remote,execution,unauthenticated</td>
-					<td class=date>2024-11-13T05:15:12.337</td>
-					<td class=description>The WordPress User Extra Fields plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the delete_tmp_uploaded_file() function in all versions up to, and including, 16.6. This makes it possible for unauthenticated attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).</td>
 				</tr>
 			
 		
