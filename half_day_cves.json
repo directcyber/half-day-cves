@@ -1,22 +1,4 @@
 {
-  "CVE-2024-10816": {
-    "cvss": 7.5,
-    "description": "The LUNA RADIO PLAYER plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 6.24.01.24 via the js/fallback.php file. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensitive information.",
-    "published": "2024-11-13T04:15:04.300",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-10820": {
-    "cvss": 9.8,
-    "description": "The WooCommerce Upload Files plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the upload_files() function in all versions up to, and including, 84.3. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2024-11-13T04:15:04.510",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-10828": {
-    "cvss": 8.1,
-    "description": "The Advanced Order Export For WooCommerce plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.5.5 via deserialization of untrusted input during Order export when the \"Try to convert serialized values\" option is enabled. This makes it possible for unauthenticated attackers to inject a PHP Object. The additional presence of a POP chain allows attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
-    "published": "2024-11-13T04:15:04.727",
-    "keywords": "remote,execution,unauthenticated"
-  },
   "CVE-2024-11150": {
     "cvss": 9.8,
     "description": "The WordPress User Extra Fields plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the delete_tmp_uploaded_file() function in all versions up to, and including, 16.6. This makes it possible for unauthenticated attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
@@ -340,5 +322,23 @@
     "description": "Audition versions 23.6.9, 24.4.6 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
     "published": "2024-11-15T20:15:20.683",
     "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-9839": {
+    "cvss": 7.3,
+    "description": "The The Uix Slideshow plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 1.6.5. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+    "published": "2024-11-16T04:15:07.467",
+    "keywords": "execution,unauthenticated"
+  },
+  "CVE-2024-9849": {
+    "cvss": 8.8,
+    "description": "The 3D FlipBook, PDF Viewer, PDF Embedder \u2013 Real 3D FlipBook WordPress Plugin plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'r3dfb_save_thumbnail_callback' function in all versions up to, and including, 4.6. This makes it possible for authenticated attackers, with Author-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-11-16T04:15:07.673",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-9935": {
+    "cvss": 7.5,
+    "description": "The PDF Generator Addon for Elementor Page Builder plugin for WordPress is vulnerable to Path Traversal in all versions up to, and including, 1.7.5 via the rtw_pgaepb_dwnld_pdf() function. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensitive information.",
+    "published": "2024-11-16T04:15:08.103",
+    "keywords": "unauthenticated,sensitive"
   }
 }

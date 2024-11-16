@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-16T04:13:49.356525
+Updated at UTC 2024-11-16T05:11:07.216097
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,12 @@ Updated at UTC 2024-11-16T04:13:49.356525
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -246,14 +252,38 @@ Updated at UTC 2024-11-16T04:13:49.356525
 		
 			
 		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9935">CVE-2024-9935</a></td>
+					<td>7.5</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2024-11-16T04:15:08.103</td>
+					<td class=description>The PDF Generator Addon for Elementor Page Builder plugin for WordPress is vulnerable to Path Traversal in all versions up to, and including, 1.7.5 via the rtw_pgaepb_dwnld_pdf() function. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensitive information.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9849">CVE-2024-9849</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-11-16T04:15:07.673</td>
+					<td class=description>The 3D FlipBook, PDF Viewer, PDF Embedder – Real 3D FlipBook WordPress Plugin plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'r3dfb_save_thumbnail_callback' function in all versions up to, and including, 4.6. This makes it possible for authenticated attackers, with Author-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9839">CVE-2024-9839</a></td>
+					<td>7.3</td>
+					<td>execution,unauthenticated</td>
+					<td class=date>2024-11-16T04:15:07.467</td>
+					<td class=description>The The Uix Slideshow plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 1.6.5. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -748,36 +778,6 @@ vulnerability is inherent to Diffie Hellman algorithm which does not protect aga
 					<td>remote,execution,unauthenticated</td>
 					<td class=date>2024-11-13T05:15:12.337</td>
 					<td class=description>The WordPress User Extra Fields plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the delete_tmp_uploaded_file() function in all versions up to, and including, 16.6. This makes it possible for unauthenticated attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10828">CVE-2024-10828</a></td>
-					<td>8.1</td>
-					<td>remote,execution,unauthenticated</td>
-					<td class=date>2024-11-13T04:15:04.727</td>
-					<td class=description>The Advanced Order Export For WooCommerce plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.5.5 via deserialization of untrusted input during Order export when the "Try to convert serialized values" option is enabled. This makes it possible for unauthenticated attackers to inject a PHP Object. The additional presence of a POP chain allows attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10820">CVE-2024-10820</a></td>
-					<td>9.8</td>
-					<td>remote,execution,unauthenticated</td>
-					<td class=date>2024-11-13T04:15:04.510</td>
-					<td class=description>The WooCommerce Upload Files plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the upload_files() function in all versions up to, and including, 84.3. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10816">CVE-2024-10816</a></td>
-					<td>7.5</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2024-11-13T04:15:04.300</td>
-					<td class=description>The LUNA RADIO PLAYER plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 6.24.01.24 via the js/fallback.php file. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensitive information.</td>
 				</tr>
 			
 		
