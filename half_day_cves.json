@@ -1,10 +1,4 @@
 {
-  "CVE-2024-11028": {
-    "cvss": 9.8,
-    "description": "The MultiManager WP \u2013 Manage All Your WordPress Sites Easily plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 1.0.5. This is due to the user impersonation feature inappropriately determining the current user via user-supplied input. This makes it possible for unauthenticated attackers to generate an impersonation link that will allow them to log in as any existing user, such as an administrator. NOTE: The user impersonation feature was disabled in version 1.1.0 and re-enabled with a patch in version 1.1.2.",
-    "published": "2024-11-13T10:15:04.237",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
   "CVE-2024-47574": {
     "cvss": 7.8,
     "description": "A authentication bypass using an alternate path or channel in Fortinet FortiClientWindows version 7.4.0, versions 7.2.4 through 7.2.0, versions 7.0.12 through 7.0.0, and 6.4.10 through 6.4.0 allows low privilege attacker to execute arbitrary code with high privilege via spoofed named pipe messages.",
@@ -339,6 +333,12 @@
     "cvss": 7.5,
     "description": "The Blogger 301 Redirect plugin for WordPress is vulnerable to blind time-based SQL Injection via the \u2018br\u2019 parameter in all versions up to, and including, 2.5.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
     "published": "2024-11-16T09:15:04.037",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-11094": {
+    "cvss": 5.3,
+    "description": "The 404 Solution plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.35.17 via the export feature. This makes it possible for unauthenticated attackers to extract sensitive data such as redirects including GET parameters which may reveal sensitive information.",
+    "published": "2024-11-16T10:15:04.737",
     "keywords": "unauthenticated,sensitive"
   }
 }
