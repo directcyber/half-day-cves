@@ -1,10 +1,4 @@
 {
-  "CVE-2024-52505": {
-    "cvss": 5.4,
-    "description": "matrix-appservice-irc is a Node.js IRC bridge for the Matrix messaging protocol. The provisioning API of the matrix-appservice-irc bridge up to version 3.0.2 contains a vulnerability which can lead to arbitrary IRC command execution as the bridge IRC bot. The vulnerability has been patched in matrix-appservice-irc version 3.0.3.",
-    "published": "2024-11-14T16:15:20.220",
-    "keywords": "execution,command"
-  },
   "CVE-2024-49362": {
     "cvss": 7.7,
     "description": "Joplin is a free, open source note taking and to-do application. Joplin-desktop has a vulnerability that leads to remote code execution (RCE) when a user clicks on an <a> link within untrusted notes. The issue arises due to insufficient sanitization of <a> tag attributes introduced by the Mermaid. This vulnerability allows the execution of untrusted HTML content within the Electron window, which has full access to Node.js APIs, enabling arbitrary shell command execution.",
