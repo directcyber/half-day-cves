@@ -1,10 +1,4 @@
 {
-  "CVE-2024-10571": {
-    "cvss": 9.8,
-    "description": "The Chartify \u2013 WordPress Chart Plugin plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.9.5 via the 'source' parameter. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
-    "published": "2024-11-14T11:15:04.630",
-    "keywords": "execution,unauthenticated,sensitive,bypass"
-  },
   "CVE-2024-10979": {
     "cvss": 8.8,
     "description": "Incorrect control of environment variables in PostgreSQL PL/Perl allows an unprivileged database user to change sensitive process environment variables (e.g. PATH).  That often suffices to enable arbitrary code execution, even if the attacker lacks a database server operating system user.  Versions before PostgreSQL 17.1, 16.5, 15.9, 14.14, 13.17, and 12.21 are affected.",
