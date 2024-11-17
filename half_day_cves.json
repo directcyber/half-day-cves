@@ -1,28 +1,4 @@
 {
-  "CVE-2024-10962": {
-    "cvss": 8.8,
-    "description": "The Migration, Backup, Staging \u2013 WPvivid plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 0.9.107 via deserialization of untrusted input in the 'replace_row_data' and 'replace_serialize_data' functions. This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable software. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code. An administrator must create a staging site to trigger the exploit.",
-    "published": "2024-11-14T14:15:17.533",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-11209": {
-    "cvss": 6.3,
-    "description": "A vulnerability was found in Apereo CAS 6.6. It has been classified as critical. This affects an unknown part of the file /login?service of the component 2FA. The manipulation leads to improper authentication. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2024-11-14T14:15:18.090",
-    "keywords": "remote,authentication"
-  },
-  "CVE-2024-11215": {
-    "cvss": 6.5,
-    "description": "Absolute path traversal (incorrect restriction of a path to a restricted directory) vulnerability in the EasyPHP web server, affecting version 14.1. This vulnerability could allow remote users to bypass SecurityManager restrictions and retrieve any file stored on the server by setting only consecutive strings \u2018/...%5c\u2019.",
-    "published": "2024-11-14T14:15:18.367",
-    "keywords": "remote,bypass"
-  },
-  "CVE-2024-50843": {
-    "cvss": 5.3,
-    "description": "A Directory listing issue was found in PHPGurukul User Registration & Login and User Management System 3.2, which allows remote attackers attacker to access sensitive files and directories via /loginsystem/assets.",
-    "published": "2024-11-14T14:15:19.050",
-    "keywords": "remote,sensitive"
-  },
   "CVE-2024-52505": {
     "cvss": 5.4,
     "description": "matrix-appservice-irc is a Node.js IRC bridge for the Matrix messaging protocol. The provisioning API of the matrix-appservice-irc bridge up to version 3.0.2 contains a vulnerability which can lead to arbitrary IRC command execution as the bridge IRC bot. The vulnerability has been patched in matrix-appservice-irc version 3.0.3.",
