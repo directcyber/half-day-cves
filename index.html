@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-18T10:13:29.724301
+Updated at UTC 2024-11-18T11:10:40.632934
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -114,8 +114,6 @@ Updated at UTC 2024-11-18T10:13:29.724301
 
 
 				</tr>
-			
-		
 			
 		
 			
@@ -378,16 +376,6 @@ For more information, see the  section of this advisory.</td>
 					<td>remote,bypass</td>
 					<td class=date>2024-11-15T11:15:09.213</td>
 					<td class=description>phpIPAM version 1.5.1 contains a vulnerability where an attacker can bypass the IP block mechanism to brute force passwords for users by using the 'X-Forwarded-For' header. The issue lies in the 'get_user_ip()' function in 'class.Common.php' at lines 1044 and 1045, where the presence of the 'X-Forwarded-For' header is checked and used instead of 'REMOTE_ADDR'. This vulnerability allows attackers to perform brute force attacks on user accounts, including the admin account. The issue is fixed in version 1.7.0.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10311">CVE-2024-10311</a></td>
-					<td>7.5</td>
-					<td>authentication,bypass</td>
-					<td class=date>2024-11-15T10:15:03.980</td>
-					<td class=description>The External Database Based Actions plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 0.1. This is due to a missing capability check in the 'edba_admin_handle' function. This makes it possible for authenticated attackers, with subscriber-level permissions and above, to update the plugin settings and log in as any existing user on the site, such as an administrator.</td>
 				</tr>
 			
 		
