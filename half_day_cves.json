@@ -154,5 +154,11 @@
     "description": "The DVC from TRCore has a Path Traversal vulnerability and does not restrict the types of uploaded files. This allows unauthenticated remote attackers to upload arbitrary files to any directory, leading to arbitrary code execution by uploading webshells.",
     "published": "2024-11-18T07:15:16.673",
     "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-41969": {
+    "cvss": 8.8,
+    "description": "A low privileged remote attacker may\u00a0modify the configuration of the CODESYS V3 service through a missing authentication vulnerability which could lead to full system access and/or DoS.",
+    "published": "2024-11-18T09:15:05.637",
+    "keywords": "remote,authentication"
   }
 }
