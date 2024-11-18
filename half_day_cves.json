@@ -1,22 +1,4 @@
 {
-  "CVE-2024-0787": {
-    "cvss": 5.3,
-    "description": "phpIPAM version 1.5.1 contains a vulnerability where an attacker can bypass the IP block mechanism to brute force passwords for users by using the 'X-Forwarded-For' header. The issue lies in the 'get_user_ip()' function in 'class.Common.php' at lines 1044 and 1045, where the presence of the 'X-Forwarded-For' header is checked and used instead of 'REMOTE_ADDR'. This vulnerability allows attackers to perform brute force attacks on user accounts, including the admin account. The issue is fixed in version 1.7.0.",
-    "published": "2024-11-15T11:15:09.213",
-    "keywords": "remote,bypass"
-  },
-  "CVE-2024-10443": {
-    "cvss": 9.8,
-    "description": "Improper neutralization of special elements used in a command ('Command Injection') vulnerability in Task Manager component in Synology BeePhotos before 1.0.2-10026 and 1.1.0-10053 and Synology Photos before 1.6.2-0720 and 1.7.0-0795 allows remote attackers to execute arbitrary code via unspecified vectors.",
-    "published": "2024-11-15T11:15:09.750",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-1240": {
-    "url": "https://github.com/pyload/pyload/commit/fe94451dcc2be90b3889e2fd9d07b483c8a6dccd",
-    "cvss": 4.6,
-    "description": "An open redirection vulnerability exists in pyload/pyload version 0.5.0. The vulnerability is due to improper handling of the 'next' parameter in the login functionality. An attacker can exploit this vulnerability to redirect users to malicious sites, which can be used for phishing or other malicious activities. The issue is fixed in pyload-ng 0.5.0b3.dev79.",
-    "published": "2024-11-15T11:15:10.773"
-  },
   "CVE-2024-20373": {
     "cvss": 5.3,
     "description": "A vulnerability in the implementation of the Simple Network Management Protocol (SNMP) IPv4 access control list (ACL) feature of Cisco IOS Software and Cisco IOS XE Software could allow an unauthenticated, remote attacker to perform SNMP polling of an affected device, even if it is configured to deny SNMP traffic.&nbsp;\r\n\r\nThis vulnerability exists because Cisco IOS Software and Cisco IOS XE Software do not support extended IPv4 ACLs for SNMP, but they do allow administrators to configure extended named IPv4 ACLs that are attached to the SNMP server configuration without a warning message. This can result in no ACL being applied to the SNMP listening process. An attacker could exploit this vulnerability by performing SNMP polling of an affected device. A successful exploit could allow the attacker to perform SNMP operations that should be denied. The attacker has no control of the SNMP ACL configuration and would still need a valid SNMP version 2c (SNMPv2c) community string or SNMP version 3 (SNMPv3) user credentials.\r\nSNMP with IPv6 ACL configurations is not affected.\r\nFor more information, see the  section of this advisory.",
@@ -154,5 +136,11 @@
     "description": "A low privileged remote attacker may\u00a0modify the configuration of the CODESYS V3 service through a missing authentication vulnerability which could lead to full system access and/or DoS.",
     "published": "2024-11-18T09:15:05.637",
     "keywords": "remote,authentication"
+  },
+  "CVE-2024-52316": {
+    "cvss": "-",
+    "description": "Unchecked Error Condition vulnerability in Apache Tomcat. If Tomcat is configured to use a custom Jakarta Authentication (formerly JASPIC)\u00a0ServerAuthContext component which may throw an exception during the authentication process without explicitly setting an HTTP status to indicate failure, the authentication may not fail, allowing the user to bypass the authentication process. There are no known Jakarta\u00a0Authentication components that behave in this way.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.0-M26, from 10.1.0-M1 through 10.1.30, from 9.0.0-M1 through 9.0.95.\n\nUsers are recommended to upgrade to version 11.0.0, 10.1.31 or 9.0.96, which fix the issue.",
+    "published": "2024-11-18T12:15:18.600",
+    "keywords": "authentication,bypass"
   }
 }

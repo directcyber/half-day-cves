@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-18T11:10:40.632934
+Updated at UTC 2024-11-18T12:23:28.286801
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -105,23 +105,23 @@ Updated at UTC 2024-11-18T11:10:40.632934
 			
 		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-1240">CVE-2024-1240</a></td>
-					<td>4.6</td>
-					<td><a target=_blank href="https://github.com/pyload/pyload/commit/fe94451dcc2be90b3889e2fd9d07b483c8a6dccd">https://github.com/pyload/pyload/commit/fe94451dcc2be90b3889e2fd9d07b483c8a6dccd</a></td>
-					<td class=date>2024-11-15T11:15:10.773</td>
-					<td class=description>An open redirection vulnerability exists in pyload/pyload version 0.5.0. The vulnerability is due to improper handling of the 'next' parameter in the login functionality. An attacker can exploit this vulnerability to redirect users to malicious sites, which can be used for phishing or other malicious activities. The issue is fixed in pyload-ng 0.5.0b3.dev79.</td>
-
-
-				</tr>
-			
-		
-			
-		
-			
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-52316">CVE-2024-52316</a></td>
+					<td>-</td>
+					<td>authentication,bypass</td>
+					<td class=date>2024-11-18T12:15:18.600</td>
+					<td class=description>Unchecked Error Condition vulnerability in Apache Tomcat. If Tomcat is configured to use a custom Jakarta Authentication (formerly JASPIC) ServerAuthContext component which may throw an exception during the authentication process without explicitly setting an HTTP status to indicate failure, the authentication may not fail, allowing the user to bypass the authentication process. There are no known Jakarta Authentication components that behave in this way.
+
+This issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.0-M26, from 10.1.0-M1 through 10.1.30, from 9.0.0-M1 through 9.0.95.
+
+Users are recommended to upgrade to version 11.0.0, 10.1.31 or 9.0.96, which fix the issue.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -354,28 +354,6 @@ Updated at UTC 2024-11-18T11:10:40.632934
 This vulnerability exists because Cisco IOS Software and Cisco IOS XE Software do not support extended IPv4 ACLs for SNMP, but they do allow administrators to configure extended named IPv4 ACLs that are attached to the SNMP server configuration without a warning message. This can result in no ACL being applied to the SNMP listening process. An attacker could exploit this vulnerability by performing SNMP polling of an affected device. A successful exploit could allow the attacker to perform SNMP operations that should be denied. The attacker has no control of the SNMP ACL configuration and would still need a valid SNMP version 2c (SNMPv2c) community string or SNMP version 3 (SNMPv3) user credentials.
 SNMP with IPv6 ACL configurations is not affected.
 For more information, see the  section of this advisory.</td>
-				</tr>
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10443">CVE-2024-10443</a></td>
-					<td>9.8</td>
-					<td>remote,command</td>
-					<td class=date>2024-11-15T11:15:09.750</td>
-					<td class=description>Improper neutralization of special elements used in a command ('Command Injection') vulnerability in Task Manager component in Synology BeePhotos before 1.0.2-10026 and 1.1.0-10053 and Synology Photos before 1.6.2-0720 and 1.7.0-0795 allows remote attackers to execute arbitrary code via unspecified vectors.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-0787">CVE-2024-0787</a></td>
-					<td>5.3</td>
-					<td>remote,bypass</td>
-					<td class=date>2024-11-15T11:15:09.213</td>
-					<td class=description>phpIPAM version 1.5.1 contains a vulnerability where an attacker can bypass the IP block mechanism to brute force passwords for users by using the 'X-Forwarded-For' header. The issue lies in the 'get_user_ip()' function in 'class.Common.php' at lines 1044 and 1045, where the presence of the 'X-Forwarded-For' header is checked and used instead of 'REMOTE_ADDR'. This vulnerability allows attackers to perform brute force attacks on user accounts, including the admin account. The issue is fixed in version 1.7.0.</td>
 				</tr>
 			
 		
