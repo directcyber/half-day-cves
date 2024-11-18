@@ -1,10 +1,4 @@
 {
-  "CVE-2024-50647": {
-    "cvss": "-",
-    "description": "The python_food ordering system V1.0 has an unauthorized vulnerability that leads to the leakage of sensitive user information. Attackers can access it through https://ip:port/api/myapp/index/user/info?id=1 And modify the ID value to obtain sensitive user information beyond authorization.",
-    "published": "2024-11-15T16:15:36.467",
-    "keywords": "sensitive,leak"
-  },
   "CVE-2024-39726": {
     "cvss": 8.2,
     "description": "IBM Engineering Lifecycle Optimization - Engineering Insights 7.0.2 and 7.0.3 is vulnerable to an XML External Entity Injection (XXE) attack when processing XML data. A remote attacker could exploit this vulnerability to expose sensitive information or consume memory resources.",
@@ -142,5 +136,11 @@
     "description": "OpenCTI is an open source platform allowing organizations to manage their cyber threat intelligence knowledge and observables. Prior to version 6.1.9, the regex validation used to prevent Introspection queries can be bypassed by removing the extra whitespace, carriage return, and line feed characters from the query. GraphQL Queries in OpenCTI can be validated using the `secureIntrospectionPlugin`. The regex check in the plkugin can be bypassed by removing the carriage return and line feed characters (`\\r\\n`).  Running a curl command against a local instance of OpenCTI will result in a limited error message. By running the same Introspection query without the `\\r\\n` characters, the unauthenticated user is able to successfully run a full Introspection query. Bypassing this restriction allows the attacker to gather a wealth of information about the GraphQL endpoint functionality that can be used to perform actions and/or read data without authorization.  These queries can also be weaponized to conduct a Denial of Service (DoS) attack if sent repeatedly. Users should upgrade to version 6.1.9 to receive a patch for the issue.",
     "published": "2024-11-18T15:15:06.210",
     "keywords": "unauthenticated,command,bypass"
+  },
+  "CVE-2024-0012": {
+    "cvss": "-",
+    "description": "An authentication bypass in Palo Alto Networks PAN-OS software enables an unauthenticated attacker with network access to the management web interface to gain PAN-OS administrator privileges to perform administrative actions, tamper with the configuration, or exploit other authenticated privilege escalation vulnerabilities like  CVE-2024-9474 https://security.paloaltonetworks.com/CVE-2024-9474 .\n\nThe risk of this issue is greatly reduced if you secure access to the management web interface by restricting access to only trusted internal IP addresses according to our recommended\u00a0 best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .\n\nThis issue is applicable only to PAN-OS 10.2, PAN-OS 11.0, PAN-OS 11.1, and PAN-OS 11.2 software.\n\nCloud NGFW and Prisma Access are not impacted by this vulnerability.",
+    "published": "2024-11-18T16:15:11.683",
+    "keywords": "unauthenticated,authentication,bypass"
   }
 }

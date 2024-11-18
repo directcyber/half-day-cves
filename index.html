@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-18T16:14:51.829578
+Updated at UTC 2024-11-18T17:10:40.728128
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -108,6 +108,22 @@ Updated at UTC 2024-11-18T16:14:51.829578
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-0012">CVE-2024-0012</a></td>
+					<td>-</td>
+					<td>unauthenticated,authentication,bypass</td>
+					<td class=date>2024-11-18T16:15:11.683</td>
+					<td class=description>An authentication bypass in Palo Alto Networks PAN-OS software enables an unauthenticated attacker with network access to the management web interface to gain PAN-OS administrator privileges to perform administrative actions, tamper with the configuration, or exploit other authenticated privilege escalation vulnerabilities like  CVE-2024-9474 https://security.paloaltonetworks.com/CVE-2024-9474 .
+
+The risk of this issue is greatly reduced if you secure access to the management web interface by restricting access to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .
+
+This issue is applicable only to PAN-OS 10.2, PAN-OS 11.0, PAN-OS 11.1, and PAN-OS 11.2 software.
+
+Cloud NGFW and Prisma Access are not impacted by this vulnerability.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -340,16 +356,6 @@ Users are recommended to upgrade to version 11.0.0, 10.1.31 or 9.0.96, which fix
 					<td>remote,sensitive</td>
 					<td class=date>2024-11-15T17:15:19.983</td>
 					<td class=description>IBM Engineering Lifecycle Optimization - Engineering Insights 7.0.2 and 7.0.3 is vulnerable to an XML External Entity Injection (XXE) attack when processing XML data. A remote attacker could exploit this vulnerability to expose sensitive information or consume memory resources.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50647">CVE-2024-50647</a></td>
-					<td>-</td>
-					<td>sensitive,leak</td>
-					<td class=date>2024-11-15T16:15:36.467</td>
-					<td class=description>The python_food ordering system V1.0 has an unauthorized vulnerability that leads to the leakage of sensitive user information. Attackers can access it through https://ip:port/api/myapp/index/user/info?id=1 And modify the ID value to obtain sensitive user information beyond authorization.</td>
 				</tr>
 			
 		
