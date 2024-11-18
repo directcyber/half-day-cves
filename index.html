@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-18T15:13:07.963248
+Updated at UTC 2024-11-18T16:14:51.829578
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -106,10 +106,18 @@ Updated at UTC 2024-11-18T15:13:07.963248
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37155">CVE-2024-37155</a></td>
+					<td>6.5</td>
+					<td>unauthenticated,command,bypass</td>
+					<td class=date>2024-11-18T15:15:06.210</td>
+					<td class=description>OpenCTI is an open source platform allowing organizations to manage their cyber threat intelligence knowledge and observables. Prior to version 6.1.9, the regex validation used to prevent Introspection queries can be bypassed by removing the extra whitespace, carriage return, and line feed characters from the query. GraphQL Queries in OpenCTI can be validated using the `secureIntrospectionPlugin`. The regex check in the plkugin can be bypassed by removing the carriage return and line feed characters (`\r\n`).  Running a curl command against a local instance of OpenCTI will result in a limited error message. By running the same Introspection query without the `\r\n` characters, the unauthenticated user is able to successfully run a full Introspection query. Bypassing this restriction allows the attacker to gather a wealth of information about the GraphQL endpoint functionality that can be used to perform actions and/or read data without authorization.  These queries can also be weaponized to conduct a Denial of Service (DoS) attack if sent repeatedly. Users should upgrade to version 6.1.9 to receive a patch for the issue.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -124,7 +132,7 @@ Updated at UTC 2024-11-18T15:13:07.963248
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-52316">CVE-2024-52316</a></td>
-					<td>-</td>
+					<td>9.8</td>
 					<td>authentication,bypass</td>
 					<td class=date>2024-11-18T12:15:18.600</td>
 					<td class=description>Unchecked Error Condition vulnerability in Apache Tomcat. If Tomcat is configured to use a custom Jakarta Authentication (formerly JASPIC) ServerAuthContext component which may throw an exception during the authentication process without explicitly setting an HTTP status to indicate failure, the authentication may not fail, allowing the user to bypass the authentication process. There are no known Jakarta Authentication components that behave in this way.
@@ -342,30 +350,6 @@ Users are recommended to upgrade to version 11.0.0, 10.1.31 or 9.0.96, which fix
 					<td>sensitive,leak</td>
 					<td class=date>2024-11-15T16:15:36.467</td>
 					<td class=description>The python_food ordering system V1.0 has an unauthorized vulnerability that leads to the leakage of sensitive user information. Attackers can access it through https://ip:port/api/myapp/index/user/info?id=1 And modify the ID value to obtain sensitive user information beyond authorization.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-43189">CVE-2024-43189</a></td>
-					<td>5.9</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-11-15T15:15:07.307</td>
-					<td class=description>IBM Concert Software 1.0.0 through 1.0.1 could allow a remote attacker to obtain sensitive information, caused by the failure to properly enable HTTP Strict Transport Security. An attacker could exploit this vulnerability to obtain sensitive information using man in the middle techniques.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-20373">CVE-2024-20373</a></td>
-					<td>5.3</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-11-15T15:15:06.823</td>
-					<td class=description>A vulnerability in the implementation of the Simple Network Management Protocol (SNMP) IPv4 access control list (ACL) feature of Cisco IOS Software and Cisco IOS XE Software could allow an unauthenticated, remote attacker to perform SNMP polling of an affected device, even if it is configured to deny SNMP traffic.&nbsp;
-
-This vulnerability exists because Cisco IOS Software and Cisco IOS XE Software do not support extended IPv4 ACLs for SNMP, but they do allow administrators to configure extended named IPv4 ACLs that are attached to the SNMP server configuration without a warning message. This can result in no ACL being applied to the SNMP listening process. An attacker could exploit this vulnerability by performing SNMP polling of an affected device. A successful exploit could allow the attacker to perform SNMP operations that should be denied. The attacker has no control of the SNMP ACL configuration and would still need a valid SNMP version 2c (SNMPv2c) community string or SNMP version 3 (SNMPv3) user credentials.
-SNMP with IPv6 ACL configurations is not affected.
-For more information, see the  section of this advisory.</td>
 				</tr>
 			
 		
