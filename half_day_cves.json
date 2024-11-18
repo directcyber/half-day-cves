@@ -142,5 +142,11 @@
     "description": "Unchecked Error Condition vulnerability in Apache Tomcat. If Tomcat is configured to use a custom Jakarta Authentication (formerly JASPIC)\u00a0ServerAuthContext component which may throw an exception during the authentication process without explicitly setting an HTTP status to indicate failure, the authentication may not fail, allowing the user to bypass the authentication process. There are no known Jakarta\u00a0Authentication components that behave in this way.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.0-M26, from 10.1.0-M1 through 10.1.30, from 9.0.0-M1 through 9.0.95.\n\nUsers are recommended to upgrade to version 11.0.0, 10.1.31 or 9.0.96, which fix the issue.",
     "published": "2024-11-18T12:15:18.600",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-11318": {
+    "cvss": 7.5,
+    "description": "An IDOR (Insecure Direct Object Reference) vulnerability has been discovered in AbsysNet, affecting version 2.3.1. This vulnerability could allow a remote attacker to obtain the session of an unauthenticated user by brute-force attacking the session identifier on the \"/cgi-bin/ocap/\" endpoint.",
+    "published": "2024-11-18T14:15:05.233",
+    "keywords": "remote,unauthenticated"
   }
 }
