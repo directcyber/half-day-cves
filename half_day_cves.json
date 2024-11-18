@@ -1,10 +1,4 @@
 {
-  "CVE-2024-49536": {
-    "cvss": 5.5,
-    "description": "Audition versions 23.6.9, 24.4.6 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-11-15T20:15:20.683",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2024-9839": {
     "cvss": 7.3,
     "description": "The The Uix Slideshow plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 1.6.5. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
@@ -130,5 +124,23 @@
     "description": "An authentication bypass in Palo Alto Networks PAN-OS software enables an unauthenticated attacker with network access to the management web interface to gain PAN-OS administrator privileges to perform administrative actions, tamper with the configuration, or exploit other authenticated privilege escalation vulnerabilities like  CVE-2024-9474 https://security.paloaltonetworks.com/CVE-2024-9474 .\n\nThe risk of this issue is greatly reduced if you secure access to the management web interface by restricting access to only trusted internal IP addresses according to our recommended\u00a0 best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .\n\nThis issue is applicable only to PAN-OS 10.2, PAN-OS 11.0, PAN-OS 11.1, and PAN-OS 11.2 software.\n\nCloud NGFW and Prisma Access are not impacted by this vulnerability.",
     "published": "2024-11-18T16:15:11.683",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-50919": {
+    "cvss": "-",
+    "description": "Jpress until v5.1.1 has arbitrary file uploads on the windows platform, and the construction of non-standard file formats such as .jsp. can lead to arbitrary command execution",
+    "published": "2024-11-18T20:15:05.650",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-51499": {
+    "cvss": "-",
+    "description": "MarkUs is a web application for the submission and grading of student assignments. In versions prior to 2.4.8, an arbitrary file write vulnerability accessible via the update_files method of the SubmissionsController allows authenticated users (e.g. students) to write arbitrary files to any location on the web server MarkUs is running on (depending on the permissions of the underlying filesystem). e.g. This can lead to a delayed remote code execution in case an attacker is able to write a Ruby file into the config/initializers/ subfolder of the Ruby on Rails application. MarkUs v2.4.8 has addressed this issue. No known workarounds are available at the application level aside from upgrading.",
+    "published": "2024-11-18T20:15:05.760",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-51743": {
+    "cvss": "-",
+    "description": "MarkUs is a web application for the submission and grading of student assignments. In versions prior to 2.4.8, an arbitrary file write vulnerability in the update/upload/create file methods in Controllers allows authenticated instructors to write arbitrary files to any location on the web server MarkUs is running on (depending on the permissions of the underlying filesystem). e.g. This can lead to a delayed remote code execution in case an attacker is able to write a Ruby file into the config/initializers/ subfolder of the Ruby on Rails application. MarkUs v2.4.8 has addressed this issue. No known workarounds are available at the application level aside from upgrading.",
+    "published": "2024-11-18T20:15:05.900",
+    "keywords": "remote,execution"
   }
 }

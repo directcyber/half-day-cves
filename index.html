@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-18T20:12:56.187517
+Updated at UTC 2024-11-18T21:09:37.324088
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -102,8 +102,42 @@ Updated at UTC 2024-11-18T20:12:56.187517
 		
 			
 		
+			
+		
+			
+		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-51743">CVE-2024-51743</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2024-11-18T20:15:05.900</td>
+					<td class=description>MarkUs is a web application for the submission and grading of student assignments. In versions prior to 2.4.8, an arbitrary file write vulnerability in the update/upload/create file methods in Controllers allows authenticated instructors to write arbitrary files to any location on the web server MarkUs is running on (depending on the permissions of the underlying filesystem). e.g. This can lead to a delayed remote code execution in case an attacker is able to write a Ruby file into the config/initializers/ subfolder of the Ruby on Rails application. MarkUs v2.4.8 has addressed this issue. No known workarounds are available at the application level aside from upgrading.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-51499">CVE-2024-51499</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2024-11-18T20:15:05.760</td>
+					<td class=description>MarkUs is a web application for the submission and grading of student assignments. In versions prior to 2.4.8, an arbitrary file write vulnerability accessible via the update_files method of the SubmissionsController allows authenticated users (e.g. students) to write arbitrary files to any location on the web server MarkUs is running on (depending on the permissions of the underlying filesystem). e.g. This can lead to a delayed remote code execution in case an attacker is able to write a Ruby file into the config/initializers/ subfolder of the Ruby on Rails application. MarkUs v2.4.8 has addressed this issue. No known workarounds are available at the application level aside from upgrading.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50919">CVE-2024-50919</a></td>
+					<td>-</td>
+					<td>execution,command</td>
+					<td class=date>2024-11-18T20:15:05.650</td>
+					<td class=description>Jpress until v5.1.1 has arbitrary file uploads on the windows platform, and the construction of non-standard file formats such as .jsp. can lead to arbitrary command execution</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -322,16 +356,6 @@ Users are recommended to upgrade to version 11.0.0, 10.1.31 or 9.0.96, which fix
 					<td>execution,unauthenticated</td>
 					<td class=date>2024-11-16T04:15:07.467</td>
 					<td class=description>The The Uix Slideshow plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 1.6.5. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-49536">CVE-2024-49536</a></td>
-					<td>5.5</td>
-					<td>sensitive,bypass</td>
-					<td class=date>2024-11-15T20:15:20.683</td>
-					<td class=description>Audition versions 23.6.9, 24.4.6 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
 				</tr>
 			
 		
