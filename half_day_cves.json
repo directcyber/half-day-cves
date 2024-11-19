@@ -96,19 +96,19 @@
     "keywords": "remote,execution"
   },
   "CVE-2024-51743": {
-    "cvss": "-",
+    "cvss": 8.8,
     "description": "MarkUs is a web application for the submission and grading of student assignments. In versions prior to 2.4.8, an arbitrary file write vulnerability in the update/upload/create file methods in Controllers allows authenticated instructors to write arbitrary files to any location on the web server MarkUs is running on (depending on the permissions of the underlying filesystem). e.g. This can lead to a delayed remote code execution in case an attacker is able to write a Ruby file into the config/initializers/ subfolder of the Ruby on Rails application. MarkUs v2.4.8 has addressed this issue. No known workarounds are available at the application level aside from upgrading.",
     "published": "2024-11-18T20:15:05.900",
     "keywords": "remote,execution"
   },
   "CVE-2024-50848": {
-    "cvss": "-",
+    "cvss": 6.5,
     "description": "An XML External Entity (XXE) vulnerability in the Import object and Translation Memory import functionalities of WorldServer v11.8.2 to access sensitive information and execute arbitrary commands via supplying a crafted .tmx file.",
     "published": "2024-11-18T21:15:06.293",
     "keywords": "command,sensitive"
   },
   "CVE-2024-52587": {
-    "cvss": "-",
+    "cvss": 8.8,
     "description": "StepSecurity's Harden-Runner provides network egress filtering and runtime security for GitHub-hosted and self-hosted runners. Versions of step-security/harden-runner prior to v2.10.2 contain multiple command injection weaknesses via environment variables that could potentially be exploited under specific conditions. However, due to the current execution order of pre-steps in GitHub Actions and the placement of harden-runner as the first step in a job, the likelihood of exploitation is low as the Harden-Runner action reads the environment variable during the pre-step stage. There are no known exploits at this time. Version 2.10.2 contains a patch.",
     "published": "2024-11-18T22:15:09.557",
     "keywords": "execution,command"
