@@ -202,5 +202,29 @@
     "description": "2FAuth is a web app to manage Two-Factor Authentication (2FA) accounts and generate their security codes. Two interconnected vulnerabilities exist in version 5.4.1 a SSRF and URI validation bypass issue. The endpoint at POST /api/v1/twofaccounts/preview allows setting a remote URI to retrieve the image of a 2fa site. By abusing this functionality, it is possible to force the application to make a GET request to an arbitrary URL, whose content will be stored in an image file in the server if it looks like an image. Additionally, the library does some basic validation on the URI, attempting to filter our URIs which do not have an image extension. However, this can be easily bypassed by appending the string `#.svg` to the URI. The combination of these two issues allows an attacker to retrieve URIs accessible from the application, as long as their content type is text based. If not, the request is still sent, but the response is not reflected to the attacker. Version 5.4.1 fixes the issues.",
     "published": "2024-11-20T15:15:11.667",
     "keywords": "remote,authentication,bypass"
+  },
+  "CVE-2024-51163": {
+    "cvss": "-",
+    "description": "Local File Inclusion vulnerability in Vegam Solutions Vegam 4i v.6.3.47.0 and earlier allows a remote attacker to obtain sensitive information via the print labelling function.",
+    "published": "2024-11-20T17:15:18.417",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-52796": {
+    "cvss": 5.3,
+    "description": "Password Pusher, an open source application to communicate sensitive information over the web, comes with a configurable rate limiter.  In versions prior to v1.49.0, the rate limiter could be bypassed by forging proxy headers allowing bad actors to send unlimited traffic to the site potentially causing a denial of service. In v1.49.0, a fix was implemented to only authorize proxies on local IPs which resolves this issue. As a workaround, one may add rules to one's proxy and/or firewall to not accept external proxy headers such as `X-Forwarded-*` from clients.",
+    "published": "2024-11-20T17:15:20.953",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-29292": {
+    "cvss": "-",
+    "description": "Multiple OS Command Injection vulnerabilities affecting Kasda KW6512 router software version KW6512_Linux_V1.0 enable an authenticated remote attacker to execute arbitrary OS commands via Quick Setup and Internet page parameters passed to internet.cgi.",
+    "published": "2024-11-20T18:15:22.970",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-52739": {
+    "cvss": "-",
+    "description": "D-LINK DI-8400 v16.07.26A1 was discovered to contain multiple remote command execution (RCE) vulnerabilities in the msp_info_htm function via the flag and cmd parameters.",
+    "published": "2024-11-20T18:15:23.393",
+    "keywords": "remote,execution,command"
   }
 }
