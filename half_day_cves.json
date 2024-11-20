@@ -190,5 +190,11 @@
     "description": "**UNSUPPORTED WHEN ASSIGNED** The improper authentication vulnerability in the Zyxel P-6101C ADSL modem firmware version P-6101CSA6AP_20140331 could allow an unauthenticated attacker to read some device information via a crafted HTTP HEAD method.",
     "published": "2024-11-20T10:15:05.920",
     "keywords": "unauthenticated,authentication"
+  },
+  "CVE-2024-10913": {
+    "cvss": 8.8,
+    "description": "The Clone plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.4.6 via deserialization of untrusted input in the 'recursive_unserialized_replace' function. This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable software. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code.",
+    "published": "2024-11-20T14:15:17.253",
+    "keywords": "unauthenticated,sensitive"
   }
 }
