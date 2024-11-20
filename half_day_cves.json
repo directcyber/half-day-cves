@@ -145,7 +145,7 @@
   },
   "CVE-2024-52762": {
     "url": "https://github.com/ganglia/ganglia-web/issues/382",
-    "cvss": "-",
+    "cvss": 5.4,
     "description": "A cross-site scripting (XSS) vulnerability in the component /master/header.php of Ganglia-web v3.73 to v3.76 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the \"tz\" parameter.",
     "published": "2024-11-19T21:15:06.580"
   },
@@ -222,7 +222,7 @@
     "keywords": "remote,command"
   },
   "CVE-2024-52739": {
-    "cvss": "-",
+    "cvss": 8.0,
     "description": "D-LINK DI-8400 v16.07.26A1 was discovered to contain multiple remote command execution (RCE) vulnerabilities in the msp_info_htm function via the flag and cmd parameters.",
     "published": "2024-11-20T18:15:23.393",
     "keywords": "remote,execution,command"
@@ -232,5 +232,23 @@
     "description": "An issue in Kasda LinkSmart Router KW5515 v1.7 and before allows an authenticated remote attacker to execute arbitrary OS commands via cgi parameters.",
     "published": "2024-11-20T19:15:06.010",
     "keywords": "remote,command"
+  },
+  "CVE-2024-48981": {
+    "url": "https://github.com/mbed-ce/mbed-os/pull/374",
+    "cvss": "-",
+    "description": "An issue was discovered in MBed OS 6.16.0. During processing of HCI packets, the software dynamically determines the length of the packet header by looking up the identifying first byte and matching it against a table of possible lengths. The initial parsing function, hciTrSerialRxIncoming does not drop packets with invalid identifiers but also does not set a safe default for the length of unknown packets' headers, leading to a buffer overflow. This can be leveraged into an arbitrary write by an attacker. It is possible to overwrite the pointer to a not-yet-allocated buffer that is supposed to receive the contents of the packet body. One can then overwrite the state variable used by the function to determine which state of packet parsing is currently occurring. Because the buffer is allocated when the last byte of the header has been copied, the combination of having a bad header length variable that will never match the counter variable and being able to overwrite the state variable with the resulting buffer overflow can be used to advance the function to the next step while skipping the buffer allocation and resulting pointer write. The next 16 bytes from the packet body are then written wherever the corrupted data pointer is pointing.",
+    "published": "2024-11-20T20:15:19.097"
+  },
+  "CVE-2024-48983": {
+    "url": "https://github.com/mbed-ce/mbed-os/pull/388",
+    "cvss": "-",
+    "description": "An issue was discovered in MBed OS 6.16.0. During processing of HCI packets, the software dynamically determines the length of the packet data by reading 2 bytes from the packet header. A buffer is then allocated to contain the entire packet, the size of which is calculated as the length of the packet body determined earlier plus the header length. WsfMsgAlloc then increments this again by sizeof(wsfMsg_t). This may cause an integer overflow that results in the buffer being significantly too small to contain the entire packet. This may cause a buffer overflow of up to 65 KB . This bug is trivial to exploit for a denial of service but can generally not be exploited further because the exploitable buffer is dynamically allocated.",
+    "published": "2024-11-20T20:15:19.183"
+  },
+  "CVE-2024-48985": {
+    "url": "https://github.com/mbed-ce/mbed-os/pull/384",
+    "cvss": "-",
+    "description": "An issue was discovered in MBed OS 6.16.0. During processing of HCI packets, the software dynamically determines the length of the packet data by reading 2 bytes from the packet data. A buffer is then allocated to contain the entire packet, the size of which is calculated as the length of the packet body determined earlier and the header length. If the allocate fails because the specified packet is too large, no exception handling occurs and hciTrSerialRxIncoming continues to write bytes into the 4-byte large temporary header buffer, leading to a buffer overflow. This can be leveraged into an arbitrary write by an attacker. It is possible to overwrite the pointer to the buffer that is supposed to receive the contents of the packet body but which couldn't be allocated. One can then overwrite the state variable used by the function to determine which step of the parsing process is currently being executed. This advances the function to the next state, where it proceeds to copy data to that arbitrary location. The packet body is then written wherever the corrupted data pointer is pointing.",
+    "published": "2024-11-20T20:15:19.270"
   }
 }
