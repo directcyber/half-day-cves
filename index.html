@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-20T21:11:01.998351
+Updated at UTC 2024-11-20T22:11:12.028966
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,80 @@ Updated at UTC 2024-11-20T21:11:01.998351
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-52702">CVE-2024-52702</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/mybb/mybb/issues/4859">https://github.com/mybb/mybb/issues/4859</a></td>
+					<td class=date>2024-11-20T21:15:08.667</td>
+					<td class=description>A stored cross-site scripting (XSS) vulnerability in the component install\index.php of MyBB v1.8.38 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Website Name parameter.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-52701">CVE-2024-52701</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/piwigo/piwigo/issues/2261">https://github.com/piwigo/piwigo/issues/2261</a></td>
+					<td class=date>2024-11-20T21:15:08.577</td>
+					<td class=description>A stored cross-site scripting (XSS) vulnerability in the Configuration page of Piwigo v14.5.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Page banner parameter.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-49203">CVE-2024-49203</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/querydsl/querydsl/issues/3757">https://github.com/querydsl/querydsl/issues/3757</a></td>
+					<td class=date>2024-11-20T21:15:08.090</td>
+					<td class=description>Querydsl 5.1.0 allows SQL/HQL injection in orderBy in JPAQuery.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48986">CVE-2024-48986</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/mbed-ce/mbed-os/pull/385">https://github.com/mbed-ce/mbed-os/pull/385</a></td>
+					<td class=date>2024-11-20T21:15:08.007</td>
+					<td class=description>An issue was discovered in MBed OS 6.16.0. Its hci parsing software dynamically determines the length of certain hci packets by reading a byte from its header. Certain events cause a callback, the logic for which allocates a buffer (the length of which is determined by looking up the event type in a table). The subsequent write operation, however, copies the amount of data specified in the packet header, which may lead to a buffer overflow. This bug is trivial to exploit for a denial of service but is not certain to suffice to bring the system down and can generally not be exploited further because the exploitable buffer is dynamically allocated.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48984">CVE-2024-48984</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/mbed-ce/mbed-os/pull/387">https://github.com/mbed-ce/mbed-os/pull/387</a></td>
+					<td class=date>2024-11-20T21:15:07.920</td>
+					<td class=description>An issue was discovered in MBed OS 6.16.0. When parsing hci reports, the hci parsing software dynamically determines the length of a list of reports by reading a byte from an input stream. It then fetches the length of the first report, uses it to calculate the beginning of the second report, etc. In doing this, it tracks the largest report so it can later allocate a buffer that fits every individual report (but only one at a time). It does not, however, validate that these addresses are all contained within the buffer passed to hciEvtProcessLeExtAdvReport. It is then possible, though unlikely, that the buffer designated to hold the reports is allocated in such a way that one of these out-of-bounds length fields is contained within the new buffer. When the (n-1)th report is copied, it overwrites the length field of the nth report. This now corrupted length field is then used for a memcpy into the new buffer, which may lead to a buffer overflow.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48982">CVE-2024-48982</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/mbed-ce/mbed-os/pull/386">https://github.com/mbed-ce/mbed-os/pull/386</a></td>
+					<td class=date>2024-11-20T21:15:07.830</td>
+					<td class=description>An issue was discovered in MBed OS 6.16.0. Its hci parsing software dynamically determines the length of certain hci packets by reading a byte from its header. This value is assumed to be greater than or equal to 3, but the software doesn't ensure that this is the case. Supplying a length less than 3 leads to a buffer overflow in a buffer that is allocated later. It is simultaneously possible to cause another integer overflow by supplying large length values because the provided length value is increased by a few bytes to account for additional information that is supposed to be stored there. This bug is trivial to exploit for a denial of service but is not certain to suffice to bring the system down and can generally not be exploited further because the exploitable buffer is dynamically allocated.</td>
+
+
+				</tr>
+			
 		
 			
 				<tr>
@@ -196,6 +270,28 @@ Updated at UTC 2024-11-20T21:11:01.998351
 		<hr>
 		
 			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-52765">CVE-2024-52765</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2024-11-20T21:15:08.783</td>
+					<td class=description>H3C GR-1800AX MiniGRW1B0V100R007 is vulnerable to remote code execution (RCE) via the aspForm parameter.</td>
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -227,7 +323,7 @@ Updated at UTC 2024-11-20T21:11:01.998351
 					<td>-</td>
 					<td>remote,command</td>
 					<td class=date>2024-11-20T18:15:22.970</td>
-					<td class=description>Multiple OS Command Injection vulnerabilities affecting Kasda KW6512 router software version KW6512_Linux_V1.0 enable an authenticated remote attacker to execute arbitrary OS commands via Quick Setup and Internet page parameters passed to internet.cgi.</td>
+					<td class=description>Multiple OS Command Injection vulnerabilities affecting Kasda LinkSmart Router KW6512 <= v1.3 enable an authenticated remote attacker to execute arbitrary OS commands via various cgi parameters.</td>
 				</tr>
 			
 		

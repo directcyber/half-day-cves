@@ -217,7 +217,7 @@
   },
   "CVE-2024-29292": {
     "cvss": "-",
-    "description": "Multiple OS Command Injection vulnerabilities affecting Kasda KW6512 router software version KW6512_Linux_V1.0 enable an authenticated remote attacker to execute arbitrary OS commands via Quick Setup and Internet page parameters passed to internet.cgi.",
+    "description": "Multiple OS Command Injection vulnerabilities affecting Kasda LinkSmart Router KW6512 <= v1.3 enable an authenticated remote attacker to execute arbitrary OS commands via various cgi parameters.",
     "published": "2024-11-20T18:15:22.970",
     "keywords": "remote,command"
   },
@@ -250,5 +250,47 @@
     "cvss": "-",
     "description": "An issue was discovered in MBed OS 6.16.0. During processing of HCI packets, the software dynamically determines the length of the packet data by reading 2 bytes from the packet data. A buffer is then allocated to contain the entire packet, the size of which is calculated as the length of the packet body determined earlier and the header length. If the allocate fails because the specified packet is too large, no exception handling occurs and hciTrSerialRxIncoming continues to write bytes into the 4-byte large temporary header buffer, leading to a buffer overflow. This can be leveraged into an arbitrary write by an attacker. It is possible to overwrite the pointer to the buffer that is supposed to receive the contents of the packet body but which couldn't be allocated. One can then overwrite the state variable used by the function to determine which step of the parsing process is currently being executed. This advances the function to the next state, where it proceeds to copy data to that arbitrary location. The packet body is then written wherever the corrupted data pointer is pointing.",
     "published": "2024-11-20T20:15:19.270"
+  },
+  "CVE-2024-48982": {
+    "url": "https://github.com/mbed-ce/mbed-os/pull/386",
+    "cvss": "-",
+    "description": "An issue was discovered in MBed OS 6.16.0. Its hci parsing software dynamically determines the length of certain hci packets by reading a byte from its header. This value is assumed to be greater than or equal to 3, but the software doesn't ensure that this is the case. Supplying a length less than 3 leads to a buffer overflow in a buffer that is allocated later. It is simultaneously possible to cause another integer overflow by supplying large length values because the provided length value is increased by a few bytes to account for additional information that is supposed to be stored there. This bug is trivial to exploit for a denial of service but is not certain to suffice to bring the system down and can generally not be exploited further because the exploitable buffer is dynamically allocated.",
+    "published": "2024-11-20T21:15:07.830"
+  },
+  "CVE-2024-48984": {
+    "url": "https://github.com/mbed-ce/mbed-os/pull/387",
+    "cvss": "-",
+    "description": "An issue was discovered in MBed OS 6.16.0. When parsing hci reports, the hci parsing software dynamically determines the length of a list of reports by reading a byte from an input stream. It then fetches the length of the first report, uses it to calculate the beginning of the second report, etc. In doing this, it tracks the largest report so it can later allocate a buffer that fits every individual report (but only one at a time). It does not, however, validate that these addresses are all contained within the buffer passed to hciEvtProcessLeExtAdvReport. It is then possible, though unlikely, that the buffer designated to hold the reports is allocated in such a way that one of these out-of-bounds length fields is contained within the new buffer. When the (n-1)th report is copied, it overwrites the length field of the nth report. This now corrupted length field is then used for a memcpy into the new buffer, which may lead to a buffer overflow.",
+    "published": "2024-11-20T21:15:07.920"
+  },
+  "CVE-2024-48986": {
+    "url": "https://github.com/mbed-ce/mbed-os/pull/385",
+    "cvss": "-",
+    "description": "An issue was discovered in MBed OS 6.16.0. Its hci parsing software dynamically determines the length of certain hci packets by reading a byte from its header. Certain events cause a callback, the logic for which allocates a buffer (the length of which is determined by looking up the event type in a table). The subsequent write operation, however, copies the amount of data specified in the packet header, which may lead to a buffer overflow. This bug is trivial to exploit for a denial of service but is not certain to suffice to bring the system down and can generally not be exploited further because the exploitable buffer is dynamically allocated.",
+    "published": "2024-11-20T21:15:08.007"
+  },
+  "CVE-2024-49203": {
+    "url": "https://github.com/querydsl/querydsl/issues/3757",
+    "cvss": "-",
+    "description": "Querydsl 5.1.0 allows SQL/HQL injection in orderBy in JPAQuery.",
+    "published": "2024-11-20T21:15:08.090"
+  },
+  "CVE-2024-52701": {
+    "url": "https://github.com/piwigo/piwigo/issues/2261",
+    "cvss": "-",
+    "description": "A stored cross-site scripting (XSS) vulnerability in the Configuration page of Piwigo v14.5.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Page banner parameter.",
+    "published": "2024-11-20T21:15:08.577"
+  },
+  "CVE-2024-52702": {
+    "url": "https://github.com/mybb/mybb/issues/4859",
+    "cvss": "-",
+    "description": "A stored cross-site scripting (XSS) vulnerability in the component install\\index.php of MyBB v1.8.38 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Website Name parameter.",
+    "published": "2024-11-20T21:15:08.667"
+  },
+  "CVE-2024-52765": {
+    "cvss": "-",
+    "description": "H3C GR-1800AX MiniGRW1B0V100R007 is vulnerable to remote code execution (RCE) via the aspForm parameter.",
+    "published": "2024-11-20T21:15:08.783",
+    "keywords": "remote,execution"
   }
 }
