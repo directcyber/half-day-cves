@@ -131,6 +131,12 @@
     "published": "2024-11-19T18:15:21.257",
     "keywords": "remote,execution"
   },
+  "CVE-2024-48070": {
+    "cvss": "-",
+    "description": "An issue in Weaver E-cology v. attackers construct special requests to insert remote malicious code and to trigger malicious code execution, and control server privileges",
+    "published": "2024-11-19T18:15:21.353",
+    "keywords": "remote,execution"
+  },
   "CVE-2024-21697": {
     "cvss": 8.8,
     "description": "This High severity RCE (Remote Code Execution) vulnerability was introduced in versions 4.2.8 of Sourcetree for Mac and 3.4.19 for Sourcetree for Windows.\r\n\r\nThis RCE (Remote Code Execution) vulnerability, with a CVSS Score of 8.8, allows an unauthenticated attacker to execute arbitrary code which has high impact to confidentiality, high impact to integrity, high impact to availability, and requires user interaction.\r\n\r\nAtlassian recommends that Sourcetree for Mac and Sourcetree for Windows customers upgrade to latest version, if you are unable to do so, upgrade your instance to one of the specified supported fixed versions:\r\n Sourcetree for Mac 4.2: Upgrade to a release greater than or equal to 4.2.9\r\n Sourcetree for Windows 3.4: Upgrade to a release greater than or equal to 3.4.20\r\n\r\nSee the release notes ([https://www.sourcetreeapp.com/download-archives]). You can download the latest version of Sourcetree for Mac and Sourcetree for Windows from the download center ([https://www.sourcetreeapp.com/download-archives]).\r\n\r\nThis vulnerability was reported via our Penetration Testing program.",
@@ -196,5 +202,11 @@
     "description": "The Clone plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.4.6 via deserialization of untrusted input in the 'recursive_unserialized_replace' function. This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable software. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code.",
     "published": "2024-11-20T14:15:17.253",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-52598": {
+    "cvss": 7.5,
+    "description": "2FAuth is a web app to manage Two-Factor Authentication (2FA) accounts and generate their security codes. Two interconnected vulnerabilities exist in version 5.4.1 a SSRF and URI validation bypass issue. The endpoint at POST /api/v1/twofaccounts/preview allows setting a remote URI to retrieve the image of a 2fa site. By abusing this functionality, it is possible to force the application to make a GET request to an arbitrary URL, whose content will be stored in an image file in the server if it looks like an image. Additionally, the library does some basic validation on the URI, attempting to filter our URIs which do not have an image extension. However, this can be easily bypassed by appending the string `#.svg` to the URI. The combination of these two issues allows an attacker to retrieve URIs accessible from the application, as long as their content type is text based. If not, the request is still sent, but the response is not reflected to the attacker. Version 5.4.1 fixes the issues.",
+    "published": "2024-11-20T15:15:11.667",
+    "keywords": "remote,authentication,bypass"
   }
 }

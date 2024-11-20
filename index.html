@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-20T15:12:18.847392
+Updated at UTC 2024-11-20T16:15:11.885402
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-11-20T15:12:18.847392
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -144,8 +146,20 @@ Updated at UTC 2024-11-20T15:12:18.847392
 		
 			
 		
+			
+		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-52598">CVE-2024-52598</a></td>
+					<td>7.5</td>
+					<td>remote,authentication,bypass</td>
+					<td class=date>2024-11-20T15:15:11.667</td>
+					<td class=description>2FAuth is a web app to manage Two-Factor Authentication (2FA) accounts and generate their security codes. Two interconnected vulnerabilities exist in version 5.4.1 a SSRF and URI validation bypass issue. The endpoint at POST /api/v1/twofaccounts/preview allows setting a remote URI to retrieve the image of a 2fa site. By abusing this functionality, it is possible to force the application to make a GET request to an arbitrary URL, whose content will be stored in an image file in the server if it looks like an image. Additionally, the library does some basic validation on the URI, attempting to filter our URIs which do not have an image extension. However, this can be easily bypassed by appending the string `#.svg` to the URI. The combination of these two issues allows an attacker to retrieve URIs accessible from the application, as long as their content type is text based. If not, the request is still sent, but the response is not reflected to the attacker. Version 5.4.1 fixes the issues.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -250,6 +264,16 @@ Atlassian recommends that Sourcetree for Mac and Sourcetree for Windows customer
 See the release notes ([https://www.sourcetreeapp.com/download-archives]). You can download the latest version of Sourcetree for Mac and Sourcetree for Windows from the download center ([https://www.sourcetreeapp.com/download-archives]).
 
 This vulnerability was reported via our Penetration Testing program.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48070">CVE-2024-48070</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2024-11-19T18:15:21.353</td>
+					<td class=description>An issue in Weaver E-cology v. attackers construct special requests to insert remote malicious code and to trigger malicious code execution, and control server privileges</td>
 				</tr>
 			
 		
