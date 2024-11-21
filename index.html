@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-21T20:13:43.529091
+Updated at UTC 2024-11-21T23:12:27.799309
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -342,23 +342,13 @@ Updated at UTC 2024-11-21T20:13:43.529091
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
 
 		<hr>
 		
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-51337">CVE-2024-51337</a></td>
-					<td>-</td>
+					<td>3.5</td>
 					<td>remote,sensitive</td>
 					<td class=date>2024-11-21T19:15:11.523</td>
 					<td class=description>Cross Site Scripting vulnerability in Gibbon before v.27.0.01 and fixed in v.28.0.00 allows a remote attacker to obtain sensitive information via the email parameter found in /Gibbon/modules/User Admin/user_manage_editProcess.php.</td>
@@ -863,56 +853,6 @@ anyway. But the following 'rc' check is wrong and execution flow do
 
 Fix this by skipping the 2nd removal of the same entry and making
 syzkaller repro happy.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-52587">CVE-2024-52587</a></td>
-					<td>8.8</td>
-					<td>execution,command</td>
-					<td class=date>2024-11-18T22:15:09.557</td>
-					<td class=description>StepSecurity's Harden-Runner provides network egress filtering and runtime security for GitHub-hosted and self-hosted runners. Versions of step-security/harden-runner prior to v2.10.2 contain multiple command injection weaknesses via environment variables that could potentially be exploited under specific conditions. However, due to the current execution order of pre-steps in GitHub Actions and the placement of harden-runner as the first step in a job, the likelihood of exploitation is low as the Harden-Runner action reads the environment variable during the pre-step stage. There are no known exploits at this time. Version 2.10.2 contains a patch.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50848">CVE-2024-50848</a></td>
-					<td>6.5</td>
-					<td>command,sensitive</td>
-					<td class=date>2024-11-18T21:15:06.293</td>
-					<td class=description>An XML External Entity (XXE) vulnerability in the Import object and Translation Memory import functionalities of WorldServer v11.8.2 to access sensitive information and execute arbitrary commands via supplying a crafted .tmx file.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-51743">CVE-2024-51743</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-18T20:15:05.900</td>
-					<td class=description>MarkUs is a web application for the submission and grading of student assignments. In versions prior to 2.4.8, an arbitrary file write vulnerability in the update/upload/create file methods in Controllers allows authenticated instructors to write arbitrary files to any location on the web server MarkUs is running on (depending on the permissions of the underlying filesystem). e.g. This can lead to a delayed remote code execution in case an attacker is able to write a Ruby file into the config/initializers/ subfolder of the Ruby on Rails application. MarkUs v2.4.8 has addressed this issue. No known workarounds are available at the application level aside from upgrading.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-51499">CVE-2024-51499</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-18T20:15:05.760</td>
-					<td class=description>MarkUs is a web application for the submission and grading of student assignments. In versions prior to 2.4.8, an arbitrary file write vulnerability accessible via the update_files method of the SubmissionsController allows authenticated users (e.g. students) to write arbitrary files to any location on the web server MarkUs is running on (depending on the permissions of the underlying filesystem). e.g. This can lead to a delayed remote code execution in case an attacker is able to write a Ruby file into the config/initializers/ subfolder of the Ruby on Rails application. MarkUs v2.4.8 has addressed this issue. No known workarounds are available at the application level aside from upgrading.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50919">CVE-2024-50919</a></td>
-					<td>9.8</td>
-					<td>execution,command</td>
-					<td class=date>2024-11-18T20:15:05.650</td>
-					<td class=description>Jpress until v5.1.1 has arbitrary file uploads on the windows platform, and the construction of non-standard file formats such as .jsp. can lead to arbitrary command execution</td>
 				</tr>
 			
 		
