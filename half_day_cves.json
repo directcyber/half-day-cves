@@ -1,16 +1,4 @@
 {
-  "CVE-2024-11036": {
-    "cvss": 7.3,
-    "description": "The The GamiPress \u2013 The #1 gamification plugin to reward points, achievements, badges & ranks in WordPress plugin for WordPress is vulnerable to arbitrary shortcode execution via gamipress_get_user_earnings AJAX action in all versions up to, and including, 7.1.5. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
-    "published": "2024-11-19T11:15:04.343",
-    "keywords": "execution,unauthenticated"
-  },
-  "CVE-2024-11038": {
-    "cvss": 7.3,
-    "description": "The The WPB Popup for Contact Form 7 \u2013 Showing The Contact Form 7 Popup on Button Click \u2013 CF7 Popup plugin for WordPress is vulnerable to arbitrary shortcode execution via wpb_pcf_fire_contact_form AJAX action in all versions up to, and including, 1.7.5. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
-    "published": "2024-11-19T11:15:05.683",
-    "keywords": "execution,unauthenticated"
-  },
   "CVE-2024-48070": {
     "cvss": 9.8,
     "description": "An issue in Weaver E-cology v. attackers construct special requests to insert remote malicious code and to trigger malicious code execution, and control server privileges",
@@ -352,5 +340,11 @@
     "description": "Dell Edge Gateway 5200 (Coffee Lake S), versions prior to 12.0.94.2380, contains an Exposure of Sensitive Information in Shared Microarchitectural Structures during Transient Execution vulnerability. A high privileged attacker with local access could potentially exploit this vulnerability, leading to information exposure.",
     "published": "2024-11-22T03:15:04.160",
     "keywords": "execution,sensitive"
+  },
+  "CVE-2024-41779": {
+    "cvss": 9.8,
+    "description": "IBM Engineering Systems Design Rhapsody - Model Manager 7.0.2 and 7.0.3\u00a0could allow a remote attacker to bypass security restrictions, caused by a race condition. By sending a specially crafted request, an attacker could exploit this vulnerability to remotely execute code.",
+    "published": "2024-11-22T12:15:18.987",
+    "keywords": "remote,bypass"
   }
 }
