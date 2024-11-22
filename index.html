@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-22T17:12:04.239062
+Updated at UTC 2024-11-22T19:10:19.983463
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,22 @@ Updated at UTC 2024-11-22T17:12:04.239062
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-53438">CVE-2024-53438</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/churchcrm/crm/issues/6988">https://github.com/churchcrm/crm/issues/6988</a></td>
+					<td class=date>2024-11-22T17:15:10.857</td>
+					<td class=description>EventAttendance.php in ChurchCRM 5.7.0 is vulnerable to SQL injection. An attacker can exploit this vulnerability by manipulating the 'Event' parameter, which is directly interpolated into the SQL query without proper sanitization or validation, allowing attackers to execute arbitrary SQL commands.</td>
+
+
+				</tr>
+			
+		
+			
 		
 			
 		
@@ -269,7 +285,7 @@ Updated at UTC 2024-11-22T17:12:04.239062
 			
 				<tr>
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48985">CVE-2024-48985</a></td>
-					<td>-</td>
+					<td>7.5</td>
 					<td><a target=_blank href="https://github.com/mbed-ce/mbed-os/pull/384">https://github.com/mbed-ce/mbed-os/pull/384</a></td>
 					<td class=date>2024-11-20T20:15:19.270</td>
 					<td class=description>An issue was discovered in MBed OS 6.16.0. During processing of HCI packets, the software dynamically determines the length of the packet data by reading 2 bytes from the packet data. A buffer is then allocated to contain the entire packet, the size of which is calculated as the length of the packet body determined earlier and the header length. If the allocate fails because the specified packet is too large, no exception handling occurs and hciTrSerialRxIncoming continues to write bytes into the 4-byte large temporary header buffer, leading to a buffer overflow. This can be leveraged into an arbitrary write by an attacker. It is possible to overwrite the pointer to the buffer that is supposed to receive the contents of the packet body but which couldn't be allocated. One can then overwrite the state variable used by the function to determine which step of the parsing process is currently being executed. This advances the function to the next state, where it proceeds to copy data to that arbitrary location. The packet body is then written wherever the corrupted data pointer is pointing.</td>
@@ -281,7 +297,7 @@ Updated at UTC 2024-11-22T17:12:04.239062
 			
 				<tr>
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48983">CVE-2024-48983</a></td>
-					<td>-</td>
+					<td>7.5</td>
 					<td><a target=_blank href="https://github.com/mbed-ce/mbed-os/pull/388">https://github.com/mbed-ce/mbed-os/pull/388</a></td>
 					<td class=date>2024-11-20T20:15:19.183</td>
 					<td class=description>An issue was discovered in MBed OS 6.16.0. During processing of HCI packets, the software dynamically determines the length of the packet data by reading 2 bytes from the packet header. A buffer is then allocated to contain the entire packet, the size of which is calculated as the length of the packet body determined earlier plus the header length. WsfMsgAlloc then increments this again by sizeof(wsfMsg_t). This may cause an integer overflow that results in the buffer being significantly too small to contain the entire packet. This may cause a buffer overflow of up to 65 KB . This bug is trivial to exploit for a denial of service but can generally not be exploited further because the exploitable buffer is dynamically allocated.</td>
@@ -293,7 +309,7 @@ Updated at UTC 2024-11-22T17:12:04.239062
 			
 				<tr>
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48981">CVE-2024-48981</a></td>
-					<td>-</td>
+					<td>7.5</td>
 					<td><a target=_blank href="https://github.com/mbed-ce/mbed-os/pull/374">https://github.com/mbed-ce/mbed-os/pull/374</a></td>
 					<td class=date>2024-11-20T20:15:19.097</td>
 					<td class=description>An issue was discovered in MBed OS 6.16.0. During processing of HCI packets, the software dynamically determines the length of the packet header by looking up the identifying first byte and matching it against a table of possible lengths. The initial parsing function, hciTrSerialRxIncoming does not drop packets with invalid identifiers but also does not set a safe default for the length of unknown packets' headers, leading to a buffer overflow. This can be leveraged into an arbitrary write by an attacker. It is possible to overwrite the pointer to a not-yet-allocated buffer that is supposed to receive the contents of the packet body. One can then overwrite the state variable used by the function to determine which state of packet parsing is currently occurring. Because the buffer is allocated when the last byte of the header has been copied, the combination of having a bad header length variable that will never match the counter variable and being able to overwrite the state variable with the resulting buffer overflow can be used to advance the function to the next step while skipping the buffer allocation and resulting pointer write. The next 16 bytes from the packet body are then written wherever the corrupted data pointer is pointing.</td>
@@ -356,10 +372,30 @@ Updated at UTC 2024-11-22T17:12:04.239062
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37782">CVE-2024-37782</a></td>
+					<td>-</td>
+					<td>command,sensitive</td>
+					<td class=date>2024-11-22T18:15:17.230</td>
+					<td class=description>An LDAP injection vulnerability in the login page of Gladinet CentreStack v13.12.9934.54690 allows attackers to access sensitive data or execute arbitrary commands via a crafted payload injected into the username field.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10220">CVE-2024-10220</a></td>
+					<td>8.1</td>
+					<td>execution,command</td>
+					<td class=date>2024-11-22T17:15:06.650</td>
+					<td class=description>The Kubernetes kubelet component allows arbitrary command execution via specially crafted gitRepo volumes.This issue affects kubelet: through 1.28.11, from 1.29.0 through 1.29.6, from 1.30.0 through 1.30.2.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -789,7 +825,7 @@ QuTS hero h5.2.1.2929 build 20241025 and later</td>
 					<td>-</td>
 					<td>remote,sensitive</td>
 					<td class=date>2024-11-20T17:15:18.417</td>
-					<td class=description>Local File Inclusion vulnerability in Vegam Solutions Vegam 4i v.6.3.47.0 and earlier allows a remote attacker to obtain sensitive information via the print labelling function.</td>
+					<td class=description>A Local File Inclusion vulnerability in Vegam Solutions Vegam 4i versions 6.3.47.0 and earlier allows a remote attacker to obtain sensitive information through the print label function. Specifically, the filePathList parameter is susceptible to LFI, enabling a malicious user to include files from the web server, such as web.config or /etc/host, leading to the disclosure of sensitive information.</td>
 				</tr>
 			
 		
@@ -906,16 +942,6 @@ Atlassian recommends that Sourcetree for Mac and Sourcetree for Windows customer
 See the release notes ([https://www.sourcetreeapp.com/download-archives]). You can download the latest version of Sourcetree for Mac and Sourcetree for Windows from the download center ([https://www.sourcetreeapp.com/download-archives]).
 
 This vulnerability was reported via our Penetration Testing program.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48070">CVE-2024-48070</a></td>
-					<td>9.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-19T18:15:21.353</td>
-					<td class=description>An issue in Weaver E-cology v. attackers construct special requests to insert remote malicious code and to trigger malicious code execution, and control server privileges</td>
 				</tr>
 			
 		

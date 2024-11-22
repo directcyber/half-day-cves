@@ -1,10 +1,4 @@
 {
-  "CVE-2024-48070": {
-    "cvss": 9.8,
-    "description": "An issue in Weaver E-cology v. attackers construct special requests to insert remote malicious code and to trigger malicious code execution, and control server privileges",
-    "published": "2024-11-19T18:15:21.353",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-21697": {
     "cvss": 8.8,
     "description": "This High severity RCE (Remote Code Execution) vulnerability was introduced in versions 4.2.8 of Sourcetree for Mac and 3.4.19 for Sourcetree for Windows.\r\n\r\nThis RCE (Remote Code Execution) vulnerability, with a CVSS Score of 8.8, allows an unauthenticated attacker to execute arbitrary code which has high impact to confidentiality, high impact to integrity, high impact to availability, and requires user interaction.\r\n\r\nAtlassian recommends that Sourcetree for Mac and Sourcetree for Windows customers upgrade to latest version, if you are unable to do so, upgrade your instance to one of the specified supported fixed versions:\r\n Sourcetree for Mac 4.2: Upgrade to a release greater than or equal to 4.2.9\r\n Sourcetree for Windows 3.4: Upgrade to a release greater than or equal to 3.4.20\r\n\r\nSee the release notes ([https://www.sourcetreeapp.com/download-archives]). You can download the latest version of Sourcetree for Mac and Sourcetree for Windows from the download center ([https://www.sourcetreeapp.com/download-archives]).\r\n\r\nThis vulnerability was reported via our Penetration Testing program.",
@@ -79,7 +73,7 @@
   },
   "CVE-2024-51163": {
     "cvss": "-",
-    "description": "Local File Inclusion vulnerability in Vegam Solutions Vegam 4i v.6.3.47.0 and earlier allows a remote attacker to obtain sensitive information via the print labelling function.",
+    "description": "A Local File Inclusion vulnerability in Vegam Solutions Vegam 4i versions 6.3.47.0 and earlier allows a remote attacker to obtain sensitive information through the print label function. Specifically, the filePathList parameter is susceptible to LFI, enabling a malicious user to include files from the web server, such as web.config or /etc/host, leading to the disclosure of sensitive information.",
     "published": "2024-11-20T17:15:18.417",
     "keywords": "remote,sensitive"
   },
@@ -109,19 +103,19 @@
   },
   "CVE-2024-48981": {
     "url": "https://github.com/mbed-ce/mbed-os/pull/374",
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "An issue was discovered in MBed OS 6.16.0. During processing of HCI packets, the software dynamically determines the length of the packet header by looking up the identifying first byte and matching it against a table of possible lengths. The initial parsing function, hciTrSerialRxIncoming does not drop packets with invalid identifiers but also does not set a safe default for the length of unknown packets' headers, leading to a buffer overflow. This can be leveraged into an arbitrary write by an attacker. It is possible to overwrite the pointer to a not-yet-allocated buffer that is supposed to receive the contents of the packet body. One can then overwrite the state variable used by the function to determine which state of packet parsing is currently occurring. Because the buffer is allocated when the last byte of the header has been copied, the combination of having a bad header length variable that will never match the counter variable and being able to overwrite the state variable with the resulting buffer overflow can be used to advance the function to the next step while skipping the buffer allocation and resulting pointer write. The next 16 bytes from the packet body are then written wherever the corrupted data pointer is pointing.",
     "published": "2024-11-20T20:15:19.097"
   },
   "CVE-2024-48983": {
     "url": "https://github.com/mbed-ce/mbed-os/pull/388",
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "An issue was discovered in MBed OS 6.16.0. During processing of HCI packets, the software dynamically determines the length of the packet data by reading 2 bytes from the packet header. A buffer is then allocated to contain the entire packet, the size of which is calculated as the length of the packet body determined earlier plus the header length. WsfMsgAlloc then increments this again by sizeof(wsfMsg_t). This may cause an integer overflow that results in the buffer being significantly too small to contain the entire packet. This may cause a buffer overflow of up to 65 KB . This bug is trivial to exploit for a denial of service but can generally not be exploited further because the exploitable buffer is dynamically allocated.",
     "published": "2024-11-20T20:15:19.183"
   },
   "CVE-2024-48985": {
     "url": "https://github.com/mbed-ce/mbed-os/pull/384",
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "An issue was discovered in MBed OS 6.16.0. During processing of HCI packets, the software dynamically determines the length of the packet data by reading 2 bytes from the packet data. A buffer is then allocated to contain the entire packet, the size of which is calculated as the length of the packet body determined earlier and the header length. If the allocate fails because the specified packet is too large, no exception handling occurs and hciTrSerialRxIncoming continues to write bytes into the 4-byte large temporary header buffer, leading to a buffer overflow. This can be leveraged into an arbitrary write by an attacker. It is possible to overwrite the pointer to the buffer that is supposed to receive the contents of the packet body but which couldn't be allocated. One can then overwrite the state variable used by the function to determine which step of the parsing process is currently being executed. This advances the function to the next state, where it proceeds to copy data to that arbitrary location. The packet body is then written wherever the corrupted data pointer is pointing.",
     "published": "2024-11-20T20:15:19.270"
   },
@@ -388,5 +382,23 @@
     "description": "In TOTOLINK X6000R V9.4.0cu.1041_B20240224 in the shttpd file, the Uci_Set Str function is used without strict parameter filtering. An attacker can achieve arbitrary command execution by constructing the payload.",
     "published": "2024-11-22T16:15:33.983",
     "keywords": "execution,command"
+  },
+  "CVE-2024-10220": {
+    "cvss": 8.1,
+    "description": "The Kubernetes kubelet component allows arbitrary command execution via specially crafted gitRepo volumes.This issue affects kubelet: through 1.28.11, from 1.29.0 through 1.29.6, from 1.30.0 through 1.30.2.",
+    "published": "2024-11-22T17:15:06.650",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-53438": {
+    "url": "https://github.com/churchcrm/crm/issues/6988",
+    "cvss": "-",
+    "description": "EventAttendance.php in ChurchCRM 5.7.0 is vulnerable to SQL injection. An attacker can exploit this vulnerability by manipulating the 'Event' parameter, which is directly interpolated into the SQL query without proper sanitization or validation, allowing attackers to execute arbitrary SQL commands.",
+    "published": "2024-11-22T17:15:10.857"
+  },
+  "CVE-2024-37782": {
+    "cvss": "-",
+    "description": "An LDAP injection vulnerability in the login page of Gladinet CentreStack v13.12.9934.54690 allows attackers to access sensitive data or execute arbitrary commands via a crafted payload injected into the username field.",
+    "published": "2024-11-22T18:15:17.230",
+    "keywords": "command,sensitive"
   }
 }
