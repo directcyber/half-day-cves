@@ -346,5 +346,47 @@
     "description": "IBM Engineering Systems Design Rhapsody - Model Manager 7.0.2 and 7.0.3\u00a0could allow a remote attacker to bypass security restrictions, caused by a race condition. By sending a specially crafted request, an attacker could exploit this vulnerability to remotely execute code.",
     "published": "2024-11-22T12:15:18.987",
     "keywords": "remote,bypass"
+  },
+  "CVE-2024-37043": {
+    "cvss": "-",
+    "description": "A path traversal vulnerability has been reported to affect several QNAP operating system versions. If exploited, the vulnerability could allow remote attackers who have gained administrator access to read the contents of unexpected files and expose sensitive data.\n\nWe have already fixed the vulnerability in the following versions:\nQTS 5.2.1.2930 build 20241025 and later\nQuTS hero h5.2.1.2929 build 20241025 and later",
+    "published": "2024-11-22T16:15:23.267",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-37046": {
+    "cvss": "-",
+    "description": "A path traversal vulnerability has been reported to affect several QNAP operating system versions. If exploited, the vulnerability could allow remote attackers who have gained administrator access to read the contents of unexpected files and expose sensitive data.\n\nWe have already fixed the vulnerability in the following versions:\nQTS 5.2.1.2930 build 20241025 and later\nQuTS hero h5.2.1.2929 build 20241025 and later",
+    "published": "2024-11-22T16:15:23.637",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-38643": {
+    "cvss": "-",
+    "description": "A missing authentication for critical function vulnerability has been reported to affect Notes Station 3. If exploited, the vulnerability could allow remote attackers to gain access to and execute certain functions.\n\nWe have already fixed the vulnerability in the following version:\nNotes Station 3 3.9.7 and later",
+    "published": "2024-11-22T16:15:24.873",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2024-38644": {
+    "cvss": "-",
+    "description": "An OS command injection vulnerability has been reported to affect Notes Station 3. If exploited, the vulnerability could allow remote authenticated attackers to execute commands.\n\nWe have already fixed the vulnerability in the following version:\nNotes Station 3 3.9.7 and later",
+    "published": "2024-11-22T16:15:25.000",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-38647": {
+    "cvss": "-",
+    "description": "An exposure of sensitive information vulnerability has been reported to affect QNAP AI Core. If exploited, the vulnerability could allow remote attackers to compromise the security of the system.\n\nWe have already fixed the vulnerability in the following version:\nQNAP AI Core 3.4.1 and later",
+    "published": "2024-11-22T16:15:25.387",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-48860": {
+    "cvss": "-",
+    "description": "An OS command injection vulnerability has been reported to affect several product versions. If exploited, the vulnerability could allow remote attackers to execute commands.\n\nWe have already fixed the vulnerability in the following version:\nQuRouter 2.4.3.103 and later",
+    "published": "2024-11-22T16:15:28.337",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-52723": {
+    "cvss": "-",
+    "description": "In TOTOLINK X6000R V9.4.0cu.1041_B20240224 in the shttpd file, the Uci_Set Str function is used without strict parameter filtering. An attacker can achieve arbitrary command execution by constructing the payload.",
+    "published": "2024-11-22T16:15:33.983",
+    "keywords": "execution,command"
   }
 }
