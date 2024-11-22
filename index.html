@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-21T23:12:27.799309
+Updated at UTC 2024-11-22T03:26:51.302455
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,12 @@ Updated at UTC 2024-11-21T23:12:27.799309
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -340,10 +346,38 @@ Updated at UTC 2024-11-21T23:12:27.799309
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38296">CVE-2024-38296</a></td>
+					<td>6.7</td>
+					<td>execution,sensitive</td>
+					<td class=date>2024-11-22T03:15:04.160</td>
+					<td class=description>Dell Edge Gateway 5200 (Coffee Lake S), versions prior to 12.0.94.2380, contains an Exposure of Sensitive Information in Shared Microarchitectural Structures during Transient Execution vulnerability. A high privileged attacker with local access could potentially exploit this vulnerability, leading to information exposure.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-39290">CVE-2024-39290</a></td>
+					<td>6.5</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2024-11-22T02:15:20.963</td>
+					<td class=description>Insufficiently protected credentials issue exists in AIPHONE IX SYSTEM and IXG SYSTEM. A network-adjacent unauthenticated attacker may obtain sensitive information such as a username and its password in the address book.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-52052">CVE-2024-52052</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2024-11-21T23:15:04.520</td>
+					<td class=description>Wowza Streaming Engine below 4.9.1 permits an authenticated Streaming Engine Manager administrator to define a custom application property and poison a stream target for high-privilege remote code execution.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -790,69 +824,6 @@ This vulnerability was reported via our Penetration Testing program.</td>
 					<td>execution,unauthenticated</td>
 					<td class=date>2024-11-19T11:15:04.343</td>
 					<td class=description>The The GamiPress – The #1 gamification plugin to reward points, achievements, badges & ranks in WordPress plugin for WordPress is vulnerable to arbitrary shortcode execution via gamipress_get_user_earnings AJAX action in all versions up to, and including, 7.1.5. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50265">CVE-2024-50265</a></td>
-					<td>5.5</td>
-					<td>execution,leak</td>
-					<td class=date>2024-11-19T02:16:28.310</td>
-					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
-
-ocfs2: remove entry once instead of null-ptr-dereference in ocfs2_xa_remove()
-
-Syzkaller is able to provoke null-ptr-dereference in ocfs2_xa_remove():
-
-[   57.319872] (a.out,1161,7):ocfs2_xa_remove:2028 ERROR: status = -12
-[   57.320420] (a.out,1161,7):ocfs2_xa_cleanup_value_truncate:1999 ERROR: Partial truncate while removing xattr overlay.upper.  Leaking 1 clusters and removing the entry
-[   57.321727] BUG: kernel NULL pointer dereference, address: 0000000000000004
-[...]
-[   57.325727] RIP: 0010:ocfs2_xa_block_wipe_namevalue+0x2a/0xc0
-[...]
-[   57.331328] Call Trace:
-[   57.331477]  <TASK>
-[...]
-[   57.333511]  ? do_user_addr_fault+0x3e5/0x740
-[   57.333778]  ? exc_page_fault+0x70/0x170
-[   57.334016]  ? asm_exc_page_fault+0x2b/0x30
-[   57.334263]  ? __pfx_ocfs2_xa_block_wipe_namevalue+0x10/0x10
-[   57.334596]  ? ocfs2_xa_block_wipe_namevalue+0x2a/0xc0
-[   57.334913]  ocfs2_xa_remove_entry+0x23/0xc0
-[   57.335164]  ocfs2_xa_set+0x704/0xcf0
-[   57.335381]  ? _raw_spin_unlock+0x1a/0x40
-[   57.335620]  ? ocfs2_inode_cache_unlock+0x16/0x20
-[   57.335915]  ? trace_preempt_on+0x1e/0x70
-[   57.336153]  ? start_this_handle+0x16c/0x500
-[   57.336410]  ? preempt_count_sub+0x50/0x80
-[   57.336656]  ? _raw_read_unlock+0x20/0x40
-[   57.336906]  ? start_this_handle+0x16c/0x500
-[   57.337162]  ocfs2_xattr_block_set+0xa6/0x1e0
-[   57.337424]  __ocfs2_xattr_set_handle+0x1fd/0x5d0
-[   57.337706]  ? ocfs2_start_trans+0x13d/0x290
-[   57.337971]  ocfs2_xattr_set+0xb13/0xfb0
-[   57.338207]  ? dput+0x46/0x1c0
-[   57.338393]  ocfs2_xattr_trusted_set+0x28/0x30
-[   57.338665]  ? ocfs2_xattr_trusted_set+0x28/0x30
-[   57.338948]  __vfs_removexattr+0x92/0xc0
-[   57.339182]  __vfs_removexattr_locked+0xd5/0x190
-[   57.339456]  ? preempt_count_sub+0x50/0x80
-[   57.339705]  vfs_removexattr+0x5f/0x100
-[...]
-
-Reproducer uses faultinject facility to fail ocfs2_xa_remove() ->
-ocfs2_xa_value_truncate() with -ENOMEM.
-
-In this case the comment mentions that we can return 0 if
-ocfs2_xa_cleanup_value_truncate() is going to wipe the entry
-anyway. But the following 'rc' check is wrong and execution flow do
-'ocfs2_xa_remove_entry(loc);' twice:
-* 1st: in ocfs2_xa_cleanup_value_truncate();
-* 2nd: returning back to ocfs2_xa_remove() instead of going to 'out'.
-
-Fix this by skipping the 2nd removal of the same entry and making
-syzkaller repro happy.</td>
 				</tr>
 			
 		
