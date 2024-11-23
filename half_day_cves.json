@@ -1864,5 +1864,11 @@
     "description": "The Social Login plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 5.9.0. This is due to insufficient verification on the user being returned by the social login token. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email and the user does not have an already-existing account for the service returning the token.",
     "published": "2024-11-23T04:15:08.470",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-10873": {
+    "cvss": 8.8,
+    "description": "The LA-Studio Element Kit for Elementor plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.4.2 via the _load_template function. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
+    "published": "2024-11-23T05:15:06.010",
+    "keywords": "execution,sensitive,bypass"
   }
 }
