@@ -1,40 +1,4 @@
 {
-  "CVE-2024-10899": {
-    "cvss": 7.3,
-    "description": "The The WooCommerce Product Table Lite plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 3.8.6. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes. The same 'id' parameter is vulnerable to Reflected Cross-Site Scripting as well.",
-    "published": "2024-11-20T07:15:08.260",
-    "keywords": "execution,unauthenticated"
-  },
-  "CVE-2024-47865": {
-    "cvss": 5.3,
-    "description": "Missing authentication for critical function vulnerability exists in Rakuten Turbo 5G firmware version V1.3.18 and earlier. If this vulnerability is exploited, a remote unauthenticated attacker may update or downgrade the firmware on the device.",
-    "published": "2024-11-20T08:15:14.890",
-    "keywords": "remote,unauthenticated,authentication"
-  },
-  "CVE-2024-48895": {
-    "cvss": 8.8,
-    "description": "Improper neutralization of special elements used in an OS command ('OS Command Injection') issue exists in Rakuten Turbo 5G firmware version V1.3.18 and earlier. If this vulnerability is exploited, a remote authenticated attacker may execute an arbitrary OS command.",
-    "published": "2024-11-20T08:15:15.190",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-52033": {
-    "cvss": 5.3,
-    "description": "Exposure of sensitive system information to an unauthorized control sphere issue exists in Rakuten Turbo 5G firmware version V1.3.18 and earlier. If this vulnerability is exploited, a remote unauthenticated attacker may obtain information of the other devices connected through the Wi-Fi.",
-    "published": "2024-11-20T08:15:15.433",
-    "keywords": "remote,unauthenticated,sensitive"
-  },
-  "CVE-2024-10127": {
-    "cvss": "-",
-    "description": "Authentication bypass condition in LDAP authentication in M-Files server versions before 24.11 supported usage of OpenLDAP configurations that allowed user authentication without a password when the LDAP server itself had the vulnerable configuration.",
-    "published": "2024-11-20T09:15:04.313",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-11494": {
-    "cvss": 7.5,
-    "description": "**UNSUPPORTED WHEN ASSIGNED** The improper authentication vulnerability in the Zyxel P-6101C ADSL modem firmware version P-6101CSA6AP_20140331 could allow an unauthenticated attacker to read some device information via a crafted HTTP HEAD method.",
-    "published": "2024-11-20T10:15:05.920",
-    "keywords": "unauthenticated,authentication"
-  },
   "CVE-2024-10913": {
     "cvss": 8.8,
     "description": "The Clone plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.4.6 via deserialization of untrusted input in the 'recursive_unserialized_replace' function. This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable software. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code.",
@@ -1870,5 +1834,41 @@
     "description": "The LA-Studio Element Kit for Elementor plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.4.2 via the _load_template function. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
     "published": "2024-11-23T05:15:06.010",
     "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2024-10803": {
+    "cvss": 7.5,
+    "description": "The MP3 Sticky Player plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 8.0 via the content/downloader.php file. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensitive information. Please note the vendor released the patched version as the same version as the affected version.",
+    "published": "2024-11-23T08:15:03.413",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-9511": {
+    "cvss": 9.8,
+    "description": "The FluentSMTP \u2013 WP SMTP Plugin with Amazon SES, SendGrid, MailGun, Postmark, Google and Any SMTP Provider plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.2.82 via deserialization of untrusted input in the 'formatResult' function. This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable software. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code. The vulnerability was partially patched in version 2.2.82.",
+    "published": "2024-11-23T08:15:03.693",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-9659": {
+    "cvss": 9.8,
+    "description": "The School Management System for Wordpress plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the mj_smgt_user_avatar_image_upload() function in all versions up to, and including, 91.5.0. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-11-23T08:15:03.860",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-9660": {
+    "cvss": 8.8,
+    "description": "The School Management System for Wordpress plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the mj_smgt_load_documets_new() and mj_smgt_load_documets() functions in all versions up to, and including, 91.5.0. This makes it possible for authenticated attackers, with Student-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-11-23T08:15:04.033",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-9942": {
+    "cvss": 9.8,
+    "description": "The WPGYM - Wordpress Gym Management System plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the MJ_gmgt_user_avatar_image_upload() function in all versions up to, and including, 67.1.0. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-11-23T08:15:04.390",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-11034": {
+    "cvss": 7.3,
+    "description": "The The Request a Quote for WooCommerce and Elementor \u2013 Get a Quote Button \u2013 Product Enquiry Form Popup \u2013 Product Quotation plugin for WordPress is vulnerable to arbitrary shortcode execution via fire_contact_form AJAX action in all versions up to, and including, 1.4. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+    "published": "2024-11-23T12:15:16.090",
+    "keywords": "execution,unauthenticated"
   }
 }
