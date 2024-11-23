@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-23T15:10:26.355582
+Updated at UTC 2024-11-23T16:14:30.058090
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -836,8 +836,6 @@ Updated at UTC 2024-11-23T15:10:26.355582
 
 
 				</tr>
-			
-		
 			
 		
 			
@@ -4328,16 +4326,6 @@ QuTS hero h5.2.1.2929 build 20241025 and later</td>
 					<td>remote,sensitive</td>
 					<td class=date>2024-11-20T17:15:18.417</td>
 					<td class=description>A Local File Inclusion vulnerability in Vegam Solutions Vegam 4i versions 6.3.47.0 and earlier allows a remote attacker to obtain sensitive information through the print label function. Specifically, the filePathList parameter is susceptible to LFI, enabling a malicious user to include files from the web server, such as web.config or /etc/host, leading to the disclosure of sensitive information.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-52598">CVE-2024-52598</a></td>
-					<td>7.5</td>
-					<td>remote,authentication,bypass</td>
-					<td class=date>2024-11-20T15:15:11.667</td>
-					<td class=description>2FAuth is a web app to manage Two-Factor Authentication (2FA) accounts and generate their security codes. Two interconnected vulnerabilities exist in version 5.4.1 a SSRF and URI validation bypass issue. The endpoint at POST /api/v1/twofaccounts/preview allows setting a remote URI to retrieve the image of a 2fa site. By abusing this functionality, it is possible to force the application to make a GET request to an arbitrary URL, whose content will be stored in an image file in the server if it looks like an image. Additionally, the library does some basic validation on the URI, attempting to filter our URIs which do not have an image extension. However, this can be easily bypassed by appending the string `#.svg` to the URI. The combination of these two issues allows an attacker to retrieve URIs accessible from the application, as long as their content type is text based. If not, the request is still sent, but the response is not reflected to the attacker. Version 5.4.1 fixes the issues.</td>
 				</tr>
 			
 		
