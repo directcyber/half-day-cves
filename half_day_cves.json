@@ -1,28 +1,4 @@
 {
-  "CVE-2024-11088": {
-    "cvss": 5.3,
-    "description": "The Simple Membership plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 4.5.5 via the WordPress core search feature. This makes it possible for unauthenticated attackers to extract sensitive data from posts that have been restricted to higher-level roles such as administrator.",
-    "published": "2024-11-21T14:15:08.250",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-11089": {
-    "cvss": 5.3,
-    "description": "The Anonymous Restricted Content plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.6.5 via the WordPress core search feature. This makes it possible for unauthenticated attackers to extract sensitive data from posts that have been restricted to logged-in users.",
-    "published": "2024-11-21T14:15:08.530",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-53425": {
-    "url": "https://github.com/assimp/assimp/issues/5860",
-    "cvss": "-",
-    "description": "A heap-buffer-overflow vulnerability was discovered in the SkipSpacesAndLineEnd function in Assimp v5.4.3. This issue occurs when processing certain malformed MD5 model files, leading to an out-of-bounds read and potential application crash.",
-    "published": "2024-11-21T14:15:18.303"
-  },
-  "CVE-2024-53426": {
-    "url": "https://github.com/ntop/ntopng/issues/8793",
-    "cvss": "-",
-    "description": "A heap-buffer-overflow vulnerability has been identified in ntopng 6.2 in the Flow::dissectMDNS function.",
-    "published": "2024-11-21T14:15:18.527"
-  },
   "CVE-2024-21786": {
     "cvss": 7.2,
     "description": "An OS command injection vulnerability exists in the web interface configuration upload functionality of MC Technologies MC LR Router 2.10.5. A specially crafted HTTP request can lead to arbitrary command execution. An attacker can make an authenticated HTTP request to trigger this vulnerability.",
