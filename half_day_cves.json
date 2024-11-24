@@ -1,34 +1,4 @@
 {
-  "CVE-2024-10393": {
-    "cvss": 5.3,
-    "description": "The Tutor LMS plugin for WordPress is vulnerable to bypass to user registration in versions up to, and including, 2.7.6. This is due to a missing check for the 'users_can_register' option in the 'register_instructor' function. This makes it possible for unauthenticated attackers to register as the default role on the site, even if registration is disabled.",
-    "published": "2024-11-21T11:15:16.040",
-    "keywords": "unauthenticated,bypass"
-  },
-  "CVE-2024-10400": {
-    "cvss": 7.5,
-    "description": "The Tutor LMS plugin for WordPress is vulnerable to SQL Injection via the \u2018rating_filter\u2019 parameter in all versions up to, and including, 2.7.6 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
-    "published": "2024-11-21T11:15:16.297",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-10898": {
-    "cvss": 8.8,
-    "description": "The Contact Form 7 Email Add on plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.9 via the cf7_email_add_on_add_admin_template() function. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary PHP files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where php files can be uploaded and included.",
-    "published": "2024-11-21T11:15:23.610",
-    "keywords": "execution,sensitive,bypass"
-  },
-  "CVE-2024-11320": {
-    "cvss": "-",
-    "description": "Arbitrary commands execution on the server by exploiting a command injection vulnerability in the LDAP authentication mechanism. This issue affects Pandora FMS: from 700 through <=777.4",
-    "published": "2024-11-21T11:15:24.387",
-    "keywords": "execution,authentication,command"
-  },
-  "CVE-2024-30896": {
-    "url": "https://github.com/influxdata/influxdb/issues/24797",
-    "cvss": "-",
-    "description": "InfluxDB through 2.7.10 allows allAccess administrators to retrieve all raw tokens via an \"influx auth ls\" command. NOTE: the supplier indicates that this is intentional but is a \"poor design choice\" that will be changed in a future release.",
-    "published": "2024-11-21T11:15:34.007"
-  },
   "CVE-2024-11588": {
     "url": "https://github.com/avl-ditest-diagdev/libdoip/issues/11",
     "cvss": 7.5,
