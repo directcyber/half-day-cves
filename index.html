@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-24T17:09:44.365858
+Updated at UTC 2024-11-24T19:08:59.946012
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -610,24 +610,6 @@ Updated at UTC 2024-11-24T17:09:44.365858
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-53432">CVE-2024-53432</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/pointcloudlibrary/pcl/issues/6162">https://github.com/pointcloudlibrary/pcl/issues/6162</a></td>
-					<td class=date>2024-11-21T18:15:14.420</td>
-					<td class=description>While parsing certain malformed PLY files, PCL version 1.14.1 crashes due to an uncaught std::out_of_range exception in PCLPointCloud2::at. This issue could potentially be exploited to cause a denial-of-service (DoS) attack when processing untrusted PLY files.</td>
-
-
-				</tr>
 			
 		
 			
@@ -3822,38 +3804,6 @@ QuTS hero h5.2.1.2929 build 20241025 and later</td>
 					<td>remote,sensitive</td>
 					<td class=date>2024-11-21T19:15:11.523</td>
 					<td class=description>Cross Site Scripting vulnerability in Gibbon before v.27.0.01 and fixed in v.28.0.00 allows a remote attacker to obtain sensitive information via the email parameter found in /Gibbon/modules/User Admin/user_manage_editProcess.php.</td>
-				</tr>
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-52803">CVE-2024-52803</a></td>
-					<td>7.5</td>
-					<td>remote,command</td>
-					<td class=date>2024-11-21T17:15:24.470</td>
-					<td class=description>LLama Factory enables fine-tuning of large language models. A critical remote OS command injection vulnerability has been identified in the LLama Factory training process. This vulnerability arises from improper handling of user input, allowing malicious actors to execute arbitrary OS commands on the host system. The issue is caused by insecure usage of the `Popen` function with `shell=True`, coupled with unsanitized user input. Immediate remediation is required to mitigate the risk. This vulnerability is fixed in 0.9.1.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-52799">CVE-2024-52799</a></td>
-					<td>8.2</td>
-					<td>execution,command</td>
-					<td class=date>2024-11-21T17:15:24.220</td>
-					<td class=description>Argo Workflows Chart is used to set up argo and its needed dependencies through one command. Prior to 0.44.0, the workflow-role has excessive privileges, the worst being create pods/exec, which will allow kubectl exec into any Pod in the same namespace, i.e. arbitrary code execution within those Pods. If a user can be made to run a malicious template, their whole namespace can be compromised. This affects versions of the argo-workflows Chart that use appVersion: 3.4 and above, which no longer need these permissions for the only available Executor, Emissary. It could also affect users below 3.4 depending on their choice of Executor in those versions. This only affects the Helm Chart and not the upstream manifests. This vulnerability is fixed in 0.44.0.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-49529">CVE-2024-49529</a></td>
-					<td>5.5</td>
-					<td>sensitive,bypass</td>
-					<td class=date>2024-11-21T17:15:20.987</td>
-					<td class=description>InDesign Desktop versions 19.0, 20.0 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
 				</tr>
 			
 		
