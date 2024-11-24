@@ -1,16 +1,4 @@
 {
-  "CVE-2024-45514": {
-    "cvss": 5.4,
-    "description": "An issue was discovered in Zimbra Collaboration (ZCS) through v10.1. A Cross-Site Scripting (XSS) vulnerability exists in one of the endpoints of Zimbra Webmail due to insufficient sanitization of the packages parameter. Attackers can bypass the existing checks by using encoded characters, allowing the injection and execution of arbitrary JavaScript within a victim's session.",
-    "published": "2024-11-21T16:15:25.820",
-    "keywords": "execution,bypass"
-  },
-  "CVE-2024-8525": {
-    "cvss": "-",
-    "description": "An unrestricted upload of file with dangerous type in Automated Logic WebCTRL 7.0 could allow an unauthenticated user to perform remote command execution via a crafted HTTP POST request which could lead to uploading a malicious file.",
-    "published": "2024-11-21T16:15:27.217",
-    "keywords": "remote,execution,unauthenticated,command"
-  },
   "CVE-2024-49529": {
     "cvss": 5.5,
     "description": "InDesign Desktop versions 19.0, 20.0 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
