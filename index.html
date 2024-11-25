@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-25T19:10:49.232435
+Updated at UTC 2024-11-25T21:12:40.884271
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,20 @@ Updated at UTC 2024-11-25T19:10:49.232435
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-53258">CVE-2024-53258</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/autolab/autolab/commit/1aa4c7690892fb458d2c61ff86739f368e34769d">https://github.com/autolab/autolab/commit/1aa4c7690892fb458d2c61ff86739f368e34769d</a></td>
+					<td class=date>2024-11-25T20:15:10.030</td>
+					<td class=description>Autolab is a course management service that enables auto-graded programming assignments. From Autolab versions v.3.0.0 onward students can download all assignments from another student, as long as they are logged in, using the download_all_submissions feature. This can allow for leakage of submissions to unauthorized users, such as downloading submissions from other students in the class, or even instructor test submissions, given they know their user IDs. This issue has been patched in commit `1aa4c769` which is not yet in a release version, but is expected to be included in version 3.0.3. Users are advised to either manually patch or to wait for version 3.0.3. As a workaround administrators can disable the feature.</td>
+
+
+				</tr>
+			
 		
 			
 				<tr>
@@ -598,62 +612,20 @@ Updated at UTC 2024-11-25T19:10:49.232435
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-53268">CVE-2024-53268</a></td>
+					<td>7.2</td>
+					<td>remote,execution</td>
+					<td class=date>2024-11-25T20:15:10.583</td>
+					<td class=description>Joplin is an open source, privacy-focused note taking app with sync capabilities for Windows, macOS, Linux, Android and iOS. In affected versions attackers are able to abuse the fact that openExternal is used without any filtering of URI schemes to obtain remote code execution in Windows environments. This issue has been addressed in version 3.0.3 and all users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+				</tr>
+			
+		
+			
 		
 			
 		
@@ -3494,328 +3466,6 @@ The specific flaw exists within the parsing of DWG files. The issue results from
 					<td class=description>7-Zip Zstandard Decompression Integer Underflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of 7-Zip. Interaction with this library is required to exploit this vulnerability but attack vectors may vary depending on the implementation.
 
 The specific flaw exists within the implementation of Zstandard decompression. The issue results from the lack of proper validation of user-supplied data, which can result in an integer underflow before writing to memory. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-24346.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6817">CVE-2024-6817</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T20:15:12.367</td>
-					<td class=description>IrfanView PSP File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of IrfanView. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of PSP files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23216.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6816">CVE-2024-6816</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T20:15:12.243</td>
-					<td class=description>IrfanView PSP File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of IrfanView. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of PSP files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23214.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6815">CVE-2024-6815</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T20:15:12.130</td>
-					<td class=description>IrfanView RLE File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of IrfanView. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of RLE files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23159.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6249">CVE-2024-6249</a></td>
-					<td>8.8</td>
-					<td>remote,execution,authentication</td>
-					<td class=date>2024-11-22T20:15:11.900</td>
-					<td class=description>Wyze Cam v3 TCP Traffic Handling Stack-Based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Wyze Cam v3 IP cameras. Authentication is not required to exploit this vulnerability.
-
-The specific flaw exists within the TUTK P2P library. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-22419.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6248">CVE-2024-6248</a></td>
-					<td>7.5</td>
-					<td>remote,execution,authentication</td>
-					<td class=date>2024-11-22T20:15:11.783</td>
-					<td class=description>Wyze Cam v3 Cloud Infrastructure Improper Authentication Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Wyze Cam v3 IP cameras. Authentication is not required to exploit this vulnerability.
-
-The specific flaw exists within the run_action_batch endpoint of the cloud infrastructure. The issue results from the use of the device's MAC address as a sole credential for authentication. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of root. Was ZDI-CAN-22393.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6247">CVE-2024-6247</a></td>
-					<td>6.8</td>
-					<td>remote,execution,authentication,command</td>
-					<td class=date>2024-11-22T20:15:11.663</td>
-					<td class=description>Wyze Cam v3 Wi-Fi SSID OS Command Injection Remote Code Execution Vulnerability. This vulnerability allows physically present attackers to execute arbitrary code on affected installations of Wyze Cam v3 IP cameras. Authentication is not required to exploit this vulnerability.
-
-The specific flaw exists within the handling of SSIDs embedded in scanned QR codes. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-22337.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6246">CVE-2024-6246</a></td>
-					<td>9.6</td>
-					<td>remote,execution,authentication</td>
-					<td class=date>2024-11-22T20:15:11.547</td>
-					<td class=description>Wyze Cam v3 Realtek Wi-Fi Driver Heap-Based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Wyze Cam v3 IP cameras. Authentication is not required to exploit this vulnerability.
-
-The specific flaw exists within the Realtek Wi-Fi kernel module. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the kernel. Was ZDI-CAN-22310.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5877">CVE-2024-5877</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T20:15:11.260</td>
-					<td class=description>IrfanView PIC File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of IrfanView. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of PIC files. The issue results from the lack of proper validation of user-supplied data, which can result in a write before the start of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23974.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5876">CVE-2024-5876</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T20:15:11.150</td>
-					<td class=description>IrfanView PSP File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of IrfanView. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of PSP files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23973.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5875">CVE-2024-5875</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T20:15:11.030</td>
-					<td class=description>IrfanView SHP File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of IrfanView. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of SHP files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23972.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5874">CVE-2024-5874</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T20:15:10.900</td>
-					<td class=description>IrfanView PNT File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of IrfanView. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of PNT files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23969.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5722">CVE-2024-5722</a></td>
-					<td>8.8</td>
-					<td>remote,execution,authentication</td>
-					<td class=date>2024-11-22T20:15:10.787</td>
-					<td class=description>Logsign Unified SecOps Platform HTTP API Hard-coded Cryptographic Key Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Logsign Unified SecOps Platform. Authentication is not required to exploit this vulnerability.
-
-The specific flaw exists within the HTTP API. The issue results from using a hard-coded cryptographic key. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-24170.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5721">CVE-2024-5721</a></td>
-					<td>8.1</td>
-					<td>remote,execution,authentication</td>
-					<td class=date>2024-11-22T20:15:10.677</td>
-					<td class=description>Logsign Unified SecOps Platform Missing Authentication Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Logsign Unified SecOps Platform. Authentication is not required to exploit this vulnerability.
-
-The specific flaw exists within the implementation of the cluster HTTP API, which listens on TCP port 1924 when enabled. The issue results from the lack of authentication prior to allowing access to functionality. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-24169.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5720">CVE-2024-5720</a></td>
-					<td>8.8</td>
-					<td>remote,execution,authentication,command,bypass</td>
-					<td class=date>2024-11-22T20:15:10.563</td>
-					<td class=description>Logsign Unified SecOps Platform Command Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Logsign Unified SecOps Platform. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed.
-
-The specific flaw exists within the implementation of the HTTP API. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-24168.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5719">CVE-2024-5719</a></td>
-					<td>8.8</td>
-					<td>remote,execution,authentication,command,bypass</td>
-					<td class=date>2024-11-22T20:15:10.450</td>
-					<td class=description>Logsign Unified SecOps Platform Command Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Logsign Unified SecOps Platform. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed.
-
-The specific flaw exists within the implementation of the HTTP API. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-24167.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5718">CVE-2024-5718</a></td>
-					<td>8.1</td>
-					<td>remote,execution,authentication</td>
-					<td class=date>2024-11-22T20:15:10.340</td>
-					<td class=description>Logsign Unified SecOps Platform Missing Authentication Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Logsign Unified SecOps Platform. Authentication is not required to exploit this vulnerability.
-
-The specific flaw exists within the implementation of the cluster HTTP API, which listens on TCP port 1924 by default when enabled. The issue results from the lack of authentication prior to allowing access to functionality. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-24166.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5717">CVE-2024-5717</a></td>
-					<td>8.8</td>
-					<td>remote,execution,authentication,command,bypass</td>
-					<td class=date>2024-11-22T20:15:10.227</td>
-					<td class=description>Logsign Unified SecOps Platform Command Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Logsign Unified SecOps Platform. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed.
-
-The specific flaw exists within the implementation of the HTTP API. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-24165.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5716">CVE-2024-5716</a></td>
-					<td>8.6</td>
-					<td>remote,authentication,bypass</td>
-					<td class=date>2024-11-22T20:15:10.100</td>
-					<td class=description>Logsign Unified SecOps Platform Authentication Bypass Vulnerability. This vulnerability allows remote attackers to bypass authentication on affected installations of Logsign Unified SecOps Platform. Authentication is not required to exploit this vulnerability.
-
-The specific flaw exists within the password reset mechanism. The issue results from the lack of restriction of excessive authentication attempts. An attacker can leverage this vulnerability to reset a user's password and bypass authentication on the system. Was ZDI-CAN-24164.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5581">CVE-2024-5581</a></td>
-					<td>7.2</td>
-					<td>remote,execution,authentication</td>
-					<td class=date>2024-11-22T20:15:09.983</td>
-					<td class=description>Allegra unzipFile Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Allegra. Authentication is required to exploit this vulnerability.
-
-The specific flaw exists within the unzipFile method. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to execute code in the context of LOCAL SERVICE. Was ZDI-CAN-23453.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5580">CVE-2024-5580</a></td>
-					<td>7.2</td>
-					<td>remote,execution,authentication</td>
-					<td class=date>2024-11-22T20:15:09.877</td>
-					<td class=description>Allegra loadFieldMatch Deserialization of Untrusted Data Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Allegra. Authentication is required to exploit this vulnerability.
-
-The specific flaw exists within the loadFieldMatch method. The issue results from the lack of proper validation of user-supplied data, which can result in deserialization of untrusted data. An attacker can leverage this vulnerability to execute code in the context of LOCAL SERVICE. Was ZDI-CAN-23452.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5579">CVE-2024-5579</a></td>
-					<td>7.2</td>
-					<td>remote,execution,authentication</td>
-					<td class=date>2024-11-22T20:15:09.780</td>
-					<td class=description>Allegra renderFieldMatch Deserialization of Untrusted Data Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Allegra. Authentication is required to exploit this vulnerability.
-
-The specific flaw exists within the renderFieldMatch method. The issue results from the lack of proper validation of user-supplied data, which can result in deserialization of untrusted data. An attacker can leverage this vulnerability to execute code in the context of LOCAL SERVICE. Was ZDI-CAN-23451.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5513">CVE-2024-5513</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T20:15:09.673</td>
-					<td class=description>Kofax Power PDF JP2 File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Kofax Power PDF. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of JP2 files. The issue results from the lack of proper validation of user-supplied data, which can result in a write  past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22044.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5512">CVE-2024-5512</a></td>
-					<td>3.3</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-11-22T20:15:09.563</td>
-					<td class=description>Kofax Power PDF JP2 File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Kofax Power PDF. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of JP2 files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-22021.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5511">CVE-2024-5511</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T20:15:09.453</td>
-					<td class=description>Kofax Power PDF JP2 File Parsing Out-Of-Bounds Read Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Kofax Power PDF. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of JP2 files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22020.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-5510">CVE-2024-5510</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T20:15:09.343</td>
-					<td class=description>Kofax Power PDF JP2 File Parsing Out-Of-Bounds Read Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Kofax Power PDF. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of JP2 files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22019.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-30372">CVE-2024-30372</a></td>
-					<td>8.8</td>
-					<td>remote,execution,authentication</td>
-					<td class=date>2024-11-22T20:15:08.550</td>
-					<td class=description>Allegra getLinkText Server-Side Template Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Allegra. Authentication is required to exploit this vulnerability.
-
-The specific flaw exists within the implementation of getLinkText method. The issue results from the lack of proper validation of a user-supplied string before processing it with the template engine. An attacker can leverage this vulnerability to execute code in the context of LOCAL SERVICE. Was ZDI-CAN-23609.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-52998">CVE-2024-52998</a></td>
-					<td>5.5</td>
-					<td>sensitive,bypass</td>
-					<td class=date>2024-11-22T19:15:07.433</td>
-					<td class=description>Substance3D - Stager versions 3.0.2 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
 				</tr>
 			
 		
