@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-25T10:13:51.318809
+Updated at UTC 2024-11-25T15:14:32.893177
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,30 @@ Updated at UTC 2024-11-25T10:13:51.318809
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-11498">CVE-2024-11498</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/libjxl/libjxl/pull/3943">https://github.com/libjxl/libjxl/pull/3943</a></td>
+					<td class=date>2024-11-25T14:15:06.607</td>
+					<td class=description>There exists a stack buffer overflow in libjxl. A specifically-crafted file can cause the JPEG XL decoder to use large amounts of stack space (up to 256mb is possible, maybe 512mb), potentially exhausting the stack. An attacker can craft a file that will cause excessive memory usage. We recommend upgrading past commit 65fbec56bc578b6b6ee02a527be70787bbd053b0.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-11403">CVE-2024-11403</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/libjxl/libjxl/commit/9cc451b91b74ba470fd72bd48c121e9f33d24c99">https://github.com/libjxl/libjxl/commit/9cc451b91b74ba470fd72bd48c121e9f33d24c99</a></td>
+					<td class=date>2024-11-25T14:15:06.310</td>
+					<td class=description>There exists an out of bounds read/write in LibJXL versions prior to commit 9cc451b91b74ba470fd72bd48c121e9f33d24c99. The JPEG decoder used by the JPEG XL encoder when doing JPEG recompression (i.e. if using JxlEncoderAddJPEGFrame on untrusted input) does not properly check bounds in the presence of incomplete codes. This could lead to an out-of-bounds write. In jpegli which is released as part of the same project, the same vulnerability is present. However, the relevant buffer is part of a bigger structure, and the code makes no assumptions on the values that could be overwritten. The issue could however cause jpegli to read uninitialised memory, or addresses of functions.</td>
+
+
+				</tr>
+			
 		
 			
 				<tr>
@@ -640,10 +664,12 @@ Updated at UTC 2024-11-25T10:13:51.318809
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+		
+			
 		
 			
 		
@@ -3882,16 +3908,6 @@ QuTS hero h5.2.1.2929 build 20241025 and later</td>
 We have already fixed the vulnerability in the following versions:
 QTS 5.2.1.2930 build 20241025 and later
 QuTS hero h5.2.1.2929 build 20241025 and later</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-41779">CVE-2024-41779</a></td>
-					<td>9.8</td>
-					<td>remote,bypass</td>
-					<td class=date>2024-11-22T12:15:18.987</td>
-					<td class=description>IBM Engineering Systems Design Rhapsody - Model Manager 7.0.2 and 7.0.3 could allow a remote attacker to bypass security restrictions, caused by a race condition. By sending a specially crafted request, an attacker could exploit this vulnerability to remotely execute code.</td>
 				</tr>
 			
 		

@@ -1,10 +1,4 @@
 {
-  "CVE-2024-41779": {
-    "cvss": 9.8,
-    "description": "IBM Engineering Systems Design Rhapsody - Model Manager 7.0.2 and 7.0.3\u00a0could allow a remote attacker to bypass security restrictions, caused by a race condition. By sending a specially crafted request, an attacker could exploit this vulnerability to remotely execute code.",
-    "published": "2024-11-22T12:15:18.987",
-    "keywords": "remote,bypass"
-  },
   "CVE-2024-37043": {
     "cvss": "-",
     "description": "A path traversal vulnerability has been reported to affect several QNAP operating system versions. If exploited, the vulnerability could allow remote attackers who have gained administrator access to read the contents of unexpected files and expose sensitive data.\n\nWe have already fixed the vulnerability in the following versions:\nQTS 5.2.1.2930 build 20241025 and later\nQuTS hero h5.2.1.2929 build 20241025 and later",
@@ -1660,5 +1654,17 @@
     "cvss": 8.8,
     "description": "A vulnerability, which was classified as critical, has been found in eNMS up to 4.2. Affected by this issue is the function multiselect_filtering of the file eNMS/controller.py of the component TGZ File Handler. The manipulation leads to path traversal. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The patch is identified as 22b0b443acca740fc83b5544165c1f53eff3f529. It is recommended to apply a patch to fix this issue.",
     "published": "2024-11-25T09:15:06.800"
+  },
+  "CVE-2024-11403": {
+    "url": "https://github.com/libjxl/libjxl/commit/9cc451b91b74ba470fd72bd48c121e9f33d24c99",
+    "cvss": "-",
+    "description": "There exists an out of bounds read/write in LibJXL versions prior to commit\u00a09cc451b91b74ba470fd72bd48c121e9f33d24c99. The JPEG decoder used by the JPEG XL encoder\u00a0when doing JPEG recompression (i.e. if using JxlEncoderAddJPEGFrame on untrusted input) does not properly check bounds in the presence of incomplete codes. This could lead to an out-of-bounds write. In jpegli which is released as part of the same project, the same vulnerability is present. However, the relevant buffer is part of a bigger structure, and the code makes no assumptions on the values that could be overwritten. The issue could however cause jpegli to read uninitialised memory, or addresses of functions.",
+    "published": "2024-11-25T14:15:06.310"
+  },
+  "CVE-2024-11498": {
+    "url": "https://github.com/libjxl/libjxl/pull/3943",
+    "cvss": "-",
+    "description": "There exists a stack buffer overflow in libjxl.\u00a0A specifically-crafted file can cause the JPEG XL decoder to use large amounts of stack space (up to 256mb is possible, maybe 512mb), potentially exhausting the stack. An attacker can craft a file that will cause excessive memory usage. We recommend upgrading past commit\u00a065fbec56bc578b6b6ee02a527be70787bbd053b0.",
+    "published": "2024-11-25T14:15:06.607"
   }
 }
