@@ -1,22 +1,4 @@
 {
-  "CVE-2024-10220": {
-    "cvss": 8.1,
-    "description": "The Kubernetes kubelet component allows arbitrary command execution via specially crafted gitRepo volumes.This issue affects kubelet: through 1.28.11, from 1.29.0 through 1.29.6, from 1.30.0 through 1.30.2.",
-    "published": "2024-11-22T17:15:06.650",
-    "keywords": "execution,command"
-  },
-  "CVE-2024-53438": {
-    "url": "https://github.com/churchcrm/crm/issues/6988",
-    "cvss": "-",
-    "description": "EventAttendance.php in ChurchCRM 5.7.0 is vulnerable to SQL injection. An attacker can exploit this vulnerability by manipulating the 'Event' parameter, which is directly interpolated into the SQL query without proper sanitization or validation, allowing attackers to execute arbitrary SQL commands.",
-    "published": "2024-11-22T17:15:10.857"
-  },
-  "CVE-2024-37782": {
-    "cvss": "-",
-    "description": "An LDAP injection vulnerability in the login page of Gladinet CentreStack v13.12.9934.54690 allows attackers to access sensitive data or execute arbitrary commands via a crafted payload injected into the username field.",
-    "published": "2024-11-22T18:15:17.230",
-    "keywords": "command,sensitive"
-  },
   "CVE-2024-52998": {
     "cvss": 5.5,
     "description": "Substance3D - Stager versions 3.0.2 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
@@ -1632,15 +1614,21 @@
     "keywords": "remote,bypass"
   },
   "CVE-2024-11671": {
-    "cvss": "-",
+    "cvss": 5.4,
     "description": "Improper authentication in SQL data source MFA validation in Devolutions Remote Desktop Manager 2024.3.17 and earlier on Windows allows an authenticated user to bypass the MFA validation via data source switching.",
     "published": "2024-11-25T15:15:07.040",
     "keywords": "remote,authentication,bypass"
   },
   "CVE-2024-11672": {
-    "cvss": "-",
+    "cvss": 4.3,
     "description": "Incorrect authorization in the add permission component in Devolutions Remote Desktop Manager 2024.2.21 and earlier on Windows allows an authenticated malicious user to bypass the \"Add\" permission via the import in vault feature.",
     "published": "2024-11-25T15:15:07.180",
     "keywords": "remote,bypass"
+  },
+  "CVE-2024-52787": {
+    "url": "https://github.com/vemonet/libre-chat/pull/9",
+    "cvss": "-",
+    "description": "An issue in the upload_documents method of libre-chat v0.0.6 allows attackers to execute a path traversal via supplying a crafted filename in an uploaded file.",
+    "published": "2024-11-25T18:15:13.597"
   }
 }
