@@ -1,22 +1,4 @@
 {
-  "CVE-2024-52052": {
-    "cvss": "-",
-    "description": "Wowza Streaming Engine below 4.9.1 permits an authenticated Streaming Engine Manager administrator to define a custom application property and poison a stream target for high-privilege remote code execution.",
-    "published": "2024-11-21T23:15:04.520",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-39290": {
-    "cvss": 6.5,
-    "description": "Insufficiently protected credentials issue exists in AIPHONE IX SYSTEM and IXG SYSTEM. A network-adjacent unauthenticated attacker may obtain sensitive information such as a username and its password in the address book.",
-    "published": "2024-11-22T02:15:20.963",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-38296": {
-    "cvss": 6.7,
-    "description": "Dell Edge Gateway 5200 (Coffee Lake S), versions prior to 12.0.94.2380, contains an Exposure of Sensitive Information in Shared Microarchitectural Structures during Transient Execution vulnerability. A high privileged attacker with local access could potentially exploit this vulnerability, leading to information exposure.",
-    "published": "2024-11-22T03:15:04.160",
-    "keywords": "execution,sensitive"
-  },
   "CVE-2024-41779": {
     "cvss": 9.8,
     "description": "IBM Engineering Systems Design Rhapsody - Model Manager 7.0.2 and 7.0.3\u00a0could allow a remote attacker to bypass security restrictions, caused by a race condition. By sending a specially crafted request, an attacker could exploit this vulnerability to remotely execute code.",
@@ -1612,5 +1594,11 @@
     "description": "The The Request a Quote for WooCommerce and Elementor \u2013 Get a Quote Button \u2013 Product Enquiry Form Popup \u2013 Product Quotation plugin for WordPress is vulnerable to arbitrary shortcode execution via fire_contact_form AJAX action in all versions up to, and including, 1.4. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
     "published": "2024-11-23T12:15:16.090",
     "keywords": "execution,unauthenticated"
+  },
+  "CVE-2024-11666": {
+    "cvss": 9.0,
+    "description": "Affected devices beacon to eCharge cloud infrastructure asking if there are any command they should run. This communication is established over an insecure channel since peer verification is disabled everywhere. Therefore, remote unauthenticated users\u00a0 suitably positioned on the network between an EV charger controller and eCharge infrastructure can execute arbitrary commands with elevated privileges on affected devices.\n\nThis issue affects cph2_echarge_firmware: through 2.0.4.",
+    "published": "2024-11-24T23:15:04.030",
+    "keywords": "remote,unauthenticated,command"
   }
 }

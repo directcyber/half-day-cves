@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-24T23:12:30.987555
+Updated at UTC 2024-11-25T04:15:59.333327
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-11-24T23:12:30.987555
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -610,14 +612,20 @@ Updated at UTC 2024-11-24T23:12:30.987555
 		
 			
 		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-11666">CVE-2024-11666</a></td>
+					<td>9.0</td>
+					<td>remote,unauthenticated,command</td>
+					<td class=date>2024-11-24T23:15:04.030</td>
+					<td class=description>Affected devices beacon to eCharge cloud infrastructure asking if there are any command they should run. This communication is established over an insecure channel since peer verification is disabled everywhere. Therefore, remote unauthenticated users  suitably positioned on the network between an EV charger controller and eCharge infrastructure can execute arbitrary commands with elevated privileges on affected devices.
+
+This issue affects cph2_echarge_firmware: through 2.0.4.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -3762,36 +3770,6 @@ QuTS hero h5.2.1.2929 build 20241025 and later</td>
 					<td>remote,bypass</td>
 					<td class=date>2024-11-22T12:15:18.987</td>
 					<td class=description>IBM Engineering Systems Design Rhapsody - Model Manager 7.0.2 and 7.0.3 could allow a remote attacker to bypass security restrictions, caused by a race condition. By sending a specially crafted request, an attacker could exploit this vulnerability to remotely execute code.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-38296">CVE-2024-38296</a></td>
-					<td>6.7</td>
-					<td>execution,sensitive</td>
-					<td class=date>2024-11-22T03:15:04.160</td>
-					<td class=description>Dell Edge Gateway 5200 (Coffee Lake S), versions prior to 12.0.94.2380, contains an Exposure of Sensitive Information in Shared Microarchitectural Structures during Transient Execution vulnerability. A high privileged attacker with local access could potentially exploit this vulnerability, leading to information exposure.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-39290">CVE-2024-39290</a></td>
-					<td>6.5</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2024-11-22T02:15:20.963</td>
-					<td class=description>Insufficiently protected credentials issue exists in AIPHONE IX SYSTEM and IXG SYSTEM. A network-adjacent unauthenticated attacker may obtain sensitive information such as a username and its password in the address book.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-52052">CVE-2024-52052</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-21T23:15:04.520</td>
-					<td class=description>Wowza Streaming Engine below 4.9.1 permits an authenticated Streaming Engine Manager administrator to define a custom application property and poison a stream target for high-privilege remote code execution.</td>
 				</tr>
 			
 		
