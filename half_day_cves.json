@@ -1648,5 +1648,17 @@
     "description": "A vulnerability has been found in EnGenius ENH1350EXT, ENS500-AC and ENS620EXT up to 20241118 and classified as critical. Affected by this vulnerability is an unknown functionality of the file /admin/network/ajax_getChannelList. The manipulation of the argument countryCode leads to command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2024-11-25T06:15:06.593",
     "keywords": "remote,command"
+  },
+  "CVE-2024-11659": {
+    "cvss": 4.7,
+    "description": "A vulnerability was found in EnGenius ENH1350EXT, ENS500-AC and ENS620EXT up to 20241118 and classified as critical. Affected by this issue is some unknown functionality of the file /admin/network/diag_iperf. The manipulation of the argument iperf leads to command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2024-11-25T07:15:04.837",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-11664": {
+    "url": "https://github.com/enms-automation/enms/pull/419",
+    "cvss": 8.8,
+    "description": "A vulnerability, which was classified as critical, has been found in eNMS up to 4.2. Affected by this issue is the function multiselect_filtering of the file eNMS/controller.py of the component TGZ File Handler. The manipulation leads to path traversal. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The patch is identified as 22b0b443acca740fc83b5544165c1f53eff3f529. It is recommended to apply a patch to fix this issue.",
+    "published": "2024-11-25T09:15:06.800"
   }
 }
