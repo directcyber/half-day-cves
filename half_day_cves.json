@@ -1,46 +1,4 @@
 {
-  "CVE-2024-37043": {
-    "cvss": "-",
-    "description": "A path traversal vulnerability has been reported to affect several QNAP operating system versions. If exploited, the vulnerability could allow remote attackers who have gained administrator access to read the contents of unexpected files and expose sensitive data.\n\nWe have already fixed the vulnerability in the following versions:\nQTS 5.2.1.2930 build 20241025 and later\nQuTS hero h5.2.1.2929 build 20241025 and later",
-    "published": "2024-11-22T16:15:23.267",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-37046": {
-    "cvss": "-",
-    "description": "A path traversal vulnerability has been reported to affect several QNAP operating system versions. If exploited, the vulnerability could allow remote attackers who have gained administrator access to read the contents of unexpected files and expose sensitive data.\n\nWe have already fixed the vulnerability in the following versions:\nQTS 5.2.1.2930 build 20241025 and later\nQuTS hero h5.2.1.2929 build 20241025 and later",
-    "published": "2024-11-22T16:15:23.637",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-38643": {
-    "cvss": "-",
-    "description": "A missing authentication for critical function vulnerability has been reported to affect Notes Station 3. If exploited, the vulnerability could allow remote attackers to gain access to and execute certain functions.\n\nWe have already fixed the vulnerability in the following version:\nNotes Station 3 3.9.7 and later",
-    "published": "2024-11-22T16:15:24.873",
-    "keywords": "remote,authentication"
-  },
-  "CVE-2024-38644": {
-    "cvss": "-",
-    "description": "An OS command injection vulnerability has been reported to affect Notes Station 3. If exploited, the vulnerability could allow remote authenticated attackers to execute commands.\n\nWe have already fixed the vulnerability in the following version:\nNotes Station 3 3.9.7 and later",
-    "published": "2024-11-22T16:15:25.000",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-38647": {
-    "cvss": "-",
-    "description": "An exposure of sensitive information vulnerability has been reported to affect QNAP AI Core. If exploited, the vulnerability could allow remote attackers to compromise the security of the system.\n\nWe have already fixed the vulnerability in the following version:\nQNAP AI Core 3.4.1 and later",
-    "published": "2024-11-22T16:15:25.387",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-48860": {
-    "cvss": "-",
-    "description": "An OS command injection vulnerability has been reported to affect several product versions. If exploited, the vulnerability could allow remote attackers to execute commands.\n\nWe have already fixed the vulnerability in the following version:\nQuRouter 2.4.3.103 and later",
-    "published": "2024-11-22T16:15:28.337",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-52723": {
-    "cvss": "-",
-    "description": "In TOTOLINK X6000R V9.4.0cu.1041_B20240224 in the shttpd file, the Uci_Set Str function is used without strict parameter filtering. An attacker can achieve arbitrary command execution by constructing the payload.",
-    "published": "2024-11-22T16:15:33.983",
-    "keywords": "execution,command"
-  },
   "CVE-2024-10220": {
     "cvss": 8.1,
     "description": "The Kubernetes kubelet component allows arbitrary command execution via specially crafted gitRepo volumes.This issue affects kubelet: through 1.28.11, from 1.29.0 through 1.29.6, from 1.30.0 through 1.30.2.",
@@ -1666,5 +1624,23 @@
     "cvss": "-",
     "description": "There exists a stack buffer overflow in libjxl.\u00a0A specifically-crafted file can cause the JPEG XL decoder to use large amounts of stack space (up to 256mb is possible, maybe 512mb), potentially exhausting the stack. An attacker can craft a file that will cause excessive memory usage. We recommend upgrading past commit\u00a065fbec56bc578b6b6ee02a527be70787bbd053b0.",
     "published": "2024-11-25T14:15:06.607"
+  },
+  "CVE-2024-11670": {
+    "cvss": 5.4,
+    "description": "Incorrect authorization in the permission validation component of Devolutions Remote Desktop Manager 2024.2.21 and earlier on Windows allows a malicious authenticated user to bypass the \"View Password\" permission via specific actions.",
+    "published": "2024-11-25T15:15:05.557",
+    "keywords": "remote,bypass"
+  },
+  "CVE-2024-11671": {
+    "cvss": "-",
+    "description": "Improper authentication in SQL data source MFA validation in Devolutions Remote Desktop Manager 2024.3.17 and earlier on Windows allows an authenticated user to bypass the MFA validation via data source switching.",
+    "published": "2024-11-25T15:15:07.040",
+    "keywords": "remote,authentication,bypass"
+  },
+  "CVE-2024-11672": {
+    "cvss": "-",
+    "description": "Incorrect authorization in the add permission component in Devolutions Remote Desktop Manager 2024.2.21 and earlier on Windows allows an authenticated malicious user to bypass the \"Add\" permission via the import in vault feature.",
+    "published": "2024-11-25T15:15:07.180",
+    "keywords": "remote,bypass"
   }
 }
