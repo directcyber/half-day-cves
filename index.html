@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-25T22:11:33.488599
+Updated at UTC 2024-11-25T23:12:03.608337
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-11-25T22:11:33.488599
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -172,86 +174,61 @@ Updated at UTC 2024-11-25T22:11:33.488599
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-53102">CVE-2024-53102</a></td>
+					<td>-</td>
+					<td>execution,command</td>
+					<td class=date>2024-11-25T22:15:17.553</td>
+					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
+
+nvme: make keep-alive synchronous operation
+
+The nvme keep-alive operation, which executes at a periodic interval,
+could potentially sneak in while shutting down a fabric controller.
+This may lead to a race between the fabric controller admin queue
+destroy code path (invoked while shutting down controller) and hw/hctx
+queue dispatcher called from the nvme keep-alive async request queuing
+operation. This race could lead to the kernel crash shown below:
+
+Call Trace:
+    autoremove_wake_function+0x0/0xbc (unreliable)
+    __blk_mq_sched_dispatch_requests+0x114/0x24c
+    blk_mq_sched_dispatch_requests+0x44/0x84
+    blk_mq_run_hw_queue+0x140/0x220
+    nvme_keep_alive_work+0xc8/0x19c [nvme_core]
+    process_one_work+0x200/0x4e0
+    worker_thread+0x340/0x504
+    kthread+0x138/0x140
+    start_kernel_thread+0x14/0x18
+
+While shutting down fabric controller, if nvme keep-alive request sneaks
+in then it would be flushed off. The nvme_keep_alive_end_io function is
+then invoked to handle the end of the keep-alive operation which
+decrements the admin->q_usage_counter and assuming this is the last/only
+request in the admin queue then the admin->q_usage_counter becomes zero.
+If that happens then blk-mq destroy queue operation (blk_mq_destroy_
+queue()) which could be potentially running simultaneously on another
+cpu (as this is the controller shutdown code path) would forward
+progress and deletes the admin queue. So, now from this point onward
+we are not supposed to access the admin queue resources. However the
+issue here's that the nvme keep-alive thread running hw/hctx queue
+dispatch operation hasn't yet finished its work and so it could still
+potentially access the admin queue resource while the admin queue had
+been already deleted and that causes the above crash.
+
+This fix helps avoid the observed crash by implementing keep-alive as a
+synchronous operation so that we decrement admin->q_usage_counter only
+after keep-alive command finished its execution and returns the command
+status back up to its caller (blk_execute_rq()). This would ensure that
+fabric shutdown code path doesn't destroy the fabric admin queue until
+keep-alive request finished execution and also keep-alive thread is not
+running hw/hctx queue dispatch operation.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -532,474 +509,6 @@ This issue affects cph2_echarge_firmware: through 2.0.4.</td>
 					<td>remote,unauthenticated,command</td>
 					<td class=date>2024-11-22T23:15:05.347</td>
 					<td class=description>A parameter within a command does not properly validate input within myPRO Manager which could be exploited by an unauthenticated remote attacker to inject arbitrary operating system commands.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9767">CVE-2024-9767</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:22.593</td>
-					<td class=description>IrfanView SID File Parsing Out-Of-Bounds Read Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of IrfanView. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of SID files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23277.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9261">CVE-2024-9261</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:22.397</td>
-					<td class=description>IrfanView SID File Parsing Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of IrfanView. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of SID files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23283.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9260">CVE-2024-9260</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:22.277</td>
-					<td class=description>IrfanView SID File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of IrfanView. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of SID files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23280.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9259">CVE-2024-9259</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:22.153</td>
-					<td class=description>IrfanView SID File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of IrfanView. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of SID files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23278.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9258">CVE-2024-9258</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:22.033</td>
-					<td class=description>IrfanView SID File Parsing Uninitialized Pointer Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of IrfanView. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of SID files. The issue results from the lack of proper initialization of a pointer prior to accessing it. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23276.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9256">CVE-2024-9256</a></td>
-					<td>3.3</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-11-22T22:15:21.903</td>
-					<td class=description>Foxit PDF Reader AcroForm Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the handling of AcroForms. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25267.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9255">CVE-2024-9255</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:21.773</td>
-					<td class=description>Foxit PDF Reader Annotation Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the handling of Annotation objects. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25174.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9254">CVE-2024-9254</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:21.657</td>
-					<td class=description>Foxit PDF Reader Annotation Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the handling of Annotation objects. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25173.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9253">CVE-2024-9253</a></td>
-					<td>3.3</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-11-22T22:15:21.530</td>
-					<td class=description>Foxit PDF Reader AcroForm Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the handling of AcroForms. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-24492.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9252">CVE-2024-9252</a></td>
-					<td>3.3</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-11-22T22:15:21.400</td>
-					<td class=description>Foxit PDF Reader AcroForm Use-After-Free Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the handling of AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-24491.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9251">CVE-2024-9251</a></td>
-					<td>3.3</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-11-22T22:15:21.270</td>
-					<td class=description>Foxit PDF Reader Annotation Use-After-Free Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the handling of Annotation objects. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-24490.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9250">CVE-2024-9250</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:21.130</td>
-					<td class=description>Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the handling of AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-24489.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9249">CVE-2024-9249</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:20.977</td>
-					<td class=description>Foxit PDF Reader PDF File Parsing Out-Of-Bounds Read Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of PDF files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-24301.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9248">CVE-2024-9248</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:20.857</td>
-					<td class=description>Foxit PDF Reader PDF File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of PDF files. The issue results from the lack of proper validation of user-supplied data, which can result in a write  past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-24300.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9247">CVE-2024-9247</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:20.737</td>
-					<td class=description>Foxit PDF Reader Annotation Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the handling of Annotation objects. The issue results from the lack of proper validation of user-supplied data, which can result in a write before the start of an allocated object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-24173.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9246">CVE-2024-9246</a></td>
-					<td>3.3</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-11-22T22:15:20.620</td>
-					<td class=description>Foxit PDF Reader Annotation Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the handling of Annotation objects. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-24135.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9243">CVE-2024-9243</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:20.253</td>
-					<td class=description>Foxit PDF Reader AcroForm Doc Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Foxit PDF Reader. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the handling of AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23932.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9114">CVE-2024-9114</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:20.107</td>
-					<td class=description>FastStone Image Viewer GIF File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of FastStone Image Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of GIF files. The issue results from the lack of proper validation of user-supplied data, which can result in a write  past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25145.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9113">CVE-2024-9113</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:19.990</td>
-					<td class=description>FastStone Image Viewer TGA File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of FastStone Image Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of TGA files. The issue results from the lack of proper validation of user-supplied data, which can result in a write  past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25140.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9112">CVE-2024-9112</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:19.863</td>
-					<td class=description>FastStone Image Viewer PSD File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of FastStone Image Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of PSD files. The issue results from the lack of proper validation of user-supplied data, which can result in a write  past the end of an allocated object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25102.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8360">CVE-2024-8360</a></td>
-					<td>6.8</td>
-					<td>remote,execution,authentication,command</td>
-					<td class=date>2024-11-22T22:15:19.497</td>
-					<td class=description>Visteon Infotainment REFLASH_DDU_ExtractFile Command Injection Remote Code Execution Vulnerability. This vulnerability allows physically present attackers to execute arbitrary code on affected installations of Visteon Infotainment systems. Authentication is not required to exploit this vulnerability.
-
-The specific flaw exists within the REFLASH_DDU_ExtractFile function. A crafted software update file can trigger execution of a system call composed from a user-supplied string. An attacker can leverage this vulnerability to execute code in the context of the device. Was ZDI-CAN-23421.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8359">CVE-2024-8359</a></td>
-					<td>6.8</td>
-					<td>remote,execution,authentication,command</td>
-					<td class=date>2024-11-22T22:15:19.373</td>
-					<td class=description>Visteon Infotainment REFLASH_DDU_FindFile Command Injection Remote Code Execution Vulnerability. This vulnerability allows physically present attackers to execute arbitrary code on affected installations of Visteon Infotainment systems. Authentication is not required to exploit this vulnerability.
-
-The specific flaw exists within the REFLASH_DDU_FindFile function. A crafted software update file can trigger execution of a system call composed from a user-supplied string. An attacker can leverage this vulnerability to execute code in the context of the device. Was ZDI-CAN-23420.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8358">CVE-2024-8358</a></td>
-					<td>6.8</td>
-					<td>remote,execution,authentication,command</td>
-					<td class=date>2024-11-22T22:15:19.240</td>
-					<td class=description>Visteon Infotainment UPDATES_ExtractFile Command Injection Remote Code Execution Vulnerability. This vulnerability allows physically present attackers to execute arbitrary code on affected installations of Visteon Infotainment systems. Authentication is not required to exploit this vulnerability.
-
-The specific flaw exists within the UPDATES_ExtractFile function. A crafted software update file can trigger execution of a system call composed from a user-supplied string. An attacker can leverage this vulnerability to execute code in the context of the device. Was ZDI-CAN-23422.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8357">CVE-2024-8357</a></td>
-					<td>7.8</td>
-					<td>authentication,bypass</td>
-					<td class=date>2024-11-22T22:15:19.107</td>
-					<td class=description>Visteon Infotainment App SoC Missing Immutable Root of Trust in Hardware Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of Visteon Infotainment systems. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed.
-
-The specific flaw exists within the configuration of the application system-on-chip (SoC). The issue results from the lack of properly configured hardware root of trust. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of the boot process. Was ZDI-CAN-23759.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-8025">CVE-2024-8025</a></td>
-					<td>7.0</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:18.713</td>
-					<td class=description>Nikon NEF Codec Thumbnail Provider NRW File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Nikon NEF Codec. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of NRW files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-19873.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7565">CVE-2024-7565</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:18.593</td>
-					<td class=description>SMARTBEAR SoapUI unpackageAll Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of SMARTBEAR SoapUI. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the unpackageAll function. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-19060.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7511">CVE-2024-7511</a></td>
-					<td>3.3</td>
-					<td>remote,sensitive</td>
-					<td class=date>2024-11-22T22:15:18.480</td>
-					<td class=description>Trimble SketchUp Pro SKP File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of Trimble SketchUp Pro. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of PSD files embedded in SKP files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-23000.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7510">CVE-2024-7510</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:18.363</td>
-					<td class=description>Trimble SketchUp SKP File Parsing Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Trimble SketchUp. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of SKP files. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-19631.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7509">CVE-2024-7509</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:18.250</td>
-					<td class=description>Trimble SketchUp SKP File Parsing Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Trimble SketchUp. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of SKP files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-19576.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7508">CVE-2024-7508</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:18.133</td>
-					<td class=description>Trimble SketchUp Viewer SKP File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Trimble SketchUp Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of SKP files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-19575.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-7352">CVE-2024-7352</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:17.780</td>
-					<td class=description>PDF-XChange Editor PDF File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of PDF files. The issue results from the lack of proper validation of user-supplied data, which can result in a write  past the end of an allocated object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23550.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6822">CVE-2024-6822</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:15.057</td>
-					<td class=description>IrfanView CIN File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of IrfanView. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of CIN files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23261.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6821">CVE-2024-6821</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:14.940</td>
-					<td class=description>IrfanView CIN File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of IrfanView. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of CIN files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23260.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6820">CVE-2024-6820</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:14.830</td>
-					<td class=description>IrfanView AWD File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of IrfanView. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of AWD files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23232.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6819">CVE-2024-6819</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:14.710</td>
-					<td class=description>IrfanView PSP File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of IrfanView. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of PSP files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23219.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-6818">CVE-2024-6818</a></td>
-					<td>7.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:14.590</td>
-					<td class=description>IrfanView PSP File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of IrfanView. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of PSP files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23217.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-11394">CVE-2024-11394</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:07.223</td>
-					<td class=description>Hugging Face Transformers Trax Model Deserialization of Untrusted Data Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Hugging Face Transformers. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the handling of model files. The issue results from the lack of proper validation of user-supplied data, which can result in deserialization of untrusted data. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-25012.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-11393">CVE-2024-11393</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:07.100</td>
-					<td class=description>Hugging Face Transformers MaskFormer Model Deserialization of Untrusted Data Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Hugging Face Transformers. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the parsing of model files. The issue results from the lack of proper validation of user-supplied data, which can result in deserialization of untrusted data. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-25191.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-11392">CVE-2024-11392</a></td>
-					<td>7.5</td>
-					<td>remote,execution</td>
-					<td class=date>2024-11-22T22:15:06.970</td>
-					<td class=description>Hugging Face Transformers MobileViTV2 Deserialization of Untrusted Data Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Hugging Face Transformers. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
-
-The specific flaw exists within the handling of configuration files. The issue results from the lack of proper validation of user-supplied data, which can result in deserialization of untrusted data. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-24322.</td>
 				</tr>
 			
 		
