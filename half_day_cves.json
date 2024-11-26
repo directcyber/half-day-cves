@@ -1,10 +1,4 @@
 {
-  "CVE-2024-11034": {
-    "cvss": 7.3,
-    "description": "The The Request a Quote for WooCommerce and Elementor \u2013 Get a Quote Button \u2013 Product Enquiry Form Popup \u2013 Product Quotation plugin for WordPress is vulnerable to arbitrary shortcode execution via fire_contact_form AJAX action in all versions up to, and including, 1.4. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
-    "published": "2024-11-23T12:15:16.090",
-    "keywords": "execution,unauthenticated"
-  },
   "CVE-2024-11666": {
     "cvss": 9.0,
     "description": "Affected devices beacon to eCharge cloud infrastructure asking if there are any command they should run. This communication is established over an insecure channel since peer verification is disabled everywhere. Therefore, remote unauthenticated users\u00a0 suitably positioned on the network between an EV charger controller and eCharge infrastructure can execute arbitrary commands with elevated privileges on affected devices.\n\nThis issue affects cph2_echarge_firmware: through 2.0.4.",
@@ -166,5 +160,47 @@
     "description": "Admin authentication can be bypassed with some specific invalid credentials, which allows logging in with an administrative privilege. Sharp Corporation states the telnet feature is implemented on older models only, and is planning to provide the firmware update to remove the feature. As for the details of affected product names, model numbers, and versions, refer to the information provided by the respective vendors listed under [References].",
     "published": "2024-11-26T08:15:05.987",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-11680": {
+    "cvss": 9.8,
+    "description": "ProjectSend versions prior to r1720 are affected by an improper authentication vulnerability. Remote, unauthenticated attackers can exploit this flaw by sending crafted HTTP requests to options.php, enabling unauthorized modification of the application's configuration. Successful exploitation allows attackers to create accounts, upload webshells, and embed malicious JavaScript.",
+    "published": "2024-11-26T10:15:04.540",
+    "keywords": "remote,unauthenticated,authentication"
+  },
+  "CVE-2024-50370": {
+    "cvss": 9.8,
+    "description": "A CWE-78 \"Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')\" was discovered affecting the following devices manufactured by Advantech: EKI-6333AC-2G (<= 1.6.3), EKI-6333AC-2GD (<= v1.6.3) and EKI-6333AC-1GPO (<= v1.2.1). The vulnerability can be exploited by remote unauthenticated users capable of interacting with the default \"edgserver\" service enabled on the access point and malicious commands are executed with root privileges. No authentication is enabled on the service and the source of the vulnerability resides in processing code associated to the \"cfg_cmd_set_eth_conf\" operation.",
+    "published": "2024-11-26T11:22:05.563",
+    "keywords": "remote,unauthenticated,authentication,command"
+  },
+  "CVE-2024-50371": {
+    "cvss": 9.8,
+    "description": "A CWE-78 \"Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')\" was discovered affecting the following devices manufactured by Advantech: EKI-6333AC-2G (<= 1.6.3), EKI-6333AC-2GD (<= v1.6.3) and EKI-6333AC-1GPO (<= v1.2.1). The vulnerability can be exploited by remote unauthenticated users capable of interacting with the default \"edgserver\" service enabled on the access point and malicious commands are executed with root privileges. No authentication is enabled on the service and the source of the vulnerability resides in processing code associated to the \"wlan_scan\" operation.",
+    "published": "2024-11-26T11:22:06.050",
+    "keywords": "remote,unauthenticated,authentication,command"
+  },
+  "CVE-2024-50372": {
+    "cvss": 9.8,
+    "description": "A CWE-78 \"Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')\" was discovered affecting the following devices manufactured by Advantech: EKI-6333AC-2G (<= 1.6.3), EKI-6333AC-2GD (<= v1.6.3) and EKI-6333AC-1GPO (<= v1.2.1). The vulnerability can be exploited by remote unauthenticated users capable of interacting with the default \"edgserver\" service enabled on the access point and malicious commands are executed with root privileges. No authentication is enabled on the service and the source of the vulnerability resides in processing code associated to the \"backup_config_to_utility\" operation.",
+    "published": "2024-11-26T11:22:06.457",
+    "keywords": "remote,unauthenticated,authentication,command"
+  },
+  "CVE-2024-50373": {
+    "cvss": 9.8,
+    "description": "A CWE-78 \"Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')\" was discovered affecting the following devices manufactured by Advantech: EKI-6333AC-2G (<= 1.6.3), EKI-6333AC-2GD (<= v1.6.3) and EKI-6333AC-1GPO (<= v1.2.1). The vulnerability can be exploited by remote unauthenticated users capable of interacting with the default \"edgserver\" service enabled on the access point and malicious commands are executed with root privileges. No authentication is enabled on the service and the source of the vulnerability resides in processing code associated to the \"restore_config_from_utility\" operation.",
+    "published": "2024-11-26T11:22:06.930",
+    "keywords": "remote,unauthenticated,authentication,command"
+  },
+  "CVE-2024-50374": {
+    "cvss": 9.8,
+    "description": "A CWE-78 \"Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')\" was discovered affecting the following devices manufactured by Advantech: EKI-6333AC-2G (<= 1.6.3), EKI-6333AC-2GD (<= v1.6.3) and EKI-6333AC-1GPO (<= v1.2.1). The vulnerability can be exploited by remote unauthenticated users capable of interacting with the default \"edgserver\" service enabled on the access point and malicious commands are executed with root privileges. No authentication is enabled on the service and the source of the vulnerability resides in processing code associated to the \"capture_packages\" operation.",
+    "published": "2024-11-26T11:22:07.403",
+    "keywords": "remote,unauthenticated,authentication,command"
+  },
+  "CVE-2024-50375": {
+    "cvss": 9.8,
+    "description": "A CWE-306 \"Missing Authentication for Critical Function\" was discovered affecting the following devices manufactured by Advantech: EKI-6333AC-2G (<= 1.6.3), EKI-6333AC-2GD (<= v1.6.3) and EKI-6333AC-1GPO (<= v1.2.1). The vulnerability can be exploited by remote unauthenticated users capable of interacting with the default \"edgserver\" service enabled on the access point.",
+    "published": "2024-11-26T11:22:07.867",
+    "keywords": "remote,unauthenticated,authentication"
   }
 }
