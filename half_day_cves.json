@@ -65,18 +65,6 @@
     "description": "A vulnerability, which was classified as critical, has been found in eNMS up to 4.2. Affected by this issue is the function multiselect_filtering of the file eNMS/controller.py of the component TGZ File Handler. The manipulation leads to path traversal. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The patch is identified as 22b0b443acca740fc83b5544165c1f53eff3f529. It is recommended to apply a patch to fix this issue.",
     "published": "2024-11-25T09:15:06.800"
   },
-  "CVE-2024-11403": {
-    "url": "https://github.com/libjxl/libjxl/commit/9cc451b91b74ba470fd72bd48c121e9f33d24c99",
-    "cvss": "-",
-    "description": "There exists an out of bounds read/write in LibJXL versions prior to commit\u00a09cc451b91b74ba470fd72bd48c121e9f33d24c99. The JPEG decoder used by the JPEG XL encoder\u00a0when doing JPEG recompression (i.e. if using JxlEncoderAddJPEGFrame on untrusted input) does not properly check bounds in the presence of incomplete codes. This could lead to an out-of-bounds write. In jpegli which is released as part of the same project, the same vulnerability is present. However, the relevant buffer is part of a bigger structure, and the code makes no assumptions on the values that could be overwritten. The issue could however cause jpegli to read uninitialised memory, or addresses of functions.",
-    "published": "2024-11-25T14:15:06.310"
-  },
-  "CVE-2024-11498": {
-    "url": "https://github.com/libjxl/libjxl/pull/3943",
-    "cvss": "-",
-    "description": "There exists a stack buffer overflow in libjxl.\u00a0A specifically-crafted file can cause the JPEG XL decoder to use large amounts of stack space (up to 256mb is possible, maybe 512mb), potentially exhausting the stack. An attacker can craft a file that will cause excessive memory usage. We recommend upgrading past commit\u00a065fbec56bc578b6b6ee02a527be70787bbd053b0.",
-    "published": "2024-11-25T14:15:06.607"
-  },
   "CVE-2024-11670": {
     "cvss": 5.4,
     "description": "Incorrect authorization in the permission validation component of Devolutions Remote Desktop Manager 2024.2.21 and earlier on Windows allows a malicious authenticated user to bypass the \"View Password\" permission via specific actions.",
@@ -214,5 +202,29 @@
     "description": "The Total Upkeep \u2013 WordPress Backup Plugin plus Restore & Migrate by BoldGrid plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.16.6 via the cron_interval parameter. This is due to missing input validation and sanitization. This makes it possible for authenticated attackers, with Administrator-level access and above, to execute code on the server.",
     "published": "2024-11-26T14:15:22.533",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-11668": {
+    "cvss": 4.2,
+    "description": "An issue has been discovered in GitLab CE/EE affecting all versions from 16.11 before 17.4.5, 17.5 before 17.5.3, and 17.6 before 17.6.1. Long-lived connections could potentially bypass authentication controls, allowing unauthorized access to streaming results.",
+    "published": "2024-11-26T19:15:22.027",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-32965": {
+    "cvss": 8.1,
+    "description": "Lobe Chat is an open-source, AI chat framework. Versions of lobe-chat prior to 1.19.13 have an unauthorized ssrf vulnerability. An attacker can construct malicious requests to cause SSRF without logging in, attack intranet services, and leak sensitive information. The jwt token header X-Lobe-Chat-Auth strored proxy address and OpenAI API Key, can be modified to scan an internal network in the target lobe-web environment. This issue has been addressed in release version 1.19.13 and all users are advised to upgrade. There are no known workarounds for this vulnerability.",
+    "published": "2024-11-26T19:15:23.343",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2024-53844": {
+    "cvss": 6.3,
+    "description": "E.D.D.I (Enhanced Dialog Driven Interface) is a middleware to connect and manage LLM API bots. A path traversal vulnerability exists in the backup export functionality of EDDI, as implemented in `RestExportService.java`. This vulnerability allows an attacker to access sensitive files on the server by manipulating the `botFilename` parameter in requests. The application fails to sanitize user input, enabling malicious inputs such as `..%2f..%2fetc%2fpasswd` to access arbitrary files. However, the **severity of this vulnerability is significantly limited** because EDDI typically runs within a **Docker container**, which provides additional layers of isolation and restricted permissions. As a result, while this vulnerability exposes files within the container, it does not inherently threaten the underlying host system or other containers. A patch is required to sanitize and validate the botFilename input parameter. Users should ensure they are using version 5.4 which contains this patdch. For temporary mitigation, access to the vulnerable endpoint should be restricted through firewall rules or authentication mechanisms.",
+    "published": "2024-11-26T19:15:31.463",
+    "keywords": "authentication,sensitive"
+  },
+  "CVE-2024-11145": {
+    "cvss": 9.8,
+    "description": "Valor Apps Easy Folder Listing Pro has a deserialization vulnerability that allows an unauthenticated, remote attacker to execute arbitrary code with the privileges of the Joomla! application. Fixed in versions 3.8 and 4.5.",
+    "published": "2024-11-26T20:15:25.270",
+    "keywords": "remote,unauthenticated"
   }
 }
