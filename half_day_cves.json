@@ -1,22 +1,4 @@
 {
-  "CVE-2024-47407": {
-    "cvss": 10.0,
-    "description": "A parameter within a command does not properly validate input within myPRO Manager which could be exploited by an unauthenticated remote attacker to inject arbitrary operating system commands.",
-    "published": "2024-11-22T23:15:05.347",
-    "keywords": "remote,unauthenticated,command"
-  },
-  "CVE-2024-52034": {
-    "cvss": 10.0,
-    "description": "An OS Command Injection vulnerability exists within myPRO Manager. A parameter within a command can be exploited by an unauthenticated remote attacker to inject arbitrary operating system commands.",
-    "published": "2024-11-22T23:15:05.640",
-    "keywords": "remote,unauthenticated,command"
-  },
-  "CVE-2024-0138": {
-    "cvss": 9.8,
-    "description": "NVIDIA Base Command Manager contains a missing authentication vulnerability in the CMDaemon component. A successful exploit of this vulnerability might lead to code execution, denial of service, escalation of privileges, information disclosure, and data tampering.",
-    "published": "2024-11-23T00:15:04.367",
-    "keywords": "execution,authentication,command"
-  },
   "CVE-2024-10813": {
     "cvss": 5.3,
     "description": "The Product Table for WooCommerce by CodeAstrology (wooproducttable.com) plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.5.1 via the var_dump_table parameter. This makes it possible for unauthenticated attackers var data.",
@@ -196,5 +178,17 @@
     "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnvme: make keep-alive synchronous operation\n\nThe nvme keep-alive operation, which executes at a periodic interval,\ncould potentially sneak in while shutting down a fabric controller.\nThis may lead to a race between the fabric controller admin queue\ndestroy code path (invoked while shutting down controller) and hw/hctx\nqueue dispatcher called from the nvme keep-alive async request queuing\noperation. This race could lead to the kernel crash shown below:\n\nCall Trace:\n    autoremove_wake_function+0x0/0xbc (unreliable)\n    __blk_mq_sched_dispatch_requests+0x114/0x24c\n    blk_mq_sched_dispatch_requests+0x44/0x84\n    blk_mq_run_hw_queue+0x140/0x220\n    nvme_keep_alive_work+0xc8/0x19c [nvme_core]\n    process_one_work+0x200/0x4e0\n    worker_thread+0x340/0x504\n    kthread+0x138/0x140\n    start_kernel_thread+0x14/0x18\n\nWhile shutting down fabric controller, if nvme keep-alive request sneaks\nin then it would be flushed off. The nvme_keep_alive_end_io function is\nthen invoked to handle the end of the keep-alive operation which\ndecrements the admin->q_usage_counter and assuming this is the last/only\nrequest in the admin queue then the admin->q_usage_counter becomes zero.\nIf that happens then blk-mq destroy queue operation (blk_mq_destroy_\nqueue()) which could be potentially running simultaneously on another\ncpu (as this is the controller shutdown code path) would forward\nprogress and deletes the admin queue. So, now from this point onward\nwe are not supposed to access the admin queue resources. However the\nissue here's that the nvme keep-alive thread running hw/hctx queue\ndispatch operation hasn't yet finished its work and so it could still\npotentially access the admin queue resource while the admin queue had\nbeen already deleted and that causes the above crash.\n\nThis fix helps avoid the observed crash by implementing keep-alive as a\nsynchronous operation so that we decrement admin->q_usage_counter only\nafter keep-alive command finished its execution and returns the command\nstatus back up to its caller (blk_execute_rq()). This would ensure that\nfabric shutdown code path doesn't destroy the fabric admin queue until\nkeep-alive request finished execution and also keep-alive thread is not\nrunning hw/hctx queue dispatch operation.",
     "published": "2024-11-25T22:15:17.553",
     "keywords": "execution,command"
+  },
+  "CVE-2024-49595": {
+    "cvss": 7.6,
+    "description": "Dell Wyse Management Suite, version WMS 4.4 and before, contain an Authentication Bypass by Capture-replay vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Denial of service.",
+    "published": "2024-11-26T03:15:06.093",
+    "keywords": "remote,authentication,bypass"
+  },
+  "CVE-2024-49597": {
+    "cvss": 7.6,
+    "description": "Dell Wyse Management Suite, versions WMS 4.4 and prior, contain an Improper Restriction of Excessive Authentication Attempts vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Protection mechanism bypass.",
+    "published": "2024-11-26T03:15:06.940",
+    "keywords": "remote,authentication,bypass"
   }
 }
