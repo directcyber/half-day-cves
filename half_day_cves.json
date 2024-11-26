@@ -202,5 +202,17 @@
     "description": "A CWE-306 \"Missing Authentication for Critical Function\" was discovered affecting the following devices manufactured by Advantech: EKI-6333AC-2G (<= 1.6.3), EKI-6333AC-2GD (<= v1.6.3) and EKI-6333AC-1GPO (<= v1.2.1). The vulnerability can be exploited by remote unauthenticated users capable of interacting with the default \"edgserver\" service enabled on the access point.",
     "published": "2024-11-26T11:22:07.867",
     "keywords": "remote,unauthenticated,authentication"
+  },
+  "CVE-2024-11697": {
+    "cvss": "-",
+    "description": "When handling keypress events, an attacker may have been able to trick a user into bypassing the \"Open Executable File?\" confirmation dialog. This could have led to malicious code execution. This vulnerability affects Firefox < 133, Firefox ESR < 128.5, Thunderbird < 133, and Thunderbird < 128.5.",
+    "published": "2024-11-26T14:15:19.243",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2024-9461": {
+    "cvss": 7.2,
+    "description": "The Total Upkeep \u2013 WordPress Backup Plugin plus Restore & Migrate by BoldGrid plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.16.6 via the cron_interval parameter. This is due to missing input validation and sanitization. This makes it possible for authenticated attackers, with Administrator-level access and above, to execute code on the server.",
+    "published": "2024-11-26T14:15:22.533",
+    "keywords": "remote,execution"
   }
 }
