@@ -1,52 +1,4 @@
 {
-  "CVE-2024-10813": {
-    "cvss": 5.3,
-    "description": "The Product Table for WooCommerce by CodeAstrology (wooproducttable.com) plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.5.1 via the var_dump_table parameter. This makes it possible for unauthenticated attackers var data.",
-    "published": "2024-11-23T04:15:07.800",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-10961": {
-    "cvss": 9.8,
-    "description": "The Social Login plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 5.9.0. This is due to insufficient verification on the user being returned by the social login token. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email and the user does not have an already-existing account for the service returning the token.",
-    "published": "2024-11-23T04:15:08.470",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
-  "CVE-2024-10873": {
-    "cvss": 8.8,
-    "description": "The LA-Studio Element Kit for Elementor plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.4.2 via the _load_template function. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
-    "published": "2024-11-23T05:15:06.010",
-    "keywords": "execution,sensitive,bypass"
-  },
-  "CVE-2024-10803": {
-    "cvss": 7.5,
-    "description": "The MP3 Sticky Player plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 8.0 via the content/downloader.php file. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensitive information. Please note the vendor released the patched version as the same version as the affected version.",
-    "published": "2024-11-23T08:15:03.413",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-9511": {
-    "cvss": 9.8,
-    "description": "The FluentSMTP \u2013 WP SMTP Plugin with Amazon SES, SendGrid, MailGun, Postmark, Google and Any SMTP Provider plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.2.82 via deserialization of untrusted input in the 'formatResult' function. This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable software. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code. The vulnerability was partially patched in version 2.2.82.",
-    "published": "2024-11-23T08:15:03.693",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-9659": {
-    "cvss": 9.8,
-    "description": "The School Management System for Wordpress plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the mj_smgt_user_avatar_image_upload() function in all versions up to, and including, 91.5.0. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2024-11-23T08:15:03.860",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-9660": {
-    "cvss": 8.8,
-    "description": "The School Management System for Wordpress plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the mj_smgt_load_documets_new() and mj_smgt_load_documets() functions in all versions up to, and including, 91.5.0. This makes it possible for authenticated attackers, with Student-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2024-11-23T08:15:04.033",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-9942": {
-    "cvss": 9.8,
-    "description": "The WPGYM - Wordpress Gym Management System plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the MJ_gmgt_user_avatar_image_upload() function in all versions up to, and including, 67.1.0. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2024-11-23T08:15:04.390",
-    "keywords": "remote,execution,unauthenticated"
-  },
   "CVE-2024-11034": {
     "cvss": 7.3,
     "description": "The The Request a Quote for WooCommerce and Elementor \u2013 Get a Quote Button \u2013 Product Enquiry Form Popup \u2013 Product Quotation plugin for WordPress is vulnerable to arbitrary shortcode execution via fire_contact_form AJAX action in all versions up to, and including, 1.4. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
@@ -190,5 +142,29 @@
     "description": "Dell Wyse Management Suite, versions WMS 4.4 and prior, contain an Improper Restriction of Excessive Authentication Attempts vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Protection mechanism bypass.",
     "published": "2024-11-26T03:15:06.940",
     "keywords": "remote,authentication,bypass"
+  },
+  "CVE-2024-10542": {
+    "cvss": 9.8,
+    "description": "The Spam protection, Anti-Spam, FireWall by CleanTalk plugin for WordPress is vulnerable to unauthorized Arbitrary Plugin Installation due to an authorization bypass via reverse DNS spoofing on the checkWithoutToken function in all versions up to, and including, 6.43.2. This makes it possible for unauthenticated attackers to install and activate arbitrary plugins which can be leveraged to achieve remote code execution if another vulnerable plugin is installed and activated.",
+    "published": "2024-11-26T06:15:07.683",
+    "keywords": "remote,execution,unauthenticated,bypass"
+  },
+  "CVE-2024-10570": {
+    "cvss": 7.5,
+    "description": "The Security & Malware scan by CleanTalk plugin for WordPress is vulnerable to unauthorized SQL Injection due to an authorization bypass via reverse DNS spoofing on the checkWithoutToken function in all versions up to, and including, 2.145, as well as insufficient input sanitization and validation. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2024-11-26T06:15:07.880",
+    "keywords": "unauthenticated,sensitive,bypass"
+  },
+  "CVE-2024-10781": {
+    "cvss": 8.1,
+    "description": "The Spam protection, Anti-Spam, FireWall by CleanTalk plugin for WordPress is vulnerable to unauthorized Arbitrary Plugin Installation due to an missing empty value check on the 'api_key' value in the 'perform' function in all versions up to, and including, 6.44. This makes it possible for unauthenticated attackers to install and activate arbitrary plugins which can be leveraged to achieve remote code execution if another vulnerable plugin is installed and activated.",
+    "published": "2024-11-26T06:15:08.057",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-33616": {
+    "cvss": 5.3,
+    "description": "Admin authentication can be bypassed with some specific invalid credentials, which allows logging in with an administrative privilege. Sharp Corporation states the telnet feature is implemented on older models only, and is planning to provide the firmware update to remove the feature. As for the details of affected product names, model numbers, and versions, refer to the information provided by the respective vendors listed under [References].",
+    "published": "2024-11-26T08:15:05.987",
+    "keywords": "authentication,bypass"
   }
 }
