@@ -1,34 +1,4 @@
 {
-  "CVE-2024-11659": {
-    "cvss": 4.7,
-    "description": "A vulnerability was found in EnGenius ENH1350EXT, ENS500-AC and ENS620EXT up to 20241118 and classified as critical. Affected by this issue is some unknown functionality of the file /admin/network/diag_iperf. The manipulation of the argument iperf leads to command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2024-11-25T07:15:04.837",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-11664": {
-    "url": "https://github.com/enms-automation/enms/pull/419",
-    "cvss": 8.8,
-    "description": "A vulnerability, which was classified as critical, has been found in eNMS up to 4.2. Affected by this issue is the function multiselect_filtering of the file eNMS/controller.py of the component TGZ File Handler. The manipulation leads to path traversal. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The patch is identified as 22b0b443acca740fc83b5544165c1f53eff3f529. It is recommended to apply a patch to fix this issue.",
-    "published": "2024-11-25T09:15:06.800"
-  },
-  "CVE-2024-11670": {
-    "cvss": 5.4,
-    "description": "Incorrect authorization in the permission validation component of Devolutions Remote Desktop Manager 2024.2.21 and earlier on Windows allows a malicious authenticated user to bypass the \"View Password\" permission via specific actions.",
-    "published": "2024-11-25T15:15:05.557",
-    "keywords": "remote,bypass"
-  },
-  "CVE-2024-11671": {
-    "cvss": 5.4,
-    "description": "Improper authentication in SQL data source MFA validation in Devolutions Remote Desktop Manager 2024.3.17 and earlier on Windows allows an authenticated user to bypass the MFA validation via data source switching.",
-    "published": "2024-11-25T15:15:07.040",
-    "keywords": "remote,authentication,bypass"
-  },
-  "CVE-2024-11672": {
-    "cvss": 4.3,
-    "description": "Incorrect authorization in the add permission component in Devolutions Remote Desktop Manager 2024.2.21 and earlier on Windows allows an authenticated malicious user to bypass the \"Add\" permission via the import in vault feature.",
-    "published": "2024-11-25T15:15:07.180",
-    "keywords": "remote,bypass"
-  },
   "CVE-2024-52787": {
     "url": "https://github.com/vemonet/libre-chat/pull/9",
     "cvss": 9.1,
@@ -334,5 +304,35 @@
     "description": "Inconsistent interpretation of HTTP requests ('HTTP Request/Response Smuggling') issue exists in HAProxy. If this vulnerability is exploited,  a remote attacker may access a path that is restricted by ACL (Access Control List) set on the product. As a result, the attacker may obtain sensitive information.",
     "published": "2024-11-28T03:15:16.363",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-8066": {
+    "cvss": 7.5,
+    "description": "The File Manager Pro \u2013 Filester plugin for WordPress is vulnerable to arbitrary file uploads due to missing validation in the 'fsConnector' function in all versions up to, and including, 1.8.4. This makes it possible for authenticated attackers, with Subscriber-level access and above, and granted permissions by an Administrator, to upload a new .htaccess file allowing them to subsequently upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-11-28T09:15:05.547",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-9669": {
+    "cvss": 7.2,
+    "description": "The File Manager Pro \u2013 Filester plugin for WordPress is vulnerable to Local JavaScript File Inclusion in all versions up to, and including, 1.8.5 via the 'fm_locale' parameter. This makes it possible for authenticated attackers, with Administrator-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included. The vulnerability was partially patched in version 1.8.5.",
+    "published": "2024-11-28T09:15:05.710",
+    "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2024-11599": {
+    "cvss": 8.2,
+    "description": "Mattermost versions 10.0.x <= 10.0.1, 10.1.x <= 10.1.1, 9.11.x <= 9.11.3, 9.5.x <= 9.5.11 fail to properly validate email addresses which allows an unauthenticated user to bypass email domain restrictions via carefully crafted input on email registration.",
+    "published": "2024-11-28T10:15:06.657",
+    "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2024-8672": {
+    "cvss": 9.9,
+    "description": "The Widget Options \u2013 The #1 WordPress Widget & Block Control Plugin plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 4.0.7 via the display logic functionality that extends several page builders. This is due to the plugin allowing users to supply input that will be passed through eval() without any filtering or capability checks. This makes it possible for authenticated attackers, with contributor-level access and above, to execute code on the server. Special note: We suggested the vendor implement an allowlist of functions and limit the ability to execute commands to just administrators, however, they did not take our advice. We are considering this patched, however, we believe it could still be further hardened and there may be residual risk with how the issue is currently patched.",
+    "published": "2024-11-28T10:15:08.870",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2024-52475": {
+    "cvss": 9.8,
+    "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Automation Web Platform Wawp allows Authentication Bypass.This issue affects Wawp: from n/a before 3.0.18.",
+    "published": "2024-11-28T11:15:49.230",
+    "keywords": "authentication,bypass"
   }
 }
