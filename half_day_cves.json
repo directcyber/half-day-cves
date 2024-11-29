@@ -1,28 +1,4 @@
 {
-  "CVE-2024-11668": {
-    "cvss": 4.2,
-    "description": "An issue has been discovered in GitLab CE/EE affecting all versions from 16.11 before 17.4.5, 17.5 before 17.5.3, and 17.6 before 17.6.1. Long-lived connections could potentially bypass authentication controls, allowing unauthorized access to streaming results.",
-    "published": "2024-11-26T19:15:22.027",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-32965": {
-    "cvss": 8.1,
-    "description": "Lobe Chat is an open-source, AI chat framework. Versions of lobe-chat prior to 1.19.13 have an unauthorized ssrf vulnerability. An attacker can construct malicious requests to cause SSRF without logging in, attack intranet services, and leak sensitive information. The jwt token header X-Lobe-Chat-Auth strored proxy address and OpenAI API Key, can be modified to scan an internal network in the target lobe-web environment. This issue has been addressed in release version 1.19.13 and all users are advised to upgrade. There are no known workarounds for this vulnerability.",
-    "published": "2024-11-26T19:15:23.343",
-    "keywords": "sensitive,leak"
-  },
-  "CVE-2024-53844": {
-    "cvss": 6.3,
-    "description": "E.D.D.I (Enhanced Dialog Driven Interface) is a middleware to connect and manage LLM API bots. A path traversal vulnerability exists in the backup export functionality of EDDI, as implemented in `RestExportService.java`. This vulnerability allows an attacker to access sensitive files on the server by manipulating the `botFilename` parameter in requests. The application fails to sanitize user input, enabling malicious inputs such as `..%2f..%2fetc%2fpasswd` to access arbitrary files. However, the **severity of this vulnerability is significantly limited** because EDDI typically runs within a **Docker container**, which provides additional layers of isolation and restricted permissions. As a result, while this vulnerability exposes files within the container, it does not inherently threaten the underlying host system or other containers. A patch is required to sanitize and validate the botFilename input parameter. Users should ensure they are using version 5.4 which contains this patdch. For temporary mitigation, access to the vulnerable endpoint should be restricted through firewall rules or authentication mechanisms.",
-    "published": "2024-11-26T19:15:31.463",
-    "keywords": "authentication,sensitive"
-  },
-  "CVE-2024-11145": {
-    "cvss": 9.8,
-    "description": "Valor Apps Easy Folder Listing Pro has a deserialization vulnerability that allows an unauthenticated, remote attacker to execute arbitrary code with the privileges of the Joomla! application. Fixed in versions 3.8 and 4.5.",
-    "published": "2024-11-26T20:15:25.270",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2024-53673": {
     "cvss": 8.1,
     "description": "A java deserialization vulnerability in HPE Remote Insight Support may allow an unauthenticated attacker to execute code.",
@@ -316,5 +292,41 @@
     "description": "IBM Security Verify Access Appliance 10.0.0 through 10.0.8 could allow a remote authenticated attacker to execute arbitrary commands on the system by sending a specially crafted request.",
     "published": "2024-11-29T17:15:08.180",
     "keywords": "remote,command"
+  },
+  "CVE-2024-52800": {
+    "cvss": "-",
+    "description": "veraPDF is an open source PDF/A validation library. Executing policy checks using custom schematron files via the CLI invokes an XSL transformation that may theoretically lead to a remote code execution (RCE) vulnerability. This doesn't affect the standard validation and policy checks functionality, veraPDF's common use cases. Most veraPDF users don't insert any custom XSLT code into policy profiles, which are based on Schematron syntax rather than direct XSL transforms. For users who do, only load custom policy files from sources you trust. This issue has not yet been patched. Users are advised to be cautious of XSLT code until a patch is available.",
+    "published": "2024-11-29T19:15:08.713",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-52810": {
+    "cvss": "-",
+    "description": "@intlify/shared is a shared library for the intlify project. The latest version of @intlify/shared (10.0.4) is vulnerable to Prototype Pollution through the entry function(s) lib.deepCopy. An attacker can supply a payload with Object.prototype setter to introduce or modify properties within the global prototype chain, causing denial of service (DoS) as the minimum consequence. Moreover, the consequences of this vulnerability can escalate to other injection-based attacks, depending on how the library integrates within the application. For instance, if the polluted property propagates to sensitive Node.js APIs (e.g., exec, eval), it could enable an attacker to execute arbitrary commands within the application's context. This issue has been addressed in versions 9.14.2, and 10.0.5. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+    "published": "2024-11-29T19:15:09.163",
+    "keywords": "command,sensitive"
+  },
+  "CVE-2024-53504": {
+    "url": "https://github.com/siyuan-note/siyuan/issues/13077",
+    "cvss": "-",
+    "description": "A SQL injection vulnerability has been identified in Siyuan 3.1.11 via the notebook parameter in /searchHistory.",
+    "published": "2024-11-29T20:15:20.763"
+  },
+  "CVE-2024-53505": {
+    "url": "https://github.com/siyuan-note/siyuan/issues/13077",
+    "cvss": "-",
+    "description": "A SQL injection vulnerability has been identified in Siyuan 3.1.11 via the id parameter at /getAssetContent.",
+    "published": "2024-11-29T20:15:20.853"
+  },
+  "CVE-2024-53506": {
+    "url": "https://github.com/siyuan-note/siyuan/issues/13077",
+    "cvss": "-",
+    "description": "A SQL injection vulnerability has been identified in Siyuan 3.1.11 via the ids array parameter in /batchGetBlockAttrs.",
+    "published": "2024-11-29T20:15:20.943"
+  },
+  "CVE-2024-53507": {
+    "url": "https://github.com/siyuan-note/siyuan/issues/13077",
+    "cvss": "-",
+    "description": "A SQL injection vulnerability was discovered in Siyuan 3.1.11 in /getHistoryItems.",
+    "published": "2024-11-29T20:15:21.027"
   }
 }

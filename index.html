@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-29T19:10:18.799618
+Updated at UTC 2024-11-29T21:11:45.452649
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,58 @@ Updated at UTC 2024-11-29T19:10:18.799618
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-53507">CVE-2024-53507</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/siyuan-note/siyuan/issues/13077">https://github.com/siyuan-note/siyuan/issues/13077</a></td>
+					<td class=date>2024-11-29T20:15:21.027</td>
+					<td class=description>A SQL injection vulnerability was discovered in Siyuan 3.1.11 in /getHistoryItems.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-53506">CVE-2024-53506</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/siyuan-note/siyuan/issues/13077">https://github.com/siyuan-note/siyuan/issues/13077</a></td>
+					<td class=date>2024-11-29T20:15:20.943</td>
+					<td class=description>A SQL injection vulnerability has been identified in Siyuan 3.1.11 via the ids array parameter in /batchGetBlockAttrs.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-53505">CVE-2024-53505</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/siyuan-note/siyuan/issues/13077">https://github.com/siyuan-note/siyuan/issues/13077</a></td>
+					<td class=date>2024-11-29T20:15:20.853</td>
+					<td class=description>A SQL injection vulnerability has been identified in Siyuan 3.1.11 via the id parameter at /getAssetContent.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-53504">CVE-2024-53504</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/siyuan-note/siyuan/issues/13077">https://github.com/siyuan-note/siyuan/issues/13077</a></td>
+					<td class=date>2024-11-29T20:15:20.763</td>
+					<td class=description>A SQL injection vulnerability has been identified in Siyuan 3.1.11 via the notebook parameter in /searchHistory.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
 		
 			
 		
@@ -166,16 +218,36 @@ Updated at UTC 2024-11-29T19:10:18.799618
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-52810">CVE-2024-52810</a></td>
+					<td>-</td>
+					<td>command,sensitive</td>
+					<td class=date>2024-11-29T19:15:09.163</td>
+					<td class=description>@intlify/shared is a shared library for the intlify project. The latest version of @intlify/shared (10.0.4) is vulnerable to Prototype Pollution through the entry function(s) lib.deepCopy. An attacker can supply a payload with Object.prototype setter to introduce or modify properties within the global prototype chain, causing denial of service (DoS) as the minimum consequence. Moreover, the consequences of this vulnerability can escalate to other injection-based attacks, depending on how the library integrates within the application. For instance, if the polluted property propagates to sensitive Node.js APIs (e.g., exec, eval), it could enable an attacker to execute arbitrary commands within the application's context. This issue has been addressed in versions 9.14.2, and 10.0.5. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-52800">CVE-2024-52800</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2024-11-29T19:15:08.713</td>
+					<td class=description>veraPDF is an open source PDF/A validation library. Executing policy checks using custom schematron files via the CLI invokes an XSL transformation that may theoretically lead to a remote code execution (RCE) vulnerability. This doesn't affect the standard validation and policy checks functionality, veraPDF's common use cases. Most veraPDF users don't insert any custom XSLT code into policy profiles, which are based on Schematron syntax rather than direct XSL transforms. For users who do, only load custom policy files from sources you trust. This issue has not yet been patched. Users are advised to be cautious of XSLT code until a patch is available.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -690,46 +762,6 @@ The specific flaw exists within the parsing of V10 files. The issue results from
 					<td>remote,unauthenticated</td>
 					<td class=date>2024-11-26T22:15:18.547</td>
 					<td class=description>A java deserialization vulnerability in HPE Remote Insight Support may allow an unauthenticated attacker to execute code.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-11145">CVE-2024-11145</a></td>
-					<td>9.8</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2024-11-26T20:15:25.270</td>
-					<td class=description>Valor Apps Easy Folder Listing Pro has a deserialization vulnerability that allows an unauthenticated, remote attacker to execute arbitrary code with the privileges of the Joomla! application. Fixed in versions 3.8 and 4.5.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-53844">CVE-2024-53844</a></td>
-					<td>6.3</td>
-					<td>authentication,sensitive</td>
-					<td class=date>2024-11-26T19:15:31.463</td>
-					<td class=description>E.D.D.I (Enhanced Dialog Driven Interface) is a middleware to connect and manage LLM API bots. A path traversal vulnerability exists in the backup export functionality of EDDI, as implemented in `RestExportService.java`. This vulnerability allows an attacker to access sensitive files on the server by manipulating the `botFilename` parameter in requests. The application fails to sanitize user input, enabling malicious inputs such as `..%2f..%2fetc%2fpasswd` to access arbitrary files. However, the **severity of this vulnerability is significantly limited** because EDDI typically runs within a **Docker container**, which provides additional layers of isolation and restricted permissions. As a result, while this vulnerability exposes files within the container, it does not inherently threaten the underlying host system or other containers. A patch is required to sanitize and validate the botFilename input parameter. Users should ensure they are using version 5.4 which contains this patdch. For temporary mitigation, access to the vulnerable endpoint should be restricted through firewall rules or authentication mechanisms.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-32965">CVE-2024-32965</a></td>
-					<td>8.1</td>
-					<td>sensitive,leak</td>
-					<td class=date>2024-11-26T19:15:23.343</td>
-					<td class=description>Lobe Chat is an open-source, AI chat framework. Versions of lobe-chat prior to 1.19.13 have an unauthorized ssrf vulnerability. An attacker can construct malicious requests to cause SSRF without logging in, attack intranet services, and leak sensitive information. The jwt token header X-Lobe-Chat-Auth strored proxy address and OpenAI API Key, can be modified to scan an internal network in the target lobe-web environment. This issue has been addressed in release version 1.19.13 and all users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-11668">CVE-2024-11668</a></td>
-					<td>4.2</td>
-					<td>authentication,bypass</td>
-					<td class=date>2024-11-26T19:15:22.027</td>
-					<td class=description>An issue has been discovered in GitLab CE/EE affecting all versions from 16.11 before 17.4.5, 17.5 before 17.5.3, and 17.6 before 17.6.1. Long-lived connections could potentially bypass authentication controls, allowing unauthorized access to streaming results.</td>
 				</tr>
 			
 		
