@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-29T04:15:38.108555
+Updated at UTC 2024-11-29T06:16:58.493053
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -61,7 +61,15 @@ Updated at UTC 2024-11-29T04:15:38.108555
 			
 		
 			
-		
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48651">CVE-2024-48651</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/proftpd/proftpd/commit/cec01cc0a2523453e5da5a486bc6d977c3768db1">https://github.com/proftpd/proftpd/commit/cec01cc0a2523453e5da5a486bc6d977c3768db1</a></td>
+					<td class=date>2024-11-29T05:15:05.963</td>
+					<td class=description>In ProFTPD through 1.3.8b before cec01cc, supplemental group inheritance grants unintended access to GID 0 because of the lack of supplemental groups from mod_sql.</td>
+
+
+				</tr>
 			
 		
 			
@@ -162,6 +170,18 @@ Updated at UTC 2024-11-29T04:15:38.108555
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-11980">CVE-2024-11980</a></td>
+					<td>10.0</td>
+					<td>remote,unauthenticated,authentication</td>
+					<td class=date>2024-11-29T06:15:06.747</td>
+					<td class=description>Certain modes of in-vehicle routers from Billion Electric have a Missing Authentication vulnerability, allowing unauthenticated remote attackers to directly access the specific functionality to obtain partial device information, modify the WiFi SSID, and restart the device.</td>
+				</tr>
+			
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -674,36 +694,6 @@ The specific flaw exists within the parsing of V10 files. The issue results from
 					<td>authentication,bypass</td>
 					<td class=date>2024-11-26T08:15:05.987</td>
 					<td class=description>Admin authentication can be bypassed with some specific invalid credentials, which allows logging in with an administrative privilege. Sharp Corporation states the telnet feature is implemented on older models only, and is planning to provide the firmware update to remove the feature. As for the details of affected product names, model numbers, and versions, refer to the information provided by the respective vendors listed under [References].</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10781">CVE-2024-10781</a></td>
-					<td>8.1</td>
-					<td>remote,execution,unauthenticated</td>
-					<td class=date>2024-11-26T06:15:08.057</td>
-					<td class=description>The Spam protection, Anti-Spam, FireWall by CleanTalk plugin for WordPress is vulnerable to unauthorized Arbitrary Plugin Installation due to an missing empty value check on the 'api_key' value in the 'perform' function in all versions up to, and including, 6.44. This makes it possible for unauthenticated attackers to install and activate arbitrary plugins which can be leveraged to achieve remote code execution if another vulnerable plugin is installed and activated.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10570">CVE-2024-10570</a></td>
-					<td>7.5</td>
-					<td>unauthenticated,sensitive,bypass</td>
-					<td class=date>2024-11-26T06:15:07.880</td>
-					<td class=description>The Security & Malware scan by CleanTalk plugin for WordPress is vulnerable to unauthorized SQL Injection due to an authorization bypass via reverse DNS spoofing on the checkWithoutToken function in all versions up to, and including, 2.145, as well as insufficient input sanitization and validation. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10542">CVE-2024-10542</a></td>
-					<td>9.8</td>
-					<td>remote,execution,unauthenticated,bypass</td>
-					<td class=date>2024-11-26T06:15:07.683</td>
-					<td class=description>The Spam protection, Anti-Spam, FireWall by CleanTalk plugin for WordPress is vulnerable to unauthorized Arbitrary Plugin Installation due to an authorization bypass via reverse DNS spoofing on the checkWithoutToken function in all versions up to, and including, 6.43.2. This makes it possible for unauthenticated attackers to install and activate arbitrary plugins which can be leveraged to achieve remote code execution if another vulnerable plugin is installed and activated.</td>
 				</tr>
 			
 		

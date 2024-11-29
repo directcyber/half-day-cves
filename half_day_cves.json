@@ -1,22 +1,4 @@
 {
-  "CVE-2024-10542": {
-    "cvss": 9.8,
-    "description": "The Spam protection, Anti-Spam, FireWall by CleanTalk plugin for WordPress is vulnerable to unauthorized Arbitrary Plugin Installation due to an authorization bypass via reverse DNS spoofing on the checkWithoutToken function in all versions up to, and including, 6.43.2. This makes it possible for unauthenticated attackers to install and activate arbitrary plugins which can be leveraged to achieve remote code execution if another vulnerable plugin is installed and activated.",
-    "published": "2024-11-26T06:15:07.683",
-    "keywords": "remote,execution,unauthenticated,bypass"
-  },
-  "CVE-2024-10570": {
-    "cvss": 7.5,
-    "description": "The Security & Malware scan by CleanTalk plugin for WordPress is vulnerable to unauthorized SQL Injection due to an authorization bypass via reverse DNS spoofing on the checkWithoutToken function in all versions up to, and including, 2.145, as well as insufficient input sanitization and validation. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
-    "published": "2024-11-26T06:15:07.880",
-    "keywords": "unauthenticated,sensitive,bypass"
-  },
-  "CVE-2024-10781": {
-    "cvss": 8.1,
-    "description": "The Spam protection, Anti-Spam, FireWall by CleanTalk plugin for WordPress is vulnerable to unauthorized Arbitrary Plugin Installation due to an missing empty value check on the 'api_key' value in the 'perform' function in all versions up to, and including, 6.44. This makes it possible for unauthenticated attackers to install and activate arbitrary plugins which can be leveraged to achieve remote code execution if another vulnerable plugin is installed and activated.",
-    "published": "2024-11-26T06:15:08.057",
-    "keywords": "remote,execution,unauthenticated"
-  },
   "CVE-2024-33616": {
     "cvss": 5.3,
     "description": "Admin authentication can be bypassed with some specific invalid credentials, which allows logging in with an administrative privilege. Sharp Corporation states the telnet feature is implemented on older models only, and is planning to provide the firmware update to remove the feature. As for the details of affected product names, model numbers, and versions, refer to the information provided by the respective vendors listed under [References].",
@@ -304,5 +286,17 @@
     "description": "DreamMaker from Interinfo has a Path Traversal vulnerability and does not restrict the types of uploaded files. This allows unauthenticated remote attackers to upload arbitrary files to any directory, leading to arbitrary code execution by uploading webshells.",
     "published": "2024-11-29T03:15:15.653",
     "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-48651": {
+    "url": "https://github.com/proftpd/proftpd/commit/cec01cc0a2523453e5da5a486bc6d977c3768db1",
+    "cvss": "-",
+    "description": "In ProFTPD through 1.3.8b before cec01cc, supplemental group inheritance grants unintended access to GID 0 because of the lack of supplemental groups from mod_sql.",
+    "published": "2024-11-29T05:15:05.963"
+  },
+  "CVE-2024-11980": {
+    "cvss": 10.0,
+    "description": "Certain modes of in-vehicle routers from Billion Electric have a Missing Authentication vulnerability, allowing unauthenticated remote attackers to directly access the specific functionality to obtain partial device information, modify the WiFi SSID, and restart the device.",
+    "published": "2024-11-29T06:15:06.747",
+    "keywords": "remote,unauthenticated,authentication"
   }
 }
