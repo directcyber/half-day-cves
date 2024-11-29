@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-29T10:13:13.031367
+Updated at UTC 2024-11-29T11:11:20.936365
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-11-29T10:13:13.031367
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -172,10 +174,18 @@ Updated at UTC 2024-11-29T10:13:13.031367
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-47094">CVE-2024-47094</a></td>
+					<td>-</td>
+					<td>remote,sensitive</td>
+					<td class=date>2024-11-29T10:15:10.657</td>
+					<td class=description>Insertion of Sensitive Information into Log File in Checkmk GmbH's Checkmk versions <2.3.0p22, <2.2.0p37, <2.1.0p50 (EOL) causes remote site secrets to be written to web log files accessible to local site users.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -720,16 +730,6 @@ The specific flaw exists within the parsing of V10 files. The issue results from
 					<td>remote,unauthenticated,authentication,command</td>
 					<td class=date>2024-11-26T11:22:05.563</td>
 					<td class=description>A CWE-78 "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')" was discovered affecting the following devices manufactured by Advantech: EKI-6333AC-2G (<= 1.6.3), EKI-6333AC-2GD (<= v1.6.3) and EKI-6333AC-1GPO (<= v1.2.1). The vulnerability can be exploited by remote unauthenticated users capable of interacting with the default "edgserver" service enabled on the access point and malicious commands are executed with root privileges. No authentication is enabled on the service and the source of the vulnerability resides in processing code associated to the "cfg_cmd_set_eth_conf" operation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-11680">CVE-2024-11680</a></td>
-					<td>9.8</td>
-					<td>remote,unauthenticated,authentication</td>
-					<td class=date>2024-11-26T10:15:04.540</td>
-					<td class=description>ProjectSend versions prior to r1720 are affected by an improper authentication vulnerability. Remote, unauthenticated attackers can exploit this flaw by sending crafted HTTP requests to options.php, enabling unauthorized modification of the application's configuration. Successful exploitation allows attackers to create accounts, upload webshells, and embed malicious JavaScript.</td>
 				</tr>
 			
 		
