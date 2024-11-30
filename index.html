@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-11-30T22:10:51.857376
+Updated at UTC 2024-11-30T23:11:08.494156
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -148,12 +148,6 @@ Updated at UTC 2024-11-30T22:10:51.857376
 
 
 				</tr>
-			
-		
-			
-		
-			
-		
 			
 		
 			
@@ -660,36 +654,6 @@ The specific flaw exists within the parsing of V10 files. The issue results from
 					<td class=description>Fuji Electric Monitouch V-SFT V10 File Parsing Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Fuji Electric Monitouch V-SFT. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
 
 The specific flaw exists within the parsing of V10 files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-24413.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-53859">CVE-2024-53859</a></td>
-					<td>6.5</td>
-					<td>authentication,command,leak</td>
-					<td class=date>2024-11-27T22:15:05.673</td>
-					<td class=description>go-gh is a Go module for interacting with the `gh` utility and the GitHub API from the command line. A security vulnerability has been identified in `go-gh` that could leak authentication tokens intended for GitHub hosts to non-GitHub hosts when within a codespace. `go-gh` sources authentication tokens from different environment variables depending on the host involved: 1. `GITHUB_TOKEN`, `GH_TOKEN` for GitHub.com and ghe.com and 2. `GITHUB_ENTERPRISE_TOKEN`, `GH_ENTERPRISE_TOKEN` for GitHub Enterprise Server. Prior to version `2.11.1`, `auth.TokenForHost` could source a token from the `GITHUB_TOKEN` environment variable for a host other than GitHub.com or ghe.com when within a codespace. In version `2.11.1`, `auth.TokenForHost` will only source a token from the `GITHUB_TOKEN` environment variable for GitHub.com or ghe.com hosts. Successful exploitation could send authentication token to an unintended host. This issue has been addressed in version 2.11.1 and all users are advised to upgrade. Users are also advised to regenerate authentication tokens and to review their personal security log and any relevant audit logs for actions associated with their account or enterprise.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-53858">CVE-2024-53858</a></td>
-					<td>6.5</td>
-					<td>authentication,command,leak</td>
-					<td class=date>2024-11-27T22:15:05.520</td>
-					<td class=description>The gh cli is GitHub’s official command line tool. A security vulnerability has been identified in the GitHub CLI that could leak authentication tokens when cloning repositories containing `git` submodules hosted outside of GitHub.com and ghe.com. This vulnerability stems from several `gh` commands used to clone a repository with submodules from a non-GitHub host including `gh repo clone`, `gh repo fork`, and `gh pr checkout`. These GitHub CLI commands invoke git with instructions to retrieve authentication tokens using the `credential.helper` configuration variable for any host encountered. Prior to version `2.63.0`, hosts other than GitHub.com and ghe.com are treated as GitHub Enterprise Server hosts and have tokens sourced from the following environment variables before falling back to host-specific tokens stored within system-specific secured storage: 1. `GITHUB_ENTERPRISE_TOKEN`, 2. `GH_ENTERPRISE_TOKEN` and 3. `GITHUB_TOKEN` when the `CODESPACES` environment variable is set. The result being `git` sending authentication tokens when cloning submodules. In version `2.63.0`, these GitHub CLI commands will limit the hosts for which `gh` acts as a credential helper to source authentication tokens. Additionally, `GITHUB_TOKEN` will only be used for GitHub.com and ghe.com. Users are advised to upgrade. Additionally users are advised to revoke authentication tokens used with the GitHub CLI and to review their personal security log and any relevant audit logs for actions associated with their account or enterprise</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-53260">CVE-2024-53260</a></td>
-					<td>6.8</td>
-					<td>remote,leak</td>
-					<td class=date>2024-11-27T22:15:05.353</td>
-					<td class=description>Autolab is a course management service that enables auto-graded programming assignments. A user can modify their first and or last name to include a valid excel / spreadsheet formula. When an instructor downloads their course's roster and opens, this name will then be evaluated as a formula. This could lead to leakage of information of students in the course roster by sending the data to a remote endpoint. This issue has been patched in the source code repository and the fix is expected to be released in the next version. Users are advised to manually patch their systems or to wait for the next release. There are no known workarounds for this vulnerability.</td>
 				</tr>
 			
 		
