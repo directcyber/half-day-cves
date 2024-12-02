@@ -1,10 +1,4 @@
 {
-  "CVE-2024-11992": {
-    "cvss": 9.1,
-    "description": "Absolute path traversal vulnerability in Quick.CMS, version 6.7, the exploitation of which could allow remote users to bypass the intended restrictions and download any file if it has the appropriate permissions outside of documentroot configured on the server via the aDirFiles%5B0%5D parameter in the admin.php page. This vulnerability allows an attacker to delete files stored on the server due to a lack of proper verification of user-supplied input.",
-    "published": "2024-11-29T13:15:05.210",
-    "keywords": "remote,bypass"
-  },
   "CVE-2024-52777": {
     "cvss": 9.8,
     "description": "DCME-320 <=7.4.12.90, DCME-520 <=9.25.5.11, DCME-320-L, <=9.3.5.26, and DCME-720 <=9.1.5.11 are vulnerable to Remote Code Execution via /function/system/basic/license_update.php.",
