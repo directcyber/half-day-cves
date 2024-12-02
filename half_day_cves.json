@@ -1,40 +1,4 @@
 {
-  "CVE-2024-52777": {
-    "cvss": 9.8,
-    "description": "DCME-320 <=7.4.12.90, DCME-520 <=9.25.5.11, DCME-320-L, <=9.3.5.26, and DCME-720 <=9.1.5.11 are vulnerable to Remote Code Execution via /function/system/basic/license_update.php.",
-    "published": "2024-11-29T16:15:10.577",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-52778": {
-    "cvss": 9.8,
-    "description": "DCME-320 <=7.4.12.90, DCME-520 <=9.25.5.11, DCME-320-L <=9.3.5.26, and DCME-720 <=9.1.5.11 are vulnerable to Remote Code Execution via /function/audit/newstatistics/mon_stat_hist.php.",
-    "published": "2024-11-29T16:15:10.700",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-52779": {
-    "cvss": 9.8,
-    "description": "DCME-320 <=7.4.12.90, DCME-520 <=9.25.5.11, DCME-320-L <=9.3.5.26, and DCME-720 <=9.1.5.11 are vulnerable to Remote Code Execution via /function/audit/newstatistics/mon_stat_top10.php.",
-    "published": "2024-11-29T16:15:10.810",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-52780": {
-    "cvss": 9.8,
-    "description": "DCME-320 <=7.4.12.90, DCME-520 <=9.25.5.11, DCME-320-L <=9.3.5.26, and DCME-720 <=9.1.5.11 are vulnerable to Remote Code Execution via /function/system/basic/mgmt_edit.php.",
-    "published": "2024-11-29T16:15:10.933",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-52781": {
-    "cvss": 9.8,
-    "description": "DCME-320 <=7.4.12.90, DCME-520 <=9.25.5.11, DCME-320-L <=9.3.5.26, and DCME-720 <=9.1.5.11 are vulnerable to Remote Code Execution via /function/system/tool/traceroute.php.",
-    "published": "2024-11-29T16:15:11.040",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-52782": {
-    "cvss": 9.8,
-    "description": "DCME-320 <=7.4.12.90, DCME-520 <=9.25.5.11, DCME-320-L <=9.3.5.26, and DCME-720 <=9.1.5.11 are vulnerable to Remote Code Execution via /function/audit/newstatistics/mon_stat_hist_new.php.",
-    "published": "2024-11-29T16:15:11.163",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-49803": {
     "cvss": 9.8,
     "description": "IBM Security Verify Access Appliance 10.0.0 through 10.0.8 could allow a remote authenticated attacker to execute arbitrary commands on the system by sending a specially crafted request.",
@@ -96,13 +60,13 @@
     "keywords": "remote,execution"
   },
   "CVE-2024-20137": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "In wlan driver, there is a possible client disconnection due to improper handling of exceptional conditions. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00384543; Issue ID: MSV-1727.",
     "published": "2024-12-02T04:15:06.030",
     "keywords": "remote,execution"
   },
   "CVE-2024-20138": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "In wlan driver, there is a possible out of bound read due to improper input validation. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS08998291; Issue ID: MSV-1604.",
     "published": "2024-12-02T04:15:06.133",
     "keywords": "remote,execution"
@@ -112,5 +76,17 @@
     "description": "An \u201cAuthentication Bypass Using an Alternate Path or Channel\u201d vulnerability in the OPC UA Server configuration required for B&R mapp Cockpit before 6.0, B&R mapp View before 6.0, B&R mapp Services before 6.0, B&R mapp Motion before 6.0 and B&R mapp Vision before 6.0 may be used by an unauthenticated network-based attacker to cause information disclosure, unintended change of data, or denial of service conditions.\nB&R mapp Services is only affected, when mpUserX or mpCodeBox are used in the Automation Studio project.",
     "published": "2024-12-02T09:15:04.613",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-46909": {
+    "cvss": 9.8,
+    "description": "In WhatsUp Gold versions released before 2024.0.1, a\u00a0remote unauthenticated attacker could leverage this vulnerability to execute code in the context of the service account.",
+    "published": "2024-12-02T15:15:12.120",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-8785": {
+    "cvss": 9.8,
+    "description": "In WhatsUp Gold versions released before 2024.0.1, a\u00a0remote unauthenticated attacker could leverage NmAPI.exe to create or change an existing registry value in registry path HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Ipswitch\\.",
+    "published": "2024-12-02T15:15:12.380",
+    "keywords": "remote,unauthenticated"
   }
 }
