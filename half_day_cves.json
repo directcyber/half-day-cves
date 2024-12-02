@@ -1,10 +1,4 @@
 {
-  "CVE-2024-49803": {
-    "cvss": 9.8,
-    "description": "IBM Security Verify Access Appliance 10.0.0 through 10.0.8 could allow a remote authenticated attacker to execute arbitrary commands on the system by sending a specially crafted request.",
-    "published": "2024-11-29T17:15:08.180",
-    "keywords": "remote,command"
-  },
   "CVE-2024-52800": {
     "cvss": "-",
     "description": "veraPDF is an open source PDF/A validation library. Executing policy checks using custom schematron files via the CLI invokes an XSL transformation that may theoretically lead to a remote code execution (RCE) vulnerability. This doesn't affect the standard validation and policy checks functionality, veraPDF's common use cases. Most veraPDF users don't insert any custom XSLT code into policy profiles, which are based on Schematron syntax rather than direct XSL transforms. For users who do, only load custom policy files from sources you trust. This issue has not yet been patched. Users are advised to be cautious of XSLT code until a patch is available.",
@@ -19,36 +13,36 @@
   },
   "CVE-2024-53504": {
     "url": "https://github.com/siyuan-note/siyuan/issues/13077",
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "A SQL injection vulnerability has been identified in Siyuan 3.1.11 via the notebook parameter in /searchHistory.",
     "published": "2024-11-29T20:15:20.763"
   },
   "CVE-2024-53505": {
     "url": "https://github.com/siyuan-note/siyuan/issues/13077",
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "A SQL injection vulnerability has been identified in Siyuan 3.1.11 via the id parameter at /getAssetContent.",
     "published": "2024-11-29T20:15:20.853"
   },
   "CVE-2024-53506": {
     "url": "https://github.com/siyuan-note/siyuan/issues/13077",
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "A SQL injection vulnerability has been identified in Siyuan 3.1.11 via the ids array parameter in /batchGetBlockAttrs.",
     "published": "2024-11-29T20:15:20.943"
   },
   "CVE-2024-53507": {
     "url": "https://github.com/siyuan-note/siyuan/issues/13077",
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "A SQL injection vulnerability was discovered in Siyuan 3.1.11 in /getHistoryItems.",
     "published": "2024-11-29T20:15:21.027"
   },
   "CVE-2024-20127": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "In Telephony, there is a possible out of bounds read due to a missing bounds check. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS09289881; Issue ID: MSV-2023.",
     "published": "2024-12-02T04:15:04.777",
     "keywords": "remote,execution"
   },
   "CVE-2024-20128": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "In Telephony, there is a possible out of bounds read due to a missing bounds check. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS09289881; Issue ID: MSV-2024.",
     "published": "2024-12-02T04:15:04.967",
     "keywords": "remote,execution"
