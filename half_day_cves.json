@@ -1,16 +1,4 @@
 {
-  "CVE-2024-52800": {
-    "cvss": "-",
-    "description": "veraPDF is an open source PDF/A validation library. Executing policy checks using custom schematron files via the CLI invokes an XSL transformation that may theoretically lead to a remote code execution (RCE) vulnerability. This doesn't affect the standard validation and policy checks functionality, veraPDF's common use cases. Most veraPDF users don't insert any custom XSLT code into policy profiles, which are based on Schematron syntax rather than direct XSL transforms. For users who do, only load custom policy files from sources you trust. This issue has not yet been patched. Users are advised to be cautious of XSLT code until a patch is available.",
-    "published": "2024-11-29T19:15:08.713",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-52810": {
-    "cvss": "-",
-    "description": "@intlify/shared is a shared library for the intlify project. The latest version of @intlify/shared (10.0.4) is vulnerable to Prototype Pollution through the entry function(s) lib.deepCopy. An attacker can supply a payload with Object.prototype setter to introduce or modify properties within the global prototype chain, causing denial of service (DoS) as the minimum consequence. Moreover, the consequences of this vulnerability can escalate to other injection-based attacks, depending on how the library integrates within the application. For instance, if the polluted property propagates to sensitive Node.js APIs (e.g., exec, eval), it could enable an attacker to execute arbitrary commands within the application's context. This issue has been addressed in versions 9.14.2, and 10.0.5. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
-    "published": "2024-11-29T19:15:09.163",
-    "keywords": "command,sensitive"
-  },
   "CVE-2024-53504": {
     "url": "https://github.com/siyuan-note/siyuan/issues/13077",
     "cvss": 9.8,
@@ -82,5 +70,11 @@
     "description": "In WhatsUp Gold versions released before 2024.0.1, a\u00a0remote unauthenticated attacker could leverage NmAPI.exe to create or change an existing registry value in registry path HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Ipswitch\\.",
     "published": "2024-12-02T15:15:12.380",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-53617": {
+    "url": "https://github.com/librephotos/librephotos/pull/1476",
+    "cvss": "-",
+    "description": "A Cross Site Scripting vulnerability in LibrePhotos before commit 32237 allows attackers to takeover any account via uploading an HTML file on behalf of the admin user using IDOR in file upload.",
+    "published": "2024-12-02T19:15:10.940"
   }
 }
