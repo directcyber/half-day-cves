@@ -148,5 +148,11 @@
     "cvss": 4.3,
     "description": "Synapse is an open-source Matrix homeserver. The Sliding Sync feature on Synapse versions between 1.113.0rc1 and 1.120.0 can leak partial room state changes to users no longer in a room. Non-state events, like messages, are unaffected. This vulnerability is fixed in 1.120.1.",
     "published": "2024-12-03T17:15:12.787"
+  },
+  "CVE-2024-52548": {
+    "cvss": 6.7,
+    "description": "An attacker who can execute arbitrary Operating Systems commands, can bypass code signing enforcements in the kernel, and execute arbitrary native code. This vulnerability has been resolved in firmware version 2.800.0000000.8.R.20241111.",
+    "published": "2024-12-03T18:15:16.023",
+    "keywords": "command,bypass"
   }
 }
