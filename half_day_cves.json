@@ -124,5 +124,29 @@
     "cvss": 8.1,
     "description": "Mobile Security Framework (MobSF) is a pen-testing, malware analysis and security assessment framework capable of performing static and dynamic analysis. The application allows users to upload files with scripts in the filename parameter. As a result, a malicious user can upload a script file to the system. When users in the application use the \"Diff or Compare\" functionality, they are affected by a Stored Cross-Site Scripting vulnerability. This vulnerability is fixed in 4.2.9.",
     "published": "2024-12-03T16:15:24.250"
+  },
+  "CVE-2024-37302": {
+    "cvss": 7.5,
+    "description": "Synapse is an open-source Matrix homeserver. Synapse versions before 1.106 are vulnerable to a disk fill attack, where an unauthenticated adversary can induce Synapse to download and cache large amounts of remote media. The default rate limit strategy is insufficient to mitigate this. This can lead to a denial of service, ranging from further media uploads/downloads failing to completely unavailability of the Synapse process, depending on how Synapse was deployed. Synapse 1.106 introduces a new \"leaky bucket\" rate limit on remote media downloads to reduce the amount of data a user can request at a time. This does not fully address the issue, but does limit an unauthenticated user's ability to request large amounts of data to be cached.",
+    "published": "2024-12-03T17:15:10.733",
+    "keywords": "remote,unauthenticated,leak"
+  },
+  "CVE-2024-37303": {
+    "cvss": 5.3,
+    "description": "Synapse is an open-source Matrix homeserver. Synapse before version 1.106 allows, by design, unauthenticated remote participants to trigger a download and caching of remote media from a remote homeserver to the local media repository. Such content then also becomes available for download from the local homeserver in an unauthenticated way. The implication is that unauthenticated remote adversaries can use this functionality to plant problematic content into the media repository. Synapse 1.106 introduces a partial mitigation in the form of new endpoints which require authentication for media downloads. The unauthenticated endpoints will be frozen in a future release, closing the attack vector.",
+    "published": "2024-12-03T17:15:10.890",
+    "keywords": "remote,unauthenticated,authentication"
+  },
+  "CVE-2024-52805": {
+    "url": "https://github.com/twisted/twisted/issues/4688#issuecomment-2385711609",
+    "cvss": "-",
+    "description": "Synapse is an open-source Matrix homeserver. In Synapse before 1.120.1, multipart/form-data requests can in certain configurations transiently increase memory consumption beyond expected levels while processing the request, which can be used to amplify denial of service attacks. Synapse 1.120.1 resolves the issue by denying requests with unsupported multipart/form-data content type.",
+    "published": "2024-12-03T17:15:12.120"
+  },
+  "CVE-2024-53867": {
+    "url": "https://github.com/matrix-org/matrix-spec-proposals/pull/4186",
+    "cvss": 4.3,
+    "description": "Synapse is an open-source Matrix homeserver. The Sliding Sync feature on Synapse versions between 1.113.0rc1 and 1.120.0 can leak partial room state changes to users no longer in a room. Non-state events, like messages, are unaffected. This vulnerability is fixed in 1.120.1.",
+    "published": "2024-12-03T17:15:12.787"
   }
 }
