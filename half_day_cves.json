@@ -66,7 +66,7 @@
     "keywords": "execution,command"
   },
   "CVE-2024-53375": {
-    "cvss": "-",
+    "cvss": 8.0,
     "description": "Authenticated remote code execution (RCE) vulnerabilities affect TP-Link Archer, Deco, and Tapo series routers. A vulnerability exists in the \"tmp_get_sites\" function of the HomeShield functionality provided by TP-Link. This vulnerability is still exploitable without the installation or activation of the HomeShield functionality.",
     "published": "2024-12-02T22:15:10.507",
     "keywords": "remote,execution"
@@ -154,5 +154,11 @@
     "description": "An attacker who can execute arbitrary Operating Systems commands, can bypass code signing enforcements in the kernel, and execute arbitrary native code. This vulnerability has been resolved in firmware version 2.800.0000000.8.R.20241111.",
     "published": "2024-12-03T18:15:16.023",
     "keywords": "command,bypass"
+  },
+  "CVE-2024-51771": {
+    "cvss": 7.2,
+    "description": "A vulnerability in the HPE Aruba Networking ClearPass Policy Manager web-based management interface could allow an authenticated remote threat actor to conduct a remote code execution attack. Successful exploitation could enable the attacker to run arbitrary commands on the underlying operating system.",
+    "published": "2024-12-03T20:15:15.477",
+    "keywords": "remote,execution,command"
   }
 }
