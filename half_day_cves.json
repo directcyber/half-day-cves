@@ -82,5 +82,17 @@
     "description": "An issue was discovered in Victure RX1800 WiFi 6 Router (software EN_V1.0.0_r12_110933, hardware 1.0) devices. Certain /cgi-bin/luci/admin endpoints are vulnerable to command injection. Attackers can exploit this by sending crafted payloads through parameters intended for the ping utility, enabling arbitrary command execution with root-level permissions on the device.",
     "published": "2024-12-02T22:15:10.880",
     "keywords": "execution,command"
+  },
+  "CVE-2024-9200": {
+    "cvss": 7.2,
+    "description": "A post-authentication command injection vulnerability in the \"host\" parameter of the diagnostic function in Zyxel VMG4005-B50A firmware versions through V5.15(ABQA.2.2)C0 could allow an authenticated attacker with administrator privileges to execute operating system (OS) commands on a vulnerable device.",
+    "published": "2024-12-03T02:15:17.913",
+    "keywords": "authentication,command"
+  },
+  "CVE-2024-45068": {
+    "cvss": 7.1,
+    "description": "Authentication credentials leakage vulnerability in Hitachi Ops Center Common Services within Hitachi Ops Center OVA.\n\n\nThis issue affects Hitachi Ops Center Common Services: from 10.9.3-00 before 11.0.3-00; Hitachi Ops Center OVA: from 10.9.3-00 before 11.0.2-01.",
+    "published": "2024-12-03T03:15:04.953",
+    "keywords": "authentication,leak"
   }
 }
