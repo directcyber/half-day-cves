@@ -112,5 +112,17 @@
     "description": "Dell NetWorker, version(s) 19.10, contain(s) an Authorization Bypass Through User-Controlled Key vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Information disclosure.",
     "published": "2024-12-03T13:15:04.987",
     "keywords": "remote,unauthenticated,bypass"
+  },
+  "CVE-2024-11391": {
+    "cvss": 7.5,
+    "description": "The Advanced File Manager plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation via the 'class_fma_connector.php' file in all versions up to, and including, 5.2.10. This makes it possible for authenticated attackers, with Subscriber-level access and above, and granted permissions by an Administrator, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-12-03T15:15:09.973",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-53999": {
+    "url": "https://github.com/mobsf/mobile-security-framework-mobsf/commit/27d165872847f5ae7417caf09f37edeeba741e1e",
+    "cvss": 8.1,
+    "description": "Mobile Security Framework (MobSF) is a pen-testing, malware analysis and security assessment framework capable of performing static and dynamic analysis. The application allows users to upload files with scripts in the filename parameter. As a result, a malicious user can upload a script file to the system. When users in the application use the \"Diff or Compare\" functionality, they are affected by a Stored Cross-Site Scripting vulnerability. This vulnerability is fixed in 4.2.9.",
+    "published": "2024-12-03T16:15:24.250"
   }
 }
