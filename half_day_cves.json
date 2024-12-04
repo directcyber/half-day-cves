@@ -244,5 +244,17 @@
     "description": "A vulnerability in the bootloader of Cisco NX-OS Software could allow an unauthenticated attacker with physical access to an affected device, or an authenticated, local attacker with administrative credentials, to bypass NX-OS image signature verification.\r\n\r\nThis vulnerability is due to insecure bootloader settings. An attacker could exploit this vulnerability by executing a series of bootloader commands. A successful exploit could allow the attacker to bypass NX-OS image signature verification and load unverified software.",
     "published": "2024-12-04T17:15:11.913",
     "keywords": "unauthenticated,command,bypass"
+  },
+  "CVE-2024-54674": {
+    "url": "https://github.com/misp/misp/commit/d0330989e235a8a9f43c90817896de87a589ef7d",
+    "cvss": "-",
+    "description": "app/View/GalaxyClusters/cluster_export_misp_galaxy.ctp in MISP through 2.5.2 has stored XSS when exporting custom clusters into the misp-galaxy format.",
+    "published": "2024-12-04T21:15:25.130"
+  },
+  "CVE-2024-54675": {
+    "url": "https://github.com/misp/misp/commit/e02c2b864a85d14d64adf9f878f9c7b2bdd15173",
+    "cvss": "-",
+    "description": "app/webroot/js/workflows-editor/workflows-editor.js in MISP through 2.5.2 has stored XSS in the editor interface for an ad-hoc workflow.",
+    "published": "2024-12-04T21:15:25.263"
   }
 }
