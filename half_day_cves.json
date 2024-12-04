@@ -202,5 +202,11 @@
     "description": "A vulnerability exists where a low-privileged user can exploit insufficient permissions in credential handling to leak NTLM hashes of saved credentials. The exploitation involves using retrieved credentials to expose sensitive NTLM hashes, impacting systems beyond the initial target and potentially leading to broader security vulnerabilities.",
     "published": "2024-12-04T02:15:05.233",
     "keywords": "sensitive,leak"
+  },
+  "CVE-2024-10952": {
+    "cvss": 7.3,
+    "description": "The The Authors List plugin for WordPress is vulnerable to arbitrary shortcode execution via update_authors_list_ajax AJAX action in all versions up to, and including, 2.0.4. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+    "published": "2024-12-04T03:15:04.593",
+    "keywords": "execution,unauthenticated"
   }
 }
