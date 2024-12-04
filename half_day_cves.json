@@ -208,5 +208,11 @@
     "description": "The The Authors List plugin for WordPress is vulnerable to arbitrary shortcode execution via update_authors_list_ajax AJAX action in all versions up to, and including, 2.0.4. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
     "published": "2024-12-04T03:15:04.593",
     "keywords": "execution,unauthenticated"
+  },
+  "CVE-2024-54664": {
+    "cvss": 7.8,
+    "description": "An issue was discovered in Veritas NetBackup before 10.5. This only applies to NetBackup components running on a Windows Operating System. If a user executes specific NetBackup commands or an attacker uses social engineering techniques to impel the user to execute the commands, a malicious DLL could be loaded, resulting in execution of the attacker's code in the user's security context, a different vulnerability than CVE-2024-52945.",
+    "published": "2024-12-04T06:15:08.357",
+    "keywords": "execution,command"
   }
 }
