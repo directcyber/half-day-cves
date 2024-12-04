@@ -226,5 +226,11 @@
     "description": "The Classic Addons \u2013 WPBakery Page Builder plugin for WordPress is vulnerable to Limited Local PHP File Inclusion in all versions up to, and including, 3.0 via the 'style' parameter. This makes it possible for authenticated attackers, with Contributor-level access and above, and permissions granted by an Administrator, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included. The vulnerability is limited to PHP files in a Windows environment.",
     "published": "2024-12-04T09:15:04.637",
     "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2024-51465": {
+    "cvss": 8.8,
+    "description": "IBM App Connect Enterprise Certified Container 11.4, 11.5, 11.6, 12.0, 12.1, 12.2, and 12.3\u00a0could allow a remote authenticated attacker to execute arbitrary commands on the system by sending a specially crafted request.",
+    "published": "2024-12-04T14:15:20.223",
+    "keywords": "remote,command"
   }
 }
