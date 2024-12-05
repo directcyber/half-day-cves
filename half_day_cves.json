@@ -1,10 +1,4 @@
 {
-  "CVE-2024-53617": {
-    "url": "https://github.com/librephotos/librephotos/pull/1476",
-    "cvss": 4.8,
-    "description": "A Cross Site Scripting vulnerability in LibrePhotos before commit 32237 allows attackers to takeover any account via uploading an HTML file on behalf of the admin user using IDOR in file upload.",
-    "published": "2024-12-02T19:15:10.940"
-  },
   "CVE-2024-49581": {
     "cvss": 6.5,
     "description": "Restricted Views backed objects (OSV1) could be bypassed under specific circumstances due to a software bug, this could have allowed users that didn't have permission to see such objects to view them via Object Explorer directly. This software bug did not impact or otherwise make data available across organizational boundaries nor did it allow for data to be viewed or accessed by unauthenticated users.  \nThe affected service have been patched and automatically deployed to all Apollo-managed Foundry instances.",
@@ -199,13 +193,13 @@
   },
   "CVE-2024-54674": {
     "url": "https://github.com/misp/misp/commit/d0330989e235a8a9f43c90817896de87a589ef7d",
-    "cvss": "-",
+    "cvss": 6.1,
     "description": "app/View/GalaxyClusters/cluster_export_misp_galaxy.ctp in MISP through 2.5.2 has stored XSS when exporting custom clusters into the misp-galaxy format.",
     "published": "2024-12-04T21:15:25.130"
   },
   "CVE-2024-54675": {
     "url": "https://github.com/misp/misp/commit/e02c2b864a85d14d64adf9f878f9c7b2bdd15173",
-    "cvss": "-",
+    "cvss": 6.1,
     "description": "app/webroot/js/workflows-editor/workflows-editor.js in MISP through 2.5.2 has stored XSS in the editor interface for an ad-hoc workflow.",
     "published": "2024-12-04T21:15:25.263"
   },
