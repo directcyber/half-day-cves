@@ -1,16 +1,4 @@
 {
-  "CVE-2024-49581": {
-    "cvss": 6.5,
-    "description": "Restricted Views backed objects (OSV1) could be bypassed under specific circumstances due to a software bug, this could have allowed users that didn't have permission to see such objects to view them via Object Explorer directly. This software bug did not impact or otherwise make data available across organizational boundaries nor did it allow for data to be viewed or accessed by unauthenticated users.  \nThe affected service have been patched and automatically deployed to all Apollo-managed Foundry instances.",
-    "published": "2024-12-02T21:15:10.830",
-    "keywords": "unauthenticated,bypass"
-  },
-  "CVE-2024-53477": {
-    "cvss": "-",
-    "description": "JFinal CMS 5.1.0 is vulnerable to Command Execution via unauthorized execution of deserialization in the file ApiForm.java",
-    "published": "2024-12-02T21:15:11.217",
-    "keywords": "execution,command"
-  },
   "CVE-2024-53375": {
     "cvss": 8.0,
     "description": "Authenticated remote code execution (RCE) vulnerabilities affect TP-Link Archer, Deco, and Tapo series routers. A vulnerability exists in the \"tmp_get_sites\" function of the HomeShield functionality provided by TP-Link. This vulnerability is still exploitable without the installation or activation of the HomeShield functionality.",
@@ -280,5 +268,11 @@
     "cvss": "-",
     "description": "DTStack Taier 1.4.0 allows remote attackers to specify the jobName parameter in the console listNames function to cause a SQL injection vulnerability",
     "published": "2024-12-05T20:15:22.057"
+  },
+  "CVE-2024-53523": {
+    "url": "https://github.com/threezh1/jsfinder/issues/33",
+    "cvss": "-",
+    "description": "JSFinder commit d70ab9bc5221e016c08cffaf0d9ac79646c90645 is vulnerable to Directory Traversal in the find_by_file function.",
+    "published": "2024-12-05T21:15:08.573"
   }
 }
