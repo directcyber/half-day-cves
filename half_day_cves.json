@@ -1,10 +1,4 @@
 {
-  "CVE-2024-10490": {
-    "cvss": "-",
-    "description": "An \u201cAuthentication Bypass Using an Alternate Path or Channel\u201d vulnerability in the OPC UA Server configuration required for B&R mapp Cockpit before 6.0, B&R mapp View before 6.0, B&R mapp Services before 6.0, B&R mapp Motion before 6.0 and B&R mapp Vision before 6.0 may be used by an unauthenticated network-based attacker to cause information disclosure, unintended change of data, or denial of service conditions.\nB&R mapp Services is only affected, when mpUserX or mpCodeBox are used in the Automation Studio project.",
-    "published": "2024-12-02T09:15:04.613",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
   "CVE-2024-46909": {
     "cvss": 9.8,
     "description": "In WhatsUp Gold versions released before 2024.0.1, a\u00a0remote unauthenticated attacker could leverage this vulnerability to execute code in the context of the service account.",
@@ -232,5 +226,23 @@
     "description": "The Free Responsive Testimonials, Social Proof Reviews, and Customer Reviews \u2013 Stars Testimonials plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 3.3.3 via the 'stars-testimonials-with-slider-and-masonry-grid' shortcode. This makes it possible for authenticated attackers, with contributor-level access and above, to include and execute arbitrary PHP files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where PHP files can be uploaded and included.",
     "published": "2024-12-05T06:15:19.090",
     "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2024-10937": {
+    "cvss": 5.3,
+    "description": "The Related Posts, Inline Related Posts, Contextual Related Posts, Related Content By PickPlugins plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.0.58 via the wp_ajax_nopriv_related_post_ajax_get_post_ids AJAX action. This makes it possible for unauthenticated attackers to extract sensitive data including titles of posts in draft status.",
+    "published": "2024-12-05T09:15:04.377",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-47133": {
+    "cvss": 7.2,
+    "description": "UD-LT1 firmware Ver.2.1.8 and earlier and UD-LT1/EX firmware Ver.2.1.8 and earlier allow a remote authenticated attacker with an administrative account to execute arbitrary OS commands.",
+    "published": "2024-12-05T10:31:40.430",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-52564": {
+    "cvss": 7.5,
+    "description": "Inclusion of undocumented features or chicken bits issue exists in UD-LT1 firmware Ver.2.1.8 and earlier and UD-LT1/EX firmware Ver.2.1.8 and earlier. A remote attacker may disable the firewall function of the affected products. As a result, an arbitrary OS command may be executed and/or configuration settings of the device may be altered.",
+    "published": "2024-12-05T10:31:40.663",
+    "keywords": "remote,command"
   }
 }
