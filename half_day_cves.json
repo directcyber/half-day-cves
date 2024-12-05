@@ -1,16 +1,4 @@
 {
-  "CVE-2024-46909": {
-    "cvss": 9.8,
-    "description": "In WhatsUp Gold versions released before 2024.0.1, a\u00a0remote unauthenticated attacker could leverage this vulnerability to execute code in the context of the service account.",
-    "published": "2024-12-02T15:15:12.120",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-8785": {
-    "cvss": 9.8,
-    "description": "In WhatsUp Gold versions released before 2024.0.1, a\u00a0remote unauthenticated attacker could leverage NmAPI.exe to create or change an existing registry value in registry path HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Ipswitch\\.",
-    "published": "2024-12-02T15:15:12.380",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2024-53617": {
     "url": "https://github.com/librephotos/librephotos/pull/1476",
     "cvss": 4.8,
@@ -256,5 +244,41 @@
     "description": "Unauthorized Access vulnerabilities allow Remote Code Execution.\u00a0\nAffected products:\n\n\nABB ASPECT - Enterprise v3.08.02; \nNEXUS Series v3.08.02; \nMATRIX Series v3.08.02",
     "published": "2024-12-05T13:15:06.343",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-40763": {
+    "cvss": "-",
+    "description": "Heap-based buffer overflow vulnerability in the SonicWall SMA100 SSLVPN due to the use of strcpy. This allows remote authenticated attackers to cause Heap-based buffer overflow and potentially lead to code execution.",
+    "published": "2024-12-05T14:15:20.850",
+    "keywords": "remote,execution,vpn"
+  },
+  "CVE-2024-45318": {
+    "cvss": "-",
+    "description": "A vulnerability in the SonicWall SMA100 SSLVPN web management interface allows remote attackers to cause Stack-based buffer overflow and potentially lead to code execution.",
+    "published": "2024-12-05T14:15:21.000",
+    "keywords": "remote,execution,vpn"
+  },
+  "CVE-2024-45319": {
+    "cvss": "-",
+    "description": "A vulnerability in the SonicWall SMA100 SSLVPN \n\nfirmware\u00a010.2.1.13-72sv and earlier versions allows a remote authenticated attacker can circumvent the certificate requirement during authentication.",
+    "published": "2024-12-05T14:15:21.127",
+    "keywords": "remote,authentication,vpn"
+  },
+  "CVE-2024-52271": {
+    "url": "https://github.com/documenso/documenso/issues/1512",
+    "cvss": 7.9,
+    "description": "User Interface (UI) Misrepresentation of Critical Information vulnerability in Documenso allows Content Spoofing.Displayed version does not show the layer flattened version, once download, If printed (e.g. via Google Chrome -> Examine the print preview): Will render the vulnerability only, not all layers are flattened.\n\n\nThis issue affects Documenso: through 1.8.0, >1.8.0 and Documenso SaaS (Hosted) as of 2024-12-05.",
+    "published": "2024-12-05T14:15:21.417"
+  },
+  "CVE-2024-53703": {
+    "cvss": 8.1,
+    "description": "A vulnerability in the SonicWall SMA100 SSLVPN firmware 10.2.1.13-72sv and earlier versions mod_httprp library loaded by the Apache web server allows remote attackers to cause Stack-based buffer overflow and potentially lead to code execution.",
+    "published": "2024-12-05T14:15:22.020",
+    "keywords": "remote,execution,vpn"
+  },
+  "CVE-2024-54679": {
+    "url": "https://github.com/usmannasir/cyberpanel/commit/6778ad1eaae41f72365da8fd021f9a60369600dc",
+    "cvss": 4.3,
+    "description": "CyberPanel (aka Cyber Panel) before 6778ad1 does not require the FilemanagerAdmin capability for restartMySQL actions.",
+    "published": "2024-12-05T14:15:22.157"
   }
 }
