@@ -1,10 +1,4 @@
 {
-  "CVE-2024-11391": {
-    "cvss": 7.5,
-    "description": "The Advanced File Manager plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation via the 'class_fma_connector.php' file in all versions up to, and including, 5.2.10. This makes it possible for authenticated attackers, with Subscriber-level access and above, and granted permissions by an Administrator, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2024-12-03T15:15:09.973",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-53999": {
     "url": "https://github.com/mobsf/mobile-security-framework-mobsf/commit/27d165872847f5ae7417caf09f37edeeba741e1e",
     "cvss": 8.1,
@@ -316,5 +310,11 @@
     "description": "Snyk has identified a remote code execution (RCE) vulnerability in all versions of Code Agent. The vulnerability enables an attacker to execute arbitrary code within the Code Agent container. Exploiting this vulnerability would require an attacker to have network access to the Code Agent within the deployment environment. External exploitation of this vulnerability is unlikely and depends on both misconfigurations of the cluster and/or chaining with another vulnerability. However, internal exploitation (with a cluster misconfiguration) could still be possible.",
     "published": "2024-12-06T14:15:19.997",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-11738": {
+    "url": "https://github.com/rustls/rustls/issues/2227",
+    "cvss": 5.3,
+    "description": "A flaw was found in Rustls 0.23.13 and related APIs. This vulnerability allows denial of service (panic) via a fragmented TLS ClientHello message.",
+    "published": "2024-12-06T15:15:07.723"
   }
 }
