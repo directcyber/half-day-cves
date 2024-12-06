@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-12-06T17:11:28.281161
+Updated at UTC 2024-12-06T18:16:21.737198
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,30 @@ Updated at UTC 2024-12-06T17:11:28.281161
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-54143">CVE-2024-54143</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/openwrt/asu/commit/920c8a13d97b4d4095f0d939cf0aaae777e0f87e">https://github.com/openwrt/asu/commit/920c8a13d97b4d4095f0d939cf0aaae777e0f87e</a></td>
+					<td class=date>2024-12-06T17:15:12.687</td>
+					<td class=description>openwrt/asu is an image on demand server for OpenWrt based distributions. The request hashing mechanism truncates SHA-256 hashes to only 12 characters. This significantly reduces entropy, making it feasible for an attacker to generate collisions. By exploiting this, a previously built malicious image can be served in place of a legitimate one, allowing the attacker to "poison" the artifact cache and deliver compromised images to unsuspecting users. This can be combined with other attacks, such as a command injection in Imagebuilder that allows malicious users to inject arbitrary commands into the build process, resulting in the production of malicious firmware images signed with the legitimate build key. This has been patched with 920c8a1.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 				<tr>
@@ -336,38 +360,88 @@ This issue affects Documenso: through 1.8.0, >1.8.0 and Documenso SaaS (Hosted) 
 		
 			
 		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-53867">CVE-2024-53867</a></td>
-					<td>4.3</td>
-					<td><a target=_blank href="https://github.com/matrix-org/matrix-spec-proposals/pull/4186">https://github.com/matrix-org/matrix-spec-proposals/pull/4186</a></td>
-					<td class=date>2024-12-03T17:15:12.787</td>
-					<td class=description>Synapse is an open-source Matrix homeserver. The Sliding Sync feature on Synapse versions between 1.113.0rc1 and 1.120.0 can leak partial room state changes to users no longer in a room. Non-state events, like messages, are unaffected. This vulnerability is fixed in 1.120.1.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-52805">CVE-2024-52805</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/twisted/twisted/issues/4688#issuecomment-2385711609">https://github.com/twisted/twisted/issues/4688#issuecomment-2385711609</a></td>
-					<td class=date>2024-12-03T17:15:12.120</td>
-					<td class=description>Synapse is an open-source Matrix homeserver. In Synapse before 1.120.1, multipart/form-data requests can in certain configurations transiently increase memory consumption beyond expected levels while processing the request, which can be used to amplify denial of service attacks. Synapse 1.120.1 resolves the issue by denying requests with unsupported multipart/form-data content type.</td>
-
-
-				</tr>
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-52320">CVE-2024-52320</a></td>
+					<td>9.8</td>
+					<td>remote,execution,unauthenticated,command</td>
+					<td class=date>2024-12-06T18:15:25.737</td>
+					<td class=description>The affected product is vulnerable to a command injection. An unauthenticated attacker could send commands through a malicious HTTP request which could result in remote code execution.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48871">CVE-2024-48871</a></td>
+					<td>9.8</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2024-12-06T18:15:25.267</td>
+					<td class=description>The affected product is vulnerable to a stack-based buffer overflow. An unauthenticated attacker could send a malicious HTTP request that the webserver fails to properly check input size before copying data to the stack, potentially allowing remote code execution.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50393">CVE-2024-50393</a></td>
+					<td>-</td>
+					<td>remote,command</td>
+					<td class=date>2024-12-06T17:15:09.637</td>
+					<td class=description>A command injection vulnerability has been reported to affect several QNAP operating system versions. If exploited, the vulnerability could allow remote attackers to execute arbitrary commands.
+
+We have already fixed the vulnerability in the following versions:
+QTS 5.1.9.2954 build 20241120 and later
+QTS 5.2.2.2950 build 20241114 and later
+QuTS hero h5.1.9.2954 build 20241120 and later
+QuTS hero h5.2.2.2952 build 20241116 and later</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50388">CVE-2024-50388</a></td>
+					<td>-</td>
+					<td>remote,command</td>
+					<td class=date>2024-12-06T17:15:09.373</td>
+					<td class=description>An OS command injection vulnerability has been reported to affect HBS 3 Hybrid Backup Sync. If exploited, the vulnerability could allow remote attackers to execute commands.
+
+We have already fixed the vulnerability in the following version:
+HBS 3 Hybrid Backup Sync 25.1.1.673 and later</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48863">CVE-2024-48863</a></td>
+					<td>-</td>
+					<td>remote,command</td>
+					<td class=date>2024-12-06T17:15:08.533</td>
+					<td class=description>A command injection vulnerability has been reported to affect License Center. If exploited, the vulnerability could allow remote attackers to execute arbitrary commands.
+
+We have already fixed the vulnerability in the following version:
+License Center 1.9.43 and later</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48859">CVE-2024-48859</a></td>
+					<td>-</td>
+					<td>remote,authentication</td>
+					<td class=date>2024-12-06T17:15:08.350</td>
+					<td class=description>An improper authentication vulnerability has been reported to affect several QNAP operating system versions. If exploited, the vulnerability could allow remote attackers to compromise the security of the system.
+
+We have already fixed the vulnerability in the following versions:
+QTS 5.1.9.2954 build 20241120 and later
+QTS 5.2.2.2950 build 20241114 and later
+QuTS hero h5.1.9.2954 build 20241120 and later
+QuTS hero h5.2.2.2952 build 20241116 and later</td>
+				</tr>
+			
 		
 			
 		
@@ -756,40 +830,6 @@ This vulnerability is due to insecure bootloader settings. An attacker could exp
 					<td>remote,execution,command</td>
 					<td class=date>2024-12-03T20:15:15.477</td>
 					<td class=description>A vulnerability in the HPE Aruba Networking ClearPass Policy Manager web-based management interface could allow an authenticated remote threat actor to conduct a remote code execution attack. Successful exploitation could enable the attacker to run arbitrary commands on the underlying operating system.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-52548">CVE-2024-52548</a></td>
-					<td>6.7</td>
-					<td>command,bypass</td>
-					<td class=date>2024-12-03T18:15:16.023</td>
-					<td class=description>An attacker who can execute arbitrary Operating Systems commands, can bypass code signing enforcements in the kernel, and execute arbitrary native code. This vulnerability has been resolved in firmware version 2.800.0000000.8.R.20241111.</td>
-				</tr>
-			
-		
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37303">CVE-2024-37303</a></td>
-					<td>5.3</td>
-					<td>remote,unauthenticated,authentication</td>
-					<td class=date>2024-12-03T17:15:10.890</td>
-					<td class=description>Synapse is an open-source Matrix homeserver. Synapse before version 1.106 allows, by design, unauthenticated remote participants to trigger a download and caching of remote media from a remote homeserver to the local media repository. Such content then also becomes available for download from the local homeserver in an unauthenticated way. The implication is that unauthenticated remote adversaries can use this functionality to plant problematic content into the media repository. Synapse 1.106 introduces a partial mitigation in the form of new endpoints which require authentication for media downloads. The unauthenticated endpoints will be frozen in a future release, closing the attack vector.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-37302">CVE-2024-37302</a></td>
-					<td>7.5</td>
-					<td>remote,unauthenticated,leak</td>
-					<td class=date>2024-12-03T17:15:10.733</td>
-					<td class=description>Synapse is an open-source Matrix homeserver. Synapse versions before 1.106 are vulnerable to a disk fill attack, where an unauthenticated adversary can induce Synapse to download and cache large amounts of remote media. The default rate limit strategy is insufficient to mitigate this. This can lead to a denial of service, ranging from further media uploads/downloads failing to completely unavailability of the Synapse process, depending on how Synapse was deployed. Synapse 1.106 introduces a new "leaky bucket" rate limit on remote media downloads to reduce the amount of data a user can request at a time. This does not fully address the issue, but does limit an unauthenticated user's ability to request large amounts of data to be cached.</td>
 				</tr>
 			
 		

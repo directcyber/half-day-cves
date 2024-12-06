@@ -1,34 +1,4 @@
 {
-  "CVE-2024-37302": {
-    "cvss": 7.5,
-    "description": "Synapse is an open-source Matrix homeserver. Synapse versions before 1.106 are vulnerable to a disk fill attack, where an unauthenticated adversary can induce Synapse to download and cache large amounts of remote media. The default rate limit strategy is insufficient to mitigate this. This can lead to a denial of service, ranging from further media uploads/downloads failing to completely unavailability of the Synapse process, depending on how Synapse was deployed. Synapse 1.106 introduces a new \"leaky bucket\" rate limit on remote media downloads to reduce the amount of data a user can request at a time. This does not fully address the issue, but does limit an unauthenticated user's ability to request large amounts of data to be cached.",
-    "published": "2024-12-03T17:15:10.733",
-    "keywords": "remote,unauthenticated,leak"
-  },
-  "CVE-2024-37303": {
-    "cvss": 5.3,
-    "description": "Synapse is an open-source Matrix homeserver. Synapse before version 1.106 allows, by design, unauthenticated remote participants to trigger a download and caching of remote media from a remote homeserver to the local media repository. Such content then also becomes available for download from the local homeserver in an unauthenticated way. The implication is that unauthenticated remote adversaries can use this functionality to plant problematic content into the media repository. Synapse 1.106 introduces a partial mitigation in the form of new endpoints which require authentication for media downloads. The unauthenticated endpoints will be frozen in a future release, closing the attack vector.",
-    "published": "2024-12-03T17:15:10.890",
-    "keywords": "remote,unauthenticated,authentication"
-  },
-  "CVE-2024-52805": {
-    "url": "https://github.com/twisted/twisted/issues/4688#issuecomment-2385711609",
-    "cvss": "-",
-    "description": "Synapse is an open-source Matrix homeserver. In Synapse before 1.120.1, multipart/form-data requests can in certain configurations transiently increase memory consumption beyond expected levels while processing the request, which can be used to amplify denial of service attacks. Synapse 1.120.1 resolves the issue by denying requests with unsupported multipart/form-data content type.",
-    "published": "2024-12-03T17:15:12.120"
-  },
-  "CVE-2024-53867": {
-    "url": "https://github.com/matrix-org/matrix-spec-proposals/pull/4186",
-    "cvss": 4.3,
-    "description": "Synapse is an open-source Matrix homeserver. The Sliding Sync feature on Synapse versions between 1.113.0rc1 and 1.120.0 can leak partial room state changes to users no longer in a room. Non-state events, like messages, are unaffected. This vulnerability is fixed in 1.120.1.",
-    "published": "2024-12-03T17:15:12.787"
-  },
-  "CVE-2024-52548": {
-    "cvss": 6.7,
-    "description": "An attacker who can execute arbitrary Operating Systems commands, can bypass code signing enforcements in the kernel, and execute arbitrary native code. This vulnerability has been resolved in firmware version 2.800.0000000.8.R.20241111.",
-    "published": "2024-12-03T18:15:16.023",
-    "keywords": "command,bypass"
-  },
   "CVE-2024-51771": {
     "cvss": 7.2,
     "description": "A vulnerability in the HPE Aruba Networking ClearPass Policy Manager web-based management interface could allow an authenticated remote threat actor to conduct a remote code execution attack. Successful exploitation could enable the attacker to run arbitrary commands on the underlying operating system.",
@@ -328,5 +298,47 @@
     "cvss": 9.8,
     "description": "ClipBucket V5 provides open source video hosting with PHP. ClipBucket-v5 Version 5.5.1 Revision 199 and below is vulnerable to PHP Deserialization vulnerability. The vulnerability exists in upload/upload.php where the user supplied input via collection get parameter is directly provided to unserialize function. As a result, it is possible for an adversary to inject maliciously crafted PHP serialized object and utilize gadget chains to cause unexpected behaviors of the application. This vulnerability is fixed in 5.5.1 Revision 200.",
     "published": "2024-12-06T16:15:22.500"
+  },
+  "CVE-2024-48859": {
+    "cvss": "-",
+    "description": "An improper authentication vulnerability has been reported to affect several QNAP operating system versions. If exploited, the vulnerability could allow remote attackers to compromise the security of the system.\n\nWe have already fixed the vulnerability in the following versions:\nQTS 5.1.9.2954 build 20241120 and later\nQTS 5.2.2.2950 build 20241114 and later\nQuTS hero h5.1.9.2954 build 20241120 and later\nQuTS hero h5.2.2.2952 build 20241116 and later",
+    "published": "2024-12-06T17:15:08.350",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2024-48863": {
+    "cvss": "-",
+    "description": "A command injection vulnerability has been reported to affect License Center. If exploited, the vulnerability could allow remote attackers to execute arbitrary commands.\n\nWe have already fixed the vulnerability in the following version:\nLicense Center 1.9.43 and later",
+    "published": "2024-12-06T17:15:08.533",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-50388": {
+    "cvss": "-",
+    "description": "An OS command injection vulnerability has been reported to affect HBS 3 Hybrid Backup Sync. If exploited, the vulnerability could allow remote attackers to execute commands.\n\nWe have already fixed the vulnerability in the following version:\nHBS 3 Hybrid Backup Sync 25.1.1.673 and later",
+    "published": "2024-12-06T17:15:09.373",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-50393": {
+    "cvss": "-",
+    "description": "A command injection vulnerability has been reported to affect several QNAP operating system versions. If exploited, the vulnerability could allow remote attackers to execute arbitrary commands.\n\nWe have already fixed the vulnerability in the following versions:\nQTS 5.1.9.2954 build 20241120 and later\nQTS 5.2.2.2950 build 20241114 and later\nQuTS hero h5.1.9.2954 build 20241120 and later\nQuTS hero h5.2.2.2952 build 20241116 and later",
+    "published": "2024-12-06T17:15:09.637",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-54143": {
+    "url": "https://github.com/openwrt/asu/commit/920c8a13d97b4d4095f0d939cf0aaae777e0f87e",
+    "cvss": "-",
+    "description": "openwrt/asu is an image on demand server for OpenWrt based distributions. The request hashing mechanism truncates SHA-256 hashes to only 12 characters. This significantly reduces entropy, making it feasible for an attacker to generate collisions. By exploiting this, a previously built malicious image can be served in place of a legitimate one, allowing the attacker to \"poison\" the artifact cache and deliver compromised images to unsuspecting users. This can be combined with other attacks, such as a command injection in Imagebuilder that allows malicious users to inject arbitrary commands into the build process, resulting in the production of malicious firmware images signed with the legitimate build key. This has been patched with 920c8a1.",
+    "published": "2024-12-06T17:15:12.687"
+  },
+  "CVE-2024-48871": {
+    "cvss": 9.8,
+    "description": "The affected product is vulnerable to a stack-based buffer overflow. An unauthenticated attacker could send a malicious HTTP request that the webserver fails to properly check input size before copying data to the stack, potentially allowing remote code execution.",
+    "published": "2024-12-06T18:15:25.267",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-52320": {
+    "cvss": 9.8,
+    "description": "The affected product is vulnerable to a command injection. An unauthenticated attacker could send commands through a malicious HTTP request which could result in remote code execution.",
+    "published": "2024-12-06T18:15:25.737",
+    "keywords": "remote,execution,unauthenticated,command"
   }
 }
