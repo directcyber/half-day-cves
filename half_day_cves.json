@@ -1,10 +1,4 @@
 {
-  "CVE-2024-47476": {
-    "cvss": 7.8,
-    "description": "Dell NetWorker Management Console, version(s) 19.11, contain(s) an Improper Verification of Cryptographic Signature vulnerability. An unauthenticated attacker with local access could potentially exploit this vulnerability, leading to Code execution.",
-    "published": "2024-12-03T10:15:05.883",
-    "keywords": "execution,unauthenticated"
-  },
   "CVE-2024-42422": {
     "cvss": 8.3,
     "description": "Dell NetWorker, version(s) 19.10, contain(s) an Authorization Bypass Through User-Controlled Key vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Information disclosure.",
@@ -280,5 +274,29 @@
     "description": "The Login With OTP plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.4.2. This is due to the plugin generating too weak OTP, and there\u2019s no attempt or time limit. This makes it possible for unauthenticated attackers to generate and brute force the 6-digit numeric OTP that makes it possible to log in as any existing user on the site, such as an administrator, if they have access to the email.",
     "published": "2024-12-06T07:15:05.460",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-11292": {
+    "cvss": 5.3,
+    "description": "The WP Private Content Plus plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.6.1 via the WordPress core search feature. This makes it possible for unauthenticated attackers to extract sensitive data from posts that have been restricted to higher-level roles such as administrator.",
+    "published": "2024-12-06T09:15:05.993",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-11289": {
+    "cvss": 8.1,
+    "description": "The Soledad theme for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 8.5.9 via several functions like penci_archive_more_post_ajax_func, penci_more_post_ajax_func, and penci_more_featured_post_ajax_func. This makes it possible for unauthenticated attackers to include and execute PHP files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where PHP files can be uploaded and included. The exploitability of this is limited to Windows.",
+    "published": "2024-12-06T10:15:05.450",
+    "keywords": "execution,unauthenticated,sensitive,bypass"
+  },
+  "CVE-2024-11460": {
+    "cvss": 7.5,
+    "description": "The Verowa Connect plugin for WordPress is vulnerable to SQL Injection via the 'search_string' parameter in all versions up to, and including, 3.0.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2024-12-06T10:15:05.647",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-11728": {
+    "cvss": 7.5,
+    "description": "The KiviCare \u2013 Clinic & Patient Management System (EHR) plugin for WordPress is vulnerable to SQL Injection via the 'visit_type[service_id]' parameter of the tax_calculated_data AJAX action in all versions up to, and including, 3.6.4 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2024-12-06T10:15:05.853",
+    "keywords": "unauthenticated,sensitive"
   }
 }

@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-12-06T09:13:38.868907
+Updated at UTC 2024-12-06T11:11:09.905763
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,14 @@ Updated at UTC 2024-12-06T09:13:38.868907
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -303,10 +311,48 @@ This issue affects Documenso: through 1.8.0, >1.8.0 and Documenso SaaS (Hosted) 
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-11728">CVE-2024-11728</a></td>
+					<td>7.5</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2024-12-06T10:15:05.853</td>
+					<td class=description>The KiviCare – Clinic & Patient Management System (EHR) plugin for WordPress is vulnerable to SQL Injection via the 'visit_type[service_id]' parameter of the tax_calculated_data AJAX action in all versions up to, and including, 3.6.4 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-11460">CVE-2024-11460</a></td>
+					<td>7.5</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2024-12-06T10:15:05.647</td>
+					<td class=description>The Verowa Connect plugin for WordPress is vulnerable to SQL Injection via the 'search_string' parameter in all versions up to, and including, 3.0.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-11289">CVE-2024-11289</a></td>
+					<td>8.1</td>
+					<td>execution,unauthenticated,sensitive,bypass</td>
+					<td class=date>2024-12-06T10:15:05.450</td>
+					<td class=description>The Soledad theme for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 8.5.9 via several functions like penci_archive_more_post_ajax_func, penci_more_post_ajax_func, and penci_more_featured_post_ajax_func. This makes it possible for unauthenticated attackers to include and execute PHP files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where PHP files can be uploaded and included. The exploitability of this is limited to Windows.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-11292">CVE-2024-11292</a></td>
+					<td>5.3</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2024-12-06T09:15:05.993</td>
+					<td class=description>The WP Private Content Plus plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.6.1 via the WordPress core search feature. This makes it possible for unauthenticated attackers to extract sensitive data from posts that have been restricted to higher-level roles such as administrator.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -661,16 +707,6 @@ This vulnerability is due to insecure bootloader settings. An attacker could exp
 					<td>remote,unauthenticated,bypass</td>
 					<td class=date>2024-12-03T13:15:04.987</td>
 					<td class=description>Dell NetWorker, version(s) 19.10, contain(s) an Authorization Bypass Through User-Controlled Key vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Information disclosure.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-47476">CVE-2024-47476</a></td>
-					<td>7.8</td>
-					<td>execution,unauthenticated</td>
-					<td class=date>2024-12-03T10:15:05.883</td>
-					<td class=description>Dell NetWorker Management Console, version(s) 19.11, contain(s) an Improper Verification of Cryptographic Signature vulnerability. An unauthenticated attacker with local access could potentially exploit this vulnerability, leading to Code execution.</td>
 				</tr>
 			
 		
