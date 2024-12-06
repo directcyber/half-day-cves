@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-12-06T16:14:56.421910
+Updated at UTC 2024-12-06T17:11:28.281161
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,57 @@ Updated at UTC 2024-12-06T16:14:56.421910
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-54136">CVE-2024-54136</a></td>
+					<td>9.8</td>
+					<td><a target=_blank href="https://github.com/macwarrior/clipbucket-v5/commit/76a829c088f0813ab3244a3bd0036111017409b0">https://github.com/macwarrior/clipbucket-v5/commit/76a829c088f0813ab3244a3bd0036111017409b0</a></td>
+					<td class=date>2024-12-06T16:15:22.500</td>
+					<td class=description>ClipBucket V5 provides open source video hosting with PHP. ClipBucket-v5 Version 5.5.1 Revision 199 and below is vulnerable to PHP Deserialization vulnerability. The vulnerability exists in upload/upload.php where the user supplied input via collection get parameter is directly provided to unserialize function. As a result, it is possible for an adversary to inject maliciously crafted PHP serialized object and utilize gadget chains to cause unexpected behaviors of the application. This vulnerability is fixed in 5.5.1 Revision 200.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-54135">CVE-2024-54135</a></td>
+					<td>9.8</td>
+					<td><a target=_blank href="https://github.com/macwarrior/clipbucket-v5/commit/76a829c088f0813ab3244a3bd0036111017409b0">https://github.com/macwarrior/clipbucket-v5/commit/76a829c088f0813ab3244a3bd0036111017409b0</a></td>
+					<td class=date>2024-12-06T16:15:22.340</td>
+					<td class=description>ClipBucket V5 provides open source video hosting with PHP. ClipBucket-v5 Version 2.0 to Version 5.5.1 Revision 199 are vulnerable to PHP Deserialization vulnerability. The vulnerability exists in upload/photo_upload.php  within the decode_key function. User inputs were supplied to this function without sanitization via collection GET parameter and photoIDS POST parameter respectively. The decode_key function invokes PHP unserialize function as defined in upload/includes/classes/photos.class.php. As a result, it is possible for an adversary to inject maliciously crafted PHP serialized object and utilize gadget chains to cause unexpected behaviors of the application. This vulnerability is fixed in 5.5.1 Revision 200.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-12254">CVE-2024-12254</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/python/cpython/pull/127656">https://github.com/python/cpython/pull/127656</a></td>
+					<td class=date>2024-12-06T16:15:20.623</td>
+					<td class=description>Starting in Python 3.12.0, the asyncio._SelectorSocketTransport.writelines()
+ method would not "pause" writing and signal to the Protocol to drain 
+the buffer to the wire once the write buffer reached the "high-water 
+mark". Because of this, Protocols would not periodically drain the write
+ buffer potentially leading to memory exhaustion.
+
+
+
+
+
+This
+ vulnerability likely impacts a small number of users, you must be using
+ Python 3.12.0 or later, on macOS or Linux, using the asyncio module 
+with protocols, and using .writelines() method which had new 
+zero-copy-on-write behavior in Python 3.12.0 and later. If not all of 
+these factors are true then your usage of Python is unaffected.</td>
+
+
+				</tr>
+			
 		
 			
 				<tr>
@@ -315,20 +366,14 @@ This issue affects Documenso: through 1.8.0, >1.8.0 and Documenso SaaS (Hosted) 
 		
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-53999">CVE-2024-53999</a></td>
-					<td>8.1</td>
-					<td><a target=_blank href="https://github.com/mobsf/mobile-security-framework-mobsf/commit/27d165872847f5ae7417caf09f37edeeba741e1e">https://github.com/mobsf/mobile-security-framework-mobsf/commit/27d165872847f5ae7417caf09f37edeeba741e1e</a></td>
-					<td class=date>2024-12-03T16:15:24.250</td>
-					<td class=description>Mobile Security Framework (MobSF) is a pen-testing, malware analysis and security assessment framework capable of performing static and dynamic analysis. The application allows users to upload files with scripts in the filename parameter. As a result, a malicious user can upload a script file to the system. When users in the application use the "Diff or Compare" functionality, they are affected by a Stored Cross-Site Scripting vulnerability. This vulnerability is fixed in 4.2.9.</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -746,8 +791,6 @@ This vulnerability is due to insecure bootloader settings. An attacker could exp
 					<td class=date>2024-12-03T17:15:10.733</td>
 					<td class=description>Synapse is an open-source Matrix homeserver. Synapse versions before 1.106 are vulnerable to a disk fill attack, where an unauthenticated adversary can induce Synapse to download and cache large amounts of remote media. The default rate limit strategy is insufficient to mitigate this. This can lead to a denial of service, ranging from further media uploads/downloads failing to completely unavailability of the Synapse process, depending on how Synapse was deployed. Synapse 1.106 introduces a new "leaky bucket" rate limit on remote media downloads to reduce the amount of data a user can request at a time. This does not fully address the issue, but does limit an unauthenticated user's ability to request large amounts of data to be cached.</td>
 				</tr>
-			
-		
 			
 		
 
