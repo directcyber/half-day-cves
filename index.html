@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-12-07T00:57:10.370877
+Updated at UTC 2024-12-07T02:23:29.514086
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -328,16 +328,6 @@ This issue affects Documenso: through 1.8.0, >1.8.0 and Documenso SaaS (Hosted) 
 
 
 				</tr>
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
 			
 		
 			
@@ -744,56 +734,6 @@ This vulnerability is due to insecure bootloader settings. An attacker could exp
 					<td>execution,unauthenticated</td>
 					<td class=date>2024-12-04T03:15:04.593</td>
 					<td class=description>The The Authors List plugin for WordPress is vulnerable to arbitrary shortcode execution via update_authors_list_ajax AJAX action in all versions up to, and including, 2.0.4. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-45204">CVE-2024-45204</a></td>
-					<td>7.7</td>
-					<td>sensitive,leak</td>
-					<td class=date>2024-12-04T02:15:05.233</td>
-					<td class=description>A vulnerability exists where a low-privileged user can exploit insufficient permissions in credential handling to leak NTLM hashes of saved credentials. The exploitation involves using retrieved credentials to expose sensitive NTLM hashes, impacting systems beyond the initial target and potentially leading to broader security vulnerabilities.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-42457">CVE-2024-42457</a></td>
-					<td>7.7</td>
-					<td>remote,sensitive,leak</td>
-					<td class=date>2024-12-04T02:15:05.133</td>
-					<td class=description>A vulnerability in Veeam Backup & Replication allows users with certain operator roles to expose saved credentials by leveraging a combination of methods in a remote management interface. This can be achieved using a session object that allows for credential enumeration and exploitation, leading to the leak of plaintext credentials to a malicious host. The attack is facilitated by improper usage of a method that allows operators to add a new host with an attacker-controlled IP, enabling them to retrieve sensitive credentials in plaintext.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-42452">CVE-2024-42452</a></td>
-					<td>8.8</td>
-					<td>remote,bypass</td>
-					<td class=date>2024-12-04T02:15:04.747</td>
-					<td class=description>A vulnerability in Veeam Backup & Replication allows a low-privileged user to start an agent remotely in server mode and obtain credentials, effectively escalating privileges to system-level access. This allows the attacker to upload files to the server with elevated privileges. The vulnerability exists because remote calls bypass permission checks, leading to full system compromise.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-42451">CVE-2024-42451</a></td>
-					<td>7.7</td>
-					<td>sensitive,leak</td>
-					<td class=date>2024-12-04T02:15:04.643</td>
-					<td class=description>A vulnerability in Veeam Backup & Replication allows low-privileged users to leak all saved credentials in plaintext. This is achieved by calling a series of methods over an external protocol, ultimately retrieving the credentials using a malicious setup on the attacker's side. This exposes sensitive data, which could be used for further attacks, including unauthorized access to systems managed by the platform.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-40717">CVE-2024-40717</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-12-04T02:15:04.410</td>
-					<td class=description>A vulnerability in Veeam Backup & Replication allows a low-privileged user with certain roles to perform remote code execution (RCE) by updating existing jobs. These jobs can be configured to run pre- and post-scripts, which can be located on a network share and are executed with elevated privileges by default. The user can update a job and schedule it to run almost immediately, allowing arbitrary code execution on the server.</td>
 				</tr>
 			
 		
