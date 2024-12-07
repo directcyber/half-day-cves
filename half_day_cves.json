@@ -1,10 +1,4 @@
 {
-  "CVE-2024-54664": {
-    "cvss": 7.8,
-    "description": "An issue was discovered in Veritas NetBackup before 10.5. This only applies to NetBackup components running on a Windows Operating System. If a user executes specific NetBackup commands or an attacker uses social engineering techniques to impel the user to execute the commands, a malicious DLL could be loaded, resulting in execution of the attacker's code in the user's security context, a different vulnerability than CVE-2024-52945.",
-    "published": "2024-12-04T06:15:08.357",
-    "keywords": "execution,command"
-  },
   "CVE-2024-11293": {
     "cvss": 8.1,
     "description": "The  Registration Forms \u2013 User Registration Forms, Invitation-Based Registrations, Front-end User Profile, Login Form & Content Restriction Social Sites Login plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 1.7.9. This is due to insufficient verification on the user being returned by the social login token. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email and the user does not have an already-existing account for the service returning the token.",
