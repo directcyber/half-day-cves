@@ -1,40 +1,4 @@
 {
-  "CVE-2024-30962": {
-    "url": "https://github.com/ros-planning/navigation2/pull/4206",
-    "cvss": "-",
-    "description": "Buffer Overflow vulnerability in Open Robotics Robotic Operating System 2 (ROS2) navigation2- ROS2-humble and navigation 2-humble allows a local attacker to execute arbitrary code via the nav2_amcl process",
-    "published": "2024-12-05T23:15:05.147"
-  },
-  "CVE-2024-30963": {
-    "url": "https://github.com/ros-planning/navigation2/issues/4157",
-    "cvss": 7.8,
-    "description": "Buffer Overflow vulnerability in Open Robotics Robotic Operating System 2 (ROS2) navigation2- ROS2-humble and navigation 2-humble allows a local attacker to execute arbitrary code via a crafted script.",
-    "published": "2024-12-05T23:15:05.267"
-  },
-  "CVE-2024-37860": {
-    "url": "https://github.com/ros-navigation/navigation2/issues/4339",
-    "cvss": 7.3,
-    "description": "Buffer Overflow vulnerability in Open Robotic Operating System 2 ROS2 navigation2- ROS2-humble&& navigation2-humble allows a local attacker to execute arbitrary code via a crafted .yaml file to the nav2_amcl process",
-    "published": "2024-12-05T23:15:05.510"
-  },
-  "CVE-2024-37861": {
-    "url": "https://github.com/ros-navigation/navigation2/issues/4338",
-    "cvss": 9.8,
-    "description": "Open Robotics Robotic Operating System 2 (ROS2) and Nav2 humble versions were discovered to contain a buffer overflow via the nav2_amcl process. This vulnerability is triggered via sending a crafted .yaml file.",
-    "published": "2024-12-05T23:15:05.633"
-  },
-  "CVE-2024-37862": {
-    "url": "https://github.com/ros-navigation/navigation2/issues/4062",
-    "cvss": 7.3,
-    "description": "Buffer Overflow vulnerability in Open Robotic Robotic Operating System 2 ROS2 navigation2- ROS2-humble&& navigation2-humble allows a local attacker to execute arbitrary code via a crafted .yaml file to the nav2_planner process.",
-    "published": "2024-12-05T23:15:05.767"
-  },
-  "CVE-2024-37863": {
-    "url": "https://github.com/ros-navigation/navigation2/issues/4337",
-    "cvss": 9.8,
-    "description": "Open Robotics Robotic Operating System 2 (ROS2) and Nav2 humble versions were discovered to contain a buffer overflow via the nav2_amcl process. This vulnerability is triggered via sending a crafted .yaml file.",
-    "published": "2024-12-05T23:15:05.903"
-  },
   "CVE-2024-11178": {
     "cvss": 8.1,
     "description": "The Login With OTP plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.4.2. This is due to the plugin generating too weak OTP, and there\u2019s no attempt or time limit. This makes it possible for unauthenticated attackers to generate and brute force the 6-digit numeric OTP that makes it possible to log in as any existing user on the site, such as an administrator, if they have access to the email.",
@@ -172,5 +136,17 @@
     "description": "The WP Umbrella: Update Backup Restore & Monitoring plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.17.0 via the 'filename' parameter of the 'umbrella-restore' action. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
     "published": "2024-12-08T06:15:04.823",
     "keywords": "execution,unauthenticated,sensitive,bypass"
+  },
+  "CVE-2024-12344": {
+    "cvss": 6.3,
+    "description": "A vulnerability, which was classified as critical, was found in TP-Link VN020 F3v(T) TT_V6.2.1021. This affects an unknown part of the component FTP USER Command Handler. The manipulation leads to memory corruption. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2024-12-08T23:15:04.980",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-55560": {
+    "url": "https://github.com/mailcleaner/mailcleaner/commit/28d913eaa044b689eb114f72ebe92d48cb4aaca7",
+    "cvss": "-",
+    "description": "MailCleaner before 28d913e has default values of ssh_host_dsa_key, ssh_host_rsa_key, and ssh_host_ed25519_key that persist after installation.",
+    "published": "2024-12-08T23:15:05.940"
   }
 }
