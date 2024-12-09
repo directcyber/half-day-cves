@@ -1,10 +1,4 @@
 {
-  "CVE-2024-11292": {
-    "cvss": 5.3,
-    "description": "The WP Private Content Plus plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.6.1 via the WordPress core search feature. This makes it possible for unauthenticated attackers to extract sensitive data from posts that have been restricted to higher-level roles such as administrator.",
-    "published": "2024-12-06T09:15:05.993",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2024-11289": {
     "cvss": 8.1,
     "description": "The Soledad theme for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 8.5.9 via several functions like penci_archive_more_post_ajax_func, penci_more_post_ajax_func, and penci_more_featured_post_ajax_func. This makes it possible for unauthenticated attackers to include and execute PHP files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where PHP files can be uploaded and included. The exploitability of this is limited to Windows.",
