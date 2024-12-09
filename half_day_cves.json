@@ -1,22 +1,4 @@
 {
-  "CVE-2024-11289": {
-    "cvss": 8.1,
-    "description": "The Soledad theme for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 8.5.9 via several functions like penci_archive_more_post_ajax_func, penci_more_post_ajax_func, and penci_more_featured_post_ajax_func. This makes it possible for unauthenticated attackers to include and execute PHP files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where PHP files can be uploaded and included. The exploitability of this is limited to Windows.",
-    "published": "2024-12-06T10:15:05.450",
-    "keywords": "execution,unauthenticated,sensitive,bypass"
-  },
-  "CVE-2024-11460": {
-    "cvss": 7.5,
-    "description": "The Verowa Connect plugin for WordPress is vulnerable to SQL Injection via the 'search_string' parameter in all versions up to, and including, 3.0.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
-    "published": "2024-12-06T10:15:05.647",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-11728": {
-    "cvss": 7.5,
-    "description": "The KiviCare \u2013 Clinic & Patient Management System (EHR) plugin for WordPress is vulnerable to SQL Injection via the 'visit_type[service_id]' parameter of the tax_calculated_data AJAX action in all versions up to, and including, 3.6.4 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
-    "published": "2024-12-06T10:15:05.853",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2024-10771": {
     "cvss": 8.8,
     "description": "Due to missing input validation during one step of the firmware update process, the product\nis vulnerable to remote code execution. With network access and the user level \u201dService\u201d, an attacker\ncan execute arbitrary system commands in the root user\u2019s contexts.",
