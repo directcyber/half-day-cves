@@ -1,16 +1,4 @@
 {
-  "CVE-2024-10516": {
-    "cvss": 8.1,
-    "description": "The Swift Performance Lite plugin for WordPress is vulnerable to Local PHP File Inclusion in all versions up to, and including, 2.3.7.1 via the 'ajaxify' function. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
-    "published": "2024-12-06T14:15:19.667",
-    "keywords": "execution,unauthenticated,sensitive,bypass"
-  },
-  "CVE-2024-21571": {
-    "cvss": 8.1,
-    "description": "Snyk has identified a remote code execution (RCE) vulnerability in all versions of Code Agent. The vulnerability enables an attacker to execute arbitrary code within the Code Agent container. Exploiting this vulnerability would require an attacker to have network access to the Code Agent within the deployment environment. External exploitation of this vulnerability is unlikely and depends on both misconfigurations of the cluster and/or chaining with another vulnerability. However, internal exploitation (with a cluster misconfiguration) could still be possible.",
-    "published": "2024-12-06T14:15:19.997",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-11738": {
     "url": "https://github.com/rustls/rustls/issues/2227",
     "cvss": 5.3,
@@ -124,5 +112,17 @@
     "description": "A vulnerability was found in WeiYe-Jing datax-web 2.1.1. It has been classified as critical. This affects an unknown part of the file /api/job/add/. The manipulation of the argument glueSource leads to os command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
     "published": "2024-12-09T05:15:07.320",
     "keywords": "remote,command"
+  },
+  "CVE-2024-53947": {
+    "cvss": "-",
+    "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Apache Superset. Specifically, certain engine-specific functions are not checked, which allows attackers to bypass Apache Superset's SQL authorization. This issue is a follow-up to\u00a0CVE-2024-39887 with additional disallowed PostgreSQL functions now included:\u00a0query_to_xml_and_xmlschema,\u00a0table_to_xml,\u00a0table_to_xml_and_xmlschema.\n\nThis issue affects Apache Superset: <4.1.0.\n\nUsers are recommended to upgrade to version 4.1.0, which fixes the issue or add these Postgres functions to the config set\u00a0DISALLOWED_SQL_FUNCTIONS.",
+    "published": "2024-12-09T14:15:12.267",
+    "keywords": "command,bypass"
+  },
+  "CVE-2024-54937": {
+    "cvss": "-",
+    "description": "A Directory Listing issue was found in Kashipara E-Learning Management System v1.0, which allows remote attackers to access sensitive files and directories via /admin/assets.",
+    "published": "2024-12-09T14:15:13.303",
+    "keywords": "remote,sensitive"
   }
 }
