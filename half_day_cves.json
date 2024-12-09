@@ -67,7 +67,7 @@
   },
   "CVE-2024-54920": {
     "cvss": "-",
-    "description": "A SQL Injection vulnerability was found in the /teacher_signup.php of kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL command to get unauthorized database access via the firstname, lastname, and class_id parameters.",
+    "description": "A SQL Injection vulnerability was found in /teacher_signup.php of kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL command to get unauthorized database access via the firstname, lastname, and class_id parameters.",
     "published": "2024-12-09T15:15:21.717",
     "keywords": "remote,command"
   },
@@ -79,8 +79,68 @@
   },
   "CVE-2024-54922": {
     "cvss": "-",
-    "description": "A SQL Injection was found in /lms/admin/edit_user.php of kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the firstname, lastname, and username parameters.",
+    "description": "A SQL Injection was found in /admin/edit_user.php of kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the firstname, lastname, and username parameters.",
     "published": "2024-12-09T18:15:24.153",
     "keywords": "remote,command"
+  },
+  "CVE-2024-46547": {
+    "cvss": "-",
+    "description": "A vulnerability was found in Romain Bourdon Wampserver all versions (discovered in v3.2.3 and v3.2.6) where unauthorized users could access sensitive information due to improper access control validation via PHP Info Page. This issue can lead to data leaks.",
+    "published": "2024-12-09T19:15:13.483",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2024-48956": {
+    "cvss": "-",
+    "description": "Serviceware Processes 6.0 through 7.3 allows attackers without valid authentication to send a specially crafted HTTP request to a service endpoint resulting in remote code execution.",
+    "published": "2024-12-09T19:15:13.590",
+    "keywords": "remote,execution,authentication"
+  },
+  "CVE-2024-52586": {
+    "cvss": 5.4,
+    "description": "eLabFTW is an open source electronic lab notebook for research labs. A vulnerability has been found starting in version 4.6.0 and prior to version 5.1.0 that allows an attacker to bypass eLabFTW's built-in multifactor authentication mechanism. An attacker who can authenticate locally (by knowing or guessing the password of a user) can thus log in regardless of MFA requirements. This does not affect MFA that are performed by single sign-on services. Users are advised to upgrade to at least version 5.1.9 to receive a fix.",
+    "published": "2024-12-09T19:15:13.707",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-54918": {
+    "cvss": "-",
+    "description": "Kashipara E-learning Management System v1.0 is vulnerable to Remote Code Execution via File Upload in /teacher_avatar.php.",
+    "published": "2024-12-09T19:15:15.707",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-54921": {
+    "cvss": "-",
+    "description": "A SQL Injection was found in /student_signup.php in kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the username, firstname, lastname, and class_id parameters.",
+    "published": "2024-12-09T19:15:15.940",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-54923": {
+    "cvss": "-",
+    "description": "A SQL Injection vulnerability was found in /admin/edit_teacher.php in kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the department parameter.",
+    "published": "2024-12-09T19:15:16.137",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-54924": {
+    "cvss": "-",
+    "description": "A SQL Injection was found in /admin/edit_content.php in kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the title and content parameters.",
+    "published": "2024-12-09T19:15:16.243",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-54925": {
+    "cvss": "-",
+    "description": "A SQL Injection was found in /remove_sent_message.php in kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the id parameter.",
+    "published": "2024-12-09T19:15:16.350",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-54931": {
+    "cvss": "-",
+    "description": "A SQL Injection was found in /admin/delete_event.php in kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the id parameter.",
+    "published": "2024-12-09T19:15:16.677",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-54938": {
+    "cvss": "-",
+    "description": "A Directory Listing issue was found in Kashipara E-Learning Management System v1.0, which allows remote attackers to access sensitive files and directories via /admin/uploads.",
+    "published": "2024-12-09T19:15:17.137",
+    "keywords": "remote,sensitive"
   }
 }
