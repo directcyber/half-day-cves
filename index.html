@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-12-09T17:11:49.710641
+Updated at UTC 2024-12-09T18:17:00.460002
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2024-12-09T17:11:49.710641
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -92,32 +96,28 @@ Updated at UTC 2024-12-09T17:11:49.710641
 		
 			
 		
-			
+
+		<hr>
 		
 			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-54143">CVE-2024-54143</a></td>
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-54922">CVE-2024-54922</a></td>
 					<td>-</td>
-					<td><a target=_blank href="https://github.com/openwrt/asu/commit/920c8a13d97b4d4095f0d939cf0aaae777e0f87e">https://github.com/openwrt/asu/commit/920c8a13d97b4d4095f0d939cf0aaae777e0f87e</a></td>
-					<td class=date>2024-12-06T17:15:12.687</td>
-					<td class=description>openwrt/asu is an image on demand server for OpenWrt based distributions. The request hashing mechanism truncates SHA-256 hashes to only 12 characters. This significantly reduces entropy, making it feasible for an attacker to generate collisions. By exploiting this, a previously built malicious image can be served in place of a legitimate one, allowing the attacker to "poison" the artifact cache and deliver compromised images to unsuspecting users. This can be combined with other attacks, such as a command injection in Imagebuilder that allows malicious users to inject arbitrary commands into the build process, resulting in the production of malicious firmware images signed with the legitimate build key. This has been patched with 920c8a1.</td>
-
-
+					<td>remote,command</td>
+					<td class=date>2024-12-09T18:15:24.153</td>
+					<td class=description>A SQL Injection was found in /lms/admin/edit_user.php of kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the firstname, lastname, and username parameters.</td>
 				</tr>
 			
 		
 			
-		
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-54926">CVE-2024-54926</a></td>
+					<td>-</td>
+					<td>remote,command</td>
+					<td class=date>2024-12-09T17:15:09.810</td>
+					<td class=description>A SQL Injection vulnerability was found in /search_class.php of kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the school_year parameter.</td>
+				</tr>
 			
-		
-			
-		
-			
-		
-
-		<hr>
 		
 			
 				<tr class=keywords style="display: none">
@@ -232,86 +232,6 @@ Users are recommended to upgrade to version 4.1.0, which fixes the issue or add 
 					<td>execution,sensitive,bypass</td>
 					<td class=date>2024-12-07T10:15:04.047</td>
 					<td class=description>The FileOrganizer – Manage WordPress and Website Files plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.1.4 via the 'default_lang' parameter. This makes it possible for authenticated attackers, with Administrator-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-52320">CVE-2024-52320</a></td>
-					<td>9.8</td>
-					<td>remote,execution,unauthenticated,command</td>
-					<td class=date>2024-12-06T18:15:25.737</td>
-					<td class=description>The affected product is vulnerable to a command injection. An unauthenticated attacker could send commands through a malicious HTTP request which could result in remote code execution.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48871">CVE-2024-48871</a></td>
-					<td>9.8</td>
-					<td>remote,execution,unauthenticated</td>
-					<td class=date>2024-12-06T18:15:25.267</td>
-					<td class=description>The affected product is vulnerable to a stack-based buffer overflow. An unauthenticated attacker could send a malicious HTTP request that the webserver fails to properly check input size before copying data to the stack, potentially allowing remote code execution.</td>
-				</tr>
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50393">CVE-2024-50393</a></td>
-					<td>-</td>
-					<td>remote,command</td>
-					<td class=date>2024-12-06T17:15:09.637</td>
-					<td class=description>A command injection vulnerability has been reported to affect several QNAP operating system versions. If exploited, the vulnerability could allow remote attackers to execute arbitrary commands.
-
-We have already fixed the vulnerability in the following versions:
-QTS 5.1.9.2954 build 20241120 and later
-QTS 5.2.2.2950 build 20241114 and later
-QuTS hero h5.1.9.2954 build 20241120 and later
-QuTS hero h5.2.2.2952 build 20241116 and later</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-50388">CVE-2024-50388</a></td>
-					<td>-</td>
-					<td>remote,command</td>
-					<td class=date>2024-12-06T17:15:09.373</td>
-					<td class=description>An OS command injection vulnerability has been reported to affect HBS 3 Hybrid Backup Sync. If exploited, the vulnerability could allow remote attackers to execute commands.
-
-We have already fixed the vulnerability in the following version:
-HBS 3 Hybrid Backup Sync 25.1.1.673 and later</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48863">CVE-2024-48863</a></td>
-					<td>-</td>
-					<td>remote,command</td>
-					<td class=date>2024-12-06T17:15:08.533</td>
-					<td class=description>A command injection vulnerability has been reported to affect License Center. If exploited, the vulnerability could allow remote attackers to execute arbitrary commands.
-
-We have already fixed the vulnerability in the following version:
-License Center 1.9.43 and later</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-48859">CVE-2024-48859</a></td>
-					<td>-</td>
-					<td>remote,authentication</td>
-					<td class=date>2024-12-06T17:15:08.350</td>
-					<td class=description>An improper authentication vulnerability has been reported to affect several QNAP operating system versions. If exploited, the vulnerability could allow remote attackers to compromise the security of the system.
-
-We have already fixed the vulnerability in the following versions:
-QTS 5.1.9.2954 build 20241120 and later
-QTS 5.2.2.2950 build 20241114 and later
-QuTS hero h5.1.9.2954 build 20241120 and later
-QuTS hero h5.2.2.2952 build 20241116 and later</td>
 				</tr>
 			
 		

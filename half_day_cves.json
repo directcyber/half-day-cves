@@ -1,46 +1,4 @@
 {
-  "CVE-2024-48859": {
-    "cvss": "-",
-    "description": "An improper authentication vulnerability has been reported to affect several QNAP operating system versions. If exploited, the vulnerability could allow remote attackers to compromise the security of the system.\n\nWe have already fixed the vulnerability in the following versions:\nQTS 5.1.9.2954 build 20241120 and later\nQTS 5.2.2.2950 build 20241114 and later\nQuTS hero h5.1.9.2954 build 20241120 and later\nQuTS hero h5.2.2.2952 build 20241116 and later",
-    "published": "2024-12-06T17:15:08.350",
-    "keywords": "remote,authentication"
-  },
-  "CVE-2024-48863": {
-    "cvss": "-",
-    "description": "A command injection vulnerability has been reported to affect License Center. If exploited, the vulnerability could allow remote attackers to execute arbitrary commands.\n\nWe have already fixed the vulnerability in the following version:\nLicense Center 1.9.43 and later",
-    "published": "2024-12-06T17:15:08.533",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-50388": {
-    "cvss": "-",
-    "description": "An OS command injection vulnerability has been reported to affect HBS 3 Hybrid Backup Sync. If exploited, the vulnerability could allow remote attackers to execute commands.\n\nWe have already fixed the vulnerability in the following version:\nHBS 3 Hybrid Backup Sync 25.1.1.673 and later",
-    "published": "2024-12-06T17:15:09.373",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-50393": {
-    "cvss": "-",
-    "description": "A command injection vulnerability has been reported to affect several QNAP operating system versions. If exploited, the vulnerability could allow remote attackers to execute arbitrary commands.\n\nWe have already fixed the vulnerability in the following versions:\nQTS 5.1.9.2954 build 20241120 and later\nQTS 5.2.2.2950 build 20241114 and later\nQuTS hero h5.1.9.2954 build 20241120 and later\nQuTS hero h5.2.2.2952 build 20241116 and later",
-    "published": "2024-12-06T17:15:09.637",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-54143": {
-    "url": "https://github.com/openwrt/asu/commit/920c8a13d97b4d4095f0d939cf0aaae777e0f87e",
-    "cvss": "-",
-    "description": "openwrt/asu is an image on demand server for OpenWrt based distributions. The request hashing mechanism truncates SHA-256 hashes to only 12 characters. This significantly reduces entropy, making it feasible for an attacker to generate collisions. By exploiting this, a previously built malicious image can be served in place of a legitimate one, allowing the attacker to \"poison\" the artifact cache and deliver compromised images to unsuspecting users. This can be combined with other attacks, such as a command injection in Imagebuilder that allows malicious users to inject arbitrary commands into the build process, resulting in the production of malicious firmware images signed with the legitimate build key. This has been patched with 920c8a1.",
-    "published": "2024-12-06T17:15:12.687"
-  },
-  "CVE-2024-48871": {
-    "cvss": 9.8,
-    "description": "The affected product is vulnerable to a stack-based buffer overflow. An unauthenticated attacker could send a malicious HTTP request that the webserver fails to properly check input size before copying data to the stack, potentially allowing remote code execution.",
-    "published": "2024-12-06T18:15:25.267",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2024-52320": {
-    "cvss": 9.8,
-    "description": "The affected product is vulnerable to a command injection. An unauthenticated attacker could send commands through a malicious HTTP request which could result in remote code execution.",
-    "published": "2024-12-06T18:15:25.737",
-    "keywords": "remote,execution,unauthenticated,command"
-  },
   "CVE-2024-11010": {
     "cvss": 7.2,
     "description": "The FileOrganizer \u2013 Manage WordPress and Website Files plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.1.4 via the 'default_lang' parameter. This makes it possible for authenticated attackers, with Administrator-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
@@ -111,6 +69,18 @@
     "cvss": "-",
     "description": "A SQL Injection vulnerability was found in the /teacher_signup.php of kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL command to get unauthorized database access via the firstname, lastname, and class_id parameters.",
     "published": "2024-12-09T15:15:21.717",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-54926": {
+    "cvss": "-",
+    "description": "A SQL Injection vulnerability was found in /search_class.php of kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the school_year parameter.",
+    "published": "2024-12-09T17:15:09.810",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-54922": {
+    "cvss": "-",
+    "description": "A SQL Injection was found in /lms/admin/edit_user.php of kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the firstname, lastname, and username parameters.",
+    "published": "2024-12-09T18:15:24.153",
     "keywords": "remote,command"
   }
 }
