@@ -160,5 +160,35 @@
     "description": "If the attacker has access to a valid Poweruser session, remote code execution is possible because specially crafted valid PNG files with injected PHP content can be uploaded as desktop backgrounds or lock screens. After the upload, the PHP script is available in the web root. The PHP code executes once the uploaded file is accessed. This allows the execution of arbitrary PHP code and OS commands on the device as \"www-data\".",
     "published": "2024-12-10T08:15:19.210",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2024-10959": {
+    "cvss": 7.3,
+    "description": "The The Active Products Tables for WooCommerce. Use constructor to create tables plugin for WordPress is vulnerable to arbitrary shortcode execution via woot_get_smth AJAX action in all versions up to, and including, 1.0.6.5. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+    "published": "2024-12-10T11:15:05.913",
+    "keywords": "execution,unauthenticated"
+  },
+  "CVE-2024-11106": {
+    "cvss": 5.3,
+    "description": "The Simple Restrict plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.2.7 via the WordPress core search feature. This makes it possible for unauthenticated attackers to extract sensitive data from posts that have been restricted to higher-level roles such as administrator.",
+    "published": "2024-12-10T11:15:07.030",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-47484": {
+    "cvss": 8.2,
+    "description": "Dell Avamar, version(s) 19.9, contain(s) an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Command execution.",
+    "published": "2024-12-10T11:15:07.400",
+    "keywords": "remote,execution,unauthenticated,command"
+  },
+  "CVE-2024-47977": {
+    "cvss": 7.1,
+    "description": "Dell Avamar, version(s) 19.9, contain(s) an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to Command execution.",
+    "published": "2024-12-10T11:15:07.550",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2024-52538": {
+    "cvss": 7.6,
+    "description": "Dell Avamar, version(s) 19.9, contain(s) an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to Script injection.",
+    "published": "2024-12-10T11:15:07.690",
+    "keywords": "remote,command"
   }
 }
