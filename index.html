@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-12-10T17:11:25.446909
+Updated at UTC 2024-12-10T18:17:23.720766
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,26 @@ Updated at UTC 2024-12-10T17:11:25.446909
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-55602">CVE-2024-55602</a></td>
+					<td>7.6</td>
+					<td><a target=_blank href="https://github.com/pwndoc/pwndoc/commit/1d4219c596f4f518798492e48386a20c6e9a2fe6">https://github.com/pwndoc/pwndoc/commit/1d4219c596f4f518798492e48386a20c6e9a2fe6</a></td>
+					<td class=date>2024-12-10T17:15:15.423</td>
+					<td class=description>PwnDoc is a penetration test report generator. Prior to commit 1d4219c596f4f518798492e48386a20c6e9a2fe6, an authenticated user who is able to update and download templates can inject path traversal (`../`) sequences into the file extension property to read arbitrary files on the system. Commit 1d4219c596f4f518798492e48386a20c6e9a2fe6 contains a patch for the issue.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -136,6 +156,48 @@ Updated at UTC 2024-12-10T17:11:25.446909
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-53866">CVE-2024-53866</a></td>
+					<td>-</td>
+					<td>execution,leak</td>
+					<td class=date>2024-12-10T18:15:42.160</td>
+					<td class=description>The package manager pnpm prior to version 9.15.0 seems to mishandle overrides and global cache: Overrides from one workspace leak into npm metadata saved in global cache; npm metadata from global cache affects other workspaces; and installs by default don't revalidate the data (including on first lockfile generation). This can make workspace A (even running with `ignore-scripts=true`) posion global cache and execute scripts in workspace B. Users generally expect `ignore-scripts` to be sufficient to prevent immediate code execution on install (e.g. when the tree is just repacked/bundled without executing it). Here, that expectation is broken. Global state integrity is lost via operations that one would expect to be secure, enabling subsequently running arbitrary code execution on installs. Version 9.15.0 fixes the issue. As a work-around, use separate cache and store dirs in each workspace.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-53247">CVE-2024-53247</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2024-12-10T18:15:41.703</td>
+					<td class=description>In Splunk Enterprise versions below 9.3.2, 9.2.4, and 9.1.7, and versions below 3.2.461 and 3.7.13 of the Splunk Secure Gateway app on Splunk Cloud Platform, a low-privileged user that does not hold the “admin“ or “power“ Splunk roles could perform a Remote Code Execution (RCE).</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-53246">CVE-2024-53246</a></td>
+					<td>5.3</td>
+					<td>command,sensitive,bypass</td>
+					<td class=date>2024-12-10T18:15:41.553</td>
+					<td class=description>In Splunk Enterprise versions below 9.3.2, 9.2.4, and 9.1.7 and Splunk Cloud Platform versions below 9.3.2408.101, 9.2.2406.106, 9.2.2403.111, and 9.1.2312.206, an SPL command can potentially disclose sensitive information. The vulnerability requires the exploitation of another vulnerability, such as a Risky Commands Bypass, for successful exploitation.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-53244">CVE-2024-53244</a></td>
+					<td>5.7</td>
+					<td>command,bypass</td>
+					<td class=date>2024-12-10T18:15:41.243</td>
+					<td class=description>In Splunk Enterprise versions below 9.3.2, 9.2.4, and 9.1.7 and Splunk Cloud Platform versions below 9.2.2406.107, 9.2.2403.109, and 9.1.2312.206, a low-privileged user that does not hold the “admin“ or “power“ Splunk roles could run a saved search with a risky command using the permissions of a higher-privileged user to bypass the SPL safeguards for risky commands on “/en-US/app/search/report“ endpoint through “s“ parameter.<br>The vulnerability requires the attacker to phish the victim by tricking them into initiating a request within their browser. The authenticated user should not be able to exploit the vulnerability at will.</td>
+				</tr>
+			
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
