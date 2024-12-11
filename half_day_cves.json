@@ -54,7 +54,7 @@
     "keywords": "remote,command"
   },
   "CVE-2024-54926": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "A SQL Injection vulnerability was found in /search_class.php of kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the school_year parameter.",
     "published": "2024-12-09T17:15:09.810",
     "keywords": "remote,command"
@@ -66,13 +66,13 @@
     "keywords": "remote,command"
   },
   "CVE-2024-46547": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "A vulnerability was found in Romain Bourdon Wampserver all versions (discovered in v3.2.3 and v3.2.6) where unauthorized users could access sensitive information due to improper access control validation via PHP Info Page. This issue can lead to data leaks.",
     "published": "2024-12-09T19:15:13.483",
     "keywords": "sensitive,leak"
   },
   "CVE-2024-48956": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "Serviceware Processes 6.0 through 7.3 allows attackers without valid authentication to send a specially crafted HTTP request to a service endpoint resulting in remote code execution.",
     "published": "2024-12-09T19:15:13.590",
     "keywords": "remote,execution,authentication"
@@ -90,19 +90,19 @@
     "keywords": "remote,execution"
   },
   "CVE-2024-54921": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "A SQL Injection was found in /student_signup.php in kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the username, firstname, lastname, and class_id parameters.",
     "published": "2024-12-09T19:15:15.940",
     "keywords": "remote,command"
   },
   "CVE-2024-54923": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "A SQL Injection vulnerability was found in /admin/edit_teacher.php in kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the department parameter.",
     "published": "2024-12-09T19:15:16.137",
     "keywords": "remote,command"
   },
   "CVE-2024-54924": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "A SQL Injection was found in /admin/edit_content.php in kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the title and content parameters.",
     "published": "2024-12-09T19:15:16.243",
     "keywords": "remote,command"
@@ -114,13 +114,13 @@
     "keywords": "remote,command"
   },
   "CVE-2024-54931": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "A SQL Injection was found in /admin/delete_event.php in kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the id parameter.",
     "published": "2024-12-09T19:15:16.677",
     "keywords": "remote,command"
   },
   "CVE-2024-54938": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "A Directory Listing issue was found in Kashipara E-Learning Management System v1.0, which allows remote attackers to access sensitive files and directories via /admin/uploads.",
     "published": "2024-12-09T19:15:17.137",
     "keywords": "remote,sensitive"
@@ -246,7 +246,7 @@
     "keywords": "remote,execution,command"
   },
   "CVE-2024-46442": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "An issue in the BYD Dilink Headunit System v3.0 to v4.0 allows attackers to bypass authentication via a bruteforce attack.",
     "published": "2024-12-10T19:15:27.030",
     "keywords": "authentication,bypass"
@@ -352,5 +352,11 @@
     "description": "The Restrict \u2013 membership, site, content and user access restrictions for WordPress plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.2.8 via the WordPress core search feature. This makes it possible for unauthenticated attackers to extract sensitive data from posts that have been restricted to higher-level roles such as administrator.",
     "published": "2024-12-11T13:15:06.350",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-28139": {
+    "cvss": "-",
+    "description": "The www-data user can elevate its privileges because sudo is configured to allow the execution of the mount command as root without a password. Therefore, the privileges can be escalated to the root user. The risk has been accepted by the vendor and won't be fixed in the near future.",
+    "published": "2024-12-11T16:15:09.930",
+    "keywords": "execution,command"
   }
 }
