@@ -328,5 +328,11 @@
     "description": "Substance3D - Modeler versions 1.14.1 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
     "published": "2024-12-10T22:15:24.463",
     "keywords": "sensitive,bypass"
+  },
+  "CVE-2024-53290": {
+    "cvss": 8.4,
+    "description": "Dell ThinOS version 2408 contains an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. An unauthenticated attacker with local access could potentially exploit this vulnerability, leading to Command execution",
+    "published": "2024-12-11T08:15:06.250",
+    "keywords": "execution,unauthenticated,command"
   }
 }
