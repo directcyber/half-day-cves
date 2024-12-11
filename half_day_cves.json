@@ -1,10 +1,4 @@
 {
-  "CVE-2024-12209": {
-    "cvss": 9.8,
-    "description": "The WP Umbrella: Update Backup Restore & Monitoring plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.17.0 via the 'filename' parameter of the 'umbrella-restore' action. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
-    "published": "2024-12-08T06:15:04.823",
-    "keywords": "execution,unauthenticated,sensitive,bypass"
-  },
   "CVE-2024-12344": {
     "cvss": 9.8,
     "description": "A vulnerability, which was classified as critical, was found in TP-Link VN020 F3v(T) TT_V6.2.1021. This affects an unknown part of the component FTP USER Command Handler. The manipulation leads to memory corruption. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
