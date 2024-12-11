@@ -346,5 +346,11 @@
     "description": "The Last Viewed Posts by WPBeginner plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.0.1 via the 'get_legacy_cookies' function. This makes it possible for unauthenticated attackers to extract sensitive data including titles and permalinks of private, password-protected, pending, and draft posts.",
     "published": "2024-12-11T11:15:06.623",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-11351": {
+    "cvss": 5.3,
+    "description": "The Restrict \u2013 membership, site, content and user access restrictions for WordPress plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.2.8 via the WordPress core search feature. This makes it possible for unauthenticated attackers to extract sensitive data from posts that have been restricted to higher-level roles such as administrator.",
+    "published": "2024-12-11T13:15:06.350",
+    "keywords": "unauthenticated,sensitive"
   }
 }
