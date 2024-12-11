@@ -334,5 +334,17 @@
     "description": "Dell ThinOS version 2408 contains an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. An unauthenticated attacker with local access could potentially exploit this vulnerability, leading to Command execution",
     "published": "2024-12-11T08:15:06.250",
     "keywords": "execution,unauthenticated,command"
+  },
+  "CVE-2024-11008": {
+    "cvss": 5.3,
+    "description": "The Members \u2013 Membership & User Role Editor Plugin plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.2.10 via the WordPress core search feature. This makes it possible for unauthenticated attackers to extract sensitive data from posts that have been restricted to higher-level roles such as administrator.",
+    "published": "2024-12-11T11:15:04.947",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-12294": {
+    "cvss": 5.3,
+    "description": "The Last Viewed Posts by WPBeginner plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.0.1 via the 'get_legacy_cookies' function. This makes it possible for unauthenticated attackers to extract sensitive data including titles and permalinks of private, password-protected, pending, and draft posts.",
+    "published": "2024-12-11T11:15:06.623",
+    "keywords": "unauthenticated,sensitive"
   }
 }
