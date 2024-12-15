@@ -1,16 +1,4 @@
 {
-  "CVE-2024-10111": {
-    "cvss": 8.1,
-    "description": "The OAuth Single Sign On \u2013 SSO (OAuth Client) plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 6.26.3. This is due to insufficient verification on the user being returned by the social login token. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the username and the user does not have an already-existing account for the service returning the token.",
-    "published": "2024-12-12T04:15:04.633",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
-  "CVE-2024-11015": {
-    "cvss": 9.8,
-    "description": "The Sign In With Google plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 1.8.0. This is due to the 'authenticate_user' user function not implementing sufficient null value checks when setting the access token and user information. This makes it possible for unauthenticated attackers to log in as the first user who has signed in using Google OAuth, which could be the site administrator.",
-    "published": "2024-12-12T04:15:04.797",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
   "CVE-2024-10590": {
     "cvss": 8.8,
     "description": "The Opt-In Downloads plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the admin_upload() function in all versions up to, and including, 4.07. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. Due to the presence of an .htaccess file, this can only be exploited to achieve RCE on NGINX servers, unless another vulnerability is present.",
@@ -226,5 +214,11 @@
     "cvss": "-",
     "description": "An issue was discovered in FastNetMon Community Edition through 1.2.7. Zero-length templates for Netflow v9 allow remote attackers to cause a denial of service (divide-by-zero error and application crash).",
     "published": "2024-12-15T03:15:16.433"
+  },
+  "CVE-2024-56074": {
+    "url": "https://github.com/cyclotruc/gitingest/pull/23",
+    "cvss": "-",
+    "description": "gitingest before 9996a06 mishandles symbolic links that point outside of the base directory.",
+    "published": "2024-12-15T04:15:05.360"
   }
 }
