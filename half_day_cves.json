@@ -1,16 +1,4 @@
 {
-  "CVE-2024-55877": {
-    "cvss": 9.9,
-    "description": "XWiki Platform is a generic wiki platform. Starting in version 9.7-rc-1 and prior to versions 15.10.11, 16.4.1, and 16.5.0, any user with an account can perform arbitrary remote code execution by adding instances of `XWiki.WikiMacroClass` to any page. This compromises the confidentiality, integrity and availability of the whole XWiki installation. This vulnerability has been fixed in XWiki 15.10.11, 16.4.1 and 16.5.0. It is possible to manually apply the patch to the page `XWiki.XWikiSyntaxMacrosList` as a workaround.",
-    "published": "2024-12-12T20:15:21.350",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-55879": {
-    "cvss": 9.1,
-    "description": "XWiki Platform is a generic wiki platform. Starting in version 2.3 and prior to versions 15.10.9, 16.3.0, any user with script rights can perform arbitrary remote code execution by adding instances of `XWiki.ConfigurableClass` to any page. This compromises the confidentiality, integrity and availability of the whole XWiki installation. This has been patched in XWiki 15.10.9 and 16.3.0. No known workarounds are available except upgrading.",
-    "published": "2024-12-12T20:15:21.623",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-21543": {
     "cvss": 7.1,
     "description": "Versions of the package djoser before 2.3.0 are vulnerable to Authentication Bypass when the authenticate() function fails. This is because the system falls back to querying the database directly, granting access to users with valid credentials, and eventually bypassing custom authentication checks such as two-factor authentication, LDAP validations, or requirements from configured AUTHENTICATION_BACKENDS.",

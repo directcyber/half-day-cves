@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-12-15T20:12:09.505080
+Updated at UTC 2024-12-15T21:10:06.876523
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -104,10 +104,6 @@ Updated at UTC 2024-12-15T20:12:09.505080
 
 
 				</tr>
-			
-		
-			
-		
 			
 		
 			
@@ -384,26 +380,6 @@ The specific flaw exists within the GV-ASWeb service. The issue results from the
 					<td>authentication,bypass</td>
 					<td class=date>2024-12-13T05:15:07.653</td>
 					<td class=description>Versions of the package djoser before 2.3.0 are vulnerable to Authentication Bypass when the authenticate() function fails. This is because the system falls back to querying the database directly, granting access to users with valid credentials, and eventually bypassing custom authentication checks such as two-factor authentication, LDAP validations, or requirements from configured AUTHENTICATION_BACKENDS.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-55879">CVE-2024-55879</a></td>
-					<td>9.1</td>
-					<td>remote,execution</td>
-					<td class=date>2024-12-12T20:15:21.623</td>
-					<td class=description>XWiki Platform is a generic wiki platform. Starting in version 2.3 and prior to versions 15.10.9, 16.3.0, any user with script rights can perform arbitrary remote code execution by adding instances of `XWiki.ConfigurableClass` to any page. This compromises the confidentiality, integrity and availability of the whole XWiki installation. This has been patched in XWiki 15.10.9 and 16.3.0. No known workarounds are available except upgrading.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-55877">CVE-2024-55877</a></td>
-					<td>9.9</td>
-					<td>remote,execution</td>
-					<td class=date>2024-12-12T20:15:21.350</td>
-					<td class=description>XWiki Platform is a generic wiki platform. Starting in version 9.7-rc-1 and prior to versions 15.10.11, 16.4.1, and 16.5.0, any user with an account can perform arbitrary remote code execution by adding instances of `XWiki.WikiMacroClass` to any page. This compromises the confidentiality, integrity and availability of the whole XWiki installation. This vulnerability has been fixed in XWiki 15.10.11, 16.4.1 and 16.5.0. It is possible to manually apply the patch to the page `XWiki.XWikiSyntaxMacrosList` as a workaround.</td>
 				</tr>
 			
 		
