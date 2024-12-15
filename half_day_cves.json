@@ -1,16 +1,4 @@
 {
-  "CVE-2024-12333": {
-    "cvss": 6.5,
-    "description": "The Woodmart theme for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 8.0.3. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode through the woodmart_instagram_ajax_query AJAX action. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
-    "published": "2024-12-12T09:15:05.390",
-    "keywords": "execution,unauthenticated"
-  },
-  "CVE-2024-21574": {
-    "cvss": 10.0,
-    "description": "The issue stems from a missing validation of the pip field in a POST request sent to the /customnode/install endpoint used to install custom nodes which is added to the server by the extension. This allows an attacker to craft a request that triggers a pip install on a user controlled package or URL, resulting in remote code execution (RCE) on the server.",
-    "published": "2024-12-12T09:15:06.037",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-21575": {
     "cvss": 8.6,
     "description": "ComfyUI-Impact-Pack is vulnerable to Path Traversal. The issue stems from missing validation of the `image.filename` field in a POST request sent to the `/upload/temp` endpoint added by the extension to the server. This results in writing arbitrary files to the file system which may, under some conditions, result in remote code execution (RCE).",

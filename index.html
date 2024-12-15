@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-12-15T09:11:13.275186
+Updated at UTC 2024-12-15T10:11:59.760522
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -104,10 +104,6 @@ Updated at UTC 2024-12-15T09:11:13.275186
 
 
 				</tr>
-			
-		
-			
-		
 			
 		
 			
@@ -432,26 +428,6 @@ The specific flaw exists within the GV-ASWeb service. The issue results from the
 					<td>remote,execution</td>
 					<td class=date>2024-12-12T15:15:12.733</td>
 					<td class=description>ComfyUI-Impact-Pack is vulnerable to Path Traversal. The issue stems from missing validation of the `image.filename` field in a POST request sent to the `/upload/temp` endpoint added by the extension to the server. This results in writing arbitrary files to the file system which may, under some conditions, result in remote code execution (RCE).</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-21574">CVE-2024-21574</a></td>
-					<td>10.0</td>
-					<td>remote,execution</td>
-					<td class=date>2024-12-12T09:15:06.037</td>
-					<td class=description>The issue stems from a missing validation of the pip field in a POST request sent to the /customnode/install endpoint used to install custom nodes which is added to the server by the extension. This allows an attacker to craft a request that triggers a pip install on a user controlled package or URL, resulting in remote code execution (RCE) on the server.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-12333">CVE-2024-12333</a></td>
-					<td>6.5</td>
-					<td>execution,unauthenticated</td>
-					<td class=date>2024-12-12T09:15:05.390</td>
-					<td class=description>The Woodmart theme for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 8.0.3. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode through the woodmart_instagram_ajax_query AJAX action. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.</td>
 				</tr>
 			
 		
