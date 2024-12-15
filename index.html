@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-12-15T05:11:36.216831
+Updated at UTC 2024-12-15T06:15:55.169247
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,18 @@ Updated at UTC 2024-12-15T05:11:36.216831
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-56082">CVE-2024-56082</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/andrewnguonly/lumos/issues/193">https://github.com/andrewnguonly/lumos/issues/193</a></td>
+					<td class=date>2024-12-15T05:15:05.803</td>
+					<td class=description>ChatBar.tsx in Lumos before 1.0.17 parses raw HTML in Markdown because the markdown-to-jsx package is used without disableParsingRawHTML set to true.</td>
+
+
+				</tr>
+			
 		
 			
 				<tr>
@@ -152,18 +164,10 @@ Updated at UTC 2024-12-15T05:11:36.216831
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
 		
 			
 		
@@ -460,56 +464,6 @@ The specific flaw exists within the GV-ASWeb service. The issue results from the
 					<td>unauthenticated,sensitive</td>
 					<td class=date>2024-12-12T07:15:10.090</td>
 					<td class=description>The Print Science Designer plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.3.152 via deserialization of untrusted input through the 'designer-saved-projects' cookie. This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable software. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-12040">CVE-2024-12040</a></td>
-					<td>8.8</td>
-					<td>execution,sensitive,bypass</td>
-					<td class=date>2024-12-12T06:15:22.947</td>
-					<td class=description>The Product Carousel Slider & Grid Ultimate for WooCommerce plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.9.10 via the 'theme' attribute of the `wcpcsu` shortcode. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-12018">CVE-2024-12018</a></td>
-					<td>4.3</td>
-					<td>authentication,leak</td>
-					<td class=date>2024-12-12T06:15:22.737</td>
-					<td class=description>The Snippet Shortcodes plugin for WordPress is vulnerable to unauthorized Shortcode Deletion due to missing authorization in all versions up to, and including, 4.1.6. Note that a nonce is used as authentication here, but the value is leaked. This makes it possible for authenticated attackers, with Subscriber-level access and above, to delete the plugin's Shortcodes.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10124">CVE-2024-10124</a></td>
-					<td>9.8</td>
-					<td>remote,execution,unauthenticated</td>
-					<td class=date>2024-12-12T06:15:20.100</td>
-					<td class=description>The Vayu Blocks – Gutenberg Blocks for WordPress & WooCommerce plugin for WordPress is vulnerable to unauthorized arbitrary plugin installation and activation due to a missing capability check on the tp_install() function in all versions up to, and including, 1.1.1. This makes it possible for unauthenticated attackers to install and activate arbitrary plugins which can be leveraged to achieve remote code execution if another vulnerable plugin is installed and activated. This vulnerability was partially patched in version 1.1.1.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10910">CVE-2024-10910</a></td>
-					<td>7.3</td>
-					<td>execution,unauthenticated</td>
-					<td class=date>2024-12-12T05:15:07.183</td>
-					<td class=description>The The Grid Plus – Unlimited grid layout plugin for WordPress is vulnerable to arbitrary shortcode execution via grid_plus_load_by_category AJAX action in all versions up to, and including, 1.3.5. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-10590">CVE-2024-10590</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-12-12T05:15:06.807</td>
-					<td class=description>The Opt-In Downloads plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the admin_upload() function in all versions up to, and including, 4.07. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. Due to the presence of an .htaccess file, this can only be exploited to achieve RCE on NGINX servers, unless another vulnerability is present.</td>
 				</tr>
 			
 		
