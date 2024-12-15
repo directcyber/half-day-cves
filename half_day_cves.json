@@ -1,350 +1,218 @@
 {
-  "CVE-2024-12350": {
+  "CVE-2024-10111": {
+    "cvss": 8.1,
+    "description": "The OAuth Single Sign On \u2013 SSO (OAuth Client) plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 6.26.3. This is due to insufficient verification on the user being returned by the social login token. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the username and the user does not have an already-existing account for the service returning the token.",
+    "published": "2024-12-12T04:15:04.633",
+    "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-11015": {
+    "cvss": 9.8,
+    "description": "The Sign In With Google plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 1.8.0. This is due to the 'authenticate_user' user function not implementing sufficient null value checks when setting the access token and user information. This makes it possible for unauthenticated attackers to log in as the first user who has signed in using Google OAuth, which could be the site administrator.",
+    "published": "2024-12-12T04:15:04.797",
+    "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-10590": {
     "cvss": 8.8,
-    "description": "A vulnerability was found in JFinalCMS 1.0. It has been rated as critical. Affected by this issue is the function update of the file \\src\\main\\java\\com\\cms\\controller\\admin\\TemplateController.java of the component Template Handler. The manipulation of the argument content leads to command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2024-12-09T01:15:05.943",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-55580": {
-    "cvss": 7.5,
-    "description": "An issue was discovered in Qlik Sense Enterprise for Windows before November 2024 IR. Unprivileged users with network access may be able to execute remote commands that could cause high availability damages, including high integrity and confidentiality risks. This is fixed in November 2024 IR, May 2024 Patch 10, February 2024 Patch 14, November 2023 Patch 16, August 2023 Patch 16, May 2023 Patch 18, and February 2023 Patch 15.",
-    "published": "2024-12-09T03:15:05.400",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-12358": {
-    "cvss": 8.8,
-    "description": "A vulnerability was found in WeiYe-Jing datax-web 2.1.1. It has been classified as critical. This affects an unknown part of the file /api/job/add/. The manipulation of the argument glueSource leads to os command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2024-12-09T05:15:07.320",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-53947": {
-    "cvss": "-",
-    "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Apache Superset. Specifically, certain engine-specific functions are not checked, which allows attackers to bypass Apache Superset's SQL authorization. This issue is a follow-up to\u00a0CVE-2024-39887 with additional disallowed PostgreSQL functions now included:\u00a0query_to_xml_and_xmlschema,\u00a0table_to_xml,\u00a0table_to_xml_and_xmlschema.\n\nThis issue affects Apache Superset: <4.1.0.\n\nUsers are recommended to upgrade to version 4.1.0, which fixes the issue or add these Postgres functions to the config set\u00a0DISALLOWED_SQL_FUNCTIONS.",
-    "published": "2024-12-09T14:15:12.267",
-    "keywords": "command,bypass"
-  },
-  "CVE-2024-54937": {
-    "cvss": 5.3,
-    "description": "A Directory Listing issue was found in Kashipara E-Learning Management System v1.0, which allows remote attackers to access sensitive files and directories via /admin/assets.",
-    "published": "2024-12-09T14:15:13.303",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-38485": {
-    "cvss": 4.3,
-    "description": "Dell ECS, versions prior to 3.8.0, contain(s) a Host Header Injection Vulnerability. A remote low-privileged attacker could potentially exploit this vulnerability to trigger redirections that leads to sensitive information leakage.",
-    "published": "2024-12-09T15:15:14.110",
-    "keywords": "remote,sensitive,leak"
-  },
-  "CVE-2024-54920": {
-    "cvss": 9.8,
-    "description": "A SQL Injection vulnerability was found in /teacher_signup.php of kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL command to get unauthorized database access via the firstname, lastname, and class_id parameters.",
-    "published": "2024-12-09T15:15:21.717",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-54926": {
-    "cvss": 9.8,
-    "description": "A SQL Injection vulnerability was found in /search_class.php of kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the school_year parameter.",
-    "published": "2024-12-09T17:15:09.810",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-54922": {
-    "cvss": 7.2,
-    "description": "A SQL Injection was found in /admin/edit_user.php of kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the firstname, lastname, and username parameters.",
-    "published": "2024-12-09T18:15:24.153",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-46547": {
-    "cvss": 7.5,
-    "description": "A vulnerability was found in Romain Bourdon Wampserver all versions (discovered in v3.2.3 and v3.2.6) where unauthorized users could access sensitive information due to improper access control validation via PHP Info Page. This issue can lead to data leaks.",
-    "published": "2024-12-09T19:15:13.483",
-    "keywords": "sensitive,leak"
-  },
-  "CVE-2024-48956": {
-    "cvss": 9.8,
-    "description": "Serviceware Processes 6.0 through 7.3 allows attackers without valid authentication to send a specially crafted HTTP request to a service endpoint resulting in remote code execution.",
-    "published": "2024-12-09T19:15:13.590",
-    "keywords": "remote,execution,authentication"
-  },
-  "CVE-2024-52586": {
-    "cvss": 5.4,
-    "description": "eLabFTW is an open source electronic lab notebook for research labs. A vulnerability has been found starting in version 4.6.0 and prior to version 5.1.0 that allows an attacker to bypass eLabFTW's built-in multifactor authentication mechanism. An attacker who can authenticate locally (by knowing or guessing the password of a user) can thus log in regardless of MFA requirements. This does not affect MFA that are performed by single sign-on services. Users are advised to upgrade to at least version 5.1.9 to receive a fix.",
-    "published": "2024-12-09T19:15:13.707",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-54918": {
-    "cvss": "-",
-    "description": "Kashipara E-learning Management System v1.0 is vulnerable to Remote Code Execution via File Upload in /teacher_avatar.php.",
-    "published": "2024-12-09T19:15:15.707",
+    "description": "The Opt-In Downloads plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the admin_upload() function in all versions up to, and including, 4.07. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. Due to the presence of an .htaccess file, this can only be exploited to achieve RCE on NGINX servers, unless another vulnerability is present.",
+    "published": "2024-12-12T05:15:06.807",
     "keywords": "remote,execution"
   },
-  "CVE-2024-54921": {
-    "cvss": 9.8,
-    "description": "A SQL Injection was found in /student_signup.php in kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the username, firstname, lastname, and class_id parameters.",
-    "published": "2024-12-09T19:15:15.940",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-54923": {
-    "cvss": 9.8,
-    "description": "A SQL Injection vulnerability was found in /admin/edit_teacher.php in kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the department parameter.",
-    "published": "2024-12-09T19:15:16.137",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-54924": {
-    "cvss": 9.8,
-    "description": "A SQL Injection was found in /admin/edit_content.php in kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the title and content parameters.",
-    "published": "2024-12-09T19:15:16.243",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-54925": {
-    "cvss": "-",
-    "description": "A SQL Injection was found in /remove_sent_message.php in kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the id parameter.",
-    "published": "2024-12-09T19:15:16.350",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-54931": {
-    "cvss": 9.8,
-    "description": "A SQL Injection was found in /admin/delete_event.php in kashipara E-learning Management System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the id parameter.",
-    "published": "2024-12-09T19:15:16.677",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-54938": {
-    "cvss": 7.5,
-    "description": "A Directory Listing issue was found in Kashipara E-Learning Management System v1.0, which allows remote attackers to access sensitive files and directories via /admin/uploads.",
-    "published": "2024-12-09T19:15:17.137",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-50628": {
-    "cvss": 8.8,
-    "description": "An issue was discovered in the web services of Digi ConnectPort LTS before 1.4.12. It allows an attacker on the local area network to achieve unauthorized manipulation of resources, which may lead to remote code execution when combined with other issues.",
-    "published": "2024-12-09T22:15:22.977",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-53919": {
-    "cvss": 7.6,
-    "description": "An injection vulnerability in Barco ClickShare CX-30/20, C-5/10, and ClickShare Bar Pro and Core models, running firmware before 2.21.1, allows physically proximate attackers or local admins to the webUI to trigger OS-level command execution as root.",
-    "published": "2024-12-10T02:15:17.350",
-    "keywords": "execution,command"
-  },
-  "CVE-2024-37143": {
-    "cvss": 10.0,
-    "description": "Dell PowerFlex appliance versions prior to IC 46.381.00 and IC 46.376.00, Dell PowerFlex rack versions prior to RCM 3.8.1.0 (for RCM 3.8.x train) and prior to RCM 3.7.6.0 (for RCM 3.7.x train), Dell PowerFlex custom node using PowerFlex Manager versions prior to 4.6.1.0, Dell InsightIQ versions prior to 5.1.1, and Dell Data Lakehouse versions prior to 1.2.0.0 contain an Improper Link Resolution Before File Access vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability to execute arbitrary code on the system.",
-    "published": "2024-12-10T03:15:05.573",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-28138": {
+  "CVE-2024-10910": {
     "cvss": 7.3,
-    "description": "An unauthenticated attacker with network access to the affected device's web interface can execute any system command via the \"msg_events.php\" script as the www-data user.\u00a0The HTTP GET parameter \"data\" is not properly sanitized.",
-    "published": "2024-12-10T08:15:18.943",
-    "keywords": "unauthenticated,command"
-  },
-  "CVE-2024-47946": {
-    "cvss": "-",
-    "description": "If the attacker has access to a valid Poweruser session, remote code execution is possible because specially crafted valid PNG files with injected PHP content can be uploaded as desktop backgrounds or lock screens. After the upload, the PHP script is available in the web root. The PHP code executes once the uploaded file is accessed. This allows the execution of arbitrary PHP code and OS commands on the device as \"www-data\".",
-    "published": "2024-12-10T08:15:19.210",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-10959": {
-    "cvss": 7.3,
-    "description": "The The Active Products Tables for WooCommerce. Use constructor to create tables plugin for WordPress is vulnerable to arbitrary shortcode execution via woot_get_smth AJAX action in all versions up to, and including, 1.0.6.5. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
-    "published": "2024-12-10T11:15:05.913",
+    "description": "The The Grid Plus \u2013 Unlimited grid layout plugin for WordPress is vulnerable to arbitrary shortcode execution via grid_plus_load_by_category AJAX action in all versions up to, and including, 1.3.5. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+    "published": "2024-12-12T05:15:07.183",
     "keywords": "execution,unauthenticated"
   },
-  "CVE-2024-11106": {
-    "cvss": 5.3,
-    "description": "The Simple Restrict plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.2.7 via the WordPress core search feature. This makes it possible for unauthenticated attackers to extract sensitive data from posts that have been restricted to higher-level roles such as administrator.",
-    "published": "2024-12-10T11:15:07.030",
+  "CVE-2024-10124": {
+    "cvss": 9.8,
+    "description": "The Vayu Blocks \u2013 Gutenberg Blocks for WordPress & WooCommerce plugin for WordPress is vulnerable to unauthorized arbitrary plugin installation and activation due to a missing capability check on the tp_install() function in all versions up to, and including, 1.1.1. This makes it possible for unauthenticated attackers to install and activate arbitrary plugins which can be leveraged to achieve remote code execution if another vulnerable plugin is installed and activated. This vulnerability was partially patched in version 1.1.1.",
+    "published": "2024-12-12T06:15:20.100",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2024-12018": {
+    "cvss": 4.3,
+    "description": "The Snippet Shortcodes plugin for WordPress is vulnerable to unauthorized Shortcode Deletion due to missing authorization in all versions up to, and including, 4.1.6. Note that a nonce is used as authentication here, but the value is leaked. This makes it possible for authenticated attackers, with Subscriber-level access and above, to delete the plugin's Shortcodes.",
+    "published": "2024-12-12T06:15:22.737",
+    "keywords": "authentication,leak"
+  },
+  "CVE-2024-12040": {
+    "cvss": 8.8,
+    "description": "The Product Carousel Slider & Grid Ultimate for WooCommerce plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.9.10 via the 'theme' attribute of the `wcpcsu` shortcode. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
+    "published": "2024-12-12T06:15:22.947",
+    "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2024-12312": {
+    "cvss": 8.1,
+    "description": "The Print Science Designer plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.3.152 via deserialization of untrusted input through the 'designer-saved-projects' cookie. This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable software. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code.",
+    "published": "2024-12-12T07:15:10.090",
     "keywords": "unauthenticated,sensitive"
   },
-  "CVE-2024-47484": {
-    "cvss": 8.2,
-    "description": "Dell Avamar, version(s) 19.9, contain(s) an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Command execution.",
-    "published": "2024-12-10T11:15:07.400",
-    "keywords": "remote,execution,unauthenticated,command"
+  "CVE-2024-12333": {
+    "cvss": 6.5,
+    "description": "The Woodmart theme for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 8.0.3. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode through the woodmart_instagram_ajax_query AJAX action. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+    "published": "2024-12-12T09:15:05.390",
+    "keywords": "execution,unauthenticated"
   },
-  "CVE-2024-47977": {
-    "cvss": 7.1,
-    "description": "Dell Avamar, version(s) 19.9, contain(s) an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to Command execution.",
-    "published": "2024-12-10T11:15:07.550",
-    "keywords": "remote,execution,command"
+  "CVE-2024-21574": {
+    "cvss": 10.0,
+    "description": "The issue stems from a missing validation of the pip field in a POST request sent to the /customnode/install endpoint used to install custom nodes which is added to the server by the extension. This allows an attacker to craft a request that triggers a pip install on a user controlled package or URL, resulting in remote code execution (RCE) on the server.",
+    "published": "2024-12-12T09:15:06.037",
+    "keywords": "remote,execution"
   },
-  "CVE-2024-52538": {
-    "cvss": 7.6,
-    "description": "Dell Avamar, version(s) 19.9, contain(s) an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to Script injection.",
-    "published": "2024-12-10T11:15:07.690",
+  "CVE-2024-21575": {
+    "cvss": 8.6,
+    "description": "ComfyUI-Impact-Pack is vulnerable to Path Traversal. The issue stems from missing validation of the `image.filename` field in a POST request sent to the `/upload/temp` endpoint added by the extension to the server. This results in writing arbitrary files to the file system which may, under some conditions, result in remote code execution (RCE).",
+    "published": "2024-12-12T15:15:12.733",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-55099": {
+    "cvss": 9.8,
+    "description": "A SQL Injection vulnerability was found in /admin/index.php in phpgurukul Online Nurse Hiring System v1.0, which allows remote attackers to execute arbitrary SQL commands to get unauthorized database access via the username parameter.",
+    "published": "2024-12-12T16:15:57.043",
     "keywords": "remote,command"
   },
-  "CVE-2024-11868": {
-    "cvss": 5.3,
-    "description": "The LearnPress \u2013 WordPress LMS Plugin plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 4.2.7.3 via class-lp-rest-material-controller.php. This makes it possible for unauthenticated attackers to extract potentially sensitive paid course material.",
-    "published": "2024-12-10T13:15:15.973",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-55602": {
-    "url": "https://github.com/pwndoc/pwndoc/commit/1d4219c596f4f518798492e48386a20c6e9a2fe6",
-    "cvss": 7.6,
-    "description": "PwnDoc is a penetration test report generator. Prior to commit 1d4219c596f4f518798492e48386a20c6e9a2fe6, an authenticated user who is able to update and download templates can inject path traversal (`../`) sequences into the file extension property to read arbitrary files on the system. Commit 1d4219c596f4f518798492e48386a20c6e9a2fe6 contains a patch for the issue.",
-    "published": "2024-12-10T17:15:15.423"
-  },
-  "CVE-2024-53244": {
-    "cvss": 5.7,
-    "description": "In Splunk Enterprise versions below 9.3.2, 9.2.4, and 9.1.7 and Splunk Cloud Platform versions below 9.2.2406.107, 9.2.2403.109, and 9.1.2312.206, a low-privileged user that does not hold the \u201cadmin\u201c or \u201cpower\u201c Splunk roles could run a saved search with a risky command using the permissions of a higher-privileged user to bypass the SPL safeguards for risky commands on \u201c/en-US/app/search/report\u201c endpoint through \u201cs\u201c parameter.<br>The vulnerability requires the attacker to phish the victim by tricking them into initiating a request within their browser. The authenticated user should not be able to exploit the vulnerability at will.",
-    "published": "2024-12-10T18:15:41.243",
-    "keywords": "command,bypass"
-  },
-  "CVE-2024-53246": {
-    "cvss": 5.3,
-    "description": "In Splunk Enterprise versions below 9.3.2, 9.2.4, and 9.1.7 and Splunk Cloud Platform versions below 9.3.2408.101, 9.2.2406.106, 9.2.2403.111, and 9.1.2312.206, an SPL command can potentially disclose sensitive information. The vulnerability requires the exploitation of another vulnerability, such as a Risky Commands Bypass, for successful exploitation.",
-    "published": "2024-12-10T18:15:41.553",
-    "keywords": "command,sensitive,bypass"
-  },
-  "CVE-2024-53247": {
-    "cvss": 8.8,
-    "description": "In Splunk Enterprise versions below 9.3.2, 9.2.4, and 9.1.7, and versions below 3.2.461 and 3.7.13 of the Splunk Secure Gateway app on Splunk Cloud Platform, a low-privileged user that does not hold the \u201cadmin\u201c or \u201cpower\u201c Splunk roles could perform a Remote Code Execution (RCE).",
-    "published": "2024-12-10T18:15:41.703",
+  "CVE-2024-55877": {
+    "cvss": 9.9,
+    "description": "XWiki Platform is a generic wiki platform. Starting in version 9.7-rc-1 and prior to versions 15.10.11, 16.4.1, and 16.5.0, any user with an account can perform arbitrary remote code execution by adding instances of `XWiki.WikiMacroClass` to any page. This compromises the confidentiality, integrity and availability of the whole XWiki installation. This vulnerability has been fixed in XWiki 15.10.11, 16.4.1 and 16.5.0. It is possible to manually apply the patch to the page `XWiki.XWikiSyntaxMacrosList` as a workaround.",
+    "published": "2024-12-12T20:15:21.350",
     "keywords": "remote,execution"
   },
-  "CVE-2024-53866": {
-    "cvss": "-",
-    "description": "The package manager pnpm prior to version 9.15.0 seems to mishandle overrides and global cache: Overrides from one workspace leak into npm metadata saved in global cache; npm metadata from global cache affects other workspaces; and installs by default don't revalidate the data (including on first lockfile generation). This can make workspace A (even running with `ignore-scripts=true`) posion global cache and execute scripts in workspace B. Users generally expect `ignore-scripts` to be sufficient to prevent immediate code execution on install (e.g. when the tree is just repacked/bundled without executing it). Here, that expectation is broken. Global state integrity is lost via operations that one would expect to be secure, enabling subsequently running arbitrary code execution on installs. Version 9.15.0 fixes the issue. As a work-around, use separate cache and store dirs in each workspace.",
-    "published": "2024-12-10T18:15:42.160",
-    "keywords": "execution,leak"
-  },
-  "CVE-2024-11633": {
+  "CVE-2024-55879": {
     "cvss": 9.1,
-    "description": "Argument injection in Ivanti Connect Secure before version 22.7R2.4 allows a remote authenticated attacker with admin privileges to achieve remote code execution",
-    "published": "2024-12-10T19:15:19.443",
+    "description": "XWiki Platform is a generic wiki platform. Starting in version 2.3 and prior to versions 15.10.9, 16.3.0, any user with script rights can perform arbitrary remote code execution by adding instances of `XWiki.ConfigurableClass` to any page. This compromises the confidentiality, integrity and availability of the whole XWiki installation. This has been patched in XWiki 15.10.9 and 16.3.0. No known workarounds are available except upgrading.",
+    "published": "2024-12-12T20:15:21.623",
     "keywords": "remote,execution"
   },
-  "CVE-2024-11634": {
-    "cvss": 9.1,
-    "description": "Command injection in Ivanti Connect Secure before version 22.7R2.3 and Ivanti Policy Secure before version 22.7R1.2 allows a remote authenticated attacker with admin privileges to achieve remote code execution. (Not applicable to 9.1Rx)",
-    "published": "2024-12-10T19:15:19.570",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-11639": {
-    "cvss": 10.0,
-    "description": "An authentication bypass in the admin web console of Ivanti CSA before 5.0.3 allows a remote unauthenticated attacker to gain administrative access",
-    "published": "2024-12-10T19:15:19.690",
-    "keywords": "remote,unauthenticated,authentication,bypass"
-  },
-  "CVE-2024-11772": {
-    "cvss": 9.1,
-    "description": "Command injection in the admin web console of Ivanti CSA before version 5.0.3 allows a remote authenticated attacker with admin privileges to achieve remote code execution.",
-    "published": "2024-12-10T19:15:19.817",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2024-46442": {
-    "cvss": 9.8,
-    "description": "An issue in the BYD Dilink Headunit System v3.0 to v4.0 allows attackers to bypass authentication via a bruteforce attack.",
-    "published": "2024-12-10T19:15:27.030",
+  "CVE-2024-21543": {
+    "cvss": 7.1,
+    "description": "Versions of the package djoser before 2.3.0 are vulnerable to Authentication Bypass when the authenticate() function fails. This is because the system falls back to querying the database directly, granting access to users with valid credentials, and eventually bypassing custom authentication checks such as two-factor authentication, LDAP validations, or requirements from configured AUTHENTICATION_BACKENDS.",
+    "published": "2024-12-13T05:15:07.653",
     "keywords": "authentication,bypass"
   },
-  "CVE-2024-54008": {
-    "cvss": 7.2,
-    "description": "An authenticated Remote Code Execution (RCE) vulnerability exists in the AirWave CLI. Successful exploitation of this vulnerability could allow a remote authenticated threat actor to run arbitrary commands as a privileged user on the underlying host.",
-    "published": "2024-12-10T19:15:30.900",
-    "keywords": "remote,execution,command"
+  "CVE-2024-12417": {
+    "cvss": 6.5,
+    "description": "The The Simple Link Directory plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 8.4.0. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+    "published": "2024-12-13T09:15:08.353",
+    "keywords": "execution,unauthenticated"
   },
-  "CVE-2024-9844": {
-    "cvss": 7.1,
-    "description": "Insufficient server-side controls in Secure Application Manager of Ivanti Connect Secure before version 22.7R2.4 allows a remote authenticated attacker to bypass restrictions.",
-    "published": "2024-12-10T19:15:31.607",
-    "keywords": "remote,bypass"
+  "CVE-2024-12420": {
+    "cvss": 6.5,
+    "description": "The The WPMobile.App \u2014 Android and iOS Mobile Application plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 11.52. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+    "published": "2024-12-13T09:15:08.627",
+    "keywords": "execution,unauthenticated"
   },
-  "CVE-2024-49532": {
-    "cvss": 5.5,
-    "description": "Acrobat Reader versions 24.005.20307, 24.001.30213, 24.001.30193, 20.005.30730, 20.005.30710 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-12-10T20:15:18.417",
-    "keywords": "sensitive,bypass"
+  "CVE-2024-12421": {
+    "cvss": 6.5,
+    "description": "The The Coupon Affiliates \u2013 Affiliate Plugin for WooCommerce plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 5.16.7.1. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes. This functionality is also vulnerable to Reflected Cross-Site Scripting. The Cross-Site Scripting was patched in version 5.16.7.1, while the arbitrary shortcode execution was patched in 5.16.7.2.",
+    "published": "2024-12-13T09:15:08.870",
+    "keywords": "execution,unauthenticated"
   },
-  "CVE-2024-49533": {
-    "cvss": 5.5,
-    "description": "Acrobat Reader versions 24.005.20307, 24.001.30213, 24.001.30193, 20.005.30730, 20.005.30710 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-12-10T20:15:18.563",
-    "keywords": "sensitive,bypass"
+  "CVE-2024-9290": {
+    "cvss": 9.8,
+    "description": "The Super Backup & Clone - Migrate for WordPress plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation and a missing capability check on the ibk_restore_migrate_check() function in all versions up to, and including, 2.3.3. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-12-13T10:15:07.507",
+    "keywords": "remote,execution,unauthenticated"
   },
-  "CVE-2024-49534": {
-    "cvss": 5.5,
-    "description": "Acrobat Reader versions 24.005.20307, 24.001.30213, 24.001.30193, 20.005.30730, 20.005.30710 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-12-10T20:15:18.743",
-    "keywords": "sensitive,bypass"
+  "CVE-2024-11986": {
+    "cvss": 9.6,
+    "description": "Improper input handling in the 'Host Header' allows an unauthenticated attacker to store a payload in web application logs. When an Administrator views the logs using the application's standard functionality, it enables the execution of the payload, resulting in Stored XSS or 'Cross-Site Scripting'.",
+    "published": "2024-12-13T14:15:21.207",
+    "keywords": "execution,unauthenticated"
   },
-  "CVE-2024-49541": {
-    "cvss": 5.5,
-    "description": "Illustrator versions 29.0.0, 28.7.2 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-12-10T21:15:16.793",
-    "keywords": "sensitive,bypass"
+  "CVE-2024-22461": {
+    "cvss": 8.8,
+    "description": "Dell RecoverPoint for Virtual Machines 6.0.x contains an OS Command injection vulnerability. A low privileged remote attacker could potentially exploit this vulnerability by running any command as root, leading to gaining of root-level access and compromise of complete system.",
+    "published": "2024-12-13T14:15:21.383",
+    "keywords": "remote,command"
   },
-  "CVE-2024-49546": {
-    "cvss": 5.5,
-    "description": "InDesign Desktop versions ID19.5, ID18.5.4 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-12-10T21:15:17.350",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-49547": {
-    "cvss": 5.5,
-    "description": "InDesign Desktop versions ID19.5, ID18.5.4 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-12-10T21:15:17.483",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-49548": {
-    "cvss": 5.5,
-    "description": "InDesign Desktop versions ID19.5, ID18.5.4 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-12-10T21:15:17.617",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-49549": {
-    "cvss": 5.5,
-    "description": "InDesign Desktop versions ID19.5, ID18.5.4 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-12-10T21:15:17.753",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-53951": {
-    "cvss": 5.5,
-    "description": "InDesign Desktop versions ID19.5, ID18.5.4 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-12-10T21:15:20.167",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-53004": {
-    "cvss": 5.5,
-    "description": "Substance3D - Modeler versions 1.14.1 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-12-10T22:15:24.287",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-53005": {
-    "cvss": 5.5,
-    "description": "Substance3D - Modeler versions 1.14.1 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2024-12-10T22:15:24.463",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2024-53290": {
-    "cvss": 8.4,
-    "description": "Dell ThinOS version 2408 contains an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. An unauthenticated attacker with local access could potentially exploit this vulnerability, leading to Command execution",
-    "published": "2024-12-11T08:15:06.250",
-    "keywords": "execution,unauthenticated,command"
-  },
-  "CVE-2024-11008": {
+  "CVE-2024-48007": {
     "cvss": 5.3,
-    "description": "The Members \u2013 Membership & User Role Editor Plugin plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.2.10 via the WordPress core search feature. This makes it possible for unauthenticated attackers to extract sensitive data from posts that have been restricted to higher-level roles such as administrator.",
-    "published": "2024-12-11T11:15:04.947",
-    "keywords": "unauthenticated,sensitive"
+    "description": "Dell RecoverPoint for Virtual Machines 6.0.x contains use of hard-coded credentials vulnerability. A Remote unauthenticated attacker could potentially exploit this vulnerability by gaining access to the source code, easily retrieving these secrets and reusing them to access the system leading to gaining access to unauthorized data.",
+    "published": "2024-12-13T14:15:22.147",
+    "keywords": "remote,unauthenticated"
   },
-  "CVE-2024-12294": {
+  "CVE-2024-48008": {
     "cvss": 5.3,
-    "description": "The Last Viewed Posts by WPBeginner plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.0.1 via the 'get_legacy_cookies' function. This makes it possible for unauthenticated attackers to extract sensitive data including titles and permalinks of private, password-protected, pending, and draft posts.",
-    "published": "2024-12-11T11:15:06.623",
-    "keywords": "unauthenticated,sensitive"
+    "description": "Dell RecoverPoint for Virtual Machines 6.0.x contains a OS Command Injection vulnerability. An Low privileged remote attacker could potentially exploit this vulnerability leading to information disclosure ,allowing of unintended actions like reading files that may contain sensitive information",
+    "published": "2024-12-13T14:15:22.273",
+    "keywords": "remote,command,sensitive"
   },
-  "CVE-2024-11351": {
-    "cvss": 5.3,
-    "description": "The Restrict \u2013 membership, site, content and user access restrictions for WordPress plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.2.8 via the WordPress core search feature. This makes it possible for unauthenticated attackers to extract sensitive data from posts that have been restricted to higher-level roles such as administrator.",
-    "published": "2024-12-11T13:15:06.350",
-    "keywords": "unauthenticated,sensitive"
+  "CVE-2024-28980": {
+    "cvss": 6.5,
+    "description": "Dell RecoverPoint for VMs, version(s) 6.0.x contain(s) a Use of a Broken or Risky Cryptographic Algorithm vulnerability in the SSH. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Remote execution.",
+    "published": "2024-12-13T15:15:26.953",
+    "keywords": "remote,execution,unauthenticated"
   },
-  "CVE-2024-28139": {
+  "CVE-2024-54294": {
+    "cvss": 9.8,
+    "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in appgenixinfotech Firebase OTP Authentication allows Authentication Bypass.This issue affects Firebase OTP Authentication: from n/a through 1.0.1.",
+    "published": "2024-12-13T15:15:33.420",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-54295": {
+    "cvss": 9.8,
+    "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in InspireUI ListApp Mobile Manager allows Authentication Bypass.This issue affects ListApp Mobile Manager: from n/a through 1.7.7.",
+    "published": "2024-12-13T15:15:33.557",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-54296": {
+    "cvss": 9.8,
+    "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Codexpert, Inc CoSchool LMS allows Authentication Bypass.This issue affects CoSchool LMS: from n/a through 1.2.",
+    "published": "2024-12-13T15:15:33.693",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-54297": {
+    "cvss": 9.8,
+    "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in www.vbsso.com vBSSO-lite allows Authentication Bypass.This issue affects vBSSO-lite: from n/a through 1.4.3.",
+    "published": "2024-12-13T15:15:33.827",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-54336": {
+    "cvss": 8.8,
+    "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Projectopia Projectopia allows Authentication Bypass.This issue affects Projectopia: from n/a through 5.1.7.",
+    "published": "2024-12-13T15:15:40.770",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-55661": {
+    "cvss": 8.8,
+    "description": "Laravel Pulse is a real-time application performance monitoring tool and dashboard for Laravel applications. A vulnerability has been discovered in Laravel Pulse prior to version 1.3.1 that could allow remote code execution through the public `remember()` method in the `Laravel\\Pulse\\Livewire\\Concerns\\RemembersQueries` trait. This method is accessible via Livewire components and can be exploited to call arbitrary callables within the application. An authenticated user with access to Laravel Pulse dashboard can execute arbitrary code by calling any function or static method in which the callable is a function or static method and the callable has no parameters or no strict parameter types. The vulnerable to component is `remember(callable $query, string $key = '')` method in `Laravel\\Pulse\\Livewire\\Concerns\\RemembersQueries`, and the vulnerability affects all Pulse card components that use this trait. Version 1.3.1 contains a patch.",
+    "published": "2024-12-13T16:15:27.767",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-55890": {
     "cvss": "-",
-    "description": "The www-data user can elevate its privileges because sudo is configured to allow the execution of the mount command as root without a password. Therefore, the privileges can be escalated to the root user. The risk has been accepted by the vendor and won't be fixed in the near future.",
-    "published": "2024-12-11T16:15:09.930",
-    "keywords": "execution,command"
+    "description": "D-Tale is a visualizer for pandas data structures. Prior to version 3.16.1, users hosting D-Tale publicly can be vulnerable to remote code execution allowing attackers to run malicious code on the server. Users should upgrade to version 3.16.1 where the `update-settings` endpoint blocks the ability for users to update the `enable_custom_filters` flag. The only workaround for versions earlier than 3.16.1 is to only host D-Tale to trusted users.",
+    "published": "2024-12-13T18:15:22.373",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-55956": {
+    "cvss": "-",
+    "description": "In Cleo Harmony before 5.8.0.24, VLTrader before 5.8.0.24, and LexiCom before 5.8.0.24, an unauthenticated user can import and execute arbitrary Bash or PowerShell commands on the host system by leveraging the default settings of the Autorun directory.",
+    "published": "2024-12-13T21:15:13.767",
+    "keywords": "unauthenticated,command"
+  },
+  "CVE-2024-12553": {
+    "cvss": 6.5,
+    "description": "GeoVision GV-ASManager Missing Authorization Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of GeoVision GV-ASManager. Although authentication is required to exploit this vulnerability, default guest credentials may be used.\n\nThe specific flaw exists within the GV-ASWeb service. The issue results from the lack of authorization prior to allowing access to functionality. An attacker can leverage this vulnerability to disclose stored credentials, leading to further compromise. Was ZDI-CAN-25394.",
+    "published": "2024-12-13T23:15:06.310",
+    "keywords": "remote,authentication,sensitive"
+  },
+  "CVE-2024-12578": {
+    "cvss": 5.3,
+    "description": "The Tickera \u2013 WordPress Event Ticketing plugin for WordPress is vulnerable to Information Exposure in all versions up to, and including, 3.5.4.8 via the 'tickera_tickets_info' endpoint. This makes it possible for unauthenticated attackers to extract sensitive data from bookings like full names, email addresses, check-in/out timestamps and more.",
+    "published": "2024-12-14T05:15:12.000",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-9698": {
+    "cvss": 7.2,
+    "description": "The Crafthemes Demo Import plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'process_uploaded_files' function in all versions up to, and including, 3.3. This makes it possible for authenticated attackers, with Administrator-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2024-12-14T05:15:12.987",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-11711": {
+    "cvss": 7.5,
+    "description": "The WP Job Portal \u2013 A Complete Recruitment System for Company or Job Board website plugin for WordPress is vulnerable to SQL Injection via the 'resumeid' parameter in all versions up to, and including, 2.2.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2024-12-14T07:15:06.187",
+    "keywords": "unauthenticated,sensitive"
   }
 }
