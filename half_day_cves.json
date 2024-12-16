@@ -1,10 +1,4 @@
 {
-  "CVE-2024-21543": {
-    "cvss": 7.1,
-    "description": "Versions of the package djoser before 2.3.0 are vulnerable to Authentication Bypass when the authenticate() function fails. This is because the system falls back to querying the database directly, granting access to users with valid credentials, and eventually bypassing custom authentication checks such as two-factor authentication, LDAP validations, or requirements from configured AUTHENTICATION_BACKENDS.",
-    "published": "2024-12-13T05:15:07.653",
-    "keywords": "authentication,bypass"
-  },
   "CVE-2024-12417": {
     "cvss": 6.5,
     "description": "The The Simple Link Directory plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 8.4.0. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
@@ -160,5 +154,23 @@
     "description": "CyberPanel before 2.3.8 allows remote authenticated users to execute arbitrary commands via shell metacharacters in the phpSelection field to the websites/submitWebsiteCreation URI.",
     "published": "2024-12-16T04:15:05.263",
     "keywords": "remote,command"
+  },
+  "CVE-2024-56084": {
+    "cvss": "-",
+    "description": "An issue was discovered in Logpoint UniversalNormalizer before 5.7.0. Authenticated users can inject payloads while creating Universal Normalizer. These are executed, leading to Remote Code Execution.",
+    "published": "2024-12-16T06:15:07.070",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-56086": {
+    "cvss": "-",
+    "description": "An issue was discovered in Logpoint before 7.5.0. Authenticated users can inject payloads in Report Templates. These are executed when the backup process is initiated, leading to Remote Code Execution.",
+    "published": "2024-12-16T06:15:07.557",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-56112": {
+    "url": "https://github.com/usmannasir/cyberpanel/commit/f0cf648c7851c96c36bb0c390d13e60931f45900",
+    "cvss": "-",
+    "description": "CyberPanel (aka Cyber Panel) before f0cf648 allows XSS via token or username to plogical/phpmyadminsignin.php.",
+    "published": "2024-12-16T06:15:07.920"
   }
 }
