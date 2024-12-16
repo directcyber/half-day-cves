@@ -1,28 +1,4 @@
 {
-  "CVE-2024-11986": {
-    "cvss": 9.6,
-    "description": "Improper input handling in the 'Host Header' allows an unauthenticated attacker to store a payload in web application logs. When an Administrator views the logs using the application's standard functionality, it enables the execution of the payload, resulting in Stored XSS or 'Cross-Site Scripting'.",
-    "published": "2024-12-13T14:15:21.207",
-    "keywords": "execution,unauthenticated"
-  },
-  "CVE-2024-22461": {
-    "cvss": 8.8,
-    "description": "Dell RecoverPoint for Virtual Machines 6.0.x contains an OS Command injection vulnerability. A low privileged remote attacker could potentially exploit this vulnerability by running any command as root, leading to gaining of root-level access and compromise of complete system.",
-    "published": "2024-12-13T14:15:21.383",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-48007": {
-    "cvss": 5.3,
-    "description": "Dell RecoverPoint for Virtual Machines 6.0.x contains use of hard-coded credentials vulnerability. A Remote unauthenticated attacker could potentially exploit this vulnerability by gaining access to the source code, easily retrieving these secrets and reusing them to access the system leading to gaining access to unauthorized data.",
-    "published": "2024-12-13T14:15:22.147",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-48008": {
-    "cvss": 5.3,
-    "description": "Dell RecoverPoint for Virtual Machines 6.0.x contains a OS Command Injection vulnerability. An Low privileged remote attacker could potentially exploit this vulnerability leading to information disclosure ,allowing of unintended actions like reading files that may contain sensitive information",
-    "published": "2024-12-13T14:15:22.273",
-    "keywords": "remote,command,sensitive"
-  },
   "CVE-2024-28980": {
     "cvss": 6.5,
     "description": "Dell RecoverPoint for VMs, version(s) 6.0.x contain(s) a Use of a Broken or Risky Cryptographic Algorithm vulnerability in the SSH. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Remote execution.",
