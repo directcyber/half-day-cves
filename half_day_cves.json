@@ -1,22 +1,4 @@
 {
-  "CVE-2024-12417": {
-    "cvss": 6.5,
-    "description": "The The Simple Link Directory plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 8.4.0. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
-    "published": "2024-12-13T09:15:08.353",
-    "keywords": "execution,unauthenticated"
-  },
-  "CVE-2024-12420": {
-    "cvss": 6.5,
-    "description": "The The WPMobile.App \u2014 Android and iOS Mobile Application plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 11.52. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
-    "published": "2024-12-13T09:15:08.627",
-    "keywords": "execution,unauthenticated"
-  },
-  "CVE-2024-12421": {
-    "cvss": 6.5,
-    "description": "The The Coupon Affiliates \u2013 Affiliate Plugin for WooCommerce plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 5.16.7.1. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes. This functionality is also vulnerable to Reflected Cross-Site Scripting. The Cross-Site Scripting was patched in version 5.16.7.1, while the arbitrary shortcode execution was patched in 5.16.7.2.",
-    "published": "2024-12-13T09:15:08.870",
-    "keywords": "execution,unauthenticated"
-  },
   "CVE-2024-9290": {
     "cvss": 9.8,
     "description": "The Super Backup & Clone - Migrate for WordPress plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation and a missing capability check on the ibk_restore_migrate_check() function in all versions up to, and including, 2.3.3. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
