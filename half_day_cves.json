@@ -172,5 +172,47 @@
     "cvss": "-",
     "description": "CyberPanel (aka Cyber Panel) before f0cf648 allows XSS via token or username to plogical/phpmyadminsignin.php.",
     "published": "2024-12-16T06:15:07.920"
+  },
+  "CVE-2024-12641": {
+    "cvss": 9.6,
+    "description": "TenderDocTransfer from Chunghwa Telecom has a Reflected Cross-site scripting vulnerability. The application sets up a simple local web server and provides APIs for communication with the target website. Due to the lack of CSRF protection for the APIs, unauthenticated remote attackers could use specific APIs through phishing to execute arbitrary JavaScript code in the user\u2019s browser. Since the web server set by the application supports Node.Js features, attackers can further leverage this to run OS commands.",
+    "published": "2024-12-16T07:15:05.787",
+    "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2024-12642": {
+    "cvss": 8.1,
+    "description": "TenderDocTransfer from Chunghwa Telecom has an Arbitrary File Write vulnerability. The application sets up a simple local web server and provides APIs for communication with the target website. Due to the lack of CSRF protection for the APIs, unauthenticated remote attackers could use these APIs through phishing. Additionally, one of the APIs contains a Relative Path Traversal vulnerability, allowing attackers to write arbitrary files to any path on the user's system.",
+    "published": "2024-12-16T07:15:06.023",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-12643": {
+    "cvss": 8.1,
+    "description": "The tbm-client from Chunghwa Telecom has an Arbitrary File Delete vulnerability. The application sets up a simple local web server and provides APIs for communication with the target website. Due to the lack of CSRF protection in the APIs, unauthenticated remote attackers could use these APIs through phishing. Additionally, one of the APIs contains an Absolute Path Traversal vulnerability, allowing attackers to delete arbitrary files on the user's system.",
+    "published": "2024-12-16T07:15:06.217",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-12644": {
+    "cvss": 7.1,
+    "description": "The tbm-client from Chunghwa Telecom has an Arbitrary File vulnerability. The application sets up a simple local web server and provides APIs for communication with the target website. Due to the lack of CSRF protection in the APIs, unauthenticated remote attackers could use these APIs through phishing. Additionally, one of the APIs contains an Absolute Path Traversal vulnerability. Attackers can copy arbitrary files on the user's system and paste them into any path, which poses a potential risk of information leakage or could consume hard drive space by copying files in large volumes.",
+    "published": "2024-12-16T07:15:06.387",
+    "keywords": "remote,unauthenticated,leak"
+  },
+  "CVE-2024-12645": {
+    "cvss": 6.5,
+    "description": "The topm-client from Chunghwa Telecom has an Arbitrary File Read vulnerability. The application sets up a simple local web server and provides APIs for communication with the target website. Due to the lack of CSRF protection for the APIs, unauthenticated remote attackers could use these APIs through phishing. Additionally, one of the APIs contains a Relative Path Traversal vulnerability, allowing attackers to read arbitrary files on the user's system.",
+    "published": "2024-12-16T07:15:06.560",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-12646": {
+    "cvss": 8.1,
+    "description": "The topm-client from Chunghwa Telecom has an Arbitrary File Delete vulnerability. The application sets up a simple local web server and provides APIs for communication with the target website. Due to the lack of CSRF protection in the APIs, unauthenticated remote attackers could use these APIs through phishing. Additionally, one of the APIs contains an Absolute Path Traversal vulnerability, allowing attackers to delete arbitrary files on the user's system.",
+    "published": "2024-12-16T07:15:06.737",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-9678": {
+    "cvss": 4.9,
+    "description": "An SQL Injection vulnerability existed in DLP Extension 11.11.1.3.  The vulnerability allowed an attacker to perform arbitrary SQL queries potentially leading to command execution.",
+    "published": "2024-12-16T07:15:06.917",
+    "keywords": "execution,command"
   }
 }
