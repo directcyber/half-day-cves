@@ -130,5 +130,11 @@
     "description": "The server lacks thread safety and can be crashed by anomalous data sent by an anonymous user from a remote network. The crash causes the FTP service to become unavailable, affecting all users and processes that rely on it for file transfers. If the crash occurs during file upload or download, it could lead to incomplete file transfers, potentially corrupting data. The repeated crash might also affect the stability of the underlying system, especially if it leads to resource leaks or affects other services.",
     "published": "2024-12-16T17:15:07.327",
     "keywords": "remote,leak"
+  },
+  "CVE-2024-12663": {
+    "url": "https://github.com/funnyzpc/mee-admin/issues/9",
+    "cvss": 3.7,
+    "description": "A vulnerability classified as problematic was found in funnyzpc Mee-Admin up to 1.6. This vulnerability affects unknown code of the file /mee/login of the component Login. The manipulation of the argument username leads to observable response discrepancy. The attack can be initiated remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used.",
+    "published": "2024-12-16T19:15:07.200"
   }
 }
