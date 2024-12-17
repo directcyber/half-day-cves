@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-12-17T05:12:21.832369
+Updated at UTC 2024-12-17T06:17:09.983543
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-12-17T05:12:21.832369
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -138,12 +140,18 @@ Updated at UTC 2024-12-17T05:12:21.832369
 		
 			
 		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-12356">CVE-2024-12356</a></td>
+					<td>9.8</td>
+					<td>remote,unauthenticated,command</td>
+					<td class=date>2024-12-17T05:15:06.413</td>
+					<td class=description>A critical vulnerability has been discovered in Privileged Remote Access (PRA) and Remote Support (RS) products which can allow an unauthenticated attacker to inject commands that are run as a site user.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -316,26 +324,6 @@ This could allow an unauthenticated remote attacker to execute arbitrary code.</
 					<td>unauthenticated,sensitive</td>
 					<td class=date>2024-12-14T07:15:06.187</td>
 					<td class=description>The WP Job Portal – A Complete Recruitment System for Company or Job Board website plugin for WordPress is vulnerable to SQL Injection via the 'resumeid' parameter in all versions up to, and including, 2.2.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-9698">CVE-2024-9698</a></td>
-					<td>7.2</td>
-					<td>remote,execution</td>
-					<td class=date>2024-12-14T05:15:12.987</td>
-					<td class=description>The Crafthemes Demo Import plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'process_uploaded_files' function in all versions up to, and including, 3.3. This makes it possible for authenticated attackers, with Administrator-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-12578">CVE-2024-12578</a></td>
-					<td>5.3</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2024-12-14T05:15:12.000</td>
-					<td class=description>The Tickera – WordPress Event Ticketing plugin for WordPress is vulnerable to Information Exposure in all versions up to, and including, 3.5.4.8 via the 'tickera_tickets_info' endpoint. This makes it possible for unauthenticated attackers to extract sensitive data from bookings like full names, email addresses, check-in/out timestamps and more.</td>
 				</tr>
 			
 		
