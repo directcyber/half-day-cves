@@ -142,5 +142,23 @@
     "description": "The Easy Digital Downloads plugin for WordPress is vulnerable to Improper Authorization in versions 3.1 through 3.3.4. This is due to a lack of sufficient validation checks within the 'verify_guest_email' function to ensure the requesting user is the intended recipient of the purchase receipt. This makes it possible for unauthenticated attackers to bypass intended security restrictions and view the receipts of other users, which contains a link to download paid content. Successful exploitation requires knowledge of another customers email address as well as the file ID of the content they purchased.",
     "published": "2024-12-17T12:15:21.157",
     "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2024-49818": {
+    "cvss": 4.3,
+    "description": "IBM Security Guardium Key Lifecycle Manager 4.1, 4.1.1, 4.2.0, and 4.2.1 \n\ncould allow a remote attacker to obtain sensitive information when a detailed technical error message is returned in the browser. This information could be used in further attacks against the system.",
+    "published": "2024-12-17T18:15:24.127",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-49819": {
+    "cvss": 4.1,
+    "description": "IBM Security Guardium Key Lifecycle Manager 4.1, 4.1.1, 4.2.0, and 4.2.1\u00a0could allow a remote attacker to obtain sensitive information in cleartext in a communication channel that can be sniffed by unauthorized actors.",
+    "published": "2024-12-17T18:15:24.300",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-49820": {
+    "cvss": 3.7,
+    "description": "IBM Security Guardium Key Lifecycle Manager 4.1, 4.1.1, 4.2.0, and 4.2.1\u00a0could allow a remote attacker to obtain sensitive information, caused by the failure to properly enable HTTP Strict Transport Security. An attacker could exploit this vulnerability to obtain sensitive information using man in the middle techniques.",
+    "published": "2024-12-17T18:15:24.463",
+    "keywords": "remote,sensitive"
   }
 }
