@@ -1,10 +1,4 @@
 {
-  "CVE-2024-12553": {
-    "cvss": 6.5,
-    "description": "GeoVision GV-ASManager Missing Authorization Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of GeoVision GV-ASManager. Although authentication is required to exploit this vulnerability, default guest credentials may be used.\n\nThe specific flaw exists within the GV-ASWeb service. The issue results from the lack of authorization prior to allowing access to functionality. An attacker can leverage this vulnerability to disclose stored credentials, leading to further compromise. Was ZDI-CAN-25394.",
-    "published": "2024-12-13T23:15:06.310",
-    "keywords": "remote,authentication,sensitive"
-  },
   "CVE-2024-12578": {
     "cvss": 5.3,
     "description": "The Tickera \u2013 WordPress Event Ticketing plugin for WordPress is vulnerable to Information Exposure in all versions up to, and including, 3.5.4.8 via the 'tickera_tickets_info' endpoint. This makes it possible for unauthenticated attackers to extract sensitive data from bookings like full names, email addresses, check-in/out timestamps and more.",
