@@ -12,7 +12,7 @@
     "published": "2024-12-15T05:15:05.803"
   },
   "CVE-2024-53376": {
-    "cvss": "-",
+    "cvss": 8.8,
     "description": "CyberPanel before 2.3.8 allows remote authenticated users to execute arbitrary commands via shell metacharacters in the phpSelection field to the websites/submitWebsiteCreation URI.",
     "published": "2024-12-16T04:15:05.263",
     "keywords": "remote,command"
@@ -160,5 +160,11 @@
     "description": "IBM Security Guardium Key Lifecycle Manager 4.1, 4.1.1, 4.2.0, and 4.2.1\u00a0could allow a remote attacker to obtain sensitive information, caused by the failure to properly enable HTTP Strict Transport Security. An attacker could exploit this vulnerability to obtain sensitive information using man in the middle techniques.",
     "published": "2024-12-17T18:15:24.463",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2024-49194": {
+    "cvss": "-",
+    "description": "Databricks JDBC Driver before 2.6.40 could potentially allow remote code execution (RCE) by triggering a JNDI injection via a JDBC URL parameter. The vulnerability is rooted in the improper handling of the krbJAASFile parameter. An attacker could potentially exploit this vulnerability to achieve Remote Code Execution in the context of the driver by tricking a victim into using a crafted connection URL that uses the property krbJAASFile.",
+    "published": "2024-12-17T20:15:22.243",
+    "keywords": "remote,execution"
   }
 }
