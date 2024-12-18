@@ -1,10 +1,4 @@
 {
-  "CVE-2024-56082": {
-    "url": "https://github.com/andrewnguonly/lumos/issues/193",
-    "cvss": 3.5,
-    "description": "ChatBar.tsx in Lumos before 1.0.17 parses raw HTML in Markdown because the markdown-to-jsx package is used without disableParsingRawHTML set to true.",
-    "published": "2024-12-15T05:15:05.803"
-  },
   "CVE-2024-53376": {
     "cvss": 8.8,
     "description": "CyberPanel before 2.3.8 allows remote authenticated users to execute arbitrary commands via shell metacharacters in the phpSelection field to the websites/submitWebsiteCreation URI.",
@@ -178,5 +172,23 @@
     "description": "The Collapsing Categories plugin for WordPress is vulnerable to SQL Injection via the 'taxonomy' parameter of the /wp-json/collapsing-categories/v1/get REST API in all versions up to, and including, 3.0.8 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
     "published": "2024-12-18T04:15:07.347",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-56169": {
+    "url": "https://github.com/nicmx/fort-validator/issues/82",
+    "cvss": "-",
+    "description": "A validation integrity issue was discovered in Fort through 1.6.4 before 2.0.0. RPKI Relying Parties (such as Fort) are supposed to maintain a backup cache of the remote RPKI data. This can be employed as a fallback in case a new fetch fails or yields incorrect files. However, the product currently uses its cache merely as a bandwidth saving tool (because fetching is performed through deltas). If a fetch fails midway or yields incorrect files, there is no viable fallback. This leads to incomplete route origin validation data.",
+    "published": "2024-12-18T05:15:08.853"
+  },
+  "CVE-2024-21546": {
+    "cvss": 9.8,
+    "description": "Versions of the package unisharp/laravel-filemanager before 2.9.1 are vulnerable to Remote Code Execution (RCE) through using a valid mimetype and inserting the . character after the php file extension. This allows the attacker to execute malicious code.",
+    "published": "2024-12-18T06:15:22.850",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-4464": {
+    "cvss": 7.5,
+    "description": "Authorization bypass through user-controlled key vulnerability in streaming service in Synology Media Server before 1.4-2680, 2.0.5-3152 and 2.2.0-3325 allows remote attackers to read specific files via unspecified vectors.",
+    "published": "2024-12-18T06:15:23.587",
+    "keywords": "remote,bypass"
   }
 }
