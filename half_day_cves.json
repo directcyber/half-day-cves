@@ -157,12 +157,12 @@
   },
   "CVE-2024-29646": {
     "url": "https://github.com/radareorg/radare2/pull/22562",
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "Buffer Overflow vulnerability in radarorg radare2 v.5.8.8 allows an attacker to execute arbitrary code via the name, type, or group fields.",
     "published": "2024-12-17T22:15:06.550"
   },
   "CVE-2024-51175": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "An issue in H3C switch h3c-S1526 allows a remote attacker to obtain sensitive information via the S1526.cfg component.",
     "published": "2024-12-17T22:15:06.967",
     "keywords": "remote,sensitive"
@@ -232,5 +232,11 @@
     "description": "A Cleartext Storage of Sensitive Information vulnerability [CWE-312] in FortiClientWindows 7.4.0 through 7.4.1, 7.2.0 through 7.2.6, 7.0.0 through 7.0.13 and FortiClientLinux 7.4.0 through 7.4.2, 7.2.0 through 7.2.7, 7.0.0 through 7.0.13 may permit a local authenticated user to retrieve VPN password via memory dump, due to JavaScript's garbage collector",
     "published": "2024-12-18T13:15:06.723",
     "keywords": "sensitive,vpn"
+  },
+  "CVE-2024-12372": {
+    "cvss": "-",
+    "description": "A denial-of-service and possible remote code execution vulnerability exists in the Rockwell Automation Power Monitor 1000. The vulnerability results in corruption of the heap memory which may compromise the integrity of the system, potentially allowing for remote code execution or a denial-of-service attack.",
+    "published": "2024-12-18T16:15:11.050",
+    "keywords": "remote,execution"
   }
 }
