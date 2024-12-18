@@ -268,5 +268,17 @@
     "description": "Misskey is an open source, federated social media platform. In affected versions missing validation in `ApInboxService.update` allows an attacker to modify the result of polls belonging to another user. No authentication is required, except for a valid signature from any actor on any remote instance. Vulnerable Misskey instances will accept spoofed updates for remote polls. Local polls are unaffected. This issue has been addressed in version 2024.11.0-alpha.3. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
     "published": "2024-12-18T20:15:23.840",
     "keywords": "remote,authentication"
+  },
+  "CVE-2024-12686": {
+    "cvss": 6.6,
+    "description": "A vulnerability has been discovered in Privileged Remote Access (PRA) and Remote Support (RS) which can allow an attacker with existing administrative privileges to inject commands and run as a site user.",
+    "published": "2024-12-18T21:15:08.020",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-56145": {
+    "cvss": "-",
+    "description": "Craft is a flexible, user-friendly CMS for creating custom digital experiences on the web and beyond. Users of affected versions are affected by this vulnerability if their php.ini configuration has `register_argc_argv` enabled. For these users an unspecified remote code execution vector is present. Users are advised to update to version 4.13.2 or 5.5.2. Users unable to upgrade should disable `register_argc_argv` to mitigate the issue.",
+    "published": "2024-12-18T21:15:08.530",
+    "keywords": "remote,execution"
   }
 }
