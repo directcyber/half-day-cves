@@ -1,10 +1,4 @@
 {
-  "CVE-2024-53376": {
-    "cvss": 8.8,
-    "description": "CyberPanel before 2.3.8 allows remote authenticated users to execute arbitrary commands via shell metacharacters in the phpSelection field to the websites/submitWebsiteCreation URI.",
-    "published": "2024-12-16T04:15:05.263",
-    "keywords": "remote,command"
-  },
   "CVE-2024-56084": {
     "cvss": 7.1,
     "description": "An issue was discovered in Logpoint UniversalNormalizer before 5.7.0. Authenticated users can inject payloads while creating Universal Normalizer. These are executed, leading to Remote Code Execution.",
@@ -304,5 +298,11 @@
     "cvss": "-",
     "description": "In Matter (aka connectedhomeip or Project CHIP) through 1.4.0.0 before e3277eb, unlimited user label appends in a userlabel cluster can lead to a denial of service (resource exhaustion).",
     "published": "2024-12-18T23:15:18.373"
+  },
+  "CVE-2024-11984": {
+    "cvss": "-",
+    "description": "A unrestricted upload of file with dangerous type vulnerability in epaper draft function in Corporate Training Management System before 10.13 allows remote authenticated users to bypass file upload restrictions and perform arbitrary system commands with SYSTEM privilege via a crafted ZIP file.",
+    "published": "2024-12-19T04:15:05.127",
+    "keywords": "remote,command,bypass"
   }
 }
