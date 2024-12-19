@@ -280,5 +280,29 @@
     "description": "Craft is a flexible, user-friendly CMS for creating custom digital experiences on the web and beyond. Users of affected versions are affected by this vulnerability if their php.ini configuration has `register_argc_argv` enabled. For these users an unspecified remote code execution vector is present. Users are advised to update to version 4.13.2 or 5.5.2. Users unable to upgrade should disable `register_argc_argv` to mitigate the issue.",
     "published": "2024-12-18T21:15:08.530",
     "keywords": "remote,execution"
+  },
+  "CVE-2024-55461": {
+    "cvss": "-",
+    "description": "SeaCMS <=13.0 is vulnerable to command execution in phome.php via the function Ebak_RepPathFiletext().",
+    "published": "2024-12-18T23:15:17.350",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-56317": {
+    "url": "https://github.com/project-chip/connectedhomeip/issues/36535",
+    "cvss": "-",
+    "description": "In Matter (aka connectedhomeip or Project CHIP) through 1.4.0.0, the WriteAcl function deletes all existing ACL entries first, and then attempts to recreate them based on user input. If input validation fails during decoding, the process stops, and no entries are restored by access-control-server.cpp, i.e., a denial of service.",
+    "published": "2024-12-18T23:15:18.023"
+  },
+  "CVE-2024-56318": {
+    "url": "https://github.com/project-chip/connectedhomeip/pull/36751",
+    "cvss": "-",
+    "description": "In raw\\TCP.cpp in Matter (aka connectedhomeip or Project CHIP) through 1.4.0.0 before 27ca6ec, there is a NULL pointer dereference in TCPBase::ProcessSingleMessage via TCP packets with zero messageSize, leading to denial of service.",
+    "published": "2024-12-18T23:15:18.213"
+  },
+  "CVE-2024-56319": {
+    "url": "https://github.com/project-chip/connectedhomeip/pull/36843",
+    "cvss": "-",
+    "description": "In Matter (aka connectedhomeip or Project CHIP) through 1.4.0.0 before e3277eb, unlimited user label appends in a userlabel cluster can lead to a denial of service (resource exhaustion).",
+    "published": "2024-12-18T23:15:18.373"
   }
 }

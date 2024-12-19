@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-12-18T23:11:25.778251
+Updated at UTC 2024-12-19T00:56:16.233701
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,44 @@ Updated at UTC 2024-12-18T23:11:25.778251
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-56319">CVE-2024-56319</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/project-chip/connectedhomeip/pull/36843">https://github.com/project-chip/connectedhomeip/pull/36843</a></td>
+					<td class=date>2024-12-18T23:15:18.373</td>
+					<td class=description>In Matter (aka connectedhomeip or Project CHIP) through 1.4.0.0 before e3277eb, unlimited user label appends in a userlabel cluster can lead to a denial of service (resource exhaustion).</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-56318">CVE-2024-56318</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/project-chip/connectedhomeip/pull/36751">https://github.com/project-chip/connectedhomeip/pull/36751</a></td>
+					<td class=date>2024-12-18T23:15:18.213</td>
+					<td class=description>In raw\TCP.cpp in Matter (aka connectedhomeip or Project CHIP) through 1.4.0.0 before 27ca6ec, there is a NULL pointer dereference in TCPBase::ProcessSingleMessage via TCP packets with zero messageSize, leading to denial of service.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-56317">CVE-2024-56317</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/project-chip/connectedhomeip/issues/36535">https://github.com/project-chip/connectedhomeip/issues/36535</a></td>
+					<td class=date>2024-12-18T23:15:18.023</td>
+					<td class=description>In Matter (aka connectedhomeip or Project CHIP) through 1.4.0.0, the WriteAcl function deletes all existing ACL entries first, and then attempts to recreate them based on user input. If input validation fails during decoding, the process stops, and no entries are restored by access-control-server.cpp, i.e., a denial of service.</td>
+
+
+				</tr>
+			
+		
+			
 		
 			
 		
@@ -204,6 +242,22 @@ Updated at UTC 2024-12-18T23:11:25.778251
 		
 
 		<hr>
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-55461">CVE-2024-55461</a></td>
+					<td>-</td>
+					<td>execution,command</td>
+					<td class=date>2024-12-18T23:15:17.350</td>
+					<td class=description>SeaCMS <=13.0 is vulnerable to command execution in phome.php via the function Ebak_RepPathFiletext().</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
