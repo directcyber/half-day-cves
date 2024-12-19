@@ -1,22 +1,4 @@
 {
-  "CVE-2024-56084": {
-    "cvss": 7.1,
-    "description": "An issue was discovered in Logpoint UniversalNormalizer before 5.7.0. Authenticated users can inject payloads while creating Universal Normalizer. These are executed, leading to Remote Code Execution.",
-    "published": "2024-12-16T06:15:07.070",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-56086": {
-    "cvss": 7.1,
-    "description": "An issue was discovered in Logpoint before 7.5.0. Authenticated users can inject payloads in Report Templates. These are executed when the backup process is initiated, leading to Remote Code Execution.",
-    "published": "2024-12-16T06:15:07.557",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-56112": {
-    "url": "https://github.com/usmannasir/cyberpanel/commit/f0cf648c7851c96c36bb0c390d13e60931f45900",
-    "cvss": 6.1,
-    "description": "CyberPanel (aka Cyber Panel) before f0cf648 allows XSS via token or username to plogical/phpmyadminsignin.php.",
-    "published": "2024-12-16T06:15:07.920"
-  },
   "CVE-2024-12641": {
     "cvss": 9.6,
     "description": "TenderDocTransfer from Chunghwa Telecom has a Reflected Cross-site scripting vulnerability. The application sets up a simple local web server and provides APIs for communication with the target website. Due to the lack of CSRF protection for the APIs, unauthenticated remote attackers could use specific APIs through phishing to execute arbitrary JavaScript code in the user\u2019s browser. Since the web server set by the application supports Node.Js features, attackers can further leverage this to run OS commands.",
@@ -304,5 +286,11 @@
     "description": "A unrestricted upload of file with dangerous type vulnerability in epaper draft function in Corporate Training Management System before 10.13 allows remote authenticated users to bypass file upload restrictions and perform arbitrary system commands with SYSTEM privilege via a crafted ZIP file.",
     "published": "2024-12-19T04:15:05.127",
     "keywords": "remote,command,bypass"
+  },
+  "CVE-2024-11740": {
+    "cvss": 7.3,
+    "description": "The The Download Manager plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 3.3.03. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+    "published": "2024-12-19T06:15:21.243",
+    "keywords": "execution,unauthenticated"
   }
 }

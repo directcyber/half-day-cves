@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-12-19T05:12:01.716321
+Updated at UTC 2024-12-19T06:16:58.698281
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2024-12-19T05:12:01.716321
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -224,24 +226,18 @@ Updated at UTC 2024-12-19T05:12:01.716321
 		
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-56112">CVE-2024-56112</a></td>
-					<td>6.1</td>
-					<td><a target=_blank href="https://github.com/usmannasir/cyberpanel/commit/f0cf648c7851c96c36bb0c390d13e60931f45900">https://github.com/usmannasir/cyberpanel/commit/f0cf648c7851c96c36bb0c390d13e60931f45900</a></td>
-					<td class=date>2024-12-16T06:15:07.920</td>
-					<td class=description>CyberPanel (aka Cyber Panel) before f0cf648 allows XSS via token or username to plogical/phpmyadminsignin.php.</td>
-
-
-				</tr>
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-11740">CVE-2024-11740</a></td>
+					<td>7.3</td>
+					<td>execution,unauthenticated</td>
+					<td class=date>2024-12-19T06:15:21.243</td>
+					<td class=description>The The Download Manager plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 3.3.03. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -676,28 +672,6 @@ This could allow an unauthenticated remote attacker to execute arbitrary code.</
 					<td>remote,unauthenticated,command</td>
 					<td class=date>2024-12-16T07:15:05.787</td>
 					<td class=description>TenderDocTransfer from Chunghwa Telecom has a Reflected Cross-site scripting vulnerability. The application sets up a simple local web server and provides APIs for communication with the target website. Due to the lack of CSRF protection for the APIs, unauthenticated remote attackers could use specific APIs through phishing to execute arbitrary JavaScript code in the user’s browser. Since the web server set by the application supports Node.Js features, attackers can further leverage this to run OS commands.</td>
-				</tr>
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-56086">CVE-2024-56086</a></td>
-					<td>7.1</td>
-					<td>remote,execution</td>
-					<td class=date>2024-12-16T06:15:07.557</td>
-					<td class=description>An issue was discovered in Logpoint before 7.5.0. Authenticated users can inject payloads in Report Templates. These are executed when the backup process is initiated, leading to Remote Code Execution.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-56084">CVE-2024-56084</a></td>
-					<td>7.1</td>
-					<td>remote,execution</td>
-					<td class=date>2024-12-16T06:15:07.070</td>
-					<td class=description>An issue was discovered in Logpoint UniversalNormalizer before 5.7.0. Authenticated users can inject payloads while creating Universal Normalizer. These are executed, leading to Remote Code Execution.</td>
 				</tr>
 			
 		
