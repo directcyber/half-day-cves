@@ -1,10 +1,4 @@
 {
-  "CVE-2024-11144": {
-    "cvss": 7.5,
-    "description": "The server lacks thread safety and can be crashed by anomalous data sent by an anonymous user from a remote network. The crash causes the FTP service to become unavailable, affecting all users and processes that rely on it for file transfers. If the crash occurs during file upload or download, it could lead to incomplete file transfers, potentially corrupting data. The repeated crash might also affect the stability of the underlying system, especially if it leads to resource leaks or affects other services.",
-    "published": "2024-12-16T17:15:07.327",
-    "keywords": "remote,leak"
-  },
   "CVE-2024-12663": {
     "url": "https://github.com/funnyzpc/mee-admin/issues/9",
     "cvss": 3.7,
@@ -232,5 +226,11 @@
     "description": "The The Download Manager plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 3.3.03. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
     "published": "2024-12-19T06:15:21.243",
     "keywords": "execution,unauthenticated"
+  },
+  "CVE-2024-52896": {
+    "cvss": 6.2,
+    "description": "IBM MQ Appliance 9.3 LTS, 9.3 CD, 9.4 LTS, and 9.4 CD web console could allow a remote attacker to obtain sensitive information when a detailed technical error message is returned.",
+    "published": "2024-12-19T17:15:09.797",
+    "keywords": "remote,sensitive"
   }
 }
