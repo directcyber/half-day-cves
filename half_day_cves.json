@@ -1,22 +1,4 @@
 {
-  "CVE-2024-11280": {
-    "cvss": 5.3,
-    "description": "The PPWP \u2013 Password Protect Pages plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.9.5 via the WordPress core search feature. This makes it possible for unauthenticated attackers to extract sensitive data from posts that have been restricted to higher-level roles such as administrator.",
-    "published": "2024-12-17T12:15:19.343",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-8475": {
-    "cvss": 6.5,
-    "description": "Authentication Bypass by Assumed-Immutable Data vulnerability in Digital Operation Services WiFiBurada allows Manipulating User-Controlled Variables.This issue affects WiFiBurada: before 1.0.5.",
-    "published": "2024-12-17T12:15:21.010",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-9654": {
-    "cvss": 3.7,
-    "description": "The Easy Digital Downloads plugin for WordPress is vulnerable to Improper Authorization in versions 3.1 through 3.3.4. This is due to a lack of sufficient validation checks within the 'verify_guest_email' function to ensure the requesting user is the intended recipient of the purchase receipt. This makes it possible for unauthenticated attackers to bypass intended security restrictions and view the receipts of other users, which contains a link to download paid content. Successful exploitation requires knowledge of another customers email address as well as the file ID of the content they purchased.",
-    "published": "2024-12-17T12:15:21.157",
-    "keywords": "unauthenticated,bypass"
-  },
   "CVE-2024-49818": {
     "cvss": 4.3,
     "description": "IBM Security Guardium Key Lifecycle Manager 4.1, 4.1.1, 4.2.0, and 4.2.1 \n\ncould allow a remote attacker to obtain sensitive information when a detailed technical error message is returned in the browser. This information could be used in further attacks against the system.",
@@ -298,5 +280,11 @@
     "description": "The Store Locator for WordPress with Google Maps \u2013 LotsOfLocales plugin for WordPress is vulnerable to Local File Inclusion in version 3.98.9 via the 'sl_engine' parameter. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
     "published": "2024-12-20T07:15:12.380",
     "keywords": "execution,unauthenticated,sensitive,bypass"
+  },
+  "CVE-2024-7726": {
+    "cvss": "-",
+    "description": "There exists an unauthenticated accessible JTAG port on the Kioxia PM6, PM7 and CM6 devices -\u00a0On the Kioxia CM6, PM6 and PM7 disk drives it was discovered that the 2 main CPU cores of the SoC can be accessed via an open JTAG debug port that is exposed on the drive\u2019s circuit board. Due to the wide cutout of the enclosures, the JTAG port can be accessed without having to open the disk enclosure. Utilizing the JTAG debug port, an attacker with (temporary) physical access can get full access to the firmware and memory on the 2 main CPU cores within the drive including the execution of arbitrary code, the modification of firmware execution flow and data or bypassing the firmware signature verification during boot-up.",
+    "published": "2024-12-20T11:15:08.720",
+    "keywords": "execution,unauthenticated,bypass"
   }
 }
