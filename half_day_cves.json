@@ -292,5 +292,17 @@
     "description": "Arista NG Firewall ReportEntry SQL Injection Arbitrary File Read and Write Vulnerability. This vulnerability allows remote attackers to create arbitrary files and disclose sensitive information on affected installations of Arista NG Firewall. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the ReportEntry class. The issue results from the lack of proper validation of a user-supplied string before using it to construct SQL queries. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the www-data user. Was ZDI-CAN-24325.",
     "published": "2024-12-20T01:15:06.793",
     "keywords": "remote,authentication,sensitive"
+  },
+  "CVE-2024-11297": {
+    "cvss": 5.3,
+    "description": "The Page Restriction WordPress (WP) \u2013 Protect WP Pages/Post plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.3.6 via the WordPress core search feature. This makes it possible for unauthenticated attackers to extract sensitive data from posts that have been restricted to higher-level roles such as administrator.",
+    "published": "2024-12-20T07:15:09.350",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-12571": {
+    "cvss": 9.8,
+    "description": "The Store Locator for WordPress with Google Maps \u2013 LotsOfLocales plugin for WordPress is vulnerable to Local File Inclusion in version 3.98.9 via the 'sl_engine' parameter. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
+    "published": "2024-12-20T07:15:12.380",
+    "keywords": "execution,unauthenticated,sensitive,bypass"
   }
 }
