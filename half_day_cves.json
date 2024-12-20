@@ -274,5 +274,17 @@
     "description": "An issue in Quectel BG96 BG96MAR02A08M1G allows attackers to bypass authentication via a crafted NAS message.",
     "published": "2024-12-19T22:15:06.563",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-54009": {
+    "cvss": 4.0,
+    "description": "Remote authentication bypass vulnerability in HPE Alletra Storage MP B10000 in versions prior to version 10.4.5 could be remotely exploited to allow disclosure of information.",
+    "published": "2024-12-19T23:15:06.887",
+    "keywords": "remote,authentication,bypass"
+  },
+  "CVE-2024-54663": {
+    "cvss": "-",
+    "description": "An issue was discovered in the Webmail Classic UI in Zimbra Collaboration (ZCS) 9.0 and 10.0 and 10.1. A Local File Inclusion (LFI) vulnerability exists in the /h/rest endpoint, allowing authenticated remote attackers to include and access sensitive files in the WebRoot directory. Exploitation requires a valid auth token and involves crafting a malicious request targeting specific file paths.",
+    "published": "2024-12-19T23:15:07.023",
+    "keywords": "remote,sensitive"
   }
 }
