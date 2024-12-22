@@ -1,190 +1,4 @@
 {
-  "CVE-2024-49818": {
-    "cvss": 4.3,
-    "description": "IBM Security Guardium Key Lifecycle Manager 4.1, 4.1.1, 4.2.0, and 4.2.1 \n\ncould allow a remote attacker to obtain sensitive information when a detailed technical error message is returned in the browser. This information could be used in further attacks against the system.",
-    "published": "2024-12-17T18:15:24.127",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-49819": {
-    "cvss": 4.1,
-    "description": "IBM Security Guardium Key Lifecycle Manager 4.1, 4.1.1, 4.2.0, and 4.2.1\u00a0could allow a remote attacker to obtain sensitive information in cleartext in a communication channel that can be sniffed by unauthorized actors.",
-    "published": "2024-12-17T18:15:24.300",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-49820": {
-    "cvss": 3.7,
-    "description": "IBM Security Guardium Key Lifecycle Manager 4.1, 4.1.1, 4.2.0, and 4.2.1\u00a0could allow a remote attacker to obtain sensitive information, caused by the failure to properly enable HTTP Strict Transport Security. An attacker could exploit this vulnerability to obtain sensitive information using man in the middle techniques.",
-    "published": "2024-12-17T18:15:24.463",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-49194": {
-    "cvss": 7.3,
-    "description": "Databricks JDBC Driver before 2.6.40 could potentially allow remote code execution (RCE) by triggering a JNDI injection via a JDBC URL parameter. The vulnerability is rooted in the improper handling of the krbJAASFile parameter. An attacker could potentially exploit this vulnerability to achieve Remote Code Execution in the context of the driver by tricking a victim into using a crafted connection URL that uses the property krbJAASFile.",
-    "published": "2024-12-17T20:15:22.243",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-29646": {
-    "url": "https://github.com/radareorg/radare2/pull/22562",
-    "cvss": 9.8,
-    "description": "Buffer Overflow vulnerability in radarorg radare2 v.5.8.8 allows an attacker to execute arbitrary code via the name, type, or group fields.",
-    "published": "2024-12-17T22:15:06.550"
-  },
-  "CVE-2024-51175": {
-    "cvss": 7.5,
-    "description": "An issue in H3C switch h3c-S1526 allows a remote attacker to obtain sensitive information via the S1526.cfg component.",
-    "published": "2024-12-17T22:15:06.967",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-12025": {
-    "cvss": 7.5,
-    "description": "The Collapsing Categories plugin for WordPress is vulnerable to SQL Injection via the 'taxonomy' parameter of the /wp-json/collapsing-categories/v1/get REST API in all versions up to, and including, 3.0.8 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
-    "published": "2024-12-18T04:15:07.347",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-56169": {
-    "url": "https://github.com/nicmx/fort-validator/issues/82",
-    "cvss": "-",
-    "description": "A validation integrity issue was discovered in Fort through 1.6.4 before 2.0.0. RPKI Relying Parties (such as Fort) are supposed to maintain a backup cache of the remote RPKI data. This can be employed as a fallback in case a new fetch fails or yields incorrect files. However, the product currently uses its cache merely as a bandwidth saving tool (because fetching is performed through deltas). If a fetch fails midway or yields incorrect files, there is no viable fallback. This leads to incomplete route origin validation data.",
-    "published": "2024-12-18T05:15:08.853"
-  },
-  "CVE-2024-21546": {
-    "cvss": 9.8,
-    "description": "Versions of the package unisharp/laravel-filemanager before 2.9.1 are vulnerable to Remote Code Execution (RCE) through using a valid mimetype and inserting the . character after the php file extension. This allows the attacker to execute malicious code.",
-    "published": "2024-12-18T06:15:22.850",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-4464": {
-    "cvss": 7.5,
-    "description": "Authorization bypass through user-controlled key vulnerability in streaming service in Synology Media Server before 1.4-2680, 2.0.5-3152 and 2.2.0-3325 allows remote attackers to read specific files via unspecified vectors.",
-    "published": "2024-12-18T06:15:23.587",
-    "keywords": "remote,bypass"
-  },
-  "CVE-2024-11295": {
-    "cvss": 5.3,
-    "description": "The Simple Page Access Restriction plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.0.29 via the WordPress core search feature. This makes it possible for unauthenticated attackers to extract sensitive data from posts that have been restricted to higher-level roles such as logged-in users.",
-    "published": "2024-12-18T07:15:06.737",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-12287": {
-    "cvss": 9.8,
-    "description": "The Biagiotti Membership plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 1.0.2. This is due to the plugin not properly verifying a user's identity prior to authenticating them. This makes it possible for unauthenticated attackers to log in as other users, such as administrators, granted they have access to an email.",
-    "published": "2024-12-18T07:15:07.040",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
-  "CVE-2024-47397": {
-    "cvss": 7.5,
-    "description": "Weak authentication issue exists in AE1021 firmware versions 2.0.10 and earlier and AE1021PE firmware versions 2.0.10 and earlier. If this vulnerability is exploited, the authentication may be bypassed with an undocumented specific string.",
-    "published": "2024-12-18T07:15:07.847",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2024-11291": {
-    "cvss": 5.3,
-    "description": "The Paid Membership Subscriptions \u2013 Effortless Memberships, Recurring Payments & Content Restriction plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.13.4 via the WordPress core search feature. This makes it possible for unauthenticated attackers to extract sensitive data from posts that have been restricted to higher-level roles such as logged-in users.",
-    "published": "2024-12-18T12:15:08.710",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-11912": {
-    "cvss": 7.5,
-    "description": "The Travel Booking WordPress Theme theme for WordPress is vulnerable to blind time-based SQL Injection via the \u2018order_id\u2019 parameter in all versions up to, and including, 3.1.6 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
-    "published": "2024-12-18T12:15:08.950",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2024-48889": {
-    "cvss": 7.2,
-    "description": "An Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability [CWE-78] in FortiManager version 7.6.0, version 7.4.4 and below, version 7.2.7 and below, version 7.0.12 and below, version 6.4.14 and below and FortiManager Cloud version 7.4.4 and below, version 7.2.7 to 7.2.1, version 7.0.12 to 7.0.1 may allow an authenticated remote attacker to execute unauthorized code via FGFM crafted requests.",
-    "published": "2024-12-18T13:15:06.463",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-50570": {
-    "cvss": 5.0,
-    "description": "A Cleartext Storage of Sensitive Information vulnerability [CWE-312] in FortiClientWindows 7.4.0 through 7.4.1, 7.2.0 through 7.2.6, 7.0.0 through 7.0.13 and FortiClientLinux 7.4.0 through 7.4.2, 7.2.0 through 7.2.7, 7.0.0 through 7.0.13 may permit a local authenticated user to retrieve VPN password via memory dump, due to JavaScript's garbage collector",
-    "published": "2024-12-18T13:15:06.723",
-    "keywords": "sensitive,vpn"
-  },
-  "CVE-2024-12372": {
-    "cvss": "-",
-    "description": "A denial-of-service and possible remote code execution vulnerability exists in the Rockwell Automation Power Monitor 1000. The vulnerability results in corruption of the heap memory which may compromise the integrity of the system, potentially allowing for remote code execution or a denial-of-service attack.",
-    "published": "2024-12-18T16:15:11.050",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-25042": {
-    "cvss": 5.4,
-    "description": "IBM Cognos Analytics\u00a011.2.0 through 11.2.4 and 12.0.0 through 12.0.3 \n\n\n\nis potentially vulnerable to Cross Site Scripting (XSS). A remote attacker could execute malicious commands due to improper validation of column headings in Cognos Explorations.",
-    "published": "2024-12-18T17:15:13.057",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-49201": {
-    "cvss": "-",
-    "description": "Keyfactor Remote File Orchestrator (aka remote-file-orchestrator) 2.8 before 2.8.1 allows Information Disclosure: sensitive information could be exposed at the debug logging level.",
-    "published": "2024-12-18T19:15:11.077",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2024-12741": {
-    "cvss": 7.8,
-    "description": "A deserialization of untrusted data vulnerability exists in NI DAQExpress that may result in remote code execution. Successful exploitation requires an attacker to get a user to open a specially crafted project file. This vulnerability affects DAQExpress 5.1 and prior versions. \u00a0Please note that DAQExpress is an EOL product and will not receive any updates.",
-    "published": "2024-12-18T20:15:22.390",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-36694": {
-    "url": "https://github.com/opencart/opencart/issues/13863",
-    "cvss": "-",
-    "description": "OpenCart 4.0.2.3 is vulnerable to Server-Side Template Injection (SSTI) via the Theme Editor Function.",
-    "published": "2024-12-18T20:15:22.637"
-  },
-  "CVE-2024-52592": {
-    "cvss": "-",
-    "description": "Misskey is an open source, federated social media platform. In affected versions missing validation in `ApInboxService.update` allows an attacker to modify the result of polls belonging to another user. No authentication is required, except for a valid signature from any actor on any remote instance. Vulnerable Misskey instances will accept spoofed updates for remote polls. Local polls are unaffected. This issue has been addressed in version 2024.11.0-alpha.3. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
-    "published": "2024-12-18T20:15:23.840",
-    "keywords": "remote,authentication"
-  },
-  "CVE-2024-12686": {
-    "cvss": 6.6,
-    "description": "A vulnerability has been discovered in Privileged Remote Access (PRA) and Remote Support (RS) which can allow an attacker with existing administrative privileges to inject commands and run as a site user.",
-    "published": "2024-12-18T21:15:08.020",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-56145": {
-    "cvss": "-",
-    "description": "Craft is a flexible, user-friendly CMS for creating custom digital experiences on the web and beyond. Users of affected versions are affected by this vulnerability if their php.ini configuration has `register_argc_argv` enabled. For these users an unspecified remote code execution vector is present. Users are advised to update to version 3.9.14, 4.13.2, or 5.5.2. Users unable to upgrade should disable `register_argc_argv` to mitigate the issue.",
-    "published": "2024-12-18T21:15:08.530",
-    "keywords": "remote,execution"
-  },
-  "CVE-2024-55461": {
-    "cvss": "-",
-    "description": "SeaCMS <=13.0 is vulnerable to command execution in phome.php via the function Ebak_RepPathFiletext().",
-    "published": "2024-12-18T23:15:17.350",
-    "keywords": "execution,command"
-  },
-  "CVE-2024-56317": {
-    "url": "https://github.com/project-chip/connectedhomeip/issues/36535",
-    "cvss": "-",
-    "description": "In Matter (aka connectedhomeip or Project CHIP) through 1.4.0.0, the WriteAcl function deletes all existing ACL entries first, and then attempts to recreate them based on user input. If input validation fails during decoding, the process stops, and no entries are restored by access-control-server.cpp, i.e., a denial of service.",
-    "published": "2024-12-18T23:15:18.023"
-  },
-  "CVE-2024-56318": {
-    "url": "https://github.com/project-chip/connectedhomeip/pull/36751",
-    "cvss": "-",
-    "description": "In raw\\TCP.cpp in Matter (aka connectedhomeip or Project CHIP) through 1.4.0.0 before 27ca6ec, there is a NULL pointer dereference in TCPBase::ProcessSingleMessage via TCP packets with zero messageSize, leading to denial of service.",
-    "published": "2024-12-18T23:15:18.213"
-  },
-  "CVE-2024-56319": {
-    "url": "https://github.com/project-chip/connectedhomeip/pull/36843",
-    "cvss": "-",
-    "description": "In Matter (aka connectedhomeip or Project CHIP) through 1.4.0.0 before e3277eb, unlimited user label appends in a userlabel cluster can lead to a denial of service (resource exhaustion).",
-    "published": "2024-12-18T23:15:18.373"
-  },
-  "CVE-2024-11984": {
-    "cvss": "-",
-    "description": "A unrestricted upload of file with dangerous type vulnerability in epaper draft function in Corporate Training Management System before 10.13 allows remote authenticated users to bypass file upload restrictions and perform arbitrary system commands with SYSTEM privilege via a crafted ZIP file.",
-    "published": "2024-12-19T04:15:05.127",
-    "keywords": "remote,command,bypass"
-  },
-  "CVE-2024-11740": {
-    "cvss": 7.3,
-    "description": "The The Download Manager plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 3.3.03. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
-    "published": "2024-12-19T06:15:21.243",
-    "keywords": "execution,unauthenticated"
-  },
   "CVE-2024-52896": {
     "cvss": 6.2,
     "description": "IBM MQ Appliance 9.3 LTS, 9.3 CD, 9.4 LTS, and 9.4 CD web console could allow a remote attacker to obtain sensitive information when a detailed technical error message is returned.",
@@ -282,9 +96,117 @@
     "keywords": "execution,unauthenticated,sensitive,bypass"
   },
   "CVE-2024-7726": {
-    "cvss": "-",
+    "cvss": 6.8,
     "description": "There exists an unauthenticated accessible JTAG port on the Kioxia PM6, PM7 and CM6 devices -\u00a0On the Kioxia CM6, PM6 and PM7 disk drives it was discovered that the 2 main CPU cores of the SoC can be accessed via an open JTAG debug port that is exposed on the drive\u2019s circuit board. Due to the wide cutout of the enclosures, the JTAG port can be accessed without having to open the disk enclosure. Utilizing the JTAG debug port, an attacker with (temporary) physical access can get full access to the firmware and memory on the 2 main CPU cores within the drive including the execution of arbitrary code, the modification of firmware execution flow and data or bypassing the firmware signature verification during boot-up.",
     "published": "2024-12-20T11:15:08.720",
     "keywords": "execution,unauthenticated,bypass"
+  },
+  "CVE-2024-28767": {
+    "cvss": 6.8,
+    "description": "IBM Security Directory Integrator 7.2.0 through 7.2.0.13 and 10.0.0 through 10.0.3 could allow a remote authenticated attacker to execute arbitrary commands on the system by sending a specially crafted request.",
+    "published": "2024-12-20T14:15:23.850",
+    "keywords": "remote,command"
+  },
+  "CVE-2024-51466": {
+    "cvss": 9.0,
+    "description": "IBM Cognos Analytics 11.2.0 through 11.2.4 FP4 and \n\n12.0.0 through 12.0.4\n\nis vulnerable to an Expression Language (EL) Injection vulnerability. A remote attacker could exploit this vulnerability to expose sensitive information, consume memory resources, and/or cause the server to crash when using a specially crafted EL statement.",
+    "published": "2024-12-20T14:15:24.250",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2024-10385": {
+    "cvss": "-",
+    "description": "Ticket management system in DirectAdmin Evolution Skin is vulnerable to XSS (Cross-site Scripting), which allows a low-privileged user to inject and store malicious JavaScript code.\nIf an admin views the ticket, the script might perform actions with their privileges, including command execution.\u00a0\nThis issue has been fixed in\u00a0version 1.668 of DirectAdmin Evolution Skin.",
+    "published": "2024-12-20T16:15:21.523",
+    "keywords": "execution,command"
+  },
+  "CVE-2024-55470": {
+    "cvss": 7.5,
+    "description": "Oqtane Framework 6.0.0 is vulnerable to Incorrect Access Control. By manipulating the entityid parameter, attackers can bypass passcode validation and successfully log into the application or access restricted data without proper authorization. The lack of server-side validation exacerbates the issue, as the application relies on client-side information for authentication.",
+    "published": "2024-12-20T16:15:23.977",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-12841": {
+    "url": "https://github.com/emlog/emlog/issues/305",
+    "cvss": 4.3,
+    "description": "A vulnerability was found in Emlog Pro up to 2.4.1. It has been classified as problematic. This affects an unknown part of the file /admin/tag.php. The manipulation of the argument keyword leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2024-12-20T19:15:06.097"
+  },
+  "CVE-2024-12842": {
+    "url": "https://github.com/emlog/emlog/issues/305",
+    "cvss": 4.3,
+    "description": "A vulnerability was found in Emlog Pro up to 2.4.1. It has been declared as problematic. This vulnerability affects unknown code of the file /admin/user.php. The manipulation of the argument keyword leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2024-12-20T20:15:21.880"
+  },
+  "CVE-2024-12867": {
+    "cvss": "-",
+    "description": "Server-Side Request Forgery in URL Mapper in Arctic Security's Arctic Hub versions 3.0.1764-5.6.1877 allows an unauthenticated remote attacker to exfiltrate and modify configurations and data.",
+    "published": "2024-12-20T20:15:22.740",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2024-56329": {
+    "cvss": "-",
+    "description": "Socialstream is a third-party package for Laravel Jetstream. It replaces the published authentication and profile scaffolding provided by Laravel Jetstream, with scaffolding that has support for Laravel Socialite. When linking a social account to an already authenticated user, the lack of a confirmation step introduces a security risk. This is exacerbated if ->stateless() is used in the Socialite configuration, bypassing state verification and making the exploit easier. Developers should ensure that users explicitly confirm account linking and avoid configurations that skip critical security checks. Socialstream v6.2 introduces a new custom route that requires a user to \"Confirm\" or \"Deny\" a request to link a social account. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+    "published": "2024-12-20T20:15:23.987",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2024-12843": {
+    "url": "https://github.com/emlog/emlog/issues/305",
+    "cvss": 4.3,
+    "description": "A vulnerability was found in Emlog Pro up to 2.4.1. It has been rated as problematic. This issue affects some unknown processing of the file /admin/plugin.php. The manipulation of the argument filter leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2024-12-20T21:15:07.337"
+  },
+  "CVE-2024-12844": {
+    "url": "https://github.com/emlog/emlog/issues/305",
+    "cvss": 4.3,
+    "description": "A vulnerability classified as problematic has been found in Emlog Pro up to 2.4.1. Affected is an unknown function of the file /admin/store.php. The manipulation of the argument tag leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2024-12-20T21:15:07.833"
+  },
+  "CVE-2024-56334": {
+    "cvss": 7.8,
+    "description": "systeminformation is a System and OS information library for node.js. In affected versions SSIDs are not sanitized when before they are passed as a parameter to cmd.exe in the `getWindowsIEEE8021x` function. This means that malicious content in the SSID can be executed as OS commands. This vulnerability may enable an attacker, depending on how the package is used, to perform remote code execution or local privilege escalation. This issue has been addressed in version 5.23.7 and all users are advised to upgrade. There are no known workarounds for this vulnerability.",
+    "published": "2024-12-20T21:15:10.080",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2024-12845": {
+    "url": "https://github.com/emlog/emlog/issues/306",
+    "cvss": 3.5,
+    "description": "A vulnerability classified as problematic was found in Emlog Pro up to 2.4.1. Affected by this vulnerability is an unknown functionality in the library /include/lib/common.php. The manipulation of the argument msg leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2024-12-20T22:15:24.727"
+  },
+  "CVE-2024-11349": {
+    "cvss": 9.8,
+    "description": "The AdForest theme for WordPress is vulnerable to authentication bypass in all versions up to, and including, 5.1.6. This is due to the plugin not properly verifying a user's identity prior to authenticating them through the sb_login_user_with_otp_fun() function. This makes it possible for unauthenticated attackers to log in as arbitrary users, including administrators.",
+    "published": "2024-12-21T05:15:07.017",
+    "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2024-12846": {
+    "url": "https://github.com/emlog/emlog/issues/307",
+    "cvss": 4.3,
+    "description": "A vulnerability, which was classified as problematic, has been found in Emlog Pro up to 2.4.1. Affected by this issue is some unknown functionality of the file /admin/link.php. The manipulation of the argument siteurl/icon leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2024-12-21T05:15:07.373"
+  },
+  "CVE-2024-11977": {
+    "cvss": 7.3,
+    "description": "The The kk Star Ratings \u2013 Rate Post & Collect User Feedbacks plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 5.4.10. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+    "published": "2024-12-21T06:15:21.830",
+    "keywords": "execution,unauthenticated"
+  },
+  "CVE-2024-12066": {
+    "cvss": 8.8,
+    "description": "The SMSA Shipping(official) plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the smsa_delete_label() function in all versions up to, and including, 2.2. This makes it possible for authenticated attackers, with Subscriber-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
+    "published": "2024-12-21T07:15:08.907",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-11722": {
+    "cvss": 5.9,
+    "description": "The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to SQL Injection via the 'orderby' parameter in all versions up to, and including, 3.25.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. This requires an unauthenticated user to have been given permission to view form submissions, and the form submission shortcode be added to a page.",
+    "published": "2024-12-21T10:15:07.367",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2024-51464": {
+    "cvss": 4.3,
+    "description": "IBM i 7.3, 7.4, and 7.5 is vulnerable to bypassing Navigator for i interface restrictions.  By sending a specially crafted request, an authenticated attacker could exploit this vulnerability to remotely perform operations that the user is not allowed to perform when using Navigator for i.",
+    "published": "2024-12-21T14:15:21.627",
+    "keywords": "remote,bypass"
   }
 }
