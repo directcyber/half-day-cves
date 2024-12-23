@@ -1,22 +1,4 @@
 {
-  "CVE-2024-12843": {
-    "url": "https://github.com/emlog/emlog/issues/305",
-    "cvss": 4.3,
-    "description": "A vulnerability was found in Emlog Pro up to 2.4.1. It has been rated as problematic. This issue affects some unknown processing of the file /admin/plugin.php. The manipulation of the argument filter leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2024-12-20T21:15:07.337"
-  },
-  "CVE-2024-12844": {
-    "url": "https://github.com/emlog/emlog/issues/305",
-    "cvss": 4.3,
-    "description": "A vulnerability classified as problematic has been found in Emlog Pro up to 2.4.1. Affected is an unknown function of the file /admin/store.php. The manipulation of the argument tag leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2024-12-20T21:15:07.833"
-  },
-  "CVE-2024-56334": {
-    "cvss": 7.8,
-    "description": "systeminformation is a System and OS information library for node.js. In affected versions SSIDs are not sanitized when before they are passed as a parameter to cmd.exe in the `getWindowsIEEE8021x` function. This means that malicious content in the SSID can be executed as OS commands. This vulnerability may enable an attacker, depending on how the package is used, to perform remote code execution or local privilege escalation. This issue has been addressed in version 5.23.7 and all users are advised to upgrade. There are no known workarounds for this vulnerability.",
-    "published": "2024-12-20T21:15:10.080",
-    "keywords": "remote,execution,command"
-  },
   "CVE-2024-12845": {
     "url": "https://github.com/emlog/emlog/issues/306",
     "cvss": 3.5,
