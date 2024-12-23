@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-12-23T00:54:43.675386
+Updated at UTC 2024-12-23T02:14:38.675374
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,12 @@ Updated at UTC 2024-12-23T00:54:43.675386
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -162,14 +168,38 @@ Updated at UTC 2024-12-23T00:54:43.675386
 		
 			
 		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-52321">CVE-2024-52321</a></td>
+					<td>5.9</td>
+					<td>remote,unauthenticated,authentication,sensitive</td>
+					<td class=date>2024-12-23T01:15:07.700</td>
+					<td class=description>Multiple SHARP routers contain an improper authentication vulnerability in the configuration backup function. The product's backup files containing sensitive information may be retrieved by a remote unauthenticated attacker.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-47864">CVE-2024-47864</a></td>
+					<td>5.3</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2024-12-23T01:15:07.553</td>
+					<td class=description>home 5G HR02, Wi-Fi STATION SH-52B, and Wi-Fi STATION SH-54C contain a buffer overflow vulnerability in the hidden debug function. A remote unauthenticated attacker may get the web console of the product down.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-46873">CVE-2024-46873</a></td>
+					<td>9.8</td>
+					<td>remote,unauthenticated,command</td>
+					<td class=date>2024-12-23T01:15:07.403</td>
+					<td class=description>Multiple SHARP routers leave the hidden debug function enabled. An arbitrary OS command may be executed with the root privilege by a remote unauthenticated attacker.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -346,42 +376,6 @@ is vulnerable to an Expression Language (EL) Injection vulnerability. A remote a
 					<td>unauthenticated,sensitive</td>
 					<td class=date>2024-12-20T07:15:09.350</td>
 					<td class=description>The Page Restriction WordPress (WP) – Protect WP Pages/Post plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.3.6 via the WordPress core search feature. This makes it possible for unauthenticated attackers to extract sensitive data from posts that have been restricted to higher-level roles such as administrator.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-12832">CVE-2024-12832</a></td>
-					<td>8.3</td>
-					<td>remote,authentication,sensitive</td>
-					<td class=date>2024-12-20T01:15:06.793</td>
-					<td class=description>Arista NG Firewall ReportEntry SQL Injection Arbitrary File Read and Write Vulnerability. This vulnerability allows remote attackers to create arbitrary files and disclose sensitive information on affected installations of Arista NG Firewall. Authentication is required to exploit this vulnerability.
-
-The specific flaw exists within the ReportEntry class. The issue results from the lack of proper validation of a user-supplied string before using it to construct SQL queries. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the www-data user. Was ZDI-CAN-24325.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-12830">CVE-2024-12830</a></td>
-					<td>8.1</td>
-					<td>remote,execution,authentication</td>
-					<td class=date>2024-12-20T01:15:06.537</td>
-					<td class=description>Arista NG Firewall custom_handler Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Arista NG Firewall. Authentication is not required to exploit this vulnerability.
-
-The specific flaw exists within the implementation of the custom_handler method. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to execute code in the context of the www-data user. Was ZDI-CAN-24019.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-12829">CVE-2024-12829</a></td>
-					<td>7.2</td>
-					<td>remote,execution,authentication,command</td>
-					<td class=date>2024-12-20T01:15:05.737</td>
-					<td class=description>Arista NG Firewall ExecManagerImpl Command Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Arista NG Firewall. Authentication is required to exploit this vulnerability.
-
-The specific flaw exists within the ExecManagerImpl class. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-24015.</td>
 				</tr>
 			
 		
