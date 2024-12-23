@@ -1,16 +1,4 @@
 {
-  "CVE-2024-54009": {
-    "cvss": 4.0,
-    "description": "Remote authentication bypass vulnerability in HPE Alletra Storage MP B10000 in versions prior to version 10.4.5 could be remotely exploited to allow disclosure of information.",
-    "published": "2024-12-19T23:15:06.887",
-    "keywords": "remote,authentication,bypass"
-  },
-  "CVE-2024-54663": {
-    "cvss": "-",
-    "description": "An issue was discovered in the Webmail Classic UI in Zimbra Collaboration (ZCS) 9.0 and 10.0 and 10.1. A Local File Inclusion (LFI) vulnerability exists in the /h/rest endpoint, allowing authenticated remote attackers to include and access sensitive files in the WebRoot directory. Exploitation requires a valid auth token and involves crafting a malicious request targeting specific file paths.",
-    "published": "2024-12-19T23:15:07.023",
-    "keywords": "remote,sensitive"
-  },
   "CVE-2024-12829": {
     "cvss": 7.2,
     "description": "Arista NG Firewall ExecManagerImpl Command Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Arista NG Firewall. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the ExecManagerImpl class. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-24015.",
@@ -154,5 +142,11 @@
     "description": "IBM i 7.3, 7.4, and 7.5 is vulnerable to bypassing Navigator for i interface restrictions.  By sending a specially crafted request, an authenticated attacker could exploit this vulnerability to remotely perform operations that the user is not allowed to perform when using Navigator for i.",
     "published": "2024-12-21T14:15:21.627",
     "keywords": "remote,bypass"
+  },
+  "CVE-2024-12896": {
+    "cvss": 5.3,
+    "description": "A vulnerability was found in Intelbras VIP S3020 G2, VIP S4020 G2, VIP S4020 G3 and VIP S4320 G2 up to 20241222 and classified as problematic. Affected by this issue is some unknown functionality of the file /web_caps/webCapsConfig of the component Web Interface. The manipulation leads to information disclosure. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The vendor assesses that \"the information disclosed in the URL is not sensitive or poses any risk to the user\".",
+    "published": "2024-12-22T23:15:05.677",
+    "keywords": "remote,sensitive"
   }
 }
