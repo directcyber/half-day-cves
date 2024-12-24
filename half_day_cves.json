@@ -1,10 +1,4 @@
 {
-  "CVE-2024-11722": {
-    "cvss": 5.9,
-    "description": "The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to SQL Injection via the 'orderby' parameter in all versions up to, and including, 3.25.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. This requires an unauthenticated user to have been given permission to view form submissions, and the form submission shortcode be added to a page.",
-    "published": "2024-12-21T10:15:07.367",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2024-51464": {
     "cvss": 4.3,
     "description": "IBM i 7.3, 7.4, and 7.5 is vulnerable to bypassing Navigator for i interface restrictions.  By sending a specially crafted request, an authenticated attacker could exploit this vulnerability to remotely perform operations that the user is not allowed to perform when using Navigator for i.",
