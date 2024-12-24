@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-12-24T07:10:45.287048
+Updated at UTC 2024-12-24T08:14:36.293789
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,8 +57,6 @@ Updated at UTC 2024-12-24T07:10:45.287048
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
-		
-			
 		
 			
 		
@@ -208,16 +206,6 @@ NVR
 					<td>unauthenticated,sensitive</td>
 					<td class=date>2024-12-21T10:15:07.367</td>
 					<td class=description>The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to SQL Injection via the 'orderby' parameter in all versions up to, and including, 3.25.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. This requires an unauthenticated user to have been given permission to view form submissions, and the form submission shortcode be added to a page.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-12066">CVE-2024-12066</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2024-12-21T07:15:08.907</td>
-					<td class=description>The SMSA Shipping(official) plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the smsa_delete_label() function in all versions up to, and including, 2.2. This makes it possible for authenticated attackers, with Subscriber-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).</td>
 				</tr>
 			
 		

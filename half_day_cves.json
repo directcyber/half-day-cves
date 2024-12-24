@@ -1,10 +1,4 @@
 {
-  "CVE-2024-12066": {
-    "cvss": 8.8,
-    "description": "The SMSA Shipping(official) plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the smsa_delete_label() function in all versions up to, and including, 2.2. This makes it possible for authenticated attackers, with Subscriber-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
-    "published": "2024-12-21T07:15:08.907",
-    "keywords": "remote,execution"
-  },
   "CVE-2024-11722": {
     "cvss": 5.9,
     "description": "The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to SQL Injection via the 'orderby' parameter in all versions up to, and including, 3.25.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. This requires an unauthenticated user to have been given permission to view form submissions, and the form submission shortcode be added to a page.",
