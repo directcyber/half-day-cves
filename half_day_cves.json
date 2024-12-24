@@ -40,5 +40,41 @@
     "description": "Multiple SHARP routers contain an improper authentication vulnerability in the configuration backup function. The product's backup files containing sensitive information may be retrieved by a remote unauthenticated attacker.",
     "published": "2024-12-23T01:15:07.700",
     "keywords": "remote,unauthenticated,authentication,sensitive"
+  },
+  "CVE-2024-41882": {
+    "cvss": "-",
+    "description": "Team ENVY, a Security Research TEAM has found a flaw that allows for a remote code execution on the NVR.\u00a0An attacker can cause a stack overflow by entering large data into URL parameters, which will result in a system reboot.\u00a0The manufacturer has released patch firmware for the flaw, please refer to the manufacturer's report for details and workarounds.",
+    "published": "2024-12-24T06:15:33.810",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-41883": {
+    "cvss": "-",
+    "description": "Team ENVY, a Security Research TEAM has found a flaw that allows for a remote code execution on the \n\nNVR\n\n.\u00a0An attacker enters a special value for a specific URL parameter, resulting in a NULL pointer reference and a reboot of the NVR.\u00a0The manufacturer has released patch firmware for the flaw, please refer to the manufacturer's report for details and workarounds.",
+    "published": "2024-12-24T06:15:33.943",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-41884": {
+    "cvss": "-",
+    "description": "Team ENVY, a Security Research TEAM has found a flaw that allows for a remote code execution on the NVR.\u00a0If an attacker does not enter any value for a specific URL parameter, NULL pointer references will occur and the NVR will reboot.\u00a0The manufacturer has released patch firmware for the flaw, please refer to the manufacturer's report for details and workarounds.",
+    "published": "2024-12-24T06:15:34.060",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-41885": {
+    "cvss": "-",
+    "description": "Team ENVY, a Security Research TEAM has found a flaw that allows for a remote code execution on the NVR.\u00a0The seed string for the encrypt key was hardcoding.\u00a0The manufacturer has released patch firmware for the flaw, please refer to the manufacturer's report for details and workarounds.",
+    "published": "2024-12-24T06:15:34.190",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-41886": {
+    "cvss": "-",
+    "description": "Team ENVY, a Security Research TEAM has found a flaw that allows for a remote code execution on the NVR.\u00a0An attacker could inject malformed data into url input parameters to reboot the NVR.\u00a0The manufacturer has released patch firmware for the flaw, please refer to the manufacturer's report for details and workarounds.",
+    "published": "2024-12-24T06:15:34.360",
+    "keywords": "remote,execution"
+  },
+  "CVE-2024-41887": {
+    "cvss": "-",
+    "description": "Team ENVY, a Security Research TEAM has found a flaw that allows for a remote code execution on the NVR.\u00a0An attacker can create an NVR log file in a directory one level higher on the system, which can be used to corrupt files in the directory.\u00a0The manufacturer has released patch firmware for the flaw, please refer to the manufacturer's report for details and workarounds.",
+    "published": "2024-12-24T06:15:34.473",
+    "keywords": "remote,execution"
   }
 }
