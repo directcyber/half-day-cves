@@ -70,5 +70,11 @@
     "description": "The WP Travel Engine \u2013 Elementor Widgets | Create Travel Booking Website Using WordPress and Elementor plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.3.7 via several widgets. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
     "published": "2024-12-25T04:15:06.457",
     "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2024-12428": {
+    "cvss": 7.5,
+    "description": "The WP Data Access \u2013 App, Table, Form and Chart Builder plugin plugin for WordPress is vulnerable to SQL Injection via the 'order[user_login][dir]' parameter in all versions up to, and including, 5.5.22 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2024-12-25T05:15:06.920",
+    "keywords": "unauthenticated,sensitive"
   }
 }
