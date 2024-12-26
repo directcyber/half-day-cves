@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2024-12-26T22:09:59.974494
+Updated at UTC 2024-12-26T23:10:39.451084
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,18 @@ Updated at UTC 2024-12-26T22:09:59.974494
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2024-56361">CVE-2024-56361</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/tltneon/lgsl/commit/3fbd3bb581b636f7fd3ea0592c5f8df87d3a2843">https://github.com/tltneon/lgsl/commit/3fbd3bb581b636f7fd3ea0592c5f8df87d3a2843</a></td>
+					<td class=date>2024-12-26T22:15:19.273</td>
+					<td class=description>LGSL (Live Game Server List) provides online status for games. Before 7.0.0, a stored cross-site scripting (XSS) vulnerability was identified in lgsl. The function lgsl_query_40 in lgsl_protocol.php has implemented an HTTP crawler. This function makes a request to the registered game server, and upon crawling the malicious /info endpoint with our payload, will render our javascript on the info page. This information is being displayed via lgsl_details.php. This vulnerability is fixed in 7.0.0.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -120,6 +132,8 @@ Updated at UTC 2024-12-26T22:09:59.974494
 		
 
 		<hr>
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
