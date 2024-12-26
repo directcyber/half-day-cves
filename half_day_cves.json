@@ -100,5 +100,11 @@
     "description": "A Improper Control of Generation of Code ('Code Injection') vulnerability in groovy script function in SmartRobot\u2032s Conversational AI Platform before v7.2.0 allows remote authenticated users to perform arbitrary system commands via Groovy code.",
     "published": "2024-12-26T04:15:05.660",
     "keywords": "remote,command"
+  },
+  "CVE-2024-56433": {
+    "url": "https://github.com/shadow-maint/shadow/issues/1157",
+    "cvss": 3.6,
+    "description": "shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.",
+    "published": "2024-12-26T09:15:07.267"
   }
 }
