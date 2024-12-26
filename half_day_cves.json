@@ -1,22 +1,4 @@
 {
-  "CVE-2024-46873": {
-    "cvss": 9.8,
-    "description": "Multiple SHARP routers leave the hidden debug function enabled. An arbitrary OS command may be executed with the root privilege by a remote unauthenticated attacker.",
-    "published": "2024-12-23T01:15:07.403",
-    "keywords": "remote,unauthenticated,command"
-  },
-  "CVE-2024-47864": {
-    "cvss": 5.3,
-    "description": "home 5G HR02, Wi-Fi STATION SH-52B, and Wi-Fi STATION SH-54C contain a buffer overflow vulnerability in the hidden debug function. A remote unauthenticated attacker may get the web console of the product down.",
-    "published": "2024-12-23T01:15:07.553",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2024-52321": {
-    "cvss": 5.9,
-    "description": "Multiple SHARP routers contain an improper authentication vulnerability in the configuration backup function. The product's backup files containing sensitive information may be retrieved by a remote unauthenticated attacker.",
-    "published": "2024-12-23T01:15:07.700",
-    "keywords": "remote,unauthenticated,authentication,sensitive"
-  },
   "CVE-2024-41882": {
     "cvss": "-",
     "description": "Team ENVY, a Security Research TEAM has found a flaw that allows for a remote code execution on the NVR.\u00a0An attacker can cause a stack overflow by entering large data into URL parameters, which will result in a system reboot.\u00a0The manufacturer has released patch firmware for the flaw, please refer to the manufacturer's report for details and workarounds.",
