@@ -73,13 +73,13 @@
   },
   "CVE-2024-50944": {
     "url": "https://github.com/simplcommerce/simplcommerce/issues/1110",
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "Integer overflow vulnerability exists in SimplCommerce at commit 230310c8d7a0408569b292c5a805c459d47a1d8f in the shopping cart functionality. The issue lies in the quantity parameter in the CartController's AddToCart method.",
     "published": "2024-12-27T19:15:08.833"
   },
   "CVE-2024-53476": {
     "url": "https://github.com/simplcommerce/simplcommerce/issues/1111",
-    "cvss": "-",
+    "cvss": 5.9,
     "description": "A race condition vulnerability in SimplCommerce at commit 230310c8d7a0408569b292c5a805c459d47a1d8f allows attackers to bypass inventory restrictions by simultaneously submitting purchase requests from multiple accounts for the same product. This can lead to overselling when stock is limited, as the system fails to accurately track inventory under high concurrency, resulting in potential loss and unfulfilled orders.",
     "published": "2024-12-27T19:15:09.103"
   },
