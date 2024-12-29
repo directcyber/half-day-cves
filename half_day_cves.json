@@ -1,10 +1,4 @@
 {
-  "CVE-2024-56433": {
-    "url": "https://github.com/shadow-maint/shadow/issues/1157",
-    "cvss": 3.6,
-    "description": "shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.",
-    "published": "2024-12-26T09:15:07.267"
-  },
   "CVE-2024-12952": {
     "cvss": 6.3,
     "description": "A vulnerability classified as critical was found in melMass comfy_mtb up to 0.1.4. Affected by this vulnerability is the function run_command of the file comfy_mtb/endpoint.py of the component Dependency Handler. The manipulation leads to code injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The patch is named d6e004cce2c32f8e48b868e66b89f82da4887dc3. It is recommended to apply a patch to fix this issue.",
