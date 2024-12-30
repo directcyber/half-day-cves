@@ -1,28 +1,4 @@
 {
-  "CVE-2024-12856": {
-    "cvss": 7.2,
-    "description": "The Four-Faith router models F3x24 and F3x36 are affected by an operating system (OS) command injection vulnerability. At least firmware version 2.0 allows authenticated and remote attackers to execute arbitrary OS commands over HTTP when modifying the system time via apply.cgi. Additionally, this firmware version has default credentials which, if not changed, would effectively change this vulnerability into an unauthenticated and remote OS command execution issue.",
-    "published": "2024-12-27T16:15:23.403",
-    "keywords": "remote,execution,unauthenticated,command"
-  },
-  "CVE-2024-12986": {
-    "cvss": 7.3,
-    "description": "A vulnerability, which was classified as critical, has been found in DrayTek Vigor2960 and Vigor300B 1.5.1.3/1.5.1.4. This issue affects some unknown processing of the file /cgi-bin/mainfunction.cgi/apmcfgupptim of the component Web Management Interface. The manipulation of the argument session leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 1.5.1.5 is able to address this issue. It is recommended to upgrade the affected component.",
-    "published": "2024-12-27T16:15:23.927",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-12987": {
-    "cvss": 7.3,
-    "description": "A vulnerability, which was classified as critical, was found in DrayTek Vigor2960 and Vigor300B 1.5.1.4. Affected is an unknown function of the file /cgi-bin/mainfunction.cgi/apmcfgupload of the component Web Management Interface. The manipulation of the argument session leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 1.5.1.5 is able to address this issue. It is recommended to upgrade the affected component.",
-    "published": "2024-12-27T16:15:24.143",
-    "keywords": "remote,command"
-  },
-  "CVE-2024-56509": {
-    "cvss": 8.6,
-    "description": "changedetection.io is a free open source web page change detection, website watcher, restock monitor and notification service. Improper input validation in the application can allow attackers to perform local file read (LFR) or path traversal attacks. These vulnerabilities occur when user input is used to construct file paths without adequate sanitization or validation. For example, using file:../../../etc/passwd or file: ///etc/passwd can bypass weak validations and allow unauthorized access to sensitive files. Even though this has been addressed in previous patch, it is still insufficient. This vulnerability is fixed in 0.48.05.",
-    "published": "2024-12-27T16:15:25.333",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2024-50944": {
     "url": "https://github.com/simplcommerce/simplcommerce/issues/1110",
     "cvss": 9.8,
