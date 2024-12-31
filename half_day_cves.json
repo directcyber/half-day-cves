@@ -124,5 +124,11 @@
     "description": "The QOCA aim from Quanta Computer has an Authorization Bypass Through User-Controlled Key vulnerability. By controlling the user ID parameter, remote attackers with regular privileges could access certain features as any user, modify any user's account information and privileges, leading to privilege escalation.",
     "published": "2024-12-31T02:15:06.303",
     "keywords": "remote,bypass"
+  },
+  "CVE-2024-13061": {
+    "cvss": 9.8,
+    "description": "The Electronic Official Document Management System from 2100 Technology has an Authentication Bypass vulnerability. Although the product enforces an IP whitelist for the API used to query user tokens, unauthenticated remote attackers can still deceive the server to obtain tokens of arbitrary users, which can then be used to log into the system.",
+    "published": "2024-12-31T12:15:22.967",
+    "keywords": "remote,unauthenticated,authentication,bypass"
   }
 }
