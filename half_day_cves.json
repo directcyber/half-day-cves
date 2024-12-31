@@ -142,5 +142,11 @@
     "description": "Cross-Site Request Forgery (CSRF) vulnerability in Amarjeet Amar allows Authentication Bypass.This issue affects gap-hub-user-role: from n/a through 3.4.1.",
     "published": "2024-12-31T14:15:25.680",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2024-25133": {
+    "url": "https://github.com/openshift/hive/pull/2306",
+    "cvss": 8.8,
+    "description": "A flaw was found in the Hive ClusterDeployments resource in OpenShift Dedicated. In certain conditions, this issue may allow a developer account on a Hive-enabled cluster to obtain cluster-admin privileges by executing arbitrary commands on the hive/hive-controllers pod.",
+    "published": "2024-12-31T15:15:08.283"
   }
 }
