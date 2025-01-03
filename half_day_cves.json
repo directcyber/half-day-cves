@@ -4,5 +4,11 @@
     "description": "iTerm2 3.5.6 through 3.5.10 before 3.5.11 sometimes allows remote attackers to obtain sensitive information from terminal commands by reading the /tmp/framer.txt file. This can occur for certain it2ssh and SSH Integration configurations, during remote logins to hosts that have a common Python installation.",
     "published": "2025-01-03T05:15:08.243",
     "keywords": "remote,command,sensitive"
+  },
+  "CVE-2025-21609": {
+    "url": "https://github.com/siyuan-note/siyuan/commit/d9887aeec1b27073bec66299a9a4181dc42969f3",
+    "cvss": "-",
+    "description": "SiYuan is self-hosted, open source personal knowledge management software. SiYuan Note version 3.1.18 has an arbitrary file deletion vulnerability. The vulnerability exists in the `POST /api/history/getDocHistoryContent` endpoint. An attacker can craft a payload to exploit this vulnerability, resulting in the deletion of arbitrary files on the server. Commit d9887aeec1b27073bec66299a9a4181dc42969f3 fixes this vulnerability and is expected to be available in version 3.1.19.",
+    "published": "2025-01-03T17:15:09.147"
   }
 }
