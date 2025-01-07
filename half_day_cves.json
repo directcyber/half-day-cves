@@ -4,5 +4,29 @@
     "description": "Dell Update Package Framework, versions prior to 22.01.02, contain(s) a Local Privilege Escalation Vulnerability. A local low privileged attacker could potentially exploit this vulnerability, leading to the execution of arbitrary remote scripts on the server. Exploitation may lead to a denial of service by an attacker.",
     "published": "2025-01-07T03:15:06.047",
     "keywords": "remote,execution"
+  },
+  "CVE-2025-0245": {
+    "cvss": "-",
+    "description": "Under certain circumstances, a user opt-in setting that Focus should require authentication before use could have been be bypassed. This vulnerability affects Firefox < 134.",
+    "published": "2025-01-07T16:15:39.167",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-21622": {
+    "url": "https://github.com/macwarrior/clipbucket-v5/commit/22329c4675e82c7c95e74024ba247f837ac9e00b",
+    "cvss": 7.5,
+    "description": "ClipBucket V5 provides open source video hosting with PHP. During the user avatar upload workflow, a user can choose to upload and change their avatar at any time. During deletion, ClipBucket checks for the avatar_url as a filepath within the avatars subdirectory. If the URL path exists within the avatars directory, ClipBucket will delete it. There is no check for path traversal sequences in the provided user input (stored in the DB as avatar_url) therefore the final $file variable could be tainted with path traversal sequences. This leads to file deletion outside of the intended scope of the avatars folder. This vulnerability is fixed in 5.5.1 - 237.",
+    "published": "2025-01-07T16:15:40.510"
+  },
+  "CVE-2025-21623": {
+    "url": "https://github.com/macwarrior/clipbucket-v5/commit/75d663f010cd8569eb9e278f030838174fb30188",
+    "cvss": 7.5,
+    "description": "ClipBucket V5 provides open source video hosting with PHP. Prior to 5.5.1 - 238, ClipBucket V5 allows unauthenticated attackers to change the template directory via a directory traversal, which results in a denial of service.",
+    "published": "2025-01-07T16:15:40.690"
+  },
+  "CVE-2025-21624": {
+    "url": "https://github.com/macwarrior/clipbucket-v5/commit/893bfb0f1236c4a59b5e2843ab8d27a1e491b12b",
+    "cvss": 9.8,
+    "description": "ClipBucket V5 provides open source video hosting with PHP. Prior to 5.5.1 - 239, a file upload vulnerability exists in the Manage Playlist functionality of the application, specifically surrounding the uploading of playlist cover images. Without proper checks, an attacker can upload a PHP script file instead of an image file, thus allowing a webshell or other malicious files to be stored and executed on the server. This attack vector exists in both the admin area and low-level user area. This vulnerability is fixed in 5.5.1 - 239.",
+    "published": "2025-01-07T16:15:40.853"
   }
 }
