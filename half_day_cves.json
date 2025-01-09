@@ -76,5 +76,17 @@
     "description": "A vulnerability, which was classified as critical, has been found in KaiYuanTong ECT Platform up to 2.0.0. Affected by this issue is some unknown functionality of the file /public/server/runCode.php of the component HTTP POST Request Handler. The manipulation of the argument code leads to command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2025-01-09T05:15:07.997",
     "keywords": "remote,command"
+  },
+  "CVE-2025-21592": {
+    "cvss": 5.5,
+    "description": "An Exposure of Sensitive Information to an Unauthorized Actor\u00a0vulnerability in the command-line interface (CLI) of Juniper Networks Junos OS on SRX Series devices allows a local, low-privileged user with access to the Junos CLI to view the contents of sensitive files on the file system.\n\nThrough the execution of either 'show services advanced-anti-malware' or 'show services security-intelligence' command, a user with limited permissions (e.g., a low privilege login class user) can access protected files that should not be accessible to the user. These files may contain sensitive information that can be used to cause further impact to the system.\n\n\nThis issue affects Junos OS SRX Series:\n\n\n\n  *  All versions before 21.4R3-S8,\n\n  *  from 22.2 before 22.2R3-S5,\n\n  *  from 22.3 before 22.3R3-S3,\n  *  from 22.4 before 22.4R3-S2,\n\n  *  from 23.2 before 23.2R2-S1,\n\n  *  from 23.4 before 23.4R2.",
+    "published": "2025-01-09T17:15:18.203",
+    "keywords": "execution,command,sensitive"
+  },
+  "CVE-2025-21596": {
+    "cvss": 5.5,
+    "description": "An Improper Handling of Exceptional Conditions vulnerability in the command-line processing of Juniper Networks Junos OS on SRX1500, SRX4100, and SRX4200 devices allows a local, low-privileged authenticated attacker executing the 'show chassis environment pem' command to cause the chassis daemon (chassisd) to crash and restart, resulting in a temporary Denial of Service (DoS). However, repeated execution of this command will eventually cause the chassisd process to fail to restart, impacting packet processing on the system.\n\nThis issue affects Junos OS on SRX1500, SRX4100, SRX4200:\u00a0\n\n\n\n  *  All versions before 21.4R3-S9,\u00a0\n  *  from 22.2 before 22.2R3-S5,\u00a0\n  *  from 22.3 before 22.3R3-S4,\u00a0\n  *  from 22.4 before 22.4R3-S4,\u00a0\n  *  from 23.2 before 23.2R2-S3,\u00a0\n  *  from 23.4 before 23.4R2-S1.",
+    "published": "2025-01-09T17:15:18.593",
+    "keywords": "execution,command"
   }
 }
