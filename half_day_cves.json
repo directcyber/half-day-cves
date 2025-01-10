@@ -94,5 +94,11 @@
     "cvss": 9.3,
     "description": "FastCGI fcgi2 (aka fcgi) 2.x through 2.4.4 has an integer overflow (and resultant heap-based buffer overflow) via crafted nameLen or valueLen values in data to the IPC socket. This occurs in ReadParams in fcgiapp.c.",
     "published": "2025-01-10T12:15:25.480"
+  },
+  "CVE-2025-22946": {
+    "cvss": "-",
+    "description": "Tenda ac9 v1.0 firmware v15.03.05.19 contains a stack overflow vulnerability in /goform/SetOnlineDevName, which may lead to remote arbitrary code execution.",
+    "published": "2025-01-10T15:15:16.710",
+    "keywords": "remote,execution"
   }
 }
