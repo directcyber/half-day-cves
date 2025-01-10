@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-01-10T16:13:35.782609
+Updated at UTC 2025-01-10T17:09:49.087007
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2025-01-10T16:13:35.782609
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -94,46 +96,18 @@ Updated at UTC 2025-01-10T16:13:35.782609
 		
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21624">CVE-2025-21624</a></td>
-					<td>9.8</td>
-					<td><a target=_blank href="https://github.com/macwarrior/clipbucket-v5/commit/893bfb0f1236c4a59b5e2843ab8d27a1e491b12b">https://github.com/macwarrior/clipbucket-v5/commit/893bfb0f1236c4a59b5e2843ab8d27a1e491b12b</a></td>
-					<td class=date>2025-01-07T16:15:40.853</td>
-					<td class=description>ClipBucket V5 provides open source video hosting with PHP. Prior to 5.5.1 - 239, a file upload vulnerability exists in the Manage Playlist functionality of the application, specifically surrounding the uploading of playlist cover images. Without proper checks, an attacker can upload a PHP script file instead of an image file, thus allowing a webshell or other malicious files to be stored and executed on the server. This attack vector exists in both the admin area and low-level user area. This vulnerability is fixed in 5.5.1 - 239.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21623">CVE-2025-21623</a></td>
-					<td>7.5</td>
-					<td><a target=_blank href="https://github.com/macwarrior/clipbucket-v5/commit/75d663f010cd8569eb9e278f030838174fb30188">https://github.com/macwarrior/clipbucket-v5/commit/75d663f010cd8569eb9e278f030838174fb30188</a></td>
-					<td class=date>2025-01-07T16:15:40.690</td>
-					<td class=description>ClipBucket V5 provides open source video hosting with PHP. Prior to 5.5.1 - 238, ClipBucket V5 allows unauthenticated attackers to change the template directory via a directory traversal, which results in a denial of service.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21622">CVE-2025-21622</a></td>
-					<td>7.5</td>
-					<td><a target=_blank href="https://github.com/macwarrior/clipbucket-v5/commit/22329c4675e82c7c95e74024ba247f837ac9e00b">https://github.com/macwarrior/clipbucket-v5/commit/22329c4675e82c7c95e74024ba247f837ac9e00b</a></td>
-					<td class=date>2025-01-07T16:15:40.510</td>
-					<td class=description>ClipBucket V5 provides open source video hosting with PHP. During the user avatar upload workflow, a user can choose to upload and change their avatar at any time. During deletion, ClipBucket checks for the avatar_url as a filepath within the avatars subdirectory. If the URL path exists within the avatars directory, ClipBucket will delete it. There is no check for path traversal sequences in the provided user input (stored in the DB as avatar_url) therefore the final $file variable could be tainted with path traversal sequences. This leads to file deletion outside of the intended scope of the avatars folder. This vulnerability is fixed in 5.5.1 - 237.</td>
-
-
-				</tr>
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-22949">CVE-2025-22949</a></td>
+					<td>-</td>
+					<td>remote,execution,command</td>
+					<td class=date>2025-01-10T16:15:31.137</td>
+					<td class=description>Tenda ac9 v1.0 firmware v15.03.05.19 is vulnerable to command injection in /goform/SetSambaCfg, which may lead to remote arbitrary code execution.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -340,22 +314,6 @@ This vulnerability exists because the affected software does not properly valida
 
 These vulnerabilities exist because the web-based management interface does not properly validate user-supplied input. An attacker could exploit these vulnerabilities by inserting malicious data into specific data fields in the interface. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information. To exploit these vulnerabilities, the attacker must have valid administrative credentials.
 Cisco has released software updates that address these vulnerabilities. There are no workarounds that address these vulnerabilities.</td>
-				</tr>
-			
-		
-			
-		
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0245">CVE-2025-0245</a></td>
-					<td>3.3</td>
-					<td>authentication,bypass</td>
-					<td class=date>2025-01-07T16:15:39.167</td>
-					<td class=description>Under certain circumstances, a user opt-in setting that Focus should require authentication before use could have been be bypassed. This vulnerability affects Firefox < 134.</td>
 				</tr>
 			
 		
