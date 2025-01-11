@@ -1,22 +1,4 @@
 {
-  "CVE-2025-20123": {
-    "cvss": 4.8,
-    "description": "Multiple vulnerabilities in the web-based management interface of Cisco Crosswork Network Controller could allow an authenticated, remote attacker to conduct cross-site scripting (XSS) attacks against users of the interface of an affected system.\r\n\r\nThese vulnerabilities exist because the web-based management interface does not properly validate user-supplied input. An attacker could exploit these vulnerabilities by inserting malicious data into specific data fields in the interface. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information. To exploit these vulnerabilities, the attacker must have valid administrative credentials.\r\nCisco has released software updates that address these vulnerabilities. There are no workarounds that address these vulnerabilities.",
-    "published": "2025-01-08T16:15:38.150",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2025-20126": {
-    "cvss": 4.8,
-    "description": "A vulnerability in certification validation routines of Cisco ThousandEyes Endpoint Agent for macOS and RoomOS could allow an unauthenticated, remote attacker to intercept or manipulate metrics information.\r\n\r\nThis vulnerability exists because the affected software does not properly validate certificates for hosted metrics services. An on-path attacker could exploit this vulnerability by intercepting network traffic using a crafted certificate. A successful exploit could allow the attacker to masquerade as a trusted host and monitor or change communications between the remote metrics service and the vulnerable client.",
-    "published": "2025-01-08T16:15:38.357",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-22137": {
-    "cvss": 9.8,
-    "description": "Pingvin Share is a self-hosted file sharing platform and an alternative for WeTransfer. This vulnerability allows an authenticated or unauthenticated (if anonymous shares are allowed) user to overwrite arbitrary files on the server, including sensitive system files, via HTTP POST requests. The issue has been patched in version 1.4.0.",
-    "published": "2025-01-08T16:15:38.920",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2025-20166": {
     "cvss": 5.4,
     "description": "A vulnerability in the web-based management interface of Cisco Common Services Platform Collector (CSPC) could allow an authenticated, remote attacker to conduct cross-site scripting (XSS) attacks against a user of the interface.\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input by the web-based management interface of an affected system. An attacker could exploit this vulnerability by injecting malicious code into specific pages of the interface. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information. To exploit this vulnerability, the attacker must have at least a low-privileged account on an affected device.\r\nCisco has not released software updates that address this vulnerability. There are no workarounds that address this vulnerability.",
