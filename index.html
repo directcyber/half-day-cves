@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-01-15T18:14:30.591131
+Updated at UTC 2025-01-15T19:08:37.544667
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,20 @@ Updated at UTC 2025-01-15T18:14:30.591131
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0480">CVE-2025-0480</a></td>
+					<td>4.3</td>
+					<td><a target=_blank href="https://github.com/wuzhicms/wuzhicms/issues/212#issue-2769226216">https://github.com/wuzhicms/wuzhicms/issues/212#issue-2769226216</a></td>
+					<td class=date>2025-01-15T18:15:24.457</td>
+					<td class=description>A vulnerability classified as problematic has been found in wuzhicms 4.1.0. This affects the function test of the file coreframe/app/search/admin/config.php. The manipulation of the argument sphinxhost/sphinxport leads to server-side request forgery. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -334,6 +348,18 @@ Updated at UTC 2025-01-15T18:14:30.591131
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-23040">CVE-2025-23040</a></td>
+					<td>6.6</td>
+					<td>remote,authentication</td>
+					<td class=date>2025-01-15T18:15:24.797</td>
+					<td class=description>GitHub Desktop is an open-source Electron-based GitHub app designed for git development. An attacker convincing a user to clone a repository directly or through a submodule can allow the attacker access to the user's credentials through the use of maliciously crafted remote URL. GitHub Desktop relies on Git to perform all network related operations (such as cloning, fetching, and pushing). When a user attempts to clone a repository GitHub Desktop will invoke `git clone` and when Git encounters a remote which requires authentication it will request the credentials for that remote host from GitHub Desktop using the git-credential protocol. Using a maliciously crafted URL it's possible to cause the credential request coming from Git to be misinterpreted by Github Desktop such that it will send credentials for a different host than the host that Git is currently communicating with thereby allowing for secret exfiltration. GitHub username and OAuth token, or credentials for other Git remote hosts stored in GitHub Desktop could be improperly transmitted to an unrelated host. Users should update to GitHub Desktop 3.4.12 or greater which fixes this vulnerability. Users who suspect they may be affected should revoke any relevant credentials.</td>
+				</tr>
+			
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
