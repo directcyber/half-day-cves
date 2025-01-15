@@ -1,22 +1,4 @@
 {
-  "CVE-2025-23016": {
-    "url": "https://github.com/fastcgi-archives/fcgi2/issues/67",
-    "cvss": 9.3,
-    "description": "FastCGI fcgi2 (aka fcgi) 2.x through 2.4.4 has an integer overflow (and resultant heap-based buffer overflow) via crafted nameLen or valueLen values in data to the IPC socket. This occurs in ReadParams in fcgiapp.c.",
-    "published": "2025-01-10T12:15:25.480"
-  },
-  "CVE-2025-22946": {
-    "cvss": "-",
-    "description": "Tenda ac9 v1.0 firmware v15.03.05.19 contains a stack overflow vulnerability in /goform/SetOnlineDevName, which may lead to remote arbitrary code execution.",
-    "published": "2025-01-10T15:15:16.710",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-22949": {
-    "cvss": "-",
-    "description": "Tenda ac9 v1.0 firmware v15.03.05.19 is vulnerable to command injection in /goform/SetSambaCfg, which may lead to remote arbitrary code execution.",
-    "published": "2025-01-10T16:15:31.137",
-    "keywords": "remote,execution,command"
-  },
   "CVE-2025-0398": {
     "url": "https://github.com/longpi1/warehouse/issues/4#issue-2765524047",
     "cvss": 2.4,
@@ -94,5 +76,395 @@
     "cvss": 6.3,
     "description": "A vulnerability classified as critical was found in liujianview gymxmjpa 1.0. This vulnerability affects the function MenberDaoInpl of the file src/main/java/com/liujian/gymxmjpa/controller/MenberConntroller.java. The manipulation of the argument hyname leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
     "published": "2025-01-13T03:15:06.847"
+  },
+  "CVE-2025-0412": {
+    "cvss": 7.8,
+    "description": "Luxion KeyShot Viewer KSP File Parsing Memory Corruption Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Luxion KeyShot Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the processing of KSP files. The issue results from the lack of proper validation of user-supplied data, which can result in a memory corruption condition. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22139.",
+    "published": "2025-01-13T04:15:06.477",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-0394": {
+    "cvss": 8.8,
+    "description": "The WordPress CRM, Email & Marketing Automation for WordPress | Award Winner \u2014 Groundhogg plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the gh_big_file_upload() function in all versions up to, and including, 3.7.3.5. This makes it possible for authenticated attackers, with Author-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2025-01-14T09:15:21.430",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-22983": {
+    "cvss": "-",
+    "description": "An access control issue in the component /square/getAllSquare/circle of iceCMS v2.2.0 allows unauthenticated attackers to access sensitive information.",
+    "published": "2025-01-14T16:15:35.603",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-22984": {
+    "cvss": "-",
+    "description": "An access control issue in the component /api/squareComment/DelectSquareById of iceCMS v2.2.0 allows unauthenticated attackers to access sensitive information.",
+    "published": "2025-01-14T16:15:35.710",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-21171": {
+    "cvss": 7.5,
+    "description": ".NET Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:30.100",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21172": {
+    "cvss": 7.5,
+    "description": ".NET and Visual Studio Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:30.300",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21176": {
+    "cvss": 8.8,
+    "description": ".NET, .NET Framework, and Visual Studio Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:30.650",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21178": {
+    "cvss": 8.8,
+    "description": "Visual Studio Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:30.847",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21186": {
+    "cvss": 7.8,
+    "description": "Microsoft Access Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:31.020",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21187": {
+    "cvss": 7.8,
+    "description": "Microsoft Power Automate Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:31.187",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21223": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:33.947",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21224": {
+    "cvss": 8.1,
+    "description": "Windows Line Printer Daemon (LPD) Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:34.150",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21233": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:35.870",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21236": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:36.667",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21237": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:36.983",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21238": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:37.407",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21239": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:38.010",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21240": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:38.770",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21241": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:39.490",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21243": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:40.180",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21244": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:40.487",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21245": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:41.100",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21246": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:41.790",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21248": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:42.107",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21250": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:42.593",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21252": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:43.180",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21266": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:45.797",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21273": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:47.240",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21282": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:49.110",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21286": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:49.760",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21291": {
+    "cvss": 8.8,
+    "description": "Windows Direct Show Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:50.767",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21294": {
+    "cvss": 8.1,
+    "description": "Microsoft Digest Authentication Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:51.320",
+    "keywords": "remote,execution,authentication"
+  },
+  "CVE-2025-21295": {
+    "cvss": 8.1,
+    "description": "SPNEGO Extended Negotiation (NEGOEX) Security Mechanism Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:51.520",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21296": {
+    "cvss": 7.5,
+    "description": "BranchCache Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:51.710",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21297": {
+    "cvss": 8.1,
+    "description": "Windows Remote Desktop Services Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:51.890",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21298": {
+    "cvss": 9.8,
+    "description": "Windows OLE Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:52.080",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21302": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:52.840",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21303": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:53.047",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21305": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:53.450",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21306": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:53.630",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21307": {
+    "cvss": 9.8,
+    "description": "Windows Reliable Multicast Transport Driver (RMCAST) Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:53.837",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21309": {
+    "cvss": 8.1,
+    "description": "Windows Remote Desktop Services Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:54.210",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21326": {
+    "cvss": 7.8,
+    "description": "Internet Explorer Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:57.170",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21338": {
+    "cvss": 7.8,
+    "description": "GDI+ Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:59.300",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21339": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:15:59.480",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21344": {
+    "cvss": 7.8,
+    "description": "Microsoft SharePoint Server Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:16:00.227",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21345": {
+    "cvss": 7.8,
+    "description": "Microsoft Office Visio Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:16:00.437",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21348": {
+    "cvss": 7.2,
+    "description": "Microsoft SharePoint Server Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:16:00.780",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21354": {
+    "cvss": 8.4,
+    "description": "Microsoft Excel Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:16:00.947",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21356": {
+    "cvss": 7.8,
+    "description": "Microsoft Office Visio Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:16:01.130",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21357": {
+    "cvss": 6.7,
+    "description": "Microsoft Outlook Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:16:01.293",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21361": {
+    "cvss": 7.8,
+    "description": "Microsoft Outlook Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:16:01.637",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21362": {
+    "cvss": 8.4,
+    "description": "Microsoft Excel Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:16:01.820",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21363": {
+    "cvss": 7.8,
+    "description": "Microsoft Word Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:16:01.993",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21365": {
+    "cvss": 7.8,
+    "description": "Microsoft Office Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:16:02.310",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21366": {
+    "cvss": 7.8,
+    "description": "Microsoft Access Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:16:02.463",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21395": {
+    "cvss": 7.8,
+    "description": "Microsoft Access Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:16:04.033",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21402": {
+    "cvss": 7.8,
+    "description": "Microsoft Office OneNote Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:16:04.190",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21409": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:16:04.673",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21411": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:16:04.860",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21413": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:16:05.103",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21417": {
+    "cvss": 8.8,
+    "description": "Windows Telephony Service Remote Code Execution Vulnerability",
+    "published": "2025-01-14T18:16:05.307",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-23042": {
+    "cvss": "-",
+    "description": "Gradio is an open-source Python package that allows quick building of demos and web application for machine learning models, API, or any arbitrary Python function. Gradio's Access Control List (ACL) for file paths can be bypassed by altering the letter case of a blocked file or directory path. This vulnerability arises due to the lack of case normalization in the file path validation logic. On case-insensitive file systems, such as those used by Windows and macOS, this flaw enables attackers to circumvent security restrictions and access sensitive files that should be protected. This issue can lead to unauthorized data access, exposing sensitive information and undermining the integrity of Gradio's security model. Given Gradio's popularity for building web applications, particularly in machine learning and AI, this vulnerability may pose a substantial threat if exploited in production environments. This issue has been addressed in release version 5.6.0. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+    "published": "2025-01-14T19:15:44.863",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2025-23013": {
+    "cvss": "-",
+    "description": "In Yubico pam-u2f before 1.3.1, local privilege escalation can sometimes occur. This product implements a Pluggable Authentication Module (PAM) that can be deployed to support authentication using a YubiKey or other FIDO compliant authenticators on macOS or Linux. This software package has an issue that allows for an authentication bypass in some configurations. An attacker would require the ability to access the system as an unprivileged user. Depending on the configuration, the attacker may also need to know the user's password.",
+    "published": "2025-01-15T04:15:20.037",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-0441": {
+    "cvss": "-",
+    "description": "Inappropriate implementation in Fenced Frames in Google Chrome prior to 132.0.6834.83 allowed a remote attacker to obtain potentially sensitive information from the system via a crafted HTML page. (Chromium security severity: Medium)",
+    "published": "2025-01-15T11:15:10.287",
+    "keywords": "remote,sensitive"
   }
 }
