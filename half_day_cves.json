@@ -1,22 +1,4 @@
 {
-  "CVE-2025-0406": {
-    "url": "https://github.com/liujianview/gymxmjpa/issues/5#issue-2765786069",
-    "cvss": 6.3,
-    "description": "A vulnerability was found in liujianview gymxmjpa 1.0. It has been classified as critical. Affected is the function SubjectDaoImpl of the file src/main/java/com/liujian/gymxmjpa/controller/SubjectController.java. The manipulation of the argument subname leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-01-13T02:15:07.490"
-  },
-  "CVE-2025-0407": {
-    "url": "https://github.com/liujianview/gymxmjpa/issues/7#issue-2765800789",
-    "cvss": 6.3,
-    "description": "A vulnerability was found in liujianview gymxmjpa 1.0. It has been declared as critical. Affected by this vulnerability is the function EquipmentDaoImpl of the file src/main/java/com/liujian/gymxmjpa/controller/EquipmentController.java. The manipulation of the argument hyname leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-01-13T02:15:07.667"
-  },
-  "CVE-2025-0408": {
-    "url": "https://github.com/liujianview/gymxmjpa/issues/8#issue-2765807702",
-    "cvss": 6.3,
-    "description": "A vulnerability was found in liujianview gymxmjpa 1.0. It has been rated as critical. Affected by this issue is the function LoosDaoImpl of the file src/main/java/com/liujian/gymxmjpa/controller/LoosController.java. The manipulation of the argument loosName leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-01-13T02:15:07.840"
-  },
   "CVE-2025-0409": {
     "url": "https://github.com/liujianview/gymxmjpa/issues/9#issue-2765816110",
     "cvss": 6.3,
@@ -430,5 +412,23 @@
     "description": "GitHub Desktop is an open-source Electron-based GitHub app designed for git development. An attacker convincing a user to clone a repository directly or through a submodule can allow the attacker access to the user's credentials through the use of maliciously crafted remote URL. GitHub Desktop relies on Git to perform all network related operations (such as cloning, fetching, and pushing). When a user attempts to clone a repository GitHub Desktop will invoke `git clone` and when Git encounters a remote which requires authentication it will request the credentials for that remote host from GitHub Desktop using the git-credential protocol. Using a maliciously crafted URL it's possible to cause the credential request coming from Git to be misinterpreted by Github Desktop such that it will send credentials for a different host than the host that Git is currently communicating with thereby allowing for secret exfiltration. GitHub username and OAuth token, or credentials for other Git remote hosts stored in GitHub Desktop could be improperly transmitted to an unrelated host. Users should update to GitHub Desktop 3.4.12 or greater which fixes this vulnerability. Users who suspect they may be affected should revoke any relevant credentials.",
     "published": "2025-01-15T18:15:24.797",
     "keywords": "remote,authentication"
+  },
+  "CVE-2025-0455": {
+    "cvss": 9.8,
+    "description": "The airPASS from NetVision Information has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL commands to read, modify, and delete database contents.",
+    "published": "2025-01-16T02:15:27.203",
+    "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2025-0456": {
+    "cvss": 9.8,
+    "description": "The airPASS from NetVision Information has a Missing Authentication vulnerability, allowing unauthenticated remote attackers to access the specific administrative functionality to retrieve * all accounts and passwords.",
+    "published": "2025-01-16T02:15:27.387",
+    "keywords": "remote,unauthenticated,authentication"
+  },
+  "CVE-2025-0457": {
+    "cvss": 8.8,
+    "description": "The airPASS from NetVision Information has an OS Command Injection vulnerability, allowing remote attackers with regular privileges to inject and execute arbitrary OS commands.",
+    "published": "2025-01-16T02:15:27.553",
+    "keywords": "remote,command"
   }
 }
