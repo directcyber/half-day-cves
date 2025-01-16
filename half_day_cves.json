@@ -1,10 +1,4 @@
 {
-  "CVE-2025-0412": {
-    "cvss": 7.8,
-    "description": "Luxion KeyShot Viewer KSP File Parsing Memory Corruption Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Luxion KeyShot Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the processing of KSP files. The issue results from the lack of proper validation of user-supplied data, which can result in a memory corruption condition. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-22139.",
-    "published": "2025-01-13T04:15:06.477",
-    "keywords": "remote,execution"
-  },
   "CVE-2025-0394": {
     "cvss": 8.8,
     "description": "The WordPress CRM, Email & Marketing Automation for WordPress | Award Winner \u2014 Groundhogg plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the gh_big_file_upload() function in all versions up to, and including, 3.7.3.5. This makes it possible for authenticated attackers, with Author-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
