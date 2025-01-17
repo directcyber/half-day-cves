@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-01-17T21:09:29.367991
+Updated at UTC 2025-01-17T22:09:56.500191
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,18 @@ Updated at UTC 2025-01-17T21:09:29.367991
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-23206">CVE-2025-23206</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/aws/aws-cdk/issues/32920">https://github.com/aws/aws-cdk/issues/32920</a></td>
+					<td class=date>2025-01-17T21:15:12.003</td>
+					<td class=description>The AWS Cloud Development Kit (AWS CDK) is an open-source software development framework to define cloud infrastructure in code and provision it through AWS CloudFormation. Users who use IAM OIDC custom resource provider package will download CA Thumbprints as part of the custom resource workflow. However, the current `tls.connect` method will always set `rejectUnauthorized: false` which is a potential security concern. CDK should follow the best practice and set `rejectUnauthorized: true`. However, this could be a breaking change for existing CDK applications and we should fix this with a feature flag. Note that this is marked as low severity Security advisory because the issuer url is provided by CDK users who define the CDK application. If they insist on connecting to a unauthorized OIDC provider, CDK should not disallow this. Additionally, the code block is run in a Lambda environment which mitigate the MITM attack. The patch is in progress. To mitigate, upgrade to CDK v2.177.0 (Expected release date 2025-02-22). Once upgraded, users should make sure the feature flag '@aws-cdk/aws-iam:oidcRejectUnauthorizedConnections' is set to true in `cdk.context.json` or `cdk.json`. There are no known workarounds for this vulnerability.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -106,6 +118,8 @@ Issue was fixed:  https://github.com/FFmpeg/FFmpeg/commit/b5b6391d64807578ab872
 		
 
 		<hr>
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
