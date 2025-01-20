@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-01-20T21:09:57.838559
+Updated at UTC 2025-01-20T22:09:56.381689
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -82,18 +82,6 @@ Updated at UTC 2025-01-20T21:09:57.838559
 		
 			
 		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-23206">CVE-2025-23206</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/aws/aws-cdk/issues/32920">https://github.com/aws/aws-cdk/issues/32920</a></td>
-					<td class=date>2025-01-17T21:15:12.003</td>
-					<td class=description>The AWS Cloud Development Kit (AWS CDK) is an open-source software development framework to define cloud infrastructure in code and provision it through AWS CloudFormation. Users who use IAM OIDC custom resource provider package will download CA Thumbprints as part of the custom resource workflow. However, the current `tls.connect` method will always set `rejectUnauthorized: false` which is a potential security concern. CDK should follow the best practice and set `rejectUnauthorized: true`. However, this could be a breaking change for existing CDK applications and we should fix this with a feature flag. Note that this is marked as low severity Security advisory because the issuer url is provided by CDK users who define the CDK application. If they insist on connecting to a unauthorized OIDC provider, CDK should not disallow this. Additionally, the code block is run in a Lambda environment which mitigate the MITM attack. The patch is in progress. To mitigate, upgrade to CDK v2.177.0 (Expected release date 2025-02-22). Once upgraded, users should make sure the feature flag '@aws-cdk/aws-iam:oidcRejectUnauthorizedConnections' is set to true in `cdk.context.json` or `cdk.json`. There are no known workarounds for this vulnerability.</td>
-
-
-				</tr>
 			
 		
 
@@ -171,8 +159,6 @@ Successful exploitation of this vulnerability could allow the attacker to obtain
 					<td class=date>2025-01-18T01:15:07.633</td>
 					<td class=description>Craft is a flexible, user-friendly CMS for creating custom digital experiences on the web and beyond. This is an remote code execution (RCE) vulnerability that affects Craft 4 and 5 installs where your security key has already been compromised. Anyone running an unpatched version of Craft with a compromised security key is affected. This vulnerability has been patched in Craft 5.5.8 and 4.13.8. Users who cannot update to a patched version, should rotate their security keys and ensure their privacy to help migitgate the issue.</td>
 				</tr>
-			
-		
 			
 		
 
