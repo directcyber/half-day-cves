@@ -22,5 +22,11 @@
     "description": "The Ultimate Member \u2013 User Profile, Registration, Login, Member Directory, Content Restriction & Membership Plugin plugin for WordPress is vulnerable to time-based SQL Injection via the search parameter in all versions up to, and including, 2.9.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
     "published": "2025-01-18T06:15:27.880",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-0583": {
+    "cvss": 6.1,
+    "description": "The a+HRD from aEnrich Technology has a Reflected Cross-site Scripting vulnerability, allowing unauthenticated remote attackers to execute arbitrary JavaScript codes in user's browser through phishing attacks.",
+    "published": "2025-01-20T02:15:19.767",
+    "keywords": "remote,unauthenticated"
   }
 }
