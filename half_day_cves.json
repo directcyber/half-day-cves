@@ -46,5 +46,11 @@
     "description": "This vulnerability exists in the CP Plus Router due to insecure handling of cookie flags used within its web interface. A remote attacker could exploit this vulnerability by intercepting data transmissions during an HTTP session on the vulnerable system.\n \nSuccessful exploitation of this vulnerability could allow the attacker to obtain sensitive information and compromise the targeted system.",
     "published": "2025-01-20T12:15:23.563",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2025-23044": {
+    "url": "https://github.com/pwndoc/pwndoc/commit/14acb704891245bf1703ce6296d62112e85aa995",
+    "cvss": 6.8,
+    "description": "PwnDoc is a penetration test report generator. There is no CSRF protection in pwndoc, allowing attackers to send requests on a logged-in user's behalf. This includes GET and POST requests due to the missing SameSite= attribute on cookies and the ability to refresh cookies. Commit 14acb704891245bf1703ce6296d62112e85aa995 patches the issue.",
+    "published": "2025-01-20T16:15:28.170"
   }
 }
