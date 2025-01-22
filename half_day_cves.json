@@ -35,6 +35,12 @@
     "description": "PwnDoc is a penetration test report generator. There is no CSRF protection in pwndoc, allowing attackers to send requests on a logged-in user's behalf. This includes GET and POST requests due to the missing SameSite= attribute on cookies and the ability to refresh cookies. Commit 14acb704891245bf1703ce6296d62112e85aa995 patches the issue.",
     "published": "2025-01-20T16:15:28.170"
   },
+  "CVE-2025-24012": {
+    "url": "https://github.com/umbraco/umbraco-cms/commit/d4f8754f933895b3a329296e25ddea6f84a0aea2",
+    "cvss": 4.6,
+    "description": "Umbraco is a free and open source .NET content management system. Starting in version 14.0.0 and prior to versions 14.3.2 and 15.1.2, authenticated users are able to exploit a cross-site scripting vulnerability when viewing certain localized backoffice components. Versions 14.3.2 and 15.1.2 contain a patch.",
+    "published": "2025-01-21T16:15:14.923"
+  },
   "CVE-2025-23196": {
     "cvss": 8.8,
     "description": "A code injection vulnerability exists in the Ambari Alert Definition \nfeature, allowing authenticated users to inject and execute arbitrary \nshell commands. The vulnerability arises when defining alert scripts, \nwhere the script filename field is executed using `sh -c`. An attacker \nwith authenticated access can exploit this vulnerability to inject \nmalicious commands, leading to remote code execution on the server. The \nissue has been fixed in the latest versions of Ambari.",
@@ -52,5 +58,23 @@
     "cvss": "-",
     "description": "A SQL Injection vulnerability exists in Senayan Library Management System SLiMS 9 Bulian 9.6.1 via the tempLoanID parameter in the loan form on /admin/modules/circulation/loan.php.",
     "published": "2025-01-22T15:15:15.130"
+  },
+  "CVE-2025-20128": {
+    "cvss": 5.3,
+    "description": "A vulnerability in the Object Linking and Embedding 2 (OLE2) decryption routine of ClamAV could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.\r\n\r\nThis vulnerability is due to an integer underflow in a bounds check that allows for a heap buffer overflow read. An attacker could exploit this vulnerability by submitting a crafted file containing OLE2 content to be scanned by ClamAV on an affected device. A successful exploit could allow the attacker to terminate the ClamAV scanning process, resulting in a DoS condition on the affected software.\r\nFor a description of this vulnerability, see the .\r\nCisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.",
+    "published": "2025-01-22T17:15:12.583",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-20165": {
+    "cvss": 7.5,
+    "description": "A vulnerability in the SIP processing subsystem of Cisco BroadWorks could allow an unauthenticated, remote attacker to halt the processing of incoming SIP requests, resulting in a denial of service (DoS) condition.\r\n\r\nThis vulnerability is due to improper memory handling for certain SIP requests. An attacker could exploit this vulnerability by sending a high number of SIP requests to an affected system. A successful exploit could allow the attacker to exhaust the memory that was allocated to the Cisco BroadWorks Network Servers that handle SIP traffic. If no memory is available, the Network Servers can no longer process incoming requests, resulting in a DoS condition that requires manual intervention to recover.",
+    "published": "2025-01-22T17:15:13.010",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-24399": {
+    "cvss": "-",
+    "description": "Jenkins OpenId Connect Authentication Plugin 4.452.v2849b_d3945fa_ and earlier, except 4.438.440.v3f5f201de5dc, treats usernames as case-insensitive, allowing attackers on Jenkins instances configured with a case-sensitive OpenID Connect provider to log in as any user by providing a username that differs only in letter case, potentially gaining administrator access to Jenkins.",
+    "published": "2025-01-22T17:15:13.853",
+    "keywords": "authentication,sensitive"
   }
 }
