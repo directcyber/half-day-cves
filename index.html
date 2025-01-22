@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-01-22T18:15:24.303546
+Updated at UTC 2025-01-22T19:09:44.799388
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2025-01-22T18:15:24.303546
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -116,6 +118,16 @@ Updated at UTC 2025-01-22T18:15:24.303546
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-23047">CVE-2025-23047</a></td>
+					<td>6.5</td>
+					<td>sensitive,leak</td>
+					<td class=date>2025-01-22T18:15:21.893</td>
+					<td class=description>Cilium is a networking, observability, and security solution with an eBPF-based dataplane. An insecure default `Access-Control-Allow-Origin` header value could lead to sensitive data exposure for users of Cilium versions 1.14.0 through 1.14.7, 1.15.0 through 1.15.11, and 1.16.0 through 1.16.4 who deploy Hubble UI using either Cilium CLI or via the Cilium Helm chart. A user with access to a Hubble UI instance affected by this issue could leak configuration details about the Kubernetes cluster which Hubble UI is monitoring, including node names, IP addresses, and other metadata about workloads and the cluster networking configuration. In order for this vulnerability to be exploited, a victim would have to first visit a malicious page. This issue is fixed in Cilium v1.14.18, v1.15.12, and v1.16.5. As a workaround, users who deploy Hubble UI using the Cilium Helm chart directly can remove the CORS headers from the Helm template as shown in the patch from commit a3489f190ba6e87b5336ee685fb6c80b1270d06d.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
