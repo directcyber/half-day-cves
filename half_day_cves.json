@@ -1,10 +1,4 @@
 {
-  "CVE-2025-23044": {
-    "url": "https://github.com/pwndoc/pwndoc/commit/14acb704891245bf1703ce6296d62112e85aa995",
-    "cvss": 6.8,
-    "description": "PwnDoc is a penetration test report generator. There is no CSRF protection in pwndoc, allowing attackers to send requests on a logged-in user's behalf. This includes GET and POST requests due to the missing SameSite= attribute on cookies and the ability to refresh cookies. Commit 14acb704891245bf1703ce6296d62112e85aa995 patches the issue.",
-    "published": "2025-01-20T16:15:28.170"
-  },
   "CVE-2025-24012": {
     "url": "https://github.com/umbraco/umbraco-cms/commit/d4f8754f933895b3a329296e25ddea6f84a0aea2",
     "cvss": 4.6,
