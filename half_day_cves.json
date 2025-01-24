@@ -148,5 +148,11 @@
     "description": "The HL7 FHIR IG publisher is a tool to take a set of inputs and create a standard FHIR IG. Prior to version 1.8.9, in CI contexts, the IG Publisher CLI uses git commands to determine the URL of the originating repo. If the repo was cloned, or otherwise set to use a repo that uses a username and credential based URL, the entire URL will be included in the built Implementation Guide, exposing username and credential. This does not impact users that clone public repos without credentials, such as those using the auto-ig-build continuous integration infrastructure. This problem has been patched in release 1.8.9. Some workarounds are available. Users should ensure the IG repo they are publishing does not have username or credentials included in the `origin` URL. Running the command `git remote origin url` should return a URL that contains no username, password, or token; or users should run the IG Publisher CLI with the `-repo` parameter and specify a URL that contains no username, password, or token.",
     "published": "2025-01-24T19:15:13.633",
     "keywords": "remote,command"
+  },
+  "CVE-2025-0706": {
+    "url": "https://github.com/joeybling/bootplus/issues/28#issue-2786945699",
+    "cvss": 2.4,
+    "description": "A vulnerability was found in JoeyBling bootplus up to 247d5f6c209be1a5cf10cd0fa18e1d8cc63cf55d and classified as problematic. Affected by this issue is some unknown functionality of the file /admin/sys/admin.html. The manipulation leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. Continious delivery with rolling releases is used by this product. Therefore, no version details of affected nor updated releases are available.",
+    "published": "2025-01-24T20:15:33.830"
   }
 }
