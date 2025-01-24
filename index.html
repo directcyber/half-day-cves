@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-01-24T19:09:14.575745
+Updated at UTC 2025-01-24T20:11:40.571641
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,44 @@ Updated at UTC 2025-01-24T19:09:14.575745
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0705">CVE-2025-0705</a></td>
+					<td>4.3</td>
+					<td><a target=_blank href="https://github.com/joeybling/bootplus/issues/27#issue-2786941847">https://github.com/joeybling/bootplus/issues/27#issue-2786941847</a></td>
+					<td class=date>2025-01-24T19:15:13.467</td>
+					<td class=description>A vulnerability has been found in JoeyBling bootplus up to 247d5f6c209be1a5cf10cd0fa18e1d8cc63cf55d and classified as problematic. Affected by this vulnerability is the function qrCode of the file src/main/java/io/github/controller/QrCodeController.java. The manipulation of the argument text leads to open redirect. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. This product takes the approach of rolling releases to provide continious delivery. Therefore, version details for affected and updated releases are not available.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0704">CVE-2025-0704</a></td>
+					<td>5.3</td>
+					<td><a target=_blank href="https://github.com/joeybling/bootplus/issues/26#issue-2786934642">https://github.com/joeybling/bootplus/issues/26#issue-2786934642</a></td>
+					<td class=date>2025-01-24T19:15:13.303</td>
+					<td class=description>A vulnerability, which was classified as problematic, was found in JoeyBling bootplus up to 247d5f6c209be1a5cf10cd0fa18e1d8cc63cf55d. Affected is the function qrCode of the file src/main/java/io/github/controller/QrCodeController.java. The manipulation of the argument w/h leads to resource consumption. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. This product is using a rolling release to provide continious delivery. Therefore, no version details for affected nor updated releases are available.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0703">CVE-2025-0703</a></td>
+					<td>4.3</td>
+					<td><a target=_blank href="https://github.com/joeybling/bootplus/issues/25#issue-2786928618">https://github.com/joeybling/bootplus/issues/25#issue-2786928618</a></td>
+					<td class=date>2025-01-24T19:15:13.137</td>
+					<td class=description>A vulnerability, which was classified as problematic, has been found in JoeyBling bootplus up to 247d5f6c209be1a5cf10cd0fa18e1d8cc63cf55d. This issue affects some unknown processing of the file src/main/java/io/github/controller/SysFileController.java. The manipulation of the argument name leads to path traversal. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. This product does not use versioning. This is why information about affected and unaffected releases are unavailable.</td>
+
+
+				</tr>
+			
 		
 			
 				<tr>
@@ -162,6 +200,22 @@ Updated at UTC 2025-01-24T19:09:14.575745
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24363">CVE-2025-24363</a></td>
+					<td>4.2</td>
+					<td>remote,command</td>
+					<td class=date>2025-01-24T19:15:13.633</td>
+					<td class=description>The HL7 FHIR IG publisher is a tool to take a set of inputs and create a standard FHIR IG. Prior to version 1.8.9, in CI contexts, the IG Publisher CLI uses git commands to determine the URL of the originating repo. If the repo was cloned, or otherwise set to use a repo that uses a username and credential based URL, the entire URL will be included in the built Implementation Guide, exposing username and credential. This does not impact users that clone public repos without credentials, such as those using the auto-ig-build continuous integration infrastructure. This problem has been patched in release 1.8.9. Some workarounds are available. Users should ensure the IG repo they are publishing does not have username or credentials included in the `origin` URL. Running the command `git remote origin url` should return a URL that contains no username, password, or token; or users should run the IG Publisher CLI with the `-repo` parameter and specify a URL that contains no username, password, or token.</td>
+				</tr>
+			
+		
+			
+		
+			
+		
+			
 		
 			
 		
