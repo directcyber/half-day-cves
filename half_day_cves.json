@@ -82,5 +82,41 @@
     "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. In version 4.0.0-beta.358 and possibly earlier versions, when creating or updating a \"project,\" it is possible to inject arbitrary shell commands by altering the project name. If a name includes unescaped characters, such as single quotes (`'`), it breaks out of the intended command structure, allowing attackers to execute arbitrary commands on the host system. This vulnerability allows attackers to execute arbitrary commands on the host server, which could result in full system compromise; create, modify, or delete sensitive system files; and escalate privileges depending on the permissions of the executed process. Attackers with access to project management features could exploit this flaw to gain unauthorized control over the host environment. Version 4.0.0-beta.359 fixes this issue.",
     "published": "2025-01-24T16:15:38.307",
     "keywords": "command,sensitive"
+  },
+  "CVE-2025-0700": {
+    "url": "https://github.com/joeybling/bootplus/issues/22#issue-2786899884",
+    "cvss": 6.3,
+    "description": "A vulnerability was found in JoeyBling bootplus up to 247d5f6c209be1a5cf10cd0fa18e1d8cc63cf55d. It has been rated as critical. Affected by this issue is some unknown functionality of the file /admin/sys/log/list. The manipulation of the argument logId leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. This product is using a rolling release to provide continious delivery. Therefore, no version details for affected nor updated releases are available.",
+    "published": "2025-01-24T17:15:14.517"
+  },
+  "CVE-2025-0701": {
+    "url": "https://github.com/joeybling/bootplus/issues/23#issue-2786909921",
+    "cvss": 6.3,
+    "description": "A vulnerability classified as critical has been found in JoeyBling bootplus up to 247d5f6c209be1a5cf10cd0fa18e1d8cc63cf55d. This affects an unknown part of the file /admin/sys/user/list. The manipulation of the argument sort leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. This product takes the approach of rolling releases to provide continious delivery. Therefore, version details for affected and updated releases are not available.",
+    "published": "2025-01-24T17:15:14.730"
+  },
+  "CVE-2025-22611": {
+    "cvss": 9.9,
+    "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to version 4.0.0-beta.361, the missing authorization allows any authenticated user to escalate his or any other team members privileges to any role, including the owner role. He's also able to kick every other member out of the team, including admins and owners. This allows the attacker to access the `Terminal` feature and execute remote commands. Version 4.0.0-beta.361 fixes the issue.",
+    "published": "2025-01-24T17:15:15.410",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-22612": {
+    "cvss": 10.0,
+    "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to version 4.0.0-beta.374, the missing authorization allows an authenticated user to retrieve any existing private keys on a coolify instance in plain text. If the server configuration of IP / domain, port (most likely 22) and user (root) matches with the victim's server configuration, then the attacker can execute arbitrary commands on the remote server. Version 4.0.0-beta.374 fixes the issue.",
+    "published": "2025-01-24T17:15:15.570",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-24355": {
+    "cvss": 7.1,
+    "description": "Updatecli is a tool used to apply file update strategies. Prior to version 0.93.0, private maven repository credentials may be leaked in application logs in case of unsuccessful retrieval operation. During the execution of an updatecli pipeline which contains a `maven` source configured with basic auth credentials, the credentials are being leaked in the application execution logs in case of failure. Credentials are properly sanitized when the operation is successful but not when for whatever reason there is a failure in the maven repository, e.g. wrong coordinates provided, not existing artifact or version. Version 0.93.0 contains a patch for the issue.",
+    "published": "2025-01-24T17:15:16.047",
+    "keywords": "execution,leak"
+  },
+  "CVE-2025-24359": {
+    "cvss": 8.4,
+    "description": "ASTEVAL is an evaluator of Python expressions and statements. Prior to version 1.0.6, if an attacker can control the input to the `asteval` library, they can bypass asteval's restrictions and execute arbitrary Python code in the context of the application using the library. The vulnerability is rooted in how `asteval` performs handling of `FormattedValue` AST nodes. In particular, the `on_formattedvalue` value uses the dangerous format method of the str class. The code allows an attacker to manipulate the value of the string used in the dangerous call `fmt.format(__fstring__=val)`. This vulnerability can be exploited to access protected attributes by intentionally triggering an `AttributeError` exception. The attacker can then catch the exception and use its `obj` attribute to gain arbitrary access to sensitive or protected object properties. Version 1.0.6 fixes this issue.",
+    "published": "2025-01-24T17:15:16.197",
+    "keywords": "sensitive,bypass"
   }
 }
