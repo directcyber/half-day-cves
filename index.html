@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-01-24T16:13:24.621412
+Updated at UTC 2025-01-24T17:09:40.930867
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,32 @@ Updated at UTC 2025-01-24T16:13:24.621412
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0699">CVE-2025-0699</a></td>
+					<td>6.3</td>
+					<td><a target=_blank href="https://github.com/joeybling/bootplus/issues/21#issue-2786893665">https://github.com/joeybling/bootplus/issues/21#issue-2786893665</a></td>
+					<td class=date>2025-01-24T16:15:37.977</td>
+					<td class=description>A vulnerability was found in JoeyBling bootplus up to 247d5f6c209be1a5cf10cd0fa18e1d8cc63cf55d. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file /admin/sys/role/list. The manipulation of the argument sort leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. This product does not use versioning. This is why information about affected and unaffected releases are unavailable.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0698">CVE-2025-0698</a></td>
+					<td>6.3</td>
+					<td><a target=_blank href="https://github.com/joeybling/bootplus/issues/19#issue-2786879797">https://github.com/joeybling/bootplus/issues/19#issue-2786879797</a></td>
+					<td class=date>2025-01-24T16:15:37.717</td>
+					<td class=description>A vulnerability was found in JoeyBling bootplus up to 247d5f6c209be1a5cf10cd0fa18e1d8cc63cf55d. It has been classified as critical. Affected is an unknown function of the file /admin/sys/menu/list. The manipulation of the argument sort/order leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. Continious delivery with rolling releases is used by this product. Therefore, no version details of affected nor updated releases are available.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -90,20 +116,22 @@ Updated at UTC 2025-01-24T16:13:24.621412
 		
 			
 		
+
+		<hr>
+		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24012">CVE-2025-24012</a></td>
-					<td>4.6</td>
-					<td><a target=_blank href="https://github.com/umbraco/umbraco-cms/commit/d4f8754f933895b3a329296e25ddea6f84a0aea2">https://github.com/umbraco/umbraco-cms/commit/d4f8754f933895b3a329296e25ddea6f84a0aea2</a></td>
-					<td class=date>2025-01-21T16:15:14.923</td>
-					<td class=description>Umbraco is a free and open source .NET content management system. Starting in version 14.0.0 and prior to versions 14.3.2 and 15.1.2, authenticated users are able to exploit a cross-site scripting vulnerability when viewing certain localized backoffice components. Versions 14.3.2 and 15.1.2 contain a patch.</td>
-
-
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-22606">CVE-2025-22606</a></td>
+					<td>-</td>
+					<td>command,sensitive</td>
+					<td class=date>2025-01-24T16:15:38.307</td>
+					<td class=description>Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. In version 4.0.0-beta.358 and possibly earlier versions, when creating or updating a "project," it is possible to inject arbitrary shell commands by altering the project name. If a name includes unescaped characters, such as single quotes (`'`), it breaks out of the intended command structure, allowing attackers to execute arbitrary commands on the host system. This vulnerability allows attackers to execute arbitrary commands on the host server, which could result in full system compromise; create, modify, or delete sensitive system files; and escalate privileges depending on the permissions of the executed process. Attackers with access to project management features could exploit this flaw to gain unauthorized control over the host environment. Version 4.0.0-beta.359 fixes this issue.</td>
 				</tr>
 			
 		
-
-		<hr>
+			
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -217,8 +245,6 @@ with authenticated access can exploit this vulnerability to inject
 malicious commands, leading to remote code execution on the server. The 
 issue has been fixed in the latest versions of Ambari.</td>
 				</tr>
-			
-		
 			
 		
 
