@@ -1,10 +1,4 @@
 {
-  "CVE-2025-23196": {
-    "cvss": 8.8,
-    "description": "A code injection vulnerability exists in the Ambari Alert Definition \nfeature, allowing authenticated users to inject and execute arbitrary \nshell commands. The vulnerability arises when defining alert scripts, \nwhere the script filename field is executed using `sh -c`. An attacker \nwith authenticated access can exploit this vulnerability to inject \nmalicious commands, leading to remote code execution on the server. The \nissue has been fixed in the latest versions of Ambari.",
-    "published": "2025-01-21T22:15:12.987",
-    "keywords": "remote,execution,command"
-  },
   "CVE-2025-0604": {
     "cvss": 5.4,
     "description": "A flaw was found in Keycloak. When an Active Directory user resets their password, the system updates it without performing an LDAP bind to validate the new credentials against AD. This vulnerability allows users whose AD accounts are expired or disabled to regain access in Keycloak, bypassing AD restrictions. The issue enables authentication bypass and could allow unauthorized access under certain conditions.",
