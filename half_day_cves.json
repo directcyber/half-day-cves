@@ -1,22 +1,4 @@
 {
-  "CVE-2025-20128": {
-    "cvss": 5.3,
-    "description": "A vulnerability in the Object Linking and Embedding 2 (OLE2) decryption routine of ClamAV could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.\r\n\r\nThis vulnerability is due to an integer underflow in a bounds check that allows for a heap buffer overflow read. An attacker could exploit this vulnerability by submitting a crafted file containing OLE2 content to be scanned by ClamAV on an affected device. A successful exploit could allow the attacker to terminate the ClamAV scanning process, resulting in a DoS condition on the affected software.\r\nFor a description of this vulnerability, see the .\r\nCisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.",
-    "published": "2025-01-22T17:15:12.583",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-20165": {
-    "cvss": 7.5,
-    "description": "A vulnerability in the SIP processing subsystem of Cisco BroadWorks could allow an unauthenticated, remote attacker to halt the processing of incoming SIP requests, resulting in a denial of service (DoS) condition.\r\n\r\nThis vulnerability is due to improper memory handling for certain SIP requests. An attacker could exploit this vulnerability by sending a high number of SIP requests to an affected system. A successful exploit could allow the attacker to exhaust the memory that was allocated to the Cisco BroadWorks Network Servers that handle SIP traffic. If no memory is available, the Network Servers can no longer process incoming requests, resulting in a DoS condition that requires manual intervention to recover.",
-    "published": "2025-01-22T17:15:13.010",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-24399": {
-    "cvss": 8.8,
-    "description": "Jenkins OpenId Connect Authentication Plugin 4.452.v2849b_d3945fa_ and earlier, except 4.438.440.v3f5f201de5dc, treats usernames as case-insensitive, allowing attackers on Jenkins instances configured with a case-sensitive OpenID Connect provider to log in as any user by providing a username that differs only in letter case, potentially gaining administrator access to Jenkins.",
-    "published": "2025-01-22T17:15:13.853",
-    "keywords": "authentication,sensitive"
-  },
   "CVE-2025-23047": {
     "cvss": 6.5,
     "description": "Cilium is a networking, observability, and security solution with an eBPF-based dataplane. An insecure default `Access-Control-Allow-Origin` header value could lead to sensitive data exposure for users of Cilium versions 1.14.0 through 1.14.7, 1.15.0 through 1.15.11, and 1.16.0 through 1.16.4 who deploy Hubble UI using either Cilium CLI or via the Cilium Helm chart. A user with access to a Hubble UI instance affected by this issue could leak configuration details about the Kubernetes cluster which Hubble UI is monitoring, including node names, IP addresses, and other metadata about workloads and the cluster networking configuration. In order for this vulnerability to be exploited, a victim would have to first visit a malicious page. This issue is fixed in Cilium v1.14.18, v1.15.12, and v1.16.5. As a workaround, users who deploy Hubble UI using the Cilium Helm chart directly can remove the CORS headers from the Helm template as shown in the patch from commit a3489f190ba6e87b5336ee685fb6c80b1270d06d.",
