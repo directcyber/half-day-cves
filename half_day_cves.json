@@ -1,16 +1,4 @@
 {
-  "CVE-2025-0604": {
-    "cvss": 5.4,
-    "description": "A flaw was found in Keycloak. When an Active Directory user resets their password, the system updates it without performing an LDAP bind to validate the new credentials against AD. This vulnerability allows users whose AD accounts are expired or disabled to regain access in Keycloak, bypassing AD restrictions. The issue enables authentication bypass and could allow unauthorized access under certain conditions.",
-    "published": "2025-01-22T15:15:14.827",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2025-22980": {
-    "url": "https://github.com/slims/slims9_bulian/issues/270",
-    "cvss": "-",
-    "description": "A SQL Injection vulnerability exists in Senayan Library Management System SLiMS 9 Bulian 9.6.1 via the tempLoanID parameter in the loan form on /admin/modules/circulation/loan.php.",
-    "published": "2025-01-22T15:15:15.130"
-  },
   "CVE-2025-20128": {
     "cvss": 5.3,
     "description": "A vulnerability in the Object Linking and Embedding 2 (OLE2) decryption routine of ClamAV could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.\r\n\r\nThis vulnerability is due to an integer underflow in a bounds check that allows for a heap buffer overflow read. An attacker could exploit this vulnerability by submitting a crafted file containing OLE2 content to be scanned by ClamAV on an affected device. A successful exploit could allow the attacker to terminate the ClamAV scanning process, resulting in a DoS condition on the affected software.\r\nFor a description of this vulnerability, see the .\r\nCisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.",
