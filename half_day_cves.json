@@ -154,5 +154,11 @@
     "description": "The WPBookit plugin for WordPress is vulnerable to arbitrary file uploads due to insufficient file type validation in the 'WPB_Profile_controller::handle_image_upload' function in versions up to, and including, 1.6.9. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
     "published": "2025-01-25T02:15:26.990",
     "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-0411": {
+    "cvss": 7.0,
+    "description": "7-Zip Mark-of-the-Web Bypass Vulnerability. This vulnerability allows remote attackers to bypass the Mark-of-the-Web protection mechanism on affected installations of 7-Zip. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the handling of archived files. When extracting files from a crafted archive that bears the Mark-of-the-Web, 7-Zip does not propagate the Mark-of-the-Web to the extracted files. An attacker can leverage this vulnerability to execute arbitrary code in the context of the current user. Was ZDI-CAN-25456.",
+    "published": "2025-01-25T05:15:09.533",
+    "keywords": "remote,bypass"
   }
 }
