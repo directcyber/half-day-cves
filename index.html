@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-01-26T21:09:22.102869
+Updated at UTC 2025-01-26T22:09:17.435427
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -186,8 +186,6 @@ Updated at UTC 2025-01-26T21:09:22.102869
 		
 			
 		
-			
-		
 
 		<hr>
 		
@@ -308,16 +306,6 @@ The specific flaw exists within the handling of archived files. When extracting 
 					<td>remote,execution,command,sensitive,leak</td>
 					<td class=date>2025-01-24T15:15:12.330</td>
 					<td class=description>Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Starting in version 4.0.0-beta.18 and prior to 4.0.0-beta.253, a vulnerability in the execution of commands on remote servers allows an authenticated user to execute arbitrary code on the local Coolify container, gaining access to data and private keys or tokens of other users/teams. The ability to inject malicious commands into the Coolify container gives authenticated attackers the ability to fully retrieve and control the data and availability of the software. Centrally hosted Coolify instances (open registration and/or multiple teams with potentially untrustworthy users) are especially at risk, as sensitive data of all users and connected servers can be leaked by any user. Additionally, attackers are able to modify the running software, potentially deploying malicious images to remote nodes or generally changing its behavior. Version 4.0.0-beta.253 patches this issue.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-23011">CVE-2025-23011</a></td>
-					<td>8.8</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2025-01-23T21:15:15.010</td>
-					<td class=description>Fedora Repository 3.8.1 allows path traversal when extracting uploaded archives ("Zip Slip"). A remote, authenticated attacker can upload a specially crafted archive that will extract an arbitrary JSP file to a location that can be executed by an unauthenticated GET request. Fedora Repository 3.8.1 was released on 2015-06-11 and is no longer maintained. Migrate to a currently supported version (6.5.1 as of 2025-01-23).</td>
 				</tr>
 			
 		

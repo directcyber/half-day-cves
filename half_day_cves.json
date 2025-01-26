@@ -1,10 +1,4 @@
 {
-  "CVE-2025-23011": {
-    "cvss": 8.8,
-    "description": "Fedora Repository 3.8.1 allows path traversal when extracting uploaded archives (\"Zip Slip\"). A remote, authenticated attacker can upload a specially crafted archive that will extract an arbitrary JSP file to a location that can be executed by an unauthenticated GET request. Fedora Repository 3.8.1 was released on 2015-06-11 and is no longer maintained. Migrate to a currently supported version (6.5.1 as of 2025-01-23).",
-    "published": "2025-01-23T21:15:15.010",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2025-22605": {
     "cvss": "-",
     "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Starting in version 4.0.0-beta.18 and prior to 4.0.0-beta.253, a vulnerability in the execution of commands on remote servers allows an authenticated user to execute arbitrary code on the local Coolify container, gaining access to data and private keys or tokens of other users/teams. The ability to inject malicious commands into the Coolify container gives authenticated attackers the ability to fully retrieve and control the data and availability of the software. Centrally hosted Coolify instances (open registration and/or multiple teams with potentially untrustworthy users) are especially at risk, as sensitive data of all users and connected servers can be leaked by any user. Additionally, attackers are able to modify the running software, potentially deploying malicious images to remote nodes or generally changing its behavior. Version 4.0.0-beta.253 patches this issue.",
