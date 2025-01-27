@@ -1,10 +1,4 @@
 {
-  "CVE-2025-0706": {
-    "url": "https://github.com/joeybling/bootplus/issues/28#issue-2786945699",
-    "cvss": 2.4,
-    "description": "A vulnerability was found in JoeyBling bootplus up to 247d5f6c209be1a5cf10cd0fa18e1d8cc63cf55d and classified as problematic. Affected by this issue is some unknown functionality of the file /admin/sys/admin.html. The manipulation leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. Continious delivery with rolling releases is used by this product. Therefore, no version details of affected nor updated releases are available.",
-    "published": "2025-01-24T20:15:33.830"
-  },
   "CVE-2025-0357": {
     "cvss": 9.8,
     "description": "The WPBookit plugin for WordPress is vulnerable to arbitrary file uploads due to insufficient file type validation in the 'WPB_Profile_controller::handle_image_upload' function in versions up to, and including, 1.6.9. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
@@ -52,5 +46,11 @@
     "cvss": "-",
     "description": "Cacti is an open source performance and fault management framework. Some of the data stored in automation_tree_rules.php is not thoroughly checked and is used to concatenate the SQL statement in build_rule_item_filter() function from lib/api_automation.php, resulting in SQL injection. This vulnerability is fixed in 1.2.29.",
     "published": "2025-01-27T18:15:42.157"
+  },
+  "CVE-2025-0751": {
+    "url": "https://github.com/axiomatic-systems/bento4/issues/991",
+    "cvss": 6.3,
+    "description": "A vulnerability classified as critical has been found in Axiomatic Bento4 up to 1.6.0. This affects the function AP4_BitReader::ReadBits of the component mp42aac. The manipulation leads to heap-based buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-01-27T20:15:34.587"
   }
 }
