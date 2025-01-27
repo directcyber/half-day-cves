@@ -58,5 +58,23 @@
     "cvss": 6.3,
     "description": "A vulnerability classified as critical was found in Axiomatic Bento4 up to 1.6.0. This vulnerability affects the function AP4_StdcFileByteStream::ReadPartial of the component mp42aac. The manipulation leads to heap-based buffer overflow. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
     "published": "2025-01-27T21:15:13.653"
+  },
+  "CVE-2025-24137": {
+    "cvss": "-",
+    "description": "A type confusion issue was addressed with improved checks. This issue is fixed in iPadOS 17.7.4, macOS Sonoma 14.7.3, visionOS 2.3, iOS 18.3 and iPadOS 18.3, macOS Sequoia 15.3, watchOS 11.3, tvOS 18.3. A remote attacker may cause an unexpected application termination or arbitrary code execution.",
+    "published": "2025-01-27T22:15:18.433",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-24138": {
+    "cvss": "-",
+    "description": "This issue was addressed through improved state management. This issue is fixed in macOS Ventura 13.7.3, macOS Sequoia 15.3, macOS Sonoma 14.7.3. A malicious application may be able to leak sensitive user information.",
+    "published": "2025-01-27T22:15:18.530",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2025-24169": {
+    "cvss": "-",
+    "description": "A logging issue was addressed with improved data redaction. This issue is fixed in macOS Sequoia 15.3, Safari 18.3. A malicious app may be able to bypass browser extension authentication.",
+    "published": "2025-01-27T22:15:20.460",
+    "keywords": "authentication,bypass"
   }
 }
