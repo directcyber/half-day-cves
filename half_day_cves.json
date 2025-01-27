@@ -1,40 +1,4 @@
 {
-  "CVE-2025-0700": {
-    "url": "https://github.com/joeybling/bootplus/issues/22#issue-2786899884",
-    "cvss": 6.3,
-    "description": "A vulnerability was found in JoeyBling bootplus up to 247d5f6c209be1a5cf10cd0fa18e1d8cc63cf55d. It has been rated as critical. Affected by this issue is some unknown functionality of the file /admin/sys/log/list. The manipulation of the argument logId leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. This product is using a rolling release to provide continious delivery. Therefore, no version details for affected nor updated releases are available.",
-    "published": "2025-01-24T17:15:14.517"
-  },
-  "CVE-2025-0701": {
-    "url": "https://github.com/joeybling/bootplus/issues/23#issue-2786909921",
-    "cvss": 6.3,
-    "description": "A vulnerability classified as critical has been found in JoeyBling bootplus up to 247d5f6c209be1a5cf10cd0fa18e1d8cc63cf55d. This affects an unknown part of the file /admin/sys/user/list. The manipulation of the argument sort leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. This product takes the approach of rolling releases to provide continious delivery. Therefore, version details for affected and updated releases are not available.",
-    "published": "2025-01-24T17:15:14.730"
-  },
-  "CVE-2025-22611": {
-    "cvss": 9.9,
-    "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to version 4.0.0-beta.361, the missing authorization allows any authenticated user to escalate his or any other team members privileges to any role, including the owner role. He's also able to kick every other member out of the team, including admins and owners. This allows the attacker to access the `Terminal` feature and execute remote commands. Version 4.0.0-beta.361 fixes the issue.",
-    "published": "2025-01-24T17:15:15.410",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-22612": {
-    "cvss": 10.0,
-    "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to version 4.0.0-beta.374, the missing authorization allows an authenticated user to retrieve any existing private keys on a coolify instance in plain text. If the server configuration of IP / domain, port (most likely 22) and user (root) matches with the victim's server configuration, then the attacker can execute arbitrary commands on the remote server. Version 4.0.0-beta.374 fixes the issue.",
-    "published": "2025-01-24T17:15:15.570",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-24355": {
-    "cvss": 7.1,
-    "description": "Updatecli is a tool used to apply file update strategies. Prior to version 0.93.0, private maven repository credentials may be leaked in application logs in case of unsuccessful retrieval operation. During the execution of an updatecli pipeline which contains a `maven` source configured with basic auth credentials, the credentials are being leaked in the application execution logs in case of failure. Credentials are properly sanitized when the operation is successful but not when for whatever reason there is a failure in the maven repository, e.g. wrong coordinates provided, not existing artifact or version. Version 0.93.0 contains a patch for the issue.",
-    "published": "2025-01-24T17:15:16.047",
-    "keywords": "execution,leak"
-  },
-  "CVE-2025-24359": {
-    "cvss": 8.4,
-    "description": "ASTEVAL is an evaluator of Python expressions and statements. Prior to version 1.0.6, if an attacker can control the input to the `asteval` library, they can bypass asteval's restrictions and execute arbitrary Python code in the context of the application using the library. The vulnerability is rooted in how `asteval` performs handling of `FormattedValue` AST nodes. In particular, the `on_formattedvalue` value uses the dangerous format method of the str class. The code allows an attacker to manipulate the value of the string used in the dangerous call `fmt.format(__fstring__=val)`. This vulnerability can be exploited to access protected attributes by intentionally triggering an `AttributeError` exception. The attacker can then catch the exception and use its `obj` attribute to gain arbitrary access to sensitive or protected object properties. Version 1.0.6 fixes this issue.",
-    "published": "2025-01-24T17:15:16.197",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2025-0702": {
     "url": "https://github.com/joeybling/bootplus/issues/24#issue-2786919432",
     "cvss": 6.3,
@@ -94,5 +58,17 @@
     "description": "Authentication Bypass by Spoofing vulnerability in BestWebSoft Google Captcha allows Identity Spoofing. This issue affects Google Captcha: from n/a through 1.78.",
     "published": "2025-01-27T15:15:14.923",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2025-0730": {
+    "cvss": 3.7,
+    "description": "A vulnerability classified as problematic has been found in TP-Link TL-SG108E 1.0.0 Build 20201208 Rel. 40304. Affected is an unknown function of the file /usr_account_set.cgi of the component HTTP GET Request Handler. The manipulation of the argument username/password leads to use of get request method with sensitive query strings. It is possible to launch the attack remotely. The complexity of an attack is rather high. The exploitability is told to be difficult. The exploit has been disclosed to the public and may be used. Upgrading to version 1.0.0 Build 20250124 Rel. 54920(Beta) is able to address this issue. It is recommended to upgrade the affected component. The vendor was contacted early. They reacted very professional and provided a pre-fix version for their customers.",
+    "published": "2025-01-27T17:15:17.133",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-22604": {
+    "cvss": 9.1,
+    "description": "Cacti is an open source performance and fault management framework. Due to a flaw in multi-line SNMP result parser, authenticated users can inject malformed OIDs in the response. When processed by ss_net_snmp_disk_io() or ss_net_snmp_disk_bytes(), a part of each OID will be used as a key in an array that is used as part of a system command, causing a command execution vulnerability. This vulnerability is fixed in 1.2.29.",
+    "published": "2025-01-27T17:15:17.307",
+    "keywords": "execution,command"
   }
 }
