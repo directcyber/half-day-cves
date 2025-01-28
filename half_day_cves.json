@@ -76,5 +76,11 @@
     "description": "A logging issue was addressed with improved data redaction. This issue is fixed in macOS Sequoia 15.3, Safari 18.3. A malicious app may be able to bypass browser extension authentication.",
     "published": "2025-01-27T22:15:20.460",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2025-24369": {
+    "url": "https://github.com/xe/x/commit/e09d0226a628f04b1d80fd83bee777894a45cd02",
+    "cvss": "-",
+    "description": "Anubis is a tool that allows administrators to protect bots against AI scrapers through bot-checking heuristics and a proof-of-work challenge to discourage scraping from multiple IP addresses. Anubis allows attackers to bypass the bot protection by requesting a challenge, formulates any nonce (such as 42069), and then passes the challenge with difficulty zero. Commit e09d0226a628f04b1d80fd83bee777894a45cd02 fixes this behavior by not using a client-specified difficulty value.",
+    "published": "2025-01-27T23:15:11.310"
   }
 }
