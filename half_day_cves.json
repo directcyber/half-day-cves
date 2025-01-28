@@ -1,10 +1,4 @@
 {
-  "CVE-2025-0682": {
-    "cvss": 8.8,
-    "description": "The ThemeREX Addons plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.33.0 via the 'trx_sc_reviews' shortcode 'type' attribute. This makes it possible for authenticated attackers, with contributor-level and above permissions, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where php file type can be uploaded and included.",
-    "published": "2025-01-25T06:15:28.740",
-    "keywords": "execution,sensitive,bypass"
-  },
   "CVE-2025-24628": {
     "cvss": 5.3,
     "description": "Authentication Bypass by Spoofing vulnerability in BestWebSoft Google Captcha allows Identity Spoofing. This issue affects Google Captcha: from n/a through 1.78.",
