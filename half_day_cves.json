@@ -70,5 +70,17 @@
     "cvss": "-",
     "description": "Hyperbridge is a hyper-scalable coprocessor for verifiable, cross-chain interoperability. A critical vulnerability was discovered in the ismp-grandpa crate, that allowed a malicious prover easily convince the verifier of the finality of arbitrary headers. This could be used to steal funds or compromise other kinds of cross-chain applications. This vulnerability is fixed in 15.0.1.",
     "published": "2025-01-28T16:15:45.063"
+  },
+  "CVE-2025-24479": {
+    "cvss": "-",
+    "description": "A Local Code Execution Vulnerability exists in the product and version listed above. The vulnerability is due to a default setting in Windows and allows access to the Command Prompt as a higher privileged user.",
+    "published": "2025-01-28T19:15:14.910",
+    "keywords": "execution,command"
+  },
+  "CVE-2025-24480": {
+    "cvss": "-",
+    "description": "A Remote Code Execution Vulnerability exists in the product and version listed above. The vulnerability is due to lack of input sanitation and could allow a remote attacker to run commands or code as a high privileged user.",
+    "published": "2025-01-28T19:15:15.033",
+    "keywords": "remote,execution,command"
   }
 }
