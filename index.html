@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-01-29T17:09:51.790924
+Updated at UTC 2025-01-30T19:08:55.357441
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,38 @@ Updated at UTC 2025-01-29T17:09:51.790924
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-23216">CVE-2025-23216</a></td>
+					<td>6.8</td>
+					<td><a target=_blank href="https://github.com/argoproj/gitops-engine/commit/7e21b91e9d0f64104c8a661f3f390c5e6d73ddca">https://github.com/argoproj/gitops-engine/commit/7e21b91e9d0f64104c8a661f3f390c5e6d73ddca</a></td>
+					<td class=date>2025-01-30T16:15:31.473</td>
+					<td class=description>Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes. A vulnerability was discovered in Argo CD that exposed secret values in error messages and the diff view when an invalid Kubernetes Secret resource was synced from a repository. The vulnerability assumes the user has write access to the repository and can exploit it, either intentionally or unintentionally, by committing an invalid Secret to repository and triggering a Sync. Once exploited, any user with read access to Argo CD can view the exposed secret data. The vulnerability is fixed in v2.13.4, v2.12.10, and v2.11.13.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0870">CVE-2025-0870</a></td>
+					<td>5.6</td>
+					<td><a target=_blank href="https://github.com/axiomatic-systems/bento4/issues/980">https://github.com/axiomatic-systems/bento4/issues/980</a></td>
+					<td class=date>2025-01-30T13:15:10.483</td>
+					<td class=description>A vulnerability was found in Axiomatic Bento4 up to 1.6.0-641. It has been rated as critical. Affected by this issue is the function AP4_DataBuffer::GetData in the library Ap4DataBuffer.h. The manipulation leads to heap-based buffer overflow. The attack may be launched remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. This product is using a rolling release to provide continious delivery. Therefore, no version details for affected nor updated releases are available.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -75,18 +107,6 @@ Updated at UTC 2025-01-29T17:09:51.790924
 					<td><a target=_blank href="https://github.com/polytope-labs/hyperbridge/pull/372/commits/f0e85db718f5165b06585a49b14a66f8ad643aea">https://github.com/polytope-labs/hyperbridge/pull/372/commits/f0e85db718f5165b06585a49b14a66f8ad643aea</a></td>
 					<td class=date>2025-01-28T16:15:45.063</td>
 					<td class=description>Hyperbridge is a hyper-scalable coprocessor for verifiable, cross-chain interoperability. A critical vulnerability was discovered in the ismp-grandpa crate, that allowed a malicious prover easily convince the verifier of the finality of arbitrary headers. This could be used to steal funds or compromise other kinds of cross-chain applications. This vulnerability is fixed in 15.0.1.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24369">CVE-2025-24369</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/xe/x/commit/e09d0226a628f04b1d80fd83bee777894a45cd02">https://github.com/xe/x/commit/e09d0226a628f04b1d80fd83bee777894a45cd02</a></td>
-					<td class=date>2025-01-27T23:15:11.310</td>
-					<td class=description>Anubis is a tool that allows administrators to protect bots against AI scrapers through bot-checking heuristics and a proof-of-work challenge to discourage scraping from multiple IP addresses. Anubis allows attackers to bypass the bot protection by requesting a challenge, formulates any nonce (such as 42069), and then passes the challenge with difficulty zero. Commit e09d0226a628f04b1d80fd83bee777894a45cd02 fixes this behavior by not using a client-specified difficulty value.</td>
 
 
 				</tr>
@@ -122,28 +142,54 @@ Updated at UTC 2025-01-29T17:09:51.790924
 				</tr>
 			
 		
+
+		<hr>
+		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24368">CVE-2025-24368</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/cacti/cacti/commit/c7e4ee798d263a3209ae6e7ba182c7b65284d8f0">https://github.com/cacti/cacti/commit/c7e4ee798d263a3209ae6e7ba182c7b65284d8f0</a></td>
-					<td class=date>2025-01-27T18:15:42.157</td>
-					<td class=description>Cacti is an open source performance and fault management framework. Some of the data stored in automation_tree_rules.php is not thoroughly checked and is used to concatenate the SQL statement in build_rule_item_filter() function from lib/api_automation.php, resulting in SQL injection. This vulnerability is fixed in 1.2.29.</td>
-
-
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0861">CVE-2025-0861</a></td>
+					<td>4.9</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2025-01-30T10:15:08.907</td>
+					<td class=description>The VR-Frases (collect & share quotes) plugin for WordPress is vulnerable to SQL Injection via several parameters in all versions up to, and including, 3.0.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
 				</tr>
 			
 		
 			
-		
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-23374">CVE-2025-23374</a></td>
+					<td>8.0</td>
+					<td>remote,sensitive</td>
+					<td class=date>2025-01-30T05:15:10.787</td>
+					<td class=description>Dell Networking Switches running Enterprise SONiC OS, version(s) prior to 4.4.1 and 4.2.3, contain(s) an Insertion of Sensitive Information into Log File vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Information exposure.</td>
+				</tr>
 			
 		
 			
-		
-			
-		
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0373">CVE-2025-0373</a></td>
+					<td>-</td>
+					<td>remote,execution,bypass</td>
+					<td class=date>2025-01-30T05:15:09.590</td>
+					<td class=description>On 64-bit systems, the implementation of VOP_VPTOFH() in the cd9660, tarfs and ext2fs filesystems overflows the destination FID buffer by 4 bytes, a stack buffer overflow.
 
-		<hr>
+A NFS server that exports a cd9660, tarfs, or ext2fs file system can be made to panic by mounting and accessing the export with an NFS client.  Further exploitation (e.g., bypassing file permission checking or remote kernel code execution) is potentially possible, though this has not been demonstrated.  In particular, release kernels are compiled with stack protection enabled, and some instances of the overflow are caught by this mechanism, causing a panic.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21415">CVE-2025-21415</a></td>
+					<td>9.9</td>
+					<td>authentication,bypass</td>
+					<td class=date>2025-01-29T23:15:33.190</td>
+					<td class=description>Authentication bypass by spoofing in Azure AI Face Service allows an authorized attacker to elevate privileges over a network.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -198,11 +244,9 @@ Updated at UTC 2025-01-29T17:09:51.790924
 			
 		
 			
-		
-			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24169">CVE-2025-24169</a></td>
-					<td>-</td>
+					<td>7.5</td>
 					<td>authentication,bypass</td>
 					<td class=date>2025-01-27T22:15:20.460</td>
 					<td class=description>A logging issue was addressed with improved data redaction. This issue is fixed in macOS Sequoia 15.3, Safari 18.3. A malicious app may be able to bypass browser extension authentication.</td>
@@ -231,48 +275,6 @@ Updated at UTC 2025-01-29T17:09:51.790924
 		
 			
 		
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24367">CVE-2025-24367</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2025-01-27T18:15:42.003</td>
-					<td class=description>Cacti is an open source performance and fault management framework. An authenticated Cacti user can abuse graph creation and graph template functionality to create arbitrary PHP scripts in the web root of the application, leading to remote code execution on the server. This vulnerability is fixed in 1.2.29.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-22604">CVE-2025-22604</a></td>
-					<td>9.1</td>
-					<td>execution,command</td>
-					<td class=date>2025-01-27T17:15:17.307</td>
-					<td class=description>Cacti is an open source performance and fault management framework. Due to a flaw in multi-line SNMP result parser, authenticated users can inject malformed OIDs in the response. When processed by ss_net_snmp_disk_io() or ss_net_snmp_disk_bytes(), a part of each OID will be used as a key in an array that is used as part of a system command, causing a command execution vulnerability. This vulnerability is fixed in 1.2.29.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0730">CVE-2025-0730</a></td>
-					<td>3.7</td>
-					<td>remote,sensitive</td>
-					<td class=date>2025-01-27T17:15:17.133</td>
-					<td class=description>A vulnerability classified as problematic has been found in TP-Link TL-SG108E 1.0.0 Build 20201208 Rel. 40304. Affected is an unknown function of the file /usr_account_set.cgi of the component HTTP GET Request Handler. The manipulation of the argument username/password leads to use of get request method with sensitive query strings. It is possible to launch the attack remotely. The complexity of an attack is rather high. The exploitability is told to be difficult. The exploit has been disclosed to the public and may be used. Upgrading to version 1.0.0 Build 20250124 Rel. 54920(Beta) is able to address this issue. It is recommended to upgrade the affected component. The vendor was contacted early. They reacted very professional and provided a pre-fix version for their customers.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24628">CVE-2025-24628</a></td>
-					<td>5.3</td>
-					<td>authentication,bypass</td>
-					<td class=date>2025-01-27T15:15:14.923</td>
-					<td class=description>Authentication Bypass by Spoofing vulnerability in BestWebSoft Google Captcha allows Identity Spoofing. This issue affects Google Captcha: from n/a through 1.78.</td>
-				</tr>
 			
 		
 
