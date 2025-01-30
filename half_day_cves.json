@@ -100,5 +100,23 @@
     "cvss": 6.8,
     "description": "Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes. A vulnerability was discovered in Argo CD that exposed secret values in error messages and the diff view when an invalid Kubernetes Secret resource was synced from a repository. The vulnerability assumes the user has write access to the repository and can exploit it, either intentionally or unintentionally, by committing an invalid Secret to repository and triggering a Sync. Once exploited, any user with read access to Argo CD can view the exposed secret data. The vulnerability is fixed in v2.13.4, v2.12.10, and v2.11.13.",
     "published": "2025-01-30T16:15:31.473"
+  },
+  "CVE-2025-0626": {
+    "cvss": "-",
+    "description": "The affected product sends out remote access requests to a hard-coded IP address, bypassing existing device network settings to do so. This could serve as a backdoor and lead to a malicious actor being able to upload and overwrite files on the device.",
+    "published": "2025-01-30T19:15:14.010",
+    "keywords": "remote,bypass"
+  },
+  "CVE-2025-0680": {
+    "cvss": 9.8,
+    "description": "Affected products contain a vulnerability in the device cloud rpc command handling process that could allow remote attackers to take control over arbitrary devices connected to the cloud.",
+    "published": "2025-01-30T19:15:14.147",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-24505": {
+    "cvss": "-",
+    "description": "This vulnerability allows a high-privileged authenticated PAM user to achieve remote command execution on the affected PAM system by uploading a specially crafted upgrade file.",
+    "published": "2025-01-30T19:15:17.210",
+    "keywords": "remote,execution,command"
   }
 }
