@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-01-30T23:11:38.423489
+Updated at UTC 2025-02-02T22:09:35.476999
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -61,30 +61,12 @@ Updated at UTC 2025-01-30T23:11:38.423489
 			
 		
 			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
 				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-23216">CVE-2025-23216</a></td>
-					<td>6.8</td>
-					<td><a target=_blank href="https://github.com/argoproj/gitops-engine/commit/7e21b91e9d0f64104c8a661f3f390c5e6d73ddca">https://github.com/argoproj/gitops-engine/commit/7e21b91e9d0f64104c8a661f3f390c5e6d73ddca</a></td>
-					<td class=date>2025-01-30T16:15:31.473</td>
-					<td class=description>Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes. A vulnerability was discovered in Argo CD that exposed secret values in error messages and the diff view when an invalid Kubernetes Secret resource was synced from a repository. The vulnerability assumes the user has write access to the repository and can exploit it, either intentionally or unintentionally, by committing an invalid Secret to repository and triggering a Sync. Once exploited, any user with read access to Argo CD can view the exposed secret data. The vulnerability is fixed in v2.13.4, v2.12.10, and v2.11.13.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24891">CVE-2025-24891</a></td>
+					<td>9.6</td>
+					<td><a target=_blank href="https://github.com/dumbwareio/dumbdrop/commit/cb586316648ccbfb21d27b84e90d72ccead9819d">https://github.com/dumbwareio/dumbdrop/commit/cb586316648ccbfb21d27b84e90d72ccead9819d</a></td>
+					<td class=date>2025-01-31T23:15:08.457</td>
+					<td class=description>Dumb Drop is a file upload application. Users with permission to upload to the service are able to exploit a path traversal vulnerability to overwrite arbitrary system files. As the container runs as root by default, there is no limit to what can be overwritten. With this, it's possible to inject malicious payloads into files ran on schedule or upon certain service actions. As the service is not required to run with authentication enabled, this may permit wholly unprivileged users root access. Otherwise, anybody with a PIN.</td>
 
 
 				</tr>
@@ -92,44 +74,30 @@ Updated at UTC 2025-01-30T23:11:38.423489
 		
 			
 				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0870">CVE-2025-0870</a></td>
-					<td>5.6</td>
-					<td><a target=_blank href="https://github.com/axiomatic-systems/bento4/issues/980">https://github.com/axiomatic-systems/bento4/issues/980</a></td>
-					<td class=date>2025-01-30T13:15:10.483</td>
-					<td class=description>A vulnerability was found in Axiomatic Bento4 up to 1.6.0-641. It has been rated as critical. Affected by this issue is the function AP4_DataBuffer::GetData in the library Ap4DataBuffer.h. The manipulation leads to heap-based buffer overflow. The attack may be launched remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. This product is using a rolling release to provide continious delivery. Therefore, no version details for affected nor updated releases are available.</td>
-
-
-				</tr>
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24800">CVE-2025-24800</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0938">CVE-2025-0938</a></td>
 					<td>-</td>
-					<td><a target=_blank href="https://github.com/polytope-labs/hyperbridge/pull/372/commits/f0e85db718f5165b06585a49b14a66f8ad643aea">https://github.com/polytope-labs/hyperbridge/pull/372/commits/f0e85db718f5165b06585a49b14a66f8ad643aea</a></td>
-					<td class=date>2025-01-28T16:15:45.063</td>
-					<td class=description>Hyperbridge is a hyper-scalable coprocessor for verifiable, cross-chain interoperability. A critical vulnerability was discovered in the ismp-grandpa crate, that allowed a malicious prover easily convince the verifier of the finality of arbitrary headers. This could be used to steal funds or compromise other kinds of cross-chain applications. This vulnerability is fixed in 15.0.1.</td>
+					<td><a target=_blank href="https://github.com/python/cpython/pull/129418">https://github.com/python/cpython/pull/129418</a></td>
+					<td class=date>2025-01-31T18:15:38.053</td>
+					<td class=description>The Python standard library functions `urllib.parse.urlsplit` and `urlparse` accepted domain names that included square brackets which isn't valid according to RFC 3986. Square brackets are only meant to be used as delimiters for specifying IPv6 and IPvFuture hosts in URLs. This could result in differential parsing across the Python URL parser and other specification-compliant URL parsers.</td>
 
 
 				</tr>
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-22994">CVE-2025-22994</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/o2oa/o2oa/issues/167">https://github.com/o2oa/o2oa/issues/167</a></td>
+					<td class=date>2025-01-31T16:15:35.557</td>
+					<td class=description>O2OA 9.1.3 is vulnerable to Cross Site Scripting (XSS) in Meetings - Settings.</td>
+
+
+				</tr>
+			
+		
 			
 		
 
@@ -137,214 +105,38 @@ Updated at UTC 2025-01-30T23:11:38.423489
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0574">CVE-2025-0574</a></td>
-					<td>8.2</td>
-					<td>remote,authentication</td>
-					<td class=date>2025-01-30T21:15:14.357</td>
-					<td class=description>Sante PACS Server URL path Memory Corruption Denial-of-Service Vulnerability. This vulnerability allows remote attackers to create a denial-of-service condition on affected installations of Sante PACS Server. Authentication is not required to exploit this vulnerability.
-
-The specific flaw exists within the parsing of URLs in the web server module. The issue results from the lack of proper validation of user-supplied data, which can result in a memory corruption condition. An attacker can leverage this vulnerability to create a denial-of-service condition on the system. Was ZDI-CAN-25318.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0366">CVE-2025-0366</a></td>
+					<td>8.8</td>
+					<td>remote,execution,sensitive,bypass</td>
+					<td class=date>2025-02-01T06:15:31.367</td>
+					<td class=description>The Jupiter X Core plugin for WordPress is vulnerable to Local File Inclusion to Remote Code Execution in all versions up to, and including, 4.8.7 via the get_svg() function. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution. In this specific case,  an attacker can create a form that allows SVG uploads, upload an SVG file with malicious content and then include the SVG file in a post to achieve remote code execution. This means it is relatively easy to gain remote code execution as a contributor-level user and above by default.</td>
 				</tr>
 			
 		
 			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0573">CVE-2025-0573</a></td>
-					<td>5.3</td>
-					<td>remote,authentication</td>
-					<td class=date>2025-01-30T21:15:14.227</td>
-					<td class=description>Sante PACS Server DCM File Parsing Directory Traversal Arbitrary File Write Vulnerability. This vulnerability allows remote attackers to create arbitrary files on affected installations of Sante PACS Server. Authentication is not required to exploit this vulnerability.
-
-The specific flaw exists within the parsing of DCM files. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to write files in the context of the current user. Was ZDI-CAN-25309.</td>
-				</tr>
+		
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0572">CVE-2025-0572</a></td>
-					<td>4.3</td>
-					<td>remote,authentication</td>
-					<td class=date>2025-01-30T21:15:14.093</td>
-					<td class=description>Sante PACS Server Web Portal DCM File Parsing Directory Traversal Arbitrary File Write Vulnerability. This vulnerability allows remote attackers to create arbitrary files on affected installations of Sante PACS Server. Authentication is required to exploit this vulnerability.
-
-The specific flaw exists within the parsing of DCM files. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to write files in the context of the current user. Was ZDI-CAN-25308.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0571">CVE-2025-0571</a></td>
-					<td>6.5</td>
-					<td>remote,authentication</td>
-					<td class=date>2025-01-30T21:15:13.960</td>
-					<td class=description>Sante PACS Server Web Portal DCM File Parsing Memory Corruption Denial-of-Service Vulnerability. This vulnerability allows remote attackers to create a denial-of-service condition on affected installations of Sante PACS Server. Authentication is required to exploit this vulnerability.
-
-The specific flaw exists within the parsing of DCM files. The issue results from the lack of proper validation of user-supplied data, which can result in a memory corruption condition. An attacker can leverage this vulnerability to create a denial-of-service condition on the system. Was ZDI-CAN-25305.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0570">CVE-2025-0570</a></td>
-					<td>6.5</td>
-					<td>remote,authentication</td>
-					<td class=date>2025-01-30T21:15:13.830</td>
-					<td class=description>Sante PACS Server Web Portal DCM File Parsing Memory Corruption Denial-of-Service Vulnerability. This vulnerability allows remote attackers to create a denial-of-service condition on affected installations of Sante PACS Server. Authentication is required to exploit this vulnerability.
-
-The specific flaw exists within the parsing of DCM files. The issue results from the lack of proper validation of user-supplied data, which can result in a memory corruption condition. An attacker can leverage this vulnerability to create a denial-of-service condition on the system. Was ZDI-CAN-25304.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0569">CVE-2025-0569</a></td>
-					<td>7.5</td>
-					<td>remote,authentication</td>
-					<td class=date>2025-01-30T21:15:13.710</td>
-					<td class=description>Sante PACS Server DCM File Parsing Memory Corruption Denial-of-Service Vulnerability. This vulnerability allows remote attackers to create a denial-of-service condition on affected installations of Sante PACS Server. Authentication is not required to exploit this vulnerability.
-
-The specific flaw exists within the parsing of DCM files. The issue results from the lack of proper validation of user-supplied data, which can result in a memory corruption condition. An attacker can leverage this vulnerability to create a denial-of-service condition on the system. Was ZDI-CAN-25303.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0568">CVE-2025-0568</a></td>
-					<td>7.5</td>
-					<td>remote,authentication</td>
-					<td class=date>2025-01-30T21:15:13.587</td>
-					<td class=description>Sante PACS Server DCM File Parsing Memory Corruption Denial-of-Service Vulnerability. This vulnerability allows remote attackers to create a denial-of-service condition on affected installations of Sante PACS Server. Authentication is not required to exploit this vulnerability.
-
-The specific flaw exists within the parsing of DCM files. The issue results from the lack of proper validation of user-supplied data, which can result in a memory corruption condition. An attacker can leverage this vulnerability to create a denial-of-service condition on the system. Was ZDI-CAN-25302.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24505">CVE-2025-24505</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-22957">CVE-2025-22957</a></td>
 					<td>-</td>
-					<td>remote,execution,command</td>
-					<td class=date>2025-01-30T19:15:17.210</td>
-					<td class=description>This vulnerability allows a high-privileged authenticated PAM user to achieve remote command execution on the affected PAM system by uploading a specially crafted upgrade file.</td>
+					<td>authentication,sensitive</td>
+					<td class=date>2025-01-31T17:15:16.583</td>
+					<td class=description>A SQL injection vulnerability exists in the front-end of the website in ZZCMS <= 2023, which can be exploited without any authentication. This vulnerability could potentially allow attackers to gain unauthorized access to the database and extract sensitive information.</td>
 				</tr>
 			
 		
 			
+		
+			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0680">CVE-2025-0680</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0493">CVE-2025-0493</a></td>
 					<td>9.8</td>
-					<td>remote,command</td>
-					<td class=date>2025-01-30T19:15:14.147</td>
-					<td class=description>Affected products contain a vulnerability in the device cloud rpc command handling process that could allow remote attackers to take control over arbitrary devices connected to the cloud.</td>
+					<td>execution,unauthenticated,sensitive,bypass</td>
+					<td class=date>2025-01-31T05:15:10.087</td>
+					<td class=description>The MultiVendorX – The Ultimate WooCommerce Multivendor Marketplace Solution plugin for WordPress is vulnerable to Limited  Local File Inclusion in all versions up to, and including, 4.2.14 via the tabname parameter. This makes it possible for unauthenticated attackers to include PHP files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where PHP files can be uploaded and included</td>
 				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0626">CVE-2025-0626</a></td>
-					<td>-</td>
-					<td>remote,bypass</td>
-					<td class=date>2025-01-30T19:15:14.010</td>
-					<td class=description>The affected product sends out remote access requests to a hard-coded IP address, bypassing existing device network settings to do so. This could serve as a backdoor and lead to a malicious actor being able to upload and overwrite files on the device.</td>
-				</tr>
-			
-		
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0861">CVE-2025-0861</a></td>
-					<td>4.9</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2025-01-30T10:15:08.907</td>
-					<td class=description>The VR-Frases (collect & share quotes) plugin for WordPress is vulnerable to SQL Injection via several parameters in all versions up to, and including, 3.0.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-23374">CVE-2025-23374</a></td>
-					<td>8.0</td>
-					<td>remote,sensitive</td>
-					<td class=date>2025-01-30T05:15:10.787</td>
-					<td class=description>Dell Networking Switches running Enterprise SONiC OS, version(s) prior to 4.4.1 and 4.2.3, contain(s) an Insertion of Sensitive Information into Log File vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Information exposure.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0373">CVE-2025-0373</a></td>
-					<td>-</td>
-					<td>remote,execution,bypass</td>
-					<td class=date>2025-01-30T05:15:09.590</td>
-					<td class=description>On 64-bit systems, the implementation of VOP_VPTOFH() in the cd9660, tarfs and ext2fs filesystems overflows the destination FID buffer by 4 bytes, a stack buffer overflow.
-
-A NFS server that exports a cd9660, tarfs, or ext2fs file system can be made to panic by mounting and accessing the export with an NFS client.  Further exploitation (e.g., bypassing file permission checking or remote kernel code execution) is potentially possible, though this has not been demonstrated.  In particular, release kernels are compiled with stack protection enabled, and some instances of the overflow are caught by this mechanism, causing a panic.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21415">CVE-2025-21415</a></td>
-					<td>9.9</td>
-					<td>authentication,bypass</td>
-					<td class=date>2025-01-29T23:15:33.190</td>
-					<td class=description>Authentication bypass by spoofing in Azure AI Face Service allows an authorized attacker to elevate privileges over a network.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0798">CVE-2025-0798</a></td>
-					<td>8.1</td>
-					<td>remote,command</td>
-					<td class=date>2025-01-29T02:15:27.190</td>
-					<td class=description>A vulnerability was found in MicroWorld eScan Antivirus 7.0.32 on Linux. It has been rated as critical. This issue affects some unknown processing of the file rtscanner of the component Quarantine Handler. The manipulation leads to os command injection. The attack may be initiated remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24481">CVE-2025-24481</a></td>
-					<td>-</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2025-01-28T21:15:18.520</td>
-					<td class=description>An Incorrect Permission Assignment Vulnerability exists in the product and version listed above. The vulnerability is due to incorrect permissions being assigned to the remote debugger port and can allow for unauthenticated access to the system configuration.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0784">CVE-2025-0784</a></td>
-					<td>3.7</td>
-					<td>remote,sensitive</td>
-					<td class=date>2025-01-28T20:15:56.230</td>
-					<td class=description>A vulnerability has been found in Intelbras InControl up to 2.21.58 and classified as problematic. This vulnerability affects unknown code of the file /v1/usuario/ of the component Registered User Handler. The manipulation leads to cleartext transmission of sensitive information. The attack can be initiated remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. Upgrading to version 2.21.59 is able to address this issue. It is recommended to upgrade the affected component.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24480">CVE-2025-24480</a></td>
-					<td>-</td>
-					<td>remote,execution,command</td>
-					<td class=date>2025-01-28T19:15:15.033</td>
-					<td class=description>A Remote Code Execution Vulnerability exists in the product and version listed above. The vulnerability is due to lack of input sanitation and could allow a remote attacker to run commands or code as a high privileged user.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24479">CVE-2025-24479</a></td>
-					<td>-</td>
-					<td>execution,command</td>
-					<td class=date>2025-01-28T19:15:14.910</td>
-					<td class=description>A Local Code Execution Vulnerability exists in the product and version listed above. The vulnerability is due to a default setting in Windows and allows access to the Command Prompt as a higher privileged user.</td>
-				</tr>
-			
-		
 			
 		
 
