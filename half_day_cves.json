@@ -1,10 +1,4 @@
 {
-  "CVE-2025-22957": {
-    "cvss": "-",
-    "description": "A SQL injection vulnerability exists in the front-end of the website in ZZCMS <= 2023, which can be exploited without any authentication. This vulnerability could potentially allow attackers to gain unauthorized access to the database and extract sensitive information.",
-    "published": "2025-01-31T17:15:16.583",
-    "keywords": "authentication,sensitive"
-  },
   "CVE-2025-0938": {
     "url": "https://github.com/python/cpython/pull/129418",
     "cvss": "-",
@@ -24,19 +18,19 @@
     "keywords": "remote,execution,sensitive,bypass"
   },
   "CVE-2025-20633": {
-    "cvss": "-",
+    "cvss": 8.8,
     "description": "In wlan AP driver, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00400889; Issue ID: MSV-2491.",
     "published": "2025-02-03T04:15:08.307",
     "keywords": "remote,execution"
   },
   "CVE-2025-20634": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01289384; Issue ID: MSV-2436.",
     "published": "2025-02-03T04:15:08.423",
     "keywords": "remote,execution"
   },
   "CVE-2025-20637": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "In network HW, there is a possible system hang due to an uncaught exception. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00399035; Issue ID: MSV-2380.",
     "published": "2025-02-03T04:15:08.747",
     "keywords": "remote,execution"
