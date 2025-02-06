@@ -1,38 +1,212 @@
 {
-  "CVE-2025-0938": {
-    "url": "https://github.com/python/cpython/pull/129418",
+  "CVE-2025-1003": {
     "cvss": "-",
-    "description": "The Python standard library functions `urllib.parse.urlsplit` and `urlparse` accepted domain names that included square brackets which isn't valid according to RFC 3986. Square brackets are only meant to be used as delimiters for specifying IPv6 and IPvFuture hosts in URLs. This could result in differential parsing across the Python URL parser and other specification-compliant URL parsers.",
-    "published": "2025-01-31T18:15:38.053"
+    "description": "A potential vulnerability has been identified in HP Anyware Agent for Linux which might allow for authentication bypass which may result in escalation of privilege. HP is releasing a software update to mitigate this potential vulnerability.",
+    "published": "2025-02-04T00:15:33.940",
+    "keywords": "authentication,bypass"
   },
-  "CVE-2025-24891": {
-    "url": "https://github.com/dumbwareio/dumbdrop/commit/cb586316648ccbfb21d27b84e90d72ccead9819d",
-    "cvss": 9.6,
-    "description": "Dumb Drop is a file upload application. Users with permission to upload to the service are able to exploit a path traversal vulnerability to overwrite arbitrary system files. As the container runs as root by default, there is no limit to what can be overwritten. With this, it's possible to inject malicious payloads into files ran on schedule or upon certain service actions. As the service is not required to run with authentication enabled, this may permit wholly unprivileged users root access. Otherwise, anybody with a PIN.",
-    "published": "2025-01-31T23:15:08.457"
+  "CVE-2025-0466": {
+    "cvss": 5.3,
+    "description": "The Sensei LMS  WordPress plugin before 4.24.4 does not properly protect some its REST API routes, allowing unauthenticated attackers to leak sensei_email and sensei_message Information.",
+    "published": "2025-02-04T06:15:30.160",
+    "keywords": "unauthenticated,leak"
   },
-  "CVE-2025-0366": {
-    "cvss": 8.8,
-    "description": "The Jupiter X Core plugin for WordPress is vulnerable to Local File Inclusion to Remote Code Execution in all versions up to, and including, 4.8.7 via the get_svg() function. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution. In this specific case,  an attacker can create a form that allows SVG uploads, upload an SVG file with malicious content and then include the SVG file in a post to achieve remote code execution. This means it is relatively easy to gain remote code execution as a contributor-level user and above by default.",
-    "published": "2025-02-01T06:15:31.367",
-    "keywords": "remote,execution,sensitive,bypass"
+  "CVE-2025-20895": {
+    "cvss": 3.2,
+    "description": "Authentication Bypass Using an Alternate Path in Galaxy Store prior to version 4.5.87.6 allows physical attackers to install arbitrary applications to bypass restrictions of Setupwizard.",
+    "published": "2025-02-04T08:15:30.827",
+    "keywords": "authentication,bypass"
   },
-  "CVE-2025-20633": {
-    "cvss": 8.8,
-    "description": "In wlan AP driver, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00400889; Issue ID: MSV-2491.",
-    "published": "2025-02-03T04:15:08.307",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-20634": {
+  "CVE-2025-22204": {
     "cvss": 9.8,
-    "description": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01289384; Issue ID: MSV-2436.",
-    "published": "2025-02-03T04:15:08.423",
+    "description": "Improper control of generation of code in the sourcerer extension for Joomla in versions before 11.0.0 lead to a remote code execution vulnerability.",
+    "published": "2025-02-04T08:15:32.563",
     "keywords": "remote,execution"
   },
-  "CVE-2025-20637": {
-    "cvss": 7.5,
-    "description": "In network HW, there is a possible system hang due to an uncaught exception. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00399035; Issue ID: MSV-2380.",
-    "published": "2025-02-03T04:15:08.747",
+  "CVE-2025-0364": {
+    "cvss": 9.8,
+    "description": "BigAntSoft BigAnt Server, up to and including version 5.6.06, is vulnerable to unauthenticated remote code execution via account registration. An unauthenticated remote attacker can create an administrative user through the default exposed SaaS registration mechanism. Once an administrator, the attacker can upload and execute arbitrary PHP code using the \"Cloud Storage Addin,\" leading to unauthenticated code execution.",
+    "published": "2025-02-04T18:15:35.067",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-23059": {
+    "cvss": 6.8,
+    "description": "A vulnerability in the web-based management interface of HPE Aruba Networking ClearPass Policy Manager exposes directories containing sensitive information. If exploited successfully, this vulnerability allows an authenticated remote attacker with high privileges to access and retrieve sensitive data, potentially compromising the integrity and security of the entire system.",
+    "published": "2025-02-04T18:15:35.570",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-24971": {
+    "cvss": "-",
+    "description": "DumpDrop is a stupid simple file upload application that provides an interface for dragging and dropping files. An OS Command Injection vulnerability was discovered in the DumbDrop application, `/upload/init` endpoint. This vulnerability could allow an attacker to execute arbitrary code remotely when the **Apprise Notification** enabled. This issue has been addressed in commit `4ff8469d` and all users are advised to patch. There are no known workarounds for this vulnerability.",
+    "published": "2025-02-04T19:15:33.827",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-25039": {
+    "cvss": 4.7,
+    "description": "A vulnerability in the web-based management interface of HPE Aruba Networking ClearPass Policy Manager (CPPM) allows remote authenticated users to run arbitrary commands on the underlying host. A successful exploit could allow an attacker to execute arbitrary commands as a lower privileged user on the underlying operating system.",
+    "published": "2025-02-04T19:15:33.977",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-0960": {
+    "cvss": 9.8,
+    "description": "AutomationDirect C-more EA9 HMI contains a function with bounds checks that can be skipped, which could result in an attacker abusing the function to cause a denial-of-service condition or achieving remote code execution on the affected device.",
+    "published": "2025-02-04T20:15:50.103",
     "keywords": "remote,execution"
+  },
+  "CVE-2025-24964": {
+    "cvss": 9.6,
+    "description": "Vitest is a testing framework powered by Vite. Affected versions are subject to arbitrary remote Code Execution when accessing a malicious website while Vitest API server is listening by Cross-site WebSocket hijacking (CSWSH) attacks. When `api` option is enabled (Vitest UI enables it), Vitest starts a WebSocket server. This WebSocket server did not check Origin header and did not have any authorization mechanism and was vulnerable to CSWSH attacks. This WebSocket server has `saveTestFile` API that can edit a test file and `rerun` API that can rerun the tests. An attacker can execute arbitrary code by injecting a code in a test file by the `saveTestFile` API and then running that file by calling the `rerun` API. This vulnerability can result in remote code execution for users that are using Vitest serve API. This issue has been patched in versions 1.6.1, 2.1.9 and 3.0.5. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+    "published": "2025-02-04T20:15:50.483",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-24967": {
+    "cvss": "-",
+    "description": "reNgine is an automated reconnaissance framework for web applications. A stored cross-site scripting (XSS) vulnerability exists in the admin panel's user management functionality. An attacker can exploit this issue by injecting malicious payloads into the username field during user creation. This vulnerability allows unauthorized script execution whenever the admin views or interacts with the affected user entry, posing a significant risk to sensitive admin functionalities. This issue affects all versions up to and including 2.20. Users are advised to monitor the project for future releases which address this issue. There are no known workarounds.",
+    "published": "2025-02-04T20:15:50.813",
+    "keywords": "execution,sensitive"
+  },
+  "CVE-2025-1028": {
+    "cvss": 8.1,
+    "description": "The Contact Manager plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the contact form upload feature in all versions up to, and including, 8.6.4. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible in specific configurations where the first extension is processed over the final. This vulnerability also requires successfully exploiting a race condition in order to exploit.",
+    "published": "2025-02-05T04:15:06.543",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-1026": {
+    "cvss": 8.6,
+    "description": "Versions of the package spatie/browsershot before 5.0.5 are vulnerable to Improper Input Validation due to improper URL validation through the setUrl method, which results in a Local File Inclusion allowing the attacker to read sensitive files.\r\r**Note:**\r\rThis is a bypass of the fix for [CVE-2024-21549](https://security.snyk.io/vuln/SNYK-PHP-SPATIEBROWSERSHOT-8533023).",
+    "published": "2025-02-05T05:15:10.687",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2025-25246": {
+    "cvss": 8.1,
+    "description": "NETGEAR XR1000 before 1.0.0.74, XR1000v2 before 1.1.0.22, and XR500 before 2.3.2.134 allow remote code execution by unauthenticated users.",
+    "published": "2025-02-05T05:15:11.663",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-20124": {
+    "cvss": 9.9,
+    "description": "A vulnerability in an API of Cisco ISE could allow an authenticated, remote attacker to execute arbitrary commands as the root user on an affected device.\r\n\r\nThis vulnerability is due to insecure deserialization of user-supplied Java byte streams by the affected software. An attacker could exploit this vulnerability by sending a crafted serialized Java object to an affected API. A successful exploit could allow the attacker to execute arbitrary commands on the device and elevate privileges.\r\nNote:&nbsp;To successfully exploit this vulnerability, the attacker must have valid read-only administrative credentials. In a single-node deployment, new devices will not be able to authenticate during the reload time.",
+    "published": "2025-02-05T17:15:22.457",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-20125": {
+    "cvss": 9.1,
+    "description": "A vulnerability in an API of Cisco ISE could allow an authenticated, remote attacker with valid read-only credentials to obtain sensitive information, change node configurations, and restart the node.\r\n\r\nThis vulnerability is due to a lack of authorization in a specific API and improper validation of user-supplied data. An attacker could exploit this vulnerability by sending a crafted HTTP request to a specific API on the device. A successful exploit could allow the attacker to attacker to obtain information, modify system configuration, and reload the device.\r\nNote:&nbsp;To successfully exploit this vulnerability, the attacker must have valid read-only administrative credentials. In a single-node deployment, new devices will not be able to authenticate during the reload time.",
+    "published": "2025-02-05T17:15:22.610",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-20179": {
+    "cvss": 6.1,
+    "description": "A vulnerability in the web-based management interface of Cisco Expressway Series could allow an unauthenticated, remote attacker to conduct a cross-site scripting (XSS) attack against a user of the interface.\r\n\r\nThis vulnerability exists because the web-based management interface does not properly validate user-supplied input. An attacker could exploit this vulnerability by persuading a user of the interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.\r\nNote:&nbsp;Cisco Expressway Series refers to Cisco Expressway Control (Expressway-C) devices and Cisco Expressway Edge (Expressway-E) devices.",
+    "published": "2025-02-05T17:15:25.210",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2025-20180": {
+    "cvss": 4.8,
+    "description": "A vulnerability in the web-based management interface of Cisco AsyncOS Software for Cisco Secure Email and Web Manager and Secure Email Gateway could allow an authenticated, remote attacker to conduct a stored cross-site scripting (XSS) attack against a user of the interface.\r\n\r\nThis vulnerability is due to insufficient validation of user input. An attacker could exploit this vulnerability by persuading a user of an affected interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information. To exploit this vulnerability, the attacker must have valid credentials for a user account with at least the role of Operator.",
+    "published": "2025-02-05T17:15:25.370",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-20183": {
+    "cvss": 5.8,
+    "description": "A vulnerability in a policy-based Cisco Application Visibility and Control (AVC) implementation of Cisco AsyncOS Software for Cisco Secure Web Appliance could allow an unauthenticated, remote attacker to evade the antivirus scanner and download a malicious file onto an endpoint.&nbsp;\r\n\r\nThe vulnerability is due to improper handling of a crafted range request header. An attacker could exploit this vulnerability by sending an HTTP request with a crafted range request header through the affected device. A successful exploit could allow the attacker to evade the antivirus scanner and download malware onto the endpoint without detection by Cisco Secure Web Appliance.",
+    "published": "2025-02-05T17:15:25.527",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-20184": {
+    "cvss": 6.5,
+    "description": "A vulnerability in the web-based management interface of Cisco AsyncOS Software for Cisco Secure Email Gateway and Cisco Secure Web Appliance could allow an authenticated, remote attacker to perform command injection attacks against an affected device. The attacker must authenticate with valid administrator credentials.\r\n\r\nThis vulnerability is due to insufficient validation of XML configuration files by an affected device. An attacker could exploit this vulnerability by uploading a crafted XML configuration file. A successful exploit could allow the attacker to inject commands to the underlying operating system with root privileges.",
+    "published": "2025-02-05T17:15:25.697",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-20185": {
+    "cvss": 3.4,
+    "description": "A vulnerability in the implementation of the remote access functionality of Cisco AsyncOS Software for Cisco Secure Email and Web Manager, Cisco Secure Email Gateway, and Cisco Secure Web Appliance could allow an authenticated, local attacker to elevate privileges to root. The attacker must authenticate with valid administrator credentials.\r\n\r\nThis vulnerability is due to an architectural flaw in the password generation algorithm for the remote access functionality. An attacker could exploit this vulnerability by generating a temporary password for the service account. A successful exploit could allow the attacker to execute arbitrary commands as root and access the underlying operating system.\r\nNote: The Security Impact Rating (SIR) for this vulnerability is Medium due to the unrestricted scope of information that is accessible to an attacker.",
+    "published": "2025-02-05T17:15:25.883",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-20204": {
+    "cvss": 4.8,
+    "description": "A vulnerability in the web-based management interface of Cisco Identity Services Engine (ISE) could allow an authenticated, remote attacker to conduct cross-site scripting (XSS) attacks against a user of the interface.&nbsp;\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input by the web-based management interface of an affected system. An attacker could exploit this vulnerability by injecting malicious code into specific pages of the interface. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information. To exploit this vulnerability, the attacker must have valid administrative credentials.",
+    "published": "2025-02-05T17:15:26.077",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-20205": {
+    "cvss": 4.8,
+    "description": "A vulnerability in the web-based management interface of Cisco Identity Services Engine (ISE) could allow an authenticated, remote attacker to conduct cross-site scripting (XSS) attacks against a user of the interface.&nbsp;\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input by the web-based management interface of an affected system. An attacker could exploit this vulnerability by injecting malicious code into specific pages of the interface. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information. To exploit this vulnerability, the attacker must have valid administrative credentials.",
+    "published": "2025-02-05T17:15:26.243",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-23239": {
+    "cvss": 8.7,
+    "description": "When running in Appliance mode, an authenticated remote command injection vulnerability exists in an undisclosed iControl REST endpoint. A successful exploit can allow the attacker to cross a security boundary.\n\n \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "published": "2025-02-05T18:15:31.373",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-23413": {
+    "cvss": 4.4,
+    "description": "When users log in through the webUI or API using local authentication, BIG-IP Next Central Manager may log sensitive information in the pgaudit log files. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "published": "2025-02-05T18:15:31.930",
+    "keywords": "authentication,sensitive"
+  },
+  "CVE-2025-23415": {
+    "cvss": 3.1,
+    "description": "An insufficient verification of data authenticity vulnerability exists in BIG-IP APM Access Policy endpoint inspection that may allow an attacker to bypass endpoint inspection checks for VPN connection initiated thru BIG-IP APM browser network access VPN client for Windows, macOS and Linux.\n\n \n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "published": "2025-02-05T18:15:32.573",
+    "keywords": "vpn,bypass"
+  },
+  "CVE-2025-23419": {
+    "cvss": 4.3,
+    "description": "When multiple server blocks are configured to share the same IP address and port, an attacker can use session resumption to bypass client certificate authentication requirements on these servers. This vulnerability arises when  TLS Session Tickets https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_ticket_key  are used and/or the  SSL session cache https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_cache  are used in the default server and the default server is performing client certificate authentication.\u00a0\u00a0\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "published": "2025-02-05T18:15:33.347",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-24372": {
+    "url": "https://github.com/ckan/ckan/commit/7da6a26c6183e0a97a356d1b1d2407f3ecc7b9c8",
+    "cvss": 7.3,
+    "description": "CKAN is an open-source DMS (data management system) for powering data hubs and data portals. Using a specially crafted file, a user could potentially upload a file containing code that when executed could send arbitrary requests to the server. If that file was opened by an administrator, it could lead to escalation of privileges of the original submitter or other malicious actions. Users must have been registered to the site to exploit this vulnerability. This vulnerability has been fixed in CKAN 2.10.7 and 2.11.2. Users are advised to upgrade. On versions prior to CKAN 2.10.7 and 2.11.2, site maintainers can restrict the file types supported for uploading using the `ckan.upload.user.mimetypes` / `ckan.upload.user.types` and `ckan.upload.group.mimetypes` / `ckan.upload.group.types` config options. To entirely disable file uploads users can use: `ckan.upload.user.types = none`",
+    "published": "2025-02-05T19:15:46.010"
+  },
+  "CVE-2025-1066": {
+    "url": "https://github.com/thiagoralves/openplc_v3/commit/d1b1a3b7e97f2b3fef0876056cf9d7879991744a",
+    "cvss": 9.8,
+    "description": "OpenPLC_V3 contains an arbitrary file upload vulnerability, which could be leveraged for malvertising or phishing campaigns.",
+    "published": "2025-02-06T00:15:27.760"
+  },
+  "CVE-2025-0994": {
+    "cvss": "-",
+    "description": "Trimble Cityworks versions prior to 15.8.9 and Cityworks with office companion versions prior to 23.10 are vulnerable to a deserialization vulnerability. This could allow an authenticated user to perform a remote code execution attack against a customer\u2019s Microsoft Internet Information Services (IIS) web server.",
+    "published": "2025-02-06T16:15:41.493",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-23217": {
+    "cvss": "-",
+    "description": "mitmproxy is a interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers and mitmweb is a web-based interface for mitmproxy. In mitmweb 11.1.1 and below, a malicious client can use mitmweb's proxy server (bound to `*:8080` by default) to access mitmweb's internal API (bound to `127.0.0.1:8081` by default). In other words, while the cannot access the API directly, they can access the API through the proxy. An attacker may be able to escalate this SSRF-style access to remote code execution. The mitmproxy and mitmdump tools are unaffected. Only mitmweb is affected. This vulnerability has been fixed in mitmproxy 11.1.2 and above. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+    "published": "2025-02-06T18:15:32.667",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-22992": {
+    "url": "https://github.com/emoncms/emoncms/issues/1916",
+    "cvss": 9.8,
+    "description": "A SQL Injection vulnerability exists in the /feed/insert.json endpoint of the Emoncms project >= 11.6.9. The vulnerability is caused by improper handling of user-supplied input in the data query parameter, allowing attackers to execute arbitrary SQL commands under specific conditions.",
+    "published": "2025-02-06T19:15:19.970"
+  },
+  "CVE-2025-22936": {
+    "cvss": "-",
+    "description": "An issue in Smartcom Bulgaria AD Smartcom Ralink CPE/WiFi router SAM-4G1G-TT-W-VC, SAM-4F1F-TT-W-A1 allows a remote attacker to obtain sensitive information via the Weak default WiFi password generation algorithm in WiFi routers.",
+    "published": "2025-02-06T20:15:40.460",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-23093": {
+    "cvss": "-",
+    "description": "The Platform component of Mitel OpenScape 4000 and OpenScape 4000 Manager through V10 R1.54.1 and V11 through R0.22.1 could allow an authenticated attacker to conduct a privilege escalation attack due to the execution of a resource with unnecessary privileges. A successful exploit could allow an attacker to execute arbitrary commands with elevated privileges.",
+    "published": "2025-02-06T20:15:40.587",
+    "keywords": "execution,command"
+  },
+  "CVE-2025-23094": {
+    "cvss": "-",
+    "description": "The Platform component of Mitel OpenScape 4000 and OpenScape 4000 Manager V11 R0.22.0 through V11 R0.22.1, V10 R1.54.0 through V10 R1.54.1, and V10 R1.42.6 and earlier could allow an unauthenticated attacker to conduct a command injection attack due to insufficient parameter sanitization. A successful exploit could allow an attacker to execute arbitrary commands within the same privilege level as the web access process.",
+    "published": "2025-02-06T21:15:23.477",
+    "keywords": "unauthenticated,command"
   }
 }
