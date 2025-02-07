@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-02-07T07:11:18.413360
+Updated at UTC 2025-02-07T08:14:35.637567
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2025-02-07T07:11:18.413360
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -168,6 +170,18 @@ Updated at UTC 2025-02-07T07:11:18.413360
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-23085">CVE-2025-23085</a></td>
+					<td>5.3</td>
+					<td>remote,leak</td>
+					<td class=date>2025-02-07T07:15:15.810</td>
+					<td class=description>A memory leak could occur when a remote peer abruptly closes the socket without sending a GOAWAY notification. Additionally, if an invalid header was detected by nghttp2, causing the connection to be terminated by the peer, the same leak was triggered. This flaw could lead to increased memory consumption and potential denial of service under certain conditions.
+
+This vulnerability affects HTTP/2 Server users on Node.js v18.x, v20.x, v22.x and v23.x.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
