@@ -226,5 +226,11 @@
     "description": "A memory leak could occur when a remote peer abruptly closes the socket without sending a GOAWAY notification. Additionally, if an invalid header was detected by nghttp2, causing the connection to be terminated by the peer, the same leak was triggered. This flaw could lead to increased memory consumption and potential denial of service under certain conditions.\r\n\r\nThis vulnerability affects HTTP/2 Server users on Node.js v18.x, v20.x, v22.x and v23.x.",
     "published": "2025-02-07T07:15:15.810",
     "keywords": "remote,leak"
+  },
+  "CVE-2025-1077": {
+    "cvss": "-",
+    "description": "A security vulnerability has been identified in the IBL Software Engineering Visual Weather and derived products (NAMIS, Aero Weather, Satellite Weather).\u00a0The vulnerability is present in the Product Delivery Service (PDS) component in specific server configurations where the PDS pipeline utilizes the IPDS pipeline with Message Editor Output Filters enabled.\n\nA remote\u00a0unauthenticated\n\nattacker can exploit this vulnerability to send unauthenticated requests to execute the IPDS\u00a0pipeline\u00a0with specially crafted Form Properties, enabling remote execution of arbitrary Python code.\u00a0This vulnerability could lead to a full system compromise of the affected server, particularly if Visual Weather services\u00a0are run under a privileged user account\u2014contrary to the documented installation best practices.\n\n\n\nUpgrade to the patched versions 7.3.10 (or higher), 8.6.0 (or higher).",
+    "published": "2025-02-07T09:15:08.380",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
