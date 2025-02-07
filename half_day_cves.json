@@ -1,10 +1,4 @@
 {
-  "CVE-2025-1003": {
-    "cvss": "-",
-    "description": "A potential vulnerability has been identified in HP Anyware Agent for Linux which might allow for authentication bypass which may result in escalation of privilege. HP is releasing a software update to mitigate this potential vulnerability.",
-    "published": "2025-02-04T00:15:33.940",
-    "keywords": "authentication,bypass"
-  },
   "CVE-2025-0466": {
     "cvss": 5.3,
     "description": "The Sensei LMS  WordPress plugin before 4.24.4 does not properly protect some its REST API routes, allowing unauthenticated attackers to leak sensei_email and sensei_message Information.",
@@ -208,5 +202,41 @@
     "description": "The Platform component of Mitel OpenScape 4000 and OpenScape 4000 Manager V11 R0.22.0 through V11 R0.22.1, V10 R1.54.0 through V10 R1.54.1, and V10 R1.42.6 and earlier could allow an unauthenticated attacker to conduct a command injection attack due to insufficient parameter sanitization. A successful exploit could allow an attacker to execute arbitrary commands within the same privilege level as the web access process.",
     "published": "2025-02-06T21:15:23.477",
     "keywords": "unauthenticated,command"
+  },
+  "CVE-2025-21279": {
+    "cvss": 6.5,
+    "description": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "published": "2025-02-06T23:15:09.043",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21283": {
+    "cvss": 6.5,
+    "description": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "published": "2025-02-06T23:15:09.213",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21342": {
+    "cvss": 8.8,
+    "description": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "published": "2025-02-06T23:15:09.363",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-21408": {
+    "cvss": 8.8,
+    "description": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+    "published": "2025-02-06T23:15:09.827",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-0674": {
+    "cvss": 9.8,
+    "description": "Multiple Elber products are affected by an authentication bypass \nvulnerability which allows unauthorized access to the password \nmanagement functionality. Attackers can exploit this issue by \nmanipulating the endpoint to overwrite any user's password within the \nsystem. This grants them unauthorized administrative access to protected\n areas of the application, compromising the device's system security.",
+    "published": "2025-02-07T00:15:27.017",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-1061": {
+    "cvss": 9.8,
+    "description": "The Nextend Social Login Pro plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 3.1.16. This is due to insufficient verification on the user being supplied during the Apple OAuth authenticate request through the plugin. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email.",
+    "published": "2025-02-07T02:15:29.587",
+    "keywords": "unauthenticated,authentication,bypass"
   }
 }
