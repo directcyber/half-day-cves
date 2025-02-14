@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-02-07T20:12:15.251955
+Updated at UTC 2025-02-14T17:09:39.740626
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -67,6 +67,104 @@ Updated at UTC 2025-02-07T20:12:15.251955
 			
 		
 			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25195">CVE-2025-25195</a></td>
+					<td>4.3</td>
+					<td><a target=_blank href="https://github.com/zulip/zulip/commit/a2a1a7f8d152296c8966f1380872c0ac69e5c87e">https://github.com/zulip/zulip/commit/a2a1a7f8d152296c8966f1380872c0ac69e5c87e</a></td>
+					<td class=date>2025-02-13T22:15:13.100</td>
+					<td class=description>Zulip is an open source team chat application. A weekly cron job (added in 50256f48314250978f521ef439cafa704e056539) demotes channels to being "inactive" after they have not received traffic for 180 days.  However, upon doing so, an event was sent to all users in the organization, not just users in the channel.  This event contained the name of the private channel. Similarly, the same commit (50256f48314250978f521ef439cafa704e056539) added functionality to notify clients when channels stopped being "inactive."  The first message sent to a private channel which had not previously had any messages for over 180 days (and were thus already marked "inactive") would leak an event to all users in the organization; this event also contained the name of the private channel. Commits 75be449d456d29fef27e9d1828bafa30174284b4 and a2a1a7f8d152296c8966f1380872c0ac69e5c87e fixed the issue. This vulnerability only existed in `main`, and was not part of any published versions.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24903">CVE-2025-24903</a></td>
+					<td>8.5</td>
+					<td><a target=_blank href="https://github.com/whisperfish/libsignal-service-rs/commit/82d70f6720e762898f34ae76b0894b0297d9b2f8">https://github.com/whisperfish/libsignal-service-rs/commit/82d70f6720e762898f34ae76b0894b0297d9b2f8</a></td>
+					<td class=date>2025-02-13T16:16:48.913</td>
+					<td class=description>libsignal-service-rs is a Rust version of the libsignal-service-java library which implements the core functionality to communicate with Signal servers. Prior to commit 82d70f6720e762898f34ae76b0894b0297d9b2f8, any contact may forge a sync message, impersonating another device of the local user. The origin of sync messages is not checked. Patched libsignal-service can be found after commit 82d70f6720e762898f34ae76b0894b0297d9b2f8. The `Metadata` struct contains an additional `was_encrypted` field, which breaks the API, but should be easily resolvable. No known workarounds are available.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0426">CVE-2025-0426</a></td>
+					<td>6.2</td>
+					<td><a target=_blank href="https://github.com/kubernetes/kubernetes/issues/130016">https://github.com/kubernetes/kubernetes/issues/130016</a></td>
+					<td class=date>2025-02-13T16:16:48.417</td>
+					<td class=description>A security issue was discovered in Kubernetes where a large number of container checkpoint requests made to the unauthenticated kubelet read-only HTTP endpoint may cause a Node Denial of Service by filling the Node's disk.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -88,11 +186,11 @@ Updated at UTC 2025-02-07T20:12:15.251955
 		
 			
 				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-22992">CVE-2025-22992</a></td>
-					<td>9.8</td>
-					<td><a target=_blank href="https://github.com/emoncms/emoncms/issues/1916">https://github.com/emoncms/emoncms/issues/1916</a></td>
-					<td class=date>2025-02-06T19:15:19.970</td>
-					<td class=description>A SQL Injection vulnerability exists in the /feed/insert.json endpoint of the Emoncms project >= 11.6.9. The vulnerability is caused by improper handling of user-supplied input in the data query parameter, allowing attackers to execute arbitrary SQL commands under specific conditions.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26520">CVE-2025-26520</a></td>
+					<td>7.6</td>
+					<td><a target=_blank href="https://github.com/cacti/cacti/pull/6096">https://github.com/cacti/cacti/pull/6096</a></td>
+					<td class=date>2025-02-12T07:15:08.617</td>
+					<td class=description>Cacti through 1.2.29 allows SQL injection in the template function in host_templates.php via the graph_template parameter. NOTE: this issue exists because of an incomplete fix for CVE-2024-54146.</td>
 
 
 				</tr>
@@ -103,27 +201,55 @@ Updated at UTC 2025-02-07T20:12:15.251955
 			
 		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1066">CVE-2025-1066</a></td>
-					<td>9.8</td>
-					<td><a target=_blank href="https://github.com/thiagoralves/openplc_v3/commit/d1b1a3b7e97f2b3fef0876056cf9d7879991744a">https://github.com/thiagoralves/openplc_v3/commit/d1b1a3b7e97f2b3fef0876056cf9d7879991744a</a></td>
-					<td class=date>2025-02-06T00:15:27.760</td>
-					<td class=description>OpenPLC_V3 contains an arbitrary file upload vulnerability, which could be leveraged for malvertising or phishing campaigns.</td>
-
-
-				</tr>
+		
 			
 		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24372">CVE-2025-24372</a></td>
-					<td>7.3</td>
-					<td><a target=_blank href="https://github.com/ckan/ckan/commit/7da6a26c6183e0a97a356d1b1d2407f3ecc7b9c8">https://github.com/ckan/ckan/commit/7da6a26c6183e0a97a356d1b1d2407f3ecc7b9c8</a></td>
-					<td class=date>2025-02-05T19:15:46.010</td>
-					<td class=description>CKAN is an open-source DMS (data management system) for powering data hubs and data portals. Using a specially crafted file, a user could potentially upload a file containing code that when executed could send arbitrary requests to the server. If that file was opened by an administrator, it could lead to escalation of privileges of the original submitter or other malicious actions. Users must have been registered to the site to exploit this vulnerability. This vulnerability has been fixed in CKAN 2.10.7 and 2.11.2. Users are advised to upgrade. On versions prior to CKAN 2.10.7 and 2.11.2, site maintainers can restrict the file types supported for uploading using the `ckan.upload.user.mimetypes` / `ckan.upload.user.types` and `ckan.upload.group.mimetypes` / `ckan.upload.group.types` config options. To entirely disable file uploads users can use: `ckan.upload.user.types = none`</td>
-
-
-				</tr>
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
 			
 		
 			
@@ -169,411 +295,983 @@ Updated at UTC 2025-02-07T20:12:15.251955
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1104">CVE-2025-1104</a></td>
-					<td>7.3</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26522">CVE-2025-26522</a></td>
+					<td>-</td>
 					<td>remote,authentication,bypass</td>
-					<td class=date>2025-02-07T17:15:31.477</td>
-					<td class=description>A vulnerability has been found in D-Link DHP-W310AV 1.04 and classified as critical. This vulnerability affects unknown code. The manipulation leads to authentication bypass by spoofing. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
+					<td class=date>2025-02-14T12:15:29.583</td>
+					<td class=description>This vulnerability exists in RupeeWeb trading platform due to improper implementation of OTP validation mechanism in certain API endpoints. A remote attacker with valid credentials could exploit this vulnerability by manipulating API responses.  
+
+Successful exploitation of this vulnerability could allow the attacker to bypass Two-Factor Authentication (2FA) for other user accounts.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0304">CVE-2025-0304</a></td>
-					<td>8.8</td>
-					<td>sensitive,leak</td>
-					<td class=date>2025-02-07T10:15:11.587</td>
-					<td class=description>in OpenHarmony v4.1.2 and prior versions allow a local attacker cause the common permission is upgraded to root and sensitive information leak through use after free.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-22962">CVE-2025-22962</a></td>
+					<td>7.2</td>
+					<td>remote,execution,command</td>
+					<td class=date>2025-02-13T23:15:11.140</td>
+					<td class=description>A critical remote code execution (RCE) vulnerability exists in the web-based management interface of GatesAir Maxiva UAXT, VAXT transmitters when debugging mode is enabled. An attacker with a valid session ID (sess_id) can send specially crafted POST requests to the /json endpoint, enabling arbitrary command execution on the underlying system. This vulnerability can lead to full system compromise, including unauthorized access, privilege escalation, and potentially full device takeover.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0303">CVE-2025-0303</a></td>
-					<td>8.8</td>
-					<td>sensitive,leak</td>
-					<td class=date>2025-02-07T10:15:11.410</td>
-					<td class=description>in OpenHarmony v4.1.2 and prior versions allow a local attacker cause the common permission is upgraded to root and sensitive information leak through buffer overflow.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1077">CVE-2025-1077</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-22961">CVE-2025-22961</a></td>
 					<td>-</td>
-					<td>remote,execution,unauthenticated</td>
-					<td class=date>2025-02-07T09:15:08.380</td>
-					<td class=description>A security vulnerability has been identified in the IBL Software Engineering Visual Weather and derived products (NAMIS, Aero Weather, Satellite Weather). The vulnerability is present in the Product Delivery Service (PDS) component in specific server configurations where the PDS pipeline utilizes the IPDS pipeline with Message Editor Output Filters enabled.
-
-A remote unauthenticated
-
-attacker can exploit this vulnerability to send unauthenticated requests to execute the IPDS pipeline with specially crafted Form Properties, enabling remote execution of arbitrary Python code. This vulnerability could lead to a full system compromise of the affected server, particularly if Visual Weather services are run under a privileged user account—contrary to the documented installation best practices.
-
-
-
-Upgrade to the patched versions 7.3.10 (or higher), 8.6.0 (or higher).</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2025-02-13T23:15:11.047</td>
+					<td class=description>A critical information disclosure vulnerability exists in the web-based management interface of GatesAir Maxiva UAXT, VAXT transmitters due to Incorrect Access Control (CWE-284). Unauthenticated attackers can directly access sensitive database backup files (snapshot_users.db) via publicly exposed URLs (/logs/devcfg/snapshot/ and /logs/devcfg/user/). Exploiting this vulnerability allows retrieval of sensitive user data, including login credentials, potentially leading to full system compromise.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-23085">CVE-2025-23085</a></td>
-					<td>5.3</td>
-					<td>remote,leak</td>
-					<td class=date>2025-02-07T07:15:15.810</td>
-					<td class=description>A memory leak could occur when a remote peer abruptly closes the socket without sending a GOAWAY notification. Additionally, if an invalid header was detected by nghttp2, causing the connection to be terminated by the peer, the same leak was triggered. This flaw could lead to increased memory consumption and potential denial of service under certain conditions.
-
-This vulnerability affects HTTP/2 Server users on Node.js v18.x, v20.x, v22.x and v23.x.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-22960">CVE-2025-22960</a></td>
+					<td>-</td>
+					<td>unauthenticated,authentication,sensitive</td>
+					<td class=date>2025-02-13T23:15:10.960</td>
+					<td class=description>A session hijacking vulnerability exists in the web-based management interface of GatesAir Maxiva UAXT, VAXT transmitters. Unauthenticated attackers can access exposed log files (/logs/debug/xteLog*), potentially revealing sensitive session-related information such as session IDs (sess_id) and authentication success tokens (user_check_password OK). Exploiting this flaw could allow attackers to hijack active sessions, gain unauthorized access, and escalate privileges on affected devices.</td>
 				</tr>
 			
 		
 			
+		
+			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1061">CVE-2025-1061</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25067">CVE-2025-25067</a></td>
 					<td>9.8</td>
-					<td>unauthenticated,authentication,bypass</td>
-					<td class=date>2025-02-07T02:15:29.587</td>
-					<td class=description>The Nextend Social Login Pro plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 3.1.16. This is due to insufficient verification on the user being supplied during the Apple OAuth authenticate request through the plugin. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0674">CVE-2025-0674</a></td>
-					<td>9.8</td>
-					<td>authentication,bypass</td>
-					<td class=date>2025-02-07T00:15:27.017</td>
-					<td class=description>Multiple Elber products are affected by an authentication bypass 
-vulnerability which allows unauthorized access to the password 
-management functionality. Attackers can exploit this issue by 
-manipulating the endpoint to overwrite any user's password within the 
-system. This grants them unauthorized administrative access to protected
- areas of the application, compromising the device's system security.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21408">CVE-2025-21408</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2025-02-06T23:15:09.827</td>
-					<td class=description>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21342">CVE-2025-21342</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2025-02-06T23:15:09.363</td>
-					<td class=description>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21283">CVE-2025-21283</a></td>
-					<td>6.5</td>
-					<td>remote,execution</td>
-					<td class=date>2025-02-06T23:15:09.213</td>
-					<td class=description>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21279">CVE-2025-21279</a></td>
-					<td>6.5</td>
-					<td>remote,execution</td>
-					<td class=date>2025-02-06T23:15:09.043</td>
-					<td class=description>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-23094">CVE-2025-23094</a></td>
-					<td>-</td>
-					<td>unauthenticated,command</td>
-					<td class=date>2025-02-06T21:15:23.477</td>
-					<td class=description>The Platform component of Mitel OpenScape 4000 and OpenScape 4000 Manager V11 R0.22.0 through V11 R0.22.1, V10 R1.54.0 through V10 R1.54.1, and V10 R1.42.6 and earlier could allow an unauthenticated attacker to conduct a command injection attack due to insufficient parameter sanitization. A successful exploit could allow an attacker to execute arbitrary commands within the same privilege level as the web access process.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-23093">CVE-2025-23093</a></td>
-					<td>-</td>
-					<td>execution,command</td>
-					<td class=date>2025-02-06T20:15:40.587</td>
-					<td class=description>The Platform component of Mitel OpenScape 4000 and OpenScape 4000 Manager through V10 R1.54.1 and V11 through R0.22.1 could allow an authenticated attacker to conduct a privilege escalation attack due to the execution of a resource with unnecessary privileges. A successful exploit could allow an attacker to execute arbitrary commands with elevated privileges.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-22936">CVE-2025-22936</a></td>
-					<td>-</td>
-					<td>remote,sensitive</td>
-					<td class=date>2025-02-06T20:15:40.460</td>
-					<td class=description>An issue in Smartcom Bulgaria AD Smartcom Ralink CPE/WiFi router SAM-4G1G-TT-W-VC, SAM-4F1F-TT-W-A1 allows a remote attacker to obtain sensitive information via the Weak default WiFi password generation algorithm in WiFi routers.</td>
-				</tr>
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-23217">CVE-2025-23217</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2025-02-06T18:15:32.667</td>
-					<td class=description>mitmproxy is a interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers and mitmweb is a web-based interface for mitmproxy. In mitmweb 11.1.1 and below, a malicious client can use mitmweb's proxy server (bound to `*:8080` by default) to access mitmweb's internal API (bound to `127.0.0.1:8081` by default). In other words, while the cannot access the API directly, they can access the API through the proxy. An attacker may be able to escalate this SSRF-style access to remote code execution. The mitmproxy and mitmdump tools are unaffected. Only mitmweb is affected. This vulnerability has been fixed in mitmproxy 11.1.2 and above. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0994">CVE-2025-0994</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2025-02-06T16:15:41.493</td>
-					<td class=description>Trimble Cityworks versions prior to 15.8.9 and Cityworks with office companion versions prior to 23.10 are vulnerable to a deserialization vulnerability. This could allow an authenticated user to perform a remote code execution attack against a customer’s Microsoft Internet Information Services (IIS) web server.</td>
-				</tr>
-			
-		
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-23419">CVE-2025-23419</a></td>
-					<td>4.3</td>
-					<td>authentication,bypass</td>
-					<td class=date>2025-02-05T18:15:33.347</td>
-					<td class=description>When multiple server blocks are configured to share the same IP address and port, an attacker can use session resumption to bypass client certificate authentication requirements on these servers. This vulnerability arises when  TLS Session Tickets https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_ticket_key  are used and/or the  SSL session cache https://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_session_cache  are used in the default server and the default server is performing client certificate authentication.  
-
-Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-23415">CVE-2025-23415</a></td>
-					<td>3.1</td>
-					<td>vpn,bypass</td>
-					<td class=date>2025-02-05T18:15:32.573</td>
-					<td class=description>An insufficient verification of data authenticity vulnerability exists in BIG-IP APM Access Policy endpoint inspection that may allow an attacker to bypass endpoint inspection checks for VPN connection initiated thru BIG-IP APM browser network access VPN client for Windows, macOS and Linux.
-
+					<td>remote,command</td>
+					<td class=date>2025-02-13T22:15:12.780</td>
+					<td class=description>mySCADA myPRO Manager
  
-
-
-
-
-Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.</td>
+is vulnerable to an OS command injection which could allow a remote attacker to execute arbitrary OS commands.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-23413">CVE-2025-23413</a></td>
-					<td>4.4</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24865">CVE-2025-24865</a></td>
+					<td>10.0</td>
 					<td>authentication,sensitive</td>
-					<td class=date>2025-02-05T18:15:31.930</td>
-					<td class=description>When users log in through the webUI or API using local authentication, BIG-IP Next Central Manager may log sensitive information in the pgaudit log files. 
+					<td class=date>2025-02-13T22:15:12.613</td>
+					<td class=description>The administrative web interface of 
+mySCADA myPRO Manager
 
-
-Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.</td>
+can be accessed without authentication 
+which could allow an unauthorized attacker to retrieve sensitive 
+information and upload files without the associated password.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-23239">CVE-2025-23239</a></td>
-					<td>8.7</td>
-					<td>remote,command</td>
-					<td class=date>2025-02-05T18:15:31.373</td>
-					<td class=description>When running in Appliance mode, an authenticated remote command injection vulnerability exists in an undisclosed iControl REST endpoint. A successful exploit can allow the attacker to cross a security boundary.
-
- 
-
-
-Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20615">CVE-2025-20615</a></td>
+					<td>6.2</td>
+					<td>command,sensitive</td>
+					<td class=date>2025-02-13T22:15:11.590</td>
+					<td class=description>The Qardio Arm iOS application exposes sensitive data such as usernames 
+and passwords in a plist file. This allows an attacker to log in to 
+production-level development accounts and access an engineering backdoor
+ in the application. The engineering backdoor allows the attacker to 
+send hex-based commands over a UI-based terminal.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20205">CVE-2025-20205</a></td>
-					<td>4.8</td>
-					<td>remote,sensitive</td>
-					<td class=date>2025-02-05T17:15:26.243</td>
-					<td class=description>A vulnerability in the web-based management interface of Cisco Identity Services Engine (ISE) could allow an authenticated, remote attacker to conduct cross-site scripting (XSS) attacks against a user of the interface.&nbsp;
-
-This vulnerability is due to insufficient validation of user-supplied input by the web-based management interface of an affected system. An attacker could exploit this vulnerability by injecting malicious code into specific pages of the interface. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information. To exploit this vulnerability, the attacker must have valid administrative credentials.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26511">CVE-2025-26511</a></td>
+					<td>8.8</td>
+					<td>remote,bypass</td>
+					<td class=date>2025-02-13T16:16:50.270</td>
+					<td class=description>Systems running the Instaclustr 
+fork of Stratio's Cassandra-Lucene-Index plugin versions 4.0-rc1-1.0.0 
+through 4.0.16-1.0.0 and 4.1.2-1.0.0 through 4.1.8-1.0.0, installed into
+ Apache Cassandra version 4.x, are susceptible to a vulnerability which 
+when successfully exploited could allow authenticated Cassandra users to
+ remotely bypass RBAC and escalate their privileges.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20204">CVE-2025-20204</a></td>
-					<td>4.8</td>
-					<td>remote,sensitive</td>
-					<td class=date>2025-02-05T17:15:26.077</td>
-					<td class=description>A vulnerability in the web-based management interface of Cisco Identity Services Engine (ISE) could allow an authenticated, remote attacker to conduct cross-site scripting (XSS) attacks against a user of the interface.&nbsp;
-
-This vulnerability is due to insufficient validation of user-supplied input by the web-based management interface of an affected system. An attacker could exploit this vulnerability by injecting malicious code into specific pages of the interface. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information. To exploit this vulnerability, the attacker must have valid administrative credentials.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24904">CVE-2025-24904</a></td>
+					<td>8.5</td>
+					<td>authentication,bypass</td>
+					<td class=date>2025-02-13T16:16:49.053</td>
+					<td class=description>libsignal-service-rs is a Rust version of the libsignal-service-java library which implements the core functionality to communicate with Signal servers. Prior to commit 82d70f6720e762898f34ae76b0894b0297d9b2f8, plaintext content envelopes could be injected by a server or a malicious client, and may have been able to bypass the end-to-end encryption and authentication. The vulnerability is fixed per 82d70f6720e762898f34ae76b0894b0297d9b2f8. The `Metadata` struct contains an additional `was_encrypted` field, which breaks the API, but should be easily resolvable. No known workarounds are available.</td>
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1247">CVE-2025-1247</a></td>
+					<td>8.3</td>
+					<td>sensitive,leak</td>
+					<td class=date>2025-02-13T14:16:18.400</td>
+					<td class=description>A flaw was found in Quarkus REST that allows request parameters to leak between concurrent requests if endpoints use field injection without a CDI scope. This vulnerability allows attackers to manipulate request data, impersonate users, or access sensitive information.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20185">CVE-2025-20185</a></td>
-					<td>3.4</td>
-					<td>remote,command</td>
-					<td class=date>2025-02-05T17:15:25.883</td>
-					<td class=description>A vulnerability in the implementation of the remote access functionality of Cisco AsyncOS Software for Cisco Secure Email and Web Manager, Cisco Secure Email Gateway, and Cisco Secure Web Appliance could allow an authenticated, local attacker to elevate privileges to root. The attacker must authenticate with valid administrator credentials.
-
-This vulnerability is due to an architectural flaw in the password generation algorithm for the remote access functionality. An attacker could exploit this vulnerability by generating a temporary password for the service account. A successful exploit could allow the attacker to execute arbitrary commands as root and access the underlying operating system.
-Note: The Security Impact Rating (SIR) for this vulnerability is Medium due to the unrestricted scope of information that is accessible to an attacker.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20184">CVE-2025-20184</a></td>
-					<td>6.5</td>
-					<td>remote,command</td>
-					<td class=date>2025-02-05T17:15:25.697</td>
-					<td class=description>A vulnerability in the web-based management interface of Cisco AsyncOS Software for Cisco Secure Email Gateway and Cisco Secure Web Appliance could allow an authenticated, remote attacker to perform command injection attacks against an affected device. The attacker must authenticate with valid administrator credentials.
-
-This vulnerability is due to insufficient validation of XML configuration files by an affected device. An attacker could exploit this vulnerability by uploading a crafted XML configuration file. A successful exploit could allow the attacker to inject commands to the underlying operating system with root privileges.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20183">CVE-2025-20183</a></td>
-					<td>5.8</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2025-02-05T17:15:25.527</td>
-					<td class=description>A vulnerability in a policy-based Cisco Application Visibility and Control (AVC) implementation of Cisco AsyncOS Software for Cisco Secure Web Appliance could allow an unauthenticated, remote attacker to evade the antivirus scanner and download a malicious file onto an endpoint.&nbsp;
-
-The vulnerability is due to improper handling of a crafted range request header. An attacker could exploit this vulnerability by sending an HTTP request with a crafted range request header through the affected device. A successful exploit could allow the attacker to evade the antivirus scanner and download malware onto the endpoint without detection by Cisco Secure Web Appliance.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20180">CVE-2025-20180</a></td>
-					<td>4.8</td>
-					<td>remote,sensitive</td>
-					<td class=date>2025-02-05T17:15:25.370</td>
-					<td class=description>A vulnerability in the web-based management interface of Cisco AsyncOS Software for Cisco Secure Email and Web Manager and Secure Email Gateway could allow an authenticated, remote attacker to conduct a stored cross-site scripting (XSS) attack against a user of the interface.
-
-This vulnerability is due to insufficient validation of user input. An attacker could exploit this vulnerability by persuading a user of an affected interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information. To exploit this vulnerability, the attacker must have valid credentials for a user account with at least the role of Operator.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20179">CVE-2025-20179</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1271">CVE-2025-1271</a></td>
 					<td>6.1</td>
-					<td>remote,unauthenticated,sensitive</td>
-					<td class=date>2025-02-05T17:15:25.210</td>
-					<td class=description>A vulnerability in the web-based management interface of Cisco Expressway Series could allow an unauthenticated, remote attacker to conduct a cross-site scripting (XSS) attack against a user of the interface.
-
-This vulnerability exists because the web-based management interface does not properly validate user-supplied input. An attacker could exploit this vulnerability by persuading a user of the interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.
-Note:&nbsp;Cisco Expressway Series refers to Cisco Expressway Control (Expressway-C) devices and Cisco Expressway Edge (Expressway-E) devices.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20125">CVE-2025-20125</a></td>
-					<td>9.1</td>
-					<td>remote,sensitive</td>
-					<td class=date>2025-02-05T17:15:22.610</td>
-					<td class=description>A vulnerability in an API of Cisco ISE could allow an authenticated, remote attacker with valid read-only credentials to obtain sensitive information, change node configurations, and restart the node.
-
-This vulnerability is due to a lack of authorization in a specific API and improper validation of user-supplied data. An attacker could exploit this vulnerability by sending a crafted HTTP request to a specific API on the device. A successful exploit could allow the attacker to attacker to obtain information, modify system configuration, and reload the device.
-Note:&nbsp;To successfully exploit this vulnerability, the attacker must have valid read-only administrative credentials. In a single-node deployment, new devices will not be able to authenticate during the reload time.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20124">CVE-2025-20124</a></td>
-					<td>9.9</td>
-					<td>remote,command</td>
-					<td class=date>2025-02-05T17:15:22.457</td>
-					<td class=description>A vulnerability in an API of Cisco ISE could allow an authenticated, remote attacker to execute arbitrary commands as the root user on an affected device.
-
-This vulnerability is due to insecure deserialization of user-supplied Java byte streams by the affected software. An attacker could exploit this vulnerability by sending a crafted serialized Java object to an affected API. A successful exploit could allow the attacker to execute arbitrary commands on the device and elevate privileges.
-Note:&nbsp;To successfully exploit this vulnerability, the attacker must have valid read-only administrative credentials. In a single-node deployment, new devices will not be able to authenticate during the reload time.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25246">CVE-2025-25246</a></td>
-					<td>8.1</td>
-					<td>remote,execution,unauthenticated</td>
-					<td class=date>2025-02-05T05:15:11.663</td>
-					<td class=description>NETGEAR XR1000 before 1.0.0.74, XR1000v2 before 1.1.0.22, and XR500 before 2.3.2.134 allow remote code execution by unauthenticated users.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1026">CVE-2025-1026</a></td>
-					<td>8.6</td>
-					<td>sensitive,bypass</td>
-					<td class=date>2025-02-05T05:15:10.687</td>
-					<td class=description>Versions of the package spatie/browsershot before 5.0.5 are vulnerable to Improper Input Validation due to improper URL validation through the setUrl method, which results in a Local File Inclusion allowing the attacker to read sensitive files.**Note:**This is a bypass of the fix for [CVE-2024-21549](https://security.snyk.io/vuln/SNYK-PHP-SPATIEBROWSERSHOT-8533023).</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1028">CVE-2025-1028</a></td>
-					<td>8.1</td>
-					<td>remote,execution,unauthenticated</td>
-					<td class=date>2025-02-05T04:15:06.543</td>
-					<td class=description>The Contact Manager plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the contact form upload feature in all versions up to, and including, 8.6.4. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible in specific configurations where the first extension is processed over the final. This vulnerability also requires successfully exploiting a race condition in order to exploit.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24967">CVE-2025-24967</a></td>
-					<td>-</td>
 					<td>execution,sensitive</td>
-					<td class=date>2025-02-04T20:15:50.813</td>
-					<td class=description>reNgine is an automated reconnaissance framework for web applications. A stored cross-site scripting (XSS) vulnerability exists in the admin panel's user management functionality. An attacker can exploit this issue by injecting malicious payloads into the username field during user creation. This vulnerability allows unauthorized script execution whenever the admin views or interacts with the affected user entry, posing a significant risk to sensitive admin functionalities. This issue affects all versions up to and including 2.20. Users are advised to monitor the project for future releases which address this issue. There are no known workarounds.</td>
+					<td class=date>2025-02-13T13:15:09.433</td>
+					<td class=description>Reflected Cross-Site Scripting (XSS) in Anapi Group's h6web. This security flaw could allow an attacker to inject malicious JavaScript code into a URL. When a user accesses that URL, the injected code is executed in their browser, which can result in the theft of sensitive information, identity theft or the execution of unauthorised actions on behalf of the affected user.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24964">CVE-2025-24964</a></td>
-					<td>9.6</td>
-					<td>remote,execution</td>
-					<td class=date>2025-02-04T20:15:50.483</td>
-					<td class=description>Vitest is a testing framework powered by Vite. Affected versions are subject to arbitrary remote Code Execution when accessing a malicious website while Vitest API server is listening by Cross-site WebSocket hijacking (CSWSH) attacks. When `api` option is enabled (Vitest UI enables it), Vitest starts a WebSocket server. This WebSocket server did not check Origin header and did not have any authorization mechanism and was vulnerable to CSWSH attacks. This WebSocket server has `saveTestFile` API that can edit a test file and `rerun` API that can rerun the tests. An attacker can execute arbitrary code by injecting a code in a test file by the `saveTestFile` API and then running that file by calling the `rerun` API. This vulnerability can result in remote code execution for users that are using Vitest serve API. This issue has been patched in versions 1.6.1, 2.1.9 and 3.0.5. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0960">CVE-2025-0960</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0896">CVE-2025-0896</a></td>
 					<td>9.8</td>
+					<td>remote,authentication</td>
+					<td class=date>2025-02-13T02:15:29.470</td>
+					<td class=description>Orthanc server prior to version 1.5.8 does not enable basic authentication by default when remote access is enabled. This could result in unauthorized access by an attacker.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1229">CVE-2025-1229</a></td>
+					<td>6.3</td>
+					<td>remote,command</td>
+					<td class=date>2025-02-12T22:15:41.667</td>
+					<td class=description>A vulnerability classified as critical was found in olajowon Loggrove up to e428fac38cc480f011afcb1d8ce6c2bad378ddd6. Affected by this vulnerability is an unknown functionality of the file /read/?page=1&logfile=eee&match=. The manipulation of the argument path leads to os command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. This product does not use versioning. This is why information about affected and unaffected releases are unavailable.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0110">CVE-2025-0110</a></td>
+					<td>-</td>
+					<td>command,bypass</td>
+					<td class=date>2025-02-12T21:15:16.630</td>
+					<td class=description>A command injection vulnerability in the Palo Alto Networks PAN-OS OpenConfig plugin enables an authenticated administrator with the ability to make gNMI requests to the PAN-OS management web interface to bypass system restrictions and run arbitrary commands. The commands are run as the “__openconfig” user (which has the Device Administrator role) on the firewall.
+
+You can greatly reduce the risk of this issue by restricting access to the management web interface to only trusted internal IP addresses according to our recommended  best practices deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0108">CVE-2025-0108</a></td>
+					<td>-</td>
+					<td>remote,execution,unauthenticated,authentication,bypass</td>
+					<td class=date>2025-02-12T21:15:16.290</td>
+					<td class=description>An authentication bypass in the Palo Alto Networks PAN-OS software enables an unauthenticated attacker with network access to the management web interface to bypass the authentication otherwise required by the PAN-OS management web interface and invoke certain PHP scripts. While invoking these PHP scripts does not enable remote code execution, it can negatively impact integrity and confidentiality of PAN-OS.
+
+You can greatly reduce the risk of this issue by restricting access to the management web interface to only trusted internal IP addresses according to our recommended  best practices deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .
+
+This issue does not affect Cloud NGFW or Prisma Access software.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25205">CVE-2025-25205</a></td>
+					<td>8.2</td>
+					<td>unauthenticated,authentication,bypass</td>
+					<td class=date>2025-02-12T19:15:21.717</td>
+					<td class=description>Audiobookshelf is a self-hosted audiobook and podcast server. Starting in version 2.17.0 and prior to version 2.19.1, a flaw in the authentication bypass logic allows unauthenticated requests to match certain unanchored regex patterns in the URL. Attackers can craft URLs containing substrings like "/api/items/1/cover" in a query parameter (?r=/api/items/1/cover) to partially bypass authentication or trigger server crashes under certain routes. This could lead to information disclosure of otherwise protected data and, in some cases, a complete denial of service (server crash) if downstream code expects an authenticated user object. Version 2.19.1 contains a patch for the issue.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25182">CVE-2025-25182</a></td>
+					<td>9.4</td>
+					<td>execution,authentication,bypass</td>
+					<td class=date>2025-02-12T17:15:23.857</td>
+					<td class=description>Stroom is a data processing, storage and analysis platform. A vulnerability exists starting in version 7.2-beta.53 and prior to versions 7.2.24, 7.3-beta.22, 7.4.4, and 7.5-beta.2 that allows authentication bypass to a Stroom system when configured with ALB and installed in a way that the application is accessible not through the ALB itself. This vulnerability may also allow for server-side request forgery which may lead to code execution or further privileges escalations when using the AWS metadata URL. This scenario assumes that Stroom must be configured to use ALB Authentication integration and the application is network accessible. The vulnerability has been fixed in versions 7.2.24, 7.3-beta.22, 7.4.4, and 7.5-beta.2.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26366">CVE-2025-26366</a></td>
+					<td>7.5</td>
+					<td>remote,unauthenticated,authentication</td>
+					<td class=date>2025-02-12T14:15:37.397</td>
+					<td class=description>A CWE-306 "Missing Authentication for Critical Function" in maxprofile/setup/routes.lua in Q-Free MaxTime less than or equal to version 2.11.0 allows an unauthenticated remote attacker to disable front panel authentication via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26365">CVE-2025-26365</a></td>
+					<td>7.5</td>
+					<td>remote,unauthenticated,authentication</td>
+					<td class=date>2025-02-12T14:15:37.267</td>
+					<td class=description>A CWE-306 "Missing Authentication for Critical Function" in maxprofile/setup/routes.lua in Q-Free MaxTime less than or equal to version 2.11.0 allows an unauthenticated remote attacker to enable front panel authentication via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26364">CVE-2025-26364</a></td>
+					<td>7.5</td>
+					<td>remote,unauthenticated,authentication</td>
+					<td class=date>2025-02-12T14:15:37.123</td>
+					<td class=description>A CWE-306 "Missing Authentication for Critical Function" in maxprofile/setup/routes.lua in Q-Free MaxTime less than or equal to version 2.11.0 allows an unauthenticated remote attacker to disable an authentication profile server via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26363">CVE-2025-26363</a></td>
+					<td>7.5</td>
+					<td>remote,unauthenticated,authentication</td>
+					<td class=date>2025-02-12T14:15:36.983</td>
+					<td class=description>A CWE-306 "Missing Authentication for Critical Function" in maxprofile/setup/routes.lua in Q-Free MaxTime less than or equal to version 2.11.0 allows an unauthenticated remote attacker to enable an authentication profile server via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26362">CVE-2025-26362</a></td>
+					<td>7.5</td>
+					<td>remote,unauthenticated,authentication</td>
+					<td class=date>2025-02-12T14:15:36.847</td>
+					<td class=description>A CWE-306 "Missing Authentication for Critical Function" in maxprofile/setup/routes.lua in Q-Free MaxTime less than or equal to version 2.11.0 allows an unauthenticated remote attacker to set an arbitrary authentication profile server via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26361">CVE-2025-26361</a></td>
+					<td>9.1</td>
+					<td>remote,unauthenticated,authentication</td>
+					<td class=date>2025-02-12T14:15:36.717</td>
+					<td class=description>A CWE-306 "Missing Authentication for Critical Function" in maxprofile/setup/routes.lua in Q-Free MaxTime less than or equal to version 2.11.0 allows an unauthenticated remote attacker to factory reset the device via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26360">CVE-2025-26360</a></td>
+					<td>5.3</td>
+					<td>remote,unauthenticated,authentication</td>
+					<td class=date>2025-02-12T14:15:36.577</td>
+					<td class=description>A CWE-306 "Missing Authentication for Critical Function" in maxprofile/persistance/routes.lua in Q-Free MaxTime less than or equal to version 2.11.0 allows an unauthenticated remote attacker to delete dashboards via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26359">CVE-2025-26359</a></td>
+					<td>9.8</td>
+					<td>remote,unauthenticated,authentication</td>
+					<td class=date>2025-02-12T14:15:36.437</td>
+					<td class=description>A CWE-306 "Missing Authentication for Critical Function" in maxprofile/accounts/routes.lua in Q-Free MaxTime less than or equal to version 2.11.0 allows an unauthenticated remote attacker to reset user PINs via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26357">CVE-2025-26357</a></td>
+					<td>4.9</td>
+					<td>remote,sensitive</td>
+					<td class=date>2025-02-12T14:15:36.160</td>
+					<td class=description>A CWE-35 "Path Traversal" in maxtime/api/database/database.lua in Q-Free MaxTime less than or equal to version 2.11.0 allows an authenticated remote attacker to read sensitive files via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26356">CVE-2025-26356</a></td>
+					<td>7.2</td>
+					<td>remote,sensitive</td>
+					<td class=date>2025-02-12T14:15:36.017</td>
+					<td class=description>A CWE-35 "Path Traversal" in maxtime/api/database/database.lua (setActive endpoint) in Q-Free MaxTime less than or equal to version 2.11.0 allows an authenticated remote attacker to overwrite sensitive files via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26355">CVE-2025-26355</a></td>
+					<td>6.5</td>
+					<td>remote,sensitive</td>
+					<td class=date>2025-02-12T14:15:35.870</td>
+					<td class=description>A CWE-35 "Path Traversal" in maxtime/api/database/database.lua in Q-Free MaxTime less than or equal to version 2.11.0 allows an authenticated remote attacker to delete sensitive files via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26354">CVE-2025-26354</a></td>
+					<td>7.2</td>
+					<td>remote,sensitive</td>
+					<td class=date>2025-02-12T14:15:35.727</td>
+					<td class=description>A CWE-35 "Path Traversal" in maxtime/api/database/database.lua (copy endpoint) in Q-Free MaxTime less than or equal to version 2.11.0 allows an authenticated remote attacker to overwrite sensitive files via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26353">CVE-2025-26353</a></td>
+					<td>4.9</td>
+					<td>remote,sensitive</td>
+					<td class=date>2025-02-12T14:15:35.587</td>
+					<td class=description>A CWE-35 "Path Traversal" in maxtime/api/sql/sql.lua in Q-Free MaxTime less than or equal to version 2.11.0 allows an authenticated remote attacker to read sensitive files via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26352">CVE-2025-26352</a></td>
+					<td>6.5</td>
+					<td>remote,sensitive</td>
+					<td class=date>2025-02-12T14:15:35.430</td>
+					<td class=description>A CWE-35 "Path Traversal" in the template deletion mechanism in Q-Free MaxTime less than or equal to version 2.11.0 allows an authenticated remote attacker to delete sensitive files via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26351">CVE-2025-26351</a></td>
+					<td>4.9</td>
+					<td>remote,sensitive</td>
+					<td class=date>2025-02-12T14:15:35.270</td>
+					<td class=description>A CWE-35 "Path Traversal" in the template download mechanism in Q-Free MaxTime less than or equal to version 2.11.0 allows an authenticated remote attacker to read sensitive files via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26348">CVE-2025-26348</a></td>
+					<td>5.5</td>
+					<td>remote,command</td>
+					<td class=date>2025-02-12T14:15:34.827</td>
+					<td class=description>A CWE-89 "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')" in maxprofile/menu/model.lua (editUserMenu endpoint) in Q-Free MaxTime less than or equal to version 2.11.0 allows an authenticated remote attacker to execute arbitrary SQL commands via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26347">CVE-2025-26347</a></td>
+					<td>9.8</td>
+					<td>remote,unauthenticated,authentication</td>
+					<td class=date>2025-02-12T14:15:34.687</td>
+					<td class=description>A CWE-306 "Missing Authentication for Critical Function" in maxprofile/menu/routes.lua in Q-Free MaxTime less than or equal to version 2.11.0 allows an unauthenticated remote attacker to edit user permissions via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26346">CVE-2025-26346</a></td>
+					<td>5.5</td>
+					<td>remote,command</td>
+					<td class=date>2025-02-12T14:15:34.547</td>
+					<td class=description>A CWE-89 "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')" in maxprofile/menu/model.lua (editUserGroupMenu endpoint) in Q-Free MaxTime less than or equal to version 2.11.0 allows an authenticated remote attacker to execute arbitrary SQL commands via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26345">CVE-2025-26345</a></td>
+					<td>9.8</td>
+					<td>remote,unauthenticated,authentication</td>
+					<td class=date>2025-02-12T14:15:34.407</td>
+					<td class=description>A CWE-306 "Missing Authentication for Critical Function" in maxprofile/menu/routes.lua in Q-Free MaxTime less than or equal to version 2.11.0 allows an unauthenticated remote attacker to edit user group permissions via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26344">CVE-2025-26344</a></td>
+					<td>9.8</td>
+					<td>remote,unauthenticated,authentication</td>
+					<td class=date>2025-02-12T14:15:34.273</td>
+					<td class=description>A CWE-306 "Missing Authentication for Critical Function" in maxprofile/guest-mode/routes.lua in Q-Free MaxTime less than or equal to version 2.11.0 allows an unauthenticated remote attacker to enable passwordless guest mode via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26343">CVE-2025-26343</a></td>
+					<td>8.1</td>
+					<td>remote,unauthenticated,authentication</td>
+					<td class=date>2025-02-12T14:15:34.130</td>
+					<td class=description>A CWE-1390 "Weak Authentication" in the PIN authentication mechanism in Q-Free MaxTime less than or equal to version 2.11.0 allows an unauthenticated remote attacker to brute-force user PINs via multiple crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26342">CVE-2025-26342</a></td>
+					<td>9.8</td>
+					<td>remote,unauthenticated,authentication</td>
+					<td class=date>2025-02-12T14:15:33.990</td>
+					<td class=description>A CWE-306 "Missing Authentication for Critical Function" in maxprofile/accounts/routes.lua in Q-Free MaxTime less than or equal to version 2.11.0 allows an unauthenticated remote attacker to create arbitrary users, including administrators, via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26341">CVE-2025-26341</a></td>
+					<td>9.8</td>
+					<td>remote,unauthenticated,authentication</td>
+					<td class=date>2025-02-12T14:15:33.857</td>
+					<td class=description>A CWE-306 "Missing Authentication for Critical Function" in maxprofile/accounts/routes.lua in Q-Free MaxTime less than or equal to version 2.11.0 allows an unauthenticated remote attacker to reset arbitrary user passwords via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26340">CVE-2025-26340</a></td>
+					<td>8.8</td>
+					<td>remote,unauthenticated,authentication,bypass</td>
+					<td class=date>2025-02-12T14:15:33.650</td>
+					<td class=description>A CWE-321 "Use of Hard-coded Cryptographic Key" in the JWT signing in Q-Free MaxTime less than or equal to version 2.11.0 allows an unauthenticated remote attacker to bypass the authentication via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26339">CVE-2025-26339</a></td>
+					<td>9.8</td>
+					<td>remote,unauthenticated,authentication</td>
+					<td class=date>2025-02-12T14:15:33.510</td>
+					<td class=description>A CWE-306 "Missing Authentication for Critical Function" in maxtime/handleRoute.lua in Q-Free MaxTime less than or equal to version 2.11.0 allows an unauthenticated remote attacker to affect the device confidentiality, integrity, or availability in multiple unspecified ways via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1102">CVE-2025-1102</a></td>
+					<td>5.5</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-02-12T14:15:31.943</td>
+					<td class=description>A CWE-346 "Origin Validation Error" in the CORS configuration in Q-Free MaxTime less than or equal to version 2.11.0 allows an unauthenticated remote attacker to affect the device confidentiality, integrity, or availability via crafted URLs or HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1101">CVE-2025-1101</a></td>
+					<td>5.3</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-02-12T14:15:31.800</td>
+					<td class=description>A CWE-204 "Observable Response Discrepancy" in the login page in Q-Free MaxTime less than or equal to version 2.11.0 allows an unauthenticated remote attacker to enumerate valid usernames via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1100">CVE-2025-1100</a></td>
+					<td>9.8</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-02-12T14:15:31.647</td>
+					<td class=description>A CWE-259 "Use of Hard-coded Password" for the root account in Q-Free MaxTime less than or equal to version 2.11.0 allows an unauthenticated remote attacker to execute arbitrary code with root privileges via SSH.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1240">CVE-2025-1240</a></td>
+					<td>7.8</td>
 					<td>remote,execution</td>
-					<td class=date>2025-02-04T20:15:50.103</td>
-					<td class=description>AutomationDirect C-more EA9 HMI contains a function with bounds checks that can be skipped, which could result in an attacker abusing the function to cause a denial-of-service condition or achieving remote code execution on the affected device.</td>
+					<td class=date>2025-02-11T22:15:29.800</td>
+					<td class=description>WinZip 7Z File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of WinZip. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the parsing of 7Z files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-24986.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25530">CVE-2025-25530</a></td>
+					<td>-</td>
+					<td>remote,command</td>
+					<td class=date>2025-02-11T20:15:39.327</td>
+					<td class=description>Buffer overflow vulnerability in Digital China DCBI-Netlog-LAB Gateway 1.0 due to the lack of length verification, which is related to saving parental control configuration information. Attackers who successfully exploit this vulnerability can cause the remote target device to crash or execute arbitrary commands.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25529">CVE-2025-25529</a></td>
+					<td>5.1</td>
+					<td>remote,command</td>
+					<td class=date>2025-02-11T20:15:39.217</td>
+					<td class=description>Buffer overflow vulnerability in Digital China DCBC Gateway 200-2.1.1 due to the lack of length verification, which is related to the configuration of static NAT rules. Attackers who successfully exploit this vulnerability can cause the remote target device to crash or execute arbitrary commands.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25528">CVE-2025-25528</a></td>
+					<td>5.1</td>
+					<td>remote,command</td>
+					<td class=date>2025-02-11T20:15:39.090</td>
+					<td class=description>Multiple buffer overflow vulnerabilities in Wavlink WL-WN575A3 RPT75A3.V4300, which are caused by not performing strict length checks on user-controlled data. By successfully exploiting the vulnerabilities, attackers can crash the remote devices or execute arbitrary commands without any authorization verification.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25527">CVE-2025-25527</a></td>
+					<td>5.1</td>
+					<td>remote,command</td>
+					<td class=date>2025-02-11T20:15:38.973</td>
+					<td class=description>Buffer overflow vulnerability in Ruijie RG-NBR2600S Gateway 10.3(4b12) due to the lack of length verification, which is related to the configuration of source address NAT rules. Attackers who successfully exploit this vulnerability can cause the remote target device to crash or execute arbitrary commands.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25526">CVE-2025-25526</a></td>
+					<td>5.1</td>
+					<td>remote,command</td>
+					<td class=date>2025-02-11T20:15:38.850</td>
+					<td class=description>Buffer overflow vulnerability in Mercury MIPC552W Camera v1.0 due to the lack of length verification, which is related to the configuration of the PPTP server. Attackers who successfully exploit this vulnerability can cause the remote target device to crash or execute arbitrary commands.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25525">CVE-2025-25525</a></td>
+					<td>5.1</td>
+					<td>remote,command</td>
+					<td class=date>2025-02-11T20:15:38.727</td>
+					<td class=description>Buffer overflow vulnerability in H3C FA3010L access points SWFA1B0V100R005 due to the lack of length verification, which is related to the setting of firewall rules. Attackers who successfully exploit this vulnerability can cause the remote target device to crash or execute arbitrary commands.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1052">CVE-2025-1052</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T20:15:36.070</td>
+					<td class=description>Mintty Sixel Image Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Mintty. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the parsing of sixel images. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-23382.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1044">CVE-2025-1044</a></td>
+					<td>9.8</td>
+					<td>remote,authentication,bypass</td>
+					<td class=date>2025-02-11T20:15:35.913</td>
+					<td class=description>Logsign Unified SecOps Platform Authentication Bypass Vulnerability. This vulnerability allows remote attackers to bypass authentication on affected installations of Logsign Unified SecOps Platform. Authentication is not required to exploit this vulnerability.
+
+The specific flaw exists within the web service, which listens on TCP port 443 by default. The issue results from the lack of proper implementation of the authentication algorithm. An attacker can leverage this vulnerability to bypass authentication on the system. Was ZDI-CAN-25336.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0911">CVE-2025-0911</a></td>
+					<td>8.8</td>
+					<td>remote,sensitive</td>
+					<td class=date>2025-02-11T20:15:35.770</td>
+					<td class=description>PDF-XChange Editor U3D File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the parsing of U3D files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25957.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0910">CVE-2025-0910</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T20:15:35.633</td>
+					<td class=description>PDF-XChange Editor U3D File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the parsing of U3D files. The issue results from the lack of proper validation of user-supplied data, which can result in a write  past the end of an allocated object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25748.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0909">CVE-2025-0909</a></td>
+					<td>8.8</td>
+					<td>remote,sensitive</td>
+					<td class=date>2025-02-11T20:15:35.500</td>
+					<td class=description>PDF-XChange Editor XPS File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the parsing of XPS files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25678.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0908">CVE-2025-0908</a></td>
+					<td>8.8</td>
+					<td>remote,sensitive</td>
+					<td class=date>2025-02-11T20:15:35.370</td>
+					<td class=description>PDF-XChange Editor U3D File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the parsing of U3D files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25557.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0907">CVE-2025-0907</a></td>
+					<td>8.8</td>
+					<td>remote,sensitive</td>
+					<td class=date>2025-02-11T20:15:35.240</td>
+					<td class=description>PDF-XChange Editor JB2 File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the parsing of JB2 files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25435.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0906">CVE-2025-0906</a></td>
+					<td>8.8</td>
+					<td>remote,sensitive</td>
+					<td class=date>2025-02-11T20:15:35.113</td>
+					<td class=description>PDF-XChange Editor JB2 File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the parsing of JB2 files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25434.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0905">CVE-2025-0905</a></td>
+					<td>8.8</td>
+					<td>remote,sensitive</td>
+					<td class=date>2025-02-11T20:15:34.997</td>
+					<td class=description>PDF-XChange Editor JB2 File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the parsing of JB2 files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25433.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0904">CVE-2025-0904</a></td>
+					<td>8.8</td>
+					<td>remote,sensitive</td>
+					<td class=date>2025-02-11T20:15:34.867</td>
+					<td class=description>PDF-XChange Editor XPS File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the parsing of XPS files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25422.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0903">CVE-2025-0903</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T20:15:34.737</td>
+					<td class=description>PDF-XChange Editor RTF File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the parsing of RTF files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25421.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0902">CVE-2025-0902</a></td>
+					<td>8.8</td>
+					<td>remote,sensitive</td>
+					<td class=date>2025-02-11T20:15:34.610</td>
+					<td class=description>PDF-XChange Editor XPS File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the parsing of XPS files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25405.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0901">CVE-2025-0901</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T20:15:34.480</td>
+					<td class=description>PDF-XChange Editor Doc Object Out-Of-Bounds Read Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the handling of Doc objects. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25372.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0899">CVE-2025-0899</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T20:15:34.347</td>
+					<td class=description>PDF-XChange Editor AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.
+
+The specific flaw exists within the handling of AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25349.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25524">CVE-2025-25524</a></td>
+					<td>5.1</td>
+					<td>remote,command</td>
+					<td class=date>2025-02-11T19:15:19.110</td>
+					<td class=description>Buffer overflow vulnerability in TOTOLink X6000R routers V9.4.0cu.652_B20230116 due to the lack of length verification, which is related to the addition of Wi-Fi filtering rules. Attackers who successfully exploit this vulnerability can cause the remote target device to crash or execute arbitrary commands.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26494">CVE-2025-26494</a></td>
+					<td>-</td>
+					<td>authentication,bypass</td>
+					<td class=date>2025-02-11T18:15:47.060</td>
+					<td class=description>Server-Side Request Forgery (SSRF) vulnerability in Salesforce Tableau Server allows Authentication Bypass.This issue affects Tableau Server: from 2023.3 through 2023.3.5.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21410">CVE-2025-21410</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T18:15:39.593</td>
+					<td class=description>Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21407">CVE-2025-21407</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T18:15:39.157</td>
+					<td class=description>Windows Telephony Service Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21406">CVE-2025-21406</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T18:15:38.907</td>
+					<td class=description>Windows Telephony Service Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21400">CVE-2025-21400</a></td>
+					<td>8.0</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T18:15:38.483</td>
+					<td class=description>Microsoft SharePoint Server Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21397">CVE-2025-21397</a></td>
+					<td>7.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T18:15:38.293</td>
+					<td class=description>Microsoft Office Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21394">CVE-2025-21394</a></td>
+					<td>7.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T18:15:38.100</td>
+					<td class=description>Microsoft Excel Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21392">CVE-2025-21392</a></td>
+					<td>7.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T18:15:37.907</td>
+					<td class=description>Microsoft Office Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21390">CVE-2025-21390</a></td>
+					<td>7.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T18:15:37.523</td>
+					<td class=description>Microsoft Excel Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21387">CVE-2025-21387</a></td>
+					<td>7.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T18:15:37.337</td>
+					<td class=description>Microsoft Excel Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21386">CVE-2025-21386</a></td>
+					<td>7.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T18:15:37.157</td>
+					<td class=description>Microsoft Excel Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21381">CVE-2025-21381</a></td>
+					<td>7.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T18:15:36.773</td>
+					<td class=description>Microsoft Excel Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21379">CVE-2025-21379</a></td>
+					<td>7.1</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T18:15:36.590</td>
+					<td class=description>DHCP Client Service Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21376">CVE-2025-21376</a></td>
+					<td>8.1</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T18:15:36.167</td>
+					<td class=description>Windows Lightweight Directory Access Protocol (LDAP) Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21371">CVE-2025-21371</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T18:15:35.540</td>
+					<td class=description>Windows Telephony Service Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21369">CVE-2025-21369</a></td>
+					<td>8.8</td>
+					<td>remote,execution,authentication</td>
+					<td class=date>2025-02-11T18:15:35.340</td>
+					<td class=description>Microsoft Digest Authentication Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21368">CVE-2025-21368</a></td>
+					<td>8.8</td>
+					<td>remote,execution,authentication</td>
+					<td class=date>2025-02-11T18:15:35.123</td>
+					<td class=description>Microsoft Digest Authentication Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21208">CVE-2025-21208</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T18:15:31.793</td>
+					<td class=description>Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21201">CVE-2025-21201</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T18:15:31.407</td>
+					<td class=description>Windows Telephony Server Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21200">CVE-2025-21200</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T18:15:31.203</td>
+					<td class=description>Windows Telephony Service Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21198">CVE-2025-21198</a></td>
+					<td>9.0</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T18:15:31.020</td>
+					<td class=description>Microsoft High Performance Compute (HPC) Pack Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21190">CVE-2025-21190</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-11T18:15:30.610</td>
+					<td class=description>Windows Telephony Service Remote Code Execution Vulnerability</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24472">CVE-2025-24472</a></td>
+					<td>8.1</td>
+					<td>remote,authentication,bypass</td>
+					<td class=date>2025-02-11T17:15:34.867</td>
+					<td class=description>An Authentication Bypass Using an Alternate Path or Channel vulnerability [CWE-288] affecting FortiOS 7.0.0 through 7.0.16 and FortiProxy 7.2.0 through 7.2.12, 7.0.0 through 7.0.19 may allow a remote attacker to gain super-admin privileges via crafted CSF proxy requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24470">CVE-2025-24470</a></td>
+					<td>8.6</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-02-11T17:15:34.730</td>
+					<td class=description>An Improper Resolution of Path Equivalence vulnerability [CWE-41] in FortiPortal 7.4.0 through 7.4.2, 7.2.0 through 7.2.6, 7.0.0 through 7.0.11 may allow a remote unauthenticated attacker to retrieve source code via crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21124">CVE-2025-21124</a></td>
+					<td>5.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2025-02-11T17:15:23.950</td>
+					<td class=description>InDesign Desktop versions ID20.0, ID19.5.1 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
 				</tr>
 			
 		
