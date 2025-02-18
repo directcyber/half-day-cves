@@ -40,5 +40,17 @@
     "description": "An authenticated user in the \"bestinformed Web\" application can execute commands on the underlying server running the application. (Remote Code Execution) For this, the user must be able to create \"ScriptVars\" with the type \u201escript\" and preview them by, for example, creating a new \"Info\". By default, admin users have those permissions, but with the granular permission system, those permissions may be assigned to other users.\u00a0An attacker is able to execute commands on the server running the \"bestinformed Web\" application if an account with the correct permissions was compromised before.",
     "published": "2025-02-18T08:15:10.147",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2025-0981": {
+    "url": "https://github.com/churchcrm/crm/issues/7245",
+    "cvss": "-",
+    "description": "A vulnerability exists in ChurchCRM\u00a05.13.0 and prior that allows an attacker to hijack a user's session by exploiting a Stored Cross Site Scripting (XSS) vulnerability in the Group Editor page. This allows admin users to inject malicious JavaScript, which captures the session cookie of authenticated users. The cookie can then be sent to an external server, enabling session hijacking. It can also lead to information disclosure, as exposed session cookies can be used to impersonate users and gain unauthorised access to sensitive information.",
+    "published": "2025-02-18T10:15:10.333"
+  },
+  "CVE-2025-1023": {
+    "url": "https://github.com/churchcrm/crm/issues/7246",
+    "cvss": "-",
+    "description": "A vulnerability exists in ChurchCRM\u00a05.13.0 and prior\u00a0that allows an attacker to execute arbitrary SQL queries by exploiting a time-based blind SQL Injection\u00a0vulnerability in the EditEventTypes\u00a0functionality. The newCountName\u00a0parameter is directly concatenated into an SQL query without proper sanitization, allowing an attacker to manipulate database queries and execute arbitrary commands, potentially leading to data exfiltration, modification, or deletion.",
+    "published": "2025-02-18T10:15:10.500"
   }
 }
