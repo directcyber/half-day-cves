@@ -34,5 +34,11 @@
     "description": "Authentication bypass by spoofing issue exists in FileMegane versions above 1.0.0.0 prior to 3.4.0.0, which may lead to user impersonation. If exploited, restricted file contents may be accessed.",
     "published": "2025-02-18T00:15:21.277",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2025-0422": {
+    "cvss": "-",
+    "description": "An authenticated user in the \"bestinformed Web\" application can execute commands on the underlying server running the application. (Remote Code Execution) For this, the user must be able to create \"ScriptVars\" with the type \u201escript\" and preview them by, for example, creating a new \"Info\". By default, admin users have those permissions, but with the granular permission system, those permissions may be assigned to other users.\u00a0An attacker is able to execute commands on the server running the \"bestinformed Web\" application if an account with the correct permissions was compromised before.",
+    "published": "2025-02-18T08:15:10.147",
+    "keywords": "remote,execution,command"
   }
 }
