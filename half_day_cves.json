@@ -130,5 +130,11 @@
     "description": "A vulnerability in the web-based management interface of Cisco BroadWorks Application Delivery Platform could allow an unauthenticated, remote attacker to conduct a cross-site scripting attack against a user of the interface.\r\n\r\nThis vulnerability exists because the web-based management interface does not properly validate user-supplied input. An attacker could exploit this vulnerability by persuading a user of the interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.",
     "published": "2025-02-19T16:15:41.163",
     "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2025-1118": {
+    "cvss": 4.4,
+    "description": "A flaw was found in grub2. Grub's dump command is not blocked when grub is in lockdown mode, which allows the user to read any memory information, and an attacker may leverage this in order to extract signatures, salts, and other sensitive information from the memory.",
+    "published": "2025-02-19T18:15:24.280",
+    "keywords": "command,sensitive"
   }
 }
