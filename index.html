@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-02-19T19:09:27.562169
+Updated at UTC 2025-02-19T20:12:50.258971
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2025-02-19T19:09:27.562169
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -176,6 +178,16 @@ Updated at UTC 2025-02-19T19:09:27.562169
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0624">CVE-2025-0624</a></td>
+					<td>7.6</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-19T19:15:15.120</td>
+					<td class=description>A flaw was found in grub2. During the network boot process, when trying to search for the configuration file, grub copies data from a user controlled environment variable into an internal buffer using the grub_strcpy() function. During this step, it fails to consider the environment variable length when allocating the internal buffer, resulting in an out-of-bounds write. If correctly exploited, this issue may result in remote code execution through the same network segment grub is searching for the boot information, which can be used to by-pass secure boot protections.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
