@@ -112,5 +112,23 @@
     "description": "The ElementsKit Elementor addons plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.4.0  due to a missing capability checks on the get_megamenu_content() function. This makes it possible for unauthenticated attackers to view any item created in Elementor, such as posts, pages and templates including drafts, trashed and private items.",
     "published": "2025-02-19T12:15:31.770",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-20153": {
+    "cvss": 5.8,
+    "description": "A vulnerability in the email filtering mechanism of Cisco Secure Email Gateway could allow an unauthenticated, remote attacker to bypass the configured rules and allow emails that should have been denied to flow through an affected device. &nbsp;\r\n\r\nThis vulnerability is due to improper handling of email that passes through an affected device. An attacker could exploit this vulnerability by sending a crafted email through the affected device. A successful exploit could allow the attacker to bypass email filters on the affected device.",
+    "published": "2025-02-19T16:15:40.860",
+    "keywords": "remote,unauthenticated,bypass"
+  },
+  "CVE-2025-20158": {
+    "cvss": 4.4,
+    "description": "A vulnerability in the debug shell of Cisco Video Phone 8875 and Cisco Desk Phone 9800 Series could allow an authenticated, local attacker to access sensitive information on an affected device. To exploit this vulnerability, the attacker must have valid administrative credentials with SSH access on the affected device. SSH access is disabled by default.\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input by the debug shell of an affected device. An attacker could exploit this vulnerability by sending a crafted SSH client command to the CLI. A successful exploit could allow the attacker to access sensitive information on the underlying operating system.",
+    "published": "2025-02-19T16:15:41.017",
+    "keywords": "command,sensitive"
+  },
+  "CVE-2025-20211": {
+    "cvss": 6.1,
+    "description": "A vulnerability in the web-based management interface of Cisco BroadWorks Application Delivery Platform could allow an unauthenticated, remote attacker to conduct a cross-site scripting attack against a user of the interface.\r\n\r\nThis vulnerability exists because the web-based management interface does not properly validate user-supplied input. An attacker could exploit this vulnerability by persuading a user of the interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.",
+    "published": "2025-02-19T16:15:41.163",
+    "keywords": "remote,unauthenticated,sensitive"
   }
 }
