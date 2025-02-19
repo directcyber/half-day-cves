@@ -44,7 +44,7 @@
   "CVE-2025-0981": {
     "url": "https://github.com/churchcrm/crm/issues/7245",
     "cvss": "-",
-    "description": "A vulnerability exists in ChurchCRM\u00a05.13.0 and prior that allows an attacker to hijack a user's session by exploiting a Stored Cross Site Scripting (XSS) vulnerability in the Group Editor page. This allows admin users to inject malicious JavaScript, which captures the session cookie of authenticated users. The cookie can then be sent to an external server, enabling session hijacking. It can also lead to information disclosure, as exposed session cookies can be used to impersonate users and gain unauthorised access to sensitive information.",
+    "description": "A vulnerability exists in ChurchCRM\u00a05.13.0 and prior that allows an attacker to hijack a user's session by exploiting a Stored Cross Site Scripting (XSS) vulnerability in the Group Editor page. This allows admin users to inject malicious JavaScript in the description field, which captures the session cookie of authenticated users. The cookie can then be sent to an external server, enabling session hijacking. It can also lead to information disclosure, as exposed session cookies can be used to impersonate users and gain unauthorised access to sensitive information.",
     "published": "2025-02-18T10:15:10.333"
   },
   "CVE-2025-1023": {
@@ -88,5 +88,35 @@
     "description": "WeGIA is an open source Web Manager for Institutions with a focus on Portuguese language users. An OS Command Injection vulnerability was discovered in the WeGIA application, `gerenciar_backup.php` endpoint. This vulnerability could allow an attacker to execute arbitrary code remotely. This issue has been addressed in version 3.2.14 and all users are advised to upgrade. There are no known workarounds for this vulnerability.",
     "published": "2025-02-18T21:15:29.607",
     "keywords": "remote,command"
+  },
+  "CVE-2025-1024": {
+    "url": "https://github.com/churchcrm/crm/issues/7250",
+    "cvss": "-",
+    "description": "A vulnerability exists in ChurchCRM 5.13.0\u00a0that allows an attacker to execute arbitrary JavaScript in a victim's browser via Reflected Cross-Site Scripting (XSS) in the EditEventAttendees.php\u00a0page. This requires Administration privileges and affects the EID parameter. The flaw allows an attacker to steal session cookies, perform actions on behalf of an authenticated user, and gain unauthorized access to the application.",
+    "published": "2025-02-19T09:15:10.280"
+  },
+  "CVE-2025-1132": {
+    "cvss": "-",
+    "description": "A time-based blind SQL Injection\u00a0vulnerability exists in the ChurchCRM 5.13.0 and prior\u00a0EditEventAttendees.php\u00a0within the EN_tyid\u00a0parameter. The parameter is directly inserted into an SQL query without proper sanitization, allowing attackers to inject malicious SQL commands. Please note that the vulnerability requires Administrator permissions.\u00a0This flaw can potentially allow attackers to delay the response, indicating the presence of an SQL injection vulnerability. While it is a time-based blind injection, it can be exploited to gain insights into the underlying database, and with further exploitation, sensitive data could be retrieved.",
+    "published": "2025-02-19T09:15:10.417",
+    "keywords": "command,sensitive"
+  },
+  "CVE-2025-1133": {
+    "url": "https://github.com/churchcrm/crm/issues/7252",
+    "cvss": "-",
+    "description": "A vulnerability exists in ChurchCRM 5.13.0 and prior\u00a0that allows an attacker to execute arbitrary SQL queries by exploiting a boolean-based blind SQL Injection\u00a0vulnerability in the EditEventAttendees\u00a0functionality. The EID\u00a0parameter is directly concatenated into an SQL query without proper sanitization, making it susceptible to SQL injection attacks. An attacker can manipulate the query, potentially leading to data exfiltration, modification, or deletion.\u00a0 Please note that this vulnerability requires Administrator privileges.",
+    "published": "2025-02-19T09:15:10.550"
+  },
+  "CVE-2025-1134": {
+    "url": "https://github.com/churchcrm/crm/issues/7253",
+    "cvss": "-",
+    "description": "A vulnerability exists in ChurchCRM\u00a05.13.0 and prior that allows an attacker to execute arbitrary SQL queries by exploiting a boolean-based and time-based blind SQL Injection\u00a0vulnerability in the DonatedItemEditor\u00a0functionality. The CurrentFundraiser\u00a0parameter is directly concatenated into an SQL query without sufficient sanitization, allowing an attacker to manipulate database queries and execute arbitrary commands, potentially leading to data exfiltration, modification, or deletion. Please note that this vulnerability requires Administrator privileges.",
+    "published": "2025-02-19T09:15:10.687"
+  },
+  "CVE-2025-1135": {
+    "url": "https://github.com/churchcrm/crm/issues/7254",
+    "cvss": "-",
+    "description": "A vulnerability exists in ChurchCRM\u00a05.13.0. and prior that allows an attacker to execute arbitrary SQL queries by exploiting a boolean-based and time-based blind SQL Injection\u00a0vulnerability in the BatchWinnerEntry\u00a0functionality. The CurrentFundraiser\u00a0parameter is directly concatenated into an SQL query without sufficient sanitization, allowing an attacker to manipulate database queries and execute arbitrary commands, potentially leading to data exfiltration, modification, or deletion.\u00a0Please note the vulnerability requires Administrator privileges.",
+    "published": "2025-02-19T09:15:10.823"
   }
 }

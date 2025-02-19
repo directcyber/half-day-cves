@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-02-19T09:12:33.073565
+Updated at UTC 2025-02-19T11:09:28.444024
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,56 @@ Updated at UTC 2025-02-19T09:12:33.073565
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1135">CVE-2025-1135</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/churchcrm/crm/issues/7254">https://github.com/churchcrm/crm/issues/7254</a></td>
+					<td class=date>2025-02-19T09:15:10.823</td>
+					<td class=description>A vulnerability exists in ChurchCRM 5.13.0. and prior that allows an attacker to execute arbitrary SQL queries by exploiting a boolean-based and time-based blind SQL Injection vulnerability in the BatchWinnerEntry functionality. The CurrentFundraiser parameter is directly concatenated into an SQL query without sufficient sanitization, allowing an attacker to manipulate database queries and execute arbitrary commands, potentially leading to data exfiltration, modification, or deletion. Please note the vulnerability requires Administrator privileges.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1134">CVE-2025-1134</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/churchcrm/crm/issues/7253">https://github.com/churchcrm/crm/issues/7253</a></td>
+					<td class=date>2025-02-19T09:15:10.687</td>
+					<td class=description>A vulnerability exists in ChurchCRM 5.13.0 and prior that allows an attacker to execute arbitrary SQL queries by exploiting a boolean-based and time-based blind SQL Injection vulnerability in the DonatedItemEditor functionality. The CurrentFundraiser parameter is directly concatenated into an SQL query without sufficient sanitization, allowing an attacker to manipulate database queries and execute arbitrary commands, potentially leading to data exfiltration, modification, or deletion. Please note that this vulnerability requires Administrator privileges.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1133">CVE-2025-1133</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/churchcrm/crm/issues/7252">https://github.com/churchcrm/crm/issues/7252</a></td>
+					<td class=date>2025-02-19T09:15:10.550</td>
+					<td class=description>A vulnerability exists in ChurchCRM 5.13.0 and prior that allows an attacker to execute arbitrary SQL queries by exploiting a boolean-based blind SQL Injection vulnerability in the EditEventAttendees functionality. The EID parameter is directly concatenated into an SQL query without proper sanitization, making it susceptible to SQL injection attacks. An attacker can manipulate the query, potentially leading to data exfiltration, modification, or deletion.  Please note that this vulnerability requires Administrator privileges.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1024">CVE-2025-1024</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/churchcrm/crm/issues/7250">https://github.com/churchcrm/crm/issues/7250</a></td>
+					<td class=date>2025-02-19T09:15:10.280</td>
+					<td class=description>A vulnerability exists in ChurchCRM 5.13.0 that allows an attacker to execute arbitrary JavaScript in a victim's browser via Reflected Cross-Site Scripting (XSS) in the EditEventAttendees.php page. This requires Administration privileges and affects the EID parameter. The flaw allows an attacker to steal session cookies, perform actions on behalf of an authenticated user, and gain unauthorized access to the application.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -88,7 +138,7 @@ Updated at UTC 2025-02-19T09:12:33.073565
 					<td>-</td>
 					<td><a target=_blank href="https://github.com/churchcrm/crm/issues/7245">https://github.com/churchcrm/crm/issues/7245</a></td>
 					<td class=date>2025-02-18T10:15:10.333</td>
-					<td class=description>A vulnerability exists in ChurchCRM 5.13.0 and prior that allows an attacker to hijack a user's session by exploiting a Stored Cross Site Scripting (XSS) vulnerability in the Group Editor page. This allows admin users to inject malicious JavaScript, which captures the session cookie of authenticated users. The cookie can then be sent to an external server, enabling session hijacking. It can also lead to information disclosure, as exposed session cookies can be used to impersonate users and gain unauthorised access to sensitive information.</td>
+					<td class=description>A vulnerability exists in ChurchCRM 5.13.0 and prior that allows an attacker to hijack a user's session by exploiting a Stored Cross Site Scripting (XSS) vulnerability in the Group Editor page. This allows admin users to inject malicious JavaScript in the description field, which captures the session cookie of authenticated users. The cookie can then be sent to an external server, enabling session hijacking. It can also lead to information disclosure, as exposed session cookies can be used to impersonate users and gain unauthorised access to sensitive information.</td>
 
 
 				</tr>
@@ -120,6 +170,24 @@ Updated at UTC 2025-02-19T09:12:33.073565
 		
 
 		<hr>
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1132">CVE-2025-1132</a></td>
+					<td>-</td>
+					<td>command,sensitive</td>
+					<td class=date>2025-02-19T09:15:10.417</td>
+					<td class=description>A time-based blind SQL Injection vulnerability exists in the ChurchCRM 5.13.0 and prior EditEventAttendees.php within the EN_tyid parameter. The parameter is directly inserted into an SQL query without proper sanitization, allowing attackers to inject malicious SQL commands. Please note that the vulnerability requires Administrator permissions. This flaw can potentially allow attackers to delay the response, indicating the presence of an SQL injection vulnerability. While it is a time-based blind injection, it can be exploited to gain insights into the underlying database, and with further exploitation, sensitive data could be retrieved.</td>
+				</tr>
+			
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
