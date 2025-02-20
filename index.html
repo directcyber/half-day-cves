@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-02-20T18:15:31.889629
+Updated at UTC 2025-02-20T19:09:34.585747
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,22 @@ Updated at UTC 2025-02-20T18:15:31.889629
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25973">CVE-2025-25973</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/yandaozi/ppress/issues/3">https://github.com/yandaozi/ppress/issues/3</a></td>
+					<td class=date>2025-02-20T18:15:26.713</td>
+					<td class=description>A stored Cross Site Scripting vulnerability in the "related recommendations" feature in Ppress v.0.0.9 allows a remote attacker to execute arbitrary code via a crafted script to the article.title, article.category, and article.tags parameters.</td>
+
+
+				</tr>
+			
+		
+			
 		
 			
 				<tr>
@@ -328,6 +344,41 @@ Updated at UTC 2025-02-20T18:15:31.889629
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-27091">CVE-2025-27091</a></td>
+					<td>-</td>
+					<td>remote,unauthenticated,command</td>
+					<td class=date>2025-02-20T18:15:26.850</td>
+					<td class=description>OpenH264 is a free license codec library which supports H.264 encoding and decoding. A vulnerability in the decoding functions of OpenH264 codec library could allow a remote, unauthenticated attacker to trigger a heap overflow. This vulnerability is due to a race condition between a Sequence Parameter Set (SPS) memory allocation and a subsequent non Instantaneous Decoder Refresh (non-IDR) Network Abstraction Layer (NAL) unit memory usage. An attacker could exploit this vulnerability by crafting a malicious bitstream and tricking a victim user into processing an arbitrary video containing the malicious bistream. An exploit could allow the attacker to cause an unexpected crash in the victim's user decoding client and, possibly, perform arbitrary commands on the victim's host by abusing the heap overflow. This vulnerability affects OpenH264 2.5.0 and earlier releases. Both Scalable Video Coding (SVC) mode and Advanced Video Coding (AVC) mode are affected by this vulnerability. OpenH264 software releases 2.6.0 and later contained the fix for this vulnerability. Users are advised to upgrade. There are no known workarounds for this vulnerability.
+
+### For more information
+
+If you have any questions or comments about this advisory:
+* [Open an issue in cisco/openh264](https://github.com/cisco/openh264/issues)
+* Email Cisco Open Source Security ([oss-security@cisco.com](mailto:oss-security@cisco.com)) and Cisco PSIRT ([psirt@cisco.com](mailto:psirt@cisco.com))
+
+### Credits:
+
+* **Research:** Octavian Guzu and Andrew Calvano of Meta
+* **Fix ideation:** Philipp Hancke and Shyam Sadhwani of Meta
+* **Fix implementation:** Benzheng Zhang (@BenzhengZhang)
+* **Release engineering:** Benzheng Zhang (@BenzhengZhang)</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25968">CVE-2025-25968</a></td>
+					<td>-</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2025-02-20T18:15:26.570</td>
+					<td class=description>DDSN Interactive cm3 Acora CMS version 10.1.1 contains an improper access control vulnerability. An editor-privileged user can access sensitive information, such as system administrator credentials, by force browsing the endpoint and exploiting the 'file' parameter. By referencing specific files (e.g., cm3.xml), attackers can bypass access controls, leading to account takeover and potential privilege escalation.</td>
+				</tr>
+			
 		
 			
 		
