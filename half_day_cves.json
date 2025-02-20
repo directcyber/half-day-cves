@@ -184,5 +184,53 @@
     "description": "Dell RecoverPoint for Virtual Machines 6.0.X contains a command execution vulnerability. A Low privileged malicious user with local access could potentially exploit this vulnerability by running the specific binary and perform any administrative action permitted by it resulting in shutting down the server, modifying the configuration leading to gain access to unauthorized data.",
     "published": "2025-02-20T12:15:11.233",
     "keywords": "execution,command"
+  },
+  "CVE-2025-26304": {
+    "url": "https://github.com/libming/libming/issues/323",
+    "cvss": "-",
+    "description": "A memory leak has been identified in the parseSWF_EXPORTASSETS function in util/parser.c of libming v0.4.8.",
+    "published": "2025-02-20T17:15:12.260"
+  },
+  "CVE-2025-26305": {
+    "url": "https://github.com/libming/libming/issues/322",
+    "cvss": "-",
+    "description": "A memory leak has been identified in the parseSWF_SOUNDINFO function in util/parser.c of libming v0.4.8, which allows attackers to cause a denial of service via a crafted SWF file.",
+    "published": "2025-02-20T17:15:12.377"
+  },
+  "CVE-2025-26306": {
+    "url": "https://github.com/libming/libming/issues/324",
+    "cvss": "-",
+    "description": "A memory leak has been identified in the readSizedString function in util/read.c of libming v0.4.8, which allows attackers to cause a denial of service via a crafted file.",
+    "published": "2025-02-20T17:15:12.490"
+  },
+  "CVE-2025-26307": {
+    "url": "https://github.com/libming/libming/issues/325",
+    "cvss": "-",
+    "description": "A memory leak has been identified in the parseSWF_IMPORTASSETS2 function in util/parser.c of libming v0.4.8, which allows attackers to cause a denial of service via a crafted SWF file.",
+    "published": "2025-02-20T17:15:12.607"
+  },
+  "CVE-2025-26308": {
+    "url": "https://github.com/libming/libming/issues/326",
+    "cvss": "-",
+    "description": "A memory leak has been identified in the parseSWF_FILTERLIST function in util/parser.c of libming v0.4.8, which allows attackers to cause a denial of service via a crafted SWF file.",
+    "published": "2025-02-20T17:15:12.730"
+  },
+  "CVE-2025-26309": {
+    "url": "https://github.com/libming/libming/issues/327",
+    "cvss": "-",
+    "description": "A memory leak has been identified in the parseSWF_DEFINESCENEANDFRAMEDATA function in util/parser.c of libming v0.4.8, which allows attackers to cause a denial of service via a crafted SWF file.",
+    "published": "2025-02-20T17:15:12.853"
+  },
+  "CVE-2025-26310": {
+    "url": "https://github.com/libming/libming/issues/328",
+    "cvss": "-",
+    "description": "Multiple memory leaks have been identified in the ABC file parsing functions (parseABC_CONSTANT_POOL and `parseABC_FILE) in util/parser.c of libming v0.4.8, which allow attackers to cause a denial of service via a crafted ABC file.",
+    "published": "2025-02-20T17:15:12.967"
+  },
+  "CVE-2025-26311": {
+    "url": "https://github.com/libming/libming/issues/329",
+    "cvss": "-",
+    "description": "Multiple memory leaks have been identified in the clip actions parsing functions (parseSWF_CLIPACTIONS and parseSWF_CLIPACTIONRECORD) in util/parser.c of libming v0.4.8, which allow attackers to cause a denial of service via a crafted SWF file.",
+    "published": "2025-02-20T17:15:13.087"
   }
 }
