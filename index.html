@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-02-20T19:09:34.585747
+Updated at UTC 2025-02-20T21:10:01.146035
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -61,9 +61,13 @@ Updated at UTC 2025-02-20T19:09:34.585747
 			
 		
 			
+		
+			
+		
+			
 				<tr>
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25973">CVE-2025-25973</a></td>
-					<td>-</td>
+					<td>6.5</td>
 					<td><a target=_blank href="https://github.com/yandaozi/ppress/issues/3">https://github.com/yandaozi/ppress/issues/3</a></td>
 					<td class=date>2025-02-20T18:15:26.713</td>
 					<td class=description>A stored Cross Site Scripting vulnerability in the "related recommendations" feature in Ppress v.0.0.9 allows a remote attacker to execute arbitrary code via a crafted script to the article.title, article.category, and article.tags parameters.</td>
@@ -347,6 +351,26 @@ Updated at UTC 2025-02-20T19:09:34.585747
 		
 			
 				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24893">CVE-2025-24893</a></td>
+					<td>9.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-02-20T20:15:46.697</td>
+					<td class=description>XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. Any guest can perform arbitrary remote code execution through a request to `SolrSearch`. This impacts the confidentiality, integrity and availability of the whole XWiki installation. To reproduce on an instance, without being logged in, go to `<host>/xwiki/bin/get/Main/SolrSearch?media=rss&text=%7D%7D%7D%7B%7Basync%20async%3Dfalse%7D%7D%7B%7Bgroovy%7D%7Dprintln%28"Hello%20from"%20%2B%20"%20search%20text%3A"%20%2B%20%2823%20%2B%2019%29%29%7B%7B%2Fgroovy%7D%7D%7B%7B%2Fasync%7D%7D%20`. If there is an output, and the title of the RSS feed contains `Hello from search text:42`, then the instance is vulnerable. This vulnerability has been patched in XWiki 15.10.11, 16.4.1 and 16.5.0RC1. Users are advised to upgrade. Users unable to upgrade may edit `Main.SolrSearchMacros` in `SolrSearchMacros.xml` on line 955 to match the `rawResponse` macro in `macros.vm#L2824` with a content type of `application/xml`, instead of simply outputting the content of the feed.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1265">CVE-2025-1265</a></td>
+					<td>9.9</td>
+					<td>execution,command</td>
+					<td class=date>2025-02-20T20:15:46.537</td>
+					<td class=description>An OS command injection vulnerability exists in Vinci Protocol Analyzer that could allow an attacker to escalate privileges and perform code execution on affected system.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-27091">CVE-2025-27091</a></td>
 					<td>-</td>
 					<td>remote,unauthenticated,command</td>
@@ -373,7 +397,7 @@ If you have any questions or comments about this advisory:
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25968">CVE-2025-25968</a></td>
-					<td>-</td>
+					<td>6.0</td>
 					<td>sensitive,bypass</td>
 					<td class=date>2025-02-20T18:15:26.570</td>
 					<td class=description>DDSN Interactive cm3 Acora CMS version 10.1.1 contains an improper access control vulnerability. An editor-privileged user can access sensitive information, such as system administrator credentials, by force browsing the endpoint and exploiting the 'file' parameter. By referencing specific files (e.g., cm3.xml), attackers can bypass access controls, leading to account takeover and potential privilege escalation.</td>
