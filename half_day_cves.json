@@ -178,5 +178,11 @@
     "cvss": "-",
     "description": "An issue in Bento4 v1.6.0-641 allows an attacker to trigger a segmentation fault via Ap4Atom.cpp, specifically in AP4_AtomParent::RemoveChild, during the execution of mp4encrypt with a specially crafted MP4 input file.",
     "published": "2025-02-19T23:15:15.850"
+  },
+  "CVE-2025-1293": {
+    "cvss": 8.2,
+    "description": "Hermes versions up to 0.4.0 improperly validated the JWT provided when using the AWS ALB authentication mode, potentially allowing for authentication bypass. This vulnerability, CVE-2025-1293, was fixed in Hermes 0.5.0.",
+    "published": "2025-02-20T01:15:09.950",
+    "keywords": "authentication,bypass"
   }
 }
