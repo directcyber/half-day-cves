@@ -1,10 +1,4 @@
 {
-  "CVE-2025-1378": {
-    "url": "https://github.com/radareorg/radare2/commit/c6c772d2eab692ce7ada5a4227afd50c355ad545",
-    "cvss": 3.3,
-    "description": "A vulnerability, which was classified as problematic, was found in radare2 5.9.9 33286. Affected is an unknown function in the library /libr/main/rasm2.c of the component rasm2. The manipulation leads to memory corruption. An attack has to be approached locally. The exploit has been disclosed to the public and may be used. Upgrading to version 6.0.0 is able to address this issue. The patch is identified as c6c772d2eab692ce7ada5a4227afd50c355ad545. It is recommended to upgrade the affected component.",
-    "published": "2025-02-17T06:15:13.277"
-  },
   "CVE-2025-25055": {
     "cvss": 5.3,
     "description": "Authentication bypass by spoofing issue exists in FileMegane versions above 1.0.0.0 prior to 3.4.0.0, which may lead to user impersonation. If exploited, restricted file contents may be accessed.",
@@ -172,5 +166,11 @@
     "description": "Hermes versions up to 0.4.0 improperly validated the JWT provided when using the AWS ALB authentication mode, potentially allowing for authentication bypass. This vulnerability, CVE-2025-1293, was fixed in Hermes 0.5.0.",
     "published": "2025-02-20T01:15:09.950",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2025-27218": {
+    "cvss": "-",
+    "description": "Sitecore Experience Manager (XM) and Experience Platform (XP) 10.4 before KB1002844 allow remote code execution through insecure deserialization.",
+    "published": "2025-02-20T05:15:15.270",
+    "keywords": "remote,execution"
   }
 }
