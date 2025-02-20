@@ -127,37 +127,37 @@
   },
   "CVE-2025-25942": {
     "url": "https://github.com/axiomatic-systems/bento4/issues/993",
-    "cvss": "-",
+    "cvss": 6.5,
     "description": "An issue in Bento4 v1.6.0-641 allows an attacker to obtain sensitive information via the the mp4fragment tool when processing invalid files. Specifically, memory allocated in SampleArray::SampleArray in Mp4Fragment.cpp is not properly released.",
     "published": "2025-02-19T23:15:15.310"
   },
   "CVE-2025-25943": {
     "url": "https://github.com/axiomatic-systems/bento4/issues/993",
-    "cvss": "-",
+    "cvss": 7.8,
     "description": "Buffer Overflow vulnerability in Bento4 v.1.6.0-641 allows a local attacker to execute arbitrary code via the AP4_Stz2Atom::AP4_Stz2Atom component located in Ap4Stz2Atom.cpp.",
     "published": "2025-02-19T23:15:15.417"
   },
   "CVE-2025-25944": {
     "url": "https://github.com/axiomatic-systems/bento4/issues/993",
-    "cvss": "-",
+    "cvss": 7.3,
     "description": "Buffer Overflow vulnerability in Bento4 v.1.6.0-641 allows a local attacker to execute arbitrary code via the Ap4RtpAtom.cpp, specifically in AP4_RtpAtom::AP4_RtpAtom, during the execution of mp4fragment with a crafted MP4 input file.",
     "published": "2025-02-19T23:15:15.530"
   },
   "CVE-2025-25945": {
     "url": "https://github.com/axiomatic-systems/bento4/issues/993",
-    "cvss": "-",
+    "cvss": 6.5,
     "description": "An issue in Bento4 v1.6.0-641 allows an attacker to obtain sensitive information via the the Mp4Fragment.cpp and in AP4_DescriptorFactory::CreateDescriptorFromStream at Ap4DescriptorFactory.cpp.",
     "published": "2025-02-19T23:15:15.630"
   },
   "CVE-2025-25946": {
-    "cvss": "-",
+    "cvss": 5.5,
     "description": "An issue in Bento4 v1.6.0-641 allows an attacker to cause a memory leak via Ap4Marlin.cpp and Ap4Processor.cpp, specifically in AP4_MarlinIpmpEncryptingProcessor::Initialize and AP4_Processor::Process, during the execution of mp4encrypt with a specially crafted MP4 input file.",
     "published": "2025-02-19T23:15:15.743",
     "keywords": "execution,leak"
   },
   "CVE-2025-25947": {
     "url": "https://github.com/axiomatic-systems/bento4/issues/994",
-    "cvss": "-",
+    "cvss": 5.5,
     "description": "An issue in Bento4 v1.6.0-641 allows an attacker to trigger a segmentation fault via Ap4Atom.cpp, specifically in AP4_AtomParent::RemoveChild, during the execution of mp4encrypt with a specially crafted MP4 input file.",
     "published": "2025-02-19T23:15:15.850"
   },
