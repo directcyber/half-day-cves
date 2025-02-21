@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-02-20T23:11:39.017865
+Updated at UTC 2025-02-21T00:53:54.014201
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2025-02-20T23:11:39.017865
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -344,10 +348,28 @@ Updated at UTC 2025-02-20T23:11:39.017865
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25675">CVE-2025-25675</a></td>
+					<td>-</td>
+					<td>execution,command</td>
+					<td class=date>2025-02-20T23:15:12.870</td>
+					<td class=description>Tenda AC10 V1.0 V15.03.06.23 has a command injection vulnerablility located in the formexeCommand function. The str variable receives the cmdinput parameter from a POST request and is later assigned to the cmd_buf variable, which is directly used in the doSystemCmd function, causing an arbitrary command execution.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-22973">CVE-2025-22973</a></td>
+					<td>-</td>
+					<td>remote,sensitive</td>
+					<td class=date>2025-02-20T23:15:12.120</td>
+					<td class=description>An issue in QiboSoft QiboCMS X1.0 allows a remote attacker to obtain sensitive information via the http_curl() function in the '/application/common. php' file that directly retrieves the URL request response content.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -637,16 +659,6 @@ This vulnerability is due to improper handling of email that passes through an a
 					<td>remote,execution,command</td>
 					<td class=date>2025-02-18T08:15:10.147</td>
 					<td class=description>An authenticated user in the "bestinformed Web" application can execute commands on the underlying server running the application. (Remote Code Execution) For this, the user must be able to create "ScriptVars" with the type „script" and preview them by, for example, creating a new "Info". By default, admin users have those permissions, but with the granular permission system, those permissions may be assigned to other users. An attacker is able to execute commands on the server running the "bestinformed Web" application if an account with the correct permissions was compromised before.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25055">CVE-2025-25055</a></td>
-					<td>5.3</td>
-					<td>authentication,bypass</td>
-					<td class=date>2025-02-18T00:15:21.277</td>
-					<td class=description>Authentication bypass by spoofing issue exists in FileMegane versions above 1.0.0.0 prior to 3.4.0.0, which may lead to user impersonation. If exploited, restricted file contents may be accessed.</td>
 				</tr>
 			
 		
