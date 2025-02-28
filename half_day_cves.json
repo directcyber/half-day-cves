@@ -1,266 +1,176 @@
 {
-  "CVE-2025-0981": {
-    "url": "https://github.com/churchcrm/crm/issues/7245",
+  "CVE-2025-0731": {
+    "cvss": 6.5,
+    "description": "An unauthenticated remote attacker can upload a .aspx file instead of a PV system picture through the demo account. The code can only be executed in the security context of the user.",
+    "published": "2025-02-26T13:15:41.040",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-25789": {
     "cvss": "-",
-    "description": "A vulnerability exists in ChurchCRM\u00a05.13.0 and prior that allows an attacker to hijack a user's session by exploiting a Stored Cross Site Scripting (XSS) vulnerability in the Group Editor page. This allows admin users to inject malicious JavaScript in the description field, which captures the session cookie of authenticated users. The cookie can then be sent to an external server, enabling session hijacking. It can also lead to information disclosure, as exposed session cookies can be used to impersonate users and gain unauthorised access to sensitive information.",
-    "published": "2025-02-18T10:15:10.333"
-  },
-  "CVE-2025-1023": {
-    "url": "https://github.com/churchcrm/crm/issues/7246",
-    "cvss": "-",
-    "description": "A vulnerability exists in ChurchCRM\u00a05.13.0 and prior\u00a0that allows an attacker to execute arbitrary SQL queries by exploiting a time-based blind SQL Injection\u00a0vulnerability in the EditEventTypes\u00a0functionality. The newCountName\u00a0parameter is directly concatenated into an SQL query without proper sanitization, allowing an attacker to manipulate database queries and execute arbitrary commands, potentially leading to data exfiltration, modification, or deletion.",
-    "published": "2025-02-18T10:15:10.500"
-  },
-  "CVE-2025-26058": {
-    "cvss": 4.2,
-    "description": "Webkul QloApps v1.6.1 exposes authentication tokens in URLs during redirection. When users access the admin panel or other protected areas, the application appends sensitive authentication tokens directly to the URL.",
-    "published": "2025-02-18T18:15:35.653",
-    "keywords": "authentication,sensitive"
-  },
-  "CVE-2025-24894": {
-    "cvss": 9.1,
-    "description": "SPID.AspNetCore.Authentication is an AspNetCore Remote Authenticator for SPID. Authentication using Spid and CIE is based on the SAML2 standard which provides two entities: Identity Provider (IDP): the system that authenticates users and provides identity information (SAML affirmation) to the Service Provider, in essence, is responsible for the management of the credentials and identity of users; Service Provider (SP): the system that provides a service to the user and relies on the Identity Provider to authenticate the user, receives SAML assertions from the IdP to grant access to resources. The validation logic of the signature is central as it ensures that you cannot create a SAML response with arbitrary assertions and then impersonate other users. There is no guarantee that the first signature refers to the root object, it follows that if an attacker injects an item signed as the first element, all other signatures will not be verified. The only requirement is to have an XML element legitimately signed by the IdP, a condition that is easily met using the IdP's public metadata. An attacker could create an arbitrary SAML response that would be accepted by SPs using vulnerable SDKs, allowing him to impersonate any Spid and/or CIE user. This vulnerability has been addressed in version 3.4.0 and all users are advised to upgrade. There are no known workarounds for this vulnerability.",
-    "published": "2025-02-18T19:15:28.090",
-    "keywords": "remote,authentication"
-  },
-  "CVE-2025-24895": {
-    "cvss": 9.1,
-    "description": "CIE.AspNetCore.Authentication is an AspNetCore Remote Authenticator for CIE 3.0. Authentication using Spid and CIE is based on the SAML2 standard which provides two entities: 1. Identity Provider (IDP): the system that authenticates users and provides identity information (SAML affirmation) to the Service Provider, in essence, is responsible for the management of the credentials and identity of users; 2. Service Provider (SP): the system that provides a service to the user and relies on the Identity Provider to authenticate the user, receives SAML assertions from the IdP to grant access to resources. The library cie-aspnetcore refers to the second entity, the SP, and implements the validation logic of SAML assertions within SAML responses. In affected versions there is no guarantee that the first signature refers to the root object, it follows that if an attacker injects an item signed as the first element, all other signatures will not be verified. The only requirement is to have an XML element legitimately signed by the IdP, a condition that is easily met using the IdP's public metadata. An attacker could create an arbitrary SAML response that would be accepted by SPs using vulnerable SDKs, allowing him to impersonate any Spid and/or CIE user. This issue has been addressed in version 2.1.0 and all users are advised to upgrade. There are no known workarounds for this vulnerability.",
-    "published": "2025-02-18T19:15:28.240",
-    "keywords": "remote,authentication"
-  },
-  "CVE-2025-0622": {
-    "cvss": 6.4,
-    "description": "A flaw was found in command/gpg. In some scenarios, hooks created by loaded modules are not removed when the related module is unloaded. This flaw allows an attacker to force grub2 to call the hooks once the module that registered it was unloaded, leading to a use-after-free vulnerability. If correctly exploited, this vulnerability may result in arbitrary code execution, eventually allowing the attacker to bypass secure boot protections.",
-    "published": "2025-02-18T20:15:23.570",
-    "keywords": "execution,command,bypass"
-  },
-  "CVE-2025-26623": {
-    "cvss": "-",
-    "description": "Exiv2 is a C++ library and a command-line utility to read, write, delete and modify Exif, IPTC, XMP and ICC image metadata. A heap buffer overflow was found in Exiv2 versions v0.28.0 to v0.28.4. Versions prior to v0.28.0, such as v0.27.7, are **not** affected. Exiv2 is a command-line utility and C++ library for reading, writing, deleting, and modifying the metadata of image files. The heap overflow is triggered when Exiv2 is used to write metadata into a crafted image file. An attacker could potentially exploit the vulnerability to gain code execution, if they can trick the victim into running Exiv2 on a crafted image file. Note that this bug is only triggered when writing the metadata, which is a less frequently used Exiv2 operation than reading the metadata. For example, to trigger the bug in the Exiv2 command-line application, you need to add an extra command-line argument such as `fixiso`. The bug is fixed in version v0.28.5. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
-    "published": "2025-02-18T20:15:33.153",
-    "keywords": "execution,command"
-  },
-  "CVE-2025-26613": {
-    "cvss": "-",
-    "description": "WeGIA is an open source Web Manager for Institutions with a focus on Portuguese language users. An OS Command Injection vulnerability was discovered in the WeGIA application, `gerenciar_backup.php` endpoint. This vulnerability could allow an attacker to execute arbitrary code remotely. This issue has been addressed in version 3.2.14 and all users are advised to upgrade. There are no known workarounds for this vulnerability.",
-    "published": "2025-02-18T21:15:29.607",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-1024": {
-    "url": "https://github.com/churchcrm/crm/issues/7250",
-    "cvss": "-",
-    "description": "A vulnerability exists in ChurchCRM 5.13.0\u00a0that allows an attacker to execute arbitrary JavaScript in a victim's browser via Reflected Cross-Site Scripting (XSS) in the EditEventAttendees.php\u00a0page. This requires Administration privileges and affects the EID parameter. The flaw allows an attacker to steal session cookies, perform actions on behalf of an authenticated user, and gain unauthorized access to the application.",
-    "published": "2025-02-19T09:15:10.280"
-  },
-  "CVE-2025-1132": {
-    "cvss": "-",
-    "description": "A time-based blind SQL Injection\u00a0vulnerability exists in the ChurchCRM 5.13.0 and prior\u00a0EditEventAttendees.php\u00a0within the EN_tyid\u00a0parameter. The parameter is directly inserted into an SQL query without proper sanitization, allowing attackers to inject malicious SQL commands. Please note that the vulnerability requires Administrator permissions.\u00a0This flaw can potentially allow attackers to delay the response, indicating the presence of an SQL injection vulnerability. While it is a time-based blind injection, it can be exploited to gain insights into the underlying database, and with further exploitation, sensitive data could be retrieved.",
-    "published": "2025-02-19T09:15:10.417",
-    "keywords": "command,sensitive"
-  },
-  "CVE-2025-1133": {
-    "url": "https://github.com/churchcrm/crm/issues/7252",
-    "cvss": "-",
-    "description": "A vulnerability exists in ChurchCRM 5.13.0 and prior\u00a0that allows an attacker to execute arbitrary SQL queries by exploiting a boolean-based blind SQL Injection\u00a0vulnerability in the EditEventAttendees\u00a0functionality. The EID\u00a0parameter is directly concatenated into an SQL query without proper sanitization, making it susceptible to SQL injection attacks. An attacker can manipulate the query, potentially leading to data exfiltration, modification, or deletion.\u00a0 Please note that this vulnerability requires Administrator privileges.",
-    "published": "2025-02-19T09:15:10.550"
-  },
-  "CVE-2025-1134": {
-    "url": "https://github.com/churchcrm/crm/issues/7253",
-    "cvss": "-",
-    "description": "A vulnerability exists in ChurchCRM\u00a05.13.0 and prior that allows an attacker to execute arbitrary SQL queries by exploiting a boolean-based and time-based blind SQL Injection\u00a0vulnerability in the DonatedItemEditor\u00a0functionality. The CurrentFundraiser\u00a0parameter is directly concatenated into an SQL query without sufficient sanitization, allowing an attacker to manipulate database queries and execute arbitrary commands, potentially leading to data exfiltration, modification, or deletion. Please note that this vulnerability requires Administrator privileges.",
-    "published": "2025-02-19T09:15:10.687"
-  },
-  "CVE-2025-1135": {
-    "url": "https://github.com/churchcrm/crm/issues/7254",
-    "cvss": "-",
-    "description": "A vulnerability exists in ChurchCRM\u00a05.13.0. and prior that allows an attacker to execute arbitrary SQL queries by exploiting a boolean-based and time-based blind SQL Injection\u00a0vulnerability in the BatchWinnerEntry\u00a0functionality. The CurrentFundraiser\u00a0parameter is directly concatenated into an SQL query without sufficient sanitization, allowing an attacker to manipulate database queries and execute arbitrary commands, potentially leading to data exfiltration, modification, or deletion.\u00a0Please note the vulnerability requires Administrator privileges.",
-    "published": "2025-02-19T09:15:10.823"
-  },
-  "CVE-2025-0968": {
-    "cvss": 5.3,
-    "description": "The ElementsKit Elementor addons plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.4.0  due to a missing capability checks on the get_megamenu_content() function. This makes it possible for unauthenticated attackers to view any item created in Elementor, such as posts, pages and templates including drafts, trashed and private items.",
-    "published": "2025-02-19T12:15:31.770",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2025-20153": {
-    "cvss": 5.8,
-    "description": "A vulnerability in the email filtering mechanism of Cisco Secure Email Gateway could allow an unauthenticated, remote attacker to bypass the configured rules and allow emails that should have been denied to flow through an affected device. &nbsp;\r\n\r\nThis vulnerability is due to improper handling of email that passes through an affected device. An attacker could exploit this vulnerability by sending a crafted email through the affected device. A successful exploit could allow the attacker to bypass email filters on the affected device.",
-    "published": "2025-02-19T16:15:40.860",
-    "keywords": "remote,unauthenticated,bypass"
-  },
-  "CVE-2025-20158": {
-    "cvss": 4.4,
-    "description": "A vulnerability in the debug shell of Cisco Video Phone 8875 and Cisco Desk Phone 9800 Series could allow an authenticated, local attacker to access sensitive information on an affected device. To exploit this vulnerability, the attacker must have valid administrative credentials with SSH access on the affected device. SSH access is disabled by default.\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input by the debug shell of an affected device. An attacker could exploit this vulnerability by sending a crafted SSH client command to the CLI. A successful exploit could allow the attacker to access sensitive information on the underlying operating system.",
-    "published": "2025-02-19T16:15:41.017",
-    "keywords": "command,sensitive"
-  },
-  "CVE-2025-20211": {
-    "cvss": 6.1,
-    "description": "A vulnerability in the web-based management interface of Cisco BroadWorks Application Delivery Platform could allow an unauthenticated, remote attacker to conduct a cross-site scripting attack against a user of the interface.\r\n\r\nThis vulnerability exists because the web-based management interface does not properly validate user-supplied input. An attacker could exploit this vulnerability by persuading a user of the interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.",
-    "published": "2025-02-19T16:15:41.163",
-    "keywords": "remote,unauthenticated,sensitive"
-  },
-  "CVE-2025-1118": {
-    "cvss": 4.4,
-    "description": "A flaw was found in grub2. Grub's dump command is not blocked when grub is in lockdown mode, which allows the user to read any memory information, and an attacker may leverage this in order to extract signatures, salts, and other sensitive information from the memory.",
-    "published": "2025-02-19T18:15:24.280",
-    "keywords": "command,sensitive"
-  },
-  "CVE-2025-0624": {
-    "cvss": 7.6,
-    "description": "A flaw was found in grub2. During the network boot process, when trying to search for the configuration file, grub copies data from a user controlled environment variable into an internal buffer using the grub_strcpy() function. During this step, it fails to consider the environment variable length when allocating the internal buffer, resulting in an out-of-bounds write. If correctly exploited, this issue may result in remote code execution through the same network segment grub is searching for the boot information, which can be used to by-pass secure boot protections.",
-    "published": "2025-02-19T19:15:15.120",
+    "description": "FoxCMS v1.2.5 was discovered to contain a remote code execution (RCE) vulnerability via the index() method at \\controller\\Sitemap.php.",
+    "published": "2025-02-26T15:15:26.853",
     "keywords": "remote,execution"
   },
-  "CVE-2025-25942": {
-    "url": "https://github.com/axiomatic-systems/bento4/issues/993",
-    "cvss": 6.5,
-    "description": "An issue in Bento4 v1.6.0-641 allows an attacker to obtain sensitive information via the the mp4fragment tool when processing invalid files. Specifically, memory allocated in SampleArray::SampleArray in Mp4Fragment.cpp is not properly released.",
-    "published": "2025-02-19T23:15:15.310"
-  },
-  "CVE-2025-25943": {
-    "url": "https://github.com/axiomatic-systems/bento4/issues/993",
-    "cvss": 7.8,
-    "description": "Buffer Overflow vulnerability in Bento4 v.1.6.0-641 allows a local attacker to execute arbitrary code via the AP4_Stz2Atom::AP4_Stz2Atom component located in Ap4Stz2Atom.cpp.",
-    "published": "2025-02-19T23:15:15.417"
-  },
-  "CVE-2025-25944": {
-    "url": "https://github.com/axiomatic-systems/bento4/issues/993",
-    "cvss": 7.3,
-    "description": "Buffer Overflow vulnerability in Bento4 v.1.6.0-641 allows a local attacker to execute arbitrary code via the Ap4RtpAtom.cpp, specifically in AP4_RtpAtom::AP4_RtpAtom, during the execution of mp4fragment with a crafted MP4 input file.",
-    "published": "2025-02-19T23:15:15.530"
-  },
-  "CVE-2025-25945": {
-    "url": "https://github.com/axiomatic-systems/bento4/issues/993",
-    "cvss": 6.5,
-    "description": "An issue in Bento4 v1.6.0-641 allows an attacker to obtain sensitive information via the the Mp4Fragment.cpp and in AP4_DescriptorFactory::CreateDescriptorFromStream at Ap4DescriptorFactory.cpp.",
-    "published": "2025-02-19T23:15:15.630"
-  },
-  "CVE-2025-25946": {
-    "cvss": 5.5,
-    "description": "An issue in Bento4 v1.6.0-641 allows an attacker to cause a memory leak via Ap4Marlin.cpp and Ap4Processor.cpp, specifically in AP4_MarlinIpmpEncryptingProcessor::Initialize and AP4_Processor::Process, during the execution of mp4encrypt with a specially crafted MP4 input file.",
-    "published": "2025-02-19T23:15:15.743",
-    "keywords": "execution,leak"
-  },
-  "CVE-2025-25947": {
-    "url": "https://github.com/axiomatic-systems/bento4/issues/994",
-    "cvss": 5.5,
-    "description": "An issue in Bento4 v1.6.0-641 allows an attacker to trigger a segmentation fault via Ap4Atom.cpp, specifically in AP4_AtomParent::RemoveChild, during the execution of mp4encrypt with a specially crafted MP4 input file.",
-    "published": "2025-02-19T23:15:15.850"
-  },
-  "CVE-2025-1293": {
-    "cvss": 8.2,
-    "description": "Hermes versions up to 0.4.0 improperly validated the JWT provided when using the AWS ALB authentication mode, potentially allowing for authentication bypass. This vulnerability, CVE-2025-1293, was fixed in Hermes 0.5.0.",
-    "published": "2025-02-20T01:15:09.950",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2025-27218": {
-    "cvss": 5.3,
-    "description": "Sitecore Experience Manager (XM) and Experience Platform (XP) 10.4 before KB1002844 allow remote code execution through insecure deserialization.",
-    "published": "2025-02-20T05:15:15.270",
+  "CVE-2025-25792": {
+    "cvss": "-",
+    "description": "SeaCMS v13.3 was discovered to contain a remote code execution (RCE) vulnerability via the isopen parameter at admin_weixin.php.",
+    "published": "2025-02-26T15:15:27.230",
     "keywords": "remote,execution"
   },
-  "CVE-2025-0868": {
+  "CVE-2025-25793": {
     "cvss": "-",
-    "description": "A vulnerability, that could result in Remote Code Execution (RCE), has been found in DocsGPT. Due to improper parsing of JSON data using eval() an unauthorized attacker could send arbitrary Python code to be executed via /api/remote endpoint.\n\nThis issue affects DocsGPT: from 0.8.1 through 0.12.0.",
-    "published": "2025-02-20T12:15:10.893",
+    "description": "SeaCMS v13.3 was discovered to contain a remote code execution (RCE) vulnerability via the component admin_notify.php.",
+    "published": "2025-02-26T15:15:27.367",
     "keywords": "remote,execution"
   },
-  "CVE-2025-21105": {
-    "cvss": 6.6,
-    "description": "Dell RecoverPoint for Virtual Machines 6.0.X contains a command execution vulnerability. A Low privileged malicious user with local access could potentially exploit this vulnerability by running the specific binary and perform any administrative action permitted by it resulting in shutting down the server, modifying the configuration leading to gain access to unauthorized data.",
-    "published": "2025-02-20T12:15:11.233",
-    "keywords": "execution,command"
-  },
-  "CVE-2025-26304": {
-    "url": "https://github.com/libming/libming/issues/323",
+  "CVE-2025-25794": {
     "cvss": "-",
-    "description": "A memory leak has been identified in the parseSWF_EXPORTASSETS function in util/parser.c of libming v0.4.8.",
-    "published": "2025-02-20T17:15:12.260"
-  },
-  "CVE-2025-26305": {
-    "url": "https://github.com/libming/libming/issues/322",
-    "cvss": "-",
-    "description": "A memory leak has been identified in the parseSWF_SOUNDINFO function in util/parser.c of libming v0.4.8, which allows attackers to cause a denial of service via a crafted SWF file.",
-    "published": "2025-02-20T17:15:12.377"
-  },
-  "CVE-2025-26306": {
-    "url": "https://github.com/libming/libming/issues/324",
-    "cvss": "-",
-    "description": "A memory leak has been identified in the readSizedString function in util/read.c of libming v0.4.8, which allows attackers to cause a denial of service via a crafted file.",
-    "published": "2025-02-20T17:15:12.490"
-  },
-  "CVE-2025-26307": {
-    "url": "https://github.com/libming/libming/issues/325",
-    "cvss": "-",
-    "description": "A memory leak has been identified in the parseSWF_IMPORTASSETS2 function in util/parser.c of libming v0.4.8, which allows attackers to cause a denial of service via a crafted SWF file.",
-    "published": "2025-02-20T17:15:12.607"
-  },
-  "CVE-2025-26308": {
-    "url": "https://github.com/libming/libming/issues/326",
-    "cvss": "-",
-    "description": "A memory leak has been identified in the parseSWF_FILTERLIST function in util/parser.c of libming v0.4.8, which allows attackers to cause a denial of service via a crafted SWF file.",
-    "published": "2025-02-20T17:15:12.730"
-  },
-  "CVE-2025-26309": {
-    "url": "https://github.com/libming/libming/issues/327",
-    "cvss": "-",
-    "description": "A memory leak has been identified in the parseSWF_DEFINESCENEANDFRAMEDATA function in util/parser.c of libming v0.4.8, which allows attackers to cause a denial of service via a crafted SWF file.",
-    "published": "2025-02-20T17:15:12.853"
-  },
-  "CVE-2025-26310": {
-    "url": "https://github.com/libming/libming/issues/328",
-    "cvss": "-",
-    "description": "Multiple memory leaks have been identified in the ABC file parsing functions (parseABC_CONSTANT_POOL and `parseABC_FILE) in util/parser.c of libming v0.4.8, which allow attackers to cause a denial of service via a crafted ABC file.",
-    "published": "2025-02-20T17:15:12.967"
-  },
-  "CVE-2025-26311": {
-    "url": "https://github.com/libming/libming/issues/329",
-    "cvss": 6.5,
-    "description": "Multiple memory leaks have been identified in the clip actions parsing functions (parseSWF_CLIPACTIONS and parseSWF_CLIPACTIONRECORD) in util/parser.c of libming v0.4.8, which allow attackers to cause a denial of service via a crafted SWF file.",
-    "published": "2025-02-20T17:15:13.087"
-  },
-  "CVE-2025-25968": {
-    "cvss": 6.0,
-    "description": "DDSN Interactive cm3 Acora CMS version 10.1.1 contains an improper access control vulnerability. An editor-privileged user can access sensitive information, such as system administrator credentials, by force browsing the endpoint and exploiting the 'file' parameter. By referencing specific files (e.g., cm3.xml), attackers can bypass access controls, leading to account takeover and potential privilege escalation.",
-    "published": "2025-02-20T18:15:26.570",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2025-25973": {
-    "url": "https://github.com/yandaozi/ppress/issues/3",
-    "cvss": 6.5,
-    "description": "A stored Cross Site Scripting vulnerability in the \"related recommendations\" feature in Ppress v.0.0.9 allows a remote attacker to execute arbitrary code via a crafted script to the article.title, article.category, and article.tags parameters.",
-    "published": "2025-02-20T18:15:26.713"
-  },
-  "CVE-2025-27091": {
-    "cvss": "-",
-    "description": "OpenH264 is a free license codec library which supports H.264 encoding and decoding. A vulnerability in the decoding functions of OpenH264 codec library could allow a remote, unauthenticated attacker to trigger a heap overflow. This vulnerability is due to a race condition between a Sequence Parameter Set (SPS) memory allocation and a subsequent non Instantaneous Decoder Refresh (non-IDR) Network Abstraction Layer (NAL) unit memory usage. An attacker could exploit this vulnerability by crafting a malicious bitstream and tricking a victim user into processing an arbitrary video containing the malicious bistream. An exploit could allow the attacker to cause an unexpected crash in the victim's user decoding client and, possibly, perform arbitrary commands on the victim's host by abusing the heap overflow. This vulnerability affects OpenH264 2.5.0 and earlier releases. Both Scalable Video Coding (SVC) mode and Advanced Video Coding (AVC) mode are affected by this vulnerability. OpenH264 software releases 2.6.0 and later contained the fix for this vulnerability. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n* [Open an issue in cisco/openh264](https://github.com/cisco/openh264/issues)\n* Email Cisco Open Source Security ([oss-security@cisco.com](mailto:oss-security@cisco.com)) and Cisco PSIRT ([psirt@cisco.com](mailto:psirt@cisco.com))\n\n### Credits:\n\n* **Research:** Octavian Guzu and Andrew Calvano of Meta\n* **Fix ideation:** Philipp Hancke and Shyam Sadhwani of Meta\n* **Fix implementation:** Benzheng Zhang (@BenzhengZhang)\n* **Release engineering:** Benzheng Zhang (@BenzhengZhang)",
-    "published": "2025-02-20T18:15:26.850",
-    "keywords": "remote,unauthenticated,command"
-  },
-  "CVE-2025-1265": {
-    "cvss": 9.9,
-    "description": "An OS command injection vulnerability exists in Vinci Protocol Analyzer that could allow an attacker to escalate privileges and perform code execution on affected system.",
-    "published": "2025-02-20T20:15:46.537",
-    "keywords": "execution,command"
-  },
-  "CVE-2025-24893": {
-    "cvss": 9.8,
-    "description": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. Any guest can perform arbitrary remote code execution through a request to `SolrSearch`. This impacts the confidentiality, integrity and availability of the whole XWiki installation. To reproduce on an instance, without being logged in, go to `<host>/xwiki/bin/get/Main/SolrSearch?media=rss&text=%7D%7D%7D%7B%7Basync%20async%3Dfalse%7D%7D%7B%7Bgroovy%7D%7Dprintln%28\"Hello%20from\"%20%2B%20\"%20search%20text%3A\"%20%2B%20%2823%20%2B%2019%29%29%7B%7B%2Fgroovy%7D%7D%7B%7B%2Fasync%7D%7D%20`. If there is an output, and the title of the RSS feed contains `Hello from search text:42`, then the instance is vulnerable. This vulnerability has been patched in XWiki 15.10.11, 16.4.1 and 16.5.0RC1. Users are advised to upgrade. Users unable to upgrade may edit `Main.SolrSearchMacros` in `SolrSearchMacros.xml` on line 955 to match the `rawResponse` macro in `macros.vm#L2824` with a content type of `application/xml`, instead of simply outputting the content of the feed.",
-    "published": "2025-02-20T20:15:46.697",
+    "description": "SeaCMS v13.3 was discovered to contain a remote code execution (RCE) vulnerability via the component admin_ping.php.",
+    "published": "2025-02-26T15:15:27.490",
     "keywords": "remote,execution"
   },
-  "CVE-2025-22973": {
+  "CVE-2025-25796": {
     "cvss": "-",
-    "description": "An issue in QiboSoft QiboCMS X1.0 allows a remote attacker to obtain sensitive information via the http_curl() function in the '/application/common. php' file that directly retrieves the URL request response content.",
-    "published": "2025-02-20T23:15:12.120",
+    "description": "SeaCMS v13.3 was discovered to contain a remote code execution (RCE) vulnerability via the component admin_template.php.",
+    "published": "2025-02-26T15:15:27.620",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-25797": {
+    "cvss": "-",
+    "description": "SeaCMS v13.3 was discovered to contain a remote code execution (RCE) vulnerability via the component admin_smtp.php.",
+    "published": "2025-02-26T15:15:27.743",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-25802": {
+    "cvss": "-",
+    "description": "SeaCMS v13.3 was discovered to contain a remote code execution (RCE) vulnerability via the component admin_ip.php.",
+    "published": "2025-02-26T15:15:28.127",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-25813": {
+    "cvss": "-",
+    "description": "SeaCMS v13.3 was discovered to contain a remote code execution (RCE) vulnerability via the component admin_files.php.",
+    "published": "2025-02-26T15:15:28.250",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-20116": {
+    "cvss": 4.8,
+    "description": "A vulnerability in the web UI of Cisco APIC could allow an authenticated, remote attacker to perform a stored XSS attack on an affected system. To exploit this vulnerability, the attacker must have valid administrative credentials.\r\n\r\nThis vulnerability is due to improper input validation in the web UI. An authenticated attacker could exploit this vulnerability by injecting malicious code into specific pages of the web UI. A successful exploit could allow the attacker to execute arbitrary script code in the context of the web UI or access sensitive, browser-based information.",
+    "published": "2025-02-26T17:15:22.403",
     "keywords": "remote,sensitive"
   },
-  "CVE-2025-25675": {
+  "CVE-2025-20118": {
+    "cvss": 4.4,
+    "description": "A vulnerability in the implementation of the internal system processes of Cisco APIC could allow an authenticated, local attacker to access sensitive information on an affected device. To exploit this vulnerability, the attacker must have valid administrative credentials.\r\n\r\nThis vulnerability is due to insufficient masking of sensitive information that is displayed through system CLI commands. An attacker could exploit this vulnerability by using reconnaissance techniques at the device CLI. A successful exploit could allow the attacker to access sensitive information on an affected device that could be used for additional attacks.",
+    "published": "2025-02-26T17:15:22.723",
+    "keywords": "command,sensitive"
+  },
+  "CVE-2025-1726": {
+    "cvss": 4.3,
+    "description": "There is a SQL injection issue\u00a0in Esri ArcGIS Monitor versions 2023.0 through 2024.x on Windows and Linux that allows a remote, authenticated attacker with low privileges to improperly read limited database schema information by passing crafted queries. While it is possible to enumerate some internal database identifiers, the impact to the confidentiality vector is \"LOW' because any sensitive data returned in a response is encrypted. There is no evidence of impact to the integrity or availability vectors. This issue is addressed in ArcGIS Monitor 2024.1.",
+    "published": "2025-02-26T20:15:13.510",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-21751": {
+    "cvss": 7.8,
+    "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/mlx5: HWS, change error flow on matcher disconnect\n\nCurrently, when firmware failure occurs during matcher disconnect flow,\nthe error flow of the function reconnects the matcher back and returns\nan error, which continues running the calling function and eventually\nfrees the matcher that is being disconnected.\nThis leads to a case where we have a freed matcher on the matchers list,\nwhich in turn leads to use-after-free and eventual crash.\n\nThis patch fixes that by not trying to reconnect the matcher back when\nsome FW command fails during disconnect.\n\nNote that we're dealing here with FW error. We can't overcome this\nproblem. This might lead to bad steering state (e.g. wrong connection\nbetween matchers), and will also lead to resource leakage, as it is\nthe case with any other error handling during resource destruction.\n\nHowever, the goal here is to allow the driver to continue and not crash\nthe machine with use-after-free error.",
+    "published": "2025-02-27T03:15:15.760",
+    "keywords": "command,leak"
+  },
+  "CVE-2025-1686": {
+    "url": "https://github.com/pebbletemplates/pebble/issues/688",
+    "cvss": 6.8,
+    "description": "All versions of the package io.pebbletemplates:pebble are vulnerable to External Control of File Name or Path via the include tag. A high privileged attacker can access sensitive local files by crafting malicious notification templates that leverage this tag to include files like /etc/passwd or /proc/1/environ.\r\r Workaround\r\rThis vulnerability can be mitigated by disabling the include macro in Pebble Templates:\r\rjava\rnew PebbleEngine.Builder()\r            .registerExtensionCustomizer(new DisallowExtensionCustomizerBuilder()\r                    .disallowedTokenParserTags(List.of(\"include\"))\r                    .build())\r            .build();",
+    "published": "2025-02-27T05:15:14.143"
+  },
+  "CVE-2025-1717": {
+    "cvss": 8.1,
+    "description": "The Login Me Now plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.7.2. This is due to insecure authentication based on an arbitrary transient name in the 'AutoLogin::listen()' function. This makes it possible for unauthenticated attackers to log in an existing user on the site, even an administrator. Note: this vulnerability requires using a transient name and value from another software, so the plugin is not inherently vulnerable on it's own.",
+    "published": "2025-02-27T08:15:31.130",
+    "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2025-1282": {
+    "cvss": 8.8,
+    "description": "The Car Dealer Automotive WordPress Theme \u2013 Responsive theme for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the delete_post_photo() and add_car() functions in all versions up to, and including, 1.6.3. This makes it possible for authenticated attackers, with Subscriber-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php). The add_car() function may also make it possible to read arbitrary files.",
+    "published": "2025-02-27T09:15:10.160",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-1739": {
+    "cvss": 7.1,
+    "description": "An Authentication Bypass vulnerability has been found in Trivision Camera NC227WF v5.8.0 from TrivisionSecurity. This vulnerability allows an attacker to retrieve administrator's credentials in cleartext by sending a request against the server using curl with random credentials to \"/en/player/activex_pal.asp\" and successfully authenticating the application.",
+    "published": "2025-02-27T13:15:11.883",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-22952": {
+    "url": "https://github.com/usememos/memos/pull/4428",
     "cvss": "-",
-    "description": "Tenda AC10 V1.0 V15.03.06.23 has a command injection vulnerablility located in the formexeCommand function. The str variable receives the cmdinput parameter from a POST request and is later assigned to the cmd_buf variable, which is directly used in the doSystemCmd function, causing an arbitrary command execution.",
-    "published": "2025-02-20T23:15:12.870",
-    "keywords": "execution,command"
+    "description": "elestio memos v0.23.0 is vulnerable to Server-Side Request Forgery (SSRF) due to insufficient validation of user-supplied URLs, which can be exploited to perform SSRF attacks.",
+    "published": "2025-02-27T20:16:04.983"
+  },
+  "CVE-2025-26264": {
+    "cvss": 8.8,
+    "description": "GeoVision GV-ASWeb with the version 6.1.2.0 or less, contains a Remote Code Execution (RCE) vulnerability within its Notification Settings feature. An authenticated attacker with \"System Settings\" privileges in ASWeb can exploit this flaw to execute arbitrary commands on the server, leading to a full system compromise.",
+    "published": "2025-02-27T22:15:38.947",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2025-26325": {
+    "url": "https://github.com/gongfuxiang/shopxo/issues/86",
+    "cvss": 9.8,
+    "description": "ShopXO 6.4.0 is vulnerable to File Upload in ThemeDataService.php.",
+    "published": "2025-02-27T22:15:39.057"
+  },
+  "CVE-2025-1744": {
+    "url": "https://github.com/radareorg/radare2/pull/23969",
+    "cvss": "-",
+    "description": "Out-of-bounds Write vulnerability in radareorg radare2 allows \n\nheap-based buffer over-read or buffer overflow.This issue affects radare2: before <5.9.9.",
+    "published": "2025-02-28T04:15:09.603"
+  },
+  "CVE-2025-22270": {
+    "cvss": "-",
+    "description": "An attacker with access to the Administration panel, specifically the \"Role Management\"\ntab, can\ninject code by adding a new role in the \"name\" field. It should be noted, however, that the risk of exploiting vulnerability is reduced due to the\nrequired additional error that allows bypassing the Content-Security-Policy policy, which\nmitigates JS code execution while still allowing HTML injection.\n\n\nThis issue affects\u00a0CyberArk Endpoint Privilege Manager in SaaS version 24.7.1. The status of other versions is unknown.\u00a0After multiple attempts to contact the vendor we did not receive any answer.",
+    "published": "2025-02-28T13:15:27.447",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2025-1776": {
+    "cvss": 6.1,
+    "description": "Cross-Site Scripting (XSS) vulnerability in Soteshop, versions prior to 8.3.4, which could allow remote attackers to execute arbitrary code via the \u2018query\u2019 parameter in /app-google-custom-search/searchResults. This vulnerability can be exploited to steal sensitive user data, such as session cookies, or to perform actions on behalf of the user.",
+    "published": "2025-02-28T14:15:35.943",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-25916": {
+    "url": "https://github.com/wuzhicms/wuzhicms/issues/213",
+    "cvss": 5.4,
+    "description": "wuzhicms v4.1.0 has a Cross Site Scripting (XSS) vulnerability in del function in \\coreframe\\app\\member\\admin\\group.php.",
+    "published": "2025-02-28T15:15:13.613"
+  },
+  "CVE-2025-26326": {
+    "cvss": "-",
+    "description": "A vulnerability in the remote connection complements of the NVDA (Nonvisual Desktop Access) 2024.4.1 and 2024.4.2 was identified, which allows an attacker to obtain total control of the remote system when guessing a weak password. The problem occurs because the complements accept any password typed by the user and do not have an additional authentication or checking mechanism by the computer that will be accessed. Tests indicate that over 1,000 systems use easy to guess passwords, many with less than 4 to 6 characters, including common sequences. This enables brute strength or attempt and error attacks on the part of malicious invaders. Vulnerability can be explored by a remote striker who knows or can guess the password used in the connection. As a result, the invader gets complete access to the affected system and can run commands, modify files and compromise user security.",
+    "published": "2025-02-28T15:15:13.743",
+    "keywords": "remote,authentication,command"
+  },
+  "CVE-2025-0159": {
+    "cvss": 9.1,
+    "description": "IBM FlashSystem (IBM Storage Virtualize (8.5.0.0 through 8.5.0.13, 8.5.1.0, 8.5.2.0 through 8.5.2.3, 8.5.3.0 through 8.5.3.1, 8.5.4.0, 8.6.0.0 through 8.6.0.5, 8.6.1.0, 8.6.2.0 through 8.6.2.1, 8.6.3.0, 8.7.0.0 through 8.7.0.2, 8.7.1.0, 8.7.2.0 through 8.7.2.1) could allow a remote attacker to bypass RPCAdapter endpoint authentication by sending a specifically crafted HTTP request.",
+    "published": "2025-02-28T19:15:36.243",
+    "keywords": "remote,authentication,bypass"
+  },
+  "CVE-2025-27410": {
+    "cvss": 6.5,
+    "description": "PwnDoc is a penetration test reporting application. Prior to version 1.2.0, the backup restore functionality is vulnerable to path traversal in the TAR entry's name, allowing an attacker to overwrite any file on the system with their content. By overwriting an included `.js` file and restarting the container, this allows for Remote Code Execution as an administrator. The remote code execution occurs because any user with the `backups:create` and `backups:update` (only administrators by default) is able to overwrite any file on the system. Version 1.2.0 fixes the issue.",
+    "published": "2025-02-28T21:15:27.677",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-27413": {
+    "cvss": 6.5,
+    "description": "PwnDoc is a penetration test reporting application. Prior to version 1.2.0, the backup restore functionality allows an administrator to import raw data into the database, including Path Traversal (`../`) sequences. This is problematic for the template update functionality as it uses the path from the database to write arbitrary content to, potentially overwriting source code to achieve Remote Code Execution. Any user with the `backups:create`, `backups:update` and `templates:update` permissions (only administrators by default) can write arbitrary content to anywhere on the filesystem. By overwriting source code, it is possible to achieve Remote Code Execution. Version 1.2.0 fixes the issue.",
+    "published": "2025-02-28T21:15:27.820",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-27414": {
+    "cvss": "-",
+    "description": "MinIO is a high performance object storage. Starting in RELEASE.2024-06-06T09-36-42Z and prior to \nRELEASE.2025-02-28T09-55-16Z, a bug in evaluating the trust of the SSH key used in an SFTP connection to MinIO allows authentication bypass and unauthorized data access. On a MinIO server with SFTP access configured and using LDAP as an external identity provider, MinIO supports SSH key based authentication for SFTP connections when the user has the `sshPublicKey` attribute set in their LDAP server. The server trusts the client's key only when the public key is the same as the `sshPublicKey` attribute. Due to the bug, when the user has no `sshPublicKey` property in LDAP, the server ends up trusting the key allowing the client to perform any FTP operations allowed by the MinIO access policies associated with the LDAP user (or any of their groups). Three requirements must be met in order to exploit the vulnerability. First, the MinIO server must be configured to allow SFTP access and use LDAP as an external identity provider. Second, the attacker must have knowledge of an LDAP username that does not have the `sshPublicKey` property set. Third, such an LDAP username or one of their groups must also have some MinIO access policy configured. When this bug is successfully exploited, the attacker can perform any FTP operations (i.e. reading, writing, deleting and listing objects) allowed by the access policy associated with the LDAP user account (and their groups). Version 1.2.0 fixes the issue.",
+    "published": "2025-02-28T21:15:27.957",
+    "keywords": "authentication,bypass"
   }
 }
