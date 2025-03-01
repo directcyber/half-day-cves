@@ -1,16 +1,4 @@
 {
-  "CVE-2025-20116": {
-    "cvss": 4.8,
-    "description": "A vulnerability in the web UI of Cisco APIC could allow an authenticated, remote attacker to perform a stored XSS attack on an affected system. To exploit this vulnerability, the attacker must have valid administrative credentials.\r\n\r\nThis vulnerability is due to improper input validation in the web UI. An authenticated attacker could exploit this vulnerability by injecting malicious code into specific pages of the web UI. A successful exploit could allow the attacker to execute arbitrary script code in the context of the web UI or access sensitive, browser-based information.",
-    "published": "2025-02-26T17:15:22.403",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2025-20118": {
-    "cvss": 4.4,
-    "description": "A vulnerability in the implementation of the internal system processes of Cisco APIC could allow an authenticated, local attacker to access sensitive information on an affected device. To exploit this vulnerability, the attacker must have valid administrative credentials.\r\n\r\nThis vulnerability is due to insufficient masking of sensitive information that is displayed through system CLI commands. An attacker could exploit this vulnerability by using reconnaissance techniques at the device CLI. A successful exploit could allow the attacker to access sensitive information on an affected device that could be used for additional attacks.",
-    "published": "2025-02-26T17:15:22.723",
-    "keywords": "command,sensitive"
-  },
   "CVE-2025-1726": {
     "cvss": 4.3,
     "description": "There is a SQL injection issue\u00a0in Esri ArcGIS Monitor versions 2023.0 through 2024.x on Windows and Linux that allows a remote, authenticated attacker with low privileges to improperly read limited database schema information by passing crafted queries. While it is possible to enumerate some internal database identifiers, the impact to the confidentiality vector is \"LOW' because any sensitive data returned in a response is encrypted. There is no evidence of impact to the integrity or availability vectors. This issue is addressed in ArcGIS Monitor 2024.1.",
