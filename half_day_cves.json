@@ -1,10 +1,4 @@
 {
-  "CVE-2025-1726": {
-    "cvss": 4.3,
-    "description": "There is a SQL injection issue\u00a0in Esri ArcGIS Monitor versions 2023.0 through 2024.x on Windows and Linux that allows a remote, authenticated attacker with low privileges to improperly read limited database schema information by passing crafted queries. While it is possible to enumerate some internal database identifiers, the impact to the confidentiality vector is \"LOW' because any sensitive data returned in a response is encrypted. There is no evidence of impact to the integrity or availability vectors. This issue is addressed in ArcGIS Monitor 2024.1.",
-    "published": "2025-02-26T20:15:13.510",
-    "keywords": "remote,sensitive"
-  },
   "CVE-2025-21751": {
     "cvss": 7.8,
     "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/mlx5: HWS, change error flow on matcher disconnect\n\nCurrently, when firmware failure occurs during matcher disconnect flow,\nthe error flow of the function reconnects the matcher back and returns\nan error, which continues running the calling function and eventually\nfrees the matcher that is being disconnected.\nThis leads to a case where we have a freed matcher on the matchers list,\nwhich in turn leads to use-after-free and eventual crash.\n\nThis patch fixes that by not trying to reconnect the matcher back when\nsome FW command fails during disconnect.\n\nNote that we're dealing here with FW error. We can't overcome this\nproblem. This might lead to bad steering state (e.g. wrong connection\nbetween matchers), and will also lead to resource leakage, as it is\nthe case with any other error handling during resource destruction.\n\nHowever, the goal here is to allow the driver to continue and not crash\nthe machine with use-after-free error.",
