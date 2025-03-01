@@ -196,5 +196,11 @@
     "description": "An Improper Neutralization of Escape Sequences vulnerability could allow an Authentication Bypass with a Remote Code Execution (RCE) by a malicious actor with access to UniFi Protect Cameras adjacent network.",
     "published": "2025-03-01T03:15:23.660",
     "keywords": "remote,execution,authentication,bypass"
+  },
+  "CVE-2025-27554": {
+    "cvss": 9.9,
+    "description": "ToDesktop before 2024-10-03, as used by Cursor before 2024-10-03 and other applications, allows remote attackers to execute arbitrary commands on the build server (e.g., read secrets from the desktopify config.prod.json file), and consequently deploy updates to any app, via a postinstall script in package.json. No exploitation occurred.",
+    "published": "2025-03-01T06:15:34.693",
+    "keywords": "remote,command"
   }
 }
