@@ -124,5 +124,11 @@
     "description": "A vulnerability has been found in D-Link DAR-7000 3.2 and classified as critical. This vulnerability affects the function get_ip_addr_details of the file /view/vpn/sxh_vpn/sxh_vpnlic.php of the component HTTP POST Request Handler. The manipulation of the argument ethname leads to command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. This vulnerability only affects products that are no longer supported by the maintainer.",
     "published": "2025-03-01T18:15:34.983",
     "keywords": "remote,command,vpn"
+  },
+  "CVE-2025-1816": {
+    "cvss": 4.3,
+    "description": "A vulnerability classified as problematic has been found in FFmpeg up to 6e26f57f672b05e7b8b052007a83aef99dc81ccb. This affects the function audio_element_obu of the file libavformat/iamf_parse.c of the component IAMF File Handler. The manipulation of the argument num_parameters leads to memory leak. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of the patch is 0526535cd58444dd264e810b2f3348b4d96cff3b. It is recommended to apply a patch to fix this issue.",
+    "published": "2025-03-02T14:15:34.123",
+    "keywords": "remote,leak"
   }
 }
