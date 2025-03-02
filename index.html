@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-03-02T05:12:09.710655
+Updated at UTC 2025-03-02T06:15:22.386282
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -176,18 +176,6 @@ heap-based buffer over-read or buffer overflow.This issue affects radare2: befor
 		
 			
 		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1686">CVE-2025-1686</a></td>
-					<td>6.8</td>
-					<td><a target=_blank href="https://github.com/pebbletemplates/pebble/issues/688">https://github.com/pebbletemplates/pebble/issues/688</a></td>
-					<td class=date>2025-02-27T05:15:14.143</td>
-					<td class=description>All versions of the package io.pebbletemplates:pebble are vulnerable to External Control of File Name or Path via the include tag. A high privileged attacker can access sensitive local files by crafting malicious notification templates that leverage this tag to include files like /etc/passwd or /proc/1/environ. WorkaroundThis vulnerability can be mitigated by disabling the include macro in Pebble Templates:javanew PebbleEngine.Builder()            .registerExtensionCustomizer(new DisallowExtensionCustomizerBuilder()                    .disallowedTokenParserTags(List.of("include"))                    .build())            .build();</td>
-
-
-				</tr>
 			
 		
 
@@ -383,8 +371,6 @@ This issue affects CyberArk Endpoint Privilege Manager in SaaS version 24.7.1. 
 					<td class=date>2025-02-27T08:15:31.130</td>
 					<td class=description>The Login Me Now plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.7.2. This is due to insecure authentication based on an arbitrary transient name in the 'AutoLogin::listen()' function. This makes it possible for unauthenticated attackers to log in an existing user on the site, even an administrator. Note: this vulnerability requires using a transient name and value from another software, so the plugin is not inherently vulnerable on it's own.</td>
 				</tr>
-			
-		
 			
 		
 

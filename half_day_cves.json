@@ -1,10 +1,4 @@
 {
-  "CVE-2025-1686": {
-    "url": "https://github.com/pebbletemplates/pebble/issues/688",
-    "cvss": 6.8,
-    "description": "All versions of the package io.pebbletemplates:pebble are vulnerable to External Control of File Name or Path via the include tag. A high privileged attacker can access sensitive local files by crafting malicious notification templates that leverage this tag to include files like /etc/passwd or /proc/1/environ.\r\r Workaround\r\rThis vulnerability can be mitigated by disabling the include macro in Pebble Templates:\r\rjava\rnew PebbleEngine.Builder()\r            .registerExtensionCustomizer(new DisallowExtensionCustomizerBuilder()\r                    .disallowedTokenParserTags(List.of(\"include\"))\r                    .build())\r            .build();",
-    "published": "2025-02-27T05:15:14.143"
-  },
   "CVE-2025-1717": {
     "cvss": 8.1,
     "description": "The Login Me Now plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.7.2. This is due to insecure authentication based on an arbitrary transient name in the 'AutoLogin::listen()' function. This makes it possible for unauthenticated attackers to log in an existing user on the site, even an administrator. Note: this vulnerability requires using a transient name and value from another software, so the plugin is not inherently vulnerable on it's own.",
