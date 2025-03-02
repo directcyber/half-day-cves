@@ -1,10 +1,4 @@
 {
-  "CVE-2025-1282": {
-    "cvss": 8.8,
-    "description": "The Car Dealer Automotive WordPress Theme \u2013 Responsive theme for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the delete_post_photo() and add_car() functions in all versions up to, and including, 1.6.3. This makes it possible for authenticated attackers, with Subscriber-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php). The add_car() function may also make it possible to read arbitrary files.",
-    "published": "2025-02-27T09:15:10.160",
-    "keywords": "remote,execution"
-  },
   "CVE-2025-1739": {
     "cvss": 7.1,
     "description": "An Authentication Bypass vulnerability has been found in Trivision Camera NC227WF v5.8.0 from TrivisionSecurity. This vulnerability allows an attacker to retrieve administrator's credentials in cleartext by sending a request against the server using curl with random credentials to \"/en/player/activex_pal.asp\" and successfully authenticating the application.",
