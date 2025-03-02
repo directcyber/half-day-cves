@@ -1,10 +1,4 @@
 {
-  "CVE-2025-1717": {
-    "cvss": 8.1,
-    "description": "The Login Me Now plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.7.2. This is due to insecure authentication based on an arbitrary transient name in the 'AutoLogin::listen()' function. This makes it possible for unauthenticated attackers to log in an existing user on the site, even an administrator. Note: this vulnerability requires using a transient name and value from another software, so the plugin is not inherently vulnerable on it's own.",
-    "published": "2025-02-27T08:15:31.130",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
   "CVE-2025-1282": {
     "cvss": 8.8,
     "description": "The Car Dealer Automotive WordPress Theme \u2013 Responsive theme for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the delete_post_photo() and add_car() functions in all versions up to, and including, 1.6.3. This makes it possible for authenticated attackers, with Subscriber-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php). The add_car() function may also make it possible to read arbitrary files.",
