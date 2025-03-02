@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-03-02T02:22:04.507396
+Updated at UTC 2025-03-02T03:21:12.034402
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -188,8 +188,6 @@ heap-based buffer over-read or buffer overflow.This issue affects radare2: befor
 
 
 				</tr>
-			
-		
 			
 		
 
@@ -387,36 +385,6 @@ This issue affects CyberArk Endpoint Privilege Manager in SaaS version 24.7.1. 
 				</tr>
 			
 		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21751">CVE-2025-21751</a></td>
-					<td>7.8</td>
-					<td>command,leak</td>
-					<td class=date>2025-02-27T03:15:15.760</td>
-					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
-
-net/mlx5: HWS, change error flow on matcher disconnect
-
-Currently, when firmware failure occurs during matcher disconnect flow,
-the error flow of the function reconnects the matcher back and returns
-an error, which continues running the calling function and eventually
-frees the matcher that is being disconnected.
-This leads to a case where we have a freed matcher on the matchers list,
-which in turn leads to use-after-free and eventual crash.
-
-This patch fixes that by not trying to reconnect the matcher back when
-some FW command fails during disconnect.
-
-Note that we're dealing here with FW error. We can't overcome this
-problem. This might lead to bad steering state (e.g. wrong connection
-between matchers), and will also lead to resource leakage, as it is
-the case with any other error handling during resource destruction.
-
-However, the goal here is to allow the driver to continue and not crash
-the machine with use-after-free error.</td>
-				</tr>
 			
 		
 
