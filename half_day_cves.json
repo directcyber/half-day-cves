@@ -82,5 +82,11 @@
     "description": "The WP-Recall \u2013 Registration, Profile, Commerce & More plugin for WordPress is vulnerable to SQL Injection via the 'databeat' parameter in all versions up to, and including, 16.26.10 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
     "published": "2025-03-08T10:15:11.003",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-2123": {
+    "url": "https://github.com/geshi/geshi-1.0/issues/159#issue-2880408694",
+    "cvss": 3.5,
+    "description": "A vulnerability, which was classified as problematic, has been found in GeSHi up to 1.0.9.1. Affected by this issue is the function get_var of the file /contrib/cssgen.php of the component CSS Handler. The manipulation of the argument default-styles/keywords-1/keywords-2/keywords-3/keywords-4/comments leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-09T15:15:36.413"
   }
 }
