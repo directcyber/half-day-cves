@@ -1,128 +1,86 @@
 {
-  "CVE-2025-1744": {
-    "url": "https://github.com/radareorg/radare2/pull/23969",
-    "cvss": "-",
-    "description": "Out-of-bounds Write vulnerability in radareorg radare2 allows \n\nheap-based buffer over-read or buffer overflow.This issue affects radare2: before <5.9.9.",
-    "published": "2025-02-28T04:15:09.603"
-  },
-  "CVE-2025-22270": {
-    "cvss": "-",
-    "description": "An attacker with access to the Administration panel, specifically the \"Role Management\"\ntab, can\ninject code by adding a new role in the \"name\" field. It should be noted, however, that the risk of exploiting vulnerability is reduced due to the\nrequired additional error that allows bypassing the Content-Security-Policy policy, which\nmitigates JS code execution while still allowing HTML injection.\n\n\nThis issue affects\u00a0CyberArk Endpoint Privilege Manager in SaaS version 24.7.1. The status of other versions is unknown.\u00a0After multiple attempts to contact the vendor we did not receive any answer.",
-    "published": "2025-02-28T13:15:27.447",
-    "keywords": "execution,bypass"
-  },
-  "CVE-2025-1776": {
-    "cvss": 6.1,
-    "description": "Cross-Site Scripting (XSS) vulnerability in Soteshop, versions prior to 8.3.4, which could allow remote attackers to execute arbitrary code via the \u2018query\u2019 parameter in /app-google-custom-search/searchResults. This vulnerability can be exploited to steal sensitive user data, such as session cookies, or to perform actions on behalf of the user.",
-    "published": "2025-02-28T14:15:35.943",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2025-25916": {
-    "url": "https://github.com/wuzhicms/wuzhicms/issues/213",
-    "cvss": 5.4,
-    "description": "wuzhicms v4.1.0 has a Cross Site Scripting (XSS) vulnerability in del function in \\coreframe\\app\\member\\admin\\group.php.",
-    "published": "2025-02-28T15:15:13.613"
-  },
-  "CVE-2025-26326": {
-    "cvss": "-",
-    "description": "A vulnerability in the remote connection complements of the NVDA (Nonvisual Desktop Access) 2024.4.1 and 2024.4.2 was identified, which allows an attacker to obtain total control of the remote system when guessing a weak password. The problem occurs because the complements accept any password typed by the user and do not have an additional authentication or checking mechanism by the computer that will be accessed. Tests indicate that over 1,000 systems use easy to guess passwords, many with less than 4 to 6 characters, including common sequences. This enables brute strength or attempt and error attacks on the part of malicious invaders. Vulnerability can be explored by a remote striker who knows or can guess the password used in the connection. As a result, the invader gets complete access to the affected system and can run commands, modify files and compromise user security.",
-    "published": "2025-02-28T15:15:13.743",
-    "keywords": "remote,authentication,command"
-  },
-  "CVE-2025-0159": {
-    "cvss": 9.1,
-    "description": "IBM FlashSystem (IBM Storage Virtualize (8.5.0.0 through 8.5.0.13, 8.5.1.0, 8.5.2.0 through 8.5.2.3, 8.5.3.0 through 8.5.3.1, 8.5.4.0, 8.6.0.0 through 8.6.0.5, 8.6.1.0, 8.6.2.0 through 8.6.2.1, 8.6.3.0, 8.7.0.0 through 8.7.0.2, 8.7.1.0, 8.7.2.0 through 8.7.2.1) could allow a remote attacker to bypass RPCAdapter endpoint authentication by sending a specifically crafted HTTP request.",
-    "published": "2025-02-28T19:15:36.243",
-    "keywords": "remote,authentication,bypass"
-  },
-  "CVE-2025-27410": {
-    "cvss": 6.5,
-    "description": "PwnDoc is a penetration test reporting application. Prior to version 1.2.0, the backup restore functionality is vulnerable to path traversal in the TAR entry's name, allowing an attacker to overwrite any file on the system with their content. By overwriting an included `.js` file and restarting the container, this allows for Remote Code Execution as an administrator. The remote code execution occurs because any user with the `backups:create` and `backups:update` (only administrators by default) is able to overwrite any file on the system. Version 1.2.0 fixes the issue.",
-    "published": "2025-02-28T21:15:27.677",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-27413": {
-    "cvss": 6.5,
-    "description": "PwnDoc is a penetration test reporting application. Prior to version 1.2.0, the backup restore functionality allows an administrator to import raw data into the database, including Path Traversal (`../`) sequences. This is problematic for the template update functionality as it uses the path from the database to write arbitrary content to, potentially overwriting source code to achieve Remote Code Execution. Any user with the `backups:create`, `backups:update` and `templates:update` permissions (only administrators by default) can write arbitrary content to anywhere on the filesystem. By overwriting source code, it is possible to achieve Remote Code Execution. Version 1.2.0 fixes the issue.",
-    "published": "2025-02-28T21:15:27.820",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-27414": {
-    "cvss": "-",
-    "description": "MinIO is a high performance object storage. Starting in RELEASE.2024-06-06T09-36-42Z and prior to \nRELEASE.2025-02-28T09-55-16Z, a bug in evaluating the trust of the SSH key used in an SFTP connection to MinIO allows authentication bypass and unauthorized data access. On a MinIO server with SFTP access configured and using LDAP as an external identity provider, MinIO supports SSH key based authentication for SFTP connections when the user has the `sshPublicKey` attribute set in their LDAP server. The server trusts the client's key only when the public key is the same as the `sshPublicKey` attribute. Due to the bug, when the user has no `sshPublicKey` property in LDAP, the server ends up trusting the key allowing the client to perform any FTP operations allowed by the MinIO access policies associated with the LDAP user (or any of their groups). Three requirements must be met in order to exploit the vulnerability. First, the MinIO server must be configured to allow SFTP access and use LDAP as an external identity provider. Second, the attacker must have knowledge of an LDAP username that does not have the `sshPublicKey` property set. Third, such an LDAP username or one of their groups must also have some MinIO access policy configured. When this bug is successfully exploited, the attacker can perform any FTP operations (i.e. reading, writing, deleting and listing objects) allowed by the access policy associated with the LDAP user account (and their groups). Version 1.2.0 fixes the issue.",
-    "published": "2025-02-28T21:15:27.957",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2025-25723": {
-    "url": "https://github.com/gpac/gpac/issues/3089",
-    "cvss": "-",
-    "description": "Buffer Overflow vulnerability in GPAC version 2.5 allows a local attacker to execute arbitrary code.",
-    "published": "2025-02-28T23:15:11.280"
-  },
-  "CVE-2025-23115": {
-    "cvss": 9.0,
-    "description": "A Use After Free vulnerability on UniFi Protect Cameras could allow a Remote Code Execution (RCE) by a malicious actor with access to UniFi Protect Cameras management network.",
-    "published": "2025-03-01T03:15:23.263",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-23116": {
-    "cvss": 9.6,
-    "description": "An Authentication Bypass vulnerability on UniFi Protect Application with Auto-Adopt Bridge Devices enabled could allow a malicious actor with access to UniFi Protect Cameras adjacent network to take control of UniFi Protect Cameras.",
-    "published": "2025-03-01T03:15:23.370",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2025-23119": {
-    "cvss": 7.5,
-    "description": "An Improper Neutralization of Escape Sequences vulnerability could allow an Authentication Bypass with a Remote Code Execution (RCE) by a malicious actor with access to UniFi Protect Cameras adjacent network.",
-    "published": "2025-03-01T03:15:23.660",
-    "keywords": "remote,execution,authentication,bypass"
-  },
-  "CVE-2025-27554": {
-    "cvss": 9.9,
-    "description": "ToDesktop before 2024-10-03, as used by Cursor before 2024-10-03 and other applications, allows remote attackers to execute arbitrary commands on the build server (e.g., read secrets from the desktopify config.prod.json file), and consequently deploy updates to any app, via a postinstall script in package.json. No exploitation occurred.",
-    "published": "2025-03-01T06:15:34.693",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-1638": {
-    "cvss": 9.8,
-    "description": "The Alloggio Membership plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 1.0.2. This is due to the plugin not properly validating a user's identity through the alloggio_membership_init_rest_api_facebook_login and alloggio_membership_init_rest_api_google_login functions. This makes it possible for unauthenticated attackers to log in as any user, including administrators, without knowing a password.",
-    "published": "2025-03-01T08:15:34.167",
+  "CVE-2025-0749": {
+    "cvss": 8.1,
+    "description": "The Homey theme for WordPress is vulnerable to authentication bypass in versions up to, and including, 2.4.3. This is due to the 'verification_id' value being set to empty, and the not empty check is missing in the dashboard user profile page. This makes it possible for unauthenticated attackers to log in to the first verified user.",
+    "published": "2025-03-07T02:15:37.820",
     "keywords": "unauthenticated,authentication,bypass"
   },
-  "CVE-2025-1786": {
-    "url": "https://github.com/rizinorg/rizin/issues/4893",
-    "cvss": 5.3,
-    "description": "A vulnerability was found in rizinorg rizin up to 0.7.4. It has been rated as critical. This issue affects the function msf_stream_directory_free in the library /librz/bin/pdb/pdb.c. The manipulation of the argument -P leads to buffer overflow. Local access is required to approach this attack. The exploit has been disclosed to the public and may be used. Upgrading to version 0.8.0 is able to address this issue. It is recommended to upgrade the affected component.",
-    "published": "2025-03-01T10:15:11.683"
-  },
-  "CVE-2025-1788": {
-    "url": "https://github.com/rizinorg/rizin/pull/4762",
-    "cvss": 5.3,
-    "description": "A vulnerability, which was classified as critical, was found in rizinorg rizin up to 0.8.0. This affects the function rz_utf8_encode in the library /librz/util/utf8.c. The manipulation leads to heap-based buffer overflow. An attack has to be approached locally. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue.",
-    "published": "2025-03-01T13:15:11.797"
-  },
-  "CVE-2025-1800": {
-    "cvss": 6.3,
-    "description": "A vulnerability has been found in D-Link DAR-7000 3.2 and classified as critical. This vulnerability affects the function get_ip_addr_details of the file /view/vpn/sxh_vpn/sxh_vpnlic.php of the component HTTP POST Request Handler. The manipulation of the argument ethname leads to command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. This vulnerability only affects products that are no longer supported by the maintainer.",
-    "published": "2025-03-01T18:15:34.983",
-    "keywords": "remote,command,vpn"
-  },
-  "CVE-2025-1816": {
+  "CVE-2025-27795": {
+    "url": "https://github.com/libjxl/libjxl/issues/3793#issuecomment-2334843280",
     "cvss": 4.3,
-    "description": "A vulnerability classified as problematic has been found in FFmpeg up to 6e26f57f672b05e7b8b052007a83aef99dc81ccb. This affects the function audio_element_obu of the file libavformat/iamf_parse.c of the component IAMF File Handler. The manipulation of the argument num_parameters leads to memory leak. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of the patch is 0526535cd58444dd264e810b2f3348b4d96cff3b. It is recommended to apply a patch to fix this issue.",
-    "published": "2025-03-02T14:15:34.123",
-    "keywords": "remote,leak"
+    "description": "ReadJXLImage in JXL in GraphicsMagick before 1.3.46 lacks image dimension resource limits.",
+    "published": "2025-03-07T06:15:33.273"
   },
-  "CVE-2025-1819": {
+  "CVE-2025-1475": {
+    "cvss": 9.8,
+    "description": "The WPCOM Member plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 1.7.5. This is due to insufficient verification on the 'user_phone' parameter when logging in. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if SMS login is enabled.",
+    "published": "2025-03-07T07:15:23.343",
+    "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2025-26331": {
+    "cvss": 7.8,
+    "description": "Dell ThinOS 2411 and prior, contains an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to arbitrary code execution.",
+    "published": "2025-03-07T08:15:43.040",
+    "keywords": "execution,command"
+  },
+  "CVE-2025-27152": {
+    "url": "https://github.com/axios/axios/issues/6463",
+    "cvss": "-",
+    "description": "axios is a promise based HTTP client for the browser and node.js. The issue occurs when passing absolute URLs rather than protocol-relative URLs to axios. Even if \u2060baseURL is set, axios sends the request to the specified absolute URL, potentially causing SSRF and credential leakage. This issue impacts both server-side and client-side usage of axios. This issue is fixed in 1.8.2.",
+    "published": "2025-03-07T16:15:38.773"
+  },
+  "CVE-2025-27518": {
+    "url": "https://github.com/truefoundry/cognita/pull/424",
+    "cvss": "-",
+    "description": "Cognita is a RAG (Retrieval Augmented Generation) Framework for building modular, open source applications for production by TrueFoundry. An insecure CORS configuration in the Cognita backend server allows arbitrary websites to send cross site requests to the application. This vulnerability is fixed in commit 75079c3d3cf376381489b9a82ee46c69024e1a15.",
+    "published": "2025-03-07T16:15:39.187"
+  },
+  "CVE-2025-27519": {
+    "cvss": "-",
+    "description": "Cognita is a RAG (Retrieval Augmented Generation) Framework for building modular, open source applications for production by TrueFoundry. A path traversal issue exists at /v1/internal/upload-to-local-directory which is enabled when the Local env variable is set to true, such as when Cognita is setup using Docker. Because the docker environment sets up the backend uvicorn server with auto reload enabled, when an attacker overwrites the /app/backend/__init__.py file, the file will automatically be reloaded and executed. This allows an attacker to get remote code execution in the context of the Docker container. This vulnerability is fixed in commit a78bd065e05a1b30a53a3386cc02e08c317d2243.",
+    "published": "2025-03-07T16:15:39.623",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-27597": {
+    "cvss": "-",
+    "description": "Vue I18n is the internationalization plugin for Vue.js. @intlify/message-resolver and @intlify/vue-i18n-core are vulnerable to Prototype Pollution through the entry function: handleFlatJson. An attacker can supply a payload with Object.prototype setter to introduce or modify properties within the global prototype chain, causing denial of service (DoS) a the minimum consequence. Moreover, the consequences of this vulnerability can escalate to other injection-based attacks, depending on how the library integrates within the application. For instance, if the polluted property propagates to sensitive Node.js APIs (e.g., exec, eval), it could enable an attacker to execute arbitrary commands within the application's context.",
+    "published": "2025-03-07T16:15:39.893",
+    "keywords": "command,sensitive"
+  },
+  "CVE-2025-0162": {
+    "cvss": 7.1,
+    "description": "IBM Aspera Shares 1.9.9 through 1.10.0 PL7 is vulnerable to an XML external entity injection (XXE) attack when processing XML data. A remote authenticated attacker could exploit this vulnerability to expose sensitive information or consume memory resources.",
+    "published": "2025-03-07T17:15:21.110",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-2024": {
+    "cvss": 7.8,
+    "description": "Trimble SketchUp SKP File Parsing Uninitialized Variable Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Trimble SketchUp. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of SKP files. The issue results from the lack of proper initialization of memory prior to accessing it. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25210.",
+    "published": "2025-03-07T20:15:39.023",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-2094": {
     "cvss": 6.3,
-    "description": "A vulnerability, which was classified as critical, was found in Tenda AC7 1200M 15.03.06.44. Affected is the function TendaTelnet of the file /goform/telnet. The manipulation of the argument lan_ip leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-03-02T17:15:11.483",
+    "description": "A vulnerability was found in TOTOLINK EX1800T 9.1.0cu.2112_B20220316. It has been rated as critical. Affected by this issue is the function setWiFiExtenderConfig of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument apcliKey/key leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-07T22:15:38.850",
     "keywords": "remote,command"
   },
-  "CVE-2025-1829": {
+  "CVE-2025-2095": {
     "cvss": 6.3,
-    "description": "A vulnerability was found in TOTOLINK X18 9.1.0cu.2024_B20220329. It has been declared as critical. This vulnerability affects the function setMtknatCfg of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument mtkhnatEnable leads to os command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-03-02T19:15:10.723",
+    "description": "A vulnerability classified as critical has been found in TOTOLINK EX1800T 9.1.0cu.2112_B20220316. This affects the function setDmzCfg of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument ip leads to os command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-07T22:15:39.023",
     "keywords": "remote,command"
+  },
+  "CVE-2025-2096": {
+    "cvss": 6.3,
+    "description": "A vulnerability classified as critical was found in TOTOLINK EX1800T 9.1.0cu.2112_B20220316. This vulnerability affects the function setRebootScheCfg of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument mode/week/minute/recHour leads to os command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-07T22:15:39.187",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-1323": {
+    "cvss": 7.5,
+    "description": "The WP-Recall \u2013 Registration, Profile, Commerce & More plugin for WordPress is vulnerable to SQL Injection via the 'databeat' parameter in all versions up to, and including, 16.26.10 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2025-03-08T10:15:11.003",
+    "keywords": "unauthenticated,sensitive"
   }
 }
