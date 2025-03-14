@@ -1,34 +1,4 @@
 {
-  "CVE-2025-24431": {
-    "cvss": 5.5,
-    "description": "Acrobat Reader versions 24.001.30225, 20.005.30748, 25.001.20428 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2025-03-11T18:15:30.277",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2025-24448": {
-    "cvss": 5.5,
-    "description": "Illustrator versions 29.2.1, 28.7.4 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2025-03-11T18:15:31.543",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2025-24449": {
-    "cvss": 5.5,
-    "description": "Illustrator versions 29.2.1, 28.7.4 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2025-03-11T18:15:31.700",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2025-27163": {
-    "cvss": 5.5,
-    "description": "Acrobat Reader versions 24.001.30225, 20.005.30748, 25.001.20428 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2025-03-11T18:15:34.293",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2025-27164": {
-    "cvss": 5.5,
-    "description": "Acrobat Reader versions 24.001.30225, 20.005.30748, 25.001.20428 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
-    "published": "2025-03-11T18:15:34.437",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2025-0900": {
     "cvss": 3.3,
     "description": "PDF-XChange Editor PDF File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of PDF files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25368.",
@@ -364,5 +334,23 @@
     "description": "xml-crypto is an XML digital signature and encryption library for Node.js. An attacker may be able to exploit a vulnerability in versions prior to 6.0.1, 3.2.1, and 2.1.6 to bypass authentication or authorization mechanisms in systems that rely on xml-crypto for verifying signed XML documents. The vulnerability allows an attacker to modify a valid signed XML message in a way that still passes signature verification checks. For example, it could be used to alter critical identity or access control attributes, enabling an attacker with a valid account to escalate privileges or impersonate another user. Users of versions 6.0.0 and prior should upgrade to version 6.0.1 to receive a fix. Those who are still using v2.x or v3.x should upgrade to patched versions 2.1.6 or 3.2.1, respectively.",
     "published": "2025-03-14T17:15:52.870",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2025-29775": {
+    "cvss": "-",
+    "description": "xml-crypto is an XML digital signature and encryption library for Node.js. An attacker may be able to exploit a vulnerability in versions prior to 6.0.1, 3.2.1, and 2.1.6 to bypass authentication or authorization mechanisms in systems that rely on xml-crypto for verifying signed XML documents. The vulnerability allows an attacker to modify a valid signed XML message in a way that still passes signature verification checks. For example, it could be used to alter critical identity or access control attributes, enabling an attacker to escalate privileges or impersonate another user. Users of versions 6.0.0 and prior should upgrade to version 6.0.1 to receive a fix. Those who are still using v2.x or v3.x should upgrade to patched versions 2.1.6 or 3.2.1, respectively.",
+    "published": "2025-03-14T18:15:32.180",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-29779": {
+    "cvss": "-",
+    "description": "Post-Quantum Secure Feldman's Verifiable Secret Sharing provides a Python implementation of Feldman's Verifiable Secret Sharing (VSS) scheme. In versions 0.7.6b0 and prior, the `secure_redundant_execution` function in feldman_vss.py attempts to mitigate fault injection attacks by executing a function multiple times and comparing results. However, several critical weaknesses exist. Python's execution environment cannot guarantee true isolation between redundant executions, the constant-time comparison implementation in Python is subject to timing variations, the randomized execution order and timing provide insufficient protection against sophisticated fault attacks, and the error handling may leak timing information about partial execution results. These limitations make the protection ineffective against targeted fault injection attacks, especially from attackers with physical access to the hardware. A successful fault injection attack could allow an attacker to bypass the redundancy check mechanisms, extract secret polynomial coefficients during share generation or verification, force the acceptance of invalid shares during verification, and/or manipulate the commitment verification process to accept fraudulent commitments. This undermines the core security guarantees of the Verifiable Secret Sharing scheme. As of time of publication, no patched versions of Post-Quantum Secure Feldman's Verifiable Secret Sharing exist, but other mitigations are available. Long-term remediation requires reimplementing the security-critical functions in a lower-level language like Rust. Short-term mitigations include deploying the software in environments with physical security controls, increasing the redundancy count (from 5 to a higher number) by modifying the source code, adding external verification of cryptographic operations when possible, considering using hardware security modules (HSMs) for key operations.",
+    "published": "2025-03-14T18:15:32.330",
+    "keywords": "execution,bypass,leak"
+  },
+  "CVE-2025-29780": {
+    "cvss": "-",
+    "description": "Post-Quantum Secure Feldman's Verifiable Secret Sharing provides a Python implementation of Feldman's Verifiable Secret Sharing (VSS) scheme. In versions 0.7.6b0 and prior, the `feldman_vss` library contains timing side-channel vulnerabilities in its matrix operations, specifically within the `_find_secure_pivot` function and potentially other parts of `_secure_matrix_solve`. These vulnerabilities are due to Python's execution model, which does not guarantee constant-time execution. An attacker with the ability to measure the execution time of these functions (e.g., through repeated calls with carefully crafted inputs) could potentially recover secret information used in the Verifiable Secret Sharing (VSS) scheme. The `_find_secure_pivot` function, used during Gaussian elimination in `_secure_matrix_solve`, attempts to find a non-zero pivot element. However, the conditional statement `if matrix[row][col] != 0 and row_random < min_value:` has execution time that depends on the value of `matrix[row][col]`. This timing difference can be exploited by an attacker. The `constant_time_compare` function in this file also does not provide a constant-time guarantee. The Python implementation of matrix operations in the _find_secure_pivot and _secure_matrix_solve functions cannot guarantee constant-time execution, potentially leaking information about secret polynomial coefficients. An attacker with the ability to make precise timing measurements of these operations could potentially extract secret information through statistical analysis of execution times, though practical exploitation would require significant expertise and controlled execution environments. Successful exploitation of these timing side-channels could allow an attacker to recover secret keys or other sensitive information protected by the VSS scheme. This could lead to a complete compromise of the shared secret. As of time of publication, no patched versions of Post-Quantum Secure Feldman's Verifiable Secret Sharing exist, but other mitigations are available. As acknowledged in the library's documentation, these vulnerabilities cannot be adequately addressed in pure Python. In the short term, consider using this library only in environments where timing measurements by attackers are infeasible. In the medium term, implement your own wrappers around critical operations using constant-time libraries in languages like Rust, Go, or C. In the long term, wait for the planned Rust implementation mentioned in the library documentation that will properly address these issues.",
+    "published": "2025-03-14T18:15:32.503",
+    "keywords": "execution,sensitive,leak"
   }
 }
