@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-03-15T16:12:24.949603
+Updated at UTC 2025-03-15T17:09:24.735767
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -158,26 +158,6 @@ Updated at UTC 2025-03-15T16:12:24.949603
 
 
 				</tr>
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
 			
 		
 
@@ -520,126 +500,6 @@ This issue does not apply to the GlobalProtect app on other (non-Windows) platfo
 				</tr>
 			
 		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25568">CVE-2025-25568</a></td>
-					<td>-</td>
-					<td>command,vpn</td>
-					<td class=date>2025-03-12T16:15:22.930</td>
-					<td class=description>SoftEtherVPN 5.02.5187 is vulnerable to Use after Free in the Command.c file via the CheckNetworkAcceptThread function.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25566">CVE-2025-25566</a></td>
-					<td>5.6</td>
-					<td>vpn,leak</td>
-					<td class=date>2025-03-12T16:15:22.750</td>
-					<td class=description>Memory Leak vulnerability in SoftEtherVPN 5.02.5187 allows an attacker to cause a denial of service via the UnixMemoryAlloc function.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25565">CVE-2025-25565</a></td>
-					<td>-</td>
-					<td>command,vpn</td>
-					<td class=date>2025-03-12T16:15:22.660</td>
-					<td class=description>SoftEther VPN 5.02.5187 is vulnerable to Buffer Overflow in the Command.c file via the PtMakeCert and PtMakeCert2048 functions.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20209">CVE-2025-20209</a></td>
-					<td>7.5</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2025-03-12T16:15:22.507</td>
-					<td class=description>A vulnerability in the Internet Key Exchange version 2 (IKEv2) function of Cisco IOS XR Software could allow an unauthenticated, remote attacker to prevent an affected device from processing any control plane UDP packets.&nbsp;
-
-This vulnerability is due to improper handling of malformed IKEv2 packets. An attacker could exploit this vulnerability by sending malformed IKEv2 packets to an affected device. A successful exploit could allow the attacker to prevent the affected device from processing any control plane UDP packets, resulting in a denial of service (DoS) condition.
-Cisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20146">CVE-2025-20146</a></td>
-					<td>8.6</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2025-03-12T16:15:22.197</td>
-					<td class=description>A vulnerability in the Layer 3 multicast feature of Cisco IOS XR Software for Cisco ASR 9000 Series Aggregation Services Routers, ASR 9902 Compact High-Performance Routers, and ASR 9903 Compact High-Performance Routers could allow an unauthenticated, remote attacker to cause a line card to reset, resulting in a denial of service (DoS) condition.
-
-This vulnerability is due to the incorrect handling of malformed IPv4 multicast packets that are received on line cards where the interface has either an IPv4 access control list (ACL) or a QoS policy applied. An attacker could exploit this vulnerability by sending crafted IPv4 multicast packets through an affected device. A successful exploit could allow the attacker to cause line card exceptions or a hard reset. Traffic over that line card would be lost while the line card reloads.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20145">CVE-2025-20145</a></td>
-					<td>5.8</td>
-					<td>remote,unauthenticated,bypass</td>
-					<td class=date>2025-03-12T16:15:22.040</td>
-					<td class=description>A vulnerability in the access control list (ACL) processing in the egress direction of Cisco IOS XR Software could allow an unauthenticated, remote attacker to bypass a configured ACL.
-
-This vulnerability exists because certain packets are handled incorrectly when they are received on an ingress interface on one line card and destined out of an egress interface on another line card where the egress ACL is configured. An attacker could exploit this vulnerability by attempting to send traffic through an affected device. A successful exploit could allow the attacker to bypass an egress ACL on the affected device.
-For more information about this vulnerability, see the  section of this advisory.
-Cisco has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20144">CVE-2025-20144</a></td>
-					<td>4.0</td>
-					<td>remote,unauthenticated,bypass</td>
-					<td class=date>2025-03-12T16:15:21.890</td>
-					<td class=description>A vulnerability in the hybrid access control list (ACL) processing of IPv4 packets in Cisco IOS XR Software could allow an unauthenticated, remote attacker to bypass a configured ACL.
-
-This vulnerability is due to incorrect handling of packets when a specific configuration of the hybrid ACL exists. An attacker could exploit this vulnerability by attempting to send traffic through an affected device. A successful exploit could allow the attacker to bypass a configured ACL on the affected device.
-For more information, see the  section of this advisory.
-Cisco has released software updates that address this vulnerability. There are workarounds that address this vulnerability.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20142">CVE-2025-20142</a></td>
-					<td>8.6</td>
-					<td>remote,unauthenticated,vpn</td>
-					<td class=date>2025-03-12T16:15:21.573</td>
-					<td class=description>A vulnerability in the IPv4 access control list (ACL) feature and quality of service (QoS) policy feature of Cisco IOS XR Software for Cisco ASR 9000 Series Aggregation Services Routers, ASR 9902 Compact High-Performance Routers, and ASR 9903 Compact High-Performance Routers could allow an unauthenticated, remote attacker to cause a line card to reset, resulting in a denial of service (DoS) condition.
-
-This vulnerability is due to the incorrect handling of malformed IPv4 packets that are received on line cards where the interface has either an IPv4 ACL or QoS policy applied. An attacker could exploit this vulnerability by sending crafted IPv4 packets through an affected device. A successful exploit could allow the attacker to cause network processor errors, resulting in a reset or shutdown of the network process. Traffic over that line card would be lost while the line card reloads.
-Note: This vulnerability has predominantly been observed in Layer 2 VPN (L2VPN) environments where an IPv4 ACL or QoS policy has been applied to the bridge virtual interface. Layer 3 configurations where the interface has either an IPv4 ACL or QoS policy applied are also affected, though the vulnerability has not been observed.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20115">CVE-2025-20115</a></td>
-					<td>8.6</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2025-03-12T16:15:21.090</td>
-					<td class=description>A vulnerability in confederation implementation for the Border Gateway Protocol (BGP)&nbsp;in Cisco IOS XR Software could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition.
-
-This vulnerability is due to a memory corruption that occurs when a BGP update is created with an AS_CONFED_SEQUENCE attribute that has 255 autonomous system numbers (AS numbers). An attacker could exploit this vulnerability by sending a crafted BGP update message, or the network could be designed in such a manner that the AS_CONFED_SEQUENCE attribute grows to 255 AS numbers or more. A successful exploit could allow the attacker to cause memory corruption, which may cause the BGP process to restart, resulting in a DoS condition. To exploit this vulnerability, an attacker must control a BGP confederation speaker within the same autonomous system as the victim, or the network must be designed in such a manner that the AS_CONFED_SEQUENCE attribute grows to 255 AS numbers or more.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0813">CVE-2025-0813</a></td>
-					<td>6.8</td>
-					<td>authentication,bypass</td>
-					<td class=date>2025-03-12T16:15:20.183</td>
-					<td class=description>CWE-287: Improper Authentication vulnerability exists that could cause an Authentication Bypass when an
-unauthorized user without permission rights has physical access to the EPAS-UI computer and is able to
-reboot the workstation and interrupt the normal boot process.</td>
-				</tr>
 			
 		
 
