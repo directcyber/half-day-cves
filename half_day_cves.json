@@ -263,16 +263,16 @@
     "published": "2025-03-15T05:15:47.253",
     "keywords": "execution,unauthenticated,sensitive,bypass"
   },
-  "CVE-2025-30066": {
-    "url": "https://github.com/tj-actions/changed-files/issues/2463",
-    "cvss": 8.6,
-    "description": "tj-actions changed-files through 45.0.7 allows remote attackers to discover secrets by reading actions logs. (The tags v1 through v45.0.7 were not originally affected, but were modified by a threat actor to point at commit 0e58ed8, which contains the malicious updateFeatures code.)",
-    "published": "2025-03-15T06:15:12.193"
-  },
   "CVE-2025-2157": {
     "cvss": 3.3,
     "description": "A flaw was found in Foreman/Red Hat Satellite. Improper file permissions allow low-privileged OS users to monitor and access temporary files under /var/tmp, exposing sensitive command outputs, such as /etc/shadow. This issue can lead to information disclosure and privilege escalation if exploited effectively.",
     "published": "2025-03-15T07:15:34.930",
     "keywords": "command,sensitive"
+  },
+  "CVE-2025-2025": {
+    "cvss": 6.5,
+    "description": "The GiveWP \u2013 Donation Plugin and Fundraising Platform plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the give_reports_earnings() function in all versions up to, and including, 3.22.0. This makes it possible for unauthenticated attackers to disclose sensitive information included within earnings reports.",
+    "published": "2025-03-15T12:15:12.207",
+    "keywords": "unauthenticated,sensitive"
   }
 }
