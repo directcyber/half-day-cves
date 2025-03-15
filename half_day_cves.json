@@ -262,5 +262,11 @@
     "description": "The Traveler theme for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 3.1.8 via the 'hotel_alone_load_more_post' function 'style' parameter. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where php file type can be uploaded and included.",
     "published": "2025-03-15T05:15:47.253",
     "keywords": "execution,unauthenticated,sensitive,bypass"
+  },
+  "CVE-2025-30066": {
+    "url": "https://github.com/tj-actions/changed-files/issues/2463",
+    "cvss": 8.6,
+    "description": "tj-actions changed-files through 45.0.7 allows remote attackers to discover secrets by reading actions logs. (The tags v1 through v45.0.7 were not originally affected, but were modified by a threat actor to point at commit 0e58ed8, which contains the malicious updateFeatures code.)",
+    "published": "2025-03-15T06:15:12.193"
   }
 }
