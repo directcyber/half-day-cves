@@ -1,10 +1,4 @@
 {
-  "CVE-2025-2233": {
-    "cvss": 8.8,
-    "description": "Samsung SmartThings Improper Verification of Cryptographic Signature Authentication Bypass Vulnerability. This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of Samsung SmartThings. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the Hub Local API service, which listens on TCP port 8766 by default. The issue results from the lack of proper verification of a cryptographic signature. An attacker can leverage this vulnerability to bypass authentication on the system. Was ZDI-CAN-25615.",
-    "published": "2025-03-11T23:15:38.610",
-    "keywords": "authentication,bypass"
-  },
   "CVE-2025-0813": {
     "cvss": 6.8,
     "description": "CWE-287: Improper Authentication vulnerability exists that could cause an Authentication Bypass when an\nunauthorized user without permission rights has physical access to the EPAS-UI computer and is able to\nreboot the workstation and interrupt the normal boot process.",
