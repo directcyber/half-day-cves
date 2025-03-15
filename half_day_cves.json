@@ -1,22 +1,4 @@
 {
-  "CVE-2025-25291": {
-    "cvss": "-",
-    "description": "ruby-saml provides security assertion markup language (SAML) single sign-on (SSO) for Ruby. An authentication bypass vulnerability was found in ruby-saml prior to versions 1.12.4 and 1.18.0 due to a parser differential. ReXML and Nokogiri parse XML differently; the parsers can generate entirely different document structures from the same XML input. That allows an attacker to be able to execute a Signature Wrapping attack. This issue may lead to authentication bypass. Versions 1.12.4 and 1.18.0 fix the issue.",
-    "published": "2025-03-12T21:15:42.000",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2025-25292": {
-    "cvss": "-",
-    "description": "ruby-saml provides security assertion markup language (SAML) single sign-on (SSO) for Ruby. An authentication bypass vulnerability was found in ruby-saml prior to versions 1.12.4 and 1.18.0 due to a parser differential. ReXML and Nokogiri parse XML differently, the parsers can generate entirely different document structures from the same XML input. That allows an attacker to be able to execute a Signature Wrapping attack. This issue may lead to authentication bypass. Versions 1.12.4 and 1.18.0 contain a patch for the issue.",
-    "published": "2025-03-12T21:15:42.177",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2025-25293": {
-    "cvss": "-",
-    "description": "ruby-saml provides security assertion markup language (SAML) single sign-on (SSO) for Ruby. Prior to versions 1.12.4 and 1.18.0, ruby-saml is susceptible to remote Denial of Service (DoS) with compressed SAML responses. ruby-saml uses zlib to decompress SAML responses in case they're compressed. It is possible to bypass the message size check with a compressed assertion since the message size is checked before inflation and not after. This issue may lead to remote Denial of Service (DoS). Versions 1.12.4 and 1.18.0 fix the issue.",
-    "published": "2025-03-12T21:15:42.363",
-    "keywords": "remote,bypass"
-  },
   "CVE-2025-2106": {
     "cvss": 7.5,
     "description": "The ArielBrailovsky-ViralAd plugin for WordPress is vulnerable to SQL Injection via the 'text' and 'id' parameters of the limpia() function in all versions up to, and including, 1.0.8 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. This only appears to be exploitable on very old versions of WordPress.",
