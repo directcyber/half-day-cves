@@ -1,22 +1,4 @@
 {
-  "CVE-2025-1635": {
-    "cvss": "-",
-    "description": "Exposure of sensitive information in hub data source export feature in Devolutions Remote Desktop Manager 2024.3.29 and earlier on Windows allows a user exporting a hub data source to include his authenticated session in the export due to faulty business logic.",
-    "published": "2025-03-13T13:15:46.820",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2025-1636": {
-    "cvss": "-",
-    "description": "Exposure of sensitive information in My Personal Credentials password history component in Devolutions Remote Desktop Manager 2024.3.29 and earlier on Windows allows an authenticated user to inadvertently leak the My Personal Credentials in a shared vault via the clear history feature due to faulty business logic.",
-    "published": "2025-03-13T13:15:46.970",
-    "keywords": "remote,sensitive,leak"
-  },
-  "CVE-2025-2277": {
-    "cvss": "-",
-    "description": "Exposure of password in web-based SSH authentication component in Devolutions Server 2024.3.13 and earlier allows a user to unadvertently leak his SSH password due to missing password masking.",
-    "published": "2025-03-13T13:15:58.320",
-    "keywords": "authentication,leak"
-  },
   "CVE-2025-1767": {
     "url": "https://github.com/kubernetes/kubernetes/pull/130786",
     "cvss": 6.5,
@@ -142,5 +124,17 @@
     "cvss": 6.3,
     "description": "A vulnerability, which was classified as critical, has been found in tbeu matio 1.5.28. This issue affects the function Mat_VarPrint of the file src/mat.c. The manipulation leads to heap-based buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
     "published": "2025-03-16T10:15:25.793"
+  },
+  "CVE-2025-2338": {
+    "url": "https://github.com/tbeu/matio/issues/269#issue-2883920922",
+    "cvss": 6.3,
+    "description": "A vulnerability, which was classified as critical, was found in tbeu matio 1.5.28. Affected is the function strdup_vprintf of the file src/io.c. The manipulation leads to heap-based buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-16T13:15:37.827"
+  },
+  "CVE-2025-2339": {
+    "cvss": 5.3,
+    "description": "A vulnerability was found in otale Tale Blog 2.0.5. It has been classified as problematic. This affects an unknown part of the file /%61dmin/api/logs. The manipulation leads to improper authentication. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way. This vulnerability only affects products that are no longer supported by the maintainer.",
+    "published": "2025-03-16T13:15:38.003",
+    "keywords": "remote,authentication"
   }
 }
