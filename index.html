@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-03-16T17:09:33.814850
+Updated at UTC 2025-03-16T18:14:38.488253
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -114,24 +114,6 @@ Updated at UTC 2025-03-16T17:09:33.814850
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1767">CVE-2025-1767</a></td>
-					<td>6.5</td>
-					<td><a target=_blank href="https://github.com/kubernetes/kubernetes/pull/130786">https://github.com/kubernetes/kubernetes/pull/130786</a></td>
-					<td class=date>2025-03-13T17:15:36.437</td>
-					<td class=description>This CVE only affects Kubernetes clusters that utilize the in-tree gitRepo volume to clone git repositories from other pods within the same node. Since the in-tree gitRepo volume feature has been deprecated and will not receive security updates upstream, any cluster still using this feature remains vulnerable.</td>
-
-
-				</tr>
 			
 		
 
@@ -310,38 +292,6 @@ be exploited for replay attacks and authentication bypass.</td>
 					<td class=date>2025-03-13T19:15:52.050</td>
 					<td class=description>Snowflake, a platform for using artificial intelligence in the context of cloud computing, has a vulnerability in the Snowflake JDBC driver ("Driver") in versions 3.0.13 through 3.23.0 of the driver. When the logging level was set to DEBUG, the Driver would log locally the client-side encryption master key of the target stage during the execution of GET/PUT commands. This key by itself does not grant access to any sensitive data without additional access authorizations,  and is not logged server-side by Snowflake. Snowflake fixed the issue in version 3.23.1.</td>
 				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-2264">CVE-2025-2264</a></td>
-					<td>7.5</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2025-03-13T17:15:38.787</td>
-					<td class=description>A Path Traversal Information Disclosure vulnerability exists in "Sante PACS Server.exe". An unauthenticated remote attacker can exploit it to download arbitrary files on the disk drive where the application is installed.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-2263">CVE-2025-2263</a></td>
-					<td>9.8</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2025-03-13T17:15:38.617</td>
-					<td class=description>During login to the web server in "Sante PACS Server.exe", OpenSSL function EVP_DecryptUpdate is called to decrypt the username and password. A fixed 0x80-byte stack-based buffer is passed to the function as the output buffer. A stack-based buffer overflow exists if a long encrypted username or password is supplied by an unauthenticated remote attacker.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-2080">CVE-2025-2080</a></td>
-					<td>-</td>
-					<td>authentication,bypass</td>
-					<td class=date>2025-03-13T17:15:38.253</td>
-					<td class=description>Optigo Networks Visual BACnet Capture Tool and Optigo Visual Networks Capture Tool version 3.1.2rc11 contain an exposed web management service that could allow an attacker to bypass authentication measures and gain controls over utilities within the products.</td>
-				</tr>
-			
-		
 			
 		
 
