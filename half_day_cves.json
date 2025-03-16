@@ -1,22 +1,4 @@
 {
-  "CVE-2025-21104": {
-    "cvss": 4.3,
-    "description": "Dell NetWorker, 19.11.0.3 and below versions, contain(s) an Open Redirect Vulnerability in NMC. An unauthenticated attacker with remoter access could potentially exploit this vulnerability, leading to a targeted application user being redirected to arbitrary web URLs. The vulnerability could be leveraged by attackers to conduct phishing attacks that cause users to divulge sensitive information.",
-    "published": "2025-03-13T12:15:12.510",
-    "keywords": "remote,unauthenticated,sensitive"
-  },
-  "CVE-2025-29994": {
-    "cvss": "-",
-    "description": "This vulnerability exists in the CAP back office application due to improper authentication check at the API endpoint. An unauthenticated remote attacker with a valid login ID could exploit this vulnerability by manipulating API input parameters through API request URL/payload leading to unauthorized access to other user accounts.",
-    "published": "2025-03-13T12:15:13.660",
-    "keywords": "remote,unauthenticated,authentication"
-  },
-  "CVE-2025-29996": {
-    "cvss": "-",
-    "description": "This vulnerability exists in the CAP back office application due to improper implementation of OTP verification mechanism in its API based login. A remote attacker with valid credentials could exploit this vulnerability by manipulating API request URL/payload. Successful exploitation of this vulnerability could allow the attacker to bypass Two-Factor Authentication (2FA) for other user accounts.",
-    "published": "2025-03-13T12:15:13.980",
-    "keywords": "remote,authentication,bypass"
-  },
   "CVE-2025-1635": {
     "cvss": "-",
     "description": "Exposure of sensitive information in hub data source export feature in Devolutions Remote Desktop Manager 2024.3.29 and earlier on Windows allows a user exporting a hub data source to include his authenticated session in the export due to faulty business logic.",
