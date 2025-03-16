@@ -154,5 +154,11 @@
     "description": "The GiveWP \u2013 Donation Plugin and Fundraising Platform plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the give_reports_earnings() function in all versions up to, and including, 3.22.0. This makes it possible for unauthenticated attackers to disclose sensitive information included within earnings reports.",
     "published": "2025-03-15T12:15:12.207",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-2337": {
+    "url": "https://github.com/tbeu/matio/issues/267#issue-2883856488",
+    "cvss": 6.3,
+    "description": "A vulnerability, which was classified as critical, has been found in tbeu matio 1.5.28. This issue affects the function Mat_VarPrint of the file src/mat.c. The manipulation leads to heap-based buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-16T10:15:25.793"
   }
 }
