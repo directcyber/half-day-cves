@@ -1,10 +1,4 @@
 {
-  "CVE-2025-2056": {
-    "cvss": 7.5,
-    "description": "The WP Ghost (Hide My WP Ghost) \u2013 Security & Firewall plugin for WordPress is vulnerable to Path Traversal in all versions up to, and including, 5.4.01 via the showFile function. This makes it possible for unauthenticated attackers to read the contents of specific file types on the server, which can contain sensitive information.",
-    "published": "2025-03-14T05:15:42.523",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2025-2221": {
     "cvss": 7.5,
     "description": "The WPCOM Member plugin for WordPress is vulnerable to time-based SQL Injection via the \u2018user_phone\u2019 parameter in all versions up to, and including, 1.7.6 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
@@ -118,5 +112,17 @@
     "description": "A vulnerability was found in BlackVue App 3.65 on Android. It has been classified as problematic. This affects the function deviceDelete of the component API Handler. The manipulation leads to use of get request method with sensitive query strings. It is possible to initiate the attack remotely. The complexity of an attack is rather high. The exploitability is told to be difficult. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2025-03-17T01:15:37.487",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2025-2395": {
+    "cvss": 9.8,
+    "description": "The U-Office Force from e-Excellence has an Improper Authentication vulnerability, allowing unauthenticated remote attackers to use a particular API and alter cookies to log in as an administrator.",
+    "published": "2025-03-17T06:15:25.910",
+    "keywords": "remote,unauthenticated,authentication"
+  },
+  "CVE-2025-2396": {
+    "cvss": 8.8,
+    "description": "The U-Office Force from e-Excellence has an Arbitrary File Upload vulnerability, allowing remote attackers with regular privileges to upload and execute web shell backdoors, thereby enabling arbitrary code execution on the server.",
+    "published": "2025-03-17T06:15:26.113",
+    "keywords": "remote,execution"
   }
 }
