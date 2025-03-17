@@ -1,10 +1,4 @@
 {
-  "CVE-2025-2221": {
-    "cvss": 7.5,
-    "description": "The WPCOM Member plugin for WordPress is vulnerable to time-based SQL Injection via the \u2018user_phone\u2019 parameter in all versions up to, and including, 1.7.6 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
-    "published": "2025-03-14T07:15:38.477",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2025-2232": {
     "cvss": 9.8,
     "description": "The Realteo - Real Estate Plugin by Purethemes plugin for WordPress, used by the Findeo Theme, is vulnerable to authentication bypass in all versions up to, and including, 1.2.8. This is due to insufficient role restrictions in the 'do_register_user' function. This makes it possible for unauthenticated attackers to register an account with the Administrator role.",
@@ -124,5 +118,17 @@
     "description": "The U-Office Force from e-Excellence has an Arbitrary File Upload vulnerability, allowing remote attackers with regular privileges to upload and execute web shell backdoors, thereby enabling arbitrary code execution on the server.",
     "published": "2025-03-17T06:15:26.113",
     "keywords": "remote,execution"
+  },
+  "CVE-2025-2367": {
+    "cvss": 6.3,
+    "description": "A vulnerability has been found in Oiwtech OIW-2431APGN-HP 2.5.3-B20131128 and classified as critical. This vulnerability affects unknown code of the file /boafrm/formScript of the component Personal Script Submenu. The manipulation leads to os command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-03-17T08:15:11.283",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-2368": {
+    "url": "https://github.com/webassembly/wabt/pull/2541",
+    "cvss": 6.3,
+    "description": "A vulnerability was found in WebAssembly wabt 1.0.36 and classified as critical. This issue affects the function wabt::interp::(anonymous namespace)::BinaryReaderInterp::OnExport of the file wabt/src/interp/binary-reader-interp.cc of the component Malformed File Handler. The manipulation leads to heap-based buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue.",
+    "published": "2025-03-17T08:15:11.493"
   }
 }
