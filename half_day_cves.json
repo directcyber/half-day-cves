@@ -1,44 +1,416 @@
 {
-  "CVE-2025-2609": {
-    "url": "https://github.com/magnussolution/magnusbilling7/commit/f0f083c76157e31149ae58342342fb1bf1629e22",
-    "cvss": 8.2,
-    "description": "Improper neutralization of input during web page generation vulnerability in MagnusSolution MagnusBilling login logging allows unauthenticated users to store HTML content in the viewable log component accessible at /mbilling/index.php/logUsers/read\" cross-site scripting This vulnerability is associated with program files protected/components/MagnusLog.Php.\n\nThis issue affects MagnusBilling: through 7.3.0.",
-    "published": "2025-03-21T23:15:21.493"
-  },
-  "CVE-2025-2610": {
-    "url": "https://github.com/magnussolution/magnusbilling7/commit/f0f083c76157e31149ae58342342fb1bf1629e22",
-    "cvss": 7.6,
-    "description": "Improper neutralization of input during web page generation vulnerability in MagnusSolution MagnusBilling (Alarm Module modules) allows authenticated stored cross-site scripting. This vulnerability is associated with program files protected/components/MagnusLog.Php.\n\nThis issue affects MagnusBilling: through 7.3.0.",
-    "published": "2025-03-21T23:15:21.613"
-  },
-  "CVE-2025-30472": {
-    "url": "https://github.com/corosync/corosync/issues/778",
-    "cvss": 9.0,
-    "description": "Corosync through 3.1.9, if encryption is disabled or the attacker knows the encryption key, has a stack-based buffer overflow in orf_token_endian_convert in exec/totemsrp.c via a large UDP packet.",
-    "published": "2025-03-22T02:15:16.620"
-  },
-  "CVE-2025-2303": {
-    "cvss": 8.8,
-    "description": "The Block Logic \u2013 Full Gutenberg Block Display Control plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.0.8 via the block_logic_check_logic function. This is due to the unsafe evaluation of user-controlled input. This makes it possible for authenticated attackers, with Contributor-level access and above, to execute code on the server.",
-    "published": "2025-03-22T07:15:24.613",
+  "CVE-2025-2231": {
+    "cvss": 7.8,
+    "description": "PDF-XChange Editor RTF File Parsing Out-Of-Bounds Read Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of RTF files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25473.",
+    "published": "2025-03-24T20:15:18.370",
     "keywords": "remote,execution"
   },
-  "CVE-2025-2186": {
-    "cvss": 7.5,
-    "description": "The Recover WooCommerce Cart Abandonment, Newsletter, Email Marketing, Marketing Automation By FunnelKit plugin for WordPress is vulnerable to SQL Injection via the \u2018automationId\u2019 parameter in all versions up to, and including, 3.5.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
-    "published": "2025-03-22T13:15:35.683",
+  "CVE-2025-1097": {
+    "url": "https://github.com/kubernetes/kubernetes/issues/131007",
+    "cvss": 8.8,
+    "description": "A security issue was discovered in  ingress-nginx https://github.com/kubernetes/ingress-nginx  where the `auth-tls-match-cn` Ingress annotation can be used to inject configuration into nginx. This can lead to arbitrary code execution in the context of the ingress-nginx controller, and disclosure of Secrets accessible to the controller. (Note that in the default installation, the controller can access all Secrets cluster-wide.)",
+    "published": "2025-03-25T00:15:13.590"
+  },
+  "CVE-2025-1098": {
+    "url": "https://github.com/kubernetes/kubernetes/issues/131008",
+    "cvss": 8.8,
+    "description": "A security issue was discovered in  ingress-nginx https://github.com/kubernetes/ingress-nginx  where the `mirror-target` and `mirror-host` Ingress annotations can be used to inject arbitrary configuration into nginx. This can lead to arbitrary code execution in the context of the ingress-nginx controller, and disclosure of Secrets accessible to the controller. (Note that in the default installation, the controller can access all Secrets cluster-wide.)",
+    "published": "2025-03-25T00:15:14.613"
+  },
+  "CVE-2025-24513": {
+    "url": "https://github.com/kubernetes/kubernetes/issues/131005",
+    "cvss": 4.8,
+    "description": "A security issue was discovered in  ingress-nginx https://github.com/kubernetes/ingress-nginx  where attacker-provided data are included in a filename by the ingress-nginx Admission Controller feature, resulting in directory traversal within the container. This could result in denial of service, or when combined with other vulnerabilities, limited disclosure of Secret objects from the cluster.",
+    "published": "2025-03-25T00:15:14.900"
+  },
+  "CVE-2025-24514": {
+    "url": "https://github.com/kubernetes/kubernetes/issues/131006",
+    "cvss": 8.8,
+    "description": "A security issue was discovered in  ingress-nginx https://github.com/kubernetes/ingress-nginx  where the `auth-url` Ingress annotation can be used to inject configuration into nginx. This can lead to arbitrary code execution in the context of the ingress-nginx controller, and disclosure of Secrets accessible to the controller. (Note that in the default installation, the controller can access all Secrets cluster-wide.)",
+    "published": "2025-03-25T00:15:15.047"
+  },
+  "CVE-2025-2717": {
+    "cvss": 4.7,
+    "description": "A vulnerability, which was classified as critical, has been found in D-Link DIR-823X 240126/240802. This issue affects the function sub_41710C of the file /goform/diag_nslookup of the component HTTP POST Request Handler. The manipulation of the argument target_addr leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-25T00:15:15.290",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-2725": {
+    "cvss": 8.8,
+    "description": "A vulnerability classified as critical was found in H3C Magic NX15, Magic NX30 Pro, Magic NX400, Magic R3010 and Magic BE18000 up to V100R014. Affected by this vulnerability is an unknown functionality of the file /api/login/auth of the component HTTP POST Request Handler. The manipulation leads to command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-03-25T03:15:16.097",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-2726": {
+    "cvss": 8.8,
+    "description": "A vulnerability, which was classified as critical, has been found in H3C Magic NX15, Magic NX30 Pro, Magic NX400, Magic R3010 and Magic BE18000 up to V100R014. Affected by this issue is some unknown functionality of the file /api/esps of the component HTTP POST Request Handler. The manipulation leads to command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-03-25T03:15:16.280",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-2727": {
+    "cvss": 8.8,
+    "description": "A vulnerability, which was classified as critical, was found in H3C Magic NX30 Pro up to V100R007. This affects an unknown part of the file /api/wizard/getNetworkStatus of the component HTTP POST Request Handler. The manipulation leads to command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-03-25T03:15:16.450",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-2728": {
+    "cvss": 8.8,
+    "description": "A vulnerability has been found in H3C Magic NX30 Pro and Magic NX400 up to V100R014 and classified as critical. This vulnerability affects unknown code of the file /api/wizard/getNetworkConf. The manipulation leads to command injection. The attack can be initiated remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-03-25T03:15:16.627",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-2729": {
+    "cvss": 8.8,
+    "description": "A vulnerability was found in H3C Magic NX15, Magic NX30 Pro, Magic NX400, Magic R3010 and Magic BE18000 up to V100R014 and classified as critical. This issue affects some unknown processing of the file /api/wizard/networkSetup of the component HTTP POST Request Handler. The manipulation leads to command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-03-25T03:15:16.800",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-2730": {
+    "cvss": 8.8,
+    "description": "A vulnerability was found in H3C Magic NX15, Magic NX30 Pro, Magic NX400, Magic R3010 and Magic BE18000 up to V100R014. It has been classified as critical. Affected is an unknown function of the file /api/wizard/getssidname of the component HTTP POST Request Handler. The manipulation leads to command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-03-25T03:15:16.973",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-2731": {
+    "cvss": 8.8,
+    "description": "A vulnerability was found in H3C Magic NX15, Magic NX30 Pro, Magic NX400, Magic R3010 and Magic BE18000 up to V100R014. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file /api/wizard/getDualbandSync of the component HTTP POST Request Handler. The manipulation leads to command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-03-25T04:15:18.943",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-2732": {
+    "cvss": 8.8,
+    "description": "A vulnerability was found in H3C Magic NX15, Magic NX30 Pro, Magic NX400, Magic R3010 and Magic BE18000 up to V100R014. It has been rated as critical. Affected by this issue is some unknown functionality of the file /api/wizard/getWifiNeighbour of the component HTTP POST Request Handler. The manipulation leads to command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-03-25T04:15:20.793",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-2733": {
+    "cvss": 6.3,
+    "description": "A vulnerability classified as critical has been found in mannaandpoem OpenManus up to 2025.3.13. This affects an unknown part of the file app/tool/python_execute.py of the component Prompt Handler. The manipulation leads to os command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-03-25T05:15:40.870",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-27809": {
+    "url": "https://github.com/mbed-tls/mbedtls/issues/466",
+    "cvss": 5.4,
+    "description": "Mbed TLS before 2.28.10 and 3.x before 3.6.3, on the client side, accepts servers that have trusted certificates for arbitrary hostnames unless the TLS client application calls mbedtls_ssl_set_hostname.",
+    "published": "2025-03-25T06:15:41.000"
+  },
+  "CVE-2025-27810": {
+    "cvss": 5.4,
+    "description": "Mbed TLS before 2.28.10 and 3.x before 3.6.3, in some cases of failed memory allocation or hardware errors, uses uninitialized stack memory to compose the TLS Finished message, potentially leading to authentication bypasses such as replays.",
+    "published": "2025-03-25T06:15:41.180",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-2252": {
+    "cvss": 5.3,
+    "description": "The Easy Digital Downloads \u2013 eCommerce Payments and Subscriptions made easy plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.3.6.1 via the edd_ajax_get_download_title() function. This makes it possible for unauthenticated attackers to extract private post titles of downloads. The impact here is minimal.",
+    "published": "2025-03-25T07:15:38.337",
     "keywords": "unauthenticated,sensitive"
   },
-  "CVE-2025-2620": {
-    "cvss": 9.8,
-    "description": "A vulnerability has been found in D-Link DAP-1620 1.03 and classified as critical. This vulnerability affects the function mod_graph_auth_uri_handler of the file /storage of the component Authentication Handler. The manipulation leads to stack-based buffer overflow. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. This vulnerability only affects products that are no longer supported by the maintainer.",
-    "published": "2025-03-22T15:15:38.860",
-    "keywords": "remote,authentication"
-  },
-  "CVE-2025-2701": {
+  "CVE-2025-2750": {
+    "url": "https://github.com/assimp/assimp/issues/6011#issue-2877369004",
     "cvss": 6.3,
-    "description": "A vulnerability classified as critical was found in AMTT Hotel Broadband Operation System 1.0. This vulnerability affects the function popen of the file /manager/network/port_setup.php. The manipulation of the argument SwitchVersion/SwitchWrite/SwitchIP/SwitchIndex/SwitchState leads to os command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-03-24T09:15:13.950",
+    "description": "A vulnerability, which was classified as critical, was found in Open Asset Import Library Assimp 5.4.3. This affects the function Assimp::CSMImporter::InternReadFile of the file code/AssetLib/CSM/CSMLoader.cpp of the component CSM File Handler. The manipulation leads to out-of-bounds write. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-25T08:15:19.203"
+  },
+  "CVE-2025-2751": {
+    "url": "https://github.com/assimp/assimp/issues/6012#issue-2877369817",
+    "cvss": 4.3,
+    "description": "A vulnerability has been found in Open Asset Import Library Assimp 5.4.3 and classified as problematic. This vulnerability affects the function Assimp::CSMImporter::InternReadFile of the file code/AssetLib/CSM/CSMLoader.cpp of the component CSM File Handler. The manipulation of the argument na leads to out-of-bounds read. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-25T08:15:20.013"
+  },
+  "CVE-2025-2752": {
+    "url": "https://github.com/assimp/assimp/issues/6013#issue-2877371176",
+    "cvss": 4.3,
+    "description": "A vulnerability was found in Open Asset Import Library Assimp 5.4.3 and classified as problematic. This issue affects the function fast_atoreal_move in the library include/assimp/fast_atof.h of the component CSM File Handler. The manipulation leads to out-of-bounds read. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-25T08:15:20.193"
+  },
+  "CVE-2025-2753": {
+    "url": "https://github.com/assimp/assimp/issues/6014#issue-2877372462",
+    "cvss": 6.3,
+    "description": "A vulnerability was found in Open Asset Import Library Assimp 5.4.3. It has been classified as critical. Affected is the function SceneCombiner::MergeScenes of the file code/AssetLib/LWS/LWSLoader.cpp of the component LWS File Handler. The manipulation leads to out-of-bounds read. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-25T09:15:17.247"
+  },
+  "CVE-2025-2754": {
+    "url": "https://github.com/assimp/assimp/issues/6015#issue-2877373501",
+    "cvss": 6.3,
+    "description": "A vulnerability was found in Open Asset Import Library Assimp 5.4.3. It has been declared as critical. Affected by this vulnerability is the function Assimp::AC3DImporter::ConvertObjectSection of the file code/AssetLib/AC/ACLoader.cpp of the component AC3D File Handler. The manipulation of the argument it leads to heap-based buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-25T09:15:17.730"
+  },
+  "CVE-2025-2755": {
+    "url": "https://github.com/assimp/assimp/issues/6017#issue-2877374161",
+    "cvss": 6.3,
+    "description": "A vulnerability was found in Open Asset Import Library Assimp 5.4.3. It has been rated as critical. Affected by this issue is the function Assimp::AC3DImporter::ConvertObjectSection of the file code/AssetLib/AC/ACLoader.cpp of the component AC3D File Handler. The manipulation of the argument src.entries leads to out-of-bounds read. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-25T09:15:17.983"
+  },
+  "CVE-2025-2756": {
+    "url": "https://github.com/assimp/assimp/issues/6018#issue-2877375815",
+    "cvss": 6.3,
+    "description": "A vulnerability classified as critical has been found in Open Asset Import Library Assimp 5.4.3. This affects the function Assimp::AC3DImporter::ConvertObjectSection of the file code/AssetLib/AC/ACLoader.cpp of the component AC3D File Handler. The manipulation of the argument tmp leads to heap-based buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-25T10:15:16.627"
+  },
+  "CVE-2025-2757": {
+    "url": "https://github.com/assimp/assimp/issues/6019#issue-2877376386",
+    "cvss": 6.3,
+    "description": "A vulnerability classified as critical was found in Open Asset Import Library Assimp 5.4.3. This vulnerability affects the function AI_MD5_PARSE_STRING_IN_QUOTATION of the file code/AssetLib/MD5/MD5Parser.cpp of the component MD5 File Handler. The manipulation of the argument data leads to heap-based buffer overflow. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-25T10:15:16.887"
+  },
+  "CVE-2025-27631": {
+    "cvss": 6.5,
+    "description": "The TRMTracker web application is vulnerable to LDAP injection attack potentially allowing an attacker to inject code into a query and execute remote commands that can read and update data on the website.",
+    "published": "2025-03-25T13:15:40.947",
     "keywords": "remote,command"
+  },
+  "CVE-2025-22230": {
+    "cvss": 7.8,
+    "description": "VMware Tools for Windows contains an authentication bypass vulnerability due to improper access control.\u00a0A malicious actor with non-administrative privileges on a guest VM may gain ability to perform certain high privilege operations within that VM.",
+    "published": "2025-03-25T14:15:28.440",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-29635": {
+    "cvss": 8.8,
+    "description": "A command injection vulnerability in D-Link DIR-823X 240126 and 240802 allows an authorized attacker to execute arbitrary commands on remote devices by sending a POST request to /goform/set_prohibiting via the corresponding function, triggering remote command execution.",
+    "published": "2025-03-25T14:15:29.043",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2025-30091": {
+    "cvss": "-",
+    "description": "In Tiny MoxieManager PHP before 4.0.0, remote code execution can occur in the installer command. This vulnerability allows unauthenticated attackers to inject and execute arbitrary code. Attacker-controlled data to InstallCommand can be inserted into config.php, and InstallCommand is available after an installation has completed.",
+    "published": "2025-03-25T14:15:32.143",
+    "keywords": "remote,execution,unauthenticated,command"
+  },
+  "CVE-2025-2530": {
+    "cvss": 7.8,
+    "description": "Luxion KeyShot DAE File Parsing Access of Uninitialized Pointer Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Luxion KeyShot. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of dae files. The issue results from the lack of proper initialization of a pointer prior to accessing it. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23698.",
+    "published": "2025-03-25T15:15:25.610",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-2531": {
+    "cvss": 7.8,
+    "description": "Luxion KeyShot DAE File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Luxion KeyShot. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of dae files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23704.",
+    "published": "2025-03-25T15:15:25.773",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-2532": {
+    "cvss": 7.8,
+    "description": "Luxion KeyShot USDC File Parsing Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Luxion KeyShot. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of usdc files. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-23709.",
+    "published": "2025-03-25T15:15:25.907",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-30213": {
+    "cvss": "-",
+    "description": "Frappe is a full-stack web application framework. Prior to versions 14.91.0 and 15.52.0, a system user was able to create certain documents in a specific way that could lead to remote code execution. Versions 14.9.1 and 15.52.0 contain a patch for the vulnerability. There's no workaround; an upgrade is required.",
+    "published": "2025-03-25T15:15:26.307",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-2825": {
+    "cvss": 9.8,
+    "description": "CrushFTP versions 10.0.0 through 10.8.3 and 11.0.0 through 11.3.0 are affected by a vulnerability that may result in unauthenticated access. Remote and unauthenticated HTTP requests to CrushFTP may allow attackers to gain unauthorized access.",
+    "published": "2025-03-26T16:15:23.883",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-2499": {
+    "cvss": 5.4,
+    "description": "Client side access control bypass in the permission component in \nDevolutions Remote Desktop Manager on Windows. An authenticated user can exploit this flaw to bypass certain permission restrictions\u2014specifically View Password, Edit Asset, and Edit Permissions by performing specific actions. \n\nThis issue affects Remote Desktop Manager versions from 2025.1.24 through 2025.1.25, and all versions up to 2024.3.29.",
+    "published": "2025-03-26T18:15:25.720",
+    "keywords": "remote,bypass"
+  },
+  "CVE-2025-26003": {
+    "cvss": 9.8,
+    "description": "Telesquare TLR-2005KSH 1.1.4 is affected by an unauthorized command execution vulnerability when requesting the admin.cgi parameter with setAutorest.",
+    "published": "2025-03-26T19:15:27.320",
+    "keywords": "execution,command"
+  },
+  "CVE-2025-28361": {
+    "cvss": 7.5,
+    "description": "Unauthorized stack overflow vulnerability in Telesquare TLR-2005KSH v.1.1.4 allows a remote attacker to obtain sensitive information via the systemutil.cgi component.",
+    "published": "2025-03-26T20:15:22.583",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-20226": {
+    "cvss": 5.7,
+    "description": "In Splunk Enterprise versions below 9.4.1, 9.3.3, 9.2.5, and 9.1.8 and Splunk Cloud Platform versions below 9.3.2408.107, 9.2.2406.111, and 9.1.2308.214, a low-privileged user that does not hold the \"admin\" or \"power\" Splunk roles could run a saved search with a risky command using the permissions of a higher-privileged user to bypass the SPL safeguards for risky commands on the \"/services/streams/search\" endpoint through its \"q\" parameter. The vulnerability requires the attacker to phish the victim by tricking them into initiating a request within their browser. The authenticated user should not be able to exploit the vulnerability at will.",
+    "published": "2025-03-26T22:15:14.483",
+    "keywords": "command,bypass"
+  },
+  "CVE-2025-20229": {
+    "cvss": 8.0,
+    "description": "In Splunk Enterprise versions below 9.3.3, 9.2.5,  and 9.1.8, and Splunk Cloud Platform versions below 9.3.2408.104, 9.2.2406.108, 9.2.2403.114, and 9.1.2312.208, a low-privileged user that does not hold the \"admin\" or \"power\" Splunk roles could perform a Remote Code Execution (RCE) through a file upload to the \"$SPLUNK_HOME/var/run/splunk/apptemp\" directory due to missing authorization checks.",
+    "published": "2025-03-26T22:15:14.933",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-20232": {
+    "cvss": 5.7,
+    "description": "In Splunk Enterprise versions below 9.3.3, 9.2.5, and 9.1.8 and Splunk Cloud Platform versions below 9.3.2408.103, 9.2.2406.108, 9.2.2403.113, 9.1.2312.208 and 9.1.2308.212, a low-privileged user that does not hold the \u201cadmin\u201c or \u201cpower\u201c Splunk roles could run a saved search with a risky command using the permissions of a higher-privileged user to bypass the SPL safeguards for risky commands on the \u201c/app/search/search\u201c endpoint through its \u201cs\u201c parameter. <br>The vulnerability requires the attacker to phish the victim by tricking them into initiating a request within their browser. The authenticated user should not be able to exploit the vulnerability at will.",
+    "published": "2025-03-26T22:15:15.233",
+    "keywords": "command,bypass"
+  },
+  "CVE-2025-2837": {
+    "cvss": 8.8,
+    "description": "Silicon Labs Gecko OS HTTP Request Handling Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Silicon Labs Gecko OS. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of HTTP requests. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the device. Was ZDI-CAN-23245.",
+    "published": "2025-03-26T22:15:15.660",
+    "keywords": "remote,execution,authentication"
+  },
+  "CVE-2025-2833": {
+    "url": "https://github.com/zhangyd-c/oneblog/issues/35#issue-2914268214",
+    "cvss": 5.3,
+    "description": "A vulnerability was found in zhangyd-c OneBlog up to 2.3.9. It has been classified as problematic. Affected is an unknown function of the component HTTP Header Handler. The manipulation of the argument X-Forwarded-For leads to inefficient regular expression complexity. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-27T04:15:23.847"
+  },
+  "CVE-2025-2835": {
+    "url": "https://github.com/zhangyd-c/oneblog/issues/36#issue-2923097259",
+    "cvss": 4.3,
+    "description": "A vulnerability was found in zhangyd-c OneBlog up to 2.3.9. It has been declared as problematic. Affected by this vulnerability is the function autoLink of the file com/zyd/blog/controller/RestApiController.java. The manipulation leads to server-side request forgery. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-27T04:15:25.520"
+  },
+  "CVE-2025-0273": {
+    "cvss": 5.5,
+    "description": "HCL DevOps Deploy / HCL Launch stores potentially sensitive authentication token information in log files that could be read by a local user.",
+    "published": "2025-03-27T05:15:38.237",
+    "keywords": "authentication,sensitive"
+  },
+  "CVE-2025-2332": {
+    "cvss": 9.8,
+    "description": "The Export All Posts, Products, Orders, Refunds & Users plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.13 via deserialization of untrusted input in the 'returnMetaValueAsCustomerInput' function. This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable software, which means this vulnerability has no impact unless another plugin or theme containing a POP chain is installed on the site. If a POP chain is present via an additional plugin or theme installed on the target system, it may allow the attacker to perform actions like delete arbitrary files, retrieve sensitive data, or execute code depending on the POP chain present.",
+    "published": "2025-03-27T06:15:28.180",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-2849": {
+    "url": "https://github.com/upx/upx/commit/e0b6ff192412f5bb5364c1948f4f6b27a0cd5ea2",
+    "cvss": 3.3,
+    "description": "A vulnerability, which was classified as problematic, was found in UPX up to 5.0.0. Affected is the function PackLinuxElf64::un_DT_INIT of the file src/p_lx_elf.cpp. The manipulation leads to heap-based buffer overflow. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used. The patch is identified as e0b6ff192412f5bb5364c1948f4f6b27a0cd5ea2. It is recommended to apply a patch to fix this issue.",
+    "published": "2025-03-27T14:15:55.303"
+  },
+  "CVE-2025-1997": {
+    "cvss": 5.4,
+    "description": "IBM UrbanCode Deploy (UCD) 7.0 through 7.0.5.25, 7.1 through 7.1.2.21, 7.2 through 7.2.3.14, and 7.3 through 7.3.2.0 / IBM DevOps Deploy 8.0 through 8.0.1.4 and 8.1 through 8.1 could allow unauthorized access to other services or potential exposure of sensitive data due to missing authentication in its Agent Relay service.",
+    "published": "2025-03-27T15:15:54.550",
+    "keywords": "authentication,sensitive"
+  },
+  "CVE-2025-1998": {
+    "cvss": 5.5,
+    "description": "IBM UrbanCode Deploy (UCD) through 7.1.2.21, 7.2 through 7.2.3.14, and 7.3 through 7.3.2.0 / IBM DevOps Deploy 8.0 through 8.0.1.4 and 8.1 through 8.1 \n\nstores potentially sensitive authentication token information in log files that could be read by a local user.",
+    "published": "2025-03-27T15:15:54.707",
+    "keywords": "authentication,sensitive"
+  },
+  "CVE-2025-29483": {
+    "url": "https://github.com/libming/libming/issues/330",
+    "cvss": 6.5,
+    "description": "libming v0.4.8 was discovered to contain a memory leak via the parseSWF_ENABLEDEBUGGER2 function.",
+    "published": "2025-03-27T15:15:59.640"
+  },
+  "CVE-2025-29484": {
+    "url": "https://github.com/libming/libming/issues/330",
+    "cvss": "-",
+    "description": "An out-of-memory error in the parseABC_NS_SET_INFO function of libming v0.4.8 allows attackers to cause a Denial of Service (DoS) due to allocator exhaustion.",
+    "published": "2025-03-27T15:15:59.760"
+  },
+  "CVE-2025-29485": {
+    "url": "https://github.com/libming/libming/issues/330",
+    "cvss": "-",
+    "description": "libming v0.4.8 was discovered to contain a segmentation fault via the decompileRETURN function. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted SWF file.",
+    "published": "2025-03-27T15:15:59.867"
+  },
+  "CVE-2025-29486": {
+    "url": "https://github.com/libming/libming/issues/330",
+    "cvss": "-",
+    "description": "libming v0.4.8 was discovered to contain a memory leak via the parseSWF_PLACEOBJECT3 function.",
+    "published": "2025-03-27T15:15:59.983"
+  },
+  "CVE-2025-29487": {
+    "url": "https://github.com/libming/libming/issues/330",
+    "cvss": "-",
+    "description": "An out-of-memory error in the parseABC_STRING_INFO function of libming v0.4.8 allows attackers to cause a Denial of Service (DoS) due to allocator exhaustion.",
+    "published": "2025-03-27T15:16:00.093"
+  },
+  "CVE-2025-29488": {
+    "url": "https://github.com/libming/libming/issues/330",
+    "cvss": "-",
+    "description": "libming v0.4.8 was discovered to contain a memory leak via the parseSWF_INITACTION function.",
+    "published": "2025-03-27T15:16:00.207"
+  },
+  "CVE-2025-29489": {
+    "url": "https://github.com/libming/libming/issues/330",
+    "cvss": "-",
+    "description": "libming v0.4.8 was discovered to contain a memory leak via the parseSWF_MORPHLINESTYLES function.",
+    "published": "2025-03-27T15:16:00.313"
+  },
+  "CVE-2025-29490": {
+    "url": "https://github.com/libming/libming/issues/330",
+    "cvss": "-",
+    "description": "libming v0.4.8 was discovered to contain a segmentation fault via the decompileCALLMETHOD function. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted SWF file.",
+    "published": "2025-03-27T15:16:00.437"
+  },
+  "CVE-2025-29491": {
+    "url": "https://github.com/libming/libming/issues/330",
+    "cvss": "-",
+    "description": "An allocation-size-too-big error in the parseSWF_DEFINEBINARYDATA function of libming v0.48 allows attackers to cause a Denial of Service (DoS) via supplying a crafted SWF file.",
+    "published": "2025-03-27T15:16:00.547"
+  },
+  "CVE-2025-29492": {
+    "url": "https://github.com/libming/libming/issues/330",
+    "cvss": "-",
+    "description": "libming v0.4.8 was discovered to contain a segmentation fault via the decompileSETVARIABLE function.",
+    "published": "2025-03-27T15:16:00.653"
+  },
+  "CVE-2025-29493": {
+    "url": "https://github.com/libming/libming/issues/330",
+    "cvss": "-",
+    "description": "libming v0.4.8 was discovered to contain a segmentation fault via the decompileGETPROPERTY function. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted SWF file.",
+    "published": "2025-03-27T15:16:00.763"
+  },
+  "CVE-2025-29494": {
+    "url": "https://github.com/libming/libming/issues/330",
+    "cvss": "-",
+    "description": "libming v0.4.8 was discovered to contain a segmentation fault via the decompileGETMEMBER function. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted SWF file.",
+    "published": "2025-03-27T15:16:00.880"
+  },
+  "CVE-2025-29496": {
+    "url": "https://github.com/libming/libming/issues/330",
+    "cvss": "-",
+    "description": "libming v0.4.8 was discovered to contain a segmentation fault via the decompileDUPLICATECLIP function. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted SWF file.",
+    "published": "2025-03-27T15:16:00.990"
+  },
+  "CVE-2025-29497": {
+    "url": "https://github.com/libming/libming/issues/330",
+    "cvss": "-",
+    "description": "libming v0.4.8 was discovered to contain a memory leak via the parseSWF_MORPHFILLSTYLES function.",
+    "published": "2025-03-27T15:16:01.103"
+  },
+  "CVE-2025-30358": {
+    "cvss": 8.1,
+    "description": "Mesop is a Python-based UI framework that allows users to build web applications. A class pollution vulnerability in Mesop prior to version 0.14.1 allows attackers to overwrite global variables and class attributes in certain Mesop modules during runtime. This vulnerability could directly lead to a denial of service (DoS) attack against the server. Additionally, it could also result in other severe consequences given the application's implementation, such as identity confusion, where an attacker could impersonate an assistant or system role within conversations. This impersonation could potentially enable jailbreak attacks when interacting with large language models (LLMs). Just like the Javascript's prototype pollution, this vulnerability could leave a way for attackers to manipulate the intended data-flow or control-flow of the application at runtime and lead to severe consequences like remote code execution when gadgets are available. Users should upgrade to version 0.14.1 to obtain a fix for the issue.",
+    "published": "2025-03-27T15:16:02.297",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-28138": {
+    "cvss": "-",
+    "description": "TOTOLINK A800R V4.1.2cu.5137_B20200730 contains a remote command execution vulnerability in the setNoticeCfg function through the NoticeUrl parameter.",
+    "published": "2025-03-27T16:15:30.773",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2025-2855": {
+    "url": "https://github.com/elunez/eladmin/issues/873",
+    "cvss": 4.7,
+    "description": "A vulnerability, which was classified as problematic, has been found in elunez eladmin up to 2.7. Affected by this issue is the function checkFile of the file /api/deploy/upload. The manipulation of the argument servers leads to deserialization. The attack may be launched remotely.",
+    "published": "2025-03-27T16:15:31.177"
+  },
+  "CVE-2025-30361": {
+    "cvss": "-",
+    "description": "WeGIA is a Web manager for charitable institutions. A security vulnerability was identified in versions prior to 3.2.6, where it is possible to change a user's password without verifying the old password. This issue exists in the control.php endpoint and allows unauthorized attackers to bypass authentication and authorization mechanisms to reset the password of any user, including admin accounts. Version 3.2.6 fixes the issue.",
+    "published": "2025-03-27T17:15:57.167",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-30364": {
+    "cvss": "-",
+    "description": "WeGIA is a Web manager for charitable institutions. A SQL Injection vulnerability was identified in versions prior to 3.2.8 in the endpoint /WeGIA/html/funcionario/remuneracao.php, in the id_funcionario parameter. This vulnerability allows the execution of arbitrary SQL commands, which can compromise the confidentiality, integrity, and availability of stored data. Version 3.2.8 fixes the issue.",
+    "published": "2025-03-27T17:15:57.720",
+    "keywords": "execution,command"
+  },
+  "CVE-2025-30365": {
+    "cvss": "-",
+    "description": "WeGIA is a Web manager for charitable institutions. A SQL Injection vulnerability was identified in versions prior to 3.2.8 in the endpoint /WeGIA/html/socio/sistema/controller/query_geracao_auto.php, specifically in the query parameter. This vulnerability allows the execution of arbitrary SQL commands, compromising the confidentiality, integrity, and availability of the database. Version 3.2.8 fixes the issue.",
+    "published": "2025-03-27T17:15:57.880",
+    "keywords": "execution,command"
   }
 }
