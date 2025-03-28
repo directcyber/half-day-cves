@@ -97,7 +97,7 @@
   },
   "CVE-2025-29484": {
     "url": "https://github.com/libming/libming/issues/330",
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "An out-of-memory error in the parseABC_NS_SET_INFO function of libming v0.4.8 allows attackers to cause a Denial of Service (DoS) due to allocator exhaustion.",
     "published": "2025-03-27T15:15:59.760"
   },
@@ -139,7 +139,7 @@
   },
   "CVE-2025-29491": {
     "url": "https://github.com/libming/libming/issues/330",
-    "cvss": "-",
+    "cvss": 6.5,
     "description": "An allocation-size-too-big error in the parseSWF_DEFINEBINARYDATA function of libming v0.48 allows attackers to cause a Denial of Service (DoS) via supplying a crafted SWF file.",
     "published": "2025-03-27T15:16:00.547"
   },
@@ -151,19 +151,19 @@
   },
   "CVE-2025-29493": {
     "url": "https://github.com/libming/libming/issues/330",
-    "cvss": "-",
+    "cvss": 6.5,
     "description": "libming v0.4.8 was discovered to contain a segmentation fault via the decompileGETPROPERTY function. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted SWF file.",
     "published": "2025-03-27T15:16:00.763"
   },
   "CVE-2025-29494": {
     "url": "https://github.com/libming/libming/issues/330",
-    "cvss": "-",
+    "cvss": 6.5,
     "description": "libming v0.4.8 was discovered to contain a segmentation fault via the decompileGETMEMBER function. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted SWF file.",
     "published": "2025-03-27T15:16:00.880"
   },
   "CVE-2025-29496": {
     "url": "https://github.com/libming/libming/issues/330",
-    "cvss": "-",
+    "cvss": 6.5,
     "description": "libming v0.4.8 was discovered to contain a segmentation fault via the decompileDUPLICATECLIP function. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted SWF file.",
     "published": "2025-03-27T15:16:00.990"
   },
@@ -180,7 +180,7 @@
     "keywords": "remote,execution"
   },
   "CVE-2025-28138": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "TOTOLINK A800R V4.1.2cu.5137_B20200730 contains a remote command execution vulnerability in the setNoticeCfg function through the NoticeUrl parameter.",
     "published": "2025-03-27T16:15:30.773",
     "keywords": "remote,execution,command"
@@ -322,5 +322,29 @@
     "cvss": 3.3,
     "description": "A vulnerability was found in HDF5 up to 1.14.6. It has been declared as problematic. Affected by this vulnerability is the function H5O_msg_flush of the file src/H5Omessage.c. The manipulation of the argument oh leads to heap-based buffer overflow. The attack needs to be approached locally. The exploit has been disclosed to the public and may be used.",
     "published": "2025-03-28T16:15:30.540"
+  },
+  "CVE-2025-2913": {
+    "url": "https://github.com/hdfgroup/hdf5/issues/5376",
+    "cvss": 3.3,
+    "description": "A vulnerability was found in HDF5 up to 1.14.6. It has been rated as problematic. Affected by this issue is the function H5FL__blk_gc_list of the file src/H5FL.c. The manipulation of the argument H5FL_blk_head_t leads to use after free. An attack has to be approached locally. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-28T17:15:30.260"
+  },
+  "CVE-2025-2914": {
+    "url": "https://github.com/hdfgroup/hdf5/issues/5379",
+    "cvss": 3.3,
+    "description": "A vulnerability classified as problematic has been found in HDF5 up to 1.14.6. This affects the function H5FS__sinfo_Srialize_Sct_cb of the file src/H5FScache.c. The manipulation of the argument sect leads to heap-based buffer overflow. Local access is required to approach this attack. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-28T17:15:30.510"
+  },
+  "CVE-2025-2915": {
+    "url": "https://github.com/hdfgroup/hdf5/issues/5380",
+    "cvss": 3.3,
+    "description": "A vulnerability classified as problematic was found in HDF5 up to 1.14.6. This vulnerability affects the function H5F__accum_free of the file src/H5Faccum.c. The manipulation of the argument overlap_size leads to heap-based buffer overflow. Attacking locally is a requirement. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-28T17:15:30.750"
+  },
+  "CVE-2025-2916": {
+    "cvss": 6.3,
+    "description": "A vulnerability, which was classified as critical, has been found in Aishida Call Center System up to 20250314. This issue affects some unknown processing of the file /doscall/weixin/open/amr2mp3. The manipulation of the argument File leads to command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-03-28T17:15:30.983",
+    "keywords": "remote,command"
   }
 }
