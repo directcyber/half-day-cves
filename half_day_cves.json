@@ -1,22 +1,4 @@
 {
-  "CVE-2025-2733": {
-    "cvss": 6.3,
-    "description": "A vulnerability classified as critical has been found in mannaandpoem OpenManus up to 2025.3.13. This affects an unknown part of the file app/tool/python_execute.py of the component Prompt Handler. The manipulation leads to os command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-03-25T05:15:40.870",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-27809": {
-    "url": "https://github.com/mbed-tls/mbedtls/issues/466",
-    "cvss": 5.4,
-    "description": "Mbed TLS before 2.28.10 and 3.x before 3.6.3, on the client side, accepts servers that have trusted certificates for arbitrary hostnames unless the TLS client application calls mbedtls_ssl_set_hostname.",
-    "published": "2025-03-25T06:15:41.000"
-  },
-  "CVE-2025-27810": {
-    "cvss": 5.4,
-    "description": "Mbed TLS before 2.28.10 and 3.x before 3.6.3, in some cases of failed memory allocation or hardware errors, uses uninitialized stack memory to compose the TLS Finished message, potentially leading to authentication bypasses such as replays.",
-    "published": "2025-03-25T06:15:41.180",
-    "keywords": "authentication,bypass"
-  },
   "CVE-2025-2252": {
     "cvss": 5.3,
     "description": "The Easy Digital Downloads \u2013 eCommerce Payments and Subscriptions made easy plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.3.6.1 via the edd_ajax_get_download_title() function. This makes it possible for unauthenticated attackers to extract private post titles of downloads. The impact here is minimal.",
@@ -400,5 +382,11 @@
     "cvss": 6.6,
     "description": "The Go1\u00a0also known as \"The World's First Intelligence Bionic Quadruped Robot Companion of Consumer Level,\" contains an undocumented backdoor that can enable the manufacturer, and anyone in possession of the correct API key, complete remote control over the affected robotic device using the CloudSail remote access service.",
     "published": "2025-03-28T03:15:18.780"
+  },
+  "CVE-2025-2294": {
+    "cvss": 9.8,
+    "description": "The Kubio AI Page Builder plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.5.1 via thekubio_hybrid_theme_load_template function. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
+    "published": "2025-03-28T05:15:41.507",
+    "keywords": "execution,unauthenticated,sensitive,bypass"
   }
 }
