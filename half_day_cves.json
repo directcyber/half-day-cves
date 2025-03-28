@@ -346,5 +346,11 @@
     "description": "A vulnerability, which was classified as critical, has been found in Aishida Call Center System up to 20250314. This issue affects some unknown processing of the file /doscall/weixin/open/amr2mp3. The manipulation of the argument File leads to command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2025-03-28T17:15:30.983",
     "keywords": "remote,command"
+  },
+  "CVE-2025-2923": {
+    "url": "https://github.com/hdfgroup/hdf5/issues/5381",
+    "cvss": 3.3,
+    "description": "A vulnerability, which was classified as problematic, has been found in HDF5 up to 1.14.6. Affected by this issue is the function H5F_addr_encode_len of the file src/H5Fint.c. The manipulation of the argument pp leads to heap-based buffer overflow. Attacking locally is a requirement. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-28T19:15:24.003"
   }
 }
