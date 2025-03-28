@@ -352,5 +352,23 @@
     "cvss": 3.3,
     "description": "A vulnerability, which was classified as problematic, has been found in HDF5 up to 1.14.6. Affected by this issue is the function H5F_addr_encode_len of the file src/H5Fint.c. The manipulation of the argument pp leads to heap-based buffer overflow. Attacking locally is a requirement. The exploit has been disclosed to the public and may be used.",
     "published": "2025-03-28T19:15:24.003"
+  },
+  "CVE-2025-2924": {
+    "url": "https://github.com/hdfgroup/hdf5/issues/5382",
+    "cvss": 3.3,
+    "description": "A vulnerability, which was classified as problematic, was found in HDF5 up to 1.14.6. This affects the function H5HL__fl_deserialize of the file src/H5HLcache.c. The manipulation of the argument free_block leads to heap-based buffer overflow. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-28T20:15:26.147"
+  },
+  "CVE-2025-2925": {
+    "url": "https://github.com/hdfgroup/hdf5/issues/5383",
+    "cvss": 3.3,
+    "description": "A vulnerability has been found in HDF5 up to 1.14.6 and classified as problematic. This vulnerability affects the function H5MM_realloc of the file src/H5MM.c. The manipulation of the argument mem leads to double free. The attack needs to be approached locally. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-28T20:15:26.440"
+  },
+  "CVE-2025-2926": {
+    "url": "https://github.com/hdfgroup/hdf5/issues/5384",
+    "cvss": 3.3,
+    "description": "A vulnerability was found in HDF5 up to 1.14.6 and classified as problematic. This issue affects the function H5O__cache_chk_serialize of the file src/H5Ocache.c. The manipulation leads to null pointer dereference. An attack has to be approached locally. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-28T20:15:26.980"
   }
 }
