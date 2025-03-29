@@ -376,5 +376,29 @@
     "description": "A SQL injection vulnerability exists in the Epicor HCM 2021 1.9, specifically in the filter parameter of the JsonFetcher.svc endpoint. An attacker can exploit this vulnerability by injecting malicious SQL payloads into the filter parameter, enabling the unauthorized execution of arbitrary SQL commands on the backend database. If certain features (like xp_cmdshell) are enabled, this may lead to remote code execution.",
     "published": "2025-03-28T21:15:17.617",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2025-2006": {
+    "cvss": 8.8,
+    "description": "The Inline Image Upload for BBPress plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the file uploading functionality in all versions up to, and including, 1.1.19. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. This may be exploitable by unauthenticated attackers when the \"Allow guest users without accounts to create topics and replies\" setting is enabled.",
+    "published": "2025-03-29T07:15:17.220",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-2249": {
+    "cvss": 8.8,
+    "description": "The SoJ SoundSlides plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the soj_soundslides_options_subpanel() function in all versions up to, and including, 1.2.2. This makes it possible for authenticated attackers, with Contributor-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2025-03-29T07:15:17.747",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-2803": {
+    "cvss": 7.3,
+    "description": "The So-Called Air Quotes plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 0.1. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+    "published": "2025-03-29T07:15:18.770",
+    "keywords": "execution,unauthenticated"
+  },
+  "CVE-2025-2840": {
+    "cvss": 5.3,
+    "description": "The DAP to Autoresponders Email Syncing plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.0 through the publicly accessible phpinfo.php script. This makes it possible for unauthenticated attackers to view potentially sensitive information contained in the exposed file.",
+    "published": "2025-03-29T07:15:19.317",
+    "keywords": "unauthenticated,sensitive"
   }
 }
