@@ -1,10 +1,4 @@
 {
-  "CVE-2025-0273": {
-    "cvss": 5.5,
-    "description": "HCL DevOps Deploy / HCL Launch stores potentially sensitive authentication token information in log files that could be read by a local user.",
-    "published": "2025-03-27T05:15:38.237",
-    "keywords": "authentication,sensitive"
-  },
   "CVE-2025-2332": {
     "cvss": 9.8,
     "description": "The Export All Posts, Products, Orders, Refunds & Users plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.13 via deserialization of untrusted input in the 'returnMetaValueAsCustomerInput' function. This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable software, which means this vulnerability has no impact unless another plugin or theme containing a POP chain is installed on the site. If a POP chain is present via an additional plugin or theme installed on the target system, it may allow the attacker to perform actions like delete arbitrary files, retrieve sensitive data, or execute code depending on the POP chain present.",
