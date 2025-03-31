@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-03-31T20:13:55.064889
+Updated at UTC 2025-03-31T21:11:08.446599
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,18 @@ Updated at UTC 2025-03-31T20:13:55.064889
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-3010">CVE-2025-3010</a></td>
+					<td>3.3</td>
+					<td><a target=_blank href="https://github.com/khronosgroup/glslang/issues/3903#issue-2927492534">https://github.com/khronosgroup/glslang/issues/3903#issue-2927492534</a></td>
+					<td class=date>2025-03-31T20:15:16.023</td>
+					<td class=description>A vulnerability, which was classified as problematic, has been found in Khronos Group glslang 15.1.0. Affected by this issue is the function glslang::TIntermediate::isConversionAllowed of the file glslang/MachineIndependent/Intermediate.cpp. The manipulation leads to null pointer dereference. The attack needs to be approached locally. The exploit has been disclosed to the public and may be used.</td>
+
+
+				</tr>
+			
 		
 			
 				<tr>
@@ -166,44 +178,10 @@ Updated at UTC 2025-03-31T20:13:55.064889
 		
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-2926">CVE-2025-2926</a></td>
-					<td>3.3</td>
-					<td><a target=_blank href="https://github.com/hdfgroup/hdf5/issues/5384">https://github.com/hdfgroup/hdf5/issues/5384</a></td>
-					<td class=date>2025-03-28T20:15:26.980</td>
-					<td class=description>A vulnerability was found in HDF5 up to 1.14.6 and classified as problematic. This issue affects the function H5O__cache_chk_serialize of the file src/H5Ocache.c. The manipulation leads to null pointer dereference. An attack has to be approached locally. The exploit has been disclosed to the public and may be used.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-2925">CVE-2025-2925</a></td>
-					<td>3.3</td>
-					<td><a target=_blank href="https://github.com/hdfgroup/hdf5/issues/5383">https://github.com/hdfgroup/hdf5/issues/5383</a></td>
-					<td class=date>2025-03-28T20:15:26.440</td>
-					<td class=description>A vulnerability has been found in HDF5 up to 1.14.6 and classified as problematic. This vulnerability affects the function H5MM_realloc of the file src/H5MM.c. The manipulation of the argument mem leads to double free. The attack needs to be approached locally. The exploit has been disclosed to the public and may be used.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-2924">CVE-2025-2924</a></td>
-					<td>3.3</td>
-					<td><a target=_blank href="https://github.com/hdfgroup/hdf5/issues/5382">https://github.com/hdfgroup/hdf5/issues/5382</a></td>
-					<td class=date>2025-03-28T20:15:26.147</td>
-					<td class=description>A vulnerability, which was classified as problematic, was found in HDF5 up to 1.14.6. This affects the function H5HL__fl_deserialize of the file src/H5HLcache.c. The manipulation of the argument free_block leads to heap-based buffer overflow. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used.</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
+		
+			
 		
 			
 		
@@ -366,12 +344,6 @@ There are no viable workarounds therefore we strongly recommend to update to one
 					<td class=date>2025-03-28T21:15:17.617</td>
 					<td class=description>A SQL injection vulnerability exists in the Epicor HCM 2021 1.9, specifically in the filter parameter of the JsonFetcher.svc endpoint. An attacker can exploit this vulnerability by injecting malicious SQL payloads into the filter parameter, enabling the unauthorized execution of arbitrary SQL commands on the backend database. If certain features (like xp_cmdshell) are enabled, this may lead to remote code execution.</td>
 				</tr>
-			
-		
-			
-		
-			
-		
 			
 		
 
