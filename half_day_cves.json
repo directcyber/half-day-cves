@@ -1,28 +1,4 @@
 {
-  "CVE-2025-2913": {
-    "url": "https://github.com/hdfgroup/hdf5/issues/5376",
-    "cvss": 3.3,
-    "description": "A vulnerability was found in HDF5 up to 1.14.6. It has been rated as problematic. Affected by this issue is the function H5FL__blk_gc_list of the file src/H5FL.c. The manipulation of the argument H5FL_blk_head_t leads to use after free. An attack has to be approached locally. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-03-28T17:15:30.260"
-  },
-  "CVE-2025-2914": {
-    "url": "https://github.com/hdfgroup/hdf5/issues/5379",
-    "cvss": 3.3,
-    "description": "A vulnerability classified as problematic has been found in HDF5 up to 1.14.6. This affects the function H5FS__sinfo_Srialize_Sct_cb of the file src/H5FScache.c. The manipulation of the argument sect leads to heap-based buffer overflow. Local access is required to approach this attack. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-03-28T17:15:30.510"
-  },
-  "CVE-2025-2915": {
-    "url": "https://github.com/hdfgroup/hdf5/issues/5380",
-    "cvss": 3.3,
-    "description": "A vulnerability classified as problematic was found in HDF5 up to 1.14.6. This vulnerability affects the function H5F__accum_free of the file src/H5Faccum.c. The manipulation of the argument overlap_size leads to heap-based buffer overflow. Attacking locally is a requirement. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-03-28T17:15:30.750"
-  },
-  "CVE-2025-2916": {
-    "cvss": 6.3,
-    "description": "A vulnerability, which was classified as critical, has been found in Aishida Call Center System up to 20250314. This issue affects some unknown processing of the file /doscall/weixin/open/amr2mp3. The manipulation of the argument File leads to command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-03-28T17:15:30.983",
-    "keywords": "remote,command"
-  },
   "CVE-2025-2923": {
     "url": "https://github.com/hdfgroup/hdf5/issues/5381",
     "cvss": 3.3,
@@ -148,5 +124,17 @@
     "description": "A vulnerability, which was classified as critical, has been found in Digital China DCME-520 up to 20250320. This issue affects some unknown processing of the file /usr/local/WWW/function/audit/newstatistics/mon_merge_stat_hist.php. The manipulation of the argument type_name leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. Other parameters might be affected as well.",
     "published": "2025-03-31T16:15:27.440",
     "keywords": "remote,command"
+  },
+  "CVE-2025-3004": {
+    "url": "https://github.com/saysky/forestblog/issues/104#issue-2937118096",
+    "cvss": 3.5,
+    "description": "A vulnerability has been found in Sayski ForestBlog up to 20250321 and classified as problematic. Affected by this vulnerability is an unknown functionality of the file /search. The manipulation of the argument keywords leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-31T17:15:43.757"
+  },
+  "CVE-2025-3005": {
+    "url": "https://github.com/saysky/forestblog/issues/105",
+    "cvss": 3.5,
+    "description": "A vulnerability was found in Sayski ForestBlog up to 20250321 and classified as problematic. Affected by this issue is some unknown functionality of the component Friend Link Handler. The manipulation leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-31T18:15:34.180"
   }
 }
