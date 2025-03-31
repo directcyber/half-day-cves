@@ -1,10 +1,4 @@
 {
-  "CVE-2025-2912": {
-    "url": "https://github.com/hdfgroup/hdf5/issues/5370",
-    "cvss": 3.3,
-    "description": "A vulnerability was found in HDF5 up to 1.14.6. It has been declared as problematic. Affected by this vulnerability is the function H5O_msg_flush of the file src/H5Omessage.c. The manipulation of the argument oh leads to heap-based buffer overflow. The attack needs to be approached locally. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-03-28T16:15:30.540"
-  },
   "CVE-2025-2913": {
     "url": "https://github.com/hdfgroup/hdf5/issues/5376",
     "cvss": 3.3,
@@ -142,5 +136,17 @@
     "cvss": 5.3,
     "description": "A vulnerability classified as critical has been found in PyTorch 2.6.0. This affects the function torch.jit.script. The manipulation leads to memory corruption. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used.",
     "published": "2025-03-31T15:15:46.297"
+  },
+  "CVE-2025-3001": {
+    "url": "https://github.com/pytorch/pytorch/issues/149626#issue-2935860995",
+    "cvss": 5.3,
+    "description": "A vulnerability classified as critical was found in PyTorch 2.6.0. This vulnerability affects the function torch.lstm_cell. The manipulation leads to memory corruption. The attack needs to be approached locally. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-31T16:15:27.277"
+  },
+  "CVE-2025-3002": {
+    "cvss": 7.3,
+    "description": "A vulnerability, which was classified as critical, has been found in Digital China DCME-520 up to 20250320. This issue affects some unknown processing of the file /usr/local/WWW/function/audit/newstatistics/mon_merge_stat_hist.php. The manipulation of the argument type_name leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. Other parameters might be affected as well.",
+    "published": "2025-03-31T16:15:27.440",
+    "keywords": "remote,command"
   }
 }
