@@ -102,7 +102,7 @@
     "keywords": "unauthenticated,sensitive"
   },
   "CVE-2025-2953": {
-    "url": "https://github.com/pytorch/pytorch/issues/149274#issue-2923122269",
+    "url": "https://github.com/pytorch/pytorch/issues/149274",
     "cvss": 3.3,
     "description": "A vulnerability, which was classified as problematic, has been found in PyTorch 2.6.0+cu124. Affected by this issue is the function torch.mkldnn_max_pool2d. The manipulation leads to denial of service. An attack has to be approached locally. The exploit has been disclosed to the public and may be used.",
     "published": "2025-03-30T16:15:14.380"
@@ -136,5 +136,11 @@
     "description": "A flaw was found in the OpenShift Lightspeed Service, which is vulnerable to unauthenticated API request flooding. Repeated queries to non-existent endpoints inflate metrics storage and processing, consuming excessive resources. This issue can lead to monitoring system degradation, increased disk usage, and potential service unavailability. Since the issue does not require authentication, an external attacker can exhaust CPU, RAM, and disk space, impacting both application and cluster stability.",
     "published": "2025-03-31T12:15:15.073",
     "keywords": "unauthenticated,authentication"
+  },
+  "CVE-2025-29266": {
+    "cvss": 9.6,
+    "description": "Unraid 7.0.0 before 7.0.1 allows remote users to access the Unraid WebGUI and web console as root without authentication if a container is running in Host networking mode with Use Tailscale enabled.",
+    "published": "2025-03-31T13:15:43.250",
+    "keywords": "remote,authentication"
   }
 }
