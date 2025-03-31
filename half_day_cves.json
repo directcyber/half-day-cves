@@ -1,10 +1,4 @@
 {
-  "CVE-2025-30372": {
-    "cvss": "-",
-    "description": "Emlog is an open source website building system. Emlog Pro versions pro-2.5.7 and pro-2.5.8 contain an SQL injection vulnerability. `search_controller.php` does not use addslashes after urldecode, allowing the preceeding addslashes to be bypassed by URL double encoding. This could result in potential leakage of sensitive information from the user database. Version pro-2.5.9 fixes the issue.",
-    "published": "2025-03-28T15:15:51.227",
-    "keywords": "sensitive,bypass,leak"
-  },
   "CVE-2025-2912": {
     "url": "https://github.com/hdfgroup/hdf5/issues/5370",
     "cvss": 3.3,
@@ -136,5 +130,17 @@
     "cvss": 5.3,
     "description": "A vulnerability was found in PyTorch 2.6.0. It has been declared as critical. Affected by this vulnerability is the function torch.nn.utils.rnn.pad_packed_sequence. The manipulation leads to memory corruption. Local access is required to approach this attack. The exploit has been disclosed to the public and may be used.",
     "published": "2025-03-31T14:15:20.370"
+  },
+  "CVE-2025-2999": {
+    "url": "https://github.com/pytorch/pytorch/issues/149622#issue-2935495265",
+    "cvss": 5.3,
+    "description": "A vulnerability was found in PyTorch 2.6.0. It has been rated as critical. Affected by this issue is the function torch.nn.utils.rnn.unpack_sequence. The manipulation leads to memory corruption. Attacking locally is a requirement. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-31T15:15:44.657"
+  },
+  "CVE-2025-3000": {
+    "url": "https://github.com/pytorch/pytorch/issues/149623#issue-2935703015",
+    "cvss": 5.3,
+    "description": "A vulnerability classified as critical has been found in PyTorch 2.6.0. This affects the function torch.jit.script. The manipulation leads to memory corruption. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-03-31T15:15:46.297"
   }
 }
