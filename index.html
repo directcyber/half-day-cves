@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-04-03T18:16:00.029711
+Updated at UTC 2025-04-06T21:10:22.052861
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -58,8 +58,216 @@ Updated at UTC 2025-04-03T18:16:00.029711
 		</tr>
 
 		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-29476">CVE-2025-29476</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/blosc/c-blosc2/issues/656">https://github.com/blosc/c-blosc2/issues/656</a></td>
+					<td class=date>2025-04-04T18:15:48.263</td>
+					<td class=description>Buffer Overflow vulnerability in compress_chunk_fuzzer with oss-fuzz on commit 16450518afddcb3139de627157208e49bfef6987 in c-blosc2 v.2.17.0 and before.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-3196">CVE-2025-3196</a></td>
+					<td>5.3</td>
+					<td><a target=_blank href="https://github.com/assimp/assimp/issues/6069">https://github.com/assimp/assimp/issues/6069</a></td>
+					<td class=date>2025-04-04T02:15:18.627</td>
+					<td class=description>A vulnerability, which was classified as critical, was found in Open Asset Import Library Assimp 5.4.3. Affected is the function Assimp::MD2Importer::InternReadFile in the library code/AssetLib/MD2/MD2Loader.cpp of the component Malformed File Handler. The manipulation of the argument Name leads to stack-based buffer overflow. The attack needs to be approached locally. The exploit has been disclosed to the public and may be used. It is recommended to upgrade the affected component.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-31492">CVE-2025-31492</a></td>
+					<td>-</td>
+					<td>unauthenticated,authentication</td>
+					<td class=date>2025-04-06T20:15:15.063</td>
+					<td class=description>mod_auth_openidc is an OpenID Certified authentication and authorization module for the Apache 2.x HTTP server that implements the OpenID Connect Relying Party functionality. Prior to 2.4.16.11, a bug in a mod_auth_openidc results in disclosure of protected content to unauthenticated users. The conditions for disclosure are an OIDCProviderAuthRequestMethod POST, a valid account, and there mustn't be any application-level gateway (or load balancer etc) protecting the server. When you request a protected resource, the response includes the HTTP status, the HTTP headers, the intended response (the self-submitting form), and the protected resource (with no headers). This is an example of a request for a protected resource, including all the data returned. In the case where mod_auth_openidc returns a form, it has to return OK from check_userid so as not to go down the error path in httpd. This means httpd will try to issue the protected resource. oidc_content_handler is called early, which has the opportunity to prevent the normal output being issued by httpd. oidc_content_handler has a number of checks for when it intervenes, but it doesn't check for this case, so the handler returns DECLINED. Consequently, httpd appends the protected content to the response. The issue has been patched in mod_auth_openidc versions >= 2.4.16.11.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-2941">CVE-2025-2941</a></td>
+					<td>9.8</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2025-04-05T07:15:40.107</td>
+					<td class=description>The Drag and Drop Multiple File Upload for WooCommerce plugin for WordPress is vulnerable to arbitrary file moving due to insufficient file path validation via the wc-upload-file[] parameter in all versions up to, and including, 1.1.4. This makes it possible for unauthenticated attackers to move arbitrary files on the server, which can easily lead to remote code execution when the right file is moved (such as wp-config.php).</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-32352">CVE-2025-32352</a></td>
+					<td>4.8</td>
+					<td>remote,authentication,bypass</td>
+					<td class=date>2025-04-05T05:15:44.693</td>
+					<td class=description>A type confusion vulnerability in lib/NSSAuthenticator.php in ZendTo before v5.04-7 allows remote attackers to bypass authentication for users with passwords stored as MD5 hashes that can be interpreted as numbers. A solution requires moving from MD5 to bcrypt.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-3268">CVE-2025-3268</a></td>
+					<td>5.3</td>
+					<td>remote,authentication</td>
+					<td class=date>2025-04-04T21:15:51.557</td>
+					<td class=description>A vulnerability has been found in qinguoyi TinyWebServer up to 1.0 and classified as critical. This vulnerability affects unknown code of the file http/http_conn.cpp. The manipulation of the argument m_url_real leads to improper authentication. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-27520">CVE-2025-27520</a></td>
+					<td>9.8</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2025-04-04T15:15:47.927</td>
+					<td class=description>BentoML is a Python library for building online serving systems optimized for AI apps and model inference. A Remote Code Execution (RCE) vulnerability caused by insecure deserialization has been identified in the latest version (v1.4.2) of BentoML. It allows any unauthenticated user to execute arbitrary code on the server. It exists an unsafe code segment in serde.py. This vulnerability is fixed in 1.4.3.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-3249">CVE-2025-3249</a></td>
+					<td>6.3</td>
+					<td>remote,command</td>
+					<td class=date>2025-04-04T14:15:25.453</td>
+					<td class=description>A vulnerability classified as critical was found in TOTOLINK A6000R 1.0.1-B20201211.2000. Affected by this vulnerability is the function apcli_cancel_wps of the file /usr/lib/lua/luci/controller/mtkwifi.lua. The manipulation leads to command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-2798">CVE-2025-2798</a></td>
+					<td>9.8</td>
+					<td>unauthenticated,authentication,bypass</td>
+					<td class=date>2025-04-04T14:15:22.293</td>
+					<td class=description>The Woffice CRM theme for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 5.4.21. This is due to a misconfiguration of excluded roles during registration. This makes it possible for unauthenticated attackers to register with an Administrator role if a custom login form is being used. This can be combined with CVE-2025-2797 to bypass the user approval process if an Administrator can be tricked into taking an action such as clicking a link.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-2244">CVE-2025-2244</a></td>
+					<td>-</td>
+					<td>remote,execution,command</td>
+					<td class=date>2025-04-04T10:15:16.580</td>
+					<td class=description>A vulnerability in the sendMailFromRemoteSource method in Emails.php  as used in Bitdefender GravityZone Console unsafely uses php unserialize() on user-supplied input without validation. By crafting a malicious serialized payload, an attacker can trigger PHP object injection, perform a file write, and gain arbitrary command execution on the host system.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-2243">CVE-2025-2243</a></td>
+					<td>-</td>
+					<td>execution,bypass</td>
+					<td class=date>2025-04-04T10:15:16.313</td>
+					<td class=description>A server-side request forgery (SSRF) vulnerability in Bitdefender GravityZone Console allows an attacker to bypass input validation logic using leading characters in DNS requests. Paired with other potential vulnerabilities, this bypass could be used for execution of third party code. This issue affects GravityZone Console: before 6.41.2.1.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-2780">CVE-2025-2780</a></td>
+					<td>9.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-04-04T07:15:40.807</td>
+					<td class=description>The Woffice Core plugin for WordPress, used by the Woffice Theme, is vulnerable to arbitrary file uploads due to missing file type validation in the 'saveFeaturedImage' function in all versions up to, and including, 5.4.21. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-2317">CVE-2025-2317</a></td>
+					<td>7.5</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2025-04-04T06:15:40.890</td>
+					<td class=description>The Product Filter by WBW plugin for WordPress is vulnerable to time-based SQL Injection via the filtersDataBackend parameter in all versions up to, and including, 2.7.9 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-2270">CVE-2025-2270</a></td>
+					<td>8.1</td>
+					<td>execution,unauthenticated,sensitive,bypass</td>
+					<td class=date>2025-04-04T06:15:40.540</td>
+					<td class=description>The Countdown, Coming Soon, Maintenance – Countdown & Clock plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.8.9.1 via the createCdObj function. This makes it possible for unauthenticated attackers to include and execute files with the specific filenames on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in some cases.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25061">CVE-2025-25061</a></td>
+					<td>5.8</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-04-04T02:15:17.910</td>
+					<td class=description>Unintended proxy or intermediary ('Confused Deputy') issue exists in HMI ViewJet C-more series and HMI GC-A2 series, which may allow a remote unauthenticated attacker to use the product as an intermediary for FTP bounce attack.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24317">CVE-2025-24317</a></td>
+					<td>5.3</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-04-04T02:15:17.757</td>
+					<td class=description>Allocation of resources without limits or throttling issue exists in HMI ViewJet C-more series and HMI GC-A2 series, which may allow a remote unauthenticated attacker to cause a denial-of-service (DoS) condition.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24310">CVE-2025-24310</a></td>
+					<td>4.3</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-04-04T02:15:17.463</td>
+					<td class=description>Improper restriction of rendered UI layers or frames issue exists in HMI ViewJet C-more series, which may allow a remote unauthenticated attacker to trick the product user to perform operations on the product's web pages.</td>
+				</tr>
+			
 		
 
 		</div>
