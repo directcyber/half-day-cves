@@ -1,16 +1,4 @@
 {
-  "CVE-2025-2798": {
-    "cvss": 9.8,
-    "description": "The Woffice CRM theme for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 5.4.21. This is due to a misconfiguration of excluded roles during registration. This makes it possible for unauthenticated attackers to register with an Administrator role if a custom login form is being used. This can be combined with CVE-2025-2797 to bypass the user approval process if an Administrator can be tricked into taking an action such as clicking a link.",
-    "published": "2025-04-04T14:15:22.293",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
-  "CVE-2025-3249": {
-    "cvss": 6.3,
-    "description": "A vulnerability classified as critical was found in TOTOLINK A6000R 1.0.1-B20201211.2000. Affected by this vulnerability is the function apcli_cancel_wps of the file /usr/lib/lua/luci/controller/mtkwifi.lua. The manipulation leads to command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-04-04T14:15:25.453",
-    "keywords": "remote,command"
-  },
   "CVE-2025-27520": {
     "cvss": 9.8,
     "description": "BentoML is a Python library for building online serving systems optimized for AI apps and model inference. A Remote Code Execution (RCE) vulnerability caused by insecure deserialization has been identified in the latest version (v1.4.2) of BentoML. It allows any unauthenticated user to execute arbitrary code on the server. It exists an unsafe code segment in serde.py. This vulnerability is fixed in 1.4.3.",
@@ -48,7 +36,7 @@
     "keywords": "unauthenticated,authentication"
   },
   "CVE-2025-20654": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "In wlan service, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00406897; Issue ID: MSV-2875.",
     "published": "2025-04-07T04:15:19.180",
     "keywords": "remote,execution"
@@ -72,7 +60,7 @@
     "keywords": "remote,execution"
   },
   "CVE-2025-20664": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "In wlan AP driver, there is a possible information disclosure due to an uncaught exception. This could lead to remote (proximal/adjacent) information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00406217; Issue ID: MSV-2773.",
     "published": "2025-04-07T04:15:20.420",
     "keywords": "remote,execution"
@@ -82,5 +70,11 @@
     "description": "A vulnerability, which was classified as critical, has been found in PCMan FTP Server 2.0.7. This issue affects some unknown processing of the component SYST Command Handler. The manipulation leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
     "published": "2025-04-07T11:15:53.807",
     "keywords": "remote,command"
+  },
+  "CVE-2025-2251": {
+    "cvss": 6.2,
+    "description": "A security flaw exists in WildFly and JBoss Enterprise Application Platform (EAP) within the Enterprise JavaBeans (EJB) remote invocation mechanism. This vulnerability stems from untrusted data deserialization handled by JBoss Marshalling. This flaw allows an attacker to send a specially crafted serialized object, leading to remote code execution without requiring authentication.",
+    "published": "2025-04-07T14:15:24.400",
+    "keywords": "remote,execution,authentication"
   }
 }
