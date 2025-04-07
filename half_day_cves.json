@@ -1,10 +1,4 @@
 {
-  "CVE-2025-29476": {
-    "url": "https://github.com/blosc/c-blosc2/issues/656",
-    "cvss": "-",
-    "description": "Buffer Overflow vulnerability in compress_chunk_fuzzer with oss-fuzz on commit 16450518afddcb3139de627157208e49bfef6987 in c-blosc2 v.2.17.0 and before.",
-    "published": "2025-04-04T18:15:48.263"
-  },
   "CVE-2025-3268": {
     "cvss": 5.3,
     "description": "A vulnerability has been found in qinguoyi TinyWebServer up to 1.0 and classified as critical. This vulnerability affects unknown code of the file http/http_conn.cpp. The manipulation of the argument m_url_real leads to improper authentication. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
@@ -112,5 +106,29 @@
     "description": "The IntelliSpace portal application utilizes .NET Remoting for its functionality. The vulnerability arises from the exploitation of port 755 through the deserialization vulnerability. After analyzing the configuration files, we observed that the server had set the TypeFilterLevel to Full which is dangerous as it can potentially lead to remote code execution using deserialization. This issue affects IntelliSpace Portal: 12 and prior.",
     "published": "2025-04-07T16:15:27.963",
     "keywords": "remote,execution"
+  },
+  "CVE-2025-3375": {
+    "cvss": 7.3,
+    "description": "A vulnerability was found in PCMan FTP Server 2.0.7. It has been classified as critical. This affects an unknown part of the component CDUP Command Handler. The manipulation leads to buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-04-07T17:15:39.457",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-3376": {
+    "cvss": 7.3,
+    "description": "A vulnerability was found in PCMan FTP Server 2.0.7. It has been declared as critical. This vulnerability affects unknown code of the component CONF Command Handler. The manipulation leads to buffer overflow. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-04-07T17:15:39.680",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-3377": {
+    "cvss": 7.3,
+    "description": "A vulnerability was found in PCMan FTP Server 2.0.7. It has been rated as critical. This issue affects some unknown processing of the component ENC Command Handler. The manipulation leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-04-07T18:15:45.733",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-3378": {
+    "cvss": 7.3,
+    "description": "A vulnerability classified as critical has been found in PCMan FTP Server 2.0.7. Affected is an unknown function of the component EPRT Command Handler. The manipulation leads to buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-04-07T18:15:45.923",
+    "keywords": "remote,command"
   }
 }
