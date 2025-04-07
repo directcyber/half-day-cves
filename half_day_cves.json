@@ -1,28 +1,4 @@
 {
-  "CVE-2025-24310": {
-    "cvss": 4.3,
-    "description": "Improper restriction of rendered UI layers or frames issue exists in HMI ViewJet C-more series, which may allow a remote unauthenticated attacker to trick the product user to perform operations on the product's web pages.",
-    "published": "2025-04-04T02:15:17.463",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-24317": {
-    "cvss": 5.3,
-    "description": "Allocation of resources without limits or throttling issue exists in HMI ViewJet C-more series and HMI GC-A2 series, which may allow a remote unauthenticated attacker to cause a denial-of-service (DoS) condition.",
-    "published": "2025-04-04T02:15:17.757",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-25061": {
-    "cvss": 5.8,
-    "description": "Unintended proxy or intermediary ('Confused Deputy') issue exists in HMI ViewJet C-more series and HMI GC-A2 series, which may allow a remote unauthenticated attacker to use the product as an intermediary for FTP bounce attack.",
-    "published": "2025-04-04T02:15:17.910",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-3196": {
-    "url": "https://github.com/assimp/assimp/issues/6069",
-    "cvss": 5.3,
-    "description": "A vulnerability, which was classified as critical, was found in Open Asset Import Library Assimp 5.4.3. Affected is the function Assimp::MD2Importer::InternReadFile in the library code/AssetLib/MD2/MD2Loader.cpp of the component Malformed File Handler. The manipulation of the argument Name leads to stack-based buffer overflow. The attack needs to be approached locally. The exploit has been disclosed to the public and may be used. It is recommended to upgrade the affected component.",
-    "published": "2025-04-04T02:15:18.627"
-  },
   "CVE-2025-2270": {
     "cvss": 8.1,
     "description": "The Countdown, Coming Soon, Maintenance \u2013 Countdown & Clock plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.8.9.1 via the createCdObj function. This makes it possible for unauthenticated attackers to include and execute files with the specific filenames on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in some cases.",
