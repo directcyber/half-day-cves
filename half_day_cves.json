@@ -1,10 +1,4 @@
 {
-  "CVE-2025-27520": {
-    "cvss": 9.8,
-    "description": "BentoML is a Python library for building online serving systems optimized for AI apps and model inference. A Remote Code Execution (RCE) vulnerability caused by insecure deserialization has been identified in the latest version (v1.4.2) of BentoML. It allows any unauthenticated user to execute arbitrary code on the server. It exists an unsafe code segment in serde.py. This vulnerability is fixed in 1.4.3.",
-    "published": "2025-04-04T15:15:47.927",
-    "keywords": "remote,execution,unauthenticated"
-  },
   "CVE-2025-29476": {
     "url": "https://github.com/blosc/c-blosc2/issues/656",
     "cvss": "-",
@@ -48,13 +42,13 @@
     "keywords": "execution,bypass"
   },
   "CVE-2025-20659": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "In Modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01519028; Issue ID: MSV-2768.",
     "published": "2025-04-07T04:15:19.820",
     "keywords": "remote,execution"
   },
   "CVE-2025-20663": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "In wlan AP driver, there is a possible information disclosure due to an uncaught exception. This could lead to remote (proximal/adjacent) information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00408868; Issue ID: MSV-3031.",
     "published": "2025-04-07T04:15:20.300",
     "keywords": "remote,execution"
@@ -76,5 +70,29 @@
     "description": "A security flaw exists in WildFly and JBoss Enterprise Application Platform (EAP) within the Enterprise JavaBeans (EJB) remote invocation mechanism. This vulnerability stems from untrusted data deserialization handled by JBoss Marshalling. This flaw allows an attacker to send a specially crafted serialized object, leading to remote code execution without requiring authentication.",
     "published": "2025-04-07T14:15:24.400",
     "keywords": "remote,execution,authentication"
+  },
+  "CVE-2025-31476": {
+    "cvss": 4.8,
+    "description": "tarteaucitron.js is a compliant and accessible cookie banner. A vulnerability was identified in tarteaucitron.js, allowing a user with high privileges (access to the site's source code or a CMS plugin) to enter a URL containing an insecure scheme such as javascript:alert(). Before the fix, URL validation was insufficient, which could allow arbitrary JavaScript execution if a user clicked on a malicious link. An attacker with high privileges could insert a link exploiting an insecure URL scheme, leading to execution of arbitrary JavaScript code, theft of sensitive data through phishing attacks, or modification of the user interface behavior. This vulnerability is fixed in 1.20.1.",
+    "published": "2025-04-07T15:15:44.370",
+    "keywords": "execution,sensitive"
+  },
+  "CVE-2025-3248": {
+    "cvss": 9.8,
+    "description": "Langflow versions prior to 1.3.0 are susceptible to code injection in \nthe /api/v1/validate/code endpoint. A remote and unauthenticated attacker can send crafted HTTP requests to execute arbitrary\ncode.",
+    "published": "2025-04-07T15:15:44.897",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-3371": {
+    "cvss": 7.3,
+    "description": "A vulnerability, which was classified as critical, has been found in PCMan FTP Server 2.0.7. This issue affects some unknown processing of the component DELETE Command Handler. The manipulation leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-04-07T15:15:46.097",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-3372": {
+    "cvss": 7.3,
+    "description": "A vulnerability, which was classified as critical, was found in PCMan FTP Server 2.0.7. Affected is an unknown function of the component MKDIR Command Handler. The manipulation leads to buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-04-07T15:15:46.300",
+    "keywords": "remote,command"
   }
 }
