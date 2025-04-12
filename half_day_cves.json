@@ -1,146 +1,170 @@
 {
-  "CVE-2025-3268": {
-    "cvss": 5.3,
-    "description": "A vulnerability has been found in qinguoyi TinyWebServer up to 1.0 and classified as critical. This vulnerability affects unknown code of the file http/http_conn.cpp. The manipulation of the argument m_url_real leads to improper authentication. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-04-04T21:15:51.557",
-    "keywords": "remote,authentication"
-  },
-  "CVE-2025-32352": {
-    "cvss": 4.8,
-    "description": "A type confusion vulnerability in lib/NSSAuthenticator.php in ZendTo before v5.04-7 allows remote attackers to bypass authentication for users with passwords stored as MD5 hashes that can be interpreted as numbers. A solution requires moving from MD5 to bcrypt.",
-    "published": "2025-04-05T05:15:44.693",
-    "keywords": "remote,authentication,bypass"
-  },
-  "CVE-2025-2941": {
-    "cvss": 9.8,
-    "description": "The Drag and Drop Multiple File Upload for WooCommerce plugin for WordPress is vulnerable to arbitrary file moving due to insufficient file path validation via the wc-upload-file[] parameter in all versions up to, and including, 1.1.4. This makes it possible for unauthenticated attackers to move arbitrary files on the server, which can easily lead to remote code execution when the right file is moved (such as wp-config.php).",
-    "published": "2025-04-05T07:15:40.107",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2025-31492": {
+  "CVE-2025-3114": {
     "cvss": "-",
-    "description": "mod_auth_openidc is an OpenID Certified authentication and authorization module for the Apache 2.x HTTP server that implements the OpenID Connect Relying Party functionality. Prior to 2.4.16.11, a bug in a mod_auth_openidc results in disclosure of protected content to unauthenticated users. The conditions for disclosure are an OIDCProviderAuthRequestMethod POST, a valid account, and there mustn't be any application-level gateway (or load balancer etc) protecting the server. When you request a protected resource, the response includes the HTTP status, the HTTP headers, the intended response (the self-submitting form), and the protected resource (with no headers). This is an example of a request for a protected resource, including all the data returned. In the case where mod_auth_openidc returns a form, it has to return OK from check_userid so as not to go down the error path in httpd. This means httpd will try to issue the protected resource. oidc_content_handler is called early, which has the opportunity to prevent the normal output being issued by httpd. oidc_content_handler has a number of checks for when it intervenes, but it doesn't check for this case, so the handler returns DECLINED. Consequently, httpd appends the protected content to the response. The issue has been patched in mod_auth_openidc versions >= 2.4.16.11.",
-    "published": "2025-04-06T20:15:15.063",
-    "keywords": "unauthenticated,authentication"
-  },
-  "CVE-2025-20654": {
-    "cvss": 9.8,
-    "description": "In wlan service, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00406897; Issue ID: MSV-2875.",
-    "published": "2025-04-07T04:15:19.180",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-20658": {
-    "cvss": 6.0,
-    "description": "In DA, there is a possible permission bypass due to a logic error. This could lead to local escalation of privilege, if an attacker has physical access to the device, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS09474894; Issue ID: MSV-2597.",
-    "published": "2025-04-07T04:15:19.703",
+    "description": "Code Execution via Malicious Files:\u00a0Attackers can create specially crafted files with embedded code that may execute without adequate security validation, potentially leading to system compromise.\n\nSandbox Bypass Vulnerability:\u00a0A flaw in the TERR security mechanism allows attackers to bypass sandbox restrictions, enabling the execution of untrusted code without appropriate controls.",
+    "published": "2025-04-09T18:15:50.643",
     "keywords": "execution,bypass"
   },
-  "CVE-2025-20659": {
-    "cvss": 7.5,
-    "description": "In Modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01519028; Issue ID: MSV-2768.",
-    "published": "2025-04-07T04:15:19.820",
-    "keywords": "remote,execution"
+  "CVE-2025-21595": {
+    "cvss": 6.5,
+    "description": "A Missing Release of Memory after Effective Lifetime\u00a0vulnerability in the Packet Forwarding Engine (PFE) of Juniper Networks Junos OS and Junos OS Evolved allows an adjacent, unauthenticated attacker to cause an FPC to crash, leading to Denial of Service (DoS).\n\nOn all Junos OS and Junos OS Evolved platforms, in an EVPN-VXLAN scenario, when specific ARP packets are received on an IPv4 network, or specific NDP packets are received on an IPv6 network, kernel heap memory leaks, which eventually leads to an FPC crash and restart.\n\nThis issue does not affect MX Series platforms.\nHeap size growth on FPC can be seen using below command.\n\n\nuser@host> show chassis fpc\n\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Temp CPU Utilization (%) CPU Utilization (%) Memory \u00a0 Utilization (%)\nSlot State \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 (C) Total Interrupt \u00a0 \u00a0 1min \u00a0 5min \u00a0 15min \u00a0 DRAM (MB) \u00a0 Heap \u00a0 Buffer\n\u00a0 0 Online \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 45 \u00a0 \u00a0 3 \u00a0 \u00a0 \u00a0 \u00a0 0 \u00a0 \u00a0 \u00a0 2 \u00a0 \u00a0 \u00a0 2 \u00a0 \u00a0 \u00a02 \u00a0 \u00a0 \u00a0 32768 \u00a0 \u00a0 \u00a019\u00a0 \u00a0 \u00a0 \u00a00\u2003<<<<<<< Heap increase in all fPCs\n\n\nThis issue affects Junos OS:\n\n  *  All versions before 21.2R3-S7,\n  *  21.4 versions before 21.4R3-S4,\n  *  22.2 versions before 22.2R3-S1,\u00a0\n  *  22.3 versions before 22.3R3-S1,\u00a0\n  *  22.4 versions before 22.4R2-S2, 22.4R3.\n\n\nand Junos OS Evolved:\n\n  *  All versions before 21.2R3-S7-EVO,\n  *  21.4-EVO versions before 21.4R3-S4-EVO,\n  *  22.2-EVO versions before 22.2R3-S1-EVO,\u00a0\n  *  22.3-EVO versions before 22.3R3-S1-EVO,\u00a0\n\n  *  22.4-EVO versions before 22.4R3-EVO.",
+    "published": "2025-04-09T20:15:25.853",
+    "keywords": "unauthenticated,command,vpn,leak"
   },
-  "CVE-2025-20663": {
-    "cvss": 7.5,
-    "description": "In wlan AP driver, there is a possible information disclosure due to an uncaught exception. This could lead to remote (proximal/adjacent) information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00408868; Issue ID: MSV-3031.",
-    "published": "2025-04-07T04:15:20.300",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-20664": {
-    "cvss": 7.5,
-    "description": "In wlan AP driver, there is a possible information disclosure due to an uncaught exception. This could lead to remote (proximal/adjacent) information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00406217; Issue ID: MSV-2773.",
-    "published": "2025-04-07T04:15:20.420",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-3349": {
-    "cvss": 7.3,
-    "description": "A vulnerability, which was classified as critical, has been found in PCMan FTP Server 2.0.7. This issue affects some unknown processing of the component SYST Command Handler. The manipulation leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-04-07T11:15:53.807",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-2251": {
-    "cvss": 6.2,
-    "description": "A security flaw exists in WildFly and JBoss Enterprise Application Platform (EAP) within the Enterprise JavaBeans (EJB) remote invocation mechanism. This vulnerability stems from untrusted data deserialization handled by JBoss Marshalling. This flaw allows an attacker to send a specially crafted serialized object, leading to remote code execution without requiring authentication.",
-    "published": "2025-04-07T14:15:24.400",
-    "keywords": "remote,execution,authentication"
-  },
-  "CVE-2025-31476": {
-    "cvss": 4.8,
-    "description": "tarteaucitron.js is a compliant and accessible cookie banner. A vulnerability was identified in tarteaucitron.js, allowing a user with high privileges (access to the site's source code or a CMS plugin) to enter a URL containing an insecure scheme such as javascript:alert(). Before the fix, URL validation was insufficient, which could allow arbitrary JavaScript execution if a user clicked on a malicious link. An attacker with high privileges could insert a link exploiting an insecure URL scheme, leading to execution of arbitrary JavaScript code, theft of sensitive data through phishing attacks, or modification of the user interface behavior. This vulnerability is fixed in 1.20.1.",
-    "published": "2025-04-07T15:15:44.370",
-    "keywords": "execution,sensitive"
-  },
-  "CVE-2025-3248": {
-    "cvss": 9.8,
-    "description": "Langflow versions prior to 1.3.0 are susceptible to code injection in \nthe /api/v1/validate/code endpoint. A remote and unauthenticated attacker can send crafted HTTP requests to execute arbitrary\ncode.",
-    "published": "2025-04-07T15:15:44.897",
+  "CVE-2025-21597": {
+    "cvss": 5.3,
+    "description": "An Improper Check for Unusual or Exceptional Conditions vulnerability in routing protocol daemon (rpd) of Juniper Networks Junos OS and Junos OS Evolved allows an unauthenticated, logically adjacent BGP peer to cause Denial of Service (DoS).\n\nOn all Junos OS and Junos OS Evolved platforms, when BGP rib-sharding and update-threading are configured, and a BGP peer flap is done with specific timing, rpd crashes and restarts. Continuous peer flapping at specific time intervals will result in a sustained Denial of Service (DoS) condition.\n\nThis issue affects eBGP and iBGP, in both IPv4 and IPv6 implementations.  This issue requires a remote attacker to have at least one established BGP session. The issue can occur with or without logical-systems enabled.\n\nThis issue affects:\nJunos OS:\n\n\n\n  *  All versions before 20.4R3-S8,\n  *  21.2 versions before 21.2R3-S6,\n\n  *  21.3 versions before 21.3R3-S5,\n  *  21.4 versions before 21.4R3-S4,\n  *  22.1 versions before 22.1R3-S3,\n  *  22.2 versions before 22.2R3-S1,\n  *  22.3 versions before 22.3R3,\n  *  22.4 versions before 22.4R3.\n\n\nJunos OS Evolved:\n\n\n\n  *  All versions before 21.2R3-S6-EVO,\n  *  21.3-EVO versions before 21.3R3-S5-EVO,\n  *  21.4-EVO versions before 21.4R3-S4-EVO,\n  *  22.1-EVO versions before 22.1R3-S3-EVO,\n  *  22.2-EVO versions before :22.2R3-S1-EVO,\n  *  22.3-EVO versions before 22.3R3-EVO,\n  *  22.4-EVO versions before 22.4R3-EVO.",
+    "published": "2025-04-09T20:15:26.100",
     "keywords": "remote,unauthenticated"
   },
-  "CVE-2025-3371": {
-    "cvss": 7.3,
-    "description": "A vulnerability, which was classified as critical, has been found in PCMan FTP Server 2.0.7. This issue affects some unknown processing of the component DELETE Command Handler. The manipulation leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-04-07T15:15:46.097",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-3372": {
-    "cvss": 7.3,
-    "description": "A vulnerability, which was classified as critical, was found in PCMan FTP Server 2.0.7. Affected is an unknown function of the component MKDIR Command Handler. The manipulation leads to buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-04-07T15:15:46.300",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-3373": {
-    "cvss": 7.3,
-    "description": "A vulnerability has been found in PCMan FTP Server 2.0.7 and classified as critical. Affected by this vulnerability is an unknown functionality of the component SITE CHMOD Command Handler. The manipulation leads to buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-04-07T16:15:27.340",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-3374": {
-    "cvss": 7.3,
-    "description": "A vulnerability was found in PCMan FTP Server 2.0.7 and classified as critical. Affected by this issue is some unknown functionality of the component CCC Command Handler. The manipulation leads to buffer overflow. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-04-07T16:15:27.530",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-3425": {
-    "cvss": "-",
-    "description": "The IntelliSpace portal application utilizes .NET Remoting for its functionality. The vulnerability arises from the exploitation of port 755 through the deserialization vulnerability. After analyzing the configuration files, we observed that the server had set the TypeFilterLevel to Full which is dangerous as it can potentially lead to remote code execution using deserialization. This issue affects IntelliSpace Portal: 12 and prior.",
-    "published": "2025-04-07T16:15:27.963",
+  "CVE-2025-30644": {
+    "cvss": 7.5,
+    "description": "A Heap-based Buffer Overflow vulnerability in the flexible PIC concentrator (FPC) of Juniper Networks Junos OS on EX2300, EX3400, EX4100, EX4300, EX4300MP, EX4400, EX4600, EX4650-48Y, and QFX5k Series allows an attacker to send a specific DHCP packet to the device, leading to an FPC crash and restart, resulting in a Denial of Service (DoS). Continued receipt and processing of this packet will create a sustained Denial of Service (DoS) condition.\n\nUnder a rare timing scenario outside the attacker's control, memory corruption may be observed when DHCP Option 82 is enabled, leading to an FPC crash and affecting packet forwarding. Due to the nature of the heap-based overflow, exploitation of this vulnerability could also lead to remote code execution within the FPC, resulting in complete control of the vulnerable component.\nThis issue affects Junos OS on EX2300, EX3400, EX4100, EX4300, EX4300MP, EX4400, EX4600, EX4650-48Y, and QFX5k Series: \n\n\n\n\n  *  All versions before 21.4R3-S9,\u00a0\n  *  from 22.2 before 22.2R3-S5,\u00a0\n  *  from 22.4 before 22.4R3-S5,\u00a0\n  *  from 23.2 before 23.2R2-S3,\u00a0\n  *  from 23.4 before 23.4R2-S3,\u00a0\n  *  from 24.2 before 24.2R2.",
+    "published": "2025-04-09T20:15:27.517",
     "keywords": "remote,execution"
   },
-  "CVE-2025-3375": {
-    "cvss": 7.3,
-    "description": "A vulnerability was found in PCMan FTP Server 2.0.7. It has been classified as critical. This affects an unknown part of the component CDUP Command Handler. The manipulation leads to buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-04-07T17:15:39.457",
-    "keywords": "remote,command"
+  "CVE-2025-30647": {
+    "cvss": 6.5,
+    "description": "A Missing Release of Memory after Effective Lifetime vulnerability in the packet forwarding engine (PFE) of Juniper Networks Junos OS on MX Series allows an unauthenticated adjacent attacker to cause a Denial-of-Service (DoS).\n\nIn a subscriber management scenario, login/logout activity triggers a memory leak, and the leaked memory gradually increments and eventually results in a\u00a0crash.\u00a0\n\u00a0 \u00a0\n\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003user@host> show chassis fpc\n\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003Temp \u2003\u2003 CPU Utilization (%) \u2003\u2003CPU Utilization (%) \u2003 Memory  \u00a0 \u2003\u2003Utilization (%)\n\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003Slot State\u00a0 \u00a0 \u00a0 \u00a0(C) \u2003\u2003\u00a0 Total\u00a0 \u00a0Interrupt  \u00a0 \u00a0 1min\u00a0 \u00a05min\u00a0 15min \u2003 \u2003DRAM (MB) \u2003Heap  \u00a0  Buffer\n\n\u00a0 \u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u20032  Online\u00a0 \u00a0 \u00a0 \u00a0 \u00a036  \u00a0 \u2003\u2003\u2003 10  \u00a0 \u00a0 \u00a0 \u00a0 0\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 9  \u00a0 \u00a0 8  \u00a0 \u00a0 9  \u00a0 \u2003\u2003\u2003\u2003\u200332768  \u00a0 \u00a0 \u200326  \u00a0 \u00a0 \u00a0 \u00a0 0\n\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0\n\nThis issue affects Junos OS on MX Series: \n  *  All versions before 21.2R3-S9\n  *  from 21.4 before 21.4R3-S10\n  *  from 22.2 before 22.2R3-S6\n  *  from 22.4 before 22.4R3-S5\n  *  from 23.2 before 23.2R2-S3\n  *  from 23.4 before 23.4R2-S3\n  *  from 24.2 before 24.2R2.",
+    "published": "2025-04-09T20:15:28.103",
+    "keywords": "unauthenticated,leak"
   },
-  "CVE-2025-3376": {
-    "cvss": 7.3,
-    "description": "A vulnerability was found in PCMan FTP Server 2.0.7. It has been declared as critical. This vulnerability affects unknown code of the component CONF Command Handler. The manipulation leads to buffer overflow. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-04-07T17:15:39.680",
-    "keywords": "remote,command"
+  "CVE-2025-30652": {
+    "cvss": 5.5,
+    "description": "An Improper Handling of Exceptional Conditions vulnerability in routing protocol daemon (rpd) of Juniper Networks Junos OS and Junos OS Evolved allows a local, low-privileged attacker executing a CLI command to cause a Denial of Service (DoS).\n\nWhen\u00a0asregex-optimized is configured and a specific \"show route as-path\"\u00a0CLI command  is executed, the rpd crashes and restarts. Repeated execution of this command will cause a sustained DoS condition.\nThis issue affects Junos OS: \n\n\n  *  All versions before 21.2R3-S9, \n  *  from 21.4 before 21.4R3-S10, \n  *  from 22.2 before 22.2R3-S6, \n  *  from 22.4 before 22.4R3-S6, \n  *  from 23.2 before 23.2R2-S3, \n  *  from 23.4 before 23.4R2-S4, \n  *  from 24.2 before 24.2R2.\n\n\n\nand Junos OS Evolved: \n  *  All versions before 21.2R3-S9-EVO, \n  *  from 21.4-EVO before 21.4R3-S10-EVO, \n  *  from 22.2-EVO before 22.2R3-S6-EVO, \n  *  from 22.4-EVO before 22.4R3-S6-EVO, \n  *  from 23.2-EVO before 23.2R2-S3-EVO, \n  *  from 23.4-EVO before 23.4R2-S4-EVO, \n  *  from 24.2-EVO before 24.2R2-EVO.",
+    "published": "2025-04-09T20:15:28.873",
+    "keywords": "execution,command"
   },
-  "CVE-2025-3377": {
-    "cvss": 7.3,
-    "description": "A vulnerability was found in PCMan FTP Server 2.0.7. It has been rated as critical. This issue affects some unknown processing of the component ENC Command Handler. The manipulation leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-04-07T18:15:45.733",
-    "keywords": "remote,command"
+  "CVE-2025-30654": {
+    "cvss": 5.5,
+    "description": "An Exposure of Sensitive Information to an Unauthorized Actor vulnerability in the User Interface (UI) of Juniper Networks Junos OS and Junos OS Evolved allows a local, low-privileged, authenticated attacker with access to the CLI to access sensitive information.\u00a0\n\nThrough the execution of a specific show mgd command, a user with limited permissions (e.g., a low-privileged login class user) can access sensitive information such as hashed passwords,\u00a0that can be used to further impact the system.\n\n\nThis issue affects Junos OS:\u00a0  *  All versions before 21.4R3-S10,\n  *  from 22.2 before 22.2R3-S5,\n  *  from 22.4 before 22.4R3-S5,\u00a0\n  *  from 23.2 before 23.2R2-S3,\u00a0\n  *  from 23.4 before 23.4R2-S3.\n\n\n\n\n\nJunos OS Evolved:\u00a0\n\n  *  All versions before 21.4R3-S10-EVO,\n  *  from 22.2-EVO before 22.2R3-S6-EVO,\u00a0\n  *  from 22.4-EVO before 22.4R3-S5-EVO,\u00a0\n  *  from 23.2-EVO before 23.2R2-S3-EVO,\u00a0\n  *  from 23.4-EVO before 23.4R2-S3-EVO.",
+    "published": "2025-04-09T20:15:29.233",
+    "keywords": "execution,command,sensitive"
   },
-  "CVE-2025-3378": {
-    "cvss": 7.3,
-    "description": "A vulnerability classified as critical has been found in PCMan FTP Server 2.0.7. Affected is an unknown function of the component EPRT Command Handler. The manipulation leads to buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-04-07T18:15:45.923",
-    "keywords": "remote,command"
+  "CVE-2025-30658": {
+    "cvss": 7.5,
+    "description": "A Missing Release of Memory after Effective Lifetime vulnerability in the Anti-Virus processing of Juniper Networks Junos OS on SRX Series \n\nallows an unauthenticated, network-based attacker\u00a0to cause a Denial-of-Service (DoS).\n\nOn all SRX platforms with Anti-Virus enabled, if a server sends specific content in the HTTP body of a response to a client request, these packets are queued by Anti-Virus processing in Juniper Buffers (jbufs) which are never released. When these jbufs are exhausted, the device stops forwarding all transit traffic.\n\nA jbuf memory leak can be noticed from the following logs:\n\n(<node>.)<fpc> Warning: jbuf pool id <#> utilization level (<current level>%) is above <threshold>%!\n\nTo recover from this issue, the affected device needs to be manually rebooted to free the leaked jbufs.\n\n\n\n\nThis issue affects Junos OS on SRX Series:\u00a0\n\n  *  all versions before 21.2R3-S9,\n  *  21.4 versions before 21.4R3-S10,\n  *  22.2 versions before 22.2R3-S6,\n  *  22.4 versions before 22.4R3-S6,\n  *  23.2 versions before 23.2R2-S3,\n  *  23.4 versions before 23.4R2-S3,\n  *  24.2 versions before 24.2R2.",
+    "published": "2025-04-09T20:15:29.943",
+    "keywords": "unauthenticated,leak"
   },
-  "CVE-2025-3379": {
-    "cvss": 7.3,
-    "description": "A vulnerability classified as critical was found in PCMan FTP Server 2.0.7. Affected by this vulnerability is an unknown functionality of the component EPSV Command Handler. The manipulation leads to buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-04-07T19:15:57.533",
-    "keywords": "remote,command"
+  "CVE-2025-22471": {
+    "cvss": 6.5,
+    "description": "Dell PowerScale OneFS, versions 9.4.0.0 through 9.10.0.1, contains an integer overflow or wraparound vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to denial of service.",
+    "published": "2025-04-10T03:15:18.430",
+    "keywords": "remote,unauthenticated"
   },
-  "CVE-2025-3380": {
+  "CVE-2025-26480": {
+    "cvss": 5.3,
+    "description": "Dell PowerScale OneFS, versions 9.5.0.0 through 9.10.0.0, contains an uncontrolled resource consumption vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to denial of service.",
+    "published": "2025-04-10T03:15:19.060",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-27690": {
+    "cvss": 9.8,
+    "description": "Dell PowerScale OneFS, versions 9.5.0.0 through 9.10.1.0, contains a use of default password vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to the takeover of a high privileged user account.",
+    "published": "2025-04-10T03:15:19.210",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-3102": {
+    "cvss": 8.1,
+    "description": "The SureTriggers: All-in-One Automation Platform plugin for WordPress is vulnerable to an authentication bypass leading to administrative account creation due to a missing empty value check on the 'secret_key' value in the 'autheticate_user' function in all versions up to, and including, 1.0.78. This makes it possible for unauthenticated attackers to create administrator accounts on the target website when the plugin is installed and activated but not configured with an API key.",
+    "published": "2025-04-10T05:15:38.990",
+    "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2025-2805": {
     "cvss": 7.3,
-    "description": "A vulnerability, which was classified as critical, has been found in PCMan FTP Server 2.0.7. Affected by this issue is some unknown functionality of the component FEAT Command Handler. The manipulation leads to buffer overflow. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-04-07T19:15:57.747",
-    "keywords": "remote,command"
+    "description": "The ORDER POST plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 2.0.2. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+    "published": "2025-04-10T07:15:41.687",
+    "keywords": "execution,unauthenticated"
+  },
+  "CVE-2025-2809": {
+    "cvss": 7.3,
+    "description": "The azurecurve Shortcodes in Comments plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 2.0.2. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+    "published": "2025-04-10T07:15:41.873",
+    "keywords": "execution,unauthenticated"
+  },
+  "CVE-2025-32227": {
+    "cvss": 4.3,
+    "description": "Authentication Bypass by Spoofing vulnerability in Asgaros Asgaros Forum allows Identity Spoofing. This issue affects Asgaros Forum: from n/a through 3.0.0.",
+    "published": "2025-04-10T08:15:19.280",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-32275": {
+    "cvss": 4.3,
+    "description": "Authentication Bypass by Spoofing vulnerability in Ays Pro Survey Maker allows Identity Spoofing. This issue affects Survey Maker: from n/a through 5.1.5.4.",
+    "published": "2025-04-10T08:15:20.847",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-22375": {
+    "cvss": "-",
+    "description": "An authentication bypass vulnerability was found in Videx's CyberAudit-Web. Through the exploitation of a logic flaw, an attacker could create a valid session without any credentials. This vulnerability has been patched in versions later than 9.5\u00a0and a patch has been made available to all instances of CyberAudit-Web, including the versions that are End of Maintenance (EOM). Anyone that requires support with the resolution of this issue can contact support@videx.com for assistance.",
+    "published": "2025-04-10T11:15:45.510",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-2408": {
+    "cvss": 5.3,
+    "description": "An issue has been discovered in GitLab CE/EE affecting all versions from 13.12 before 17.8.7, 17.9 before 17.9.6, and 17.10 before 17.10.4. Under certain conditions users could bypass IP access restrictions and view sensitive information.",
+    "published": "2025-04-10T13:15:51.760",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2025-29017": {
+    "cvss": 8.8,
+    "description": "A Remote Code Execution (RCE) vulnerability exists in Code Astro Internet Banking System 2.0.0 due to improper file upload validation in the profile_pic parameter within pages_view_client.php.",
+    "published": "2025-04-10T14:15:27.020",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-0127": {
+    "cvss": "-",
+    "description": "A command injection vulnerability in Palo Alto Networks PAN-OS\u00ae software enables an authenticated administrator to bypass system restrictions and run arbitrary commands as a root user. This issue is only applicable to PAN-OS VM-Series. This issue does not affect firewalls that are already deployed.\n\nCloud NGFW and Prisma\u00ae Access are not affected by this vulnerability.",
+    "published": "2025-04-11T02:15:19.120",
+    "keywords": "command,bypass"
+  },
+  "CVE-2025-0128": {
+    "cvss": "-",
+    "description": "A denial-of-service (DoS) vulnerability in the Simple Certificate Enrollment Protocol (SCEP) authentication feature of Palo Alto Networks PAN-OS\u00ae software enables an unauthenticated attacker to initiate system reboots using a maliciously crafted packet. Repeated attempts to initiate a reboot causes the firewall to enter maintenance mode.\n\nCloud NGFW is not affected by this vulnerability. Prisma\u00ae Access software is proactively patched and protected from this issue.",
+    "published": "2025-04-11T02:15:19.253",
+    "keywords": "unauthenticated,authentication"
+  },
+  "CVE-2025-26335": {
+    "cvss": 5.8,
+    "description": "Dell PowerProtect Cyber Recovery, versions prior to 19.18.0.2, contains an Insertion of Sensitive Information Into Sent Data vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Information exposure.",
+    "published": "2025-04-11T02:15:19.397",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-2636": {
+    "cvss": 9.8,
+    "description": "The InstaWP Connect \u2013 1-click WP Staging & Migration plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 0.1.0.85 via the 'instawp-database-manager' parameter. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
+    "published": "2025-04-11T05:15:31.013",
+    "keywords": "execution,unauthenticated,sensitive,bypass"
+  },
+  "CVE-2025-23387": {
+    "cvss": 5.3,
+    "description": "A Exposure of Sensitive Information to an Unauthorized Actor vulnerability in SUSE rancher allowed unauthenticated users to list all CLI authentication tokens and delete them before the CLI is able to get the token value.This issue affects rancher: from 2.8.0 before 2.8.13, from 2.9.0 before 2.9.7, from 2.10.0 before 2.10.3.",
+    "published": "2025-04-11T11:15:42.367",
+    "keywords": "unauthenticated,authentication,sensitive"
+  },
+  "CVE-2025-3439": {
+    "cvss": 9.8,
+    "description": "The Everest Forms \u2013 Contact Form, Quiz, Survey, Newsletter & Payment Form Builder for WordPress plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.1.1 via deserialization of untrusted input from the 'field_value' parameter. This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable software, which means this vulnerability has no impact unless another plugin or theme containing a POP chain is installed on the site. If a POP chain is present via an additional plugin or theme installed on the target system, it may allow the attacker to perform actions like delete arbitrary files, retrieve sensitive data, or execute code depending on the POP chain present.",
+    "published": "2025-04-11T13:15:41.100",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-32068": {
+    "cvss": "-",
+    "description": "Incorrect Authorization vulnerability in The Wikimedia Foundation Mediawiki - OAuth Extension allows Authentication Bypass.This issue affects Mediawiki - OAuth Extension: from 1.39 through 1.43.",
+    "published": "2025-04-11T17:15:43.317",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-2841": {
+    "cvss": 5.3,
+    "description": "The Cart66 Cloud plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.3.7 through the publicly accessible phpinfo.php script. This makes it possible for unauthenticated attackers to view potentially sensitive information contained in the exposed file.",
+    "published": "2025-04-12T03:15:13.453",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-2881": {
+    "cvss": 5.3,
+    "description": "The Developer Toolbar plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.0.3 through the publicly accessible phpinfo.php script. This makes it possible for unauthenticated attackers to view potentially sensitive information contained in the exposed file.",
+    "published": "2025-04-12T03:15:14.430",
+    "keywords": "unauthenticated,sensitive"
   }
 }
