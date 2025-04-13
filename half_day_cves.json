@@ -1,22 +1,4 @@
 {
-  "CVE-2025-22471": {
-    "cvss": 6.5,
-    "description": "Dell PowerScale OneFS, versions 9.4.0.0 through 9.10.0.1, contains an integer overflow or wraparound vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to denial of service.",
-    "published": "2025-04-10T03:15:18.430",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-26480": {
-    "cvss": 5.3,
-    "description": "Dell PowerScale OneFS, versions 9.5.0.0 through 9.10.0.0, contains an uncontrolled resource consumption vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to denial of service.",
-    "published": "2025-04-10T03:15:19.060",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-27690": {
-    "cvss": 9.8,
-    "description": "Dell PowerScale OneFS, versions 9.5.0.0 through 9.10.1.0, contains a use of default password vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to the takeover of a high privileged user account.",
-    "published": "2025-04-10T03:15:19.210",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2025-3102": {
     "cvss": 8.1,
     "description": "The SureTriggers: All-in-One Automation Platform plugin for WordPress is vulnerable to an authentication bypass leading to administrative account creation due to a missing empty value check on the 'secret_key' value in the 'autheticate_user' function in all versions up to, and including, 1.0.78. This makes it possible for unauthenticated attackers to create administrator accounts on the target website when the plugin is installed and activated but not configured with an API key.",
