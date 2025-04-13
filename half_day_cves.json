@@ -58,5 +58,11 @@
     "cvss": 4.3,
     "description": "A vulnerability has been found in shuanx BurpAPIFinder up to 2.0.2 and classified as problematic. Affected by this vulnerability is an unknown functionality of the file BurpApiFinder.db. The manipulation leads to denial of service. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
     "published": "2025-04-13T11:15:14.723"
+  },
+  "CVE-2025-3445": {
+    "cvss": 8.1,
+    "description": "A Path Traversal \"Zip Slip\" vulnerability has been identified in mholt/archiver in Go. This vulnerability allows using a crafted ZIP file containing path traversal symlinks to create or overwrite files with the user's privileges or application utilizing the library.\n\nWhen using the archiver.Unarchive functionality with ZIP files, like this: archiver.Unarchive(zipFile, outputDir),\u00a0 A crafted ZIP file can be extracted in such a way that it writes files to the affected system with the same privileges as the application executing this vulnerable functionality. Consequently, sensitive files may be overwritten, potentially leading to privilege escalation, code execution, and other severe outcomes in some cases.\n\nIt's worth noting that a similar vulnerability was found in TAR files (CVE-2024-0406). Although a fix was implemented, it hasn't been officially released, and the affected project has since been deprecated. The successor to mholt/archiver is a new project called mholt/archives, and its initial release (v0.1.0) removes the Unarchive() functionality.",
+    "published": "2025-04-13T22:15:12.870",
+    "keywords": "execution,sensitive"
   }
 }
