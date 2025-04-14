@@ -1,22 +1,4 @@
 {
-  "CVE-2025-0127": {
-    "cvss": "-",
-    "description": "A command injection vulnerability in Palo Alto Networks PAN-OS\u00ae software enables an authenticated administrator to bypass system restrictions and run arbitrary commands as a root user. This issue is only applicable to PAN-OS VM-Series. This issue does not affect firewalls that are already deployed.\n\nCloud NGFW and Prisma\u00ae Access are not affected by this vulnerability.",
-    "published": "2025-04-11T02:15:19.120",
-    "keywords": "command,bypass"
-  },
-  "CVE-2025-0128": {
-    "cvss": "-",
-    "description": "A denial-of-service (DoS) vulnerability in the Simple Certificate Enrollment Protocol (SCEP) authentication feature of Palo Alto Networks PAN-OS\u00ae software enables an unauthenticated attacker to initiate system reboots using a maliciously crafted packet. Repeated attempts to initiate a reboot causes the firewall to enter maintenance mode.\n\nCloud NGFW is not affected by this vulnerability. Prisma\u00ae Access software is proactively patched and protected from this issue.",
-    "published": "2025-04-11T02:15:19.253",
-    "keywords": "unauthenticated,authentication"
-  },
-  "CVE-2025-26335": {
-    "cvss": 5.8,
-    "description": "Dell PowerProtect Cyber Recovery, versions prior to 19.18.0.2, contains an Insertion of Sensitive Information Into Sent Data vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Information exposure.",
-    "published": "2025-04-11T02:15:19.397",
-    "keywords": "remote,sensitive"
-  },
   "CVE-2025-2636": {
     "cvss": 9.8,
     "description": "The InstaWP Connect \u2013 1-click WP Staging & Migration plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 0.1.0.85 via the 'instawp-database-manager' parameter. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
