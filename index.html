@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-04-14T03:02:06.313526
+Updated at UTC 2025-05-02T06:17:45.100120
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -61,12 +61,48 @@ Updated at UTC 2025-04-14T03:02:06.313526
 			
 		
 			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
 				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-3535">CVE-2025-3535</a></td>
-					<td>4.3</td>
-					<td><a target=_blank href="https://github.com/shuanx/burpapifinder/issues/18#issue-2956026808">https://github.com/shuanx/burpapifinder/issues/18#issue-2956026808</a></td>
-					<td class=date>2025-04-13T11:15:14.723</td>
-					<td class=description>A vulnerability has been found in shuanx BurpAPIFinder up to 2.0.2 and classified as problematic. Affected by this vulnerability is an unknown functionality of the file BurpApiFinder.db. The manipulation leads to denial of service. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-46567">CVE-2025-46567</a></td>
+					<td>6.1</td>
+					<td><a target=_blank href="https://github.com/hiyouga/llama-factory/commit/2989d39239d2f46e584c1e1180ba46b9768afb2a">https://github.com/hiyouga/llama-factory/commit/2989d39239d2f46e584c1e1180ba46b9768afb2a</a></td>
+					<td class=date>2025-05-01T18:15:58.117</td>
+					<td class=description>LLama Factory enables fine-tuning of large language models. Prior to version 1.0.0, a critical vulnerability exists in the `llamafy_baichuan2.py` script of the LLaMA-Factory project. The script performs insecure deserialization using `torch.load()` on user-supplied `.bin` files from an input directory. An attacker can exploit this behavior by crafting a malicious `.bin` file that executes arbitrary commands during deserialization. This issue has been patched in version 1.0.0.</td>
 
 
 				</tr>
@@ -74,6 +110,138 @@ Updated at UTC 2025-04-14T03:02:06.313526
 		
 			
 		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-47154">CVE-2025-47154</a></td>
+					<td>9.0</td>
+					<td><a target=_blank href="https://github.com/ladybirdbrowser/ladybird/commit/f5a670421954fc7130c3685b713c621b29516669">https://github.com/ladybirdbrowser/ladybird/commit/f5a670421954fc7130c3685b713c621b29516669</a></td>
+					<td class=date>2025-05-01T08:15:17.950</td>
+					<td class=description>LibJS in Ladybird before f5a6704 mishandles the freeing of the vector that arguments_list references, leading to a use-after-free, and allowing remote attackers to execute arbitrary code via a crafted .js file. NOTE: the GitHub README says "Ladybird is in a pre-alpha state, and only suitable for use by developers."</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-47153">CVE-2025-47153</a></td>
+					<td>6.5</td>
+					<td><a target=_blank href="https://github.com/nodejs/node-v0.x-archive/issues/4549">https://github.com/nodejs/node-v0.x-archive/issues/4549</a></td>
+					<td class=date>2025-05-01T07:15:58.520</td>
+					<td class=description>Certain build processes for libuv and Node.js for 32-bit systems, such as for the nodejs binary package through nodejs_20.19.0+dfsg-2_i386.deb for Debian GNU/Linux, have an inconsistent off_t size (e.g., building on i386 Debian always uses _FILE_OFFSET_BITS=64 for the libuv dynamic library, but uses the _FILE_OFFSET_BITS global system default of 32 for nodejs), leading to out-of-bounds access. NOTE: this is not a problem in the Node.js software itself. In particular, the Node.js website's download page does not offer prebuilt Node.js for Linux on i386.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4144">CVE-2025-4144</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/cloudflare/workers-oauth-provider/pull/27">https://github.com/cloudflare/workers-oauth-provider/pull/27</a></td>
+					<td class=date>2025-05-01T01:15:54.267</td>
+					<td class=description>PKCE was implemented in the OAuth implementation in workers-oauth-provider that is part of  MCP framework https://github.com/cloudflare/workers-mcp . However, it was found that an attacker could cause the check to be skipped.
+
+
+Fixed in:
+
+ 
+
+ https://github.com/cloudflare/workers-oauth-provider/pull/27 https://github.com/cloudflare/workers-oauth-provider/pull/27 
+
+
+Impact: 
+
+PKCE is a defense-in-depth mechanism against certain kinds of attacks and was an optional extension in OAuth 2.0 which became required in the OAuth 2.1 draft. (Note that the MCP specification requires OAuth 2.1.). This bug completely bypasses PKCE protection.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4143">CVE-2025-4143</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/cloudflare/workers-oauth-provider/pull/26">https://github.com/cloudflare/workers-oauth-provider/pull/26</a></td>
+					<td class=date>2025-05-01T01:15:54.127</td>
+					<td class=description>The OAuth implementation in workers-oauth-provider that is part of  MCP framework https://github.com/cloudflare/workers-mcp , did not correctly validate that redirect_uri was on the allowed list of redirect URIs for the given client registration.
+
+Fixed in:  https://github.com/cloudflare/workers-oauth-provider/pull/26 https://github.com/cloudflare/workers-oauth-provider/pull/26 
+
+Impact:
+
+ 
+
+Under certain circumstances (see below), if a victim had previously authorized with a server built on workers-oath-provider, and an attacker could later trick the victim into visiting a malicious web site, then attacker could potentially steal the victim's credentials to the same OAuth server and subsequently impersonate them.
+
+In order for the attack to be possible, the OAuth server's authorized callback must be designed to auto-approve authorizations that appear to come from an OAuth client that the victim has authorized previously. The authorization flow is not implemented by workers-oauth-provider; it is up to the application built on top to decide whether to implement such automatic re-authorization. However, many applications do implement such logic.
+
+Note: It is a basic, well-known requirement that OAuth servers should verify that the redirect URI is among the allowed list for the client, both during the authorization flow and subsequently when exchanging the authorization code for an access token. workers-oauth-provider implemented only the latter check, not the former. Unfortunately, the former is the much more important check. Readers who are familiar with OAuth may recognize that failing to check redirect URIs against the allowed list is a well-known, basic mistake, covered extensively in the RFC and elsewhere. The author of this library would like everyone to know that he was, in fact, well-aware of this requirement, thought about it a lot while designing the library, and then, somehow, forgot to actually make sure the check was in the code. That is, it's not that he didn't know what he was doing, it's that he knew what he was doing but flubbed it.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25403">CVE-2025-25403</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/slims/slims9_bulian/issues/273">https://github.com/slims/slims9_bulian/issues/273</a></td>
+					<td class=date>2025-04-29T16:15:30.437</td>
+					<td class=description>Slims (Senayan Library Management Systems) 9 Bulian V9.6.1 is vulnerable to SQL Injection in admin/modules/master_file/coll_type.php.</td>
+
+
+				</tr>
 			
 		
 			
@@ -89,77 +257,570 @@ Updated at UTC 2025-04-14T03:02:06.313526
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-3445">CVE-2025-3445</a></td>
-					<td>8.1</td>
-					<td>execution,sensitive</td>
-					<td class=date>2025-04-13T22:15:12.870</td>
-					<td class=description>A Path Traversal "Zip Slip" vulnerability has been identified in mholt/archiver in Go. This vulnerability allows using a crafted ZIP file containing path traversal symlinks to create or overwrite files with the user's privileges or application utilizing the library.
-
-When using the archiver.Unarchive functionality with ZIP files, like this: archiver.Unarchive(zipFile, outputDir),  A crafted ZIP file can be extracted in such a way that it writes files to the affected system with the same privileges as the application executing this vulnerable functionality. Consequently, sensitive files may be overwritten, potentially leading to privilege escalation, code execution, and other severe outcomes in some cases.
-
-It's worth noting that a similar vulnerability was found in TAR files (CVE-2024-0406). Although a fix was implemented, it hasn't been officially released, and the affected project has since been deprecated. The successor to mholt/archiver is a new project called mholt/archives, and its initial release (v0.1.0) removes the Unarchive() functionality.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-3709">CVE-2025-3709</a></td>
+					<td>9.8</td>
+					<td>remote,unauthenticated,bypass</td>
+					<td class=date>2025-05-02T04:15:55.707</td>
+					<td class=description>Agentflow from Flowring Technology has an Account Lockout Bypass vulnerability, allowing unauthenticated remote attackers to exploit this vulnerability to perform password brute force attack.</td>
 				</tr>
 			
 		
 			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-3708">CVE-2025-3708</a></td>
+					<td>9.8</td>
+					<td>remote,unauthenticated,command</td>
+					<td class=date>2025-05-02T04:15:55.507</td>
+					<td class=description>Le-show medical practice management system from Le-yan has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL commands to read, modify, and delete database contents.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-2881">CVE-2025-2881</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-3707">CVE-2025-3707</a></td>
+					<td>6.5</td>
+					<td>remote,command</td>
+					<td class=date>2025-05-02T04:15:55.140</td>
+					<td class=description>The eHDR CTMS from Sunnet has a SQL Injection vulnerability, allowing remote attackers with regular privileges to inject arbitrary SQL command to read database contents.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-3746">CVE-2025-3746</a></td>
+					<td>9.8</td>
+					<td>unauthenticated,authentication</td>
+					<td class=date>2025-05-02T03:15:20.850</td>
+					<td class=description>The OTP-less one tap Sign in plugin for WordPress is vulnerable to privilege escalation via account takeover in versions 2.0.14 to 2.0.59. This is due to the plugin not properly validating a user's identity prior to updating their details, like email. This makes it possible for unauthenticated attackers to change arbitrary users' email addresses, including administrators, and leverage that to reset the user's password and gain access to their account.
+Additionally, the plugin returns authentication cookies in the response, which can be used to access the account directly.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-2880">CVE-2025-2880</a></td>
 					<td>5.3</td>
 					<td>unauthenticated,sensitive</td>
-					<td class=date>2025-04-12T03:15:14.430</td>
-					<td class=description>The Developer Toolbar plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.0.3 through the publicly accessible phpinfo.php script. This makes it possible for unauthenticated attackers to view potentially sensitive information contained in the exposed file.</td>
+					<td class=date>2025-05-02T03:15:19.750</td>
+					<td class=description>The Yame | Link In Bio plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 0.9.0 through the publicly accessible phpinfo.php script. This makes it possible for unauthenticated attackers to view potentially sensitive information contained in the exposed file.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-2841">CVE-2025-2841</a></td>
-					<td>5.3</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2025-04-12T03:15:13.453</td>
-					<td class=description>The Cart66 Cloud plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.3.7 through the publicly accessible phpinfo.php script. This makes it possible for unauthenticated attackers to view potentially sensitive information contained in the exposed file.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4184">CVE-2025-4184</a></td>
+					<td>7.3</td>
+					<td>remote,command</td>
+					<td class=date>2025-05-02T00:15:18.877</td>
+					<td class=description>A vulnerability classified as critical was found in PCMan FTP Server 2.0.7. This vulnerability affects unknown code of the component QUOTE Command Handler. The manipulation leads to buffer overflow. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-32068">CVE-2025-32068</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4183">CVE-2025-4183</a></td>
+					<td>7.3</td>
+					<td>remote,command</td>
+					<td class=date>2025-05-01T23:15:51.197</td>
+					<td class=description>A vulnerability classified as critical has been found in PCMan FTP Server 2.0.7. This affects an unknown part of the component RECV Command Handler. The manipulation leads to buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4182">CVE-2025-4182</a></td>
+					<td>7.3</td>
+					<td>remote,command</td>
+					<td class=date>2025-05-01T23:15:51.023</td>
+					<td class=description>A vulnerability was found in PCMan FTP Server 2.0.7. It has been rated as critical. Affected by this issue is some unknown functionality of the component BELL Command Handler. The manipulation leads to buffer overflow. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4181">CVE-2025-4181</a></td>
+					<td>7.3</td>
+					<td>remote,command</td>
+					<td class=date>2025-05-01T23:15:50.833</td>
+					<td class=description>A vulnerability was found in PCMan FTP Server 2.0.7. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the component SEND Command Handler. The manipulation leads to buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4180">CVE-2025-4180</a></td>
+					<td>7.3</td>
+					<td>remote,command</td>
+					<td class=date>2025-05-01T22:15:18.313</td>
+					<td class=description>A vulnerability was found in PCMan FTP Server 2.0.7. It has been classified as critical. Affected is an unknown function of the component TRACE Command Handler. The manipulation leads to buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-46634">CVE-2025-46634</a></td>
 					<td>-</td>
-					<td>authentication,bypass</td>
-					<td class=date>2025-04-11T17:15:43.317</td>
-					<td class=description>Incorrect Authorization vulnerability in The Wikimedia Foundation Mediawiki - OAuth Extension allows Authentication Bypass.This issue affects Mediawiki - OAuth Extension: from 1.39 through 1.43.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-3439">CVE-2025-3439</a></td>
-					<td>9.8</td>
 					<td>unauthenticated,sensitive</td>
-					<td class=date>2025-04-11T13:15:41.100</td>
-					<td class=description>The Everest Forms – Contact Form, Quiz, Survey, Newsletter & Payment Form Builder for WordPress plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.1.1 via deserialization of untrusted input from the 'field_value' parameter. This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable software, which means this vulnerability has no impact unless another plugin or theme containing a POP chain is installed on the site. If a POP chain is present via an additional plugin or theme installed on the target system, it may allow the attacker to perform actions like delete arbitrary files, retrieve sensitive data, or execute code depending on the POP chain present.</td>
+					<td class=date>2025-05-01T20:15:39.460</td>
+					<td class=description>Cleartext transmission of sensitive information in the web management portal of the Tenda RX2 Pro 16.03.30.14 may allow an unauthenticated attacker to authenticate to the web management portal by collecting credentials from observed/collected traffic. It implements encryption, but not until after the user has transmitted the hash of their password in cleartext. The hash can be replayed to authenticate.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-23387">CVE-2025-23387</a></td>
-					<td>5.3</td>
-					<td>unauthenticated,authentication,sensitive</td>
-					<td class=date>2025-04-11T11:15:42.367</td>
-					<td class=description>A Exposure of Sensitive Information to an Unauthorized Actor vulnerability in SUSE rancher allowed unauthenticated users to list all CLI authentication tokens and delete them before the CLI is able to get the token value.This issue affects rancher: from 2.8.0 before 2.8.13, from 2.9.0 before 2.9.7, from 2.10.0 before 2.10.3.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-46633">CVE-2025-46633</a></td>
+					<td>-</td>
+					<td>authentication,sensitive</td>
+					<td class=date>2025-05-01T20:15:39.310</td>
+					<td class=description>Cleartext transmission of sensitive information in the web management portal of the Tenda RX2 Pro 16.03.30.14 allows an attacker to decrypt traffic between the client and server by collecting the symmetric AES key from collected and/or observed traffic. The AES key in sent in cleartext in response to successful authentication. The IV is always EU5H62G9ICGRNI43.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-2636">CVE-2025-2636</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-46631">CVE-2025-46631</a></td>
+					<td>-</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-05-01T20:15:39.010</td>
+					<td class=description>Improper access controls in the web management portal of the Tenda RX2 Pro 16.03.30.14 allows an unauthenticated remote attacker to enable telnet access to the router's OS by sending a /goform/telnet web request.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-46630">CVE-2025-46630</a></td>
+					<td>-</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-05-01T20:15:38.803</td>
+					<td class=description>Improper access controls in the web management portal of the Tenda RX2 Pro 16.03.30.14 allows an unauthenticated remote attacker to enable 'ate' (a remote system management binary) by sending a /goform/ate web request.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-46629">CVE-2025-46629</a></td>
+					<td>-</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-05-01T20:15:38.660</td>
+					<td class=description>Lack of access controls in the 'ate' management binary of the Tenda RX2 Pro 16.03.30.14 allows an unauthenticated remote attacker to perform unauthorized configuration changes for any router where 'ate' has been enabled by sending a crafted UDP packet</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-46628">CVE-2025-46628</a></td>
+					<td>-</td>
+					<td>remote,authentication</td>
+					<td class=date>2025-05-01T20:15:38.510</td>
+					<td class=description>Lack of input validation/sanitization in the 'ate' management service in the Tenda RX2 Pro 16.03.30.14 allows an unauthorized remote attacker to gain root shell access to the device by sending a crafted UDP packet to the 'ate' service when it is enabled. Authentication is not needed.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-46625">CVE-2025-46625</a></td>
+					<td>6.3</td>
+					<td>remote,command</td>
+					<td class=date>2025-05-01T20:15:38.037</td>
+					<td class=description>Lack of input validation/sanitization in the 'setLanCfg' API endpoint in httpd in the Tenda RX2 Pro 16.03.30.14 allows a remote attacker that is authorized to the web management portal to gain root shell access to the device by sending a crafted web request. This is persistent because the command injection is saved in the configuration of the device.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-32011">CVE-2025-32011</a></td>
 					<td>9.8</td>
-					<td>execution,unauthenticated,sensitive,bypass</td>
-					<td class=date>2025-04-11T05:15:31.013</td>
-					<td class=description>The InstaWP Connect – 1-click WP Staging & Migration plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 0.1.0.85 via the 'instawp-database-manager' parameter. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included.</td>
+					<td>remote,authentication,bypass</td>
+					<td class=date>2025-05-01T19:15:57.357</td>
+					<td class=description>KUNBUS PiCtory versions 2.5.0 through 2.11.1 have an authentication bypass vulnerability where a remote attacker can bypass authentication to get access due to a path traversal.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24522">CVE-2025-24522</a></td>
+					<td>10.0</td>
+					<td>remote,unauthenticated,authentication,command</td>
+					<td class=date>2025-05-01T19:15:57.097</td>
+					<td class=description>KUNBUS Revolution Pi OS Bookworm 01/2025 is vulnerable because authentication is not configured by default for the Node-RED server. This can give an unauthenticated remote attacker full access to the Node-RED server where they can run arbitrary commands on the underlying operating system.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-44835">CVE-2025-44835</a></td>
+					<td>6.3</td>
+					<td>remote,command</td>
+					<td class=date>2025-05-01T14:15:45.473</td>
+					<td class=description>D-Link DIR-816 A2V1.1.0B05 was found to contain a command injection in iptablesWebsFilterRun, which allows remote attackers to execute arbitrary commands via shell.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-37747">CVE-2025-37747</a></td>
+					<td>-</td>
+					<td>remote,leak</td>
+					<td class=date>2025-05-01T13:15:53.417</td>
+					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
+
+perf: Fix hang while freeing sigtrap event
+
+Perf can hang while freeing a sigtrap event if a related deferred
+signal hadn't managed to be sent before the file got closed:
+
+perf_event_overflow()
+   task_work_add(perf_pending_task)
+
+fput()
+   task_work_add(____fput())
+
+task_work_run()
+    ____fput()
+        perf_release()
+            perf_event_release_kernel()
+                _free_event()
+                    perf_pending_task_sync()
+                        task_work_cancel() -> FAILED
+                        rcuwait_wait_event()
+
+Once task_work_run() is running, the list of pending callbacks is
+removed from the task_struct and from this point on task_work_cancel()
+can't remove any pending and not yet started work items, hence the
+task_work_cancel() failure and the hang on rcuwait_wait_event().
+
+Task work could be changed to remove one work at a time, so a work
+running on the current task can always cancel a pending one, however
+the wait / wake design is still subject to inverted dependencies when
+remote targets are involved, as pictured by Oleg:
+
+T1                                                      T2
+
+fd = perf_event_open(pid => T2->pid);                  fd = perf_event_open(pid => T1->pid);
+close(fd)                                              close(fd)
+    <IRQ>                                                  <IRQ>
+    perf_event_overflow()                                  perf_event_overflow()
+       task_work_add(perf_pending_task)                        task_work_add(perf_pending_task)
+    </IRQ>                                                 </IRQ>
+    fput()                                                 fput()
+        task_work_add(____fput())                              task_work_add(____fput())
+
+    task_work_run()                                        task_work_run()
+        ____fput()                                             ____fput()
+            perf_release()                                         perf_release()
+                perf_event_release_kernel()                            perf_event_release_kernel()
+                    _free_event()                                          _free_event()
+                        perf_pending_task_sync()                               perf_pending_task_sync()
+                            rcuwait_wait_event()                                   rcuwait_wait_event()
+
+Therefore the only option left is to acquire the event reference count
+upon queueing the perf task work and release it from the task work, just
+like it was done before 3a5465418f5f ("perf: Fix event leak upon exec and file release")
+but without the leaks it fixed.
+
+Some adjustments are necessary to make it work:
+
+* A child event might dereference its parent upon freeing. Care must be
+  taken to release the parent last.
+
+* Some places assuming the event doesn't have any reference held and
+  therefore can be freed right away must instead put the reference and
+  let the reference counting to its job.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4162">CVE-2025-4162</a></td>
+					<td>7.3</td>
+					<td>remote,command</td>
+					<td class=date>2025-05-01T11:15:54.943</td>
+					<td class=description>A vulnerability classified as critical was found in PCMan FTP Server up to 2.0.7. This vulnerability affects unknown code of the component ASCII Command Handler. The manipulation leads to buffer overflow. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4161">CVE-2025-4161</a></td>
+					<td>7.3</td>
+					<td>remote,command</td>
+					<td class=date>2025-05-01T11:15:54.740</td>
+					<td class=description>A vulnerability classified as critical has been found in PCMan FTP Server up to 2.0.7. This affects an unknown part of the component VERBOSE Command Handler. The manipulation leads to buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4160">CVE-2025-4160</a></td>
+					<td>7.3</td>
+					<td>remote,command</td>
+					<td class=date>2025-05-01T10:15:17.567</td>
+					<td class=description>A vulnerability was found in PCMan FTP Server up to 2.0.7. It has been rated as critical. Affected by this issue is some unknown functionality of the component LS Command Handler. The manipulation leads to buffer overflow. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4159">CVE-2025-4159</a></td>
+					<td>7.3</td>
+					<td>remote,command</td>
+					<td class=date>2025-05-01T10:15:15.637</td>
+					<td class=description>A vulnerability was found in PCMan FTP Server up to 2.0.7. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the component GLOB Command Handler. The manipulation leads to buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4158">CVE-2025-4158</a></td>
+					<td>7.3</td>
+					<td>remote,command</td>
+					<td class=date>2025-05-01T09:15:15.720</td>
+					<td class=description>A vulnerability was found in PCMan FTP Server up to 2.0.7. It has been classified as critical. Affected is an unknown function of the component PROMPT Command Handler. The manipulation leads to buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.</td>
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1305">CVE-2025-1305</a></td>
+					<td>8.8</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2025-05-01T04:16:47.947</td>
+					<td class=description>The NewsBlogger theme for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 0.2.5.4. This is due to missing or incorrect nonce validation on the newsblogger_install_and_activate_plugin() function. This makes it possible for unauthenticated attackers to upload arbitrary files and achieve remote code execution via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-1304">CVE-2025-1304</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-05-01T04:16:43.183</td>
+					<td class=description>The NewsBlogger theme for WordPress is vulnerable to arbitrary file uploads due to a missing capability check on the newsblogger_install_and_activate_plugin() function in all versions up to, and including, 0.2.5.1. This makes it possible for authenticated attackers, with subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-2082">CVE-2025-2082</a></td>
+					<td>7.5</td>
+					<td>remote,execution,authentication</td>
+					<td class=date>2025-04-30T20:15:21.563</td>
+					<td class=description>Tesla Model 3 VCSEC Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected Tesla Model 3 vehicles. Authentication is not required to exploit this vulnerability.
+
+The specific flaw exists within the VCSEC module. By manipulating the certificate response sent from the Tire Pressure Monitoring System (TPMS), an attacker can trigger an integer overflow before writing to memory. An attacker can leverage this vulnerability to execute code in the context of the VCSEC module and send arbitrary messages to the vehicle CAN bus. Was ZDI-CAN-23800.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-2170">CVE-2025-2170</a></td>
+					<td>7.2</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-04-30T19:15:55.227</td>
+					<td class=description>A Server-side request forgery (SSRF) vulnerability has been identified in the SMA1000 Appliance Work Place interface, which in specific conditions could potentially enable a remote unauthenticated attacker to cause the appliance to make requests to an unintended location.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24887">CVE-2025-24887</a></td>
+					<td>6.3</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2025-04-30T19:15:55.070</td>
+					<td class=description>OpenCTI is an open-source cyber threat intelligence platform. In versions starting from 6.4.8 to before 6.4.10, the allow/deny lists can be bypassed, allowing a user to change attributes that are intended to be unmodifiable by the user. It is possible to toggle the `external` flag on/off and change the own token value for a user. It is also possible to edit attributes that are not in the allow list, such as `otp_qr` and `otp_activated`. If external users exist in the OpenCTI setup and the information about these users identities is sensitive, the above vulnerabilities can be used to enumerate existing user accounts as a standard low privileged user. This issue has been patched in version 6.4.10.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4135">CVE-2025-4135</a></td>
+					<td>6.3</td>
+					<td>remote,command</td>
+					<td class=date>2025-04-30T18:15:48.400</td>
+					<td class=description>A vulnerability was found in Netgear WG302v2 up to 5.2.9 and classified as critical. Affected by this issue is the function ui_get_input_value. The manipulation of the argument host leads to command injection. The attack may be launched remotely. The vendor was contacted early about this disclosure but did not respond in any way.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4122">CVE-2025-4122</a></td>
+					<td>6.3</td>
+					<td>remote,command</td>
+					<td class=date>2025-04-30T15:16:02.590</td>
+					<td class=description>A vulnerability was found in Netgear JWNR2000v2 1.0.0.11. It has been rated as critical. Affected by this issue is the function sub_435E04. The manipulation of the argument host leads to command injection. The attack may be launched remotely. The vendor was contacted early about this disclosure but did not respond in any way.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4121">CVE-2025-4121</a></td>
+					<td>6.3</td>
+					<td>remote,command</td>
+					<td class=date>2025-04-30T14:15:31.423</td>
+					<td class=description>A vulnerability was found in Netgear JWNR2000v2 1.0.0.11. It has been declared as critical. Affected by this vulnerability is the function cmd_wireless. The manipulation of the argument host leads to command injection. The attack can be launched remotely. The vendor was contacted early about this disclosure but did not respond in any way.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24351">CVE-2025-24351</a></td>
+					<td>8.8</td>
+					<td>remote,command</td>
+					<td class=date>2025-04-30T12:15:21.937</td>
+					<td class=description>A vulnerability in the “Remote Logging” functionality of the web application of ctrlX OS allows a remote authenticated (low-privileged) attacker to execute arbitrary OS commands in the context of user “root” via a crafted HTTP request.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24344">CVE-2025-24344</a></td>
+					<td>6.3</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-04-30T12:15:18.120</td>
+					<td class=description>A vulnerability in the error notification messages of the web application of ctrlX OS allows a remote unauthenticated attacker to inject arbitrary HTML tags and, possibly, execute arbitrary client-side code in the context of another user's browser via a crafted HTTP request.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24342">CVE-2025-24342</a></td>
+					<td>5.3</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-04-30T12:15:17.490</td>
+					<td class=description>A vulnerability in the login functionality of the web application of ctrlX OS allows a remote unauthenticated attacker to guess valid usernames via multiple crafted HTTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24339">CVE-2025-24339</a></td>
+					<td>5.0</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-04-30T11:15:49.623</td>
+					<td class=description>A vulnerability in the web application of ctrlX OS allows a remote unauthenticated attacker to conduct various attacks against users of the vulnerable system, including web cache poisoning or Man-in-the-Middle (MitM), via a crafted HTTP request.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-32444">CVE-2025-32444</a></td>
+					<td>10.0</td>
+					<td>remote,execution</td>
+					<td class=date>2025-04-30T01:15:51.953</td>
+					<td class=description>vLLM is a high-throughput and memory-efficient inference and serving engine for LLMs. Versions starting from 0.6.5 and prior to 0.8.5, having vLLM integration with mooncake, are vulnerable to remote code execution due to using pickle based serialization over unsecured ZeroMQ sockets. The vulnerable sockets were set to listen on all network interfaces, increasing the likelihood that an attacker is able to reach the vulnerable ZeroMQ sockets to carry out an attack. vLLM instances that do not make use of the mooncake integration are not vulnerable. This issue has been patched in version 0.8.5.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-29906">CVE-2025-29906</a></td>
+					<td>8.6</td>
+					<td>authentication,bypass</td>
+					<td class=date>2025-04-29T23:16:04.393</td>
+					<td class=description>Finit is a fast init for Linux systems. Versions starting from 3.0-rc1 and prior to version 4.11 bundle an implementation of getty for the `tty` configuration directive that can bypass `/bin/login`, i.e., a user can log in as any user without authentication. This issue has been patched in version 4.11.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-46348">CVE-2025-46348</a></td>
+					<td>10.0</td>
+					<td>authentication,sensitive</td>
+					<td class=date>2025-04-29T21:15:52.120</td>
+					<td class=description>YesWiki is a wiki system written in PHP. Prior to version 4.5.4, the request to commence a site backup can be performed and downloaded without authentication. The archives are created with a predictable filename, so a malicious user could create and download an archive without being authenticated. This could result in a malicious attacker making numerous requests to create archives and fill up the file system, or by downloading the archive which contains sensitive site information. This issue has been patched in version 4.5.4.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0520">CVE-2025-0520</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2025-04-29T20:15:25.230</td>
+					<td class=description>An unrestricted file upload vulnerability in ShowDoc caused by improper validation of file extension allows execution of arbitrary PHP, leading to remote code execution.This issue affects ShowDoc: before 2.8.7.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4079">CVE-2025-4079</a></td>
+					<td>7.3</td>
+					<td>remote,command</td>
+					<td class=date>2025-04-29T19:15:54.130</td>
+					<td class=description>A vulnerability, which was classified as critical, was found in PCMan FTP Server up to 2.0.7. Affected is an unknown function of the component RENAME Command Handler. The manipulation leads to buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4076">CVE-2025-4076</a></td>
+					<td>6.3</td>
+					<td>remote,command</td>
+					<td class=date>2025-04-29T18:15:45.830</td>
+					<td class=description>A vulnerability classified as critical has been found in LB-LINK BL-AC3600 up to 1.0.22. This affects the function easy_uci_set_option_string_0 of the file /cgi-bin/lighttpd.cgi of the component Password Handler. The manipulation of the argument routepwd leads to command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-46347">CVE-2025-46347</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2025-04-29T18:15:44.670</td>
+					<td class=description>YesWiki is a wiki system written in PHP. Prior to version 4.5.4, YesWiki vulnerable to remote code execution. An arbitrary file write can be used to write a file with a PHP extension, which then can be browsed to in order to execute arbitrary code on the server, resulting in a full compromise of the server. This could potentially be performed unwittingly by a user. This issue has been patched in version 4.5.4.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4089">CVE-2025-4089</a></td>
+					<td>5.1</td>
+					<td>execution,command</td>
+					<td class=date>2025-04-29T14:15:35.537</td>
+					<td class=description>Due to insufficient escaping of special characters in the "copy as cURL" feature, an attacker could trick a user into using this command, potentially leading to local code execution on the user's system. This vulnerability affects Firefox < 138 and Thunderbird < 138.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4085">CVE-2025-4085</a></td>
+					<td>-</td>
+					<td>sensitive,leak</td>
+					<td class=date>2025-04-29T14:15:35.187</td>
+					<td class=description>An attacker with control over a content process could potentially leverage the privileged UITour actor to leak sensitive information or escalate privileges. This vulnerability affects Firefox < 138 and Thunderbird < 138.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4084">CVE-2025-4084</a></td>
+					<td>-</td>
+					<td>execution,command</td>
+					<td class=date>2025-04-29T14:15:35.097</td>
+					<td class=description>Due to insufficient escaping of the special characters in the "copy as cURL" feature, an attacker could trick a user into using this command, potentially leading to local code execution on the user's system.
+*This bug only affects Firefox for Windows. Other versions of Firefox are unaffected.* This vulnerability affects Firefox ESR < 128.10, Firefox ESR < 115.23, and Thunderbird < 128.10.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-3891">CVE-2025-3891</a></td>
+					<td>5.3</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-04-29T12:15:32.137</td>
+					<td class=description>A flaw was found in the mod_auth_openidc module for Apache httpd. This flaw allows a remote, unauthenticated attacker to trigger a denial of service by sending an empty POST request when the OIDCPreservePost directive is enabled. The server crashes consistently, affecting availability.</td>
 				</tr>
 			
 		
