@@ -1,22 +1,4 @@
 {
-  "CVE-2025-4084": {
-    "cvss": "-",
-    "description": "Due to insufficient escaping of the special characters in the \"copy as cURL\" feature, an attacker could trick a user into using this command, potentially leading to local code execution on the user's system.\n*This bug only affects Firefox for Windows. Other versions of Firefox are unaffected.* This vulnerability affects Firefox ESR < 128.10, Firefox ESR < 115.23, and Thunderbird < 128.10.",
-    "published": "2025-04-29T14:15:35.097",
-    "keywords": "execution,command"
-  },
-  "CVE-2025-4085": {
-    "cvss": "-",
-    "description": "An attacker with control over a content process could potentially leverage the privileged UITour actor to leak sensitive information or escalate privileges. This vulnerability affects Firefox < 138 and Thunderbird < 138.",
-    "published": "2025-04-29T14:15:35.187",
-    "keywords": "sensitive,leak"
-  },
-  "CVE-2025-4089": {
-    "cvss": 5.1,
-    "description": "Due to insufficient escaping of special characters in the \"copy as cURL\" feature, an attacker could trick a user into using this command, potentially leading to local code execution on the user's system. This vulnerability affects Firefox < 138 and Thunderbird < 138.",
-    "published": "2025-04-29T14:15:35.537",
-    "keywords": "execution,command"
-  },
   "CVE-2025-25403": {
     "url": "https://github.com/slims/slims9_bulian/issues/273",
     "cvss": "-",
@@ -222,7 +204,7 @@
     "keywords": "remote,authentication,bypass"
   },
   "CVE-2025-46625": {
-    "cvss": 6.3,
+    "cvss": 8.8,
     "description": "Lack of input validation/sanitization in the 'setLanCfg' API endpoint in httpd in the Tenda RX2 Pro 16.03.30.14 allows a remote attacker that is authorized to the web management portal to gain root shell access to the device by sending a crafted web request. This is persistent because the command injection is saved in the configuration of the device.",
     "published": "2025-05-01T20:15:38.037",
     "keywords": "remote,command"
