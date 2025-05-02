@@ -1,10 +1,4 @@
 {
-  "CVE-2025-3891": {
-    "cvss": 5.3,
-    "description": "A flaw was found in the mod_auth_openidc module for Apache httpd. This flaw allows a remote, unauthenticated attacker to trigger a denial of service by sending an empty POST request when the OIDCPreservePost directive is enabled. The server crashes consistently, affecting availability.",
-    "published": "2025-04-29T12:15:32.137",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2025-4084": {
     "cvss": "-",
     "description": "Due to insufficient escaping of the special characters in the \"copy as cURL\" feature, an attacker could trick a user into using this command, potentially leading to local code execution on the user's system.\n*This bug only affects Firefox for Windows. Other versions of Firefox are unaffected.* This vulnerability affects Firefox ESR < 128.10, Firefox ESR < 115.23, and Thunderbird < 128.10.",
