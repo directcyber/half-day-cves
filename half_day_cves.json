@@ -222,25 +222,25 @@
     "keywords": "remote,unauthenticated"
   },
   "CVE-2025-46630": {
-    "cvss": "-",
+    "cvss": 6.5,
     "description": "Improper access controls in the web management portal of the Tenda RX2 Pro 16.03.30.14 allows an unauthenticated remote attacker to enable 'ate' (a remote system management binary) by sending a /goform/ate web request.",
     "published": "2025-05-01T20:15:38.803",
     "keywords": "remote,unauthenticated"
   },
   "CVE-2025-46631": {
-    "cvss": "-",
+    "cvss": 6.5,
     "description": "Improper access controls in the web management portal of the Tenda RX2 Pro 16.03.30.14 allows an unauthenticated remote attacker to enable telnet access to the router's OS by sending a /goform/telnet web request.",
     "published": "2025-05-01T20:15:39.010",
     "keywords": "remote,unauthenticated"
   },
   "CVE-2025-46633": {
-    "cvss": "-",
+    "cvss": 8.2,
     "description": "Cleartext transmission of sensitive information in the web management portal of the Tenda RX2 Pro 16.03.30.14 allows an attacker to decrypt traffic between the client and server by collecting the symmetric AES key from collected and/or observed traffic. The AES key in sent in cleartext in response to successful authentication. The IV is always EU5H62G9ICGRNI43.",
     "published": "2025-05-01T20:15:39.310",
     "keywords": "authentication,sensitive"
   },
   "CVE-2025-46634": {
-    "cvss": "-",
+    "cvss": 8.2,
     "description": "Cleartext transmission of sensitive information in the web management portal of the Tenda RX2 Pro 16.03.30.14 may allow an unauthenticated attacker to authenticate to the web management portal by collecting credentials from observed/collected traffic. It implements encryption, but not until after the user has transmitted the hash of their password in cleartext. The hash can be replayed to authenticate.",
     "published": "2025-05-01T20:15:39.460",
     "keywords": "unauthenticated,sensitive"
