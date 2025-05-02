@@ -1,10 +1,4 @@
 {
-  "CVE-2025-46348": {
-    "cvss": 10.0,
-    "description": "YesWiki is a wiki system written in PHP. Prior to version 4.5.4, the request to commence a site backup can be performed and downloaded without authentication. The archives are created with a predictable filename, so a malicious user could create and download an archive without being authenticated. This could result in a malicious attacker making numerous requests to create archives and fill up the file system, or by downloading the archive which contains sensitive site information. This issue has been patched in version 4.5.4.",
-    "published": "2025-04-29T21:15:52.120",
-    "keywords": "authentication,sensitive"
-  },
   "CVE-2025-29906": {
     "cvss": 8.6,
     "description": "Finit is a fast init for Linux systems. Versions starting from 3.0-rc1 and prior to version 4.11 bundle an implementation of getty for the `tty` configuration directive that can bypass `/bin/login`, i.e., a user can log in as any user without authentication. This issue has been patched in version 4.11.",
@@ -292,5 +286,17 @@
     "description": "TOTOLINK A950RG V4.1.2cu.5204_B20210112 contains a command execution vulnerability in the setDeviceName interface of the /lib/cste_modules/global.so library, specifically in the processing of the deviceMac parameter.",
     "published": "2025-05-02T17:15:52.423",
     "keywords": "execution,command"
+  },
+  "CVE-2025-0782": {
+    "cvss": 10.0,
+    "description": "A vulnerability in the S3 bucket configuration for h2oai/h2o-3 allows public write access to the 'h2o-release' bucket. This issue affects all versions and could enable an attacker to overwrite any file in the bucket. As users download binary files such as JARs from this bucket, this vulnerability could lead to remote code execution (RCE) on any user who uses the application. Additionally, an attacker could modify the documentation to include malicious download links.",
+    "published": "2025-05-02T21:15:23.550",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-4218": {
+    "url": "https://github.com/handrew/browserpilot/issues/20#issue-2999815850",
+    "cvss": 5.3,
+    "description": "A vulnerability was found in handrew browserpilot up to 0.2.51. It has been declared as critical. Affected by this vulnerability is the function GPTSeleniumAgent of the file browserpilot/browserpilot/agents/gpt_selenium_agent.py. The manipulation of the argument instructions leads to code injection. The attack needs to be approached locally. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-05-02T21:15:24.057"
   }
 }
