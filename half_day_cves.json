@@ -1,10 +1,4 @@
 {
-  "CVE-2025-32444": {
-    "cvss": 10.0,
-    "description": "vLLM is a high-throughput and memory-efficient inference and serving engine for LLMs. Versions starting from 0.6.5 and prior to 0.8.5, having vLLM integration with mooncake, are vulnerable to remote code execution due to using pickle based serialization over unsecured ZeroMQ sockets. The vulnerable sockets were set to listen on all network interfaces, increasing the likelihood that an attacker is able to reach the vulnerable ZeroMQ sockets to carry out an attack. vLLM instances that do not make use of the mooncake integration are not vulnerable. This issue has been patched in version 0.8.5.",
-    "published": "2025-04-30T01:15:51.953",
-    "keywords": "remote,execution"
-  },
   "CVE-2025-24339": {
     "cvss": 5.0,
     "description": "A vulnerability in the web application of ctrlX OS allows a remote unauthenticated attacker to conduct various attacks against users of the vulnerable system, including web cache poisoning or Man-in-the-Middle (MitM), via a crafted HTTP request.",
