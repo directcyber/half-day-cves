@@ -1,28 +1,4 @@
 {
-  "CVE-2025-24339": {
-    "cvss": 5.0,
-    "description": "A vulnerability in the web application of ctrlX OS allows a remote unauthenticated attacker to conduct various attacks against users of the vulnerable system, including web cache poisoning or Man-in-the-Middle (MitM), via a crafted HTTP request.",
-    "published": "2025-04-30T11:15:49.623",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-24342": {
-    "cvss": 5.3,
-    "description": "A vulnerability in the login functionality of the web application of ctrlX OS allows a remote unauthenticated attacker to guess valid usernames via multiple crafted HTTP requests.",
-    "published": "2025-04-30T12:15:17.490",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-24344": {
-    "cvss": 6.3,
-    "description": "A vulnerability in the error notification messages of the web application of ctrlX OS allows a remote unauthenticated attacker to inject arbitrary HTML tags and, possibly, execute arbitrary client-side code in the context of another user's browser via a crafted HTTP request.",
-    "published": "2025-04-30T12:15:18.120",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-24351": {
-    "cvss": 8.8,
-    "description": "A vulnerability in the \u201cRemote Logging\u201d functionality of the web application of ctrlX OS allows a remote authenticated (low-privileged) attacker to execute arbitrary OS commands in the context of user \u201croot\u201d via a crafted HTTP request.",
-    "published": "2025-04-30T12:15:21.937",
-    "keywords": "remote,command"
-  },
   "CVE-2025-4121": {
     "cvss": 6.3,
     "description": "A vulnerability was found in Netgear JWNR2000v2 1.0.0.11. It has been declared as critical. Affected by this vulnerability is the function cmd_wireless. The manipulation of the argument host leads to command injection. The attack can be launched remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
