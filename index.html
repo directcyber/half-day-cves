@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-05-02T23:11:52.241259
+Updated at UTC 2025-05-03T00:58:40.374585
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -216,8 +216,6 @@ Note: It is a basic, well-known requirement that OAuth servers should verify tha
 
 
 				</tr>
-			
-		
 			
 		
 			
@@ -750,16 +748,6 @@ The specific flaw exists within the VCSEC module. By manipulating the certificat
 					<td>remote,execution</td>
 					<td class=date>2025-04-30T01:15:51.953</td>
 					<td class=description>vLLM is a high-throughput and memory-efficient inference and serving engine for LLMs. Versions starting from 0.6.5 and prior to 0.8.5, having vLLM integration with mooncake, are vulnerable to remote code execution due to using pickle based serialization over unsecured ZeroMQ sockets. The vulnerable sockets were set to listen on all network interfaces, increasing the likelihood that an attacker is able to reach the vulnerable ZeroMQ sockets to carry out an attack. vLLM instances that do not make use of the mooncake integration are not vulnerable. This issue has been patched in version 0.8.5.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-29906">CVE-2025-29906</a></td>
-					<td>8.6</td>
-					<td>authentication,bypass</td>
-					<td class=date>2025-04-29T23:16:04.393</td>
-					<td class=description>Finit is a fast init for Linux systems. Versions starting from 3.0-rc1 and prior to version 4.11 bundle an implementation of getty for the `tty` configuration directive that can bypass `/bin/login`, i.e., a user can log in as any user without authentication. This issue has been patched in version 4.11.</td>
 				</tr>
 			
 		
