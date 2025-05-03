@@ -1,16 +1,4 @@
 {
-  "CVE-2025-24887": {
-    "cvss": 6.3,
-    "description": "OpenCTI is an open-source cyber threat intelligence platform. In versions starting from 6.4.8 to before 6.4.10, the allow/deny lists can be bypassed, allowing a user to change attributes that are intended to be unmodifiable by the user. It is possible to toggle the `external` flag on/off and change the own token value for a user. It is also possible to edit attributes that are not in the allow list, such as `otp_qr` and `otp_activated`. If external users exist in the OpenCTI setup and the information about these users identities is sensitive, the above vulnerabilities can be used to enumerate existing user accounts as a standard low privileged user. This issue has been patched in version 6.4.10.",
-    "published": "2025-04-30T19:15:55.070",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2025-2170": {
-    "cvss": 7.2,
-    "description": "A Server-side request forgery (SSRF) vulnerability has been identified in the SMA1000 Appliance Work Place interface, which in specific conditions could potentially enable a remote unauthenticated attacker to cause the appliance to make requests to an unintended location.",
-    "published": "2025-04-30T19:15:55.227",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2025-2082": {
     "cvss": 7.5,
     "description": "Tesla Model 3 VCSEC Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected Tesla Model 3 vehicles. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the VCSEC module. By manipulating the certificate response sent from the Tire Pressure Monitoring System (TPMS), an attacker can trigger an integer overflow before writing to memory. An attacker can leverage this vulnerability to execute code in the context of the VCSEC module and send arbitrary messages to the vehicle CAN bus. Was ZDI-CAN-23800.",

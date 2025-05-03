@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-05-03T19:08:59.694778
+Updated at UTC 2025-05-03T20:12:21.376992
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -230,10 +230,6 @@ Note: It is a basic, well-known requirement that OAuth servers should verify tha
 
 
 				</tr>
-			
-		
-			
-		
 			
 		
 			
@@ -716,26 +712,6 @@ Some adjustments are necessary to make it work:
 					<td class=description>Tesla Model 3 VCSEC Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected Tesla Model 3 vehicles. Authentication is not required to exploit this vulnerability.
 
 The specific flaw exists within the VCSEC module. By manipulating the certificate response sent from the Tire Pressure Monitoring System (TPMS), an attacker can trigger an integer overflow before writing to memory. An attacker can leverage this vulnerability to execute code in the context of the VCSEC module and send arbitrary messages to the vehicle CAN bus. Was ZDI-CAN-23800.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-2170">CVE-2025-2170</a></td>
-					<td>7.2</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2025-04-30T19:15:55.227</td>
-					<td class=description>A Server-side request forgery (SSRF) vulnerability has been identified in the SMA1000 Appliance Work Place interface, which in specific conditions could potentially enable a remote unauthenticated attacker to cause the appliance to make requests to an unintended location.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24887">CVE-2025-24887</a></td>
-					<td>6.3</td>
-					<td>sensitive,bypass</td>
-					<td class=date>2025-04-30T19:15:55.070</td>
-					<td class=description>OpenCTI is an open-source cyber threat intelligence platform. In versions starting from 6.4.8 to before 6.4.10, the allow/deny lists can be bypassed, allowing a user to change attributes that are intended to be unmodifiable by the user. It is possible to toggle the `external` flag on/off and change the own token value for a user. It is also possible to edit attributes that are not in the allow list, such as `otp_qr` and `otp_activated`. If external users exist in the OpenCTI setup and the information about these users identities is sensitive, the above vulnerabilities can be used to enumerate existing user accounts as a standard low privileged user. This issue has been patched in version 6.4.10.</td>
 				</tr>
 			
 		
