@@ -1,10 +1,4 @@
 {
-  "CVE-2025-4121": {
-    "cvss": 6.3,
-    "description": "A vulnerability was found in Netgear JWNR2000v2 1.0.0.11. It has been declared as critical. Affected by this vulnerability is the function cmd_wireless. The manipulation of the argument host leads to command injection. The attack can be launched remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-04-30T14:15:31.423",
-    "keywords": "remote,command"
-  },
   "CVE-2025-4122": {
     "cvss": 6.3,
     "description": "A vulnerability was found in Netgear JWNR2000v2 1.0.0.11. It has been rated as critical. Affected by this issue is the function sub_435E04. The manipulation of the argument host leads to command injection. The attack may be launched remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
@@ -268,5 +262,11 @@
     "description": "The Database Toolset plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.8.4 via backup files stored in a publicly accessible location. This makes it possible for unauthenticated attackers to extract sensitive data from database backup files. An index file is present, so a brute force attack would need to be successful in order to compromise any data.",
     "published": "2025-05-03T03:15:29.217",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-4236": {
+    "cvss": 7.3,
+    "description": "A vulnerability has been found in PCMan FTP Server 2.0.7 and classified as critical. Affected by this vulnerability is an unknown functionality of the component MDIR Command Handler. The manipulation leads to buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-05-03T14:15:16.360",
+    "keywords": "remote,command"
   }
 }
