@@ -1,10 +1,4 @@
 {
-  "CVE-2025-4135": {
-    "cvss": 6.3,
-    "description": "A vulnerability was found in Netgear WG302v2 up to 5.2.9 and classified as critical. Affected by this issue is the function ui_get_input_value. The manipulation of the argument host leads to command injection. The attack may be launched remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-04-30T18:15:48.400",
-    "keywords": "remote,command"
-  },
   "CVE-2025-24887": {
     "cvss": 6.3,
     "description": "OpenCTI is an open-source cyber threat intelligence platform. In versions starting from 6.4.8 to before 6.4.10, the allow/deny lists can be bypassed, allowing a user to change attributes that are intended to be unmodifiable by the user. It is possible to toggle the `external` flag on/off and change the own token value for a user. It is also possible to edit attributes that are not in the allow list, such as `otp_qr` and `otp_activated`. If external users exist in the OpenCTI setup and the information about these users identities is sensitive, the above vulnerabilities can be used to enumerate existing user accounts as a standard low privileged user. This issue has been patched in version 6.4.10.",
@@ -285,6 +279,12 @@
     "cvss": 7.3,
     "description": "A vulnerability was found in PCMan FTP Server 2.0.7. It has been declared as critical. This vulnerability affects unknown code of the component TYPE Command Handler. The manipulation leads to buffer overflow. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
     "published": "2025-05-03T17:15:45.543",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-4240": {
+    "cvss": 7.3,
+    "description": "A vulnerability was found in PCMan FTP Server 2.0.7. It has been rated as critical. This issue affects some unknown processing of the component LCD Command Handler. The manipulation leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-05-03T18:15:15.907",
     "keywords": "remote,command"
   }
 }
