@@ -1,10 +1,4 @@
 {
-  "CVE-2025-4122": {
-    "cvss": 6.3,
-    "description": "A vulnerability was found in Netgear JWNR2000v2 1.0.0.11. It has been rated as critical. Affected by this issue is the function sub_435E04. The manipulation of the argument host leads to command injection. The attack may be launched remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-04-30T15:16:02.590",
-    "keywords": "remote,command"
-  },
   "CVE-2025-4135": {
     "cvss": 6.3,
     "description": "A vulnerability was found in Netgear WG302v2 up to 5.2.9 and classified as critical. Affected by this issue is the function ui_get_input_value. The manipulation of the argument host leads to command injection. The attack may be launched remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
@@ -267,6 +261,12 @@
     "cvss": 7.3,
     "description": "A vulnerability has been found in PCMan FTP Server 2.0.7 and classified as critical. Affected by this vulnerability is an unknown functionality of the component MDIR Command Handler. The manipulation leads to buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
     "published": "2025-05-03T14:15:16.360",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-4237": {
+    "cvss": 7.3,
+    "description": "A vulnerability was found in PCMan FTP Server 2.0.7 and classified as critical. Affected by this issue is some unknown functionality of the component MDELETE Command Handler. The manipulation leads to buffer overflow. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-05-03T15:15:46.190",
     "keywords": "remote,command"
   }
 }
