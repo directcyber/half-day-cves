@@ -1,16 +1,4 @@
 {
-  "CVE-2025-1304": {
-    "cvss": 8.8,
-    "description": "The NewsBlogger theme for WordPress is vulnerable to arbitrary file uploads due to a missing capability check on the newsblogger_install_and_activate_plugin() function in all versions up to, and including, 0.2.5.1. This makes it possible for authenticated attackers, with subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2025-05-01T04:16:43.183",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-1305": {
-    "cvss": 8.8,
-    "description": "The NewsBlogger theme for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 0.2.5.4. This is due to missing or incorrect nonce validation on the newsblogger_install_and_activate_plugin() function. This makes it possible for unauthenticated attackers to upload arbitrary files and achieve remote code execution via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.",
-    "published": "2025-05-01T04:16:47.947",
-    "keywords": "remote,execution,unauthenticated"
-  },
   "CVE-2025-47153": {
     "url": "https://github.com/nodejs/node-v0.x-archive/issues/4549",
     "cvss": 6.5,
