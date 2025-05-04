@@ -1,46 +1,4 @@
 {
-  "CVE-2025-46625": {
-    "cvss": 8.8,
-    "description": "Lack of input validation/sanitization in the 'setLanCfg' API endpoint in httpd in the Tenda RX2 Pro 16.03.30.14 allows a remote attacker that is authorized to the web management portal to gain root shell access to the device by sending a crafted web request. This is persistent because the command injection is saved in the configuration of the device.",
-    "published": "2025-05-01T20:15:38.037",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-46628": {
-    "cvss": 7.3,
-    "description": "Lack of input validation/sanitization in the 'ate' management service in the Tenda RX2 Pro 16.03.30.14 allows an unauthorized remote attacker to gain root shell access to the device by sending a crafted UDP packet to the 'ate' service when it is enabled. Authentication is not needed.",
-    "published": "2025-05-01T20:15:38.510",
-    "keywords": "remote,authentication"
-  },
-  "CVE-2025-46629": {
-    "cvss": 6.5,
-    "description": "Lack of access controls in the 'ate' management binary of the Tenda RX2 Pro 16.03.30.14 allows an unauthenticated remote attacker to perform unauthorized configuration changes for any router where 'ate' has been enabled by sending a crafted UDP packet",
-    "published": "2025-05-01T20:15:38.660",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-46630": {
-    "cvss": 6.5,
-    "description": "Improper access controls in the web management portal of the Tenda RX2 Pro 16.03.30.14 allows an unauthenticated remote attacker to enable 'ate' (a remote system management binary) by sending a /goform/ate web request.",
-    "published": "2025-05-01T20:15:38.803",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-46631": {
-    "cvss": 6.5,
-    "description": "Improper access controls in the web management portal of the Tenda RX2 Pro 16.03.30.14 allows an unauthenticated remote attacker to enable telnet access to the router's OS by sending a /goform/telnet web request.",
-    "published": "2025-05-01T20:15:39.010",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-46633": {
-    "cvss": 8.2,
-    "description": "Cleartext transmission of sensitive information in the web management portal of the Tenda RX2 Pro 16.03.30.14 allows an attacker to decrypt traffic between the client and server by collecting the symmetric AES key from collected and/or observed traffic. The AES key in sent in cleartext in response to successful authentication. The IV is always EU5H62G9ICGRNI43.",
-    "published": "2025-05-01T20:15:39.310",
-    "keywords": "authentication,sensitive"
-  },
-  "CVE-2025-46634": {
-    "cvss": 8.2,
-    "description": "Cleartext transmission of sensitive information in the web management portal of the Tenda RX2 Pro 16.03.30.14 may allow an unauthenticated attacker to authenticate to the web management portal by collecting credentials from observed/collected traffic. It implements encryption, but not until after the user has transmitted the hash of their password in cleartext. The hash can be replayed to authenticate.",
-    "published": "2025-05-01T20:15:39.460",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2025-4180": {
     "cvss": 7.3,
     "description": "A vulnerability was found in PCMan FTP Server 2.0.7. It has been classified as critical. Affected is an unknown function of the component TRACE Command Handler. The manipulation leads to buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
