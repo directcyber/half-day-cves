@@ -268,5 +268,17 @@
     "description": "A vulnerability was found in PCMan FTP Server 2.0.7. It has been rated as critical. This issue affects some unknown processing of the component LCD Command Handler. The manipulation leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
     "published": "2025-05-03T18:15:15.907",
     "keywords": "remote,command"
+  },
+  "CVE-2025-47244": {
+    "cvss": 7.3,
+    "description": "Inedo ProGet through 2024.22 allows remote attackers to reach restricted functionality through the C# reflection layer, as demonstrated by causing a denial of service (when an attacker executes a loop calling RestartWeb) or obtaining potentially sensitive information. Exploitation can occur if Anonymous access is enabled, or if there is a successful CSRF attack.",
+    "published": "2025-05-03T23:15:48.150",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-47245": {
+    "url": "https://github.com/bluewave-labs/checkmate/pull/2160",
+    "cvss": 8.1,
+    "description": "In BlueWave Checkmate through 2.0.2 before d4a6072, an invite request can be modified to specify a privileged role.",
+    "published": "2025-05-04T00:15:15.373"
   }
 }
