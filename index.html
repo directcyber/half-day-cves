@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-05-04T01:05:42.786233
+Updated at UTC 2025-05-04T03:12:09.577252
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -196,54 +196,6 @@ Updated at UTC 2025-05-04T01:05:42.786233
 		
 			
 		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4144">CVE-2025-4144</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/cloudflare/workers-oauth-provider/pull/27">https://github.com/cloudflare/workers-oauth-provider/pull/27</a></td>
-					<td class=date>2025-05-01T01:15:54.267</td>
-					<td class=description>PKCE was implemented in the OAuth implementation in workers-oauth-provider that is part of  MCP framework https://github.com/cloudflare/workers-mcp . However, it was found that an attacker could cause the check to be skipped.
-
-
-Fixed in:
-
- 
-
- https://github.com/cloudflare/workers-oauth-provider/pull/27 https://github.com/cloudflare/workers-oauth-provider/pull/27 
-
-
-Impact: 
-
-PKCE is a defense-in-depth mechanism against certain kinds of attacks and was an optional extension in OAuth 2.0 which became required in the OAuth 2.1 draft. (Note that the MCP specification requires OAuth 2.1.). This bug completely bypasses PKCE protection.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4143">CVE-2025-4143</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/cloudflare/workers-oauth-provider/pull/26">https://github.com/cloudflare/workers-oauth-provider/pull/26</a></td>
-					<td class=date>2025-05-01T01:15:54.127</td>
-					<td class=description>The OAuth implementation in workers-oauth-provider that is part of  MCP framework https://github.com/cloudflare/workers-mcp , did not correctly validate that redirect_uri was on the allowed list of redirect URIs for the given client registration.
-
-Fixed in:  https://github.com/cloudflare/workers-oauth-provider/pull/26 https://github.com/cloudflare/workers-oauth-provider/pull/26 
-
-Impact:
-
- 
-
-Under certain circumstances (see below), if a victim had previously authorized with a server built on workers-oath-provider, and an attacker could later trick the victim into visiting a malicious web site, then attacker could potentially steal the victim's credentials to the same OAuth server and subsequently impersonate them.
-
-In order for the attack to be possible, the OAuth server's authorized callback must be designed to auto-approve authorizations that appear to come from an OAuth client that the victim has authorized previously. The authorization flow is not implemented by workers-oauth-provider; it is up to the application built on top to decide whether to implement such automatic re-authorization. However, many applications do implement such logic.
-
-Note: It is a basic, well-known requirement that OAuth servers should verify that the redirect URI is among the allowed list for the client, both during the authorization flow and subsequently when exchanging the authorization code for an access token. workers-oauth-provider implemented only the latter check, not the former. Unfortunately, the former is the much more important check. Readers who are familiar with OAuth may recognize that failing to check redirect URIs against the allowed list is a well-known, basic mistake, covered extensively in the RFC and elsewhere. The author of this library would like everyone to know that he was, in fact, well-aware of this requirement, thought about it a lot while designing the library, and then, somehow, forgot to actually make sure the check was in the code. That is, it's not that he didn't know what he was doing, it's that he knew what he was doing but flubbed it.</td>
-
-
-				</tr>
 			
 		
 
@@ -721,10 +673,6 @@ Some adjustments are necessary to make it work:
 					<td class=date>2025-05-01T04:16:43.183</td>
 					<td class=description>The NewsBlogger theme for WordPress is vulnerable to arbitrary file uploads due to a missing capability check on the newsblogger_install_and_activate_plugin() function in all versions up to, and including, 0.2.5.1. This makes it possible for authenticated attackers, with subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
 				</tr>
-			
-		
-			
-		
 			
 		
 
