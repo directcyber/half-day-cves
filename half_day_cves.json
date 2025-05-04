@@ -1,16 +1,4 @@
 {
-  "CVE-2025-24522": {
-    "cvss": 10.0,
-    "description": "KUNBUS Revolution Pi OS Bookworm 01/2025 is vulnerable because authentication is not configured by default for the Node-RED server. This can give an unauthenticated remote attacker full access to the Node-RED server where they can run arbitrary commands on the underlying operating system.",
-    "published": "2025-05-01T19:15:57.097",
-    "keywords": "remote,unauthenticated,authentication,command"
-  },
-  "CVE-2025-32011": {
-    "cvss": 9.8,
-    "description": "KUNBUS PiCtory versions 2.5.0 through 2.11.1 have an authentication bypass vulnerability where a remote attacker can bypass authentication to get access due to a path traversal.",
-    "published": "2025-05-01T19:15:57.357",
-    "keywords": "remote,authentication,bypass"
-  },
   "CVE-2025-46625": {
     "cvss": 8.8,
     "description": "Lack of input validation/sanitization in the 'setLanCfg' API endpoint in httpd in the Tenda RX2 Pro 16.03.30.14 allows a remote attacker that is authorized to the web management portal to gain root shell access to the device by sending a crafted web request. This is persistent because the command injection is saved in the configuration of the device.",
