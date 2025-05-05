@@ -220,5 +220,47 @@
     "description": "Inappropriate implementation in DevTools in Google Chrome prior to 136.0.7103.59 allowed a remote attacker who convinced a user to engage in specific UI gestures to bypass discretionary access control via a crafted HTML page. (Chromium security severity: Low)",
     "published": "2025-05-05T18:15:44.153",
     "keywords": "remote,bypass"
+  },
+  "CVE-2025-43849": {
+    "cvss": "-",
+    "description": "Retrieval-based-Voice-Conversion-WebUI is a voice changing framework based on VITS. Versions 2.2.231006 and prior are vulnerable to unsafe deserialization. The\u00a0ckpt_a\u00a0and\u00a0cpkt_b\u00a0variables take user input\u00a0(e.g. a path to a model) and\u00a0pass\u00a0it to the\u00a0merge\u00a0function in\u00a0process_ckpt.py, which uses them to\u00a0load the models on those paths with\u00a0torch.load, which can lead to unsafe deserialization and remote code execution. As of time of publication, no known patches exist.",
+    "published": "2025-05-05T19:15:55.957",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-43850": {
+    "cvss": "-",
+    "description": "Retrieval-based-Voice-Conversion-WebUI is a voice changing framework based on VITS. Versions 2.2.231006 and prior are vulnerable to unsafe deserialization. The\u00a0ckpt_dir\u00a0variable\u00a0takes user input\u00a0(e.g. a path to a model) and\u00a0passes\u00a0it to the\u00a0change_info\u00a0function in\u00a0export.py, which uses it to\u00a0load the model on that path with\u00a0torch.load, which can lead to unsafe deserialization and remote code execution. As of time of publication, no known patches exist.",
+    "published": "2025-05-05T19:15:56.090",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-43851": {
+    "cvss": "-",
+    "description": "Retrieval-based-Voice-Conversion-WebUI is a voice changing framework based on VITS. Versions 2.2.231006 and prior are vulnerable to unsafe deserialization. The\u00a0model_choose\u00a0variable\u00a0takes user input\u00a0(e.g. a path to a model) and\u00a0passes\u00a0it to the\u00a0uvr\u00a0function in\u00a0vr.py. In\u00a0uvr\u00a0, a new instance of\u00a0AudioPre\u00a0class is created with the\u00a0model_path\u00a0attribute containing the aformentioned user input. In the\u00a0AudioPre\u00a0class, the user input, is used to\u00a0load the model on that path with\u00a0torch.load, which can lead to unsafe deserialization and remote code execution. As of time of publication, no known patches exist.",
+    "published": "2025-05-05T19:15:56.220",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-43852": {
+    "cvss": "-",
+    "description": "Retrieval-based-Voice-Conversion-WebUI is a voice changing framework based on VITS. Versions 2.2.231006 and prior are vulnerable to unsafe deserialization. The\u00a0model_choose\u00a0variable\u00a0takes user input\u00a0(e.g. a path to a model) and\u00a0passes\u00a0it to the\u00a0uvr\u00a0function in\u00a0vr.py. In\u00a0uvr\u00a0, if\u00a0model_name\u00a0contains the string\u00a0\"DeEcho\", a new instance of\u00a0AudioPreDeEcho\u00a0class is created with the\u00a0model_path\u00a0attribute containing the aforementioned user input. In the\u00a0AudioPreDeEcho\u00a0class, the user input is used to\u00a0load the model on that path with\u00a0torch.load, which can lead to unsafe deserialization and remote code execution. As of time of publication, no known patches exist.",
+    "published": "2025-05-05T19:15:56.353",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-46719": {
+    "cvss": "-",
+    "description": "Open WebUI is a self-hosted artificial intelligence platform designed to operate entirely offline. Prior to version 0.6.6, a vulnerability in the way certain html tags in chat messages are rendered allows attackers to inject JavaScript code into a chat transcript. The JavaScript code will be executed in the user's browser every time that chat transcript is opened, allowing attackers to retrieve the user's access token and gain full control over their account. Chat transcripts can be shared with other users in the same server, or with the whole open-webui community if \"Enable Community Sharing\" is enabled in the admin panel. If this exploit is used against an admin user, it is possible to achieve Remote Code Execution on the server where the open-webui backend is hosted. This can be done by creating a new function which contains malicious python code. This vulnerability also affects chat transcripts uploaded to `https://openwebui.com/c/<user>/<chat_id>`, allowing for wormable stored XSS in https[:]//openwebui[.]com. Version 0.6.6 contains a patch for the issue.",
+    "published": "2025-05-05T19:15:57.197",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-46720": {
+    "cvss": 3.1,
+    "description": "Keystone is a content management system for Node.js. Prior to version 6.5.0, `{field}.isFilterable` access control can be bypassed in `update` and `delete` mutations by adding additional unique filters. These filters can be used as an oracle to probe the existence or value of otherwise unreadable fields. Specifically, when a mutation includes a `where` clause with multiple unique filters (e.g. `id` and `email`), Keystone will attempt to match records even if filtering by the latter fields would normally be rejected by `field.isFilterable` or `list.defaultIsFilterable`. This can allow malicious actors to infer the presence of a particular field value when a filter is successful in returning a result. This affects any project relying on the default or dynamic `isFilterable` behavior (at the list or field level) to prevent external users from using the filtering of fields as a discovery mechanism. While this access control is respected during `findMany` operations, it was not completely enforced during `update` and `delete` mutations when accepting more than one unique `where` values in filters. This has no impact on projects using `isFilterable: false` or `defaultIsFilterable: false` for sensitive fields, or for those who have otherwise omitted filtering by these fields from their GraphQL schema. This issue has been patched in `@keystone-6/core` version 6.5.0. To mitigate this issue in older versions where patching is not a viable pathway, set `isFilterable: false` statically for relevant fields to prevent filtering by them earlier in the access control pipeline (that is, don't use functions); set `{field}.graphql.omit.read: true` for relevant fields, which implicitly removes filtering by these fields from the GraphQL schema; and/or deny `update` and `delete` operations for the relevant lists completely.",
+    "published": "2025-05-05T19:15:57.330",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2025-4279": {
+    "cvss": 8.8,
+    "description": "The External image replace plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'external_image_replace_get_posts::replace_post' function in all versions up to, and including, 1.0.8. This makes it possible for authenticated attackers, with contributor-level and above permissions, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2025-05-05T19:15:57.477",
+    "keywords": "remote,execution"
   }
 }

@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-05-05T19:09:07.644344
+Updated at UTC 2025-05-05T20:13:52.940753
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,20 @@ Updated at UTC 2025-05-05T19:09:07.644344
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -194,6 +208,76 @@ Updated at UTC 2025-05-05T19:09:07.644344
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4279">CVE-2025-4279</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-05-05T19:15:57.477</td>
+					<td class=description>The External image replace plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'external_image_replace_get_posts::replace_post' function in all versions up to, and including, 1.0.8. This makes it possible for authenticated attackers, with contributor-level and above permissions, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-46720">CVE-2025-46720</a></td>
+					<td>3.1</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2025-05-05T19:15:57.330</td>
+					<td class=description>Keystone is a content management system for Node.js. Prior to version 6.5.0, `{field}.isFilterable` access control can be bypassed in `update` and `delete` mutations by adding additional unique filters. These filters can be used as an oracle to probe the existence or value of otherwise unreadable fields. Specifically, when a mutation includes a `where` clause with multiple unique filters (e.g. `id` and `email`), Keystone will attempt to match records even if filtering by the latter fields would normally be rejected by `field.isFilterable` or `list.defaultIsFilterable`. This can allow malicious actors to infer the presence of a particular field value when a filter is successful in returning a result. This affects any project relying on the default or dynamic `isFilterable` behavior (at the list or field level) to prevent external users from using the filtering of fields as a discovery mechanism. While this access control is respected during `findMany` operations, it was not completely enforced during `update` and `delete` mutations when accepting more than one unique `where` values in filters. This has no impact on projects using `isFilterable: false` or `defaultIsFilterable: false` for sensitive fields, or for those who have otherwise omitted filtering by these fields from their GraphQL schema. This issue has been patched in `@keystone-6/core` version 6.5.0. To mitigate this issue in older versions where patching is not a viable pathway, set `isFilterable: false` statically for relevant fields to prevent filtering by them earlier in the access control pipeline (that is, don't use functions); set `{field}.graphql.omit.read: true` for relevant fields, which implicitly removes filtering by these fields from the GraphQL schema; and/or deny `update` and `delete` operations for the relevant lists completely.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-46719">CVE-2025-46719</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2025-05-05T19:15:57.197</td>
+					<td class=description>Open WebUI is a self-hosted artificial intelligence platform designed to operate entirely offline. Prior to version 0.6.6, a vulnerability in the way certain html tags in chat messages are rendered allows attackers to inject JavaScript code into a chat transcript. The JavaScript code will be executed in the user's browser every time that chat transcript is opened, allowing attackers to retrieve the user's access token and gain full control over their account. Chat transcripts can be shared with other users in the same server, or with the whole open-webui community if "Enable Community Sharing" is enabled in the admin panel. If this exploit is used against an admin user, it is possible to achieve Remote Code Execution on the server where the open-webui backend is hosted. This can be done by creating a new function which contains malicious python code. This vulnerability also affects chat transcripts uploaded to `https://openwebui.com/c/<user>/<chat_id>`, allowing for wormable stored XSS in https[:]//openwebui[.]com. Version 0.6.6 contains a patch for the issue.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-43852">CVE-2025-43852</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2025-05-05T19:15:56.353</td>
+					<td class=description>Retrieval-based-Voice-Conversion-WebUI is a voice changing framework based on VITS. Versions 2.2.231006 and prior are vulnerable to unsafe deserialization. The model_choose variable takes user input (e.g. a path to a model) and passes it to the uvr function in vr.py. In uvr , if model_name contains the string "DeEcho", a new instance of AudioPreDeEcho class is created with the model_path attribute containing the aforementioned user input. In the AudioPreDeEcho class, the user input is used to load the model on that path with torch.load, which can lead to unsafe deserialization and remote code execution. As of time of publication, no known patches exist.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-43851">CVE-2025-43851</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2025-05-05T19:15:56.220</td>
+					<td class=description>Retrieval-based-Voice-Conversion-WebUI is a voice changing framework based on VITS. Versions 2.2.231006 and prior are vulnerable to unsafe deserialization. The model_choose variable takes user input (e.g. a path to a model) and passes it to the uvr function in vr.py. In uvr , a new instance of AudioPre class is created with the model_path attribute containing the aformentioned user input. In the AudioPre class, the user input, is used to load the model on that path with torch.load, which can lead to unsafe deserialization and remote code execution. As of time of publication, no known patches exist.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-43850">CVE-2025-43850</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2025-05-05T19:15:56.090</td>
+					<td class=description>Retrieval-based-Voice-Conversion-WebUI is a voice changing framework based on VITS. Versions 2.2.231006 and prior are vulnerable to unsafe deserialization. The ckpt_dir variable takes user input (e.g. a path to a model) and passes it to the change_info function in export.py, which uses it to load the model on that path with torch.load, which can lead to unsafe deserialization and remote code execution. As of time of publication, no known patches exist.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-43849">CVE-2025-43849</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2025-05-05T19:15:55.957</td>
+					<td class=description>Retrieval-based-Voice-Conversion-WebUI is a voice changing framework based on VITS. Versions 2.2.231006 and prior are vulnerable to unsafe deserialization. The ckpt_a and cpkt_b variables take user input (e.g. a path to a model) and pass it to the merge function in process_ckpt.py, which uses them to load the models on those paths with torch.load, which can lead to unsafe deserialization and remote code execution. As of time of publication, no known patches exist.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
