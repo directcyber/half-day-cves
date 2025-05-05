@@ -1,34 +1,4 @@
 {
-  "CVE-2025-2880": {
-    "cvss": 5.3,
-    "description": "The Yame | Link In Bio plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 0.9.0 through the publicly accessible phpinfo.php script. This makes it possible for unauthenticated attackers to view potentially sensitive information contained in the exposed file.",
-    "published": "2025-05-02T03:15:19.750",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2025-3746": {
-    "cvss": 9.8,
-    "description": "The OTP-less one tap Sign in plugin for WordPress is vulnerable to privilege escalation via account takeover in versions 2.0.14 to 2.0.59. This is due to the plugin not properly validating a user's identity prior to updating their details, like email. This makes it possible for unauthenticated attackers to change arbitrary users' email addresses, including administrators, and leverage that to reset the user's password and gain access to their account.\r\nAdditionally, the plugin returns authentication cookies in the response, which can be used to access the account directly.",
-    "published": "2025-05-02T03:15:20.850",
-    "keywords": "unauthenticated,authentication"
-  },
-  "CVE-2025-3707": {
-    "cvss": 6.5,
-    "description": "The eHDR CTMS from Sunnet has a SQL Injection vulnerability, allowing remote attackers with regular privileges to inject arbitrary SQL command to read database contents.",
-    "published": "2025-05-02T04:15:55.140",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-3708": {
-    "cvss": 9.8,
-    "description": "Le-show medical practice management system from Le-yan has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL commands to read, modify, and delete database contents.",
-    "published": "2025-05-02T04:15:55.507",
-    "keywords": "remote,unauthenticated,command"
-  },
-  "CVE-2025-3709": {
-    "cvss": 9.8,
-    "description": "Agentflow from Flowring Technology has an Account Lockout Bypass vulnerability, allowing unauthenticated remote attackers to exploit this vulnerability to perform password brute force attack.",
-    "published": "2025-05-02T04:15:55.707",
-    "keywords": "remote,unauthenticated,bypass"
-  },
   "CVE-2025-4204": {
     "cvss": 7.5,
     "description": "The Ultimate Auction Pro plugin for WordPress is vulnerable to SQL Injection via the \u2018auction_id\u2019 parameter in all versions up to, and including, 1.5.2 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
@@ -154,5 +124,29 @@
     "cvss": 3.5,
     "description": "A vulnerability, which was classified as problematic, has been found in SeaCMS 13.2. This issue affects some unknown processing of the file /admin_pay.php. The manipulation of the argument cstatus leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
     "published": "2025-05-05T01:15:49.367"
+  },
+  "CVE-2025-20666": {
+    "cvss": "-",
+    "description": "In Modem, there is a possible system crash due to an uncaught exception. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY00650610; Issue ID: MSV-2933.",
+    "published": "2025-05-05T03:15:21.940",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-20667": {
+    "cvss": "-",
+    "description": "In Modem, there is a possible information disclosure due to incorrect error handling. This could lead to remote information disclosure, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01513293; Issue ID: MSV-2741.",
+    "published": "2025-05-05T03:15:22.053",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-20670": {
+    "cvss": "-",
+    "description": "In Modem, there is a possible permission bypass due to improper certificate validation. This could lead to remote information disclosure, if a UE has connected to a rogue base station controlled by the attacker, with User execution privileges needed. User interaction is needed for exploitation. Patch ID: MOLY01334347; Issue ID: MSV-2772.",
+    "published": "2025-05-05T03:15:22.300",
+    "keywords": "remote,execution,bypass"
+  },
+  "CVE-2025-4261": {
+    "url": "https://github.com/gair-nlp/factool/issues/50#issue-3007905464",
+    "cvss": 5.3,
+    "description": "A vulnerability was found in GAIR-NLP factool up to 3f3914bc090b644be044b7e0005113c135d8b20f. It has been classified as critical. This affects the function run_single of the file factool/factool/math/tool.py. The manipulation leads to code injection. The attack needs to be approached locally. The exploit has been disclosed to the public and may be used. This product takes the approach of rolling releases to provide continious delivery. Therefore, version details for affected and updated releases are not available.",
+    "published": "2025-05-05T04:15:18.970"
   }
 }
