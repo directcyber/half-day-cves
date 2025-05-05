@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-05-05T17:10:59.364778
+Updated at UTC 2025-05-05T18:14:04.212832
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,12 @@ Updated at UTC 2025-05-05T17:10:59.364778
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -172,10 +178,38 @@ Updated at UTC 2025-05-05T17:10:59.364778
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-43843">CVE-2025-43843</a></td>
+					<td>-</td>
+					<td>execution,command</td>
+					<td class=date>2025-05-05T17:18:49.440</td>
+					<td class=description>Retrieval-based-Voice-Conversion-WebUI is a voice changing framework based on VITS. Versions 2.2.231006 and prior are vulnerable to command injection. The variables exp_dir1, np7 and f0method8 take user input and pass it into the extract_f0_feature function, which concatenates them into a command that is run on the server. This can lead to arbitrary command execution. As of time of publication, no known patches exist.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-43842">CVE-2025-43842</a></td>
+					<td>-</td>
+					<td>execution,command</td>
+					<td class=date>2025-05-05T17:18:48.967</td>
+					<td class=description>Retrieval-based-Voice-Conversion-WebUI is a voice changing framework based on VITS. Versions 2.2.231006 and prior are vulnerable to command injection. The variables exp_dir1, np7, trainset_dir4 and sr2 take user input and pass it to the preprocess_dataset function, which concatenates them into a command that is run on the server. This can lead to arbitrary command execution. As of time of publication, no known patches exist.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0217">CVE-2025-0217</a></td>
+					<td>-</td>
+					<td>remote,authentication,bypass</td>
+					<td class=date>2025-05-05T17:18:46.720</td>
+					<td class=description>BeyondTrust Privileged Remote Access (PRA) versions prior to 25.1 are vulnerable to a local authentication bypass. A local authenticated attacker can view the connection details of a ShellJump session that was initiated with external tools, allowing unauthorized access to connected sessions.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -416,16 +450,6 @@ DoS attacks such as "Billion Laughs" payloads can cause service disruption.</td>
 					<td>remote,execution</td>
 					<td class=date>2025-05-02T21:15:23.550</td>
 					<td class=description>A vulnerability in the S3 bucket configuration for h2oai/h2o-3 allows public write access to the 'h2o-release' bucket. This issue affects all versions and could enable an attacker to overwrite any file in the bucket. As users download binary files such as JARs from this bucket, this vulnerability could lead to remote code execution (RCE) on any user who uses the application. Additionally, an attacker could modify the documentation to include malicious download links.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-45800">CVE-2025-45800</a></td>
-					<td>-</td>
-					<td>execution,command</td>
-					<td class=date>2025-05-02T17:15:52.423</td>
-					<td class=description>TOTOLINK A950RG V4.1.2cu.5204_B20210112 contains a command execution vulnerability in the setDeviceName interface of the /lib/cste_modules/global.so library, specifically in the processing of the deviceMac parameter.</td>
 				</tr>
 			
 		

@@ -1,10 +1,4 @@
 {
-  "CVE-2025-45800": {
-    "cvss": "-",
-    "description": "TOTOLINK A950RG V4.1.2cu.5204_B20210112 contains a command execution vulnerability in the setDeviceName interface of the /lib/cste_modules/global.so library, specifically in the processing of the deviceMac parameter.",
-    "published": "2025-05-02T17:15:52.423",
-    "keywords": "execution,command"
-  },
   "CVE-2025-0782": {
     "cvss": 10.0,
     "description": "A vulnerability in the S3 bucket configuration for h2oai/h2o-3 allows public write access to the 'h2o-release' bucket. This issue affects all versions and could enable an attacker to overwrite any file in the bucket. As users download binary files such as JARs from this bucket, this vulnerability could lead to remote code execution (RCE) on any user who uses the application. Additionally, an attacker could modify the documentation to include malicious download links.",
@@ -166,5 +160,23 @@
     "description": "Output Messenger before 2.0.63 was vulnerable to a directory traversal attack through improper file path handling. By using ../ sequences in parameters, attackers could access sensitive files outside the intended directory, potentially leading to configuration leakage or arbitrary file access.",
     "published": "2025-05-05T16:15:50.857",
     "keywords": "sensitive,leak"
+  },
+  "CVE-2025-0217": {
+    "cvss": "-",
+    "description": "BeyondTrust Privileged Remote Access (PRA) versions prior to 25.1 are vulnerable to a local authentication bypass. A local authenticated attacker can view the connection details of a ShellJump session that was initiated with external tools, allowing unauthorized access to connected sessions.",
+    "published": "2025-05-05T17:18:46.720",
+    "keywords": "remote,authentication,bypass"
+  },
+  "CVE-2025-43842": {
+    "cvss": "-",
+    "description": "Retrieval-based-Voice-Conversion-WebUI is a voice changing framework based on VITS. Versions 2.2.231006 and prior are vulnerable to command injection. The variables\u00a0exp_dir1,\u00a0np7,\u00a0trainset_dir4\u00a0and\u00a0sr2\u00a0take user input and\u00a0pass\u00a0it to the\u00a0preprocess_dataset\u00a0function, which\u00a0concatenates them into a command\u00a0that is\u00a0run\u00a0on the server. This can lead to arbitrary command execution. As of time of publication, no known patches exist.",
+    "published": "2025-05-05T17:18:48.967",
+    "keywords": "execution,command"
+  },
+  "CVE-2025-43843": {
+    "cvss": "-",
+    "description": "Retrieval-based-Voice-Conversion-WebUI is a voice changing framework based on VITS. Versions 2.2.231006 and prior are vulnerable to command injection. The variables\u00a0exp_dir1,\u00a0np7\u00a0and\u00a0f0method8\u00a0take user input and\u00a0pass\u00a0it into the\u00a0extract_f0_feature\u00a0function, which\u00a0concatenates them into a command\u00a0that is run on the server. This can lead to arbitrary command execution. As of time of publication, no known patches exist.",
+    "published": "2025-05-05T17:18:49.440",
+    "keywords": "execution,command"
   }
 }
