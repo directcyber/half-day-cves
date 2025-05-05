@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-05-05T18:14:04.212832
+Updated at UTC 2025-05-05T19:09:07.644344
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,20 @@ Updated at UTC 2025-05-05T18:14:04.212832
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -183,6 +197,76 @@ Updated at UTC 2025-05-05T18:14:04.212832
 		
 			
 				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4052">CVE-2025-4052</a></td>
+					<td>-</td>
+					<td>remote,bypass</td>
+					<td class=date>2025-05-05T18:15:44.153</td>
+					<td class=description>Inappropriate implementation in DevTools in Google Chrome prior to 136.0.7103.59 allowed a remote attacker who convinced a user to engage in specific UI gestures to bypass discretionary access control via a crafted HTML page. (Chromium security severity: Low)</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4051">CVE-2025-4051</a></td>
+					<td>-</td>
+					<td>remote,bypass</td>
+					<td class=date>2025-05-05T18:15:44.060</td>
+					<td class=description>Insufficient data validation in DevTools in Google Chrome prior to 136.0.7103.59 allowed a remote attacker who convinced a user to engage in specific UI gestures to bypass discretionary access control via a crafted HTML page. (Chromium security severity: Medium)</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-43848">CVE-2025-43848</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2025-05-05T18:15:42.683</td>
+					<td class=description>Retrieval-based-Voice-Conversion-WebUI is a voice changing framework based on VITS. Versions 2.2.231006 and prior are vulnerable to unsafe deserialization. The ckpt_path0 variable takes user input (e.g. a path to a model) and passes it to the change_info function in process_ckpt.py, which uses it to load the model on that path with torch.load, which can lead to unsafe deserialization and remote code execution. As of time of publication, no known patches exist.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-43847">CVE-2025-43847</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2025-05-05T18:15:42.560</td>
+					<td class=description>Retrieval-based-Voice-Conversion-WebUI is a voice changing framework based on VITS. Versions 2.2.231006 and prior are vulnerable to unsafe deserialization. The ckpt_path2 variable takes user input (e.g. a path to a model) and passes it to the extract_small_model function in process_ckpt.py, which uses it to load the model on that path with torch.load, which can lead to unsafe deserialization and remote code execution. As of time of publication, no known patches exist.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-43846">CVE-2025-43846</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2025-05-05T18:15:42.430</td>
+					<td class=description>Retrieval-based-Voice-Conversion-WebUI is a voice changing framework based on VITS. Versions 2.2.231006 and prior are vulnerable to unsafe deserialization. The ckpt_path1 variable takes user input (e.g. a path to a model) and passes it to the show_info function in process_ckpt.py, which uses it to load the model on that path with torch.load, which can lead to unsafe deserialization and remote code execution. As of time of publication, no known patches exist.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-43845">CVE-2025-43845</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2025-05-05T18:15:42.300</td>
+					<td class=description>Retrieval-based-Voice-Conversion-WebUI is a voice changing framework based on VITS. Versions 2.2.231006 and prior are vulnerable to code injection. The ckpt_path2 variable takes user input (e.g. a path to a model) and passes it to change_info_ function, which opens and reads the file on the given path (except it changes the final on the path to train.log), and passes the contents of the file to eval, which can lead to remote code execution. As of time of publication, no known patches exist.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-43844">CVE-2025-43844</a></td>
+					<td>-</td>
+					<td>execution,command</td>
+					<td class=date>2025-05-05T18:15:42.180</td>
+					<td class=description>Retrieval-based-Voice-Conversion-WebUI is a voice changing framework based on VITS. Versions 2.2.231006 and prior are vulnerable to command injection. The variables exp_dir1, among others, take user input and pass it to the click_train function, which concatenates them into a command that is run on the server. This can lead to arbitrary command execution. As of time of publication, no known patches exist.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-43843">CVE-2025-43843</a></td>
 					<td>-</td>
 					<td>execution,command</td>
@@ -224,7 +308,7 @@ Updated at UTC 2025-05-05T18:14:04.212832
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25504">CVE-2025-25504</a></td>
-					<td>-</td>
+					<td>6.5</td>
 					<td>authentication,command</td>
 					<td class=date>2025-05-05T16:15:50.640</td>
 					<td class=description>An issue in the /usr/local/bin/jncs.sh script of Gefen WebFWC (In AV over IP products) v1.85h, v1.86v, and v1.70 allows attackers with network access to connect to the device over TCP port 4444 without authentication and execute arbitrary commands with root privileges.</td>

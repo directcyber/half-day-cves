@@ -150,7 +150,7 @@
     "published": "2025-05-05T14:15:29.063"
   },
   "CVE-2025-25504": {
-    "cvss": "-",
+    "cvss": 6.5,
     "description": "An issue in the /usr/local/bin/jncs.sh script of Gefen WebFWC (In AV over IP products) v1.85h, v1.86v, and v1.70 allows attackers with network access to connect to the device over TCP port 4444 without authentication and execute arbitrary commands with root privileges.",
     "published": "2025-05-05T16:15:50.640",
     "keywords": "authentication,command"
@@ -178,5 +178,47 @@
     "description": "Retrieval-based-Voice-Conversion-WebUI is a voice changing framework based on VITS. Versions 2.2.231006 and prior are vulnerable to command injection. The variables\u00a0exp_dir1,\u00a0np7\u00a0and\u00a0f0method8\u00a0take user input and\u00a0pass\u00a0it into the\u00a0extract_f0_feature\u00a0function, which\u00a0concatenates them into a command\u00a0that is run on the server. This can lead to arbitrary command execution. As of time of publication, no known patches exist.",
     "published": "2025-05-05T17:18:49.440",
     "keywords": "execution,command"
+  },
+  "CVE-2025-43844": {
+    "cvss": "-",
+    "description": "Retrieval-based-Voice-Conversion-WebUI is a voice changing framework based on VITS. Versions 2.2.231006 and prior are vulnerable to command injection. The variables\u00a0exp_dir1, among others, take user input and\u00a0pass\u00a0it to the\u00a0click_train\u00a0function, which\u00a0concatenates them into a command that is\u00a0run\u00a0on the server. This can lead to arbitrary command execution. As of time of publication, no known patches exist.",
+    "published": "2025-05-05T18:15:42.180",
+    "keywords": "execution,command"
+  },
+  "CVE-2025-43845": {
+    "cvss": "-",
+    "description": "Retrieval-based-Voice-Conversion-WebUI is a voice changing framework based on VITS. Versions 2.2.231006 and prior are vulnerable to code injection. The\u00a0ckpt_path2\u00a0variable\u00a0takes user input\u00a0(e.g. a path to a model) and\u00a0passes\u00a0it to\u00a0change_info_\u00a0function, which opens and reads the file on the given path (except it changes the final on the path to\u00a0train.log), and\u00a0passes the contents of the file to\u00a0eval, which can lead to remote code execution. As of time of publication, no known patches exist.",
+    "published": "2025-05-05T18:15:42.300",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-43846": {
+    "cvss": "-",
+    "description": "Retrieval-based-Voice-Conversion-WebUI is a voice changing framework based on VITS. Versions 2.2.231006 and prior are vulnerable to unsafe deserialization. The\u00a0ckpt_path1\u00a0variable\u00a0takes user input\u00a0(e.g. a path to a model) and\u00a0passes\u00a0it to the\u00a0show_info\u00a0function in\u00a0process_ckpt.py, which uses it to\u00a0load the model on that path with\u00a0torch.load, which can lead to unsafe deserialization and remote code execution. As of time of publication, no known patches exist.",
+    "published": "2025-05-05T18:15:42.430",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-43847": {
+    "cvss": "-",
+    "description": "Retrieval-based-Voice-Conversion-WebUI is a voice changing framework based on VITS. Versions 2.2.231006 and prior are vulnerable to unsafe deserialization. The\u00a0ckpt_path2\u00a0variable\u00a0takes user input\u00a0(e.g. a path to a model) and\u00a0passes\u00a0it to the\u00a0extract_small_model\u00a0function in\u00a0process_ckpt.py, which uses it to\u00a0load the model on that path with\u00a0torch.load, which can lead to unsafe deserialization and remote code execution. As of time of publication, no known patches exist.",
+    "published": "2025-05-05T18:15:42.560",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-43848": {
+    "cvss": "-",
+    "description": "Retrieval-based-Voice-Conversion-WebUI is a voice changing framework based on VITS. Versions 2.2.231006 and prior are vulnerable to unsafe deserialization. The\u00a0ckpt_path0\u00a0variable\u00a0takes user input\u00a0(e.g. a path to a model) and\u00a0passes\u00a0it to the\u00a0change_info\u00a0function in\u00a0process_ckpt.py, which uses it to\u00a0load the model on that path with\u00a0torch.load, which can lead to unsafe deserialization and remote code execution. As of time of publication, no known patches exist.",
+    "published": "2025-05-05T18:15:42.683",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-4051": {
+    "cvss": "-",
+    "description": "Insufficient data validation in DevTools in Google Chrome prior to 136.0.7103.59 allowed a remote attacker who convinced a user to engage in specific UI gestures to bypass discretionary access control via a crafted HTML page. (Chromium security severity: Medium)",
+    "published": "2025-05-05T18:15:44.060",
+    "keywords": "remote,bypass"
+  },
+  "CVE-2025-4052": {
+    "cvss": "-",
+    "description": "Inappropriate implementation in DevTools in Google Chrome prior to 136.0.7103.59 allowed a remote attacker who convinced a user to engage in specific UI gestures to bypass discretionary access control via a crafted HTML page. (Chromium security severity: Low)",
+    "published": "2025-05-05T18:15:44.153",
+    "keywords": "remote,bypass"
   }
 }
