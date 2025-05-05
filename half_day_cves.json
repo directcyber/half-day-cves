@@ -262,5 +262,95 @@
     "description": "The External image replace plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'external_image_replace_get_posts::replace_post' function in all versions up to, and including, 1.0.8. This makes it possible for authenticated attackers, with contributor-level and above permissions, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
     "published": "2025-05-05T19:15:57.477",
     "keywords": "remote,execution"
+  },
+  "CVE-2025-1909": {
+    "cvss": 9.8,
+    "description": "The BuddyBoss Platform Pro plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 2.7.01. This is due to insufficient verification on the user being supplied during the Apple OAuth authenticate request through the plugin. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email.",
+    "published": "2025-05-05T20:15:19.127",
+    "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2025-45607": {
+    "cvss": "-",
+    "description": "An issue in the component /manage/ of itranswarp v2.19 allows attackers to bypass authentication via a crafted request.",
+    "published": "2025-05-05T20:15:19.427",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-45608": {
+    "url": "https://github.com/zykzhangyukang/xinguan/issues/26",
+    "cvss": "-",
+    "description": "Incorrect access control in the /system/user/findUserList API of Xinguan v0.0.1-SNAPSHOT allows attackers to access sensitive information via a crafted payload.",
+    "published": "2025-05-05T20:15:19.887"
+  },
+  "CVE-2025-45609": {
+    "url": "https://github.com/lianjiatech/kob/issues/29",
+    "cvss": "-",
+    "description": "Incorrect access control in the doFilter function of kob latest v1.0.0-SNAPSHOT allows attackers to access sensitive information via a crafted payload.",
+    "published": "2025-05-05T20:15:20.010"
+  },
+  "CVE-2025-45610": {
+    "url": "https://github.com/jackson0714/passjava-platform/issues/48",
+    "cvss": "-",
+    "description": "Incorrect access control in the component /scheduleLog/info/1 of PassJava-Platform v3.0.0 allows attackers to access sensitive information via a crafted payload.",
+    "published": "2025-05-05T20:15:20.120"
+  },
+  "CVE-2025-45611": {
+    "cvss": "-",
+    "description": "Incorrect access control in the /user/edit/ component of hope-boot v1.0.0 allows attackers to bypass authentication via a crafted GET request.",
+    "published": "2025-05-05T20:15:20.243",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-45612": {
+    "cvss": "-",
+    "description": "Incorrect access control in xmall v1.1 allows attackers to bypass authentication via a crafted GET request to /index.",
+    "published": "2025-05-05T20:15:20.357",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-45613": {
+    "url": "https://github.com/zhaojun1998/shiro-action/issues/24",
+    "cvss": "-",
+    "description": "Incorrect access control in the component /user/list of Shiro-Action v0.6 allows attackers to access sensitive information via a crafted payload.",
+    "published": "2025-05-05T20:15:20.470"
+  },
+  "CVE-2025-45614": {
+    "url": "https://github.com/lcw2004/one/issues/44",
+    "cvss": "-",
+    "description": "Incorrect access control in the component /api/user/manager of One v1.0 allows attackers to access sensitive information via a crafted payload.",
+    "published": "2025-05-05T20:15:20.573"
+  },
+  "CVE-2025-45615": {
+    "url": "https://github.com/user-xiangpeng/yaoqishan/issues/29",
+    "cvss": "-",
+    "description": "Incorrect access control in the /admin/ API of yaoqishan v0.0.1-SNAPSHOT allows attackers to gain access to Admin rights via a crafted request.",
+    "published": "2025-05-05T20:15:20.680"
+  },
+  "CVE-2025-45616": {
+    "url": "https://github.com/baidu/brcc/issues/194",
+    "cvss": "-",
+    "description": "Incorrect access control in the /admin/** API of brcc v1.2.0 allows attackers to gain access to Admin rights via a crafted request.",
+    "published": "2025-05-05T20:15:20.790"
+  },
+  "CVE-2025-45617": {
+    "url": "https://github.com/megagao/production_ssm/issues/33",
+    "cvss": "-",
+    "description": "Incorrect access control in the component /user/list of production_ssm v0.0.1-SNAPSHOT allows attackers to access sensitive information via a crafted payload.",
+    "published": "2025-05-05T20:15:20.897"
+  },
+  "CVE-2025-45618": {
+    "url": "https://github.com/huangjian888/jeeweb-mybatis-springboot/issues/31",
+    "cvss": "-",
+    "description": "Incorrect access control in the component /admin/sys/datasource/ajaxList of jeeweb-mybatis-springboot v0.0.1.RELEASE allows attackers to access sensitive information via a crafted payload.",
+    "published": "2025-05-05T20:15:21.003"
+  },
+  "CVE-2025-46813": {
+    "cvss": 5.8,
+    "description": "Discourse is an open-source community platform. A data leak vulnerability affects sites deployed between commits 10df7fdee060d44accdee7679d66d778d1136510 and 82d84af6b0efbd9fa2aeec3e91ce7be1a768511b. On login-required sites, the leak meant that some content on the site's homepage could be visible to unauthenticated users. Only login-required sites that got deployed during this timeframe are affected, roughly between April 30 2025 noon EDT and May 2 2025, noon EDT. Sites on the stable branch are unaffected. Private content on an instance's homepage could be visible to unauthenticated users on login-required sites. Versions of 3.5.0.beta4 after commit 82d84af6b0efbd9fa2aeec3e91ce7be1a768511b are not vulnerable to the issue. No workarounds are available. Sites must upgrade to a non-vulnerable version of Discourse.",
+    "published": "2025-05-05T20:15:21.753",
+    "keywords": "unauthenticated,leak"
+  },
+  "CVE-2025-4287": {
+    "url": "https://github.com/pytorch/pytorch/pull/150923",
+    "cvss": 3.3,
+    "description": "A vulnerability was found in PyTorch 2.6.0+cu124. It has been rated as problematic. Affected by this issue is the function torch.cuda.nccl.reduce of the file torch/cuda/nccl.py. The manipulation leads to denial of service. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used. The patch is identified as 5827d2061dcb4acd05ac5f8e65d8693a481ba0f5. It is recommended to apply a patch to fix this issue.",
+    "published": "2025-05-05T20:15:22.100"
   }
 }
