@@ -1,28 +1,4 @@
 {
-  "CVE-2025-1495": {
-    "cvss": 4.3,
-    "description": "IBM Business Automation Workflow 24.0.0 and 24.0.1 through 24.0.1 IF001 Center may leak sensitive information due to missing authorization validation.",
-    "published": "2025-05-03T17:15:44.767",
-    "keywords": "sensitive,leak"
-  },
-  "CVE-2025-4238": {
-    "cvss": 7.3,
-    "description": "A vulnerability was found in PCMan FTP Server 2.0.7. It has been classified as critical. This affects an unknown part of the component MGET Command Handler. The manipulation leads to buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-05-03T17:15:45.373",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-4239": {
-    "cvss": 7.3,
-    "description": "A vulnerability was found in PCMan FTP Server 2.0.7. It has been declared as critical. This vulnerability affects unknown code of the component TYPE Command Handler. The manipulation leads to buffer overflow. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-05-03T17:15:45.543",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-4240": {
-    "cvss": 7.3,
-    "description": "A vulnerability was found in PCMan FTP Server 2.0.7. It has been rated as critical. This issue affects some unknown processing of the component LCD Command Handler. The manipulation leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-05-03T18:15:15.907",
-    "keywords": "remote,command"
-  },
   "CVE-2025-47244": {
     "cvss": 7.3,
     "description": "Inedo ProGet through 2024.22 allows remote attackers to reach restricted functionality through the C# reflection layer, as demonstrated by causing a denial of service (when an attacker executes a loop calling RestartWeb) or obtaining potentially sensitive information. Exploitation can occur if Anonymous access is enabled, or if there is a successful CSRF attack.",
@@ -424,5 +400,23 @@
     "description": "Dell Storage Center - Dell Storage Manager, version(s) 20.1.20, contain(s) an Improper Authentication vulnerability. An unauthenticated attacker with adjacent network access could potentially exploit this vulnerability, leading to Elevation of privileges.",
     "published": "2025-05-06T16:15:27.017",
     "keywords": "unauthenticated,authentication"
+  },
+  "CVE-2025-22476": {
+    "cvss": 5.5,
+    "description": "Dell Storage Center - Dell Storage Manager, version(s) 20.1.20, contain(s) an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. A low privileged attacker with adjacent network access could potentially exploit this vulnerability, leading to Remote execution.",
+    "published": "2025-05-06T17:15:55.800",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2025-46736": {
+    "url": "https://github.com/umbraco/umbraco-cms/commit/34709be6cce9752dfa767dffbf551305f48839bc",
+    "cvss": 5.3,
+    "description": "Umbraco is a free and open source .NET content management system. Prior to versions 10.8.10 and 13.8.1, based on an analysis of the timing of post login API responses, it's possible to determine whether an account exists. The issue is patched in versions 10.8.10 and 13.8.1. No known workarounds are available.",
+    "published": "2025-05-06T17:16:12.717"
+  },
+  "CVE-2025-4041": {
+    "cvss": "-",
+    "description": "In Optigo Networks ONS NC600 versions 4.2.1-084 through 4.7.2-330, an attacker could connect with the device's ssh server and utilize the system's components to perform OS command executions.",
+    "published": "2025-05-06T17:16:12.887",
+    "keywords": "execution,command"
   }
 }
