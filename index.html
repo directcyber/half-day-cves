@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-05-06T02:40:47.308882
+Updated at UTC 2025-05-06T03:35:17.021474
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2025-05-06T02:40:47.308882
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -328,10 +330,18 @@ Updated at UTC 2025-05-06T02:40:47.308882
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-3610">CVE-2025-3610</a></td>
+					<td>8.8</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2025-05-06T03:15:17.777</td>
+					<td class=description>The Reales WP STPT plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 2.1.2. This is due to the plugin not properly validating a user's identity prior to updating their details like password. This makes it possible for authenticated attackers, with subscriber-level access and above, to change arbitrary user's passwords and email addresses, including administrators, and leverage that to gain access to their account. This can be combined with CVE-2025-3609 to achieve remote code execution as an originally unauthenticated user with no account.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -830,16 +840,6 @@ DoS attacks such as "Billion Laughs" payloads can cause service disruption.</td>
 					<td>remote,command</td>
 					<td class=date>2025-05-03T14:15:16.360</td>
 					<td class=description>A vulnerability has been found in PCMan FTP Server 2.0.7 and classified as critical. Affected by this vulnerability is an unknown functionality of the component MDIR Command Handler. The manipulation leads to buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4222">CVE-2025-4222</a></td>
-					<td>5.9</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2025-05-03T03:15:29.217</td>
-					<td class=description>The Database Toolset plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.8.4 via backup files stored in a publicly accessible location. This makes it possible for unauthenticated attackers to extract sensitive data from database backup files. An index file is present, so a brute force attack would need to be successful in order to compromise any data.</td>
 				</tr>
 			
 		
