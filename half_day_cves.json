@@ -418,5 +418,11 @@
     "description": "In Optigo Networks ONS NC600 versions 4.2.1-084 through 4.7.2-330, an attacker could connect with the device's ssh server and utilize the system's components to perform OS command executions.",
     "published": "2025-05-06T17:16:12.887",
     "keywords": "execution,command"
+  },
+  "CVE-2025-47256": {
+    "url": "https://github.com/libxmp/libxmp/issues/847",
+    "cvss": 5.6,
+    "description": "Libxmp through 4.6.2 has a stack-based buffer overflow in depack_pha in loaders/prowizard/pha.c via a malformed Pha format tracker module in a .mod file.",
+    "published": "2025-05-06T20:15:27.177"
   }
 }
