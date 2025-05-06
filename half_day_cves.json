@@ -418,5 +418,11 @@
     "description": "FastAPI Guard is a security library for FastAPI that provides middleware to control IPs, log requests, and detect penetration attempts. An HTTP header injection vulnerability has been identified in versions prior to 2.0.0. By manipulating the X-Forwarded-For header, an attacker can potentially inject arbitrary IP addresses into the request. This vulnerability can allow attackers to bypass IP-based access controls, mislead logging systems, and impersonate trusted clients. It is especially impactful when the application relies on the X-Forwarded-For header for IP-based authorization or authentication. Users should upgrade to FastAPI Guard version 2.0.0 to receive a fix.",
     "published": "2025-05-06T15:16:02.217",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2025-22477": {
+    "cvss": 8.3,
+    "description": "Dell Storage Center - Dell Storage Manager, version(s) 20.1.20, contain(s) an Improper Authentication vulnerability. An unauthenticated attacker with adjacent network access could potentially exploit this vulnerability, leading to Elevation of privileges.",
+    "published": "2025-05-06T16:15:27.017",
+    "keywords": "unauthenticated,authentication"
   }
 }
