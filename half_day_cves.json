@@ -370,5 +370,17 @@
     "description": "The LayoutBoxx plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 0.3.1. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
     "published": "2025-05-06T05:15:49.483",
     "keywords": "execution,unauthenticated"
+  },
+  "CVE-2025-46590": {
+    "cvss": 6.3,
+    "description": "Bypass vulnerability in the network search instruction authentication module\nImpact: Successful exploitation of this vulnerability can bypass authentication and enable access to some network search functions.",
+    "published": "2025-05-06T08:15:17.290",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-4340": {
+    "cvss": 6.3,
+    "description": "A vulnerability classified as critical has been found in D-Link DIR-890L and DIR-806A1 up to 100CNb11/108B03. Affected is the function sub_175C8 of the file /htdocs/soap.cgi. The manipulation leads to command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. This vulnerability only affects products that are no longer supported by the maintainer.",
+    "published": "2025-05-06T08:15:18.340",
+    "keywords": "remote,command"
   }
 }
