@@ -394,5 +394,23 @@
     "description": "The Slider & Popup Builder by Depicter plugin for WordPress is vulnerable to generic SQL Injection via the \u2018s' parameter in all versions up to, and including, 3.6.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
     "published": "2025-05-06T10:15:15.060",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-40625": {
+    "cvss": "-",
+    "description": "Unrestricted file upload in TCMAN's GIM v11. This vulnerability allows an unauthenticated attacker to upload any file within the server, even a malicious file to obtain a Remote Code Execution (RCE).",
+    "published": "2025-05-06T11:15:52.327",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-4349": {
+    "cvss": 8.8,
+    "description": "A vulnerability classified as critical has been found in D-Link DIR-600L up to 2.07B01. This affects the function formSysCmd. The manipulation of the argument host leads to command injection. It is possible to initiate the attack remotely. This vulnerability only affects products that are no longer supported by the maintainer.",
+    "published": "2025-05-06T12:15:30.140",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-4350": {
+    "cvss": 8.8,
+    "description": "A vulnerability classified as critical was found in D-Link DIR-600L up to 2.07B01. This vulnerability affects the function wake_on_lan. The manipulation of the argument host leads to command injection. The attack can be initiated remotely. This vulnerability only affects products that are no longer supported by the maintainer.",
+    "published": "2025-05-06T12:15:30.343",
+    "keywords": "remote,command"
   }
 }
