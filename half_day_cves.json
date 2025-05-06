@@ -364,5 +364,11 @@
     "description": "The Reales WP STPT plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 2.1.2. This is due to the plugin not properly validating a user's identity prior to updating their details like password. This makes it possible for authenticated attackers, with subscriber-level access and above, to change arbitrary user's passwords and email addresses, including administrators, and leverage that to gain access to their account. This can be combined with CVE-2025-3609 to achieve remote code execution as an originally unauthenticated user with no account.",
     "published": "2025-05-06T03:15:17.777",
     "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-2802": {
+    "cvss": 7.3,
+    "description": "The LayoutBoxx plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 0.3.1. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+    "published": "2025-05-06T05:15:49.483",
+    "keywords": "execution,unauthenticated"
   }
 }
