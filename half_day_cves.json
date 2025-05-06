@@ -388,5 +388,11 @@
     "description": "A vulnerability classified as critical was found in D-Link DIR-880L up to 104WWb01. Affected by this vulnerability is the function sub_16570 of the file /htdocs/ssdpcgi of the component Request Header Handler. The manipulation of the argument HTTP_ST/REMOTE_ADDR/REMOTE_PORT/SERVER_ID leads to command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. This vulnerability only affects products that are no longer supported by the maintainer.",
     "published": "2025-05-06T09:15:25.837",
     "keywords": "remote,command"
+  },
+  "CVE-2025-2011": {
+    "cvss": 7.5,
+    "description": "The Slider & Popup Builder by Depicter plugin for WordPress is vulnerable to generic SQL Injection via the \u2018s' parameter in all versions up to, and including, 3.6.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2025-05-06T10:15:15.060",
+    "keywords": "unauthenticated,sensitive"
   }
 }
