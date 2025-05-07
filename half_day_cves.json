@@ -1,10 +1,4 @@
 {
-  "CVE-2025-4251": {
-    "cvss": 7.3,
-    "description": "A vulnerability was found in PCMan FTP Server 2.0.7 and classified as critical. This issue affects some unknown processing of the component RMDIR Command Handler. The manipulation leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-05-04T22:15:32.773",
-    "keywords": "remote,command"
-  },
   "CVE-2025-4252": {
     "cvss": 7.3,
     "description": "A vulnerability was found in PCMan FTP Server 2.0.7. It has been classified as critical. Affected is an unknown function of the component APPEND Command Handler. The manipulation leads to buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
@@ -568,5 +562,11 @@
     "cvss": "-",
     "description": "Cross Site Scripting vulnerability in Koillection v.1.6.10 allows a remote attacker to escalate privileges via the collection, Wishlist and album components",
     "published": "2025-05-07T19:16:07.760"
+  },
+  "CVE-2025-43878": {
+    "cvss": 6.0,
+    "description": "When running in Appliance mode, an authenticated attacker assigned the Administrator or Resource Administrator role may be able to bypass Appliance mode restrictions utilizing system diagnostics tcpdump command utility on a F5OS-C/A system.\u00a0\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+    "published": "2025-05-07T22:15:20.867",
+    "keywords": "command,bypass"
   }
 }
