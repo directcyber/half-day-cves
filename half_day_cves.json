@@ -1,16 +1,4 @@
 {
-  "CVE-2025-47244": {
-    "cvss": 7.3,
-    "description": "Inedo ProGet through 2024.22 allows remote attackers to reach restricted functionality through the C# reflection layer, as demonstrated by causing a denial of service (when an attacker executes a loop calling RestartWeb) or obtaining potentially sensitive information. Exploitation can occur if Anonymous access is enabled, or if there is a successful CSRF attack.",
-    "published": "2025-05-03T23:15:48.150",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2025-47245": {
-    "url": "https://github.com/bluewave-labs/checkmate/pull/2160",
-    "cvss": 8.1,
-    "description": "In BlueWave Checkmate through 2.0.2 before d4a6072, an invite request can be modified to specify a privileged role.",
-    "published": "2025-05-04T00:15:15.373"
-  },
   "CVE-2025-4251": {
     "cvss": 7.3,
     "description": "A vulnerability was found in PCMan FTP Server 2.0.7 and classified as critical. This issue affects some unknown processing of the component RMDIR Command Handler. The manipulation leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
@@ -435,6 +423,12 @@
     "cvss": 7.5,
     "description": "The PGS Core plugin for WordPress is vulnerable to SQL Injection via the 'event' parameter in the 'save_header_builder' function in all versions up to, and including, 5.8.0 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
     "published": "2025-05-06T22:15:16.910",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-0855": {
+    "cvss": 9.8,
+    "description": "The PGS Core plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 5.8.0 via deserialization of untrusted input in the 'import_header' function. This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable software. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code.",
+    "published": "2025-05-06T23:15:50.350",
     "keywords": "unauthenticated,sensitive"
   }
 }
