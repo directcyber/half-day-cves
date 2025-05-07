@@ -534,13 +534,13 @@
     "keywords": "remote,vpn,bypass"
   },
   "CVE-2025-32820": {
-    "cvss": "-",
+    "cvss": 8.3,
     "description": "A vulnerability in SMA100 allows a remote authenticated attacker with SSLVPN user privileges can inject a path traversal sequence to make any directory on the SMA appliance writable.",
     "published": "2025-05-07T18:15:42.737",
     "keywords": "remote,vpn"
   },
   "CVE-2025-32821": {
-    "cvss": "-",
+    "cvss": 7.1,
     "description": "A vulnerability in SMA100 allows a remote authenticated attacker with SSLVPN admin privileges can with admin privileges can inject shell command arguments to upload a file on the appliance.",
     "published": "2025-05-07T18:15:42.853",
     "keywords": "remote,command,vpn"
@@ -550,5 +550,23 @@
     "description": "Personal Weather Station Dashboard 12_lts allows unauthenticated remote attackers to read arbitrary files via ../ directory traversal in the test parameter to /others/_test.php, as demonstrated by reading the server's private SSL key in cleartext.",
     "published": "2025-05-07T18:15:43.393",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-26168": {
+    "cvss": 8.1,
+    "description": "IXON VPN Client before 1.4.4 on Linux and macOS allows Local Privilege Escalation to root because there is code execution from a configuration file that can be controlled by a low-privileged user. There is a race condition in which a temporary configuration file, in a world-writable directory, can be overwritten.",
+    "published": "2025-05-07T19:16:07.290",
+    "keywords": "execution,vpn"
+  },
+  "CVE-2025-26169": {
+    "cvss": 8.1,
+    "description": "IXON VPN Client before 1.4.4 on Windows allows Local Privilege Escalation to SYSTEM because there is code execution from a configuration file that can be controlled by a low-privileged user. There is a race condition in which a temporary configuration file, in a world-writable directory, can be overwritten.",
+    "published": "2025-05-07T19:16:07.447",
+    "keywords": "execution,vpn"
+  },
+  "CVE-2025-29746": {
+    "url": "https://github.com/benjaminjonard/koillection/issues/1329",
+    "cvss": "-",
+    "description": "Cross Site Scripting vulnerability in Koillection v.1.6.10 allows a remote attacker to escalate privileges via the collection, Wishlist and album components",
+    "published": "2025-05-07T19:16:07.760"
   }
 }
