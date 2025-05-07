@@ -436,5 +436,11 @@
     "description": "IBM i 7.2, 7.3, 7.4, 7.5, and 7.6 is vulnerable to authentication and authorization attacks due to incorrect validation processing in IBM i Netserver.  A malicious actor could use the weaknesses, in conjunction with brute force authentication attacks or to bypass authority restrictions, to access the server.",
     "published": "2025-05-07T02:15:31.860",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2025-3844": {
+    "cvss": 9.8,
+    "description": "The PeproDev Ultimate Profile Solutions plugin for WordPress is vulnerable to Authentication Bypass in versions 1.9.1 to 7.5.2. This is due to handel_ajax_req() function not having proper restrictions on the change_user_meta functionality that makes it possible to set a OTP code and subsequently log in with that OTP code. This makes it possible for unauthenticated attackers to login as other users on the site, including administrators.",
+    "published": "2025-05-07T03:15:17.650",
+    "keywords": "unauthenticated,authentication,bypass"
   }
 }
