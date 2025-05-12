@@ -1,52 +1,4 @@
 {
-  "CVE-2025-4434": {
-    "cvss": 6.1,
-    "description": "The Remote Images Grabber plugin for WordPress is vulnerable to Reflected Cross-Site Scripting in all versions up to, and including, 0.6 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.",
-    "published": "2025-05-09T03:15:24.453",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-4453": {
-    "cvss": 6.3,
-    "description": "A vulnerability was found in D-Link DIR-619L 2.04B04. It has been classified as critical. This affects the function formSysCmd. The manipulation of the argument sysCmd leads to command injection. It is possible to initiate the attack remotely. The vendor was contacted early about this disclosure. This vulnerability only affects products that are no longer supported by the maintainer.",
-    "published": "2025-05-09T03:15:24.600",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-4454": {
-    "cvss": 6.3,
-    "description": "A vulnerability was found in D-Link DIR-619L 2.04B04. It has been declared as critical. This vulnerability affects the function wake_on_lan. The manipulation of the argument mac leads to command injection. The attack can be initiated remotely. The vendor was contacted early about this disclosure. This vulnerability only affects products that are no longer supported by the maintainer.",
-    "published": "2025-05-09T03:15:24.787",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-3710": {
-    "cvss": 9.8,
-    "description": "The LCD KVM over IP Switch CL5708IM has a Stack-based Buffer Overflow vulnerability, allowing unauthenticated remote attackers to exploit this vulnerability to execute arbitrary code on the device.",
-    "published": "2025-05-09T04:16:10.820",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-3711": {
-    "cvss": 9.8,
-    "description": "The LCD KVM over IP Switch CL5708IM has a Stack-based Buffer Overflow vulnerability, allowing unauthenticated remote attackers to exploit this vulnerability to execute arbitrary code on the device.",
-    "published": "2025-05-09T04:16:11.110",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-3712": {
-    "cvss": 7.5,
-    "description": "The LCD KVM over IP Switch CL5708IM has a Heap-based Buffer Overflow vulnerability, allowing unauthenticated remote attackers to exploit this vulnerability to perform a denial-of-service attack.",
-    "published": "2025-05-09T04:16:12.170",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-3713": {
-    "cvss": 7.5,
-    "description": "The LCD KVM over IP Switch CL5708IM has a Heap-based Buffer Overflow vulnerability, allowing unauthenticated remote attackers to exploit this vulnerability to perform a denial-of-service attack.",
-    "published": "2025-05-09T04:16:12.327",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-3714": {
-    "cvss": 9.8,
-    "description": "The LCD KVM over IP Switch CL5708IM has a Stack-based Buffer Overflow vulnerability, allowing unauthenticated remote attackers to exploit this vulnerability to execute arbitrary code on the device.",
-    "published": "2025-05-09T04:16:12.483",
-    "keywords": "remote,unauthenticated"
-  },
   "CVE-2025-47736": {
     "url": "https://github.com/gwenn/lemon-rs/pull/8",
     "cvss": 2.9,
@@ -154,5 +106,29 @@
     "description": "A vulnerability was found in yangzongzhuan RuoYi-Vue up to 3.8.9 and classified as problematic. Affected by this issue is some unknown functionality of the file ruoyi-ui/jsencrypt.js and ruoyi-ui/login.vue of the component Password Handler. The manipulation leads to cleartext storage of sensitive information in a cookie. The attack may be launched remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used.",
     "published": "2025-05-11T10:15:16.207",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2025-4555": {
+    "cvss": 9.8,
+    "description": "The web management interface of Okcat Parking Management Platform from ZONG YU has a Missing Authentication vulnerability, allowing unauthenticated remote attackers to directly access system functions. These functions include opening gates, viewing license plates and parking records, and restarting the system.",
+    "published": "2025-05-12T03:15:16.337",
+    "keywords": "remote,unauthenticated,authentication"
+  },
+  "CVE-2025-4556": {
+    "cvss": 9.8,
+    "description": "The web management interface of Okcat Parking Management Platform from ZONG YU has an Arbitrary File Upload vulnerability, allowing unauthenticated remote attackers to upload and execute web shell backdoors, thereby enabling arbitrary code execution on the server.",
+    "published": "2025-05-12T03:15:17.363",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-4557": {
+    "cvss": 9.1,
+    "description": "The specific APIs of Parking Management System from ZONG YU has a Missing Authentication vulnerability, allowing unauthenticated remote attackers to access specific APIs and operate system functions. These functions include opening gates and restarting the system.",
+    "published": "2025-05-12T03:15:17.530",
+    "keywords": "remote,unauthenticated,authentication"
+  },
+  "CVE-2025-4558": {
+    "cvss": 9.8,
+    "description": "The GPM from WormHole Tech has an Unverified Password Change vulnerability, allowing unauthenticated remote attackers to change any user's password and use the modified password to log into the system.",
+    "published": "2025-05-12T04:15:35.160",
+    "keywords": "remote,unauthenticated"
   }
 }
