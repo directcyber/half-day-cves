@@ -1,28 +1,4 @@
 {
-  "CVE-2025-37864": {
-    "cvss": "-",
-    "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: dsa: clean up FDB, MDB, VLAN entries on unbind\n\nAs explained in many places such as commit b117e1e8a86d (\"net: dsa:\ndelete dsa_legacy_fdb_add and dsa_legacy_fdb_del\"), DSA is written given\nthe assumption that higher layers have balanced additions/deletions.\nAs such, it only makes sense to be extremely vocal when those\nassumptions are violated and the driver unbinds with entries still\npresent.\n\nBut Ido Schimmel points out a very simple situation where that is wrong:\nhttps://lore.kernel.org/netdev/ZDazSM5UsPPjQuKr@shredder/\n(also briefly discussed by me in the aforementioned commit).\n\nBasically, while the bridge bypass operations are not something that DSA\nexplicitly documents, and for the majority of DSA drivers this API\nsimply causes them to go to promiscuous mode, that isn't the case for\nall drivers. Some have the necessary requirements for bridge bypass\noperations to do something useful - see dsa_switch_supports_uc_filtering().\n\nAlthough in tools/testing/selftests/net/forwarding/local_termination.sh,\nwe made an effort to popularize better mechanisms to manage address\nfilters on DSA interfaces from user space - namely macvlan for unicast,\nand setsockopt(IP_ADD_MEMBERSHIP) - through mtools - for multicast, the\nfact is that 'bridge fdb add ... self static local' also exists as\nkernel UAPI, and might be useful to someone, even if only for a quick\nhack.\n\nIt seems counter-productive to block that path by implementing shim\n.ndo_fdb_add and .ndo_fdb_del operations which just return -EOPNOTSUPP\nin order to prevent the ndo_dflt_fdb_add() and ndo_dflt_fdb_del() from\nrunning, although we could do that.\n\nAccepting that cleanup is necessary seems to be the only option.\nEspecially since we appear to be coming back at this from a different\nangle as well. Russell King is noticing that the WARN_ON() triggers even\nfor VLANs:\nhttps://lore.kernel.org/netdev/Z_li8Bj8bD4-BYKQ@shell.armlinux.org.uk/\n\nWhat happens in the bug report above is that dsa_port_do_vlan_del() fails,\nthen the VLAN entry lingers on, and then we warn on unbind and leak it.\n\nThis is not a straight revert of the blamed commit, but we now add an\ninformational print to the kernel log (to still have a way to see\nthat bugs exist), and some extra comments gathered from past years'\nexperience, to justify the logic.",
-    "published": "2025-05-09T07:16:07.410",
-    "keywords": "bypass,leak"
-  },
-  "CVE-2025-37872": {
-    "cvss": "-",
-    "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: txgbe: fix memory leak in txgbe_probe() error path\n\nWhen txgbe_sw_init() is called, memory is allocated for wx->rss_key\nin wx_init_rss_key(). However, in txgbe_probe() function, the subsequent\nerror paths after txgbe_sw_init() don't free the rss_key. Fix that by\nfreeing it in error path along with wx->mac_table.\n\nAlso change the label to which execution jumps when txgbe_sw_init()\nfails, because otherwise, it could lead to a double free for rss_key,\nwhen the mac_table allocation fails in wx_sw_init().",
-    "published": "2025-05-09T07:16:08.323",
-    "keywords": "execution,leak"
-  },
-  "CVE-2025-37874": {
-    "cvss": "-",
-    "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: ngbe: fix memory leak in ngbe_probe() error path\n\nWhen ngbe_sw_init() is called, memory is allocated for wx->rss_key\nin wx_init_rss_key(). However, in ngbe_probe() function, the subsequent\nerror paths after ngbe_sw_init() don't free the rss_key. Fix that by\nfreeing it in error path along with wx->mac_table.\n\nAlso change the label to which execution jumps when ngbe_sw_init()\nfails, because otherwise, it could lead to a double free for rss_key,\nwhen the mac_table allocation fails in wx_sw_init().",
-    "published": "2025-05-09T07:16:08.553",
-    "keywords": "execution,leak"
-  },
-  "CVE-2025-3455": {
-    "cvss": 8.8,
-    "description": "The 1 Click WordPress Migration Plugin \u2013 100% FREE for a limited time plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'start_restore' function in all versions up to, and including, 2.2. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2025-05-09T07:16:10.410",
-    "keywords": "remote,execution"
-  },
   "CVE-2025-4403": {
     "cvss": 9.8,
     "description": "The Drag and Drop Multiple File Upload for WooCommerce plugin for WordPress is vulnerable to arbitrary file uploads in all versions up to, and including, 1.1.6 due to accepting a user\u2010supplied supported_type string and the uploaded filename without enforcing real extension or MIME checks within the upload() function. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
@@ -130,5 +106,23 @@
     "description": "The ISOinsight from Netvision has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL commands to read, modify, and delete database contents.",
     "published": "2025-05-12T06:15:40.750",
     "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2025-4560": {
+    "cvss": 6.5,
+    "description": "The ISOinsight from Netvision has a Missing Authentication vulnerability, allowing unauthenticated remote attackers to access certain system functions. These functions include viewing the administrator list, viewing and editing IP settings, and uploading files.",
+    "published": "2025-05-12T07:15:47.463",
+    "keywords": "remote,unauthenticated,authentication"
+  },
+  "CVE-2025-4561": {
+    "cvss": 8.8,
+    "description": "The KFOX from KingFor has an Arbitrary File Upload vulnerability, allowing remote attackers with regular privilege to upload and execute web shell backdoors, thereby enabling arbitrary code execution on the server.",
+    "published": "2025-05-12T07:15:48.557",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-3496": {
+    "cvss": 7.5,
+    "description": "An unauthenticated remote attacker can cause a buffer overflow which could lead to unexpected behaviour or DoS via Bluetooth or RS-232 interface.",
+    "published": "2025-05-12T08:15:19.537",
+    "keywords": "remote,unauthenticated"
   }
 }

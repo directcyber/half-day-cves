@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-05-12T07:13:15.109052
+Updated at UTC 2025-05-12T08:17:56.800767
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,12 @@ Updated at UTC 2025-05-12T07:13:15.109052
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -124,16 +130,38 @@ Updated at UTC 2025-05-12T07:13:15.109052
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-3496">CVE-2025-3496</a></td>
+					<td>7.5</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-05-12T08:15:19.537</td>
+					<td class=description>An unauthenticated remote attacker can cause a buffer overflow which could lead to unexpected behaviour or DoS via Bluetooth or RS-232 interface.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4561">CVE-2025-4561</a></td>
+					<td>8.8</td>
+					<td>remote,execution</td>
+					<td class=date>2025-05-12T07:15:48.557</td>
+					<td class=description>The KFOX from KingFor has an Arbitrary File Upload vulnerability, allowing remote attackers with regular privilege to upload and execute web shell backdoors, thereby enabling arbitrary code execution on the server.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4560">CVE-2025-4560</a></td>
+					<td>6.5</td>
+					<td>remote,unauthenticated,authentication</td>
+					<td class=date>2025-05-12T07:15:47.463</td>
+					<td class=description>The ISOinsight from Netvision has a Missing Authentication vulnerability, allowing unauthenticated remote attackers to access certain system functions. These functions include viewing the administrator list, viewing and editing IP settings, and uploading files.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -288,114 +316,6 @@ Updated at UTC 2025-05-12T07:13:15.109052
 					<td>remote,execution,unauthenticated</td>
 					<td class=date>2025-05-09T09:15:19.610</td>
 					<td class=description>The Drag and Drop Multiple File Upload for WooCommerce plugin for WordPress is vulnerable to arbitrary file uploads in all versions up to, and including, 1.1.6 due to accepting a user‐supplied supported_type string and the uploaded filename without enforcing real extension or MIME checks within the upload() function. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-3455">CVE-2025-3455</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2025-05-09T07:16:10.410</td>
-					<td class=description>The 1 Click WordPress Migration Plugin – 100% FREE for a limited time plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'start_restore' function in all versions up to, and including, 2.2. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-37874">CVE-2025-37874</a></td>
-					<td>-</td>
-					<td>execution,leak</td>
-					<td class=date>2025-05-09T07:16:08.553</td>
-					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
-
-net: ngbe: fix memory leak in ngbe_probe() error path
-
-When ngbe_sw_init() is called, memory is allocated for wx->rss_key
-in wx_init_rss_key(). However, in ngbe_probe() function, the subsequent
-error paths after ngbe_sw_init() don't free the rss_key. Fix that by
-freeing it in error path along with wx->mac_table.
-
-Also change the label to which execution jumps when ngbe_sw_init()
-fails, because otherwise, it could lead to a double free for rss_key,
-when the mac_table allocation fails in wx_sw_init().</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-37872">CVE-2025-37872</a></td>
-					<td>-</td>
-					<td>execution,leak</td>
-					<td class=date>2025-05-09T07:16:08.323</td>
-					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
-
-net: txgbe: fix memory leak in txgbe_probe() error path
-
-When txgbe_sw_init() is called, memory is allocated for wx->rss_key
-in wx_init_rss_key(). However, in txgbe_probe() function, the subsequent
-error paths after txgbe_sw_init() don't free the rss_key. Fix that by
-freeing it in error path along with wx->mac_table.
-
-Also change the label to which execution jumps when txgbe_sw_init()
-fails, because otherwise, it could lead to a double free for rss_key,
-when the mac_table allocation fails in wx_sw_init().</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-37864">CVE-2025-37864</a></td>
-					<td>-</td>
-					<td>bypass,leak</td>
-					<td class=date>2025-05-09T07:16:07.410</td>
-					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
-
-net: dsa: clean up FDB, MDB, VLAN entries on unbind
-
-As explained in many places such as commit b117e1e8a86d ("net: dsa:
-delete dsa_legacy_fdb_add and dsa_legacy_fdb_del"), DSA is written given
-the assumption that higher layers have balanced additions/deletions.
-As such, it only makes sense to be extremely vocal when those
-assumptions are violated and the driver unbinds with entries still
-present.
-
-But Ido Schimmel points out a very simple situation where that is wrong:
-https://lore.kernel.org/netdev/ZDazSM5UsPPjQuKr@shredder/
-(also briefly discussed by me in the aforementioned commit).
-
-Basically, while the bridge bypass operations are not something that DSA
-explicitly documents, and for the majority of DSA drivers this API
-simply causes them to go to promiscuous mode, that isn't the case for
-all drivers. Some have the necessary requirements for bridge bypass
-operations to do something useful - see dsa_switch_supports_uc_filtering().
-
-Although in tools/testing/selftests/net/forwarding/local_termination.sh,
-we made an effort to popularize better mechanisms to manage address
-filters on DSA interfaces from user space - namely macvlan for unicast,
-and setsockopt(IP_ADD_MEMBERSHIP) - through mtools - for multicast, the
-fact is that 'bridge fdb add ... self static local' also exists as
-kernel UAPI, and might be useful to someone, even if only for a quick
-hack.
-
-It seems counter-productive to block that path by implementing shim
-.ndo_fdb_add and .ndo_fdb_del operations which just return -EOPNOTSUPP
-in order to prevent the ndo_dflt_fdb_add() and ndo_dflt_fdb_del() from
-running, although we could do that.
-
-Accepting that cleanup is necessary seems to be the only option.
-Especially since we appear to be coming back at this from a different
-angle as well. Russell King is noticing that the WARN_ON() triggers even
-for VLANs:
-https://lore.kernel.org/netdev/Z_li8Bj8bD4-BYKQ@shell.armlinux.org.uk/
-
-What happens in the bug report above is that dsa_port_do_vlan_del() fails,
-then the VLAN entry lingers on, and then we warn on unbind and leak it.
-
-This is not a straight revert of the blamed commit, but we now add an
-informational print to the kernel log (to still have a way to see
-that bugs exist), and some extra comments gathered from past years'
-experience, to justify the logic.</td>
 				</tr>
 			
 		
