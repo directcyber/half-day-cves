@@ -1,122 +1,158 @@
 {
-  "CVE-2025-3897": {
-    "cvss": 5.9,
-    "description": "The EUCookieLaw plugin for WordPress is vulnerable to Arbitrary File Read in all versions up to, and including, 2.7.2 via the 'file_get_contents' function. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensitive information. The vulnerability can only be exploited if a caching plugin such as W3 Total Cache is installed and activated.",
-    "published": "2025-05-09T12:15:33.370",
-    "keywords": "unauthenticated,sensitive"
+  "CVE-2025-47945": {
+    "url": "https://github.com/donetick/donetick/commit/b9a6e177eefdc605dedbc5320f0d93d6573d1db6",
+    "cvss": 9.1,
+    "description": "Donetick an open-source app for managing tasks and chores. Prior to version 0.1.44, the application uses JSON Web Tokens (JWT) for authentication, but the signing secret has a weak default value. While the responsibility is left to the system administrator to change it, this approach is inadequate. The vulnerability is proven by existence of the issue in the live version as well. This issue can result in full account takeover of any user. Version 0.1.44 contains a patch.",
+    "published": "2025-05-17T19:15:46.523"
   },
-  "CVE-2025-4206": {
-    "cvss": 7.2,
-    "description": "The WordPress CRM, Email & Marketing Automation for WordPress | Award Winner \u2014 Groundhogg plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the 'process_export_delete' and 'process_import_delete' functions in all versions up to, and including, 4.1.1.2. This makes it possible for authenticated attackers, with Administrator-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
-    "published": "2025-05-09T12:15:33.513",
+  "CVE-2025-4844": {
+    "cvss": 7.3,
+    "description": "A vulnerability classified as critical was found in FreeFloat FTP Server 1.0. Affected by this vulnerability is an unknown functionality of the component CD Command Handler. The manipulation leads to buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-05-18T00:15:18.987",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-4845": {
+    "cvss": 7.3,
+    "description": "A vulnerability, which was classified as critical, has been found in FreeFloat FTP Server 1.0. Affected by this issue is some unknown functionality of the component TRACE Command Handler. The manipulation leads to buffer overflow. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-05-18T01:15:18.477",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-4846": {
+    "cvss": 7.3,
+    "description": "A vulnerability, which was classified as critical, was found in FreeFloat FTP Server 1.0. This affects an unknown part of the component MPUT Command Handler. The manipulation leads to buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-05-18T01:15:18.657",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-4847": {
+    "cvss": 7.3,
+    "description": "A vulnerability has been found in FreeFloat FTP Server 1.0 and classified as critical. This vulnerability affects unknown code of the component MLS Command Handler. The manipulation leads to buffer overflow. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-05-18T02:15:18.063",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-4848": {
+    "cvss": 7.3,
+    "description": "A vulnerability was found in FreeFloat FTP Server 1.0 and classified as critical. This issue affects some unknown processing of the component RECV Command Handler. The manipulation leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-05-18T03:15:22.080",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-4849": {
+    "cvss": 6.3,
+    "description": "A vulnerability was found in TOTOLINK N300RH 6.1c.1390_B20191101. It has been rated as critical. Affected by this issue is the function CloudACMunualUpdateUserdata of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument url leads to command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-05-18T03:15:23.087",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-4850": {
+    "cvss": 6.3,
+    "description": "A vulnerability classified as critical has been found in TOTOLINK N300RH 6.1c.1390_B20191101. This affects the function setUnloadUserData of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument plugin_name leads to command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-05-18T03:15:23.280",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-4851": {
+    "cvss": 6.3,
+    "description": "A vulnerability classified as critical was found in TOTOLINK N300RH 6.1c.1390_B20191101. This vulnerability affects the function setUploadUserData of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument FileName leads to command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-05-18T04:15:23.360",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-4852": {
+    "cvss": 2.4,
+    "description": "A vulnerability, which was classified as problematic, has been found in TOTOLINK A3002R 2.1.1-B20230720.1011. This issue affects some unknown processing of the component VPN Page. The manipulation of the argument Comment leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-05-18T04:15:28.157",
+    "keywords": "remote,vpn"
+  },
+  "CVE-2025-4859": {
+    "cvss": 2.4,
+    "description": "A vulnerability was found in D-Link DAP-2695 120b36r137_ALL_en_20210528. It has been rated as problematic. This issue affects some unknown processing of the file /adv_macbypass.php of the component MAC Bypass Settings Page. The manipulation of the argument f_mac leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. Other parameters might be affected as well. This vulnerability only affects products that are no longer supported by the maintainer.",
+    "published": "2025-05-18T05:15:16.977",
+    "keywords": "remote,bypass"
+  },
+  "CVE-2025-4866": {
+    "url": "https://github.com/weibocom/rill-flow/issues/102",
+    "cvss": 6.3,
+    "description": "A vulnerability was found in weibocom rill-flow 0.1.18. It has been classified as critical. Affected is an unknown function of the component Management Console. The manipulation leads to code injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-05-18T08:15:18.440"
+  },
+  "CVE-2025-4871": {
+    "cvss": 7.3,
+    "description": "A vulnerability, which was classified as critical, has been found in PCMan FTP Server 2.0.7. This issue affects some unknown processing of the component REST Command Handler. The manipulation leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-05-18T11:15:47.560",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-4872": {
+    "cvss": 7.3,
+    "description": "A vulnerability, which was classified as critical, was found in FreeFloat FTP Server 1.0. Affected is an unknown function of the component CCC Command Handler. The manipulation leads to buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-05-18T11:15:48.523",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-23123": {
+    "cvss": 10.0,
+    "description": "A malicious actor with access to the management network could execute a remote code execution (RCE) by exploiting a heap buffer overflow vulnerability in the UniFi Protect Cameras (Version 4.75.43 and earlier) firmware.",
+    "published": "2025-05-19T02:15:17.147",
     "keywords": "remote,execution"
   },
-  "CVE-2025-46193": {
+  "CVE-2025-46801": {
+    "cvss": 9.8,
+    "description": "Pgpool-II provided by PgPool Global Development Group contains an authentication bypass by primary weakness vulnerability. if the vulnerability is exploited, an attacker may be able to log in to the system as an arbitrary user, allowing them to read or tamper with data in the database, and/or disable the database.",
+    "published": "2025-05-19T08:15:21.840",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-47751": {
+    "cvss": 7.8,
+    "description": "V-SFT v6.2.5.0 and earlier contains an issue with out-of-bounds write in VS6EditData!CDataRomErrorCheck::MacroCommandCheck function. Opening specially crafted V7 or V8 files may lead to crash, information disclosure, and arbitrary code execution.",
+    "published": "2025-05-19T08:15:22.310",
+    "keywords": "execution,command"
+  },
+  "CVE-2025-36560": {
+    "cvss": 8.6,
+    "description": "Server-side request forgery vulnerability exists in a-blog cms multiple versions. If this vulnerability is exploited, a remote unauthenticated attacker may gain access to sensitive information by sending a specially crafted request.",
+    "published": "2025-05-19T09:15:24.987",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2025-41429": {
+    "cvss": 4.8,
+    "description": "a-blog cms multiple versions neutralize logs improperly. If this vulnerability is exploited with CVE-2025-36560, a remote unauthenticated attacker may hijack a legitimate user's session.",
+    "published": "2025-05-19T09:15:25.160",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-30072": {
+    "cvss": 7.6,
+    "description": "Tiiwee X1 Alarm System TWX1HAKV2 allows Authentication Bypass by Capture-replay, leading to physical Access to the protected facilities without triggering an alarm.",
+    "published": "2025-05-19T15:15:23.470",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-47935": {
+    "url": "https://github.com/expressjs/multer/pull/1120",
+    "cvss": 7.5,
+    "description": "Multer is a node.js middleware for handling `multipart/form-data`. Versions prior to 2.0.0 are vulnerable to a resource exhaustion and memory leak issue due to improper stream handling. When the HTTP request stream emits an error, the internal `busboy` stream is not closed, violating Node.js stream safety guidance. This leads to unclosed streams accumulating over time, consuming memory and file descriptors. Under sustained or repeated failure conditions, this can result in denial of service, requiring manual server restarts to recover. All users of Multer handling file uploads are potentially impacted. Users should upgrade to 2.0.0 to receive a patch. No known workarounds are available.",
+    "published": "2025-05-19T20:15:25.863"
+  },
+  "CVE-2025-47949": {
+    "url": "https://github.com/tngan/samlify/commit/115679acd89f0a37ea3ebd8fff7db54fca3e8af3",
     "cvss": "-",
-    "description": "SourceCodester Client Database Management System 1.0 is vulnerable to Remote code execution via Arbitrary file upload in user_proposal_update_order.php.",
-    "published": "2025-05-09T16:15:25.070",
-    "keywords": "remote,execution"
+    "description": "samlify is a Node.js library for SAML single sign-on. A Signature Wrapping attack has been found in samlify prior to version 2.10.0, allowing an attacker to forge a SAML Response to authenticate as any user. An attacker would need a signed XML document by the identity provider. Version 2.10.0 fixes the issue.",
+    "published": "2025-05-19T20:15:26.287"
   },
-  "CVE-2025-4432": {
-    "url": "https://github.com/briansmith/ring/pull/2447",
-    "cvss": 5.3,
-    "description": "A flaw was found in Rust's Ring package. A panic may be triggered when overflow checking is enabled. In the QUIC protocol, this flaw allows an attacker to induce this panic by sending a specially crafted packet. It will likely occur unintentionally in 1 out of every 2**32 packets sent or received.",
-    "published": "2025-05-09T16:15:25.467"
-  },
-  "CVE-2025-1278": {
-    "cvss": 5.3,
-    "description": "An issue has been discovered in GitLab CE/EE affecting all versions from 12.0 before 17.9.8, 17.10 before 17.10.6, and 17.11 before 17.11.2. Under certain conditions users could bypass IP access restrictions and view sensitive information.",
-    "published": "2025-05-09T17:15:50.790",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2025-29509": {
+  "CVE-2025-4978": {
     "cvss": 9.8,
-    "description": "Jan v0.5.14 and before is vulnerable to remote code execution (RCE) when the user clicks on a rendered link in the conversation, due to opening external website in the app and the exposure of electronAPI, with a lack of filtering of URL when calling shell.openExternal().",
-    "published": "2025-05-09T17:15:50.947",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-46191": {
-    "cvss": 9.8,
-    "description": "Arbitrary File Upload in user_payment_update.php in SourceCodester Client Database Management System 1.0 allows unauthenticated users to upload arbitrary files via the uploaded_file_cancelled field. Due to the absence of proper file extension checks, MIME type validation, and authentication, attackers can upload executable PHP files to a web-accessible directory (/files/). This allows them to execute arbitrary commands remotely by accessing the uploaded script, resulting in full Remote Code Execution (RCE) without authentication.",
-    "published": "2025-05-09T17:15:51.480",
-    "keywords": "remote,execution,unauthenticated,authentication,command"
-  },
-  "CVE-2025-2158": {
-    "cvss": 8.8,
-    "description": "The WordPress Review Plugin: The Ultimate Solution for Building a Review Website plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 5.3.5 via the Post custom fields. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where PHP file types can be uploaded and included, or pearcmd is enabled on a server with register_argc_argv also enabled.",
-    "published": "2025-05-10T10:15:20.227",
-    "keywords": "execution,sensitive,bypass"
-  },
-  "CVE-2025-4513": {
-    "cvss": 4.3,
-    "description": "A vulnerability classified as problematic was found in Catalyst User Key Authentication Plugin 20220819 on Moodle. Affected by this vulnerability is an unknown functionality of the file /auth/userkey/logout.php of the component Logout. The manipulation of the argument return leads to open redirect. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-05-10T20:15:20.353",
+    "description": "A vulnerability, which was classified as very critical, was found in Netgear DGND3700 1.1.00.15_1.00.15NA. This affects an unknown part of the file /BRS_top.html of the component Basic Authentication. The manipulation leads to improper authentication. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. Other products might be affected as well. The vendor was contacted early about this disclosure.",
+    "published": "2025-05-20T13:15:48.680",
     "keywords": "remote,authentication"
   },
-  "CVE-2025-47817": {
-    "url": "https://github.com/bluewave-labs/checkmate/pull/2161",
-    "cvss": 8.8,
-    "description": "In BlueWave Checkmate through 2.0.2 before b387eba, a profile edit request can include a role parameter.",
-    "published": "2025-05-10T22:15:20.657"
+  "CVE-2025-47941": {
+    "cvss": 7.2,
+    "description": "TYPO3 is an open source, PHP based web content management system. In versions on the 12.x branch prior to 12.4.31 LTS and the 13.x branch prior to 13.4.2 LTS, the multifactor authentication (MFA) dialog presented during backend login can be bypassed due to insufficient enforcement of access restrictions on all backend routes. Successful exploitation requires valid backend user credentials, as MFA can only be bypassed after successful authentication. Users should update to TYPO3 version 12.4.31 LTS or 13.4.12 LTS to fix the problem.",
+    "published": "2025-05-20T14:15:51.093",
+    "keywords": "authentication,bypass"
   },
-  "CVE-2025-4533": {
-    "url": "https://github.com/jeecgboot/jeecgboot/issues/8199#issuecomment-2834691016",
-    "cvss": 2.7,
-    "description": "A vulnerability classified as problematic was found in JeecgBoot up to 3.8.0. This vulnerability affects the function unzipFile of the file /jeecg-boot/airag/knowledge/doc/import/zip of the component Document Library Upload. The manipulation of the argument File leads to resource consumption. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-05-11T07:15:15.430"
-  },
-  "CVE-2025-4537": {
-    "cvss": 3.1,
-    "description": "A vulnerability was found in yangzongzhuan RuoYi-Vue up to 3.8.9 and classified as problematic. Affected by this issue is some unknown functionality of the file ruoyi-ui/jsencrypt.js and ruoyi-ui/login.vue of the component Password Handler. The manipulation leads to cleartext storage of sensitive information in a cookie. The attack may be launched remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-05-11T10:15:16.207",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2025-4555": {
-    "cvss": 9.8,
-    "description": "The web management interface of Okcat Parking Management Platform from ZONG YU has a Missing Authentication vulnerability, allowing unauthenticated remote attackers to directly access system functions. These functions include opening gates, viewing license plates and parking records, and restarting the system.",
-    "published": "2025-05-12T03:15:16.337",
-    "keywords": "remote,unauthenticated,authentication"
-  },
-  "CVE-2025-4556": {
-    "cvss": 9.8,
-    "description": "The web management interface of Okcat Parking Management Platform from ZONG YU has an Arbitrary File Upload vulnerability, allowing unauthenticated remote attackers to upload and execute web shell backdoors, thereby enabling arbitrary code execution on the server.",
-    "published": "2025-05-12T03:15:17.363",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2025-4557": {
-    "cvss": 9.1,
-    "description": "The specific APIs of Parking Management System from ZONG YU has a Missing Authentication vulnerability, allowing unauthenticated remote attackers to access specific APIs and operate system functions. These functions include opening gates and restarting the system.",
-    "published": "2025-05-12T03:15:17.530",
-    "keywords": "remote,unauthenticated,authentication"
-  },
-  "CVE-2025-4558": {
-    "cvss": 9.8,
-    "description": "The GPM from WormHole Tech has an Unverified Password Change vulnerability, allowing unauthenticated remote attackers to change any user's password and use the modified password to log into the system.",
-    "published": "2025-05-12T04:15:35.160",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-4559": {
-    "cvss": 9.8,
-    "description": "The ISOinsight from Netvision has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL commands to read, modify, and delete database contents.",
-    "published": "2025-05-12T06:15:40.750",
-    "keywords": "remote,unauthenticated,command"
-  },
-  "CVE-2025-4560": {
-    "cvss": 6.5,
-    "description": "The ISOinsight from Netvision has a Missing Authentication vulnerability, allowing unauthenticated remote attackers to access certain system functions. These functions include viewing the administrator list, viewing and editing IP settings, and uploading files.",
-    "published": "2025-05-12T07:15:47.463",
-    "keywords": "remote,unauthenticated,authentication"
-  },
-  "CVE-2025-4561": {
-    "cvss": 8.8,
-    "description": "The KFOX from KingFor has an Arbitrary File Upload vulnerability, allowing remote attackers with regular privilege to upload and execute web shell backdoors, thereby enabling arbitrary code execution on the server.",
-    "published": "2025-05-12T07:15:48.557",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-3496": {
+  "CVE-2025-26086": {
     "cvss": 7.5,
-    "description": "An unauthenticated remote attacker can cause a buffer overflow which could lead to unexpected behaviour or DoS via Bluetooth or RS-232 interface.",
-    "published": "2025-05-12T08:15:19.537",
-    "keywords": "remote,unauthenticated"
+    "description": "An unauthenticated blind SQL injection vulnerability exists in RSI Queue Management System v3.0 within the TaskID parameter of the get request handler. Attackers can remotely inject time-delayed SQL payloads to induce server response delays, enabling time-based inference and iterative extraction of sensitive database contents without authentication.",
+    "published": "2025-05-20T15:16:07.023",
+    "keywords": "remote,unauthenticated,authentication,sensitive"
+  },
+  "CVE-2025-41225": {
+    "cvss": 8.8,
+    "description": "The vCenter Server contains an authenticated command-execution vulnerability.\u00a0A malicious actor with privileges to create or modify alarms and run script action may exploit this issue to run arbitrary commands on the vCenter Server.",
+    "published": "2025-05-20T15:16:07.527",
+    "keywords": "execution,command"
   }
 }
