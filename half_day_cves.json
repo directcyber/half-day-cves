@@ -1,10 +1,4 @@
 {
-  "CVE-2025-48701": {
-    "url": "https://github.com/opendcim/opendcim/issues/1601",
-    "cvss": 5.4,
-    "description": "openDCIM through 23.04 allows SQL injection in people_depts.php because prepared statements are not used.",
-    "published": "2025-05-23T04:15:29.257"
-  },
   "CVE-2025-5096": {
     "url": "https://github.com/datatables/datatablessrc/commit/d558328106bef2d48dfc4cf78581dd106f5c1077",
     "cvss": 6.4,
@@ -136,5 +130,29 @@
     "description": "A vulnerability was found in WCMS up to 8.3.11. It has been declared as critical. Affected by this vulnerability is the function getMemberByUid of the file /index.php?articleadmin/getallcon of the component Login. The manipulation of the argument uid leads to improper authentication. The attack can be launched remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2025-05-25T13:15:19.593",
     "keywords": "remote,authentication"
+  },
+  "CVE-2025-5165": {
+    "url": "https://github.com/assimp/assimp/issues/6167",
+    "cvss": 3.3,
+    "description": "A vulnerability was found in Open Asset Import Library Assimp 5.4.3 and classified as problematic. This issue affects the function MDCImporter::ValidateSurfaceHeader of the file assimp/code/AssetLib/MDC/MDCLoader.cpp. The manipulation of the argument pcSurface2 leads to out-of-bounds read. Attacking locally is a requirement. The exploit has been disclosed to the public and may be used. The project decided to collect all Fuzzer bugs in a main-issue to address them in the future.",
+    "published": "2025-05-26T03:15:36.373"
+  },
+  "CVE-2025-5166": {
+    "url": "https://github.com/assimp/assimp/issues/6168",
+    "cvss": 3.3,
+    "description": "A vulnerability was found in Open Asset Import Library Assimp 5.4.3. It has been classified as problematic. Affected is the function MDCImporter::InternReadFile of the file assimp/code/AssetLib/MDC/MDCLoader.cpp of the component MDC File Parser. The manipulation of the argument pcVerts leads to out-of-bounds read. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used. The project decided to collect all Fuzzer bugs in a main-issue to address them in the future.",
+    "published": "2025-05-26T04:15:28.370"
+  },
+  "CVE-2025-5167": {
+    "url": "https://github.com/assimp/assimp/issues/6169",
+    "cvss": 3.3,
+    "description": "A vulnerability was found in Open Asset Import Library Assimp 5.4.3. It has been declared as problematic. Affected by this vulnerability is the function LWOImporter::GetS0 in the library assimp/code/AssetLib/LWO/LWOLoader.h. The manipulation of the argument out leads to out-of-bounds read. The attack needs to be approached locally. The exploit has been disclosed to the public and may be used. The project decided to collect all Fuzzer bugs in a main-issue to address them in the future.",
+    "published": "2025-05-26T04:15:43.433"
+  },
+  "CVE-2025-5168": {
+    "url": "https://github.com/assimp/assimp/issues/6170",
+    "cvss": 3.3,
+    "description": "A vulnerability was found in Open Asset Import Library Assimp 5.4.3. It has been rated as problematic. Affected by this issue is the function MDLImporter::ImportUVCoordinate_3DGS_MDL345 of the file assimp/code/AssetLib/MDL/MDLLoader.cpp. The manipulation of the argument iIndex leads to out-of-bounds read. An attack has to be approached locally. The exploit has been disclosed to the public and may be used. The project decided to collect all Fuzzer bugs in a main-issue to address them in the future.",
+    "published": "2025-05-26T04:15:44.953"
   }
 }
