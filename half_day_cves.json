@@ -1,22 +1,4 @@
 {
-  "CVE-2025-5110": {
-    "cvss": 7.3,
-    "description": "A vulnerability classified as critical was found in FreeFloat FTP Server 1.0. Affected by this vulnerability is an unknown functionality of the component VERBOSE Command Handler. The manipulation leads to buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-05-23T14:15:30.023",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-5111": {
-    "cvss": 7.3,
-    "description": "A vulnerability, which was classified as critical, has been found in FreeFloat FTP Server 1.0. Affected by this issue is some unknown functionality of the component TYPE Command Handler. The manipulation leads to buffer overflow. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-05-23T14:15:30.207",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-5112": {
-    "cvss": 7.3,
-    "description": "A vulnerability, which was classified as critical, was found in FreeFloat FTP Server 1.0. This affects an unknown part of the component MGET Command Handler. The manipulation leads to buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-05-23T14:15:30.380",
-    "keywords": "remote,command"
-  },
   "CVE-2025-46176": {
     "cvss": 6.5,
     "description": "Hardcoded credentials in the Telnet service in D-Link DIR-605L v2.13B01 and DIR-816L v2.06B01 allow attackers to remotely execute arbitrary commands via firmware analysis.",
@@ -190,5 +172,11 @@
     "description": "Missing authentication vulnerability in TCMAN GIM v11. This allows an unauthenticated attacker to access the resources /frmGestionUser.aspx/GetData, /frmGestionUser.aspx/updateUser and /frmGestionUser.aspx/DeleteUser.",
     "published": "2025-05-26T13:15:20.147",
     "keywords": "unauthenticated,authentication"
+  },
+  "CVE-2025-5196": {
+    "cvss": 6.6,
+    "description": "A vulnerability has been found in Wing FTP Server up to 7.4.3 and classified as critical. Affected by this vulnerability is an unknown functionality of the component Lua Admin Console. The manipulation leads to execution with unnecessary privileges. The attack can be launched remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. Upgrading to version 7.4.4 is able to address this issue. It is recommended to upgrade the affected component. The vendor explains: \"[W]e do not consider it as a security vulnerability, because the system admin in WingFTP has full permissions [...], but you can suggest the user run WingFTP service as Normal User rather than SYSTEM/Root, it will be safer.\"",
+    "published": "2025-05-26T14:15:20.210",
+    "keywords": "remote,execution"
   }
 }
