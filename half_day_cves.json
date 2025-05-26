@@ -178,5 +178,11 @@
     "cvss": 3.3,
     "description": "A vulnerability was found in Open Asset Import Library Assimp 5.4.3. It has been rated as problematic. Affected by this issue is the function SkipSpaces in the library assimp/include/assimp/ParsingUtils.h. The manipulation leads to out-of-bounds read. Local access is required to approach this attack. The exploit has been disclosed to the public and may be used. The project decided to collect all Fuzzer bugs in a main-issue to address them in the future.",
     "published": "2025-05-26T20:15:19.987"
+  },
+  "CVE-2025-5204": {
+    "url": "https://github.com/assimp/assimp/issues/6176",
+    "cvss": 3.3,
+    "description": "A vulnerability classified as problematic has been found in Open Asset Import Library Assimp 5.4.3. This affects the function MDLImporter::ParseSkinLump_3DGS_MDL7 of the file assimp/code/AssetLib/MDL/MDLMaterialLoader.cpp. The manipulation leads to out-of-bounds read. Attacking locally is a requirement. The exploit has been disclosed to the public and may be used. The project decided to collect all Fuzzer bugs in a main-issue to address them in the future.",
+    "published": "2025-05-26T21:15:19.317"
   }
 }
