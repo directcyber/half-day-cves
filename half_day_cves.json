@@ -1,16 +1,4 @@
 {
-  "CVE-2025-47461": {
-    "cvss": 8.8,
-    "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in mediaticus Subaccounts for WooCommerce allows Authentication Abuse. This issue affects Subaccounts for WooCommerce: from n/a through 1.6.6.",
-    "published": "2025-05-23T13:15:38.007",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2025-5109": {
-    "cvss": 7.3,
-    "description": "A vulnerability classified as critical has been found in FreeFloat FTP Server 1.0. Affected is an unknown function of the component STATUS Command Handler. The manipulation leads to buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-05-23T13:15:45.737",
-    "keywords": "remote,command"
-  },
   "CVE-2025-5110": {
     "cvss": 7.3,
     "description": "A vulnerability classified as critical was found in FreeFloat FTP Server 1.0. Affected by this vulnerability is an unknown functionality of the component VERBOSE Command Handler. The manipulation leads to buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
@@ -196,5 +184,11 @@
     "description": "A vulnerability has been found in Summer Pearl Group Vacation Rental Management Platform up to 1.0.1 and classified as critical. This vulnerability affects unknown code of the component Listing Handler. The manipulation leads to authorization bypass. The attack can be initiated remotely. Upgrading to version 1.0.2 is able to address this issue. It is recommended to upgrade the affected component.",
     "published": "2025-05-26T11:15:24.980",
     "keywords": "remote,bypass"
+  },
+  "CVE-2025-40664": {
+    "cvss": "-",
+    "description": "Missing authentication vulnerability in TCMAN GIM v11. This allows an unauthenticated attacker to access the resources /frmGestionUser.aspx/GetData, /frmGestionUser.aspx/updateUser and /frmGestionUser.aspx/DeleteUser.",
+    "published": "2025-05-26T13:15:20.147",
+    "keywords": "unauthenticated,authentication"
   }
 }
