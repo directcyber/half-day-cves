@@ -232,5 +232,23 @@
     "description": "An unauthenticated remote attacker can exploit a denial-of-service vulnerability in the device's web server functionality by sending a specially crafted HTTP request with a malicious header, potentially causing the server to crash or become unresponsive.",
     "published": "2025-05-27T09:15:21.903",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-5263": {
+    "cvss": "-",
+    "description": "Error handling for script execution was incorrectly isolated from web content, which could have allowed cross-origin leak attacks. This vulnerability affects Firefox < 139, Firefox ESR < 115.24, and Firefox ESR < 128.11.",
+    "published": "2025-05-27T13:15:22.100",
+    "keywords": "execution,leak"
+  },
+  "CVE-2025-5264": {
+    "cvss": "-",
+    "description": "Due to insufficient escaping of the newline character in the \u201cCopy as cURL\u201d feature, an attacker could trick a user into using this command, potentially leading to local code execution on the user's system. This vulnerability affects Firefox < 139, Firefox ESR < 115.24, and Firefox ESR < 128.11.",
+    "published": "2025-05-27T13:15:22.200",
+    "keywords": "execution,command"
+  },
+  "CVE-2025-5265": {
+    "cvss": "-",
+    "description": "Due to insufficient escaping of the ampersand character in the \u201cCopy as cURL\u201d feature, an attacker could trick a user into using this command, potentially leading to local code execution on the user's system.\n*This bug only affects Firefox for Windows. Other versions of Firefox are unaffected.* This vulnerability affects Firefox < 139, Firefox ESR < 115.24, and Firefox ESR < 128.11.",
+    "published": "2025-05-27T13:15:22.303",
+    "keywords": "execution,command"
   }
 }
