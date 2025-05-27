@@ -103,7 +103,7 @@
   },
   "CVE-2025-40672": {
     "cvss": "-",
-    "description": "A Privilege Escalation vulnerability has been found in ProactivaNet v3.24.0.0 from Grupo Espiral MS. This vulnerability allows any user to override the file panLoad.exe that will be executed by SYSTEM user via a programmed task. \nThis would allow an attacker to obtain administrator permissions to \nperform whatever activities he/she wants, shuch as accessing sensitive \ninformation, executing code remotely, and even causing a denial of \nservice (DoS).",
+    "description": "A Privilege Escalation vulnerability has been found in Panloader component v3.24.0.0 by Espiral MS Group. This vulnerability allows any user to override the file panLoad.exe that will be executed by SYSTEM user via a programmed task. This would allow an attacker to obtain administrator permissions to perform whatever activities he/she wants, shuch as accessing sensitive information, executing code remotely, and even causing a denial of service (DoS).",
     "published": "2025-05-26T10:15:21.020",
     "keywords": "remote,sensitive"
   },
@@ -202,5 +202,35 @@
     "description": "Radashi is a TypeScript utility toolkit. Prior to version 12.5.1, the set function within the Radashi library is vulnerable to prototype pollution. If an attacker can control parts of the path argument to the set function, they could potentially modify the prototype of all objects in the JavaScript runtime, leading to unexpected behavior, denial of service, or even remote code execution in some specific scenarios. This issue has been patched in version 12.5.1. A workaround for this issue involves sanitizing the path argument provided to the set function to ensure that no part of the path string is __proto__, prototype, or constructor.",
     "published": "2025-05-27T05:15:23.990",
     "keywords": "remote,execution"
+  },
+  "CVE-2025-41649": {
+    "cvss": 7.5,
+    "description": "An unauthenticated remote attacker can exploit insufficient input validation to write data beyond the bounds of a buffer, potentially leading to a denial-of-service condition for the devices.",
+    "published": "2025-05-27T09:15:21.000",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-41650": {
+    "cvss": 7.5,
+    "description": "An unauthenticated remote attacker can exploit input validation in cmd services of the devices, allowing them to disrupt system operations and potentially cause a denial-of-service.",
+    "published": "2025-05-27T09:15:21.193",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-41651": {
+    "cvss": 9.8,
+    "description": "Due to missing authentication on a critical function of the devices an unauthenticated remote attacker can execute arbitrary commands, potentially enabling unauthorized upload or download of configuration files and leading to full system compromise.",
+    "published": "2025-05-27T09:15:21.380",
+    "keywords": "remote,unauthenticated,authentication,command"
+  },
+  "CVE-2025-41652": {
+    "cvss": 9.8,
+    "description": "The devices are vulnerable to an authentication bypass due to flaws in the authorization mechanism. An unauthenticated remote attacker could exploit this weakness by performing brute-force attacks to guess valid credentials or by using MD5 collision techniques to forge authentication hashes, potentially compromising the device.",
+    "published": "2025-05-27T09:15:21.720",
+    "keywords": "remote,unauthenticated,authentication,bypass"
+  },
+  "CVE-2025-41653": {
+    "cvss": 7.5,
+    "description": "An unauthenticated remote attacker can exploit a denial-of-service vulnerability in the device's web server functionality by sending a specially crafted HTTP request with a malicious header, potentially causing the server to crash or become unresponsive.",
+    "published": "2025-05-27T09:15:21.903",
+    "keywords": "remote,unauthenticated"
   }
 }
