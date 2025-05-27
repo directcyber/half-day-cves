@@ -184,5 +184,29 @@
     "cvss": 3.3,
     "description": "A vulnerability classified as problematic has been found in Open Asset Import Library Assimp 5.4.3. This affects the function MDLImporter::ParseSkinLump_3DGS_MDL7 of the file assimp/code/AssetLib/MDL/MDLMaterialLoader.cpp. The manipulation leads to out-of-bounds read. Attacking locally is a requirement. The exploit has been disclosed to the public and may be used. The project decided to collect all Fuzzer bugs in a main-issue to address them in the future.",
     "published": "2025-05-26T21:15:19.317"
+  },
+  "CVE-2025-5217": {
+    "cvss": 7.3,
+    "description": "A vulnerability, which was classified as critical, has been found in FreeFloat FTP Server 1.0.0. This issue affects some unknown processing of the component RMDIR Command Handler. The manipulation leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-05-27T01:15:19.020",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-5218": {
+    "cvss": 7.3,
+    "description": "A vulnerability, which was classified as critical, was found in FreeFloat FTP Server 1.0.0. Affected is an unknown function of the component LITERAL Command Handler. The manipulation leads to buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-05-27T01:15:19.220",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-5219": {
+    "cvss": 7.3,
+    "description": "A vulnerability has been found in FreeFloat FTP Server 1.0.0 and classified as critical. Affected by this vulnerability is an unknown functionality of the component ASCII Command Handler. The manipulation leads to buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-05-27T01:15:19.493",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-5220": {
+    "cvss": 7.3,
+    "description": "A vulnerability was found in FreeFloat FTP Server 1.0.0 and classified as critical. Affected by this issue is some unknown functionality of the component GET Command Handler. The manipulation leads to buffer overflow. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-05-27T02:15:20.053",
+    "keywords": "remote,command"
   }
 }
