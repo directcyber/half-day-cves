@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-05-27T05:13:05.121792
+Updated at UTC 2025-05-27T06:18:16.834877
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2025-05-27T05:13:05.121792
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -246,6 +248,16 @@ Updated at UTC 2025-05-27T05:13:05.121792
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-48054">CVE-2025-48054</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2025-05-27T05:15:23.990</td>
+					<td class=description>Radashi is a TypeScript utility toolkit. Prior to version 12.5.1, the set function within the Radashi library is vulnerable to prototype pollution. If an attacker can control parts of the path argument to the set function, they could potentially modify the prototype of all objects in the JavaScript runtime, leading to unexpected behavior, denial of service, or even remote code execution in some specific scenarios. This issue has been patched in version 12.5.1. A workaround for this issue involves sanitizing the path argument provided to the set function to ensure that no part of the path string is __proto__, prototype, or constructor.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
