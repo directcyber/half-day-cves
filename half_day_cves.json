@@ -1,254 +1,302 @@
 {
-  "CVE-2025-5126": {
+  "CVE-2025-48947": {
+    "cvss": "-",
+    "description": "The Auth0 Next.js SDK is a library for implementing user authentication in Next.js applications. In Auth0 Next.js SDK versions 4.0.1 through 4.6.0, `__session` cookies set by auth0.middleware may be cached by CDNs due to missing Cache-Control headers. Three preconditions must be met in order for someone to be affected by the vulnerability: Applications using the NextJS-Auth0 SDK, versions between 4.0.1 to 4.6.0, applications using CDN or edge caching that caches responses with the Set-Cookie header, and if the Cache-Control header is not properly set for sensitive responses. Users should upgrade auth0/nextjs-auth0 to v4.6.1 to receive a patch.",
+    "published": "2025-06-04T21:15:40.420",
+    "keywords": "authentication,sensitive"
+  },
+  "CVE-2025-5620": {
+    "cvss": 9.8,
+    "description": "A vulnerability, which was classified as critical, was found in D-Link DIR-816 1.10CNB05. Affected is the function setipsec_config of the file /goform/setipsec_config. The manipulation of the argument localIP/remoteIP leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. This vulnerability only affects products that are no longer supported by the maintainer.",
+    "published": "2025-06-05T00:15:23.513",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-5621": {
+    "cvss": 9.8,
+    "description": "A vulnerability has been found in D-Link DIR-816 1.10CNB05 and classified as critical. Affected by this vulnerability is the function qosClassifier of the file /goform/qosClassifier. The manipulation of the argument dip_address/sip_address leads to os command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. This vulnerability only affects products that are no longer supported by the maintainer.",
+    "published": "2025-06-05T00:15:23.760",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-49008": {
+    "cvss": "-",
+    "description": "Atheos is a self-hosted browser-based cloud integrated development environment. Prior to version 6.0.4, improper use of `escapeshellcmd()` in `/components/codegit/traits/execute.php` allows argument injection, leading to arbitrary command execution. Atheos administrators and users of vulnerable versions are at risk of data breaches or server compromise. Version 6.0.4 introduces a `Common::safe_execute` function that sanitizes all arguments using `escapeshellarg()` prior to execution and migrated all components potentially vulnerable to similar exploits to use this new templated execution system.",
+    "published": "2025-06-05T01:15:21.120",
+    "keywords": "execution,command"
+  },
+  "CVE-2025-5634": {
+    "cvss": 7.3,
+    "description": "A vulnerability classified as critical has been found in PCMan FTP Server 2.0.7. This affects an unknown part of the component NOOP Command Handler. The manipulation leads to buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-06-05T04:15:54.897",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-5635": {
+    "cvss": 7.3,
+    "description": "A vulnerability classified as critical was found in PCMan FTP Server 2.0.7. This vulnerability affects unknown code of the component PLS Command Handler. The manipulation leads to buffer overflow. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-06-05T04:15:55.470",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-5636": {
+    "cvss": 7.3,
+    "description": "A vulnerability, which was classified as critical, has been found in PCMan FTP Server 2.0.7. This issue affects some unknown processing of the component SET Command Handler. The manipulation leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-06-05T05:15:24.230",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-5637": {
+    "cvss": 7.3,
+    "description": "A vulnerability, which was classified as critical, was found in PCMan FTP Server 2.0.7. Affected is an unknown function of the component SYSTEM Command Handler. The manipulation leads to buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-06-05T05:15:24.440",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-3054": {
     "cvss": 8.8,
-    "description": "A vulnerability classified as critical was found in FLIR AX8 up to 1.46.16. This vulnerability affects the function setDataTime of the file \\usr\\www\\application\\models\\settingsregional.php. The manipulation of the argument year/month/day/hour/minute leads to command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-05-24T15:15:24.160",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-5139": {
-    "cvss": 7.3,
-    "description": "A vulnerability was found in Qualitor 8.20. It has been rated as critical. Affected by this issue is some unknown functionality of the file /html/ad/adconexaooffice365/request/testaConexaoOffice365.php. The manipulation of the argument nmconexao leads to command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-05-25T01:15:23.710",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-5145": {
-    "cvss": 6.3,
-    "description": "A vulnerability, which was classified as critical, was found in Netcore NBR1005GPEV2, B6V2, COVER5, NAP830, NAP930, NBR100V2, NBR200V2 and POWER13 up to 20250508. This affects an unknown part of the file /www/cgi-bin/ of the component Query String Handler. The manipulation leads to command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-05-25T06:15:32.630",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-5146": {
-    "cvss": 6.3,
-    "description": "A vulnerability has been found in Netcore NBR1005GPEV2, B6V2, COVER5, NAP830, NAP930, NBR100V2 and NBR200V2 up to 20250508 and classified as critical. This vulnerability affects the function passwd_set of the file /usr/bin/routerd of the component HTTP Header Handler. The manipulation of the argument pwd leads to command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-05-25T07:15:19.907",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-5147": {
-    "cvss": 6.3,
-    "description": "A vulnerability was found in Netcore NBR1005GPEV2, NBR200V2 and B6V2 up to 20250508 and classified as critical. This issue affects the function tools_ping of the file /usr/bin/network_tools. The manipulation of the argument url leads to command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-05-25T12:15:19.260",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-5148": {
-    "url": "https://github.com/funaudiollm/inspiremusic/commit/784cbf8dde2cf1456ff808aeba23177e1810e7a9",
-    "cvss": 5.3,
-    "description": "A vulnerability was found in FunAudioLLM InspireMusic up to bf32364bcb0d136497ca69f9db622e9216b029dd. It has been classified as critical. Affected is the function load_state_dict of the file inspiremusic/cli/model.py of the component Pickle Data Handler. The manipulation leads to deserialization. An attack has to be approached locally. This product is using a rolling release to provide continious delivery. Therefore, no version details for affected nor updated releases are available. The name of the patch is 784cbf8dde2cf1456ff808aeba23177e1810e7a9. It is recommended to apply a patch to fix this issue.",
-    "published": "2025-05-25T12:15:20.417"
-  },
-  "CVE-2025-5149": {
-    "cvss": 5.6,
-    "description": "A vulnerability was found in WCMS up to 8.3.11. It has been declared as critical. Affected by this vulnerability is the function getMemberByUid of the file /index.php?articleadmin/getallcon of the component Login. The manipulation of the argument uid leads to improper authentication. The attack can be launched remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-05-25T13:15:19.593",
-    "keywords": "remote,authentication"
-  },
-  "CVE-2025-5165": {
-    "url": "https://github.com/assimp/assimp/issues/6167",
-    "cvss": 3.3,
-    "description": "A vulnerability was found in Open Asset Import Library Assimp 5.4.3 and classified as problematic. This issue affects the function MDCImporter::ValidateSurfaceHeader of the file assimp/code/AssetLib/MDC/MDCLoader.cpp. The manipulation of the argument pcSurface2 leads to out-of-bounds read. Attacking locally is a requirement. The exploit has been disclosed to the public and may be used. The project decided to collect all Fuzzer bugs in a main-issue to address them in the future.",
-    "published": "2025-05-26T03:15:36.373"
-  },
-  "CVE-2025-5166": {
-    "url": "https://github.com/assimp/assimp/issues/6168",
-    "cvss": 3.3,
-    "description": "A vulnerability was found in Open Asset Import Library Assimp 5.4.3. It has been classified as problematic. Affected is the function MDCImporter::InternReadFile of the file assimp/code/AssetLib/MDC/MDCLoader.cpp of the component MDC File Parser. The manipulation of the argument pcVerts leads to out-of-bounds read. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used. The project decided to collect all Fuzzer bugs in a main-issue to address them in the future.",
-    "published": "2025-05-26T04:15:28.370"
-  },
-  "CVE-2025-5167": {
-    "url": "https://github.com/assimp/assimp/issues/6169",
-    "cvss": 3.3,
-    "description": "A vulnerability was found in Open Asset Import Library Assimp 5.4.3. It has been declared as problematic. Affected by this vulnerability is the function LWOImporter::GetS0 in the library assimp/code/AssetLib/LWO/LWOLoader.h. The manipulation of the argument out leads to out-of-bounds read. The attack needs to be approached locally. The exploit has been disclosed to the public and may be used. The project decided to collect all Fuzzer bugs in a main-issue to address them in the future.",
-    "published": "2025-05-26T04:15:43.433"
-  },
-  "CVE-2025-5168": {
-    "url": "https://github.com/assimp/assimp/issues/6170",
-    "cvss": 3.3,
-    "description": "A vulnerability was found in Open Asset Import Library Assimp 5.4.3. It has been rated as problematic. Affected by this issue is the function MDLImporter::ImportUVCoordinate_3DGS_MDL345 of the file assimp/code/AssetLib/MDL/MDLLoader.cpp. The manipulation of the argument iIndex leads to out-of-bounds read. An attack has to be approached locally. The exploit has been disclosed to the public and may be used. The project decided to collect all Fuzzer bugs in a main-issue to address them in the future.",
-    "published": "2025-05-26T04:15:44.953"
-  },
-  "CVE-2025-5169": {
-    "url": "https://github.com/assimp/assimp/issues/6171",
-    "cvss": 3.3,
-    "description": "A vulnerability classified as problematic has been found in Open Asset Import Library Assimp 5.4.3. This affects the function MDLImporter::InternReadFile_3DGS_MDL345 of the file assimp/code/AssetLib/MDL/MDLLoader.cpp. The manipulation leads to out-of-bounds read. Local access is required to approach this attack. The exploit has been disclosed to the public and may be used. The project decided to collect all Fuzzer bugs in a main-issue to address them in the future.",
-    "published": "2025-05-26T05:15:19.387"
-  },
-  "CVE-2025-41441": {
-    "cvss": 3.7,
-    "description": "Mailform Pro CGI prior to 4.3.4 generates error messages containing sensitive information, which may allow a remote unauthenticated attacker to obtain coupon codes. This vulnerability only affects products that use the coupon feature.",
-    "published": "2025-05-26T07:15:25.753",
-    "keywords": "remote,unauthenticated,sensitive"
-  },
-  "CVE-2025-5173": {
-    "url": "https://github.com/humansignal/label-studio-ml-backend/issues/765",
-    "cvss": 5.3,
-    "description": "A vulnerability has been found in HumanSignal label-studio-ml-backend up to 9fb7f4aa186612806af2becfb621f6ed8d9fdbaf and classified as problematic. Affected by this vulnerability is the function load of the file label-studio-ml-backend/label_studio_ml/examples/yolo/utils/neural_nets.py of the component PT File Handler. The manipulation of the argument path leads to deserialization. An attack has to be approached locally. This product takes the approach of rolling releases to provide continious delivery. Therefore, version details for affected and updated releases are not available.",
-    "published": "2025-05-26T07:15:26.137"
-  },
-  "CVE-2025-1985": {
-    "cvss": 6.1,
-    "description": "Due to improper neutralization of input during web page generation (XSS) an unauthenticated remote attacker can inject HTML code into the Web-UI in the affected device.",
-    "published": "2025-05-26T09:15:20.683",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-41654": {
-    "cvss": 8.2,
-    "description": "An unauthenticated remote attacker can access information about running processes via the SNMP protocol. The amount of returned data can trigger a reboot by the watchdog.",
-    "published": "2025-05-26T09:15:20.883",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-41655": {
-    "cvss": 7.5,
-    "description": "An unauthenticated remote attacker can access a URL which causes the device to reboot.",
-    "published": "2025-05-26T09:15:21.050",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-40672": {
-    "cvss": "-",
-    "description": "A Privilege Escalation vulnerability has been found in Panloader component v3.24.0.0 by Espiral MS Group. This vulnerability allows any user to override the file panLoad.exe that will be executed by SYSTEM user via a programmed task. This would allow an attacker to obtain administrator permissions to perform whatever activities he/she wants, shuch as accessing sensitive information, executing code remotely, and even causing a denial of service (DoS).",
-    "published": "2025-05-26T10:15:21.020",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2025-5182": {
-    "cvss": 4.3,
-    "description": "A vulnerability has been found in Summer Pearl Group Vacation Rental Management Platform up to 1.0.1 and classified as critical. This vulnerability affects unknown code of the component Listing Handler. The manipulation leads to authorization bypass. The attack can be initiated remotely. Upgrading to version 1.0.2 is able to address this issue. It is recommended to upgrade the affected component.",
-    "published": "2025-05-26T11:15:24.980",
-    "keywords": "remote,bypass"
-  },
-  "CVE-2025-40664": {
-    "cvss": "-",
-    "description": "Missing authentication vulnerability in TCMAN GIM v11. This allows an unauthenticated attacker to access the resources /frmGestionUser.aspx/GetData, /frmGestionUser.aspx/updateUser and /frmGestionUser.aspx/DeleteUser.",
-    "published": "2025-05-26T13:15:20.147",
-    "keywords": "unauthenticated,authentication"
-  },
-  "CVE-2025-5196": {
-    "cvss": 6.6,
-    "description": "A vulnerability has been found in Wing FTP Server up to 7.4.3 and classified as critical. Affected by this vulnerability is an unknown functionality of the component Lua Admin Console. The manipulation leads to execution with unnecessary privileges. The attack can be launched remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. Upgrading to version 7.4.4 is able to address this issue. It is recommended to upgrade the affected component. The vendor explains: \"[W]e do not consider it as a security vulnerability, because the system admin in WingFTP has full permissions [...], but you can suggest the user run WingFTP service as Normal User rather than SYSTEM/Root, it will be safer.\"",
-    "published": "2025-05-26T14:15:20.210",
+    "description": "The WP User Frontend Pro plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the upload_files() function in all versions up to, and including, 4.1.3. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. Please note that this requires the 'Private Message' module to be enabled and the Business version of the PRO software to be in use.",
+    "published": "2025-06-05T06:15:25.833",
     "keywords": "remote,execution"
   },
-  "CVE-2025-5200": {
-    "url": "https://github.com/assimp/assimp/issues/6172",
-    "cvss": 3.3,
-    "description": "A vulnerability was found in Open Asset Import Library Assimp 5.4.3 and classified as problematic. This issue affects the function MDLImporter::InternReadFile_Quake1 of the file assimp/code/AssetLib/MDL/MDLLoader.cpp. The manipulation leads to out-of-bounds read. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used. The project decided to collect all Fuzzer bugs in a main-issue to address them in the future.",
-    "published": "2025-05-26T19:15:19.807"
-  },
-  "CVE-2025-5201": {
-    "url": "https://github.com/assimp/assimp/issues/6173",
-    "cvss": 3.3,
-    "description": "A vulnerability was found in Open Asset Import Library Assimp 5.4.3. It has been classified as problematic. Affected is the function LWOImporter::CountVertsAndFacesLWO2 of the file assimp/code/AssetLib/LWO/LWOLoader.cpp. The manipulation leads to out-of-bounds read. The attack needs to be approached locally. The exploit has been disclosed to the public and may be used. The project decided to collect all Fuzzer bugs in a main-issue to address them in the future.",
-    "published": "2025-05-26T19:15:20.030"
-  },
-  "CVE-2025-5202": {
-    "url": "https://github.com/assimp/assimp/issues/6174",
-    "cvss": 3.3,
-    "description": "A vulnerability was found in Open Asset Import Library Assimp 5.4.3. It has been declared as problematic. Affected by this vulnerability is the function HL1MDLLoader::validate_header of the file assimp/code/AssetLib/MDL/HalfLife/HL1MDLLoader.cpp. The manipulation leads to out-of-bounds read. An attack has to be approached locally. The exploit has been disclosed to the public and may be used. The project decided to collect all Fuzzer bugs in a main-issue to address them in the future.",
-    "published": "2025-05-26T20:15:19.790"
-  },
-  "CVE-2025-5203": {
-    "url": "https://github.com/assimp/assimp/issues/6175",
-    "cvss": 3.3,
-    "description": "A vulnerability was found in Open Asset Import Library Assimp 5.4.3. It has been rated as problematic. Affected by this issue is the function SkipSpaces in the library assimp/include/assimp/ParsingUtils.h. The manipulation leads to out-of-bounds read. Local access is required to approach this attack. The exploit has been disclosed to the public and may be used. The project decided to collect all Fuzzer bugs in a main-issue to address them in the future.",
-    "published": "2025-05-26T20:15:19.987"
-  },
-  "CVE-2025-5204": {
-    "url": "https://github.com/assimp/assimp/issues/6176",
-    "cvss": 3.3,
-    "description": "A vulnerability classified as problematic has been found in Open Asset Import Library Assimp 5.4.3. This affects the function MDLImporter::ParseSkinLump_3DGS_MDL7 of the file assimp/code/AssetLib/MDL/MDLMaterialLoader.cpp. The manipulation leads to out-of-bounds read. Attacking locally is a requirement. The exploit has been disclosed to the public and may be used. The project decided to collect all Fuzzer bugs in a main-issue to address them in the future.",
-    "published": "2025-05-26T21:15:19.317"
-  },
-  "CVE-2025-5217": {
-    "cvss": 7.3,
-    "description": "A vulnerability, which was classified as critical, has been found in FreeFloat FTP Server 1.0.0. This issue affects some unknown processing of the component RMDIR Command Handler. The manipulation leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-05-27T01:15:19.020",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-5218": {
-    "cvss": 7.3,
-    "description": "A vulnerability, which was classified as critical, was found in FreeFloat FTP Server 1.0.0. Affected is an unknown function of the component LITERAL Command Handler. The manipulation leads to buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-05-27T01:15:19.220",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-5219": {
-    "cvss": 7.3,
-    "description": "A vulnerability has been found in FreeFloat FTP Server 1.0.0 and classified as critical. Affected by this vulnerability is an unknown functionality of the component ASCII Command Handler. The manipulation leads to buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-05-27T01:15:19.493",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-5220": {
-    "cvss": 7.3,
-    "description": "A vulnerability was found in FreeFloat FTP Server 1.0.0 and classified as critical. Affected by this issue is some unknown functionality of the component GET Command Handler. The manipulation leads to buffer overflow. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-05-27T02:15:20.053",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-48744": {
-    "cvss": 6.4,
-    "description": "In SIGB PMB before 8.0.1.2, attackers can achieve Local File Inclusion and remote code execution.",
-    "published": "2025-05-27T03:15:23.707",
+  "CVE-2025-3055": {
+    "cvss": 8.1,
+    "description": "The WP User Frontend Pro plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the delete_avatar_ajax() function in all versions up to, and including, 4.1.3. This makes it possible for authenticated attackers, with Subscriber-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
+    "published": "2025-06-05T06:15:26.300",
     "keywords": "remote,execution"
   },
-  "CVE-2025-5221": {
+  "CVE-2025-5640": {
+    "url": "https://github.com/px4/px4-autopilot/issues/24915#issue-3091040552",
+    "cvss": 3.3,
+    "description": "A vulnerability was found in PX4-Autopilot 1.12.3. It has been classified as problematic. This affects the function MavlinkReceiver::handle_message_trajectory_representation_waypoints of the file mavlink_receiver.cpp of the component TRAJECTORY_REPRESENTATION_WAYPOINTS Message Handler. The manipulation leads to stack-based buffer overflow. Local access is required to approach this attack. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-06-05T06:15:27.293"
+  },
+  "CVE-2025-5641": {
+    "url": "https://github.com/radareorg/radare2/commit/5705d99cc1f23f36f9a84aab26d1724010b97798",
+    "cvss": 2.5,
+    "description": "A vulnerability was found in Radare2 5.9.9. It has been rated as problematic. This issue affects the function r_cons_is_breaked in the library /libr/cons/cons.c of the component radiff2. The manipulation of the argument -T leads to memory corruption. It is possible to launch the attack on the local host. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The identifier of the patch is 5705d99cc1f23f36f9a84aab26d1724010b97798. It is recommended to apply a patch to fix this issue. The documentation explains that the parameter -T is experimental and \"crashy\". Further analysis has shown \"the race is not a real problem unless you use asan\". An additional warning regarding threading support has been added.",
+    "published": "2025-06-05T07:15:23.317"
+  },
+  "CVE-2025-5642": {
+    "url": "https://github.com/radareorg/radare2/commit/5705d99cc1f23f36f9a84aab26d1724010b97798",
+    "cvss": 2.5,
+    "description": "A vulnerability classified as problematic has been found in Radare2 5.9.9. Affected is the function r_cons_pal_init in the library /libr/cons/pal.c of the component radiff2. The manipulation leads to memory corruption. The attack needs to be approached locally. The complexity of an attack is rather high. The exploitability is told to be difficult. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The patch is identified as 5705d99cc1f23f36f9a84aab26d1724010b97798. It is recommended to apply a patch to fix this issue. The documentation explains that the parameter -T is experimental and \"crashy\". Further analysis has shown \"the race is not a real problem unless you use asan\". A new warning has been added.",
+    "published": "2025-06-05T07:15:23.583"
+  },
+  "CVE-2025-5643": {
+    "url": "https://github.com/radareorg/radare2/commit/5705d99cc1f23f36f9a84aab26d1724010b97798",
+    "cvss": 2.5,
+    "description": "A vulnerability classified as problematic was found in Radare2 5.9.9. Affected by this vulnerability is the function cons_stack_load in the library /libr/cons/cons.c of the component radiff2. The manipulation of the argument -T leads to memory corruption. An attack has to be approached locally. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The patch is named 5705d99cc1f23f36f9a84aab26d1724010b97798. It is recommended to apply a patch to fix this issue. The documentation explains that the parameter -T is experimental and \"crashy\". Further analysis has shown \"the race is not a real problem unless you use asan\". A new warning has been added.",
+    "published": "2025-06-05T07:15:23.780"
+  },
+  "CVE-2025-5644": {
+    "url": "https://github.com/radareorg/radare2/commit/5705d99cc1f23f36f9a84aab26d1724010b97798",
+    "cvss": 2.5,
+    "description": "A vulnerability, which was classified as problematic, has been found in Radare2 5.9.9. Affected by this issue is the function r_cons_flush in the library /libr/cons/cons.c of the component radiff2. The manipulation of the argument -T leads to use after free. Local access is required to approach this attack. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The name of the patch is 5705d99cc1f23f36f9a84aab26d1724010b97798. It is recommended to apply a patch to fix this issue. The documentation explains that the parameter -T is experimental and \"crashy\". Further analysis has shown \"the race is not a real problem unless you use asan\". A new warning has been added.",
+    "published": "2025-06-05T07:15:23.990"
+  },
+  "CVE-2025-5645": {
+    "url": "https://github.com/radareorg/radare2/commit/5705d99cc1f23f36f9a84aab26d1724010b97798",
+    "cvss": 2.5,
+    "description": "A vulnerability, which was classified as problematic, was found in Radare2 5.9.9. This affects the function r_cons_pal_init in the library /libr/cons/pal.c of the component radiff2. The manipulation of the argument -T leads to memory corruption. Attacking locally is a requirement. The complexity of an attack is rather high. The exploitability is told to be difficult. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The identifier of the patch is 5705d99cc1f23f36f9a84aab26d1724010b97798. It is recommended to apply a patch to fix this issue. The documentation explains that the parameter -T is experimental and \"crashy\". Further analysis has shown \"the race is not a real problem unless you use asan\". A new warning has been added.",
+    "published": "2025-06-05T08:15:20.973"
+  },
+  "CVE-2025-5646": {
+    "url": "https://github.com/radareorg/radare2/commit/5705d99cc1f23f36f9a84aab26d1724010b97798",
+    "cvss": 2.5,
+    "description": "A vulnerability has been found in Radare2 5.9.9 and classified as problematic. This vulnerability affects the function r_cons_rainbow_free in the library /libr/cons/pal.c of the component radiff2. The manipulation of the argument -T leads to memory corruption. It is possible to launch the attack on the local host. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The patch is identified as 5705d99cc1f23f36f9a84aab26d1724010b97798. It is recommended to apply a patch to fix this issue. The documentation explains that the parameter -T is experimental and \"crashy\". Further analysis has shown \"the race is not a real problem unless you use asan\". A new warning has been added.",
+    "published": "2025-06-05T08:15:21.197"
+  },
+  "CVE-2025-5647": {
+    "url": "https://github.com/radareorg/radare2/commit/5705d99cc1f23f36f9a84aab26d1724010b97798",
+    "cvss": 2.5,
+    "description": "A vulnerability was found in Radare2 5.9.9 and classified as problematic. This issue affects the function r_cons_context_break_pop in the library /libr/cons/cons.c of the component radiff2. The manipulation of the argument -T leads to memory corruption. The attack needs to be approached locally. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The patch is named 5705d99cc1f23f36f9a84aab26d1724010b97798. It is recommended to apply a patch to fix this issue. The documentation explains that the parameter -T is experimental and \"crashy\". Further analysis has shown \"the race is not a real problem unless you use asan\". A new warning has been added.",
+    "published": "2025-06-05T09:15:22.847"
+  },
+  "CVE-2025-5648": {
+    "url": "https://github.com/radareorg/radare2/commit/5705d99cc1f23f36f9a84aab26d1724010b97798",
+    "cvss": 2.5,
+    "description": "A vulnerability was found in Radare2 5.9.9. It has been classified as problematic. Affected is the function r_cons_pal_init in the library /libr/cons/pal.c of the component radiff2. The manipulation of the argument -T leads to memory corruption. An attack has to be approached locally. The complexity of an attack is rather high. The exploitability is told to be difficult. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The name of the patch is 5705d99cc1f23f36f9a84aab26d1724010b97798. It is recommended to apply a patch to fix this issue. The documentation explains that the parameter -T is experimental and \"crashy\". Further analysis has shown \"the race is not a real problem unless you use asan\". A new warning has been added.",
+    "published": "2025-06-05T09:15:23.123"
+  },
+  "CVE-2025-5664": {
     "cvss": 7.3,
-    "description": "A vulnerability was found in FreeFloat FTP Server 1.0.0. It has been classified as critical. This affects an unknown part of the component QUOTE Command Handler. The manipulation leads to buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-05-27T03:15:24.210",
+    "description": "A vulnerability was found in FreeFloat FTP Server 1.0 and classified as critical. This issue affects some unknown processing of the component RESTART Command Handler. The manipulation leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-06-05T15:15:48.627",
     "keywords": "remote,command"
   },
-  "CVE-2025-48742": {
+  "CVE-2025-5665": {
+    "cvss": 7.3,
+    "description": "A vulnerability was found in FreeFloat FTP Server 1.0. It has been classified as critical. Affected is an unknown function of the component XCWD Command Handler. The manipulation leads to buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-06-05T15:15:48.847",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-5666": {
+    "cvss": 7.3,
+    "description": "A vulnerability was found in FreeFloat FTP Server 1.0. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the component XMKD Command Handler. The manipulation leads to buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-06-05T16:15:27.470",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-5667": {
+    "cvss": 7.3,
+    "description": "A vulnerability was found in FreeFloat FTP Server 1.0. It has been rated as critical. Affected by this issue is some unknown functionality of the component REIN Command Handler. The manipulation leads to buffer overflow. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-06-05T16:15:27.683",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-49009": {
+    "url": "https://github.com/erudika/para/commit/46a908d887da02037384193f70a69345f04887cf",
+    "cvss": 6.2,
+    "description": "Para is a multitenant backend server/framework for object persistence and retrieval. A vulnerability that exists in versions prior to 1.50.8 in `FacebookAuthFilter.java` results in a full request URL being logged during a failed request to a Facebook user profile. The log includes the user's access token in plain text. Since WARN-level logs are often retained in production and accessible to operators or log aggregation systems, this poses a risk of token exposure. Version 1.50.8 fixes the issue.",
+    "published": "2025-06-05T17:15:29.570"
+  },
+  "CVE-2025-5695": {
+    "cvss": 4.7,
+    "description": "A vulnerability classified as critical has been found in FLIR AX8 up to 1.46.16. This affects the function subscribe_to_spot/subscribe_to_delta/subscribe_to_alarm of the file /usr/www/application/models/subscriptions.php of the component Backend. The manipulation leads to command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 1.55.16 is able to address this issue. It is recommended to upgrade the affected component.",
+    "published": "2025-06-05T21:15:22.693",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-49012": {
     "cvss": 5.4,
-    "description": "The installer in SIGB PMB before 8.0.1.2 allows remote code execution.",
-    "published": "2025-05-27T04:15:36.750",
+    "description": "Himmelblau is an interoperability suite for Microsoft Azure Entra ID and Intune. Himmelblau versions 0.9.0 through 0.9.14 and 1.00-alpha are vulnerable to a privilege escalation issue when Entra ID group-based access restrictions are configured using group display names instead of object IDs. Starting in version 0.9.0, Himmelblau introduced support for specifying group names in the `pam_allow_groups` configuration option. However, Microsoft Entra ID permits the creation of multiple groups with the same `displayName` via the Microsoft Graph API\u2014even by non-admin users, depending on tenant settings. As a result, a user could create a personal group with the same name as a legitimate access group (e.g., `\"Allow-Linux-Login\"`), add themselves to it, and be granted authentication or `sudo` rights by Himmelblau. Because affected Himmelblau versions compare group names by either `displayName` or by the immutable `objectId`, this allows bypassing access control mechanisms intended to restrict login to members of official, centrally-managed groups. This issue is fixed in Himmelblau version **0.9.15** and later. In these versions, group name matching in `pam_allow_groups` has been deprecated and removed, and only group `objectId`s (GUIDs) may be specified for secure group-based filtering. To mitigate the issue without upgrading, replace all entries in `pam_allow_groups` with the objectId of the target Entra ID group(s) and/or audit your tenant for groups with duplicate display names using the Microsoft Graph API.",
+    "published": "2025-06-05T23:15:21.303",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-5719": {
+    "cvss": "-",
+    "description": "The wallet has an authentication bypass vulnerability that allows access to specific pages.",
+    "published": "2025-06-06T04:15:59.310",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-48906": {
+    "cvss": 8.8,
+    "description": "Authentication bypass vulnerability in the DSoftBus module\nImpact: Successful exploitation of this vulnerability may affect availability.",
+    "published": "2025-06-06T07:15:26.087",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-5019": {
+    "cvss": 5.4,
+    "description": "The Hive Support | AI-Powered Help Desk, Live Chat & AI Chat Bot Plugin for WordPress plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.2.2. This is due to missing or incorrect nonce validation on the hs_update_ai_chat_settings() function. This makes it possible for unauthenticated attackers to reconfigure the plugin\u2019s AI/chat settings (including API keys) and to potentially redirect notifications or leak data to attacker-controlled endpoints via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.",
+    "published": "2025-06-06T07:15:28.157",
+    "keywords": "unauthenticated,leak"
+  },
+  "CVE-2025-3322": {
+    "cvss": "-",
+    "description": "An improper neutralization of inputs used in expression\nlanguage allows remote code execution with the highest privileges on the\nserver.",
+    "published": "2025-06-06T09:15:23.003",
     "keywords": "remote,execution"
   },
-  "CVE-2025-48054": {
+  "CVE-2025-48780": {
     "cvss": "-",
-    "description": "Radashi is a TypeScript utility toolkit. Prior to version 12.5.1, the set function within the Radashi library is vulnerable to prototype pollution. If an attacker can control parts of the path argument to the set function, they could potentially modify the prototype of all objects in the JavaScript runtime, leading to unexpected behavior, denial of service, or even remote code execution in some specific scenarios. This issue has been patched in version 12.5.1. A workaround for this issue involves sanitizing the path argument provided to the set function to ensure that no part of the path string is __proto__, prototype, or constructor.",
-    "published": "2025-05-27T05:15:23.990",
+    "description": "A deserialization of untrusted data vulnerability in the download file function of Soar Cloud HRD Human Resource Management System through version 7.3.2025.0408 allows remote attackers to execute arbitrary system commands via a crafted serialized object.",
+    "published": "2025-06-06T10:15:23.783",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-48782": {
+    "cvss": "-",
+    "description": "An unrestricted upload of file with dangerous type vulnerability in the upload file function of Soar Cloud HRD Human Resource Management System through version 7.3.2025.0408 allows remote attackers to execute arbitrary system commands via a malicious file.",
+    "published": "2025-06-06T10:15:24.150",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-5192": {
+    "cvss": "-",
+    "description": "A missing authentication for critical function vulnerability in the client application of Soar Cloud HRD Human Resource Management System through version 7.3.2025.0408 allows remote attackers to bypass authentication and access application functions.",
+    "published": "2025-06-06T10:15:24.630",
+    "keywords": "remote,authentication,bypass"
+  },
+  "CVE-2025-5763": {
+    "cvss": 4.7,
+    "description": "A vulnerability has been found in Tenda CP3 11.10.00.2311090948 and classified as critical. Affected by this vulnerability is the function sub_F3C8C of the file apollo. The manipulation leads to command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-06-06T12:15:25.927",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-5791": {
+    "url": "https://github.com/ogham/rust-users/issues/44",
+    "cvss": 7.1,
+    "description": "A flaw was found in the user's crate for Rust. This vulnerability allows privilege escalation via incorrect group listing when a user or process has fewer than exactly 1024 groups, leading to the erroneous inclusion of the root group in the access list.",
+    "published": "2025-06-06T14:15:23.137"
+  },
+  "CVE-2025-41646": {
+    "cvss": 9.8,
+    "description": "An unauthorized remote attacker can bypass the authentication of the affected software package by misusing an incorrect type conversion. This leads to full compromise of the device",
+    "published": "2025-06-06T15:15:26.183",
+    "keywords": "remote,authentication,bypass"
+  },
+  "CVE-2025-22481": {
+    "cvss": "-",
+    "description": "A command injection vulnerability has been reported to affect several QNAP operating system versions. If exploited, the vulnerability could allow remote attackers who have gained user access to execute arbitrary commands.\n\nWe have already fixed the vulnerability in the following versions:\nQTS 5.2.4.3079 build 20250321 and later\nQuTS hero h5.2.4.3079 build 20250321 and later",
+    "published": "2025-06-06T16:15:23.877",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-29892": {
+    "cvss": "-",
+    "description": "An SQL injection vulnerability has been reported to affect Qsync Central. If exploited, the vulnerability could allow remote attackers who have gained user access to execute unauthorized code or commands.\n\nWe have already fixed the vulnerability in the following version:\nQsync Central 4.5.0.6 ( 2025/03/20 ) and later",
+    "published": "2025-06-06T16:15:25.783",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-5747": {
+    "cvss": 8.0,
+    "description": "WOLFBOX Level 2 EV Charger MCU Command Parsing Misinterpretation of Input Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installatons of WOLFBOX Level 2 EV Charger devices. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of command frames received by the MCU. When parsing frames, the process does not properly detect the start of a frame, which can lead to misinterpretation of input. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the device. Was ZDI-CAN-26501.",
+    "published": "2025-06-06T16:15:29.803",
+    "keywords": "remote,execution,authentication,command"
+  },
+  "CVE-2025-5748": {
+    "cvss": 8.0,
+    "description": "WOLFBOX Level 2 EV Charger LAN OTA Exposed Dangerous Method Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of WOLFBOX Level 2 EV Charger. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed.\n\nThe specific flaw exists within the Tuya communications module software. The issue results from the exposure of a method allowing the upload of crafted software images to the module. An attacker can leverage this vulnerability to execute code in the context of the device. Was ZDI-CAN-26349.",
+    "published": "2025-06-06T16:15:29.973",
+    "keywords": "remote,execution,authentication,bypass"
+  },
+  "CVE-2025-5749": {
+    "cvss": 6.3,
+    "description": "WOLFBOX Level 2 EV Charger BLE Encryption Keys Uninitialized Variable Authentication Bypass Vulnerability. This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of WOLFBOX Level 2 EV Charger devices. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of cryptographic keys used in vendor-specific encrypted communications. The issue results from the lack of proper initialization of a variable prior to accessing it. An attacker can leverage this vulnerability to bypass authentication on the system. Was ZDI-CAN-26295.",
+    "published": "2025-06-06T16:15:30.120",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-5750": {
+    "cvss": 8.8,
+    "description": "WOLFBOX Level 2 EV Charger tuya_svc_devos_activate_result_parse Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of WOLFBOX Level 2 EV Charger. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of the secKey, localKey, stdTimeZone and devId parameters. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the device. Was ZDI-CAN-26294.",
+    "published": "2025-06-06T16:15:30.273",
+    "keywords": "remote,execution,authentication"
+  },
+  "CVE-2025-5751": {
+    "cvss": 4.6,
+    "description": "WOLFBOX Level 2 EV Charger Management Card Hard-coded Credentials Authentication Bypass Vulnerability. This vulnerability allows physically present attackers to bypass authentication on affected installations of WOLFBOX Level 2 EV Charger. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of management cards. The issue results from the lack of personalization of management cards. An attacker can leverage this vulnerability to bypass authentication on the system. Was ZDI-CAN-26292.",
+    "published": "2025-06-06T16:15:30.413",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-47950": {
+    "cvss": 7.5,
+    "description": "CoreDNS is a DNS server that chains plugins. In versions prior to 1.12.2, a Denial of Service (DoS) vulnerability exists in the CoreDNS DNS-over-QUIC (DoQ) server implementation. The server previously created a new goroutine for every incoming QUIC stream without imposing any limits on the number of concurrent streams or goroutines. A remote, unauthenticated attacker could open a large number of streams, leading to uncontrolled memory consumption and eventually causing an Out Of Memory (OOM) crash \u2014 especially in containerized or memory-constrained environments. The patch in version 1.12.2 introduces two key mitigation mechanisms: `max_streams`, which caps the number of concurrent QUIC streams per connection with a default value of `256`; and `worker_pool_size`, which Introduces a server-wide, bounded worker pool to process incoming streams with a default value of `1024`. This eliminates the 1:1 stream-to-goroutine model and ensures that CoreDNS remains resilient under high concurrency.  Some workarounds are available for those who are unable to upgrade. Disable QUIC support by removing or commenting out the `quic://` block in the Corefile, use container runtime resource limits to detect and isolate excessive memory usage, and/or monitor QUIC connection patterns and alert on anomalies.",
+    "published": "2025-06-06T18:15:35.330",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-2766": {
+    "cvss": 8.8,
+    "description": "70mai A510 Use of Default Password Authentication Bypass Vulnerability. This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of 70mai A510. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the default configuration of user accounts. The configuration contains default password. An attacker can leverage this vulnerability to bypass authentication and execute arbitrary code in the context of the root. Was ZDI-CAN-24996.",
+    "published": "2025-06-06T19:15:26.930",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-3485": {
+    "cvss": 7.2,
+    "description": "Allegra extractFileFromZip Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Allegra. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the implementation of the extractFileFromZip method. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-26524.",
+    "published": "2025-06-06T19:15:27.140",
+    "keywords": "remote,execution,authentication"
+  },
+  "CVE-2025-5473": {
+    "cvss": 7.8,
+    "description": "GIMP ICO File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of ICO files. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before writing to memory. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-26752.",
+    "published": "2025-06-06T19:15:27.463",
     "keywords": "remote,execution"
   },
-  "CVE-2025-41649": {
-    "cvss": 7.5,
-    "description": "An unauthenticated remote attacker can exploit insufficient input validation to write data beyond the bounds of a buffer, potentially leading to a denial-of-service condition for the devices.",
-    "published": "2025-05-27T09:15:21.000",
-    "keywords": "remote,unauthenticated"
+  "CVE-2025-5481": {
+    "cvss": 7.8,
+    "description": "Sante DICOM Viewer Pro DCM File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Sante DICOM Viewer Pro. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of DCM files. The issue results from the lack of proper validation of user-supplied data, which can result in a write  past the end of an allocated object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-26168.",
+    "published": "2025-06-06T19:15:27.903",
+    "keywords": "remote,execution"
   },
-  "CVE-2025-41650": {
-    "cvss": 7.5,
-    "description": "An unauthenticated remote attacker can exploit input validation in cmd services of the devices, allowing them to disrupt system operations and potentially cause a denial-of-service.",
-    "published": "2025-05-27T09:15:21.193",
-    "keywords": "remote,unauthenticated"
+  "CVE-2025-49128": {
+    "url": "https://github.com/fasterxml/jackson-core/pull/652",
+    "cvss": 4.0,
+    "description": "Jackson-core contains core low-level incremental (\"streaming\") parser and generator abstractions used by Jackson Data Processor. Starting in version 2.0.0 and prior to version 2.13.0, a flaw in jackson-core's `JsonLocation._appendSourceDesc` method allows up to 500 bytes of unintended memory content to be included in exception messages. When parsing JSON from a byte array with an offset and length, the exception message incorrectly reads from the beginning of the array instead of the logical payload start. This results in possible information disclosure in systems using pooled or reused buffers, like Netty or Vert.x. This issue was silently fixed in jackson-core version 2.13.0, released on September 30, 2021, via PR #652. All users should upgrade to version 2.13.0 or later. If upgrading is not immediately possible, applications can mitigate the issue by disabling exception message exposure to clients to avoid returning parsing exception messages in HTTP responses and/or disabling source inclusion in exceptions to prevent Jackson from embedding any source content in exception messages, avoiding leakage.",
+    "published": "2025-06-06T22:15:23.427"
   },
-  "CVE-2025-41651": {
-    "cvss": 9.8,
-    "description": "Due to missing authentication on a critical function of the devices an unauthenticated remote attacker can execute arbitrary commands, potentially enabling unauthorized upload or download of configuration files and leading to full system compromise.",
-    "published": "2025-05-27T09:15:21.380",
-    "keywords": "remote,unauthenticated,authentication,command"
-  },
-  "CVE-2025-41652": {
-    "cvss": 9.8,
-    "description": "The devices are vulnerable to an authentication bypass due to flaws in the authorization mechanism. An unauthenticated remote attacker could exploit this weakness by performing brute-force attacks to guess valid credentials or by using MD5 collision techniques to forge authentication hashes, potentially compromising the device.",
-    "published": "2025-05-27T09:15:21.720",
-    "keywords": "remote,unauthenticated,authentication,bypass"
-  },
-  "CVE-2025-41653": {
-    "cvss": 7.5,
-    "description": "An unauthenticated remote attacker can exploit a denial-of-service vulnerability in the device's web server functionality by sending a specially crafted HTTP request with a malicious header, potentially causing the server to crash or become unresponsive.",
-    "published": "2025-05-27T09:15:21.903",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-5263": {
-    "cvss": "-",
-    "description": "Error handling for script execution was incorrectly isolated from web content, which could have allowed cross-origin leak attacks. This vulnerability affects Firefox < 139, Firefox ESR < 115.24, and Firefox ESR < 128.11.",
-    "published": "2025-05-27T13:15:22.100",
-    "keywords": "execution,leak"
-  },
-  "CVE-2025-5264": {
-    "cvss": "-",
-    "description": "Due to insufficient escaping of the newline character in the \u201cCopy as cURL\u201d feature, an attacker could trick a user into using this command, potentially leading to local code execution on the user's system. This vulnerability affects Firefox < 139, Firefox ESR < 115.24, and Firefox ESR < 128.11.",
-    "published": "2025-05-27T13:15:22.200",
-    "keywords": "execution,command"
-  },
-  "CVE-2025-5265": {
-    "cvss": "-",
-    "description": "Due to insufficient escaping of the ampersand character in the \u201cCopy as cURL\u201d feature, an attacker could trick a user into using this command, potentially leading to local code execution on the user's system.\n*This bug only affects Firefox for Windows. Other versions of Firefox are unaffected.* This vulnerability affects Firefox < 139, Firefox ESR < 115.24, and Firefox ESR < 128.11.",
-    "published": "2025-05-27T13:15:22.303",
-    "keywords": "execution,command"
+  "CVE-2025-5836": {
+    "cvss": 6.3,
+    "description": "A vulnerability was found in Tenda AC9 15.03.02.13. It has been rated as critical. This issue affects the function formSetIptv of the file /goform/SetIPTVCfg of the component POST Request Handler. The manipulation of the argument list leads to command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-06-07T14:15:22.500",
+    "keywords": "remote,command"
   }
 }
