@@ -1,16 +1,4 @@
 {
-  "CVE-2025-5620": {
-    "cvss": 9.8,
-    "description": "A vulnerability, which was classified as critical, was found in D-Link DIR-816 1.10CNB05. Affected is the function setipsec_config of the file /goform/setipsec_config. The manipulation of the argument localIP/remoteIP leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. This vulnerability only affects products that are no longer supported by the maintainer.",
-    "published": "2025-06-05T00:15:23.513",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-5621": {
-    "cvss": 9.8,
-    "description": "A vulnerability has been found in D-Link DIR-816 1.10CNB05 and classified as critical. Affected by this vulnerability is the function qosClassifier of the file /goform/qosClassifier. The manipulation of the argument dip_address/sip_address leads to os command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. This vulnerability only affects products that are no longer supported by the maintainer.",
-    "published": "2025-06-05T00:15:23.760",
-    "keywords": "remote,command"
-  },
   "CVE-2025-49008": {
     "cvss": "-",
     "description": "Atheos is a self-hosted browser-based cloud integrated development environment. Prior to version 6.0.4, improper use of `escapeshellcmd()` in `/components/codegit/traits/execute.php` allows argument injection, leading to arbitrary command execution. Atheos administrators and users of vulnerable versions are at risk of data breaches or server compromise. Version 6.0.4 introduces a `Common::safe_execute` function that sanitizes all arguments using `escapeshellarg()` prior to execution and migrated all components potentially vulnerable to similar exploits to use this new templated execution system.",
