@@ -1,10 +1,4 @@
 {
-  "CVE-2025-49008": {
-    "cvss": "-",
-    "description": "Atheos is a self-hosted browser-based cloud integrated development environment. Prior to version 6.0.4, improper use of `escapeshellcmd()` in `/components/codegit/traits/execute.php` allows argument injection, leading to arbitrary command execution. Atheos administrators and users of vulnerable versions are at risk of data breaches or server compromise. Version 6.0.4 introduces a `Common::safe_execute` function that sanitizes all arguments using `escapeshellarg()` prior to execution and migrated all components potentially vulnerable to similar exploits to use this new templated execution system.",
-    "published": "2025-06-05T01:15:21.120",
-    "keywords": "execution,command"
-  },
   "CVE-2025-5634": {
     "cvss": 7.3,
     "description": "A vulnerability classified as critical has been found in PCMan FTP Server 2.0.7. This affects an unknown part of the component NOOP Command Handler. The manipulation leads to buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
