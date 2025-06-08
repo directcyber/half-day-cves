@@ -1,16 +1,4 @@
 {
-  "CVE-2025-5645": {
-    "url": "https://github.com/radareorg/radare2/commit/5705d99cc1f23f36f9a84aab26d1724010b97798",
-    "cvss": 2.5,
-    "description": "A vulnerability, which was classified as problematic, was found in Radare2 5.9.9. This affects the function r_cons_pal_init in the library /libr/cons/pal.c of the component radiff2. The manipulation of the argument -T leads to memory corruption. Attacking locally is a requirement. The complexity of an attack is rather high. The exploitability is told to be difficult. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The identifier of the patch is 5705d99cc1f23f36f9a84aab26d1724010b97798. It is recommended to apply a patch to fix this issue. The documentation explains that the parameter -T is experimental and \"crashy\". Further analysis has shown \"the race is not a real problem unless you use asan\". A new warning has been added.",
-    "published": "2025-06-05T08:15:20.973"
-  },
-  "CVE-2025-5646": {
-    "url": "https://github.com/radareorg/radare2/commit/5705d99cc1f23f36f9a84aab26d1724010b97798",
-    "cvss": 2.5,
-    "description": "A vulnerability has been found in Radare2 5.9.9 and classified as problematic. This vulnerability affects the function r_cons_rainbow_free in the library /libr/cons/pal.c of the component radiff2. The manipulation of the argument -T leads to memory corruption. It is possible to launch the attack on the local host. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The patch is identified as 5705d99cc1f23f36f9a84aab26d1724010b97798. It is recommended to apply a patch to fix this issue. The documentation explains that the parameter -T is experimental and \"crashy\". Further analysis has shown \"the race is not a real problem unless you use asan\". A new warning has been added.",
-    "published": "2025-06-05T08:15:21.197"
-  },
   "CVE-2025-5647": {
     "url": "https://github.com/radareorg/radare2/commit/5705d99cc1f23f36f9a84aab26d1724010b97798",
     "cvss": 2.5,
