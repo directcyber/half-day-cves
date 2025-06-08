@@ -1,16 +1,4 @@
 {
-  "CVE-2025-5647": {
-    "url": "https://github.com/radareorg/radare2/commit/5705d99cc1f23f36f9a84aab26d1724010b97798",
-    "cvss": 2.5,
-    "description": "A vulnerability was found in Radare2 5.9.9 and classified as problematic. This issue affects the function r_cons_context_break_pop in the library /libr/cons/cons.c of the component radiff2. The manipulation of the argument -T leads to memory corruption. The attack needs to be approached locally. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The patch is named 5705d99cc1f23f36f9a84aab26d1724010b97798. It is recommended to apply a patch to fix this issue. The documentation explains that the parameter -T is experimental and \"crashy\". Further analysis has shown \"the race is not a real problem unless you use asan\". A new warning has been added.",
-    "published": "2025-06-05T09:15:22.847"
-  },
-  "CVE-2025-5648": {
-    "url": "https://github.com/radareorg/radare2/commit/5705d99cc1f23f36f9a84aab26d1724010b97798",
-    "cvss": 2.5,
-    "description": "A vulnerability was found in Radare2 5.9.9. It has been classified as problematic. Affected is the function r_cons_pal_init in the library /libr/cons/pal.c of the component radiff2. The manipulation of the argument -T leads to memory corruption. An attack has to be approached locally. The complexity of an attack is rather high. The exploitability is told to be difficult. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The name of the patch is 5705d99cc1f23f36f9a84aab26d1724010b97798. It is recommended to apply a patch to fix this issue. The documentation explains that the parameter -T is experimental and \"crashy\". Further analysis has shown \"the race is not a real problem unless you use asan\". A new warning has been added.",
-    "published": "2025-06-05T09:15:23.123"
-  },
   "CVE-2025-5664": {
     "cvss": 7.3,
     "description": "A vulnerability was found in FreeFloat FTP Server 1.0 and classified as critical. This issue affects some unknown processing of the component RESTART Command Handler. The manipulation leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
