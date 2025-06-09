@@ -1,16 +1,4 @@
 {
-  "CVE-2025-48906": {
-    "cvss": 8.8,
-    "description": "Authentication bypass vulnerability in the DSoftBus module\nImpact: Successful exploitation of this vulnerability may affect availability.",
-    "published": "2025-06-06T07:15:26.087",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2025-5019": {
-    "cvss": 5.4,
-    "description": "The Hive Support | AI-Powered Help Desk, Live Chat & AI Chat Bot Plugin for WordPress plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.2.2. This is due to missing or incorrect nonce validation on the hs_update_ai_chat_settings() function. This makes it possible for unauthenticated attackers to reconfigure the plugin\u2019s AI/chat settings (including API keys) and to potentially redirect notifications or leak data to attacker-controlled endpoints via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.",
-    "published": "2025-06-06T07:15:28.157",
-    "keywords": "unauthenticated,leak"
-  },
   "CVE-2025-3322": {
     "cvss": "-",
     "description": "An improper neutralization of inputs used in expression\nlanguage allows remote code execution with the highest privileges on the\nserver.",
@@ -190,5 +178,35 @@
     "description": "A vulnerability was found in Tenda TDSEE App up to 1.7.12. It has been declared as problematic. Affected by this vulnerability is an unknown functionality of the file /app/ConfirmSmsCode of the component Password Reset Confirmation Code Handler. The manipulation leads to improper restriction of excessive authentication attempts. The attack can be launched remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. Upgrading to version 1.7.15 is able to address this issue. It is recommended to upgrade the affected component.",
     "published": "2025-06-09T06:15:26.170",
     "keywords": "remote,authentication"
+  },
+  "CVE-2025-5865": {
+    "url": "https://github.com/rt-thread/rt-thread/issues/10298#issuecomment-2894952150",
+    "cvss": 8.0,
+    "description": "A vulnerability was found in RT-Thread 5.1.0. It has been rated as critical. Affected by this issue is the function sys_select of the file rt-thread/components/lwp/lwp_syscall.c of the component Parameter Handler. The manipulation of the argument timeout leads to memory corruption. The vendor explains, that \"[t]he timeout parameter should be checked to check if it can be accessed correctly in kernel mode and used temporarily in kernel memory.\"",
+    "published": "2025-06-09T07:15:22.660"
+  },
+  "CVE-2025-5866": {
+    "url": "https://github.com/rt-thread/rt-thread/issues/10300",
+    "cvss": 8.0,
+    "description": "A vulnerability classified as critical has been found in RT-Thread 5.1.0. This affects the function sys_sigprocmask of the file rt-thread/components/lwp/lwp_syscall.c. The manipulation of the argument how leads to improper validation of array index.",
+    "published": "2025-06-09T07:15:22.947"
+  },
+  "CVE-2025-5893": {
+    "cvss": 9.8,
+    "description": "Smart Parking Management System from Honding Technology has an Exposure of Sensitive Information vulnerability, allowing unauthenticated remote attackers to access a specific page and obtain plaintext administrator credentials.",
+    "published": "2025-06-09T07:15:23.167",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2025-5867": {
+    "url": "https://github.com/rt-thread/rt-thread/issues/10299",
+    "cvss": 8.0,
+    "description": "A vulnerability classified as critical was found in RT-Thread 5.1.0. This vulnerability affects the function csys_sendto of the file rt-thread/components/lwp/lwp_syscall.c. The manipulation of the argument to leads to null pointer dereference.",
+    "published": "2025-06-09T08:15:22.140"
+  },
+  "CVE-2025-5868": {
+    "url": "https://github.com/rt-thread/rt-thread/issues/10303",
+    "cvss": 8.0,
+    "description": "A vulnerability, which was classified as critical, has been found in RT-Thread 5.1.0. This issue affects the function sys_thread_sigprocmask of the file rt-thread/components/lwp/lwp_syscall.c. The manipulation of the argument how leads to improper validation of array index.",
+    "published": "2025-06-09T08:15:22.370"
   }
 }

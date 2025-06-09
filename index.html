@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-06-09T07:14:12.706936
+Updated at UTC 2025-06-09T08:19:00.550305
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,56 @@ Updated at UTC 2025-06-09T07:14:12.706936
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-5868">CVE-2025-5868</a></td>
+					<td>8.0</td>
+					<td><a target=_blank href="https://github.com/rt-thread/rt-thread/issues/10303">https://github.com/rt-thread/rt-thread/issues/10303</a></td>
+					<td class=date>2025-06-09T08:15:22.370</td>
+					<td class=description>A vulnerability, which was classified as critical, has been found in RT-Thread 5.1.0. This issue affects the function sys_thread_sigprocmask of the file rt-thread/components/lwp/lwp_syscall.c. The manipulation of the argument how leads to improper validation of array index.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-5867">CVE-2025-5867</a></td>
+					<td>8.0</td>
+					<td><a target=_blank href="https://github.com/rt-thread/rt-thread/issues/10299">https://github.com/rt-thread/rt-thread/issues/10299</a></td>
+					<td class=date>2025-06-09T08:15:22.140</td>
+					<td class=description>A vulnerability classified as critical was found in RT-Thread 5.1.0. This vulnerability affects the function csys_sendto of the file rt-thread/components/lwp/lwp_syscall.c. The manipulation of the argument to leads to null pointer dereference.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-5866">CVE-2025-5866</a></td>
+					<td>8.0</td>
+					<td><a target=_blank href="https://github.com/rt-thread/rt-thread/issues/10300">https://github.com/rt-thread/rt-thread/issues/10300</a></td>
+					<td class=date>2025-06-09T07:15:22.947</td>
+					<td class=description>A vulnerability classified as critical has been found in RT-Thread 5.1.0. This affects the function sys_sigprocmask of the file rt-thread/components/lwp/lwp_syscall.c. The manipulation of the argument how leads to improper validation of array index.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-5865">CVE-2025-5865</a></td>
+					<td>8.0</td>
+					<td><a target=_blank href="https://github.com/rt-thread/rt-thread/issues/10298#issuecomment-2894952150">https://github.com/rt-thread/rt-thread/issues/10298#issuecomment-2894952150</a></td>
+					<td class=date>2025-06-09T07:15:22.660</td>
+					<td class=description>A vulnerability was found in RT-Thread 5.1.0. It has been rated as critical. Affected by this issue is the function sys_select of the file rt-thread/components/lwp/lwp_syscall.c of the component Parameter Handler. The manipulation of the argument timeout leads to memory corruption. The vendor explains, that "[t]he timeout parameter should be checked to check if it can be accessed correctly in kernel mode and used temporarily in kernel memory."</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -138,12 +188,26 @@ Updated at UTC 2025-06-09T07:14:12.706936
 		
 			
 		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-5893">CVE-2025-5893</a></td>
+					<td>9.8</td>
+					<td>remote,unauthenticated,sensitive</td>
+					<td class=date>2025-06-09T07:15:23.167</td>
+					<td class=description>Smart Parking Management System from Honding Technology has an Exposure of Sensitive Information vulnerability, allowing unauthenticated remote attackers to access a specific page and obtain plaintext administrator credentials.</td>
+				</tr>
+			
+		
+			
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -454,27 +518,6 @@ QuTS hero h5.2.4.3079 build 20250321 and later</td>
 					<td class=description>An improper neutralization of inputs used in expression
 language allows remote code execution with the highest privileges on the
 server.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-5019">CVE-2025-5019</a></td>
-					<td>5.4</td>
-					<td>unauthenticated,leak</td>
-					<td class=date>2025-06-06T07:15:28.157</td>
-					<td class=description>The Hive Support | AI-Powered Help Desk, Live Chat & AI Chat Bot Plugin for WordPress plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.2.2. This is due to missing or incorrect nonce validation on the hs_update_ai_chat_settings() function. This makes it possible for unauthenticated attackers to reconfigure the plugin’s AI/chat settings (including API keys) and to potentially redirect notifications or leak data to attacker-controlled endpoints via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-48906">CVE-2025-48906</a></td>
-					<td>8.8</td>
-					<td>authentication,bypass</td>
-					<td class=date>2025-06-06T07:15:26.087</td>
-					<td class=description>Authentication bypass vulnerability in the DSoftBus module
-Impact: Successful exploitation of this vulnerability may affect availability.</td>
 				</tr>
 			
 		
