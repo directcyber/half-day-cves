@@ -1,10 +1,4 @@
 {
-  "CVE-2025-3322": {
-    "cvss": "-",
-    "description": "An improper neutralization of inputs used in expression\nlanguage allows remote code execution with the highest privileges on the\nserver.",
-    "published": "2025-06-06T09:15:23.003",
-    "keywords": "remote,execution"
-  },
   "CVE-2025-48780": {
     "cvss": "-",
     "description": "A deserialization of untrusted data vulnerability in the download file function of Soar Cloud HRD Human Resource Management System through version 7.3.2025.0408 allows remote attackers to execute arbitrary system commands via a crafted serialized object.",
@@ -208,5 +202,17 @@
     "cvss": 8.0,
     "description": "A vulnerability, which was classified as critical, has been found in RT-Thread 5.1.0. This issue affects the function sys_thread_sigprocmask of the file rt-thread/components/lwp/lwp_syscall.c. The manipulation of the argument how leads to improper validation of array index.",
     "published": "2025-06-09T08:15:22.370"
+  },
+  "CVE-2025-5869": {
+    "url": "https://github.com/rt-thread/rt-thread/issues/10304",
+    "cvss": 8.0,
+    "description": "A vulnerability, which was classified as critical, was found in RT-Thread 5.1.0. Affected is the function sys_recvfrom of the file rt-thread/components/lwp/lwp_syscall.c. The manipulation of the argument from leads to memory corruption.",
+    "published": "2025-06-09T09:15:22.320"
+  },
+  "CVE-2025-5870": {
+    "cvss": 7.3,
+    "description": "A vulnerability has been found in TRENDnet TV-IP121W 1.1.1 Build 36 and classified as critical. Affected by this vulnerability is an unknown functionality of the file /admin/setup.cgi of the component Web Interface. The manipulation leads to improper authentication. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-06-09T09:15:22.500",
+    "keywords": "remote,authentication"
   }
 }
