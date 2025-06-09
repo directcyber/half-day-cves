@@ -184,5 +184,11 @@
     "description": "The Quantenna Wi-Fi chips ship with an unauthenticated telnet interface by default. This is an instance of CWE-306, \"Missing Authentication for Critical Function,\" and is estimated as a CVSS 9.1 ( CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N) https://www.first.org/cvss/calculator/3-1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N) .\nThis issue affects Quantenna Wi-Fi chipset through version 8.0.0.28 of the latest SDK, and appears to be unpatched at the time of this CVE record's first publishing, though the vendor has released a best practices guide for implementors of this chipset.",
     "published": "2025-06-08T21:15:33.030",
     "keywords": "unauthenticated,authentication"
+  },
+  "CVE-2025-5864": {
+    "cvss": 3.7,
+    "description": "A vulnerability was found in Tenda TDSEE App up to 1.7.12. It has been declared as problematic. Affected by this vulnerability is an unknown functionality of the file /app/ConfirmSmsCode of the component Password Reset Confirmation Code Handler. The manipulation leads to improper restriction of excessive authentication attempts. The attack can be launched remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. Upgrading to version 1.7.15 is able to address this issue. It is recommended to upgrade the affected component.",
+    "published": "2025-06-09T06:15:26.170",
+    "keywords": "remote,authentication"
   }
 }
