@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-06-08T23:11:39.191880
+Updated at UTC 2025-06-09T01:05:43.562732
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -124,8 +124,6 @@ Updated at UTC 2025-06-08T23:11:39.191880
 
 
 				</tr>
-			
-		
 			
 		
 			
@@ -477,16 +475,6 @@ Impact: Successful exploitation of this vulnerability may affect availability.</
 					<td>authentication,bypass</td>
 					<td class=date>2025-06-06T04:15:59.310</td>
 					<td class=description>The wallet has an authentication bypass vulnerability that allows access to specific pages.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-49012">CVE-2025-49012</a></td>
-					<td>5.4</td>
-					<td>authentication,bypass</td>
-					<td class=date>2025-06-05T23:15:21.303</td>
-					<td class=description>Himmelblau is an interoperability suite for Microsoft Azure Entra ID and Intune. Himmelblau versions 0.9.0 through 0.9.14 and 1.00-alpha are vulnerable to a privilege escalation issue when Entra ID group-based access restrictions are configured using group display names instead of object IDs. Starting in version 0.9.0, Himmelblau introduced support for specifying group names in the `pam_allow_groups` configuration option. However, Microsoft Entra ID permits the creation of multiple groups with the same `displayName` via the Microsoft Graph API—even by non-admin users, depending on tenant settings. As a result, a user could create a personal group with the same name as a legitimate access group (e.g., `"Allow-Linux-Login"`), add themselves to it, and be granted authentication or `sudo` rights by Himmelblau. Because affected Himmelblau versions compare group names by either `displayName` or by the immutable `objectId`, this allows bypassing access control mechanisms intended to restrict login to members of official, centrally-managed groups. This issue is fixed in Himmelblau version **0.9.15** and later. In these versions, group name matching in `pam_allow_groups` has been deprecated and removed, and only group `objectId`s (GUIDs) may be specified for secure group-based filtering. To mitigate the issue without upgrading, replace all entries in `pam_allow_groups` with the objectId of the target Entra ID group(s) and/or audit your tenant for groups with duplicate display names using the Microsoft Graph API.</td>
 				</tr>
 			
 		
