@@ -1,16 +1,4 @@
 {
-  "CVE-2025-36852": {
-    "cvss": "-",
-    "description": "A critical security vulnerability exists in remote cache extensions for common build systems utilizing bucket-based remote cache (such as those using Amazon S3, Google Cloud Storage, or similar object storage) that allows any contributor with pull request privileges to inject compromised artifacts from an untrusted environment into trusted production environments without detection.\u00a0\n\n\n\n\nThe vulnerability exploits a fundamental design flaw in the \"first-to-cache wins\" principle, where artifacts built in untrusted environments (feature branches, pull requests) can poison the cache used by trusted environments (protected branches, production deployments).\u00a0\n\n\n\n\nThis attack bypasses all traditional security measures including encryption, access controls, and checksum validation because the poisoning occurs during the artifact construction phase, before any security measures are applied.",
-    "published": "2025-06-10T20:15:22.877",
-    "keywords": "remote,bypass"
-  },
-  "CVE-2025-3052": {
-    "cvss": 8.2,
-    "description": "An arbitrary write vulnerability in Microsoft signed UEFI firmware allows for code execution of untrusted software. This allows an attacker to control its value, leading to arbitrary memory writes, including modification of critical firmware settings stored in NVRAM. Exploiting this vulnerability could enable security bypasses, persistence mechanisms, or full system compromise.",
-    "published": "2025-06-10T20:15:23.037",
-    "keywords": "execution,bypass"
-  },
   "CVE-2025-35940": {
     "cvss": 8.1,
     "description": "The ArchiverSpaApi\u00a0ASP.NET  application uses a hard-coded JWT signing key. An unauthenticated remote attacker can generate and use a verifiable JWT token to access protected ArchiverSpaApi URL endpoints.",
@@ -196,5 +184,11 @@
     "description": "XWiki is an open-source wiki software platform. Any XWiki user with edit right on at least one App Within Minutes application (the default for all users XWiki) can obtain programming right/perform remote code execution by editing the application. This vulnerability has been fixed in XWiki 17.0.0, 16.4.7, and 16.10.3.",
     "published": "2025-06-13T18:15:22.737",
     "keywords": "remote,execution"
+  },
+  "CVE-2025-49596": {
+    "cvss": "-",
+    "description": "The MCP inspector is a developer tool for testing and debugging MCP servers. Versions of MCP Inspector below 0.14.1 are vulnerable to remote code execution due to lack of authentication between the Inspector client and proxy, allowing unauthenticated requests to launch MCP commands over stdio. Users should immediately upgrade to version 0.14.1 or later to address these vulnerabilities.",
+    "published": "2025-06-13T20:15:23.133",
+    "keywords": "remote,execution,unauthenticated,authentication,command"
   }
 }
