@@ -1,10 +1,4 @@
 {
-  "CVE-2025-49091": {
-    "cvss": 8.2,
-    "description": "KDE Konsole before 25.04.2 allows remote code execution in a certain scenario. It supports loading URLs from the scheme handlers such as a ssh:// or telnet:// or rlogin:// URL. This can be executed regardless of whether the ssh, telnet, or rlogin binary is available. In this mode, there is a code path where if that binary is not available, Konsole falls back to using /bin/bash for the given arguments (i.e., the URL) provided. This allows an attacker to execute arbitrary code.",
-    "published": "2025-06-11T01:15:20.547",
-    "keywords": "remote,execution"
-  },
   "CVE-2025-4799": {
     "cvss": 7.2,
     "description": "The WP-DownloadManager plugin for WordPress is vulnerable to arbitrary file deletion due to lack of restriction on the directory a file can be deleted from in all versions up to, and including, 1.68.10. This makes it possible for authenticated attackers, with Administrator-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php). This vulnerability can be paired with CVE-2025-4798 to delete any file within the WordPress root directory.",
