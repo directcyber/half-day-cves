@@ -1,10 +1,4 @@
 {
-  "CVE-2025-4799": {
-    "cvss": 7.2,
-    "description": "The WP-DownloadManager plugin for WordPress is vulnerable to arbitrary file deletion due to lack of restriction on the directory a file can be deleted from in all versions up to, and including, 1.68.10. This makes it possible for authenticated attackers, with Administrator-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php). This vulnerability can be paired with CVE-2025-4798 to delete any file within the WordPress root directory.",
-    "published": "2025-06-11T04:15:59.223",
-    "keywords": "remote,execution"
-  },
   "CVE-2025-5395": {
     "cvss": 8.8,
     "description": "The WordPress Automatic Plugin plugin for WordPress is vulnerable to arbitrary file uploads due to insufficient file type validation in the 'core.php' file in all versions up to, and including, 3.115.0. This makes it possible for authenticated attackers, with Author-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
