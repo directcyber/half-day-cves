@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-06-14T09:13:20.107725
+Updated at UTC 2025-06-14T10:12:27.151341
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,12 @@ Updated at UTC 2025-06-14T09:13:20.107725
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -132,16 +138,38 @@ CryptX embeds the tomcrypt library. The versions of that library in CryptX befor
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-6065">CVE-2025-6065</a></td>
+					<td>9.1</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2025-06-14T09:15:25.020</td>
+					<td class=description>The Image Resizer On The Fly plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the 'delete' task in all versions up to, and including, 1.1. This makes it possible for unauthenticated attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4200">CVE-2025-4200</a></td>
+					<td>8.1</td>
+					<td>execution,unauthenticated,sensitive,bypass</td>
+					<td class=date>2025-06-14T09:15:22.990</td>
+					<td class=description>The Zagg - Electronics & Accessories WooCommerce WordPress Theme theme for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.4.1 via the load_view() function that is called via at least three AJAX actions: 'load_more_post', 'load_shop', and 'load_more_product. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4187">CVE-2025-4187</a></td>
+					<td>5.9</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2025-06-14T09:15:22.050</td>
+					<td class=description>The UserPro - Community and User Profile WordPress Plugin plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 5.1.10 via the userpro_fbconnect() function. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensitive information.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -432,46 +460,6 @@ We recommend customers discontinue usage of any remaining Amazon Cloud Cams.</td
 					<td>sensitive,leak</td>
 					<td class=date>2025-06-11T17:15:42.993</td>
 					<td class=description>Proxy-Authorization and Proxy-Authenticate headers persisted on cross-origin redirects potentially leaking sensitive information.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-41663">CVE-2025-41663</a></td>
-					<td>8.1</td>
-					<td>remote,execution,unauthenticated,command</td>
-					<td class=date>2025-06-11T09:15:22.700</td>
-					<td class=description>An unauthenticated remote attacker in a man-in-the-middle position can inject arbitrary commands in responses returned by WWH servers and gain arbitrary command execution with elevated privileges.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-41662">CVE-2025-41662</a></td>
-					<td>8.8</td>
-					<td>remote,unauthenticated,command</td>
-					<td class=date>2025-06-11T09:15:22.480</td>
-					<td class=description>An unauthenticated remote attacker can execute arbitrary commands with root privileges on affected devices due to lack of Cross-Site Request Forgery (CSRF) protection in the Main Web Interface (endpoint tls_iotgen_setting).</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-41661">CVE-2025-41661</a></td>
-					<td>8.8</td>
-					<td>remote,unauthenticated,command</td>
-					<td class=date>2025-06-11T09:15:22.257</td>
-					<td class=description>An unauthenticated remote attacker can execute arbitrary commands with root privileges on affected devices due to lack of Cross-Site Request Forgery (CSRF) protection in the Main Web Interface (endpoint event_mail_test).</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26412">CVE-2025-26412</a></td>
-					<td>6.8</td>
-					<td>remote,command</td>
-					<td class=date>2025-06-11T09:15:22.067</td>
-					<td class=description>The SIMCom SIM7600G modem supports an undocumented AT command, which allows an attacker to execute system commands with root permission on the modem. An attacker needs either physical access or remote shell access to a device that interacts directly with the modem via AT commands.</td>
 				</tr>
 			
 		

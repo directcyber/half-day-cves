@@ -1,28 +1,4 @@
 {
-  "CVE-2025-26412": {
-    "cvss": 6.8,
-    "description": "The SIMCom SIM7600G modem supports an undocumented AT command, which allows an attacker to execute system commands with root permission on the modem. An attacker needs either physical access or remote shell access to a device that interacts directly with the modem via AT commands.",
-    "published": "2025-06-11T09:15:22.067",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-41661": {
-    "cvss": 8.8,
-    "description": "An unauthenticated remote attacker can execute arbitrary commands with root privileges on affected devices due to lack of Cross-Site Request Forgery (CSRF) protection in the Main Web Interface (endpoint event_mail_test).",
-    "published": "2025-06-11T09:15:22.257",
-    "keywords": "remote,unauthenticated,command"
-  },
-  "CVE-2025-41662": {
-    "cvss": 8.8,
-    "description": "An unauthenticated remote attacker can execute arbitrary commands with root privileges on affected devices due to lack of Cross-Site Request Forgery (CSRF) protection in the Main Web Interface (endpoint tls_iotgen_setting).",
-    "published": "2025-06-11T09:15:22.480",
-    "keywords": "remote,unauthenticated,command"
-  },
-  "CVE-2025-41663": {
-    "cvss": 8.1,
-    "description": "An unauthenticated remote attacker in a man-in-the-middle position can inject arbitrary commands in responses returned by WWH servers and gain arbitrary command execution with elevated privileges.",
-    "published": "2025-06-11T09:15:22.700",
-    "keywords": "remote,execution,unauthenticated,command"
-  },
   "CVE-2025-4673": {
     "cvss": 6.8,
     "description": "Proxy-Authorization and Proxy-Authenticate headers persisted on cross-origin redirects potentially leaking sensitive information.",
@@ -178,5 +154,23 @@
     "description": "The File Manager Pro \u2013 Filester plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in all versions up to, and including, 1.8.8. This makes it possible for authenticated attackers, with Administrator-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. Administrators have the ability to extend file manager usage privileges to lower-level users including subscribers, which would make this vulnerability more severe on such sites.",
     "published": "2025-06-14T06:15:18.117",
     "keywords": "remote,execution"
+  },
+  "CVE-2025-4187": {
+    "cvss": 5.9,
+    "description": "The UserPro - Community and User Profile WordPress Plugin plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 5.1.10 via the userpro_fbconnect() function. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensitive information.",
+    "published": "2025-06-14T09:15:22.050",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-4200": {
+    "cvss": 8.1,
+    "description": "The Zagg - Electronics & Accessories WooCommerce WordPress Theme theme for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.4.1 via the load_view() function that is called via at least three AJAX actions: 'load_more_post', 'load_shop', and 'load_more_product. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included.",
+    "published": "2025-06-14T09:15:22.990",
+    "keywords": "execution,unauthenticated,sensitive,bypass"
+  },
+  "CVE-2025-6065": {
+    "cvss": 9.1,
+    "description": "The Image Resizer On The Fly plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the 'delete' task in all versions up to, and including, 1.1. This makes it possible for unauthenticated attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
+    "published": "2025-06-14T09:15:25.020",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
