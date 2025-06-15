@@ -1,10 +1,4 @@
 {
-  "CVE-2025-41234": {
-    "cvss": 6.5,
-    "description": "Description\n\nIn Spring Framework, versions 6.0.x as of 6.0.5, versions 6.1.x and 6.2.x, an application is vulnerable to a reflected file download (RFD) attack when it sets a \u201cContent-Disposition\u201d header with a non-ASCII charset, where the filename attribute is derived from user-supplied input.\n\nSpecifically, an application is vulnerable when all the following are true:\n\n  *  The header is prepared with org.springframework.http.ContentDisposition.\n  *  The filename is set via ContentDisposition.Builder#filename(String, Charset).\n  *  The value for the filename is derived from user-supplied input.\n  *  The application does not sanitize the user-supplied input.\n  *  The downloaded content of the response is injected with malicious commands by the attacker (see RFD paper reference for details).\n\n\nAn application is not vulnerable if any of the following is true:\n\n  *  The application does not set a \u201cContent-Disposition\u201d response header.\n  *  The header is not prepared with org.springframework.http.ContentDisposition.\n  *  The filename is set via one of:  *  ContentDisposition.Builder#filename(String), or\n  *  ContentDisposition.Builder#filename(String, ASCII)\n\n\n\n  *  The filename is not derived from user-supplied input.\n  *  The filename is derived from user-supplied input but sanitized by the application.\n  *  The attacker cannot inject malicious content in the downloaded content of the response.\n\n\nAffected Spring Products and VersionsSpring Framework:\n\n  *  6.2.0 - 6.2.7\n  *  6.1.0 - 6.1.20\n  *  6.0.5 - 6.0.28\n  *  Older, unsupported versions are not affected\n\n\nMitigationUsers of affected versions should upgrade to the corresponding fixed version.\n\nAffected version(s)Fix versionAvailability6.2.x6.2.8OSS6.1.x6.1.21OSS6.0.x6.0.29 Commercial https://enterprise.spring.io/ No further mitigation steps are necessary.\n\n\nCWE-113 in `Content-Disposition` handling in VMware Spring Framework versions 6.0.5 to 6.2.7 allows remote attackers to launch Reflected File Download (RFD) attacks via unsanitized user input in `ContentDisposition.Builder#filename(String, Charset)` with non-ASCII charsets.",
-    "published": "2025-06-12T22:15:21.090",
-    "keywords": "remote,command"
-  },
   "CVE-2025-4230": {
     "cvss": "-",
     "description": "A command injection vulnerability in Palo Alto Networks PAN-OS\u00ae software enables an authenticated administrator to bypass system restrictions and run arbitrary commands as a root user. To be able to exploit this issue, the user must have access to the PAN-OS CLI.\n\nThe security risk posed by this issue is significantly minimized when CLI access is restricted to a limited group of administrators. \n\nCloud NGFW and Prisma\u00ae Access are not affected by this vulnerability.",
@@ -106,5 +100,11 @@
     "description": "IBM Security Verify Directory Container 10.0.0.0 through 10.0.3.1 could allow a local user to execute commands as root due to execution with unnecessary privileges.",
     "published": "2025-06-15T13:15:32.027",
     "keywords": "execution,command"
+  },
+  "CVE-2025-6093": {
+    "url": "https://github.com/uyanki/board-stm32f103rc-berial/issues/3",
+    "cvss": 5.5,
+    "description": "A vulnerability classified as critical was found in uYanki board-stm32f103rc-berial up to 84daed541609cb7b46854cc6672a275d1007e295. This vulnerability affects the function heartrate1_i2c_hal_write of the file 7.Example/hal/i2c/max30100/Manual/demo2/2/heartrate1_hal.c. The manipulation of the argument num leads to stack-based buffer overflow. Continious delivery with rolling releases is used by this product. Therefore, no version details of affected nor updated releases are available.",
+    "published": "2025-06-15T22:15:19.483"
   }
 }
