@@ -1,16 +1,4 @@
 {
-  "CVE-2025-4973": {
-    "cvss": 9.8,
-    "description": "The Workreap plugin for WordPress, used by the Workreap - Freelance Marketplace WordPress Theme, is vulnerable to authentication bypass in all versions up to, and including, 3.3.1. This is due to the plugin not properly verifying a user's identity prior to logging them in when verifying an account with an email address. This makes it possible for unauthenticated attackers to log in as registered users, including administrators, if they know user's email address. This is only exploitable fi the user's confirmation_key has not already been set by the plugin.",
-    "published": "2025-06-12T06:15:23.440",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
-  "CVE-2025-5012": {
-    "cvss": 8.8,
-    "description": "The Workreap plugin for WordPress, used by the Workreap - Freelance Marketplace WordPress Theme, is vulnerable to arbitrary file uploads due to missing file type validation in the 'workreap_temp_upload_to_media' function in all versions up to, and including, 3.3.2. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2025-06-12T06:15:23.640",
-    "keywords": "remote,execution"
-  },
   "CVE-2025-4613": {
     "cvss": "-",
     "description": "Path traversal in Google Web Designer's template handling versions prior to 16.3.0.0407 on Windows allows attacker to achieve remote code execution by tricking users into downloading a malicious ad template",
