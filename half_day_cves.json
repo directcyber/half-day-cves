@@ -1,10 +1,4 @@
 {
-  "CVE-2025-4230": {
-    "cvss": "-",
-    "description": "A command injection vulnerability in Palo Alto Networks PAN-OS\u00ae software enables an authenticated administrator to bypass system restrictions and run arbitrary commands as a root user. To be able to exploit this issue, the user must have access to the PAN-OS CLI.\n\nThe security risk posed by this issue is significantly minimized when CLI access is restricted to a limited group of administrators. \n\nCloud NGFW and Prisma\u00ae Access are not affected by this vulnerability.",
-    "published": "2025-06-13T00:15:23.380",
-    "keywords": "command,bypass"
-  },
   "CVE-2025-5491": {
     "cvss": 8.8,
     "description": "Acer ControlCenter contains Remote Code Execution vulnerability. The program exposes a Windows Named Pipe that uses a custom protocol to invoke internal functions. However, this Named Pipe is misconfigured, allowing remote users with low privileges to interact with it and access its features. One such feature enables the execution of arbitrary programs as NT AUTHORITY/SYSTEM. By leveraging this, remote attackers can execute arbitrary code on the target system with elevated privileges.",
