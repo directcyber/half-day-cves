@@ -1,10 +1,4 @@
 {
-  "CVE-2025-39240": {
-    "cvss": 7.2,
-    "description": "Some Hikvision Wireless Access Point are vulnerable to authenticated remote command execution due to insufficient input validation. Attackers with valid credentials can exploit this flaw by sending crafted packets containing malicious commands to affected devices, leading to arbitrary command execution.",
-    "published": "2025-06-13T08:15:19.377",
-    "keywords": "remote,execution,command"
-  },
   "CVE-2025-29902": {
     "cvss": 10.0,
     "description": "Remote code execution that allows unauthorized users to execute arbitrary code on the server machine.",
@@ -124,5 +118,11 @@
     "description": "A vulnerability, which was classified as critical, was found in Wifi-soft UniBox Controller up to 20250506. This affects an unknown part of the file /billing/pms_check.php. The manipulation of the argument ipaddress leads to os command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2025-06-16T04:15:19.227",
     "keywords": "remote,command"
+  },
+  "CVE-2025-6169": {
+    "cvss": 9.8,
+    "description": "The WIMP website co-construction management platform from HAMASTAR Technology has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL commands to read, modify, and delete database contents.",
+    "published": "2025-06-16T07:15:20.077",
+    "keywords": "remote,unauthenticated,command"
   }
 }
