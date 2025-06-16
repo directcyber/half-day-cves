@@ -1,16 +1,4 @@
 {
-  "CVE-2025-28386": {
-    "cvss": "-",
-    "description": "A remote code execution (RCE) vulnerability in the Plugin Management component of OpenC3 COSMOS v6.0.0 allows attackers to execute arbitrary code via uploading a crafted .txt file.",
-    "published": "2025-06-13T14:15:20.713",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-28389": {
-    "cvss": 9.8,
-    "description": "Weak password requirements in OpenC3 COSMOS v6.0.0 allow attackers to bypass authentication via a brute force attack.",
-    "published": "2025-06-13T14:15:21.010",
-    "keywords": "authentication,bypass"
-  },
   "CVE-2025-49582": {
     "cvss": "-",
     "description": "XWiki is a generic wiki platform. When editing content that contains \"dangerous\" macros like malicious script macros that were authored by a user with fewer rights, XWiki warns about the execution of these macros since XWiki 15.9RC1. These required rights analyzers that trigger these warnings are incomplete, allowing an attacker to hide malicious content. For most macros, the existing analyzers don't consider non-lowercase parameters. Further, most macro parameters that can contain XWiki syntax like titles of information boxes weren't analyzed at all. Similarly, the \"source\" parameters of the content and context macro weren't anylzed even though they could contain arbitrary XWiki syntax. In the worst case, this could allow a malicious to add malicious script macros including Groovy or Python macros to a page that are then executed after another user with programming righs edits the page, thus allowing remote code execution. The required rights analyzers have been made more robust and extended to cover those cases in XWiki 16.4.7, 16.10.3 and 17.0.0.",
