@@ -130,5 +130,17 @@
     "description": "A web application for configuring the controller is accessible at a specific path. It contains an endpoint that allows an unauthenticated remote attacker to read files from the system\u2019s file structure.",
     "published": "2025-06-16T10:15:20.807",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-6119": {
+    "url": "https://github.com/assimp/assimp/issues/6219#issuecomment-2945016005",
+    "cvss": 5.3,
+    "description": "A vulnerability classified as critical has been found in Open Asset Import Library Assimp up to 5.4.3. Affected is the function Assimp::BVHLoader::ReadNodeChannels in the library assimp/code/AssetLib/BVH/BVHLoader.cpp. The manipulation of the argument pNode leads to use after free. Attacking locally is a requirement. The exploit has been disclosed to the public and may be used. The project decided to collect all Fuzzer bugs in a main-issue to address them in the future.",
+    "published": "2025-06-16T11:15:19.210"
+  },
+  "CVE-2025-6120": {
+    "url": "https://github.com/assimp/assimp/issues/6220#issuecomment-2945018579",
+    "cvss": 5.3,
+    "description": "A vulnerability classified as critical was found in Open Asset Import Library Assimp up to 5.4.3. Affected by this vulnerability is the function read_meshes in the library assimp/code/AssetLib/MDL/HalfLife/HL1MDLLoader.cpp. The manipulation leads to heap-based buffer overflow. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used. The project decided to collect all Fuzzer bugs in a main-issue to address them in the future.",
+    "published": "2025-06-16T12:15:19.750"
   }
 }
