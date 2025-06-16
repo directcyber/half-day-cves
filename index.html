@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-06-16T17:11:41.104485
+Updated at UTC 2025-06-16T18:18:20.497451
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2025-06-16T17:11:41.104485
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -148,12 +150,18 @@ Updated at UTC 2025-06-16T17:11:41.104485
 		
 			
 		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-5309">CVE-2025-5309</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2025-06-16T17:15:29.853</td>
+					<td class=description>The chat feature within Remote Support (RS) and Privileged Remote Access (PRA) is vulnerable to a Server-Side Template Injection vulnerability which can lead to remote code execution.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -317,26 +325,6 @@ Refer to the 'Security Update for Armoury Crate App' section on the ASUS Securit
 					<td>remote,execution,unauthenticated,authentication,command</td>
 					<td class=date>2025-06-13T20:15:23.133</td>
 					<td class=description>The MCP inspector is a developer tool for testing and debugging MCP servers. Versions of MCP Inspector below 0.14.1 are vulnerable to remote code execution due to lack of authentication between the Inspector client and proxy, allowing unauthenticated requests to launch MCP commands over stdio. Users should immediately upgrade to version 0.14.1 or later to address these vulnerabilities.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-49586">CVE-2025-49586</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2025-06-13T18:15:22.737</td>
-					<td class=description>XWiki is an open-source wiki software platform. Any XWiki user with edit right on at least one App Within Minutes application (the default for all users XWiki) can obtain programming right/perform remote code execution by editing the application. This vulnerability has been fixed in XWiki 17.0.0, 16.4.7, and 16.10.3.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-49582">CVE-2025-49582</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2025-06-13T17:15:23.180</td>
-					<td class=description>XWiki is a generic wiki platform. When editing content that contains "dangerous" macros like malicious script macros that were authored by a user with fewer rights, XWiki warns about the execution of these macros since XWiki 15.9RC1. These required rights analyzers that trigger these warnings are incomplete, allowing an attacker to hide malicious content. For most macros, the existing analyzers don't consider non-lowercase parameters. Further, most macro parameters that can contain XWiki syntax like titles of information boxes weren't analyzed at all. Similarly, the "source" parameters of the content and context macro weren't anylzed even though they could contain arbitrary XWiki syntax. In the worst case, this could allow a malicious to add malicious script macros including Groovy or Python macros to a page that are then executed after another user with programming righs edits the page, thus allowing remote code execution. The required rights analyzers have been made more robust and extended to cover those cases in XWiki 16.4.7, 16.10.3 and 17.0.0.</td>
 				</tr>
 			
 		
