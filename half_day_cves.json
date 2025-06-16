@@ -124,5 +124,11 @@
     "cvss": 5.3,
     "description": "A vulnerability classified as critical was found in Open Asset Import Library Assimp up to 5.4.3. Affected by this vulnerability is the function read_meshes in the library assimp/code/AssetLib/MDL/HalfLife/HL1MDLLoader.cpp. The manipulation leads to heap-based buffer overflow. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used. The project decided to collect all Fuzzer bugs in a main-issue to address them in the future.",
     "published": "2025-06-16T12:15:19.750"
+  },
+  "CVE-2025-49125": {
+    "cvss": "-",
+    "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Apache Tomcat.\u00a0 When using PreResources or PostResources mounted other than at the root of the web application, it was possible to access those resources via an unexpected path. That path was likely not to be protected by the same security constraints as the expected path, allowing those security constraints to be bypassed.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.7, from 10.1.0-M1 through 10.1.41, from 9.0.0.M1 through 9.0.105.\n\nUsers are recommended to upgrade to version 11.0.8, 10.1.42 or 9.0.106, which fix the issue.",
+    "published": "2025-06-16T15:15:24.850",
+    "keywords": "authentication,bypass"
   }
 }
