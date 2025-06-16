@@ -1,16 +1,4 @@
 {
-  "CVE-2025-29902": {
-    "cvss": 10.0,
-    "description": "Remote code execution that allows unauthorized users to execute arbitrary code on the server machine.",
-    "published": "2025-06-13T10:15:20.693",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-49468": {
-    "cvss": "-",
-    "description": "A SQL injection vulnerability in No Boss Calendar component before 5.0.7 for Joomla was discovered. The vulnerability allows remote authenticated users to execute arbitrary SQL commands via the id_module parameter.",
-    "published": "2025-06-13T10:15:21.073",
-    "keywords": "remote,command"
-  },
   "CVE-2025-46096": {
     "url": "https://github.com/opensolon/solon/issues/357",
     "cvss": 6.1,
@@ -130,5 +118,17 @@
     "description": "A race condition vulnerability exists in Armoury Crate. This vulnerability arises from a Time-of-check Time-of-use issue, potentially leading to authentication bypass.\nRefer to the 'Security Update for Armoury Crate App' section on the ASUS Security Advisory for more information.",
     "published": "2025-06-16T09:15:19.233",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2025-25264": {
+    "cvss": 8.8,
+    "description": "An unauthenticated remote attacker can take advantage of the current overly permissive CORS policy to gain access and read the responses, potentially exposing sensitive data or enabling further attacks.",
+    "published": "2025-06-16T10:15:19.517",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2025-25265": {
+    "cvss": 7.5,
+    "description": "A web application for configuring the controller is accessible at a specific path. It contains an endpoint that allows an unauthenticated remote attacker to read files from the system\u2019s file structure.",
+    "published": "2025-06-16T10:15:20.807",
+    "keywords": "remote,unauthenticated"
   }
 }
