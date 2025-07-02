@@ -274,5 +274,47 @@
     "description": "linjiashop <=0.9 is vulnerable to Incorrect Access Control. When using the default-generated JWT authentication, attackers can bypass the authentication and retrieve the encrypted \"password\" and \"salt\". The password can then be obtained through brute-force cracking.",
     "published": "2025-07-01T21:15:25.533",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2025-4380": {
+    "cvss": 8.1,
+    "description": "The Ads Pro Plugin - Multi-Purpose WordPress Advertising Manager plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 4.89 via the 'bsa_template' parameter of the `bsa_preview_callback` function. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases .php files can can be uploaded and included, or already exist on the site.",
+    "published": "2025-07-02T04:15:52.710",
+    "keywords": "execution,unauthenticated,sensitive,bypass"
+  },
+  "CVE-2025-4381": {
+    "cvss": 7.5,
+    "description": "The Ads Pro Plugin - Multi-Purpose WordPress Advertising Manager plugin for WordPress is vulnerable to SQL Injection via the \u2018$id\u2019 variable of the getSpace() function in all versions up to, and including, 4.89 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2025-07-02T04:15:53.837",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-4689": {
+    "cvss": 9.8,
+    "description": "The Ads Pro Plugin - Multi-Purpose WordPress Advertising Manager plugin for WordPress is vulnerable to Local File Inclusion which leads to Remote Code Execution in all versions up to, and including, 4.89. This is due to the presence of a SQL Injection vulnerability and Local File Inclusion vulnerability that can be chained with an image upload. This makes it possible for unauthenticated attackers to execute code on the server upload image files on the server than can be fetched via a SQL injection vulnerability, and ultimately executed as PHP code through the local file inclusion vulnerability.",
+    "published": "2025-07-02T04:15:55.587",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-5014": {
+    "cvss": 8.8,
+    "description": "The Home Villas | Real Estate WordPress Theme theme for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the 'wp_rem_cs_widget_file_delete' function in all versions up to, and including, 2.8. This makes it possible for authenticated attackers, with Subscriber-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
+    "published": "2025-07-02T04:15:56.833",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-5339": {
+    "cvss": 7.5,
+    "description": "The Ads Pro Plugin - Multi-Purpose WordPress Advertising Manager plugin for WordPress is vulnerable to time-based SQL Injection via the \u2018bsa_pro_id\u2019 parameter in all versions up to, and including, 4.89 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2025-07-02T04:15:57.677",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-5746": {
+    "cvss": 9.8,
+    "description": "The Drag and Drop Multiple File Upload (Pro) - WooCommerce plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the dnd_upload_cf7_upload_chunks() function in version 5.0 - 5.0.5 (when bundled with the PrintSpace theme) and all versions up to, and including, 1.7.1 (in the standalone version). This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible. The execution of PHP is disabled via a .htaccess file but is still possible in certain server configurations.",
+    "published": "2025-07-02T04:15:58.013",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-6437": {
+    "cvss": 7.5,
+    "description": "The Ads Pro Plugin - Multi-Purpose WordPress Advertising Manager plugin for WordPress is vulnerable to SQL Injection via the \u2018oid\u2019 parameter in all versions up to, and including, 4.89 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2025-07-02T04:15:58.987",
+    "keywords": "unauthenticated,sensitive"
   }
 }
