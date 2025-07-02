@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-07-02T14:13:15.805321
+Updated at UTC 2025-07-02T15:14:07.188800
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,30 @@ Updated at UTC 2025-07-02T14:13:15.805321
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-53106">CVE-2025-53106</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/graylog2/graylog2-server/commit/9215b8f1fd32566c31e6f7447ed864df3590c157">https://github.com/graylog2/graylog2-server/commit/9215b8f1fd32566c31e6f7447ed864df3590c157</a></td>
+					<td class=date>2025-07-02T14:15:26.273</td>
+					<td class=description>Graylog is a free and open log management platform. In versions 6.2.0 to before 6.2.4 and 6.3.0-alpha.1 to before 6.3.0-rc.2, Graylog users can gain elevated privileges by creating and using API tokens for the local Administrator or any other user for whom the malicious user knows the ID. For the attack to succeed, the attacker needs a user account in Graylog. They can then proceed to issue hand-crafted requests to the Graylog REST API and exploit a weak permission check for token creation. This issue has been patched in versions 6.2.4 and 6.3.0-rc.2. A workaround involves disabling the respective configuration found in System > Configuration > Users > "Allow users to create personal access tokens".</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -226,6 +250,68 @@ Updated at UTC 2025-07-02T14:13:15.805321
 		
 
 		<hr>
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34073">CVE-2025-34073</a></td>
+					<td>-</td>
+					<td>remote,unauthenticated,authentication,command</td>
+					<td class=date>2025-07-02T14:15:24.967</td>
+					<td class=description>An unauthenticated command injection vulnerability exists in stamparm/maltrail (Maltrail) versions <=0.54. A remote attacker can execute arbitrary operating system commands via the username parameter in a POST request to the /login endpoint. This occurs due to unsafe handling of user-supplied input passed to subprocess.check_output() in core/http.py, allowing injection of shell metacharacters. Exploitation does not require authentication and commands are executed with the privileges of the Maltrail process.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34071">CVE-2025-34071</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2025-07-02T14:15:24.667</td>
+					<td class=description>A remote code execution vulnerability in GFI Kerio Control 9.4.5 allows attackers with administrative access to upload and execute arbitrary code through the firmware upgrade feature. The system upgrade mechanism accepts unsigned .img files, which can be modified to include malicious scripts within the upgrade.sh or disk image components. These modified upgrade images are not validated for authenticity or integrity, and are executed by the system post-upload, enabling root access.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34070">CVE-2025-34070</a></td>
+					<td>-</td>
+					<td>remote,unauthenticated,authentication,sensitive,bypass</td>
+					<td class=date>2025-07-02T14:15:24.527</td>
+					<td class=description>A missing authentication vulnerability in the GFIAgent component of GFI Kerio Control 9.4.5 allows unauthenticated remote attackers to perform privileged operations. The GFIAgent service, responsible for integration with GFI AppManager, exposes HTTP services on ports 7995 and 7996 without proper authentication. The /proxy handler on port 7996 allows arbitrary forwarding to administrative endpoints when provided with an Appliance UUID, which itself can be retrieved from port 7995. This results in a complete authentication bypass, permitting access to sensitive administrative APIs.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34069">CVE-2025-34069</a></td>
+					<td>-</td>
+					<td>unauthenticated,authentication,bypass</td>
+					<td class=date>2025-07-02T14:15:24.390</td>
+					<td class=description>An authentication bypass vulnerability exists in GFI Kerio Control 9.4.5 due to insecure default proxy configuration and weak access control in the GFIAgent service. The non-transparent proxy on TCP port 3128 can be used to forward unauthenticated requests to internal services such as GFIAgent, bypassing firewall restrictions and exposing internal management endpoints. This enables unauthenticated attackers to access the GFIAgent service on ports 7995 and 7996, retrieve the appliance UUID, and issue administrative requests via the proxy. Exploitation results in full administrative access to the Kerio Control appliance.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34067">CVE-2025-34067</a></td>
+					<td>-</td>
+					<td>remote,execution,unauthenticated,command</td>
+					<td class=date>2025-07-02T14:15:24.250</td>
+					<td class=description>An unauthenticated remote command execution vulnerability exists in the applyCT component of the Hikvision Integrated Security Management Platform due to the use of a vulnerable version of the Fastjson library. The endpoint /bic/ssoService/v1/applyCT deserializes untrusted user input, allowing an attacker to trigger Fastjson's auto-type feature to load arbitrary Java classes. By referencing a malicious class via an LDAP URL, an attacker can achieve remote code execution on the underlying system.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34057">CVE-2025-34057</a></td>
+					<td>-</td>
+					<td>unauthenticated,authentication,sensitive</td>
+					<td class=date>2025-07-02T14:15:24.090</td>
+					<td class=description>An information disclosure vulnerability exists in Ruijie NBR series routers (known to affect NBR2000G, NBR1300G, and NBR1000 models) via the /WEB_VMS/LEVEL15/ endpoint. By crafting a specific POST request with modified Cookie headers and specially formatted parameters, an unauthenticated attacker can retrieve administrative account credentials in plaintext. This flaw allows direct disclosure of sensitive user data due to improper authentication checks and insecure backend logic.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">

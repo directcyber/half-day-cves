@@ -316,5 +316,47 @@
     "description": "The Vikinger theme for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the vikinger_delete_activity_media_ajax() function in all versions up to, and including, 1.9.32. This makes it possible for authenticated attackers, with Subscriber-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php). Note: Requires Vikinger Media plugin to be installed and active.",
     "published": "2025-07-02T10:15:23.227",
     "keywords": "remote,execution"
+  },
+  "CVE-2025-34057": {
+    "cvss": "-",
+    "description": "An information disclosure vulnerability exists in Ruijie NBR series routers (known to affect\u00a0NBR2000G, NBR1300G, and NBR1000 models)\u00a0via the /WEB_VMS/LEVEL15/ endpoint. By crafting a specific POST request with modified Cookie headers and specially formatted parameters, an unauthenticated attacker can retrieve administrative account credentials in plaintext. This flaw allows direct disclosure of sensitive user data due to improper authentication checks and insecure backend logic.",
+    "published": "2025-07-02T14:15:24.090",
+    "keywords": "unauthenticated,authentication,sensitive"
+  },
+  "CVE-2025-34067": {
+    "cvss": "-",
+    "description": "An unauthenticated remote command execution vulnerability exists in the applyCT component of the Hikvision Integrated Security Management Platform due to the use of a vulnerable version of the Fastjson library. The endpoint /bic/ssoService/v1/applyCT deserializes untrusted user input, allowing an attacker to trigger Fastjson's auto-type feature to load arbitrary Java classes. By referencing a malicious class via an LDAP URL, an attacker can achieve remote code execution on the underlying system.",
+    "published": "2025-07-02T14:15:24.250",
+    "keywords": "remote,execution,unauthenticated,command"
+  },
+  "CVE-2025-34069": {
+    "cvss": "-",
+    "description": "An authentication bypass vulnerability exists in GFI Kerio Control 9.4.5 due to insecure default proxy configuration and weak access control in the GFIAgent service. The non-transparent proxy on TCP port 3128 can be used to forward unauthenticated requests to internal services such as GFIAgent, bypassing firewall restrictions and exposing internal management endpoints. This enables unauthenticated attackers to access the GFIAgent service on ports 7995 and 7996, retrieve the appliance UUID, and issue administrative requests via the proxy. Exploitation results in full administrative access to the Kerio Control appliance.",
+    "published": "2025-07-02T14:15:24.390",
+    "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2025-34070": {
+    "cvss": "-",
+    "description": "A missing authentication vulnerability in the GFIAgent component of GFI Kerio Control 9.4.5 allows unauthenticated remote attackers to perform privileged operations. The GFIAgent service, responsible for integration with GFI AppManager, exposes HTTP services on ports 7995 and 7996 without proper authentication. The /proxy handler on port 7996 allows arbitrary forwarding to administrative endpoints\u00a0when provided with an Appliance UUID, which itself can be retrieved from port 7995. This results in a complete authentication bypass, permitting access to sensitive administrative APIs.",
+    "published": "2025-07-02T14:15:24.527",
+    "keywords": "remote,unauthenticated,authentication,sensitive,bypass"
+  },
+  "CVE-2025-34071": {
+    "cvss": "-",
+    "description": "A remote code execution vulnerability in GFI Kerio Control 9.4.5 allows attackers with administrative access to upload and execute arbitrary code through the firmware upgrade feature. The system upgrade mechanism accepts unsigned .img files, which can be modified to include malicious scripts within the upgrade.sh or disk image components. These modified upgrade images are not validated for authenticity or integrity, and are executed by the system post-upload, enabling root access.",
+    "published": "2025-07-02T14:15:24.667",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-34073": {
+    "cvss": "-",
+    "description": "An unauthenticated command injection vulnerability exists in stamparm/maltrail (Maltrail) versions <=0.54. A remote attacker can execute arbitrary operating system commands via the username parameter in a POST request to the /login endpoint. This occurs due to unsafe handling of user-supplied input passed to subprocess.check_output() in core/http.py, allowing injection of shell metacharacters. Exploitation does not require authentication and commands are executed with the privileges of the Maltrail process.",
+    "published": "2025-07-02T14:15:24.967",
+    "keywords": "remote,unauthenticated,authentication,command"
+  },
+  "CVE-2025-53106": {
+    "url": "https://github.com/graylog2/graylog2-server/commit/9215b8f1fd32566c31e6f7447ed864df3590c157",
+    "cvss": "-",
+    "description": "Graylog is a free and open log management platform. In versions 6.2.0 to before 6.2.4 and 6.3.0-alpha.1 to before 6.3.0-rc.2, Graylog users can gain elevated privileges by creating and using API tokens for the local Administrator or any other user for whom the malicious user knows the ID. For the attack to succeed, the attacker needs a user account in Graylog. They can then proceed to issue hand-crafted requests to the Graylog REST API and exploit a weak permission check for token creation. This issue has been patched in versions 6.2.4 and 6.3.0-rc.2. A workaround involves disabling the respective configuration found in System > Configuration > Users > \"Allow users to create personal access tokens\".",
+    "published": "2025-07-02T14:15:26.273"
   }
 }
