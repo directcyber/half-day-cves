@@ -1,1 +1,278 @@
-{}
+{
+  "CVE-2025-6853": {
+    "url": "https://github.com/chatchat-space/langchain-chatchat/issues/5352",
+    "cvss": 6.3,
+    "description": "A vulnerability classified as critical has been found in chatchat-space Langchain-Chatchat up to 0.3.1. This affects the function upload_temp_docs of the file /knowledge_base/upload_temp_docs of the component Backend. The manipulation of the argument flag leads to path traversal. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-06-29T08:15:21.550"
+  },
+  "CVE-2025-6854": {
+    "url": "https://github.com/chatchat-space/langchain-chatchat/issues/5353",
+    "cvss": 4.3,
+    "description": "A vulnerability classified as problematic was found in chatchat-space Langchain-Chatchat up to 0.3.1. This vulnerability affects unknown code of the file /v1/files?purpose=assistants. The manipulation leads to path traversal. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-06-29T09:15:24.020"
+  },
+  "CVE-2025-6855": {
+    "url": "https://github.com/chatchat-space/langchain-chatchat/issues/5354",
+    "cvss": 5.5,
+    "description": "A vulnerability, which was classified as critical, has been found in chatchat-space Langchain-Chatchat up to 0.3.1. This issue affects some unknown processing of the file /v1/file. The manipulation of the argument flag leads to path traversal. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-06-29T09:15:24.290"
+  },
+  "CVE-2025-6856": {
+    "url": "https://github.com/hdfgroup/hdf5/issues/5574",
+    "cvss": 3.3,
+    "description": "A vulnerability, which was classified as problematic, was found in HDF5 1.14.6. Affected is the function H5FL__reg_gc_list of the file src/H5FL.c. The manipulation leads to use after free. Attacking locally is a requirement. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-06-29T10:15:21.443"
+  },
+  "CVE-2025-6857": {
+    "url": "https://github.com/hdfgroup/hdf5/issues/5575",
+    "cvss": 3.3,
+    "description": "A vulnerability has been found in HDF5 1.14.6 and classified as problematic. Affected by this vulnerability is the function H5G__node_cmp3 of the file src/H5Gnode.c. The manipulation leads to stack-based buffer overflow. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-06-29T10:15:22.800"
+  },
+  "CVE-2025-6858": {
+    "url": "https://github.com/hdfgroup/hdf5/issues/5576",
+    "cvss": 3.3,
+    "description": "A vulnerability was found in HDF5 1.14.6 and classified as problematic. Affected by this issue is the function H5C__flush_single_entry of the file src/H5Centry.c. The manipulation leads to null pointer dereference. The attack needs to be approached locally. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-06-29T11:15:24.313"
+  },
+  "CVE-2025-24292": {
+    "cvss": 6.8,
+    "description": "A misconfigured query in UniFi Network (v9.1.120 and earlier) could allow users to authenticate to Enterprise WiFi or VPN Server (l2tp and OpenVPN) using a device\u2019s  MAC address from 802.1X or MAC Authentication, if both services are enabled and share the same RADIUS profile.",
+    "published": "2025-06-29T20:15:25.050",
+    "keywords": "authentication,vpn"
+  },
+  "CVE-2025-0634": {
+    "url": "https://github.com/samsung/rlottie/pull/571",
+    "cvss": "-",
+    "description": "Use After Free vulnerability in Samsung Open Source rLottie allows Remote Code Inclusion.This issue affects rLottie: V0.2.",
+    "published": "2025-06-30T02:15:20.920"
+  },
+  "CVE-2025-53075": {
+    "url": "https://github.com/samsung/rlottie/pull/571",
+    "cvss": "-",
+    "description": "Improper Input Validation vulnerability in Samsung Open Source rLottie allows Path Traversal.This issue affects rLottie: V0.2.",
+    "published": "2025-06-30T02:15:21.237"
+  },
+  "CVE-2025-53074": {
+    "url": "https://github.com/samsung/rlottie/pull/571",
+    "cvss": "-",
+    "description": "Out-of-bounds Read vulnerability in Samsung Open Source rLottie allows Overflow Buffers.This issue affects rLottie: V0.2.",
+    "published": "2025-06-30T03:15:25.680"
+  },
+  "CVE-2025-53076": {
+    "url": "https://github.com/samsung/rlottie/pull/573",
+    "cvss": "-",
+    "description": "Improper Input Validation vulnerability in Samsung Open Source rLottie allows Overread Buffers.This issue affects rLottie: V0.2.",
+    "published": "2025-06-30T03:15:25.843"
+  },
+  "CVE-2025-6896": {
+    "cvss": 6.3,
+    "description": "A vulnerability classified as critical has been found in D-Link DI-7300G+ 19.12.25A1. Affected is an unknown function of the file wget_test.asp. The manipulation of the argument url leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-06-30T07:15:23.543",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-38089": {
+    "cvss": "-",
+    "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsunrpc: handle SVC_GARBAGE during svc auth processing as auth error\n\ntianshuo han reported a remotely-triggerable crash if the client sends a\nkernel RPC server a specially crafted packet. If decoding the RPC reply\nfails in such a way that SVC_GARBAGE is returned without setting the\nrq_accept_statp pointer, then that pointer can be dereferenced and a\nvalue stored there.\n\nIf it's the first time the thread has processed an RPC, then that\npointer will be set to NULL and the kernel will crash. In other cases,\nit could create a memory scribble.\n\nThe server sunrpc code treats a SVC_GARBAGE return from svc_authenticate\nor pg_authenticate as if it should send a GARBAGE_ARGS reply. RFC 5531\nsays that if authentication fails that the RPC should be rejected\ninstead with a status of AUTH_ERR.\n\nHandle a SVC_GARBAGE return as an AUTH_ERROR, with a reason of\nAUTH_BADCRED instead of returning GARBAGE_ARGS in that case. This\nsidesteps the whole problem of touching the rpc_accept_statp pointer in\nthis situation and avoids the crash.",
+    "published": "2025-06-30T08:15:23.590",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2025-6898": {
+    "cvss": 6.3,
+    "description": "A vulnerability, which was classified as critical, has been found in D-Link DI-7300G+ 19.12.25A1. Affected by this issue is some unknown functionality of the file in\u00a0proxy_client.asp. The manipulation of the argument proxy_srv/proxy_lanport/proxy_lanip/proxy_srvport leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-06-30T08:15:24.113",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-53415": {
+    "cvss": 7.8,
+    "description": "Delta Electronics DTM Soft\u00a0Project File Parsing Deserialization of Untrusted Data Remote Code Execution",
+    "published": "2025-06-30T09:15:26.903",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-6899": {
+    "cvss": 6.3,
+    "description": "A vulnerability, which was classified as critical, was found in D-Link DI-7300G+ and DI-8200G 17.12.20A1/19.12.25A1. This affects an unknown part of the file msp_info.htm. The manipulation of the argument flag/cmd/iface leads to os command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-06-30T09:15:27.160",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-26074": {
+    "cvss": 9.8,
+    "description": "Orkes Conductor v3.21.11 allows remote attackers to execute arbitrary OS commands through unrestricted access to Java classes.",
+    "published": "2025-06-30T17:15:31.987",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-46702": {
+    "cvss": 5.4,
+    "description": "Mattermost versions 10.5.x <= 10.5.5, 9.11.x <= 9.11.15, 10.8.x <= 10.8.0, 10.7.x <= 10.7.2, 10.6.x <= 10.6.5 fail to properly enforce channel member management permissions when adding participants to playbook runs. This allows authenticated users with member-level permissions to bypass system admin restrictions and add or remove users to/from private channels via the playbook run participants feature, even when the 'Manage Members' permission has been explicitly removed. This can lead to unauthorized access to sensitive channel content and allow guest users to gain channel management privileges.",
+    "published": "2025-06-30T17:15:32.600",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2025-36593": {
+    "cvss": 8.8,
+    "description": "Dell OpenManage Network Integration, versions prior to 3.8, contains an Authentication Bypass by Capture-replay vulnerability in the RADIUS protocol.  An attacker with local network access could potentially exploit this vulnerability to forge a valid protocol accept message in response to a failed authentication request.",
+    "published": "2025-06-30T19:15:23.580",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-52901": {
+    "cvss": 4.5,
+    "description": "File Browser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit files. Prior to version 2.33.9, access tokens are used as GET parameters. The JSON Web Token (JWT) which is used as a session identifier will get leaked to anyone having access to the URLs accessed by the user. This will give an attacker full access to a user's account and, in consequence, to all sensitive files the user has access to. This issue has been patched in version 2.33.9.",
+    "published": "2025-06-30T20:15:25.390",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2025-52996": {
+    "url": "https://github.com/filebrowser/filebrowser/issues/5239",
+    "cvss": 3.1,
+    "description": "File Browser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit files. In versions 2.32.0 and prior, the implementation of password protected links is error-prone, resulting in potential unprotected sharing of a file through a direct download link. This link can either be shared unknowingly by a user or discovered from various locations such as the browser history or the log of a proxy server used. At time of publication, no known patched versions are available.",
+    "published": "2025-06-30T20:15:25.690"
+  },
+  "CVE-2025-49520": {
+    "cvss": 8.8,
+    "description": "A flaw was found in Ansible Automation Platform\u2019s EDA component where user-supplied Git URLs are passed unsanitized to the git ls-remote command. This vulnerability allows an authenticated attacker to inject arguments and execute arbitrary commands on the EDA worker. In Kubernetes/OpenShift environments, this can lead to service account token theft and cluster access.",
+    "published": "2025-06-30T21:15:30.913",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-49521": {
+    "cvss": 8.8,
+    "description": "A flaw was found in the EDA component of the Ansible Automation Platform, where user-supplied Git branch or refspec values are evaluated as Jinja2 templates. This vulnerability allows authenticated users to inject expressions that execute commands or access sensitive files on the EDA worker. In OpenShift, it can lead to service account token theft.",
+    "published": "2025-06-30T21:15:31.063",
+    "keywords": "command,sensitive"
+  },
+  "CVE-2025-53095": {
+    "cvss": 9.6,
+    "description": "Sunshine is a self-hosted game stream host for Moonlight. Prior to version 2025.628.4510, the web UI of Sunshine lacks protection against Cross-Site Request Forgery (CSRF) attacks. This vulnerability allows an attacker to craft a malicious web page that, when visited by an authenticated user, can trigger unintended actions within the Sunshine application on behalf of that user. Specifically, since the application does OS command execution by design, this issue can be exploited to abuse the \"Command Preparations\" feature, enabling an attacker to inject arbitrary commands that will be executed with Administrator privileges when an application is launched. This issue has been patched in version 2025.628.4510.",
+    "published": "2025-07-01T02:15:22.563",
+    "keywords": "execution,command"
+  },
+  "CVE-2025-41648": {
+    "cvss": 9.8,
+    "description": "An unauthenticated remote attacker can bypass the login to the web application of the affected devices making it possible to access and change all available settings of the IndustrialPI.",
+    "published": "2025-07-01T08:15:23.280",
+    "keywords": "remote,unauthenticated,bypass"
+  },
+  "CVE-2025-41656": {
+    "cvss": 10.0,
+    "description": "An unauthenticated remote attacker can run arbitrary commands on the affected devices with high privileges because the authentication for the Node_RED server is not configured by default.",
+    "published": "2025-07-01T08:15:24.443",
+    "keywords": "remote,unauthenticated,authentication,command"
+  },
+  "CVE-2025-6952": {
+    "url": "https://github.com/open5gs/open5gs/commit/53e9e059ed96b940f7ddcd9a2b68cb512524d5db",
+    "cvss": 3.3,
+    "description": "A vulnerability, which was classified as problematic, has been found in Open5GS up to 2.7.5. This issue affects the function amf_state_operational of the file src/amf/amf-sm.c of the component AMF Service. The manipulation leads to reachable assertion. It is possible to launch the attack on the local host. The identifier of the patch is 53e9e059ed96b940f7ddcd9a2b68cb512524d5db. It is recommended to apply a patch to fix this issue.",
+    "published": "2025-07-01T12:15:24.343"
+  },
+  "CVE-2025-36582": {
+    "cvss": 4.8,
+    "description": "Dell NetWorker, versions 19.12.0.1 and prior, contains a Selection of Less-Secure Algorithm During Negotiation ('Algorithm Downgrade') vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Information disclosure.",
+    "published": "2025-07-01T14:15:37.300",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-37097": {
+    "cvss": 7.5,
+    "description": "A vulnerability in HPE Insight Remote Support (IRS) prior to v7.15.0.646 may allow an unauthenticated denial of service",
+    "published": "2025-07-01T14:15:38.537",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-6920": {
+    "cvss": 5.3,
+    "description": "A flaw was found in the authentication enforcement mechanism of a model inference API in ai-inference-server. All /v1/* endpoints are expected to enforce API key validation. However, the POST /invocations endpoint failed to do so, resulting in an authentication bypass. This vulnerability allows unauthorized users to access the same inference features available on protected endpoints, potentially exposing sensitive functionality or allowing unintended access to backend resources.",
+    "published": "2025-07-01T14:15:41.690",
+    "keywords": "authentication,sensitive,bypass"
+  },
+  "CVE-2025-34051": {
+    "cvss": "-",
+    "description": "A server-side request forgery vulnerability exists in multiple firmware versions of AVTECH DVR devices that exposes the /cgi-bin/nobody/Search.cgi?action=cgi_query endpoint without authentication. An attacker can manipulate the ip, port, and queryb64str parameters to make arbitrary HTTP requests from the DVR to internal or external systems, potentially exposing sensitive data or interacting with internal services.",
+    "published": "2025-07-01T15:15:23.467",
+    "keywords": "authentication,sensitive"
+  },
+  "CVE-2025-34052": {
+    "cvss": "-",
+    "description": "An unauthenticated information disclosure vulnerability exists in AVTECH IP cameras, DVRs, and NVRs via Machine.cgi?action=get_capability. Sensitive internal device information such as firmware version, MAC address, and codec support can be accessed without authentication.",
+    "published": "2025-07-01T15:15:23.623",
+    "keywords": "unauthenticated,authentication,sensitive"
+  },
+  "CVE-2025-34053": {
+    "cvss": "-",
+    "description": "An authentication bypass vulnerability exists in AVTECH IP camera, DVR, and NVR devices\u2019 streamd web server. The strstr() function is used to identify \".cab\" requests, allowing any URL containing \".cab\" to bypass authentication and access protected endpoints.",
+    "published": "2025-07-01T15:15:23.760",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-34054": {
+    "cvss": "-",
+    "description": "An unauthenticated command injection vulnerability exists in AVTECH DVR devices via Search.cgi?action=cgi_query. The use of wget without input sanitization allows attackers to inject shell commands through the username or queryb64str parameters, executing commands as root.",
+    "published": "2025-07-01T15:15:23.910",
+    "keywords": "unauthenticated,command"
+  },
+  "CVE-2025-34056": {
+    "cvss": "-",
+    "description": "An OS command injection vulnerability exists in AVTECH IP camera, DVR, and NVR devices via the PwdGrp.cgi endpoint, which handles user and group management operations. Authenticated users can supply input through the pwd or grp parameters, which are directly embedded into system commands without proper sanitation. This allows for the execution of arbitrary shell commands with root privileges.",
+    "published": "2025-07-01T15:15:24.203",
+    "keywords": "execution,command"
+  },
+  "CVE-2025-34058": {
+    "cvss": "-",
+    "description": "Hikvision Streaming Media Management Server v2.3.5 uses default credentials that allow remote attackers to authenticate and access restricted functionality. After authenticating with these credentials, an attacker can exploit an arbitrary file read vulnerability in the /systemLog/downFile.php endpoint via directory traversal in the fileName parameter. This exploit chain can enable unauthorized access to sensitive system files.",
+    "published": "2025-07-01T15:15:24.340",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-34059": {
+    "cvss": "-",
+    "description": "An SQL injection vulnerability exists in the Dahua Smart Cloud Gateway Registration Management Platform via the username parameter in the /index.php/User/doLogin endpoint. The application fails to properly sanitize user input, allowing unauthenticated attackers to inject arbitrary SQL statements and potentially disclose sensitive information.",
+    "published": "2025-07-01T15:15:24.477",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-34060": {
+    "cvss": "-",
+    "description": "A PHP objection injection vulnerability exists in the Monero Project\u2019s Laravel-based forum software due to unsafe handling of untrusted input in the /get/image/ endpoint. The application passes a user-supplied link parameter directly to file_get_contents() without validation. MIME type checks using PHP\u2019s finfo can be bypassed via crafted stream filter chains that prepend spoofed headers, allowing access to internal Laravel configuration files. An attacker can extract the APP_KEY from config/app.php, forge encrypted cookies, and trigger unsafe unserialize() calls, leading to reliable remote code execution.",
+    "published": "2025-07-01T15:15:24.620",
+    "keywords": "remote,execution,bypass"
+  },
+  "CVE-2025-34063": {
+    "cvss": "-",
+    "description": "A cryptographic authentication bypass vulnerability exists in OneLogin AD Connector prior to 6.1.5 due to the exposure of a tenant\u2019s SSO JWT signing key via the /api/adc/v4/configuration endpoint. An attacker in possession of the signing key can craft valid JWT tokens impersonating arbitrary users within a OneLogin tenant. The tokens allow authentication to the OneLogin SSO portal and all downstream applications federated via SAML or OIDC. This allows full unauthorized access across the victim\u2019s SaaS environment.",
+    "published": "2025-07-01T15:15:24.913",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-34064": {
+    "cvss": "-",
+    "description": "A cloud infrastructure misconfiguration in OneLogin AD Connector results in log data being sent to a hardcoded S3 bucket (onelogin-adc-logs-production) without validating bucket ownership. An attacker who registers this unclaimed bucket can begin receiving log files from other OneLogin tenants. These logs may contain sensitive data such as directory tokens, user metadata, and environment configuration. This enables cross-tenant leakage of secrets, potentially allowing JWT signing key recovery and user impersonation.",
+    "published": "2025-07-01T15:15:25.050",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2025-34065": {
+    "cvss": "-",
+    "description": "An authentication bypass vulnerability exists in AVTECH IP camera, DVR, and NVR devices\u2019 streamd web server. The strstr() function allows unauthenticated access to any request containing \"/nobody\" in the URL, bypassing login controls.",
+    "published": "2025-07-01T15:15:25.187",
+    "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2025-6297": {
+    "cvss": 8.2,
+    "description": "It was discovered that dpkg-deb does not properly sanitize directory permissions when extracting a control member into a temporary directory, which is\ndocumented as being a safe operation even on untrusted data. This may result in leaving temporary files behind on cleanup. Given automated and repeated execution of dpkg-deb commands on\nadversarial .deb packages or with well compressible files, placed\ninside a directory with permissions not allowing removal by a non-root\nuser, this can end up in a DoS scenario due to causing disk quota\nexhaustion or disk full conditions.",
+    "published": "2025-07-01T17:15:30.177",
+    "keywords": "execution,command"
+  },
+  "CVE-2025-34081": {
+    "cvss": "-",
+    "description": "The Contec Co.,Ltd. CONPROSYS HMI System (CHS) exposes a PHP phpinfo() debug page to unauthenticated users that may contain sensitive data useful for an attacker.This issue affects CONPROSYS HMI System (CHS): before 3.7.7.",
+    "published": "2025-07-01T18:15:24.627",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-37099": {
+    "cvss": 9.8,
+    "description": "A remote code execution vulnerability exists in HPE Insight Remote Support (IRS) prior to v7.15.0.646.",
+    "published": "2025-07-01T18:15:24.763",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-53107": {
+    "cvss": 7.5,
+    "description": "@cyanheads/git-mcp-server is an MCP server designed to interact with Git repositories. Prior to version 2.1.5, there is a command injection vulnerability caused by the unsanitized use of input parameters within a call to child_process.exec, enabling an attacker to inject arbitrary system commands. Successful exploitation can lead to remote code execution under the server process's privileges. The server constructs and executes shell commands using unvalidated user input directly within command-line strings. This introduces the possibility of shell metacharacter injection (|, >, &&, etc.). An MCP Client can be instructed to execute additional actions for example via indirect prompt injection when asked to read git logs. This issue has been patched in version 2.1.5.",
+    "published": "2025-07-01T18:15:25.990",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2025-52101": {
+    "cvss": "-",
+    "description": "linjiashop <=0.9 is vulnerable to Incorrect Access Control. When using the default-generated JWT authentication, attackers can bypass the authentication and retrieve the encrypted \"password\" and \"salt\". The password can then be obtained through brute-force cracking.",
+    "published": "2025-07-01T21:15:25.533",
+    "keywords": "authentication,bypass"
+  }
+}
