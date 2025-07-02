@@ -1,16 +1,4 @@
 {
-  "CVE-2025-6856": {
-    "url": "https://github.com/hdfgroup/hdf5/issues/5574",
-    "cvss": 3.3,
-    "description": "A vulnerability, which was classified as problematic, was found in HDF5 1.14.6. Affected is the function H5FL__reg_gc_list of the file src/H5FL.c. The manipulation leads to use after free. Attacking locally is a requirement. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-06-29T10:15:21.443"
-  },
-  "CVE-2025-6857": {
-    "url": "https://github.com/hdfgroup/hdf5/issues/5575",
-    "cvss": 3.3,
-    "description": "A vulnerability has been found in HDF5 1.14.6 and classified as problematic. Affected by this vulnerability is the function H5G__node_cmp3 of the file src/H5Gnode.c. The manipulation leads to stack-based buffer overflow. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-06-29T10:15:22.800"
-  },
   "CVE-2025-6858": {
     "url": "https://github.com/hdfgroup/hdf5/issues/5576",
     "cvss": 3.3,
@@ -322,5 +310,17 @@
     "description": "The misconfiguration in the sudoers configuration of the operating system in\n Infinera G42 version R6.1.3 allows low privileged OS users to \nread/write physical memory via devmem command line tool. \nThis could \nallow sensitive information disclosure, denial of service, and privilege \nescalation by tampering with kernel memory.\n\n\nDetails: The output of \"sudo -l\" reports the presence of \"devmem\" command \nexecutable as super user without using a password. This command allows \nto read and write an arbitrary memory area of the target device, \nspecifying an absolute address.",
     "published": "2025-07-02T09:15:25.117",
     "keywords": "command,sensitive"
+  },
+  "CVE-2025-27023": {
+    "cvss": 6.5,
+    "description": "Lack or insufficent input validation in WebGUI CLI web in Infinera G42 \nversion R6.1.3 allows remote authenticated users to read all OS files \nvia crafted CLI commands.\n\n\nDetails: The web interface based management of the Infinera G42 appliance enables the feature of\n executing a restricted set of commands. This feature \nalso offers the option to execute a script-file already present on the target\n device. When a non-script or incorrect file is specified, the content \nof the file is shown along with an error message. Due to an execution of the http service with a privileged user all files on the file system can be viewed this way.",
+    "published": "2025-07-02T10:15:22.540",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2025-4946": {
+    "cvss": 8.1,
+    "description": "The Vikinger theme for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the vikinger_delete_activity_media_ajax() function in all versions up to, and including, 1.9.32. This makes it possible for authenticated attackers, with Subscriber-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php). Note: Requires Vikinger Media plugin to be installed and active.",
+    "published": "2025-07-02T10:15:23.227",
+    "keywords": "remote,execution"
   }
 }
