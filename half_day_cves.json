@@ -460,5 +460,23 @@
     "description": "Git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to internals. When cloning a repository Git knows to optionally fetch a bundle advertised by the remote server, which allows the server-side to offload parts of the clone to a CDN. The Git client does not perform sufficient validation of the advertised bundles, which allows the remote side to perform protocol injection. This protocol injection can cause the client to write the fetched bundle to a location controlled by the adversary. The fetched content is fully controlled by the server, which can in the worst case lead to arbitrary code execution. The use of bundle URIs is not enabled by default and can be controlled by the bundle.heuristic config option. Some cases of the vulnerability require that the adversary is in control of where a repository will be cloned to. This either requires social engineering or a recursive clone with submodules. These cases can thus be avoided by disabling recursive clones. This vulnerability is fixed in v2.43.7, v2.44.4, v2.45.4, v2.46.4, v2.47.3, v2.48.2, v2.49.1, and v2.50.1.",
     "published": "2025-07-08T19:15:43.097",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2025-37103": {
+    "cvss": 9.8,
+    "description": "Hard-coded login credentials were found in HPE Networking Instant On  Access Points, allowing anyone with knowledge of it to bypass normal  device authentication. Successful exploitation could allow a remote  attacker to gain administrative access to the system.",
+    "published": "2025-07-08T20:15:26.033",
+    "keywords": "remote,authentication,bypass"
+  },
+  "CVE-2025-53355": {
+    "cvss": 7.5,
+    "description": "MCP Server Kubernetes is an MCP Server that can connect to a Kubernetes cluster and manage it. A command injection vulnerability exists in the mcp-server-kubernetes MCP Server. The vulnerability is caused by the unsanitized use of input parameters within a call to child_process.execSync, enabling an attacker to inject arbitrary system commands. Successful exploitation can lead to remote code execution under the server process's privileges. This vulnerability is fixed in 2.5.0.",
+    "published": "2025-07-08T20:15:30.020",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2025-7192": {
+    "cvss": 6.3,
+    "description": "A vulnerability was found in D-Link DIR-645 up to 1.05B01 and classified as critical. This issue affects the function ssdpcgi_main of the file /htdocs/cgibin of the component ssdpcgi. The manipulation leads to command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. This vulnerability only affects products that are no longer supported by the maintainer.",
+    "published": "2025-07-08T20:15:30.830",
+    "keywords": "remote,command"
   }
 }
