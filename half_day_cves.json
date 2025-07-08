@@ -1,10 +1,4 @@
 {
-  "CVE-2025-47227": {
-    "cvss": 7.5,
-    "description": "In the Production Environment extension in Netmake ScriptCase through 9.12.006 (23), the Administrator password reset mechanism is mishandled. Making both a GET and a POST request to login.php.is sufficient. An unauthenticated attacker can then bypass authentication via administrator account takeover.",
-    "published": "2025-07-05T03:15:30.470",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
   "CVE-2025-7074": {
     "url": "https://github.com/vercel/hyper/issues/8098",
     "cvss": 4.3,
@@ -298,5 +292,35 @@
     "description": "The iPublish System developed by Jhenggao has an Arbitrary File Reading vulnerability, allowing unauthenticated remote attackers to read arbitrary system file.",
     "published": "2025-07-08T02:15:22.367",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-20685": {
+    "cvss": "-",
+    "description": "In wlan AP driver, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00416226; Issue ID: MSV-3409.",
+    "published": "2025-07-08T03:15:27.833",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-20686": {
+    "cvss": "-",
+    "description": "In wlan AP driver, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00415570; Issue ID: MSV-3404.",
+    "published": "2025-07-08T03:15:27.987",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-20693": {
+    "cvss": "-",
+    "description": "In wlan STA driver, there is a possible out of bounds read due to an incorrect bounds check. This could lead to remote (proximal/adjacent) information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS09812521; Issue ID: MSV-3421.",
+    "published": "2025-07-08T03:15:29.100",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-20694": {
+    "cvss": "-",
+    "description": "In Bluetooth FW, there is a possible system crash due to an uncaught exception. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS09752821; Issue ID: MSV-3342.",
+    "published": "2025-07-08T03:15:29.250",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-20695": {
+    "cvss": "-",
+    "description": "In Bluetooth FW, there is a possible system crash due to an uncaught exception. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS09741871; Issue ID: MSV-3317.",
+    "published": "2025-07-08T03:15:29.433",
+    "keywords": "remote,execution"
   }
 }
