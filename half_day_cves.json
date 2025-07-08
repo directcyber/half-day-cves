@@ -288,25 +288,25 @@
     "keywords": "remote,unauthenticated"
   },
   "CVE-2025-20685": {
-    "cvss": 9.8,
+    "cvss": 8.8,
     "description": "In wlan AP driver, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00416226; Issue ID: MSV-3409.",
     "published": "2025-07-08T03:15:27.833",
     "keywords": "remote,execution"
   },
   "CVE-2025-20686": {
-    "cvss": 9.8,
+    "cvss": 8.8,
     "description": "In wlan AP driver, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00415570; Issue ID: MSV-3404.",
     "published": "2025-07-08T03:15:27.987",
     "keywords": "remote,execution"
   },
   "CVE-2025-20693": {
-    "cvss": "-",
+    "cvss": 6.5,
     "description": "In wlan STA driver, there is a possible out of bounds read due to an incorrect bounds check. This could lead to remote (proximal/adjacent) information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS09812521; Issue ID: MSV-3421.",
     "published": "2025-07-08T03:15:29.100",
     "keywords": "remote,execution"
   },
   "CVE-2025-20694": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "In Bluetooth FW, there is a possible system crash due to an uncaught exception. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS09752821; Issue ID: MSV-3342.",
     "published": "2025-07-08T03:15:29.250",
     "keywords": "remote,execution"
@@ -376,5 +376,29 @@
     "description": "A vulnerability has been identified in SINEC NMS (All versions < V4.0). The affected devices are vulnerable to SQL injection. This could allow an unauthenticated remote attacker to execute arbitrary SQL queries on the server database.",
     "published": "2025-07-08T11:15:29.657",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-29267": {
+    "cvss": "-",
+    "description": "SQL Injection vulnerability in Abis, Inc Adjutant Core Accounting ERP build v.PreBeta250F allows a remote attacker to obtain a sensitive information via the cid parameter in the GET request.",
+    "published": "2025-07-08T15:15:26.827",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-53372": {
+    "cvss": 7.5,
+    "description": "node-code-sandbox-mcp is a Node.js\u2013based Model Context Protocol server that spins up disposable Docker containers to execute arbitrary JavaScript. Prior to 1.3.0, a command injection vulnerability exists in the node-code-sandbox-mcp MCP Server. The vulnerability is caused by the unsanitized use of input parameters within a call to child_process.execSync, enabling an attacker to inject arbitrary system commands. Successful exploitation can lead to remote code execution under the server process's privileges on the host machine, bypassing the sandbox protection of running code inside docker. This vulnerability is fixed in 1.3.0.",
+    "published": "2025-07-08T15:15:29.560",
+    "keywords": "remote,execution,command,bypass"
+  },
+  "CVE-2025-6770": {
+    "cvss": 7.2,
+    "description": "OS command injection in Ivanti Endpoint Manager Mobile (EPMM) before version 12.5.0.2 allows a remote authenticated attacker with high privileges to achieve remote code execution",
+    "published": "2025-07-08T15:15:33.287",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2025-6771": {
+    "cvss": 7.2,
+    "description": "OS command injection in Ivanti Endpoint Manager Mobile (EPMM) before version 12.5.0.2,12.4.0.3  and 12.3.0.3 allows a remote authenticated attacker with high privileges to achieve remote code execution",
+    "published": "2025-07-08T16:15:58.703",
+    "keywords": "remote,execution,command"
   }
 }
