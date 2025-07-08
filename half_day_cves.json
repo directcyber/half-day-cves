@@ -378,7 +378,7 @@
     "keywords": "remote,unauthenticated"
   },
   "CVE-2025-29267": {
-    "cvss": "-",
+    "cvss": 6.5,
     "description": "SQL Injection vulnerability in Abis, Inc Adjutant Core Accounting ERP build v.PreBeta250F allows a remote attacker to obtain a sensitive information via the cid parameter in the GET request.",
     "published": "2025-07-08T15:15:26.827",
     "keywords": "remote,sensitive"
@@ -478,5 +478,29 @@
     "description": "A vulnerability was found in D-Link DIR-645 up to 1.05B01 and classified as critical. This issue affects the function ssdpcgi_main of the file /htdocs/cgibin of the component ssdpcgi. The manipulation leads to command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. This vulnerability only affects products that are no longer supported by the maintainer.",
     "published": "2025-07-08T20:15:30.830",
     "keywords": "remote,command"
+  },
+  "CVE-2025-49535": {
+    "cvss": 9.3,
+    "description": "ColdFusion versions 2025.2, 2023.14, 2021.20 and earlier are affected by an Improper Restriction of XML External Entity Reference ('XXE') vulnerability that could result in a Security feature bypass. An attacker could exploit this vulnerability to access sensitive information or denial of service by bypassing security measures. Exploitation of this issue does not require user interaction and scope is changed. The vulnerable component is restricted to internal IP addresses.",
+    "published": "2025-07-08T21:15:26.113",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2025-49537": {
+    "cvss": 7.9,
+    "description": "ColdFusion versions 2025.2, 2023.14, 2021.20 and earlier are affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could lead to arbitrary code execution by a high-privileged attacker. Exploitation of this issue requires user interaction and scope is changed. The vulnerable component is restricted to internal IP addresses.",
+    "published": "2025-07-08T21:15:26.437",
+    "keywords": "execution,command"
+  },
+  "CVE-2025-49539": {
+    "cvss": 4.5,
+    "description": "ColdFusion versions 2025.2, 2023.14, 2021.20 and earlier are affected by an Improper Restriction of XML External Entity Reference ('XXE') vulnerability that could result in a security feature bypass. A high-privileged attacker could leverage this vulnerability to access sensitive information. Exploitation of this issue does not require user interaction. The vulnerable component is restricted to internal IP addresses.",
+    "published": "2025-07-08T21:15:26.757",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2025-49544": {
+    "cvss": 6.8,
+    "description": "ColdFusion versions 2025.2, 2023.14, 2021.20 and earlier are affected by an Improper Restriction of XML External Entity Reference ('XXE') vulnerability that could result in a Security feature bypass. A high-privileged attacker could leverage this vulnerability to access sensitive information or bypass security measures. Exploitation of this issue does not require user interaction and scope is changed.",
+    "published": "2025-07-08T21:15:27.520",
+    "keywords": "sensitive,bypass"
   }
 }
