@@ -328,5 +328,47 @@
     "description": "The Widget for Google Reviews plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 1.0.15 via the layout parameter. This makes it possible for authenticated attackers, with Subscriber-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included. This is limited to just PHP files.",
     "published": "2025-07-08T06:15:24.730",
     "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2025-24002": {
+    "cvss": 5.3,
+    "description": "An unauthenticated remote attacker can use MQTT messages to crash a service on charging stations complying with German Calibration Law, resulting in a temporary denial-of-service for these stations until they got restarted by the watchdog.",
+    "published": "2025-07-08T07:15:23.473",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-24003": {
+    "cvss": 8.2,
+    "description": "An unauthenticated remote attacker can use MQTT messages to trigger out-of-bounds writes in charging stations complying with German Calibration Law, resulting in a loss of integrity for only EichrechtAgents and potential denial-of-service for these stations.",
+    "published": "2025-07-08T07:15:23.943",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-25268": {
+    "cvss": 8.8,
+    "description": "An unauthenticated adjacent attacker can modify configuration by sending specific requests to an API-endpoint resulting in read and write access due to missing authentication.",
+    "published": "2025-07-08T07:15:24.693",
+    "keywords": "unauthenticated,authentication"
+  },
+  "CVE-2025-25269": {
+    "cvss": 8.4,
+    "description": "An unauthenticated local attacker can inject a command that is subsequently executed as root, leading to a privilege escalation.",
+    "published": "2025-07-08T07:15:24.890",
+    "keywords": "unauthenticated,command"
+  },
+  "CVE-2025-25270": {
+    "cvss": 9.8,
+    "description": "An unauthenticated remote attacker can alter the device configuration in a way to get remote code execution as root with specific configurations.",
+    "published": "2025-07-08T07:15:25.080",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-6746": {
+    "cvss": 8.8,
+    "description": "The WoodMart plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 8.2.3 via the 'layout' attribute. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary .php files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where .php files can be uploaded and included.",
+    "published": "2025-07-08T07:15:26.587",
+    "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2025-7346": {
+    "cvss": "-",
+    "description": "Any unauthenticated attacker can bypass the localhost \nrestrictions posed by the application and utilize this to create \narbitrary packages",
+    "published": "2025-07-08T07:15:27.220",
+    "keywords": "unauthenticated,bypass"
   }
 }
