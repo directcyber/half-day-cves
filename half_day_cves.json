@@ -91,7 +91,7 @@
   },
   "CVE-2025-43930": {
     "url": "https://github.com/hashview/hashview/issues/145",
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "Hashview 0.8.1 allows account takeover via the password reset feature because SERVER_NAME is not configured and thus a reset depends on the Host HTTP header.",
     "published": "2025-07-07T15:15:26.733"
   },
@@ -211,13 +211,13 @@
   },
   "CVE-2025-43932": {
     "url": "https://github.com/guomaoqiu/jobcenter/issues/18",
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "JobCenter through 7e7b0b2 allows account takeover via the password reset feature because SERVER_NAME is not configured and thus a reset depends on the Host HTTP header.",
     "published": "2025-07-07T16:15:23.380"
   },
   "CVE-2025-43933": {
     "url": "https://github.com/ghost123gg/fblog/issues/5",
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "fblog through 983bede allows account takeover via the password reset feature because SERVER_NAME is not configured and thus a reset depends on the Host HTTP header.",
     "published": "2025-07-07T16:15:23.513"
   },
@@ -400,5 +400,53 @@
     "description": "OS command injection in Ivanti Endpoint Manager Mobile (EPMM) before version 12.5.0.2,12.4.0.3  and 12.3.0.3 allows a remote authenticated attacker with high privileges to achieve remote code execution",
     "published": "2025-07-08T16:15:58.703",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2025-21167": {
+    "cvss": 5.5,
+    "description": "Substance3D - Designer versions 14.1 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2025-07-08T17:15:32.630",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2025-21168": {
+    "cvss": 5.5,
+    "description": "Substance3D - Designer versions 14.1 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2025-07-08T17:15:32.837",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2025-43587": {
+    "cvss": 5.5,
+    "description": "After Effects versions 25.2, 24.6.6 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2025-07-08T17:15:36.137",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2025-48814": {
+    "cvss": 7.5,
+    "description": "Missing authentication for critical function in Windows Remote Desktop Licensing Service allows an unauthorized attacker to bypass a security feature over a network.",
+    "published": "2025-07-08T17:15:45.220",
+    "keywords": "remote,authentication,bypass"
+  },
+  "CVE-2025-49671": {
+    "cvss": 6.5,
+    "description": "Exposure of sensitive information to an unauthorized actor in Windows Routing and Remote Access Service (RRAS) allows an unauthorized attacker to disclose information over a network.",
+    "published": "2025-07-08T17:15:50.933",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-0928": {
+    "cvss": 8.8,
+    "description": "In Juju versions prior to 3.6.8 and 2.9.52, any authenticated controller user was allowed to upload arbitrary agent binaries to any model or to the controller itself, without verifying model membership or requiring explicit permissions. This enabled the distribution of poisoned binaries to new or upgraded machines, potentially resulting in remote code execution.",
+    "published": "2025-07-08T18:15:26.767",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-47135": {
+    "cvss": 5.5,
+    "description": "Dimension versions 4.1.2 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+    "published": "2025-07-08T18:15:29.440",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2025-4663": {
+    "cvss": "-",
+    "description": "An Improper Check for Unusual or \nExceptional Conditions vulnerability in Brocade Fabric OS before 9.2.2.a\n could allow an authenticated, network-based attacker to cause a \nDenial-of-Service (DoS).\nThe\n vulnerability is encountered when supportsave is invoked remotely, \nusing ssh command or SANnav inline ssh, and the corresponding ssh \nsession is terminated with Control C (^c ) before supportsave \ncompletion.\nThis issue affects Brocade Fabric OS 9.0.0 through 9.2.2",
+    "published": "2025-07-08T18:15:39.507",
+    "keywords": "remote,command"
   }
 }
