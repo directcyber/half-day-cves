@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-07-08T19:11:03.720890
+Updated at UTC 2025-07-08T20:15:02.171064
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2025-07-08T19:11:03.720890
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -290,6 +294,28 @@ Updated at UTC 2025-07-08T19:11:03.720890
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-48385">CVE-2025-48385</a></td>
+					<td>-</td>
+					<td>remote,execution,command</td>
+					<td class=date>2025-07-08T19:15:43.097</td>
+					<td class=description>Git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to internals. When cloning a repository Git knows to optionally fetch a bundle advertised by the remote server, which allows the server-side to offload parts of the clone to a CDN. The Git client does not perform sufficient validation of the advertised bundles, which allows the remote side to perform protocol injection. This protocol injection can cause the client to write the fetched bundle to a location controlled by the adversary. The fetched content is fully controlled by the server, which can in the worst case lead to arbitrary code execution. The use of bundle URIs is not enabled by default and can be controlled by the bundle.heuristic config option. Some cases of the vulnerability require that the adversary is in control of where a repository will be cloned to. This either requires social engineering or a recursive clone with submodules. These cases can thus be avoided by disabling recursive clones. This vulnerability is fixed in v2.43.7, v2.44.4, v2.45.4, v2.46.4, v2.47.3, v2.48.2, v2.49.1, and v2.50.1.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-37102">CVE-2025-37102</a></td>
+					<td>7.2</td>
+					<td>remote,command</td>
+					<td class=date>2025-07-08T19:15:41.753</td>
+					<td class=description>An authenticated command injection vulnerability exists in the Command line interface of HPE Networking Instant On Access Points.  
+
+A successful exploitation could allow a remote attacker with elevated  privileges to execute arbitrary commands on the underlying operating system as a highly privileged user.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
