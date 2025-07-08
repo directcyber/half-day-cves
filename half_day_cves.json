@@ -322,5 +322,11 @@
     "description": "In Bluetooth FW, there is a possible system crash due to an uncaught exception. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS09741871; Issue ID: MSV-3317.",
     "published": "2025-07-08T03:15:29.433",
     "keywords": "remote,execution"
+  },
+  "CVE-2025-7327": {
+    "cvss": 8.8,
+    "description": "The Widget for Google Reviews plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 1.0.15 via the layout parameter. This makes it possible for authenticated attackers, with Subscriber-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included. This is limited to just PHP files.",
+    "published": "2025-07-08T06:15:24.730",
+    "keywords": "execution,sensitive,bypass"
   }
 }
