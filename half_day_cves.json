@@ -556,5 +556,11 @@
     "description": "mcp-remote is exposed to OS command injection when connecting to untrusted MCP servers due to crafted input from the authorization_endpoint response URL",
     "published": "2025-07-09T13:15:24.213",
     "keywords": "remote,command"
+  },
+  "CVE-2025-52364": {
+    "cvss": "-",
+    "description": "Insecure Permissions vulnerability in Tenda CP3 Pro Firmware V22.5.4.93 allows the telnet service (telnetd) by default at boot via the initialization script /etc/init.d/eth.sh. This allows remote attackers to connect to the device s shell over the network, potentially without authentication if default or weak credentials are present",
+    "published": "2025-07-09T15:15:24.650",
+    "keywords": "remote,authentication"
   }
 }
