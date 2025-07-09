@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-07-08T23:13:01.636955
+Updated at UTC 2025-07-09T01:05:03.526213
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2025-07-08T23:13:01.636955
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -308,6 +312,26 @@ Updated at UTC 2025-07-08T23:13:01.636955
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4855">CVE-2025-4855</a></td>
+					<td>9.8</td>
+					<td>unauthenticated,bypass</td>
+					<td class=date>2025-07-09T00:15:47.243</td>
+					<td class=description>The Support Board plugin for WordPress is vulnerable to unauthorized access/modification/deletion of data due to use of hardcoded default secrets in the sb_encryption() function in all versions up to, and including, 3.8.0. This makes it possible for unauthenticated attackers to bypass authorization and execute arbitrary AJAX actions defined in the sb_ajax_execute() function. An attacker can use this vulnerability to exploit CVE-2025-4828 and various other functions unauthenticated.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4828">CVE-2025-4828</a></td>
+					<td>9.8</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2025-07-09T00:15:47.077</td>
+					<td class=description>The Support Board plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the sb_file_delete function in all versions up to, and including, 3.8.0. This makes it possible for attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php). An attacker can leverage CVE-2025-4855 vulnerability to exploit this vulnerability unauthenticated.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
