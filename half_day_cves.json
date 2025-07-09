@@ -568,5 +568,11 @@
     "description": "Zimbra Collaboration Suite (ZCS) before 9.0.0 Patch 46, 10.0.x before 10.0.15, and 10.1.x before 10.1.9 is vulnerable to a denial of service condition due to improper handling of excessive, comma-separated path segments in both the Webmail interface and the Admin Console. An unauthenticated remote attacker can send specially crafted GET requests that trigger redundant processing and inflated responses. This leads to uncontrolled resource consumption, resulting in denial of service.",
     "published": "2025-07-09T17:15:31.297",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-36599": {
+    "cvss": 4.3,
+    "description": "Dell PowerFlex Manager VM, versions prior to 4.6.2.1, contains an Insertion of Sensitive Information into Log File vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to the disclosure of certain user credentials. The attacker may be able to use the exposed credentials to access the system with privileges of the compromised account.",
+    "published": "2025-07-09T19:15:24.207",
+    "keywords": "remote,sensitive"
   }
 }
