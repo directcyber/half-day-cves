@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-07-09T16:14:45.858789
+Updated at UTC 2025-07-09T17:14:12.057199
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2025-07-09T16:14:45.858789
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -324,10 +326,18 @@ Updated at UTC 2025-07-09T16:14:45.858789
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-44177">CVE-2025-44177</a></td>
+					<td>-</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-07-09T16:15:23.427</td>
+					<td class=description>A directory traversal vulnerability was discovered in White Star Software Protop version 4.4.2-2024-11-27, specifically in the /pt3upd/ endpoint. An unauthenticated attacker can remotely read arbitrary files on the underlying OS using encoded traversal sequences.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -1247,16 +1257,6 @@ The specific flaw exists within the parsing of H266 sei messages. The issue resu
 					<td>remote,execution</td>
 					<td class=date>2025-07-06T23:15:21.777</td>
 					<td class=description>A critical deserialization vulnerability exists in the run-llama/llama_index library's JsonPickleSerializer component, affecting versions v0.12.27 through v0.12.40. This vulnerability allows remote code execution due to an insecure fallback to Python's pickle module. JsonPickleSerializer prioritizes deserialization using pickle.loads(), which can execute arbitrary code when processing untrusted data. Attackers can exploit this by crafting malicious payloads to achieve full system compromise. The root cause includes an insecure fallback mechanism, lack of validation or safeguards, misleading design, and violation of Python security guidelines.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-7083">CVE-2025-7083</a></td>
-					<td>6.3</td>
-					<td>remote,command</td>
-					<td class=date>2025-07-06T16:15:27.780</td>
-					<td class=description>A vulnerability was found in Belkin F9K1122 1.00.33. It has been classified as critical. This affects the function mp of the file /goform/mp of the component webs. The manipulation of the argument command leads to os command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
 				</tr>
 			
 		
