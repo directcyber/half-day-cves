@@ -552,13 +552,13 @@
     "keywords": "remote,command"
   },
   "CVE-2025-52364": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "Insecure Permissions vulnerability in Tenda CP3 Pro Firmware V22.5.4.93 allows the telnet service (telnetd) by default at boot via the initialization script /etc/init.d/eth.sh. This allows remote attackers to connect to the device s shell over the network, potentially without authentication if default or weak credentials are present",
     "published": "2025-07-09T15:15:24.650",
     "keywords": "remote,authentication"
   },
   "CVE-2025-44177": {
-    "cvss": "-",
+    "cvss": 8.2,
     "description": "A directory traversal vulnerability was discovered in White Star Software Protop version 4.4.2-2024-11-27, specifically in the /pt3upd/ endpoint. An unauthenticated attacker can remotely read arbitrary files on the underlying OS using encoded traversal sequences.",
     "published": "2025-07-09T16:15:23.427",
     "keywords": "remote,unauthenticated"
@@ -574,5 +574,17 @@
     "description": "Dell PowerFlex Manager VM, versions prior to 4.6.2.1, contains an Insertion of Sensitive Information into Log File vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to the disclosure of certain user credentials. The attacker may be able to use the exposed credentials to access the system with privileges of the compromised account.",
     "published": "2025-07-09T19:15:24.207",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2025-6376": {
+    "cvss": "-",
+    "description": "A remote\ncode execution security issue exists in the Rockwell Automation\u00a0Arena\u00ae.\u00a0\u00a0A crafted DOE\nfile can force Arena Simulation to write beyond the boundaries of an allocated\nobject. Exploitation\nrequires user interaction, such as opening a malicious file within the software.\nIf exploited, a threat actor could execute arbitrary code on the target system.\nThe software must run under the context of the administrator in order to cause\nworse case impact. This is reflected in the Rockwell CVSS score, as AT:P.",
+    "published": "2025-07-09T21:15:28.423",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-6377": {
+    "cvss": "-",
+    "description": "A remote\ncode execution security issue exists in the Rockwell Automation\u00a0Arena\u00ae.\u00a0\u00a0A crafted DOE\nfile can force Arena Simulation to write beyond the boundaries of an allocated\nobject. Exploitation\nrequires user interaction, such as opening a malicious file within the software.\nIf exploited, a threat actor could execute arbitrary code on the target system.\nThe software must run under the context of the administrator in order to cause\nworse case impact. This is reflected in the Rockwell CVSS score, as AT:P.",
+    "published": "2025-07-09T21:15:28.620",
+    "keywords": "remote,execution"
   }
 }
