@@ -1,28 +1,4 @@
 {
-  "CVE-2025-53532": {
-    "url": "https://github.com/giscus/giscus/commit/c43af7806e65adfcf4d0feeebef76dc36c95cb9a",
-    "cvss": 5.3,
-    "description": "giscus is a commenting system powered by GitHub Discussions. A bug in giscus' discussions creation API allowed an unauthorized user to create discussions on any repository where giscus is installed. This affects the server-side part of giscus, which is provided via http://giscus.app or your own self-hosted service. This vulnerability is fixed by the c43af7806e65adfcf4d0feeebef76dc36c95cb9a and 4b9745fe1a326ce08d69f8a388331bc993d19389 commits.",
-    "published": "2025-07-07T17:15:30.533"
-  },
-  "CVE-2025-20319": {
-    "cvss": 6.8,
-    "description": "In Splunk Enterprise versions below 9.4.3, 9.3.5, 9.2.7, and 9.1.10, a user who holds a role that contains the high-privilege capability `edit_scripted` and `list_inputs` capability , could perform a remote command execution due to improper user input sanitization on the scripted input files.<br><br>See [Define roles on the Splunk platform with capabilities](https://docs.splunk.com/Documentation/Splunk/latest/Security/Rolesandcapabilities) and [Setting up a scripted input ](https://docs.splunk.com/Documentation/Splunk/9.4.2/AdvancedDev/ScriptSetup)for more information.",
-    "published": "2025-07-07T18:15:25.830",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2025-20322": {
-    "cvss": 4.3,
-    "description": "In Splunk Enterprise versions below 9.4.3, 9.3.5, 9.2.7, and 9.1.10, and Splunk Cloud Platform versions below 9.3.2411.104, 9.3.2408.113, and 9.2.2406.119, an unauthenticated attacker could send a specially-crafted SPL search command that could trigger a rolling restart in the Search Head Cluster through a Cross-Site Request Forgery (CSRF), potentially leading to a denial of service (DoS).<br><br>The vulnerability requires the attacker to phish the administrator-level victim by tricking them into initiating a request within their browser. The attacker should not be able to exploit the vulnerability at will.<br><br>See [How rolling restart works](https://docs.splunk.com/Documentation/Splunk/9.4.2/DistSearch/RestartSHC) for more information.",
-    "published": "2025-07-07T18:15:26.307",
-    "keywords": "unauthenticated,command"
-  },
-  "CVE-2025-53536": {
-    "cvss": 8.1,
-    "description": "Roo Code is an AI-powered autonomous coding agent. Prior to 3.22.6, if the victim had \"Write\" auto-approved, an attacker with the ability to submit prompts to the agent could write to VS Code settings files and trigger code execution. There were multiple ways to achieve that. One example is with the php.validate.executablePath setting which lets you set the path for the php executable for syntax validation. The attacker could have written the path to an arbitrary command there and then created a php file to trigger it. This vulnerability is fixed in 3.22.6.",
-    "published": "2025-07-07T18:15:28.980",
-    "keywords": "execution,command"
-  },
   "CVE-2025-53540": {
     "cvss": "-",
     "description": "arduino-esp32 is an Arduino core for the ESP32, ESP32-S2, ESP32-S3, ESP32-C3, ESP32-C6 and ESP32-H2 microcontrollers. Several OTA update examples and the HTTPUpdateServer implementation are vulnerable to Cross-Site Request Forgery (CSRF). The update endpoints accept POST requests for firmware uploads without CSRF protection. This allows an attacker to upload and execute arbitrary firmware, resulting in remote code execution (RCE). This vulnerability is fixed in 3.2.1.",
@@ -412,5 +388,11 @@
     "description": "A vulnerability, which was classified as critical, was found in Netgear D6400 1.0.0.114. This affects an unknown part of the file diag.cgi. The manipulation of the argument host_name leads to os command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early and confirmed the existence of the vulnerability. They reacted very quickly, professional and kind. This vulnerability only affects products that are no longer supported by the maintainer.",
     "published": "2025-07-10T14:15:27.310",
     "keywords": "remote,command"
+  },
+  "CVE-2025-47812": {
+    "cvss": 10.0,
+    "description": "In Wing FTP Server before 7.4.4. the user and admin web interfaces mishandle '\\0' bytes, ultimately allowing injection of arbitrary Lua code into user session files. This can be used to execute arbitrary system commands with the privileges of the FTP service (root or SYSTEM by default). This is thus a remote code execution vulnerability that guarantees a total server compromise. This is also exploitable via anonymous FTP accounts.",
+    "published": "2025-07-10T17:15:47.210",
+    "keywords": "remote,execution,command"
   }
 }
