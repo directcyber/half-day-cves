@@ -1,16 +1,4 @@
 {
-  "CVE-2025-7107": {
-    "url": "https://github.com/simstudioai/sim/pull/437",
-    "cvss": 5.3,
-    "description": "A vulnerability classified as critical has been found in SimStudioAI sim up to 0.1.17. Affected is the function handleLocalFile of the file apps/sim/app/api/files/parse/route.ts. The manipulation of the argument filePath leads to path traversal. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The patch is identified as b2450530d1ddd0397a11001a72aa0fde401db16a. It is recommended to apply a patch to fix this issue.",
-    "published": "2025-07-07T03:15:30.363"
-  },
-  "CVE-2025-7145": {
-    "cvss": 7.2,
-    "description": "ThreatSonar Anti-Ransomware developed by TeamT5 has an OS Command Injection vulnerability, allowing remote attackers with product platform intermediate privileges to inject arbitrary OS commands and execute them on the server, thereby gaining administrative access to the remote host.",
-    "published": "2025-07-07T03:15:30.917",
-    "keywords": "remote,command"
-  },
   "CVE-2025-7115": {
     "cvss": 7.3,
     "description": "A vulnerability was found in rowboatlabs rowboat up to 8096eaf63b5a0732edd8f812bee05b78e214ee97. It has been rated as critical. Affected by this issue is the function PUT of the file apps/rowboat/app/api/uploads/[fileId]/route.ts of the component Session Handler. The manipulation of the argument params leads to missing authentication. The attack may be launched remotely. Continious delivery with rolling releases is used by this product. Therefore, no version details of affected nor updated releases are available. It is expected that this issue will be fixed in the near future.",
