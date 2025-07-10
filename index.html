@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-07-09T23:13:58.119031
+Updated at UTC 2025-07-10T01:05:02.933671
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2025-07-09T23:13:58.119031
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -330,12 +332,18 @@ Updated at UTC 2025-07-09T23:13:58.119031
 				</tr>
 			
 		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-6970">CVE-2025-6970</a></td>
+					<td>7.5</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2025-07-09T23:15:24.713</td>
+					<td class=description>The Events Manager – Calendar, Bookings, Tickets, and more! plugin for WordPress is vulnerable to time-based SQL Injection via the ‘orderby’ parameter in all versions up to, and including, 7.0.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -1300,26 +1308,6 @@ The specific flaw exists within the parsing of H266 sei messages. The issue resu
 				</tr>
 			
 		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-7097">CVE-2025-7097</a></td>
-					<td>8.1</td>
-					<td>remote,command</td>
-					<td class=date>2025-07-06T23:15:21.960</td>
-					<td class=description>A vulnerability, which was classified as critical, has been found in Comodo Internet Security Premium 12.3.4.8162. This issue affects some unknown processing of the file cis_update_x64.xml of the component Manifest File Handler. The manipulation of the argument binary/params leads to os command injection. The attack may be initiated remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-3108">CVE-2025-3108</a></td>
-					<td>5.0</td>
-					<td>remote,execution</td>
-					<td class=date>2025-07-06T23:15:21.777</td>
-					<td class=description>A critical deserialization vulnerability exists in the run-llama/llama_index library's JsonPickleSerializer component, affecting versions v0.12.27 through v0.12.40. This vulnerability allows remote code execution due to an insecure fallback to Python's pickle module. JsonPickleSerializer prioritizes deserialization using pickle.loads(), which can execute arbitrary code when processing untrusted data. Attackers can exploit this by crafting malicious payloads to achieve full system compromise. The root cause includes an insecure fallback mechanism, lack of validation or safeguards, misleading design, and violation of Python security guidelines.</td>
-				</tr>
 			
 		
 

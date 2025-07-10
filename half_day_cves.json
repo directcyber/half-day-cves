@@ -1,16 +1,4 @@
 {
-  "CVE-2025-3108": {
-    "cvss": 5.0,
-    "description": "A critical deserialization vulnerability exists in the run-llama/llama_index library's JsonPickleSerializer component, affecting versions v0.12.27 through v0.12.40. This vulnerability allows remote code execution due to an insecure fallback to Python's pickle module. JsonPickleSerializer prioritizes deserialization using pickle.loads(), which can execute arbitrary code when processing untrusted data. Attackers can exploit this by crafting malicious payloads to achieve full system compromise. The root cause includes an insecure fallback mechanism, lack of validation or safeguards, misleading design, and violation of Python security guidelines.",
-    "published": "2025-07-06T23:15:21.777",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-7097": {
-    "cvss": 8.1,
-    "description": "A vulnerability, which was classified as critical, has been found in Comodo Internet Security Premium 12.3.4.8162. This issue affects some unknown processing of the file cis_update_x64.xml of the component Manifest File Handler. The manipulation of the argument binary/params leads to os command injection. The attack may be initiated remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-07-06T23:15:21.960",
-    "keywords": "remote,command"
-  },
   "CVE-2025-7107": {
     "url": "https://github.com/simstudioai/sim/pull/437",
     "cvss": 5.3,
@@ -586,5 +574,11 @@
     "description": "A remote\ncode execution security issue exists in the Rockwell Automation\u00a0Arena\u00ae.\u00a0\u00a0A crafted DOE\nfile can force Arena Simulation to write beyond the boundaries of an allocated\nobject. Exploitation\nrequires user interaction, such as opening a malicious file within the software.\nIf exploited, a threat actor could execute arbitrary code on the target system.\nThe software must run under the context of the administrator in order to cause\nworse case impact. This is reflected in the Rockwell CVSS score, as AT:P.",
     "published": "2025-07-09T21:15:28.620",
     "keywords": "remote,execution"
+  },
+  "CVE-2025-6970": {
+    "cvss": 7.5,
+    "description": "The Events Manager \u2013 Calendar, Bookings, Tickets, and more! plugin for WordPress is vulnerable to time-based SQL Injection via the \u2018orderby\u2019 parameter in all versions up to, and including, 7.0.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2025-07-09T23:15:24.713",
+    "keywords": "unauthenticated,sensitive"
   }
 }
