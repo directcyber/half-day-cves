@@ -1,16 +1,4 @@
 {
-  "CVE-2025-5393": {
-    "cvss": 9.1,
-    "description": "The Alone \u2013 Charity Multipurpose Non-profit WordPress Theme theme for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the alone_import_pack_restore_data() function in all versions up to, and including, 7.8.3. This makes it possible for unauthenticated attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
-    "published": "2025-07-15T04:15:46.870",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2025-5394": {
-    "cvss": 9.8,
-    "description": "The Alone \u2013 Charity Multipurpose Non-profit WordPress Theme theme for WordPress is vulnerable to arbitrary file uploads due to a missing capability check on the alone_import_pack_install_plugin() function in all versions up to, and including, 7.8.3. This makes it possible for unauthenticated attackers to upload zip files containing webshells disguised as plugins from remote locations to achieve remote code execution.",
-    "published": "2025-07-15T04:15:55.200",
-    "keywords": "remote,execution,unauthenticated"
-  },
   "CVE-2025-7340": {
     "cvss": 9.8,
     "description": "The HT Contact Form Widget For Elementor Page Builder & Gutenberg Blocks & Form Builder. plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the temp_file_upload function in all versions up to, and including, 2.2.1. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
