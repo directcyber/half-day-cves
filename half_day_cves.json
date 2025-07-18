@@ -1,22 +1,4 @@
 {
-  "CVE-2025-7340": {
-    "cvss": 9.8,
-    "description": "The HT Contact Form Widget For Elementor Page Builder & Gutenberg Blocks & Form Builder. plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the temp_file_upload function in all versions up to, and including, 2.2.1. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2025-07-15T05:15:28.520",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2025-7341": {
-    "cvss": 9.8,
-    "description": "The HT Contact Form Widget For Elementor Page Builder & Gutenberg Blocks & Form Builder. plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the temp_file_delete() function in all versions up to, and including, 2.2.1. This makes it possible for unauthenticated attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
-    "published": "2025-07-15T05:15:29.883",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2025-7360": {
-    "cvss": 9.8,
-    "description": "The HT Contact Form Widget For Elementor Page Builder & Gutenberg Blocks & Form Builder. plugin for WordPress is vulnerable to arbitrary file moving due to insufficient file path validation in the handle_files_upload() function in all versions up to, and including, 2.2.1. This makes it possible for unauthenticated attackers to move arbitrary files on the server, which can easily lead to remote code execution when the right file is moved (such as wp-config.php).",
-    "published": "2025-07-15T05:15:30.070",
-    "keywords": "remote,execution,unauthenticated"
-  },
   "CVE-2025-3621": {
     "cvss": 9.6,
     "description": "Vulnerabilities* in ActADUR local server product, developed and maintained by ProTNS, allows Remote Code Inclusion on host systems.\u00a0\n\n\n* vulnerabilities:\n  *  \n\nImproper Neutralization of Special Elements used in a Command ('Command Injection')\n  *  Use of Hard-coded Credentials\n  *  Improper Authentication\n  *  Binding to an Unrestricted IP Address\n\n\n\nThe vulnerability has been rated as critical.This issue affects ActADUR: from v2.0.1.9 before v2.0.2.0., hence updating to version v2.0.2.0. or above is required.",
@@ -442,5 +424,11 @@
     "cvss": 4.3,
     "description": "A vulnerability, which was classified as problematic, was found in thinkgem JeeSite up to 5.12.0. Affected is an unknown function of the component Site Controller/SSO. The manipulation leads to open redirect. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The patch is identified as 3d06b8d009d0267f0255acc87ea19d29d07cedc3. It is recommended to apply a patch to fix this issue. Multiple endpoints are affected.",
     "published": "2025-07-17T23:15:23.217"
+  },
+  "CVE-2025-3740": {
+    "cvss": 8.8,
+    "description": "The School Management System for Wordpress plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 93.1.0 via the 'page' parameter. This makes it possible for authenticated attackers, with Subscriber-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included. The Local File Inclusion exploit can be chained to include various dashboard view files in the plugin. One such chain can be leveraged to update the password of Super Administrator accounts in Multisite environments making privilege escalation possible. The vendor has updated the version numbers beginning with `1.93.1 (02-07-2025)` for the patched version. This version comes after version 93.1.0.",
+    "published": "2025-07-18T05:15:30.033",
+    "keywords": "execution,sensitive,bypass"
   }
 }
