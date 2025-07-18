@@ -442,5 +442,11 @@
     "description": "The MasterStudy LMS Pro plugin for WordPress is vulnerable to arbitrary file uploads due to insufficient file type validation in the 'install_and_activate_plugin' function in all versions up to, and including, 4.7.9. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. The vulnerability is difficult to exploit due to timing requirements and environmental factors.",
     "published": "2025-07-18T07:15:24.913",
     "keywords": "remote,execution"
+  },
+  "CVE-2025-7444": {
+    "cvss": 9.8,
+    "description": "The LoginPress Pro plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 5.0.1. This is due to insufficient verification on the user being returned by the social login token. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email and the user does not have an already-existing account for the service returning the token.",
+    "published": "2025-07-18T09:15:27.333",
+    "keywords": "unauthenticated,authentication,bypass"
   }
 }
