@@ -1,10 +1,4 @@
 {
-  "CVE-2025-3621": {
-    "cvss": 9.6,
-    "description": "Vulnerabilities* in ActADUR local server product, developed and maintained by ProTNS, allows Remote Code Inclusion on host systems.\u00a0\n\n\n* vulnerabilities:\n  *  \n\nImproper Neutralization of Special Elements used in a Command ('Command Injection')\n  *  Use of Hard-coded Credentials\n  *  Improper Authentication\n  *  Binding to an Unrestricted IP Address\n\n\n\nThe vulnerability has been rated as critical.This issue affects ActADUR: from v2.0.1.9 before v2.0.2.0., hence updating to version v2.0.2.0. or above is required.",
-    "published": "2025-07-15T08:15:31.917",
-    "keywords": "remote,authentication,command"
-  },
   "CVE-2025-7667": {
     "cvss": 8.1,
     "description": "The Restrict File Access plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.1.2. This is due to missing or incorrect nonce validation on the 'restrict-file-access' page. This makes it possible for unauthenticated attackers to to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php), via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.",
