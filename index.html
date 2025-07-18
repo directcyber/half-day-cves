@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-07-10T19:10:59.518537
+Updated at UTC 2025-07-18T01:06:29.276747
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -59,44 +59,12 @@ Updated at UTC 2025-07-10T19:10:59.518537
 
 		
 			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
 				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-7209">CVE-2025-7209</a></td>
-					<td>3.3</td>
-					<td><a target=_blank href="https://github.com/9fans/plan9port/issues/711#issuecomment-2819905220">https://github.com/9fans/plan9port/issues/711#issuecomment-2819905220</a></td>
-					<td class=date>2025-07-09T01:15:50.773</td>
-					<td class=description>A vulnerability has been found in 9fans plan9port up to 9da5b44 and classified as problematic. Affected by this vulnerability is the function value_decode in the library src/libsec/port/x509.c. The manipulation leads to null pointer dereference. Local access is required to approach this attack. The exploit has been disclosed to the public and may be used. This product takes the approach of rolling releases to provide continious delivery. Therefore, version details for affected and updated releases are not available. The identifier of the patch is deae8939583d83fd798fca97665e0e94656c3ee8. It is recommended to apply a patch to fix this issue.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-7763">CVE-2025-7763</a></td>
+					<td>4.3</td>
+					<td><a target=_blank href="https://github.com/thinkgem/jeesite5/commit/3d06b8d009d0267f0255acc87ea19d29d07cedc3">https://github.com/thinkgem/jeesite5/commit/3d06b8d009d0267f0255acc87ea19d29d07cedc3</a></td>
+					<td class=date>2025-07-17T23:15:23.217</td>
+					<td class=description>A vulnerability, which was classified as problematic, was found in thinkgem JeeSite up to 5.12.0. Affected is an unknown function of the component Site Controller/SSO. The manipulation leads to open redirect. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The patch is identified as 3d06b8d009d0267f0255acc87ea19d29d07cedc3. It is recommended to apply a patch to fix this issue. Multiple endpoints are affected.</td>
 
 
 				</tr>
@@ -104,11 +72,11 @@ Updated at UTC 2025-07-10T19:10:59.518537
 		
 			
 				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-7208">CVE-2025-7208</a></td>
-					<td>5.5</td>
-					<td><a target=_blank href="https://github.com/9fans/plan9port/issues/710#issuecomment-2819906648">https://github.com/9fans/plan9port/issues/710#issuecomment-2819906648</a></td>
-					<td class=date>2025-07-09T01:15:50.573</td>
-					<td class=description>A vulnerability was found in 9fans plan9port up to 9da5b44. It has been classified as critical. This affects the function edump in the library /src/plan9port/src/libsec/port/x509.c. The manipulation leads to heap-based buffer overflow. The exploit has been disclosed to the public and may be used. This product takes the approach of rolling releases to provide continious delivery. Therefore, version details for affected and updated releases are not available. The identifier of the patch is b3e06559475b0130a7a2fb56ac4d131d13d2012f. It is recommended to apply a patch to fix this issue.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-7759">CVE-2025-7759</a></td>
+					<td>6.3</td>
+					<td><a target=_blank href="https://github.com/thinkgem/jeesite5/commit/1c5e49b0818037452148e0f8ff69ed04cb8fefdc">https://github.com/thinkgem/jeesite5/commit/1c5e49b0818037452148e0f8ff69ed04cb8fefdc</a></td>
+					<td class=date>2025-07-17T22:15:27.710</td>
+					<td class=description>A vulnerability, which was classified as critical, was found in thinkgem JeeSite up to 5.12.0. This affects an unknown part of the file modules/core/src/main/java/com/jeesite/common/ueditor/ActionEnter.java of the component UEditor Image Grabber. The manipulation of the argument Source leads to server-side request forgery. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of the patch is 1c5e49b0818037452148e0f8ff69ed04cb8fefdc. It is recommended to apply a patch to fix this issue.</td>
 
 
 				</tr>
@@ -166,6 +134,98 @@ Updated at UTC 2025-07-10T19:10:59.518537
 		
 			
 		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-53892">CVE-2025-53892</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/intlify/vue-i18n/pull/2229">https://github.com/intlify/vue-i18n/pull/2229</a></td>
+					<td class=date>2025-07-16T14:15:28.357</td>
+					<td class=description>Vue I18n is the internationalization plugin for Vue.js. The escapeParameterHtml: true option in Vue I18n is designed to protect against HTML/script injection by escaping interpolated parameters. However, starting in version 9.0.0 and prior to versions 9.14.5, 10.0.8, and 11.1.0, this setting fails to prevent execution of certain tag-based payloads, such as <img src=x onerror=...>, if the interpolated value is inserted inside an HTML context using v-html. This may lead to a DOM-based XSS vulnerability, even when using escapeParameterHtml: true, if a translation string includes minor HTML and is rendered via v-html. Versions 9.14.5, 10.0.8, and 11.1.0 contain a fix for the issue.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-53893">CVE-2025-53893</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/filebrowser/filebrowser/issues/5294">https://github.com/filebrowser/filebrowser/issues/5294</a></td>
+					<td class=date>2025-07-15T18:15:24.287</td>
+					<td class=description>File Browser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename, and edit files. In version 2.38.0, a Denial of Service (DoS) vulnerability exists in the file processing logic when reading a file on endpoint  `Filebrowser-Server-IP:PORT/files/{file-name}` . While the server correctly handles and stores uploaded files, it attempts to load the entire content into memory during read operations without size checks or resource limits. This allows an authenticated user to upload a large file and trigger uncontrolled memory consumption on read, potentially crashing the server and making it unresponsive. As of time of publication, no known patches are available.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-53826">CVE-2025-53826</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/filebrowser/filebrowser/issues/5216">https://github.com/filebrowser/filebrowser/issues/5216</a></td>
+					<td class=date>2025-07-15T18:15:24.127</td>
+					<td class=description>File Browser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename, and edit files. In version 2.39.0, File Browser’s authentication system issues long-lived JWT tokens that remain valid even after the user logs out. As of time of publication, no known patches exist.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26186">CVE-2025-26186</a></td>
+					<td>8.1</td>
+					<td><a target=_blank href="https://github.com/os4ed/opensis-classic/pull/330">https://github.com/os4ed/opensis-classic/pull/330</a></td>
+					<td class=date>2025-07-15T17:15:26.780</td>
+					<td class=description>SQL Injection vulnerability in openSIS v.9.1 allows a remote attacker to execute arbitrary code via the id parameter in Ajax.php</td>
+
+
+				</tr>
 			
 		
 			
@@ -214,748 +274,750 @@ Updated at UTC 2025-07-10T19:10:59.518537
 		<hr>
 		
 			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-47812">CVE-2025-47812</a></td>
-					<td>10.0</td>
-					<td>remote,execution,command</td>
-					<td class=date>2025-07-10T17:15:47.210</td>
-					<td class=description>In Wing FTP Server before 7.4.4. the user and admin web interfaces mishandle '\0' bytes, ultimately allowing injection of arbitrary Lua code into user session files. This can be used to execute arbitrary system commands with the privileges of the FTP service (root or SYSTEM by default). This is thus a remote code execution vulnerability that guarantees a total server compromise. This is also exploitable via anonymous FTP accounts.</td>
-				</tr>
+		
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-7407">CVE-2025-7407</a></td>
-					<td>6.3</td>
-					<td>remote,command</td>
-					<td class=date>2025-07-10T14:15:27.310</td>
-					<td class=description>A vulnerability, which was classified as critical, was found in Netgear D6400 1.0.0.114. This affects an unknown part of the file diag.cgi. The manipulation of the argument host_name leads to os command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early and confirmed the existence of the vulnerability. They reacted very quickly, professional and kind. This vulnerability only affects products that are no longer supported by the maintainer.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-38267">CVE-2025-38267</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-7397">CVE-2025-7397</a></td>
 					<td>-</td>
-					<td>command,bypass,leak</td>
-					<td class=date>2025-07-10T08:15:24.833</td>
-					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
-
-ring-buffer: Do not trigger WARN_ON() due to a commit_overrun
-
-When reading a memory mapped buffer the reader page is just swapped out
-with the last page written in the write buffer. If the reader page is the
-same as the commit buffer (the buffer that is currently being written to)
-it was assumed that it should never have missed events. If it does, it
-triggers a WARN_ON_ONCE().
-
-But there just happens to be one scenario where this can legitimately
-happen. That is on a commit_overrun. A commit overrun is when an interrupt
-preempts an event being written to the buffer and then the interrupt adds
-so many new events that it fills and wraps the buffer back to the commit.
-Any new events would then be dropped and be reported as "missed_events".
-
-In this case, the next page to read is the commit buffer and after the
-swap of the reader page, the reader page will be the commit buffer, but
-this time there will be missed events and this triggers the following
-warning:
-
- ------------[ cut here ]------------
- WARNING: CPU: 2 PID: 1127 at kernel/trace/ring_buffer.c:7357 ring_buffer_map_get_reader+0x49a/0x780
- Modules linked in: kvm_intel kvm irqbypass
- CPU: 2 UID: 0 PID: 1127 Comm: trace-cmd Not tainted 6.15.0-rc7-test-00004-g478bc2824b45-dirty #564 PREEMPT
- Hardware name: QEMU Standard PC (Q35 + ICH9, 2009), BIOS 1.16.3-debian-1.16.3-2 04/01/2014
- RIP: 0010:ring_buffer_map_get_reader+0x49a/0x780
- Code: 00 00 00 48 89 fe 48 c1 ee 03 80 3c 2e 00 0f 85 ec 01 00 00 4d 3b a6 a8 00 00 00 0f 85 8a fd ff ff 48 85 c0 0f 84 55 fe ff ff <0f> 0b e9 4e fe ff ff be 08 00 00 00 4c 89 54 24 58 48 89 54 24 50
- RSP: 0018:ffff888121787dc0 EFLAGS: 00010002
- RAX: 00000000000006a2 RBX: ffff888100062800 RCX: ffffffff8190cb49
- RDX: ffff888126934c00 RSI: 1ffff11020200a15 RDI: ffff8881010050a8
- RBP: dffffc0000000000 R08: 0000000000000000 R09: ffffed1024d26982
- R10: ffff888126934c17 R11: ffff8881010050a8 R12: ffff888126934c00
- R13: ffff8881010050b8 R14: ffff888101005000 R15: ffff888126930008
- FS:  00007f95c8cd7540(0000) GS:ffff8882b576e000(0000) knlGS:0000000000000000
- CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
- CR2: 00007f95c8de4dc0 CR3: 0000000128452002 CR4: 0000000000172ef0
- Call Trace:
-  <TASK>
-  ? __pfx_ring_buffer_map_get_reader+0x10/0x10
-  tracing_buffers_ioctl+0x283/0x370
-  __x64_sys_ioctl+0x134/0x190
-  do_syscall_64+0x79/0x1c0
-  entry_SYSCALL_64_after_hwframe+0x76/0x7e
- RIP: 0033:0x7f95c8de48db
- Code: 00 48 89 44 24 18 31 c0 48 8d 44 24 60 c7 04 24 10 00 00 00 48 89 44 24 08 48 8d 44 24 20 48 89 44 24 10 b8 10 00 00 00 0f 05 <89> c2 3d 00 f0 ff ff 77 1c 48 8b 44 24 18 64 48 2b 04 25 28 00 00
- RSP: 002b:00007ffe037ba110 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
- RAX: ffffffffffffffda RBX: 00007ffe037bb2b0 RCX: 00007f95c8de48db
- RDX: 0000000000000000 RSI: 0000000000005220 RDI: 0000000000000006
- RBP: 00007ffe037ba180 R08: 0000000000000000 R09: 0000000000000000
- R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
- R13: 00007ffe037bb6f8 R14: 00007f95c9065000 R15: 00005575c7492c90
-  </TASK>
- irq event stamp: 5080
- hardirqs last  enabled at (5079): [<ffffffff83e0adb0>] _raw_spin_unlock_irqrestore+0x50/0x70
- hardirqs last disabled at (5080): [<ffffffff83e0aa83>] _raw_spin_lock_irqsave+0x63/0x70
- softirqs last  enabled at (4182): [<ffffffff81516122>] handle_softirqs+0x552/0x710
- softirqs last disabled at (4159): [<ffffffff815163f7>] __irq_exit_rcu+0x107/0x210
- ---[ end trace 0000000000000000 ]---
-
-The above was triggered by running on a kernel with both lockdep and KASAN
-as well as kmemleak enabled and executing the following command:
-
- # perf record -o perf-test.dat -a -- trace-cmd record --nosplice  -e all -p function hackbench 50
-
-With perf interjecting a lot of interrupts and trace-cmd enabling all
-events as well as function tracing, with lockdep, KASAN and kmemleak
-enabled, it could cause an interrupt preempting an event being written to
-add enough event
----truncated---</td>
+					<td>command,sensitive</td>
+					<td class=date>2025-07-17T22:15:27.270</td>
+					<td class=description>A vulnerability in the ascgshell, of 
+Brocade ASCG before 3.3.0 stores any command executed in the Command 
+Line Interface (CLI) in plain text within the command history. A local 
+authenticated user that can access sensitive information like passwords 
+within the CLI history leading to unauthorized access and potential data
+ breaches.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-6970">CVE-2025-6970</a></td>
-					<td>7.5</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2025-07-09T23:15:24.713</td>
-					<td class=description>The Events Manager – Calendar, Bookings, Tickets, and more! plugin for WordPress is vulnerable to time-based SQL Injection via the ‘orderby’ parameter in all versions up to, and including, 7.0.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-23269">CVE-2025-23269</a></td>
+					<td>4.7</td>
+					<td>execution,sensitive</td>
+					<td class=date>2025-07-17T21:15:25.550</td>
+					<td class=description>NVIDIA Jetson Linux contains a vulnerability in the kernel where an attacker may cause an exposure of sensitive information due to a shared microarchitectural predictor state that influences transient execution. A successful exploit of this vulnerability may lead to information disclosure.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-6377">CVE-2025-6377</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-6249">CVE-2025-6249</a></td>
+					<td>6.7</td>
+					<td>authentication,bypass</td>
+					<td class=date>2025-07-17T20:15:32.040</td>
+					<td class=description>An authentication bypass vulnerability was reported in FileZ client application that could allow a local attacker with elevated permissions access to application data.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-3753">CVE-2025-3753</a></td>
+					<td>7.8</td>
+					<td>execution,command</td>
+					<td class=date>2025-07-17T20:15:29.683</td>
+					<td class=description>A code execution vulnerability has been identified in the Robot Operating System (ROS) 'rosbag' tool, affecting ROS distributions Noetic Ninjemys and earlier. The vulnerability arises from the use of the eval() function to process unsanitized, user-supplied input in the 'rosbag filter' command. This flaw enables attackers to craft and execute arbitrary Python code.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-23270">CVE-2025-23270</a></td>
+					<td>7.1</td>
+					<td>execution,sensitive</td>
+					<td class=date>2025-07-17T20:15:28.993</td>
+					<td class=description>NVIDIA Jetson Linux contains a vulnerability in UEFI Management mode, where an unprivileged local attacker may cause exposure of sensitive information via a side channel vulnerability. A successful exploit of this vulnerability might lead to code execution, data tampering, denial of service, and information disclosure.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-54068">CVE-2025-54068</a></td>
 					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2025-07-09T21:15:28.620</td>
-					<td class=description>A remote
-code execution security issue exists in the Rockwell Automation Arena®.  A crafted DOE
-file can force Arena Simulation to write beyond the boundaries of an allocated
-object. Exploitation
-requires user interaction, such as opening a malicious file within the software.
-If exploited, a threat actor could execute arbitrary code on the target system.
-The software must run under the context of the administrator in order to cause
-worse case impact. This is reflected in the Rockwell CVSS score, as AT:P.</td>
+					<td>remote,execution,unauthenticated,authentication,command</td>
+					<td class=date>2025-07-17T19:15:25.470</td>
+					<td class=description>Livewire is a full-stack framework for Laravel. In Livewire v3 up to and including v3.6.3, a vulnerability allows unauthenticated attackers to achieve remote command execution in specific scenarios. The issue stems from how certain component property updates are hydrated. This vulnerability is unique to Livewire v3 and does not affect prior major versions. Exploitation requires a component to be mounted and configured in a particular way, but does not require authentication or user interaction. This issue has been patched in Livewire v3.6.4. All users are strongly encouraged to upgrade to this version or later as soon as possible. No known workarounds are available.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-6376">CVE-2025-6376</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2025-07-09T21:15:28.423</td>
-					<td class=description>A remote
-code execution security issue exists in the Rockwell Automation Arena®.  A crafted DOE
-file can force Arena Simulation to write beyond the boundaries of an allocated
-object. Exploitation
-requires user interaction, such as opening a malicious file within the software.
-If exploited, a threat actor could execute arbitrary code on the target system.
-The software must run under the context of the administrator in order to cause
-worse case impact. This is reflected in the Rockwell CVSS score, as AT:P.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-36599">CVE-2025-36599</a></td>
-					<td>4.3</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-46102">CVE-2025-46102</a></td>
+					<td>5.4</td>
 					<td>remote,sensitive</td>
-					<td class=date>2025-07-09T19:15:24.207</td>
-					<td class=description>Dell PowerFlex Manager VM, versions prior to 4.6.2.1, contains an Insertion of Sensitive Information into Log File vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to the disclosure of certain user credentials. The attacker may be able to use the exposed credentials to access the system with privileges of the compromised account.</td>
+					<td class=date>2025-07-17T19:15:24.907</td>
+					<td class=description>Cross Site Scripting vulnerability in Beakon Software Beakon Learning Management System Sharable Content Object Reference Model (SCORM) version V.5.4.3 allows a remote attacker to obtain sensitive information via the URL parameter</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-53645">CVE-2025-53645</a></td>
-					<td>7.5</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2025-07-09T17:15:31.297</td>
-					<td class=description>Zimbra Collaboration Suite (ZCS) before 9.0.0 Patch 46, 10.0.x before 10.0.15, and 10.1.x before 10.1.9 is vulnerable to a denial of service condition due to improper handling of excessive, comma-separated path segments in both the Webmail interface and the Admin Console. An unauthenticated remote attacker can send specially crafted GET requests that trigger redundant processing and inflated responses. This leads to uncontrolled resource consumption, resulting in denial of service.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-53867">CVE-2025-53867</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2025-07-17T16:15:35.117</td>
+					<td class=description>Island Lake WebBatch before 2025C allows Remote Code Execution via a crafted URL.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-44177">CVE-2025-44177</a></td>
-					<td>8.2</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2025-07-09T16:15:23.427</td>
-					<td class=description>A directory traversal vulnerability was discovered in White Star Software Protop version 4.4.2-2024-11-27, specifically in the /pt3upd/ endpoint. An unauthenticated attacker can remotely read arbitrary files on the underlying OS using encoded traversal sequences.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-52364">CVE-2025-52364</a></td>
-					<td>7.5</td>
-					<td>remote,authentication</td>
-					<td class=date>2025-07-09T15:15:24.650</td>
-					<td class=description>Insecure Permissions vulnerability in Tenda CP3 Pro Firmware V22.5.4.93 allows the telnet service (telnetd) by default at boot via the initialization script /etc/init.d/eth.sh. This allows remote attackers to connect to the device s shell over the network, potentially without authentication if default or weak credentials are present</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-6514">CVE-2025-6514</a></td>
-					<td>9.6</td>
-					<td>remote,command</td>
-					<td class=date>2025-07-09T13:15:24.213</td>
-					<td class=description>mcp-remote is exposed to OS command injection when connecting to untrusted MCP servers due to crafted input from the authorization_endpoint response URL</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-3499">CVE-2025-3499</a></td>
-					<td>10.0</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-52046">CVE-2025-52046</a></td>
+					<td>-</td>
 					<td>unauthenticated,command</td>
-					<td class=date>2025-07-09T09:15:27.297</td>
-					<td class=description>The device has two web servers that expose unauthenticated REST APIs on the management network (TCP
-ports 8084 and 8086). Exploiting OS command injection through these APIs, an attacker can send arbitrary
-commands that are executed with administrative permissions by the underlying operating system.</td>
+					<td class=date>2025-07-17T16:15:35.020</td>
+					<td class=description>Totolink A3300R V17.0.0cu.596_B20250515 was found to contain a command injection vulnerability in the sub_4197C0 function via the mac and desc parameters. This vulnerability allows unauthenticated attackers to execute arbitrary commands via a crafted request.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-3498">CVE-2025-3498</a></td>
-					<td>9.9</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25257">CVE-2025-25257</a></td>
+					<td>9.8</td>
 					<td>unauthenticated,command</td>
-					<td class=date>2025-07-09T09:15:27.137</td>
-					<td class=description>An unauthenticated user with management network access can get and 
-modify the Radiflow iSAP Smart Collector (CentOS 7 - VSAP 1.20) 
-configuration. The device has two web servers that expose unauthenticated REST APIs on the management network (TCP
-ports 8084 and 8086). An attacker can use these APIs to get access to all system settings, modify the configuration
-and execute some commands (e.g., system reboot).</td>
+					<td class=date>2025-07-17T16:15:34.723</td>
+					<td class=description>An improper neutralization of special elements used in an SQL command ('SQL Injection') vulnerability [CWE-89] in Fortinet FortiWeb version 7.6.0 through 7.6.3, 7.4.0 through 7.4.7, 7.2.0 through 7.2.10 and below 7.0.10 allows an unauthenticated attacker to execute unauthorized SQL code or commands via crafted HTTP or HTTPs requests.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-27027">CVE-2025-27027</a></td>
-					<td>4.1</td>
-					<td>command,bypass</td>
-					<td class=date>2025-07-09T09:15:26.720</td>
-					<td class=description>A user with vpuser credentials that opens an SSH connection to the device, gets a restricted shell rbash that allows only a small list of allowed commands. This vulnerability enables the user to get a full-featured Linux shell, bypassing the rbash restrictions.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-53928">CVE-2025-53928</a></td>
+					<td>4.6</td>
+					<td>remote,execution,command</td>
+					<td class=date>2025-07-17T14:15:32.570</td>
+					<td class=description>MaxKB is an open-source AI assistant for enterprise. Prior to versions 1.10.9-lts and 2.0.0, a Remote Command Execution vulnerability exists in the MCP call. Versions 1.10.9-lts and 2.0.0 fix the issue.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-6742">CVE-2025-6742</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-53927">CVE-2025-53927</a></td>
+					<td>4.6</td>
+					<td>execution,command,bypass</td>
+					<td class=date>2025-07-17T14:15:32.403</td>
+					<td class=description>MaxKB is an open-source AI assistant for enterprise. Prior to version 2.0.0, the sandbox design rules can be bypassed because MaxKB only restricts the execution permissions of files in a specific directory. Therefore, an attacker can use the `shutil.copy2` method in Python to copy the command they want to execute to the executable directory. This bypasses directory restrictions and reverse shell. Version 2.0.0 fixes the issue.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-7735">CVE-2025-7735</a></td>
 					<td>7.5</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2025-07-09T06:15:25.220</td>
-					<td class=description>The SureForms – Drag and Drop Form Builder for WordPress plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.7.3 via the use of file_exists() in the delete_entry_files() function without restriction on the path provided. This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable software, which means this vulnerability has no impact unless another plugin or theme containing a POP chain is installed on the site. If a POP chain is present via an additional plugin or theme installed on the target system, it may allow the attacker to perform actions like delete arbitrary files, retrieve sensitive data, or execute code depending on the POP chain present.</td>
+					<td>remote,unauthenticated,command</td>
+					<td class=date>2025-07-17T04:15:54.550</td>
+					<td class=description>The Hospital Information System developed by UNIMAX has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL commands to read database contents.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-6691">CVE-2025-6691</a></td>
-					<td>8.1</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-7712">CVE-2025-7712</a></td>
+					<td>9.1</td>
 					<td>remote,execution,unauthenticated</td>
-					<td class=date>2025-07-09T06:15:23.567</td>
-					<td class=description>The SureForms – Drag and Drop Form Builder for WordPress plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the delete_entry_files() function in all versions up to, and including, 1.7.3. This makes it possible for unauthenticated attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).</td>
+					<td class=date>2025-07-17T03:15:26.427</td>
+					<td class=description>The Madara - Core plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the wp_manga_delete_zip() function in all versions up to, and including, 2.2.3. This makes it possible for unauthenticated attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).</td>
 				</tr>
 			
 		
 			
-		
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-5396">CVE-2025-5396</a></td>
+					<td>9.8</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2025-07-17T02:15:27.547</td>
+					<td class=description>The Bears Backup plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.0.0. This is due to the bbackup_ajax_handle() function not having a capability check, nor validating user supplied input passed directly to call_user_func(). This makes it possible for unauthenticated attackers to execute code on the server which can be leverage to inject backdoors or create new administrative user accounts to name a few things. On WordPress sites running the Alone theme versions 7.8.4 and older, this can be chained with CVE-2025-5394 to install the Bears Backup plugin and achieve the same impact.</td>
+				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34085">CVE-2025-34085</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34132">CVE-2025-34132</a></td>
+					<td>-</td>
+					<td>remote,command</td>
+					<td class=date>2025-07-16T22:15:24.823</td>
+					<td class=description>A command injection vulnerability exists in LILIN Digital Video Recorder (DVR) devices prior to firmware version 2.0b60_20200207 via the Server field in the NTPUpdate configuration. The web service at /z/zbin/dvr_box fails to properly sanitize input, allowing remote attackers to inject and execute arbitrary commands as root by supplying specially crafted XML data to the DVRPOST interface. 777</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34130">CVE-2025-34130</a></td>
+					<td>-</td>
+					<td>unauthenticated,command,sensitive</td>
+					<td class=date>2025-07-16T22:15:24.693</td>
+					<td class=description>An unauthenticated arbitrary file read exists in LILIN Digital Video Recorder (DVR) devices prior to firmware version 2.0b60_20200207 via the /z/zbin/net_html.cgi endpoint. This vulnerability allows attackers to read sensitive configuration files, such as /zconf/service.xml, which can then be used to facilitate further attacks including command injection. The vulnerability has been exploited in the wild in conjunction with other issues by botnets like FBot and Moobot.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34127">CVE-2025-34127</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2025-07-16T22:15:24.280</td>
+					<td class=description>A stack-based buffer overflow exists in Achat v0.150 in its default configuration. By sending a specially crafted message to the UDP port 9256, an attacker can overwrite the structured exception handler (SEH) due to insufficient bounds checking on user-supplied input leading to remote code execution.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34126">CVE-2025-34126</a></td>
+					<td>-</td>
+					<td>remote,sensitive</td>
+					<td class=date>2025-07-16T22:15:24.143</td>
+					<td class=description>A path traversal vulnerability exists in RIPS Scanner version 0.54. The vulnerability allows remote attackers to read arbitrary files on the system with the privileges of the web server by sending crafted HTTP GET requests to the 'windows/code.php' script with a manipulated 'file' parameter. This can lead to disclosure of sensitive information.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34125">CVE-2025-34125</a></td>
+					<td>-</td>
+					<td>remote,unauthenticated,command</td>
+					<td class=date>2025-07-16T22:15:24.003</td>
+					<td class=description>An unauthenticated command injection vulnerability exists in the cookie handling process of the lighttpd web server on D-Link DSP-W110A1 firmware version 1.05B01. This occurs when specially crafted cookie values are processed, allowing remote attackers to execute arbitrary commands on the underlying Linux operating system. Successful exploitation enables full system compromise.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34121">CVE-2025-34121</a></td>
 					<td>-</td>
 					<td>remote,execution,unauthenticated,bypass</td>
-					<td class=date>2025-07-09T01:15:50.233</td>
-					<td class=description>An unrestricted file upload vulnerability in the WordPress Simple File List plugin prior to version 4.2.3 allows unauthenticated remote attackers to achieve remote code execution. The plugin's upload endpoint (ee-upload-engine.php) restricts file uploads based on extension, but lacks proper validation after file renaming. An attacker can first upload a PHP payload disguised as a .png file, then use the plugin’s ee-file-engine.php rename functionality to change the extension to .php. This bypasses upload restrictions and results in the uploaded payload being executable on the server.</td>
+					<td class=date>2025-07-16T21:15:27.100</td>
+					<td class=description>An unauthenticated arbitrary file upload vulnerability exists in Idera Up.Time Monitoring Station versions up to and including 7.2. The `wizards/post2file.php` script accepts arbitrary POST parameters, allowing attackers to upload crafted PHP files to the webroot. Successful exploitation results in remote code execution as the web server user. NOTE: The bypass for this vulnerability is tracked as CVE-2015-9263.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34084">CVE-2025-34084</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34120">CVE-2025-34120</a></td>
 					<td>-</td>
-					<td>unauthenticated,authentication</td>
-					<td class=date>2025-07-09T01:15:50.087</td>
-					<td class=description>An unauthenticated information disclosure vulnerability exists in the WordPress Total Upkeep plugin (also known as BoldGrid Backup) prior to version 1.14.10. The plugin exposes multiple endpoints that allow unauthenticated users to retrieve detailed server configuration (env-info.php) and discover backup metadata (restore-info.json). These backups, which may include full SQL database dumps, are accessible without authentication if their paths are known or guessed. The restore-info.json endpoint discloses the absolute filesystem path of the latest backup, which attackers can convert into a web-accessible URL under wp-content/uploads/ and download. Extracting the database archive may yield credential hashes from the wp_users table, facilitating offline password cracking or credential stuffing attacks.</td>
+					<td>unauthenticated,authentication,sensitive</td>
+					<td class=date>2025-07-16T21:15:26.960</td>
+					<td class=description>An unauthenticated file download vulnerability exists in LimeSurvey versions from 2.0+ up to and including 2.06+ Build 151014. The application fails to validate serialized input to the admin backup endpoint (`index.php/admin/update/sa/backup`), allowing attackers to specify arbitrary file paths using a crafted `datasupdateinfo` payload. The files are packaged in a ZIP archive and made available for download without authentication. This vulnerability can be exploited to read arbitrary files on the host system, including sensitive OS and configuration files.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34077">CVE-2025-34077</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34119">CVE-2025-34119</a></td>
 					<td>-</td>
-					<td>remote,execution,unauthenticated,authentication,bypass</td>
-					<td class=date>2025-07-09T01:15:49.780</td>
-					<td class=description>An authentication bypass vulnerability exists in the WordPress Pie Register plugin ≤ 3.7.1.4 that allows unauthenticated attackers to impersonate arbitrary users by submitting a crafted POST request to the login endpoint. By setting social_site=true and manipulating the user_id_social_site parameter, an attacker can generate a valid WordPress session cookie for any user ID, including administrators. Once authenticated, the attacker may exploit plugin upload functionality to install a malicious plugin containing arbitrary PHP code, resulting in remote code execution on the underlying server.</td>
+					<td>remote,unauthenticated,authentication,sensitive</td>
+					<td class=date>2025-07-16T21:15:26.827</td>
+					<td class=description>A remote file disclosure vulnerability exists in EasyCafe Server 2.2.14, exploitable by unauthenticated remote attackers via TCP port 831. The server listens for a custom protocol where opcode 0x43 can be used to request arbitrary files by absolute path. If the file exists and is accessible, its content is returned without authentication. This flaw allows attackers to retrieve sensitive files such as system configuration, password files, or application data.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4855">CVE-2025-4855</a></td>
-					<td>9.8</td>
-					<td>unauthenticated,bypass</td>
-					<td class=date>2025-07-09T00:15:47.243</td>
-					<td class=description>The Support Board plugin for WordPress is vulnerable to unauthorized access/modification/deletion of data due to use of hardcoded default secrets in the sb_encryption() function in all versions up to, and including, 3.8.0. This makes it possible for unauthenticated attackers to bypass authorization and execute arbitrary AJAX actions defined in the sb_ajax_execute() function. An attacker can use this vulnerability to exploit CVE-2025-4828 and various other functions unauthenticated.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4828">CVE-2025-4828</a></td>
-					<td>9.8</td>
-					<td>remote,execution,unauthenticated</td>
-					<td class=date>2025-07-09T00:15:47.077</td>
-					<td class=description>The Support Board plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the sb_file_delete function in all versions up to, and including, 3.8.0. This makes it possible for attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php). An attacker can leverage CVE-2025-4855 vulnerability to exploit this vulnerability unauthenticated.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-49544">CVE-2025-49544</a></td>
-					<td>6.8</td>
-					<td>sensitive,bypass</td>
-					<td class=date>2025-07-08T21:15:27.520</td>
-					<td class=description>ColdFusion versions 2025.2, 2023.14, 2021.20 and earlier are affected by an Improper Restriction of XML External Entity Reference ('XXE') vulnerability that could result in a Security feature bypass. A high-privileged attacker could leverage this vulnerability to access sensitive information or bypass security measures. Exploitation of this issue does not require user interaction and scope is changed.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-49539">CVE-2025-49539</a></td>
-					<td>4.5</td>
-					<td>sensitive,bypass</td>
-					<td class=date>2025-07-08T21:15:26.757</td>
-					<td class=description>ColdFusion versions 2025.2, 2023.14, 2021.20 and earlier are affected by an Improper Restriction of XML External Entity Reference ('XXE') vulnerability that could result in a security feature bypass. A high-privileged attacker could leverage this vulnerability to access sensitive information. Exploitation of this issue does not require user interaction. The vulnerable component is restricted to internal IP addresses.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-49537">CVE-2025-49537</a></td>
-					<td>7.9</td>
-					<td>execution,command</td>
-					<td class=date>2025-07-08T21:15:26.437</td>
-					<td class=description>ColdFusion versions 2025.2, 2023.14, 2021.20 and earlier are affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could lead to arbitrary code execution by a high-privileged attacker. Exploitation of this issue requires user interaction and scope is changed. The vulnerable component is restricted to internal IP addresses.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-49535">CVE-2025-49535</a></td>
-					<td>9.3</td>
-					<td>sensitive,bypass</td>
-					<td class=date>2025-07-08T21:15:26.113</td>
-					<td class=description>ColdFusion versions 2025.2, 2023.14, 2021.20 and earlier are affected by an Improper Restriction of XML External Entity Reference ('XXE') vulnerability that could result in a Security feature bypass. An attacker could exploit this vulnerability to access sensitive information or denial of service by bypassing security measures. Exploitation of this issue does not require user interaction and scope is changed. The vulnerable component is restricted to internal IP addresses.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-7192">CVE-2025-7192</a></td>
-					<td>6.3</td>
-					<td>remote,command</td>
-					<td class=date>2025-07-08T20:15:30.830</td>
-					<td class=description>A vulnerability was found in D-Link DIR-645 up to 1.05B01 and classified as critical. This issue affects the function ssdpcgi_main of the file /htdocs/cgibin of the component ssdpcgi. The manipulation leads to command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. This vulnerability only affects products that are no longer supported by the maintainer.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-53355">CVE-2025-53355</a></td>
-					<td>7.5</td>
-					<td>remote,execution,command</td>
-					<td class=date>2025-07-08T20:15:30.020</td>
-					<td class=description>MCP Server Kubernetes is an MCP Server that can connect to a Kubernetes cluster and manage it. A command injection vulnerability exists in the mcp-server-kubernetes MCP Server. The vulnerability is caused by the unsanitized use of input parameters within a call to child_process.execSync, enabling an attacker to inject arbitrary system commands. Successful exploitation can lead to remote code execution under the server process's privileges. This vulnerability is fixed in 2.5.0.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-37103">CVE-2025-37103</a></td>
-					<td>9.8</td>
-					<td>remote,authentication,bypass</td>
-					<td class=date>2025-07-08T20:15:26.033</td>
-					<td class=description>Hard-coded login credentials were found in HPE Networking Instant On  Access Points, allowing anyone with knowledge of it to bypass normal  device authentication. Successful exploitation could allow a remote  attacker to gain administrative access to the system.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-48385">CVE-2025-48385</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34118">CVE-2025-34118</a></td>
 					<td>-</td>
-					<td>remote,execution,command</td>
-					<td class=date>2025-07-08T19:15:43.097</td>
-					<td class=description>Git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to internals. When cloning a repository Git knows to optionally fetch a bundle advertised by the remote server, which allows the server-side to offload parts of the clone to a CDN. The Git client does not perform sufficient validation of the advertised bundles, which allows the remote side to perform protocol injection. This protocol injection can cause the client to write the fetched bundle to a location controlled by the adversary. The fetched content is fully controlled by the server, which can in the worst case lead to arbitrary code execution. The use of bundle URIs is not enabled by default and can be controlled by the bundle.heuristic config option. Some cases of the vulnerability require that the adversary is in control of where a repository will be cloned to. This either requires social engineering or a recursive clone with submodules. These cases can thus be avoided by disabling recursive clones. This vulnerability is fixed in v2.43.7, v2.44.4, v2.45.4, v2.46.4, v2.47.3, v2.48.2, v2.49.1, and v2.50.1.</td>
+					<td>remote,unauthenticated,sensitive,bypass</td>
+					<td class=date>2025-07-16T21:15:26.697</td>
+					<td class=description>A path traversal vulnerability exists in Linknat VOS Manager versions prior to 2.1.9.07, including VOS2009 and early VOS3000 builds, that allows unauthenticated remote attackers to read arbitrary files on the server. The vulnerability is accessible via multiple localized subpaths such as '/eng/', '/chs/', or '/cht/', where the 'js/lang_en_us.js' or equivalent files are loaded. By injecting encoded traversal sequences such as '%c0%ae%c0%ae' into the request path, attackers can bypass input validation and disclose sensitive files.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-37102">CVE-2025-37102</a></td>
-					<td>7.2</td>
-					<td>remote,command</td>
-					<td class=date>2025-07-08T19:15:41.753</td>
-					<td class=description>An authenticated command injection vulnerability exists in the Command line interface of HPE Networking Instant On Access Points.  
-
-A successful exploitation could allow a remote attacker with elevated  privileges to execute arbitrary commands on the underlying operating system as a highly privileged user.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-4663">CVE-2025-4663</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34117">CVE-2025-34117</a></td>
 					<td>-</td>
-					<td>remote,command</td>
-					<td class=date>2025-07-08T18:15:39.507</td>
-					<td class=description>An Improper Check for Unusual or 
-Exceptional Conditions vulnerability in Brocade Fabric OS before 9.2.2.a
- could allow an authenticated, network-based attacker to cause a 
-Denial-of-Service (DoS).
-The
- vulnerability is encountered when supportsave is invoked remotely, 
-using ssh command or SANnav inline ssh, and the corresponding ssh 
-session is terminated with Control C (^c ) before supportsave 
-completion.
-This issue affects Brocade Fabric OS 9.0.0 through 9.2.2</td>
+					<td>remote,execution,unauthenticated,authentication,command</td>
+					<td class=date>2025-07-16T21:15:26.550</td>
+					<td class=description>A remote code execution vulnerability exists in multiple Netcore and Netis routers models with firmware released prior to August 2014 due to the presence of an undocumented backdoor listener on UDP port 53413. Exact version boundaries remain undocumented. An unauthenticated remote attacker can send specially crafted UDP packets to execute arbitrary commands on the affected device. This backdoor uses a hardcoded authentication mechanism and accepts shell commands post-authentication. Some device models include a non-standard implementation of the `echo` command, which may affect exploitability.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-47135">CVE-2025-47135</a></td>
-					<td>5.5</td>
-					<td>sensitive,bypass</td>
-					<td class=date>2025-07-08T18:15:29.440</td>
-					<td class=description>Dimension versions 4.1.2 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0928">CVE-2025-0928</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2025-07-08T18:15:26.767</td>
-					<td class=description>In Juju versions prior to 3.6.8 and 2.9.52, any authenticated controller user was allowed to upload arbitrary agent binaries to any model or to the controller itself, without verifying model membership or requiring explicit permissions. This enabled the distribution of poisoned binaries to new or upgraded machines, potentially resulting in remote code execution.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-49671">CVE-2025-49671</a></td>
-					<td>6.5</td>
-					<td>remote,sensitive</td>
-					<td class=date>2025-07-08T17:15:50.933</td>
-					<td class=description>Exposure of sensitive information to an unauthorized actor in Windows Routing and Remote Access Service (RRAS) allows an unauthorized attacker to disclose information over a network.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-48814">CVE-2025-48814</a></td>
-					<td>7.5</td>
-					<td>remote,authentication,bypass</td>
-					<td class=date>2025-07-08T17:15:45.220</td>
-					<td class=description>Missing authentication for critical function in Windows Remote Desktop Licensing Service allows an unauthorized attacker to bypass a security feature over a network.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-43587">CVE-2025-43587</a></td>
-					<td>5.5</td>
-					<td>sensitive,bypass</td>
-					<td class=date>2025-07-08T17:15:36.137</td>
-					<td class=description>After Effects versions 25.2, 24.6.6 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21168">CVE-2025-21168</a></td>
-					<td>5.5</td>
-					<td>sensitive,bypass</td>
-					<td class=date>2025-07-08T17:15:32.837</td>
-					<td class=description>Substance3D - Designer versions 14.1 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-21167">CVE-2025-21167</a></td>
-					<td>5.5</td>
-					<td>sensitive,bypass</td>
-					<td class=date>2025-07-08T17:15:32.630</td>
-					<td class=description>Substance3D - Designer versions 14.1 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-6771">CVE-2025-6771</a></td>
-					<td>7.2</td>
-					<td>remote,execution,command</td>
-					<td class=date>2025-07-08T16:15:58.703</td>
-					<td class=description>OS command injection in Ivanti Endpoint Manager Mobile (EPMM) before version 12.5.0.2,12.4.0.3  and 12.3.0.3 allows a remote authenticated attacker with high privileges to achieve remote code execution</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-6770">CVE-2025-6770</a></td>
-					<td>7.2</td>
-					<td>remote,execution,command</td>
-					<td class=date>2025-07-08T15:15:33.287</td>
-					<td class=description>OS command injection in Ivanti Endpoint Manager Mobile (EPMM) before version 12.5.0.2 allows a remote authenticated attacker with high privileges to achieve remote code execution</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-53372">CVE-2025-53372</a></td>
-					<td>7.5</td>
-					<td>remote,execution,command,bypass</td>
-					<td class=date>2025-07-08T15:15:29.560</td>
-					<td class=description>node-code-sandbox-mcp is a Node.js–based Model Context Protocol server that spins up disposable Docker containers to execute arbitrary JavaScript. Prior to 1.3.0, a command injection vulnerability exists in the node-code-sandbox-mcp MCP Server. The vulnerability is caused by the unsanitized use of input parameters within a call to child_process.execSync, enabling an attacker to inject arbitrary system commands. Successful exploitation can lead to remote code execution under the server process's privileges on the host machine, bypassing the sandbox protection of running code inside docker. This vulnerability is fixed in 1.3.0.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-29267">CVE-2025-29267</a></td>
-					<td>6.5</td>
-					<td>remote,sensitive</td>
-					<td class=date>2025-07-08T15:15:26.827</td>
-					<td class=description>SQL Injection vulnerability in Abis, Inc Adjutant Core Accounting ERP build v.PreBeta250F allows a remote attacker to obtain a sensitive information via the cid parameter in the GET request.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-40735">CVE-2025-40735</a></td>
-					<td>8.8</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2025-07-08T11:15:29.657</td>
-					<td class=description>A vulnerability has been identified in SINEC NMS (All versions < V4.0). The affected devices are vulnerable to SQL injection. This could allow an unauthenticated remote attacker to execute arbitrary SQL queries on the server database.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-6744">CVE-2025-6744</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-37107">CVE-2025-37107</a></td>
 					<td>7.3</td>
-					<td>execution,unauthenticated</td>
-					<td class=date>2025-07-08T10:15:22.947</td>
-					<td class=description>The The Woodmart theme for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 8.2.3. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode through the woodmart_get_products_shortcode() function. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.</td>
+					<td>authentication,bypass</td>
+					<td class=date>2025-07-16T18:15:24.650</td>
+					<td class=description>An authentication bypass vulnerability exists in HPE AutoPass License Server (APLS) prior to 9.18.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-7346">CVE-2025-7346</a></td>
-					<td>-</td>
-					<td>unauthenticated,bypass</td>
-					<td class=date>2025-07-08T07:15:27.220</td>
-					<td class=description>Any unauthenticated attacker can bypass the localhost 
-restrictions posed by the application and utilize this to create 
-arbitrary packages</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-37106">CVE-2025-37106</a></td>
+					<td>7.3</td>
+					<td>authentication,bypass</td>
+					<td class=date>2025-07-16T18:15:24.527</td>
+					<td class=description>An authentication bypass and disclosure of information vulnerability exists in HPE AutoPass License Server (APLS) prior to 9.18.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-6746">CVE-2025-6746</a></td>
-					<td>8.8</td>
-					<td>execution,sensitive,bypass</td>
-					<td class=date>2025-07-08T07:15:26.587</td>
-					<td class=description>The WoodMart plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 8.2.3 via the 'layout' attribute. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary .php files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where .php files can be uploaded and included.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25270">CVE-2025-25270</a></td>
-					<td>9.8</td>
-					<td>remote,execution,unauthenticated</td>
-					<td class=date>2025-07-08T07:15:25.080</td>
-					<td class=description>An unauthenticated remote attacker can alter the device configuration in a way to get remote code execution as root with specific configurations.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25269">CVE-2025-25269</a></td>
-					<td>8.4</td>
-					<td>unauthenticated,command</td>
-					<td class=date>2025-07-08T07:15:24.890</td>
-					<td class=description>An unauthenticated local attacker can inject a command that is subsequently executed as root, leading to a privilege escalation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25268">CVE-2025-25268</a></td>
-					<td>8.8</td>
-					<td>unauthenticated,authentication</td>
-					<td class=date>2025-07-08T07:15:24.693</td>
-					<td class=description>An unauthenticated adjacent attacker can modify configuration by sending specific requests to an API-endpoint resulting in read and write access due to missing authentication.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24003">CVE-2025-24003</a></td>
-					<td>8.2</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2025-07-08T07:15:23.943</td>
-					<td class=description>An unauthenticated remote attacker can use MQTT messages to trigger out-of-bounds writes in charging stations complying with German Calibration Law, resulting in a loss of integrity for only EichrechtAgents and potential denial-of-service for these stations.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-24002">CVE-2025-24002</a></td>
-					<td>5.3</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2025-07-08T07:15:23.473</td>
-					<td class=description>An unauthenticated remote attacker can use MQTT messages to crash a service on charging stations complying with German Calibration Law, resulting in a temporary denial-of-service for these stations until they got restarted by the watchdog.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-7327">CVE-2025-7327</a></td>
-					<td>8.8</td>
-					<td>execution,sensitive,bypass</td>
-					<td class=date>2025-07-08T06:15:24.730</td>
-					<td class=description>The Widget for Google Reviews plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 1.0.15 via the layout parameter. This makes it possible for authenticated attackers, with Subscriber-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included. This is limited to just PHP files.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20695">CVE-2025-20695</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-37105">CVE-2025-37105</a></td>
 					<td>7.5</td>
 					<td>remote,execution</td>
-					<td class=date>2025-07-08T03:15:29.433</td>
-					<td class=description>In Bluetooth FW, there is a possible system crash due to an uncaught exception. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS09741871; Issue ID: MSV-3317.</td>
+					<td class=date>2025-07-16T18:15:24.410</td>
+					<td class=description>An hsqldb-related remote code execution vulnerability exists in HPE AutoPass License Server (APLS) prior to 9.18.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20694">CVE-2025-20694</a></td>
-					<td>7.5</td>
-					<td>remote,execution</td>
-					<td class=date>2025-07-08T03:15:29.250</td>
-					<td class=description>In Bluetooth FW, there is a possible system crash due to an uncaught exception. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS09752821; Issue ID: MSV-3342.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20337">CVE-2025-20337</a></td>
+					<td>10.0</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-07-16T17:15:30.573</td>
+					<td class=description>A vulnerability in a specific API of Cisco ISE and Cisco ISE-PIC could allow an unauthenticated, remote attacker to execute arbitrary code on the underlying operating system as root. The attacker does not require any valid credentials to exploit this vulnerability.
+
+This vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by submitting a crafted API request. A successful exploit could allow the attacker to obtain root privileges on an affected device.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20693">CVE-2025-20693</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20288">CVE-2025-20288</a></td>
+					<td>5.8</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-07-16T17:15:30.387</td>
+					<td class=description>A vulnerability in the web-based management interface of Cisco Unified Intelligence Center could allow an unauthenticated, remote attacker to conduct a server-side request forgery (SSRF) attack through an affected device.
+
+This vulnerability is due to improper input validation for specific HTTP requests. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. A successful exploit could allow the attacker to send arbitrary network requests that are sourced from the affected device.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20285">CVE-2025-20285</a></td>
+					<td>4.1</td>
+					<td>remote,bypass</td>
+					<td class=date>2025-07-16T17:15:30.197</td>
+					<td class=description>A vulnerability in the IP Access Restriction feature of Cisco ISE and Cisco ISE-PIC could allow an authenticated, remote attacker to bypass configured IP access restrictions and log in to the device from a disallowed IP address.
+
+This vulnerability is due to improper enforcement of access controls that are configured using the IP Access Restriction feature. An attacker could exploit this vulnerability by logging in to the API from an unauthorized source IP address. A successful exploit could allow the attacker to gain access to the targeted device from an IP address that should have been restricted. To exploit this vulnerability, the attacker must have valid administrative credentials.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20284">CVE-2025-20284</a></td>
 					<td>6.5</td>
-					<td>remote,execution</td>
-					<td class=date>2025-07-08T03:15:29.100</td>
-					<td class=description>In wlan STA driver, there is a possible out of bounds read due to an incorrect bounds check. This could lead to remote (proximal/adjacent) information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS09812521; Issue ID: MSV-3421.</td>
+					<td>remote,command</td>
+					<td class=date>2025-07-16T17:15:30.010</td>
+					<td class=description>A vulnerability in a specific API of Cisco ISE and Cisco ISE-PIC could allow an authenticated, remote attacker to execute arbitrary code on the underlying operating system as root.
+
+This vulnerability is due to insufficient validation of user-supplied input. An attacker with valid credentials could exploit this vulnerability by submitting a crafted API request. A successful exploit could allow the attacker to execute commands as the root user. To exploit this vulnerability, the attacker must have valid high-privileged credentials.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20686">CVE-2025-20686</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2025-07-08T03:15:27.987</td>
-					<td class=description>In wlan AP driver, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00415570; Issue ID: MSV-3404.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20283">CVE-2025-20283</a></td>
+					<td>6.5</td>
+					<td>remote,command</td>
+					<td class=date>2025-07-16T17:15:29.720</td>
+					<td class=description>A vulnerability in a specific API of Cisco ISE and Cisco ISE-PIC could allow an authenticated, remote attacker to execute arbitrary code on the underlying operating system as root.
+
+This vulnerability is due to insufficient validation of user-supplied input. An attacker with valid credentials could exploit this vulnerability by submitting a crafted API request. A successful exploit could allow the attacker to execute commands as the root user. To exploit this vulnerability, the attacker must have valid high-privileged credentials.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20685">CVE-2025-20685</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2025-07-08T03:15:27.833</td>
-					<td class=description>In wlan AP driver, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00416226; Issue ID: MSV-3409.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-7146">CVE-2025-7146</a></td>
-					<td>7.5</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2025-07-08T02:15:22.367</td>
-					<td class=description>The iPublish System developed by Jhenggao has an Arbitrary File Reading vulnerability, allowing unauthenticated remote attackers to read arbitrary system file.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-7154">CVE-2025-7154</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20274">CVE-2025-20274</a></td>
 					<td>6.3</td>
 					<td>remote,command</td>
-					<td class=date>2025-07-08T01:15:26.200</td>
-					<td class=description>A vulnerability, which was classified as critical, has been found in TOTOLINK N200RE 9.3.5u.6095_B20200916/9.3.5u.6139_B20201216. Affected by this issue is the function sub_41A0F8 of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument Hostname leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.</td>
+					<td class=date>2025-07-16T17:15:29.073</td>
+					<td class=description>A vulnerability in the web-based management interface of Cisco Unified Intelligence Center could allow an authenticated, remote attacker to upload arbitrary files to an affected device.
+
+This vulnerability is due to improper validation of files that are uploaded to the web-based management interface. An attacker could exploit this vulnerability by uploading arbitrary files to an affected device. A successful exploit could allow the attacker to store malicious files on the system and execute arbitrary commands on the operating system. The Security Impact Rating (SIR) of this advisory has been raised to High because an attacker could elevate privileges to root. To exploit this vulnerability, the attacker must have valid credentials for a user account with at least the role of Report Designer.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-42969">CVE-2025-42969</a></td>
-					<td>6.1</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2025-07-08T01:15:24.120</td>
-					<td class=description>SAP NetWeaver Application Server ABAP and ABAP Platform allows an unauthenticated attacker to inject a malicious script into a dynamically crafted URL. The victim, when tricked into clicking on this crafted URL unknowingly executes the malicious payload in their browser. On successful exploitation, the attacker can access or modify sensitive information within the scope of victim's web browser, with no impact on availability of the application.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-53943">CVE-2025-53943</a></td>
+					<td>-</td>
+					<td>command,sensitive</td>
+					<td class=date>2025-07-16T16:15:29.417</td>
+					<td class=description>VoidBot Open-Source is a customizable Discord bot. VoidBot Open-Source versions 0.0.1 through 0.8.1 contain a vulnerability in the command handler where permission checks are not properly enforced for certain administrative commands. This allows users without the required roles or privileges to execute sensitive commands such as `ban`, `kick`, or `shutdown`, potentially disrupting server operations. Version 1.0.0 fixes the issue.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-42968">CVE-2025-42968</a></td>
-					<td>5.0</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-53938">CVE-2025-53938</a></td>
+					<td>-</td>
+					<td>unauthenticated,authentication,sensitive,bypass</td>
+					<td class=date>2025-07-16T16:15:29.273</td>
+					<td class=description>WeGIA is an open source web manager with a focus on the Portuguese language and charitable institutions. An Authentication Bypass vulnerability was identified in the `/dao/verificar_recursos_cargo.php` endpoint of the WeGIA application prior to version 3.4.5. This vulnerability allows unauthenticated users to access protected application functionalities and retrieve sensitive information by sending crafted HTTP requests without any session cookies or authentication tokens. Version 3.4.5 fixes the issue.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-40919">CVE-2025-40919</a></td>
+					<td>6.5</td>
+					<td>authentication,leak</td>
+					<td class=date>2025-07-16T14:15:25.480</td>
+					<td class=description>Authen::DigestMD5 versions 0.01 through 0.02 for Perl generate the cnonce insecurely.
+
+The cnonce (client nonce) is generated from an MD5 hash of the PID, the epoch time and the built-in rand function. The PID will come from a small set of numbers, and the epoch time may be guessed, if it is not leaked from the HTTP Date header. The built-in rand function is unsuitable for cryptographic usage.
+
+According to RFC 2831, "The cnonce-value is an opaque quoted string value provided by the client and used by both client and server to avoid chosen plaintext attacks, and to provide mutual authentication. The security of the implementation depends on a good choice. It is RECOMMENDED that it contain at least 64 bits of entropy."</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34300">CVE-2025-34300</a></td>
+					<td>-</td>
+					<td>unauthenticated,command</td>
+					<td class=date>2025-07-16T13:15:23.823</td>
+					<td class=description>A template injection vulnerability exists in Sawtooth Software’s Lighthouse Studio versions prior to 9.16.14 via the  ciwweb.pl http://ciwweb.pl/  Perl web application. Exploitation allows an unauthenticated attacker can execute arbitrary commands.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-53757">CVE-2025-53757</a></td>
+					<td>-</td>
 					<td>remote,sensitive</td>
-					<td class=date>2025-07-08T01:15:23.950</td>
-					<td class=description>SAP NetWeaver allows an authenticated non-administrative user to call the remote-enabled function module which could grants access to non-sensitive information about the SAP system and OS without requiring any specific knowledge or controlled conditions. This leads to a low impact on confidentiality with no effect on integrity or availability of the application.</td>
+					<td class=date>2025-07-16T12:15:30.363</td>
+					<td class=description>This vulnerability exists in Digisol DG-GR6821AC Router due to misconfiguration of both Secure and HttpOnly flags on session cookies associated with the router web interface. A remote attacker could exploit this vulnerability by capturing the session cookies transmitted over an unsecure HTTP connection. 
+
+Successful exploitation of this vulnerability could allow the attacker to obtain sensitive information from the targeted device.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-42967">CVE-2025-42967</a></td>
-					<td>9.9</td>
-					<td>remote,execution</td>
-					<td class=date>2025-07-08T01:15:23.787</td>
-					<td class=description>SAP S/4HANA and SAP SCM Characteristic Propagation has remote code execution vulnerability. This allows an attacker with user level privileges to create a new report with his own code potentially gaining full control of the affected SAP system causing high impact on confidentiality, integrity, and availability of the application.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-7703">CVE-2025-7703</a></td>
+					<td>3.1</td>
+					<td>authentication,leak</td>
+					<td class=date>2025-07-16T09:15:24.157</td>
+					<td class=description>Authentication vulnerability in the mobile application（tech.palm.id）may lead to the risk of information leakage.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-42959">CVE-2025-42959</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-6043">CVE-2025-6043</a></td>
 					<td>8.1</td>
-					<td>unauthenticated,authentication</td>
-					<td class=date>2025-07-08T01:15:22.477</td>
-					<td class=description>An unauthenticated attacker may exploit a scenario where a Hashed Message Authentication Code (HMAC) credential, extracted from a system missing specific security patches, is reused in a replay attack against a different system. Even if the target system is fully patched, successful exploitation could result in complete system compromise, affecting confidentiality, integrity, and availability.</td>
+					<td>remote,execution</td>
+					<td class=date>2025-07-16T07:15:23.880</td>
+					<td class=description>The Malcure Malware Scanner — #1 Toolset for WordPress Malware Removal plugin for WordPress is vulnerable to Arbitrary File Deletion due to a missing capability check on the wpmr_delete_file() function in all versions up to, and including, 16.8. This makes it possible for authenticated attackers, with Subscriber-level access and above, to delete arbitrary files making remote code execution possible. This is only exploitable when advanced mode is enabled on the site.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-53540">CVE-2025-53540</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-53906">CVE-2025-53906</a></td>
+					<td>4.1</td>
+					<td>command,sensitive</td>
+					<td class=date>2025-07-15T21:15:34.493</td>
+					<td class=description>Vim is an open source, command line text editor. Prior to version 9.1.1551, a path traversal issue in Vim’s zip.vim plugin can allow overwriting of arbitrary files when opening specially crafted zip archives. Impact is low because this exploit requires direct user interaction. However, successfully exploitation can lead to overwriting sensitive files or placing executable code in privileged locations, depending on the permissions of the process editing the archive. The victim must edit such a file using Vim which will reveal the filename and the file content, a careful user may suspect some strange things going on. Successful exploitation could results in the ability to execute arbitrary commands on the underlying operating system. Version 9.1.1551 contains a patch for the vulnerability.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-53905">CVE-2025-53905</a></td>
+					<td>4.1</td>
+					<td>command,sensitive</td>
+					<td class=date>2025-07-15T21:15:34.347</td>
+					<td class=description>Vim is an open source, command line text editor. Prior to version 9.1.1552, a path traversal issue in Vim’s tar.vim plugin can allow overwriting of arbitrary files when opening specially crafted tar archives. Impact is low because this exploit requires direct user interaction. However, successfully exploitation can lead to overwriting sensitive files or placing executable code in privileged locations, depending on the permissions of the process editing the archive. The victim must edit such a file using Vim which will reveal the filename and the file content, a careful user may suspect some strange things going on. Successful exploitation could results in the ability to execute arbitrary commands on the underlying operating system. Version 9.1.1552 contains a patch for the vulnerability.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-49836">CVE-2025-49836</a></td>
+					<td>-</td>
+					<td>execution,command</td>
+					<td class=date>2025-07-15T21:15:32.330</td>
+					<td class=description>GPT-SoVITS-WebUI is a voice conversion and text-to-speech webUI. In versions 20250228v3 and prior, there is a command injection vulnerability in webui.py change_label function. path_list takes user input, which is passed to the change_label function, which concatenates the user input into a command and runs it on the server, leading to arbitrary command execution. At time of publication, no known patched versions are available.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-49835">CVE-2025-49835</a></td>
+					<td>-</td>
+					<td>execution,command</td>
+					<td class=date>2025-07-15T21:15:32.200</td>
+					<td class=description>GPT-SoVITS-WebUI is a voice conversion and text-to-speech webUI. In versions 20250228v3 and prior, there is a command injection vulnerability in webui.py open_asr function. asr_inp_dir (and a number of other variables) takes user input, which is passed to the open_asr function, which concatenates the user input into a command and runs it on the server, leading to arbitrary command execution. At time of publication, no known patched versions are available.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-49834">CVE-2025-49834</a></td>
+					<td>-</td>
+					<td>execution,command</td>
+					<td class=date>2025-07-15T21:15:32.067</td>
+					<td class=description>GPT-SoVITS-WebUI is a voice conversion and text-to-speech webUI. In versions 20250228v3 and prior, there is a command injection vulnerability in webui.py open_denoise function. denoise_inp_dir and denoise_opt_dir take user input, which is passed to the open_denoise function, which concatenates the user input into a command and runs it on the server, leading to arbitrary command execution. At time of publication, no known patched versions are available.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-49833">CVE-2025-49833</a></td>
+					<td>-</td>
+					<td>execution,command</td>
+					<td class=date>2025-07-15T21:15:31.930</td>
+					<td class=description>GPT-SoVITS-WebUI is a voice conversion and text-to-speech webUI. In versions 20250228v3 and prior, there is a command injection vulnerability in the webui.py open_slice function. slice_opt_root and slice-inp-path takes user input, which is passed to the open_slice function, which concatenates the user input into a command and runs it on the server, leading to arbitrary command execution. At time of publication, no known patched versions are available.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-49828">CVE-2025-49828</a></td>
 					<td>-</td>
 					<td>remote,execution</td>
-					<td class=date>2025-07-07T20:15:28.173</td>
-					<td class=description>arduino-esp32 is an Arduino core for the ESP32, ESP32-S2, ESP32-S3, ESP32-C3, ESP32-C6 and ESP32-H2 microcontrollers. Several OTA update examples and the HTTPUpdateServer implementation are vulnerable to Cross-Site Request Forgery (CSRF). The update endpoints accept POST requests for firmware uploads without CSRF protection. This allows an attacker to upload and execute arbitrary firmware, resulting in remote code execution (RCE). This vulnerability is fixed in 3.2.1.</td>
+					<td class=date>2025-07-15T20:15:39.960</td>
+					<td class=description>Conjur provides secrets management and application identity for infrastructure. Conjur OSS versions 1.19.5 through 1.21.1 and Secrets Manager, Self-Hosted (formerly known as Conjur Enterprise) 13.1 through 13.4.1 are vulnerable to remote code execution An authenticated attacker who can inject secrets or templates into the Secrets Manager, Self-Hosted database could take advantage of an exposed API endpoint to execute arbitrary Ruby code within the Secrets Manager process. This issue affects both Secrets Manager, Self-Hosted (formerly Conjur Enterprise) and Conjur OSS. Conjur OSS version 1.21.2 and Secrets Manager, Self-Hosted version 13.5 fix the issue.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-49827">CVE-2025-49827</a></td>
+					<td>-</td>
+					<td>authentication,bypass</td>
+					<td class=date>2025-07-15T20:15:39.823</td>
+					<td class=description>Conjur provides secrets management and application identity for infrastructure. Conjur OSS versions 1.19.5 through 1.22.0 and Secrets Manager, Self-Hosted (formerly known as Conjur Enterprise) 13.1 through 13.5 and 13.6 are vulnerable to bypass of the IAM authenticator. An attacker who can manipulate the headers signed by AWS can take advantage of a malformed regular expression to redirect the authentication validation request that Secrets Manager, Self-Hosted sends to AWS to a malicious server controlled by the attacker. This redirection could result in a bypass of the Secrets Manager, Self-Hosted IAM Authenticator, granting the attacker the permissions granted to the client whose request was manipulated. This issue affects both Secrets Manager, Self-Hosted (formerly Conjur Enterprise) and Conjur OSS. Conjur OSS version 1.22.1 and Secrets Manager, Self-Hosted versions 13.5.1 and 13.6.1 fix the issue.</td>
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-53622">CVE-2025-53622</a></td>
+					<td>5.2</td>
+					<td>command,sensitive</td>
+					<td class=date>2025-07-15T15:15:25.680</td>
+					<td class=description>DSpace open source software is a repository application which provides durable access to digital resources. Prior to versions 7.6.4, 8.2, and 9.1, a path traversal vulnerability is possible during the import of an archive (in Simple Archive Format), either from command-line (`./dspace import` command) or from the "Batch Import (Zip)" user interface feature. An attacker may craft a malicious Simple Archive Format (SAF) package where the `contents` file references any system files (using relative traversal sequences) which are readable by the Tomcat user.  If such a package is imported, this will result in sensitive content disclose, including retrieving arbitrary files or configurations from the server where DSpace is running. The Simple Archive Format (SAF) importer / Batch Import (Zip) is only usable by site administrators (from user interface / REST API) or system administrators (from command-line). Therefore, to exploit this vulnerability, the malicious payload would have to be provided by an attacker and trusted by an administrator (who would trigger the import). The fix is included in DSpace 7.6.4, 8.2 and 9.1. For those who cannot upgrade immediately, it is possible to manually patch the DSpace backend. (No changes are necessary to the frontend.)  A pull request exists which can be used to patch systems running DSpace 7.6.x, 8.x or 9.0. Although it is not possible to fully protect the system via workarounds, one may can apply a best practice. Administrators must carefully inspect any SAF archives (they did not construct themselves) before importing, paying close attention to the `contents` file to validate it does not reference files outside of the SAF archives.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-53621">CVE-2025-53621</a></td>
+					<td>6.9</td>
+					<td>command,sensitive</td>
+					<td class=date>2025-07-15T15:15:25.517</td>
+					<td class=description>DSpace open source software is a repository application which provides durable access to digital resources. Two related XML External Entity (XXE) injection possibilities impact all versions of DSpace prior to 7.6.4, 8.2, and 9.1. External entities are not disabled when parsing XML files during import of an archive (in Simple Archive Format), either from command-line (`./dspace import` command) or from the "Batch Import (Zip)" user interface feature. External entities are also not explicitly disabled when parsing XML responses from some upstream services (ArXiv, Crossref, OpenAIRE, Creative Commons) used in import from external sources via the user interface or REST API. An XXE injection in these files may result in a connection being made to an attacker's site or a local path readable by the Tomcat user, with content potentially being injected into a metadata field. In the latter case, this may result in sensitive content disclosure, including retrieving arbitrary files or configurations from the server where DSpace is running. The Simple Archive Format (SAF) importer / Batch Import (Zip) is only usable by site administrators (from user interface / REST API) or system administrators (from command-line). Therefore, to exploit this vulnerability, the malicious payload would have to be provided by an attacker and trusted by an administrator, who would trigger the import. The fix is included in DSpace 7.6.4, 8.2, and 9.1. Please upgrade to one of these versions. For those who cannot upgrade immediately, it is possible to manually patch the DSpace backend. One may also apply some best practices, though the protection provided is not as complete as upgrading. Administrators must carefully inspect any SAF archives (they did not construct themselves) before importing. As necessary, affected external services can be disabled to mitigate the ability for payloads to be delivered via external service APIs.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-52379">CVE-2025-52379</a></td>
+					<td>5.4</td>
+					<td>remote,execution,command</td>
+					<td class=date>2025-07-15T15:15:25.227</td>
+					<td class=description>Nexxt Solutions NCM-X1800 Mesh Router firmware UV1.2.7 and below contains an authenticated command injection vulnerability in the firmware update feature. The /web/um_fileName_set.cgi and /web/um_web_upgrade.cgi endpoints fail to properly sanitize the upgradeFileName parameter, allowing authenticated attackers to execute arbitrary OS commands on the device, resulting in remote code execution.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-52376">CVE-2025-52376</a></td>
+					<td>9.8</td>
+					<td>remote,authentication,command,bypass</td>
+					<td class=date>2025-07-15T14:15:30.540</td>
+					<td class=description>An authentication bypass vulnerability in the /web/um_open_telnet.cgi endpoint in Nexxt Solutions NCM-X1800 Mesh Router firmware UV1.2.7 and below, allowing an attacker to remotely enable the Telnet service without authentication, bypassing security controls. The Telnet server is then accessible with hard-coded credentials, allowing attackers to gain administrative shell access and execute arbitrary commands on the device.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34116">CVE-2025-34116</a></td>
+					<td>-</td>
+					<td>remote,execution,command</td>
+					<td class=date>2025-07-15T13:15:32.493</td>
+					<td class=description>A remote command execution vulnerability exists in IPFire before version 2.19 Core Update 101 via the 'proxy.cgi' CGI interface. An authenticated attacker can inject arbitrary shell commands through crafted values in the NCSA user creation form fields, leading to command execution with web server privileges.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34113">CVE-2025-34113</a></td>
+					<td>-</td>
+					<td>remote,execution,command</td>
+					<td class=date>2025-07-15T13:15:31.273</td>
+					<td class=description>An authenticated command injection vulnerability exists in Tiki Wiki CMS versions ≤14.1, ≤12.4 LTS, ≤9.10 LTS, and ≤6.14 via the `viewmode` GET parameter in `tiki-calendar.php`. When the calendar module is enabled and an authenticated user has permission to access it, an attacker can inject and execute arbitrary PHP code. Successful exploitation leads to remote code execution in the context of the web server user.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34112">CVE-2025-34112</a></td>
+					<td>-</td>
+					<td>remote,execution,command</td>
+					<td class=date>2025-07-15T13:15:31.123</td>
+					<td class=description>An authenticated multi-stage remote code execution vulnerability exists in Riverbed SteelCentral NetProfiler and NetExpress 10.8.7 virtual appliances. A SQL injection vulnerability in the '/api/common/1.0/login' endpoint can be exploited to create a new user account in the appliance database. This user can then trigger a command injection vulnerability in the '/index.php?page=licenses' endpoint to execute arbitrary commands. The attacker may escalate privileges to root by exploiting an insecure sudoers configuration that allows the 'mazu' user to execute arbitrary commands as root via SSH key extraction and command chaining. Successful exploitation allows full remote root access to the virtual appliance.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34111">CVE-2025-34111</a></td>
+					<td>-</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-07-15T13:15:30.980</td>
+					<td class=description>An unauthenticated arbitrary file upload vulnerability exists in Tiki Wiki CMS Groupware version 15.1 and earlier via the ELFinder component's default connector (connector.minimal.php), which allows remote attackers to upload and execute malicious PHP scripts in the context of the web server. The vulnerable component does not enforce file type validation, allowing attackers to craft a POST request to upload executable PHP payloads through the ELFinder interface exposed at /vendor_extra/elfinder/.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34110">CVE-2025-34110</a></td>
+					<td>-</td>
+					<td>unauthenticated,command,sensitive</td>
+					<td class=date>2025-07-15T13:15:30.833</td>
+					<td class=description>A directory traversal vulnerability exists in ColoradoFTP Server ≤ 1.3 Build 8 for Windows, allowing unauthenticated attackers to read or write arbitrary files outside the configured FTP root directory. The flaw is due to insufficient sanitation of user-supplied file paths in the FTP GET and PUT command handlers. Exploitation is possible by submitting traversal sequences during FTP operations, enabling access to system-sensitive files. This issue affects only the Windows version of ColoradoFTP.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34107">CVE-2025-34107</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2025-07-15T13:15:30.387</td>
+					<td class=description>A buffer overflow vulnerability exists in the WinaXe FTP Client version 7.7 within the FTP banner parsing functionality, WCMDPA10.dll. When the client connects to a remote FTP server and receives an overly long '220 Server Ready' response, the vulnerable component responsible for parsing the banner overflows a stack buffer, leading to arbitrary code execution under the context of the user.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34105">CVE-2025-34105</a></td>
+					<td>-</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2025-07-15T13:15:30.107</td>
+					<td class=description>A stack-based buffer overflow vulnerability exists in the built-in web interface of DiskBoss Enterprise versions 7.4.28, 7.5.12, and 8.2.14. The vulnerability arises from improper bounds checking on the path component of HTTP GET requests. By sending a specially crafted long URI, a remote unauthenticated attacker can trigger a buffer overflow, potentially leading to arbitrary code execution with SYSTEM privileges on vulnerable Windows hosts.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34104">CVE-2025-34104</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2025-07-15T13:15:29.967</td>
+					<td class=description>An authenticated remote code execution vulnerability exists in Piwik (now Matomo) versions prior to 3.0.3 via the plugin upload mechanism. In vulnerable versions, an authenticated user with Superuser privileges can upload and activate a malicious plugin (ZIP archive), leading to arbitrary PHP code execution on the underlying system. Starting with version 3.0.3, plugin upload functionality is disabled by default unless explicitly enabled in the configuration file.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34103">CVE-2025-34103</a></td>
+					<td>-</td>
+					<td>remote,unauthenticated,command</td>
+					<td class=date>2025-07-15T13:15:29.820</td>
+					<td class=description>An unauthenticated command injection vulnerability exists in WePresent WiPG-1000 firmware versions prior to 2.2.3.0, due to improper input handling in the undocumented /cgi-bin/rdfs.cgi endpoint. The Client parameter is not sanitized before being passed to a system call, allowing an unauthenticated remote attacker to execute arbitrary commands as the web server user.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34068">CVE-2025-34068</a></td>
+					<td>-</td>
+					<td>remote,execution,unauthenticated,authentication,command</td>
+					<td class=date>2025-07-15T13:15:29.267</td>
+					<td class=description>An unauthenticated remote command execution vulnerability exists in Samsung WLAN AP WEA453e firmware prior to version 5.2.4.T1 via improper input validation in the “Tech Support” diagnostic functionality. The command1 and command2 POST or GET parameters accept arbitrary shell commands that are executed with root privileges on the underlying operating system. An attacker can exploit this by crafting a request that injects shell commands to create output files in writable directories and then access their contents via the download endpoint. This flaw allows complete compromise of the device without authentication.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-7667">CVE-2025-7667</a></td>
+					<td>8.1</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2025-07-15T12:15:22.990</td>
+					<td class=description>The Restrict File Access plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.1.2. This is due to missing or incorrect nonce validation on the 'restrict-file-access' page. This makes it possible for unauthenticated attackers to to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php), via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-3621">CVE-2025-3621</a></td>
+					<td>9.6</td>
+					<td>remote,authentication,command</td>
+					<td class=date>2025-07-15T08:15:31.917</td>
+					<td class=description>Vulnerabilities* in ActADUR local server product, developed and maintained by ProTNS, allows Remote Code Inclusion on host systems. 
+
+
+* vulnerabilities:
+  *  
+
+Improper Neutralization of Special Elements used in a Command ('Command Injection')
+  *  Use of Hard-coded Credentials
+  *  Improper Authentication
+  *  Binding to an Unrestricted IP Address
+
+
+
+The vulnerability has been rated as critical.This issue affects ActADUR: from v2.0.1.9 before v2.0.2.0., hence updating to version v2.0.2.0. or above is required.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-7360">CVE-2025-7360</a></td>
+					<td>9.8</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2025-07-15T05:15:30.070</td>
+					<td class=description>The HT Contact Form Widget For Elementor Page Builder & Gutenberg Blocks & Form Builder. plugin for WordPress is vulnerable to arbitrary file moving due to insufficient file path validation in the handle_files_upload() function in all versions up to, and including, 2.2.1. This makes it possible for unauthenticated attackers to move arbitrary files on the server, which can easily lead to remote code execution when the right file is moved (such as wp-config.php).</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-7341">CVE-2025-7341</a></td>
+					<td>9.8</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2025-07-15T05:15:29.883</td>
+					<td class=description>The HT Contact Form Widget For Elementor Page Builder & Gutenberg Blocks & Form Builder. plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the temp_file_delete() function in all versions up to, and including, 2.2.1. This makes it possible for unauthenticated attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-7340">CVE-2025-7340</a></td>
+					<td>9.8</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2025-07-15T05:15:28.520</td>
+					<td class=description>The HT Contact Form Widget For Elementor Page Builder & Gutenberg Blocks & Form Builder. plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the temp_file_upload function in all versions up to, and including, 2.2.1. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-5394">CVE-2025-5394</a></td>
+					<td>9.8</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2025-07-15T04:15:55.200</td>
+					<td class=description>The Alone – Charity Multipurpose Non-profit WordPress Theme theme for WordPress is vulnerable to arbitrary file uploads due to a missing capability check on the alone_import_pack_install_plugin() function in all versions up to, and including, 7.8.3. This makes it possible for unauthenticated attackers to upload zip files containing webshells disguised as plugins from remote locations to achieve remote code execution.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-5393">CVE-2025-5393</a></td>
+					<td>9.1</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2025-07-15T04:15:46.870</td>
+					<td class=description>The Alone – Charity Multipurpose Non-profit WordPress Theme theme for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the alone_import_pack_restore_data() function in all versions up to, and including, 7.8.3. This makes it possible for unauthenticated attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).</td>
 				</tr>
 			
 		
