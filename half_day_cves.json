@@ -1,10 +1,4 @@
 {
-  "CVE-2025-7667": {
-    "cvss": 8.1,
-    "description": "The Restrict File Access plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.1.2. This is due to missing or incorrect nonce validation on the 'restrict-file-access' page. This makes it possible for unauthenticated attackers to to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php), via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.",
-    "published": "2025-07-15T12:15:22.990",
-    "keywords": "remote,execution,unauthenticated"
-  },
   "CVE-2025-34068": {
     "cvss": "-",
     "description": "An unauthenticated remote command execution vulnerability exists in Samsung WLAN AP WEA453e firmware prior to version 5.2.4.T1 via improper input validation in the \u201cTech Support\u201d diagnostic functionality. The command1 and command2 POST or GET parameters accept arbitrary shell commands that are executed with root privileges on the underlying operating system. An attacker can exploit this by crafting a request that injects shell commands to create output files in writable directories\u00a0and then access their contents via the download endpoint. This flaw allows complete compromise of the device without authentication.",
@@ -454,5 +448,11 @@
     "description": "A DOS vulnerability in RSFiles! component 1.16.3-1.17.7 Joomla was discovered. The issue allows unauthenticated remote attackers to deny access to service via the search feature.",
     "published": "2025-07-18T10:15:34.310",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-7785": {
+    "url": "https://github.com/thinkgem/jeesite5/commit/3d06b8d009d0267f0255acc87ea19d29d07cedc3",
+    "cvss": 4.3,
+    "description": "A vulnerability classified as problematic was found in thinkgem JeeSite up to 5.12.0. This vulnerability affects the function sso of the file src/main/java/com/jeesite/modules/sys/web/SsoController.java. The manipulation of the argument redirect leads to open redirect. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The patch is identified as 3d06b8d009d0267f0255acc87ea19d29d07cedc3. It is recommended to apply a patch to fix this issue.",
+    "published": "2025-07-18T12:15:24.520"
   }
 }
