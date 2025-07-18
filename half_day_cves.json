@@ -1,10 +1,4 @@
 {
-  "CVE-2025-52376": {
-    "cvss": 9.8,
-    "description": "An authentication bypass vulnerability in the /web/um_open_telnet.cgi endpoint in Nexxt Solutions NCM-X1800 Mesh Router firmware UV1.2.7 and below, allowing an attacker to remotely enable the Telnet service without authentication, bypassing security controls. The Telnet server is then accessible with hard-coded credentials, allowing attackers to gain administrative shell access and execute arbitrary commands on the device.",
-    "published": "2025-07-15T14:15:30.540",
-    "keywords": "remote,authentication,command,bypass"
-  },
   "CVE-2025-52379": {
     "cvss": 5.4,
     "description": "Nexxt Solutions NCM-X1800 Mesh Router firmware UV1.2.7 and below contains an authenticated command injection vulnerability in the firmware update feature. The /web/um_fileName_set.cgi and /web/um_web_upgrade.cgi endpoints fail to properly sanitize the upgradeFileName parameter, allowing authenticated attackers to execute arbitrary OS commands on the device, resulting in remote code execution.",
@@ -394,5 +388,11 @@
     "cvss": 4.3,
     "description": "A vulnerability classified as problematic was found in thinkgem JeeSite up to 5.12.0. This vulnerability affects the function sso of the file src/main/java/com/jeesite/modules/sys/web/SsoController.java. The manipulation of the argument redirect leads to open redirect. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The patch is identified as 3d06b8d009d0267f0255acc87ea19d29d07cedc3. It is recommended to apply a patch to fix this issue.",
     "published": "2025-07-18T12:15:24.520"
+  },
+  "CVE-2025-7786": {
+    "url": "https://github.com/gnuboard/g6/issues/645",
+    "cvss": 3.5,
+    "description": "A vulnerability, which was classified as problematic, has been found in Gnuboard g6 up to 6.0.10. This issue affects some unknown processing of the file /bbs/scrap_popin_update/qa/ of the component Post Reply Handler. The manipulation leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-07-18T14:15:27.270"
   }
 }
