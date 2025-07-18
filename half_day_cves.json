@@ -448,5 +448,11 @@
     "description": "The LoginPress Pro plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 5.0.1. This is due to insufficient verification on the user being returned by the social login token. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email and the user does not have an already-existing account for the service returning the token.",
     "published": "2025-07-18T09:15:27.333",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2025-50057": {
+    "cvss": "-",
+    "description": "A DOS vulnerability in RSFiles! component 1.16.3-1.17.7 Joomla was discovered. The issue allows unauthenticated remote attackers to deny access to service via the search feature.",
+    "published": "2025-07-18T10:15:34.310",
+    "keywords": "remote,unauthenticated"
   }
 }
