@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-07-28T22:13:48.105675
+Updated at UTC 2025-07-28T23:14:24.320046
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -164,6 +164,78 @@ tarfile.TarInfo._block = _block_patched</td>
 		
 			
 		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-54415">CVE-2025-54415</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/astronomer/dag-factory/pull/460">https://github.com/astronomer/dag-factory/pull/460</a></td>
+					<td class=date>2025-07-26T04:16:08.240</td>
+					<td class=description>dag-factory is a library for Apache Airflow® to construct DAGs declaratively via configuration files. In versions 0.23.0a8 and below, a high-severity vulnerability has been identified in the cicd.yml workflow within the astronomer/dag-factory GitHub repository. The workflow, specifically when triggered by pull_request_target, is susceptible to exploitation, allowing an attacker to execute arbitrary code within the GitHub Actions runner environment. This misconfiguration enables an attacker to establish a reverse shell, exfiltrate sensitive secrets, including the highly-privileged GITHUB_TOKEN, and ultimately gain full control over the repository. This is fixed in version 0.23.0a9.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-54414">CVE-2025-54414</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/techarohq/anubis/pull/904">https://github.com/techarohq/anubis/pull/904</a></td>
+					<td class=date>2025-07-26T04:16:06.987</td>
+					<td class=description>Anubis is a Web AI Firewall Utility that weighs the soul of users' connections using one or more challenges in order to protect upstream resources from scraper bots. In versions 1.21.2 and below, attackers can craft malicious pass-challenge pages that cause a user to execute arbitrary JavaScript code or trigger other nonstandard schemes. An incomplete version of this fix was tagged at 1.21.2 and then the release process was aborted upon final testing. To work around this issue: block any requests to the /.within.website/x/cmd/anubis/api/pass-challenge route with the ?redir= parameter set to anything that doesn't start with the URL scheme http, https, or no scheme (local path redirect). This was fixed in version 1.21.3.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-54412">CVE-2025-54412</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/skops-dev/skops/commit/0aeca055509dfb48c1506870aabdd9e247adf603">https://github.com/skops-dev/skops/commit/0aeca055509dfb48c1506870aabdd9e247adf603</a></td>
+					<td class=date>2025-07-26T04:16:06.597</td>
+					<td class=description>skops is a Python library which helps users share and ship their scikit-learn based models. Versions 0.11.0 and below contain a inconsistency in the OperatorFuncNode which can be exploited to hide the execution of untrusted operator methods. This can then be used in a code reuse attack to invoke seemingly safe functions and escalate to arbitrary code execution with minimal and misleading trusted types. This is fixed in version 0.12.0.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-54385">CVE-2025-54385</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/xwiki/xwiki-platform/commit/7c4087d44ac550610b2fa413dd4f5375409265a5">https://github.com/xwiki/xwiki-platform/commit/7c4087d44ac550610b2fa413dd4f5375409265a5</a></td>
+					<td class=date>2025-07-26T04:16:06.397</td>
+					<td class=description>XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. In versions between 17.0.0-rc1 to 17.2.2 and versions 16.10.5 and below, it's possible to execute any SQL query in Oracle by using the function like DBMS_XMLGEN or DBMS_XMLQUERY. The XWiki#searchDocuments APIs pass queries directly to Hibernate without sanitization. Even when these APIs enforce a specific SELECT clause, attackers can still inject malicious code through HQL's native function support in other parts of the query (such as the WHERE clause). This is fixed in versions 16.10.6 and 17.3.0-rc-1.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-54380">CVE-2025-54380</a></td>
+					<td>6.5</td>
+					<td><a target=_blank href="https://github.com/opencast/opencast/commit/e8980435342149375802648b9c9e696c9a5f0c9a">https://github.com/opencast/opencast/commit/e8980435342149375802648b9c9e696c9a5f0c9a</a></td>
+					<td class=date>2025-07-26T04:16:06.190</td>
+					<td class=description>Opencast is a free, open-source platform to support the management of educational audio and video content. Prior to version 17.6, Opencast would incorrectly send the hashed global system account credentials (ie: org.opencastproject.security.digest.user and org.opencastproject.security.digest.pass) when attempting to fetch mediapackage elements included in a mediapackage XML file. A previous CVE prevented many cases where the credentials were inappropriately sent, but not all. Anyone with ingest permissions could cause Opencast to send its hashed global system account credentials to a url of their choosing. This issue is fixed in Opencast 17.6.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-54378">CVE-2025-54378</a></td>
+					<td>8.3</td>
+					<td><a target=_blank href="https://github.com/haxtheweb/haxcms-php/commit/24d30222481ada037597c4d7c0a51a1ef7af6cfd">https://github.com/haxtheweb/haxcms-php/commit/24d30222481ada037597c4d7c0a51a1ef7af6cfd</a></td>
+					<td class=date>2025-07-26T04:16:05.967</td>
+					<td class=description>HAX CMS allows you to manage your microsite universe with PHP or NodeJs backends. In versions 11.0.13 and below of haxcms-nodejs and versions 11.0.8 and below of haxcms-php, API endpoints do not perform authorization checks when interacting with a resource. Both the JS and PHP versions of the CMS do not verify that a user has permission to interact with a resource before performing a given operation. The API endpoints within the HAX CMS application check if a user is authenticated, but don't check for authorization before performing an operation. This is fixed in versions 11.0.14 of haxcms-nodejs and 11.0.9 of haxcms-php.</td>
+
+
+				</tr>
 			
 		
 			
@@ -291,6 +363,18 @@ tarfile.TarInfo._block = _block_patched</td>
 					<td class=date>2025-07-26T04:16:10.107</td>
 					<td class=description>tj-actions/branch-names is a Github actions repository that contains workflows to retrieve branch or tag names with support for all events. In versions 8.2.1 and below, a critical vulnerability has been identified in the tj-actions/branch-names' GitHub Action workflow which allows arbitrary command execution in downstream workflows. This issue arises due to inconsistent input sanitization and unescaped output, enabling malicious actors to exploit specially crafted branch names or tags. While internal sanitization mechanisms have been implemented, the action outputs remain vulnerable, exposing consuming workflows to significant security risks. This is fixed in version 9.0.0</td>
 				</tr>
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
 			
 		
 			
