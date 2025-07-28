@@ -1,10 +1,4 @@
 {
-  "CVE-2025-30135": {
-    "cvss": 9.4,
-    "description": "An issue was discovered on IROAD Dashcam FX2 devices. Dumping Files Over HTTP and RTSP Without Authentication can occur. It lacks authentication controls on its HTTP and RTSP interfaces, allowing attackers to retrieve sensitive files and video recordings. By connecting to http://192.168.10.1/mnt/extsd/event/, an attacker can download all stored video recordings in an unencrypted manner. Additionally, the RTSP stream on port 8554 is accessible without authentication, allowing an attacker to view live footage.",
-    "published": "2025-07-25T20:15:24.203",
-    "keywords": "authentication,sensitive"
-  },
   "CVE-2025-54366": {
     "cvss": "-",
     "description": "FreeScout is a lightweight free open source help desk and shared inbox built with PHP (Laravel framework). In versions 1.8.185 and below, there is a critical deserialization vulnerability in the /conversation/ajax endpoint that allows authenticated users with knowledge of the APP_KEY to achieve remote code execution. The vulnerability occurs when the application processes the attachments_all and attachments POST parameters through the insecure Helper::decrypt() function, which performs unsafe deserialization of user-controlled data without proper validation. This flaw enables attackers to create arbitrary objects and manipulate their properties, leading to complete compromise of the web application. This is fixed in version 1.8.186.",
@@ -94,5 +88,11 @@
     "cvss": 7.5,
     "description": "There is a defect in the CPython \u201ctarfile\u201d module affecting the \u201cTarFile\u201d extraction and entry enumeration APIs. The tar implementation would process tar archives with negative offsets without error, resulting in an infinite loop and deadlock during the parsing of maliciously crafted tar archives. \n\nThis vulnerability can be mitigated by including the following patch after importing the \u201ctarfile\u201d module:\n\n\n\nimport tarfile\n\ndef _block_patched(self, count):\n\u00a0 \u00a0 if count < 0:  # pragma: no cover\n\u00a0 \u00a0 \u00a0 \u00a0 raise tarfile.InvalidHeaderError(\"invalid offset\")\n\u00a0 \u00a0 return _block_patched._orig_block(self, count)\n\n_block_patched._orig_block = tarfile.TarInfo._block\ntarfile.TarInfo._block = _block_patched",
     "published": "2025-07-28T19:15:43.793"
+  },
+  "CVE-2025-29534": {
+    "cvss": 8.8,
+    "description": "An authenticated remote code execution vulnerability in PowerStick Wave Dual-Band Wifi Extender V1.0 allows an attacker with valid credentials to execute arbitrary commands with root privileges. The issue stems from insufficient sanitization of user-supplied input in the /cgi-bin/cgi_vista.cgi executable, which is passed to a system-level function call.",
+    "published": "2025-07-28T20:17:44.480",
+    "keywords": "remote,execution,command"
   }
 }

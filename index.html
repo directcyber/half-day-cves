@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-07-28T20:15:38.911390
+Updated at UTC 2025-07-28T21:13:05.315574
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2025-07-28T20:15:38.911390
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 				<tr>
@@ -142,10 +144,18 @@ tarfile.TarInfo._block = _block_patched</td>
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-29534">CVE-2025-29534</a></td>
+					<td>8.8</td>
+					<td>remote,execution,command</td>
+					<td class=date>2025-07-28T20:17:44.480</td>
+					<td class=description>An authenticated remote code execution vulnerability in PowerStick Wave Dual-Band Wifi Extender V1.0 allows an attacker with valid credentials to execute arbitrary commands with root privileges. The issue stems from insufficient sanitization of user-supplied input in the /cgi-bin/cgi_vista.cgi executable, which is passed to a system-level function call.</td>
+				</tr>
+			
 		
 			
 		
@@ -262,16 +272,6 @@ tarfile.TarInfo._block = _block_patched</td>
 					<td>remote,execution</td>
 					<td class=date>2025-07-26T04:16:04.857</td>
 					<td class=description>FreeScout is a lightweight free open source help desk and shared inbox built with PHP (Laravel framework). In versions 1.8.185 and below, there is a critical deserialization vulnerability in the /conversation/ajax endpoint that allows authenticated users with knowledge of the APP_KEY to achieve remote code execution. The vulnerability occurs when the application processes the attachments_all and attachments POST parameters through the insecure Helper::decrypt() function, which performs unsafe deserialization of user-controlled data without proper validation. This flaw enables attackers to create arbitrary objects and manipulate their properties, leading to complete compromise of the web application. This is fixed in version 1.8.186.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-30135">CVE-2025-30135</a></td>
-					<td>9.4</td>
-					<td>authentication,sensitive</td>
-					<td class=date>2025-07-25T20:15:24.203</td>
-					<td class=description>An issue was discovered on IROAD Dashcam FX2 devices. Dumping Files Over HTTP and RTSP Without Authentication can occur. It lacks authentication controls on its HTTP and RTSP interfaces, allowing attackers to retrieve sensitive files and video recordings. By connecting to http://192.168.10.1/mnt/extsd/event/, an attacker can download all stored video recordings in an unencrypted manner. Additionally, the RTSP stream on port 8554 is accessible without authentication, allowing an attacker to view live footage.</td>
 				</tr>
 			
 		
