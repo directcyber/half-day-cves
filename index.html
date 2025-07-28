@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-07-28T19:14:22.219811
+Updated at UTC 2025-07-28T20:15:38.911390
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,32 @@ Updated at UTC 2025-07-28T19:14:22.219811
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-8194">CVE-2025-8194</a></td>
+					<td>7.5</td>
+					<td><a target=_blank href="https://github.com/python/cpython/pull/137027">https://github.com/python/cpython/pull/137027</a></td>
+					<td class=date>2025-07-28T19:15:43.793</td>
+					<td class=description>There is a defect in the CPython “tarfile” module affecting the “TarFile” extraction and entry enumeration APIs. The tar implementation would process tar archives with negative offsets without error, resulting in an infinite loop and deadlock during the parsing of maliciously crafted tar archives. 
+
+This vulnerability can be mitigated by including the following patch after importing the “tarfile” module:
+
+
+
+import tarfile
+
+def _block_patched(self, count):
+    if count < 0:  # pragma: no cover
+        raise tarfile.InvalidHeaderError("invalid offset")
+    return _block_patched._orig_block(self, count)
+
+_block_patched._orig_block = tarfile.TarInfo._block
+tarfile.TarInfo._block = _block_patched</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -118,10 +144,10 @@ Updated at UTC 2025-07-28T19:14:22.219811
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -246,16 +272,6 @@ Updated at UTC 2025-07-28T19:14:22.219811
 					<td>authentication,sensitive</td>
 					<td class=date>2025-07-25T20:15:24.203</td>
 					<td class=description>An issue was discovered on IROAD Dashcam FX2 devices. Dumping Files Over HTTP and RTSP Without Authentication can occur. It lacks authentication controls on its HTTP and RTSP interfaces, allowing attackers to retrieve sensitive files and video recordings. By connecting to http://192.168.10.1/mnt/extsd/event/, an attacker can download all stored video recordings in an unencrypted manner. Additionally, the RTSP stream on port 8554 is accessible without authentication, allowing an attacker to view live footage.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-52447">CVE-2025-52447</a></td>
-					<td>8.1</td>
-					<td>command,bypass</td>
-					<td class=date>2025-07-25T19:15:40.443</td>
-					<td class=description>Authorization Bypass Through User-Controlled Key vulnerability in Salesforce Tableau Server on Windows, Linux (set-initial-sql tabdoc command modules) allows Interface Manipulation (data access to the production database cluster). This issue affects Tableau Server: before 2025.1.3, before 2024.2.12, before 2023.3.19.</td>
 				</tr>
 			
 		
