@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-07-28T21:13:05.315574
+Updated at UTC 2025-07-28T22:13:48.105675
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,30 @@ Updated at UTC 2025-07-28T21:13:05.315574
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-54427">CVE-2025-54427</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/polkadot-evm/frontier/commit/a754b3dc6e1b6da98f71aea7bb1fa08677b24186">https://github.com/polkadot-evm/frontier/commit/a754b3dc6e1b6da98f71aea7bb1fa08677b24186</a></td>
+					<td class=date>2025-07-28T21:15:27.080</td>
+					<td class=description>Polkadot Frontier is an Ethereum and EVM compatibility layer for Polkadot and Substrate. The extrinsic note_min_gas_price_target is an inherent extrinsic, meaning only the block producer can call it. To ensure correctness, the ProvideInherent trait should be implemented for each inherent, which includes the check_inherent call. This allows other nodes to verify if the input (in this case, the target value) is correct. However, prior to commit a754b3d, the check_inherent function has not been implemented for note_min_gas_price_target. This lets the block producer set the target value without verification. The target is then used to set the MinGasPrice, which has an upper and lower bound defined in the on_initialize hook. The block producer can set the target to the upper bound. Which also increases the upper and lower bounds for the next block. Over time, this could result in continuously raising the gas price, making contract execution too expensive and ineffective for users. An attacker could use this flaw to manipulate the gas price, potentially leading to significantly inflated transaction fees. Such manipulation could render contract execution prohibitively expensive for users, effectively resulting in a denial-of-service condition for the network. This is fixed in version a754b3d.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-54426">CVE-2025-54426</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/polkadot-evm/frontier/pull/1720/commits/8ed6053fb868495477ba2409f7e64f439df76f96">https://github.com/polkadot-evm/frontier/pull/1720/commits/8ed6053fb868495477ba2409f7e64f439df76f96</a></td>
+					<td class=date>2025-07-28T21:15:26.887</td>
+					<td class=description>Polkadot Frontier is an Ethereum and EVM compatibility layer for Polkadot and Substrate. In versions prior to commit 36f70d1, the Curve25519Add and Curve25519ScalarMul precompiles incorrectly handle invalid Ristretto point representations. Instead of returning an error, they silently treat invalid input bytes as the Ristretto identity element, leading to potentially incorrect cryptographic results. This is fixed in commit 36f70d1.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -146,6 +170,10 @@ tarfile.TarInfo._block = _block_patched</td>
 		
 
 		<hr>
+		
+			
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
