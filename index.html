@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-07-29T13:35:49.679867
+Updated at UTC 2025-07-29T14:18:05.209341
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -100,19 +100,7 @@ Updated at UTC 2025-07-29T13:35:49.679867
 					<td class=date>2025-07-28T19:15:43.793</td>
 					<td class=description>There is a defect in the CPython “tarfile” module affecting the “TarFile” extraction and entry enumeration APIs. The tar implementation would process tar archives with negative offsets without error, resulting in an infinite loop and deadlock during the parsing of maliciously crafted tar archives. 
 
-This vulnerability can be mitigated by including the following patch after importing the “tarfile” module:
-
-
-
-import tarfile
-
-def _block_patched(self, count):
-    if count < 0:  # pragma: no cover
-        raise tarfile.InvalidHeaderError("invalid offset")
-    return _block_patched._orig_block(self, count)
-
-_block_patched._orig_block = tarfile.TarInfo._block
-tarfile.TarInfo._block = _block_patched</td>
+This vulnerability can be mitigated by including the following patch after importing the “tarfile” module:  https://gist.github.com/sethmlarson/1716ac5b82b73dbcbf23ad2eff8b33e1</td>
 
 
 				</tr>
@@ -154,18 +142,6 @@ tarfile.TarInfo._block = _block_patched</td>
 		
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-8191">CVE-2025-8191</a></td>
-					<td>3.5</td>
-					<td><a target=_blank href="https://github.com/macrozheng/mall/issues/919">https://github.com/macrozheng/mall/issues/919</a></td>
-					<td class=date>2025-07-26T14:15:25.120</td>
-					<td class=description>A vulnerability, which was classified as problematic, was found in macrozheng mall up to 1.0.3. Affected is an unknown function of the file /swagger-ui/index.html of the component Swagger UI. The manipulation of the argument configUrl leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The vendor deleted the GitHub issue for this vulnerability without any explanation. Afterwards the vendor was contacted early about this disclosure via email but did not respond in any way.</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
 		
@@ -202,7 +178,7 @@ tarfile.TarInfo._block = _block_patched</td>
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-54769">CVE-2025-54769</a></td>
-					<td>-</td>
+					<td>8.8</td>
 					<td>remote,execution</td>
 					<td class=date>2025-07-29T00:15:24.473</td>
 					<td class=description>An authenticated, read-only user can upload a file and perform a directory traversal to have the uploaded file placed in a location of their choosing.  This can be used to overwrite existing PERL modules within the application to achieve remote code execution (RCE) by an attacker.</td>
@@ -287,8 +263,6 @@ tarfile.TarInfo._block = _block_patched</td>
 					<td class=date>2025-07-26T19:15:25.310</td>
 					<td class=description>A vulnerability, which was classified as problematic, has been found in Comodo Dragon up to 134.0.6998.179. Affected by this issue is some unknown functionality of the component IP DNS Leakage Detector. The manipulation leads to cleartext transmission of sensitive information. The attack may be launched remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
 				</tr>
-			
-		
 			
 		
 
