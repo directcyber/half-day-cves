@@ -1,16 +1,4 @@
 {
-  "CVE-2025-54366": {
-    "cvss": "-",
-    "description": "FreeScout is a lightweight free open source help desk and shared inbox built with PHP (Laravel framework). In versions 1.8.185 and below, there is a critical deserialization vulnerability in the /conversation/ajax endpoint that allows authenticated users with knowledge of the APP_KEY to achieve remote code execution. The vulnerability occurs when the application processes the attachments_all and attachments POST parameters through the insecure Helper::decrypt() function, which performs unsafe deserialization of user-controlled data without proper validation. This flaw enables attackers to create arbitrary objects and manipulate their properties, leading to complete compromise of the web application. This is fixed in version 1.8.186.",
-    "published": "2025-07-26T04:16:04.857",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-54416": {
-    "cvss": 9.1,
-    "description": "tj-actions/branch-names is a Github actions repository that contains workflows to retrieve branch or tag names with support for all events. In versions 8.2.1 and below, a critical vulnerability has been identified in the tj-actions/branch-names' GitHub Action workflow which allows arbitrary command execution in downstream workflows. This issue arises due to inconsistent input sanitization and unescaped output, enabling malicious actors to exploit specially crafted branch names or tags. While internal sanitization mechanisms have been implemented, the action outputs remain vulnerable, exposing consuming workflows to significant security risks. This is fixed in version 9.0.0",
-    "published": "2025-07-26T04:16:10.107",
-    "keywords": "execution,command"
-  },
   "CVE-2025-6895": {
     "cvss": 9.8,
     "description": "The Melapress Login Security plugin for WordPress is vulnerable to Authentication Bypass due to missing authorization within the get_valid_user_based_on_token() function in versions 2.1.0 to 2.1.1. This makes it possible for unauthenticated attackers who know an arbitrary user meta value to bypass authentication checks and log in as that user.",
