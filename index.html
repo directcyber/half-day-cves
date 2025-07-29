@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-07-29T16:16:21.736172
+Updated at UTC 2025-07-29T17:16:16.883515
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,30 @@ Updated at UTC 2025-07-29T16:16:21.736172
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-44137">CVE-2025-44137</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/maptiler/tileserver-php/issues/167">https://github.com/maptiler/tileserver-php/issues/167</a></td>
+					<td class=date>2025-07-29T17:15:33.493</td>
+					<td class=description>MapTiler Tileserver-php v2.0 is vulnerable to Directory Traversal. The renderTile function within tileserver.php is responsible for delivering tiles that are stored as files on the server via web request. Creating the path to a file allows the insertion of "../" and thus read any file on the web server. Affected GET parameters are "TileMatrix", "TileRow", "TileCol" and "Format"</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-44136">CVE-2025-44136</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/maptiler/tileserver-php/issues/167">https://github.com/maptiler/tileserver-php/issues/167</a></td>
+					<td class=date>2025-07-29T17:15:33.327</td>
+					<td class=description>MapTiler Tileserver-php v2.0 is vulnerable to Cross Site Scripting (XSS). The GET parameter "layer" is reflected in an error message without html encoding. This leads to XSS and allows an unauthenticated attacker to execute arbitrary HTML or JavaScript code on a victim's browser.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -170,6 +194,10 @@ This vulnerability can be mitigated by including the following patch after impor
 		
 
 		<hr>
+		
+			
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
