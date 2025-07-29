@@ -1,16 +1,4 @@
 {
-  "CVE-2025-8205": {
-    "cvss": 3.7,
-    "description": "A vulnerability, which was classified as problematic, has been found in Comodo Dragon up to 134.0.6998.179. Affected by this issue is some unknown functionality of the component IP DNS Leakage Detector. The manipulation leads to cleartext transmission of sensitive information. The attack may be launched remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-07-26T19:15:25.310",
-    "keywords": "remote,sensitive,leak"
-  },
-  "CVE-2025-8206": {
-    "cvss": 3.1,
-    "description": "A vulnerability, which was classified as problematic, was found in Comodo Dragon up to 134.0.6998.179. This affects an unknown part of the component IP DNS Leakage Detector. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. The complexity of an attack is rather high. The exploitability is told to be difficult. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-07-26T19:15:26.107",
-    "keywords": "remote,leak"
-  },
   "CVE-2025-5120": {
     "cvss": 7.6,
     "description": "A sandbox escape vulnerability was identified in huggingface/smolagents version 1.14.0, allowing attackers to bypass the restricted execution environment and achieve remote code execution (RCE). The vulnerability stems from the local_python_executor.py module, which inadequately restricts Python code execution despite employing static and dynamic checks. Attackers can exploit whitelisted modules and functions to execute arbitrary code, compromising the host system. This flaw undermines the core security boundary intended to isolate untrusted code, posing risks such as unauthorized code execution, data leakage, and potential integration-level compromise. The issue is resolved in version 1.17.0.",
