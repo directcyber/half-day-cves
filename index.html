@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-07-29T14:18:05.209341
+Updated at UTC 2025-07-29T15:16:49.746266
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,30 @@ Updated at UTC 2025-07-29T14:18:05.209341
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-50738">CVE-2025-50738</a></td>
+					<td>9.8</td>
+					<td><a target=_blank href="https://github.com/usememos/memos/issues/4707#issuecomment-2898504237">https://github.com/usememos/memos/issues/4707#issuecomment-2898504237</a></td>
+					<td class=date>2025-07-29T15:15:35.543</td>
+					<td class=description>The Memos application, up to version v0.24.3, allows for the embedding of markdown images with arbitrary URLs. When a user views a memo containing such an image, their browser automatically fetches the image URL without explicit user consent or interaction beyond viewing the memo. This can be exploited by an attacker to disclose the viewing user's IP address, browser User-Agent string, and potentially other request-specific information to the attacker-controlled server, leading to information disclosure and user tracking.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-46059">CVE-2025-46059</a></td>
+					<td>9.8</td>
+					<td><a target=_blank href="https://github.com/langchain-ai/langchain/issues/30833">https://github.com/langchain-ai/langchain/issues/30833</a></td>
+					<td class=date>2025-07-29T15:15:35.003</td>
+					<td class=description>langchain-ai v0.3.51 was discovered to contain an indirect prompt injection vulnerability in the GmailToolkit component. This vulnerability allows attackers to execute arbitrary code and compromise the application via a crafted email message.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -144,6 +168,10 @@ This vulnerability can be mitigated by including the following patch after impor
 		
 
 		<hr>
+		
+			
+		
+			
 		
 			
 				<tr class=keywords style="display: none">

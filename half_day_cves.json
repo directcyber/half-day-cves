@@ -94,5 +94,17 @@
     "description": "Sandboxie is a sandbox-based isolation software for 32-bit and 64-bit Windows NT-based operating systems. In versions 1.16.1 and below, a critical security vulnerability exists in password handling mechanisms. During encrypted sandbox creation, user passwords are transmitted via shared memory, exposing them to potential interception. The vulnerability is particularly severe during password modification operations, where both old and new passwords are passed as plaintext command-line arguments to the Imbox process without any encryption or obfuscation. This implementation flaw allows any process within the user session, including unprivileged processes, to retrieve these sensitive credentials by reading the command-line arguments, thereby bypassing standard privilege requirements and creating a significant security risk. This is fixed in version 1.16.2.",
     "published": "2025-07-29T13:15:27.823",
     "keywords": "command,sensitive,bypass"
+  },
+  "CVE-2025-46059": {
+    "url": "https://github.com/langchain-ai/langchain/issues/30833",
+    "cvss": 9.8,
+    "description": "langchain-ai v0.3.51 was discovered to contain an indirect prompt injection vulnerability in the GmailToolkit component. This vulnerability allows attackers to execute arbitrary code and compromise the application via a crafted email message.",
+    "published": "2025-07-29T15:15:35.003"
+  },
+  "CVE-2025-50738": {
+    "url": "https://github.com/usememos/memos/issues/4707#issuecomment-2898504237",
+    "cvss": 9.8,
+    "description": "The Memos application, up to version v0.24.3, allows for the embedding of markdown images with arbitrary URLs. When a user views a memo containing such an image, their browser automatically fetches the image URL without explicit user consent or interaction beyond viewing the memo. This can be exploited by an attacker to disclose the viewing user's IP address, browser User-Agent string, and potentially other request-specific information to the attacker-controlled server, leading to information disclosure and user tracking.",
+    "published": "2025-07-29T15:15:35.543"
   }
 }
