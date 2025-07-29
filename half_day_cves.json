@@ -124,5 +124,17 @@
     "cvss": "-",
     "description": "Discourse is an open-source community discussion platform. Prior to version 3.4.7 on the `stable` branch and version 3.5.0.beta.8 on the `tests-passed` branch, upon issuing a physical security key for 2FA, the server generates a WebAuthn challenge, which the client signs. The challenge is not cleared from the user\u2019s session after authentication, potentially allowing reuse and increasing security risk. This is fixed in versions 3.4.7 and 3.5.0.beta.8.",
     "published": "2025-07-29T20:15:28.327"
+  },
+  "CVE-2025-40600": {
+    "cvss": "-",
+    "description": "Use of Externally-Controlled Format String vulnerability in the SonicOS SSL VPN interface allows a remote unauthenticated attacker to cause service disruption.",
+    "published": "2025-07-29T22:15:24.927",
+    "keywords": "remote,unauthenticated,vpn"
+  },
+  "CVE-2025-54126": {
+    "cvss": "-",
+    "description": "The WebAssembly Micro Runtime's (WAMR) iwasm package is the executable binary built with WAMR VMcore which supports WebAssembly System Interface (WASI) and command line interface. In versions 2.4.0 and below, iwasm uses --addr-pool with an IPv4 address that lacks a subnet mask, allowing the system to accept all IP addresses. This can unintentionally expose the service to all incoming connections and bypass intended access restrictions. Services relying on --addr-pool for restricting access by IP may unintentionally become open to all external connections. This may lead to unauthorized access in production deployments, especially when users assume that specifying an IP without a subnet mask implies a default secure configuration. This is fixed in version 2.4.1.",
+    "published": "2025-07-29T22:15:25.503",
+    "keywords": "command,bypass"
   }
 }

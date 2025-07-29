@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-07-29T22:13:52.305638
+Updated at UTC 2025-07-29T23:13:36.090653
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2025-07-29T22:13:52.305638
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 				<tr>
@@ -204,6 +208,26 @@ This vulnerability can be mitigated by including the following patch after impor
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-54126">CVE-2025-54126</a></td>
+					<td>-</td>
+					<td>command,bypass</td>
+					<td class=date>2025-07-29T22:15:25.503</td>
+					<td class=description>The WebAssembly Micro Runtime's (WAMR) iwasm package is the executable binary built with WAMR VMcore which supports WebAssembly System Interface (WASI) and command line interface. In versions 2.4.0 and below, iwasm uses --addr-pool with an IPv4 address that lacks a subnet mask, allowing the system to accept all IP addresses. This can unintentionally expose the service to all incoming connections and bypass intended access restrictions. Services relying on --addr-pool for restricting access by IP may unintentionally become open to all external connections. This may lead to unauthorized access in production deployments, especially when users assume that specifying an IP without a subnet mask implies a default secure configuration. This is fixed in version 2.4.1.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-40600">CVE-2025-40600</a></td>
+					<td>-</td>
+					<td>remote,unauthenticated,vpn</td>
+					<td class=date>2025-07-29T22:15:24.927</td>
+					<td class=description>Use of Externally-Controlled Format String vulnerability in the SonicOS SSL VPN interface allows a remote unauthenticated attacker to cause service disruption.</td>
+				</tr>
+			
 		
 			
 		
