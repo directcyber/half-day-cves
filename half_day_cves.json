@@ -5,42 +5,6 @@
     "published": "2025-07-26T04:16:04.857",
     "keywords": "remote,execution"
   },
-  "CVE-2025-54378": {
-    "url": "https://github.com/haxtheweb/haxcms-php/commit/24d30222481ada037597c4d7c0a51a1ef7af6cfd",
-    "cvss": 8.3,
-    "description": "HAX CMS allows you to manage your microsite universe with PHP or NodeJs backends. In versions 11.0.13 and below of haxcms-nodejs and versions 11.0.8 and below of haxcms-php, API endpoints do not perform authorization checks when interacting with a resource. Both the JS and PHP versions of the CMS do not verify that a user has permission to interact with a resource before performing a given operation. The API endpoints within the HAX CMS application check if a user is authenticated, but don't check for authorization before performing an operation. This is fixed in versions 11.0.14 of haxcms-nodejs and 11.0.9 of haxcms-php.",
-    "published": "2025-07-26T04:16:05.967"
-  },
-  "CVE-2025-54380": {
-    "url": "https://github.com/opencast/opencast/commit/e8980435342149375802648b9c9e696c9a5f0c9a",
-    "cvss": 6.5,
-    "description": "Opencast is a free, open-source platform to support the management of educational audio and video content. Prior to version 17.6, Opencast would incorrectly send the hashed global system account credentials (ie: org.opencastproject.security.digest.user and org.opencastproject.security.digest.pass) when attempting to fetch mediapackage elements included in a mediapackage XML file. A previous CVE prevented many cases where the credentials were inappropriately sent, but not all. Anyone with ingest permissions could cause Opencast to send its hashed global system account credentials to a url of their choosing. This issue is fixed in Opencast 17.6.",
-    "published": "2025-07-26T04:16:06.190"
-  },
-  "CVE-2025-54385": {
-    "url": "https://github.com/xwiki/xwiki-platform/commit/7c4087d44ac550610b2fa413dd4f5375409265a5",
-    "cvss": "-",
-    "description": "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. In versions between 17.0.0-rc1 to 17.2.2 and versions 16.10.5 and below, it's possible to execute any SQL query in Oracle by using the function like DBMS_XMLGEN or DBMS_XMLQUERY. The XWiki#searchDocuments APIs pass queries directly to Hibernate without sanitization. Even when these APIs enforce a specific SELECT clause, attackers can still inject malicious code through HQL's native function support in other parts of the query (such as the WHERE clause). This is fixed in versions 16.10.6 and 17.3.0-rc-1.",
-    "published": "2025-07-26T04:16:06.397"
-  },
-  "CVE-2025-54412": {
-    "url": "https://github.com/skops-dev/skops/commit/0aeca055509dfb48c1506870aabdd9e247adf603",
-    "cvss": "-",
-    "description": "skops is a Python library which helps users share and ship their scikit-learn based models. Versions 0.11.0 and below contain a inconsistency in the OperatorFuncNode which can be exploited to hide the execution of untrusted operator methods. This can then be used in a code reuse attack to invoke seemingly safe functions and escalate to arbitrary code execution with minimal and misleading trusted types. This is fixed in version 0.12.0.",
-    "published": "2025-07-26T04:16:06.597"
-  },
-  "CVE-2025-54414": {
-    "url": "https://github.com/techarohq/anubis/pull/904",
-    "cvss": "-",
-    "description": "Anubis is a Web AI Firewall Utility that weighs the soul of users' connections using one or more challenges in order to protect upstream resources from scraper bots. In versions 1.21.2 and below, attackers can craft malicious pass-challenge pages that cause a user to execute arbitrary JavaScript code or trigger other nonstandard schemes. An incomplete version of this fix was tagged at 1.21.2 and then the release process was aborted upon final testing. To work around this issue: block any requests to the /.within.website/x/cmd/anubis/api/pass-challenge route with the ?redir= parameter set to anything that doesn't start with the URL scheme http, https, or no scheme (local path redirect). This was fixed in version 1.21.3.",
-    "published": "2025-07-26T04:16:06.987"
-  },
-  "CVE-2025-54415": {
-    "url": "https://github.com/astronomer/dag-factory/pull/460",
-    "cvss": "-",
-    "description": "dag-factory is a library for Apache Airflow\u00ae to construct DAGs declaratively via configuration files. In versions 0.23.0a8 and below, a high-severity vulnerability has been identified in the cicd.yml workflow within the astronomer/dag-factory GitHub repository. The workflow, specifically when triggered by pull_request_target, is susceptible to exploitation, allowing an attacker to execute arbitrary code within the GitHub Actions runner environment. This misconfiguration enables an attacker to establish a reverse shell, exfiltrate sensitive secrets, including the highly-privileged GITHUB_TOKEN, and ultimately gain full control over the repository. This is fixed in version 0.23.0a9.",
-    "published": "2025-07-26T04:16:08.240"
-  },
   "CVE-2025-54416": {
     "cvss": 9.1,
     "description": "tj-actions/branch-names is a Github actions repository that contains workflows to retrieve branch or tag names with support for all events. In versions 8.2.1 and below, a critical vulnerability has been identified in the tj-actions/branch-names' GitHub Action workflow which allows arbitrary command execution in downstream workflows. This issue arises due to inconsistent input sanitization and unescaped output, enabling malicious actors to exploit specially crafted branch names or tags. While internal sanitization mechanisms have been implemented, the action outputs remain vulnerable, exposing consuming workflows to significant security risks. This is fixed in version 9.0.0",
@@ -142,5 +106,11 @@
     "cvss": "-",
     "description": "Polkadot Frontier is an Ethereum and EVM compatibility layer for Polkadot and Substrate. The extrinsic note_min_gas_price_target is an inherent extrinsic, meaning only the block producer can call it. To ensure correctness, the ProvideInherent trait should be implemented for each inherent, which includes the check_inherent call. This allows other nodes to verify if the input (in this case, the target value) is correct. However, prior to commit a754b3d, the check_inherent function has not been implemented for note_min_gas_price_target. This lets the block producer set the target value without verification. The target is then used to set the MinGasPrice, which has an upper and lower bound defined in the on_initialize hook. The block producer can set the target to the upper bound. Which also increases the upper and lower bounds for the next block. Over time, this could result in continuously raising the gas price, making contract execution too expensive and ineffective for users. An attacker could use this flaw to manipulate the gas price, potentially leading to significantly inflated transaction fees. Such manipulation could render contract execution prohibitively expensive for users, effectively resulting in a denial-of-service condition for the network. This is fixed in version a754b3d.",
     "published": "2025-07-28T21:15:27.080"
+  },
+  "CVE-2025-54769": {
+    "cvss": "-",
+    "description": "An authenticated, read-only user can upload a file and perform a directory traversal to have the uploaded file placed in a location of their choosing.  This can be used to overwrite existing PERL modules within the application to achieve remote code execution (RCE) by an attacker.",
+    "published": "2025-07-29T00:15:24.473",
+    "keywords": "remote,execution"
   }
 }
