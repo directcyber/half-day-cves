@@ -106,5 +106,11 @@
     "cvss": 9.8,
     "description": "The Memos application, up to version v0.24.3, allows for the embedding of markdown images with arbitrary URLs. When a user views a memo containing such an image, their browser automatically fetches the image URL without explicit user consent or interaction beyond viewing the memo. This can be exploited by an attacker to disclose the viewing user's IP address, browser User-Agent string, and potentially other request-specific information to the attacker-controlled server, leading to information disclosure and user tracking.",
     "published": "2025-07-29T15:15:35.543"
+  },
+  "CVE-2025-28171": {
+    "cvss": "-",
+    "description": "An issue in Grandstream UCM6510 v.1.0.20.52 and before allows a remote attacker to obtain sensitive information via the Login function at /cgi and /webrtccgi.",
+    "published": "2025-07-29T16:15:24.287",
+    "keywords": "remote,sensitive"
   }
 }
