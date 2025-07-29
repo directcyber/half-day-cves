@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-07-29T04:41:06.075755
+Updated at UTC 2025-07-29T05:22:36.552958
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2025-07-29T04:41:06.075755
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -164,10 +168,28 @@ tarfile.TarInfo._block = _block_patched</td>
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-8264">CVE-2025-8264</a></td>
+					<td>9.0</td>
+					<td>authentication,command,sensitive</td>
+					<td class=date>2025-07-29T05:15:32.760</td>
+					<td class=description>Versions of the package z-push/z-push-dev before 2.7.6 are vulnerable to SQL Injection due to unparameterized queries in the IMAP backend. An attacker can inject malicious commands by manipulating the username field in basic authentication. This allows the attacker to access and potentially modify or delete sensitive data from a linked third-party database. **Note:** This vulnerability affects Z-Push installations that utilize the IMAP backend and have the IMAP_FROM_SQL_QUERY option configured.  MitigationChange configuration to use the default or LDAP in backend/imap/config.phpphpdefine('IMAP_DEFAULTFROM', '');orphpdefine('IMAP_DEFAULTFROM', 'ldap');</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-6495">CVE-2025-6495</a></td>
+					<td>7.5</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2025-07-29T05:15:32.550</td>
+					<td class=description>The Bricks theme for WordPress is vulnerable to blind SQL Injection via the ‘p’ parameter in all versions up to, and including, 1.12.4 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -278,16 +300,6 @@ tarfile.TarInfo._block = _block_patched</td>
 					<td>unauthenticated,bypass</td>
 					<td class=date>2025-07-26T07:15:26.277</td>
 					<td class=description>The WoodMart theme for WordPress is vulnerable to Improper Input Validation in all versions up to, and including, 8.2.6. This is due to insufficient validation of the qty parameter in the woodmart_update_cart_item function. This makes it possible for unauthenticated attackers to manipulate cart quantities using fractional values, allowing them to obtain products for free by setting extremely small quantities (e.g., 0.00001) that round cart totals to $0.00, effectively bypassing payment requirements and allowing unauthorized acquisition of virtual or downloadable products.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-6895">CVE-2025-6895</a></td>
-					<td>9.8</td>
-					<td>unauthenticated,authentication,bypass</td>
-					<td class=date>2025-07-26T05:15:25.673</td>
-					<td class=description>The Melapress Login Security plugin for WordPress is vulnerable to Authentication Bypass due to missing authorization within the get_valid_user_based_on_token() function in versions 2.1.0 to 2.1.1. This makes it possible for unauthenticated attackers who know an arbitrary user meta value to bypass authentication checks and log in as that user.</td>
 				</tr>
 			
 		
