@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-07-29T20:15:43.630881
+Updated at UTC 2025-07-29T21:13:19.322875
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,18 @@ Updated at UTC 2025-07-29T20:15:43.630881
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-53102">CVE-2025-53102</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/discourse/discourse/commit/8bc0cee2c00a514ea60f33ea6172da2ce5a05beb">https://github.com/discourse/discourse/commit/8bc0cee2c00a514ea60f33ea6172da2ce5a05beb</a></td>
+					<td class=date>2025-07-29T20:15:28.327</td>
+					<td class=description>Discourse is an open-source community discussion platform. Prior to version 3.4.7 on the `stable` branch and version 3.5.0.beta.8 on the `tests-passed` branch, upon issuing a physical security key for 2FA, the server generates a WebAuthn challenge, which the client signs. The challenge is not cleared from the user’s session after authentication, potentially allowing reuse and increasing security risk. This is fixed in versions 3.4.7 and 3.5.0.beta.8.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -192,6 +204,8 @@ This vulnerability can be mitigated by including the following patch after impor
 		
 
 		<hr>
+		
+			
 		
 			
 				<tr class=keywords style="display: none">

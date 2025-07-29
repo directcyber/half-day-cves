@@ -118,5 +118,11 @@
     "description": "Totolink X6000R V9.4.0cu.1360_B20241207 was found to contain a command injection vulnerability in the sub_4184C0 function via the tz parameter. This vulnerability allows unauthenticated attackers to execute arbitrary commands via a crafted request.",
     "published": "2025-07-29T18:15:30.433",
     "keywords": "unauthenticated,command"
+  },
+  "CVE-2025-53102": {
+    "url": "https://github.com/discourse/discourse/commit/8bc0cee2c00a514ea60f33ea6172da2ce5a05beb",
+    "cvss": "-",
+    "description": "Discourse is an open-source community discussion platform. Prior to version 3.4.7 on the `stable` branch and version 3.5.0.beta.8 on the `tests-passed` branch, upon issuing a physical security key for 2FA, the server generates a WebAuthn challenge, which the client signs. The challenge is not cleared from the user\u2019s session after authentication, potentially allowing reuse and increasing security risk. This is fixed in versions 3.4.7 and 3.5.0.beta.8.",
+    "published": "2025-07-29T20:15:28.327"
   }
 }
