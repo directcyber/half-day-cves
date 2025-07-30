@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-07-30T14:15:19.357592
+Updated at UTC 2025-07-30T15:14:42.697889
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,30 @@ Updated at UTC 2025-07-30T14:15:19.357592
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-54572">CVE-2025-54572</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/saml-toolkits/ruby-saml/pull/770">https://github.com/saml-toolkits/ruby-saml/pull/770</a></td>
+					<td class=date>2025-07-30T14:15:29.433</td>
+					<td class=description>The Ruby SAML library is for implementing the client side of a SAML authorization. In versions 1.18.0 and below, a denial-of-service vulnerability exists in ruby-saml even with the message_max_bytesize setting configured. The vulnerability occurs because the SAML response is validated for Base64 format prior to checking the message size, leading to potential resource exhaustion. This is fixed in version 1.18.1.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-54430">CVE-2025-54430</a></td>
+					<td>9.1</td>
+					<td><a target=_blank href="https://github.com/dedupeio/dedupe/commit/3f61e79102910bd355e920a2df7e44c14c9cb247">https://github.com/dedupeio/dedupe/commit/3f61e79102910bd355e920a2df7e44c14c9cb247</a></td>
+					<td class=date>2025-07-30T14:15:29.257</td>
+					<td class=description>dedupe is a python library that uses machine learning to perform fuzzy matching, deduplication and entity resolution quickly on structured data. Before commit 3f61e79, a critical severity vulnerability has been identified within the .github/workflows/benchmark-bot.yml workflow, where a issue_comment can be triggered using the @benchmark body. This workflow is susceptible to exploitation as it checkout the ${{ github.event.issue.number }}, which correspond to the branch of the PR manipulated by potentially malicious actors, and where untrusted code may be executed. Running untrusted code may lead to the exfiltration of GITHUB_TOKEN, which in this workflow has write permissions on most of the scopes - in particular the contents one - and could lead to potential repository takeover. This is fixed by commit 3f61e79.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -214,6 +238,10 @@ This vulnerability can be mitigated by including the following patch after impor
 		
 
 		<hr>
+		
+			
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
