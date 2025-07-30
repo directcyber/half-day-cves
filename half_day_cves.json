@@ -24,7 +24,7 @@
     "published": "2025-07-28T08:15:22.520"
   },
   "CVE-2025-30133": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "An issue was discovered on IROAD Dashcam FX2 devices. Bypass of Device Pairing/Registration can occur. It requires device registration via the \"IROAD X View\" app for authentication, but its HTTP server lacks this restriction. Once connected to the dashcam's Wi-Fi network via the default password (\"qwertyuiop\"), an attacker can directly access the HTTP server at http://192.168.10.1 without undergoing the pairing process. Additionally, no alert is triggered on the device when an attacker connects, making this intrusion completely silent.",
     "published": "2025-07-28T14:15:26.830",
     "keywords": "authentication,bypass"
@@ -120,7 +120,7 @@
     "published": "2025-07-29T20:15:28.327"
   },
   "CVE-2025-40600": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "Use of Externally-Controlled Format String vulnerability in the SonicOS SSL VPN interface allows a remote unauthenticated attacker to cause service disruption.",
     "published": "2025-07-29T22:15:24.927",
     "keywords": "remote,unauthenticated,vpn"
@@ -166,5 +166,23 @@
     "cvss": "-",
     "description": "The Ruby SAML library is for implementing the client side of a SAML authorization. In versions 1.18.0 and below, a denial-of-service vulnerability exists in ruby-saml even with the message_max_bytesize setting configured. The vulnerability occurs because the SAML response is validated for Base64 format prior to checking the message size, leading to potential resource exhaustion. This is fixed in version 1.18.1.",
     "published": "2025-07-30T14:15:29.433"
+  },
+  "CVE-2025-46811": {
+    "cvss": 9.8,
+    "description": "A Missing Authentication for Critical Function vulnerability in SUSE Manager allows anyone with access to the websocket at /rhn/websocket/minion/remote-commands to execute arbitrary commands as root.\n\n\n\n\nThis issue affects Container suse/manager/5.0/x86_64/server:5.0.5.7.30.1: from ? before 0.3.7-150600.3.6.2; Container suse/manager/5.0/x86_64/server:5.0.5.7.30.1: from ? before 5.0.14-150600.4.17.1; Container suse/manager/5.0/x86_64/server:5.0.5.7.30.1: from ? before 5.0.14-150600.4.17.1; Image SLES15-SP4-Manager-Server-4-3-BYOS: from ? before 4.3.33-150400.3.55.2; Image SLES15-SP4-Manager-Server-4-3-BYOS: from ? before 4.3.33-150400.3.55.2; Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure: from ? before 4.3.33-150400.3.55.2; Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure: from ? before 4.3.33-150400.3.55.2; Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2: from ? before 4.3.33-150400.3.55.2; Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2: from ? before 4.3.33-150400.3.55.2; Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE: from ? before 4.3.33-150400.3.55.2; Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE: from ? before 4.3.33-150400.3.55.2; SUSE Manager Server Module 4.3: from ? before 0.3.7-150400.3.39.4; SUSE Manager Server Module 4.3: from ? before 4.3.33-150400.3.55.2; SUSE Manager Server Module 4.3: from ? before 4.3.33-150400.3.55.2.",
+    "published": "2025-07-30T15:15:33.737",
+    "keywords": "remote,authentication,command"
+  },
+  "CVE-2025-53944": {
+    "cvss": 7.7,
+    "description": "AutoGPT is a platform that allows users to create, deploy, and manage continuous artificial intelligence agents. In v0.6.15 and below, the external API's get_graph_execution_results endpoint has an authorization bypass vulnerability. While it correctly validates user access to the graph_id, it fails to verify ownership of the graph_exec_id parameter, allowing authenticated users to access any execution results by providing arbitrary execution IDs. The internal API implements proper validation for both parameters. This is fixed in v0.6.16.",
+    "published": "2025-07-30T15:15:35.210",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2025-50578": {
+    "cvss": 9.8,
+    "description": "LinuxServer.io heimdall 2.6.3-ls307 contains a vulnerability in how it handles user-supplied HTTP headers, specifically `X-Forwarded-Host` and `Referer`. An unauthenticated remote attacker can manipulate these headers to perform Host Header Injection and Open Redirect attacks. This allows the loading of external resources from attacker-controlled domains and unintended redirection of users, potentially enabling phishing, UI redress, and session theft. The vulnerability exists due to insufficient validation and trust of untrusted input, affecting the integrity and trustworthiness of the application.",
+    "published": "2025-07-30T16:15:28.177",
+    "keywords": "remote,unauthenticated"
   }
 }
