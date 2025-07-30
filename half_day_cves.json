@@ -148,5 +148,11 @@
     "description": "This issue was addressed by adding an additional prompt for user consent. This issue is fixed in macOS Sonoma 14.7.7, macOS Ventura 13.7.7, macOS Sequoia 15.4. A shortcut may be able to bypass sensitive Shortcuts app settings.",
     "published": "2025-07-30T00:15:31.383",
     "keywords": "sensitive,bypass"
+  },
+  "CVE-2025-8320": {
+    "cvss": 8.8,
+    "description": "Tesla Wall Connector Content-Length Header Improper Input Validation Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Tesla Wall Connector devices. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the parsing of the HTTP Content-Length header. The issue results from the lack of proper validation of user-supplied data, which can result in memory access past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the device. Was ZDI-CAN-26300.",
+    "published": "2025-07-30T01:15:26.077",
+    "keywords": "remote,execution,authentication"
   }
 }

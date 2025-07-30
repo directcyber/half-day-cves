@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-07-30T01:08:35.345673
+Updated at UTC 2025-07-30T03:29:19.779083
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2025-07-30T01:08:35.345673
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -212,6 +214,18 @@ This vulnerability can be mitigated by including the following patch after impor
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-8320">CVE-2025-8320</a></td>
+					<td>8.8</td>
+					<td>remote,execution,authentication</td>
+					<td class=date>2025-07-30T01:15:26.077</td>
+					<td class=description>Tesla Wall Connector Content-Length Header Improper Input Validation Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Tesla Wall Connector devices. Authentication is not required to exploit this vulnerability.
+
+The specific flaw exists within the parsing of the HTTP Content-Length header. The issue results from the lack of proper validation of user-supplied data, which can result in memory access past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the device. Was ZDI-CAN-26300.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
