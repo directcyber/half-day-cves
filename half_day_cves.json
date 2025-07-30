@@ -1,10 +1,4 @@
 {
-  "CVE-2025-5120": {
-    "cvss": 7.6,
-    "description": "A sandbox escape vulnerability was identified in huggingface/smolagents version 1.14.0, allowing attackers to bypass the restricted execution environment and achieve remote code execution (RCE). The vulnerability stems from the local_python_executor.py module, which inadequately restricts Python code execution despite employing static and dynamic checks. Attackers can exploit whitelisted modules and functions to execute arbitrary code, compromising the host system. This flaw undermines the core security boundary intended to isolate untrusted code, posing risks such as unauthorized code execution, data leakage, and potential integration-level compromise. The issue is resolved in version 1.17.0.",
-    "published": "2025-07-27T08:15:25.403",
-    "keywords": "remote,execution,bypass,leak"
-  },
   "CVE-2025-8242": {
     "cvss": 8.8,
     "description": "A vulnerability has been found in TOTOLINK X15 1.0.0-B20230714.1105 and classified as critical. This vulnerability affects unknown code of the file /boafrm/formFilter of the component HTTP POST Request Handler. The manipulation of the argument ip6addr/url/vpnPassword/vpnUser leads to buffer overflow. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
