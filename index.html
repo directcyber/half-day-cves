@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-07-30T22:13:47.315213
+Updated at UTC 2025-07-30T23:13:46.071988
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2025-07-30T22:13:47.315213
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -252,6 +254,16 @@ This vulnerability can be mitigated by including the following patch after impor
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-54586">CVE-2025-54586</a></td>
+					<td>7.1</td>
+					<td>remote,sensitive</td>
+					<td class=date>2025-07-30T22:15:25.120</td>
+					<td class=description>GitProxy is an application that stands between developers and a Git remote endpoint. In versions 1.19.1 and below,   attackers can inject extra commits into the pack sent to GitHub, commits that aren’t pointed to by any branch. Although these “hidden” commits never show up in the repository’s visible history, GitHub still serves them at their direct commit URLs. This lets an attacker exfiltrate sensitive data without ever leaving a trace in the branch view. We rate this a High‑impact vulnerability because it completely compromises repository confidentiality. This is fixed in version 1.19.2.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
