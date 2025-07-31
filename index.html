@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-07-31T15:15:09.448090
+Updated at UTC 2025-07-31T16:17:41.784855
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -59,6 +59,44 @@ Updated at UTC 2025-07-31T15:15:09.448090
 
 		
 			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-52289">CVE-2025-52289</a></td>
+					<td>8.0</td>
+					<td><a target=_blank href="https://github.com/magnussolution/magnusbilling7/commit/f886330e9e9216a3830775610a4a83f970c08e8d">https://github.com/magnussolution/magnusbilling7/commit/f886330e9e9216a3830775610a4a83f970c08e8d</a></td>
+					<td class=date>2025-07-31T15:15:37.263</td>
+					<td class=description>A Broken Access Control vulnerability in MagnusBilling v7.8.5.3 allows newly registered users to gain escalated privileges by sending a crafted request to /mbilling/index.php/user/save to set their account status fom "pending" to "active" without requiring administrator approval.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-50270">CVE-2025-50270</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/fesiong/anqicms/issues/80">https://github.com/fesiong/anqicms/issues/80</a></td>
+					<td class=date>2025-07-31T15:15:36.687</td>
+					<td class=description>A stored Cross Site Scripting (xss) vulnerability in the "content management" feature in AnQiCMS v.3.4.11 allows a remote attacker to execute arbitrary code via a crafted script to the title, categoryTitle, and tmpTag parameters.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34146">CVE-2025-34146</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/nyariv/sandboxjs/issues/31">https://github.com/nyariv/sandboxjs/issues/31</a></td>
+					<td class=date>2025-07-31T15:15:36.260</td>
+					<td class=description>A prototype pollution vulnerability exists in @nyariv/sandboxjs versions <= 0.8.23, allowing attackers to inject arbitrary properties into Object.prototype via crafted JavaScript code. This can result in a denial-of-service (DoS) condition or, under certain conditions, escape the sandboxed environment intended to restrict code execution. The vulnerability stems from insufficient prototype access checks in the sandbox’s executor logic, particularly in the handling of JavaScript function objects returned.</td>
+
+
+				</tr>
+			
+		
+			
 		
 			
 		
@@ -72,7 +110,7 @@ Updated at UTC 2025-07-31T15:15:09.448090
 				<tr>
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-8344">CVE-2025-8344</a></td>
 					<td>6.3</td>
-					<td><a target=_blank href="https://github.com/openviglet/shio/issues/1029#issue-3239422554">https://github.com/openviglet/shio/issues/1029#issue-3239422554</a></td>
+					<td><a target=_blank href="https://github.com/openviglet/shio/issues/1029">https://github.com/openviglet/shio/issues/1029</a></td>
 					<td class=date>2025-07-31T02:15:27.800</td>
 					<td class=description>A vulnerability classified as critical has been found in openviglet shio up to 0.3.8. Affected is the function shStaticFileUpload of the file shio-app/src/main/java/com/viglet/shio/api/staticfile/ShStaticFileAPI.java. The manipulation of the argument filename leads to unrestricted upload. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.</td>
 
@@ -84,7 +122,7 @@ Updated at UTC 2025-07-31T15:15:09.448090
 				<tr>
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-8343">CVE-2025-8343</a></td>
 					<td>4.3</td>
-					<td><a target=_blank href="https://github.com/openviglet/shio/issues/1028#issue-3239418750">https://github.com/openviglet/shio/issues/1028#issue-3239418750</a></td>
+					<td><a target=_blank href="https://github.com/openviglet/shio/issues/1028">https://github.com/openviglet/shio/issues/1028</a></td>
 					<td class=date>2025-07-31T01:15:25.860</td>
 					<td class=description>A vulnerability was found in openviglet shio up to 0.3.8. It has been rated as critical. This issue affects the function shStaticFilePreUpload of the file shio-app/src/main/java/com/viglet/shio/api/staticfile/ShStaticFileAPI.java. The manipulation of the argument fileName leads to path traversal. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
 
@@ -260,6 +298,22 @@ This vulnerability can be mitigated by including the following patch after impor
 		
 
 		<hr>
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-50475">CVE-2025-50475</a></td>
+					<td>-</td>
+					<td>remote,execution,unauthenticated,command</td>
+					<td class=date>2025-07-31T15:15:36.830</td>
+					<td class=description>An OS command injection vulnerability exists in Russound MBX-PRE-D67F firmware version 3.1.6, allowing unauthenticated attackers to execute arbitrary commands as root via crafted input to the hostname parameter in network configuration requests. This vulnerability stems from improper neutralization of special elements used in an OS command within the network configuration handler, enabling remote code execution with the highest privileges.</td>
+				</tr>
+			
+		
+			
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
