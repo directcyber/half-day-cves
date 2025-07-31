@@ -220,5 +220,17 @@
     "description": "The AI Engine plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the rest_simpleFileUpload() function in versions 2.9.3 and 2.9.4. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files on the affected site's server when the REST API is enabled, which may make remote code execution possible.",
     "published": "2025-07-31T05:15:26.227",
     "keywords": "remote,execution"
+  },
+  "CVE-2025-2813": {
+    "cvss": 7.5,
+    "description": "An unauthenticated remote attacker can cause a Denial of Service by sending a large number of requests to the http service on port 80.",
+    "published": "2025-07-31T10:15:25.913",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-41688": {
+    "cvss": 7.2,
+    "description": "A high privileged remote attacker can execute arbitrary OS commands using an undocumented method allowing to escape the implemented LUA sandbox.",
+    "published": "2025-07-31T10:15:26.763",
+    "keywords": "remote,command"
   }
 }
