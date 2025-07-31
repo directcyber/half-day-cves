@@ -1,10 +1,4 @@
 {
-  "CVE-2025-8263": {
-    "url": "https://github.com/prettier/prettier/issues/17737#issue-3238184068",
-    "cvss": 4.3,
-    "description": "A vulnerability was found in prettier up to 3.6.2. It has been declared as problematic. Affected by this vulnerability is the function parseNestedCSS of the file src/language-css/parser-postcss.js. The manipulation of the argument node leads to inefficient regular expression complexity. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2025-07-28T08:15:22.520"
-  },
   "CVE-2025-30133": {
     "cvss": 9.8,
     "description": "An issue was discovered on IROAD Dashcam FX2 devices. Bypass of Device Pairing/Registration can occur. It requires device registration via the \"IROAD X View\" app for authentication, but its HTTP server lacks this restriction. Once connected to the dashcam's Wi-Fi network via the default password (\"qwertyuiop\"), an attacker can directly access the HTTP server at http://192.168.10.1 without undergoing the pairing process. Additionally, no alert is triggered on the device when an attacker connects, making this intrusion completely silent.",
