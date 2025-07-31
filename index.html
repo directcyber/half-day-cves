@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-07-31T13:33:43.796713
+Updated at UTC 2025-07-31T14:16:41.181598
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2025-07-31T13:33:43.796713
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -256,10 +258,18 @@ This vulnerability can be mitigated by including the following patch after impor
 				</tr>
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-7738">CVE-2025-7738</a></td>
+					<td>4.4</td>
+					<td>sensitive,leak</td>
+					<td class=date>2025-07-31T14:15:35.177</td>
+					<td class=description>A flaw was found in Ansible Automation Platform (AAP) where the Gateway API returns the client secret for certain GitHub Enterprise authenticators in clear text. This vulnerability affects administrators or auditors accessing authenticator configurations. While access is limited to privileged users, the clear text exposure of sensitive credentials increases the risk of accidental leaks or misuse.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -550,16 +560,6 @@ The specific flaw exists within the parsing of the HTTP Content-Length header. T
 				</tr>
 			
 		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-30133">CVE-2025-30133</a></td>
-					<td>9.8</td>
-					<td>authentication,bypass</td>
-					<td class=date>2025-07-28T14:15:26.830</td>
-					<td class=description>An issue was discovered on IROAD Dashcam FX2 devices. Bypass of Device Pairing/Registration can occur. It requires device registration via the "IROAD X View" app for authentication, but its HTTP server lacks this restriction. Once connected to the dashcam's Wi-Fi network via the default password ("qwertyuiop"), an attacker can directly access the HTTP server at http://192.168.10.1 without undergoing the pairing process. Additionally, no alert is triggered on the device when an attacker connects, making this intrusion completely silent.</td>
-				</tr>
 			
 		
 

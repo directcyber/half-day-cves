@@ -1,10 +1,4 @@
 {
-  "CVE-2025-30133": {
-    "cvss": 9.8,
-    "description": "An issue was discovered on IROAD Dashcam FX2 devices. Bypass of Device Pairing/Registration can occur. It requires device registration via the \"IROAD X View\" app for authentication, but its HTTP server lacks this restriction. Once connected to the dashcam's Wi-Fi network via the default password (\"qwertyuiop\"), an attacker can directly access the HTTP server at http://192.168.10.1 without undergoing the pairing process. Additionally, no alert is triggered on the device when an attacker connects, making this intrusion completely silent.",
-    "published": "2025-07-28T14:15:26.830",
-    "keywords": "authentication,bypass"
-  },
   "CVE-2025-8194": {
     "url": "https://github.com/python/cpython/pull/137027",
     "cvss": 7.5,
@@ -232,5 +226,11 @@
     "description": "A high privileged remote attacker can execute arbitrary OS commands using an undocumented method allowing to escape the implemented LUA sandbox.",
     "published": "2025-07-31T10:15:26.763",
     "keywords": "remote,command"
+  },
+  "CVE-2025-7738": {
+    "cvss": 4.4,
+    "description": "A flaw was found in Ansible Automation Platform (AAP) where the Gateway API returns the client secret for certain GitHub Enterprise authenticators in clear text. This vulnerability affects administrators or auditors accessing authenticator configurations. While access is limited to privileged users, the clear text exposure of sensitive credentials increases the risk of accidental leaks or misuse.",
+    "published": "2025-07-31T14:15:35.177",
+    "keywords": "sensitive,leak"
   }
 }
