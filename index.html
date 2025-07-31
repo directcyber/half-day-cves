@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-07-31T17:15:22.015808
+Updated at UTC 2025-07-31T18:20:40.030475
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,12 @@ Updated at UTC 2025-07-31T17:15:22.015808
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
 		
 			
 				<tr>
@@ -300,11 +306,43 @@ This vulnerability can be mitigated by including the following patch after impor
 		<hr>
 		
 			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-8426">CVE-2025-8426</a></td>
+					<td>9.4</td>
+					<td>remote,authentication,sensitive</td>
+					<td class=date>2025-07-31T18:15:44.030</td>
+					<td class=description>Marvell QConvergeConsole compressConfigFiles Directory Traversal Information Disclosure and Denial-of-Service Vulnerability. This vulnerability allows remote attackers to disclose sensitive information or to create a denial-of-service condition on affected installations of Marvell QConvergeConsole. Authentication is not required to exploit this vulnerability.
+
+The specific flaw exists within the implementation of the compressConfigFiles method. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to disclose sensitive information or to create a denial-of-service condition on the system. Was ZDI-CAN-24915.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-54834">CVE-2025-54834</a></td>
+					<td>5.3</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-07-31T18:15:43.250</td>
+					<td class=description>OPEXUS FOIAXpress Public Access Link (PAL) version v11.1.0 allows an unauthenticated, remote attacker to query the /App/CreateRequest.aspx endpoint to check for the existence of valid usernames. There are no rate-limiting mechanisms in place.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-54833">CVE-2025-54833</a></td>
+					<td>5.3</td>
+					<td>remote,unauthenticated,bypass</td>
+					<td class=date>2025-07-31T18:15:43.067</td>
+					<td class=description>OPEXUS FOIAXpress Public Access Link (PAL) version v11.1.0 allows attackers to bypass account-lockout and CAPTCHA protections. Unauthenticated remote attackers can more easily brute force passwords.</td>
+				</tr>
+			
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-50475">CVE-2025-50475</a></td>
-					<td>-</td>
+					<td>9.8</td>
 					<td>remote,execution,unauthenticated,command</td>
 					<td class=date>2025-07-31T15:15:36.830</td>
 					<td class=description>An OS command injection vulnerability exists in Russound MBX-PRE-D67F firmware version 3.1.6, allowing unauthenticated attackers to execute arbitrary commands as root via crafted input to the hostname parameter in network configuration requests. This vulnerability stems from improper neutralization of special elements used in an OS command within the network configuration handler, enabling remote code execution with the highest privileges.</td>
@@ -493,7 +531,7 @@ The specific flaw exists within the parsing of the HTTP Content-Length header. T
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-43184">CVE-2025-43184</a></td>
-					<td>-</td>
+					<td>9.8</td>
 					<td>sensitive,bypass</td>
 					<td class=date>2025-07-30T00:15:31.383</td>
 					<td class=description>This issue was addressed by adding an additional prompt for user consent. This issue is fixed in macOS Sonoma 14.7.7, macOS Ventura 13.7.7, macOS Sequoia 15.4. A shortcut may be able to bypass sensitive Shortcuts app settings.</td>

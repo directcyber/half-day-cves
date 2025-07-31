@@ -108,7 +108,7 @@
     "keywords": "remote,unauthenticated"
   },
   "CVE-2025-43184": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "This issue was addressed by adding an additional prompt for user consent. This issue is fixed in macOS Sonoma 14.7.7, macOS Ventura 13.7.7, macOS Sequoia 15.4. A shortcut may be able to bypass sensitive Shortcuts app settings.",
     "published": "2025-07-30T00:15:31.383",
     "keywords": "sensitive,bypass"
@@ -246,7 +246,7 @@
     "published": "2025-07-31T15:15:36.687"
   },
   "CVE-2025-50475": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "An OS command injection vulnerability exists in Russound MBX-PRE-D67F firmware version 3.1.6, allowing unauthenticated attackers to execute arbitrary commands as root via crafted input to the hostname parameter in network configuration requests. This vulnerability stems from improper neutralization of special elements used in an OS command within the network configuration handler, enabling remote code execution with the highest privileges.",
     "published": "2025-07-31T15:15:36.830",
     "keywords": "remote,execution,unauthenticated,command"
@@ -256,5 +256,23 @@
     "cvss": 8.0,
     "description": "A Broken Access Control vulnerability in MagnusBilling v7.8.5.3 allows newly registered users to gain escalated privileges by sending a crafted request to /mbilling/index.php/user/save to set their account status fom \"pending\" to \"active\" without requiring administrator approval.",
     "published": "2025-07-31T15:15:37.263"
+  },
+  "CVE-2025-54833": {
+    "cvss": 5.3,
+    "description": "OPEXUS FOIAXpress Public Access Link (PAL) version v11.1.0 allows attackers to bypass account-lockout and CAPTCHA protections. Unauthenticated remote attackers can more easily brute force passwords.",
+    "published": "2025-07-31T18:15:43.067",
+    "keywords": "remote,unauthenticated,bypass"
+  },
+  "CVE-2025-54834": {
+    "cvss": 5.3,
+    "description": "OPEXUS FOIAXpress Public Access Link (PAL) version v11.1.0 allows an unauthenticated, remote attacker to query the /App/CreateRequest.aspx endpoint to check for the existence of valid usernames. There are no rate-limiting mechanisms in place.",
+    "published": "2025-07-31T18:15:43.250",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-8426": {
+    "cvss": 9.4,
+    "description": "Marvell QConvergeConsole compressConfigFiles Directory Traversal Information Disclosure and Denial-of-Service Vulnerability. This vulnerability allows remote attackers to disclose sensitive information or to create a denial-of-service condition on affected installations of Marvell QConvergeConsole. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the implementation of the compressConfigFiles method. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to disclose sensitive information or to create a denial-of-service condition on the system. Was ZDI-CAN-24915.",
+    "published": "2025-07-31T18:15:44.030",
+    "keywords": "remote,authentication,sensitive"
   }
 }
