@@ -214,5 +214,17 @@
     "description": "GitProxy is an application that stands between developers and a Git remote endpoint. In versions 1.19.1 and below,   attackers can inject extra commits into the pack sent to GitHub, commits that aren\u2019t pointed to by any branch. Although these \u201chidden\u201d commits never show up in the repository\u2019s visible history, GitHub still serves them at their direct commit URLs. This lets an attacker exfiltrate sensitive data without ever leaving a trace in the branch view. We rate this a High\u2011impact vulnerability because it completely compromises repository confidentiality. This is fixed in version 1.19.2.",
     "published": "2025-07-30T22:15:25.120",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2025-8343": {
+    "url": "https://github.com/openviglet/shio/issues/1028#issue-3239418750",
+    "cvss": 4.3,
+    "description": "A vulnerability was found in openviglet shio up to 0.3.8. It has been rated as critical. This issue affects the function shStaticFilePreUpload of the file shio-app/src/main/java/com/viglet/shio/api/staticfile/ShStaticFileAPI.java. The manipulation of the argument fileName leads to path traversal. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-07-31T01:15:25.860"
+  },
+  "CVE-2025-8344": {
+    "url": "https://github.com/openviglet/shio/issues/1029#issue-3239422554",
+    "cvss": 6.3,
+    "description": "A vulnerability classified as critical has been found in openviglet shio up to 0.3.8. Affected is the function shStaticFileUpload of the file shio-app/src/main/java/com/viglet/shio/api/staticfile/ShStaticFileAPI.java. The manipulation of the argument filename leads to unrestricted upload. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-07-31T02:15:27.800"
   }
 }
