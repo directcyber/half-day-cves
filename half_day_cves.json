@@ -1,10 +1,4 @@
 {
-  "CVE-2025-29534": {
-    "cvss": 8.8,
-    "description": "An authenticated remote code execution vulnerability in PowerStick Wave Dual-Band Wifi Extender V1.0 allows an attacker with valid credentials to execute arbitrary commands with root privileges. The issue stems from insufficient sanitization of user-supplied input in the /cgi-bin/cgi_vista.cgi executable, which is passed to a system-level function call.",
-    "published": "2025-07-28T20:17:44.480",
-    "keywords": "remote,execution,command"
-  },
   "CVE-2025-54426": {
     "url": "https://github.com/polkadot-evm/frontier/pull/1720/commits/8ed6053fb868495477ba2409f7e64f439df76f96",
     "cvss": "-",
@@ -235,7 +229,7 @@
   },
   "CVE-2025-50270": {
     "url": "https://github.com/fesiong/anqicms/issues/80",
-    "cvss": "-",
+    "cvss": 6.1,
     "description": "A stored Cross Site Scripting (xss) vulnerability in the \"content management\" feature in AnQiCMS v.3.4.11 allows a remote attacker to execute arbitrary code via a crafted script to the title, categoryTitle, and tmpTag parameters.",
     "published": "2025-07-31T15:15:36.687"
   },
@@ -270,9 +264,21 @@
     "keywords": "remote,authentication,sensitive"
   },
   "CVE-2025-26062": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "An access control issue in Intelbras RX1500 v2.2.9 and RX3000 v1.0.11 allows unauthenticated attackers to access the router's settings file and obtain potentially sensitive information from the current settings.",
     "published": "2025-07-31T19:15:28.610",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-37111": {
+    "cvss": 6.0,
+    "description": "A vulnerability was discovered in the storage policy for certain sets of authentication keys in the HPE Telco Network Function Virtual Orchestrator. Successful Exploitation could lead to unauthorized parties gaining access to sensitive system information.",
+    "published": "2025-07-31T20:15:32.823",
+    "keywords": "authentication,sensitive"
+  },
+  "CVE-2025-8286": {
+    "cvss": 9.8,
+    "description": "G\u00fcralp FMUS series seismic monitoring devices\u00a0expose an unauthenticated Telnet-based command line interface that \ncould allow an attacker to modify hardware configurations, manipulate \ndata, or factory reset the device.",
+    "published": "2025-07-31T20:15:46.350",
+    "keywords": "unauthenticated,command"
   }
 }
