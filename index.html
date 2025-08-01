@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-08-01T04:47:52.132291
+Updated at UTC 2025-08-01T05:26:34.635353
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2025-08-01T04:47:52.132291
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -264,12 +266,18 @@ Updated at UTC 2025-08-01T04:47:52.132291
 		
 			
 		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-7443">CVE-2025-7443</a></td>
+					<td>8.1</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2025-08-01T05:15:36.743</td>
+					<td class=description>The BerqWP – Automated All-In-One Page Speed Optimization for Core Web Vitals, Cache, CDN, Images, CSS, and JavaScript plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation via the store_javascript_cache.php file in all versions up to, and including, 2.2.42. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -613,26 +621,6 @@ The specific flaw exists within the parsing of the HTTP Content-Length header. T
 					<td>command,sensitive,bypass</td>
 					<td class=date>2025-07-29T13:15:27.823</td>
 					<td class=description>Sandboxie is a sandbox-based isolation software for 32-bit and 64-bit Windows NT-based operating systems. In versions 1.16.1 and below, a critical security vulnerability exists in password handling mechanisms. During encrypted sandbox creation, user passwords are transmitted via shared memory, exposing them to potential interception. The vulnerability is particularly severe during password modification operations, where both old and new passwords are passed as plaintext command-line arguments to the Imbox process without any encryption or obfuscation. This implementation flaw allows any process within the user session, including unprivileged processes, to retrieve these sensitive credentials by reading the command-line arguments, thereby bypassing standard privilege requirements and creating a significant security risk. This is fixed in version 1.16.2.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-8264">CVE-2025-8264</a></td>
-					<td>9.0</td>
-					<td>authentication,command,sensitive</td>
-					<td class=date>2025-07-29T05:15:32.760</td>
-					<td class=description>Versions of the package z-push/z-push-dev before 2.7.6 are vulnerable to SQL Injection due to unparameterized queries in the IMAP backend. An attacker can inject malicious commands by manipulating the username field in basic authentication. This allows the attacker to access and potentially modify or delete sensitive data from a linked third-party database. **Note:** This vulnerability affects Z-Push installations that utilize the IMAP backend and have the IMAP_FROM_SQL_QUERY option configured.  MitigationChange configuration to use the default or LDAP in backend/imap/config.phpphpdefine('IMAP_DEFAULTFROM', '');orphpdefine('IMAP_DEFAULTFROM', 'ldap');</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-6495">CVE-2025-6495</a></td>
-					<td>7.5</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2025-07-29T05:15:32.550</td>
-					<td class=description>The Bricks theme for WordPress is vulnerable to blind SQL Injection via the ‘p’ parameter in all versions up to, and including, 1.12.4 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
 				</tr>
 			
 		

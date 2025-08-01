@@ -1,16 +1,4 @@
 {
-  "CVE-2025-6495": {
-    "cvss": 7.5,
-    "description": "The Bricks theme for WordPress is vulnerable to blind SQL Injection via the \u2018p\u2019 parameter in all versions up to, and including, 1.12.4 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
-    "published": "2025-07-29T05:15:32.550",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2025-8264": {
-    "cvss": 9.0,
-    "description": "Versions of the package z-push/z-push-dev before 2.7.6 are vulnerable to SQL Injection due to unparameterized queries in the IMAP backend. An attacker can inject malicious commands by manipulating the username field in basic authentication. This allows the attacker to access and potentially modify or delete sensitive data from a linked third-party database. \r\r**Note:** This vulnerability affects Z-Push installations that utilize the IMAP backend and have the IMAP_FROM_SQL_QUERY option configured. \r\r Mitigation\rChange configuration to use the default or LDAP in backend/imap/config.php\r\rphp\rdefine('IMAP_DEFAULTFROM', '');\r\ror\rphp\rdefine('IMAP_DEFAULTFROM', 'ldap');",
-    "published": "2025-07-29T05:15:32.760",
-    "keywords": "authentication,command,sensitive"
-  },
   "CVE-2025-54422": {
     "cvss": "-",
     "description": "Sandboxie is a sandbox-based isolation software for 32-bit and 64-bit Windows NT-based operating systems. In versions 1.16.1 and below, a critical security vulnerability exists in password handling mechanisms. During encrypted sandbox creation, user passwords are transmitted via shared memory, exposing them to potential interception. The vulnerability is particularly severe during password modification operations, where both old and new passwords are passed as plaintext command-line arguments to the Imbox process without any encryption or obfuscation. This implementation flaw allows any process within the user session, including unprivileged processes, to retrieve these sensitive credentials by reading the command-line arguments, thereby bypassing standard privilege requirements and creating a significant security risk. This is fixed in version 1.16.2.",
@@ -268,5 +256,11 @@
     "description": "The Service Finder Bookings plugin for WordPress is vulnerable to privilege escalation via authentication bypass in all versions up to, and including, 6.0. This is due to the plugin not properly validating a user's cookie value prior to logging them in through the service_finder_switch_back() function. This makes it possible for unauthenticated attackers to login as any user including admins.",
     "published": "2025-08-01T04:16:21.693",
     "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2025-7443": {
+    "cvss": 8.1,
+    "description": "The BerqWP \u2013 Automated All-In-One Page Speed Optimization for Core Web Vitals, Cache, CDN, Images, CSS, and JavaScript plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation via the store_javascript_cache.php file in all versions up to, and including, 2.2.42. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2025-08-01T05:15:36.743",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
