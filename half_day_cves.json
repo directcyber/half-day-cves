@@ -1,22 +1,4 @@
 {
-  "CVE-2025-46059": {
-    "url": "https://github.com/langchain-ai/langchain/issues/30833",
-    "cvss": 9.8,
-    "description": "langchain-ai v0.3.51 was discovered to contain an indirect prompt injection vulnerability in the GmailToolkit component. This vulnerability allows attackers to execute arbitrary code and compromise the application via a crafted email message.",
-    "published": "2025-07-29T15:15:35.003"
-  },
-  "CVE-2025-50738": {
-    "url": "https://github.com/usememos/memos/issues/4707#issuecomment-2898504237",
-    "cvss": 9.8,
-    "description": "The Memos application, up to version v0.24.3, allows for the embedding of markdown images with arbitrary URLs. When a user views a memo containing such an image, their browser automatically fetches the image URL without explicit user consent or interaction beyond viewing the memo. This can be exploited by an attacker to disclose the viewing user's IP address, browser User-Agent string, and potentially other request-specific information to the attacker-controlled server, leading to information disclosure and user tracking.",
-    "published": "2025-07-29T15:15:35.543"
-  },
-  "CVE-2025-28171": {
-    "cvss": 6.5,
-    "description": "An issue in Grandstream UCM6510 v.1.0.20.52 and before allows a remote attacker to obtain sensitive information via the Login function at /cgi and /webrtccgi.",
-    "published": "2025-07-29T16:15:24.287",
-    "keywords": "remote,sensitive"
-  },
   "CVE-2025-44136": {
     "url": "https://github.com/maptiler/tileserver-php/issues/167",
     "cvss": 9.8,
@@ -262,5 +244,17 @@
     "cvss": 5.3,
     "description": "LiteSpeed QUIC (LSQUIC) Library before 4.3.1 has an lsquic_engine_packet_in memory leak.",
     "published": "2025-08-01T06:15:28.860"
+  },
+  "CVE-2025-50460": {
+    "cvss": "-",
+    "description": "A remote code execution (RCE) vulnerability exists in the ms-swift project version 3.3.0 due to unsafe deserialization in tests/run.py using yaml.load() from the PyYAML library (versions = 5.3.1). If an attacker can control the content of the YAML configuration file passed to the --run_config parameter, arbitrary code can be executed during deserialization. This can lead to full system compromise. The vulnerability is triggered when a malicious YAML file is loaded, allowing the execution of arbitrary Python commands such as os.system(). It is recommended to upgrade PyYAML to version 5.4 or higher, and to use yaml.safe_load() to mitigate the issue.",
+    "published": "2025-08-01T16:15:41.600",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2025-50472": {
+    "cvss": "-",
+    "description": "The modelscope/ms-swift library thru 2.6.1 is vulnerable to arbitrary code execution through deserialization of untrusted data within the `load_model_meta()` function of the `ModelFileSystemCache()` class. Attackers can execute arbitrary code and commands by crafting a malicious serialized `.mdl` payload, exploiting the use of `pickle.load()` on data from potentially untrusted sources. This vulnerability allows for remote code execution (RCE) by deceiving victims into loading a seemingly harmless checkpoint during a normal training process, thereby enabling attackers to execute arbitrary code on the targeted machine. Note that the payload file is a hidden file, making it difficult for the victim to detect tampering. More importantly, during the model training process, after the `.mdl` file is loaded and executes arbitrary code, the normal training process remains unaffected'meaning the user remains unaware of the arbitrary code execution.",
+    "published": "2025-08-01T16:15:41.750",
+    "keywords": "remote,execution,command"
   }
 }
