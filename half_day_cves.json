@@ -1,10 +1,4 @@
 {
-  "CVE-2025-54769": {
-    "cvss": 8.8,
-    "description": "An authenticated, read-only user can upload a file and perform a directory traversal to have the uploaded file placed in a location of their choosing.  This can be used to overwrite existing PERL modules within the application to achieve remote code execution (RCE) by an attacker.",
-    "published": "2025-07-29T00:15:24.473",
-    "keywords": "remote,execution"
-  },
   "CVE-2025-6495": {
     "cvss": 7.5,
     "description": "The Bricks theme for WordPress is vulnerable to blind SQL Injection via the \u2018p\u2019 parameter in all versions up to, and including, 1.12.4 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
