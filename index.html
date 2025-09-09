@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-09-09T04:15:18.058112
+Updated at UTC 2025-09-09T05:12:28.819618
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -152,8 +152,6 @@ Updated at UTC 2025-09-09T04:15:18.058112
 
 
 				</tr>
-			
-		
 			
 		
 			
@@ -368,16 +366,6 @@ Updated at UTC 2025-09-09T04:15:18.058112
 					<td>remote,execution,command</td>
 					<td class=date>2025-09-06T19:15:38.533</td>
 					<td class=description>internetarchive is a Python and Command-Line Interface to Archive.org In versions 5.5.0 and below, there is a directory traversal (path traversal) vulnerability in the File.download() method of the internetarchive library. The file.download() method does not properly sanitize user-supplied filenames or validate the final download path. A maliciously crafted filename could contain path traversal sequences (e.g., ../../../../windows/system32/file.txt) or illegal characters that, when processed, would cause the file to be written outside of the intended target directory. An attacker could potentially overwrite critical system files or application configuration files, leading to a denial of service, privilege escalation, or remote code execution, depending on the context in which the library is used.  The vulnerability is particularly critical for users on Windows systems, but all operating systems are affected. This issue is fixed in version 5.5.1.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-7045">CVE-2025-7045</a></td>
-					<td>6.5</td>
-					<td>unauthenticated,authentication</td>
-					<td class=date>2025-09-06T04:16:06.650</td>
-					<td class=description>The Cloud SAML SSO plugin for WordPress is vulnerable to Identity Provider Deletion due to a missing capability check on the delete_config action of the csso_handle_actions() function in all versions up to, and including, 1.0.19. This makes it possible for unauthenticated attackers to delete any configured IdP, breaking the SSO authentication flow and causing a denial-of-service.</td>
 				</tr>
 			
 		
