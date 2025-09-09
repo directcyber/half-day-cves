@@ -202,5 +202,17 @@
     "description": "Improper Neutralization of Special Elements used in an LDAP Query ('LDAP Injection') vulnerability in Apache HertzBeat .\n\n\n\n\n\n\n\n\n\n\n\n\nThe attacker needs to have an authenticated account with access, and the attack can only be triggered by crafting custom commands. A successful attack would result in arbitrary script execution.\n\nThis issue affects Apache HertzBeat: through 1.7.2.\n\nUsers are recommended to upgrade to version [1.7.3], which fixes the issue.",
     "published": "2025-09-09T10:15:33.287",
     "keywords": "execution,command"
+  },
+  "CVE-2025-7350": {
+    "cvss": "-",
+    "description": "A security issue affecting multiple Cisco devices also directly impacts Stratix\u00ae 5410, 5700, and 8000 devices. This can lead to remote code execution by uploading and running malicious configurations without authentication.",
+    "published": "2025-09-09T13:15:31.297",
+    "keywords": "remote,execution,authentication"
+  },
+  "CVE-2025-9161": {
+    "cvss": "-",
+    "description": "A security issue exists within FactoryTalk Optix MQTT broker due to the lack of URI sanitization. This flaw enables the loading of remote Mosquito plugins, which can be used to achieve remote code execution.",
+    "published": "2025-09-09T13:15:32.830",
+    "keywords": "remote,execution"
   }
 }
