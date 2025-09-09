@@ -1,1 +1,152 @@
-{}
+{
+  "CVE-2025-7045": {
+    "cvss": 6.5,
+    "description": "The Cloud SAML SSO plugin for WordPress is vulnerable to Identity Provider Deletion due to a missing capability check on the delete_config action of the csso_handle_actions() function in all versions up to, and including, 1.0.19. This makes it possible for unauthenticated attackers to delete any configured IdP, breaking the SSO authentication flow and causing a denial-of-service.",
+    "published": "2025-09-06T04:16:06.650",
+    "keywords": "unauthenticated,authentication"
+  },
+  "CVE-2025-58438": {
+    "cvss": "-",
+    "description": "internetarchive is a Python and Command-Line Interface to Archive.org In versions 5.5.0 and below, there is a directory traversal (path traversal) vulnerability in the File.download() method of the internetarchive library. The file.download() method does not properly sanitize user-supplied filenames or validate the final download path. A maliciously crafted filename could contain path traversal sequences (e.g., ../../../../windows/system32/file.txt) or illegal characters that, when processed, would cause the file to be written outside of the intended target directory. An attacker could potentially overwrite critical system files or application configuration files, leading to a denial of service, privilege escalation, or remote code execution, depending on the context in which the library is used.  The vulnerability is particularly critical for users on Windows systems, but all operating systems are affected. This issue is fixed in version 5.5.1.",
+    "published": "2025-09-06T19:15:38.533",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2025-58443": {
+    "cvss": "-",
+    "description": "FOG is a free open-source cloning/imaging/rescue suite/inventory management system. Versions 1.5.10.1673 and below contain an authentication bypass vulnerability. It is possible for an attacker to perform an unauthenticated DB dump where they could pull a full SQL DB without credentials. A fix is expected to be released 9/15/2025. To address this vulnerability immediately, upgrade to the latest version of either the dev-branch or working-1.6 branch. This will patch the issue for users concerned about immediate exposure. See the FOG Project documentation for step-by-step upgrade instructions: https://docs.fogproject.org/en/latest/install-fog-server#choosing-a-fog-version.",
+    "published": "2025-09-06T20:15:29.943",
+    "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2025-8085": {
+    "cvss": 8.6,
+    "description": "The Ditty  WordPress plugin before 3.1.58 lacks authorization and authentication for requests to its displayItems endpoint, allowing unauthenticated visitors to make requests to arbitrary URLs.",
+    "published": "2025-09-08T06:15:34.833",
+    "keywords": "unauthenticated,authentication"
+  },
+  "CVE-2025-41708": {
+    "cvss": 7.4,
+    "description": "Due to an unsecure default configuration HTTP is used instead of HTTPS for the web interface. An unauthenticated attacker on the same network could exploit this to learn sensitive data during transmission.",
+    "published": "2025-09-08T07:15:36.523",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-5993": {
+    "cvss": "-",
+    "description": "ITCube CRM in versions from 2023.2 through 2025.2 is vulnerable to path traversal. Unauthenticated remote attacker is able to exploit vulnerable parameter fileName and construct payloads that allow to download any file accessible by the the web server process.",
+    "published": "2025-09-08T11:15:31.100",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-36854": {
+    "cvss": 8.1,
+    "description": "A vulnerability ( CVE-2024-38229 https://www.cve.org/CVERecord ) exists in EOL ASP.NET when closing an HTTP/3 stream while application code is writing to the response body, a race condition may lead to use-after-free, resulting in Remote Code Execution.\n\n  Per  CWE-416: Use After Free https://cwe.mitre.org/data/definitions/416.html , Use After Free is when a product reuses or references memory after it has been freed. At some point afterward, the memory may be allocated again and saved in another pointer, while the original pointer references a location somewhere within the new allocation. Any operations using the original pointer are no longer valid because the memory \"belongs\" to the code that operates on the new pointer.\n\n  This issue affects EOL ASP.NET\u00a06.0.0 <= 6.0.36 as represented in this CVE, as well as\u00a08.0.0 <= 8.0.8, 9.0.0-preview.1.24081.5 <= 9.0.0.RC.1 as represented in\u00a0 CVE-2024-38229 https://www.cve.org/CVERecord .\n\n  Additionally, if you've deployed  self-contained applications https://docs.microsoft.com/dotnet/core/deploying/#self-contained-deployments-scd \u00a0targeting any of the impacted versions, these applications are also vulnerable and must be recompiled and redeployed.\n\n   NOTE: This CVE only represents End Of Life (EOL) software components. The vendor, Microsoft, has indicated there will be no future updates nor support provided upon inquiry.",
+    "published": "2025-09-08T14:15:34.380",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-10096": {
+    "url": "https://github.com/simstudioai/sim/pull/1149",
+    "cvss": 6.3,
+    "description": "A vulnerability was determined in SimStudioAI sim up to 1.0.0. This affects an unknown function of the file apps/sim/app/api/files/parse/route.ts. Executing manipulation of the argument filePath can lead to server-side request forgery. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized. This patch is called 3424a338b763115f0269b209e777608e4cd31785. Applying a patch is advised to resolve this issue.",
+    "published": "2025-09-08T16:15:35.913"
+  },
+  "CVE-2025-10097": {
+    "url": "https://github.com/simstudioai/sim/issues/961#issuecomment-3215578979",
+    "cvss": 6.3,
+    "description": "A vulnerability was identified in SimStudioAI sim up to 1.0.0. This impacts an unknown function of the file apps/sim/app/api/function/execute/route.ts. The manipulation of the argument code leads to code injection. The attack is possible to be carried out remotely.",
+    "published": "2025-09-08T17:15:32.953"
+  },
+  "CVE-2025-9112": {
+    "cvss": 8.8,
+    "description": "The Doccure theme for WordPress is vulnerable to arbitrary file uploads due to incorrect file type validation in the 'doccure_temp_file_uploader' function in all versions up to, and including, 1.4.8. This makes it possible for authenticated attackers, with subscriber-level and above permissions, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2025-09-08T19:15:37.610",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-9113": {
+    "cvss": 9.8,
+    "description": "The Doccure theme for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'doccure_temp_upload_to_media' function in all versions up to, and including, 1.4.8. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2025-09-08T19:15:37.820",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-9114": {
+    "cvss": 9.8,
+    "description": "The Doccure theme for WordPress is vulnerable to Arbitrary User Password Change in versions up to, and including, 1.4.8. This is due to the plugin providing user-controlled access to objects, letting a user bypass authorization and access system resources. This makes it possible for unauthenticated attackers to change user passwords and potentially take over administrator accounts.",
+    "published": "2025-09-08T19:15:38.007",
+    "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2025-57766": {
+    "url": "https://github.com/ethyca/fides/commit/8daec4f5ad3daf0f0bdab4814f6757eb0965104b",
+    "cvss": "-",
+    "description": "Fides is an open-source privacy engineering platform. Prior to version 2.69.1, admin UI user password changes in Fides do not invalidate active user sessions, creating a vulnerability chaining opportunity where attackers who have obtained session tokens through other attack vectors (such as XSS) can maintain access even after password reset. This issue is not directly exploitable on its own and requires a prerequisite vulnerability to obtain valid session tokens in the first place. Version 2.69.1 fixes the issue. No known workarounds are available.",
+    "published": "2025-09-08T22:15:33.320"
+  },
+  "CVE-2025-57815": {
+    "url": "https://github.com/ethyca/fides/commit/59903c195e2f9f8915a1db94950aefd557033a5c",
+    "cvss": "-",
+    "description": "Fides is an open-source privacy engineering platform. Prior to version 2.69.1, the Fides Admin UI login endpoint relies on a general IP-based rate limit for all API traffic and lacks specific anti-automation controls designed to protect against brute-force attacks. This could allow attackers to conduct credential testing attacks, such as credential stuffing or password spraying, which poses a risk to accounts with weak or previously compromised passwords. Version 2.69.1 fixes the issue. For organizations with commercial Fides Enterprise licenses, configuring Single Sign-On (SSO) through an OIDC provider (like Azure, Google, or Okta) is an effective workaround. When OIDC SSO is enabled, username/password authentication can be disabled entirely, which eliminates this attack vector. This functionality is not available for Fides Open Source users.",
+    "published": "2025-09-08T22:15:33.520"
+  },
+  "CVE-2025-57816": {
+    "url": "https://github.com/ethyca/fides/commit/59903c195e2f9f8915a1db94950aefd557033a5c",
+    "cvss": "-",
+    "description": "Fides is an open-source privacy engineering platform. Prior to version 2.69.1, the Fides Webserver API's built-in IP-based rate limiting is ineffective in environments with CDNs, proxies or load balancers. The system incorrectly applies rate limits based on directly connected infrastructure IPs rather than client IPs, and stores counters in-memory rather than in a shared store. This allows attackers to bypass intended rate limits and potentially cause denial of service. This vulnerability only affects deployments relying on Fides's built-in rate limiting for protection. Deployments using external rate limiting solutions (WAFs, API gateways, etc.) are not affected. Version 2.69.1 fixes the issue. There are no application-level workarounds. However, rate limiting may instead be implemented externally at the infrastructure level using a WAF, API Gateway, or similar technology.",
+    "published": "2025-09-08T22:15:33.703"
+  },
+  "CVE-2025-57817": {
+    "url": "https://github.com/ethyca/fides/commit/2ffd125e1089a09b84c27fb5279a05960cbf2452",
+    "cvss": "-",
+    "description": "Fides is an open-source privacy engineering platform. Prior to version 2.69.1, the OAuth client creation and update endpoints of the Fides Webserver API do not properly authorize scope assignment. This allows highly privileged users with `client:create` or `client:update` permissions to escalate their privileges to owner-level. Version 2.69.1 fixes the issue. No known workarounds are available.",
+    "published": "2025-09-08T22:15:33.880"
+  },
+  "CVE-2025-58444": {
+    "cvss": "-",
+    "description": "The MCP inspector is a developer tool for testing and debugging MCP servers. A cross-site scripting issue was reported in versions of the MCP Inspector local development tool prior to 0.16.6 when connecting to untrusted remote MCP servers with a malicious redirect URI. This could be leveraged to interact directly with the inspector proxy to trigger arbitrary command execution. Users are advised to update to 0.16.6 to resolve this issue.",
+    "published": "2025-09-08T22:15:34.247",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2025-58449": {
+    "cvss": "-",
+    "description": "Maho is a free and open source ecommerce platform. In Maho prior to 25.9.0, an authenticated staff user with access to the `Dashboard` and `Catalog\\Manage Products` permissions can create a custom option on a listing with a file input field. By allowing file uploads with a `.php` extension, the user can use the filed to upload malicious PHP files, gaining remote code execution. Version 25.9.0 fixes the issue.",
+    "published": "2025-09-08T22:15:34.423",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-1761": {
+    "cvss": 5.9,
+    "description": "IBM Concert Software 1.0.0 through 1.1.0 could allow a remote attacker to obtain sensitive information from allocated memory due to improper clearing of heap memory.",
+    "published": "2025-09-08T23:15:35.047",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-58745": {
+    "cvss": 9.9,
+    "description": "WeGIA is a Web manager for charitable institutions. The fix for CVE-2025-22133 was not enough to remediate the arbitrary file upload vulnerability. The WeGIA only check MIME types for Excel files at endpoint `/html/socio/sistema/controller/controla_xlsx.php`, which can be bypassed by using magic bytes of Excel file in a PHP file. As a result, attacker can upload webshell to the server for remote code execution. Version 3.4.11 contains an updated fix.",
+    "published": "2025-09-08T23:15:35.790",
+    "keywords": "remote,execution,bypass"
+  },
+  "CVE-2025-42920": {
+    "cvss": 6.1,
+    "description": "Due to a Cross-Site Scripting (XSS) vulnerability in the SAP Supplier Relationship Management, an unauthenticated attacker could generate a malicious link and make it publicly accessible. If an authenticated victim clicks on the link, the injected input is processed during the page generation, resulting in the execution of malicious content. This execution allows the attacker to access and modify information within the victim's browser scope, impacting confidentiality and integrity, while availability remains unaffected.",
+    "published": "2025-09-09T02:15:40.300",
+    "keywords": "execution,unauthenticated"
+  },
+  "CVE-2025-42926": {
+    "cvss": 5.3,
+    "description": "SAP NetWeaver Application Server Java does not perform an authentication check when an attacker attempts to access internal files within the web application.Upon successfully exploitation, an unauthenticated attacker could access these files to gather additional sensitive information about the system.This vulnerability has a low impact on confidentiality and does not affect the integrity or availability of the server.",
+    "published": "2025-09-09T02:15:41.050",
+    "keywords": "unauthenticated,authentication,sensitive"
+  },
+  "CVE-2025-42944": {
+    "cvss": 10.0,
+    "description": "Due to a deserialization vulnerability in SAP NetWeaver, an unauthenticated attacker could exploit the system through the RMI-P4 module by submitting malicious payload to an open port. The deserialization of such untrusted Java objects could lead to arbitrary OS command execution, posing a high impact to the application's confidentiality, integrity, and availability.",
+    "published": "2025-09-09T02:15:42.173",
+    "keywords": "execution,unauthenticated,command"
+  },
+  "CVE-2025-42958": {
+    "cvss": 9.1,
+    "description": "Due to a missing authentication check in the SAP NetWeaver application on IBM i-series, the application allows high privileged unauthorized users to read, modify, or delete sensitive information, as well as access administrative or privileged functionalities. This results in a high impact on the confidentiality, integrity, and availability of the application.",
+    "published": "2025-09-09T02:15:42.363",
+    "keywords": "authentication,sensitive"
+  },
+  "CVE-2025-10123": {
+    "cvss": 7.3,
+    "description": "A vulnerability was determined in D-Link DIR-823X up to 250416. Affected by this vulnerability is the function sub_415028 of the file /goform/set_static_leases. Executing manipulation of the argument Hostname can lead to command injection. The attack can be launched remotely. The exploit has been publicly disclosed and may be utilized.",
+    "published": "2025-09-09T03:15:32.583",
+    "keywords": "remote,command"
+  }
+}
