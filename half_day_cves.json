@@ -142,5 +142,11 @@
     "description": "A vulnerability was determined in D-Link DIR-823X up to 250416. Affected by this vulnerability is the function sub_415028 of the file /goform/set_static_leases. Executing manipulation of the argument Hostname can lead to command injection. The attack can be launched remotely. The exploit has been publicly disclosed and may be utilized.",
     "published": "2025-09-09T03:15:32.583",
     "keywords": "remote,command"
+  },
+  "CVE-2025-9539": {
+    "cvss": 8.0,
+    "description": "The AutomatorWP \u2013 Automator plugin for no-code automations, webhooks & custom integrations in WordPress plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the automatorwp_ajax_import_automation_from_url function in all versions up to, and including, 5.3.6. This makes it possible for authenticated attackers, with Subscriber-level access and above, to create arbitrary automations, which can lead to Remote Code Execution or Privilege escalation once such automation is activated by the administrator",
+    "published": "2025-09-09T07:15:33.313",
+    "keywords": "remote,execution"
   }
 }
