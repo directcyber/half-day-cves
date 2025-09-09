@@ -232,5 +232,47 @@
     "description": "A vulnerability has been found in TRENDnet TEW-831DR 1.0 (601.130.1.1410). Impacted is an unknown function of the file /boafrm/formSysCmd. The manipulation of the argument sysHost leads to command injection. The attack is possible to be carried out remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2025-09-09T15:15:31.893",
     "keywords": "remote,command"
+  },
+  "CVE-2025-55141": {
+    "cvss": 8.8,
+    "description": "Missing authorization in Ivanti Connect Secure before 22.7R2.9 or 22.8R2, Ivanti Policy Secure before 22.7R1.6, Ivanti ZTA Gateway before 2.8R2.3-723 and Ivanti Neurons for Secure Access before 22.8R1.4 (Fix deployed on 02-Aug-2025) allows a remote authenticated attacker with read-only admin privileges to configure authentication related settings.",
+    "published": "2025-09-09T16:15:33.997",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2025-55142": {
+    "cvss": 8.8,
+    "description": "Missing authorization in Ivanti Connect Secure before 22.7R2.9 or 22.8R2, Ivanti Policy Secure before 22.7R1.6, Ivanti ZTA Gateway before 2.8R2.3-723 and Ivanti Neurons for Secure Access before 22.8R1.4 (Fix deployed on 02-Aug-2025) allows a remote authenticated attacker with read-only admin privileges to configure authentication related settings.",
+    "published": "2025-09-09T16:15:34.180",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2025-55143": {
+    "cvss": 6.1,
+    "description": "Reflected text injection in Ivanti Connect Secure before 22.7R2.9 or 22.8R2, Ivanti Policy Secure before 22.7R1.6, Ivanti ZTA Gateway before 2.8R2.3-723 and Ivanti Neurons for Secure Access before 22.8R1.4 (Fix deployed on 02-Aug-2025) allows a remote unauthenticated attacker to inject arbitrary text into a crafted HTTP response. User interaction is required.",
+    "published": "2025-09-09T16:15:34.360",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-55147": {
+    "cvss": 8.8,
+    "description": "CSRF in Ivanti Connect Secure before 22.7R2.9 or 22.8R2, Ivanti Policy Secure before 22.7R1.6, Ivanti ZTA Gateway before 2.8R2.3-723 and Ivanti Neurons for Secure Access before 22.8R1.4 (Fix deployed on 02-Aug-2025) allows a remote unauthenticated attacker to execute sensitive actions on behalf of the victim user. User interaction is required",
+    "published": "2025-09-09T16:15:35.070",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2025-8711": {
+    "cvss": 5.4,
+    "description": "CSRF in Ivanti Connect Secure before 22.7R2.9 or 22.8R2, Ivanti Policy Secure before 22.7R1.6, Ivanti ZTA Gateway before 2.8R2.3-723 and Ivanti Neurons for Secure Access before 22.8R1.4 (Fix deployed on 02-Aug-2025) allows a remote unauthenticated attacker to execute limited actions on behalf of the victim user. User interaction is required.",
+    "published": "2025-09-09T16:15:35.433",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-9712": {
+    "cvss": 8.8,
+    "description": "Insufficient filename validation in Ivanti Endpoint Manager before 2024 SU3 Security Update 1 and 2022 SU8 Security Update 2 allows a remote unauthenticated attacker to achieve remote code execution. User interaction is required.",
+    "published": "2025-09-09T16:15:35.803",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-9872": {
+    "cvss": 8.8,
+    "description": "Insufficient filename validation in Ivanti Endpoint Manager before 2024 SU3 Security Update 1 and 2022 SU8 Security Update 2 allows a remote unauthenticated attacker to achieve remote code execution. User interaction is required.",
+    "published": "2025-09-09T16:15:35.987",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
