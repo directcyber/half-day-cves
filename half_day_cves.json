@@ -1,278 +1,164 @@
 {
-  "CVE-2025-58438": {
-    "cvss": "-",
-    "description": "internetarchive is a Python and Command-Line Interface to Archive.org In versions 5.5.0 and below, there is a directory traversal (path traversal) vulnerability in the File.download() method of the internetarchive library. The file.download() method does not properly sanitize user-supplied filenames or validate the final download path. A maliciously crafted filename could contain path traversal sequences (e.g., ../../../../windows/system32/file.txt) or illegal characters that, when processed, would cause the file to be written outside of the intended target directory. An attacker could potentially overwrite critical system files or application configuration files, leading to a denial of service, privilege escalation, or remote code execution, depending on the context in which the library is used.  The vulnerability is particularly critical for users on Windows systems, but all operating systems are affected. This issue is fixed in version 5.5.1.",
-    "published": "2025-09-06T19:15:38.533",
-    "keywords": "remote,execution,command"
+  "CVE-2025-56556": {
+    "url": "https://github.com/intelliants/subrion/issues/913",
+    "cvss": 6.5,
+    "description": "An issue was discovered in Subrion CMS 4.2.1, allowing authenticated adminitrators or moderators with access to the built-in Run SQL Query feature under the SQL Tool admin panel - to gain escalated privileges in the context of the SQL query tool.",
+    "published": "2025-09-11T19:15:32.660"
   },
-  "CVE-2025-58443": {
-    "cvss": "-",
-    "description": "FOG is a free open-source cloning/imaging/rescue suite/inventory management system. Versions 1.5.10.1673 and below contain an authentication bypass vulnerability. It is possible for an attacker to perform an unauthenticated DB dump where they could pull a full SQL DB without credentials. A fix is expected to be released 9/15/2025. To address this vulnerability immediately, upgrade to the latest version of either the dev-branch or working-1.6 branch. This will patch the issue for users concerned about immediate exposure. See the FOG Project documentation for step-by-step upgrade instructions: https://docs.fogproject.org/en/latest/install-fog-server#choosing-a-fog-version.",
-    "published": "2025-09-06T20:15:29.943",
-    "keywords": "unauthenticated,authentication,bypass"
+  "CVE-2025-59053": {
+    "cvss": 9.6,
+    "description": "AIRI is a self-hosted, artificial intelligence based Grok Companion. In v0.7.2-beta.2 in the `packages/stage-ui/src/components/MarkdownRenderer.vue` path, the Markdown content is processed using the useMarkdown composable, and the processed HTML is rendered directly into the DOM using v-html. An attacker creates a card file containing malicious HTML/JavaScript, then simply processes it using the highlightTagToHtml function (which simply replaces template tags without HTML escaping), and then directly renders it using v-html, leading to cross-site scripting (XSS). The project also exposes the Tauri API, which can be called from the frontend. The MCP plugin exposes a command execution interface function in `crates/tauri-plugin-mcp/src/lib.rs`. This allows arbitrary command execution. `connect_server` directly passes the user-supplied `command` and `args` parameters to `Command::new(command).args(args)` without any input validation or whitelisting. Thus, the previous XSS exploit could achieve command execution through this interface. v0.7.2-beta.3 fixes the issue.",
+    "published": "2025-09-11T19:15:34.443",
+    "keywords": "execution,command"
   },
-  "CVE-2025-8085": {
-    "cvss": 8.6,
-    "description": "The Ditty  WordPress plugin before 3.1.58 lacks authorization and authentication for requests to its displayItems endpoint, allowing unauthenticated visitors to make requests to arbitrary URLs.",
-    "published": "2025-09-08T06:15:34.833",
-    "keywords": "unauthenticated,authentication"
-  },
-  "CVE-2025-41708": {
-    "cvss": 7.4,
-    "description": "Due to an unsecure default configuration HTTP is used instead of HTTPS for the web interface. An unauthenticated attacker on the same network could exploit this to learn sensitive data during transmission.",
-    "published": "2025-09-08T07:15:36.523",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2025-5993": {
-    "cvss": "-",
-    "description": "ITCube CRM in versions from 2023.2 through 2025.2 is vulnerable to path traversal. Unauthenticated remote attacker is able to exploit vulnerable parameter fileName and construct payloads that allow to download any file accessible by the the web server process.",
-    "published": "2025-09-08T11:15:31.100",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-36854": {
-    "cvss": 8.1,
-    "description": "A vulnerability ( CVE-2024-38229 https://www.cve.org/CVERecord ) exists in EOL ASP.NET when closing an HTTP/3 stream while application code is writing to the response body, a race condition may lead to use-after-free, resulting in Remote Code Execution.\n\n  Per  CWE-416: Use After Free https://cwe.mitre.org/data/definitions/416.html , Use After Free is when a product reuses or references memory after it has been freed. At some point afterward, the memory may be allocated again and saved in another pointer, while the original pointer references a location somewhere within the new allocation. Any operations using the original pointer are no longer valid because the memory \"belongs\" to the code that operates on the new pointer.\n\n  This issue affects EOL ASP.NET\u00a06.0.0 <= 6.0.36 as represented in this CVE, as well as\u00a08.0.0 <= 8.0.8, 9.0.0-preview.1.24081.5 <= 9.0.0.RC.1 as represented in\u00a0 CVE-2024-38229 https://www.cve.org/CVERecord .\n\n  Additionally, if you've deployed  self-contained applications https://docs.microsoft.com/dotnet/core/deploying/#self-contained-deployments-scd \u00a0targeting any of the impacted versions, these applications are also vulnerable and must be recompiled and redeployed.\n\n   NOTE: This CVE only represents End Of Life (EOL) software components. The vendor, Microsoft, has indicated there will be no future updates nor support provided upon inquiry.",
-    "published": "2025-09-08T14:15:34.380",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-10096": {
-    "url": "https://github.com/simstudioai/sim/pull/1149",
-    "cvss": 6.3,
-    "description": "A vulnerability was determined in SimStudioAI sim up to 1.0.0. This affects an unknown function of the file apps/sim/app/api/files/parse/route.ts. Executing manipulation of the argument filePath can lead to server-side request forgery. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized. This patch is called 3424a338b763115f0269b209e777608e4cd31785. Applying a patch is advised to resolve this issue.",
-    "published": "2025-09-08T16:15:35.913"
-  },
-  "CVE-2025-10097": {
-    "url": "https://github.com/simstudioai/sim/issues/961#issuecomment-3215578979",
-    "cvss": 6.3,
-    "description": "A vulnerability was identified in SimStudioAI sim up to 1.0.0. This impacts an unknown function of the file apps/sim/app/api/function/execute/route.ts. The manipulation of the argument code leads to code injection. The attack is possible to be carried out remotely.",
-    "published": "2025-09-08T17:15:32.953"
-  },
-  "CVE-2025-9112": {
-    "cvss": 8.8,
-    "description": "The Doccure theme for WordPress is vulnerable to arbitrary file uploads due to incorrect file type validation in the 'doccure_temp_file_uploader' function in all versions up to, and including, 1.4.8. This makes it possible for authenticated attackers, with subscriber-level and above permissions, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2025-09-08T19:15:37.610",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-9113": {
-    "cvss": 9.8,
-    "description": "The Doccure theme for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'doccure_temp_upload_to_media' function in all versions up to, and including, 1.4.8. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2025-09-08T19:15:37.820",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2025-9114": {
-    "cvss": 9.8,
-    "description": "The Doccure theme for WordPress is vulnerable to Arbitrary User Password Change in versions up to, and including, 1.4.8. This is due to the plugin providing user-controlled access to objects, letting a user bypass authorization and access system resources. This makes it possible for unauthenticated attackers to change user passwords and potentially take over administrator accounts.",
-    "published": "2025-09-08T19:15:38.007",
-    "keywords": "unauthenticated,bypass"
-  },
-  "CVE-2025-57766": {
-    "url": "https://github.com/ethyca/fides/commit/8daec4f5ad3daf0f0bdab4814f6757eb0965104b",
-    "cvss": "-",
-    "description": "Fides is an open-source privacy engineering platform. Prior to version 2.69.1, admin UI user password changes in Fides do not invalidate active user sessions, creating a vulnerability chaining opportunity where attackers who have obtained session tokens through other attack vectors (such as XSS) can maintain access even after password reset. This issue is not directly exploitable on its own and requires a prerequisite vulnerability to obtain valid session tokens in the first place. Version 2.69.1 fixes the issue. No known workarounds are available.",
-    "published": "2025-09-08T22:15:33.320"
-  },
-  "CVE-2025-57815": {
-    "url": "https://github.com/ethyca/fides/commit/59903c195e2f9f8915a1db94950aefd557033a5c",
-    "cvss": "-",
-    "description": "Fides is an open-source privacy engineering platform. Prior to version 2.69.1, the Fides Admin UI login endpoint relies on a general IP-based rate limit for all API traffic and lacks specific anti-automation controls designed to protect against brute-force attacks. This could allow attackers to conduct credential testing attacks, such as credential stuffing or password spraying, which poses a risk to accounts with weak or previously compromised passwords. Version 2.69.1 fixes the issue. For organizations with commercial Fides Enterprise licenses, configuring Single Sign-On (SSO) through an OIDC provider (like Azure, Google, or Okta) is an effective workaround. When OIDC SSO is enabled, username/password authentication can be disabled entirely, which eliminates this attack vector. This functionality is not available for Fides Open Source users.",
-    "published": "2025-09-08T22:15:33.520"
-  },
-  "CVE-2025-57816": {
-    "url": "https://github.com/ethyca/fides/commit/59903c195e2f9f8915a1db94950aefd557033a5c",
-    "cvss": "-",
-    "description": "Fides is an open-source privacy engineering platform. Prior to version 2.69.1, the Fides Webserver API's built-in IP-based rate limiting is ineffective in environments with CDNs, proxies or load balancers. The system incorrectly applies rate limits based on directly connected infrastructure IPs rather than client IPs, and stores counters in-memory rather than in a shared store. This allows attackers to bypass intended rate limits and potentially cause denial of service. This vulnerability only affects deployments relying on Fides's built-in rate limiting for protection. Deployments using external rate limiting solutions (WAFs, API gateways, etc.) are not affected. Version 2.69.1 fixes the issue. There are no application-level workarounds. However, rate limiting may instead be implemented externally at the infrastructure level using a WAF, API Gateway, or similar technology.",
-    "published": "2025-09-08T22:15:33.703"
-  },
-  "CVE-2025-57817": {
-    "url": "https://github.com/ethyca/fides/commit/2ffd125e1089a09b84c27fb5279a05960cbf2452",
-    "cvss": "-",
-    "description": "Fides is an open-source privacy engineering platform. Prior to version 2.69.1, the OAuth client creation and update endpoints of the Fides Webserver API do not properly authorize scope assignment. This allows highly privileged users with `client:create` or `client:update` permissions to escalate their privileges to owner-level. Version 2.69.1 fixes the issue. No known workarounds are available.",
-    "published": "2025-09-08T22:15:33.880"
-  },
-  "CVE-2025-58444": {
-    "cvss": "-",
-    "description": "The MCP inspector is a developer tool for testing and debugging MCP servers. A cross-site scripting issue was reported in versions of the MCP Inspector local development tool prior to 0.16.6 when connecting to untrusted remote MCP servers with a malicious redirect URI. This could be leveraged to interact directly with the inspector proxy to trigger arbitrary command execution. Users are advised to update to 0.16.6 to resolve this issue.",
-    "published": "2025-09-08T22:15:34.247",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2025-58449": {
-    "cvss": "-",
-    "description": "Maho is a free and open source ecommerce platform. In Maho prior to 25.9.0, an authenticated staff user with access to the `Dashboard` and `Catalog\\Manage Products` permissions can create a custom option on a listing with a file input field. By allowing file uploads with a `.php` extension, the user can use the filed to upload malicious PHP files, gaining remote code execution. Version 25.9.0 fixes the issue.",
-    "published": "2025-09-08T22:15:34.423",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-1761": {
-    "cvss": 5.9,
-    "description": "IBM Concert Software 1.0.0 through 1.1.0 could allow a remote attacker to obtain sensitive information from allocated memory due to improper clearing of heap memory.",
-    "published": "2025-09-08T23:15:35.047",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2025-58745": {
-    "cvss": 9.9,
-    "description": "WeGIA is a Web manager for charitable institutions. The fix for CVE-2025-22133 was not enough to remediate the arbitrary file upload vulnerability. The WeGIA only check MIME types for Excel files at endpoint `/html/socio/sistema/controller/controla_xlsx.php`, which can be bypassed by using magic bytes of Excel file in a PHP file. As a result, attacker can upload webshell to the server for remote code execution. Version 3.4.11 contains an updated fix.",
-    "published": "2025-09-08T23:15:35.790",
-    "keywords": "remote,execution,bypass"
-  },
-  "CVE-2025-42920": {
-    "cvss": 6.1,
-    "description": "Due to a Cross-Site Scripting (XSS) vulnerability in the SAP Supplier Relationship Management, an unauthenticated attacker could generate a malicious link and make it publicly accessible. If an authenticated victim clicks on the link, the injected input is processed during the page generation, resulting in the execution of malicious content. This execution allows the attacker to access and modify information within the victim's browser scope, impacting confidentiality and integrity, while availability remains unaffected.",
-    "published": "2025-09-09T02:15:40.300",
-    "keywords": "execution,unauthenticated"
-  },
-  "CVE-2025-42926": {
-    "cvss": 5.3,
-    "description": "SAP NetWeaver Application Server Java does not perform an authentication check when an attacker attempts to access internal files within the web application.Upon successfully exploitation, an unauthenticated attacker could access these files to gather additional sensitive information about the system.This vulnerability has a low impact on confidentiality and does not affect the integrity or availability of the server.",
-    "published": "2025-09-09T02:15:41.050",
-    "keywords": "unauthenticated,authentication,sensitive"
-  },
-  "CVE-2025-42944": {
-    "cvss": 10.0,
-    "description": "Due to a deserialization vulnerability in SAP NetWeaver, an unauthenticated attacker could exploit the system through the RMI-P4 module by submitting malicious payload to an open port. The deserialization of such untrusted Java objects could lead to arbitrary OS command execution, posing a high impact to the application's confidentiality, integrity, and availability.",
-    "published": "2025-09-09T02:15:42.173",
-    "keywords": "execution,unauthenticated,command"
-  },
-  "CVE-2025-42958": {
-    "cvss": 9.1,
-    "description": "Due to a missing authentication check in the SAP NetWeaver application on IBM i-series, the application allows high privileged unauthorized users to read, modify, or delete sensitive information, as well as access administrative or privileged functionalities. This results in a high impact on the confidentiality, integrity, and availability of the application.",
-    "published": "2025-09-09T02:15:42.363",
-    "keywords": "authentication,sensitive"
-  },
-  "CVE-2025-10123": {
+  "CVE-2025-10127": {
     "cvss": 7.3,
-    "description": "A vulnerability was determined in D-Link DIR-823X up to 250416. Affected by this vulnerability is the function sub_415028 of the file /goform/set_static_leases. Executing manipulation of the argument Hostname can lead to command injection. The attack can be launched remotely. The exploit has been publicly disclosed and may be utilized.",
-    "published": "2025-09-09T03:15:32.583",
-    "keywords": "remote,command"
+    "description": "Daikin Security Gateway is vulnerable to an authorization bypass through\n a user-controlled key vulnerability that could allow an attacker to \nbypass authentication. An unauthorized attacker could access the system \nwithout prior credentials.",
+    "published": "2025-09-11T20:15:33.667",
+    "keywords": "authentication,bypass"
   },
-  "CVE-2025-9539": {
-    "cvss": 8.0,
-    "description": "The AutomatorWP \u2013 Automator plugin for no-code automations, webhooks & custom integrations in WordPress plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the automatorwp_ajax_import_automation_from_url function in all versions up to, and including, 5.3.6. This makes it possible for authenticated attackers, with Subscriber-level access and above, to create arbitrary automations, which can lead to Remote Code Execution or Privilege escalation once such automation is activated by the administrator",
-    "published": "2025-09-09T07:15:33.313",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-10134": {
-    "cvss": 9.1,
-    "description": "The Goza - Nonprofit Charity WordPress Theme theme for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the alone_import_pack_restore_data() function in all versions up to, and including, 3.2.2. This makes it possible for unauthenticated attackers to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
-    "published": "2025-09-09T09:15:34.897",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2025-40795": {
-    "cvss": 9.8,
-    "description": "A vulnerability has been identified in SIMATIC PCS neo V4.1 (All versions), SIMATIC PCS neo V5.0 (All versions), User Management Component (UMC) (All versions < V2.15.1.3). Affected products contain a stack-based buffer overflow vulnerability in the integrated UMC component. This could allow an unauthenticated remote attacker to execute arbitrary code or to cause a denial of service condition.",
-    "published": "2025-09-09T09:15:37.343",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-40796": {
+  "CVE-2025-9807": {
     "cvss": 7.5,
-    "description": "A vulnerability has been identified in SIMATIC PCS neo V4.1 (All versions), SIMATIC PCS neo V5.0 (All versions), User Management Component (UMC) (All versions < V2.15.1.3). Affected products contain a out-of-bounds read vulnerability in the integrated UMC component. This could allow an unauthenticated remote attacker to cause a denial of service condition.",
-    "published": "2025-09-09T09:15:37.650",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-40797": {
-    "cvss": 7.5,
-    "description": "A vulnerability has been identified in SIMATIC PCS neo V4.1 (All versions), SIMATIC PCS neo V5.0 (All versions), User Management Component (UMC) (All versions < V2.15.1.3). Affected products contain a out-of-bounds read vulnerability in the integrated UMC component. This could allow an unauthenticated remote attacker to cause a denial of service condition.",
-    "published": "2025-09-09T09:15:37.900",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-40798": {
-    "cvss": 7.5,
-    "description": "A vulnerability has been identified in SIMATIC PCS neo V4.1 (All versions), SIMATIC PCS neo V5.0 (All versions), User Management Component (UMC) (All versions < V2.15.1.3). Affected products contain a out-of-bounds read vulnerability in the integrated UMC component. This could allow an unauthenticated remote attacker to cause a denial of service condition.",
-    "published": "2025-09-09T09:15:38.160",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-40803": {
-    "cvss": 3.1,
-    "description": "A vulnerability has been identified in RUGGEDCOM RST2428P (6GK6242-6PA00) (All versions). The affected device exposes certain non-critical information from the device. This could allow an unauthenticated attacker to access sensitive data, potentially leading to a breach of confidentiality.",
-    "published": "2025-09-09T09:15:38.693",
+    "description": "The The Events Calendar plugin for WordPress is vulnerable to time-based SQL Injection via the \u2018s\u2019 parameter in all versions up to, and including, 6.15.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2025-09-12T02:15:47.070",
     "keywords": "unauthenticated,sensitive"
   },
-  "CVE-2025-40804": {
-    "cvss": 9.1,
-    "description": "A vulnerability has been identified in SIMATIC Virtualization as a Service (SIVaaS) (All versions). The affected application exposes a network share without any authentication. This could allow an attacker to access or alter sensitive data without proper authorization.",
-    "published": "2025-09-09T09:15:38.990",
-    "keywords": "authentication,sensitive"
+  "CVE-2025-10269": {
+    "cvss": 7.5,
+    "description": "The Spirit Framework plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.2.13. This makes it possible for authenticated attackers, with Subscriber-level access and above, to include and execute arbitrary .php files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where .php file types can be uploaded and included.",
+    "published": "2025-09-12T03:15:40.100",
+    "keywords": "execution,sensitive,bypass"
   },
-  "CVE-2025-41701": {
-    "cvss": 7.8,
-    "description": "An unauthenticated attacker can trick a local user into executing arbitrary commands by opening a deliberately manipulated project file with an affected engineering tool. These arbitrary commands are executed in the user context.",
-    "published": "2025-09-09T09:15:39.277",
-    "keywords": "unauthenticated,command"
-  },
-  "CVE-2025-48208": {
-    "cvss": "-",
-    "description": "Improper Neutralization of Special Elements used in an LDAP Query ('LDAP Injection') vulnerability in Apache HertzBeat .\n\n\n\n\n\n\n\n\n\n\n\n\nThe attacker needs to have an authenticated account with access, and the attack can only be triggered by crafting custom commands. A successful attack would result in arbitrary script execution.\n\nThis issue affects Apache HertzBeat: through 1.7.2.\n\nUsers are recommended to upgrade to version [1.7.3], which fixes the issue.",
-    "published": "2025-09-09T10:15:33.287",
-    "keywords": "execution,command"
-  },
-  "CVE-2025-7350": {
-    "cvss": "-",
-    "description": "A security issue affecting multiple Cisco devices also directly impacts Stratix\u00ae 5410, 5700, and 8000 devices. This can lead to remote code execution by uploading and running malicious configurations without authentication.",
-    "published": "2025-09-09T13:15:31.297",
-    "keywords": "remote,execution,authentication"
-  },
-  "CVE-2025-9161": {
-    "cvss": "-",
-    "description": "A security issue exists within FactoryTalk Optix MQTT broker due to the lack of URI sanitization. This flaw enables the loading of remote Mosquito plugins, which can be used to achieve remote code execution.",
-    "published": "2025-09-09T13:15:32.830",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-47416": {
-    "cvss": "-",
-    "description": "A vulnerability exists in the ConsoleFindCommandMatchList\u202ffunction in libsymproc. so\u202fimported by ctpd that may lead to unauthorized execution of an attacker-defined file that gets prioritized by the ConsoleFindCommandMatchList.\n\n\n\nA third-party researcher discovered that the ConsoleFindCommandMatchList\u202fenumerates the /dev/shm/symproc/c directory in alphabetical order to identify console commands. Permission levels are inferred from the integer values present in each command's file name.\u00a0\n\n\n\nConfirmed Affected Hardware:\u202fTSW-760, TSW-1060 \n\n\n\nConfirmed Affected Firmware:\u202f3.002.1061\u00a0\n\n\n\nFixed Firmware: no fixed released\u00a0(product is discontinued and end of life)\n\n\n\n\u00a0\n\n\n\nFor x70\u202f\u00a0\n\n\n\nThe Affected Firmware:- 3.000.0110.001 \u202fand versions below \n\n\n\nThe Fixed Firmware:- 3.001.0031.001",
-    "published": "2025-09-09T14:15:45.833",
-    "keywords": "execution,command"
-  },
-  "CVE-2025-9951": {
-    "cvss": "-",
-    "description": "A heap-buffer-overflow write exists in jpeg2000dec FFmpeg which allows an attacker to potentially gain remote code execution or cause denial of service via the channel definition cdef atom of JPEG2000.",
-    "published": "2025-09-09T14:15:49.720",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-10107": {
-    "cvss": 4.7,
-    "description": "A vulnerability has been found in TRENDnet TEW-831DR 1.0 (601.130.1.1410). Impacted is an unknown function of the file /boafrm/formSysCmd. The manipulation of the argument sysHost leads to command injection. The attack is possible to be carried out remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-09-09T15:15:31.893",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-55141": {
-    "cvss": 8.8,
-    "description": "Missing authorization in Ivanti Connect Secure before 22.7R2.9 or 22.8R2, Ivanti Policy Secure before 22.7R1.6, Ivanti ZTA Gateway before 2.8R2.3-723 and Ivanti Neurons for Secure Access before 22.8R1.4 (Fix deployed on 02-Aug-2025) allows a remote authenticated attacker with read-only admin privileges to configure authentication related settings.",
-    "published": "2025-09-09T16:15:33.997",
+  "CVE-2025-10288": {
+    "cvss": 5.3,
+    "description": "A vulnerability was found in roncoo roncoo-pay up to 9428382af21cd5568319eae7429b7e1d0332ff40. The impacted element is an unknown function of the file /user/info/list. Performing manipulation results in improper authentication. It is possible to initiate the attack remotely. The exploit has been made public and could be used. This product is using a rolling release to provide continious delivery. Therefore, no version details for affected nor updated releases are available. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-09-12T05:15:32.377",
     "keywords": "remote,authentication"
   },
-  "CVE-2025-55142": {
-    "cvss": 8.8,
-    "description": "Missing authorization in Ivanti Connect Secure before 22.7R2.9 or 22.8R2, Ivanti Policy Secure before 22.7R1.6, Ivanti ZTA Gateway before 2.8R2.3-723 and Ivanti Neurons for Secure Access before 22.8R1.4 (Fix deployed on 02-Aug-2025) allows a remote authenticated attacker with read-only admin privileges to configure authentication related settings.",
-    "published": "2025-09-09T16:15:34.180",
-    "keywords": "remote,authentication"
+  "CVE-2025-8575": {
+    "cvss": 7.2,
+    "description": "The LWS Cleaner plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the 'lws_cl_delete_file' function in all versions up to, and including, 2.4.1.3. This makes it possible for authenticated attackers, with Administrator-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
+    "published": "2025-09-12T06:15:43.810",
+    "keywords": "remote,execution"
   },
-  "CVE-2025-55143": {
-    "cvss": 6.1,
-    "description": "Reflected text injection in Ivanti Connect Secure before 22.7R2.9 or 22.8R2, Ivanti Policy Secure before 22.7R1.6, Ivanti ZTA Gateway before 2.8R2.3-723 and Ivanti Neurons for Secure Access before 22.8R1.4 (Fix deployed on 02-Aug-2025) allows a remote unauthenticated attacker to inject arbitrary text into a crafted HTTP response. User interaction is required.",
-    "published": "2025-09-09T16:15:34.360",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-55147": {
-    "cvss": 8.8,
-    "description": "CSRF in Ivanti Connect Secure before 22.7R2.9 or 22.8R2, Ivanti Policy Secure before 22.7R1.6, Ivanti ZTA Gateway before 2.8R2.3-723 and Ivanti Neurons for Secure Access before 22.8R1.4 (Fix deployed on 02-Aug-2025) allows a remote unauthenticated attacker to execute sensitive actions on behalf of the victim user. User interaction is required",
-    "published": "2025-09-09T16:15:35.070",
+  "CVE-2025-10264": {
+    "cvss": 10.0,
+    "description": "Certain models of NVR developed by Digiever has an Exposure of Sensitive Information vulnerability, allowing unauthenticated remoter attackers to access the system configuration file and obtain plaintext credentials of the NVR and its connected cameras.",
+    "published": "2025-09-12T10:15:31.640",
     "keywords": "remote,unauthenticated,sensitive"
   },
-  "CVE-2025-8711": {
-    "cvss": 5.4,
-    "description": "CSRF in Ivanti Connect Secure before 22.7R2.9 or 22.8R2, Ivanti Policy Secure before 22.7R1.6, Ivanti ZTA Gateway before 2.8R2.3-723 and Ivanti Neurons for Secure Access before 22.8R1.4 (Fix deployed on 02-Aug-2025) allows a remote unauthenticated attacker to execute limited actions on behalf of the victim user. User interaction is required.",
-    "published": "2025-09-09T16:15:35.433",
-    "keywords": "remote,unauthenticated"
+  "CVE-2025-10265": {
+    "cvss": 9.8,
+    "description": "Certain models of NVR developed by Digiever has an OS Command Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary OS commands and execute them on the device.",
+    "published": "2025-09-12T11:15:30.340",
+    "keywords": "remote,unauthenticated,command"
   },
-  "CVE-2025-9712": {
-    "cvss": 8.8,
-    "description": "Insufficient filename validation in Ivanti Endpoint Manager before 2024 SU3 Security Update 1 and 2022 SU8 Security Update 2 allows a remote unauthenticated attacker to achieve remote code execution. User interaction is required.",
-    "published": "2025-09-09T16:15:35.803",
-    "keywords": "remote,execution,unauthenticated"
+  "CVE-2025-10266": {
+    "cvss": 9.8,
+    "description": "NUP Pro developed by NewType Infortech has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL commands to read, modify, and delete database contents.",
+    "published": "2025-09-12T11:15:30.893",
+    "keywords": "remote,unauthenticated,command"
   },
-  "CVE-2025-9872": {
-    "cvss": 8.8,
-    "description": "Insufficient filename validation in Ivanti Endpoint Manager before 2024 SU3 Security Update 1 and 2022 SU8 Security Update 2 allows a remote unauthenticated attacker to achieve remote code execution. User interaction is required.",
-    "published": "2025-09-09T16:15:35.987",
-    "keywords": "remote,execution,unauthenticated"
+  "CVE-2025-10267": {
+    "cvss": 5.3,
+    "description": "NUP Portal developed by NewType Infortech has a Missing Authentication vulnerability, allowing unauthenticated remote attackers to directly upload files. If the attacker manages to bypass the file extension restrictions, they could upload a webshell and execute it on the server side.",
+    "published": "2025-09-12T11:15:31.067",
+    "keywords": "remote,unauthenticated,authentication,bypass"
+  },
+  "CVE-2025-27233": {
+    "cvss": "-",
+    "description": "Zabbix Agent 2 smartctl plugin does not properly sanitize smart.disk.get parameters, allowing an attacker to inject unexpected arguments into the smartctl command. This can be used to leak the NTLMv2 hash from a Windows system.",
+    "published": "2025-09-12T11:15:31.237",
+    "keywords": "command,leak"
+  },
+  "CVE-2025-27234": {
+    "cvss": "-",
+    "description": "Zabbix Agent 2 smartctl plugin does not properly sanitize smart.disk.get parameters, allowing an attacker to inject unexpected arguments into the smartctl command. In Zabbix 5.0 this allows for remote code execution.",
+    "published": "2025-09-12T11:15:31.390",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2025-10364": {
+    "cvss": "-",
+    "description": "The Evertz SDVN 3080ipx-10G is a High Bandwidth Ethernet Switching Fabric for Video Application. This device exposes a web management interface on port 80. This web management interface can be used by administrators to control product\nfeatures, setup network switching, and register license among other features. The application has been developed in PHP with the webEASY SDK, also named \u2018ewb\u2019 by Evertz.\n\nThis web interface has two endpoints that are vulnerable to arbitrary command injection (CVE-2025-4009, CVE-2025-10364) and the authentication mechanism has a flaw leading to authentication bypass (CVE-2025-10365).\n\nCVE-2025-4009 covers the command injection in\u00a0feature-transfer-import.php\nCVE-2025-10364 covers the command injection in\u00a0feature-transfer-export.php\n\nRemote unauthenticated attackers can gain arbitrary command execution with elevated privileges ( root ) on affected devices.\n\nThis level of access could lead to serious business impact such as the interruption of media streaming, modification of media being streamed, alteration of closed captions being generated, among others.",
+    "published": "2025-09-12T14:15:40.113",
+    "keywords": "remote,execution,unauthenticated,authentication,command,bypass"
+  },
+  "CVE-2025-10365": {
+    "cvss": "-",
+    "description": "The Evertz SDVN 3080ipx-10G is a High Bandwidth Ethernet Switching Fabric for Video Application. This device exposes a\u00a0web management interface on port 80. This web management interface can be used by administrators to control product\nfeatures, setup network switching, and register license among other features. The application has been developed in PHP with\u00a0the webEASY SDK, also named \u2018ewb\u2019 by Evertz.\n\nThis web interface has two endpoints that are vulnerable to arbitrary command injection (CVE-2025-4009,\u00a0CVE-2025-10364) and the authentication mechanism has a flaw leading to authentication bypass (CVE-2025-10365).\n\nRemote unauthenticated attackers can gain arbitrary command execution with elevated privileges ( root ) on affected devices.\n\nThis level of access could lead to serious business impact such as the interruption of media streaming, modification of media being streamed, alteration of closed captions being generated, among others.",
+    "published": "2025-09-12T14:15:40.277",
+    "keywords": "remote,execution,unauthenticated,authentication,command,bypass"
+  },
+  "CVE-2025-58434": {
+    "cvss": 9.8,
+    "description": "Flowise is a drag & drop user interface to build a customized large language model flow. In version 3.0.5 and earlier, the `forgot-password` endpoint in Flowise returns sensitive information including a valid password reset `tempToken` without authentication or verification. This enables any attacker to generate a reset token for arbitrary users and directly reset their password, leading to a complete account takeover (ATO). This vulnerability applies to both the cloud service (`cloud.flowiseai.com`) and self-hosted/local Flowise deployments that expose the same API. Commit 9e178d68873eb876073846433a596590d3d9c863 secures password reset endpoints. Several recommended remediation steps are available. Do not return reset tokens or sensitive account details in API responses. Tokens must only be delivered securely via the registered email channel. Ensure `forgot-password` responds with a generic success message regardless of input, to avoid user enumeration. Require strong validation of the `tempToken` (e.g., single-use, short expiry, tied to request origin, validated against email delivery). Apply the same fixes to both cloud and self-hosted/local deployments. Log and monitor password reset requests for suspicious activity. Consider multi-factor verification for sensitive accounts.",
+    "published": "2025-09-12T18:15:34.847",
+    "keywords": "authentication,sensitive"
+  },
+  "CVE-2025-10323": {
+    "cvss": 7.3,
+    "description": "A vulnerability was found in Wavlink WL-WN578W2 221110. The impacted element is the function sub_409184 of the file /wizard_rep.shtml. The manipulation of the argument sel_EncrypTyp results in command injection. The attack may be performed from remote. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-09-12T19:15:32.147",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-10324": {
+    "cvss": 7.3,
+    "description": "A vulnerability was determined in Wavlink WL-WN578W2 221110. This affects the function sub_401C5C of the file firewall.cgi. This manipulation of the argument pingFrmWANFilterEnabled/blockSynFloodEnabled/blockPortScanEnabled/remoteManagementEnabled causes command injection. It is possible to initiate the attack remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-09-12T20:15:42.280",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-10325": {
+    "cvss": 6.3,
+    "description": "A vulnerability was identified in Wavlink WL-WN578W2 221110. This impacts the function sub_401340/sub_401BA4 of the file /cgi-bin/login.cgi. Such manipulation of the argument ipaddr leads to command injection. It is possible to launch the attack remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-09-12T20:15:42.493",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-10326": {
+    "cvss": 6.3,
+    "description": "A security flaw has been discovered in MiczFlor RPi-Jukebox-RFID up to 2.8.0. Affected is an unknown function of the file /htdocs/api/playlist/single.php. Performing manipulation of the argument playlist results in os command injection. The attack can be initiated remotely. The exploit has been released to the public and may be exploited. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-09-12T21:15:33.197",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-10327": {
+    "cvss": 6.3,
+    "description": "A weakness has been identified in MiczFlor RPi-Jukebox-RFID up to 2.8.0. Affected by this vulnerability is an unknown functionality of the file /htdocs/api/playlist/shuffle.php. Executing manipulation of the argument playlist can lead to os command injection. The attack can be launched remotely. The exploit has been made available to the public and could be exploited. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-09-12T21:15:33.397",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-10176": {
+    "cvss": 7.2,
+    "description": "The The Hack Repair Guy's Plugin Archiver plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the prepare_items function in all versions up to, and including, 2.0.4. This makes it possible for authenticated attackers, with Administrator-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
+    "published": "2025-09-12T22:15:32.507",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-10328": {
+    "cvss": 6.3,
+    "description": "A security vulnerability has been detected in MiczFlor RPi-Jukebox-RFID up to 2.8.0. Affected by this issue is some unknown functionality of the file /htdocs/api/playlist/playsinglefile.php. The manipulation of the argument File leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-09-12T22:15:33.520",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-10358": {
+    "cvss": 7.3,
+    "description": "A security vulnerability has been detected in Wavlink WL-WN578W2 221110. This affects the function sub_404850 of the file /cgi-bin/wireless.cgi. The manipulation of the argument delete_list leads to os command injection. The attack can be initiated remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-09-13T08:15:26.673",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-10359": {
+    "cvss": 7.3,
+    "description": "A vulnerability was detected in Wavlink WL-WN578W2 221110. This impacts the function sub_404DBC of the file /cgi-bin/wireless.cgi. The manipulation of the argument macAddr results in os command injection. The attack can be launched remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-09-13T13:15:32.190",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-10393": {
+    "url": "https://github.com/miurla/morphic/issues/670",
+    "cvss": 6.3,
+    "description": "A flaw has been found in miurla morphic up to 0.4.5. This impacts the function fetchHtml of the file /api/advanced-search of the component HTTP Status Code 3xx Handler. This manipulation causes server-side request forgery. The attack is possible to be carried out remotely. The exploit has been published and may be used.",
+    "published": "2025-09-14T06:15:29.883"
+  },
+  "CVE-2025-10401": {
+    "cvss": 6.3,
+    "description": "A vulnerability was detected in D-Link DIR-823x up to 250416. The affected element is an unknown function of the file /goform/diag_ping. Performing manipulation of the argument target_addr results in command injection. Remote exploitation of the attack is possible. The exploit is now public and may be used.",
+    "published": "2025-09-14T16:15:32.393",
+    "keywords": "remote,command"
   }
 }
