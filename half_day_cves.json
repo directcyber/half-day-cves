@@ -1,10 +1,4 @@
 {
-  "CVE-2025-10264": {
-    "cvss": 10.0,
-    "description": "Certain models of NVR developed by Digiever has an Exposure of Sensitive Information vulnerability, allowing unauthenticated remoter attackers to access the system configuration file and obtain plaintext credentials of the NVR and its connected cameras.",
-    "published": "2025-09-12T10:15:31.640",
-    "keywords": "remote,unauthenticated,sensitive"
-  },
   "CVE-2025-10265": {
     "cvss": 8.8,
     "description": "Certain models of NVR developed by Digiever has an OS Command Injection vulnerability, allowing authenticated remote attackers to inject arbitrary OS commands and execute them on the device.",
@@ -154,5 +148,17 @@
     "description": "During a short time frame while the device is booting an unauthenticated remote attacker can send traffic to unauthorized networks due to the switch operating in an undefined state until a CPU-induced reset allows proper configuration.",
     "published": "2025-09-15T08:15:35.343",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-10440": {
+    "cvss": 6.3,
+    "description": "A vulnerability has been found in D-Link DI-8100, DI-8100G, DI-8200, DI-8200G, DI-8003 and DI-8003G 16.07.26A1/17.12.20A1/19.12.10A1. Affected by this vulnerability is the function sub_4621DC of the file usb_paswd.asp of the component jhttpd. The manipulation of the argument hname leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-09-15T10:15:32.233",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-9076": {
+    "cvss": 6.5,
+    "description": "Mattermost versions 10.10.x <= 10.10.1 fail to properly sanitize user data during shared channel membership synchronization, which allows malicious or compromised remote clusters to access sensitive user information via unsanitized user objects. This vulnerability affects Mattermost Server instances with shared channels enabled.",
+    "published": "2025-09-15T10:15:32.450",
+    "keywords": "remote,sensitive"
   }
 }
