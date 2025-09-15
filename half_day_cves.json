@@ -1,16 +1,4 @@
 {
-  "CVE-2025-10288": {
-    "cvss": 5.3,
-    "description": "A vulnerability was found in roncoo roncoo-pay up to 9428382af21cd5568319eae7429b7e1d0332ff40. The impacted element is an unknown function of the file /user/info/list. Performing manipulation results in improper authentication. It is possible to initiate the attack remotely. The exploit has been made public and could be used. This product is using a rolling release to provide continious delivery. Therefore, no version details for affected nor updated releases are available. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-09-12T05:15:32.377",
-    "keywords": "remote,authentication"
-  },
-  "CVE-2025-8575": {
-    "cvss": 7.2,
-    "description": "The LWS Cleaner plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the 'lws_cl_delete_file' function in all versions up to, and including, 2.4.1.3. This makes it possible for authenticated attackers, with Administrator-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
-    "published": "2025-09-12T06:15:43.810",
-    "keywords": "remote,execution"
-  },
   "CVE-2025-10264": {
     "cvss": 10.0,
     "description": "Certain models of NVR developed by Digiever has an Exposure of Sensitive Information vulnerability, allowing unauthenticated remoter attackers to access the system configuration file and obtain plaintext credentials of the NVR and its connected cameras.",
@@ -154,5 +142,11 @@
     "cvss": 3.7,
     "description": "A vulnerability was found in newbee-mall 1.0. Impacted is the function mallKaptcha of the file /common/mall/kaptcha. The manipulation results in guessable captcha. The attack can be executed remotely. A high complexity level is associated with this attack. The exploitability is considered difficult. The exploit has been made public and could be used.",
     "published": "2025-09-15T04:15:48.353"
+  },
+  "CVE-2025-10453": {
+    "cvss": 5.3,
+    "description": "O'View MapServer developed by PilotGaea Technologies has a Server-Side Request Forgery vulnerability, allowing unauthenticated remote attackers to exploit this vulnerability to probe internal network.",
+    "published": "2025-09-15T06:15:36.577",
+    "keywords": "remote,unauthenticated"
   }
 }
