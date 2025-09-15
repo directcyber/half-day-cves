@@ -1,34 +1,4 @@
 {
-  "CVE-2025-10265": {
-    "cvss": 8.8,
-    "description": "Certain models of NVR developed by Digiever has an OS Command Injection vulnerability, allowing authenticated remote attackers to inject arbitrary OS commands and execute them on the device.",
-    "published": "2025-09-12T11:15:30.340",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-10266": {
-    "cvss": 9.8,
-    "description": "NUP Pro developed by NewType Infortech has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL commands to read, modify, and delete database contents.",
-    "published": "2025-09-12T11:15:30.893",
-    "keywords": "remote,unauthenticated,command"
-  },
-  "CVE-2025-10267": {
-    "cvss": 5.3,
-    "description": "NUP Portal developed by NewType Infortech has a Missing Authentication vulnerability, allowing unauthenticated remote attackers to directly upload files. If the attacker manages to bypass the file extension restrictions, they could upload a webshell and execute it on the server side.",
-    "published": "2025-09-12T11:15:31.067",
-    "keywords": "remote,unauthenticated,authentication,bypass"
-  },
-  "CVE-2025-27233": {
-    "cvss": "-",
-    "description": "Zabbix Agent 2 smartctl plugin does not properly sanitize smart.disk.get parameters, allowing an attacker to inject unexpected arguments into the smartctl command. This can be used to leak the NTLMv2 hash from a Windows system.",
-    "published": "2025-09-12T11:15:31.237",
-    "keywords": "command,leak"
-  },
-  "CVE-2025-27234": {
-    "cvss": "-",
-    "description": "Zabbix Agent 2 smartctl plugin does not properly sanitize smart.disk.get parameters, allowing an attacker to inject unexpected arguments into the smartctl command. In Zabbix 5.0 this allows for remote code execution.",
-    "published": "2025-09-12T11:15:31.390",
-    "keywords": "remote,execution,command"
-  },
   "CVE-2025-10364": {
     "cvss": "-",
     "description": "The Evertz SDVN 3080ipx-10G is a High Bandwidth Ethernet Switching Fabric for Video Application. This device exposes a web management interface on port 80. This web management interface can be used by administrators to control product\nfeatures, setup network switching, and register license among other features. The application has been developed in PHP with the webEASY SDK, also named \u2018ewb\u2019 by Evertz.\n\nThis web interface has two endpoints that are vulnerable to arbitrary command injection (CVE-2025-4009, CVE-2025-10364) and the authentication mechanism has a flaw leading to authentication bypass (CVE-2025-10365).\n\nCVE-2025-4009 covers the command injection in\u00a0feature-transfer-import.php\nCVE-2025-10364 covers the command injection in\u00a0feature-transfer-export.php\n\nRemote unauthenticated attackers can gain arbitrary command execution with elevated privileges ( root ) on affected devices.\n\nThis level of access could lead to serious business impact such as the interruption of media streaming, modification of media being streamed, alteration of closed captions being generated, among others.",
@@ -160,5 +130,41 @@
     "description": "Mattermost versions 10.10.x <= 10.10.1 fail to properly sanitize user data during shared channel membership synchronization, which allows malicious or compromised remote clusters to access sensitive user information via unsanitized user objects. This vulnerability affects Mattermost Server instances with shared channels enabled.",
     "published": "2025-09-15T10:15:32.450",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2025-10441": {
+    "cvss": 6.3,
+    "description": "A vulnerability was found in D-Link DI-8100G, DI-8200G and DI-8003G 17.12.20A1/19.12.10A1. Affected by this issue is the function sub_433F7C of the file version_upgrade.asp of the component jhttpd. The manipulation of the argument path results in os command injection. The attack may be launched remotely. The exploit has been made public and could be used.",
+    "published": "2025-09-15T11:15:33.510",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-10442": {
+    "cvss": 6.3,
+    "description": "A vulnerability was determined in Tenda AC9 and AC15 15.03.05.14. This affects the function formexeCommand of the file /goform/exeCommand. This manipulation of the argument cmdinput causes os command injection. Remote exploitation of the attack is possible. The exploit has been publicly disclosed and may be utilized.",
+    "published": "2025-09-15T11:15:33.970",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-10443": {
+    "cvss": 8.8,
+    "description": "A vulnerability was identified in Tenda AC9 and AC15 15.03.05.14/15.03.05.18. This vulnerability affects the function formexeCommand of the file /goform/exeCommand. Such manipulation of the argument cmdinput leads to buffer overflow. The attack can be executed remotely. The exploit is publicly available and might be used.",
+    "published": "2025-09-15T12:15:32.690",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-59359": {
+    "cvss": 9.8,
+    "description": "The cleanTcs mutation in Chaos Controller Manager is vulnerable to OS command injection. In conjunction with CVE-2025-59358, this allows  unauthenticated in-cluster attackers to perform remote code execution across the cluster.",
+    "published": "2025-09-15T12:15:33.633",
+    "keywords": "remote,execution,unauthenticated,command"
+  },
+  "CVE-2025-59360": {
+    "cvss": 9.8,
+    "description": "The killProcesses mutation in Chaos Controller Manager is vulnerable to OS command injection. In conjunction with CVE-2025-59358, this allows unauthenticated in-cluster attackers to perform remote code execution across the cluster.",
+    "published": "2025-09-15T12:15:33.790",
+    "keywords": "remote,execution,unauthenticated,command"
+  },
+  "CVE-2025-59361": {
+    "cvss": 9.8,
+    "description": "The cleanIptables mutation in Chaos Controller Manager is vulnerable to OS command injection. In conjunction with CVE-2025-59358, this allows unauthenticated in-cluster attackers to perform remote code execution across the cluster.",
+    "published": "2025-09-15T12:15:33.940",
+    "keywords": "remote,execution,unauthenticated,command"
   }
 }

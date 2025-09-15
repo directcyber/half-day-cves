@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-09-15T11:10:30.118142
+Updated at UTC 2025-09-15T12:24:48.931889
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,18 @@ Updated at UTC 2025-09-15T11:10:30.118142
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -142,18 +154,68 @@ Updated at UTC 2025-09-15T11:10:30.118142
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-59361">CVE-2025-59361</a></td>
+					<td>9.8</td>
+					<td>remote,execution,unauthenticated,command</td>
+					<td class=date>2025-09-15T12:15:33.940</td>
+					<td class=description>The cleanIptables mutation in Chaos Controller Manager is vulnerable to OS command injection. In conjunction with CVE-2025-59358, this allows unauthenticated in-cluster attackers to perform remote code execution across the cluster.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-59360">CVE-2025-59360</a></td>
+					<td>9.8</td>
+					<td>remote,execution,unauthenticated,command</td>
+					<td class=date>2025-09-15T12:15:33.790</td>
+					<td class=description>The killProcesses mutation in Chaos Controller Manager is vulnerable to OS command injection. In conjunction with CVE-2025-59358, this allows unauthenticated in-cluster attackers to perform remote code execution across the cluster.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-59359">CVE-2025-59359</a></td>
+					<td>9.8</td>
+					<td>remote,execution,unauthenticated,command</td>
+					<td class=date>2025-09-15T12:15:33.633</td>
+					<td class=description>The cleanTcs mutation in Chaos Controller Manager is vulnerable to OS command injection. In conjunction with CVE-2025-59358, this allows  unauthenticated in-cluster attackers to perform remote code execution across the cluster.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-10443">CVE-2025-10443</a></td>
+					<td>8.8</td>
+					<td>remote,command</td>
+					<td class=date>2025-09-15T12:15:32.690</td>
+					<td class=description>A vulnerability was identified in Tenda AC9 and AC15 15.03.05.14/15.03.05.18. This vulnerability affects the function formexeCommand of the file /goform/exeCommand. Such manipulation of the argument cmdinput leads to buffer overflow. The attack can be executed remotely. The exploit is publicly available and might be used.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-10442">CVE-2025-10442</a></td>
+					<td>6.3</td>
+					<td>remote,command</td>
+					<td class=date>2025-09-15T11:15:33.970</td>
+					<td class=description>A vulnerability was determined in Tenda AC9 and AC15 15.03.05.14. This affects the function formexeCommand of the file /goform/exeCommand. This manipulation of the argument cmdinput causes os command injection. Remote exploitation of the attack is possible. The exploit has been publicly disclosed and may be utilized.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-10441">CVE-2025-10441</a></td>
+					<td>6.3</td>
+					<td>remote,command</td>
+					<td class=date>2025-09-15T11:15:33.510</td>
+					<td class=description>A vulnerability was found in D-Link DI-8100G, DI-8200G and DI-8003G 17.12.20A1/19.12.10A1. Affected by this issue is the function sub_433F7C of the file version_upgrade.asp of the component jhttpd. The manipulation of the argument path results in os command injection. The attack may be launched remotely. The exploit has been made public and could be used.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -357,56 +419,6 @@ CVE-2025-10364 covers the command injection in feature-transfer-export.php
 Remote unauthenticated attackers can gain arbitrary command execution with elevated privileges ( root ) on affected devices.
 
 This level of access could lead to serious business impact such as the interruption of media streaming, modification of media being streamed, alteration of closed captions being generated, among others.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-27234">CVE-2025-27234</a></td>
-					<td>-</td>
-					<td>remote,execution,command</td>
-					<td class=date>2025-09-12T11:15:31.390</td>
-					<td class=description>Zabbix Agent 2 smartctl plugin does not properly sanitize smart.disk.get parameters, allowing an attacker to inject unexpected arguments into the smartctl command. In Zabbix 5.0 this allows for remote code execution.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-27233">CVE-2025-27233</a></td>
-					<td>-</td>
-					<td>command,leak</td>
-					<td class=date>2025-09-12T11:15:31.237</td>
-					<td class=description>Zabbix Agent 2 smartctl plugin does not properly sanitize smart.disk.get parameters, allowing an attacker to inject unexpected arguments into the smartctl command. This can be used to leak the NTLMv2 hash from a Windows system.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-10267">CVE-2025-10267</a></td>
-					<td>5.3</td>
-					<td>remote,unauthenticated,authentication,bypass</td>
-					<td class=date>2025-09-12T11:15:31.067</td>
-					<td class=description>NUP Portal developed by NewType Infortech has a Missing Authentication vulnerability, allowing unauthenticated remote attackers to directly upload files. If the attacker manages to bypass the file extension restrictions, they could upload a webshell and execute it on the server side.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-10266">CVE-2025-10266</a></td>
-					<td>9.8</td>
-					<td>remote,unauthenticated,command</td>
-					<td class=date>2025-09-12T11:15:30.893</td>
-					<td class=description>NUP Pro developed by NewType Infortech has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL commands to read, modify, and delete database contents.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-10265">CVE-2025-10265</a></td>
-					<td>8.8</td>
-					<td>remote,command</td>
-					<td class=date>2025-09-12T11:15:30.340</td>
-					<td class=description>Certain models of NVR developed by Digiever has an OS Command Injection vulnerability, allowing authenticated remote attackers to inject arbitrary OS commands and execute them on the device.</td>
 				</tr>
 			
 		
