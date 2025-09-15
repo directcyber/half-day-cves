@@ -1,10 +1,4 @@
 {
-  "CVE-2025-10269": {
-    "cvss": 7.5,
-    "description": "The Spirit Framework plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.2.13. This makes it possible for authenticated attackers, with Subscriber-level access and above, to include and execute arbitrary .php files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where .php file types can be uploaded and included.",
-    "published": "2025-09-12T03:15:40.100",
-    "keywords": "execution,sensitive,bypass"
-  },
   "CVE-2025-10288": {
     "cvss": 5.3,
     "description": "A vulnerability was found in roncoo roncoo-pay up to 9428382af21cd5568319eae7429b7e1d0332ff40. The impacted element is an unknown function of the file /user/info/list. Performing manipulation results in improper authentication. It is possible to initiate the attack remotely. The exploit has been made public and could be used. This product is using a rolling release to provide continious delivery. Therefore, no version details for affected nor updated releases are available. The vendor was contacted early about this disclosure but did not respond in any way.",
@@ -136,5 +130,23 @@
     "description": "A vulnerability was detected in D-Link DIR-823x up to 250416. The affected element is an unknown function of the file /goform/diag_ping. Performing manipulation of the argument target_addr results in command injection. Remote exploitation of the attack is possible. The exploit is now public and may be used.",
     "published": "2025-09-14T16:15:32.393",
     "keywords": "remote,command"
+  },
+  "CVE-2025-10422": {
+    "url": "https://github.com/newbee-ltd/newbee-mall/issues/100#issue-3379977698",
+    "cvss": 4.3,
+    "description": "A vulnerability has been found in newbee-mall up to 613a662adf1da7623ec34459bc83e3c1b12d8ce7. This issue affects the function paySuccess of the file /paySuccess of the component Order Status Handler. The manipulation of the argument orderNo leads to improper authorization. Remote exploitation of the attack is possible. The exploit has been disclosed to the public and may be used. This product follows a rolling release approach for continuous delivery, so version details for affected or updated releases are not provided.",
+    "published": "2025-09-15T03:15:40.513"
+  },
+  "CVE-2025-10452": {
+    "cvss": 9.8,
+    "description": "Statistical Database System developed by Gotac has a Missing Authentication vulnerability, allowing unauthenticated remote attackers to read, modify, and delete database contents with high-level privileges.",
+    "published": "2025-09-15T03:15:40.707",
+    "keywords": "remote,unauthenticated,authentication"
+  },
+  "CVE-2025-59375": {
+    "url": "https://github.com/libexpat/libexpat/pull/1034",
+    "cvss": 7.5,
+    "description": "libexpat in Expat before 2.7.2 allows attackers to trigger large dynamic memory allocations via a small document that is submitted for parsing.",
+    "published": "2025-09-15T03:15:40.920"
   }
 }
