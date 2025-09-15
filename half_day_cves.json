@@ -1,10 +1,4 @@
 {
-  "CVE-2025-9807": {
-    "cvss": 7.5,
-    "description": "The The Events Calendar plugin for WordPress is vulnerable to time-based SQL Injection via the \u2018s\u2019 parameter in all versions up to, and including, 6.15.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
-    "published": "2025-09-12T02:15:47.070",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2025-10269": {
     "cvss": 7.5,
     "description": "The Spirit Framework plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.2.13. This makes it possible for authenticated attackers, with Subscriber-level access and above, to include and execute arbitrary .php files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where .php file types can be uploaded and included.",
