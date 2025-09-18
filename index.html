@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-09-18T21:11:36.248655
+Updated at UTC 2025-09-18T22:10:27.745204
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,14 @@ Updated at UTC 2025-09-18T21:11:36.248655
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -280,25 +288,59 @@ Updated at UTC 2025-09-18T21:11:36.248655
 		
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-59145">CVE-2025-59145</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/debug-js/debug/issues/1005">https://github.com/debug-js/debug/issues/1005</a></td>
-					<td class=date>2025-09-15T21:15:36.633</td>
-					<td class=description>color-name is a JSON with CSS color names. On 8 September 2025, an npm publishing account for color-name was taken over after a phishing attack. Version 2.0.1 was published, functionally identical to the previous patch version, but with a malware payload added attempting to redirect cryptocurrency transactions to the attacker's own addresses from within browser environments. Local environments, server environments, command line applications, etc. are not affected. If the package was used in a browser context (e.g. a direct <script> inclusion, or via a bundling tool such as Babel, Rollup, Vite, Next.js, etc.) there is a chance the malware still exists and such bundles will need to be rebuilt. The malware seemingly only targets cryptocurrency transactions and wallets such as MetaMask. See references below for more information on the payload. npm removed the offending package from the registry over the course of the day on 8 September, preventing further downloads from npm proper. On 13 September, the package owner published new patch versions to help cache-bust those using private registries who might still have the compromised version cached. Users should update to the latest patch version, completely remove their node_modules directory, clean their package manager's global cache, and rebuild any browser bundles from scratch. Those operating private registries or registry mirrors should purge the offending versions from any caches. This issue is resolved in 2.0.2.</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-55912">CVE-2025-55912</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-57293">CVE-2025-57293</a></td>
 					<td>-</td>
+					<td>execution,command,sensitive</td>
+					<td class=date>2025-09-18T21:15:49.203</td>
+					<td class=description>A command injection vulnerability in COMFAST CF-XR11 (firmware V2.7.2) exists in the multi_pppoe API, processed by the sub_423930 function in /usr/bin/webmgnt. The phy_interface parameter is not sanitized, allowing attackers to inject arbitrary commands via a POST request to /cgi-bin/mbox-config?method=SET&section=multi_pppoe. When the action parameter is set to "one_click_redial", the unsanitized phy_interface is used in a system() call, enabling execution of malicious commands. This can lead to unauthorized access to sensitive files, execution of arbitrary code, or full device compromise.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-54807">CVE-2025-54807</a></td>
+					<td>9.8</td>
+					<td>authentication,bypass</td>
+					<td class=date>2025-09-18T21:15:48.493</td>
+					<td class=description>The secret used for validating authentication tokens is hardcoded in 
+device firmware for affected versions. An attacker who obtains the 
+signing key can bypass authentication, gaining complete access to the 
+system.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-54754">CVE-2025-54754</a></td>
+					<td>8.0</td>
+					<td>authentication,sensitive</td>
+					<td class=date>2025-09-18T21:15:48.317</td>
+					<td class=description>An attacker with adjacent access, without authentication, can exploit 
+this vulnerability to retrieve a hard-coded password embedded in 
+publicly available software. This password can then be used to decrypt 
+sensitive network traffic, affecting the Cognex device.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-10689">CVE-2025-10689</a></td>
+					<td>6.3</td>
+					<td>remote,command</td>
+					<td class=date>2025-09-18T21:15:47.340</td>
+					<td class=description>A vulnerability was identified in D-Link DIR-645 105B01. This issue affects the function soapcgi_main of the file /soap.cgi. Such manipulation of the argument service leads to command injection. The attack can be launched remotely. The exploit is publicly available and might be used. This vulnerability only affects products that are no longer supported by the maintainer.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-55912">CVE-2025-55912</a></td>
+					<td>7.3</td>
 					<td>unauthenticated,authentication</td>
 					<td class=date>2025-09-18T16:15:51.000</td>
 					<td class=description>An issue in ClipBucket 5.5.0 and prior versions allows an unauthenticated attacker can exploit the plupload endpoint in photo_uploader.php to upload arbitrary files without any authentication, due to missing access controls in the upload handler</td>
@@ -1195,8 +1237,6 @@ In addition, the Control-M/Agent default kdb and PKCS#12 keystores contain trust
 					<td class=date>2025-09-15T22:15:34.760</td>
 					<td class=description>An HTTP Request Smuggling [CWE-444] vulnerability in the Authentication portal of WatchGuard Fireware OS allows a remote attacker to evade request parameter sanitation and perform a reflected self-Cross-Site Scripting (XSS) attack.This issue affects Fireware OS: from 12.0 through 12.11.2.</td>
 				</tr>
-			
-		
 			
 		
 
