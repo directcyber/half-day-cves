@@ -1,16 +1,4 @@
 {
-  "CVE-2025-59436": {
-    "url": "https://github.com/indutny/node-ip/issues/160",
-    "cvss": 3.2,
-    "description": "The ip (aka node-ip) package through 2.0.1 (in NPM) might allow SSRF because the IP address value 017700000001 is improperly categorized as globally routable via isPublic. NOTE: this issue exists because of an incomplete fix for CVE-2024-29415.",
-    "published": "2025-09-16T06:16:05.813"
-  },
-  "CVE-2025-59453": {
-    "cvss": 3.2,
-    "description": "Click Studios Passwordstate before 9.9 Build 9972 has a potential authentication bypass for Passwordstate emergency access. By using a crafted URL while on the Emergency Access web page, an unauthorized person can gain access to the Passwordstate Administration section.",
-    "published": "2025-09-16T06:16:06.163",
-    "keywords": "authentication,bypass"
-  },
   "CVE-2025-56706": {
     "cvss": 8.0,
     "description": "Edimax BR-6473AX v1.0.28 was discovered to contain a remote code execution (RCE) vulnerability via the Object parameter in the openwrt_getConfig function.",
@@ -544,5 +532,11 @@
     "description": "The Goza - Nonprofit Charity WordPress Theme theme for WordPress is vulnerable to unauthorized arbitrary file uploads due to a missing capability check on the 'beplus_import_pack_install_plugin' function in all versions up to, and including, 3.2.2. This makes it possible for unauthenticated attackers to upload zip files containing webshells disguised as plugins from remote locations to achieve remote code execution.",
     "published": "2025-09-19T03:15:35.177",
     "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-5955": {
+    "cvss": 8.1,
+    "description": "The Service Finder SMS System plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 2.0.0. This is due to the plugin not verifying a user's phone number before logging them in. This makes it possible for unauthenticated attackers to login as arbitrary users.",
+    "published": "2025-09-19T05:15:33.603",
+    "keywords": "unauthenticated,authentication,bypass"
   }
 }
