@@ -532,5 +532,11 @@
     "description": "A command injection vulnerability in COMFAST CF-XR11 (firmware V2.7.2) exists in the multi_pppoe API, processed by the sub_423930 function in /usr/bin/webmgnt. The phy_interface parameter is not sanitized, allowing attackers to inject arbitrary commands via a POST request to /cgi-bin/mbox-config?method=SET&section=multi_pppoe. When the action parameter is set to \"one_click_redial\", the unsanitized phy_interface is used in a system() call, enabling execution of malicious commands. This can lead to unauthorized access to sensitive files, execution of arbitrary code, or full device compromise.",
     "published": "2025-09-18T21:15:49.203",
     "keywords": "execution,command,sensitive"
+  },
+  "CVE-2025-59691": {
+    "cvss": 3.7,
+    "description": "PureVPN client applications on Linux through September 2025 allow IPv6 traffic to leak outside the VPN tunnel upon network events such as Wi-Fi reconnect or system resume. In the CLI client, the VPN auto-reconnects and claims to be connected, but IPv6 traffic is no longer routed or blocked. In the GUI client, the IPv6 connection remains functional after disconnection until the user clicks Reconnect. In both cases, the real IPv6 address is exposed to external services, violating user privacy and defeating the advertised IPv6 leak protection. This affects CLI 2.0.1 and GUI 2.10.0.",
+    "published": "2025-09-18T23:15:34.310",
+    "keywords": "vpn,leak"
   }
 }
