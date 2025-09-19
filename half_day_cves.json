@@ -538,5 +538,11 @@
     "description": "PureVPN client applications on Linux through September 2025 allow IPv6 traffic to leak outside the VPN tunnel upon network events such as Wi-Fi reconnect or system resume. In the CLI client, the VPN auto-reconnects and claims to be connected, but IPv6 traffic is no longer routed or blocked. In the GUI client, the IPv6 connection remains functional after disconnection until the user clicks Reconnect. In both cases, the real IPv6 address is exposed to external services, violating user privacy and defeating the advertised IPv6 leak protection. This affects CLI 2.0.1 and GUI 2.10.0.",
     "published": "2025-09-18T23:15:34.310",
     "keywords": "vpn,leak"
+  },
+  "CVE-2025-10690": {
+    "cvss": 9.8,
+    "description": "The Goza - Nonprofit Charity WordPress Theme theme for WordPress is vulnerable to unauthorized arbitrary file uploads due to a missing capability check on the 'beplus_import_pack_install_plugin' function in all versions up to, and including, 3.2.2. This makes it possible for unauthenticated attackers to upload zip files containing webshells disguised as plugins from remote locations to achieve remote code execution.",
+    "published": "2025-09-19T03:15:35.177",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
