@@ -1,46 +1,4 @@
 {
-  "CVE-2025-34188": {
-    "cvss": "-",
-    "description": "Vasion Print (formerly PrinterLogic) Virtual Appliance Host versions prior to 1.0.735 and Application prior to 20.0.1330 (macOS/Linux client deployments) contain a vulnerability in the local logging mechanism. Authentication session tokens, including PHPSESSID, XSRF-TOKEN, and laravel_session, are stored in cleartext within world-readable log files. Any local user with access to the machine can extract these session tokens and use them to authenticate remotely to the SaaS environment, bypassing normal login credentials, potentially leading to unauthorized system access and exposure of sensitive information.",
-    "published": "2025-09-19T19:15:38.990",
-    "keywords": "remote,authentication,sensitive,bypass"
-  },
-  "CVE-2025-34190": {
-    "cvss": "-",
-    "description": "Vasion Print (formerly PrinterLogic) Virtual Appliance Host\u00a0and Application\u00a0(macOS/Linux client deployments) are vulnerable to an authentication bypass in PrinterInstallerClientService. The service requires root privileges for certain administrative operations, but these checks rely on calls to geteuid(). By preloading a malicious shared object overriding geteuid(), a local attacker can trick the service into believing it is running with root privileges. This bypass enables execution of administrative commands (e.g., enabling debug mode, managing configurations, or invoking privileged features) without proper authorization. While some actions requiring write access to protected files may still fail, the flaw effectively breaks the intended security model of the inter-process communication (IPC) system, allowing local attackers to escalate privileges and compromise system integrity.\u00a0NOTE: This vulnerability has been addressed, but an affected version range is not yet fully determined. We will update this record as soon as the vendor provides confirmed version information.",
-    "published": "2025-09-19T19:15:39.350",
-    "keywords": "execution,authentication,command,bypass"
-  },
-  "CVE-2025-34193": {
-    "cvss": "-",
-    "description": "Vasion Print (formerly PrinterLogic) Virtual Appliance Host and Application include Windows client components (PrinterInstallerClientInterface.exe, PrinterInstallerClient.exe, PrinterInstallerClientLauncher.exe) that lack modern compile-time and runtime exploit mitigations and rely on outdated runtimes. These binaries are built as 32-bit, without Data Execution Prevention (DEP), Address Space Layout Randomization (ASLR), Control Flow Guard (CFG), or stack-protection, and they incorporate legacy technologies (Pascal/Delphi and Python 2) which are no longer commonly maintained. Several of these processes run with elevated privileges (NT AUTHORITY\\SYSTEM for PrinterInstallerClient.exe and PrinterInstallerClientLauncher.exe), and the client automatically downloads and installs printer drivers. The absence of modern memory safety mitigations and the use of unmaintained runtimes substantially increase the risk that memory-corruption or other exploit primitives \u2014 for example from crafted driver content or maliciously crafted inputs \u2014 can be turned into remote or local code execution and privilege escalation to SYSTEM.",
-    "published": "2025-09-19T19:15:39.823",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-34195": {
-    "cvss": "-",
-    "description": "Vasion Print (formerly PrinterLogic) Virtual Appliance Host versions prior to 1.0.735 and Application prior to 20.0.1330 (Windows client deployments) contain a remote code execution vulnerability during driver installation caused by unquoted program paths. The PrinterInstallerClient driver-installation component launches programs using an unquoted path under \"C:\\Program Files (x86)\\Printer Properties Pro\\Printer Installer\". Because the path is unquoted, the operating system may execute a program located at a short-path location such as C:\\Program.exe before the intended binaries in the quoted path. If an attacker can place or cause a program to exist at that location, it will be executed with the privileges of the installer process (which may be elevated), enabling arbitrary code execution and potential privilege escalation. This weakness can be used to achieve remote code execution and full compromise of affected Windows endpoints.",
-    "published": "2025-09-19T19:15:40.123",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-34199": {
-    "cvss": "-",
-    "description": "Vasion Print (formerly PrinterLogic) Virtual Appliance Host versions prior to 22.0.1049 and Application versions prior to\u00a020.0.2786 (VA and SaaS deployments) contain insecure defaults and code patterns that disable TLS/SSL certificate verification for communications to printers and internal microservices. In multiple places, the application sets libcurl/PHP transport options such that CURLOPT_SSL_VERIFYHOST and CURLOPT_SSL_VERIFYPEER are effectively disabled, and environment variables (for example API_*_VERIFYSSL=false) are used to turn off verification for gateway and microservice endpoints. As a result, the client accepts TLS connections without validating server certificates (and, in some cases, uses clear-text HTTP), permitting on-path attackers to perform man-in-the-middle (MitM) attacks. An attacker able to intercept network traffic between the product and printers or microservices can eavesdrop on and modify sensitive data (including print jobs, configuration, and authentication tokens), inject malicious payloads, or disrupt service.",
-    "published": "2025-09-19T19:15:40.580",
-    "keywords": "authentication,sensitive"
-  },
-  "CVE-2025-34202": {
-    "cvss": "-",
-    "description": "Vasion Print (formerly PrinterLogic) Virtual Appliance Host prior to 25.2.169 and Application prior to 25.2.1518 (VA and SaaS deployments) expose Docker internal networks in a way that allows an attacker on the same external L2 segment \u2014 or an attacker able to add routes using the appliance as a gateway \u2014 to reach container IPs directly. This grants access to internal services (HTTP APIs, Redis, MySQL, etc.) that are intended to be isolated inside the container network. Many of those services are accessible without authentication or are vulnerable to known exploitation chains. As a result, compromise of a single reachable endpoint or basic network access can enable lateral movement, remote code execution, data exfiltration, and full system compromise.",
-    "published": "2025-09-19T19:15:41.040",
-    "keywords": "remote,execution,authentication"
-  },
-  "CVE-2025-34205": {
-    "cvss": "-",
-    "description": "Vasion Print (formerly PrinterLogic) Virtual Appliance Host versions prior to 22.0.843 and\u00a0Application prior to 20.0.1923 (VA and SaaS deployments) contains dangerous PHP dead code present in multiple Docker-hosted PHP instances. A script named /var/www/app/resetroot.php (found in several containers) lacks authentication checks and, when executed, performs a SQL update that sets the database administrator username to 'root' and its password hash to the SHA-512 hash of the string 'password'. Separately, commented-out code in /var/www/app/lib/common/oses.php would unserialize session data (unserialize($_SESSION['osdata']))\u2014a pattern that can enable remote code execution if re-enabled or reached with attacker-controlled serialized data. An attacker able to reach the resetroot.php endpoint can trivially reset the MySQL root password and obtain full database control; combined with deserialization issues this can lead to full remote code execution and system compromise.",
-    "published": "2025-09-19T19:15:41.470",
-    "keywords": "remote,execution,authentication"
-  },
   "CVE-2025-10658": {
     "cvss": 6.5,
     "description": "The SupportCandy \u2013 Helpdesk & Customer Support Ticket System plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 3.3.7. This is due to missing rate limiting on the OTP verification for guest login. This makes it possible for unauthenticated attackers to bypass authentication and gain unauthorized access to customer support tickets by brute forcing the 6-digit OTP code.",
@@ -172,5 +130,17 @@
     "description": "The Blackmagic ATEM Mini Pro 2.7 exposes sensitive device and stream configuration information via an unauthenticated Telnet service on port 9990. Upon connection, the attacker can access a protocol preamble that leaks the video mode, routing configuration, input/output labels, device model, and even internal identifiers such as the unique ID. This can be used for reconnaissance and planning further attacks.",
     "published": "2025-09-22T18:15:45.953",
     "keywords": "unauthenticated,sensitive,leak"
+  },
+  "CVE-2025-57685": {
+    "cvss": "-",
+    "description": "The LB-Link routers, including the BL-AC2100_AZ3 V1.0.4, BL-WR4000 v2.5.0, BL-WR9000_AE4 v2.4.9, BL-AC1900_AZ2 v1.0.2, BL-X26_AC8 v1.2.8, and BL-LTE300_DA4 V1.2.3 models, are vulnerable to unauthorized command injection. Attackers can exploit this vulnerability by accessing the /goform/set_serial_cfg interface to gain the highest level of device privileges without authorization, enabling them to remotely execute malicious commands.",
+    "published": "2025-09-22T19:15:44.873",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-58250": {
+    "cvss": 8.8,
+    "description": "Cross-Site Request Forgery (CSRF) vulnerability in ApusTheme Findgo allows Authentication Bypass. This issue affects Findgo: from n/a through 1.3.55.",
+    "published": "2025-09-22T19:16:10.767",
+    "keywords": "authentication,bypass"
   }
 }
