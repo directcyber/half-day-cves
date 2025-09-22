@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-09-22T16:15:15.512938
+Updated at UTC 2025-09-22T17:10:47.758646
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,80 @@ Updated at UTC 2025-09-22T16:15:15.512938
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-51006">CVE-2025-51006</a></td>
+					<td>7.8</td>
+					<td><a target=_blank href="https://github.com/appneta/tcpreplay/issues/926">https://github.com/appneta/tcpreplay/issues/926</a></td>
+					<td class=date>2025-09-22T14:15:49.713</td>
+					<td class=description>Within tcpreplay's tcprewrite, a double free vulnerability has been identified in the dlt_linuxsll2_cleanup() function in plugins/dlt_linuxsll2/linuxsll2.c. This vulnerability is triggered when tcpedit_dlt_cleanup() indirectly invokes the cleanup routine multiple times on the same memory region. By supplying a specifically crafted pcap file to the tcprewrite binary, a local attacker can exploit this flaw to cause a Denial of Service (DoS) via memory corruption.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-10854">CVE-2025-10854</a></td>
+					<td>8.1</td>
+					<td><a target=_blank href="https://github.com/neuml/txtai/issues/965">https://github.com/neuml/txtai/issues/965</a></td>
+					<td class=date>2025-09-22T13:16:01.347</td>
+					<td class=description>The txtai framework allows the loading of compressed tar files as embedding indices. While the validate function is intended to prevent path traversal vulnerabilities by ensuring safe filenames, it does not account for symbolic links within the tar file. An attacker is able to write a file anywhere in the filesystem when txtai is used to load untrusted embedding indices</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-10771">CVE-2025-10771</a></td>
+					<td>6.3</td>
+					<td><a target=_blank href="https://github.com/jeecgboot/jimureport/issues/4117#issue-3391268438">https://github.com/jeecgboot/jimureport/issues/4117#issue-3391268438</a></td>
+					<td class=date>2025-09-21T23:15:35.150</td>
+					<td class=description>A vulnerability was determined in jeecgboot JimuReport up to 2.1.2. Affected is an unknown function of the file /drag/onlDragDataSource/testConnection of the component DB2 JDBC Handler. Executing manipulation of the argument clientRerouteServerListJNDIName can lead to deserialization. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized.</td>
+
+
+				</tr>
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-10770">CVE-2025-10770</a></td>
+					<td>6.3</td>
+					<td><a target=_blank href="https://github.com/jeecgboot/jimureport/issues/4116#issue-3391107887">https://github.com/jeecgboot/jimureport/issues/4116#issue-3391107887</a></td>
+					<td class=date>2025-09-21T23:15:34.940</td>
+					<td class=description>A vulnerability was found in jeecgboot JimuReport up to 2.1.2. This impacts an unknown function of the file /drag/onlDragDataSource/testConnection of the component MySQL JDBC Handler. Performing manipulation results in deserialization. Remote exploitation of the attack is possible. The exploit has been made public and could be used.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-10762">CVE-2025-10762</a></td>
+					<td>6.3</td>
+					<td><a target=_blank href="https://github.com/kuaifan/dootask/issues/283#issue-3379188930">https://github.com/kuaifan/dootask/issues/283#issue-3379188930</a></td>
+					<td class=date>2025-09-21T05:15:33.433</td>
+					<td class=description>A vulnerability was found in kuaifan DooTask up to 1.2.49. Affected by this vulnerability is an unknown functionality of the file app/Http/Controllers/Api/UsersController.php. The manipulation of the argument keys[department] results in sql injection. The attack can be executed remotely. The exploit has been made public and could be used.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -82,6 +156,116 @@ Updated at UTC 2025-09-22T16:15:15.512938
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-57602">CVE-2025-57602</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2025-09-22T16:15:45.130</td>
+					<td class=description>Insufficient hardening of the proxyuser account in the AiKaan IoT management platform, combined with the use of a shared, hardcoded SSH private key, allows remote attackers to authenticate to the cloud controller, gain interactive shell access, and pivot into other connected IoT devices. This can lead to remote code execution, information disclosure, and privilege escalation across customer environments.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-57601">CVE-2025-57601</a></td>
+					<td>-</td>
+					<td>remote,authentication</td>
+					<td class=date>2025-09-22T16:15:45.000</td>
+					<td class=description>AiKaan Cloud Controller uses a single hardcoded SSH private key and the username `proxyuser` for remote terminal access to all managed IoT/edge devices. When an administrator initiates "Open Remote Terminal" from the AiKaan dashboard, the controller sends this same static private key to the target device. The device then uses it to establish a reverse SSH tunnel to a remote access server, enabling browser-based SSH access for the administrator. Because the same `proxyuser` account and SSH key are reused across all customer environments: - An attacker who obtains the key (e.g., by intercepting it in transit, extracting it from the remote access server, or from a compromised admin account) can impersonate any managed device. - They can establish unauthorized reverse SSH tunnels and interact with devices without the owner's consent. This is a design flaw in the authentication model: compromise of a single key compromises the trust boundary between the controller and devices.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-57432">CVE-2025-57432</a></td>
+					<td>-</td>
+					<td>remote,unauthenticated,authentication,command</td>
+					<td class=date>2025-09-22T16:15:44.753</td>
+					<td class=description>Blackmagic Web Presenter version 3.3 exposes a Telnet service on port 9977 that accepts unauthenticated commands. This service allows remote attackers to manipulate stream settings, including changing video modes and possibly altering device functionality. No credentials or authentication mechanisms are required to interact with the Telnet interface.</td>
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-5962">CVE-2025-5962</a></td>
+					<td>7.7</td>
+					<td>execution,command</td>
+					<td class=date>2025-09-22T08:15:34.533</td>
+					<td class=description>A flaw was found in the Lightspeed history service. Insufficient access controls allow a local, unprivileged user to access and manipulate the chat history of another user on the same system. By abusing inter-process communication  calls to the history service, an attacker can view, delete, or inject arbitrary history entries, including misleading or malicious commands. This can be used to deceive another user into executing harmful actions, posing a risk of privilege misuse or unauthorized command execution through social engineering.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-10775">CVE-2025-10775</a></td>
+					<td>4.7</td>
+					<td>remote,command</td>
+					<td class=date>2025-09-22T01:15:36.260</td>
+					<td class=description>A security vulnerability has been detected in Wavlink WL-NU516U1 240425. This vulnerability affects the function sub_4012A0 of the file /cgi-bin/login.cgi. Such manipulation of the argument ipaddr leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-10772">CVE-2025-10772</a></td>
+					<td>6.3</td>
+					<td>remote,authentication</td>
+					<td class=date>2025-09-22T00:15:39.410</td>
+					<td class=description>A vulnerability was identified in huggingface LeRobot up to 0.3.3. Affected by this vulnerability is an unknown functionality of the file lerobot/common/robot_devices/robots/lekiwi_remote.py of the component ZeroMQ Socket Handler. The manipulation leads to missing authentication. The attack can only be initiated within the local network. The vendor was contacted early about this disclosure but did not respond in any way.</td>
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-10767">CVE-2025-10767</a></td>
+					<td>4.5</td>
+					<td>remote,command</td>
+					<td class=date>2025-09-21T22:15:34.750</td>
+					<td class=description>A vulnerability was detected in CosmodiumCS OnlyRAT up to 3.2. The affected element is the function connect/remote_upload/remote_download of the file main.py of the component Configuration File Handler. The manipulation of the argument configuration["PASSWORD"] results in os command injection. The attack requires a local approach. Attacks of this nature are highly complex. The exploitability is described as difficult. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-10761">CVE-2025-10761</a></td>
+					<td>3.7</td>
+					<td>remote,authentication</td>
+					<td class=date>2025-09-21T04:15:37.760</td>
+					<td class=description>A vulnerability has been found in Harness 3.3.0. Affected is an unknown function of the file /api/v1/login of the component Login Endpoint. The manipulation leads to improper restriction of excessive authentication attempts. Remote exploitation of the attack is possible. The attack is considered to have high complexity. The exploitability is told to be difficult. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-10759">CVE-2025-10759</a></td>
+					<td>5.3</td>
+					<td>remote,bypass</td>
+					<td class=date>2025-09-21T01:15:49.020</td>
+					<td class=description>A vulnerability was detected in Webkul QloApps up to 1.7.0. This affects an unknown function of the component CSRF Token Handler. Performing manipulation of the argument token results in authorization bypass. The attack may be initiated remotely. The exploit is now public and may be used. The vendor explains: "As We are already aware about this vulnerability and our Internal team are already working on this issue. (...) We'll implement the fix for this vulnerability in our next major release."</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-10658">CVE-2025-10658</a></td>
+					<td>6.5</td>
+					<td>unauthenticated,authentication,bypass</td>
+					<td class=date>2025-09-20T07:15:35.607</td>
+					<td class=description>The SupportCandy – Helpdesk & Customer Support Ticket System plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 3.3.7. This is due to missing rate limiting on the OTP verification for guest login. This makes it possible for unauthenticated attackers to bypass authentication and gain unauthorized access to customer support tickets by brute forcing the 6-digit OTP code.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -160,90 +344,6 @@ Updated at UTC 2025-09-22T16:15:15.512938
 					<td>remote,execution,unauthenticated</td>
 					<td class=date>2025-09-19T18:15:36.620</td>
 					<td class=description>CWP (aka Control Web Panel or CentOS Web Panel) before 0.9.8.1205 allows unauthenticated remote code execution via shell metacharacters in the t_total parameter in a filemanager changePerm request. A valid non-root username must be known.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-57644">CVE-2025-57644</a></td>
-					<td>9.1</td>
-					<td>remote,execution,sensitive</td>
-					<td class=date>2025-09-19T16:15:46.220</td>
-					<td class=description>Accela Automation Platform 22.2.3.0.230103 contains multiple vulnerabilities in the Test Script feature. An authenticated administrative user can execute arbitrary Java code on the server, resulting in remote code execution. In addition, improper input validation allows for arbitrary file write and server-side request forgery (SSRF), enabling interaction with internal or external systems. Successful exploitation can lead to full server compromise, unauthorized access to sensitive data, and further network exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-57296">CVE-2025-57296</a></td>
-					<td>6.5</td>
-					<td>execution,unauthenticated,command</td>
-					<td class=date>2025-09-19T16:15:46.107</td>
-					<td class=description>Tenda AC6 router firmware 15.03.05.19 contains a command injection vulnerability in the formSetIptv function, which processes requests to the /goform/SetIPTVCfg web interface. When handling the list and vlanId parameters, the sub_ADBC0 helper function concatenates these user-supplied values into nvram set system commands using doSystemCmd, without validating or sanitizing special characters (e.g., ;, ", #). An unauthenticated or authenticated attacker can exploit this by submitting a crafted POST request, leading to arbitrary system command execution on the affected device.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-39851">CVE-2025-39851</a></td>
-					<td>-</td>
-					<td>remote,vpn,bypass</td>
-					<td class=date>2025-09-19T16:15:43.983</td>
-					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
-
-vxlan: Fix NPD when refreshing an FDB entry with a nexthop object
-
-VXLAN FDB entries can point to either a remote destination or an FDB
-nexthop group. The latter is usually used in EVPN deployments where
-learning is disabled.
-
-However, when learning is enabled, an incoming packet might try to
-refresh an FDB entry that points to an FDB nexthop group and therefore
-does not have a remote. Such packets should be dropped, but they are
-only dropped after dereferencing the non-existent remote, resulting in a
-NPD [1] which can be reproduced using [2].
-
-Fix by dropping such packets earlier. Remove the misleading comment from
-first_remote_rcu().
-
-[1]
-BUG: kernel NULL pointer dereference, address: 0000000000000000
-[...]
-CPU: 13 UID: 0 PID: 361 Comm: mausezahn Not tainted 6.17.0-rc1-virtme-g9f6b606b6b37 #1 PREEMPT(voluntary)
-Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.17.0-4.fc41 04/01/2014
-RIP: 0010:vxlan_snoop+0x98/0x1e0
-[...]
-Call Trace:
- <TASK>
- vxlan_encap_bypass+0x209/0x240
- encap_bypass_if_local+0xb1/0x100
- vxlan_xmit_one+0x1375/0x17e0
- vxlan_xmit+0x6b4/0x15f0
- dev_hard_start_xmit+0x5d/0x1c0
- __dev_queue_xmit+0x246/0xfd0
- packet_sendmsg+0x113a/0x1850
- __sock_sendmsg+0x38/0x70
- __sys_sendto+0x126/0x180
- __x64_sys_sendto+0x24/0x30
- do_syscall_64+0xa4/0x260
- entry_SYSCALL_64_after_hwframe+0x4b/0x53
-
-[2]
- #!/bin/bash
-
- ip address add 192.0.2.1/32 dev lo
- ip address add 192.0.2.2/32 dev lo
-
- ip nexthop add id 1 via 192.0.2.3 fdb
- ip nexthop add id 10 group 1 fdb
-
- ip link add name vx0 up type vxlan id 10010 local 192.0.2.1 dstport 12345 localbypass
- ip link add name vx1 up type vxlan id 10020 local 192.0.2.2 dstport 54321 learning
-
- bridge fdb add 00:11:22:33:44:55 dev vx0 self static dst 192.0.2.2 port 54321 vni 10020
- bridge fdb add 00:aa:bb:cc:dd:ee dev vx1 self static nhid 10
-
- mausezahn vx0 -a 00:aa:bb:cc:dd:ee -b 00:11:22:33:44:55 -c 1 -q</td>
 				</tr>
 			
 		

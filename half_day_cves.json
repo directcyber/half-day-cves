@@ -1,22 +1,4 @@
 {
-  "CVE-2025-39851": {
-    "cvss": "-",
-    "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nvxlan: Fix NPD when refreshing an FDB entry with a nexthop object\n\nVXLAN FDB entries can point to either a remote destination or an FDB\nnexthop group. The latter is usually used in EVPN deployments where\nlearning is disabled.\n\nHowever, when learning is enabled, an incoming packet might try to\nrefresh an FDB entry that points to an FDB nexthop group and therefore\ndoes not have a remote. Such packets should be dropped, but they are\nonly dropped after dereferencing the non-existent remote, resulting in a\nNPD [1] which can be reproduced using [2].\n\nFix by dropping such packets earlier. Remove the misleading comment from\nfirst_remote_rcu().\n\n[1]\nBUG: kernel NULL pointer dereference, address: 0000000000000000\n[...]\nCPU: 13 UID: 0 PID: 361 Comm: mausezahn Not tainted 6.17.0-rc1-virtme-g9f6b606b6b37 #1 PREEMPT(voluntary)\nHardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.17.0-4.fc41 04/01/2014\nRIP: 0010:vxlan_snoop+0x98/0x1e0\n[...]\nCall Trace:\n <TASK>\n vxlan_encap_bypass+0x209/0x240\n encap_bypass_if_local+0xb1/0x100\n vxlan_xmit_one+0x1375/0x17e0\n vxlan_xmit+0x6b4/0x15f0\n dev_hard_start_xmit+0x5d/0x1c0\n __dev_queue_xmit+0x246/0xfd0\n packet_sendmsg+0x113a/0x1850\n __sock_sendmsg+0x38/0x70\n __sys_sendto+0x126/0x180\n __x64_sys_sendto+0x24/0x30\n do_syscall_64+0xa4/0x260\n entry_SYSCALL_64_after_hwframe+0x4b/0x53\n\n[2]\n #!/bin/bash\n\n ip address add 192.0.2.1/32 dev lo\n ip address add 192.0.2.2/32 dev lo\n\n ip nexthop add id 1 via 192.0.2.3 fdb\n ip nexthop add id 10 group 1 fdb\n\n ip link add name vx0 up type vxlan id 10010 local 192.0.2.1 dstport 12345 localbypass\n ip link add name vx1 up type vxlan id 10020 local 192.0.2.2 dstport 54321 learning\n\n bridge fdb add 00:11:22:33:44:55 dev vx0 self static dst 192.0.2.2 port 54321 vni 10020\n bridge fdb add 00:aa:bb:cc:dd:ee dev vx1 self static nhid 10\n\n mausezahn vx0 -a 00:aa:bb:cc:dd:ee -b 00:11:22:33:44:55 -c 1 -q",
-    "published": "2025-09-19T16:15:43.983",
-    "keywords": "remote,vpn,bypass"
-  },
-  "CVE-2025-57296": {
-    "cvss": 6.5,
-    "description": "Tenda AC6 router firmware 15.03.05.19 contains a command injection vulnerability in the formSetIptv function, which processes requests to the /goform/SetIPTVCfg web interface. When handling the list and vlanId parameters, the sub_ADBC0 helper function concatenates these user-supplied values into nvram set system commands using doSystemCmd, without validating or sanitizing special characters (e.g., ;, \", #). An unauthenticated or authenticated attacker can exploit this by submitting a crafted POST request, leading to arbitrary system command execution on the affected device.",
-    "published": "2025-09-19T16:15:46.107",
-    "keywords": "execution,unauthenticated,command"
-  },
-  "CVE-2025-57644": {
-    "cvss": 9.1,
-    "description": "Accela Automation Platform 22.2.3.0.230103 contains multiple vulnerabilities in the Test Script feature. An authenticated administrative user can execute arbitrary Java code on the server, resulting in remote code execution. In addition, improper input validation allows for arbitrary file write and server-side request forgery (SSRF), enabling interaction with internal or external systems. Successful exploitation can lead to full server compromise, unauthorized access to sensitive data, and further network exploitation.",
-    "published": "2025-09-19T16:15:46.220",
-    "keywords": "remote,execution,sensitive"
-  },
   "CVE-2025-48703": {
     "cvss": 9.0,
     "description": "CWP (aka Control Web Panel or CentOS Web Panel) before 0.9.8.1205 allows unauthenticated remote code execution via shell metacharacters in the t_total parameter in a filemanager changePerm request. A valid non-root username must be known.",
@@ -64,5 +46,95 @@
     "description": "Vasion Print (formerly PrinterLogic) Virtual Appliance Host versions prior to 22.0.843 and\u00a0Application prior to 20.0.1923 (VA and SaaS deployments) contains dangerous PHP dead code present in multiple Docker-hosted PHP instances. A script named /var/www/app/resetroot.php (found in several containers) lacks authentication checks and, when executed, performs a SQL update that sets the database administrator username to 'root' and its password hash to the SHA-512 hash of the string 'password'. Separately, commented-out code in /var/www/app/lib/common/oses.php would unserialize session data (unserialize($_SESSION['osdata']))\u2014a pattern that can enable remote code execution if re-enabled or reached with attacker-controlled serialized data. An attacker able to reach the resetroot.php endpoint can trivially reset the MySQL root password and obtain full database control; combined with deserialization issues this can lead to full remote code execution and system compromise.",
     "published": "2025-09-19T19:15:41.470",
     "keywords": "remote,execution,authentication"
+  },
+  "CVE-2025-10658": {
+    "cvss": 6.5,
+    "description": "The SupportCandy \u2013 Helpdesk & Customer Support Ticket System plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 3.3.7. This is due to missing rate limiting on the OTP verification for guest login. This makes it possible for unauthenticated attackers to bypass authentication and gain unauthorized access to customer support tickets by brute forcing the 6-digit OTP code.",
+    "published": "2025-09-20T07:15:35.607",
+    "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2025-10759": {
+    "cvss": 5.3,
+    "description": "A vulnerability was detected in Webkul QloApps up to 1.7.0. This affects an unknown function of the component CSRF Token Handler. Performing manipulation of the argument token results in authorization bypass. The attack may be initiated remotely. The exploit is now public and may be used. The vendor explains: \"As We are already aware about this vulnerability and our Internal team are already working on this issue. (...) We'll implement the fix for this vulnerability in our next major release.\"",
+    "published": "2025-09-21T01:15:49.020",
+    "keywords": "remote,bypass"
+  },
+  "CVE-2025-10761": {
+    "cvss": 3.7,
+    "description": "A vulnerability has been found in Harness 3.3.0. Affected is an unknown function of the file /api/v1/login of the component Login Endpoint. The manipulation leads to improper restriction of excessive authentication attempts. Remote exploitation of the attack is possible. The attack is considered to have high complexity. The exploitability is told to be difficult. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-09-21T04:15:37.760",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2025-10762": {
+    "url": "https://github.com/kuaifan/dootask/issues/283#issue-3379188930",
+    "cvss": 6.3,
+    "description": "A vulnerability was found in kuaifan DooTask up to 1.2.49. Affected by this vulnerability is an unknown functionality of the file app/Http/Controllers/Api/UsersController.php. The manipulation of the argument keys[department] results in sql injection. The attack can be executed remotely. The exploit has been made public and could be used.",
+    "published": "2025-09-21T05:15:33.433"
+  },
+  "CVE-2025-10767": {
+    "cvss": 4.5,
+    "description": "A vulnerability was detected in CosmodiumCS OnlyRAT up to 3.2. The affected element is the function connect/remote_upload/remote_download of the file main.py of the component Configuration File Handler. The manipulation of the argument configuration[\"PASSWORD\"] results in os command injection. The attack requires a local approach. Attacks of this nature are highly complex. The exploitability is described as difficult. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-09-21T22:15:34.750",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-10770": {
+    "url": "https://github.com/jeecgboot/jimureport/issues/4116#issue-3391107887",
+    "cvss": 6.3,
+    "description": "A vulnerability was found in jeecgboot JimuReport up to 2.1.2. This impacts an unknown function of the file /drag/onlDragDataSource/testConnection of the component MySQL JDBC Handler. Performing manipulation results in deserialization. Remote exploitation of the attack is possible. The exploit has been made public and could be used.",
+    "published": "2025-09-21T23:15:34.940"
+  },
+  "CVE-2025-10771": {
+    "url": "https://github.com/jeecgboot/jimureport/issues/4117#issue-3391268438",
+    "cvss": 6.3,
+    "description": "A vulnerability was determined in jeecgboot JimuReport up to 2.1.2. Affected is an unknown function of the file /drag/onlDragDataSource/testConnection of the component DB2 JDBC Handler. Executing manipulation of the argument clientRerouteServerListJNDIName can lead to deserialization. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized.",
+    "published": "2025-09-21T23:15:35.150"
+  },
+  "CVE-2025-10772": {
+    "cvss": 6.3,
+    "description": "A vulnerability was identified in huggingface LeRobot up to 0.3.3. Affected by this vulnerability is an unknown functionality of the file lerobot/common/robot_devices/robots/lekiwi_remote.py of the component ZeroMQ Socket Handler. The manipulation leads to missing authentication. The attack can only be initiated within the local network. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-09-22T00:15:39.410",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2025-10775": {
+    "cvss": 4.7,
+    "description": "A security vulnerability has been detected in Wavlink WL-NU516U1 240425. This vulnerability affects the function sub_4012A0 of the file /cgi-bin/login.cgi. Such manipulation of the argument ipaddr leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-09-22T01:15:36.260",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-5962": {
+    "cvss": 7.7,
+    "description": "A flaw was found in the Lightspeed history service. Insufficient access controls allow a local, unprivileged user to access and manipulate the chat history of another user on the same system. By abusing inter-process communication  calls to the history service, an attacker can view, delete, or inject arbitrary history entries, including misleading or malicious commands. This can be used to deceive another user into executing harmful actions, posing a risk of privilege misuse or unauthorized command execution through social engineering.",
+    "published": "2025-09-22T08:15:34.533",
+    "keywords": "execution,command"
+  },
+  "CVE-2025-10854": {
+    "url": "https://github.com/neuml/txtai/issues/965",
+    "cvss": 8.1,
+    "description": "The txtai framework allows the loading of compressed tar files as embedding indices. While the validate function is intended to prevent path traversal vulnerabilities by ensuring safe filenames, it does not account for symbolic links within the tar file. An attacker is able to write a file anywhere in the filesystem when txtai is used to load untrusted embedding indices",
+    "published": "2025-09-22T13:16:01.347"
+  },
+  "CVE-2025-51006": {
+    "url": "https://github.com/appneta/tcpreplay/issues/926",
+    "cvss": 7.8,
+    "description": "Within tcpreplay's tcprewrite, a double free vulnerability has been identified in the dlt_linuxsll2_cleanup() function in plugins/dlt_linuxsll2/linuxsll2.c. This vulnerability is triggered when tcpedit_dlt_cleanup() indirectly invokes the cleanup routine multiple times on the same memory region. By supplying a specifically crafted pcap file to the tcprewrite binary, a local attacker can exploit this flaw to cause a Denial of Service (DoS) via memory corruption.",
+    "published": "2025-09-22T14:15:49.713"
+  },
+  "CVE-2025-57432": {
+    "cvss": "-",
+    "description": "Blackmagic Web Presenter version 3.3 exposes a Telnet service on port 9977 that accepts unauthenticated commands. This service allows remote attackers to manipulate stream settings, including changing video modes and possibly altering device functionality. No credentials or authentication mechanisms are required to interact with the Telnet interface.",
+    "published": "2025-09-22T16:15:44.753",
+    "keywords": "remote,unauthenticated,authentication,command"
+  },
+  "CVE-2025-57601": {
+    "cvss": "-",
+    "description": "AiKaan Cloud Controller uses a single hardcoded SSH private key and the username `proxyuser` for remote terminal access to all managed IoT/edge devices. When an administrator initiates \"Open Remote Terminal\" from the AiKaan dashboard, the controller sends this same static private key to the target device. The device then uses it to establish a reverse SSH tunnel to a remote access server, enabling browser-based SSH access for the administrator. Because the same `proxyuser` account and SSH key are reused across all customer environments: - An attacker who obtains the key (e.g., by intercepting it in transit, extracting it from the remote access server, or from a compromised admin account) can impersonate any managed device. - They can establish unauthorized reverse SSH tunnels and interact with devices without the owner's consent. This is a design flaw in the authentication model: compromise of a single key compromises the trust boundary between the controller and devices.",
+    "published": "2025-09-22T16:15:45.000",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2025-57602": {
+    "cvss": "-",
+    "description": "Insufficient hardening of the proxyuser account in the AiKaan IoT management platform, combined with the use of a shared, hardcoded SSH private key, allows remote attackers to authenticate to the cloud controller, gain interactive shell access, and pivot into other connected IoT devices. This can lead to remote code execution, information disclosure, and privilege escalation across customer environments.",
+    "published": "2025-09-22T16:15:45.130",
+    "keywords": "remote,execution"
   }
 }
