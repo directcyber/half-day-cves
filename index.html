@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-09-22T17:10:47.758646
+Updated at UTC 2025-09-22T18:17:53.434403
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,20 @@ Updated at UTC 2025-09-22T17:10:47.758646
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -152,10 +166,78 @@ Updated at UTC 2025-09-22T17:10:47.758646
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-57441">CVE-2025-57441</a></td>
+					<td>9.8</td>
+					<td>unauthenticated,sensitive,leak</td>
+					<td class=date>2025-09-22T18:15:45.953</td>
+					<td class=description>The Blackmagic ATEM Mini Pro 2.7 exposes sensitive device and stream configuration information via an unauthenticated Telnet service on port 9990. Upon connection, the attacker can access a protocol preamble that leaks the video mode, routing configuration, input/output labels, device model, and even internal identifiers such as the unique ID. This can be used for reconnaissance and planning further attacks.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-57440">CVE-2025-57440</a></td>
+					<td>-</td>
+					<td>remote,unauthenticated,command</td>
+					<td class=date>2025-09-22T18:15:45.830</td>
+					<td class=description>The Blackmagic ATEM Mini Pro 2.7 exposes an undocumented Telnet service on TCP port 9993, which accepts unauthenticated plaintext commands for controlling streaming, recording, formatting storage devices, and system reboot. This interface, referred to as the "ATEM Ethernet Protocol 1.0", provides complete device control without requiring credentials or encryption. An attacker on the same network (or with remote access to the exposed port) can exploit this interface to execute arbitrary streaming commands, erase disks, or shut down the device - effectively gaining full remote control.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-57439">CVE-2025-57439</a></td>
+					<td>8.8</td>
+					<td>remote,execution,command</td>
+					<td class=date>2025-09-22T18:15:45.610</td>
+					<td class=description>Creacast Creabox Manager 4.4.4 contains a critical Remote Code Execution vulnerability accessible via the edit.php endpoint. An authenticated attacker can inject arbitrary Lua code into the configuration, which is then executed on the server. This allows full system compromise, including reverse shell execution or arbitrary command execution.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-57438">CVE-2025-57438</a></td>
+					<td>6.8</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2025-09-22T18:15:45.357</td>
+					<td class=description>The 2wcom IP-4c 2.15.5 device suffers from a Broken Access Control vulnerability. Certain sensitive endpoints are intended to be accessible only after the admin explicitly grants access to a manager-level account. However, a manager-level user can bypass these controls by intercepting and modifying requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-57437">CVE-2025-57437</a></td>
+					<td>9.8</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2025-09-22T18:15:45.153</td>
+					<td class=description>The Blackmagic Web Presenter HD firmware version 3.3 exposes sensitive information via an unauthenticated Telnet service on port 9977. When connected, the service reveals extensive device configuration data including: - Model, version, and unique identifiers - Network settings including IP, MAC, DNS - Current stream platform, stream key, and streaming URL - Audio/video configuration This data can be used to hijack live streams or perform network reconnaissance.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-57434">CVE-2025-57434</a></td>
+					<td>8.8</td>
+					<td>authentication,bypass</td>
+					<td class=date>2025-09-22T17:16:08.423</td>
+					<td class=description>Creacast Creabox Manager contains a critical authentication flaw that allows an attacker to bypass login validation. The system grants access when the username is creabox and the password begins with the string creacast, regardless of what follows.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-57431">CVE-2025-57431</a></td>
+					<td>8.8</td>
+					<td>remote,execution,command</td>
+					<td class=date>2025-09-22T17:16:08.303</td>
+					<td class=description>The Sound4 PULSE-ECO AES67 1.22 web-based management interface is vulnerable to Remote Code Execution (RCE) via a malicious firmware update package. The update mechanism fails to validate the integrity of manual.sh, allowing an attacker to inject arbitrary commands by modifying this script and repackaging the firmware.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -334,16 +416,6 @@ Updated at UTC 2025-09-22T17:10:47.758646
 					<td>remote,authentication,sensitive,bypass</td>
 					<td class=date>2025-09-19T19:15:38.990</td>
 					<td class=description>Vasion Print (formerly PrinterLogic) Virtual Appliance Host versions prior to 1.0.735 and Application prior to 20.0.1330 (macOS/Linux client deployments) contain a vulnerability in the local logging mechanism. Authentication session tokens, including PHPSESSID, XSRF-TOKEN, and laravel_session, are stored in cleartext within world-readable log files. Any local user with access to the machine can extract these session tokens and use them to authenticate remotely to the SaaS environment, bypassing normal login credentials, potentially leading to unauthorized system access and exposure of sensitive information.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-48703">CVE-2025-48703</a></td>
-					<td>9.0</td>
-					<td>remote,execution,unauthenticated</td>
-					<td class=date>2025-09-19T18:15:36.620</td>
-					<td class=description>CWP (aka Control Web Panel or CentOS Web Panel) before 0.9.8.1205 allows unauthenticated remote code execution via shell metacharacters in the t_total parameter in a filemanager changePerm request. A valid non-root username must be known.</td>
 				</tr>
 			
 		
