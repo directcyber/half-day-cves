@@ -226,5 +226,29 @@
     "description": "An authenticated remote code execution (RCE) vulnerability exists in multiple WSO2 products due to improper input validation in the event processor admin service. A user with administrative access to the SOAP admin services can exploit this flaw by deploying a Siddhi execution plan containing malicious Java code, resulting in arbitrary code execution on the server.\n\nExploitation of this vulnerability requires a valid user account with administrative privileges, limiting the attack surface to authenticated but potentially malicious users.",
     "published": "2025-09-23T16:15:33.620",
     "keywords": "remote,execution"
+  },
+  "CVE-2025-0209": {
+    "cvss": 6.1,
+    "description": "A reflected cross-site scripting (XSS) vulnerability exists in the account registration flow of WSO2 Identity Server due to improper output encoding. A malicious actor can exploit this vulnerability by injecting a crafted payload that is reflected in the server response, enabling the execution of arbitrary JavaScript in the victim's browser.\n\nThis vulnerability could allow attackers to redirect users to malicious websites, modify the user interface, or exfiltrate data from the browser. However, session-related sensitive cookies are protected using the httpOnly flag, which mitigates the risk of session hijacking.",
+    "published": "2025-09-23T18:15:29.833",
+    "keywords": "execution,sensitive"
+  },
+  "CVE-2025-0672": {
+    "cvss": 3.3,
+    "description": "An authentication bypass vulnerability exists in multiple WSO2 products when FIDO authentication is enabled. When a user account is deleted, the system does not automatically remove associated FIDO registration data. If a new user account is later created using the same username, the system may associate the new account with the previously registered FIDO device.\n\nThis flaw may allow a previously deleted user to authenticate using their FIDO credentials and impersonate the newly created user, resulting in unauthorized access. The vulnerability applies only to deployments that utilize FIDO-based authentication.",
+    "published": "2025-09-23T18:15:30.863",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-56394": {
+    "url": "https://github.com/free5gc/free5gc/issues/690",
+    "cvss": "-",
+    "description": "Free5gc 4.0.1 is vulnerable to Buffer Overflow. The AMF incorrectly validates the 5GS mobile identity, resulting in slice reference overflow.",
+    "published": "2025-09-23T18:15:35.207"
+  },
+  "CVE-2025-59545": {
+    "cvss": 9.0,
+    "description": "DNN (formerly DotNetNuke) is an open-source web content management platform (CMS) in the Microsoft ecosystem. Prior to version 10.1.0, the Prompt module allows execution of commands that can return raw HTML. Malicious input, even if sanitized for display elsewhere, can be executed when processed through certain commands, leading to potential script execution (XSS). This issue has been patched in version 10.1.0.",
+    "published": "2025-09-23T18:15:38.953",
+    "keywords": "execution,command"
   }
 }

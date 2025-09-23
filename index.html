@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-09-23T17:09:03.517918
+Updated at UTC 2025-09-23T18:18:22.606896
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,24 @@ Updated at UTC 2025-09-23T17:09:03.517918
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-56394">CVE-2025-56394</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/free5gc/free5gc/issues/690">https://github.com/free5gc/free5gc/issues/690</a></td>
+					<td class=date>2025-09-23T18:15:35.207</td>
+					<td class=description>Free5gc 4.0.1 is vulnerable to Buffer Overflow. The AMF incorrectly validates the 5GS mobile identity, resulting in slice reference overflow.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
 		
 			
 		
@@ -216,6 +234,42 @@ Updated at UTC 2025-09-23T17:09:03.517918
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-59545">CVE-2025-59545</a></td>
+					<td>9.0</td>
+					<td>execution,command</td>
+					<td class=date>2025-09-23T18:15:38.953</td>
+					<td class=description>DNN (formerly DotNetNuke) is an open-source web content management platform (CMS) in the Microsoft ecosystem. Prior to version 10.1.0, the Prompt module allows execution of commands that can return raw HTML. Malicious input, even if sanitized for display elsewhere, can be executed when processed through certain commands, leading to potential script execution (XSS). This issue has been patched in version 10.1.0.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0672">CVE-2025-0672</a></td>
+					<td>3.3</td>
+					<td>authentication,bypass</td>
+					<td class=date>2025-09-23T18:15:30.863</td>
+					<td class=description>An authentication bypass vulnerability exists in multiple WSO2 products when FIDO authentication is enabled. When a user account is deleted, the system does not automatically remove associated FIDO registration data. If a new user account is later created using the same username, the system may associate the new account with the previously registered FIDO device.
+
+This flaw may allow a previously deleted user to authenticate using their FIDO credentials and impersonate the newly created user, resulting in unauthorized access. The vulnerability applies only to deployments that utilize FIDO-based authentication.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-0209">CVE-2025-0209</a></td>
+					<td>6.1</td>
+					<td>execution,sensitive</td>
+					<td class=date>2025-09-23T18:15:29.833</td>
+					<td class=description>A reflected cross-site scripting (XSS) vulnerability exists in the account registration flow of WSO2 Identity Server due to improper output encoding. A malicious actor can exploit this vulnerability by injecting a crafted payload that is reflected in the server response, enabling the execution of arbitrary JavaScript in the victim's browser.
+
+This vulnerability could allow attackers to redirect users to malicious websites, modify the user interface, or exfiltrate data from the browser. However, session-related sensitive cookies are protected using the httpOnly flag, which mitigates the risk of session hijacking.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
