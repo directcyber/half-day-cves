@@ -172,5 +172,23 @@
     "cvss": 3.3,
     "description": "A vulnerability was found in axboe fio up to 3.41. This affects the function str_buffer_pattern_cb of the file options.c. Performing manipulation results in null pointer dereference. The attack must be initiated from a local position. The exploit has been made public and could be used.",
     "published": "2025-09-23T00:15:36.810"
+  },
+  "CVE-2025-10824": {
+    "url": "https://github.com/axboe/fio/issues/1981",
+    "cvss": 5.3,
+    "description": "A vulnerability was determined in axboe fio up to 3.41. This impacts the function __parse_jobs_ini of the file init.c. Executing manipulation can lead to use after free. The attack needs to be launched locally. The exploit has been publicly disclosed and may be utilized.",
+    "published": "2025-09-23T01:15:36.197"
+  },
+  "CVE-2025-9494": {
+    "cvss": "-",
+    "description": "An OS command injection vulnerability has been discovered in the Vitogate 300, which can be exploited by malicious users to compromise affected installations. Specifically, the `/cgi-bin/vitogate.cgi` endpoint is affected, when the `form` JSON parameter is set to `form-0-2`. The vulnerability stems from the fact that that function at offset 0x21c24 does not properly sanitize supplied input before interpolating it into a format string which gets passed to `popen()`. Consequently, an authenticated attacker is able to inject arbitrary OS commands and thus gain code execution on affected devices.",
+    "published": "2025-09-23T02:15:47.410",
+    "keywords": "execution,command"
+  },
+  "CVE-2025-9495": {
+    "cvss": "-",
+    "description": "The Vitogate 300 web interface fails to enforce proper server-side authentication and relies on frontend-based authentication controls. This allows an attacker to simply modify HTML elements in the browser\u2019s developer tools to bypass login restrictions. By removing specific UI elements, an attacker can reveal the hidden administration menu, giving them full control over the device.",
+    "published": "2025-09-23T02:15:47.563",
+    "keywords": "authentication,bypass"
   }
 }
