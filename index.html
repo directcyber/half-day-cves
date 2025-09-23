@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-09-23T19:10:06.375348
+Updated at UTC 2025-09-23T20:13:23.605157
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,18 @@ Updated at UTC 2025-09-23T19:10:06.375348
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-51005">CVE-2025-51005</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/appneta/tcpreplay/issues/925">https://github.com/appneta/tcpreplay/issues/925</a></td>
+					<td class=date>2025-09-23T19:15:39.347</td>
+					<td class=description>A heap-buffer-overflow vulnerability exists in the tcpliveplay utility of the tcpreplay-4.5.1. When a crafted pcap file is processed, the program incorrectly handles memory in the checksum calculation logic at do_checksum_math_liveplay in tcpliveplay.c, leading to a possible denial of service.</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -234,6 +246,8 @@ Updated at UTC 2025-09-23T19:10:06.375348
 		
 
 		<hr>
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -494,7 +508,7 @@ The root cause is a combination of missing permissions for write operations in s
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-57602">CVE-2025-57602</a></td>
-					<td>-</td>
+					<td>9.8</td>
 					<td>remote,execution</td>
 					<td class=date>2025-09-22T16:15:45.130</td>
 					<td class=description>Insufficient hardening of the proxyuser account in the AiKaan IoT management platform, combined with the use of a shared, hardcoded SSH private key, allows remote attackers to authenticate to the cloud controller, gain interactive shell access, and pivot into other connected IoT devices. This can lead to remote code execution, information disclosure, and privilege escalation across customer environments.</td>
@@ -504,7 +518,7 @@ The root cause is a combination of missing permissions for write operations in s
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-57601">CVE-2025-57601</a></td>
-					<td>-</td>
+					<td>9.8</td>
 					<td>remote,authentication</td>
 					<td class=date>2025-09-22T16:15:45.000</td>
 					<td class=description>AiKaan Cloud Controller uses a single hardcoded SSH private key and the username `proxyuser` for remote terminal access to all managed IoT/edge devices. When an administrator initiates "Open Remote Terminal" from the AiKaan dashboard, the controller sends this same static private key to the target device. The device then uses it to establish a reverse SSH tunnel to a remote access server, enabling browser-based SSH access for the administrator. Because the same `proxyuser` account and SSH key are reused across all customer environments: - An attacker who obtains the key (e.g., by intercepting it in transit, extracting it from the remote access server, or from a compromised admin account) can impersonate any managed device. - They can establish unauthorized reverse SSH tunnels and interact with devices without the owner's consent. This is a design flaw in the authentication model: compromise of a single key compromises the trust boundary between the controller and devices.</td>
@@ -514,7 +528,7 @@ The root cause is a combination of missing permissions for write operations in s
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-57432">CVE-2025-57432</a></td>
-					<td>-</td>
+					<td>9.8</td>
 					<td>remote,unauthenticated,authentication,command</td>
 					<td class=date>2025-09-22T16:15:44.753</td>
 					<td class=description>Blackmagic Web Presenter version 3.3 exposes a Telnet service on port 9977 that accepts unauthenticated commands. This service allows remote attackers to manipulate stream settings, including changing video modes and possibly altering device functionality. No credentials or authentication mechanisms are required to interact with the Telnet interface.</td>

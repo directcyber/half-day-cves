@@ -66,19 +66,19 @@
     "published": "2025-09-22T14:15:49.713"
   },
   "CVE-2025-57432": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "Blackmagic Web Presenter version 3.3 exposes a Telnet service on port 9977 that accepts unauthenticated commands. This service allows remote attackers to manipulate stream settings, including changing video modes and possibly altering device functionality. No credentials or authentication mechanisms are required to interact with the Telnet interface.",
     "published": "2025-09-22T16:15:44.753",
     "keywords": "remote,unauthenticated,authentication,command"
   },
   "CVE-2025-57601": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "AiKaan Cloud Controller uses a single hardcoded SSH private key and the username `proxyuser` for remote terminal access to all managed IoT/edge devices. When an administrator initiates \"Open Remote Terminal\" from the AiKaan dashboard, the controller sends this same static private key to the target device. The device then uses it to establish a reverse SSH tunnel to a remote access server, enabling browser-based SSH access for the administrator. Because the same `proxyuser` account and SSH key are reused across all customer environments: - An attacker who obtains the key (e.g., by intercepting it in transit, extracting it from the remote access server, or from a compromised admin account) can impersonate any managed device. - They can establish unauthorized reverse SSH tunnels and interact with devices without the owner's consent. This is a design flaw in the authentication model: compromise of a single key compromises the trust boundary between the controller and devices.",
     "published": "2025-09-22T16:15:45.000",
     "keywords": "remote,authentication"
   },
   "CVE-2025-57602": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "Insufficient hardening of the proxyuser account in the AiKaan IoT management platform, combined with the use of a shared, hardcoded SSH private key, allows remote attackers to authenticate to the cloud controller, gain interactive shell access, and pivot into other connected IoT devices. This can lead to remote code execution, information disclosure, and privilege escalation across customer environments.",
     "published": "2025-09-22T16:15:45.130",
     "keywords": "remote,execution"
@@ -250,5 +250,11 @@
     "description": "DNN (formerly DotNetNuke) is an open-source web content management platform (CMS) in the Microsoft ecosystem. Prior to version 10.1.0, the Prompt module allows execution of commands that can return raw HTML. Malicious input, even if sanitized for display elsewhere, can be executed when processed through certain commands, leading to potential script execution (XSS). This issue has been patched in version 10.1.0.",
     "published": "2025-09-23T18:15:38.953",
     "keywords": "execution,command"
+  },
+  "CVE-2025-51005": {
+    "url": "https://github.com/appneta/tcpreplay/issues/925",
+    "cvss": "-",
+    "description": "A heap-buffer-overflow vulnerability exists in the tcpliveplay utility of the tcpreplay-4.5.1. When a crafted pcap file is processed, the program incorrectly handles memory in the checksum calculation logic at do_checksum_math_liveplay in tcpliveplay.c, leading to a possible denial of service.",
+    "published": "2025-09-23T19:15:39.347"
   }
 }
