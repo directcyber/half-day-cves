@@ -220,5 +220,11 @@
     "description": "The vulnerability allows any application installed on the device to read SMS/MMS data and metadata from the system-provided Telephony provider without permission, user interaction, or consent. The user is also not notified that SMS data is being accessed. This could lead to sensitive information disclosure and could effectively break the security provided by SMS-based Multi-Factor Authentication (MFA) checks. \n\nThe root cause is a combination of missing permissions for write operations in several content providers (com.android.providers.telephony.PushMessageProvider, com.android.providers.telephony.PushShopProvider, com.android.providers.telephony.ServiceNumberProvider), and a blind SQL injection in the\u00a0update method of those providers.",
     "published": "2025-09-23T13:15:27.770",
     "keywords": "authentication,sensitive"
+  },
+  "CVE-2025-5717": {
+    "cvss": 6.7,
+    "description": "An authenticated remote code execution (RCE) vulnerability exists in multiple WSO2 products due to improper input validation in the event processor admin service. A user with administrative access to the SOAP admin services can exploit this flaw by deploying a Siddhi execution plan containing malicious Java code, resulting in arbitrary code execution on the server.\n\nExploitation of this vulnerability requires a valid user account with administrative privileges, limiting the attack surface to authenticated but potentially malicious users.",
+    "published": "2025-09-23T16:15:33.620",
+    "keywords": "remote,execution"
   }
 }
