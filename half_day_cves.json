@@ -214,5 +214,11 @@
     "description": "Improper authentication vulnerability in Novakon P series allows unauthenticated attackers to upload and download any application from/to the device.This issue affects P series: P \u2013 V2001.A.C518o2.",
     "published": "2025-09-23T12:15:29.767",
     "keywords": "unauthenticated,authentication"
+  },
+  "CVE-2025-10184": {
+    "cvss": "-",
+    "description": "The vulnerability allows any application installed on the device to read SMS/MMS data and metadata from the system-provided Telephony provider without permission, user interaction, or consent. The user is also not notified that SMS data is being accessed. This could lead to sensitive information disclosure and could effectively break the security provided by SMS-based Multi-Factor Authentication (MFA) checks. \n\nThe root cause is a combination of missing permissions for write operations in several content providers (com.android.providers.telephony.PushMessageProvider, com.android.providers.telephony.PushShopProvider, com.android.providers.telephony.ServiceNumberProvider), and a blind SQL injection in the\u00a0update method of those providers.",
+    "published": "2025-09-23T13:15:27.770",
+    "keywords": "authentication,sensitive"
   }
 }

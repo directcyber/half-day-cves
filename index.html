@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-09-23T12:24:26.449380
+Updated at UTC 2025-09-23T13:23:14.751280
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2025-09-23T12:24:26.449380
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -212,6 +214,18 @@ Updated at UTC 2025-09-23T12:24:26.449380
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-10184">CVE-2025-10184</a></td>
+					<td>-</td>
+					<td>authentication,sensitive</td>
+					<td class=date>2025-09-23T13:15:27.770</td>
+					<td class=description>The vulnerability allows any application installed on the device to read SMS/MMS data and metadata from the system-provided Telephony provider without permission, user interaction, or consent. The user is also not notified that SMS data is being accessed. This could lead to sensitive information disclosure and could effectively break the security provided by SMS-based Multi-Factor Authentication (MFA) checks. 
+
+The root cause is a combination of missing permissions for write operations in several content providers (com.android.providers.telephony.PushMessageProvider, com.android.providers.telephony.PushShopProvider, com.android.providers.telephony.ServiceNumberProvider), and a blind SQL injection in the update method of those providers.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
