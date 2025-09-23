@@ -190,5 +190,11 @@
     "description": "The Vitogate 300 web interface fails to enforce proper server-side authentication and relies on frontend-based authentication controls. This allows an attacker to simply modify HTML elements in the browser\u2019s developer tools to bypass login restrictions. By removing specific UI elements, an attacker can reveal the hidden administration menu, giving them full control over the device.",
     "published": "2025-09-23T02:15:47.563",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2025-26399": {
+    "cvss": 9.8,
+    "description": "SolarWinds Web Help Desk was found to be susceptible to an unauthenticated AjaxProxy deserialization remote code execution vulnerability that, if exploited, would allow an attacker to run commands on the host machine. This vulnerability is a patch bypass of CVE-2024-28988, which in turn is a patch bypass of CVE-2024-28986.",
+    "published": "2025-09-23T05:15:35.777",
+    "keywords": "remote,execution,unauthenticated,command,bypass"
   }
 }
