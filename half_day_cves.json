@@ -196,5 +196,11 @@
     "description": "The CleverControl employee monitoring software (v11.5.1041.6) fails to validate TLS server certificates during the installation process. The installer downloads and executes external components using curl.exe --insecure, enabling a man-in-the-middle attacker to deliver malicious files that are executed with SYSTEM privileges. This can lead to full remote code execution with administrative rights. No patch is available as the vendor has been unresponsive. It is assumed that previous versions are also affected, but this is not confirmed.",
     "published": "2025-09-23T07:15:34.957",
     "keywords": "remote,execution"
+  },
+  "CVE-2025-10147": {
+    "cvss": 9.8,
+    "description": "The Podlove Podcast Publisher plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'move_as_original_file' function in all versions up to, and including, 4.2.6. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2025-09-23T09:15:30.920",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
