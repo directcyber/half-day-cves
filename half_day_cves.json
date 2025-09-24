@@ -256,5 +256,17 @@
     "cvss": "-",
     "description": "A heap-buffer-overflow vulnerability exists in the tcpliveplay utility of the tcpreplay-4.5.1. When a crafted pcap file is processed, the program incorrectly handles memory in the checksum calculation logic at do_checksum_math_liveplay in tcpliveplay.c, leading to a possible denial of service.",
     "published": "2025-09-23T19:15:39.347"
+  },
+  "CVE-2025-55038": {
+    "cvss": 6.8,
+    "description": "An authorization bypass vulnerability has been discovered in the Click Plus C2-03CPU2 device firmware version 3.60. Through the KOPR protocol utilized by the Remote PLC application, authenticated users with low-level access permissions can exploit this vulnerability to read and modify PLC variables beyond their intended authorization level.",
+    "published": "2025-09-23T23:15:30.497",
+    "keywords": "remote,bypass"
+  },
+  "CVE-2025-57882": {
+    "cvss": 5.9,
+    "description": "An improper resource shutdown or release vulnerability has been identified in the Click Plus C2-03CPU-2 device running firmware version 3.60. The vulnerability allows an unauthenticated attacker to perform a denial-of-service attack by exhausting all available device sessions in the Remote PLC application.",
+    "published": "2025-09-23T23:15:30.903",
+    "keywords": "remote,unauthenticated"
   }
 }
