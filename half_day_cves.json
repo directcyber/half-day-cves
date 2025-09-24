@@ -262,5 +262,11 @@
     "description": "The web application allows an unauthenticated remote attacker to learn information about existing user accounts with their corresponding role due to missing authentication for critical function.",
     "published": "2025-09-24T09:15:31.023",
     "keywords": "remote,unauthenticated,authentication"
+  },
+  "CVE-2025-48868": {
+    "cvss": 7.2,
+    "description": "Horilla is a free and open source Human Resource Management System (HRMS). An authenticated Remote Code Execution (RCE) vulnerability exists in Horilla 1.3.0 due to the unsafe use of Python\u2019s eval() function on a user-controlled query parameter in the project_bulk_archive view. This allows privileged users (e.g., administrators) to execute arbitrary system commands on the server. While having Django\u2019s DEBUG=True makes exploitation visibly easier by returning command output in the HTTP response, this is not required. The vulnerability can still be exploited in DEBUG=False mode by using blind payloads such as a reverse shell, leading to full remote code execution. This issue has been patched in version 1.3.1.",
+    "published": "2025-09-24T14:15:49.593",
+    "keywords": "remote,execution,command"
   }
 }
