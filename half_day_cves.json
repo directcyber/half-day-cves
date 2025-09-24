@@ -250,5 +250,17 @@
     "description": "An improper resource shutdown or release vulnerability has been identified in the Click Plus C2-03CPU-2 device running firmware version 3.60. The vulnerability allows an unauthenticated attacker to perform a denial-of-service attack by exhausting all available device sessions in the Remote PLC application.",
     "published": "2025-09-23T23:15:30.903",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-41715": {
+    "cvss": 9.8,
+    "description": "The database for the web application is exposed without authentication, allowing an unauthenticated remote attacker to gain unauthorized access and potentially compromise it.",
+    "published": "2025-09-24T09:15:29.820",
+    "keywords": "remote,unauthenticated,authentication"
+  },
+  "CVE-2025-41716": {
+    "cvss": 5.3,
+    "description": "The web application allows an unauthenticated remote attacker to learn information about existing user accounts with their corresponding role due to missing authentication for critical function.",
+    "published": "2025-09-24T09:15:31.023",
+    "keywords": "remote,unauthenticated,authentication"
   }
 }
