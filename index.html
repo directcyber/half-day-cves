@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-10-13T21:10:47.038122
+Updated at UTC 2025-10-13T22:11:12.033459
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,14 @@ Updated at UTC 2025-10-13T21:10:47.038122
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 				<tr>
@@ -112,6 +120,46 @@ Updated at UTC 2025-10-13T21:10:47.038122
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-9713">CVE-2025-9713</a></td>
+					<td>8.8</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2025-10-13T21:15:35.727</td>
+					<td class=description>Path traversal in Ivanti Endpoint Manager allows a remote unauthenticated attacker to achieve remote code execution. User interaction is required.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-62364">CVE-2025-62364</a></td>
+					<td>6.2</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2025-10-13T21:15:35.560</td>
+					<td class=description>text-generation-webui is an open-source web interface for running Large Language Models. In versions through 3.13, a Local File Inclusion vulnerability exists in the character picture upload feature. An attacker can upload a text file containing a symbolic link to an arbitrary file path. When the application processes the upload, it follows the symbolic link and serves the contents of the targeted file through the web interface. This allows an unauthenticated attacker to read sensitive files on the server, potentially exposing system configurations, credentials, and other confidential information. This vulnerability is fixed in 3.14. No known workarounds exist.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-61688">CVE-2025-61688</a></td>
+					<td>8.6</td>
+					<td>sensitive,leak</td>
+					<td class=date>2025-10-13T21:15:34.613</td>
+					<td class=description>Omni manages Kubernetes on bare metal, virtual machines, or in a cloud. Prior to 1.1.5 and 1.0.2, Omni might leak sensitive information via an API.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-59836">CVE-2025-59836</a></td>
+					<td>5.3</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2025-10-13T21:15:34.457</td>
+					<td class=description>Omni manages Kubernetes on bare metal, virtual machines, or in a cloud. Prior to 1.1.5 and 1.0.2, there is a nil pointer dereference vulnerability in the Omni Resource Service allows unauthenticated users to cause a server panic and denial of service by sending empty create/update resource requests through the API endpoints. The vulnerability exists in the isSensitiveSpec function which calls grpcomni.CreateResource without checking if the resource's metadata field is nil. When a resource is created with an empty Metadata field, the CreateResource function attempts to access resource.Metadata.Version causing a segmentation fault. This vulnerability is fixed in 1.1.5 and 1.0.2.</td>
+				</tr>
+			
 		
 			
 		

@@ -124,5 +124,29 @@
     "cvss": 7.5,
     "description": "rAthena is an open-source cross-platform MMORPG server. A use-after-free vulnerability exists in the RODEX functionality of rAthena's map-server in versions prior to commit af2f3ba. An unauthenticated attacker can exploit this vulnerability via a specific attacking scenario to cause a denial of service by crashing the map-server. This issue has been patched in commit af2f3ba. There are no known workarounds aside from manually applying the patch.",
     "published": "2025-10-13T18:15:34.980"
+  },
+  "CVE-2025-59836": {
+    "cvss": 5.3,
+    "description": "Omni manages Kubernetes on bare metal, virtual machines, or in a cloud. Prior to 1.1.5 and 1.0.2, there is a nil pointer dereference vulnerability in the Omni Resource Service allows unauthenticated users to cause a server panic and denial of service by sending empty create/update resource requests through the API endpoints. The vulnerability exists in the isSensitiveSpec function which calls grpcomni.CreateResource without checking if the resource's metadata field is nil. When a resource is created with an empty Metadata field, the CreateResource function attempts to access resource.Metadata.Version causing a segmentation fault. This vulnerability is fixed in 1.1.5 and 1.0.2.",
+    "published": "2025-10-13T21:15:34.457",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-61688": {
+    "cvss": 8.6,
+    "description": "Omni manages Kubernetes on bare metal, virtual machines, or in a cloud. Prior to 1.1.5 and 1.0.2, Omni might leak sensitive information via an API.",
+    "published": "2025-10-13T21:15:34.613",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2025-62364": {
+    "cvss": 6.2,
+    "description": "text-generation-webui is an open-source web interface for running Large Language Models. In versions through 3.13, a Local File Inclusion vulnerability exists in the character picture upload feature. An attacker can upload a text file containing a symbolic link to an arbitrary file path. When the application processes the upload, it follows the symbolic link and serves the contents of the targeted file through the web interface. This allows an unauthenticated attacker to read sensitive files on the server, potentially exposing system configurations, credentials, and other confidential information. This vulnerability is fixed in 3.14. No known workarounds exist.",
+    "published": "2025-10-13T21:15:35.560",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-9713": {
+    "cvss": 8.8,
+    "description": "Path traversal in Ivanti Endpoint Manager allows a remote unauthenticated attacker to achieve remote code execution. User interaction is required.",
+    "published": "2025-10-13T21:15:35.727",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
