@@ -1,272 +1,128 @@
 {
-  "CVE-2025-10767": {
-    "cvss": 4.5,
-    "description": "A vulnerability was detected in CosmodiumCS OnlyRAT up to 3.2. The affected element is the function connect/remote_upload/remote_download of the file main.py of the component Configuration File Handler. The manipulation of the argument configuration[\"PASSWORD\"] results in os command injection. The attack requires a local approach. Attacks of this nature are highly complex. The exploitability is described as difficult. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-09-21T22:15:34.750",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-10770": {
-    "url": "https://github.com/jeecgboot/jimureport/issues/4116#issue-3391107887",
-    "cvss": 6.3,
-    "description": "A vulnerability was found in jeecgboot JimuReport up to 2.1.2. This impacts an unknown function of the file /drag/onlDragDataSource/testConnection of the component MySQL JDBC Handler. Performing manipulation results in deserialization. Remote exploitation of the attack is possible. The exploit has been made public and could be used.",
-    "published": "2025-09-21T23:15:34.940"
-  },
-  "CVE-2025-10771": {
-    "url": "https://github.com/jeecgboot/jimureport/issues/4117#issue-3391268438",
-    "cvss": 6.3,
-    "description": "A vulnerability was determined in jeecgboot JimuReport up to 2.1.2. Affected is an unknown function of the file /drag/onlDragDataSource/testConnection of the component DB2 JDBC Handler. Executing manipulation of the argument clientRerouteServerListJNDIName can lead to deserialization. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized.",
-    "published": "2025-09-21T23:15:35.150"
-  },
-  "CVE-2025-10772": {
-    "cvss": 6.3,
-    "description": "A vulnerability was identified in huggingface LeRobot up to 0.3.3. Affected by this vulnerability is an unknown functionality of the file lerobot/common/robot_devices/robots/lekiwi_remote.py of the component ZeroMQ Socket Handler. The manipulation leads to missing authentication. The attack can only be initiated within the local network. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-09-22T00:15:39.410",
-    "keywords": "remote,authentication"
-  },
-  "CVE-2025-10775": {
-    "cvss": 4.7,
-    "description": "A security vulnerability has been detected in Wavlink WL-NU516U1 240425. This vulnerability affects the function sub_4012A0 of the file /cgi-bin/login.cgi. Such manipulation of the argument ipaddr leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-09-22T01:15:36.260",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-5962": {
-    "cvss": 7.7,
-    "description": "A flaw was found in the Lightspeed history service. Insufficient access controls allow a local, unprivileged user to access and manipulate the chat history of another user on the same system. By abusing inter-process communication  calls to the history service, an attacker can view, delete, or inject arbitrary history entries, including misleading or malicious commands. This can be used to deceive another user into executing harmful actions, posing a risk of privilege misuse or unauthorized command execution through social engineering.",
-    "published": "2025-09-22T08:15:34.533",
-    "keywords": "execution,command"
-  },
-  "CVE-2025-10854": {
-    "url": "https://github.com/neuml/txtai/issues/965",
-    "cvss": 8.1,
-    "description": "The txtai framework allows the loading of compressed tar files as embedding indices. While the validate function is intended to prevent path traversal vulnerabilities by ensuring safe filenames, it does not account for symbolic links within the tar file. An attacker is able to write a file anywhere in the filesystem when txtai is used to load untrusted embedding indices",
-    "published": "2025-09-22T13:16:01.347"
-  },
-  "CVE-2025-51006": {
-    "url": "https://github.com/appneta/tcpreplay/issues/926",
-    "cvss": 7.8,
-    "description": "Within tcpreplay's tcprewrite, a double free vulnerability has been identified in the dlt_linuxsll2_cleanup() function in plugins/dlt_linuxsll2/linuxsll2.c. This vulnerability is triggered when tcpedit_dlt_cleanup() indirectly invokes the cleanup routine multiple times on the same memory region. By supplying a specifically crafted pcap file to the tcprewrite binary, a local attacker can exploit this flaw to cause a Denial of Service (DoS) via memory corruption.",
-    "published": "2025-09-22T14:15:49.713"
-  },
-  "CVE-2025-57432": {
-    "cvss": 9.8,
-    "description": "Blackmagic Web Presenter version 3.3 exposes a Telnet service on port 9977 that accepts unauthenticated commands. This service allows remote attackers to manipulate stream settings, including changing video modes and possibly altering device functionality. No credentials or authentication mechanisms are required to interact with the Telnet interface.",
-    "published": "2025-09-22T16:15:44.753",
-    "keywords": "remote,unauthenticated,authentication,command"
-  },
-  "CVE-2025-57601": {
-    "cvss": 9.8,
-    "description": "AiKaan Cloud Controller uses a single hardcoded SSH private key and the username `proxyuser` for remote terminal access to all managed IoT/edge devices. When an administrator initiates \"Open Remote Terminal\" from the AiKaan dashboard, the controller sends this same static private key to the target device. The device then uses it to establish a reverse SSH tunnel to a remote access server, enabling browser-based SSH access for the administrator. Because the same `proxyuser` account and SSH key are reused across all customer environments: - An attacker who obtains the key (e.g., by intercepting it in transit, extracting it from the remote access server, or from a compromised admin account) can impersonate any managed device. - They can establish unauthorized reverse SSH tunnels and interact with devices without the owner's consent. This is a design flaw in the authentication model: compromise of a single key compromises the trust boundary between the controller and devices.",
-    "published": "2025-09-22T16:15:45.000",
-    "keywords": "remote,authentication"
-  },
-  "CVE-2025-57602": {
-    "cvss": 9.8,
-    "description": "Insufficient hardening of the proxyuser account in the AiKaan IoT management platform, combined with the use of a shared, hardcoded SSH private key, allows remote attackers to authenticate to the cloud controller, gain interactive shell access, and pivot into other connected IoT devices. This can lead to remote code execution, information disclosure, and privilege escalation across customer environments.",
-    "published": "2025-09-22T16:15:45.130",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-57431": {
-    "cvss": 8.8,
-    "description": "The Sound4 PULSE-ECO AES67 1.22 web-based management interface is vulnerable to Remote Code Execution (RCE) via a malicious firmware update package. The update mechanism fails to validate the integrity of manual.sh, allowing an attacker to inject arbitrary commands by modifying this script and repackaging the firmware.",
-    "published": "2025-09-22T17:16:08.303",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2025-57434": {
-    "cvss": 8.8,
-    "description": "Creacast Creabox Manager contains a critical authentication flaw that allows an attacker to bypass login validation. The system grants access when the username is creabox and the password begins with the string creacast, regardless of what follows.",
-    "published": "2025-09-22T17:16:08.423",
+  "CVE-2025-8093": {
+    "cvss": "-",
+    "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Drupal Authenticator Login allows Authentication Bypass.This issue affects Authenticator Login: from 0.0.0 before 2.1.8.",
+    "published": "2025-10-10T23:15:36.880",
     "keywords": "authentication,bypass"
   },
-  "CVE-2025-57437": {
+  "CVE-2025-31717": {
     "cvss": 9.8,
-    "description": "The Blackmagic Web Presenter HD firmware version 3.3 exposes sensitive information via an unauthenticated Telnet service on port 9977. When connected, the service reveals extensive device configuration data including: - Model, version, and unique identifiers - Network settings including IP, MAC, DNS - Current stream platform, stream key, and streaming URL - Audio/video configuration This data can be used to hijack live streams or perform network reconnaissance.",
-    "published": "2025-09-22T18:15:45.153",
+    "description": "In modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed.",
+    "published": "2025-10-11T01:15:32.970",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-31718": {
+    "cvss": 9.8,
+    "description": "In modem, there is a possible system crash due to improper input validation. This could lead to remote escalation of privilege with no additional execution privileges needed.",
+    "published": "2025-10-11T01:15:33.123",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-58278": {
+    "cvss": 6.2,
+    "description": "Identity authentication bypass vulnerability in the Gallery app.\u00a0Successful exploitation of this vulnerability may affect service confidentiality.",
+    "published": "2025-10-11T04:16:08.813",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-9196": {
+    "cvss": 5.3,
+    "description": "The Trinity Audio \u2013 Text to Speech AI audio player to convert content into audio plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 5.21.0 via the ~/admin/inc/phpinfo.php file that gets created on install. This makes it possible for unauthenticated attackers to extract sensitive data including configuration data.",
+    "published": "2025-10-11T08:15:32.353",
     "keywords": "unauthenticated,sensitive"
   },
-  "CVE-2025-57438": {
-    "cvss": 6.8,
-    "description": "The 2wcom IP-4c 2.15.5 device suffers from a Broken Access Control vulnerability. Certain sensitive endpoints are intended to be accessible only after the admin explicitly grants access to a manager-level account. However, a manager-level user can bypass these controls by intercepting and modifying requests.",
-    "published": "2025-09-22T18:15:45.357",
-    "keywords": "sensitive,bypass"
+  "CVE-2025-11254": {
+    "cvss": 4.3,
+    "description": "The Contest Gallery \u2013 Upload, Vote & Sell with PayPal and Stripe plugin for WordPress is vulnerable to CSV Injection in all versions up to, and including, 27.0.3 via gallery submissions. This makes it possible for unauthenticated attackers to embed untrusted input into exported CSV files, which can result in code execution when these files are downloaded and opened on a local system with a vulnerable configuration.",
+    "published": "2025-10-11T09:15:32.453",
+    "keywords": "execution,unauthenticated"
   },
-  "CVE-2025-57439": {
-    "cvss": 8.8,
-    "description": "Creacast Creabox Manager 4.4.4 contains a critical Remote Code Execution vulnerability accessible via the edit.php endpoint. An authenticated attacker can inject arbitrary Lua code into the configuration, which is then executed on the server. This allows full system compromise, including reverse shell execution or arbitrary command execution.",
-    "published": "2025-09-22T18:15:45.610",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2025-57440": {
-    "cvss": "-",
-    "description": "The Blackmagic ATEM Mini Pro 2.7 exposes an undocumented Telnet service on TCP port 9993, which accepts unauthenticated plaintext commands for controlling streaming, recording, formatting storage devices, and system reboot. This interface, referred to as the \"ATEM Ethernet Protocol 1.0\", provides complete device control without requiring credentials or encryption. An attacker on the same network (or with remote access to the exposed port) can exploit this interface to execute arbitrary streaming commands, erase disks, or shut down the device - effectively gaining full remote control.",
-    "published": "2025-09-22T18:15:45.830",
-    "keywords": "remote,unauthenticated,command"
-  },
-  "CVE-2025-57441": {
+  "CVE-2025-6553": {
     "cvss": 9.8,
-    "description": "The Blackmagic ATEM Mini Pro 2.7 exposes sensitive device and stream configuration information via an unauthenticated Telnet service on port 9990. Upon connection, the attacker can access a protocol preamble that leaks the video mode, routing configuration, input/output labels, device model, and even internal identifiers such as the unique ID. This can be used for reconnaissance and planning further attacks.",
-    "published": "2025-09-22T18:15:45.953",
-    "keywords": "unauthenticated,sensitive,leak"
+    "description": "The Ovatheme Events Manager plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the process_checkout() function in all versions up to, and including, 1.8.5. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2025-10-11T09:15:34.877",
+    "keywords": "remote,execution,unauthenticated"
   },
-  "CVE-2025-57685": {
-    "cvss": "-",
-    "description": "The LB-Link routers, including the BL-AC2100_AZ3 V1.0.4, BL-WR4000 v2.5.0, BL-WR9000_AE4 v2.4.9, BL-AC1900_AZ2 v1.0.2, BL-X26_AC8 v1.2.8, and BL-LTE300_DA4 V1.2.3 models, are vulnerable to unauthorized command injection. Attackers can exploit this vulnerability by accessing the /goform/set_serial_cfg interface to gain the highest level of device privileges without authorization, enabling them to remotely execute malicious commands.",
-    "published": "2025-09-22T19:15:44.873",
-    "keywords": "remote,command"
+  "CVE-2025-6439": {
+    "cvss": 9.8,
+    "description": "The WooCommerce Designer Pro plugin for WordPress, used by the Pricom - Printing Company & Design Services WordPress theme, is vulnerable to arbitrary file deletion due to insufficient file path validation in the 'wcdp_save_canvas_design_ajax' function in all versions up to, and including, 1.9.26. This makes it possible for unauthenticated attackers to delete all files in an arbitrary directory on the server, which can lead to remote code execution, data loss, or site unavailability.",
+    "published": "2025-10-11T10:15:43.653",
+    "keywords": "remote,execution,unauthenticated"
   },
-  "CVE-2025-58250": {
-    "cvss": 8.8,
-    "description": "Cross-Site Request Forgery (CSRF) vulnerability in ApusTheme Findgo allows Authentication Bypass. This issue affects Findgo: from n/a through 1.3.55.",
-    "published": "2025-09-22T19:16:10.767",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2025-59526": {
-    "url": "https://github.com/eladnava/mailgen/commit/741a0190ddae0f408b22ae3b5f0f4c3f5cf4f11d",
-    "cvss": "-",
-    "description": "mailgen is a Node.js package that generates responsive HTML e-mails for sending transactional mail. Prior to version 2.0.30, there is an HTML injection vulnerability in plaintext e-mails generated by Mailgen. Projects are affected if the Mailgen.generatePlaintext(email) method is used and given user-generated content. This vulnerability has been patched in version 2.0.30. A workaround involves stripping all HTML tags before passing any content into Mailgen.generatePlaintext(email).",
-    "published": "2025-09-22T20:15:39.200"
-  },
-  "CVE-2025-59528": {
-    "cvss": 10.0,
-    "description": "Flowise is a drag & drop user interface to build a customized large language model flow. In version 3.0.5, Flowise is vulnerable to remote code execution. The CustomMCP node allows users to input configuration settings for connecting to an external MCP server. This node parses the user-provided mcpServerConfig string to build the MCP server configuration. However, during this process, it executes JavaScript code without any security validation. Specifically, inside the convertToValidJSONString function, user input is directly passed to the Function() constructor, which evaluates and executes the input as JavaScript code. Since this runs with full Node.js runtime privileges, it can access dangerous modules such as child_process and fs. This issue has been patched in version 3.0.6.",
-    "published": "2025-09-22T20:15:39.530",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-10814": {
-    "cvss": 6.3,
-    "description": "A vulnerability was determined in D-Link DIR-823X 240126/240802/250416. Affected by this vulnerability is an unknown functionality of the file /usr/sbin/goahead. This manipulation of the argument port causes command injection. The attack can be initiated remotely. The exploit has been publicly disclosed and may be utilized.",
-    "published": "2025-09-22T21:15:58.733",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-59532": {
-    "cvss": "-",
-    "description": "Codex CLI is a coding agent from OpenAI that runs locally. In versions 0.2.0 to 0.38.0, due to a bug in the sandbox configuration logic, Codex CLI could treat a model-generated cwd as the sandbox\u2019s writable root, including paths outside of the folder where the user started their session. This logic bypassed the intended workspace boundary and enables arbitrary file writes and command execution where the Codex process has permissions - this did not impact the network-disabled sandbox restriction. This issue has been patched in Codex CLI 0.39.0 that canonicalizes and validates that the boundary used for sandbox policy is based on where the user started the session, and not the one generated by the model. Users running 0.38.0 or earlier should update immediately via their package manager or by reinstalling the latest Codex CLI to ensure sandbox boundaries are enforced. If using the Codex IDE extension, users should immediately update to 0.4.12 for a fix of the sandbox issue.",
-    "published": "2025-09-22T21:16:00.130",
-    "keywords": "execution,command,bypass"
-  },
-  "CVE-2025-10823": {
-    "url": "https://github.com/axboe/fio/issues/1982",
-    "cvss": 3.3,
-    "description": "A vulnerability was found in axboe fio up to 3.41. This affects the function str_buffer_pattern_cb of the file options.c. Performing manipulation results in null pointer dereference. The attack must be initiated from a local position. The exploit has been made public and could be used.",
-    "published": "2025-09-23T00:15:36.810"
-  },
-  "CVE-2025-10824": {
-    "url": "https://github.com/axboe/fio/issues/1981",
+  "CVE-2025-8484": {
     "cvss": 5.3,
-    "description": "A vulnerability was determined in axboe fio up to 3.41. This impacts the function __parse_jobs_ini of the file init.c. Executing manipulation can lead to use after free. The attack needs to be launched locally. The exploit has been publicly disclosed and may be utilized.",
-    "published": "2025-09-23T01:15:36.197"
+    "description": "The Code Quality Control Tool plugin for WordPress is vulnerable to Sensitive Information Exposure in version 0.1 through publicly exposed log files. This makes it possible for unauthenticated attackers to view potentially sensitive information contained in the exposed log files.",
+    "published": "2025-10-11T10:15:43.987",
+    "keywords": "unauthenticated,sensitive"
   },
-  "CVE-2025-9494": {
-    "cvss": "-",
-    "description": "An OS command injection vulnerability has been discovered in the Vitogate 300, which can be exploited by malicious users to compromise affected installations. Specifically, the `/cgi-bin/vitogate.cgi` endpoint is affected, when the `form` JSON parameter is set to `form-0-2`. The vulnerability stems from the fact that that function at offset 0x21c24 does not properly sanitize supplied input before interpolating it into a format string which gets passed to `popen()`. Consequently, an authenticated attacker is able to inject arbitrary OS commands and thus gain code execution on affected devices.",
-    "published": "2025-09-23T02:15:47.410",
-    "keywords": "execution,command"
+  "CVE-2025-8593": {
+    "cvss": 8.8,
+    "description": "The GSheetConnector For Gravity Forms plugin for WordPress is vulnerable to authorization bypass in versions less than, or equal to, 1.3.27. This is due to a missing capability check on the 'install_plugin' function. This makes it possible for authenticated attackers, with subscriber-level access and above to install plugins on the target site and potentially achieve arbitrary code execution on the server under certain conditions.",
+    "published": "2025-10-11T10:15:44.140",
+    "keywords": "execution,bypass"
   },
-  "CVE-2025-9495": {
-    "cvss": "-",
-    "description": "The Vitogate 300 web interface fails to enforce proper server-side authentication and relies on frontend-based authentication controls. This allows an attacker to simply modify HTML elements in the browser\u2019s developer tools to bypass login restrictions. By removing specific UI elements, an attacker can reveal the hidden administration menu, giving them full control over the device.",
-    "published": "2025-09-23T02:15:47.563",
-    "keywords": "authentication,bypass"
+  "CVE-2025-31998": {
+    "cvss": 3.5,
+    "description": "HCL Unica Centralized Offer Management is vulnerable to poor unhandled exceptions which exposes sensitive information.  An attacker can exploit use this information to exploit known vulnerabilities launch targeted attacks, such as remote code execution or denial of service.",
+    "published": "2025-10-12T03:15:34.557",
+    "keywords": "remote,execution,sensitive"
   },
-  "CVE-2025-26399": {
-    "cvss": 9.8,
-    "description": "SolarWinds Web Help Desk was found to be susceptible to an unauthenticated AjaxProxy deserialization remote code execution vulnerability that, if exploited, would allow an attacker to run commands on the host machine. This vulnerability is a patch bypass of CVE-2024-28988, which in turn is a patch bypass of CVE-2024-28986.",
-    "published": "2025-09-23T05:15:35.777",
-    "keywords": "remote,execution,unauthenticated,command,bypass"
-  },
-  "CVE-2025-10548": {
-    "cvss": 6.5,
-    "description": "The CleverControl employee monitoring software (v11.5.1041.6) fails to validate TLS server certificates during the installation process. The installer downloads and executes external components using curl.exe --insecure, enabling a man-in-the-middle attacker to deliver malicious files that are executed with SYSTEM privileges. This can lead to full remote code execution with administrative rights. No patch is available as the vendor has been unresponsive. It is assumed that previous versions are also affected, but this is not confirmed.",
-    "published": "2025-09-23T07:15:34.957",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-10147": {
-    "cvss": 9.8,
-    "description": "The Podlove Podcast Publisher plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'move_as_original_file' function in all versions up to, and including, 4.2.6. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2025-09-23T09:15:30.920",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2025-10412": {
-    "cvss": 9.8,
-    "description": "The Product Options and Price Calculation Formulas for WooCommerce \u2013 Uni CPO (Premium) plugin for WordPress is vulnerable to arbitrary file uploads due to misconfigured file type validation in the 'uni_cpo_upload_file' function in all versions up to, and including, 4.9.54. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2025-09-23T10:15:34.650",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2025-9965": {
-    "cvss": "-",
-    "description": "Improper authentication vulnerability in Novakon P series allows unauthenticated attackers to upload and download any application from/to the device.This issue affects P series: P \u2013 V2001.A.C518o2.",
-    "published": "2025-09-23T12:15:29.767",
-    "keywords": "unauthenticated,authentication"
-  },
-  "CVE-2025-10184": {
-    "cvss": "-",
-    "description": "The vulnerability allows any application installed on the device to read SMS/MMS data and metadata from the system-provided Telephony provider without permission, user interaction, or consent. The user is also not notified that SMS data is being accessed. This could lead to sensitive information disclosure and could effectively break the security provided by SMS-based Multi-Factor Authentication (MFA) checks. \n\nThe root cause is a combination of missing permissions for write operations in several content providers (com.android.providers.telephony.PushMessageProvider, com.android.providers.telephony.PushShopProvider, com.android.providers.telephony.ServiceNumberProvider), and a blind SQL injection in the\u00a0update method of those providers.",
-    "published": "2025-09-23T13:15:27.770",
+  "CVE-2025-11645": {
+    "cvss": 2.4,
+    "description": "A security vulnerability has been detected in Tomofun Furbo Mobile App up to 7.57.0a on Android. This affects an unknown part of the component Authentication Token Handler. The manipulation leads to insecure storage of sensitive information. It is possible to launch the attack on the physical device. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-10-12T21:15:33.303",
     "keywords": "authentication,sensitive"
   },
-  "CVE-2025-5717": {
-    "cvss": 6.7,
-    "description": "An authenticated remote code execution (RCE) vulnerability exists in multiple WSO2 products due to improper input validation in the event processor admin service. A user with administrative access to the SOAP admin services can exploit this flaw by deploying a Siddhi execution plan containing malicious Java code, resulting in arbitrary code execution on the server.\n\nExploitation of this vulnerability requires a valid user account with administrative privileges, limiting the attack surface to authenticated but potentially malicious users.",
-    "published": "2025-09-23T16:15:33.620",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-0209": {
-    "cvss": 6.1,
-    "description": "A reflected cross-site scripting (XSS) vulnerability exists in the account registration flow of WSO2 Identity Server due to improper output encoding. A malicious actor can exploit this vulnerability by injecting a crafted payload that is reflected in the server response, enabling the execution of arbitrary JavaScript in the victim's browser.\n\nThis vulnerability could allow attackers to redirect users to malicious websites, modify the user interface, or exfiltrate data from the browser. However, session-related sensitive cookies are protected using the httpOnly flag, which mitigates the risk of session hijacking.",
-    "published": "2025-09-23T18:15:29.833",
-    "keywords": "execution,sensitive"
-  },
-  "CVE-2025-0672": {
-    "cvss": 3.3,
-    "description": "An authentication bypass vulnerability exists in multiple WSO2 products when FIDO authentication is enabled. When a user account is deleted, the system does not automatically remove associated FIDO registration data. If a new user account is later created using the same username, the system may associate the new account with the previously registered FIDO device.\n\nThis flaw may allow a previously deleted user to authenticate using their FIDO credentials and impersonate the newly created user, resulting in unauthorized access. The vulnerability applies only to deployments that utilize FIDO-based authentication.",
-    "published": "2025-09-23T18:15:30.863",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2025-56394": {
-    "url": "https://github.com/free5gc/free5gc/issues/690",
-    "cvss": "-",
-    "description": "Free5gc 4.0.1 is vulnerable to Buffer Overflow. The AMF incorrectly validates the 5GS mobile identity, resulting in slice reference overflow.",
-    "published": "2025-09-23T18:15:35.207"
-  },
-  "CVE-2025-59545": {
-    "cvss": 9.0,
-    "description": "DNN (formerly DotNetNuke) is an open-source web content management platform (CMS) in the Microsoft ecosystem. Prior to version 10.1.0, the Prompt module allows execution of commands that can return raw HTML. Malicious input, even if sanitized for display elsewhere, can be executed when processed through certain commands, leading to potential script execution (XSS). This issue has been patched in version 10.1.0.",
-    "published": "2025-09-23T18:15:38.953",
+  "CVE-2025-0636": {
+    "cvss": 8.4,
+    "description": "EMCLI contains a high severity vulnerability where improper neutralization of special elements used in an OS command could be exploited leading to Arbitrary Code Execution.",
+    "published": "2025-10-13T07:15:48.883",
     "keywords": "execution,command"
   },
-  "CVE-2025-51005": {
-    "url": "https://github.com/appneta/tcpreplay/issues/925",
+  "CVE-2025-11665": {
+    "cvss": 4.7,
+    "description": "A vulnerability was detected in D-Link DAP-2695 2.00RC131. This affects the function fwupdater_main of the file rgbin of the component Firmware Update Handler. Performing manipulation results in os command injection. The attack may be initiated remotely. This vulnerability only affects products that are no longer supported by the maintainer.",
+    "published": "2025-10-13T07:15:52.023",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-9265": {
     "cvss": "-",
-    "description": "A heap-buffer-overflow vulnerability exists in the tcpliveplay utility of the tcpreplay-4.5.1. When a crafted pcap file is processed, the program incorrectly handles memory in the checksum calculation logic at do_checksum_math_liveplay in tcpliveplay.c, leading to a possible denial of service.",
-    "published": "2025-09-23T19:15:39.347"
-  },
-  "CVE-2025-55038": {
-    "cvss": 6.8,
-    "description": "An authorization bypass vulnerability has been discovered in the Click Plus C2-03CPU2 device firmware version 3.60. Through the KOPR protocol utilized by the Remote PLC application, authenticated users with low-level access permissions can exploit this vulnerability to read and modify PLC variables beyond their intended authorization level.",
-    "published": "2025-09-23T23:15:30.497",
-    "keywords": "remote,bypass"
-  },
-  "CVE-2025-57882": {
-    "cvss": 5.9,
-    "description": "An improper resource shutdown or release vulnerability has been identified in the Click Plus C2-03CPU-2 device running firmware version 3.60. The vulnerability allows an unauthenticated attacker to perform a denial-of-service attack by exhausting all available device sessions in the Remote PLC application.",
-    "published": "2025-09-23T23:15:30.903",
+    "description": "A broken authorization vulnerability in Kiloview NDI N30 allows a remote unauthenticated attacker to deactivate user verification, giving them access to state changing actions that should only be initiated by administratorsThis issue affects \n\n Kiloview NDI N30\n\nand was fixed in Firmware version later than  2.02.0246",
+    "published": "2025-10-13T07:15:56.677",
     "keywords": "remote,unauthenticated"
   },
-  "CVE-2025-41715": {
-    "cvss": 9.8,
-    "description": "The database for the web application is exposed without authentication, allowing an unauthenticated remote attacker to gain unauthorized access and potentially compromise it.",
-    "published": "2025-09-24T09:15:29.820",
-    "keywords": "remote,unauthenticated,authentication"
-  },
-  "CVE-2025-41716": {
+  "CVE-2025-11671": {
     "cvss": 5.3,
-    "description": "The web application allows an unauthenticated remote attacker to learn information about existing user accounts with their corresponding role due to missing authentication for critical function.",
-    "published": "2025-09-24T09:15:31.023",
+    "description": "Uniweb/SoliPACS WebServer developed by EBM Technologies has a Missing Authentication vulnerability, allowing unauthenticated remote attackers to access a specific page to obtain information such as account names and IP addresses.",
+    "published": "2025-10-13T08:15:40.333",
     "keywords": "remote,unauthenticated,authentication"
   },
-  "CVE-2025-48868": {
+  "CVE-2025-11672": {
+    "cvss": 5.3,
+    "description": "Uniweb/SoliPACS WebServer developed by EBM Technologies has a Missing Authentication vulnerability, allowing unauthenticated remote attackers to access a specific page to obtain user group names.",
+    "published": "2025-10-13T08:15:40.550",
+    "keywords": "remote,unauthenticated,authentication"
+  },
+  "CVE-2025-11675": {
     "cvss": 7.2,
-    "description": "Horilla is a free and open source Human Resource Management System (HRMS). An authenticated Remote Code Execution (RCE) vulnerability exists in Horilla 1.3.0 due to the unsafe use of Python\u2019s eval() function on a user-controlled query parameter in the project_bulk_archive view. This allows privileged users (e.g., administrators) to execute arbitrary system commands on the server. While having Django\u2019s DEBUG=True makes exploitation visibly easier by returning command output in the HTTP response, this is not required. The vulnerability can still be exploited in DEBUG=False mode by using blind payloads such as a reverse shell, leading to full remote code execution. This issue has been patched in version 1.3.1.",
-    "published": "2025-09-24T14:15:49.593",
-    "keywords": "remote,execution,command"
+    "description": "Enterprise Cloud Database developed by Ragic has an Arbitrary File Upload vulnerability, allowing privileged remote attackers to upload and execute web shell backdoors, thereby enabling arbitrary code execution on the server.",
+    "published": "2025-10-13T08:15:41.137",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-10720": {
+    "cvss": "-",
+    "description": "The WP Private Content Plus through 3.6.2 provides a global content protection feature that requires a password. However, the access control check is based only on the presence of an unprotected client-side cookie. As a result, an unauthenticated attacker can completely bypass the password protection by manually setting the cookie value in their browser.",
+    "published": "2025-10-13T10:15:45.590",
+    "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2025-37729": {
+    "cvss": 9.1,
+    "description": "Improper neutralization of special elements used in a template engine in Elastic Cloud Enterprise (ECE) can lead to a malicious actor with Admin access exfiltrating sensitive information and issuing commands via a specially crafted string where Jinjava variables are evaluated.",
+    "published": "2025-10-13T14:15:34.533",
+    "keywords": "command,sensitive"
+  },
+  "CVE-2025-62170": {
+    "url": "https://github.com/rathena/rathena/commit/af2f3ba33fc03dc6dd510f8cfe84cd9185af748d",
+    "cvss": 7.5,
+    "description": "rAthena is an open-source cross-platform MMORPG server. A use-after-free vulnerability exists in the RODEX functionality of rAthena's map-server in versions prior to commit af2f3ba. An unauthenticated attacker can exploit this vulnerability via a specific attacking scenario to cause a denial of service by crashing the map-server. This issue has been patched in commit af2f3ba. There are no known workarounds aside from manually applying the patch.",
+    "published": "2025-10-13T18:15:34.980"
   }
 }
