@@ -77,6 +77,12 @@
     "published": "2025-10-13T21:15:34.613",
     "keywords": "sensitive,leak"
   },
+  "CVE-2025-62174": {
+    "url": "https://github.com/mastodon/mastodon/commit/1631fb80e8029d2c5425a03a2297b93f7e225217",
+    "cvss": 3.5,
+    "description": "Mastodon is a free, open-source social network server based on ActivityPub.  In Mastodon before 4.4.6, 4.3.14, and 4.2.27, when an administrator resets a user account's password via the command-line interface using `bin/tootctl accounts modify --reset-password`, active sessions and access tokens for that account are not revoked. This allows an attacker with access to a previously compromised session or token to continue using the account after the password has been reset. This issue has been patched in versions 4.2.27, 4.3.14, and 4.4.6. No known workarounds exist.",
+    "published": "2025-10-13T21:15:34.770"
+  },
   "CVE-2025-62364": {
     "cvss": 6.2,
     "description": "text-generation-webui is an open-source web interface for running Large Language Models. In versions through 3.13, a Local File Inclusion vulnerability exists in the character picture upload feature. An attacker can upload a text file containing a symbolic link to an arbitrary file path. When the application processes the upload, it follows the symbolic link and serves the contents of the targeted file through the web interface. This allows an unauthenticated attacker to read sensitive files on the server, potentially exposing system configurations, credentials, and other confidential information. This vulnerability is fixed in 3.14. No known workarounds exist.",
@@ -184,5 +190,11 @@
     "description": "A vulnerability has been identified in SIMATIC CP 1542SP-1 (6GK7542-6UX00-0XE0) (All versions < V2.4.24), SIMATIC CP 1542SP-1 IRC (6GK7542-6VX00-0XE0) (All versions < V2.4.24), SIMATIC CP 1543SP-1 (6GK7543-6WX00-0XE0) (All versions < V2.4.24), SIPLUS ET 200SP CP 1542SP-1 IRC TX RAIL (6AG2542-6VX00-4XE0) (All versions < V2.4.24), SIPLUS ET 200SP CP 1543SP-1 ISEC (6AG1543-6WX00-7XE0) (All versions < V2.4.24), SIPLUS ET 200SP CP 1543SP-1 ISEC TX RAIL (6AG2543-6WX00-4XE0) (All versions < V2.4.24). Affected devices do not properly authenticate configuration connections. This could allow an unauthenticated remote attacker to access the configuration data.",
     "published": "2025-10-14T10:15:38.297",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-9063": {
+    "cvss": "-",
+    "description": "An authentication bypass security issue exists within FactoryTalk View Machine Edition  Web Browser ActiveX control. Exploitation of this vulnerability allows unauthorized access to the PanelView Plus 7 Series B, including access to the file system, retrieval of diagnostic information, event logs, and more.",
+    "published": "2025-10-14T13:15:39.480",
+    "keywords": "authentication,bypass"
   }
 }

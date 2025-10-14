@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-10-14T12:26:33.115245
+Updated at UTC 2025-10-14T13:25:24.552881
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -97,6 +97,20 @@ Updated at UTC 2025-10-14T12:26:33.115245
 			
 		
 			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-62174">CVE-2025-62174</a></td>
+					<td>3.5</td>
+					<td><a target=_blank href="https://github.com/mastodon/mastodon/commit/1631fb80e8029d2c5425a03a2297b93f7e225217">https://github.com/mastodon/mastodon/commit/1631fb80e8029d2c5425a03a2297b93f7e225217</a></td>
+					<td class=date>2025-10-13T21:15:34.770</td>
+					<td class=description>Mastodon is a free, open-source social network server based on ActivityPub.  In Mastodon before 4.4.6, 4.3.14, and 4.2.27, when an administrator resets a user account's password via the command-line interface using `bin/tootctl accounts modify --reset-password`, active sessions and access tokens for that account are not revoked. This allows an attacker with access to a previously compromised session or token to continue using the account after the password has been reset. This issue has been patched in versions 4.2.27, 4.3.14, and 4.4.6. No known workarounds exist.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
 		
 			
 				<tr>
@@ -132,6 +146,16 @@ Updated at UTC 2025-10-14T12:26:33.115245
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-9063">CVE-2025-9063</a></td>
+					<td>-</td>
+					<td>authentication,bypass</td>
+					<td class=date>2025-10-14T13:15:39.480</td>
+					<td class=description>An authentication bypass security issue exists within FactoryTalk View Machine Edition  Web Browser ActiveX control. Exploitation of this vulnerability allows unauthorized access to the PanelView Plus 7 Series B, including access to the file system, retrieval of diagnostic information, event logs, and more.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -311,6 +335,8 @@ Updated at UTC 2025-10-14T12:26:33.115245
 					<td class=date>2025-10-13T21:15:35.560</td>
 					<td class=description>text-generation-webui is an open-source web interface for running Large Language Models. In versions through 3.13, a Local File Inclusion vulnerability exists in the character picture upload feature. An attacker can upload a text file containing a symbolic link to an arbitrary file path. When the application processes the upload, it follows the symbolic link and serves the contents of the targeted file through the web interface. This allows an unauthenticated attacker to read sensitive files on the server, potentially exposing system configurations, credentials, and other confidential information. This vulnerability is fixed in 3.14. No known workarounds exist.</td>
 				</tr>
+			
+		
 			
 		
 			
