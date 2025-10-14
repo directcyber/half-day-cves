@@ -250,5 +250,65 @@
     "cvss": "-",
     "description": "mailgen is a Node.js package that generates responsive HTML e-mails for sending transactional mail. Mailgen versions through 2.0.30 contain an HTML injection vulnerability in plaintext emails produced by the generatePlaintext method when user\u2011generated content is supplied. The function attempts to remove HTML tags, but if tags are provided as encoded HTML entities they are not removed and are later decoded, resulting in active HTML (for example an img tag with an event handler) in the supposed plaintext output. In contexts where the generated plaintext string is subsequently rendered as HTML, this can allow execution of attacker\u2011controlled JavaScript. Versions 2.0.31 and later contain a fix. No known workarounds exist.",
     "published": "2025-10-14T16:15:42.170"
+  },
+  "CVE-2025-11548": {
+    "cvss": "-",
+    "description": "A remote, unauthenticated privilege escalation in ibi WebFOCUS allows an attacker to gain administrative access to the application which may lead to unauthenticated Remote Code Execution",
+    "published": "2025-10-14T17:15:35.433",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-37135": {
+    "cvss": 6.5,
+    "description": "Arbitrary file deletion vulnerabilities have been identified in the command-line interface of an AOS-8 Controller/Mobility Conductor. Successful exploitation of these vulnerabilities could allow an authenticated remote malicious actor to delete arbitrary files within the affected system.",
+    "published": "2025-10-14T17:15:40.140",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-37136": {
+    "cvss": 6.5,
+    "description": "Arbitrary file deletion vulnerabilities have been identified in the command-line interface of an AOS-8 Controller/Mobility Conductor. Successful exploitation of these vulnerabilities could allow an authenticated remote malicious actor to delete arbitrary files within the affected system.",
+    "published": "2025-10-14T17:15:40.280",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-37137": {
+    "cvss": 6.5,
+    "description": "Arbitrary file deletion vulnerabilities have been identified in the command-line interface of an AOS-8 Controller/Mobility Conductor. Successful exploitation of these vulnerabilities could allow an authenticated remote malicious actor to delete arbitrary files within the affected system.",
+    "published": "2025-10-14T17:15:40.413",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-37146": {
+    "cvss": 7.2,
+    "description": "A vulnerability in the web-based management interface of network access point configuration services could allow an authenticated remote attacker to perform remote command execution. Successful exploitation could allow an attacker to execute arbitrary commands on the underlying operating system.",
+    "published": "2025-10-14T17:15:41.633",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2025-37148": {
+    "cvss": 6.5,
+    "description": "A vulnerability in the parsing of ethernet frames in AOS-8 Instant and AOS 10 could allow an unauthenticated remote attacker to conduct a denial of service attack. Successful exploitation could allow an attacker to potentially disrupt network services and require manual intervention to restore functionality.",
+    "published": "2025-10-14T17:15:41.897",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-53139": {
+    "cvss": 7.7,
+    "description": "Cleartext transmission of sensitive information in Windows Hello allows an unauthorized attacker to bypass a security feature locally.",
+    "published": "2025-10-14T17:15:43.423",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2025-55334": {
+    "cvss": 6.2,
+    "description": "Cleartext storage of sensitive information in Windows Kernel allows an unauthorized attacker to bypass a security feature locally.",
+    "published": "2025-10-14T17:15:46.610",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2025-55340": {
+    "cvss": 7.0,
+    "description": "Improper authentication in Windows Remote Desktop Protocol allows an authorized attacker to bypass a security feature locally.",
+    "published": "2025-10-14T17:15:47.620",
+    "keywords": "remote,authentication,bypass"
+  },
+  "CVE-2025-57618": {
+    "cvss": "-",
+    "description": "A path traversal vulnerability in FastX3 thru 3.3.67 allows an unauthenticated attacker to read arbitrary files on the server. By leveraging this vulnerability, it is possible to access the application's configuration files, which contain the secret key used to sign JSON Web Tokens as well as existing JTIs. With this information, an attacker can forge valid JWTs, impersonate the root user, and achieve remote code execution in privileged context via authenticated endpoints.",
+    "published": "2025-10-14T18:15:36.190",
+    "keywords": "remote,execution,unauthenticated"
   }
 }
