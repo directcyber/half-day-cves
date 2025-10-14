@@ -214,5 +214,41 @@
     "description": "OS command injection in the admin panel of Ivanti EPMM before version 12.6.0.2, 12.5.0.4, and 12.4.0.4 allows a remote authenticated attacker with admin privileges to achieve remote code execution.",
     "published": "2025-10-14T15:16:01.610",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2025-25252": {
+    "cvss": 4.8,
+    "description": "An Insufficient Session Expiration vulnerability [CWE-613] in FortiOS SSL VPN 7.6.0 through 7.6.2, 7.4.0 through 7.4.6, 7.2.0 through 7.2.10, 7.0.0 through 7.0.16, 6.4 all versions may allow a remote attacker (e.g. a former admin whose account was removed and whose session was terminated) in possession of the SAML record of a user session to access or re-open that session via re-use of SAML record.",
+    "published": "2025-10-14T16:15:36.683",
+    "keywords": "remote,vpn"
+  },
+  "CVE-2025-31514": {
+    "cvss": 2.7,
+    "description": "An Insertion of Sensitive Information into Log File vulnerability [CWE-532] in FortiOS 7.6.0 through 7.6.3, 7.4 all versions, 7.2 all versions, 7.0 all versions, 6.4 all versions may allow an attacker with at least read-only privileges to retrieve sensitive 2FA-related information via observing logs or via diagnose command.",
+    "published": "2025-10-14T16:15:37.587",
+    "keywords": "command,sensitive"
+  },
+  "CVE-2025-49201": {
+    "cvss": 8.1,
+    "description": "A weak authentication in Fortinet FortiPAM 1.5.0, 1.4.0 through 1.4.2, 1.3.0 through 1.3.1, 1.2.0, 1.1.0 through 1.1.2, 1.0.0 through 1.0.3, FortiSwitchManager 7.2.0 through 7.2.4 allows attacker to execute unauthorized code or commands via specially crafted http requests",
+    "published": "2025-10-14T16:15:38.840",
+    "keywords": "authentication,command"
+  },
+  "CVE-2025-53845": {
+    "cvss": 6.5,
+    "description": "An improper authentication vulnerability [CWE-287] in Fortinet FortiAnalyzer version 7.6.0 through 7.6.3 and before 7.4.6 allows an unauthenticated attacker to obtain information pertaining to the device's health and status, or cause a denial of service via crafted OFTP requests.",
+    "published": "2025-10-14T16:15:39.010",
+    "keywords": "unauthenticated,authentication"
+  },
+  "CVE-2025-54973": {
+    "cvss": 5.3,
+    "description": "A concurrent execution using shared resource with improper synchronization ('Race Condition') vulnerability [CWE-362] in Fortinet FortiAnalyzer version 7.6.0 through 7.6.2, 7.4.0 through 7.4.6, 7.2.0 through 7.2.10 and before 7.0.13 allows an attacker to attempt to win a race condition to bypass the FortiCloud SSO authorization via crafted FortiCloud SSO requests.",
+    "published": "2025-10-14T16:15:39.703",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2025-62366": {
+    "url": "https://github.com/eladnava/mailgen/commit/7279a983481d05c51aa451e86146f98aaa42fee9",
+    "cvss": "-",
+    "description": "mailgen is a Node.js package that generates responsive HTML e-mails for sending transactional mail. Mailgen versions through 2.0.30 contain an HTML injection vulnerability in plaintext emails produced by the generatePlaintext method when user\u2011generated content is supplied. The function attempts to remove HTML tags, but if tags are provided as encoded HTML entities they are not removed and are later decoded, resulting in active HTML (for example an img tag with an event handler) in the supposed plaintext output. In contexts where the generated plaintext string is subsequently rendered as HTML, this can allow execution of attacker\u2011controlled JavaScript. Versions 2.0.31 and later contain a fix. No known workarounds exist.",
+    "published": "2025-10-14T16:15:42.170"
   }
 }

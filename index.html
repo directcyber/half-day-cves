@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-10-14T16:15:30.826330
+Updated at UTC 2025-10-14T17:11:39.585229
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,28 @@ Updated at UTC 2025-10-14T16:15:30.826330
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-62366">CVE-2025-62366</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/eladnava/mailgen/commit/7279a983481d05c51aa451e86146f98aaa42fee9">https://github.com/eladnava/mailgen/commit/7279a983481d05c51aa451e86146f98aaa42fee9</a></td>
+					<td class=date>2025-10-14T16:15:42.170</td>
+					<td class=description>mailgen is a Node.js package that generates responsive HTML e-mails for sending transactional mail. Mailgen versions through 2.0.30 contain an HTML injection vulnerability in plaintext emails produced by the generatePlaintext method when user‑generated content is supplied. The function attempts to remove HTML tags, but if tags are provided as encoded HTML entities they are not removed and are later decoded, resulting in active HTML (for example an img tag with an event handler) in the supposed plaintext output. In contexts where the generated plaintext string is subsequently rendered as HTML, this can allow execution of attacker‑controlled JavaScript. Versions 2.0.31 and later contain a fix. No known workarounds exist.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -152,6 +174,58 @@ Updated at UTC 2025-10-14T16:15:30.826330
 		
 
 		<hr>
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-54973">CVE-2025-54973</a></td>
+					<td>5.3</td>
+					<td>execution,bypass</td>
+					<td class=date>2025-10-14T16:15:39.703</td>
+					<td class=description>A concurrent execution using shared resource with improper synchronization ('Race Condition') vulnerability [CWE-362] in Fortinet FortiAnalyzer version 7.6.0 through 7.6.2, 7.4.0 through 7.4.6, 7.2.0 through 7.2.10 and before 7.0.13 allows an attacker to attempt to win a race condition to bypass the FortiCloud SSO authorization via crafted FortiCloud SSO requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-53845">CVE-2025-53845</a></td>
+					<td>6.5</td>
+					<td>unauthenticated,authentication</td>
+					<td class=date>2025-10-14T16:15:39.010</td>
+					<td class=description>An improper authentication vulnerability [CWE-287] in Fortinet FortiAnalyzer version 7.6.0 through 7.6.3 and before 7.4.6 allows an unauthenticated attacker to obtain information pertaining to the device's health and status, or cause a denial of service via crafted OFTP requests.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-49201">CVE-2025-49201</a></td>
+					<td>8.1</td>
+					<td>authentication,command</td>
+					<td class=date>2025-10-14T16:15:38.840</td>
+					<td class=description>A weak authentication in Fortinet FortiPAM 1.5.0, 1.4.0 through 1.4.2, 1.3.0 through 1.3.1, 1.2.0, 1.1.0 through 1.1.2, 1.0.0 through 1.0.3, FortiSwitchManager 7.2.0 through 7.2.4 allows attacker to execute unauthorized code or commands via specially crafted http requests</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-31514">CVE-2025-31514</a></td>
+					<td>2.7</td>
+					<td>command,sensitive</td>
+					<td class=date>2025-10-14T16:15:37.587</td>
+					<td class=description>An Insertion of Sensitive Information into Log File vulnerability [CWE-532] in FortiOS 7.6.0 through 7.6.3, 7.4 all versions, 7.2 all versions, 7.0 all versions, 6.4 all versions may allow an attacker with at least read-only privileges to retrieve sensitive 2FA-related information via observing logs or via diagnose command.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-25252">CVE-2025-25252</a></td>
+					<td>4.8</td>
+					<td>remote,vpn</td>
+					<td class=date>2025-10-14T16:15:36.683</td>
+					<td class=description>An Insufficient Session Expiration vulnerability [CWE-613] in FortiOS SSL VPN 7.6.0 through 7.6.2, 7.4.0 through 7.4.6, 7.2.0 through 7.2.10, 7.0.0 through 7.0.16, 6.4 all versions may allow a remote attacker (e.g. a former admin whose account was removed and whose session was terminated) in possession of the SAML record of a user session to access or re-open that session via re-use of SAML record.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
