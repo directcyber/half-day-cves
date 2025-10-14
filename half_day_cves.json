@@ -1,10 +1,4 @@
 {
-  "CVE-2025-9196": {
-    "cvss": 5.3,
-    "description": "The Trinity Audio \u2013 Text to Speech AI audio player to convert content into audio plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 5.21.0 via the ~/admin/inc/phpinfo.php file that gets created on install. This makes it possible for unauthenticated attackers to extract sensitive data including configuration data.",
-    "published": "2025-10-11T08:15:32.353",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2025-11254": {
     "cvss": 4.3,
     "description": "The Contest Gallery \u2013 Upload, Vote & Sell with PayPal and Stripe plugin for WordPress is vulnerable to CSV Injection in all versions up to, and including, 27.0.3 via gallery submissions. This makes it possible for unauthenticated attackers to embed untrusted input into exported CSV files, which can result in code execution when these files are downloaded and opened on a local system with a vulnerable configuration.",
@@ -130,5 +124,29 @@
     "description": "Improper authentication of library files in the Eaton IPP software installer could lead to arbitrary code execution of an attacker with the access to the software package.",
     "published": "2025-10-14T06:15:34.810",
     "keywords": "execution,authentication"
+  },
+  "CVE-2025-41703": {
+    "cvss": 7.5,
+    "description": "An unauthenticated remote attacker can cause a Denial of Service by turning off the output of the UPS via Modbus command.",
+    "published": "2025-10-14T08:15:34.763",
+    "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2025-41705": {
+    "cvss": 6.8,
+    "description": "An unauthenticated remote attacker (MITM) can intercept the websocket messages to gain access to the login credentials for the Webfrontend.",
+    "published": "2025-10-14T08:15:35.650",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-41706": {
+    "cvss": 5.3,
+    "description": "The webserver is vulnerable to a denial of service condition. An unauthenticated remote attacker can craft a special GET request with an over-long content-length to trigger the issue without affecting the core functionality.",
+    "published": "2025-10-14T08:15:35.820",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-41707": {
+    "cvss": 5.3,
+    "description": "The websocket handler is vulnerable to a denial of service condition. An unauthenticated remote attacker can send a crafted websocket message to trigger the issue without affecting the core functionality.",
+    "published": "2025-10-14T08:15:36.000",
+    "keywords": "remote,unauthenticated"
   }
 }
