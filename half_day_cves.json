@@ -1,16 +1,4 @@
 {
-  "CVE-2025-11254": {
-    "cvss": 4.3,
-    "description": "The Contest Gallery \u2013 Upload, Vote & Sell with PayPal and Stripe plugin for WordPress is vulnerable to CSV Injection in all versions up to, and including, 27.0.3 via gallery submissions. This makes it possible for unauthenticated attackers to embed untrusted input into exported CSV files, which can result in code execution when these files are downloaded and opened on a local system with a vulnerable configuration.",
-    "published": "2025-10-11T09:15:32.453",
-    "keywords": "execution,unauthenticated"
-  },
-  "CVE-2025-6553": {
-    "cvss": 9.8,
-    "description": "The Ovatheme Events Manager plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the process_checkout() function in all versions up to, and including, 1.8.5. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2025-10-11T09:15:34.877",
-    "keywords": "remote,execution,unauthenticated"
-  },
   "CVE-2025-6439": {
     "cvss": 9.8,
     "description": "The WooCommerce Designer Pro plugin for WordPress, used by the Pricom - Printing Company & Design Services WordPress theme, is vulnerable to arbitrary file deletion due to insufficient file path validation in the 'wcdp_save_canvas_design_ajax' function in all versions up to, and including, 1.9.26. This makes it possible for unauthenticated attackers to delete all files in an arbitrary directory on the server, which can lead to remote code execution, data loss, or site unavailability.",
@@ -148,5 +136,23 @@
     "description": "The websocket handler is vulnerable to a denial of service condition. An unauthenticated remote attacker can send a crafted websocket message to trigger the issue without affecting the core functionality.",
     "published": "2025-10-14T08:15:36.000",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-41699": {
+    "cvss": 8.8,
+    "description": "An low privileged remote attacker with an account for the Web-based management can change the system configuration to perform a command injection as root, resulting in a total loss of confidentiality, availability and integrity due to improper control of generation of code ('Code Injection').",
+    "published": "2025-10-14T09:15:32.830",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-41718": {
+    "cvss": 7.5,
+    "description": "A cleartext transmission of sensitive information vulnerability in the affected products allows an unauthorized remote attacker to gain login credentials and access the Web-UI.",
+    "published": "2025-10-14T09:15:33.040",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-46581": {
+    "cvss": 9.8,
+    "description": "ZTE's ZXCDN product  is affected by a Struts remote code execution (RCE) vulnerability. An unauthenticated attacker can remotely execute commands with non-root privileges.",
+    "published": "2025-10-14T09:15:33.227",
+    "keywords": "remote,execution,unauthenticated,command"
   }
 }
