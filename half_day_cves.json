@@ -1,22 +1,4 @@
 {
-  "CVE-2025-6439": {
-    "cvss": 9.8,
-    "description": "The WooCommerce Designer Pro plugin for WordPress, used by the Pricom - Printing Company & Design Services WordPress theme, is vulnerable to arbitrary file deletion due to insufficient file path validation in the 'wcdp_save_canvas_design_ajax' function in all versions up to, and including, 1.9.26. This makes it possible for unauthenticated attackers to delete all files in an arbitrary directory on the server, which can lead to remote code execution, data loss, or site unavailability.",
-    "published": "2025-10-11T10:15:43.653",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2025-8484": {
-    "cvss": 5.3,
-    "description": "The Code Quality Control Tool plugin for WordPress is vulnerable to Sensitive Information Exposure in version 0.1 through publicly exposed log files. This makes it possible for unauthenticated attackers to view potentially sensitive information contained in the exposed log files.",
-    "published": "2025-10-11T10:15:43.987",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2025-8593": {
-    "cvss": 8.8,
-    "description": "The GSheetConnector For Gravity Forms plugin for WordPress is vulnerable to authorization bypass in versions less than, or equal to, 1.3.27. This is due to a missing capability check on the 'install_plugin' function. This makes it possible for authenticated attackers, with subscriber-level access and above to install plugins on the target site and potentially achieve arbitrary code execution on the server under certain conditions.",
-    "published": "2025-10-11T10:15:44.140",
-    "keywords": "execution,bypass"
-  },
   "CVE-2025-31998": {
     "cvss": 3.5,
     "description": "HCL Unica Centralized Offer Management is vulnerable to poor unhandled exceptions which exposes sensitive information.  An attacker can exploit use this information to exploit known vulnerabilities launch targeted attacks, such as remote code execution or denial of service.",
@@ -154,5 +136,53 @@
     "description": "ZTE's ZXCDN product  is affected by a Struts remote code execution (RCE) vulnerability. An unauthenticated attacker can remotely execute commands with non-root privileges.",
     "published": "2025-10-14T09:15:33.227",
     "keywords": "remote,execution,unauthenticated,command"
+  },
+  "CVE-2025-20709": {
+    "cvss": "-",
+    "description": "In wlan AP driver, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote (proximal/adjacent) escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00415809; Issue ID: MSV-3405.",
+    "published": "2025-10-14T10:15:35.300",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-20710": {
+    "cvss": "-",
+    "description": "In wlan AP driver, there is a possible out of bounds write due to an integer overflow. This could lead to remote (proximal/adjacent) escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00418785; Issue ID: MSV-3515.",
+    "published": "2025-10-14T10:15:35.443",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-20711": {
+    "cvss": "-",
+    "description": "In wlan AP driver, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote (proximal/adjacent) escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00422399; Issue ID: MSV-3748.",
+    "published": "2025-10-14T10:15:35.580",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-20712": {
+    "cvss": "-",
+    "description": "In wlan AP driver, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote (proximal/adjacent) escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00422323; Issue ID: MSV-3810.",
+    "published": "2025-10-14T10:15:35.717",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-20719": {
+    "cvss": "-",
+    "description": "In wlan AP driver, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote (proximal/adjacent) escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00418955; Issue ID: MSV-3570.",
+    "published": "2025-10-14T10:15:36.637",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-20720": {
+    "cvss": "-",
+    "description": "In wlan AP driver, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote (proximal/adjacent) escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00418954; Issue ID: MSV-3569.",
+    "published": "2025-10-14T10:15:36.777",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-40765": {
+    "cvss": 9.8,
+    "description": "A vulnerability has been identified in TeleControl Server Basic V3.1 (All versions >= V3.1.2.2 < V3.1.2.3). The affected application contains an information disclosure vulnerability. This could allow an unauthenticated remote attacker to obtain password hashes of users and to login to and perform authenticated operations of the database service.",
+    "published": "2025-10-14T10:15:38.127",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-40771": {
+    "cvss": 9.8,
+    "description": "A vulnerability has been identified in SIMATIC CP 1542SP-1 (6GK7542-6UX00-0XE0) (All versions < V2.4.24), SIMATIC CP 1542SP-1 IRC (6GK7542-6VX00-0XE0) (All versions < V2.4.24), SIMATIC CP 1543SP-1 (6GK7543-6WX00-0XE0) (All versions < V2.4.24), SIPLUS ET 200SP CP 1542SP-1 IRC TX RAIL (6AG2542-6VX00-4XE0) (All versions < V2.4.24), SIPLUS ET 200SP CP 1543SP-1 ISEC (6AG1543-6WX00-7XE0) (All versions < V2.4.24), SIPLUS ET 200SP CP 1543SP-1 ISEC TX RAIL (6AG2543-6WX00-4XE0) (All versions < V2.4.24). Affected devices do not properly authenticate configuration connections. This could allow an unauthenticated remote attacker to access the configuration data.",
+    "published": "2025-10-14T10:15:38.297",
+    "keywords": "remote,unauthenticated"
   }
 }
