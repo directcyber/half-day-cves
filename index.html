@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-10-20T19:10:21.425288
+Updated at UTC 2025-10-20T20:14:16.147108
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,18 @@ Updated at UTC 2025-10-20T19:10:21.425288
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-61488">CVE-2025-61488</a></td>
+					<td>7.6</td>
+					<td><a target=_blank href="https://github.com/slims/slims9_bulian/issues/299">https://github.com/slims/slims9_bulian/issues/299</a></td>
+					<td class=date>2025-10-20T19:15:38.027</td>
+					<td class=description>An issue in Senayan Library Management System (SLiMS) 9 Bulian v.9.6.1 allows a remote attacker to execute arbitrary code via the scrap_image.php component and the imageURL parameter</td>
+
+
+				</tr>
+			
 		
 			
 		
@@ -112,10 +124,10 @@ Updated at UTC 2025-10-20T19:10:21.425288
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -306,16 +318,6 @@ This bug was found by static analysis.</td>
 					<td>remote,execution</td>
 					<td class=date>2025-10-17T21:15:36.783</td>
 					<td class=description>pyquokka is a framework for making data lakes work for time series. In versions 0.3.1 and prior, the FlightServer class directly uses pickle.loads() to deserialize action bodies received from Flight clients without any sanitization or validation in the do_action() method. The vulnerable code is located in pyquokka/flight.py at line 283 where arbitrary data from Flight clients is directly passed to pickle.loads(). When FlightServer is configured to listen on 0.0.0.0, this allows attackers across the entire network to perform arbitrary remote code execution by sending malicious pickled payloads through the set_configs action. Additional vulnerability points exist in the cache_garbage_collect, do_put, and do_get functions where pickle.loads is used to deserialize untrusted remote data.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-56221">CVE-2025-56221</a></td>
-					<td>9.8</td>
-					<td>authentication,bypass</td>
-					<td class=date>2025-10-17T19:15:37.590</td>
-					<td class=description>A lack of rate limiting in the login mechanism of SigningHub v8.6.8 allows attackers to bypass authentication via a brute force attack.</td>
 				</tr>
 			
 		
