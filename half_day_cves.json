@@ -106,5 +106,17 @@
     "description": "A command injection vulnerability may be exploited after the admin's authentication on the web portal on Omada gateways.",
     "published": "2025-10-21T01:15:37.193",
     "keywords": "authentication,command"
+  },
+  "CVE-2025-8078": {
+    "cvss": 7.2,
+    "description": "A post-authentication command injection vulnerability in Zyxel ATP series firmware versions from V4.32 through V5.40, USG FLEX series firmware versions from V4.50 through V5.40, USG FLEX 50(W) series firmware versions from V4.16 through V5.40, and USG20(W)-VPN series firmware versions from V4.16 through V5.40 could allow an authenticated attacker with administrator privileges to execute operating system (OS) commands on the affected device by passing a crafted string as an argument to a CLI command.",
+    "published": "2025-10-21T03:15:35.517",
+    "keywords": "authentication,command,vpn"
+  },
+  "CVE-2025-9133": {
+    "cvss": 8.1,
+    "description": "A missing authorization vulnerability in Zyxel ATP series firmware versions from V4.32 through V5.40, USG FLEX series firmware versions from V4.50 through V5.40, USG FLEX 50(W) series firmware versions from V4.16 through V5.40, and USG20(W)-VPN series firmware versions from V4.16 through V5.40 could allow a semi-authenticated attacker\u2014who has completed only the first stage of the two-factor authentication (2FA) process\u2014to view and download the system configuration from an affected device.",
+    "published": "2025-10-21T03:15:36.563",
+    "keywords": "authentication,vpn"
   }
 }
