@@ -94,5 +94,35 @@
     "description": "Improper host authentication vulnerability in wolfSSH version 1.4.20 and earlier clients that allows authentication bypass and leaking of clients credentials.",
     "published": "2025-10-21T14:15:46.997",
     "keywords": "authentication,bypass,leak"
+  },
+  "CVE-2025-56450": {
+    "cvss": "-",
+    "description": "Log2Space Subscriber Management Software 1.1 is vulnerable to unauthenticated SQL injection via the `lead_id` parameter in the `/l2s/api/selfcareLeadHistory` endpoint. A remote attacker can exploit this by sending a specially crafted POST request, resulting in the execution of arbitrary SQL queries. The backend fails to sanitize the user input, allowing enumeration of database schemas, table names, and potentially leading to full database compromise.",
+    "published": "2025-10-21T15:15:38.830",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-57521": {
+    "url": "https://github.com/bambulab/bambustudio/issues/7405",
+    "cvss": "-",
+    "description": "Bambu Studio 2.1.1.52 and earlier is affected by a vulnerability that allows arbitrary code execution during application startup. The application loads a network plugin without validating its digital signature or verifying its authenticity. A local attacker can exploit this behavior by placing a malicious component in the expected location, which is controllable by the attacker (e.g., under %APPDATA%), resulting in code execution within the context of the user. The main application is digitally signed, which may allow a malicious component to inherit trust and evade detection by security solutions that rely on signed parent processes.",
+    "published": "2025-10-21T15:15:38.960"
+  },
+  "CVE-2025-60344": {
+    "cvss": "-",
+    "description": "An unauthenticated Local File Inclusion (LFI) vulnerability in D-Link DSR series routers allows remote attackers to retrieve sensitive configuration files in clear text. The exposed files contain administrative credentials, VPN settings, and other sensitive information, enabling full administrative access to the router. Affected Products include: DSR-150, DSR-150N, and DSR-250N v1.09B32_WW.",
+    "published": "2025-10-21T15:15:39.220",
+    "keywords": "remote,unauthenticated,sensitive,vpn"
+  },
+  "CVE-2025-60751": {
+    "url": "https://github.com/geographiclib/geographiclib/issues/43",
+    "cvss": "-",
+    "description": "GeographicLib 2.5 is vulnerable to Buffer Overflow in GeoConvert DMS::InternalDecode.",
+    "published": "2025-10-21T16:15:38.430"
+  },
+  "CVE-2025-62250": {
+    "cvss": "-",
+    "description": "Improper Authentication in Liferay Portal 7.4.0 through 7.4.3.132, and older unsupported versions, and Liferay DXP 2023.Q4.0, 2023.Q3.1 through 2023.Q3.4, 7.4 GA through update 92, 7.3 GA through update 35, and older unsupported versions allows remote attackers to send malicious data to the Liferay Portal 7.4.0 through 7.4.3.132, and older unsupported versions, and Liferay DXP 2023.Q4.0, 2023.Q3.1 through 2023.Q3.4, 7.4 GA through update 92, 7.3 GA through update 35, and older unsupported versions that will treat it as trusted data via unauthenticated cluster messages.",
+    "published": "2025-10-21T16:15:38.897",
+    "keywords": "remote,unauthenticated,authentication"
   }
 }
