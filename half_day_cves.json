@@ -76,5 +76,17 @@
     "description": "SolarWinds Observability Self-Hosted is susceptible to SQL injection vulnerability that may display sensitive data using a low-level account. This vulnerability requires authentication from a low-privilege account.",
     "published": "2025-10-21T08:15:33.757",
     "keywords": "authentication,sensitive"
+  },
+  "CVE-2025-10639": {
+    "cvss": "-",
+    "description": "The WorkExaminer Professional server installation comes with an FTP server that is used to receive the client logs on TCP port 12304.\u00a0An attacker with network access to this port\u00a0can use weak hardcoded credentials to login to the FTP server and modify or read data, log files and gain remote code execution as NT Authority\\SYSTEM on the server by exchanging accessible service binaries\u00a0in the WorkExaminer installation directory (e.g. \"C:\\Program File (x86)\\Work Examiner Professional Server\").",
+    "published": "2025-10-21T12:15:34.770",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-10640": {
+    "cvss": "-",
+    "description": "An unauthenticated attacker with access to TCP port 12306 of the WorkExaminer server can exploit missing server-side authentication checks to bypass the login prompt in the WorkExaminer Professional console to gain administrative access to the WorkExaminer server and therefore all sensitive monitoring data. This includes monitored screenshots and keystrokes of all users.\n\nThe WorkExaminer Professional console is used for administrative access to the server. Before access to the console is granted administrators must login. Internally, a custom protocol is used to call a respective stored procedure on the MSSQL database. The return value of the call is not validated on the server-side. Instead it is only validated client-side which allows to bypass authentication.",
+    "published": "2025-10-21T12:15:35.420",
+    "keywords": "unauthenticated,authentication,sensitive,bypass"
   }
 }
