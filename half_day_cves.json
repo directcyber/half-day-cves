@@ -96,26 +96,26 @@
     "keywords": "authentication,bypass,leak"
   },
   "CVE-2025-56450": {
-    "cvss": "-",
+    "cvss": 6.5,
     "description": "Log2Space Subscriber Management Software 1.1 is vulnerable to unauthenticated SQL injection via the `lead_id` parameter in the `/l2s/api/selfcareLeadHistory` endpoint. A remote attacker can exploit this by sending a specially crafted POST request, resulting in the execution of arbitrary SQL queries. The backend fails to sanitize the user input, allowing enumeration of database schemas, table names, and potentially leading to full database compromise.",
     "published": "2025-10-21T15:15:38.830",
     "keywords": "remote,execution,unauthenticated"
   },
   "CVE-2025-57521": {
     "url": "https://github.com/bambulab/bambustudio/issues/7405",
-    "cvss": "-",
+    "cvss": 6.1,
     "description": "Bambu Studio 2.1.1.52 and earlier is affected by a vulnerability that allows arbitrary code execution during application startup. The application loads a network plugin without validating its digital signature or verifying its authenticity. A local attacker can exploit this behavior by placing a malicious component in the expected location, which is controllable by the attacker (e.g., under %APPDATA%), resulting in code execution within the context of the user. The main application is digitally signed, which may allow a malicious component to inherit trust and evade detection by security solutions that rely on signed parent processes.",
     "published": "2025-10-21T15:15:38.960"
   },
   "CVE-2025-60344": {
-    "cvss": "-",
+    "cvss": 6.6,
     "description": "An unauthenticated Local File Inclusion (LFI) vulnerability in D-Link DSR series routers allows remote attackers to retrieve sensitive configuration files in clear text. The exposed files contain administrative credentials, VPN settings, and other sensitive information, enabling full administrative access to the router. Affected Products include: DSR-150, DSR-150N, and DSR-250N v1.09B32_WW.",
     "published": "2025-10-21T15:15:39.220",
     "keywords": "remote,unauthenticated,sensitive,vpn"
   },
   "CVE-2025-60751": {
     "url": "https://github.com/geographiclib/geographiclib/issues/43",
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "GeographicLib 2.5 is vulnerable to Buffer Overflow in GeoConvert DMS::InternalDecode.",
     "published": "2025-10-21T16:15:38.430"
   },
@@ -138,14 +138,14 @@
     "published": "2025-10-21T18:15:36.307"
   },
   "CVE-2025-56800": {
-    "cvss": "-",
+    "cvss": 5.1,
     "description": "Reolink desktop application 8.18.12 contains a vulnerability in its local authentication mechanism. The application implements lock screen password logic entirely on the client side using JavaScript within an Electron resource file. Because the password is stored and returned via a modifiable JavaScript property(a.settingsManager.lockScreenPassword), an attacker can patch the return value to bypass authentication.",
     "published": "2025-10-21T19:21:22.780",
     "keywords": "authentication,bypass"
   },
   "CVE-2025-61457": {
     "url": "https://github.com/code16/sharp/issues/611",
-    "cvss": "-",
+    "cvss": 6.1,
     "description": "code16 Sharp v9.6.6 is vulnerable to Cross Site Scripting (XSS) src/Form/Fields/SharpFormUploadField.php.",
     "published": "2025-10-21T19:21:24.850"
   }
