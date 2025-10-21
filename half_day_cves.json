@@ -136,5 +136,17 @@
     "cvss": "-",
     "description": "LibreTime 3.0.0-alpha.10 and possibly earlier is vulnerable to Broken Access Control, where a user with the DJ role can access analytics data via the Web UI and direct API calls. The backend does not verify role-based permissions for analytics endpoints, allowing unauthorized retrieval of station-wide metrics. This results in information disclosure to less privileged users.",
     "published": "2025-10-21T18:15:36.307"
+  },
+  "CVE-2025-56800": {
+    "cvss": "-",
+    "description": "Reolink desktop application 8.18.12 contains a vulnerability in its local authentication mechanism. The application implements lock screen password logic entirely on the client side using JavaScript within an Electron resource file. Because the password is stored and returned via a modifiable JavaScript property(a.settingsManager.lockScreenPassword), an attacker can patch the return value to bypass authentication.",
+    "published": "2025-10-21T19:21:22.780",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-61457": {
+    "url": "https://github.com/code16/sharp/issues/611",
+    "cvss": "-",
+    "description": "code16 Sharp v9.6.6 is vulnerable to Cross Site Scripting (XSS) src/Form/Fields/SharpFormUploadField.php.",
+    "published": "2025-10-21T19:21:24.850"
   }
 }
