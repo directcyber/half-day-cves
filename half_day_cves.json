@@ -1,40 +1,4 @@
 {
-  "CVE-2025-11372": {
-    "url": "https://github.com/learnpress/learnpress/commit/cf940a437539a803e49136bdff7a53e1f2b2ca44",
-    "cvss": 6.5,
-    "description": "The LearnPress \u2013 WordPress LMS Plugin plugin for WordPress is vulnerable to modification of data in all versions up to, and including, 4.2.9.2. This is due to missing capability checks on the Admin Tools REST endpoints which are registered with permission_callback set to __return_true. This makes it possible for unauthenticated attackers to perform destructive database operations including dropping indexes on any table (including WordPress core tables like wp_options), creating duplicate configuration entries, and degrading site performance via the /wp-json/lp/v1/admin/tools/create-indexs endpoint granted they can provide table names.",
-    "published": "2025-10-18T07:15:34.837"
-  },
-  "CVE-2025-11391": {
-    "cvss": 9.8,
-    "description": "The PPOM \u2013 Product Addons & Custom Fields for WooCommerce plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the image cropper functionality in all versions up to, and including, 33.0.15. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible. While the vulnerable code is in the free version, this only affected users with the paid version of the software installed and activated.",
-    "published": "2025-10-18T07:15:35.010",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2025-11517": {
-    "cvss": 7.5,
-    "description": "The Event Tickets and Registration plugin for WordPress is vulnerable to payment bypass in all versions up to, and including, 5.26.5. This is due to the /wp-json/tribe/tickets/v1/commerce/free/order endpoint not verifying that a ticket type should be free allowing the user to bypass the payment. This makes it possible for unauthenticated attackers to obtain access to paid tickets, without paying for them, causing a loss of revenue for the target.",
-    "published": "2025-10-18T07:15:35.343",
-    "keywords": "unauthenticated,bypass"
-  },
-  "CVE-2025-11691": {
-    "cvss": 7.5,
-    "description": "The PPOM \u2013 Product Addons & Custom Fields for WooCommerce plugin for WordPress is vulnerable to SQL Injection via the PPOM_Meta::get_fields_by_id() function in all versions up to, and including, 33.0.15 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. This is only exploitable when the Enable Legacy Price Calculations setting is enabled.",
-    "published": "2025-10-18T07:15:35.707",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2025-10750": {
-    "cvss": 5.3,
-    "description": "The PowerBI Embed Reports plugin for WordPress is vulnerable to Sensitive Information Disclosure in all versions up to, and including, 1.2.0. This is due to missing capability checks and authentication verification on the 'testUser' endpoint accessible via the mo_epbr_admin_observer() function hooked on 'init'. This makes it possible for unauthenticated attackers to access sensitive Azure AD user information including personal identifiable information (PII) such as displayName, mail, phones, department, or detailed OAuth error data including Azure AD Application/Client IDs, error codes, trace IDs, and correlation IDs.",
-    "published": "2025-10-18T08:15:32.673",
-    "keywords": "unauthenticated,authentication,sensitive"
-  },
-  "CVE-2025-40002": {
-    "cvss": "-",
-    "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nthunderbolt: Fix use-after-free in tb_dp_dprx_work\n\nThe original code relies on cancel_delayed_work() in tb_dp_dprx_stop(),\nwhich does not ensure that the delayed work item tunnel->dprx_work has\nfully completed if it was already running. This leads to use-after-free\nscenarios where tb_tunnel is deallocated by tb_tunnel_put(), while\ntunnel->dprx_work remains active and attempts to dereference tb_tunnel\nin tb_dp_dprx_work().\n\nA typical race condition is illustrated below:\n\nCPU 0                            | CPU 1\ntb_dp_tunnel_active()            |\n  tb_deactivate_and_free_tunnel()| tb_dp_dprx_start()\n    tb_tunnel_deactivate()       |   queue_delayed_work()\n      tb_dp_activate()           |\n        tb_dp_dprx_stop()        | tb_dp_dprx_work() //delayed worker\n          cancel_delayed_work()  |\n    tb_tunnel_put(tunnel);       |\n                                 |   tunnel = container_of(...); //UAF\n                                 |   tunnel-> //UAF\n\nReplacing cancel_delayed_work() with cancel_delayed_work_sync() is\nnot feasible as it would introduce a deadlock: both tb_dp_dprx_work()\nand the cleanup path acquire tb->lock, and cancel_delayed_work_sync()\nwould wait indefinitely for the work item that cannot proceed.\n\nInstead, implement proper reference counting:\n- If cancel_delayed_work() returns true (work is pending), we release\n  the reference in the stop function.\n- If it returns false (work is executing or already completed), the\n  reference is released in delayed work function itself.\n\nThis ensures the tb_tunnel remains valid during work item execution\nwhile preventing memory leaks.\n\nThis bug was found by static analysis.",
-    "published": "2025-10-18T08:15:34.243",
-    "keywords": "execution,leak"
-  },
   "CVE-2025-9890": {
     "cvss": 8.8,
     "description": "The Theme Editor plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 3.0. This is due to missing or incorrect nonce validation on the 'theme_editor_theme' page. This makes it possible for unauthenticated attackers to achieve remote code execution via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.",
@@ -106,5 +70,17 @@
     "description": "A missing authorization vulnerability in Zyxel ATP series firmware versions from V4.32 through V5.40, USG FLEX series firmware versions from V4.50 through V5.40, USG FLEX 50(W) series firmware versions from V4.16 through V5.40, and USG20(W)-VPN series firmware versions from V4.16 through V5.40 could allow a semi-authenticated attacker\u2014who has completed only the first stage of the two-factor authentication (2FA) process\u2014to view and download the system configuration from an affected device.",
     "published": "2025-10-21T03:15:36.563",
     "keywords": "authentication,vpn"
+  },
+  "CVE-2025-11949": {
+    "cvss": 7.5,
+    "description": "EasyFlow .NET and EasyFlow AiNet, developed by Digiwin, has a Missing Authentication vulnerability, allowing unauthenticated remote attackers to obtain database administrator credentials via a specific functionality.",
+    "published": "2025-10-21T07:15:35.337",
+    "keywords": "remote,unauthenticated,authentication"
+  },
+  "CVE-2025-26392": {
+    "cvss": 5.4,
+    "description": "SolarWinds Observability Self-Hosted is susceptible to SQL injection vulnerability that may display sensitive data using a low-level account. This vulnerability requires authentication from a low-privilege account.",
+    "published": "2025-10-21T08:15:33.757",
+    "keywords": "authentication,sensitive"
   }
 }
