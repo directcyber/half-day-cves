@@ -148,5 +148,29 @@
     "cvss": 6.1,
     "description": "code16 Sharp v9.6.6 is vulnerable to Cross Site Scripting (XSS) src/Form/Fields/SharpFormUploadField.php.",
     "published": "2025-10-21T19:21:24.850"
+  },
+  "CVE-2025-41721": {
+    "cvss": 2.7,
+    "description": "A high privileged remote attacker can influence the parameters passed to the openssl command due to improper neutralization of special elements when adding a password protected self-signed certificate.",
+    "published": "2025-10-22T07:15:33.477",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-41722": {
+    "cvss": 7.5,
+    "description": "The wsc server uses a hard-coded certificate to check the authenticity of SOAP messages. An unauthenticated remote attacker can extract private keys from the Software of the affected devices.",
+    "published": "2025-10-22T07:15:33.640",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-41723": {
+    "cvss": 9.8,
+    "description": "The importFile SOAP method is vulnerable to a directory traversal attack. An unauthenticated remote attacker bypass the path restriction and upload files to arbitrary locations.",
+    "published": "2025-10-22T07:15:33.820",
+    "keywords": "remote,unauthenticated,bypass"
+  },
+  "CVE-2025-41724": {
+    "cvss": 7.5,
+    "description": "An unauthenticated remote attacker can crash the wscserver by sending incomplete SOAP requests. The wscserver process will not be restarted by a watchdog and a device reboot is necessary to make it work again.",
+    "published": "2025-10-22T07:15:33.983",
+    "keywords": "remote,unauthenticated"
   }
 }
