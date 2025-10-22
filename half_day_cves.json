@@ -139,7 +139,7 @@
   },
   "CVE-2025-56800": {
     "cvss": 5.1,
-    "description": "Reolink desktop application 8.18.12 contains a vulnerability in its local authentication mechanism. The application implements lock screen password logic entirely on the client side using JavaScript within an Electron resource file. Because the password is stored and returned via a modifiable JavaScript property(a.settingsManager.lockScreenPassword), an attacker can patch the return value to bypass authentication.",
+    "description": "Reolink desktop application 8.18.12 contains a vulnerability in its local authentication mechanism. The application implements lock screen password logic entirely on the client side using JavaScript within an Electron resource file. Because the password is stored and returned via a modifiable JavaScript property(a.settingsManager.lockScreenPassword), an attacker can patch the return value to bypass authentication. NOTE: this is disputed by the Supplier because the lock-screen bypass would only occur if the local user modified his own instance of the application.",
     "published": "2025-10-21T19:21:22.780",
     "keywords": "authentication,bypass"
   },
@@ -178,5 +178,11 @@
     "description": "The communication protocol implemented in Ghost Robotics Vision 60 v0.27.2 could allow an attacker to send commands to the robot from an external attack station, impersonating the control station (tablet) and gaining unauthorised full control of the robot. The absence of encryption and authentication mechanisms in the communication protocol allows an attacker to capture legitimate traffic between the robot and the controller, replicate it, and send any valid command to the robot from any attacking computer or device. The communication protocol used in this interface is based on MAVLink, a widely documented protocol, which increases the likelihood of attack. There are two methods for connecting to the robot remotely: Wi-Fi and 4G/LTE.",
     "published": "2025-10-22T09:15:36.423",
     "keywords": "remote,authentication,command"
+  },
+  "CVE-2025-56447": {
+    "cvss": "-",
+    "description": "TM2 Monitoring v3.04 contains an authentication bypass and plaintext credential disclosure.",
+    "published": "2025-10-22T14:15:50.693",
+    "keywords": "authentication,bypass"
   }
 }
