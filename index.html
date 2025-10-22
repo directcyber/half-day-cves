@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-10-22T15:12:30.589036
+Updated at UTC 2025-10-22T16:16:22.956884
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,24 @@ Updated at UTC 2025-10-22T15:12:30.589036
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-62525">CVE-2025-62525</a></td>
+					<td>7.9</td>
+					<td><a target=_blank href="https://github.com/openwrt/openwrt/commit/e001b31163a77683ee741d169f794cfa50926f37">https://github.com/openwrt/openwrt/commit/e001b31163a77683ee741d169f794cfa50926f37</a></td>
+					<td class=date>2025-10-22T15:16:07.017</td>
+					<td class=description>OpenWrt Project is a Linux operating system targeting embedded devices. Prior to version 24.10.4, local users could read and write arbitrary kernel memory using the ioctls of the ltq-ptm driver which is used to drive the datapath of the DSL line. This only effects the lantiq target supporting xrx200, danube and amazon SoCs from Lantiq/Intel/MaxLinear with the DSL in PTM mode. The DSL driver for the VRX518 is not affected. ATM mode is also not affected. Most VDSL lines use PTM mode and most ADSL lines use ATM mode. OpenWrt is normally running as a single user system, but some services are sandboxed. This vulnerability could allow attackers to escape a ujail sandbox or other contains. This is fixed in OpenWrt 24.10.4. There are no workarounds.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -87,7 +105,7 @@ Updated at UTC 2025-10-22T15:12:30.589036
 			
 				<tr>
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-60427">CVE-2025-60427</a></td>
-					<td>-</td>
+					<td>6.5</td>
 					<td><a target=_blank href="https://github.com/libretime/libretime/issues/1251">https://github.com/libretime/libretime/issues/1251</a></td>
 					<td class=date>2025-10-21T18:15:36.307</td>
 					<td class=description>LibreTime 3.0.0-alpha.10 and possibly earlier is vulnerable to Broken Access Control, where a user with the DJ role can access analytics data via the Web UI and direct API calls. The backend does not verify role-based permissions for analytics endpoints, allowing unauthorized retrieval of station-wide metrics. This results in information disclosure to less privileged users.</td>
@@ -178,15 +196,45 @@ Updated at UTC 2025-10-22T15:12:30.589036
 				</tr>
 			
 		
-			
-		
 
 		<hr>
 		
 			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-60041">CVE-2025-60041</a></td>
+					<td>-</td>
+					<td>authentication,bypass</td>
+					<td class=date>2025-10-22T15:15:56.660</td>
+					<td class=description>Authentication Bypass Using an Alternate Path or Channel vulnerability in Iulia Cazan Emails Catch All emails-catch-all allows Password Recovery Exploitation.This issue affects Emails Catch All: from n/a through <= 3.5.3.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-57870">CVE-2025-57870</a></td>
+					<td>10.0</td>
+					<td>remote,unauthenticated,command</td>
+					<td class=date>2025-10-22T15:15:51.830</td>
+					<td class=description>A SQL Injection vulnerability exists in Esri ArcGIS Server versions 11.3, 11.4 and 11.5 on Windows, Linux and Kubernetes. This vulnerability allows a remote, unauthenticated attacker to execute arbitrary SQL commands via a specific ArcGIS Feature Service operation. Successful exploitation can potentially result in unauthorized access, modification, or deletion of data from the underlying Enterprise Geodatabase.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-49901">CVE-2025-49901</a></td>
+					<td>-</td>
+					<td>authentication,bypass</td>
+					<td class=date>2025-10-22T15:15:36.243</td>
+					<td class=description>Authentication Bypass Using an Alternate Path or Channel vulnerability in quantumcloud Simple Link Directory qc-simple-link-directory allows Authentication Abuse.This issue affects Simple Link Directory: from n/a through < 14.8.1.</td>
+				</tr>
+			
+		
+			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-56447">CVE-2025-56447</a></td>
-					<td>-</td>
+					<td>9.8</td>
 					<td>authentication,bypass</td>
 					<td class=date>2025-10-22T14:15:50.693</td>
 					<td class=description>TM2 Monitoring v3.04 contains an authentication bypass and plaintext credential disclosure.</td>
@@ -260,7 +308,7 @@ Updated at UTC 2025-10-22T15:12:30.589036
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-60772">CVE-2025-60772</a></td>
-					<td>-</td>
+					<td>9.8</td>
 					<td>remote,unauthenticated,authentication</td>
 					<td class=date>2025-10-21T17:15:40.437</td>
 					<td class=description>Improper authentication in the web-based management interface of NETLINK HG322G V1.0.00-231017, allows a remote unauthenticated attacker to escalate privileges and lock out the legitimate administrator via crafted HTTP requests.</td>
@@ -435,16 +483,6 @@ The WorkExaminer Professional console is used for administrative access to the s
 				</tr>
 			
 		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-11942">CVE-2025-11942</a></td>
-					<td>7.3</td>
-					<td>remote,authentication</td>
-					<td class=date>2025-10-19T16:15:36.443</td>
-					<td class=description>A flaw has been found in 70mai X200 up to 20251010. Affected is an unknown function of the component Pairing. Executing manipulation can lead to missing authentication. It is possible to launch the attack remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
-				</tr>
 			
 		
 
