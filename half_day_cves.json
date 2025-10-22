@@ -174,7 +174,7 @@
     "keywords": "authentication,bypass"
   },
   "CVE-2025-49901": {
-    "cvss": "-",
+    "cvss": 6.5,
     "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in quantumcloud Simple Link Directory qc-simple-link-directory allows Authentication Abuse.This issue affects Simple Link Directory: from n/a through < 14.8.1.",
     "published": "2025-10-22T15:15:36.243",
     "keywords": "authentication,bypass"
@@ -196,5 +196,11 @@
     "cvss": 7.9,
     "description": "OpenWrt Project is a Linux operating system targeting embedded devices. Prior to version 24.10.4, local users could read and write arbitrary kernel memory using the ioctls of the ltq-ptm driver which is used to drive the datapath of the DSL line. This only effects the lantiq target supporting xrx200, danube and amazon SoCs from Lantiq/Intel/MaxLinear with the DSL in PTM mode. The DSL driver for the VRX518 is not affected. ATM mode is also not affected. Most VDSL lines use PTM mode and most ADSL lines use ATM mode. OpenWrt is normally running as a single user system, but some services are sandboxed. This vulnerability could allow attackers to escape a ujail sandbox or other contains. This is fixed in OpenWrt 24.10.4. There are no workarounds.",
     "published": "2025-10-22T15:16:07.017"
+  },
+  "CVE-2025-62614": {
+    "cvss": "-",
+    "description": "BookLore is a self-hosted web app for organizing and managing personal book collections. In versions 1.8.1 and prior, an authentication bypass vulnerability in the BookMediaController allows any unauthenticated user to access and download book covers, thumbnails, and complete PDF/CBX page content without authorization. The vulnerability exists because multiple media endpoints lack proper access control annotations, and the CoverJwtFilter continues request processing even when no authentication token is provided. This enables attackers to enumerate and exfiltrate all book content from the system, bypassing the intended download permissions (canDownload) entirely. This issue has been patched via commit b226c43.",
+    "published": "2025-10-22T21:15:46.983",
+    "keywords": "unauthenticated,authentication,bypass"
   }
 }

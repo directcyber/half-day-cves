@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-10-22T21:09:32.815232
+Updated at UTC 2025-10-22T22:10:22.242914
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2025-10-22T21:09:32.815232
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 				<tr>
@@ -188,6 +190,16 @@ Updated at UTC 2025-10-22T21:09:32.815232
 		<hr>
 		
 			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-62614">CVE-2025-62614</a></td>
+					<td>-</td>
+					<td>unauthenticated,authentication,bypass</td>
+					<td class=date>2025-10-22T21:15:46.983</td>
+					<td class=description>BookLore is a self-hosted web app for organizing and managing personal book collections. In versions 1.8.1 and prior, an authentication bypass vulnerability in the BookMediaController allows any unauthenticated user to access and download book covers, thumbnails, and complete PDF/CBX page content without authorization. The vulnerability exists because multiple media endpoints lack proper access control annotations, and the CoverJwtFilter continues request processing even when no authentication token is provided. This enables attackers to enumerate and exfiltrate all book content from the system, bypassing the intended download permissions (canDownload) entirely. This issue has been patched via commit b226c43.</td>
+				</tr>
+			
+		
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -212,7 +224,7 @@ Updated at UTC 2025-10-22T21:09:32.815232
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-49901">CVE-2025-49901</a></td>
-					<td>-</td>
+					<td>6.5</td>
 					<td>authentication,bypass</td>
 					<td class=date>2025-10-22T15:15:36.243</td>
 					<td class=description>Authentication Bypass Using an Alternate Path or Channel vulnerability in quantumcloud Simple Link Directory qc-simple-link-directory allows Authentication Abuse.This issue affects Simple Link Directory: from n/a through < 14.8.1.</td>
