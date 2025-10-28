@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-10-28T11:11:28.963341
+Updated at UTC 2025-10-28T12:25:46.936756
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,12 @@ Updated at UTC 2025-10-28T11:11:28.963341
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -232,6 +238,77 @@ Updated at UTC 2025-10-28T11:11:28.963341
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-9313">CVE-2025-9313</a></td>
+					<td>-</td>
+					<td>unauthenticated,authentication,sensitive,bypass</td>
+					<td class=date>2025-10-28T12:15:42.967</td>
+					<td class=description>An unauthenticated user can connect to a publicly accessible database using arbitrary credentials. The system grants full access to the database by leveraging a previously authenticated connection through a "mmBackup" application. This flaw allows attackers to bypass authentication mechanisms and gain unauthorized access to database with sensitive data.
+
+This issue affects Asseco mMedica in versions before 11.9.5.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-40071">CVE-2025-40071</a></td>
+					<td>-</td>
+					<td>remote,command</td>
+					<td class=date>2025-10-28T12:15:41.613</td>
+					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
+
+tty: n_gsm: Don't block input queue by waiting MSC
+
+Currently gsm_queue() processes incoming frames and when opening
+a DLC channel it calls gsm_dlci_open() which calls gsm_modem_update().
+If basic mode is used it calls gsm_modem_upd_via_msc() and it
+cannot block the input queue by waiting the response to come
+into the same input queue.
+
+Instead allow sending Modem Status Command without waiting for remote
+end to respond. Define a new function gsm_modem_send_initial_msc()
+for this purpose. As MSC is only valid for basic encoding, it does
+not do anything for advanced or when convergence layer type 2 is used.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-40068">CVE-2025-40068</a></td>
+					<td>-</td>
+					<td>command,bypass</td>
+					<td class=date>2025-10-28T12:15:41.277</td>
+					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
+
+fs: ntfs3: Fix integer overflow in run_unpack()
+
+The MFT record relative to the file being opened contains its runlist,
+an array containing information about the file's location on the physical
+disk. Analysis of all Call Stack paths showed that the values of the
+runlist array, from which LCNs are calculated, are not validated before
+run_unpack function.
+
+The run_unpack function decodes the compressed runlist data format
+from MFT attributes (for example, $DATA), converting them into a runs_tree
+structure, which describes the mapping of virtual clusters (VCN) to
+logical clusters (LCN). The NTFS3 subsystem also has a shortcut for
+deleting files from MFT records - in this case, the RUN_DEALLOCATE
+command is sent to the run_unpack input, and the function logic
+provides that all data transferred to the runlist about file or
+directory is deleted without creating a runs_tree structure.
+
+Substituting the runlist in the $DATA attribute of the MFT record for an
+arbitrary file can lead either to access to arbitrary data on the disk
+bypassing access checks to them (since the inode access check
+occurs above) or to destruction of arbitrary data on the disk.
+
+Add overflow check for addition operation.
+
+Found by Linux Verification Center (linuxtesting.org) with SVACE.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
