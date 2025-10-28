@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-10-28T05:13:43.867092
+Updated at UTC 2025-10-28T06:20:46.576441
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2025-10-28T05:13:43.867092
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 				<tr>
@@ -234,10 +236,18 @@ Updated at UTC 2025-10-28T05:13:43.867092
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-11735">CVE-2025-11735</a></td>
+					<td>7.5</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2025-10-28T06:15:39.487</td>
+					<td class=description>The HUSKY – Products Filter Professional for WooCommerce plugin for WordPress is vulnerable to blind SQL Injection via the `phrase` parameter in all versions up to, and including, 1.3.7.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
+				</tr>
+			
 		
 			
 		
@@ -488,17 +498,6 @@ Users are recommended to upgrade to version 11.0.11 or later, 10.1.45 or later o
 					<td>remote,execution,unauthenticated</td>
 					<td class=date>2025-10-25T07:15:37.323</td>
 					<td class=description>The Directorist: AI-Powered Business Directory Plugin with Classified Ads Listings plugin for WordPress is vulnerable to arbitrary file move due to insufficient file path validation in the add_listing_action AJAX action in all versions up to, and including, 8.4.8. This makes it possible for unauthenticated attackers to move arbitrary files on the server, which can easily lead to remote code execution when the right file is moved (such as wp-config.php).</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-11564">CVE-2025-11564</a></td>
-					<td>5.3</td>
-					<td>unauthenticated,bypass</td>
-					<td class=date>2025-10-25T06:15:35.307</td>
-					<td class=description>The Tutor LMS – eLearning and online course solution plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check while verifying webhook signatures on the "verifyAndCreateOrderData" function  
-in all versions up to, and including, 3.8.3. This makes it possible for unauthenticated attackers to bypass payment verification and mark orders as paid by submitting forged webhook requests with `payment_type` set to 'recurring'.</td>
 				</tr>
 			
 		
