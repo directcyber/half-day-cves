@@ -72,7 +72,7 @@
     "keywords": "remote,command"
   },
   "CVE-2025-27223": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "TRUfusion Enterprise through 7.10.4.0 exposes the encrypted COOKIEID as an authentication mechanism for some endpoints such as /trufusionPortal/getProjectList. However, the application uses a static key to create the encrypted cookie, ultimately allowing anyone to forge cookies and gain access to sensitive internal information.",
     "published": "2025-10-27T17:15:37.973",
     "keywords": "authentication,sensitive"
@@ -84,7 +84,7 @@
     "keywords": "unauthenticated,sensitive"
   },
   "CVE-2025-54968": {
-    "cvss": "-",
+    "cvss": 8.8,
     "description": "An issue was discovered in BAE SOCET GXP before 4.6.0.2. The SOCET GXP Job Service does not require authentication. In some configurations, this may allow remote users to submit jobs, or local users to submit jobs that will execute with the permissions of other users.",
     "published": "2025-10-27T17:15:38.470",
     "keywords": "remote,authentication"
@@ -96,7 +96,7 @@
     "keywords": "remote,execution,bypass"
   },
   "CVE-2025-61385": {
-    "cvss": "-",
+    "cvss": 9.6,
     "description": "SQL injection vulnerability in tlocke pg8000 1.31.4 allows remote attackers to execute arbitrary SQL commands via a specially crafted Python list input to function pg8000.native.literal.",
     "published": "2025-10-27T18:15:43.760",
     "keywords": "remote,command"
