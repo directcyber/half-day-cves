@@ -1,206 +1,146 @@
 {
-  "CVE-2025-8709": {
-    "cvss": 7.3,
-    "description": "A SQL injection vulnerability exists in the langchain-ai/langchain repository, specifically in the LangGraph's SQLite store implementation. The affected version is langgraph-checkpoint-sqlite 2.0.10. The vulnerability arises from improper handling of filter operators ($eq, $ne, $gt, $lt, $gte, $lte) where direct string concatenation is used without proper parameterization. This allows attackers to inject arbitrary SQL, leading to unauthorized access to all documents, data exfiltration of sensitive fields such as passwords and API keys, and a complete bypass of application-level security filters.",
-    "published": "2025-10-26T06:15:48.680",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2025-12275": {
+  "CVE-2025-52179": {
     "cvss": "-",
-    "description": "Mail Configuration File Manipulation + Command Execution.This issue affects BLU-IC2: through 1.19.5; BLU-IC4: through 1.19.5.",
-    "published": "2025-10-26T17:15:51.237",
+    "description": "Cross-site scripting (XSS) vulnerability in Zucchetti Ad Hoc Revolution 4.1 and earlier allows remote unauthenticated attackers to inject arbitrary JavaScript via the pHtmlSource parameter of the /ahrw/jsp/gsfr_feditorHTML.jsp endpoint.",
+    "published": "2025-10-30T19:16:27.297",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-52180": {
+    "cvss": 6.1,
+    "description": "Cross-site scripting (XSS) vulnerability in Zucchetti Ad Hoc Infinity 4.2 and earlier allows remote unauthenticated attackers to inject arbitrary JavaScript via the pHtmlSource parameter of the /ahi/jsp/gsfr_feditorHTML.jsp?pHtmlSource endpoint.",
+    "published": "2025-10-30T19:16:27.430",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-8850": {
+    "cvss": 3.1,
+    "description": "In danny-avila/librechat version 0.7.9, there is an insecure API design issue in the 2-Factor Authentication (2FA) flow. The system allows users to disable 2FA without requiring a valid OTP or backup code, bypassing the intended verification process. This vulnerability occurs because the backend does not properly validate the OTP or backup code when the API endpoint '/api/auth/2fa/disable' is directly accessed. This flaw can be exploited by authenticated users to weaken the security of their own accounts, although it does not lead to full account compromise.",
+    "published": "2025-10-30T20:15:39.633",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-34134": {
+    "cvss": "-",
+    "description": "Nagios XI versions prior to 2024R1.4.2 contain a remote code execution vulnerability in the Business Process Intelligence (BPI) component. Insufficient validation and sanitization of administrator-controlled BPI configuration parameters (notably bpi_logfile and bpi_configfile) allow an authenticated administrative user to cause the product to create or overwrite files within the webroot and subsequently edit them via the BPI configuration editor. When such files carry executable extensions and are served by the web application, arbitrary code may be executed in the context of the web application user. Successful exploitation results in arbitrary command execution with the privileges of the Nagios XI web application user and can be leveraged to gain further control of the underlying host operating system.",
+    "published": "2025-10-30T22:15:46.983",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2025-34249": {
+    "cvss": "-",
+    "description": "Nagios Fusion versions prior to 2024R2.1\u00a0contain a brute-force bypass in the Two-Factor Authentication (2FA) implementation. The application did not properly enforce rate limiting or account lockout for repeated failed 2FA verification attempts, allowing a remote attacker to repeatedly try second-factor codes for a targeted account. By abusing the lack of enforcement, an attacker could eventually successfully authenticate to accounts protected by 2FA.",
+    "published": "2025-10-30T22:15:47.260",
+    "keywords": "remote,authentication,bypass"
+  },
+  "CVE-2025-34270": {
+    "cvss": "-",
+    "description": "Nagios Log Server versions prior to 2024R2.0.2 contain a vulnerability in the AD/LDAP user import functionality as it fails to obfuscate the password field during import. As a result, the plaintext password supplied for imported accounts may be exposed in the user interface, logs, or other diagnostic output. This can leak sensitive credentials to administrators or anyone with access to import results.",
+    "published": "2025-10-30T22:15:47.533",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2025-34280": {
+    "cvss": "-",
+    "description": "Nagios\u00a0Network Analyzer versions prior to\u00a02024R2.0.1 contain a vulnerability in the LDAP certificate management functionality whereby the certificate removal operation fails to apply adequate input sanitation. An authenticated administrator can trigger command execution on the underlying host in the context of the web application service, resulting in remote code execution with the service's privileges.",
+    "published": "2025-10-30T22:15:48.497",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2025-34284": {
+    "cvss": "-",
+    "description": "Nagios XI versions prior to\u00a02024R2\u00a0contain a command injection vulnerability in the WinRM plugin. Insufficient validation of user-supplied parameters allows an authenticated administrator to inject shell metacharacters that are incorporated into backend command invocations. Successful exploitation enables arbitrary command execution with the privileges of the Nagios XI web application user and can be leveraged to modify configuration, exfiltrate data, disrupt monitoring operations, or execute commands on the underlying host operating system.",
+    "published": "2025-10-30T22:15:48.773",
     "keywords": "execution,command"
   },
-  "CVE-2025-12203": {
-    "url": "https://github.com/givanz/vvveb/commit/b0fa7ff74a3539c6d37000db152caad572e4c39b",
-    "cvss": 6.3,
-    "description": "A weakness has been identified in givanz Vvveb up to 1.0.7.3. This issue affects the function sanitizeFileName of the file system/functions.php of the component Code Editor. Executing manipulation of the argument File can lead to path traversal. The attack can be launched remotely. The exploit has been made available to the public and could be exploited. This patch is called b0fa7ff74a3539c6d37000db152caad572e4c39b. Applying a patch is advised to resolve this issue.",
-    "published": "2025-10-27T03:15:48.357"
-  },
-  "CVE-2025-12266": {
-    "cvss": 6.3,
-    "description": "A vulnerability was detected in Zytec Dalian Zhuoyun Technology Central Authentication Service up to 20251009. This vulnerability affects the function _empty of the file /index.php/auth/widget. Performing manipulation of the argument get.layer/get.widget/get.action results in code injection. The attack is possible to be carried out remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-10-27T11:15:40.230",
-    "keywords": "remote,authentication"
-  },
-  "CVE-2025-59461": {
-    "cvss": 7.6,
-    "description": "A remote unauthenticated attacker may use the unauthenticated C++ API to access or modify sensitive data and disrupt services.",
-    "published": "2025-10-27T11:15:40.873",
-    "keywords": "remote,unauthenticated,sensitive"
-  },
-  "CVE-2025-11955": {
+  "CVE-2025-34286": {
     "cvss": "-",
-    "description": "Incorrect validation of OCSP certificates vulnerability in TheGreenBow VPN, versions 7.5 and 7.6. During the IKEv2 authentication step, the OCSP-enabled VPN client establishes the tunnel even if it does not receive an OCSP response or if the OCSP response signature is invalid.",
-    "published": "2025-10-27T12:15:32.670",
-    "keywords": "authentication,vpn"
+    "description": "Nagios XI versions prior to 2026R1  contain a remote code execution vulnerability in the Core Config Manager (CCM) Run Check command. Insufficient validation/escaping of parameters used to build backend command lines allows an authenticated administrator to inject shell metacharacters that are executed on the server. Successful exploitation results in arbitrary command execution with the privileges of the Nagios XI web application user and can be leveraged to gain control of the underlying host operating system.",
+    "published": "2025-10-30T22:15:48.920",
+    "keywords": "remote,execution,command"
   },
-  "CVE-2025-50055": {
-    "cvss": "-",
-    "description": "Cross-site scripting (XSS) vulnerability in the SAML Authentication module in OpenVPN Access Server version 2.14.0 through 2.14.3 allows configured remote SAML Assertion Consumer Service (ACS) endpoint servers to inject arbitrary web script or HTML via the RelayState parameter",
-    "published": "2025-10-27T14:15:40.687",
-    "keywords": "remote,authentication,vpn"
-  },
-  "CVE-2025-12288": {
-    "cvss": 4.3,
-    "description": "A vulnerability was detected in Bdtask Pharmacy Management System up to 9.4. Affected is an unknown function of the file /user/edit_user/ of the component User Profile Handler. Performing manipulation results in authorization bypass. Remote exploitation of the attack is possible. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-10-27T15:15:37.117",
-    "keywords": "remote,bypass"
-  },
-  "CVE-2025-34292": {
-    "cvss": "-",
-    "description": "Rox, the software running BeWelcome,\u00a0contains a PHP object injection vulnerability\u00a0resulting from deserialization of untrusted data. User-controlled input is passed to PHP's unserialize(): the POST parameter `formkit_memory_recovery` in \\\\RoxPostHandler::getCallbackAction and the 'memory cookie' read by \\\\RoxModelBase::getMemoryCookie (bwRemember). (1) If present, `formkit_memory_recovery` is processed and passed to unserialize(), and (2) restore-from-memory functionality calls unserialize() on the bwRemember cookie value. Gadget chains present in Rox and bundled libraries enable exploitation of object injection to write arbitrary files or achieve remote code execution. Successful exploitation can lead to full site compromise. This vulnerability was\u00a0remediated with commit c60bf04 (2025-06-16).",
-    "published": "2025-10-27T15:15:38.317",
+  "CVE-2025-48983": {
+    "cvss": 9.9,
+    "description": "A vulnerability in the Mount service of Veeam Backup & Replication, which allows for remote code execution (RCE) on the Backup infrastructure hosts by an authenticated domain user.",
+    "published": "2025-10-31T00:15:36.553",
     "keywords": "remote,execution"
   },
-  "CVE-2025-61482": {
-    "cvss": 7.2,
-    "description": "Improper handling of OTP/TOTP/HOTP values in NetKnights GmbH privacyIDEA Authenticator v.4.3.0 on Android allows local attackers with root access to bypass two factor authentication. By hooking into app crypto routines and intercepting decryption paths, attacker can recover plaintext secrets, enabling generation of valid one-time passwords, and bypassing authentication for enrolled accounts.",
-    "published": "2025-10-27T15:15:38.917",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2025-60424": {
-    "cvss": 7.6,
-    "description": "A lack of rate limiting in the OTP verification component of Nagios Fusion v2024R1.2 and v2024R2 allows attackers to bypass authentication via a bruteforce attack.",
-    "published": "2025-10-27T16:15:41.753",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2025-12296": {
-    "cvss": 4.7,
-    "description": "A security vulnerability has been detected in D-Link DAP-2695 2.00RC13. The impacted element is the function sub_4174B0 of the component Firmware Update Handler. The manipulation leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed publicly and may be used. This vulnerability only affects products that are no longer supported by the maintainer.",
-    "published": "2025-10-27T17:15:37.103",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-27223": {
-    "cvss": 7.5,
-    "description": "TRUfusion Enterprise through 7.10.4.0 exposes the encrypted COOKIEID as an authentication mechanism for some endpoints such as /trufusionPortal/getProjectList. However, the application uses a static key to create the encrypted cookie, ultimately allowing anyone to forge cookies and gain access to sensitive internal information.",
-    "published": "2025-10-27T17:15:37.973",
-    "keywords": "authentication,sensitive"
-  },
-  "CVE-2025-27225": {
-    "cvss": 7.5,
-    "description": "TRUfusion Enterprise through 7.10.4.0 exposes the /trufusionPortal/jsp/internal_admin_contact_login.jsp endpoint to unauthenticated users. This endpoint discloses sensitive internal information including PII to unauthenticated attackers.",
-    "published": "2025-10-27T17:15:38.210",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2025-54968": {
+  "CVE-2025-48984": {
     "cvss": 8.8,
-    "description": "An issue was discovered in BAE SOCET GXP before 4.6.0.2. The SOCET GXP Job Service does not require authentication. In some configurations, this may allow remote users to submit jobs, or local users to submit jobs that will execute with the permissions of other users.",
-    "published": "2025-10-27T17:15:38.470",
-    "keywords": "remote,authentication"
+    "description": "A vulnerability allowing remote code execution (RCE) on the Backup Server by an authenticated domain user.",
+    "published": "2025-10-31T00:15:36.673",
+    "keywords": "remote,execution"
   },
-  "CVE-2025-55752": {
-    "cvss": 7.5,
-    "description": "Relative Path Traversal vulnerability in Apache Tomcat.\n\nThe fix for bug 60013 introduced a regression where the       rewritten URL was normalized before it was decoded. This introduced the       possibility that, for rewrite rules that rewrite query parameters to the       URL, an attacker could manipulate the request URI to bypass security       constraints including the protection for /WEB-INF/ and /META-INF/. If PUT requests were also enabled then malicious files could be uploaded leading to remote code execution. PUT requests are normally limited to trusted users and it is considered unlikely that PUT requests would be enabled in conjunction with a rewrite that manipulated the URI.\n\n\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.10, from 10.1.0-M1 through 10.1.44, from 9.0.0.M11 through 9.0.108.\n\nThe following versions were EOL at the time the CVE was created but are \nknown to be affected: 8.5.6 though 8.5.100. Other, older, EOL versions may also be affected.\nUsers are recommended to upgrade to version 11.0.11 or later, 10.1.45 or later or 9.0.109 or later, which fix the issue.",
-    "published": "2025-10-27T18:15:42.283",
-    "keywords": "remote,execution,bypass"
+  "CVE-2025-5397": {
+    "cvss": 9.8,
+    "description": "The Noo JobMonster theme for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 4.8.1. This is due to the check_login() function not properly verifying a user's identity prior to successfully authenticating them  This makes it possible for unauthenticated attackers to bypass standard authentication and access administrative user accounts. Please note social login needs to be enabled in order for a site to be impacted by this vulnerability.",
+    "published": "2025-10-31T07:15:37.427",
+    "keywords": "unauthenticated,authentication,bypass"
   },
-  "CVE-2025-61385": {
-    "cvss": 9.6,
-    "description": "SQL injection vulnerability in tlocke pg8000 1.31.4 allows remote attackers to execute arbitrary SQL commands via a specially crafted Python list input to function pg8000.native.literal.",
-    "published": "2025-10-27T18:15:43.760",
-    "keywords": "remote,command"
+  "CVE-2025-7846": {
+    "cvss": 8.8,
+    "description": "The WordPress User Extra Fields plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the save_fields() function in all versions up to, and including, 16.7. This makes it possible for authenticated attackers, with Subscriber-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
+    "published": "2025-10-31T07:15:38.507",
+    "keywords": "remote,execution"
   },
-  "CVE-2025-61099": {
-    "url": "https://github.com/frrouting/frr/pull/19480",
-    "cvss": "-",
-    "description": "FRRouting/frr from v2.0 through v10.4.1 was discovered to contain a NULL pointer dereference via the opaque_info_detail function at ospf_opaque.c. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted LS Update packet.",
-    "published": "2025-10-27T19:16:04.880"
-  },
-  "CVE-2025-61100": {
-    "url": "https://github.com/frrouting/frr/pull/19480",
-    "cvss": "-",
-    "description": "FRRouting/frr from v2.0 through v10.4.1 was discovered to contain a NULL pointer dereference via the ospf_opaque_lsa_dump function at ospf_opaque.c. This vulnerability allows attackers to cause a Denial of Service (DoS) under specific malformed LSA conditions.",
-    "published": "2025-10-27T19:16:05.060"
-  },
-  "CVE-2025-12310": {
+  "CVE-2025-12094": {
     "cvss": 5.3,
-    "description": "A security vulnerability has been detected in VirtFusion up to 6.0.2. This vulnerability affects unknown code of the file /account/_settings of the component Email Change Handler. The manipulation leads to improper restriction of excessive authentication attempts. The attack can be initiated remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-10-27T20:15:51.943",
-    "keywords": "remote,authentication"
+    "description": "The OOPSpam Anti-Spam: Spam Protection for WordPress Forms & Comments (No CAPTCHA) plugin for WordPress is vulnerable to IP Header Spoofing in all versions up to, and including, 1.2.53. This is due to the plugin trusting client-controlled forwarded headers (such as CF-Connecting-IP, X-Forwarded-For, and others) without verifying that those headers originate from legitimate, trusted proxies. This makes it possible for unauthenticated attackers to spoof their IP address and bypass IP-based security controls, including blocked IP lists and rate limiting protections, by sending arbitrary HTTP headers with their requests.",
+    "published": "2025-10-31T09:15:46.050",
+    "keywords": "unauthenticated,bypass"
   },
-  "CVE-2025-61101": {
-    "url": "https://github.com/frrouting/frr/pull/19480",
-    "cvss": "-",
-    "description": "FRRouting/frr from v4.0 through v10.4.1 was discovered to contain a NULL pointer dereference via the show_vty_ext_link_rmt_itf_addr function at ospf_ext.c. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted OSPF packet.",
-    "published": "2025-10-27T20:15:54.050"
+  "CVE-2025-40603": {
+    "cvss": 4.5,
+    "description": "A potential exposure of sensitive information in log files in SonicWall SMA100 Series appliances may allow a remote, authenticated administrator, under certain conditions to view partial users credential data.",
+    "published": "2025-10-31T11:15:34.757",
+    "keywords": "remote,sensitive"
   },
-  "CVE-2025-61102": {
-    "url": "https://github.com/frrouting/frr/pull/19480",
-    "cvss": "-",
-    "description": "FRRouting/frr from v4.0 through v10.4.1 was discovered to contain a NULL pointer dereference via the show_vty_ext_link_adj_sid function at ospf_ext.c. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted OSPF packet.",
-    "published": "2025-10-27T20:15:54.150"
-  },
-  "CVE-2025-61105": {
-    "url": "https://github.com/frrouting/frr/pull/19480",
-    "cvss": "-",
-    "description": "FRRouting/frr from v4.0 through v10.4.1 was discovered to contain a NULL pointer dereference via the show_vty_link_info function at ospf_ext.c. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted OSPF packet.",
-    "published": "2025-10-27T20:15:54.240"
-  },
-  "CVE-2025-62725": {
-    "cvss": "-",
-    "description": "Docker Compose trusts the path information embedded in remote OCI compose artifacts. When a layer includes the annotations com.docker.compose.extends or com.docker.compose.envfile, Compose joins the attacker\u2011supplied value from com.docker.compose.file/com.docker.compose.envfile with its local cache directory and writes the file there. This affects any platform or workflow that resolves remote OCI compose artifacts, Docker Desktop, standalone Compose binaries on Linux, CI/CD runners, cloud dev environments is affected. An attacker can escape the cache directory and overwrite arbitrary files on the machine running docker compose, even if the user only runs read\u2011only commands such as docker compose config or docker compose ps. This issue is fixed in v2.40.2.",
-    "published": "2025-10-27T21:15:38.140",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-62782": {
-    "url": "https://github.com/phoenix616/inventorygui/commit/00e684bd689ebc60bcb5b83ce4ef3c5a01778494",
-    "cvss": "-",
-    "description": "InventoryGui is a library for creating chest GUIs for Bukkit/Spigot plugins. Versions 1.6.3-SNAPSHOT and earlier contain a vulnerability where GUIs using GuiStorageElement can allow item duplication when the experimental Bundle item feature is enabled on the server. The vulnerability is resolved in version 1.6.4-SNAPSHOT.",
-    "published": "2025-10-27T21:15:38.287"
-  },
-  "CVE-2025-62783": {
-    "url": "https://github.com/phoenix616/inventorygui/commit/27a52ef6d934a1c232e110e0010e4aa810c27029",
-    "cvss": 5.0,
-    "description": "InventoryGui is a library for creating chest GUIs for Bukkit/Spigot plugins. Versions 1.6.1-SNAPSHOT and earlier contain a vulnerability where any plugin using the `GuiStorageElement  can allow item duplication when the experimental Bundle item feature is enabled on the server. The vulnerability is resolved in version 1.6.2-SNAPSHOT.",
-    "published": "2025-10-27T21:15:38.450"
-  },
-  "CVE-2025-62784": {
-    "url": "https://github.com/phoenix616/inventorygui/commit/690fc91d137c6cc04f6ed3a89449050964dd8cb9",
-    "cvss": "-",
-    "description": "InventoryGui is a library for creating chest GUIs for Bukkit/Spigot plugins. Versions before 1.6.5 contain a vulnerability where any plugin using a GUI with the GuiStorageElement and allows taking out items out of that element can allow item duplication when the experimental Bundle item feature is enabled on the server. The vulnerability is resolved in version 1.6.5.",
-    "published": "2025-10-27T21:15:38.593"
-  },
-  "CVE-2025-62778": {
-    "url": "https://github.com/frappe/lms/commit/8749e21744547ae32f729bde05c854113e126750",
-    "cvss": "-",
-    "description": "Frappe Learning is a learning management system. A security issue was identified in Frappe Learning 2.39.1 and earlier, where students were able to access the Quiz Form if they had the URL.",
-    "published": "2025-10-27T22:15:41.873"
-  },
-  "CVE-2025-62779": {
-    "url": "https://github.com/frappe/lms/commit/75001b494d5d8198eab20b0cd85d5bd719448ea3",
-    "cvss": "-",
-    "description": "Frappe Learning is a learning system that helps users structure their content. In Frappe Learning 2.39.1 and earlier, users were able to add HTML through input fields in the Job Form.",
-    "published": "2025-10-27T22:15:42.017"
-  },
-  "CVE-2025-11735": {
-    "cvss": 7.5,
-    "description": "The HUSKY \u2013 Products Filter Professional for WooCommerce plugin for WordPress is vulnerable to blind SQL Injection via the `phrase` parameter in all versions up to, and including, 1.3.7.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
-    "published": "2025-10-28T06:15:39.487",
+  "CVE-2025-12521": {
+    "cvss": 5.3,
+    "description": "The Analytify Pro plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 7.0.3 via the Analytify Tag HTML details. This makes it possible for unauthenticated attackers to extract usernames from source code. While we generally do not assign CVE IDs to username exposure issues, this vendor has specifically requested we consider it a vulnerability.",
+    "published": "2025-10-31T14:16:12.487",
     "keywords": "unauthenticated,sensitive"
   },
-  "CVE-2025-40026": {
-    "cvss": "-",
-    "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nKVM: x86: Don't (re)check L1 intercepts when completing userspace I/O\n\nWhen completing emulation of instruction that generated a userspace exit\nfor I/O, don't recheck L1 intercepts as KVM has already finished that\nphase of instruction execution, i.e. has already committed to allowing L2\nto perform I/O.  If L1 (or host userspace) modifies the I/O permission\nbitmaps during the exit to userspace,  KVM will treat the access as being\nintercepted despite already having emulated the I/O access.\n\nPivot on EMULTYPE_NO_DECODE to detect that KVM is completing emulation.\nOf the three users of EMULTYPE_NO_DECODE, only complete_emulated_io() (the\nintended \"recipient\") can reach the code in question.  gp_interception()'s\nuse is mutually exclusive with is_guest_mode(), and\ncomplete_emulated_insn_gp() unconditionally pairs EMULTYPE_NO_DECODE with\nEMULTYPE_SKIP.\n\nThe bad behavior was detected by a syzkaller program that toggles port I/O\ninterception during the userspace I/O exit, ultimately resulting in a WARN\non vcpu->arch.pio.count being non-zero due to KVM no completing emulation\nof the I/O instruction.\n\n  WARNING: CPU: 23 PID: 1083 at arch/x86/kvm/x86.c:8039 emulator_pio_in_out+0x154/0x170 [kvm]\n  Modules linked in: kvm_intel kvm irqbypass\n  CPU: 23 UID: 1000 PID: 1083 Comm: repro Not tainted 6.16.0-rc5-c1610d2d66b1-next-vm #74 NONE\n  Hardware name: QEMU Standard PC (Q35 + ICH9, 2009), BIOS 0.0.0 02/06/2015\n  RIP: 0010:emulator_pio_in_out+0x154/0x170 [kvm]\n  PKRU: 55555554\n  Call Trace:\n   <TASK>\n   kvm_fast_pio+0xd6/0x1d0 [kvm]\n   vmx_handle_exit+0x149/0x610 [kvm_intel]\n   kvm_arch_vcpu_ioctl_run+0xda8/0x1ac0 [kvm]\n   kvm_vcpu_ioctl+0x244/0x8c0 [kvm]\n   __x64_sys_ioctl+0x8a/0xd0\n   do_syscall_64+0x5d/0xc60\n   entry_SYSCALL_64_after_hwframe+0x4b/0x53\n   </TASK>",
-    "published": "2025-10-28T10:15:42.167",
-    "keywords": "execution,bypass"
+  "CVE-2025-59501": {
+    "cvss": 4.8,
+    "description": "Authentication bypass by spoofing in Microsoft Configuration Manager allows an authorized attacker to perform spoofing over an adjacent network.",
+    "published": "2025-10-31T17:15:46.517",
+    "keywords": "authentication,bypass"
   },
-  "CVE-2025-40068": {
-    "cvss": "-",
-    "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfs: ntfs3: Fix integer overflow in run_unpack()\n\nThe MFT record relative to the file being opened contains its runlist,\nan array containing information about the file's location on the physical\ndisk. Analysis of all Call Stack paths showed that the values of the\nrunlist array, from which LCNs are calculated, are not validated before\nrun_unpack function.\n\nThe run_unpack function decodes the compressed runlist data format\nfrom MFT attributes (for example, $DATA), converting them into a runs_tree\nstructure, which describes the mapping of virtual clusters (VCN) to\nlogical clusters (LCN). The NTFS3 subsystem also has a shortcut for\ndeleting files from MFT records - in this case, the RUN_DEALLOCATE\ncommand is sent to the run_unpack input, and the function logic\nprovides that all data transferred to the runlist about file or\ndirectory is deleted without creating a runs_tree structure.\n\nSubstituting the runlist in the $DATA attribute of the MFT record for an\narbitrary file can lead either to access to arbitrary data on the disk\nbypassing access checks to them (since the inode access check\noccurs above) or to destruction of arbitrary data on the disk.\n\nAdd overflow check for addition operation.\n\nFound by Linux Verification Center (linuxtesting.org) with SVACE.",
-    "published": "2025-10-28T12:15:41.277",
-    "keywords": "command,bypass"
+  "CVE-2025-12547": {
+    "cvss": 3.7,
+    "description": "A vulnerability was identified in LogicalDOC Community Edition up to 9.2.1. This vulnerability affects unknown code of the file /login.jsp of the component Admin Login Page. Such manipulation leads to improper restriction of excessive authentication attempts. The attack can be executed remotely. This attack is characterized by high complexity. It is stated that the exploitability is difficult. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-10-31T19:15:49.570",
+    "keywords": "remote,authentication"
   },
-  "CVE-2025-40071": {
-    "cvss": "-",
-    "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ntty: n_gsm: Don't block input queue by waiting MSC\n\nCurrently gsm_queue() processes incoming frames and when opening\na DLC channel it calls gsm_dlci_open() which calls gsm_modem_update().\nIf basic mode is used it calls gsm_modem_upd_via_msc() and it\ncannot block the input queue by waiting the response to come\ninto the same input queue.\n\nInstead allow sending Modem Status Command without waiting for remote\nend to respond. Define a new function gsm_modem_send_initial_msc()\nfor this purpose. As MSC is only valid for basic encoding, it does\nnot do anything for advanced or when convergence layer type 2 is used.",
-    "published": "2025-10-28T12:15:41.613",
-    "keywords": "remote,command"
+  "CVE-2025-11920": {
+    "cvss": 8.8,
+    "description": "The WPCOM Member plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.7.14 via the action parameter in one of its shortcodes. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary .php files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where .php file types can be uploaded and included.",
+    "published": "2025-11-01T02:15:33.037",
+    "keywords": "execution,sensitive,bypass"
   },
-  "CVE-2025-9313": {
-    "cvss": "-",
-    "description": "An unauthenticated user can connect to a publicly accessible database using arbitrary credentials. The system grants full access to the database by leveraging a previously authenticated connection through a \"mmBackup\" application. This flaw allows attackers to bypass authentication mechanisms and gain unauthorized access to database with sensitive data.\n\nThis issue affects Asseco mMedica in versions before 11.9.5.",
-    "published": "2025-10-28T12:15:42.967",
-    "keywords": "unauthenticated,authentication,sensitive,bypass"
+  "CVE-2025-10487": {
+    "cvss": 7.3,
+    "description": "The Advanced Ads \u2013\u00a0Ad Manager & AdSense plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.0.12 via the select_one() function. This is due to the endpoint not properly restricting access to the AJAX endpoint or limiting the functions that can be called to safe functions. This makes it possible for unauthenticated attackers to call arbitrary functions beginning with get_the_ like get_the_excerpt which can make information exposure possible.",
+    "published": "2025-11-01T07:15:33.610",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-11499": {
+    "cvss": 9.8,
+    "description": "The Tablesome Table \u2013 Contact Form DB \u2013 WPForms, CF7, Gravity, Forminator, Fluent plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the set_featured_image_from_external_url() function in all versions up to, and including, 1.1.32. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible in configurations where unauthenticated users have been provided with a method for adding featured images, and the workflow trigger is created.",
+    "published": "2025-11-01T07:15:34.940",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-11755": {
+    "cvss": 8.8,
+    "description": "The WP Delicious \u2013 Recipe Plugin for Food Bloggers (formerly Delicious Recipes) plugin for WordPress is vulnerable to arbitrary file uploads when importing recipes via CSV in all versions up to, and including, 1.9.0. This flaw allows an attacker with at least Contributor-level permissions to upload a malicious PHP file by providing a remote URL during a recipe import process, leading to Remote Code Execution (RCE).",
+    "published": "2025-11-01T07:15:35.130",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-12171": {
+    "cvss": 8.8,
+    "description": "The RESTful Content Syndication plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the ingest_image() function in versions 1.1.0 to 1.5.0. This makes it possible for authenticated attackers, with Author-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. This requires the attacker have access to a defined third-party server as specified in the settings, so it is unlikely that this will be exploitable by contributor-level users, and more likely to be exploited by administrators who also have access to the plugin's settings.",
+    "published": "2025-11-01T07:15:35.557",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-6990": {
+    "cvss": 8.8,
+    "description": "The kallyas theme for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 4.24.0 via the  `TH_PhpCode` pagebuilder widget. This is due to the theme not restricting access to the code editor widget for non-administrators. This makes it possible for authenticated attackers, with Contributor-level access and above, to execute code on the server.",
+    "published": "2025-11-01T08:15:32.600",
+    "keywords": "remote,execution"
   }
 }
