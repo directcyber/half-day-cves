@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-11-02T22:10:41.401025
+Updated at UTC 2025-11-02T23:11:01.317778
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,18 +57,6 @@ Updated at UTC 2025-11-02T22:10:41.401025
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
 		
 			
 		
@@ -250,66 +238,6 @@ Updated at UTC 2025-11-02T22:10:41.401025
 					<td>remote,execution</td>
 					<td class=date>2025-10-31T00:15:36.553</td>
 					<td class=description>A vulnerability in the Mount service of Veeam Backup & Replication, which allows for remote code execution (RCE) on the Backup infrastructure hosts by an authenticated domain user.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34286">CVE-2025-34286</a></td>
-					<td>-</td>
-					<td>remote,execution,command</td>
-					<td class=date>2025-10-30T22:15:48.920</td>
-					<td class=description>Nagios XI versions prior to 2026R1  contain a remote code execution vulnerability in the Core Config Manager (CCM) Run Check command. Insufficient validation/escaping of parameters used to build backend command lines allows an authenticated administrator to inject shell metacharacters that are executed on the server. Successful exploitation results in arbitrary command execution with the privileges of the Nagios XI web application user and can be leveraged to gain control of the underlying host operating system.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34284">CVE-2025-34284</a></td>
-					<td>-</td>
-					<td>execution,command</td>
-					<td class=date>2025-10-30T22:15:48.773</td>
-					<td class=description>Nagios XI versions prior to 2024R2 contain a command injection vulnerability in the WinRM plugin. Insufficient validation of user-supplied parameters allows an authenticated administrator to inject shell metacharacters that are incorporated into backend command invocations. Successful exploitation enables arbitrary command execution with the privileges of the Nagios XI web application user and can be leveraged to modify configuration, exfiltrate data, disrupt monitoring operations, or execute commands on the underlying host operating system.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34280">CVE-2025-34280</a></td>
-					<td>-</td>
-					<td>remote,execution,command</td>
-					<td class=date>2025-10-30T22:15:48.497</td>
-					<td class=description>Nagios Network Analyzer versions prior to 2024R2.0.1 contain a vulnerability in the LDAP certificate management functionality whereby the certificate removal operation fails to apply adequate input sanitation. An authenticated administrator can trigger command execution on the underlying host in the context of the web application service, resulting in remote code execution with the service's privileges.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34270">CVE-2025-34270</a></td>
-					<td>-</td>
-					<td>sensitive,leak</td>
-					<td class=date>2025-10-30T22:15:47.533</td>
-					<td class=description>Nagios Log Server versions prior to 2024R2.0.2 contain a vulnerability in the AD/LDAP user import functionality as it fails to obfuscate the password field during import. As a result, the plaintext password supplied for imported accounts may be exposed in the user interface, logs, or other diagnostic output. This can leak sensitive credentials to administrators or anyone with access to import results.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34249">CVE-2025-34249</a></td>
-					<td>-</td>
-					<td>remote,authentication,bypass</td>
-					<td class=date>2025-10-30T22:15:47.260</td>
-					<td class=description>Nagios Fusion versions prior to 2024R2.1 contain a brute-force bypass in the Two-Factor Authentication (2FA) implementation. The application did not properly enforce rate limiting or account lockout for repeated failed 2FA verification attempts, allowing a remote attacker to repeatedly try second-factor codes for a targeted account. By abusing the lack of enforcement, an attacker could eventually successfully authenticate to accounts protected by 2FA.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34134">CVE-2025-34134</a></td>
-					<td>-</td>
-					<td>remote,execution,command</td>
-					<td class=date>2025-10-30T22:15:46.983</td>
-					<td class=description>Nagios XI versions prior to 2024R1.4.2 contain a remote code execution vulnerability in the Business Process Intelligence (BPI) component. Insufficient validation and sanitization of administrator-controlled BPI configuration parameters (notably bpi_logfile and bpi_configfile) allow an authenticated administrative user to cause the product to create or overwrite files within the webroot and subsequently edit them via the BPI configuration editor. When such files carry executable extensions and are served by the web application, arbitrary code may be executed in the context of the web application user. Successful exploitation results in arbitrary command execution with the privileges of the Nagios XI web application user and can be leveraged to gain further control of the underlying host operating system.</td>
 				</tr>
 			
 		
