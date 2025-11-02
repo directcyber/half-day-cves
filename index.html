@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-11-02T20:12:13.927834
+Updated at UTC 2025-11-02T21:10:11.505709
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,8 +57,6 @@ Updated at UTC 2025-11-02T20:12:13.927834
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
-		
-			
 		
 			
 		
@@ -312,16 +310,6 @@ Updated at UTC 2025-11-02T20:12:13.927834
 					<td>remote,execution,command</td>
 					<td class=date>2025-10-30T22:15:46.983</td>
 					<td class=description>Nagios XI versions prior to 2024R1.4.2 contain a remote code execution vulnerability in the Business Process Intelligence (BPI) component. Insufficient validation and sanitization of administrator-controlled BPI configuration parameters (notably bpi_logfile and bpi_configfile) allow an authenticated administrative user to cause the product to create or overwrite files within the webroot and subsequently edit them via the BPI configuration editor. When such files carry executable extensions and are served by the web application, arbitrary code may be executed in the context of the web application user. Successful exploitation results in arbitrary command execution with the privileges of the Nagios XI web application user and can be leveraged to gain further control of the underlying host operating system.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-8850">CVE-2025-8850</a></td>
-					<td>3.1</td>
-					<td>authentication,bypass</td>
-					<td class=date>2025-10-30T20:15:39.633</td>
-					<td class=description>In danny-avila/librechat version 0.7.9, there is an insecure API design issue in the 2-Factor Authentication (2FA) flow. The system allows users to disable 2FA without requiring a valid OTP or backup code, bypassing the intended verification process. This vulnerability occurs because the backend does not properly validate the OTP or backup code when the API endpoint '/api/auth/2fa/disable' is directly accessed. This flaw can be exploited by authenticated users to weaken the security of their own accounts, although it does not lead to full account compromise.</td>
 				</tr>
 			
 		
