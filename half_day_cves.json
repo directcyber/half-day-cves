@@ -70,5 +70,11 @@
     "description": "A vulnerability was identified in fushengqian fuint up to 41e26be8a2c609413a0feaa69bdad33a71ae8032. Affected by this issue is some unknown functionality of the file fuint-application/src/main/java/com/fuint/module/clientApi/controller/ClientSignController.java of the component Authentication Token Handler. Such manipulation leads to authorization bypass. The attack may be launched remotely. Attacks of this nature are highly complex. The exploitation is known to be difficult. The exploit is publicly available and might be used. This product operates on a rolling release basis, ensuring continuous delivery. Consequently, there are no version details for either affected or updated releases.",
     "published": "2025-11-03T08:15:33.853",
     "keywords": "remote,authentication,bypass"
+  },
+  "CVE-2025-12626": {
+    "url": "https://github.com/jeecgboot/jeewx-boot/issues/47",
+    "cvss": 4.3,
+    "description": "A security flaw has been discovered in jeecgboot jeewx-boot up to 641ab52c3e1845fec39996d7794c33fb40dad1dd. This affects the function getImgUrl of the file WxActGoldeneggsPrizesController.java. Performing manipulation of the argument imgurl results in path traversal. Remote exploitation of the attack is possible. The exploit has been released to the public and may be exploited. This product follows a rolling release approach for continuous delivery, so version details for affected or updated releases are not provided. The root cause was initially fixed but can be evaded with additional encoding.",
+    "published": "2025-11-03T13:15:35.923"
   }
 }
