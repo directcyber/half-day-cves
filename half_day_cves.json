@@ -1,10 +1,4 @@
 {
-  "CVE-2025-12094": {
-    "cvss": 5.3,
-    "description": "The OOPSpam Anti-Spam: Spam Protection for WordPress Forms & Comments (No CAPTCHA) plugin for WordPress is vulnerable to IP Header Spoofing in all versions up to, and including, 1.2.53. This is due to the plugin trusting client-controlled forwarded headers (such as CF-Connecting-IP, X-Forwarded-For, and others) without verifying that those headers originate from legitimate, trusted proxies. This makes it possible for unauthenticated attackers to spoof their IP address and bypass IP-based security controls, including blocked IP lists and rate limiting protections, by sending arbitrary HTTP headers with their requests.",
-    "published": "2025-10-31T09:15:46.050",
-    "keywords": "unauthenticated,bypass"
-  },
   "CVE-2025-40603": {
     "cvss": 4.5,
     "description": "A potential exposure of sensitive information in log files in SonicWall SMA100 Series appliances may allow a remote, authenticated administrator, under certain conditions to view partial users credential data.",
