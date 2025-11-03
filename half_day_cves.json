@@ -1,10 +1,4 @@
 {
-  "CVE-2025-12547": {
-    "cvss": 3.7,
-    "description": "A vulnerability was identified in LogicalDOC Community Edition up to 9.2.1. This vulnerability affects unknown code of the file /login.jsp of the component Admin Login Page. Such manipulation leads to improper restriction of excessive authentication attempts. The attack can be executed remotely. This attack is characterized by high complexity. It is stated that the exploitability is difficult. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-10-31T19:15:49.570",
-    "keywords": "remote,authentication"
-  },
   "CVE-2025-11920": {
     "cvss": 8.8,
     "description": "The WPCOM Member plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.7.14 via the action parameter in one of its shortcodes. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary .php files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where .php file types can be uploaded and included.",
@@ -79,14 +73,20 @@
   },
   "CVE-2025-11953": {
     "cvss": 9.8,
-    "description": "The Metro Development Server, which is opened by the React Native CLI, binds to external interfaces by default. The server exposes an endpoint that is vulnerable to OS command injection. This allows unauthenticated network attackers to send a POST request to the server and run arbitrary executables. On Windows, the attackers can also execute arbitrary shell commands with fully controlled arguments.",
+    "description": "The Metro Development Server, which is opened by the React Native Community CLI, binds to external interfaces by default. The server exposes an endpoint that is vulnerable to OS command injection. This allows unauthenticated network attackers to send a POST request to the server and run arbitrary executables. On Windows, the attackers can also execute arbitrary shell commands with fully controlled arguments.",
     "published": "2025-11-03T17:15:32.677",
     "keywords": "unauthenticated,command"
   },
   "CVE-2025-63441": {
     "url": "https://github.com/opensource-socialnetwork/opensource-socialnetwork/issues/2501",
-    "cvss": "-",
+    "cvss": 7.3,
     "description": "Open Source Social Network (OSSN) 8.6 is vulnerable to Cross Site Scripting (XSS) via the parameter param` at endpoint u/administrator/friends.",
     "published": "2025-11-03T17:15:33.327"
+  },
+  "CVE-2025-8558": {
+    "cvss": "-",
+    "description": "Insider Threat Management (ITM) Server\u00a0versions prior to 7.17.2\u00a0contain an authentication bypass vulnerability that allows unauthenticated users on an adjacent network to perform agent unregistration when the number of registered agents exceeds the licensed limit. Successful exploitation prevents the server from receiving new events from affected agents, resulting in a partial loss of integrity and availability with no impact to confidentiality.",
+    "published": "2025-11-03T19:16:16.227",
+    "keywords": "unauthenticated,authentication,bypass"
   }
 }
