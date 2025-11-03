@@ -1,10 +1,4 @@
 {
-  "CVE-2025-59501": {
-    "cvss": 4.8,
-    "description": "Authentication bypass by spoofing in Microsoft Configuration Manager allows an authorized attacker to perform spoofing over an adjacent network.",
-    "published": "2025-10-31T17:15:46.517",
-    "keywords": "authentication,bypass"
-  },
   "CVE-2025-12547": {
     "cvss": 3.7,
     "description": "A vulnerability was identified in LogicalDOC Community Edition up to 9.2.1. This vulnerability affects unknown code of the file /login.jsp of the component Admin Login Page. Such manipulation leads to improper restriction of excessive authentication attempts. The attack can be executed remotely. This attack is characterized by high complexity. It is stated that the exploitability is difficult. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.",
@@ -82,5 +76,17 @@
     "description": "A remote code execution (RCE) vulnerability in the Postgres Drivers component of iceScrum v7.54 Pro On-prem allows attackers to execute arbitrary code via a crafted HTML page.",
     "published": "2025-11-03T16:15:35.470",
     "keywords": "remote,execution"
+  },
+  "CVE-2025-11953": {
+    "cvss": 9.8,
+    "description": "The Metro Development Server, which is opened by the React Native CLI, binds to external interfaces by default. The server exposes an endpoint that is vulnerable to OS command injection. This allows unauthenticated network attackers to send a POST request to the server and run arbitrary executables. On Windows, the attackers can also execute arbitrary shell commands with fully controlled arguments.",
+    "published": "2025-11-03T17:15:32.677",
+    "keywords": "unauthenticated,command"
+  },
+  "CVE-2025-63441": {
+    "url": "https://github.com/opensource-socialnetwork/opensource-socialnetwork/issues/2501",
+    "cvss": "-",
+    "description": "Open Source Social Network (OSSN) 8.6 is vulnerable to Cross Site Scripting (XSS) via the parameter param` at endpoint u/administrator/friends.",
+    "published": "2025-11-03T17:15:33.327"
   }
 }
