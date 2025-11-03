@@ -76,5 +76,11 @@
     "description": "The kallyas theme for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 4.24.0 via the  `TH_PhpCode` pagebuilder widget. This is due to the theme not restricting access to the code editor widget for non-administrators. This makes it possible for authenticated attackers, with Contributor-level access and above, to execute code on the server.",
     "published": "2025-11-01T08:15:32.600",
     "keywords": "remote,execution"
+  },
+  "CVE-2025-12616": {
+    "cvss": 3.7,
+    "description": "A vulnerability was detected in PHPGurukul News Portal 1.0. The impacted element is an unknown function of the file /onps/settings.py. Performing manipulation results in insertion of sensitive information into debugging code. It is possible to initiate the attack remotely. The attack's complexity is rated as high. The exploitability is regarded as difficult. The exploit is now public and may be used.",
+    "published": "2025-11-03T04:15:32.240",
+    "keywords": "remote,sensitive"
   }
 }
