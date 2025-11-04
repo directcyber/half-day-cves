@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-11-04T01:00:32.976398
+Updated at UTC 2025-11-04T03:14:53.227913
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2025-11-04T01:00:32.976398
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -118,10 +122,28 @@ Updated at UTC 2025-11-04T01:00:32.976398
 		
 			
 		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-43502">CVE-2025-43502</a></td>
+					<td>-</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2025-11-04T02:15:53.177</td>
+					<td class=description>A privacy issue was addressed by removing sensitive data. This issue is fixed in iOS 26.1 and iPadOS 26.1, Safari 26.1, visionOS 26.1. An app may be able to bypass certain Privacy preferences.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-43376">CVE-2025-43376</a></td>
+					<td>-</td>
+					<td>remote,leak</td>
+					<td class=date>2025-11-04T02:15:44.710</td>
+					<td class=description>A logic issue was addressed with improved state management. This issue is fixed in Safari 26, tvOS 26, watchOS 26, iOS 26 and iPadOS 26, visionOS 26. A remote attacker may be able to view leaked DNS queries with Private Relay turned on.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -246,16 +268,6 @@ Updated at UTC 2025-11-04T01:00:32.976398
 					<td>remote,execution,unauthenticated</td>
 					<td class=date>2025-11-01T07:15:33.610</td>
 					<td class=description>The Advanced Ads – Ad Manager & AdSense plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.0.12 via the select_one() function. This is due to the endpoint not properly restricting access to the AJAX endpoint or limiting the functions that can be called to safe functions. This makes it possible for unauthenticated attackers to call arbitrary functions beginning with get_the_ like get_the_excerpt which can make information exposure possible.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-11920">CVE-2025-11920</a></td>
-					<td>8.8</td>
-					<td>execution,sensitive,bypass</td>
-					<td class=date>2025-11-01T02:15:33.037</td>
-					<td class=description>The WPCOM Member plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.7.14 via the action parameter in one of its shortcodes. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary .php files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where .php file types can be uploaded and included.</td>
 				</tr>
 			
 		

@@ -1,10 +1,4 @@
 {
-  "CVE-2025-11920": {
-    "cvss": 8.8,
-    "description": "The WPCOM Member plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.7.14 via the action parameter in one of its shortcodes. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary .php files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where .php file types can be uploaded and included.",
-    "published": "2025-11-01T02:15:33.037",
-    "keywords": "execution,sensitive,bypass"
-  },
   "CVE-2025-10487": {
     "cvss": 7.3,
     "description": "The Advanced Ads \u2013\u00a0Ad Manager & AdSense plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.0.12 via the select_one() function. This is due to the endpoint not properly restricting access to the AJAX endpoint or limiting the functions that can be called to safe functions. This makes it possible for unauthenticated attackers to call arbitrary functions beginning with get_the_ like get_the_excerpt which can make information exposure possible.",
@@ -94,5 +88,17 @@
     "description": "IBM InfoSphere Information Server 11.7.0.0 through 11.7.1.6 is vulnerable to an XML external entity injection (XXE) attack when processing XML data. A remote attacker could exploit this vulnerability to expose sensitive information or consume memory resources.",
     "published": "2025-11-03T20:17:06.247",
     "keywords": "remote,sensitive"
+  },
+  "CVE-2025-43376": {
+    "cvss": "-",
+    "description": "A logic issue was addressed with improved state management. This issue is fixed in Safari 26, tvOS 26, watchOS 26, iOS 26 and iPadOS 26, visionOS 26. A remote attacker may be able to view leaked DNS queries with Private Relay turned on.",
+    "published": "2025-11-04T02:15:44.710",
+    "keywords": "remote,leak"
+  },
+  "CVE-2025-43502": {
+    "cvss": "-",
+    "description": "A privacy issue was addressed by removing sensitive data. This issue is fixed in iOS 26.1 and iPadOS 26.1, Safari 26.1, visionOS 26.1. An app may be able to bypass certain Privacy preferences.",
+    "published": "2025-11-04T02:15:53.177",
+    "keywords": "sensitive,bypass"
   }
 }
