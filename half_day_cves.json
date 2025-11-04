@@ -142,5 +142,17 @@
     "description": "The Easy Upload Files During Checkout plugin for WordPress is vulnerable to arbitrary JavaScript file uploads due to missing file type validation in the 'file_during_checkout' function in all versions up to, and including, 2.9.8. This makes it possible for unauthenticated attackers to upload arbitrary JavaScript files on the affected site's server which may make remote code execution possible.",
     "published": "2025-11-04T14:15:33.377",
     "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-54863": {
+    "cvss": 10.0,
+    "description": "Radiometrics VizAir is vulnerable to exposure of the system's REST API key through a publicly accessible configuration file. This allows attackers to remotely alter weather data and configurations, automate attacks against multiple instances, and extract sensitive meteorological data, which could potentially compromise airport operations. Additionally, attackers could flood the system with false alerts, leading to a denial-of-service condition and significant disruption to airport operations. Unauthorized remote control over aviation weather monitoring and data manipulation could result in incorrect flight planning and hazardous takeoff and landing conditions.",
+    "published": "2025-11-04T17:16:22.967",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-61945": {
+    "cvss": 10.0,
+    "description": "Radiometrics VizAir is vulnerable to any remote attacker via access to the admin panel of the VizAir system without authentication. Once inside, the attacker can modify critical weather parameters such as wind shear alerts, inversion depth, and CAPE values, which are essential for accurate weather forecasting and flight safety. This unauthorized access could result in the disabling of vital alerts, causing hazardous conditions for aircraft, and manipulating runway assignments, which could result in mid-air conflicts or runway incursions.",
+    "published": "2025-11-04T17:16:23.320",
+    "keywords": "remote,authentication"
   }
 }
