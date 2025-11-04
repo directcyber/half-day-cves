@@ -100,5 +100,17 @@
     "description": "A privacy issue was addressed by removing sensitive data. This issue is fixed in iOS 26.1 and iPadOS 26.1, Safari 26.1, visionOS 26.1. An app may be able to bypass certain Privacy preferences.",
     "published": "2025-11-04T02:15:53.177",
     "keywords": "sensitive,bypass"
+  },
+  "CVE-2025-11007": {
+    "cvss": 9.8,
+    "description": "The CE21 Suite plugin for WordPress is vulnerable to unauthorized plugin settings update due to a missing capability check on the wp_ajax_nopriv_ce21_single_sign_on_save_api_settings AJAX action in versions 2.2.1 to 2.3.1. This makes it possible for unauthenticated attackers to update the plugin's API settings including a secret key used for authentication. This allows unauthenticated attackers to create new admin accounts on an affected site.",
+    "published": "2025-11-04T04:15:36.903",
+    "keywords": "unauthenticated,authentication"
+  },
+  "CVE-2025-11008": {
+    "cvss": 9.8,
+    "description": "The CE21 Suite plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.3.1 via the log file. This makes it possible for unauthenticated attackers to extract sensitive data including authentication credentials, which can be used to log in as other users as long as they have used the plugin's custom authentication feature before. This may include administrators, which makes a complete site takeover possible.",
+    "published": "2025-11-04T04:15:37.113",
+    "keywords": "unauthenticated,authentication,sensitive"
   }
 }
