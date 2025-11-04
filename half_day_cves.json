@@ -112,5 +112,29 @@
     "description": "The CE21 Suite plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.3.1 via the log file. This makes it possible for unauthenticated attackers to extract sensitive data including authentication credentials, which can be used to log in as other users as long as they have used the plugin's custom authentication feature before. This may include administrators, which makes a complete site takeover possible.",
     "published": "2025-11-04T04:15:37.113",
     "keywords": "unauthenticated,authentication,sensitive"
+  },
+  "CVE-2025-10896": {
+    "cvss": 8.8,
+    "description": "Multiple plugins for WordPress with the Jewel Theme Recommended Plugins Library are vulnerable to Unrestricted Upload of File with Dangerous Type via arbitrary plugin installation in all versions up to, and including, 1.0.2.3. This is due to missing capability checks on the '*_recommended_upgrade_plugin' function which allows arbitrary plugin URLs to be installed. This makes it possible for authenticated attackers with subscriber-level access and above to upload arbitrary plugin packages to the affected site's server via a crafted plugin URL, which may make remote code execution possible.",
+    "published": "2025-11-04T05:15:49.360",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-11704": {
+    "cvss": 7.5,
+    "description": "The Elegance Menu plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.9 via the 'elegance-menu' attribute of the `elegance-menu` shortcode. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary .php files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where .php file types can be uploaded and included.",
+    "published": "2025-11-04T05:15:53.957",
+    "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2025-11724": {
+    "cvss": 8.8,
+    "description": "The EM Beer Manager plugin for WordPress is vulnerable to arbitrary file upload leading to remote code execution in all versions up to, and including, 3.2.3. This is due to missing file type validation in the EMBM_Admin_Untappd_Import_image() function and missing authorization checks on the wp_ajax_embm-untappd-import action. This makes it possible for authenticated attackers, with subscriber-level access and above, to upload arbitrary files including PHP files and execute code on the server granted they can provide a mock HTTP server that responds with specific JSON data.",
+    "published": "2025-11-04T05:15:56.887",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-11890": {
+    "cvss": 7.5,
+    "description": "The Crypto Payment Gateway with Payeer for WooCommerce plugin for WordPress is vulnerable to payment bypass in all versions up to, and including, 1.0.3. This is due to the plugin not properly verifying a payments status through server-side validation though the /wc-api/bp-payeer-gateway-callback endpoint. This makes it possible for unauthenticated attackers to update unpaid order statuses to paid resulting in a loss of revenue.",
+    "published": "2025-11-04T05:16:04.337",
+    "keywords": "unauthenticated,bypass"
   }
 }
