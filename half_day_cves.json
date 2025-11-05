@@ -60,7 +60,7 @@
     "keywords": "remote,sensitive"
   },
   "CVE-2025-43376": {
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "A logic issue was addressed with improved state management. This issue is fixed in Safari 26, tvOS 26, watchOS 26, iOS 26 and iPadOS 26, visionOS 26. A remote attacker may be able to view leaked DNS queries with Private Relay turned on.",
     "published": "2025-11-04T02:15:44.710",
     "keywords": "remote,leak"
@@ -268,5 +268,77 @@
     "description": "Snipe-IT before version 8.3.3 contains a remote code execution vulnerability that allows an authenticated attacker to upload a malicious backup file containing arbitrary files and execute system commands.",
     "published": "2025-11-05T16:15:40.897",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2025-20289": {
+    "cvss": 4.8,
+    "description": "Multiple vulnerabilities in the web-based management interface of Cisco ISE and Cisco ISE-PIC could allow an authenticated, remote attacker to conduct a reflected XSS attack against a user of the interface.\r\n\r These vulnerabilities are due to insufficient validation of user-supplied input by the web-based management interface of an affected system. An attacker could exploit these vulnerabilities by injecting malicious code into specific pages of the interface. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information. To exploit these vulnerabilities, the attacker must have at least a low-privileged account on the affected device.",
+    "published": "2025-11-05T17:15:35.867",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-20303": {
+    "cvss": 5.4,
+    "description": "Multiple vulnerabilities in the web-based management interface of Cisco ISE and Cisco ISE-PIC could allow an authenticated, remote attacker to conduct a reflected XSS attack against a user of the interface.\r\n\r These vulnerabilities are due to insufficient validation of user-supplied input by the web-based management interface of an affected system. An attacker could exploit these vulnerabilities by injecting malicious code into specific pages of the interface. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information. To exploit these vulnerabilities, the attacker must have at least a low-privileged account on the affected device.",
+    "published": "2025-11-05T17:15:36.737",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-20304": {
+    "cvss": 5.4,
+    "description": "Multiple vulnerabilities in the web-based management interface of Cisco ISE and Cisco ISE-PIC could allow an authenticated, remote attacker to conduct a reflected XSS attack against a user of the interface.\r\n\r These vulnerabilities are due to insufficient validation of user-supplied input by the web-based management interface of an affected system. An attacker could exploit these vulnerabilities by injecting malicious code into specific pages of the interface. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information. To exploit these vulnerabilities, the attacker must have at least a low-privileged account on the affected device.",
+    "published": "2025-11-05T17:15:36.957",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-20305": {
+    "cvss": 4.3,
+    "description": "A vulnerability in the web-based management interface of Cisco ISE could allow an authenticated, remote attacker to obtain sensitive information from an affected device.\r\n\r This vulnerability exists because certain files lack proper data protection mechanisms. An attacker with read-only Administrator privileges could exploit this vulnerability by performing actions where the results should only be viewable to a high-privileged user. A successful exploit could allow the attacker to view passwords that are normally not visible to read-only administrators.",
+    "published": "2025-11-05T17:15:37.170",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-20343": {
+    "cvss": 8.6,
+    "description": "A vulnerability in the RADIUS setting Reject RADIUS requests from clients with repeated failures on Cisco Identity Services Engine (ISE) could allow an unauthenticated, remote attacker to cause Cisco ISE to restart unexpectedly.\r\n\r\nThis vulnerability is due to a logic error when processing a RADIUS access request for a MAC address that is already a rejected endpoint. An attacker could exploit this vulnerability by sending a specific sequence of multiple crafted RADIUS access request messages to Cisco ISE. A successful exploit could allow the attacker to cause a denial of service (DoS) condition when Cisco ISE restarts.",
+    "published": "2025-11-05T17:15:37.443",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-20354": {
+    "cvss": 9.8,
+    "description": "A vulnerability in the Java Remote Method Invocation (RMI) process of Cisco Unified CCX could allow an unauthenticated, remote attacker to upload arbitrary files and execute arbitrary commands with root permissions on an affected system.\r\n\r\nThis vulnerability is due to improper authentication mechanisms that are associated to specific Cisco Unified CCX features. An attacker could exploit this vulnerability by uploading a crafted file to an affected system through the Java RMI process. A successful exploit could allow the attacker to execute arbitrary commands on the underlying operating system and elevate privileges to root.",
+    "published": "2025-11-05T17:15:37.743",
+    "keywords": "remote,unauthenticated,authentication,command"
+  },
+  "CVE-2025-20358": {
+    "cvss": 9.4,
+    "description": "A vulnerability in the Contact Center Express (CCX) Editor application of Cisco Unified CCX could allow an unauthenticated, remote attacker to bypass authentication and obtain administrative permissions pertaining to script creation and execution.\r\n\r\nThis vulnerability is due to improper authentication mechanisms in the communication between the CCX Editor and an affected Unified CCX server. An attacker could exploit this vulnerability by redirecting the authentication flow to a malicious server and tricking the CCX Editor into believing the authentication was successful. A successful exploit could allow the attacker to create and execute arbitrary scripts on the underlying operating system of an affected Unified CCX server, as an internal non-root user account.",
+    "published": "2025-11-05T17:15:38.120",
+    "keywords": "remote,execution,unauthenticated,authentication,bypass"
+  },
+  "CVE-2025-20376": {
+    "cvss": 6.5,
+    "description": "A vulnerability in the web UI of Cisco Unified CCX could allow an authenticated, remote attacker to upload and execute arbitrary files.\r\n\r\nThis vulnerability is due to an insufficient input validation associated to file upload mechanisms. An attacker could exploit this vulnerability by uploading a malicious file to the web UI and executing it. A successful exploit could allow the attacker to execute arbitrary commands on the underlying system and elevate privileges to root. To exploit this vulnerability, the attacker must have valid administrative credentials.",
+    "published": "2025-11-05T17:15:38.953",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-20377": {
+    "cvss": 4.3,
+    "description": "A vulnerability in the API subsystem of Cisco Unified Intelligence Center could allow an authenticated, remote attacker to obtain sensitive information from an affected system.\r\n\r\nThis vulnerability is due to improper validation of requests to certain API endpoints. An attacker could exploit this vulnerability by sending a valid request to a specific API endpoint within the affected system. A successful exploit could allow a low-privileged user to view sensitive information on the affected system that should be restricted. To exploit this vulnerability, the attacker must have valid user credentials on the affected system.",
+    "published": "2025-11-05T17:15:39.200",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2025-43990": {
+    "cvss": 7.3,
+    "description": "Dell Command Monitor (DCM), versions prior to 10.12.3.28, contains an Execution with Unnecessary Privileges vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of Privileges.",
+    "published": "2025-11-05T17:15:40.210",
+    "keywords": "execution,command"
+  },
+  "CVE-2025-10713": {
+    "cvss": 6.5,
+    "description": "An XML External Entity (XXE) vulnerability exists in multiple WSO2 products due to improper configuration of the XML parser. The application parses user-supplied XML without applying sufficient restrictions, allowing resolution of external entities.\n\nA successful attack could enable a remote, unauthenticated attacker to read sensitive files from the server's filesystem or perform denial-of-service (DoS) attacks that render affected services unavailable.",
+    "published": "2025-11-05T18:15:32.247",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2025-10907": {
+    "cvss": 8.4,
+    "description": "An arbitrary file upload vulnerability exists in multiple WSO2 products due to insufficient validation of uploaded content and destination in SOAP admin services. A malicious actor with administrative privileges can upload a specially crafted file to a user-controlled location within the deployment.\n\nSuccessful exploitation may lead to remote code execution (RCE) on the server, depending on how the uploaded file is processed. By default, this vulnerability is only exploitable by users with administrative access to the affected SOAP services.",
+    "published": "2025-11-05T18:15:33.347",
+    "keywords": "remote,execution"
   }
 }
