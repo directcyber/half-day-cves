@@ -232,5 +232,11 @@
     "description": "The KiotViet Sync plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.8.5 via the register_api_route() function in kiotvietsync/includes/public_actions/WebHookAction.php. This makes it possible for unauthenticated attackers to extract the webhook token value when configured.",
     "published": "2025-11-05T08:15:33.843",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-55108": {
+    "cvss": 10.0,
+    "description": "The Control-M/Agent is vulnerable to unauthenticated remote code execution, arbitrary file read and write and similar unauthorized actions when mutual SSL/TLS authentication is not enabled (i.e. in the default configuration).\n\n\nNOTE: The vendor believes that this vulnerability only occurs when documented security best practices are not followed. BMC has always strongly recommended to use security best practices such as configuring SSL/TLS between Control-M Server and Agent.",
+    "published": "2025-11-05T09:15:32.170",
+    "keywords": "remote,execution,unauthenticated,authentication"
   }
 }
