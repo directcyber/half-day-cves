@@ -166,5 +166,17 @@
     "description": "Redis is an open source, in-memory database that persists on disk. In versions 8.2.0 and above, a user can run the XACKDEL command with multiple ID's and trigger a stack buffer overflow, which may potentially lead to remote code execution. This issue is fixed in version 8.2.3. To workaround this issue without patching the redis-server executable is to prevent users from executing XACKDEL operation. This can be done using ACL to restrict XACKDEL command.",
     "published": "2025-11-04T22:16:38.330",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2025-64106": {
+    "cvss": 8.8,
+    "description": "Cursor is a code editor built for programming with AI. In versions 1.7.28 and below, an input validation flaw in Cursor's MCP server installation enables specially crafted deep-links to bypass the standard security warnings and conceal executed commands from users if they choose to accept the server. If an attacker is able to convince a victim to navigate to a malicious deeplink, the victim will not see the correct speedbump modal, and if they choose to accept, will execute commands specified by the attackers deeplink.",
+    "published": "2025-11-04T23:15:44.170",
+    "keywords": "command,bypass"
+  },
+  "CVE-2025-64109": {
+    "cvss": 8.8,
+    "description": "Cursor is a code editor built for programming with AI. In versions and below, a vulnerability in the Cursor CLI Beta allowed an attacker to achieve remote code execution through the MCP (Model Context Protocol) server mechanism by uploading a malicious MCP configuration in .cursor/mcp.json file in a GitHub repository. Once a victim clones the project and opens it using Cursor CLI, the command to run the malicious MCP server is immediately executed without any warning, leading to potential code execution as soon as the command runs. This issue is fixed in version 2025.09.17-25b418f.",
+    "published": "2025-11-05T00:15:34.810",
+    "keywords": "remote,execution,command"
   }
 }
