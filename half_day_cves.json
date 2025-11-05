@@ -184,5 +184,11 @@
     "cvss": "-",
     "description": "The expr-eval library is a JavaScript expression parser and evaluator designed to safely evaluate mathematical expressions with user-defined variables. However, due to insufficient input validation, an attacker can pass a crafted variables object into the evaluate() function and trigger arbitrary code execution.",
     "published": "2025-11-05T01:15:33.313"
+  },
+  "CVE-2025-8871": {
+    "cvss": 5.6,
+    "description": "The Everest Forms (Pro) plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.9.7 via deserialization of untrusted input in the mime_content_type() function. This makes it possible for unauthenticated attackers to inject a PHP Object. This vulnerability may be exploited by unauthenticated attackers when a form is present on the site with a non-required signature form field along with an image upload field. No known POP chain is present in the vulnerable software, which means this vulnerability has no impact unless another plugin or theme containing a POP chain is installed on the site. If a POP chain is present via an additional plugin or theme installed on the target system, it may allow the attacker to perform actions like delete arbitrary files, retrieve sensitive data, or execute code depending on the POP chain present. This vulnerability is only exploitable in PHP versions prior to 8.",
+    "published": "2025-11-05T03:15:42.880",
+    "keywords": "unauthenticated,sensitive"
   }
 }

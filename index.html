@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-11-05T03:06:02.615329
+Updated at UTC 2025-11-05T04:16:34.788662
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2025-11-05T03:06:02.615329
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 				<tr>
@@ -162,6 +164,16 @@ Updated at UTC 2025-11-05T03:06:02.615329
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-8871">CVE-2025-8871</a></td>
+					<td>5.6</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2025-11-05T03:15:42.880</td>
+					<td class=description>The Everest Forms (Pro) plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.9.7 via deserialization of untrusted input in the mime_content_type() function. This makes it possible for unauthenticated attackers to inject a PHP Object. This vulnerability may be exploited by unauthenticated attackers when a form is present on the site with a non-required signature form field along with an image upload field. No known POP chain is present in the vulnerable software, which means this vulnerability has no impact unless another plugin or theme containing a POP chain is installed on the site. If a POP chain is present via an additional plugin or theme installed on the target system, it may allow the attacker to perform actions like delete arbitrary files, retrieve sensitive data, or execute code depending on the POP chain present. This vulnerability is only exploitable in PHP versions prior to 8.</td>
+				</tr>
+			
 		
 			
 		
