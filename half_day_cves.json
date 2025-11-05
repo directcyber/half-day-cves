@@ -181,7 +181,7 @@
   },
   "CVE-2025-12735": {
     "url": "https://github.com/silentmatt/expr-eval/pull/288",
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "The expr-eval library is a JavaScript expression parser and evaluator designed to safely evaluate mathematical expressions with user-defined variables. However, due to insufficient input validation, an attacker can pass a crafted variables object into the evaluate() function and trigger arbitrary code execution.",
     "published": "2025-11-05T01:15:33.313"
   },
@@ -340,5 +340,11 @@
     "description": "An arbitrary file upload vulnerability exists in multiple WSO2 products due to insufficient validation of uploaded content and destination in SOAP admin services. A malicious actor with administrative privileges can upload a specially crafted file to a user-controlled location within the deployment.\n\nSuccessful exploitation may lead to remote code execution (RCE) on the server, depending on how the uploaded file is processed. By default, this vulnerability is only exploitable by users with administrative access to the affected SOAP services.",
     "published": "2025-11-05T18:15:33.347",
     "keywords": "remote,execution"
+  },
+  "CVE-2025-12745": {
+    "url": "https://github.com/bellard/quickjs/commit/c6fe5a98fd3ef3b7064e6e0145dfebfe12449fea",
+    "cvss": 5.3,
+    "description": "A weakness has been identified in QuickJS up to eb2c89087def1829ed99630cb14b549d7a98408c. This affects the function js_array_buffer_slice of the file quickjs.c. This manipulation causes buffer over-read. The attack is restricted to local execution. The exploit has been made available to the public and could be exploited. This product adopts a rolling release strategy to maintain continuous delivery Patch name: c6fe5a98fd3ef3b7064e6e0145dfebfe12449fea. To fix this issue, it is recommended to deploy a patch.",
+    "published": "2025-11-05T19:15:50.390"
   }
 }
