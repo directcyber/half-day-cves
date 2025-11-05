@@ -348,9 +348,15 @@
     "published": "2025-11-05T19:15:50.390"
   },
   "CVE-2025-63334": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "PocketVJ CP PocketVJ-CP-v3 pvj version 3.9.1 contains an unauthenticated remote code execution vulnerability in the submit_opacity.php component. The application fails to sanitize user input in the opacityValue POST parameter before passing it to a shell command, allowing remote attackers to execute arbitrary commands with root privileges on the underlying system.",
     "published": "2025-11-05T20:15:36.507",
     "keywords": "remote,execution,unauthenticated,command"
+  },
+  "CVE-2025-63585": {
+    "url": "https://github.com/opensource-socialnetwork/opensource-socialnetwork/issues/2503",
+    "cvss": "-",
+    "description": "OSSN (Open Source Social Network) 8.6 is vulnerable to SQL Injection in /action/rtcomments/status via the timestamp parameter.",
+    "published": "2025-11-05T21:15:36.357"
   }
 }
