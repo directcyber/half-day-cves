@@ -346,5 +346,11 @@
     "cvss": 5.3,
     "description": "A weakness has been identified in QuickJS up to eb2c89087def1829ed99630cb14b549d7a98408c. This affects the function js_array_buffer_slice of the file quickjs.c. This manipulation causes buffer over-read. The attack is restricted to local execution. The exploit has been made available to the public and could be exploited. This product adopts a rolling release strategy to maintain continuous delivery Patch name: c6fe5a98fd3ef3b7064e6e0145dfebfe12449fea. To fix this issue, it is recommended to deploy a patch.",
     "published": "2025-11-05T19:15:50.390"
+  },
+  "CVE-2025-63334": {
+    "cvss": "-",
+    "description": "PocketVJ CP PocketVJ-CP-v3 pvj version 3.9.1 contains an unauthenticated remote code execution vulnerability in the submit_opacity.php component. The application fails to sanitize user input in the opacityValue POST parameter before passing it to a shell command, allowing remote attackers to execute arbitrary commands with root privileges on the underlying system.",
+    "published": "2025-11-05T20:15:36.507",
+    "keywords": "remote,execution,unauthenticated,command"
   }
 }
