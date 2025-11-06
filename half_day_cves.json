@@ -1,16 +1,4 @@
 {
-  "CVE-2025-60892": {
-    "url": "https://github.com/raspberrypi/rpi-imager/issues/1185",
-    "cvss": 6.8,
-    "description": "An issue in Raspberry Pi Imager version 1.9.6 for Windows, affecting its OS customization feature. The imager's 'public-key authentication' setting unintentionally re-adds a user's id_rsa.pub key from their local Windows machine to the authorized_keys file on the Raspberry Pi, even after the user explicitly deletes the key from the user interface. This creates an unintended attack surface, as it could allow an attacker to use a different key than the intended one to login to the device.",
-    "published": "2025-11-03T15:15:36.040"
-  },
-  "CVE-2025-60785": {
-    "cvss": 8.8,
-    "description": "A remote code execution (RCE) vulnerability in the Postgres Drivers component of iceScrum v7.54 Pro On-prem allows attackers to execute arbitrary code via a crafted HTML page.",
-    "published": "2025-11-03T16:15:35.470",
-    "keywords": "remote,execution"
-  },
   "CVE-2025-11953": {
     "cvss": 9.8,
     "description": "The Metro Development Server, which is opened by the React Native Community CLI, binds to external interfaces by default. The server exposes an endpoint that is vulnerable to OS command injection. This allows unauthenticated network attackers to send a POST request to the server and run arbitrary executables. On Windows, the attackers can also execute arbitrary shell commands with fully controlled arguments.",
@@ -352,5 +340,17 @@
     "description": "The Strong Testimonials plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 3.2.16. This is due to the software allowing users to submit a testimonial in which a value is not properly validated or sanitized prior to being passed to a do_shortcode call. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes if an administrator previews or publishes a crafted testimonial.",
     "published": "2025-11-06T09:15:33.197",
     "keywords": "execution,unauthenticated"
+  },
+  "CVE-2025-58595": {
+    "cvss": "-",
+    "description": "Authentication Bypass by Spoofing vulnerability in Saad Iqbal All In One Login change-wp-admin-login allows Identity Spoofing.This issue affects All In One Login: from n/a through <= 2.0.8.",
+    "published": "2025-11-06T16:15:59.233",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-62064": {
+    "cvss": "-",
+    "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Elated-Themes Search & Go search-and-go allows Password Recovery Exploitation.This issue affects Search & Go: from n/a through <= 2.7.",
+    "published": "2025-11-06T16:16:12.327",
+    "keywords": "authentication,bypass"
   }
 }
