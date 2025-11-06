@@ -1,10 +1,4 @@
 {
-  "CVE-2025-12531": {
-    "cvss": 9.1,
-    "description": "IBM InfoSphere Information Server 11.7.0.0 through 11.7.1.6 is vulnerable to an XML external entity injection (XXE) attack when processing XML data. A remote attacker could exploit this vulnerability to expose sensitive information or consume memory resources.",
-    "published": "2025-11-03T20:17:06.247",
-    "keywords": "remote,sensitive"
-  },
   "CVE-2025-43376": {
     "cvss": 7.5,
     "description": "A logic issue was addressed with improved state management. This issue is fixed in Safari 26, tvOS 26, watchOS 26, iOS 26 and iPadOS 26, visionOS 26. A remote attacker may be able to view leaked DNS queries with Private Relay turned on.",
@@ -336,7 +330,7 @@
     "keywords": "authentication,bypass"
   },
   "CVE-2025-63588": {
-    "cvss": "-",
+    "cvss": 7.1,
     "description": "An unauthenticated reflected cross-site scripting vulnerability in the query handling of CMSimpleXH allows remote attackers to inject and execute arbitrary JavaScript in a victim's browser via a crafted request (e.g., a maliciously crafted POST login). Successful exploitation may lead to theft of session cookies, credential disclosure, or other client-side impacts.",
     "published": "2025-11-06T17:15:46.197",
     "keywords": "remote,unauthenticated"
@@ -346,5 +340,17 @@
     "cvss": "-",
     "description": "A Server-Side Request Forgery (SSRF) in the /api/proxy/ component of linshenkx prompt-optimizer v1.3.0 to v1.4.2 allows attackers to scan internal resources via a crafted request.",
     "published": "2025-11-06T19:15:41.790"
+  },
+  "CVE-2025-12490": {
+    "cvss": 8.8,
+    "description": "Netgate pfSense CE Suricata Path Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to create arbitrary files on affected installations of Netgate pfSense. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the Suricata package. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to create files in the context of root. Was ZDI-CAN-28085.",
+    "published": "2025-11-06T20:15:46.643",
+    "keywords": "remote,execution,authentication"
+  },
+  "CVE-2025-34239": {
+    "cvss": "-",
+    "description": "Advantech WebAccess/VPN versions prior to 1.1.5 contain a command injection vulnerability in\u00a0AppManagementController.appUpgradeAction()\u00a0that allows an authenticated system administrator to execute arbitrary commands as the web server user (www-data) by supplying a crafted uploaded filename.",
+    "published": "2025-11-06T20:15:47.757",
+    "keywords": "command,vpn"
   }
 }
