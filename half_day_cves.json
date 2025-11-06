@@ -358,5 +358,11 @@
     "cvss": "-",
     "description": "OSSN (Open Source Social Network) 8.6 is vulnerable to SQL Injection in /action/rtcomments/status via the timestamp parameter.",
     "published": "2025-11-05T21:15:36.357"
+  },
+  "CVE-2025-55278": {
+    "cvss": 8.1,
+    "description": "Improper authentication in the API authentication middleware of HCL DevOps Loop allows authentication tokens to be accepted without proper validation of their expiration and cryptographic signature.  As a result, an attacker could potentially use expired or tampered tokens to gain unauthorized access to sensitive resources and perform actions with elevated privileges.",
+    "published": "2025-11-05T23:16:05.147",
+    "keywords": "authentication,sensitive"
   }
 }
