@@ -358,5 +358,11 @@
     "description": "Improper authentication in the API authentication middleware of HCL DevOps Loop allows authentication tokens to be accepted without proper validation of their expiration and cryptographic signature.  As a result, an attacker could potentially use expired or tampered tokens to gain unauthorized access to sensitive resources and perform actions with elevated privileges.",
     "published": "2025-11-05T23:16:05.147",
     "keywords": "authentication,sensitive"
+  },
+  "CVE-2025-11271": {
+    "cvss": 5.3,
+    "description": "The Easy Digital Downloads plugin for WordPress is vulnerable to Order Manipulation in all versions up to, and including, 3.5.2 due to an order verification bypass. The verification is unconditionally skipped when the POST body includes verification_override=1. Because this value is attacker-supplied, an unauthenticated actor can submit a forged IPN and have it treated as verified, even on production sites and with verification otherwise enabled. A valid PayPal transaction id is needed, restricting order manipulation to orders placed by the attacker.  This, in turn, requires them to have a customer account.",
+    "published": "2025-11-06T05:15:54.917",
+    "keywords": "unauthenticated,bypass"
   }
 }

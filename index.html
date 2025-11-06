@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-11-06T05:13:52.984151
+Updated at UTC 2025-11-06T06:20:07.559480
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2025-11-06T05:13:52.984151
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -250,6 +252,16 @@ Updated at UTC 2025-11-06T05:13:52.984151
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-11271">CVE-2025-11271</a></td>
+					<td>5.3</td>
+					<td>unauthenticated,bypass</td>
+					<td class=date>2025-11-06T05:15:54.917</td>
+					<td class=description>The Easy Digital Downloads plugin for WordPress is vulnerable to Order Manipulation in all versions up to, and including, 3.5.2 due to an order verification bypass. The verification is unconditionally skipped when the POST body includes verification_override=1. Because this value is attacker-supplied, an unauthenticated actor can submit a forged IPN and have it treated as verified, even on production sites and with verification otherwise enabled. A valid PayPal transaction id is needed, restricting order manipulation to orders placed by the attacker.  This, in turn, requires them to have a customer account.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
