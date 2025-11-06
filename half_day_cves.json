@@ -1,16 +1,4 @@
 {
-  "CVE-2025-11953": {
-    "cvss": 9.8,
-    "description": "The Metro Development Server, which is opened by the React Native Community CLI, binds to external interfaces by default. The server exposes an endpoint that is vulnerable to OS command injection. This allows unauthenticated network attackers to send a POST request to the server and run arbitrary executables. On Windows, the attackers can also execute arbitrary shell commands with fully controlled arguments.",
-    "published": "2025-11-03T17:15:32.677",
-    "keywords": "unauthenticated,command"
-  },
-  "CVE-2025-63441": {
-    "url": "https://github.com/opensource-socialnetwork/opensource-socialnetwork/issues/2501",
-    "cvss": 7.3,
-    "description": "Open Source Social Network (OSSN) 8.6 is vulnerable to Cross Site Scripting (XSS) via the parameter param` at endpoint u/administrator/friends.",
-    "published": "2025-11-03T17:15:33.327"
-  },
   "CVE-2025-8558": {
     "cvss": "-",
     "description": "Insider Threat Management (ITM) Server\u00a0versions prior to 7.17.2\u00a0contain an authentication bypass vulnerability that allows unauthenticated users on an adjacent network to perform agent unregistration when the number of registered agents exceeds the licensed limit. Successful exploitation prevents the server from receiving new events from affected agents, resulting in a partial loss of integrity and availability with no impact to confidentiality.",
@@ -348,9 +336,15 @@
     "keywords": "authentication,bypass"
   },
   "CVE-2025-62064": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Elated-Themes Search & Go search-and-go allows Password Recovery Exploitation.This issue affects Search & Go: from n/a through <= 2.7.",
     "published": "2025-11-06T16:16:12.327",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2025-63588": {
+    "cvss": "-",
+    "description": "An unauthenticated reflected cross-site scripting vulnerability in the query handling of CMSimpleXH allows remote attackers to inject and execute arbitrary JavaScript in a victim's browser via a crafted request (e.g., a maliciously crafted POST login). Successful exploitation may lead to theft of session cookies, credential disclosure, or other client-side impacts.",
+    "published": "2025-11-06T17:15:46.197",
+    "keywords": "remote,unauthenticated"
   }
 }
