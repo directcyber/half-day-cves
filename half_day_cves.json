@@ -1,152 +1,344 @@
 {
-  "CVE-2025-12905": {
-    "cvss": 5.4,
-    "description": "Inappropriate implementation in Downloads in Google Chrome on Windows prior to 140.0.7339.80 allowed a remote attacker to bypass Mark of the Web via a crafted HTML page. (Chromium security severity: Low)",
-    "published": "2025-11-08T00:15:35.203",
-    "keywords": "remote,bypass"
+  "CVE-2025-59367": {
+    "cvss": "-",
+    "description": "An authentication bypass vulnerability has been identified in certain DSL series routers, may allow remote attackers to gain unauthorized access into the affected system. Refer to the 'Security Update for DSL Series Router' section on the ASUS Security Advisory for more information.",
+    "published": "2025-11-13T03:16:26.327",
+    "keywords": "remote,authentication,bypass"
   },
-  "CVE-2025-12909": {
-    "cvss": 5.3,
-    "description": "Insufficient policy enforcement in Devtools in Google Chrome prior to 140.0.7339.80 allowed a remote attacker to leak cross-origin data via Devtools. (Chromium security severity: Low)",
-    "published": "2025-11-08T00:15:35.717",
-    "keywords": "remote,leak"
-  },
-  "CVE-2025-64496": {
-    "cvss": 7.3,
-    "description": "Open WebUI is a self-hosted artificial intelligence platform designed to operate entirely offline. Versions 0.6.224 and prior contain a code injection vulnerability in the Direct Connections feature that allows malicious external model servers to execute arbitrary JavaScript in victim browsers via Server-Sent Event (SSE) execute events. This leads to authentication token theft, complete account takeover, and when chained with the Functions API, enables remote code execution on the backend server. The attack requires the victim to enable Direct Connections (disabled by default) and add the attacker's malicious model URL, achievable through social engineering of the admin and subsequent users. This issue is fixed in version 0.6.35.",
-    "published": "2025-11-08T02:15:35.443",
-    "keywords": "remote,execution,authentication"
-  },
-  "CVE-2025-11452": {
-    "cvss": 7.5,
-    "description": "The Asgaros Forum plugin for WordPress is vulnerable to SQL Injection via the '$_COOKIE['asgarosforum_unread_exclude']' cookie in all versions up to, and including, 3.1.0 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
-    "published": "2025-11-08T03:15:36.117",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2025-12000": {
+  "CVE-2025-12089": {
     "cvss": 6.5,
-    "description": "The WPFunnels plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the wpfnl_delete_log() function in all versions up to, and including, 3.6.2. This makes it possible for authenticated attackers, with Administrator-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
-    "published": "2025-11-08T04:15:43.753",
+    "description": "The Data Tables Generator by Supsystic plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the cleanCache() function in all versions up to, and including, 1.10.45. This makes it possible for authenticated attackers, with Administrator-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).",
+    "published": "2025-11-13T04:15:45.723",
     "keywords": "remote,execution"
   },
-  "CVE-2025-12161": {
-    "cvss": 8.8,
-    "description": "The Smart Auto Upload Images plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the auto-image creation functionality in all versions up to, and including, 1.2.0. This makes it possible for authenticated attackers, with Contributor-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2025-11-08T04:15:44.677",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-12098": {
+  "CVE-2025-12536": {
     "cvss": 5.3,
-    "description": "The Academy LMS \u2013 WordPress LMS Plugin for Complete eLearning Solution plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.3.8 via the 'enqueue_social_login_script' function. This makes it possible for unauthenticated attackers to extract sensitive data including the Facebook App Secret if Facebook Social Login is enabled.",
-    "published": "2025-11-08T09:15:33.767",
+    "description": "The SureForms plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.13.1 via the '_srfm_email_notification' post meta registration. This is due to setting the 'auth_callback' parameter to '__return_true', which allows unauthenticated access to the metadata. This makes it possible for unauthenticated attackers to extract sensitive data including email notification configurations, which frequently contain vendor-provided CRM/help desk dropbox addresses, CC/BCC recipients, and notification templates that can be abused to inject malicious data into downstream systems.",
+    "published": "2025-11-13T04:15:46.130",
     "keywords": "unauthenticated,sensitive"
   },
-  "CVE-2025-11967": {
-    "cvss": 7.2,
-    "description": "The Mail Mint plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the process_contact_attribute_import function in all versions up to, and including, 1.18.10. This makes it possible for authenticated attackers, with Administrator-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2025-11-08T10:15:40.643",
+  "CVE-2025-12733": {
+    "cvss": 8.8,
+    "description": "The Import any XML, CSV or Excel File to WordPress (WP All Import) plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 3.9.6. This is due to the use of eval() on unsanitized user-supplied input in the pmxi_if function within helpers/functions.php. This makes it possible for authenticated attackers, with import capabilities (typically administrators), to inject and execute arbitrary PHP code on the server via crafted import templates. This can lead to remote code execution.",
+    "published": "2025-11-13T04:15:46.340",
     "keywords": "remote,execution"
   },
-  "CVE-2025-12399": {
-    "cvss": 7.2,
-    "description": "The Alex Reservations: Smart Restaurant Booking plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the /wp-json/srr/v1/app/upload/file REST endpoint in all versions up to, and including, 2.2.3. This makes it possible for authenticated attackers, with Administrator-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2025-11-08T10:15:41.383",
+  "CVE-2025-12681": {
+    "cvss": 5.3,
+    "description": "The Comment Edit Core \u2013 Simple Comment Editing plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.1.0 via the 'ajax_get_comment' function. This makes it possible for unauthenticated attackers to extract sensitive data including user IDs, IP addresses, and email addresses.",
+    "published": "2025-11-13T08:15:48.260",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-11260": {
+    "cvss": 5.3,
+    "description": "The WP Headless CMS Framework plugin for WordPress is vulnerable to protection mechanism bypass in all versions up to, and including, 1.15. This is due to the plugin only checking for the existence of the Authorization header in a request when determining if the nonce protection should be bypassed. This makes it possible for unauthenticated attackers to access content they should not have access to.",
+    "published": "2025-11-13T09:15:46.623",
+    "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2025-12762": {
+    "cvss": 9.1,
+    "description": "pgAdmin versions up to 9.9 are affected by a Remote Code Execution (RCE) vulnerability that occurs when running in server mode and performing restores from PLAIN-format dump files. This issue allows attackers to inject and execute arbitrary commands on the server hosting pgAdmin, posing a critical risk to the integrity and security of the database management system and underlying data.",
+    "published": "2025-11-13T13:15:44.620",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2025-12763": {
+    "url": "https://github.com/pgadmin-org/pgadmin4/issues/9323",
+    "cvss": 6.8,
+    "description": "pgAdmin 4 versions up to 9.9 are affected by a command injection vulnerability on Windows systems. This issue is caused by the use of shell=True during backup and restore operations, enabling attackers to execute arbitrary system commands by providing specially crafted file path input.",
+    "published": "2025-11-13T13:15:44.777"
+  },
+  "CVE-2025-12764": {
+    "url": "https://github.com/pgadmin-org/pgadmin4/issues/9325",
+    "cvss": 7.5,
+    "description": "pgAdmin <= 9.9\u00a0 is affected by an LDAP injection vulnerability in the LDAP authentication flow that allows an attacker to inject special LDAP characters in the username, causing the DC/LDAP server and the client to process an unusual amount of data DOS.",
+    "published": "2025-11-13T13:15:44.910"
+  },
+  "CVE-2025-12765": {
+    "cvss": 7.5,
+    "description": "pgAdmin <= 9.9\u00a0 is affected by a\u00a0vulnerability in the LDAP authentication mechanism allows bypassing TLS certificate verification.",
+    "published": "2025-11-13T13:15:45.037",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-62483": {
+    "cvss": 5.3,
+    "description": "Improper removal of sensitive information in certain Zoom Clients before version 6.5.10 may allow an unauthenticated user to conduct a disclosure of information via network access.",
+    "published": "2025-11-13T15:15:51.860",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-60682": {
+    "cvss": 6.5,
+    "description": "A command injection vulnerability exists in the ToToLink A720R Router firmware V4.1.5cu.614_B20230630 within the cloudupdate_check binary, specifically in the sub_402414 function that handles cloud update parameters. User-supplied 'magicid' and 'url' values are directly concatenated into shell commands and executed via system() without any sanitization or escaping. An unauthenticated remote attacker can exploit this vulnerability to execute arbitrary commands on the device.",
+    "published": "2025-11-13T16:15:52.080",
+    "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2025-60684": {
+    "cvss": 6.5,
+    "description": "A stack buffer overflow vulnerability exists in the ToToLink LR1200GB (V9.1.0u.6619_B20230130) and NR1800X (V9.1.0u.6681_B20230703) Router firmware within the cstecgi.cgi binary (sub_42F32C function). The web interface reads the \"lang\" parameter and constructs Help URL strings using sprintf() into fixed-size stack buffers without proper length validation. Maliciously crafted input can overflow these buffers, potentially leading to arbitrary code execution or memory corruption, without requiring authentication.",
+    "published": "2025-11-13T16:15:52.337",
+    "keywords": "execution,authentication"
+  },
+  "CVE-2025-60687": {
+    "cvss": 6.5,
+    "description": "An unauthenticated command injection vulnerability exists in the ToToLink LR1200GB Router firmware V9.1.0u.6619_B20230130 within the cstecgi.cgi binary (sub_41EC68 function). The binary reads the \"imei\" parameter from a web request and verifies only that it is 15 characters long. The parameter is then directly inserted into a system command using sprintf() and executed with system(). Maliciously crafted IMEI input can execute arbitrary commands on the router without authentication.",
+    "published": "2025-11-13T16:15:52.720",
+    "keywords": "unauthenticated,authentication,command"
+  },
+  "CVE-2025-60688": {
+    "cvss": 6.5,
+    "description": "A stack buffer overflow vulnerability exists in the ToToLink LR1200GB (V9.1.0u.6619_B20230130) and NR1800X (V9.1.0u.6681_B20230703) Router firmware within the cstecgi.cgi binary (setDefResponse function). The binary reads the \"IpAddress\" parameter from a web request and copies it into a fixed-size stack buffer using strcpy() without any length validation. Maliciously crafted input can overflow the buffer, leading to potential arbitrary code execution or memory corruption, without requiring authentication.",
+    "published": "2025-11-13T16:15:52.850",
+    "keywords": "execution,authentication"
+  },
+  "CVE-2025-60689": {
+    "cvss": 5.4,
+    "description": "An unauthenticated command injection vulnerability exists in the Start_EPI function of the httpd binary on Linksys E1200 v2 routers (Firmware E1200_v2.0.11.001_us.tar.gz). The vulnerability occurs because user-supplied CGI parameters (wl_ant, wl_ssid, wl_rate, ttcp_num, ttcp_ip, ttcp_size) are concatenated into system command strings without proper sanitization and executed via wl_exec_cmd. Successful exploitation allows remote attackers to execute arbitrary commands on the device without authentication.",
+    "published": "2025-11-13T16:15:52.970",
+    "keywords": "remote,unauthenticated,authentication,command"
+  },
+  "CVE-2025-64714": {
+    "cvss": 5.8,
+    "description": "PrivateBin is an online pastebin where the server has zero knowledge of pasted data. Starting in version 1.7.7 and prior to version 2.0.3, an unauthenticated Local File Inclusion exists in the template-switching feature. If `templateselection` is enabled in the configuration, the server trusts the `template` cookie and includes the referenced PHP file. An attacker can read sensitive data or, if they manage to drop a PHP file elsewhere, gain remote code execution. The constructed path of the template file is checked for existence, then included. For PrivateBin project files this does not leak any secrets due to data files being created with PHP code that prevents execution, but if a configuration file without that line got created or the visitor figures out the relative path to a PHP script that directly performs an action without appropriate privilege checking, those might execute or leak information. The issue has been patched in version 2.0.3. As a workaround, set `templateselection = false` (which is the default) in `cfg/conf.php` or remove it entirely",
+    "published": "2025-11-13T16:15:56.790",
+    "keywords": "remote,execution,unauthenticated,sensitive,leak"
+  },
+  "CVE-2025-64717": {
+    "cvss": "-",
+    "description": "ZITADEL is an open source identity management platform. Starting in version 2.50.0 and prior to versions 2.71.19, 3.4.4, and 4.6.6, a vulnerability in ZITADEL's federation process allowed auto-linking users from external identity providers to existing users in ZITADEL even if the corresponding IdP was not active or if the organization did not allow federated authentication. This vulnerability stems from the platform's failure to correctly check or enforce an organization's specific security settings during the authentication flow. An Organization Administrator can explicitly disable an IdP or disallow federation, but this setting was not being honored during the auto-linking process. This allowed an unauthenticated attacker to initiate a login using an IdP that should have been disabled for that organization. The platform would incorrectly validate the login and, based on a matching criteria, link the attacker's external identity to an existing internal user account. This may result in a full Account Takeover, bypassing the organization's mandated security controls. Note that accounts with MFA enabled can not be taken over by this attack. Also note that only IdPs create on an instance level would allow this to work. IdPs registered on another organization would always be denied in the (auto-)linking process. Versions 4.6.6, 3.4.4, and 2.71.19 resolve the issue by correctly validating the organization's login policy before auto-linking an external user. No known workarounds are available aside from upgrading.",
+    "published": "2025-11-13T16:15:56.973",
+    "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2025-11538": {
+    "cvss": 6.8,
+    "description": "A vulnerability exists in Keycloak's server distribution where enabling debug mode (--debug <port>) insecurely defaults to binding the Java Debug Wire Protocol (JDWP) port to all network interfaces (0.0.0.0). This exposes the debug port to the local network, allowing an attacker on the same network segment to attach a remote debugger and achieve remote code execution within the Keycloak Java virtual machine.",
+    "published": "2025-11-13T17:15:44.820",
     "keywords": "remote,execution"
   },
-  "CVE-2025-12916": {
+  "CVE-2025-20349": {
     "cvss": 6.3,
-    "description": "A vulnerability was determined in Sangfor Operation and Maintenance Security Management System 3.0. Impacted is an unknown function of the file /fort/portal_login of the component Frontend. This manipulation of the argument loginUrl causes command injection. The attack may be initiated remotely. The exploit has been publicly disclosed and may be utilized. Upgrading to version 3.0.11 and 3.0.12 is recommended to address this issue. It is advisable to upgrade the affected component.",
-    "published": "2025-11-09T00:15:40.660",
+    "description": "A vulnerability in the REST API of Cisco Catalyst Center could allow an authenticated, remote attacker to execute arbitrary commands in a restricted container as the root user.\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input in REST API request parameters. An attacker could exploit this vulnerability by sending a crafted API request to an affected device. A successful exploit could allow the attacker to inject arbitrary commands that would then be executed in a restricted container with root privileges. To exploit this vulnerability, the attacker must have valid credentials for a user account with at least the role of Observer.",
+    "published": "2025-11-13T17:15:45.817",
     "keywords": "remote,command"
   },
-  "CVE-2025-12924": {
-    "url": "https://github.com/rymcu/forest/issues/198",
-    "cvss": 4.3,
-    "description": "A vulnerability was identified in rymcu forest up to de53ce79db9faa2efc4e79ce1077a302c42a1224. This issue affects the function GlobalResult of the file src/main/java/com/rymcu/forest/web/api/bank/BankController.java. The manipulation leads to missing authorization. The attack may be initiated remotely. This product uses a rolling release model to deliver continuous updates. As a result, specific version information for affected or updated releases is not available.",
-    "published": "2025-11-10T02:15:34.097"
+  "CVE-2025-20353": {
+    "cvss": 6.1,
+    "description": "A vulnerability in the web-based management interface of Cisco Catalyst Center could allow an unauthenticated, remote attacker to conduct a cross-site scripting (XSS) attack against a user of the interface of an affected device.\r\n\r\nThis vulnerability is due to insufficient validation of user input. An attacker could exploit this vulnerability by persuading a user of the web-based management interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.",
+    "published": "2025-11-13T17:15:46.017",
+    "keywords": "remote,unauthenticated,sensitive"
   },
-  "CVE-2025-12925": {
-    "url": "https://github.com/rymcu/forest/issues/199",
-    "cvss": 7.3,
-    "description": "A security flaw has been discovered in rymcu forest up to de53ce79db9faa2efc4e79ce1077a302c42a1224. Impacted is the function getAll/addDic/getAllDic/deleteDic of the file src/main/java/com/rymcu/forest/lucene/api/UserDicController.java. The manipulation results in missing authorization. The attack may be launched remotely. This product operates on a rolling release basis, ensuring continuous delivery. Consequently, there are no version details for either affected or updated releases.",
-    "published": "2025-11-10T02:15:34.917"
-  },
-  "CVE-2025-12864": {
-    "cvss": 8.8,
-    "description": "U-Office Force developed by e-Excellence has a SQL Injection vulnerability, allowing authenticated remote attacker to inject arbitrary SQL commands to read, modify, and delete database contents.",
-    "published": "2025-11-10T03:15:42.017",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-12865": {
-    "cvss": 8.8,
-    "description": "U-Office Force developed by e-Excellence has a SQL Injection vulnerability, allowing authenticated remote attacker to inject arbitrary SQL commands to read, modify, and delete database contents.",
-    "published": "2025-11-10T03:15:42.280",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-12866": {
-    "cvss": 9.8,
-    "description": "EIP Plus developed by Hundred Plus has a Weak Password Recovery Mechanism vulnerability, allowing unauthenticated remote attacker to predict or brute-force the 'forgot password' link, thereby successfully resetting any user's password.",
-    "published": "2025-11-10T03:15:42.467",
+  "CVE-2025-20355": {
+    "cvss": 4.7,
+    "description": "A vulnerability in the web-based management interface of Cisco Catalyst Center Virtual Appliance could allow an unauthenticated, remote attacker to redirect a user to a malicious web page.\r\n\r\nThis vulnerability is due to improper input validation of HTTP request parameters. An attacker could exploit this vulnerability by intercepting and modifying an HTTP request from a user. A successful exploit could allow the attacker to redirect the user to a malicious web page.",
+    "published": "2025-11-13T17:15:46.220",
     "keywords": "remote,unauthenticated"
   },
-  "CVE-2025-12867": {
-    "cvss": 7.2,
-    "description": "EIP Plus developed by Hundred Plus has an Arbitrary File Uplaod vulnerability, allowing privileged remote attackers to upload and execute web shell backdoors, thereby enabling arbitrary code execution on the server.",
-    "published": "2025-11-10T04:15:41.360",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-12868": {
-    "cvss": 9.8,
-    "description": "New Site Server developed by CyberTutor has a Use of Client-Side Authentication vulnerability, allowing unauthenticated remote attackers to modify the frontend code to gain administrator privileges on the website.",
-    "published": "2025-11-10T04:15:41.563",
-    "keywords": "remote,unauthenticated,authentication"
-  },
-  "CVE-2025-63711": {
-    "cvss": 7.1,
-    "description": "A Cross-Site Request Forgery (CSRF) vulnerability in the SourceCodester Client Database Management System 1.0 allows an attacker to cause an authenticated administrative user to perform user deletion actions without their consent. The application's user deletion endpoint (e.g., superadmin_user_delete.php) accepts POST requests containing a user_id parameter and does not enforce request origin or anti-CSRF tokens. Because the endpoint lacks proper authentication/authorization checks and CSRF protections, a remote attacker can craft a malicious page that triggers deletion when visited by an authenticated admin, resulting in arbitrary removal of user accounts.",
-    "published": "2025-11-10T15:15:38.057",
+  "CVE-2025-60690": {
+    "cvss": 8.8,
+    "description": "A stack-based buffer overflow exists in the get_merge_ipaddr function of the httpd binary on Linksys E1200 v2 routers (Firmware E1200_v2.0.11.001_us.tar.gz). The function concatenates up to four user-supplied CGI parameters matching <parameter>_0~3 into a fixed-size buffer (a2) without bounds checking. Remote attackers can exploit this vulnerability via specially crafted HTTP requests to execute arbitrary code or cause denial of service without authentication.",
+    "published": "2025-11-13T17:15:48.980",
     "keywords": "remote,authentication"
   },
-  "CVE-2025-63835": {
-    "cvss": "-",
-    "description": "A stack-based buffer overflow vulnerability was discovered in Tenda AC18 v15.03.05.05_multi. The vulnerability exists in the guestSsid parameter of the /goform/WifiGuestSet interface. Remote attackers can exploit this vulnerability by sending oversized data to the guestSsid parameter, leading to denial of service (device crash) or potential remote code execution.",
-    "published": "2025-11-10T17:15:35.960",
-    "keywords": "remote,execution"
+  "CVE-2025-60691": {
+    "cvss": 8.8,
+    "description": "A stack-based buffer overflow exists in the httpd binary of Linksys E1200 v2 routers (Firmware E1200_v2.0.11.001_us.tar.gz). The apply_cgi and block_cgi functions copy user-supplied input from the \"url\" CGI parameter into stack buffers (v36, v29) using sprintf without bounds checking. Because these buffers are allocated as single-byte variables, any non-empty input will trigger a buffer overflow. Remote attackers can exploit this vulnerability via crafted HTTP requests to execute arbitrary code or cause denial of service without authentication.",
+    "published": "2025-11-13T17:15:49.117",
+    "keywords": "remote,authentication"
   },
-  "CVE-2025-43079": {
-    "cvss": 6.3,
-    "description": "The Qualys Cloud Agent included a bundled uninstall script (qagent_uninstall.sh), specific to MacOS and Linux supported versions that invoked multiple system commands without using absolute paths and without sanitizing the $PATH environment. If the uninstall script is executed with elevated privileges (e.g., via sudo) in an environment where $PATH has been manipulated, an attacker with root/sudo privileges could cause malicious executables to be run in place of the intended system binaries. This behavior can be leveraged for local privilege escalation and arbitrary command execution under elevated privileges.",
-    "published": "2025-11-10T18:16:06.420",
+  "CVE-2025-60694": {
+    "cvss": 7.5,
+    "description": "A stack-based buffer overflow exists in the validate_static_route function of the httpd binary on Linksys E1200 v2 routers (Firmware E1200_v2.0.11.001_us.tar.gz). The function improperly concatenates user-supplied CGI parameters (route_ipaddr_0~3, route_netmask_0~3, route_gateway_0~3) into fixed-size buffers (v6, v10, v14) without proper bounds checking. Remote attackers can exploit this vulnerability via specially crafted HTTP requests to execute arbitrary code or cause denial of service without authentication.",
+    "published": "2025-11-13T17:15:49.373",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2025-60693": {
+    "cvss": 6.5,
+    "description": "A stack-based buffer overflow exists in the get_merge_mac function of the httpd binary on Linksys E1200 v2 routers (Firmware E1200_v2.0.11.001_us.tar.gz). The function concatenates up to six user-supplied CGI parameters matching <parameter>_0~5 into a fixed-size buffer (a2) without proper bounds checking, appending colon delimiters during concatenation. Remote attackers can exploit this vulnerability via specially crafted HTTP requests to execute arbitrary code or cause denial of service without authentication.",
+    "published": "2025-11-13T18:15:53.040",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2025-60697": {
+    "cvss": 7.3,
+    "description": "A command injection vulnerability exists in the D-Link DIR-882 Router firmware DIR882A1_FW102B02 within the `prog.cgi` and `rc` binaries. The `sub_4438A4` function in `prog.cgi` stores user-supplied DDNS parameters (`ServerAddress` and `Hostname`) in NVRAM via `nvram_safe_set`. These values are later retrieved in the `start_DDNS_ipv4` function of `rc` using `nvram_safe_get` and concatenated into DDNS shell commands executed via `twsystem()` without proper sanitization. Partial string comparison is performed but is insufficient to prevent command injection. An unauthenticated remote attacker can exploit this vulnerability to execute arbitrary commands on the device through specially crafted HTTP requests to the router's web interface.",
+    "published": "2025-11-13T18:15:53.753",
+    "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2025-60698": {
+    "cvss": 7.3,
+    "description": "A command injection vulnerability exists in the D-Link DIR-882 Router firmware DIR882A1_FW102B02 within the `prog.cgi` and `rc` binaries. The `sub_432F60` function in `prog.cgi` stores user-supplied `SetSysLogSettings/IPAddress` values in NVRAM via `nvram_safe_set(\"SysLogRemote_IPAddress\", ...)`. These values are later retrieved in the `sub_448DCC` function of `rc` using `nvram_safe_get` and concatenated into a shell command executed via `twsystem()` without any sanitization. An unauthenticated remote attacker can exploit this vulnerability to execute arbitrary commands on the device through specially crafted HTTP requests to the router's web interface.",
+    "published": "2025-11-13T18:15:53.880",
+    "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2025-60700": {
+    "cvss": 6.5,
+    "description": "A command injection vulnerability exists in the D-Link DIR-882 Router firmware DIR882A1_FW102B02 within the `prog.cgi` and `librcm.so` binaries. The `sub_4455BC` function in `prog.cgi` stores user-supplied `SetDMZSettings/IPAddress` values in NVRAM via `nvram_safe_set(\"dmz_ipaddr\", ...)`. These values are later retrieved in the `DMZ_run` function of `librcm.so` using `nvram_safe_get` and concatenated into `iptables` shell commands executed via `twsystem()` without any sanitization. An unauthenticated remote attacker can exploit this vulnerability to execute arbitrary commands on the device through specially crafted HTTP requests to the router's web interface.",
+    "published": "2025-11-13T18:15:54.010",
+    "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2025-60701": {
+    "cvss": 6.5,
+    "description": "A command injection vulnerability exists in the D-Link DIR-882 Router firmware DIR882A1_FW102B02 within the `prog.cgi` and `rc` binaries. The `sub_433188` function in `prog.cgi` stores user-supplied email configuration parameters (`EmailFrom`, `EmailTo`, `SMTPServerAddress`, `SMTPServerPort`, `AccountName`) in NVRAM via `nvram_safe_set`. These values are later retrieved in the `sub_448FDC` function of `rc` using `nvram_safe_get` and concatenated into shell commands executed via `twsystem()` without sanitization. An unauthenticated remote attacker can exploit this vulnerability to execute arbitrary commands on the device through specially crafted HTTP requests to the router's web interface.",
+    "published": "2025-11-13T18:15:54.137",
+    "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2025-60672": {
+    "cvss": 6.5,
+    "description": "An unauthenticated command injection vulnerability exists in the D-Link DIR-878A1 router firmware FW101B04.bin. The vulnerability occurs in the 'SetDynamicDNSSettings' functionality, where the 'ServerAddress' and 'Hostname' parameters in prog.cgi are stored in NVRAM and later used by rc to construct system commands executed via twsystem(). An attacker can exploit this vulnerability remotely without authentication by sending a specially crafted HTTP request, leading to arbitrary command execution on the device.",
+    "published": "2025-11-13T19:15:48.040",
+    "keywords": "remote,execution,unauthenticated,authentication,command"
+  },
+  "CVE-2025-60673": {
+    "cvss": 6.5,
+    "description": "An unauthenticated command injection vulnerability exists in the D-Link DIR-878A1 router firmware FW101B04.bin. The vulnerability occurs in the 'SetDMZSettings' functionality, where the 'IPAddress' parameter in prog.cgi is stored in NVRAM and later used by librcm.so to construct iptables commands executed via twsystem(). An attacker can exploit this vulnerability remotely without authentication by sending a specially crafted HTTP request, leading to arbitrary command execution on the device.",
+    "published": "2025-11-13T19:15:48.167",
+    "keywords": "remote,execution,unauthenticated,authentication,command"
+  },
+  "CVE-2025-60676": {
+    "cvss": 6.5,
+    "description": "An unauthenticated command injection vulnerability exists in the D-Link DIR-878A1 router firmware FW101B04.bin. The vulnerability occurs in the 'SetNetworkSettings' functionality of prog.cgi, where the 'IPAddress' and 'SubnetMask' parameters are directly concatenated into shell commands executed via system(). An attacker can exploit this vulnerability remotely without authentication by sending a specially crafted HTTP request, leading to arbitrary command execution on the device.",
+    "published": "2025-11-13T19:15:48.560",
+    "keywords": "remote,execution,unauthenticated,authentication,command"
+  },
+  "CVE-2025-46367": {
+    "cvss": 7.8,
+    "description": "Dell Alienware Command Center 6.x (AWCC), versions prior to 6.10.15.0, contain a Detection of Error Condition Without Action vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Arbitrary Code Execution.",
+    "published": "2025-11-13T20:15:49.713",
     "keywords": "execution,command"
   },
-  "CVE-2025-43723": {
-    "cvss": 5.9,
-    "description": "Dell PowerScale OneFS, versions prior to 9.10.1.3 and versions 9.11.0.0 through 9.12.0.0, contains a use of a broken or risky cryptographic algorithm vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Information disclosure.",
-    "published": "2025-11-10T19:15:56.880",
+  "CVE-2025-60699": {
+    "cvss": 6.5,
+    "description": "A buffer overflow vulnerability exists in the TOTOLINK A950RG Router firmware V5.9c.4592_B20191022_ALL within the `global.so` binary. The `getSaveConfig` function retrieves the `http_host` parameter from user input via `websGetVar` and copies it into a fixed-size stack buffer (`v13`) using `strcpy()` without performing any length checks. An unauthenticated remote attacker can exploit this vulnerability by sending a specially crafted HTTP request to the router's web interface, potentially leading to arbitrary code execution.",
+    "published": "2025-11-13T20:15:52.773",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-60702": {
+    "cvss": 6.5,
+    "description": "A command injection vulnerability exists in the TOTOLINK A950RG Router firmware V5.9c.4592_B20191022_ALL within the `system.so` binary. The `setDiagnosisCfg` function retrieves the `ipDoamin` parameter from user input via `websGetVar` and concatenates it directly into a `ping` system command executed via `CsteSystem()` without any sanitization. An unauthenticated remote attacker can exploit this vulnerability to execute arbitrary commands on the device through specially crafted HTTP requests to the router's web interface.",
+    "published": "2025-11-13T20:15:52.923",
+    "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2025-64726": {
+    "cvss": "-",
+    "description": "Socket Firewall is an HTTP/HTTPS proxy server that intercepts package manager requests and enforces security policies by blocking dangerous packages. Socket Firewall binary versions (separate from installers) prior to 0.15.5 are vulnerable to arbitrary code execution when run in untrusted project directories. The vulnerability allows an attacker to execute arbitrary code by placing a malicious `.sfw.config` file in a project directory. When a developer runs Socket Firewall commands (e.g., `sfw npm install`) in that directory, the tool loads the `.sfw.config` file and populates environment variables directly into the Node.js process. An attacker can exploit this by setting `NODE_OPTIONS` with a `--require` directive to execute malicious JavaScript code before Socket Firewall's security controls are initialized, effectively bypassing the tool's malicious package detection. The attack vector is indirect and requires a developer to install dependencies for an untrusted project and execute a command within the context of the untrusted project. The vulnerability has been patched in Socket Firewall version 0.15.5. Users should upgrade to version 0.15.5 or later. The fix isolates configuration file values from subprocess environments. Look at `sfw --version` for version information. If users rely on the recommended installation mechanism (e.g. global installation via `npm install -g sfw`) then no workaround is necessary. This wrapper package automatically ensures that users are running the latest version of Socket Firewall. Users who have manually installed the binary and cannot immediately upgrade should avoid running Socket Firewall in untrusted project directories. Before running Socket Firewall in any new project, inspect `.sfw.config` and `.env.local` files for suspicious `NODE_OPTIONS` or other environment variable definitions that reference local files.",
+    "published": "2025-11-13T20:15:53.247",
+    "keywords": "execution,command,bypass"
+  },
+  "CVE-2025-36250": {
+    "cvss": 10.0,
+    "description": "IBM AIX 7.2, and 7.3 and IBM VIOS 3.1, and 4.1 NIM server (formerly known as NIM master) service (nimesis) could allow a remote attacker to execute arbitrary commands due to improper process controls. \u00a0This addresses additional attack vectors for a vulnerability that was previously addressed in CVE-2024-56346.",
+    "published": "2025-11-13T22:15:50.887",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-36251": {
+    "cvss": 9.6,
+    "description": "IBM AIX 7.2, and 7.3 and IBM VIOS 3.1, and 4.1 nimsh service SSL/TLS implementations could allow a remote attacker to execute arbitrary commands due to improper process controls. This addresses additional attack vectors for a vulnerability that was previously addressed in CVE-2024-56347.",
+    "published": "2025-11-13T22:15:51.053",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-64747": {
+    "cvss": 5.5,
+    "description": "Directus is a real-time API and App dashboard for managing SQL database content. A stored cross-site scripting (XSS) vulnerability exists in versions prior to 11.13.0 that allows users with `upload files` and `edit item` permissions to inject malicious JavaScript through the Block Editor interface. Attackers can bypass Content Security Policy (CSP) restrictions by combining file uploads with iframe srcdoc attributes, resulting in persistent XSS execution. Version 11.13.0 fixes the issue.",
+    "published": "2025-11-13T22:15:52.000",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2025-13160": {
+    "cvss": 5.3,
+    "description": "IQ-Support developed by IQ Service International has a Exposure of Sensitive Information vulnerability, allowing unauthenticated remote attackers to access specific APIs to obtain sensitive information from the internal network.",
+    "published": "2025-11-14T04:15:54.650",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2025-13161": {
+    "cvss": 7.5,
+    "description": "IQ-Support developed by IQ Service International has an Arbitrary File Read vulnerability, allowing unauthenticated remote attackers to exploit Relative Path Traversal to download arbitrary system files.",
+    "published": "2025-11-14T04:15:54.913",
     "keywords": "remote,unauthenticated"
   },
-  "CVE-2025-63288": {
-    "url": "https://github.com/open5gs/open5gs/commit/be765fe2b03e350836272eee5afb3931bdfb86d5",
+  "CVE-2025-64444": {
+    "cvss": 7.2,
+    "description": "Improper neutralization of special elements used in an OS command ('OS Command Injection') issue exists in NCP-HG100 1.4.48.16 and earlier. If exploited, a remote attacker who has obtained the authentication information to log in to the management page of the product may execute an arbitrary OS command with root privileges.",
+    "published": "2025-11-14T06:15:42.877",
+    "keywords": "remote,authentication,command"
+  },
+  "CVE-2025-55070": {
+    "cvss": 6.5,
+    "description": "Mattermost versions <11 fail to enforce multi-factor authentication on WebSocket connections which allows unauthenticated users to access sensitive information via WebSocket events",
+    "published": "2025-11-14T08:15:45.500",
+    "keywords": "unauthenticated,authentication,sensitive"
+  },
+  "CVE-2025-8855": {
+    "cvss": 8.1,
+    "description": "Authorization Bypass Through User-Controlled Key, Weak Password Recovery Mechanism for Forgotten Password, Authentication Bypass by Assumed-Immutable Data vulnerability in Optimus Software Brokerage Automation allows Exploiting Trust in Client, Authentication Bypass, Manipulate Registry Information.This issue affects Brokerage Automation: before 1.1.71.",
+    "published": "2025-11-14T13:15:45.337",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-9982": {
     "cvss": "-",
-    "description": "In Open5GS 2.7.6, AMF crashes when receiving an abnormal NGSetupRequest message, resulting in denial of service.",
-    "published": "2025-11-10T19:15:57.490"
+    "description": "A vulnerability exists in QuickCMS version 6.8 where sensitive admin credentials are hardcoded in a configuration file and stored in plaintext. This flaw allows attackers with access to the source code or the server file system to retrieve authentication details, potentially leading to privilege escalation.\n\nThe vendor was notified early about this vulnerability, but didn't respond with the details of vulnerability or vulnerable version range. Only version 6.8 was tested and confirmed as vulnerable, other versions were not tested and might also be vulnerable.",
+    "published": "2025-11-14T14:15:47.113",
+    "keywords": "authentication,sensitive"
   },
-  "CVE-2025-12436": {
-    "cvss": 5.9,
-    "description": "Policy bypass in Extensions in Google Chrome prior to 142.0.7444.59 allowed an attacker who convinced a user to install a malicious extension to obtain potentially sensitive information from process memory via a crafted Chrome Extension. (Chromium security severity: Medium)",
-    "published": "2025-11-10T20:15:38.260",
-    "keywords": "sensitive,bypass"
+  "CVE-2025-13204": {
+    "url": "https://github.com/silentmatt/expr-eval/pull/252/files",
+    "cvss": 7.3,
+    "description": "npm package `expr-eval` is vulnerable to Prototype Pollution. An attacker with access to express eval interface can use JavaScript prototype-based inheritance model to achieve arbitrary code execution. The npm expr-eval-fork package resolves this issue.",
+    "published": "2025-11-14T17:16:01.603"
   },
-  "CVE-2025-12440": {
+  "CVE-2025-13033": {
+    "cvss": 7.5,
+    "description": "A vulnerability was identified in the email parsing library due to improper handling of specially formatted recipient email addresses. An attacker can exploit this flaw by crafting a recipient address that embeds an external address within quotes. This causes the application to misdirect the email to the attacker's external address instead of the intended internal recipient. This could lead to a significant data leak of sensitive information and allow an attacker to bypass security filters and access controls.",
+    "published": "2025-11-14T20:15:45.957",
+    "keywords": "sensitive,bypass,leak"
+  },
+  "CVE-2025-63744": {
+    "url": "https://github.com/radareorg/radare2/commit/e37e15d10fd8a19c3e57b3d7735a2cfe0082ec79",
     "cvss": 5.3,
-    "description": "Inappropriate implementation in Autofill in Google Chrome prior to 142.0.7444.59 allowed a remote attacker who convinced a user to engage in specific UI gestures to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: Low)",
-    "published": "2025-11-10T20:15:38.757",
-    "keywords": "remote,sensitive"
+    "description": "A NULL pointer dereference vulnerability was discovered in radare2 6.0.5 and earlier within the load() function of bin_dyldcache.c. Processing a crafted file can cause a segmentation fault and crash the program.",
+    "published": "2025-11-14T21:15:44.933"
   },
-  "CVE-2025-12445": {
-    "cvss": "-",
-    "description": "Policy bypass in Extensions in Google Chrome prior to 142.0.7444.59 allowed an attacker who convinced a user to install a malicious extension to leak cross-origin data via a crafted Chrome Extension. (Chromium security severity: Low)",
-    "published": "2025-11-10T20:15:39.260",
-    "keywords": "bypass,leak"
+  "CVE-2025-63745": {
+    "url": "https://github.com/radareorg/radare2/commit/6c5df3f8570d4f0c360681c08241ad8af3b919fd",
+    "cvss": 5.5,
+    "description": "A NULL pointer dereference vulnerability was discovered in radare2 6.0.5 and earlier within the info() function of bin_ne.c. A crafted binary input can trigger a segmentation fault, leading to a denial of service when the tool processes malformed data.",
+    "published": "2025-11-14T21:15:45.083"
+  },
+  "CVE-2025-63891": {
+    "cvss": 7.5,
+    "description": "Information Disclosure in web-accessible backup file in SourceCodester Simple Online Book Store System allows a remote unauthenticated attacker to disclose full database contents (including schema and credential hashes) via an unauthenticated HTTP GET request to /obs/database/obs_db.sql.",
+    "published": "2025-11-14T21:15:45.223",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-64084": {
+    "cvss": 6.5,
+    "description": "An authenticated SQL injection vulnerability exists in Cloudlog 2.7.5 and earlier. The vucc_details_ajax function in application/controllers/Awards.php does not properly sanitize the user-supplied Gridsquare POST parameter. This allows a remote, authenticated attacker to execute arbitrary SQL commands by injecting a malicious payload, which is then concatenated directly into a raw SQL query in the vucc_qso_details function.",
+    "published": "2025-11-14T21:15:45.367",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-13188": {
+    "cvss": 9.8,
+    "description": "A vulnerability was detected in D-Link DIR-816L 2_06_b09_beta. Affected by this vulnerability is the function authenticationcgi_main of the file /authentication.cgi. Performing manipulation of the argument Password results in stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit is now public and may be used. This vulnerability only affects products that are no longer supported by the maintainer.",
+    "published": "2025-11-14T23:15:43.843",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2025-58083": {
+    "cvss": 10.0,
+    "description": "General Industrial Controls Lynx+ Gateway\u00a0\n is missing critical authentication in the embedded web server which could allow an attacker to remotely reset the device.",
+    "published": "2025-11-15T00:15:47.087",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2025-59780": {
+    "cvss": 7.5,
+    "description": "General Industrial Controls Lynx+ Gateway\u00a0is missing critical authentication in the embedded web server which \ncould allow an attacker to send GET requests to obtain sensitive device \ninformation.",
+    "published": "2025-11-15T00:15:47.313",
+    "keywords": "authentication,sensitive"
+  },
+  "CVE-2025-12849": {
+    "cvss": 5.3,
+    "description": "The Contest Gallery plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 28.0.2. This is due to the plugin registering the `cg_check_wp_admin_upload_v10` AJAX action for both authenticated and unauthenticated users without implementing capability checks or nonce verification. This makes it possible for unauthenticated attackers to inject arbitrary WordPress media attachments into galleries and manipulate gallery metadata via the `cg_check_wp_admin_upload_v10` action. It does not enable an attacker to move or upload files.",
+    "published": "2025-11-15T07:15:42.640",
+    "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2025-6945": {
+    "cvss": 3.5,
+    "description": "GitLab has remediated an issue in GitLab EE affecting all versions from 17.8 before 18.3.6, 18.4 before 18.4.4, and 18.5 before 18.5.2 that could have allowed an authenticated attacker to leak sensitive information from confidential issues by injecting hidden prompts into merge request comments.",
+    "published": "2025-11-15T08:15:46.280",
+    "keywords": "sensitive,leak"
   }
 }
