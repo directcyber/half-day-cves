@@ -1,22 +1,4 @@
 {
-  "CVE-2025-60672": {
-    "cvss": 6.5,
-    "description": "An unauthenticated command injection vulnerability exists in the D-Link DIR-878A1 router firmware FW101B04.bin. The vulnerability occurs in the 'SetDynamicDNSSettings' functionality, where the 'ServerAddress' and 'Hostname' parameters in prog.cgi are stored in NVRAM and later used by rc to construct system commands executed via twsystem(). An attacker can exploit this vulnerability remotely without authentication by sending a specially crafted HTTP request, leading to arbitrary command execution on the device.",
-    "published": "2025-11-13T19:15:48.040",
-    "keywords": "remote,execution,unauthenticated,authentication,command"
-  },
-  "CVE-2025-60673": {
-    "cvss": 6.5,
-    "description": "An unauthenticated command injection vulnerability exists in the D-Link DIR-878A1 router firmware FW101B04.bin. The vulnerability occurs in the 'SetDMZSettings' functionality, where the 'IPAddress' parameter in prog.cgi is stored in NVRAM and later used by librcm.so to construct iptables commands executed via twsystem(). An attacker can exploit this vulnerability remotely without authentication by sending a specially crafted HTTP request, leading to arbitrary command execution on the device.",
-    "published": "2025-11-13T19:15:48.167",
-    "keywords": "remote,execution,unauthenticated,authentication,command"
-  },
-  "CVE-2025-60676": {
-    "cvss": 6.5,
-    "description": "An unauthenticated command injection vulnerability exists in the D-Link DIR-878A1 router firmware FW101B04.bin. The vulnerability occurs in the 'SetNetworkSettings' functionality of prog.cgi, where the 'IPAddress' and 'SubnetMask' parameters are directly concatenated into shell commands executed via system(). An attacker can exploit this vulnerability remotely without authentication by sending a specially crafted HTTP request, leading to arbitrary command execution on the device.",
-    "published": "2025-11-13T19:15:48.560",
-    "keywords": "remote,execution,unauthenticated,authentication,command"
-  },
   "CVE-2025-46367": {
     "cvss": 7.8,
     "description": "Dell Alienware Command Center 6.x (AWCC), versions prior to 6.10.15.0, contain a Detection of Error Condition Without Action vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Arbitrary Code Execution.",
