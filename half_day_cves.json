@@ -1,22 +1,4 @@
 {
-  "CVE-2025-36250": {
-    "cvss": 10.0,
-    "description": "IBM AIX 7.2, and 7.3 and IBM VIOS 3.1, and 4.1 NIM server (formerly known as NIM master) service (nimesis) could allow a remote attacker to execute arbitrary commands due to improper process controls. \u00a0This addresses additional attack vectors for a vulnerability that was previously addressed in CVE-2024-56346.",
-    "published": "2025-11-13T22:15:50.887",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-36251": {
-    "cvss": 9.6,
-    "description": "IBM AIX 7.2, and 7.3 and IBM VIOS 3.1, and 4.1 nimsh service SSL/TLS implementations could allow a remote attacker to execute arbitrary commands due to improper process controls. This addresses additional attack vectors for a vulnerability that was previously addressed in CVE-2024-56347.",
-    "published": "2025-11-13T22:15:51.053",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-64747": {
-    "cvss": 5.5,
-    "description": "Directus is a real-time API and App dashboard for managing SQL database content. A stored cross-site scripting (XSS) vulnerability exists in versions prior to 11.13.0 that allows users with `upload files` and `edit item` permissions to inject malicious JavaScript through the Block Editor interface. Attackers can bypass Content Security Policy (CSP) restrictions by combining file uploads with iframe srcdoc attributes, resulting in persistent XSS execution. Version 11.13.0 fixes the issue.",
-    "published": "2025-11-13T22:15:52.000",
-    "keywords": "execution,bypass"
-  },
   "CVE-2025-13160": {
     "cvss": 5.3,
     "description": "IQ-Support developed by IQ Service International has a Exposure of Sensitive Information vulnerability, allowing unauthenticated remote attackers to access specific APIs to obtain sensitive information from the internal network.",
