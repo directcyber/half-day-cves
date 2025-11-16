@@ -310,5 +310,11 @@
     "description": "The Booking for Appointments and Events Calendar \u2013 Amelia plugin for WordPress is vulnerable to SQL Injection via the \u2018search\u2019 parameter in all versions up to, and including, 1.2.35 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
     "published": "2025-11-16T05:15:59.280",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-13246": {
+    "cvss": 6.3,
+    "description": "A vulnerability was identified in shsuishang ShopSuite ModulithShop up to 45a99398cec3b7ad7ff9383694f0b53339f2d35a. Impacted is the function JwtAuthenticationFilter of the file src/main/java/com/suisung/shopsuite/common/security/JwtAuthenticationFilter.java. The manipulation leads to path traversal. It is possible to initiate the attack remotely. The exploit is publicly available and might be used. This product is using a rolling release to provide continious delivery. Therefore, no version details for affected nor updated releases are available.",
+    "published": "2025-11-16T10:15:54.827",
+    "keywords": "remote,authentication"
   }
 }
