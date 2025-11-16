@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-11-16T16:13:40.165437
+Updated at UTC 2025-11-16T17:10:25.561932
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -112,20 +112,6 @@ Updated at UTC 2025-11-16T16:13:40.165437
 
 
 				</tr>
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
 			
 		
 			
@@ -581,76 +567,6 @@ This vulnerability is due to insufficient validation of user-supplied input in R
 					<td>remote,execution</td>
 					<td class=date>2025-11-13T17:15:44.820</td>
 					<td class=description>A vulnerability exists in Keycloak's server distribution where enabling debug mode (--debug <port>) insecurely defaults to binding the Java Debug Wire Protocol (JDWP) port to all network interfaces (0.0.0.0). This exposes the debug port to the local network, allowing an attacker on the same network segment to attach a remote debugger and achieve remote code execution within the Keycloak Java virtual machine.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-64717">CVE-2025-64717</a></td>
-					<td>-</td>
-					<td>unauthenticated,authentication,bypass</td>
-					<td class=date>2025-11-13T16:15:56.973</td>
-					<td class=description>ZITADEL is an open source identity management platform. Starting in version 2.50.0 and prior to versions 2.71.19, 3.4.4, and 4.6.6, a vulnerability in ZITADEL's federation process allowed auto-linking users from external identity providers to existing users in ZITADEL even if the corresponding IdP was not active or if the organization did not allow federated authentication. This vulnerability stems from the platform's failure to correctly check or enforce an organization's specific security settings during the authentication flow. An Organization Administrator can explicitly disable an IdP or disallow federation, but this setting was not being honored during the auto-linking process. This allowed an unauthenticated attacker to initiate a login using an IdP that should have been disabled for that organization. The platform would incorrectly validate the login and, based on a matching criteria, link the attacker's external identity to an existing internal user account. This may result in a full Account Takeover, bypassing the organization's mandated security controls. Note that accounts with MFA enabled can not be taken over by this attack. Also note that only IdPs create on an instance level would allow this to work. IdPs registered on another organization would always be denied in the (auto-)linking process. Versions 4.6.6, 3.4.4, and 2.71.19 resolve the issue by correctly validating the organization's login policy before auto-linking an external user. No known workarounds are available aside from upgrading.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-64714">CVE-2025-64714</a></td>
-					<td>5.8</td>
-					<td>remote,execution,unauthenticated,sensitive,leak</td>
-					<td class=date>2025-11-13T16:15:56.790</td>
-					<td class=description>PrivateBin is an online pastebin where the server has zero knowledge of pasted data. Starting in version 1.7.7 and prior to version 2.0.3, an unauthenticated Local File Inclusion exists in the template-switching feature. If `templateselection` is enabled in the configuration, the server trusts the `template` cookie and includes the referenced PHP file. An attacker can read sensitive data or, if they manage to drop a PHP file elsewhere, gain remote code execution. The constructed path of the template file is checked for existence, then included. For PrivateBin project files this does not leak any secrets due to data files being created with PHP code that prevents execution, but if a configuration file without that line got created or the visitor figures out the relative path to a PHP script that directly performs an action without appropriate privilege checking, those might execute or leak information. The issue has been patched in version 2.0.3. As a workaround, set `templateselection = false` (which is the default) in `cfg/conf.php` or remove it entirely</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-60689">CVE-2025-60689</a></td>
-					<td>5.4</td>
-					<td>remote,unauthenticated,authentication,command</td>
-					<td class=date>2025-11-13T16:15:52.970</td>
-					<td class=description>An unauthenticated command injection vulnerability exists in the Start_EPI function of the httpd binary on Linksys E1200 v2 routers (Firmware E1200_v2.0.11.001_us.tar.gz). The vulnerability occurs because user-supplied CGI parameters (wl_ant, wl_ssid, wl_rate, ttcp_num, ttcp_ip, ttcp_size) are concatenated into system command strings without proper sanitization and executed via wl_exec_cmd. Successful exploitation allows remote attackers to execute arbitrary commands on the device without authentication.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-60688">CVE-2025-60688</a></td>
-					<td>6.5</td>
-					<td>execution,authentication</td>
-					<td class=date>2025-11-13T16:15:52.850</td>
-					<td class=description>A stack buffer overflow vulnerability exists in the ToToLink LR1200GB (V9.1.0u.6619_B20230130) and NR1800X (V9.1.0u.6681_B20230703) Router firmware within the cstecgi.cgi binary (setDefResponse function). The binary reads the "IpAddress" parameter from a web request and copies it into a fixed-size stack buffer using strcpy() without any length validation. Maliciously crafted input can overflow the buffer, leading to potential arbitrary code execution or memory corruption, without requiring authentication.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-60687">CVE-2025-60687</a></td>
-					<td>6.5</td>
-					<td>unauthenticated,authentication,command</td>
-					<td class=date>2025-11-13T16:15:52.720</td>
-					<td class=description>An unauthenticated command injection vulnerability exists in the ToToLink LR1200GB Router firmware V9.1.0u.6619_B20230130 within the cstecgi.cgi binary (sub_41EC68 function). The binary reads the "imei" parameter from a web request and verifies only that it is 15 characters long. The parameter is then directly inserted into a system command using sprintf() and executed with system(). Maliciously crafted IMEI input can execute arbitrary commands on the router without authentication.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-60684">CVE-2025-60684</a></td>
-					<td>6.5</td>
-					<td>execution,authentication</td>
-					<td class=date>2025-11-13T16:15:52.337</td>
-					<td class=description>A stack buffer overflow vulnerability exists in the ToToLink LR1200GB (V9.1.0u.6619_B20230130) and NR1800X (V9.1.0u.6681_B20230703) Router firmware within the cstecgi.cgi binary (sub_42F32C function). The web interface reads the "lang" parameter and constructs Help URL strings using sprintf() into fixed-size stack buffers without proper length validation. Maliciously crafted input can overflow these buffers, potentially leading to arbitrary code execution or memory corruption, without requiring authentication.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-60682">CVE-2025-60682</a></td>
-					<td>6.5</td>
-					<td>remote,unauthenticated,command</td>
-					<td class=date>2025-11-13T16:15:52.080</td>
-					<td class=description>A command injection vulnerability exists in the ToToLink A720R Router firmware V4.1.5cu.614_B20230630 within the cloudupdate_check binary, specifically in the sub_402414 function that handles cloud update parameters. User-supplied 'magicid' and 'url' values are directly concatenated into shell commands and executed via system() without any sanitization or escaping. An unauthenticated remote attacker can exploit this vulnerability to execute arbitrary commands on the device.</td>
 				</tr>
 			
 		
