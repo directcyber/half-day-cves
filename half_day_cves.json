@@ -1,10 +1,4 @@
 {
-  "CVE-2025-12681": {
-    "cvss": 5.3,
-    "description": "The Comment Edit Core \u2013 Simple Comment Editing plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.1.0 via the 'ajax_get_comment' function. This makes it possible for unauthenticated attackers to extract sensitive data including user IDs, IP addresses, and email addresses.",
-    "published": "2025-11-13T08:15:48.260",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2025-11260": {
     "cvss": 5.3,
     "description": "The WP Headless CMS Framework plugin for WordPress is vulnerable to protection mechanism bypass in all versions up to, and including, 1.15. This is due to the plugin only checking for the existence of the Authorization header in a request when determining if the nonce protection should be bypassed. This makes it possible for unauthenticated attackers to access content they should not have access to.",
