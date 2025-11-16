@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-11-16T17:10:25.561932
+Updated at UTC 2025-11-16T18:16:49.541232
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -112,30 +112,6 @@ Updated at UTC 2025-11-16T17:10:25.561932
 
 
 				</tr>
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
 			
 		
 			
@@ -441,132 +417,6 @@ The vendor was notified early about this vulnerability, but didn't respond with 
 					<td>remote,execution,unauthenticated,authentication,command</td>
 					<td class=date>2025-11-13T19:15:48.040</td>
 					<td class=description>An unauthenticated command injection vulnerability exists in the D-Link DIR-878A1 router firmware FW101B04.bin. The vulnerability occurs in the 'SetDynamicDNSSettings' functionality, where the 'ServerAddress' and 'Hostname' parameters in prog.cgi are stored in NVRAM and later used by rc to construct system commands executed via twsystem(). An attacker can exploit this vulnerability remotely without authentication by sending a specially crafted HTTP request, leading to arbitrary command execution on the device.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-60701">CVE-2025-60701</a></td>
-					<td>6.5</td>
-					<td>remote,unauthenticated,command</td>
-					<td class=date>2025-11-13T18:15:54.137</td>
-					<td class=description>A command injection vulnerability exists in the D-Link DIR-882 Router firmware DIR882A1_FW102B02 within the `prog.cgi` and `rc` binaries. The `sub_433188` function in `prog.cgi` stores user-supplied email configuration parameters (`EmailFrom`, `EmailTo`, `SMTPServerAddress`, `SMTPServerPort`, `AccountName`) in NVRAM via `nvram_safe_set`. These values are later retrieved in the `sub_448FDC` function of `rc` using `nvram_safe_get` and concatenated into shell commands executed via `twsystem()` without sanitization. An unauthenticated remote attacker can exploit this vulnerability to execute arbitrary commands on the device through specially crafted HTTP requests to the router's web interface.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-60700">CVE-2025-60700</a></td>
-					<td>6.5</td>
-					<td>remote,unauthenticated,command</td>
-					<td class=date>2025-11-13T18:15:54.010</td>
-					<td class=description>A command injection vulnerability exists in the D-Link DIR-882 Router firmware DIR882A1_FW102B02 within the `prog.cgi` and `librcm.so` binaries. The `sub_4455BC` function in `prog.cgi` stores user-supplied `SetDMZSettings/IPAddress` values in NVRAM via `nvram_safe_set("dmz_ipaddr", ...)`. These values are later retrieved in the `DMZ_run` function of `librcm.so` using `nvram_safe_get` and concatenated into `iptables` shell commands executed via `twsystem()` without any sanitization. An unauthenticated remote attacker can exploit this vulnerability to execute arbitrary commands on the device through specially crafted HTTP requests to the router's web interface.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-60698">CVE-2025-60698</a></td>
-					<td>7.3</td>
-					<td>remote,unauthenticated,command</td>
-					<td class=date>2025-11-13T18:15:53.880</td>
-					<td class=description>A command injection vulnerability exists in the D-Link DIR-882 Router firmware DIR882A1_FW102B02 within the `prog.cgi` and `rc` binaries. The `sub_432F60` function in `prog.cgi` stores user-supplied `SetSysLogSettings/IPAddress` values in NVRAM via `nvram_safe_set("SysLogRemote_IPAddress", ...)`. These values are later retrieved in the `sub_448DCC` function of `rc` using `nvram_safe_get` and concatenated into a shell command executed via `twsystem()` without any sanitization. An unauthenticated remote attacker can exploit this vulnerability to execute arbitrary commands on the device through specially crafted HTTP requests to the router's web interface.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-60697">CVE-2025-60697</a></td>
-					<td>7.3</td>
-					<td>remote,unauthenticated,command</td>
-					<td class=date>2025-11-13T18:15:53.753</td>
-					<td class=description>A command injection vulnerability exists in the D-Link DIR-882 Router firmware DIR882A1_FW102B02 within the `prog.cgi` and `rc` binaries. The `sub_4438A4` function in `prog.cgi` stores user-supplied DDNS parameters (`ServerAddress` and `Hostname`) in NVRAM via `nvram_safe_set`. These values are later retrieved in the `start_DDNS_ipv4` function of `rc` using `nvram_safe_get` and concatenated into DDNS shell commands executed via `twsystem()` without proper sanitization. Partial string comparison is performed but is insufficient to prevent command injection. An unauthenticated remote attacker can exploit this vulnerability to execute arbitrary commands on the device through specially crafted HTTP requests to the router's web interface.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-60693">CVE-2025-60693</a></td>
-					<td>6.5</td>
-					<td>remote,authentication</td>
-					<td class=date>2025-11-13T18:15:53.040</td>
-					<td class=description>A stack-based buffer overflow exists in the get_merge_mac function of the httpd binary on Linksys E1200 v2 routers (Firmware E1200_v2.0.11.001_us.tar.gz). The function concatenates up to six user-supplied CGI parameters matching <parameter>_0~5 into a fixed-size buffer (a2) without proper bounds checking, appending colon delimiters during concatenation. Remote attackers can exploit this vulnerability via specially crafted HTTP requests to execute arbitrary code or cause denial of service without authentication.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-60694">CVE-2025-60694</a></td>
-					<td>7.5</td>
-					<td>remote,authentication</td>
-					<td class=date>2025-11-13T17:15:49.373</td>
-					<td class=description>A stack-based buffer overflow exists in the validate_static_route function of the httpd binary on Linksys E1200 v2 routers (Firmware E1200_v2.0.11.001_us.tar.gz). The function improperly concatenates user-supplied CGI parameters (route_ipaddr_0~3, route_netmask_0~3, route_gateway_0~3) into fixed-size buffers (v6, v10, v14) without proper bounds checking. Remote attackers can exploit this vulnerability via specially crafted HTTP requests to execute arbitrary code or cause denial of service without authentication.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-60691">CVE-2025-60691</a></td>
-					<td>8.8</td>
-					<td>remote,authentication</td>
-					<td class=date>2025-11-13T17:15:49.117</td>
-					<td class=description>A stack-based buffer overflow exists in the httpd binary of Linksys E1200 v2 routers (Firmware E1200_v2.0.11.001_us.tar.gz). The apply_cgi and block_cgi functions copy user-supplied input from the "url" CGI parameter into stack buffers (v36, v29) using sprintf without bounds checking. Because these buffers are allocated as single-byte variables, any non-empty input will trigger a buffer overflow. Remote attackers can exploit this vulnerability via crafted HTTP requests to execute arbitrary code or cause denial of service without authentication.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-60690">CVE-2025-60690</a></td>
-					<td>8.8</td>
-					<td>remote,authentication</td>
-					<td class=date>2025-11-13T17:15:48.980</td>
-					<td class=description>A stack-based buffer overflow exists in the get_merge_ipaddr function of the httpd binary on Linksys E1200 v2 routers (Firmware E1200_v2.0.11.001_us.tar.gz). The function concatenates up to four user-supplied CGI parameters matching <parameter>_0~3 into a fixed-size buffer (a2) without bounds checking. Remote attackers can exploit this vulnerability via specially crafted HTTP requests to execute arbitrary code or cause denial of service without authentication.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20355">CVE-2025-20355</a></td>
-					<td>4.7</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2025-11-13T17:15:46.220</td>
-					<td class=description>A vulnerability in the web-based management interface of Cisco Catalyst Center Virtual Appliance could allow an unauthenticated, remote attacker to redirect a user to a malicious web page.
-
-This vulnerability is due to improper input validation of HTTP request parameters. An attacker could exploit this vulnerability by intercepting and modifying an HTTP request from a user. A successful exploit could allow the attacker to redirect the user to a malicious web page.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20353">CVE-2025-20353</a></td>
-					<td>6.1</td>
-					<td>remote,unauthenticated,sensitive</td>
-					<td class=date>2025-11-13T17:15:46.017</td>
-					<td class=description>A vulnerability in the web-based management interface of Cisco Catalyst Center could allow an unauthenticated, remote attacker to conduct a cross-site scripting (XSS) attack against a user of the interface of an affected device.
-
-This vulnerability is due to insufficient validation of user input. An attacker could exploit this vulnerability by persuading a user of the web-based management interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-20349">CVE-2025-20349</a></td>
-					<td>6.3</td>
-					<td>remote,command</td>
-					<td class=date>2025-11-13T17:15:45.817</td>
-					<td class=description>A vulnerability in the REST API of Cisco Catalyst Center could allow an authenticated, remote attacker to execute arbitrary commands in a restricted container as the root user.
-
-This vulnerability is due to insufficient validation of user-supplied input in REST API request parameters. An attacker could exploit this vulnerability by sending a crafted API request to an affected device. A successful exploit could allow the attacker to inject arbitrary commands that would then be executed in a restricted container with root privileges. To exploit this vulnerability, the attacker must have valid credentials for a user account with at least the role of Observer.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-11538">CVE-2025-11538</a></td>
-					<td>6.8</td>
-					<td>remote,execution</td>
-					<td class=date>2025-11-13T17:15:44.820</td>
-					<td class=description>A vulnerability exists in Keycloak's server distribution where enabling debug mode (--debug <port>) insecurely defaults to binding the Java Debug Wire Protocol (JDWP) port to all network interfaces (0.0.0.0). This exposes the debug port to the local network, allowing an attacker on the same network segment to attach a remote debugger and achieve remote code execution within the Keycloak Java virtual machine.</td>
 				</tr>
 			
 		
