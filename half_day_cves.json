@@ -1,28 +1,4 @@
 {
-  "CVE-2025-46367": {
-    "cvss": 7.8,
-    "description": "Dell Alienware Command Center 6.x (AWCC), versions prior to 6.10.15.0, contain a Detection of Error Condition Without Action vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Arbitrary Code Execution.",
-    "published": "2025-11-13T20:15:49.713",
-    "keywords": "execution,command"
-  },
-  "CVE-2025-60699": {
-    "cvss": 6.5,
-    "description": "A buffer overflow vulnerability exists in the TOTOLINK A950RG Router firmware V5.9c.4592_B20191022_ALL within the `global.so` binary. The `getSaveConfig` function retrieves the `http_host` parameter from user input via `websGetVar` and copies it into a fixed-size stack buffer (`v13`) using `strcpy()` without performing any length checks. An unauthenticated remote attacker can exploit this vulnerability by sending a specially crafted HTTP request to the router's web interface, potentially leading to arbitrary code execution.",
-    "published": "2025-11-13T20:15:52.773",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2025-60702": {
-    "cvss": 6.5,
-    "description": "A command injection vulnerability exists in the TOTOLINK A950RG Router firmware V5.9c.4592_B20191022_ALL within the `system.so` binary. The `setDiagnosisCfg` function retrieves the `ipDoamin` parameter from user input via `websGetVar` and concatenates it directly into a `ping` system command executed via `CsteSystem()` without any sanitization. An unauthenticated remote attacker can exploit this vulnerability to execute arbitrary commands on the device through specially crafted HTTP requests to the router's web interface.",
-    "published": "2025-11-13T20:15:52.923",
-    "keywords": "remote,unauthenticated,command"
-  },
-  "CVE-2025-64726": {
-    "cvss": "-",
-    "description": "Socket Firewall is an HTTP/HTTPS proxy server that intercepts package manager requests and enforces security policies by blocking dangerous packages. Socket Firewall binary versions (separate from installers) prior to 0.15.5 are vulnerable to arbitrary code execution when run in untrusted project directories. The vulnerability allows an attacker to execute arbitrary code by placing a malicious `.sfw.config` file in a project directory. When a developer runs Socket Firewall commands (e.g., `sfw npm install`) in that directory, the tool loads the `.sfw.config` file and populates environment variables directly into the Node.js process. An attacker can exploit this by setting `NODE_OPTIONS` with a `--require` directive to execute malicious JavaScript code before Socket Firewall's security controls are initialized, effectively bypassing the tool's malicious package detection. The attack vector is indirect and requires a developer to install dependencies for an untrusted project and execute a command within the context of the untrusted project. The vulnerability has been patched in Socket Firewall version 0.15.5. Users should upgrade to version 0.15.5 or later. The fix isolates configuration file values from subprocess environments. Look at `sfw --version` for version information. If users rely on the recommended installation mechanism (e.g. global installation via `npm install -g sfw`) then no workaround is necessary. This wrapper package automatically ensures that users are running the latest version of Socket Firewall. Users who have manually installed the binary and cannot immediately upgrade should avoid running Socket Firewall in untrusted project directories. Before running Socket Firewall in any new project, inspect `.sfw.config` and `.env.local` files for suspicious `NODE_OPTIONS` or other environment variable definitions that reference local files.",
-    "published": "2025-11-13T20:15:53.247",
-    "keywords": "execution,command,bypass"
-  },
   "CVE-2025-36250": {
     "cvss": 10.0,
     "description": "IBM AIX 7.2, and 7.3 and IBM VIOS 3.1, and 4.1 NIM server (formerly known as NIM master) service (nimesis) could allow a remote attacker to execute arbitrary commands due to improper process controls. \u00a0This addresses additional attack vectors for a vulnerability that was previously addressed in CVE-2024-56346.",
