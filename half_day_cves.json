@@ -1,28 +1,4 @@
 {
-  "CVE-2025-12762": {
-    "cvss": 9.1,
-    "description": "pgAdmin versions up to 9.9 are affected by a Remote Code Execution (RCE) vulnerability that occurs when running in server mode and performing restores from PLAIN-format dump files. This issue allows attackers to inject and execute arbitrary commands on the server hosting pgAdmin, posing a critical risk to the integrity and security of the database management system and underlying data.",
-    "published": "2025-11-13T13:15:44.620",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2025-12763": {
-    "url": "https://github.com/pgadmin-org/pgadmin4/issues/9323",
-    "cvss": 6.8,
-    "description": "pgAdmin 4 versions up to 9.9 are affected by a command injection vulnerability on Windows systems. This issue is caused by the use of shell=True during backup and restore operations, enabling attackers to execute arbitrary system commands by providing specially crafted file path input.",
-    "published": "2025-11-13T13:15:44.777"
-  },
-  "CVE-2025-12764": {
-    "url": "https://github.com/pgadmin-org/pgadmin4/issues/9325",
-    "cvss": 7.5,
-    "description": "pgAdmin <= 9.9\u00a0 is affected by an LDAP injection vulnerability in the LDAP authentication flow that allows an attacker to inject special LDAP characters in the username, causing the DC/LDAP server and the client to process an unusual amount of data DOS.",
-    "published": "2025-11-13T13:15:44.910"
-  },
-  "CVE-2025-12765": {
-    "cvss": 7.5,
-    "description": "pgAdmin <= 9.9\u00a0 is affected by a\u00a0vulnerability in the LDAP authentication mechanism allows bypassing TLS certificate verification.",
-    "published": "2025-11-13T13:15:45.037",
-    "keywords": "authentication,bypass"
-  },
   "CVE-2025-62483": {
     "cvss": 5.3,
     "description": "Improper removal of sensitive information in certain Zoom Clients before version 6.5.10 may allow an unauthenticated user to conduct a disclosure of information via network access.",
