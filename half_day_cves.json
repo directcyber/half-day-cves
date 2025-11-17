@@ -1,10 +1,4 @@
 {
-  "CVE-2025-55070": {
-    "cvss": 6.5,
-    "description": "Mattermost versions <11 fail to enforce multi-factor authentication on WebSocket connections which allows unauthenticated users to access sensitive information via WebSocket events",
-    "published": "2025-11-14T08:15:45.500",
-    "keywords": "unauthenticated,authentication,sensitive"
-  },
   "CVE-2025-8855": {
     "cvss": 8.1,
     "description": "Authorization Bypass Through User-Controlled Key, Weak Password Recovery Mechanism for Forgotten Password, Authentication Bypass by Assumed-Immutable Data vulnerability in Optimus Software Brokerage Automation allows Exploiting Trust in Client, Authentication Bypass, Manipulate Registry Information.This issue affects Brokerage Automation: before 1.1.71.",
@@ -154,5 +148,17 @@
     "description": "The W3 Total Cache WordPress plugin before 2.8.13 is vulnerable to command injection via the _parse_dynamic_mfunc function, allowing unauthenticated users to execute PHP commands by submitting a comment with a malicious payload to a post.",
     "published": "2025-11-17T06:15:45.093",
     "keywords": "unauthenticated,command"
+  },
+  "CVE-2025-13165": {
+    "cvss": 7.5,
+    "description": "EasyFlow GP developed by Digiwin has a Denial of service vulnerability, allowing unauthenticated remote attackers to send specific requests that result in denial of web service.",
+    "published": "2025-11-17T08:16:23.233",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-13268": {
+    "url": "https://github.com/dromara/datacompare/issues/13",
+    "cvss": 6.3,
+    "description": "A flaw has been found in Dromara dataCompare up to 1.0.1. The affected element is the function DbConfig of the file src/main/java/com/vince/xq/project/system/dbconfig/service/DbconfigServiceImpl.java of the component JDBC URL Handler. Executing manipulation can lead to injection. The attack can be launched remotely. The exploit has been published and may be used.",
+    "published": "2025-11-17T08:16:24.013"
   }
 }
