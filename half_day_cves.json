@@ -1,10 +1,4 @@
 {
-  "CVE-2025-13204": {
-    "url": "https://github.com/silentmatt/expr-eval/pull/252/files",
-    "cvss": 7.3,
-    "description": "npm package `expr-eval` is vulnerable to Prototype Pollution. An attacker with access to express eval interface can use JavaScript prototype-based inheritance model to achieve arbitrary code execution. The npm expr-eval-fork package resolves this issue.",
-    "published": "2025-11-14T17:16:01.603"
-  },
   "CVE-2025-13033": {
     "cvss": 7.5,
     "description": "A vulnerability was identified in the email parsing library due to improper handling of specially formatted recipient email addresses. An attacker can exploit this flaw by crafting a recipient address that embeds an external address within quotes. This causes the application to misdirect the email to the attacker's external address instead of the intended internal recipient. This could lead to a significant data leak of sensitive information and allow an attacker to bypass security filters and access controls.",
@@ -148,5 +142,17 @@
     "cvss": 6.3,
     "description": "A flaw has been found in Dromara dataCompare up to 1.0.1. The affected element is the function DbConfig of the file src/main/java/com/vince/xq/project/system/dbconfig/service/DbconfigServiceImpl.java of the component JDBC URL Handler. Executing manipulation can lead to injection. The attack can be launched remotely. The exploit has been published and may be used.",
     "published": "2025-11-17T08:16:24.013"
+  },
+  "CVE-2025-62519": {
+    "cvss": 7.2,
+    "description": "phpMyFAQ is an open source FAQ web application. Prior to version 4.0.14, an authenticated SQL injection vulnerability in the main configuration update functionality of phpMyFAQ allows a privileged user with 'Configuration Edit' permissions to execute arbitrary SQL commands. Successful exploitation can lead to a full compromise of the database, including reading, modifying, or deleting all data, as well as potential remote code execution depending on the database configuration. This issue has been patched in version 4.0.14.",
+    "published": "2025-11-17T17:15:50.400",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2025-64756": {
+    "cvss": 7.5,
+    "description": "Glob matches files using patterns the shell uses. From versions 10.3.7 to 11.0.3, the glob CLI contains a command injection vulnerability in its -c/--cmd option that allows arbitrary command execution when processing files with malicious names. When glob -c <command> <patterns> are used, matched filenames are passed to a shell with shell: true, enabling shell metacharacters in filenames to trigger command injection and achieve arbitrary code execution under the user or CI account privileges. This issue has been patched in version 11.1.0.",
+    "published": "2025-11-17T18:15:58.270",
+    "keywords": "execution,command"
   }
 }

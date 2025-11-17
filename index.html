@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-11-17T17:13:22.934315
+Updated at UTC 2025-11-17T18:30:08.670860
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2025-11-17T17:13:22.934315
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 				<tr>
@@ -186,20 +190,28 @@ Updated at UTC 2025-11-17T17:13:22.934315
 		
 			
 		
+
+		<hr>
+		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-13204">CVE-2025-13204</a></td>
-					<td>7.3</td>
-					<td><a target=_blank href="https://github.com/silentmatt/expr-eval/pull/252/files">https://github.com/silentmatt/expr-eval/pull/252/files</a></td>
-					<td class=date>2025-11-14T17:16:01.603</td>
-					<td class=description>npm package `expr-eval` is vulnerable to Prototype Pollution. An attacker with access to express eval interface can use JavaScript prototype-based inheritance model to achieve arbitrary code execution. The npm expr-eval-fork package resolves this issue.</td>
-
-
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-64756">CVE-2025-64756</a></td>
+					<td>7.5</td>
+					<td>execution,command</td>
+					<td class=date>2025-11-17T18:15:58.270</td>
+					<td class=description>Glob matches files using patterns the shell uses. From versions 10.3.7 to 11.0.3, the glob CLI contains a command injection vulnerability in its -c/--cmd option that allows arbitrary command execution when processing files with malicious names. When glob -c <command> <patterns> are used, matched filenames are passed to a shell with shell: true, enabling shell metacharacters in filenames to trigger command injection and achieve arbitrary code execution under the user or CI account privileges. This issue has been patched in version 11.1.0.</td>
 				</tr>
 			
 		
-
-		<hr>
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-62519">CVE-2025-62519</a></td>
+					<td>7.2</td>
+					<td>remote,execution,command</td>
+					<td class=date>2025-11-17T17:15:50.400</td>
+					<td class=description>phpMyFAQ is an open source FAQ web application. Prior to version 4.0.14, an authenticated SQL injection vulnerability in the main configuration update functionality of phpMyFAQ allows a privileged user with 'Configuration Edit' permissions to execute arbitrary SQL commands. Successful exploitation can lead to a full compromise of the database, including reading, modifying, or deleting all data, as well as potential remote code execution depending on the database configuration. This issue has been patched in version 4.0.14.</td>
+				</tr>
+			
 		
 			
 		
@@ -386,8 +398,6 @@ information.</td>
 					<td class=date>2025-11-14T20:15:45.957</td>
 					<td class=description>A vulnerability was identified in the email parsing library due to improper handling of specially formatted recipient email addresses. An attacker can exploit this flaw by crafting a recipient address that embeds an external address within quotes. This causes the application to misdirect the email to the attacker's external address instead of the intended internal recipient. This could lead to a significant data leak of sensitive information and allow an attacker to bypass security filters and access controls.</td>
 				</tr>
-			
-		
 			
 		
 
