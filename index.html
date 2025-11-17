@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-11-17T03:10:14.654980
+Updated at UTC 2025-11-17T04:19:45.214846
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,26 @@ Updated at UTC 2025-11-17T03:10:14.654980
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-13261">CVE-2025-13261</a></td>
+					<td>5.3</td>
+					<td><a target=_blank href="https://github.com/lsfusion/platform/issues/1543#issue-3576922131">https://github.com/lsfusion/platform/issues/1543#issue-3576922131</a></td>
+					<td class=date>2025-11-17T04:15:54.303</td>
+					<td class=description>A vulnerability was found in lsfusion platform up to 6.1. Affected is the function DownloadFileRequestHandler of the file web-client/src/main/java/lsfusion/http/controller/file/DownloadFileRequestHandler.java. Performing manipulation of the argument Version results in path traversal. Remote exploitation of the attack is possible. The exploit has been made public and could be used.</td>
+
+
+				</tr>
+			
+		
+			
 		
 			
 				<tr>
@@ -134,12 +154,58 @@ Updated at UTC 2025-11-17T03:10:14.654980
 		
 			
 		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-13284">CVE-2025-13284</a></td>
+					<td>9.8</td>
+					<td>remote,unauthenticated,command</td>
+					<td class=date>2025-11-17T04:15:55.020</td>
+					<td class=description>ThinPLUS developed by ThinPLUS has an OS Command Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary OS commands and execute them on the server.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-13283">CVE-2025-13283</a></td>
+					<td>7.1</td>
+					<td>remote,unauthenticated,leak</td>
+					<td class=date>2025-11-17T04:15:54.800</td>
+					<td class=description>TenderDocTransfer developed by Chunghwa Telecom has a Arbitrary File Copy and Paste vulnerability.  The application sets up a simple local web server and provides APIs for communication with the target website. Due to the lack of CSRF protection in the APIs, unauthenticated remote attackers could use these APIs through phishing. Additionally, one of the APIs contains an Absolute Path Traversal vulnerability. Attackers can copy arbitrary files on the user's system and paste them into any path, which poses a potential risk of information leakage or could consume hard drive space by copying files in large volumes.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-13282">CVE-2025-13282</a></td>
+					<td>8.1</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-11-17T04:15:54.543</td>
+					<td class=description>TenderDocTransfer developed by Chunghwa Telecom has a Arbitrary File Delete vulnerability. The application sets up a simple local web server and provides APIs for communication with the target website. Due to the lack of CSRF protection in the APIs, unauthenticated remote attackers could use these APIs through phishing. Additionally, one of the APIs contains an Absolute Path Traversal vulnerability, allowing attackers to delete arbitrary files on the user's system.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-10460">CVE-2025-10460</a></td>
+					<td>-</td>
+					<td>command,sensitive</td>
+					<td class=date>2025-11-17T03:15:55.170</td>
+					<td class=description>A SQL Injection vulnerability on an endpoint in BEIMS Contractor Web, a legacy product that is no longer maintained or patched by the vendor, allows an unauthorised user to retrieve sensitive database contents via unsanitized parameter input. This vulnerability occurs due to improper input validation on /BEIMSWeb/contractor.asp endpoint and successful exploitation requires a contractor.asp endpoint open to the internet. This vulnerability allows attackers to execute arbitrary SQL commands, compromising the confidentiality, integrity and potentially the availability of the database. 
+
+
+
+
+
+Version 5.7.139
+
+ has been confirmed as vulnerable. Other versions have not been confirmed by the vendor and users should assume that all versions of BEIMS Contractor Web may be impacted until further guidance is provided by the vendor.</td>
+				</tr>
+			
 		
 			
 		
@@ -291,26 +357,6 @@ The vendor was notified early about this vulnerability, but didn't respond with 
 					<td>remote,authentication,command</td>
 					<td class=date>2025-11-14T06:15:42.877</td>
 					<td class=description>Improper neutralization of special elements used in an OS command ('OS Command Injection') issue exists in NCP-HG100 1.4.48.16 and earlier. If exploited, a remote attacker who has obtained the authentication information to log in to the management page of the product may execute an arbitrary OS command with root privileges.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-13161">CVE-2025-13161</a></td>
-					<td>7.5</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2025-11-14T04:15:54.913</td>
-					<td class=description>IQ-Support developed by IQ Service International has an Arbitrary File Read vulnerability, allowing unauthenticated remote attackers to exploit Relative Path Traversal to download arbitrary system files.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-13160">CVE-2025-13160</a></td>
-					<td>5.3</td>
-					<td>remote,unauthenticated,sensitive</td>
-					<td class=date>2025-11-14T04:15:54.650</td>
-					<td class=description>IQ-Support developed by IQ Service International has a Exposure of Sensitive Information vulnerability, allowing unauthenticated remote attackers to access specific APIs to obtain sensitive information from the internal network.</td>
 				</tr>
 			
 		
