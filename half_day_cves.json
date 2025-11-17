@@ -1,10 +1,4 @@
 {
-  "CVE-2025-64444": {
-    "cvss": 7.2,
-    "description": "Improper neutralization of special elements used in an OS command ('OS Command Injection') issue exists in NCP-HG100 1.4.48.16 and earlier. If exploited, a remote attacker who has obtained the authentication information to log in to the management page of the product may execute an arbitrary OS command with root privileges.",
-    "published": "2025-11-14T06:15:42.877",
-    "keywords": "remote,authentication,command"
-  },
   "CVE-2025-55070": {
     "cvss": 6.5,
     "description": "Mattermost versions <11 fail to enforce multi-factor authentication on WebSocket connections which allows unauthenticated users to access sensitive information via WebSocket events",
@@ -136,5 +130,29 @@
     "description": "ThinPLUS developed by ThinPLUS has an OS Command Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary OS commands and execute them on the server.",
     "published": "2025-11-17T04:15:55.020",
     "keywords": "remote,unauthenticated,command"
+  },
+  "CVE-2025-13262": {
+    "url": "https://github.com/lsfusion/platform/issues/1544#issue-3589610731",
+    "cvss": 7.3,
+    "description": "A vulnerability was determined in lsfusion platform up to 6.1. Affected by this vulnerability is the function UploadFileRequestHandler of the file platform/web-client/src/main/java/lsfusion/http/controller/file/UploadFileRequestHandler.java. Executing manipulation of the argument sid can lead to path traversal. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized.",
+    "published": "2025-11-17T05:16:04.427"
+  },
+  "CVE-2025-13265": {
+    "url": "https://github.com/lsfusion/platform/issues/1545",
+    "cvss": 6.3,
+    "description": "A weakness has been identified in lsfusion platform up to 6.1. This vulnerability affects the function unpackFile of the file server/src/main/java/lsfusion/server/physics/dev/integration/external/to/file/ZipUtils.java. This manipulation causes path traversal. It is possible to initiate the attack remotely.",
+    "published": "2025-11-17T06:15:43.143"
+  },
+  "CVE-2025-13266": {
+    "url": "https://github.com/wwwlike/vlife/issues/3",
+    "cvss": 5.3,
+    "description": "A security vulnerability has been detected in wwwlike vlife up to 2.0.1. This issue affects the function create of the file vlife-base/src/main/java/cn/wwwlike/sys/api/SysFileApi.java of the component VLifeApi. Such manipulation of the argument fileName leads to path traversal. It is possible to launch the attack remotely. The exploit has been disclosed publicly and may be used.",
+    "published": "2025-11-17T06:15:44.403"
+  },
+  "CVE-2025-9501": {
+    "cvss": "-",
+    "description": "The W3 Total Cache WordPress plugin before 2.8.13 is vulnerable to command injection via the _parse_dynamic_mfunc function, allowing unauthenticated users to execute PHP commands by submitting a comment with a malicious payload to a post.",
+    "published": "2025-11-17T06:15:45.093",
+    "keywords": "unauthenticated,command"
   }
 }
