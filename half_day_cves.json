@@ -1,10 +1,4 @@
 {
-  "CVE-2025-13033": {
-    "cvss": 7.5,
-    "description": "A vulnerability was identified in the email parsing library due to improper handling of specially formatted recipient email addresses. An attacker can exploit this flaw by crafting a recipient address that embeds an external address within quotes. This causes the application to misdirect the email to the attacker's external address instead of the intended internal recipient. This could lead to a significant data leak of sensitive information and allow an attacker to bypass security filters and access controls.",
-    "published": "2025-11-14T20:15:45.957",
-    "keywords": "sensitive,bypass,leak"
-  },
   "CVE-2025-63744": {
     "url": "https://github.com/radareorg/radare2/commit/e37e15d10fd8a19c3e57b3d7735a2cfe0082ec79",
     "cvss": 4.3,
@@ -126,7 +120,7 @@
     "published": "2025-11-17T06:15:44.403"
   },
   "CVE-2025-9501": {
-    "cvss": "-",
+    "cvss": 9.0,
     "description": "The W3 Total Cache WordPress plugin before 2.8.13 is vulnerable to command injection via the _parse_dynamic_mfunc function, allowing unauthenticated users to execute PHP commands by submitting a comment with a malicious payload to a post.",
     "published": "2025-11-17T06:15:45.093",
     "keywords": "unauthenticated,command"
