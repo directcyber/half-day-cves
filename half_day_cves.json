@@ -1,10 +1,4 @@
 {
-  "CVE-2025-13536": {
-    "cvss": 8.8,
-    "description": "The Blubrry PowerPress plugin for WordPress is vulnerable to arbitrary file uploads due to insufficient file type validation in all versions up to, and including, 11.15.2. This is due to the plugin validating file extensions but not halting execution when validation fails in the 'powerpress_edit_post' function. This makes it possible for authenticated attackers, with Contributor-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-    "published": "2025-11-27T09:15:45.687",
-    "keywords": "remote,execution"
-  },
   "CVE-2025-59025": {
     "cvss": 6.1,
     "description": "Malicious e-mail content can be used to execute script code. Unintended actions can be executed in the context of the users account, including exfiltration of sensitive information. Sanitization has been updated to avoid such bypasses. No publicly available exploits are known",
