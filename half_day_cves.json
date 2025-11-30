@@ -1,10 +1,4 @@
 {
-  "CVE-2025-59025": {
-    "cvss": 6.1,
-    "description": "Malicious e-mail content can be used to execute script code. Unintended actions can be executed in the context of the users account, including exfiltration of sensitive information. Sanitization has been updated to avoid such bypasses. No publicly available exploits are known",
-    "published": "2025-11-27T10:15:51.830",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2025-12140": {
     "cvss": "-",
     "description": "The application contains an insecure 'redirectToUrl' mechanism that incorrectly processes the value of the 'redirectUrlParameter' parameter. The application interprets the entered string of characters as a Java expression, allowing an unauthenticated attacer to perform arbitrary code execution.\nThis issue was fixed in version\u00a0wu#2016.1.5513#0#20251014_113353",
