@@ -53,6 +53,12 @@
     "published": "2025-11-30T03:15:47.970",
     "keywords": "remote,sensitive"
   },
+  "CVE-2025-35028": {
+    "url": "https://github.com/0x4m4/hexstrike-ai/issues/115",
+    "cvss": 9.1,
+    "description": "By providing a command-line argument starting with a semi-colon ; to an API endpoint created by the EnhancedCommandExecutor class of the HexStrike AI MCP server, the resultant composed command is executed directly in the context of the MCP server\u2019s normal privilege; typically, this is root. There is no attempt to sanitize these arguments in the default configuration of this MCP server at the affected version (as of commit 2f3a5512 in September of 2025).",
+    "published": "2025-11-30T22:15:46.653"
+  },
   "CVE-2025-13797": {
     "cvss": 6.3,
     "description": "A vulnerability was detected in ADSLR B-QE2W401 250814-r037c. Affected by this issue is the function parameterdel_swifimac of the file /send_order.cgi. Performing manipulation of the argument del_swifimac results in command injection. The attack is possible to be carried out remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
@@ -196,5 +202,17 @@
     "description": "A SQL injection vulnerability exists in the Blood Bank Management System 1.0 within the abs.php component. The application fails to properly sanitize usersupplied input in SQL queries, allowing an attacker to inject arbitrary SQL code. By manipulating the search field, an attacker can bypass authentication and gain unauthorized access to the system.",
     "published": "2025-12-01T16:15:56.277",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2025-13836": {
+    "url": "https://github.com/python/cpython/pull/119454",
+    "cvss": "-",
+    "description": "When reading an HTTP response from a server, if no read amount is specified, the default behavior will be to use Content-Length. This allows a malicious server to cause the client to read large amounts of data into memory, potentially causing OOM or other DoS.",
+    "published": "2025-12-01T18:16:04.200"
+  },
+  "CVE-2025-13837": {
+    "url": "https://github.com/python/cpython/pull/119343",
+    "cvss": "-",
+    "description": "When loading a plist file, the plistlib module reads data in size specified by the file itself, meaning a malicious file can cause OOM and DoS issues",
+    "published": "2025-12-01T18:16:04.380"
   }
 }
