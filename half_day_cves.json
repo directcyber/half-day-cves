@@ -163,13 +163,13 @@
   },
   "CVE-2025-63520": {
     "url": "https://github.com/liufee/cms/issues/74",
-    "cvss": "-",
+    "cvss": 6.1,
     "description": "Cross Site Scripting (XSS) vulnerability in FeehiCMS 2.1.1 via the id parameter of the User Update function (?r=user%2Fupdate).",
     "published": "2025-12-01T15:15:50.713"
   },
   "CVE-2025-63522": {
     "url": "https://github.com/liufee/cms/issues/76",
-    "cvss": "-",
+    "cvss": 4.6,
     "description": "Reverse Tabnabbing vulnerability in FeehiCMS 2.1.1 in the Comments Management function",
     "published": "2025-12-01T15:15:50.847"
   },
@@ -214,5 +214,17 @@
     "cvss": "-",
     "description": "When loading a plist file, the plistlib module reads data in size specified by the file itself, meaning a malicious file can cause OOM and DoS issues",
     "published": "2025-12-01T18:16:04.380"
+  },
+  "CVE-2025-65836": {
+    "url": "https://github.com/sanluan/publiccms/issues/99",
+    "cvss": "-",
+    "description": "PublicCMS V5.202506.b is vulnerable to SSRF. in the chat interface of SimpleAiAdminController.",
+    "published": "2025-12-01T20:15:57.103"
+  },
+  "CVE-2025-65838": {
+    "url": "https://github.com/sanluan/publiccms/issues/101",
+    "cvss": "-",
+    "description": "PublicCMS V5.202506.b is vulnerable to path traversal via the doUploadSitefile method.",
+    "published": "2025-12-01T20:15:57.240"
   }
 }
