@@ -1,10 +1,4 @@
 {
-  "CVE-2025-12638": {
-    "cvss": 8.0,
-    "description": "Keras version 3.11.3 is affected by a path traversal vulnerability in the keras.utils.get_file() function when extracting tar archives. The vulnerability arises because the function uses Python's tarfile.extractall() method without the security-critical filter='data' parameter. Although Keras attempts to filter unsafe paths using filter_safe_paths(), this filtering occurs before extraction, and a PATH_MAX symlink resolution bug triggers during extraction. This bug causes symlink resolution to fail due to path length limits, resulting in a security bypass that allows files to be written outside the intended extraction directory. This can lead to arbitrary file writes outside the cache directory, enabling potential system compromise or malicious code execution. The vulnerability affects Keras installations that process tar archives with get_file() and does not affect versions where this extraction method is secured with the appropriate filter parameter.",
-    "published": "2025-11-28T15:16:00.270",
-    "keywords": "execution,bypass"
-  },
   "CVE-2025-65113": {
     "cvss": 6.5,
     "description": "ClipBucket v5 is an open source video sharing platform. Prior to version 5.5.2 - #164, an authorization bypass vulnerability in the AJAX flagging system allows any unauthenticated user to flag any content (users, videos, photos, collections) on the platform. This can lead to mass flagging attacks, content disruption, and moderation system abuse. This issue has been patched in version 5.5.2 - #164.",
@@ -31,12 +25,12 @@
   },
   "CVE-2025-65540": {
     "url": "https://github.com/exrick/xmall/issues/101",
-    "cvss": "-",
+    "cvss": 6.1,
     "description": "Multiple Cross-Site Scripting (XSS) vulnerabilities exist in xmall v1.1 due to improper handling of user-supplied data. User input fields such as username and description are directly rendered into HTML without proper sanitization or encoding, allowing attackers to inject and execute malicious scripts.",
     "published": "2025-11-29T04:15:56.417"
   },
   "CVE-2025-65892": {
-    "cvss": "-",
+    "cvss": 6.1,
     "description": "Reflected Cross-Site Scripting (rXSS) in krpano before version 1.23.2 allows a remote unauthenticated attacker to execute arbitrary JavaScript in the victim's browser via a crafted URL to the passQueryParameters function with the xml parameter enabled.",
     "published": "2025-11-29T04:15:57.367",
     "keywords": "remote,unauthenticated"
@@ -160,5 +154,47 @@
     "description": "An unauthenticated remote attacker, who beats a race condition, can exploit a flaw in the communication servers of the CODESYS Control runtime system on Linux and QNX to trigger an out-of-bounds read via crafted socket communication, potentially causing a denial of service.",
     "published": "2025-12-01T10:16:01.320",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-63520": {
+    "url": "https://github.com/liufee/cms/issues/74",
+    "cvss": "-",
+    "description": "Cross Site Scripting (XSS) vulnerability in FeehiCMS 2.1.1 via the id parameter of the User Update function (?r=user%2Fupdate).",
+    "published": "2025-12-01T15:15:50.713"
+  },
+  "CVE-2025-63522": {
+    "url": "https://github.com/liufee/cms/issues/76",
+    "cvss": "-",
+    "description": "Reverse Tabnabbing vulnerability in FeehiCMS 2.1.1 in the Comments Management function",
+    "published": "2025-12-01T15:15:50.847"
+  },
+  "CVE-2025-63523": {
+    "url": "https://github.com/liufee/cms/issues/77",
+    "cvss": "-",
+    "description": "FeehiCMS version 2.1.1 fails to enforce server-side immutability for parameters that are presented to clients as \"read-only.\" An authenticated attacker can intercept and modify the parameter in transit and the backend accepts the changes. This can lead to unintended username changes.",
+    "published": "2025-12-01T15:15:50.973"
+  },
+  "CVE-2025-63531": {
+    "cvss": 10.0,
+    "description": "A SQL injection vulnerability exists in the Blood Bank Management System 1.0 within the receiverLogin.php component. The application fails to properly sanitize user-supplied input in SQL queries, allowing an attacker to inject arbitrary SQL code. By manipulating the remail and rpassword fields, an attacker can bypass authentication and gain unauthorized access to the system.",
+    "published": "2025-12-01T15:15:51.987",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-11699": {
+    "url": "https://github.com/nopsolutions/nopcommerce/issues/7044",
+    "cvss": "-",
+    "description": "nopCommerce v4.70 and prior, and version 4.80.3, does not invalidate session cookies after logout or session termination, allowing an attacker who has a \r\na valid session cookie access to privileged endpoints (such as /admin) even after the legitimate user has logged out, enabling session hijacking. Any version above 4.70 that is not 4.80.3 fixes the vulnerability.",
+    "published": "2025-12-01T16:15:51.017"
+  },
+  "CVE-2025-63532": {
+    "cvss": 9.6,
+    "description": "A SQL injection vulnerability exists in the Blood Bank Management System 1.0 within the cancel.php component. The application fails to properly sanitize user-supplied input in SQL queries, allowing an attacker to inject arbitrary SQL code. By manipulating the search field, an attacker can bypass authentication and gain unauthorized access to the system.",
+    "published": "2025-12-01T16:15:55.800",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-63535": {
+    "cvss": 9.6,
+    "description": "A SQL injection vulnerability exists in the Blood Bank Management System 1.0 within the abs.php component. The application fails to properly sanitize usersupplied input in SQL queries, allowing an attacker to inject arbitrary SQL code. By manipulating the search field, an attacker can bypass authentication and gain unauthorized access to the system.",
+    "published": "2025-12-01T16:15:56.277",
+    "keywords": "authentication,bypass"
   }
 }
