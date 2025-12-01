@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-12-01T21:11:08.698302
+Updated at UTC 2025-12-01T22:11:55.158403
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,22 @@ Updated at UTC 2025-12-01T21:11:08.698302
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-65840">CVE-2025-65840</a></td>
+					<td>-</td>
+					<td><a target=_blank href="https://github.com/sanluan/publiccms/issues/102">https://github.com/sanluan/publiccms/issues/102</a></td>
+					<td class=date>2025-12-01T21:15:52.320</td>
+					<td class=description>PublicCMS V5.202506.b is vulnerable to Cross Site Request Forgery (CSRF) in the CkEditorAdminController.</td>
+
+
+				</tr>
+			
 		
 			
 				<tr>
@@ -128,7 +144,7 @@ a valid session cookie access to privileged endpoints (such as /admin) even afte
 			
 				<tr>
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-63523">CVE-2025-63523</a></td>
-					<td>-</td>
+					<td>6.5</td>
 					<td><a target=_blank href="https://github.com/liufee/cms/issues/77">https://github.com/liufee/cms/issues/77</a></td>
 					<td class=date>2025-12-01T15:15:50.973</td>
 					<td class=description>FeehiCMS version 2.1.1 fails to enforce server-side immutability for parameters that are presented to clients as "read-only." An authenticated attacker can intercept and modify the parameter in transit and the backend accepts the changes. This can lead to unintended username changes.</td>
@@ -237,6 +253,28 @@ a valid session cookie access to privileged endpoints (such as /admin) even afte
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-66297">CVE-2025-66297</a></td>
+					<td>-</td>
+					<td>remote,execution,command</td>
+					<td class=date>2025-12-01T21:15:53.327</td>
+					<td class=description>Grav is a file-based Web platform. Prior to 1.8.0-beta.27, a user with admin panel access and permissions to create or edit pages in Grav CMS can enable Twig processing in the page frontmatter. By injecting malicious Twig expressions, the user can escalate their privileges to admin or execute arbitrary system commands via the scheduler API. This results in both Privilege Escalation (PE) and Remote Code Execution (RCE) vulnerabilities. This vulnerability is fixed in 1.8.0-beta.27.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-66294">CVE-2025-66294</a></td>
+					<td>-</td>
+					<td>unauthenticated,command</td>
+					<td class=date>2025-12-01T21:15:52.843</td>
+					<td class=description>Grav is a file-based Web platform. Prior to 1.8.0-beta.27, a Server-Side Template Injection (SSTI) vulnerability exists in Grav that allows authenticated attackers with editor permissions to execute arbitrary commands on the server and, under certain conditions, may also be exploited by unauthenticated attackers. This vulnerability stems from weak regex validation in the cleanDangerousTwig method. This vulnerability is fixed in 1.8.0-beta.27.</td>
+				</tr>
+			
+		
+			
 		
 			
 		

@@ -175,7 +175,7 @@
   },
   "CVE-2025-63523": {
     "url": "https://github.com/liufee/cms/issues/77",
-    "cvss": "-",
+    "cvss": 6.5,
     "description": "FeehiCMS version 2.1.1 fails to enforce server-side immutability for parameters that are presented to clients as \"read-only.\" An authenticated attacker can intercept and modify the parameter in transit and the backend accepts the changes. This can lead to unintended username changes.",
     "published": "2025-12-01T15:15:50.973"
   },
@@ -226,5 +226,23 @@
     "cvss": "-",
     "description": "PublicCMS V5.202506.b is vulnerable to path traversal via the doUploadSitefile method.",
     "published": "2025-12-01T20:15:57.240"
+  },
+  "CVE-2025-65840": {
+    "url": "https://github.com/sanluan/publiccms/issues/102",
+    "cvss": "-",
+    "description": "PublicCMS V5.202506.b is vulnerable to Cross Site Request Forgery (CSRF) in the CkEditorAdminController.",
+    "published": "2025-12-01T21:15:52.320"
+  },
+  "CVE-2025-66294": {
+    "cvss": "-",
+    "description": "Grav is a file-based Web platform. Prior to 1.8.0-beta.27, a Server-Side Template Injection (SSTI) vulnerability exists in Grav that allows authenticated attackers with editor permissions to execute arbitrary commands on the server and, under certain conditions, may also be exploited by unauthenticated attackers. This vulnerability stems from weak regex validation in the cleanDangerousTwig method. This vulnerability is fixed in 1.8.0-beta.27.",
+    "published": "2025-12-01T21:15:52.843",
+    "keywords": "unauthenticated,command"
+  },
+  "CVE-2025-66297": {
+    "cvss": "-",
+    "description": "Grav is a file-based Web platform. Prior to 1.8.0-beta.27, a user with admin panel access and permissions to create or edit pages in Grav CMS can enable Twig processing in the page frontmatter. By injecting malicious Twig expressions, the user can escalate their privileges to admin or execute arbitrary system commands via the scheduler API. This results in both Privilege Escalation (PE) and Remote Code Execution (RCE) vulnerabilities. This vulnerability is fixed in 1.8.0-beta.27.",
+    "published": "2025-12-01T21:15:53.327",
+    "keywords": "remote,execution,command"
   }
 }
