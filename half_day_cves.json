@@ -244,5 +244,17 @@
     "description": "Grav is a file-based Web platform. Prior to 1.8.0-beta.27, a user with admin panel access and permissions to create or edit pages in Grav CMS can enable Twig processing in the page frontmatter. By injecting malicious Twig expressions, the user can escalate their privileges to admin or execute arbitrary system commands via the scheduler API. This results in both Privilege Escalation (PE) and Remote Code Execution (RCE) vulnerabilities. This vulnerability is fixed in 1.8.0-beta.27.",
     "published": "2025-12-01T21:15:53.327",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2025-66299": {
+    "cvss": 8.8,
+    "description": "Grav is a file-based Web platform. Prior to 1.8.0-beta.27, Grav CMS is vulnerable to a Server-Side Template Injection (SSTI) that allows any authenticated user with editor permissions to execute arbitrary code on the remote server, bypassing the existing security sandbox. Since the security sandbox does not fully protect the Twig object, it is possible to interact with it (e.g., call methods, read/write attributes) through maliciously crafted Twig template directives injected into a web page. This allows an authenticated editor to add arbitrary functions to the Twig attribute system.twig.safe_filters, effectively bypassing the Grav CMS sandbox. This vulnerability is fixed in 1.8.0-beta.27.",
+    "published": "2025-12-01T22:15:49.290",
+    "keywords": "remote,bypass"
+  },
+  "CVE-2025-66307": {
+    "cvss": 6.5,
+    "description": "This admin plugin for Grav is an HTML user interface that provides a convenient way to configure Grav and easily create and modify pages. Prior to 1.11.0-beta.1, a user enumeration and email disclosure vulnerability exists in Grav. The \"Forgot Password\" functionality at /admin/forgot leaks information about valid usernames and their associated email addresses through distinct server responses. This allows an attacker to enumerate users and disclose sensitive email addresses, which can be leveraged for targeted attacks such as password spraying, phishing, or social engineering. This vulnerability is fixed in 1.11.0-beta.1.",
+    "published": "2025-12-01T22:15:50.570",
+    "keywords": "sensitive,leak"
   }
 }

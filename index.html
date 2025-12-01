@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-12-01T22:11:55.158403
+Updated at UTC 2025-12-01T23:13:11.311462
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2025-12-01T22:11:55.158403
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -253,6 +257,26 @@ a valid session cookie access to privileged endpoints (such as /admin) even afte
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-66307">CVE-2025-66307</a></td>
+					<td>6.5</td>
+					<td>sensitive,leak</td>
+					<td class=date>2025-12-01T22:15:50.570</td>
+					<td class=description>This admin plugin for Grav is an HTML user interface that provides a convenient way to configure Grav and easily create and modify pages. Prior to 1.11.0-beta.1, a user enumeration and email disclosure vulnerability exists in Grav. The "Forgot Password" functionality at /admin/forgot leaks information about valid usernames and their associated email addresses through distinct server responses. This allows an attacker to enumerate users and disclose sensitive email addresses, which can be leveraged for targeted attacks such as password spraying, phishing, or social engineering. This vulnerability is fixed in 1.11.0-beta.1.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-66299">CVE-2025-66299</a></td>
+					<td>8.8</td>
+					<td>remote,bypass</td>
+					<td class=date>2025-12-01T22:15:49.290</td>
+					<td class=description>Grav is a file-based Web platform. Prior to 1.8.0-beta.27, Grav CMS is vulnerable to a Server-Side Template Injection (SSTI) that allows any authenticated user with editor permissions to execute arbitrary code on the remote server, bypassing the existing security sandbox. Since the security sandbox does not fully protect the Twig object, it is possible to interact with it (e.g., call methods, read/write attributes) through maliciously crafted Twig template directives injected into a web page. This allows an authenticated editor to add arbitrary functions to the Twig attribute system.twig.safe_filters, effectively bypassing the Grav CMS sandbox. This vulnerability is fixed in 1.8.0-beta.27.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
