@@ -1,22 +1,4 @@
 {
-  "CVE-2025-13768": {
-    "cvss": 7.5,
-    "description": "WebITR developed by Uniong has an Authentication Bypass vulnerability, allowing authenticated remote attackers to log into the system as any user by modifying a specific parameter. Attackers must first obtain a user ID to exploit this vulnerability.",
-    "published": "2025-11-28T08:15:52.560",
-    "keywords": "remote,authentication,bypass"
-  },
-  "CVE-2025-13769": {
-    "cvss": 6.5,
-    "description": "WebITR developed by Uniong has a SQL Injection vulnerability, allowing authenticated remote attackers to inject arbitrary SQL commands to read database contents.",
-    "published": "2025-11-28T08:15:53.713",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-13770": {
-    "cvss": 6.5,
-    "description": "WebITR developed by Uniong has a SQL Injection vulnerability, allowing authenticated remote attackers to inject arbitrary SQL commands to read database contents.",
-    "published": "2025-11-28T08:15:53.930",
-    "keywords": "remote,command"
-  },
   "CVE-2025-12638": {
     "cvss": 8.0,
     "description": "Keras version 3.11.3 is affected by a path traversal vulnerability in the keras.utils.get_file() function when extracting tar archives. The vulnerability arises because the function uses Python's tarfile.extractall() method without the security-critical filter='data' parameter. Although Keras attempts to filter unsafe paths using filter_safe_paths(), this filtering occurs before extraction, and a PATH_MAX symlink resolution bug triggers during extraction. This bug causes symlink resolution to fail due to path length limits, resulting in a security bypass that allows files to be written outside the intended extraction directory. This can lead to arbitrary file writes outside the cache directory, enabling potential system compromise or malicious code execution. The vulnerability affects Keras installations that process tar archives with get_file() and does not affect versions where this extraction method is secured with the appropriate filter parameter.",
@@ -100,5 +82,71 @@
     "description": "A vulnerability was found in ADSLR NBR1005GPEV2 250814-r037c. This issue affects the function set_mesh_disconnect of the file /send_order.cgi. The manipulation of the argument mac results in command injection. It is possible to launch the attack remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2025-12-01T02:15:45.677",
     "keywords": "remote,command"
+  },
+  "CVE-2025-11131": {
+    "cvss": 7.5,
+    "description": "In nr modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
+    "published": "2025-12-01T08:15:46.033",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-11132": {
+    "cvss": 7.5,
+    "description": "In nr modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
+    "published": "2025-12-01T08:15:47.350",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-11133": {
+    "cvss": 7.5,
+    "description": "In nr modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
+    "published": "2025-12-01T08:15:47.510",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-3012": {
+    "cvss": 7.5,
+    "description": "In dpc modem, there is a possible system crash due to null pointer dereference. This could lead to remote denial of service with no additional execution privileges needed",
+    "published": "2025-12-01T08:15:47.970",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-61607": {
+    "cvss": 7.5,
+    "description": "In nr modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
+    "published": "2025-12-01T08:15:48.140",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-61608": {
+    "cvss": 7.5,
+    "description": "In nr modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
+    "published": "2025-12-01T08:15:48.290",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-61609": {
+    "cvss": 7.5,
+    "description": "In modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
+    "published": "2025-12-01T08:15:48.437",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-61610": {
+    "cvss": 7.5,
+    "description": "In nr modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
+    "published": "2025-12-01T08:15:48.597",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-61617": {
+    "cvss": 7.5,
+    "description": "In nr modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
+    "published": "2025-12-01T08:15:48.740",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-61618": {
+    "cvss": 7.5,
+    "description": "In nr modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
+    "published": "2025-12-01T08:15:48.867",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-61619": {
+    "cvss": 7.5,
+    "description": "In nr modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
+    "published": "2025-12-01T08:15:49.010",
+    "keywords": "remote,execution"
   }
 }
