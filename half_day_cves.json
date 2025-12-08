@@ -234,13 +234,13 @@
     "keywords": "execution,leak"
   },
   "CVE-2025-48618": {
-    "cvss": "-",
+    "cvss": 6.8,
     "description": "In processLaunchBrowser of CommandParamsFactory.java, there is a possible browser interaction from the lockscreen due to improper locking. This could lead to physical escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
     "published": "2025-12-08T17:16:18.163",
     "keywords": "execution,command"
   },
   "CVE-2025-48626": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "In multiple locations, there is a possible way to launch an application from the background due to a precondition check failure. This could lead to remote escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
     "published": "2025-12-08T17:16:18.893",
     "keywords": "remote,execution"
