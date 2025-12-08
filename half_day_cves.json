@@ -1,260 +1,266 @@
 {
-  "CVE-2025-65113": {
-    "cvss": 6.5,
-    "description": "ClipBucket v5 is an open source video sharing platform. Prior to version 5.5.2 - #164, an authorization bypass vulnerability in the AJAX flagging system allows any unauthenticated user to flag any content (users, videos, photos, collections) on the platform. This can lead to mass flagging attacks, content disruption, and moderation system abuse. This issue has been patched in version 5.5.2 - #164.",
-    "published": "2025-11-29T01:16:02.640",
-    "keywords": "unauthenticated,bypass"
+  "CVE-2025-46603": {
+    "cvss": 7.0,
+    "description": "Dell CloudBoost Virtual Appliance, versions 19.13.0.0 and prior, contains an Improper Restriction of Excessive Authentication Attempts vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to unauthorized access.",
+    "published": "2025-12-05T19:15:48.233",
+    "keywords": "remote,unauthenticated,authentication"
   },
-  "CVE-2025-66034": {
-    "cvss": 6.3,
-    "description": "fontTools is a library for manipulating fonts, written in Python. In versions from 4.33.0 to before 4.60.2, the fonttools varLib (or python3 -m fontTools.varLib) script has an arbitrary file write vulnerability that leads to remote code execution when a malicious .designspace file is processed. The vulnerability affects the main() code path of fontTools.varLib, used by the fonttools varLib CLI and any code that invokes fontTools.varLib.main(). This issue has been patched in version 4.60.2.",
-    "published": "2025-11-29T01:16:02.967",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-66219": {
-    "cvss": "-",
-    "description": "willitmerge is a command line tool to check if pull requests are mergeable. In versions 0.2.1 and prior, there is a command Injection vulnerability in willitmerge. The vulnerability manifests in this package due to the use of insecure child process execution API (exec) to which it concatenates user input, whether provided to the command-line flag, or is in user control in the target repository. At time of publication, no known fix is public.",
-    "published": "2025-11-29T02:15:52.577",
-    "keywords": "execution,command"
-  },
-  "CVE-2025-66217": {
-    "cvss": "-",
-    "description": "AIS-catcher is a multi-platform AIS receiver. Prior to version 0.64, an integer underflow vulnerability exists in the MQTT parsing logic of AIS-catcher. This vulnerability allows an attacker to trigger a massive Heap Buffer Overflow by sending a malformed MQTT packet with a manipulated Topic Length field. This leads to an immediate Denial of Service (DoS) and, when used as a library, severe Memory Corruption that can be leveraged for Remote Code Execution (RCE). This issue has been patched in version 0.64.",
-    "published": "2025-11-29T03:15:59.880",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-65540": {
-    "url": "https://github.com/exrick/xmall/issues/101",
-    "cvss": 6.1,
-    "description": "Multiple Cross-Site Scripting (XSS) vulnerabilities exist in xmall v1.1 due to improper handling of user-supplied data. User input fields such as username and description are directly rendered into HTML without proper sanitization or encoding, allowing attackers to inject and execute malicious scripts.",
-    "published": "2025-11-29T04:15:56.417"
-  },
-  "CVE-2025-65892": {
-    "cvss": 6.1,
-    "description": "Reflected Cross-Site Scripting (rXSS) in krpano before version 1.23.2 allows a remote unauthenticated attacker to execute arbitrary JavaScript in the victim's browser via a crafted URL to the passQueryParameters function with the xml parameter enabled.",
-    "published": "2025-11-29T04:15:57.367",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-66224": {
-    "cvss": "-",
-    "description": "OrangeHRM is a comprehensive human resource management (HRM) system. From version 5.0 to 5.7, the application contains an input-neutralization flaw in its mail configuration and delivery workflow that allows user-controlled values to flow directly into the system\u2019s sendmail command. Because these values are not sanitized or constrained before being incorporated into the command execution path, certain sendmail behaviors can be unintentionally invoked during email processing. This makes it possible for the application to write files on the server as part of the mail-handling routine, and in deployments where those files end up in web-accessible locations, the behavior can be leveraged to achieve execution of attacker-controlled content. The issue stems entirely from constructing OS-level command strings using unsanitized input within the mail-sending logic. This issue has been patched in version 5.8.",
-    "published": "2025-11-29T04:15:57.497",
-    "keywords": "execution,command"
-  },
-  "CVE-2025-13615": {
-    "cvss": 9.8,
-    "description": "The StreamTube Core plugin for WordPress is vulnerable to Arbitrary User Password Change in versions up to, and including, 4.78. This is due to the plugin providing user-controlled access to objects, letting a user bypass authorization and access system resources. This makes it possible for unauthenticated attackers to change user passwords and potentially take over administrator accounts. Note: This can only be exploited if the 'registration password fields' enabled in theme options.",
-    "published": "2025-11-30T02:15:58.233",
-    "keywords": "unauthenticated,bypass"
-  },
-  "CVE-2025-66422": {
-    "cvss": 4.3,
-    "description": "Tryton trytond before 7.6.11 allows remote attackers to obtain sensitive trace-back (server setup) information. This is fixed in 7.6.11, 7.4.21, 7.0.40, and 6.0.70.",
-    "published": "2025-11-30T03:15:47.970",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2025-35028": {
-    "url": "https://github.com/0x4m4/hexstrike-ai/issues/115",
-    "cvss": 9.1,
-    "description": "By providing a command-line argument starting with a semi-colon ; to an API endpoint created by the EnhancedCommandExecutor class of the HexStrike AI MCP server, the resultant composed command is executed directly in the context of the MCP server\u2019s normal privilege; typically, this is root. There is no attempt to sanitize these arguments in the default configuration of this MCP server at the affected version (as of commit 2f3a5512 in September of 2025).",
-    "published": "2025-11-30T22:15:46.653"
-  },
-  "CVE-2025-13797": {
-    "cvss": 6.3,
-    "description": "A vulnerability was detected in ADSLR B-QE2W401 250814-r037c. Affected by this issue is the function parameterdel_swifimac of the file /send_order.cgi. Performing manipulation of the argument del_swifimac results in command injection. The attack is possible to be carried out remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-12-01T01:16:00.147",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-13798": {
-    "cvss": 6.3,
-    "description": "A flaw has been found in ADSLR NBR1005GPEV2 250814-r037c. This affects the function ap_macfilter_add of the file /send_order.cgi. Executing manipulation of the argument mac can lead to command injection. The attack may be performed from remote. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-12-01T01:16:00.383",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-13799": {
-    "cvss": 6.3,
-    "description": "A vulnerability has been found in ADSLR NBR1005GPEV2 250814-r037c. This vulnerability affects the function ap_macfilter_del of the file /send_order.cgi. The manipulation of the argument mac leads to command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-12-01T01:16:00.620",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-13800": {
-    "cvss": 6.3,
-    "description": "A vulnerability was found in ADSLR NBR1005GPEV2 250814-r037c. This issue affects the function set_mesh_disconnect of the file /send_order.cgi. The manipulation of the argument mac results in command injection. It is possible to launch the attack remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-    "published": "2025-12-01T02:15:45.677",
-    "keywords": "remote,command"
-  },
-  "CVE-2025-11131": {
-    "cvss": 7.5,
-    "description": "In nr modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
-    "published": "2025-12-01T08:15:46.033",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-11132": {
-    "cvss": 7.5,
-    "description": "In nr modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
-    "published": "2025-12-01T08:15:47.350",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-11133": {
-    "cvss": 7.5,
-    "description": "In nr modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
-    "published": "2025-12-01T08:15:47.510",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-3012": {
-    "cvss": 7.5,
-    "description": "In dpc modem, there is a possible system crash due to null pointer dereference. This could lead to remote denial of service with no additional execution privileges needed",
-    "published": "2025-12-01T08:15:47.970",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-61607": {
-    "cvss": 7.5,
-    "description": "In nr modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
-    "published": "2025-12-01T08:15:48.140",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-61608": {
-    "cvss": 7.5,
-    "description": "In nr modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
-    "published": "2025-12-01T08:15:48.290",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-61609": {
-    "cvss": 7.5,
-    "description": "In modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
-    "published": "2025-12-01T08:15:48.437",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-61610": {
-    "cvss": 7.5,
-    "description": "In nr modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
-    "published": "2025-12-01T08:15:48.597",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-61617": {
-    "cvss": 7.5,
-    "description": "In nr modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
-    "published": "2025-12-01T08:15:48.740",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-61618": {
-    "cvss": 7.5,
-    "description": "In nr modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
-    "published": "2025-12-01T08:15:48.867",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-61619": {
-    "cvss": 7.5,
-    "description": "In nr modem, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
-    "published": "2025-12-01T08:15:49.010",
-    "keywords": "remote,execution"
-  },
-  "CVE-2025-41738": {
-    "cvss": 7.5,
-    "description": "An unauthenticated remote attacker may cause the visualisation server of the CODESYS Control runtime system to access a resource with a pointer of wrong type, potentially leading to a denial-of-service (DoS) condition.",
-    "published": "2025-12-01T10:16:01.130",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-41739": {
-    "cvss": 5.9,
-    "description": "An unauthenticated remote attacker, who beats a race condition, can exploit a flaw in the communication servers of the CODESYS Control runtime system on Linux and QNX to trigger an out-of-bounds read via crafted socket communication, potentially causing a denial of service.",
-    "published": "2025-12-01T10:16:01.320",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-63520": {
-    "url": "https://github.com/liufee/cms/issues/74",
-    "cvss": 6.1,
-    "description": "Cross Site Scripting (XSS) vulnerability in FeehiCMS 2.1.1 via the id parameter of the User Update function (?r=user%2Fupdate).",
-    "published": "2025-12-01T15:15:50.713"
-  },
-  "CVE-2025-63522": {
-    "url": "https://github.com/liufee/cms/issues/76",
-    "cvss": 4.6,
-    "description": "Reverse Tabnabbing vulnerability in FeehiCMS 2.1.1 in the Comments Management function",
-    "published": "2025-12-01T15:15:50.847"
-  },
-  "CVE-2025-63523": {
-    "url": "https://github.com/liufee/cms/issues/77",
-    "cvss": 6.5,
-    "description": "FeehiCMS version 2.1.1 fails to enforce server-side immutability for parameters that are presented to clients as \"read-only.\" An authenticated attacker can intercept and modify the parameter in transit and the backend accepts the changes. This can lead to unintended username changes.",
-    "published": "2025-12-01T15:15:50.973"
-  },
-  "CVE-2025-63531": {
+  "CVE-2025-66570": {
     "cvss": 10.0,
-    "description": "A SQL injection vulnerability exists in the Blood Bank Management System 1.0 within the receiverLogin.php component. The application fails to properly sanitize user-supplied input in SQL queries, allowing an attacker to inject arbitrary SQL code. By manipulating the remail and rpassword fields, an attacker can bypass authentication and gain unauthorized access to the system.",
-    "published": "2025-12-01T15:15:51.987",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2025-11699": {
-    "url": "https://github.com/nopsolutions/nopcommerce/issues/7044",
-    "cvss": 7.1,
-    "description": "nopCommerce v4.70 and prior, and version 4.80.3, does not invalidate session cookies after logout or session termination, allowing an attacker who has a \r\na valid session cookie access to privileged endpoints (such as /admin) even after the legitimate user has logged out, enabling session hijacking. Any version above 4.70 that is not 4.80.3 fixes the vulnerability.",
-    "published": "2025-12-01T16:15:51.017"
-  },
-  "CVE-2025-63532": {
-    "cvss": 9.6,
-    "description": "A SQL injection vulnerability exists in the Blood Bank Management System 1.0 within the cancel.php component. The application fails to properly sanitize user-supplied input in SQL queries, allowing an attacker to inject arbitrary SQL code. By manipulating the search field, an attacker can bypass authentication and gain unauthorized access to the system.",
-    "published": "2025-12-01T16:15:55.800",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2025-63535": {
-    "cvss": 9.6,
-    "description": "A SQL injection vulnerability exists in the Blood Bank Management System 1.0 within the abs.php component. The application fails to properly sanitize usersupplied input in SQL queries, allowing an attacker to inject arbitrary SQL code. By manipulating the search field, an attacker can bypass authentication and gain unauthorized access to the system.",
-    "published": "2025-12-01T16:15:56.277",
-    "keywords": "authentication,bypass"
-  },
-  "CVE-2025-13836": {
-    "url": "https://github.com/python/cpython/pull/119454",
-    "cvss": "-",
-    "description": "When reading an HTTP response from a server, if no read amount is specified, the default behavior will be to use Content-Length. This allows a malicious server to cause the client to read large amounts of data into memory, potentially causing OOM or other DoS.",
-    "published": "2025-12-01T18:16:04.200"
-  },
-  "CVE-2025-13837": {
-    "url": "https://github.com/python/cpython/pull/119343",
-    "cvss": "-",
-    "description": "When loading a plist file, the plistlib module reads data in size specified by the file itself, meaning a malicious file can cause OOM and DoS issues",
-    "published": "2025-12-01T18:16:04.380"
-  },
-  "CVE-2025-65836": {
-    "url": "https://github.com/sanluan/publiccms/issues/99",
-    "cvss": "-",
-    "description": "PublicCMS V5.202506.b is vulnerable to SSRF. in the chat interface of SimpleAiAdminController.",
-    "published": "2025-12-01T20:15:57.103"
-  },
-  "CVE-2025-65838": {
-    "url": "https://github.com/sanluan/publiccms/issues/101",
-    "cvss": "-",
-    "description": "PublicCMS V5.202506.b is vulnerable to path traversal via the doUploadSitefile method.",
-    "published": "2025-12-01T20:15:57.240"
-  },
-  "CVE-2025-65840": {
-    "url": "https://github.com/sanluan/publiccms/issues/102",
-    "cvss": "-",
-    "description": "PublicCMS V5.202506.b is vulnerable to Cross Site Request Forgery (CSRF) in the CkEditorAdminController.",
-    "published": "2025-12-01T21:15:52.320"
-  },
-  "CVE-2025-66294": {
-    "cvss": "-",
-    "description": "Grav is a file-based Web platform. Prior to 1.8.0-beta.27, a Server-Side Template Injection (SSTI) vulnerability exists in Grav that allows authenticated attackers with editor permissions to execute arbitrary commands on the server and, under certain conditions, may also be exploited by unauthenticated attackers. This vulnerability stems from weak regex validation in the cleanDangerousTwig method. This vulnerability is fixed in 1.8.0-beta.27.",
-    "published": "2025-12-01T21:15:52.843",
-    "keywords": "unauthenticated,command"
-  },
-  "CVE-2025-66297": {
-    "cvss": "-",
-    "description": "Grav is a file-based Web platform. Prior to 1.8.0-beta.27, a user with admin panel access and permissions to create or edit pages in Grav CMS can enable Twig processing in the page frontmatter. By injecting malicious Twig expressions, the user can escalate their privileges to admin or execute arbitrary system commands via the scheduler API. This results in both Privilege Escalation (PE) and Remote Code Execution (RCE) vulnerabilities. This vulnerability is fixed in 1.8.0-beta.27.",
-    "published": "2025-12-01T21:15:53.327",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2025-66299": {
-    "cvss": 8.8,
-    "description": "Grav is a file-based Web platform. Prior to 1.8.0-beta.27, Grav CMS is vulnerable to a Server-Side Template Injection (SSTI) that allows any authenticated user with editor permissions to execute arbitrary code on the remote server, bypassing the existing security sandbox. Since the security sandbox does not fully protect the Twig object, it is possible to interact with it (e.g., call methods, read/write attributes) through maliciously crafted Twig template directives injected into a web page. This allows an authenticated editor to add arbitrary functions to the Twig attribute system.twig.safe_filters, effectively bypassing the Grav CMS sandbox. This vulnerability is fixed in 1.8.0-beta.27.",
-    "published": "2025-12-01T22:15:49.290",
+    "description": "cpp-httplib is a C++11 single-file header-only cross platform HTTP/HTTPS library. Prior to 0.27.0, a vulnerability allows attacker-controlled HTTP headers to influence server-visible metadata, logging, and authorization decisions. An attacker can inject headers named REMOTE_ADDR, REMOTE_PORT, LOCAL_ADDR, LOCAL_PORT that are parsed into the request header multimap via read_headers() in httplib.h (headers.emplace), then the server later appends its own internal metadata using the same header names in Server::process_request without erasing duplicates. Because Request::get_header_value returns the first entry for a header key (id == 0) and the client-supplied headers are parsed before server-inserted headers, downstream code that uses these header names may inadvertently use attacker-controlled values. Affected files/locations: cpp-httplib/httplib.h (read_headers, Server::process_request, Request::get_header_value, get_header_value_u64) and cpp-httplib/docker/main.cc (get_client_ip, nginx_access_logger, nginx_error_logger). Attack surface: attacker-controlled HTTP headers in incoming requests flow into the Request.headers multimap and into logging code that reads forwarded headers, enabling IP spoofing, log poisoning, and authorization bypass via header shadowing. This vulnerability is fixed in 0.27.0.",
+    "published": "2025-12-05T19:15:51.923",
     "keywords": "remote,bypass"
   },
-  "CVE-2025-66307": {
+  "CVE-2025-66624": {
+    "url": "https://github.com/bacnet-stack/bacnet-stack/commit/9378f7d1e70169ebde4a5090bae7603703eadf48",
+    "cvss": 7.5,
+    "description": "BACnet Protocol Stack library provides a BACnet application layer, network layer and media access (MAC) layer communications services. Prior to 1.5.0.rc2, The npdu_is_expected_reply function in src/bacnet/npdu.c indexes request_pdu[offset+2/3/5] and reply_pdu[offset+1/2/4] without verifying that those APDU bytes exist. bacnet_npdu_decode() can return offset == 2 for a 2-byte NPDU, so tiny PDUs pass the version check and then get read out of bounds. On ASan/MPU/strict builds this is an immediate crash (DoS). On unprotected builds it is undefined behavior and can mis-route replies; RCE is unlikely because only reads occur, but DoS is reliable.",
+    "published": "2025-12-05T19:15:53.120"
+  },
+  "CVE-2025-13426": {
+    "cvss": "-",
+    "description": "A vulnerability exists in Google  Apigee's JavaCallout policy https://docs.apigee.com/api-platform/reference/policies/java-callout-policy  that allows for remote code execution.\n\nIt is possible for a user to write a JavaCallout that injected a malicious object into the MessageContext to execute arbitrary Java code and system commands at runtime,\u00a0leading to unauthorized access to data, lateral movement within the network, and access to backend systems.\n\nThe Apigee hybrid versions below have all been updated to protect from this vulnerability:\n  *  Hybrid_1.11.2+\n  *  Hybrid_1.12.4+\n  *  Hybrid_1.13.3+\n  *  Hybrid_1.14.1+\n  *  OPDK_5202+\n  *  OPDK_5300+",
+    "published": "2025-12-05T22:15:47.793",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2025-14106": {
+    "cvss": 8.8,
+    "description": "A vulnerability was identified in ZSPACE Q2C NAS up to 1.1.0210050. Affected is the function zfilev2_api.CloseSafe of the file /v2/file/safe/close of the component HTTP POST Request Handler. The manipulation of the argument safe_dir leads to command injection. The attack is possible to be carried out remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-12-05T22:15:48.950",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-14107": {
+    "cvss": 8.8,
+    "description": "A security flaw has been discovered in ZSPACE Q2C NAS up to 1.1.0210050. Affected by this vulnerability is the function zfilev2_api.SafeStatus of the file /v2/file/safe/status of the component HTTP POST Request Handler. The manipulation of the argument safe_dir results in command injection. The attack may be performed from remote. The exploit has been released to the public and may be exploited. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-12-05T22:15:49.163",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-14108": {
+    "cvss": 8.8,
+    "description": "A weakness has been identified in ZSPACE Q2C NAS up to 1.1.0210050. Affected by this issue is the function zfilev2_api.OpenSafe of the file /v2/file/safe/open of the component HTTP POST Request Handler. This manipulation of the argument safe_dir causes command injection. It is possible to initiate the attack remotely. The exploit has been made available to the public and could be exploited. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-12-05T22:15:49.383",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-14116": {
+    "url": "https://github.com/xerrors/yuxi-know/commit/0ff771dc1933d5a6b78f804115e78a7d8625c3f3",
+    "cvss": 4.7,
+    "description": "A vulnerability was detected in xerrors Yuxi-Know up to 0.4.0. This vulnerability affects the function OtherEmbedding.aencode of the file /src/models/embed.py. Performing manipulation of the argument health_url results in server-side request forgery. The attack can be initiated remotely. The exploit is now public and may be used. The patch is named 0ff771dc1933d5a6b78f804115e78a7d8625c3f3. To fix this issue, it is recommended to deploy a patch. The vendor responded with a vulnerability confirmation and a list of security measures they have established already (e.g. disabled URL parsing, disabled URL upload mode, removed URL-to-markdown conversion).",
+    "published": "2025-12-05T23:15:47.207"
+  },
+  "CVE-2025-34291": {
+    "cvss": "-",
+    "description": "Langflow versions up to and including 1.6.9 contain a chained vulnerability that enables account takeover and remote code execution. An overly permissive CORS configuration (allow_origins='*' with allow_credentials=True) combined with a refresh token cookie configured as SameSite=None allows a malicious webpage to perform cross-origin requests that include credentials and successfully call the refresh endpoint. An attacker-controlled origin can therefore obtain fresh access_token / refresh_token pairs for a victim session. Obtained tokens permit access to authenticated endpoints \u2014 including built-in code-execution functionality \u2014 allowing the attacker to execute arbitrary code and achieve full system compromise.",
+    "published": "2025-12-05T23:15:47.433",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-12673": {
+    "cvss": 9.8,
+    "description": "The Flex QR Code Generator plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the update_qr_code() function in all versions up to, and including, 1.2.6. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2025-12-06T06:15:50.233",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-12721": {
+    "cvss": 5.3,
+    "description": "The g-FFL Cockpit plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.7.1 via the /server_status REST API endpoint due to a lack of capability checks. This makes it possible for unauthenticated attackers to extract information about the server.",
+    "published": "2025-12-06T06:15:50.900",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-12966": {
+    "cvss": 8.8,
+    "description": "The All-in-One Video Gallery plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the resolve_import_directory() function in versions 4.5.4 to 4.5.7. This makes it possible for authenticated attackers, with Author-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2025-12-06T10:16:03.797",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-13065": {
+    "cvss": 8.8,
+    "description": "The Starter Templates plugin for WordPress is vulnerable to arbitrary file upload in all versions up to, and including, 4.4.41. This is due to insufficient file type validation detecting WXR files, allowing double extension files to bypass sanitization while being accepted as a valid WXR file. This makes it possible for authenticated attackers, with author-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "published": "2025-12-06T10:16:05.090",
+    "keywords": "remote,execution,bypass"
+  },
+  "CVE-2025-14184": {
+    "cvss": 6.3,
+    "description": "A vulnerability was determined in SGAI Space1 NAS N1211DS up to 1.0.915. Impacted is the function RENAME_FILE/OPERATE_FILE/NGNIX_UPLOAD of the file /cgi-bin/JSONAPI of the component gsaiagent. This manipulation causes command injection. The attack may be initiated remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-12-07T05:15:49.747",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-14186": {
+    "cvss": 3.5,
+    "description": "A security flaw has been discovered in Grandstream GXP1625 1.0.7.4. The impacted element is an unknown function of the file /cgi-bin/api.values.post of the component Network Status Page. Performing manipulation of the argument vpn_ip results in basic cross site scripting. Remote exploitation of the attack is possible. The exploit has been released to the public and may be exploited. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-12-07T08:15:46.813",
+    "keywords": "remote,vpn"
+  },
+  "CVE-2025-14188": {
+    "cvss": 7.2,
+    "description": "A security vulnerability has been detected in UGREEN DH2100+ up to 5.3.0.251125. This impacts the function handler_file_backup_create of the file /v1/file/backup/create of the component nas_svr. The manipulation of the argument path leads to command injection. The attack is possible to be carried out remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-12-07T11:15:47.557",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-14204": {
+    "cvss": 6.3,
+    "description": "A vulnerability has been found in TykoDev cherry-studio-TykoFork 0.1. This issue affects the function redirectToAuthorization of the file /.well-known/oauth-authorization-server of the component OAuth Server Discovery. Such manipulation of the argument authorizationUrl leads to os command injection. The attack can be executed remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-12-07T23:15:50.360",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-14208": {
+    "cvss": 6.3,
+    "description": "A security flaw has been discovered in D-Link DIR-823X up to 20250416. This affects the function sub_415028 of the file /goform/set_wan_settings. The manipulation of the argument ppp_username results in command injection. It is possible to launch the attack remotely. The exploit has been released to the public and may be exploited.",
+    "published": "2025-12-08T01:16:00.673",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-14254": {
     "cvss": 6.5,
-    "description": "This admin plugin for Grav is an HTML user interface that provides a convenient way to configure Grav and easily create and modify pages. Prior to 1.11.0-beta.1, a user enumeration and email disclosure vulnerability exists in Grav. The \"Forgot Password\" functionality at /admin/forgot leaks information about valid usernames and their associated email addresses through distinct server responses. This allows an attacker to enumerate users and disclose sensitive email addresses, which can be leveraged for targeted attacks such as password spraying, phishing, or social engineering. This vulnerability is fixed in 1.11.0-beta.1.",
-    "published": "2025-12-01T22:15:50.570",
-    "keywords": "sensitive,leak"
+    "description": "Vitals ESP developed by Galaxy Software Services has a SQL Injection vulnerability, allowing authenticated remote attackers to inject arbitrary SQL commands to read database contents.",
+    "published": "2025-12-08T08:15:52.260",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-14255": {
+    "cvss": 6.5,
+    "description": "Vitals ESP developed by Galaxy Software Services has a SQL Injection vulnerability, allowing authenticated remote attackers to inject arbitrary SQL commands to read database contents.",
+    "published": "2025-12-08T08:15:52.567",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-26487": {
+    "cvss": 8.6,
+    "description": "Server-Side Request Forgery (SSRF) vulnerability in Infinera MTC-9 version allows \nremote unauthenticated users to gain access to other network resources \nusing HTTPS requests through the appliance used as a bridge.",
+    "published": "2025-12-08T09:15:46.487",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-26488": {
+    "cvss": 7.5,
+    "description": "Improper Input Validation vulnerability in Infinera MTC-9 allows remote unauthenticated users to crash the service and cause a \nreboot of the appliance, thus causing a DoS condition, via crafted XML \npayloads.This issue affects MTC-9: from R22.1.1.0275 before R23.0.",
+    "published": "2025-12-08T09:15:46.660",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-14225": {
+    "cvss": 6.3,
+    "description": "A vulnerability was determined in D-Link DCS-930L 1.15.04. This affects an unknown part of the file /setSystemAdmin of the component alphapd. Executing manipulation of the argument AdminID can lead to command injection. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized. This vulnerability only affects products that are no longer supported by the maintainer.",
+    "published": "2025-12-08T10:15:59.500",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-27020": {
+    "cvss": 9.8,
+    "description": "Improper configuration of the SSH service in Infinera MTC-9 allows an unauthenticated attacker to execute arbitrary commands and access data on file system\n\n.\n\n\nThis issue affects MTC-9: from R22.1.1.0275 before R23.0.",
+    "published": "2025-12-08T10:16:01.427",
+    "keywords": "unauthenticated,command"
+  },
+  "CVE-2025-22420": {
+    "cvss": "-",
+    "description": "In multiple locations, there is a possible way to leak audio files across user profiles due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2025-12-08T17:16:12.680",
+    "keywords": "execution,leak"
+  },
+  "CVE-2025-32319": {
+    "cvss": "-",
+    "description": "In ensureBound of RemotePrintService.java, there is a possible way for a background app to keep foreground permissions due to a permissions bypass. This could lead to local escalation of privilege with user execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2025-12-08T17:16:13.923",
+    "keywords": "remote,execution,bypass"
+  },
+  "CVE-2025-48564": {
+    "cvss": "-",
+    "description": "In multiple locations, there is a possible intent filter bypass due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2025-12-08T17:16:14.660",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2025-48565": {
+    "cvss": "-",
+    "description": "In multiple locations, there is a possible way to bypass the cross profile intent filter due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2025-12-08T17:16:14.777",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2025-48566": {
+    "cvss": "-",
+    "description": "In multiple locations, there is a possible bypass of user profile boundary with a forwarded intent due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2025-12-08T17:16:14.893",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2025-48572": {
+    "cvss": 7.8,
+    "description": "In multiple locations, there is a possible way to launch activities from the background due to a permissions bypass. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2025-12-08T17:16:15.003",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2025-48573": {
+    "cvss": "-",
+    "description": "In sendCommand of MediaSessionRecord.java, there is a possible way to launch the foreground service while the app is in the background due to FGS while-in-use abuse. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2025-12-08T17:16:15.120",
+    "keywords": "execution,command"
+  },
+  "CVE-2025-48575": {
+    "cvss": "-",
+    "description": "In multiple functions of CertInstaller.java, there is a possible way to install certificates due to a permissions bypass. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2025-12-08T17:16:15.250",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2025-48584": {
+    "cvss": "-",
+    "description": "In multiple functions of NotificationManagerService.java, there is a possible way to bypass the per-package channel limits causing resource exhaustion. This could lead to local denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2025-12-08T17:16:15.710",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2025-48586": {
+    "cvss": "-",
+    "description": "In onActivityResult of EditFdnContactScreen.java, there is a possible way to leak contacts from the work profile due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2025-12-08T17:16:15.823",
+    "keywords": "execution,leak"
+  },
+  "CVE-2025-48588": {
+    "cvss": "-",
+    "description": "In startAlwaysOnVpn of Vpn.java, there is a possible way to disable always-on VPN due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2025-12-08T17:16:15.933",
+    "keywords": "execution,vpn"
+  },
+  "CVE-2025-48590": {
+    "cvss": "-",
+    "description": "In verifyAndGetBypass of AppOpsService.java, there is a possible method for a malicious app to prevent dialing emergency services under limited circumstances due to resource exhaustion. This could lead to local denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2025-12-08T17:16:16.167",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2025-48592": {
+    "cvss": "-",
+    "description": "In initDecoder of C2SoftDav1dDec.cpp, there is a possible out of bounds read due to a heap buffer overflow. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2025-12-08T17:16:16.407",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-48599": {
+    "cvss": "-",
+    "description": "In multiple functions of WifiScanModeActivity.java, there is a possible way to bypass a device config restriction due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2025-12-08T17:16:17.010",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2025-48610": {
+    "cvss": "-",
+    "description": "In __pkvm_guest_relinquish_to_host of mem_protect.c, there is a possible configuration data leak due to a logic error in the code. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2025-12-08T17:16:17.687",
+    "keywords": "execution,leak"
+  },
+  "CVE-2025-48618": {
+    "cvss": "-",
+    "description": "In processLaunchBrowser of CommandParamsFactory.java, there is a possible browser interaction from the lockscreen due to improper locking. This could lead to physical escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2025-12-08T17:16:18.163",
+    "keywords": "execution,command"
+  },
+  "CVE-2025-48626": {
+    "cvss": "-",
+    "description": "In multiple locations, there is a possible way to launch an application from the background due to a precondition check failure. This could lead to remote escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2025-12-08T17:16:18.893",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-48628": {
+    "cvss": "-",
+    "description": "In validateIconUserBoundary of PrintManagerService.java, there is a possible cross-user image leak due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2025-12-08T17:16:19.130",
+    "keywords": "execution,leak"
+  },
+  "CVE-2025-48631": {
+    "cvss": "-",
+    "description": "In onHeaderDecoded of LocalImageResolver.java, there is a possible persistent denial of service due to resource exhaustion. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.",
+    "published": "2025-12-08T17:16:19.370",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-65804": {
+    "cvss": 6.5,
+    "description": "Tenda AX3 v16.03.12.11 contains a stack overflow in formSetIptv via the iptvType parameter, which can cause memory corruption and enable remote code execution (RCE).",
+    "published": "2025-12-08T18:15:53.980",
+    "keywords": "remote,execution"
   }
 }
