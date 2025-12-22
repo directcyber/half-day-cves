@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-12-22T22:13:42.595688
+Updated at UTC 2025-12-22T23:13:18.585443
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,16 @@ Updated at UTC 2025-12-22T22:13:42.595688
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -100,6 +110,56 @@ Updated at UTC 2025-12-22T22:13:42.595688
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-68476">CVE-2025-68476</a></td>
+					<td>-</td>
+					<td>authentication,sensitive</td>
+					<td class=date>2025-12-22T22:16:09.307</td>
+					<td class=description>KEDA is a Kubernetes-based Event Driven Autoscaling component. Prior to versions 2.17.3 and 2.18.3, an Arbitrary File Read vulnerability has been identified in KEDA, potentially affecting any KEDA resource that uses TriggerAuthentication to configure HashiCorp Vault authentication. The vulnerability stems from an incorrect or insufficient path validation when loading the Service Account Token specified in spec.hashiCorpVault.credential.serviceAccount. An attacker with permissions to create or modify a TriggerAuthentication resource can exfiltrate the content of any file from the node's filesystem (where the KEDA pod resides) by directing the file's content to a server under their control, as part of the Vault authentication request. The potential impact includes the exfiltration of sensitive system information, such as secrets, keys, or the content of files like /etc/passwd. This issue has been patched in versions 2.17.3 and 2.18.3.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-67436">CVE-2025-67436</a></td>
+					<td>6.5</td>
+					<td>remote,execution</td>
+					<td class=date>2025-12-22T22:16:08.983</td>
+					<td class=description>Authenticated Remote Code Execution (RCE) in PluXml CMS 5.8.22 allows an attacker with administrator panel access to inject a malicious PHP webshell into a theme file (e.g., home.php).</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-65856">CVE-2025-65856</a></td>
+					<td>9.8</td>
+					<td>remote,unauthenticated,authentication,sensitive,bypass</td>
+					<td class=date>2025-12-22T22:16:08.360</td>
+					<td class=description>Authentication bypass vulnerability in Xiongmai XM530 IP cameras on Firmware V5.00.R02.000807D8.10010.346624.S.ONVIF 21.06 allows unauthenticated remote attackers to access sensitive device information and live video streams. The ONVIF implementation fails to enforce authentication on 31 critical endpoints, enabling direct unauthorized video stream access.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34458">CVE-2025-34458</a></td>
+					<td>-</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-12-22T22:16:04.687</td>
+					<td class=description>wb2osz/direwolf (Dire Wolf) versions up to and including 1.8, prior to commit 3658a87, contain a reachable assertion vulnerability in the APRS MIC-E decoder function aprs_mic_e() located in src/decode_aprs.c. When processing a specially crafted AX.25 frame containing a MIC-E message with an empty or truncated comment field, the application triggers an unhandled assertion checking for a non-empty comment. This assertion failure causes immediate process termination, allowing a remote, unauthenticated attacker to cause a denial of service by sending malformed APRS traffic.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34457">CVE-2025-34457</a></td>
+					<td>-</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-12-22T22:16:04.493</td>
+					<td class=description>wb2osz/direwolf (Dire Wolf) versions up to and including 1.8, prior to commit 694c954, contain a stack-based buffer overflow vulnerability in the function kiss_rec_byte() located in src/kiss_frame.c. When processing crafted KISS frames that reach the maximum allowed frame length (MAX_KISS_LEN), the function appends a terminating FEND byte without reserving sufficient space in the stack buffer. This results in an out-of-bounds write followed by an out-of-bounds read during the subsequent call to kiss_unwrap(), leading to stack memory corruption or application crashes. This vulnerability may allow remote unauthenticated attackers to trigger a denial-of-service condition.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">

@@ -88,5 +88,35 @@
     "description": "ClipBucket 5.5.2 is affected by an improper access control issue where the product is shipped or deployed with hardcoded default administrative credentials. An unauthenticated remote attacker can log in to the administrative panel using these default credentials, resulting in full administrative control of the application.",
     "published": "2025-12-22T20:15:45.303",
     "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-34457": {
+    "cvss": "-",
+    "description": "wb2osz/direwolf (Dire Wolf) versions up to and including 1.8, prior to commit 694c954, contain a stack-based buffer overflow vulnerability in the function kiss_rec_byte() located in src/kiss_frame.c. When processing crafted KISS frames that reach the maximum allowed frame length (MAX_KISS_LEN), the function appends a terminating FEND byte without reserving sufficient space in the stack buffer. This results in an out-of-bounds write followed by an out-of-bounds read during the subsequent call to kiss_unwrap(), leading to stack memory corruption or application crashes. This vulnerability may allow remote unauthenticated attackers to trigger a denial-of-service condition.",
+    "published": "2025-12-22T22:16:04.493",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-34458": {
+    "cvss": "-",
+    "description": "wb2osz/direwolf (Dire Wolf) versions up to and including 1.8, prior to commit 3658a87, contain a reachable assertion vulnerability in the APRS MIC-E decoder function aprs_mic_e() located in src/decode_aprs.c. When processing a specially crafted AX.25 frame containing a MIC-E message with an empty or truncated comment field, the application triggers an unhandled assertion checking for a non-empty comment. This assertion failure causes immediate process termination, allowing a remote, unauthenticated attacker to cause a denial of service by sending malformed APRS traffic.",
+    "published": "2025-12-22T22:16:04.687",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-65856": {
+    "cvss": 9.8,
+    "description": "Authentication bypass vulnerability in Xiongmai XM530 IP cameras on Firmware V5.00.R02.000807D8.10010.346624.S.ONVIF 21.06 allows unauthenticated remote attackers to access sensitive device information and live video streams. The ONVIF implementation fails to enforce authentication on 31 critical endpoints, enabling direct unauthorized video stream access.",
+    "published": "2025-12-22T22:16:08.360",
+    "keywords": "remote,unauthenticated,authentication,sensitive,bypass"
+  },
+  "CVE-2025-67436": {
+    "cvss": 6.5,
+    "description": "Authenticated Remote Code Execution (RCE) in PluXml CMS 5.8.22 allows an attacker with administrator panel access to inject a malicious PHP webshell into a theme file (e.g., home.php).",
+    "published": "2025-12-22T22:16:08.983",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-68476": {
+    "cvss": "-",
+    "description": "KEDA is a Kubernetes-based Event Driven Autoscaling component. Prior to versions 2.17.3 and 2.18.3, an Arbitrary File Read vulnerability has been identified in KEDA, potentially affecting any KEDA resource that uses TriggerAuthentication to configure HashiCorp Vault authentication. The vulnerability stems from an incorrect or insufficient path validation when loading the Service Account Token specified in spec.hashiCorpVault.credential.serviceAccount. An attacker with permissions to create or modify a TriggerAuthentication resource can exfiltrate the content of any file from the node's filesystem (where the KEDA pod resides) by directing the file's content to a server under their control, as part of the Vault authentication request. The potential impact includes the exfiltration of sensitive system information, such as secrets, keys, or the content of files like /etc/passwd. This issue has been patched in versions 2.17.3 and 2.18.3.",
+    "published": "2025-12-22T22:16:09.307",
+    "keywords": "authentication,sensitive"
   }
 }
