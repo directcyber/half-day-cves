@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-12-08T19:11:22.610332
+Updated at UTC 2025-12-22T18:20:14.706961
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -86,529 +86,185 @@ Updated at UTC 2025-12-08T19:11:22.610332
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-14116">CVE-2025-14116</a></td>
-					<td>4.7</td>
-					<td><a target=_blank href="https://github.com/xerrors/yuxi-know/commit/0ff771dc1933d5a6b78f804115e78a7d8625c3f3">https://github.com/xerrors/yuxi-know/commit/0ff771dc1933d5a6b78f804115e78a7d8625c3f3</a></td>
-					<td class=date>2025-12-05T23:15:47.207</td>
-					<td class=description>A vulnerability was detected in xerrors Yuxi-Know up to 0.4.0. This vulnerability affects the function OtherEmbedding.aencode of the file /src/models/embed.py. Performing manipulation of the argument health_url results in server-side request forgery. The attack can be initiated remotely. The exploit is now public and may be used. The patch is named 0ff771dc1933d5a6b78f804115e78a7d8625c3f3. To fix this issue, it is recommended to deploy a patch. The vendor responded with a vulnerability confirmation and a list of security measures they have established already (e.g. disabled URL parsing, disabled URL upload mode, removed URL-to-markdown conversion).</td>
-
-
-				</tr>
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-66624">CVE-2025-66624</a></td>
-					<td>7.5</td>
-					<td><a target=_blank href="https://github.com/bacnet-stack/bacnet-stack/commit/9378f7d1e70169ebde4a5090bae7603703eadf48">https://github.com/bacnet-stack/bacnet-stack/commit/9378f7d1e70169ebde4a5090bae7603703eadf48</a></td>
-					<td class=date>2025-12-05T19:15:53.120</td>
-					<td class=description>BACnet Protocol Stack library provides a BACnet application layer, network layer and media access (MAC) layer communications services. Prior to 1.5.0.rc2, The npdu_is_expected_reply function in src/bacnet/npdu.c indexes request_pdu[offset+2/3/5] and reply_pdu[offset+1/2/4] without verifying that those APDU bytes exist. bacnet_npdu_decode() can return offset == 2 for a 2-byte NPDU, so tiny PDUs pass the version check and then get read out of bounds. On ASan/MPU/strict builds this is an immediate crash (DoS). On unprotected builds it is undefined behavior and can mis-route replies; RCE is unlikely because only reads occur, but DoS is reliable.</td>
-
-
-				</tr>
-			
-		
-			
-		
-			
-		
 
 		<hr>
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-65804">CVE-2025-65804</a></td>
-					<td>6.5</td>
-					<td>remote,execution</td>
-					<td class=date>2025-12-08T18:15:53.980</td>
-					<td class=description>Tenda AX3 v16.03.12.11 contains a stack overflow in formSetIptv via the iptvType parameter, which can cause memory corruption and enable remote code execution (RCE).</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-48631">CVE-2025-48631</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-68645">CVE-2025-68645</a></td>
 					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2025-12-08T17:16:19.370</td>
-					<td class=description>In onHeaderDecoded of LocalImageResolver.java, there is a possible persistent denial of service due to resource exhaustion. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-12-22T18:16:17.070</td>
+					<td class=description>A Local File Inclusion (LFI) vulnerability exists in the Webmail Classic UI of Zimbra Collaboration (ZCS) 10.0 and 10.1 because of improper handling of user-supplied request parameters in the RestFilter servlet. An unauthenticated remote attacker can craft requests to the /h/rest endpoint to influence internal request dispatching, allowing inclusion of arbitrary files from the WebRoot directory.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-48628">CVE-2025-48628</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-65270">CVE-2025-65270</a></td>
 					<td>-</td>
-					<td>execution,leak</td>
-					<td class=date>2025-12-08T17:16:19.130</td>
-					<td class=description>In validateIconUserBoundary of PrintManagerService.java, there is a possible cross-user image leak due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-12-22T18:16:16.813</td>
+					<td class=description>Reflected cross-site scripting (XSS) vulnerability in ClinCapture EDC 3.0 and 2.2.3, allowing an unauthenticated remote attacker to execute JavaScript code in the context of the victim's browser.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-48626">CVE-2025-48626</a></td>
-					<td>9.8</td>
-					<td>remote,execution</td>
-					<td class=date>2025-12-08T17:16:18.893</td>
-					<td class=description>In multiple locations, there is a possible way to launch an application from the background due to a precondition check failure. This could lead to remote escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-48618">CVE-2025-48618</a></td>
-					<td>6.8</td>
-					<td>execution,command</td>
-					<td class=date>2025-12-08T17:16:18.163</td>
-					<td class=description>In processLaunchBrowser of CommandParamsFactory.java, there is a possible browser interaction from the lockscreen due to improper locking. This could lead to physical escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-48610">CVE-2025-48610</a></td>
-					<td>-</td>
-					<td>execution,leak</td>
-					<td class=date>2025-12-08T17:16:17.687</td>
-					<td class=description>In __pkvm_guest_relinquish_to_host of mem_protect.c, there is a possible configuration data leak due to a logic error in the code. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-48599">CVE-2025-48599</a></td>
-					<td>-</td>
-					<td>execution,bypass</td>
-					<td class=date>2025-12-08T17:16:17.010</td>
-					<td class=description>In multiple functions of WifiScanModeActivity.java, there is a possible way to bypass a device config restriction due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-48592">CVE-2025-48592</a></td>
-					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2025-12-08T17:16:16.407</td>
-					<td class=description>In initDecoder of C2SoftDav1dDec.cpp, there is a possible out of bounds read due to a heap buffer overflow. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-48590">CVE-2025-48590</a></td>
-					<td>-</td>
-					<td>execution,bypass</td>
-					<td class=date>2025-12-08T17:16:16.167</td>
-					<td class=description>In verifyAndGetBypass of AppOpsService.java, there is a possible method for a malicious app to prevent dialing emergency services under limited circumstances due to resource exhaustion. This could lead to local denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-48588">CVE-2025-48588</a></td>
-					<td>-</td>
-					<td>execution,vpn</td>
-					<td class=date>2025-12-08T17:16:15.933</td>
-					<td class=description>In startAlwaysOnVpn of Vpn.java, there is a possible way to disable always-on VPN due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-48586">CVE-2025-48586</a></td>
-					<td>-</td>
-					<td>execution,leak</td>
-					<td class=date>2025-12-08T17:16:15.823</td>
-					<td class=description>In onActivityResult of EditFdnContactScreen.java, there is a possible way to leak contacts from the work profile due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-48584">CVE-2025-48584</a></td>
-					<td>-</td>
-					<td>execution,bypass</td>
-					<td class=date>2025-12-08T17:16:15.710</td>
-					<td class=description>In multiple functions of NotificationManagerService.java, there is a possible way to bypass the per-package channel limits causing resource exhaustion. This could lead to local denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-48575">CVE-2025-48575</a></td>
-					<td>-</td>
-					<td>execution,bypass</td>
-					<td class=date>2025-12-08T17:16:15.250</td>
-					<td class=description>In multiple functions of CertInstaller.java, there is a possible way to install certificates due to a permissions bypass. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-48573">CVE-2025-48573</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-68331">CVE-2025-68331</a></td>
 					<td>-</td>
 					<td>execution,command</td>
-					<td class=date>2025-12-08T17:16:15.120</td>
-					<td class=description>In sendCommand of MediaSessionRecord.java, there is a possible way to launch the foreground service while the app is in the background due to FGS while-in-use abuse. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
+					<td class=date>2025-12-22T17:16:00.800</td>
+					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
+
+usb: uas: fix urb unmapping issue when the uas device is remove during ongoing data transfer
+
+When a UAS device is unplugged during data transfer, there is
+a probability of a system panic occurring. The root cause is
+an access to an invalid memory address during URB callback handling.
+Specifically, this happens when the dma_direct_unmap_sg() function
+is called within the usb_hcd_unmap_urb_for_dma() interface, but the
+sg->dma_address field is 0 and the sg data structure has already been
+freed.
+
+The SCSI driver sends transfer commands by invoking uas_queuecommand_lck()
+in uas.c, using the uas_submit_urbs() function to submit requests to USB.
+Within the uas_submit_urbs() implementation, three URBs (sense_urb,
+data_urb, and cmd_urb) are sequentially submitted. Device removal may
+occur at any point during uas_submit_urbs execution, which may result
+in URB submission failure. However, some URBs might have been successfully
+submitted before the failure, and uas_submit_urbs will return the -ENODEV
+error code in this case. The current error handling directly calls
+scsi_done(). In the SCSI driver, this eventually triggers scsi_complete()
+to invoke scsi_end_request() for releasing the sgtable. The successfully
+submitted URBs, when being unlinked to giveback, call
+usb_hcd_unmap_urb_for_dma() in hcd.c, leading to exceptions during sg
+unmapping operations since the sg data structure has already been freed.
+
+This patch modifies the error condition check in the uas_submit_urbs()
+function. When a UAS device is removed but one or more URBs have already
+been successfully submitted to USB, it avoids immediately invoking
+scsi_done() and save the cmnd to devinfo->cmnd array. If the successfully
+submitted URBs is completed before devinfo->resetting being set, then
+the scsi_done() function will be called within uas_try_complete() after
+all pending URB operations are finalized. Otherwise, the scsi_done()
+function will be called within uas_zap_pending(), which is executed after
+usb_kill_anchored_urbs().
+
+The error handling only takes effect when uas_queuecommand_lck() calls
+uas_submit_urbs() and returns the error value -ENODEV . In this case,
+the device is disconnected, and the flow proceeds to uas_disconnect(),
+where uas_zap_pending() is invoked to call uas_try_complete().</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-48572">CVE-2025-48572</a></td>
-					<td>7.8</td>
-					<td>execution,bypass</td>
-					<td class=date>2025-12-08T17:16:15.003</td>
-					<td class=description>In multiple locations, there is a possible way to launch activities from the background due to a permissions bypass. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-14273">CVE-2025-14273</a></td>
+					<td>7.2</td>
+					<td>unauthenticated,authentication</td>
+					<td class=date>2025-12-22T12:16:19.240</td>
+					<td class=description>Mattermost versions 11.1.x <= 11.1.0, 11.0.x <= 11.0.5, 10.12.x <= 10.12.3, 10.11.x <= 10.11.7 with the Jira plugin enabled and Mattermost Jira plugin versions <=4.4.0 fail to enforce authentication and issue-key path restrictions in the Jira plugin, which allows an unauthenticated attacker who knows a valid user ID to issue authenticated GET and POST requests to the Jira server via crafted plugin payloads that spoof the user ID and inject arbitrary issue key paths. Mattermost Advisory ID: MMSA-2025-00555</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-48566">CVE-2025-48566</a></td>
-					<td>-</td>
-					<td>execution,bypass</td>
-					<td class=date>2025-12-08T17:16:14.893</td>
-					<td class=description>In multiple locations, there is a possible bypass of user profile boundary with a forwarded intent due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-48565">CVE-2025-48565</a></td>
-					<td>-</td>
-					<td>execution,bypass</td>
-					<td class=date>2025-12-08T17:16:14.777</td>
-					<td class=description>In multiple locations, there is a possible way to bypass the cross profile intent filter due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-48564">CVE-2025-48564</a></td>
-					<td>-</td>
-					<td>execution,bypass</td>
-					<td class=date>2025-12-08T17:16:14.660</td>
-					<td class=description>In multiple locations, there is a possible intent filter bypass due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-32319">CVE-2025-32319</a></td>
-					<td>-</td>
-					<td>remote,execution,bypass</td>
-					<td class=date>2025-12-08T17:16:13.923</td>
-					<td class=description>In ensureBound of RemotePrintService.java, there is a possible way for a background app to keep foreground permissions due to a permissions bypass. This could lead to local escalation of privilege with user execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-22420">CVE-2025-22420</a></td>
-					<td>-</td>
-					<td>execution,leak</td>
-					<td class=date>2025-12-08T17:16:12.680</td>
-					<td class=description>In multiple locations, there is a possible way to leak audio files across user profiles due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-27020">CVE-2025-27020</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-15016">CVE-2025-15016</a></td>
 					<td>9.8</td>
-					<td>unauthenticated,command</td>
-					<td class=date>2025-12-08T10:16:01.427</td>
-					<td class=description>Improper configuration of the SSH service in Infinera MTC-9 allows an unauthenticated attacker to execute arbitrary commands and access data on file system
-
-.
-
-
-This issue affects MTC-9: from R22.1.1.0275 before R23.0.</td>
+					<td>remote,unauthenticated</td>
+					<td class=date>2025-12-22T04:16:00.720</td>
+					<td class=description>Enterprise Cloud Database developed by Ragic has a Hard-coded Cryptographic Key vulnerability, allowing unauthenticated remote attackers to exploit the fixed key to generate verification information and log into the system as any user.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-14225">CVE-2025-14225</a></td>
-					<td>6.3</td>
-					<td>remote,command</td>
-					<td class=date>2025-12-08T10:15:59.500</td>
-					<td class=description>A vulnerability was determined in D-Link DCS-930L 1.15.04. This affects an unknown part of the file /setSystemAdmin of the component alphapd. Executing manipulation of the argument AdminID can lead to command injection. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized. This vulnerability only affects products that are no longer supported by the maintainer.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26488">CVE-2025-26488</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-15015">CVE-2025-15015</a></td>
 					<td>7.5</td>
 					<td>remote,unauthenticated</td>
-					<td class=date>2025-12-08T09:15:46.660</td>
-					<td class=description>Improper Input Validation vulnerability in Infinera MTC-9 allows remote unauthenticated users to crash the service and cause a 
-reboot of the appliance, thus causing a DoS condition, via crafted XML 
-payloads.This issue affects MTC-9: from R22.1.1.0275 before R23.0.</td>
+					<td class=date>2025-12-22T04:16:00.550</td>
+					<td class=description>Enterprise Cloud Database developed by Ragic has a Arbitrary File Read vulnerability, allowing unauthenticated remote attackers to exploit Relative Path Traversal to download arbitrary system files.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-26487">CVE-2025-26487</a></td>
-					<td>8.6</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-14800">CVE-2025-14800</a></td>
+					<td>8.1</td>
 					<td>remote,unauthenticated</td>
-					<td class=date>2025-12-08T09:15:46.487</td>
-					<td class=description>Server-Side Request Forgery (SSRF) vulnerability in Infinera MTC-9 version allows 
-remote unauthenticated users to gain access to other network resources 
-using HTTPS requests through the appliance used as a bridge.</td>
+					<td class=date>2025-12-21T08:15:48.473</td>
+					<td class=description>The Redirection for Contact Form 7 plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'move_file_to_upload' function in all versions up to, and including, 3.2.7. This makes it possible for unauthenticated attackers to copy arbitrary files on the affected site's server. If 'allow_url_fopen' is set to 'On', it is possible to upload a remote file to the server.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-14255">CVE-2025-14255</a></td>
-					<td>6.5</td>
-					<td>remote,command</td>
-					<td class=date>2025-12-08T08:15:52.567</td>
-					<td class=description>Vitals ESP developed by Galaxy Software Services has a SQL Injection vulnerability, allowing authenticated remote attackers to inject arbitrary SQL commands to read database contents.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-14043">CVE-2025-14043</a></td>
+					<td>5.3</td>
+					<td>unauthenticated,authentication,bypass</td>
+					<td class=date>2025-12-21T03:15:52.153</td>
+					<td class=description>The Tainacan plugin for WordPress is vulnerable to unauthorized metadata section creation due to missing authorization checks in all versions up to, and including, 1.0.1. This is due to the `create_item_permissions_check()` function unconditionally returning true, which bypasses authentication and authorization validation. This makes it possible for unauthenticated attackers to create arbitrary metadata sections for any collection via the public REST API granted they can access the WordPress site.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-14254">CVE-2025-14254</a></td>
-					<td>6.5</td>
-					<td>remote,command</td>
-					<td class=date>2025-12-08T08:15:52.260</td>
-					<td class=description>Vitals ESP developed by Galaxy Software Services has a SQL Injection vulnerability, allowing authenticated remote attackers to inject arbitrary SQL commands to read database contents.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-12980">CVE-2025-12980</a></td>
+					<td>7.5</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2025-12-21T03:15:51.830</td>
+					<td class=description>The Post Grid Gutenberg Blocks for News, Magazines, Blog Websites – PostX plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the '/ultp/v2/get_dynamic_content/' REST API endpoint in all versions up to, and including, 5.0.3. This makes it possible for unauthenticated attackers to retrieve sensitive user metadata, including password hashes.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-14208">CVE-2025-14208</a></td>
-					<td>6.3</td>
-					<td>remote,command</td>
-					<td class=date>2025-12-08T01:16:00.673</td>
-					<td class=description>A security flaw has been discovered in D-Link DIR-823X up to 20250416. This affects the function sub_415028 of the file /goform/set_wan_settings. The manipulation of the argument ppp_username results in command injection. It is possible to launch the attack remotely. The exploit has been released to the public and may be exploited.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-14204">CVE-2025-14204</a></td>
-					<td>6.3</td>
-					<td>remote,command</td>
-					<td class=date>2025-12-07T23:15:50.360</td>
-					<td class=description>A vulnerability has been found in TykoDev cherry-studio-TykoFork 0.1. This issue affects the function redirectToAuthorization of the file /.well-known/oauth-authorization-server of the component OAuth Server Discovery. Such manipulation of the argument authorizationUrl leads to os command injection. The attack can be executed remotely. The exploit has been disclosed to the public and may be used.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-14188">CVE-2025-14188</a></td>
-					<td>7.2</td>
-					<td>remote,command</td>
-					<td class=date>2025-12-07T11:15:47.557</td>
-					<td class=description>A security vulnerability has been detected in UGREEN DH2100+ up to 5.3.0.251125. This impacts the function handler_file_backup_create of the file /v1/file/backup/create of the component nas_svr. The manipulation of the argument path leads to command injection. The attack is possible to be carried out remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-14186">CVE-2025-14186</a></td>
-					<td>3.5</td>
-					<td>remote,vpn</td>
-					<td class=date>2025-12-07T08:15:46.813</td>
-					<td class=description>A security flaw has been discovered in Grandstream GXP1625 1.0.7.4. The impacted element is an unknown function of the file /cgi-bin/api.values.post of the component Network Status Page. Performing manipulation of the argument vpn_ip results in basic cross site scripting. Remote exploitation of the attack is possible. The exploit has been released to the public and may be exploited. The vendor was contacted early about this disclosure but did not respond in any way.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-14184">CVE-2025-14184</a></td>
-					<td>6.3</td>
-					<td>remote,command</td>
-					<td class=date>2025-12-07T05:15:49.747</td>
-					<td class=description>A vulnerability was determined in SGAI Space1 NAS N1211DS up to 1.0.915. Impacted is the function RENAME_FILE/OPERATE_FILE/NGNIX_UPLOAD of the file /cgi-bin/JSONAPI of the component gsaiagent. This manipulation causes command injection. The attack may be initiated remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-13065">CVE-2025-13065</a></td>
-					<td>8.8</td>
-					<td>remote,execution,bypass</td>
-					<td class=date>2025-12-06T10:16:05.090</td>
-					<td class=description>The Starter Templates plugin for WordPress is vulnerable to arbitrary file upload in all versions up to, and including, 4.4.41. This is due to insufficient file type validation detecting WXR files, allowing double extension files to bypass sanitization while being accepted as a valid WXR file. This makes it possible for authenticated attackers, with author-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-12966">CVE-2025-12966</a></td>
-					<td>8.8</td>
-					<td>remote,execution</td>
-					<td class=date>2025-12-06T10:16:03.797</td>
-					<td class=description>The All-in-One Video Gallery plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the resolve_import_directory() function in versions 4.5.4 to 4.5.7. This makes it possible for authenticated attackers, with Author-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-12721">CVE-2025-12721</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-12492">CVE-2025-12492</a></td>
 					<td>5.3</td>
 					<td>unauthenticated,sensitive</td>
-					<td class=date>2025-12-06T06:15:50.900</td>
-					<td class=description>The g-FFL Cockpit plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.7.1 via the /server_status REST API endpoint due to a lack of capability checks. This makes it possible for unauthenticated attackers to extract information about the server.</td>
+					<td class=date>2025-12-20T09:15:54.857</td>
+					<td class=description>The Ultimate Member – User Profile, Registration, Login, Member Directory, Content Restriction & Membership Plugin plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.11.0 via the ajax_get_members function. This is due to the use of a predictable low-entropy token (5 hex characters derived from md5 of post ID) to identify member directories and insufficient authorization checks on the unauthenticated AJAX endpoint. This makes it possible for unauthenticated attackers to extract sensitive data including usernames, display names, user roles (including administrator accounts), profile URLs, and user IDs by enumerating predictable directory_id values or brute-forcing the small 16^5 token space.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-12673">CVE-2025-12673</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-13329">CVE-2025-13329</a></td>
 					<td>9.8</td>
 					<td>remote,execution,unauthenticated</td>
-					<td class=date>2025-12-06T06:15:50.233</td>
-					<td class=description>The Flex QR Code Generator plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the update_qr_code() function in all versions up to, and including, 1.2.6. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
+					<td class=date>2025-12-20T04:16:07.207</td>
+					<td class=description>The File Uploader for WooCommerce plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the callback function for the 'add-image-data' REST API endpoint in all versions up to, and including, 1.0.3. This makes it possible for unauthenticated attackers to upload arbitrary files to the Uploadcare service and subsequently download them on the affected site's server which may make remote code execution possible.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-34291">CVE-2025-34291</a></td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-14300">CVE-2025-14300</a></td>
 					<td>-</td>
-					<td>remote,execution</td>
-					<td class=date>2025-12-05T23:15:47.433</td>
-					<td class=description>Langflow versions up to and including 1.6.9 contain a chained vulnerability that enables account takeover and remote code execution. An overly permissive CORS configuration (allow_origins='*' with allow_credentials=True) combined with a refresh token cookie configured as SameSite=None allows a malicious webpage to perform cross-origin requests that include credentials and successfully call the refresh endpoint. An attacker-controlled origin can therefore obtain fresh access_token / refresh_token pairs for a victim session. Obtained tokens permit access to authenticated endpoints — including built-in code-execution functionality — allowing the attacker to execute arbitrary code and achieve full system compromise.</td>
-				</tr>
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-14108">CVE-2025-14108</a></td>
-					<td>8.8</td>
-					<td>remote,command</td>
-					<td class=date>2025-12-05T22:15:49.383</td>
-					<td class=description>A weakness has been identified in ZSPACE Q2C NAS up to 1.1.0210050. Affected by this issue is the function zfilev2_api.OpenSafe of the file /v2/file/safe/open of the component HTTP POST Request Handler. This manipulation of the argument safe_dir causes command injection. It is possible to initiate the attack remotely. The exploit has been made available to the public and could be exploited. The vendor was contacted early about this disclosure but did not respond in any way.</td>
+					<td>unauthenticated,authentication</td>
+					<td class=date>2025-12-20T01:16:03.133</td>
+					<td class=description>The HTTPS service on Tapo C200 V3 exposes a connectAP interface without proper authentication. An unauthenticated attacker on the same local network segment can exploit this to modify the device’s Wi-Fi configuration, resulting in loss of connectivity and denial-of-service (DoS).</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-14107">CVE-2025-14107</a></td>
-					<td>8.8</td>
-					<td>remote,command</td>
-					<td class=date>2025-12-05T22:15:49.163</td>
-					<td class=description>A security flaw has been discovered in ZSPACE Q2C NAS up to 1.1.0210050. Affected by this vulnerability is the function zfilev2_api.SafeStatus of the file /v2/file/safe/status of the component HTTP POST Request Handler. The manipulation of the argument safe_dir results in command injection. The attack may be performed from remote. The exploit has been released to the public and may be exploited. The vendor was contacted early about this disclosure but did not respond in any way.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-68613">CVE-2025-68613</a></td>
+					<td>9.9</td>
+					<td>remote,execution,sensitive</td>
+					<td class=date>2025-12-19T23:15:52.083</td>
+					<td class=description>n8n is an open source workflow automation platform. Versions starting with 0.211.0 and prior to 1.120.4, 1.121.1, and 1.122.0 contain a critical Remote Code Execution (RCE) vulnerability in their workflow expression evaluation system. Under certain conditions, expressions supplied by authenticated users during workflow configuration may be evaluated in an execution context that is not sufficiently isolated from the underlying runtime. An authenticated attacker could abuse this behavior to execute arbitrary code with the privileges of the n8n process. Successful exploitation may lead to full compromise of the affected instance, including unauthorized access to sensitive data, modification of workflows, and execution of system-level operations. This issue has been fixed in versions 1.120.4, 1.121.1, and 1.122.0. Users are strongly advised to upgrade to a patched version, which introduces additional safeguards to restrict expression evaluation. If upgrading is not immediately possible, administrators should consider the following temporary mitigations: Limit workflow creation and editing permissions to fully trusted users only; and/or deploy n8n in a hardened environment with restricted operating system privileges and network access to reduce the impact of potential exploitation. These workarounds do not fully eliminate the risk and should only be used as short-term measures.</td>
 				</tr>
 			
 		
 			
 				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-14106">CVE-2025-14106</a></td>
-					<td>8.8</td>
-					<td>remote,command</td>
-					<td class=date>2025-12-05T22:15:48.950</td>
-					<td class=description>A vulnerability was identified in ZSPACE Q2C NAS up to 1.1.0210050. Affected is the function zfilev2_api.CloseSafe of the file /v2/file/safe/close of the component HTTP POST Request Handler. The manipulation of the argument safe_dir leads to command injection. The attack is possible to be carried out remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-13426">CVE-2025-13426</a></td>
-					<td>-</td>
-					<td>remote,execution,command</td>
-					<td class=date>2025-12-05T22:15:47.793</td>
-					<td class=description>A vulnerability exists in Google  Apigee's JavaCallout policy https://docs.apigee.com/api-platform/reference/policies/java-callout-policy  that allows for remote code execution.
-
-It is possible for a user to write a JavaCallout that injected a malicious object into the MessageContext to execute arbitrary Java code and system commands at runtime, leading to unauthorized access to data, lateral movement within the network, and access to backend systems.
-
-The Apigee hybrid versions below have all been updated to protect from this vulnerability:
-  *  Hybrid_1.11.2+
-  *  Hybrid_1.12.4+
-  *  Hybrid_1.13.3+
-  *  Hybrid_1.14.1+
-  *  OPDK_5202+
-  *  OPDK_5300+</td>
-				</tr>
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-66570">CVE-2025-66570</a></td>
-					<td>10.0</td>
-					<td>remote,bypass</td>
-					<td class=date>2025-12-05T19:15:51.923</td>
-					<td class=description>cpp-httplib is a C++11 single-file header-only cross platform HTTP/HTTPS library. Prior to 0.27.0, a vulnerability allows attacker-controlled HTTP headers to influence server-visible metadata, logging, and authorization decisions. An attacker can inject headers named REMOTE_ADDR, REMOTE_PORT, LOCAL_ADDR, LOCAL_PORT that are parsed into the request header multimap via read_headers() in httplib.h (headers.emplace), then the server later appends its own internal metadata using the same header names in Server::process_request without erasing duplicates. Because Request::get_header_value returns the first entry for a header key (id == 0) and the client-supplied headers are parsed before server-inserted headers, downstream code that uses these header names may inadvertently use attacker-controlled values. Affected files/locations: cpp-httplib/httplib.h (read_headers, Server::process_request, Request::get_header_value, get_header_value_u64) and cpp-httplib/docker/main.cc (get_client_ip, nginx_access_logger, nginx_error_logger). Attack surface: attacker-controlled HTTP headers in incoming requests flow into the Request.headers multimap and into logging code that reads forwarded headers, enabling IP spoofing, log poisoning, and authorization bypass via header shadowing. This vulnerability is fixed in 0.27.0.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-46603">CVE-2025-46603</a></td>
-					<td>7.0</td>
-					<td>remote,unauthenticated,authentication</td>
-					<td class=date>2025-12-05T19:15:48.233</td>
-					<td class=description>Dell CloudBoost Virtual Appliance, versions 19.13.0.0 and prior, contains an Improper Restriction of Excessive Authentication Attempts vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to unauthorized access.</td>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-67712">CVE-2025-67712</a></td>
+					<td>4.7</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2025-12-19T20:15:55.450</td>
+					<td class=description>There is an HTML injection issue in Esri ArcGIS Web AppBuilder developer edition versions prior to 2.30 that allows a remote, unauthenticated attacker to potentially entice a user to click a link that causes arbitrary HTML to render in a victim's browser. There is no evidence of JavaScript execution, which limits the impact. At the time of submission, ArcGIS Web App Builder developer edition is retired and unsupported. ArcGIS Web App Builder 2.30 is not susceptible to this vulnerability.</td>
 				</tr>
 			
 		
