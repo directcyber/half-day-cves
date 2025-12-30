@@ -1,10 +1,4 @@
 {
-  "CVE-2025-14177": {
-    "cvss": "-",
-    "description": "In PHP versions:8.1.* before 8.1.34, 8.2.* before 8.2.30, 8.3.* before 8.3.29, 8.4.* before 8.4.16, 8.5.* before 8.5.1, the getimagesize() function may leak uninitialized heap memory into the APPn segments (e.g., APP1) when reading images in multi-chunk mode (such as via php://filter). This occurs due to a bug in php_read_stream_all_chunks() that overwrites the buffer without advancing the pointer, leaving tail bytes uninitialized. This may lead to information disclosure of sensitive heap data and affect the confidentiality of the target server.",
-    "published": "2025-12-27T20:15:40.400",
-    "keywords": "sensitive,leak"
-  },
   "CVE-2025-15129": {
     "url": "https://github.com/chenjinchuang/lin-cms-tp5/issues/65",
     "cvss": 6.3,
@@ -138,13 +132,13 @@
     "keywords": "remote,execution,unauthenticated"
   },
   "CVE-2025-15191": {
-    "cvss": 6.3,
+    "cvss": 8.8,
     "description": "A weakness has been identified in D-Link DWR-M920 up to 1.1.50. The affected element is the function sub_4155B4 of the file /boafrm/formLtefotaUpgradeFibocom. This manipulation of the argument fota_url causes command injection. Remote exploitation of the attack is possible. The exploit has been made available to the public and could be exploited.",
     "published": "2025-12-29T14:15:56.427",
     "keywords": "remote,command"
   },
   "CVE-2025-15192": {
-    "cvss": 6.3,
+    "cvss": 8.8,
     "description": "A security vulnerability has been detected in D-Link DWR-M920 up to 1.1.50. The impacted element is the function sub_415328 of the file /boafrm/formLtefotaUpgradeQuectel. Such manipulation of the argument fota_url leads to command injection. The attack can be executed remotely. The exploit has been disclosed publicly and may be used.",
     "published": "2025-12-29T15:16:00.377",
     "keywords": "remote,command"
@@ -328,5 +322,11 @@
     "description": "The Serverless Framework is a framework for using AWS Lambda and other managed cloud services to build applications. Starting in version 4.29.0 and prior to version 4.29.3, a command injection vulnerability exists in the Serverless Framework's built-in MCP server package (@serverless/mcp). This vulnerability only affects users of the experimental MCP server feature (serverless mcp), which represents less than 0.1% of Serverless Framework users. The core Serverless Framework CLI and deployment functionality are not affected. The vulnerability is caused by the unsanitized use of input parameters within a call to `child_process.exec`, enabling an attacker to inject arbitrary system commands. Successful exploitation can lead to remote code execution under the server process's privileges. The server constructs and executes shell commands using unvalidated user input directly within command-line strings. This introduces the possibility of shell metacharacter injection (`|`, `>`, `&&`, etc.). Version 4.29.3 fixes the issue.",
     "published": "2025-12-30T19:15:45.180",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2025-50343": {
+    "url": "https://github.com/tbeu/matio/issues/275",
+    "cvss": "-",
+    "description": "An issue was discovered in matio 1.5.28. A heap-based memory corruption can occur in Mat_VarCreateStruct() when the nfields value does not match the actual number of strings in the fields array. This leads to out-of-bounds reads and invalid memory frees during cleanup, potentially causing a segmentation fault or heap corruption.",
+    "published": "2025-12-30T20:16:00.217"
   }
 }
