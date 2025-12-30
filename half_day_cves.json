@@ -1,10 +1,4 @@
 {
-  "CVE-2025-15108": {
-    "url": "https://github.com/pandaxgo/pandax/issues/9",
-    "cvss": 3.7,
-    "description": "A vulnerability was detected in PandaXGO PandaX up to fb8ff40f7ce5dfebdf66306c6d85625061faf7e5. This affects an unknown function of the file config.yml of the component JWT Secret Handler. The manipulation of the argument key results in use of hard-coded cryptographic key\r . The attack may be performed from remote. This attack is characterized by high complexity. The exploitability is reported as difficult. The exploit is now public and may be used. This product utilizes a rolling release system for continuous delivery, and as such, version information for affected or updated releases is not disclosed. The project was informed of the problem early through an issue report but has not responded yet.",
-    "published": "2025-12-27T17:15:47.033"
-  },
   "CVE-2025-14177": {
     "cvss": "-",
     "description": "In PHP versions:8.1.* before 8.1.34, 8.2.* before 8.2.30, 8.3.* before 8.3.29, 8.4.* before 8.4.16, 8.5.* before 8.5.1, the getimagesize() function may leak uninitialized heap memory into the APPn segments (e.g., APP1) when reading images in multi-chunk mode (such as via php://filter). This occurs due to a bug in php_read_stream_all_chunks() that overwrites the buffer without advancing the pointer, leaving tail bytes uninitialized. This may lead to information disclosure of sensitive heap data and affect the confidentiality of the target server.",
@@ -304,5 +298,29 @@
     "description": "Composer is a dependency manager for PHP. In versions on the 2.x branch prior to 2.2.26 and 2.9.3, attackers controlling remote sources that Composer downloads from might in some way inject ANSI control characters in the terminal output of various Composer commands, causing mangled output and potentially leading to confusion or DoS of the terminal application. There is no proven exploit and this has thus a low severity but we still publish a CVE as it has potential for abuse, and we want to be on the safe side informing users that they should upgrade. Versions 2.2.26 and 2.9.3 contain a patch for the issue.",
     "published": "2025-12-30T16:15:47.170",
     "keywords": "remote,command"
+  },
+  "CVE-2025-15256": {
+    "cvss": 7.3,
+    "description": "A vulnerability was identified in Edimax BR-6208AC 1.02/1.03. Affected is the function formStaDrvSetup of the file /goform/formStaDrvSetup of the component Web-based Configuration Interface. The manipulation of the argument rootAPmac leads to command injection. Remote exploitation of the attack is possible. The exploit is publicly available and might be used. Edimax confirms this issue: \"The product mentioned, EDIMAX BR-6208AC V2, has reached its End of Life (EOL) status. It is no longer supported or maintained by Edimax, and it is no longer available for purchase in the market. Consequently, there will be no further firmware updates or patches for this device. We recommend users upgrade to newer models for better security.\" This vulnerability only affects products that are no longer supported by the maintainer.",
+    "published": "2025-12-30T17:15:41.027",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-15257": {
+    "cvss": 7.3,
+    "description": "A security flaw has been discovered in Edimax BR-6208AC 1.02/1.03. Affected by this vulnerability is the function formRoute of the file /gogorm/formRoute of the component Web-based Configuration Interface. The manipulation of the argument strIp/strMask/strGateway results in command injection. The attack can be executed remotely. The exploit has been released to the public and may be exploited. Edimax confirms this issue: \"The product mentioned, EDIMAX BR-6208AC V2, has reached its End of Life (EOL) status. It is no longer supported or maintained by Edimax, and it is no longer available for purchase in the market. Consequently, there will be no further firmware updates or patches for this device. We recommend users upgrade to newer models for better security.\" This vulnerability only affects products that are no longer supported by the maintainer.",
+    "published": "2025-12-30T17:15:42.003",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-66848": {
+    "cvss": "-",
+    "description": "JD Cloud NAS routers AX1800 (4.3.1.r4308 and earlier), AX3000 (4.3.1.r4318 and earlier), AX6600 (4.5.1.r4533 and earlier), BE6500 (4.4.1.r4308 and earlier), ER1 (4.5.1.r4518 and earlier), and ER2 (4.5.1.r4518 and earlier) contain an unauthorized remote command execution vulnerability.",
+    "published": "2025-12-30T17:15:43.357",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2025-56332": {
+    "cvss": "-",
+    "description": "Authentication Bypass in fosrl/pangolin v1.6.2 and before allows attackers to access Pangolin resource via Insecure Default Configuration",
+    "published": "2025-12-30T18:15:46.703",
+    "keywords": "authentication,bypass"
   }
 }
