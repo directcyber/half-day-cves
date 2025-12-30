@@ -181,13 +181,13 @@
   },
   "CVE-2025-66869": {
     "url": "https://github.com/libming/libming/issues/366",
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "Buffer overflow vulnerability in function strcat in asan_interceptors.cpp in libming 0.4.8.",
     "published": "2025-12-29T17:15:46.603"
   },
   "CVE-2025-66877": {
     "url": "https://github.com/libming/libming/issues/367",
-    "cvss": "-",
+    "cvss": 7.5,
     "description": "Buffer overflow vulnerability in function dcputchar in decompile.c in libming 0.4.8.",
     "published": "2025-12-29T18:15:43.633"
   },
@@ -286,5 +286,23 @@
     "description": "DVP-12SE11T - Authentication Bypass via Partial Password Disclosure",
     "published": "2025-12-30T09:15:52.463",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2025-15253": {
+    "cvss": 8.8,
+    "description": "A vulnerability has been found in Tenda M3 1.0.0.13(4903). The impacted element is an unknown function of the file /goform/exeCommand. Such manipulation of the argument cmdinput leads to stack-based buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2025-12-30T15:15:44.460",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-15254": {
+    "cvss": 6.3,
+    "description": "A vulnerability was found in Tenda W6-S 1.0.0.4(510). This affects the function TendaAte of the file /goform/ate of the component ATE Service. Performing manipulation results in os command injection. The attack may be initiated remotely. The exploit has been made public and could be used.",
+    "published": "2025-12-30T16:15:44.237",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-67746": {
+    "cvss": "-",
+    "description": "Composer is a dependency manager for PHP. In versions on the 2.x branch prior to 2.2.26 and 2.9.3, attackers controlling remote sources that Composer downloads from might in some way inject ANSI control characters in the terminal output of various Composer commands, causing mangled output and potentially leading to confusion or DoS of the terminal application. There is no proven exploit and this has thus a low severity but we still publish a CVE as it has potential for abuse, and we want to be on the safe side informing users that they should upgrade. Versions 2.2.26 and 2.9.3 contain a patch for the issue.",
+    "published": "2025-12-30T16:15:47.170",
+    "keywords": "remote,command"
   }
 }
