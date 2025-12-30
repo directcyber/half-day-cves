@@ -1,104 +1,284 @@
 {
-  "CVE-2025-12980": {
+  "CVE-2025-59946": {
+    "url": "https://github.com/nanomq/nanomq/issues/1863",
     "cvss": 7.5,
-    "description": "The Post Grid Gutenberg Blocks for News, Magazines, Blog Websites \u2013 PostX plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the '/ultp/v2/get_dynamic_content/' REST API endpoint in all versions up to, and including, 5.0.3. This makes it possible for unauthenticated attackers to retrieve sensitive user metadata, including password hashes.",
-    "published": "2025-12-21T03:15:51.830",
-    "keywords": "unauthenticated,sensitive"
+    "description": "NanoMQ MQTT Broker (NanoMQ) is an Edge Messaging Platform. Prior to version 0.24.2, there is a classical data racing issue about sub info list which could result in heap use after free crash. This issue has been patched in version 0.24.2.",
+    "published": "2025-12-27T01:15:41.880"
   },
-  "CVE-2025-14043": {
-    "cvss": 5.3,
-    "description": "The Tainacan plugin for WordPress is vulnerable to unauthorized metadata section creation due to missing authorization checks in all versions up to, and including, 1.0.1. This is due to the `create_item_permissions_check()` function unconditionally returning true, which bypasses authentication and authorization validation. This makes it possible for unauthenticated attackers to create arbitrary metadata sections for any collection via the public REST API granted they can access the WordPress site.",
-    "published": "2025-12-21T03:15:52.153",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
-  "CVE-2025-14800": {
-    "cvss": 8.1,
-    "description": "The Redirection for Contact Form 7 plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'move_file_to_upload' function in all versions up to, and including, 3.2.7. This makes it possible for unauthenticated attackers to copy arbitrary files on the affected site's server. If 'allow_url_fopen' is set to 'On', it is possible to upload a remote file to the server.",
-    "published": "2025-12-21T08:15:48.473",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-15015": {
-    "cvss": 7.5,
-    "description": "Enterprise Cloud Database developed by Ragic has a Arbitrary File Read vulnerability, allowing unauthenticated remote attackers to exploit Relative Path Traversal to download arbitrary system files.",
-    "published": "2025-12-22T04:16:00.550",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-15016": {
-    "cvss": 9.8,
-    "description": "Enterprise Cloud Database developed by Ragic has a Hard-coded Cryptographic Key vulnerability, allowing unauthenticated remote attackers to exploit the fixed key to generate verification information and log into the system as any user.",
-    "published": "2025-12-22T04:16:00.720",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-14273": {
-    "cvss": 7.2,
-    "description": "Mattermost versions 11.1.x <= 11.1.0, 11.0.x <= 11.0.5, 10.12.x <= 10.12.3, 10.11.x <= 10.11.7 with the Jira plugin enabled and Mattermost Jira plugin versions <=4.4.0 fail to enforce authentication and issue-key path restrictions in the Jira plugin, which allows an unauthenticated attacker who knows a valid user ID to issue authenticated GET and POST requests to the Jira server via crafted plugin payloads that spoof the user ID and inject arbitrary issue key paths. Mattermost Advisory ID: MMSA-2025-00555",
-    "published": "2025-12-22T12:16:19.240",
-    "keywords": "unauthenticated,authentication"
-  },
-  "CVE-2025-68331": {
+  "CVE-2025-68952": {
     "cvss": "-",
-    "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nusb: uas: fix urb unmapping issue when the uas device is remove during ongoing data transfer\n\nWhen a UAS device is unplugged during data transfer, there is\na probability of a system panic occurring. The root cause is\nan access to an invalid memory address during URB callback handling.\nSpecifically, this happens when the dma_direct_unmap_sg() function\nis called within the usb_hcd_unmap_urb_for_dma() interface, but the\nsg->dma_address field is 0 and the sg data structure has already been\nfreed.\n\nThe SCSI driver sends transfer commands by invoking uas_queuecommand_lck()\nin uas.c, using the uas_submit_urbs() function to submit requests to USB.\nWithin the uas_submit_urbs() implementation, three URBs (sense_urb,\ndata_urb, and cmd_urb) are sequentially submitted. Device removal may\noccur at any point during uas_submit_urbs execution, which may result\nin URB submission failure. However, some URBs might have been successfully\nsubmitted before the failure, and uas_submit_urbs will return the -ENODEV\nerror code in this case. The current error handling directly calls\nscsi_done(). In the SCSI driver, this eventually triggers scsi_complete()\nto invoke scsi_end_request() for releasing the sgtable. The successfully\nsubmitted URBs, when being unlinked to giveback, call\nusb_hcd_unmap_urb_for_dma() in hcd.c, leading to exceptions during sg\nunmapping operations since the sg data structure has already been freed.\n\nThis patch modifies the error condition check in the uas_submit_urbs()\nfunction. When a UAS device is removed but one or more URBs have already\nbeen successfully submitted to USB, it avoids immediately invoking\nscsi_done() and save the cmnd to devinfo->cmnd array. If the successfully\nsubmitted URBs is completed before devinfo->resetting being set, then\nthe scsi_done() function will be called within uas_try_complete() after\nall pending URB operations are finalized. Otherwise, the scsi_done()\nfunction will be called within uas_zap_pending(), which is executed after\nusb_kill_anchored_urbs().\n\nThe error handling only takes effect when uas_queuecommand_lck() calls\nuas_submit_urbs() and returns the error value -ENODEV . In this case,\nthe device is disconnected, and the flow proceeds to uas_disconnect(),\nwhere uas_zap_pending() is invoked to call uas_try_complete().",
-    "published": "2025-12-22T17:16:00.800",
-    "keywords": "execution,command"
-  },
-  "CVE-2025-65270": {
-    "cvss": 6.1,
-    "description": "Reflected cross-site scripting (XSS) vulnerability in ClinCapture EDC 3.0 and 2.2.3, allowing an unauthenticated remote attacker to execute JavaScript code in the context of the victim's browser.",
-    "published": "2025-12-22T18:16:16.813",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-68645": {
-    "cvss": 8.8,
-    "description": "A Local File Inclusion (LFI) vulnerability exists in the Webmail Classic UI of Zimbra Collaboration (ZCS) 10.0 and 10.1 because of improper handling of user-supplied request parameters in the RestFilter servlet. An unauthenticated remote attacker can craft requests to the /h/rest endpoint to influence internal request dispatching, allowing inclusion of arbitrary files from the WebRoot directory.",
-    "published": "2025-12-22T18:16:17.070",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-65837": {
-    "url": "https://github.com/sanluan/publiccms/issues/100",
-    "cvss": 5.4,
-    "description": "PublicCMS V5.202506.b is vulnerable to Cross Site Scripting (XSS) in the Content Search module.",
-    "published": "2025-12-22T20:15:44.990"
-  },
-  "CVE-2025-67418": {
-    "cvss": 9.8,
-    "description": "ClipBucket 5.5.2 is affected by an improper access control issue where the product is shipped or deployed with hardcoded default administrative credentials. An unauthenticated remote attacker can log in to the administrative panel using these default credentials, resulting in full administrative control of the application.",
-    "published": "2025-12-22T20:15:45.303",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-34457": {
-    "cvss": "-",
-    "description": "wb2osz/direwolf (Dire Wolf) versions up to and including 1.8, prior to commit 694c954, contain a stack-based buffer overflow vulnerability in the function kiss_rec_byte() located in src/kiss_frame.c. When processing crafted KISS frames that reach the maximum allowed frame length (MAX_KISS_LEN), the function appends a terminating FEND byte without reserving sufficient space in the stack buffer. This results in an out-of-bounds write followed by an out-of-bounds read during the subsequent call to kiss_unwrap(), leading to stack memory corruption or application crashes. This vulnerability may allow remote unauthenticated attackers to trigger a denial-of-service condition.",
-    "published": "2025-12-22T22:16:04.493",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-34458": {
-    "cvss": "-",
-    "description": "wb2osz/direwolf (Dire Wolf) versions up to and including 1.8, prior to commit 3658a87, contain a reachable assertion vulnerability in the APRS MIC-E decoder function aprs_mic_e() located in src/decode_aprs.c. When processing a specially crafted AX.25 frame containing a MIC-E message with an empty or truncated comment field, the application triggers an unhandled assertion checking for a non-empty comment. This assertion failure causes immediate process termination, allowing a remote, unauthenticated attacker to cause a denial of service by sending malformed APRS traffic.",
-    "published": "2025-12-22T22:16:04.687",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2025-65856": {
-    "cvss": 9.8,
-    "description": "Authentication bypass vulnerability in Xiongmai XM530 IP cameras on Firmware V5.00.R02.000807D8.10010.346624.S.ONVIF 21.06 allows unauthenticated remote attackers to access sensitive device information and live video streams. The ONVIF implementation fails to enforce authentication on 31 critical endpoints, enabling direct unauthorized video stream access.",
-    "published": "2025-12-22T22:16:08.360",
-    "keywords": "remote,unauthenticated,authentication,sensitive,bypass"
-  },
-  "CVE-2025-67436": {
-    "cvss": 6.5,
-    "description": "Authenticated Remote Code Execution (RCE) in PluXml CMS 5.8.22 allows an attacker with administrator panel access to inject a malicious PHP webshell into a theme file (e.g., home.php).",
-    "published": "2025-12-22T22:16:08.983",
+    "description": "Eigent is a multi-agent Workforce. In version 0.0.60, a 1-click Remote Code Execution (RCE) vulnerability has been identified in Eigent. This vulnerability allows an attacker to execute arbitrary code on the victim's machine or server through a specific interaction (1-click). This issue has been patched in version 0.0.61.",
+    "published": "2025-12-27T01:15:42.853",
     "keywords": "remote,execution"
   },
-  "CVE-2025-68476": {
+  "CVE-2025-15106": {
+    "cvss": 6.3,
+    "description": "A weakness has been identified in getmaxun maxun up to 0.0.28. The affected element is the function router.get of the file server/src/routes/auth.ts of the component Authentication Endpoint. Executing manipulation can lead to improper authorization. The attack can be executed remotely. The exploit has been made available to the public and could be exploited. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-12-27T11:15:51.550",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2025-15107": {
+    "url": "https://github.com/actiontech/sqle/issues/3186",
+    "cvss": 3.7,
+    "description": "A security vulnerability has been detected in actiontech sqle up to 4.2511.0. The impacted element is an unknown function of the file sqle/utils/jwt.go of the component JWT Secret Handler. The manipulation of the argument JWTSecretKey leads to use of hard-coded cryptographic key\r . The attack is possible to be carried out remotely. The attack's complexity is rated as high. The exploitability is regarded as difficult. The exploit has been disclosed publicly and may be used. The project was informed of the problem early through an issue report and is planning to fix this flaw in an upcoming release.",
+    "published": "2025-12-27T13:15:39.230"
+  },
+  "CVE-2025-54322": {
+    "cvss": 10.0,
+    "description": "Xspeeder SXZOS through 2025-12-26 allows root remote code execution via base64-encoded Python code in the chkid parameter to vLogin.py. The title and oIP parameters are also used.",
+    "published": "2025-12-27T14:15:49.547",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-15108": {
+    "url": "https://github.com/pandaxgo/pandax/issues/9",
+    "cvss": 3.7,
+    "description": "A vulnerability was detected in PandaXGO PandaX up to fb8ff40f7ce5dfebdf66306c6d85625061faf7e5. This affects an unknown function of the file config.yml of the component JWT Secret Handler. The manipulation of the argument key results in use of hard-coded cryptographic key\r . The attack may be performed from remote. This attack is characterized by high complexity. The exploitability is reported as difficult. The exploit is now public and may be used. This product utilizes a rolling release system for continuous delivery, and as such, version information for affected or updated releases is not disclosed. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2025-12-27T17:15:47.033"
+  },
+  "CVE-2025-14177": {
     "cvss": "-",
-    "description": "KEDA is a Kubernetes-based Event Driven Autoscaling component. Prior to versions 2.17.3 and 2.18.3, an Arbitrary File Read vulnerability has been identified in KEDA, potentially affecting any KEDA resource that uses TriggerAuthentication to configure HashiCorp Vault authentication. The vulnerability stems from an incorrect or insufficient path validation when loading the Service Account Token specified in spec.hashiCorpVault.credential.serviceAccount. An attacker with permissions to create or modify a TriggerAuthentication resource can exfiltrate the content of any file from the node's filesystem (where the KEDA pod resides) by directing the file's content to a server under their control, as part of the Vault authentication request. The potential impact includes the exfiltration of sensitive system information, such as secrets, keys, or the content of files like /etc/passwd. This issue has been patched in versions 2.17.3 and 2.18.3.",
-    "published": "2025-12-22T22:16:09.307",
+    "description": "In PHP versions:8.1.* before 8.1.34, 8.2.* before 8.2.30, 8.3.* before 8.3.29, 8.4.* before 8.4.16, 8.5.* before 8.5.1, the getimagesize() function may leak uninitialized heap memory into the APPn segments (e.g., APP1) when reading images in multi-chunk mode (such as via php://filter). This occurs due to a bug in php_read_stream_all_chunks() that overwrites the buffer without advancing the pointer, leaving tail bytes uninitialized. This may lead to information disclosure of sensitive heap data and affect the confidentiality of the target server.",
+    "published": "2025-12-27T20:15:40.400",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2025-15129": {
+    "url": "https://github.com/chenjinchuang/lin-cms-tp5/issues/65",
+    "cvss": 6.3,
+    "description": "A flaw has been found in ChenJinchuang Lin-CMS-TP5 up to 0.3.3. This vulnerability affects the function Upload of the file application/lib/file/LocalUploader.php of the component File Upload Handler. Executing manipulation of the argument File can lead to code injection. The attack can be executed remotely. The exploit has been published and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2025-12-28T09:15:41.707"
+  },
+  "CVE-2025-15134": {
+    "url": "https://github.com/yourmaileyes/mooc/issues/12#issue-3722197285",
+    "cvss": 3.5,
+    "description": "A security flaw has been discovered in yourmaileyes MOOC up to 1.17. This affects the function subreview of the file mooc/controller/MainController.java of the component Submission Handler. Performing manipulation of the argument review results in cross site scripting. The attack can be initiated remotely. The exploit has been released to the public and may be exploited. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2025-12-28T12:15:40.480"
+  },
+  "CVE-2025-15135": {
+    "cvss": 6.3,
+    "description": "A weakness has been identified in joey-zhou xiaozhi-esp32-server-java up to 3.0.0. This impacts the function tryAuthenticateWithCookies of the file AuthenticationInterceptor.java of the component Cookie Handler. Executing manipulation can lead to improper authentication. The attack can be launched remotely. The exploit has been made available to the public and could be exploited. Upgrading to version 4.0.0 will fix this issue. It is recommended to upgrade the affected component.",
+    "published": "2025-12-28T12:15:41.310",
+    "keywords": "remote,authentication"
+  },
+  "CVE-2025-15136": {
+    "cvss": 8.8,
+    "description": "A security vulnerability has been detected in TRENDnet TEW-800MB 1.0.1.0. Affected is the function do_setWizard_asp of the file /goform/wizardset of the component Management Interface. The manipulation of the argument WizardConfigured leads to command injection. The attack may be initiated remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-12-28T13:15:39.897",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-15137": {
+    "cvss": 8.8,
+    "description": "A vulnerability was detected in TRENDnet TEW-800MB 1.0.1.0. Affected by this vulnerability is the function sub_F934\u00a0 of the file NTPSyncWithHost.cgi. The manipulation results in command injection. The attack may be launched remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-12-28T14:16:26.753",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-15139": {
+    "cvss": 6.3,
+    "description": "A vulnerability has been found in TRENDnet TEW-822DRE 1.00B21/1.01B06. This affects the function sub_43ACF4\u00a0 of the file /boafrm/formWsc. Such manipulation of the argument peerPin leads to command injection. The attack can be executed remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2025-12-28T14:16:27.603",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-15145": {
+    "url": "https://github.com/sohutv/cachecloud/issues/365#issue-3733522215",
+    "cvss": 2.4,
+    "description": "A security vulnerability has been detected in SohuTV CacheCloud up to 3.2.0. This affects the function doTotalList of the file src/main/java/com/sohu/cache/web/controller/TotalManageController.java. Such manipulation leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed publicly and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2025-12-28T17:16:01.310"
+  },
+  "CVE-2025-15146": {
+    "url": "https://github.com/sohutv/cachecloud/issues/366#issue-3733542570",
+    "cvss": 2.4,
+    "description": "A vulnerability was detected in SohuTV CacheCloud up to 3.2.0. This impacts the function doUserList of the file src/main/java/com/sohu/cache/web/controller/UserManageController.java. Performing manipulation results in cross site scripting. The attack may be initiated remotely. The exploit is now public and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2025-12-28T18:15:47.197"
+  },
+  "CVE-2025-15150": {
+    "url": "https://github.com/px4/px4-autopilot/pull/26124",
+    "cvss": 5.3,
+    "description": "A vulnerability was found in PX4 PX4-Autopilot up to 1.16.0. Affected by this issue is the function MavlinkLogHandler::state_listing/MavlinkLogHandler::log_entry_from_id of the file src/modules/mavlink/mavlink_log_handler.cpp. The manipulation results in stack-based buffer overflow. The attack is only possible with local access. The patch is identified as 338595edd1d235efd885fd5e9f45e7f9dcf4013d. It is best practice to apply a patch to resolve this issue.",
+    "published": "2025-12-28T19:15:48.570"
+  },
+  "CVE-2025-15156": {
+    "url": "https://github.com/omec-project/upf/issues/979",
+    "cvss": 4.3,
+    "description": "A flaw has been found in omec-project UPF up to 2.1.3-dev. This affects the function handleSessionEstablishmentRequest of the file /pfcpiface/pfcpiface/messages_session.go of the component PFCP Session Establishment Request Handler. This manipulation causes null pointer dereference. The attack may be initiated remotely. The exploit has been published and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2025-12-28T22:15:43.910"
+  },
+  "CVE-2025-52691": {
+    "cvss": 10.0,
+    "description": "Successful exploitation of the vulnerability could allow an unauthenticated attacker to upload arbitrary files to any location on the mail server, potentially enabling remote code execution.",
+    "published": "2025-12-29T03:15:42.837",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-15171": {
+    "url": "https://github.com/sohutv/cachecloud/issues/367#issue-3733551662",
+    "cvss": 3.5,
+    "description": "A vulnerability was identified in SohuTV CacheCloud up to 3.2.0. This affects the function index of the file src/main/java/com/sohu/cache/web/controller/ServerController.java. The manipulation leads to cross site scripting. Remote exploitation of the attack is possible. The exploit is publicly available and might be used. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2025-12-29T05:15:57.627"
+  },
+  "CVE-2025-15172": {
+    "url": "https://github.com/sohutv/cachecloud/issues/368#issue-3733556724",
+    "cvss": 3.5,
+    "description": "A security flaw has been discovered in SohuTV CacheCloud up to 3.2.0. This impacts the function preview of the file src/main/java/com/sohu/cache/web/controller/RedisConfigTemplateController.java. The manipulation results in cross site scripting. The attack can be executed remotely. The exploit has been released to the public and may be exploited. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2025-12-29T05:15:59.187"
+  },
+  "CVE-2025-15173": {
+    "url": "https://github.com/sohutv/cachecloud/issues/369#issue-3733560985",
+    "cvss": 3.5,
+    "description": "A weakness has been identified in SohuTV CacheCloud up to 3.2.0. Affected is the function advancedAnalysis of the file src/main/java/com/sohu/cache/web/controller/InstanceController.java. This manipulation causes cross site scripting. The attack is possible to be carried out remotely. The exploit has been made available to the public and could be exploited. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2025-12-29T05:16:01.743"
+  },
+  "CVE-2025-15070": {
+    "cvss": 5.5,
+    "description": "Exposure of Sensitive Information to an Unauthorized Actor, Missing Authorization vulnerability in Gmission Web Fax allows Authentication Abuse.This issue affects Web Fax: from 3.0 before 4.0.",
+    "published": "2025-12-29T06:15:51.947",
     "keywords": "authentication,sensitive"
   },
-  "CVE-2025-67109": {
-    "cvss": 10.0,
-    "description": "Improper verification of the time certificate in Eclipse Cyclone DDS before v0.10.5 allows attackers to bypass certificate checks and execute commands with System privileges.",
-    "published": "2025-12-23T16:16:23.057",
-    "keywords": "command,bypass"
+  "CVE-2025-15174": {
+    "url": "https://github.com/sohutv/cachecloud/issues/370#issue-3733566371",
+    "cvss": 3.5,
+    "description": "A security vulnerability has been detected in SohuTV CacheCloud up to 3.2.0. Affected by this vulnerability is the function doAppAuditList of the file src/main/java/com/sohu/cache/web/controller/AppManageController.java. Such manipulation leads to cross site scripting. The attack may be performed from remote. The exploit has been disclosed publicly and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2025-12-29T06:15:52.107"
+  },
+  "CVE-2025-15175": {
+    "cvss": 3.5,
+    "description": "A vulnerability was detected in SohuTV CacheCloud up to 3.2.0. Affected by this issue is the function doAppList/appCommandAnalysis of the file src/main/java/com/sohu/cache/web/controller/AppController.java. Performing manipulation results in cross site scripting. It is possible to initiate the attack remotely. The exploit is now public and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2025-12-29T06:15:52.350",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-15176": {
+    "url": "https://github.com/open5gs/open5gs/commit/b72d8349980076e2c033c8324f07747a86eea4f8",
+    "cvss": 5.3,
+    "description": "A flaw has been found in Open5GS up to 2.7.5. This affects the function decode_ipv6_header/ogs_pfcp_pdr_rule_find_by_packet of the file lib/pfcp/rule-match.c of the component PFCP Session Establishment Request Handler. Executing manipulation can lead to reachable assertion. It is possible to launch the attack remotely. The exploit has been published and may be used. This patch is called b72d8349980076e2c033c8324f07747a86eea4f8. Applying a patch is advised to resolve this issue.",
+    "published": "2025-12-29T07:15:54.153"
+  },
+  "CVE-2025-15225": {
+    "cvss": 7.5,
+    "description": "WMPro developed by Sunnet has an Arbitrary File Read vulnerability, allowing unauthenticated remote attackers to exploit Relative Path Traversal to read arbitrary system files.",
+    "published": "2025-12-29T07:15:56.333",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-15226": {
+    "cvss": 9.8,
+    "description": "WMPro developed by Sunnet has a Arbitrary File Upload vulnerability, allowing unauthenticated remote attackers to upload and execute web shell backdoors, thereby enabling arbitrary code execution on the server.",
+    "published": "2025-12-29T07:15:56.567",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-15227": {
+    "cvss": 7.5,
+    "description": "BPMFlowWebkit developed by WELLTEND TECHNOLOGY has a Arbitrary File Read vulnerability, allowing unauthenticated remote attackers to exploit Absolute Path Traversal to download arbitrary system files.",
+    "published": "2025-12-29T08:15:51.650",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2025-15228": {
+    "cvss": 9.8,
+    "description": "BPMFlowWebkit developed by WELLTEND TECHNOLOGY has a Arbitrary File Upload vulnerability, allowing unauthenticated remote attackers to upload and execute web shell backdoors, thereby enabling arbitrary code execution on the server.",
+    "published": "2025-12-29T08:15:51.820",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2025-15191": {
+    "cvss": 6.3,
+    "description": "A weakness has been identified in D-Link DWR-M920 up to 1.1.50. The affected element is the function sub_4155B4 of the file /boafrm/formLtefotaUpgradeFibocom. This manipulation of the argument fota_url causes command injection. Remote exploitation of the attack is possible. The exploit has been made available to the public and could be exploited.",
+    "published": "2025-12-29T14:15:56.427",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-15192": {
+    "cvss": 6.3,
+    "description": "A security vulnerability has been detected in D-Link DWR-M920 up to 1.1.50. The impacted element is the function sub_415328 of the file /boafrm/formLtefotaUpgradeQuectel. Such manipulation of the argument fota_url leads to command injection. The attack can be executed remotely. The exploit has been disclosed publicly and may be used.",
+    "published": "2025-12-29T15:16:00.377",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-65442": {
+    "cvss": 6.1,
+    "description": "DOM-based Cross-Site Scripting (XSS) vulnerability in 201206030 novel V3.5.0 allows remote attackers to execute arbitrary JavaScript code or disclose sensitive information (e.g., user session cookies) via a crafted \"wvstest\" parameter in the URL or malicious script injection into window.localStorage. The vulnerability arises from insufficient validation and encoding of user-controllable data in the book comment module: unfiltered user input is stored in the backend database (book_comment table, commentContent field) and returned via API, then rendered directly into the page DOM via Vue 3's v-html directive without sanitization. Even if modern browsers' built-in XSS filters block pop-up alerts, attackers can use concealed payloads to bypass interception and achieve actual harm.",
+    "published": "2025-12-29T15:16:01.637",
+    "keywords": "remote,sensitive,bypass"
+  },
+  "CVE-2025-68929": {
+    "cvss": 9.0,
+    "description": "Frappe is a full-stack web application framework. Prior to versions 14.99.6 and 15.88.1, an authenticated user with specific permissions could be tricked into accessing a specially crafted link. This could lead to a malicious template being executed on the server, resulting in remote code execution. Versions 14.99.6 and 15.88.1 fix the issue. No known workarounds are available.",
+    "published": "2025-12-29T15:16:02.033",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-69200": {
+    "cvss": 7.5,
+    "description": "phpMyFAQ is an open source FAQ web application. In versions prior to 4.0.16, an unauthenticated remote attacker can trigger generation of a configuration backup ZIP via `POST /api/setup/backup` and then download the generated ZIP from a web-accessible location. The ZIP contains sensitive configuration files (e.g., `database.php` with database credentials), leading to high-impact information disclosure and potential follow-on compromise. Version 4.0.16 fixes the issue.",
+    "published": "2025-12-29T16:15:43.793",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2025-69211": {
+    "cvss": "-",
+    "description": "Nest is a framework for building scalable Node.js server-side applications. Versions prior to 11.1.11 have a Fastify URL encoding middleware bypass. A NestJS application is vulnerable if it uses `@nestjs/platform-fastify`; relies on `NestMiddleware` (via `MiddlewareConsumer`) for security checks (authentication, authorization, etc.), or through `app.use()`; and applies middleware to specific routes using string paths or controllers (e.g., `.forRoutes('admin')`). Exploitation can result in unauthenticated users accessing protected routes, restricted administrative endpoints becoming accessible to lower-privileged users, and/or middleware performing sanitization or validation being skipped. This issue is patched in `@nestjs/platform-fastify@11.1.11`.",
+    "published": "2025-12-29T16:15:44.237",
+    "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2025-66869": {
+    "url": "https://github.com/libming/libming/issues/366",
+    "cvss": "-",
+    "description": "Buffer overflow vulnerability in function strcat in asan_interceptors.cpp in libming 0.4.8.",
+    "published": "2025-12-29T17:15:46.603"
+  },
+  "CVE-2025-66877": {
+    "url": "https://github.com/libming/libming/issues/367",
+    "cvss": "-",
+    "description": "Buffer overflow vulnerability in function dcputchar in decompile.c in libming 0.4.8.",
+    "published": "2025-12-29T18:15:43.633"
+  },
+  "CVE-2025-13592": {
+    "cvss": 7.2,
+    "description": "The Advanced Ads plugin for WordPress is vulnerable to Remote Code Execution in versions up to, and including, 2.0.14 via the 'change-ad__content' shortcode parameter. This allows authenticated attackers with editor-level permissions or above, to execute code on the server.",
+    "published": "2025-12-29T19:15:54.687",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-14280": {
+    "cvss": 5.3,
+    "description": "The PixelYourSite plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 11.1.5 through publicly exposed log files. This makes it possible for unauthenticated attackers to view potentially sensitive information contained in the exposed log files, when the \"Meta API logs\" setting is enabled (disabled by default). The vulnerability was partially patched in version 11.1.5 and fully patched in version 11.1.5.1.",
+    "published": "2025-12-29T19:15:54.870",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2025-15200": {
+    "cvss": 2.4,
+    "description": "A vulnerability was detected in SohuTV CacheCloud up to 3.2.0. The affected element is the function getExceptionStatisticsByClient/getCommandStatisticsByClient/doIndex of the file src/main/java/com/sohu/cache/web/controller/AppClientDataShowController.java. The manipulation results in cross site scripting. The attack can be executed remotely. The exploit is now public and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2025-12-29T19:15:56.187",
+    "keywords": "remote,command"
+  },
+  "CVE-2025-15201": {
+    "url": "https://github.com/sohutv/cachecloud/issues/373",
+    "cvss": 3.5,
+    "description": "A flaw has been found in SohuTV CacheCloud up to 3.2.0. The impacted element is the function redirectNoPower of the file src/main/java/com/sohu/cache/web/controller/WebResourceController.java. This manipulation causes cross site scripting. The attack is possible to be carried out remotely. The exploit has been published and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2025-12-29T19:15:56.370"
+  },
+  "CVE-2025-15202": {
+    "url": "https://github.com/sohutv/cachecloud/issues/374",
+    "cvss": 2.4,
+    "description": "A vulnerability has been found in SohuTV CacheCloud up to 3.2.0. This affects the function taskQueueList of the file src/main/java/com/sohu/cache/web/controller/TaskController.java. Such manipulation leads to cross site scripting. The attack may be performed from remote. The exploit has been disclosed to the public and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2025-12-29T20:15:41.737"
+  },
+  "CVE-2025-15203": {
+    "url": "https://github.com/sohutv/cachecloud/issues/375",
+    "cvss": 2.4,
+    "description": "A vulnerability was found in SohuTV CacheCloud up to 3.2.0. This impacts the function index of the file src/main/java/com/sohu/cache/web/controller/ResourceController.java. Performing manipulation results in cross site scripting. It is possible to initiate the attack remotely. The exploit has been made public and could be used. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2025-12-29T20:15:41.920"
+  },
+  "CVE-2025-69202": {
+    "cvss": "-",
+    "description": "Axios Cache Interceptor is a cache interceptor for axios. Prior to version 1.11.1, when a server calls an upstream service using different auth tokens, axios-cache-interceptor returns incorrect cached responses, leading to authorization bypass. The cache key is generated only from the URL, ignoring request headers like `Authorization`. When the server responds with `Vary: Authorization` (indicating the response varies by auth token), the library ignores this, causing all requests to share the same cache regardless of authorization. Server-side applications (APIs, proxies, backend services) that use axios-cache-interceptor to cache requests to upstream services, handle requests from multiple users with different auth tokens, and upstream services replies on `Vary` to differentiate caches are affected. Browser/client-side applications (single user per browser session) are not affected. Services using different auth tokens to call upstream services will return incorrect cached data, bypassing authorization checks and leaking user data across different authenticated sessions. After `v1.11.1`, automatic `Vary` header support is now enabled by default. When server responds with `Vary: Authorization`, cache keys now include the authorization header value. Each user gets their own cache.",
+    "published": "2025-12-29T20:15:42.107",
+    "keywords": "bypass,leak"
+  },
+  "CVE-2025-15204": {
+    "url": "https://github.com/sohutv/cachecloud/issues/376",
+    "cvss": 2.4,
+    "description": "A vulnerability was determined in SohuTV CacheCloud up to 3.2.0. Affected is the function doQuartzList of the file src/main/java/com/sohu/cache/web/controller/QuartzManageController.java. Executing manipulation can lead to cross site scripting. It is possible to launch the attack remotely. The exploit has been publicly disclosed and may be utilized. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2025-12-29T21:15:43.157"
+  },
+  "CVE-2025-68860": {
+    "cvss": 9.8,
+    "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Mobile Builder Mobile builder allows Authentication Abuse.This issue affects Mobile builder: from n/a through 1.4.2.",
+    "published": "2025-12-29T22:15:43.597",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2025-15284": {
+    "cvss": 7.5,
+    "description": "Improper Input Validation vulnerability in qs (parse modules) allows HTTP DoS.This issue affects qs: < 6.14.1.\n\n\nSummaryThe arrayLimit\u00a0option in qs does not enforce limits for bracket notation (a[]=1&a[]=2), allowing attackers to cause denial-of-service via memory exhaustion. Applications using arrayLimit\u00a0for DoS protection are vulnerable.\n\nDetailsThe arrayLimit\u00a0option only checks limits for indexed notation (a[0]=1&a[1]=2) but completely bypasses it for bracket notation (a[]=1&a[]=2).\n\nVulnerable code\u00a0(lib/parse.js:159-162):\n\nif (root === '[]' && options.parseArrays) {\n    obj = utils.combine([], leaf);  // No arrayLimit check\n}\n\n\n\n\n\nWorking code\u00a0(lib/parse.js:175):\n\nelse if (index <= options.arrayLimit) {  // Limit checked here\n    obj = [];\n    obj[index] = leaf;\n}\n\n\n\n\n\nThe bracket notation handler at line 159 uses utils.combine([], leaf)\u00a0without validating against options.arrayLimit, while indexed notation at line 175 checks index <= options.arrayLimit\u00a0before creating arrays.\n\nPoCTest 1 - Basic bypass:\n\nnpm install qs\n\n\n\n\n\nconst qs = require('qs');\nconst result = qs.parse('a[]=1&a[]=2&a[]=3&a[]=4&a[]=5&a[]=6', { arrayLimit: 5 });\nconsole.log(result.a.length);  // Output: 6 (should be max 5)\n\n\n\n\n\nTest 2 - DoS demonstration:\n\nconst qs = require('qs');\nconst attack = 'a[]=' + Array(10000).fill('x').join('&a[]=');\nconst result = qs.parse(attack, { arrayLimit: 100 });\nconsole.log(result.a.length);  // Output: 10000 (should be max 100)\n\n\n\n\n\nConfiguration:\n\n  *  arrayLimit: 5\u00a0(test 1) or arrayLimit: 100\u00a0(test 2)\n  *  Use bracket notation: a[]=value\u00a0(not indexed a[0]=value)\n\n\nImpactDenial of Service via memory exhaustion. Affects applications using qs.parse()\u00a0with user-controlled input and arrayLimit\u00a0for protection.\n\nAttack scenario:\n\n  *  Attacker sends HTTP request: GET /api/search?filters[]=x&filters[]=x&...&filters[]=x\u00a0(100,000+ times)\n  *  Application parses with qs.parse(query, { arrayLimit: 100 })\n  *  qs ignores limit, parses all 100,000 elements into array\n  *  Server memory exhausted \u2192 application crashes or becomes unresponsive\n  *  Service unavailable for all users\nReal-world impact:\n\n  *  Single malicious request can crash server\n  *  No authentication required\n  *  Easy to automate and scale\n  *  Affects any endpoint parsing query strings with bracket notation",
+    "published": "2025-12-29T23:15:42.703",
+    "keywords": "authentication,bypass"
   }
 }
