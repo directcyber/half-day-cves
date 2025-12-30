@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2025-12-30T21:13:43.313462
+Updated at UTC 2025-12-30T22:13:43.121782
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,14 @@ Updated at UTC 2025-12-30T21:13:43.313462
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 				<tr>
@@ -380,6 +388,48 @@ Updated at UTC 2025-12-30T21:13:43.313462
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-61594">CVE-2025-61594</a></td>
+					<td>-</td>
+					<td>sensitive,bypass,leak</td>
+					<td class=date>2025-12-30T21:15:43.893</td>
+					<td class=description>URI is a module providing classes to handle Uniform Resource Identifiers. In versions prior to 0.12.5, 0.13.3, and 1.0.4, a bypass exists for the fix to CVE-2025-27221 that can expose user credentials. When using the `+` operator to combine URIs, sensitive information like passwords from the original URI can be leaked, violating RFC3986 and making applications vulnerable to credential exposure. Versions 0.12.5, 0.13.3, and 1.0.4 fix the issue.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-15357">CVE-2025-15357</a></td>
+					<td>6.3</td>
+					<td>remote,command</td>
+					<td class=date>2025-12-30T21:15:43.677</td>
+					<td class=description>A vulnerability was found in D-Link DI-7400G+ 19.12.25A1. This affects an unknown function of the file /msp_info.htm?flag=cmd. The manipulation of the argument cmd results in command injection. The attack can be launched remotely. The exploit has been made public and could be used.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-14987">CVE-2025-14987</a></td>
+					<td>-</td>
+					<td>execution,command</td>
+					<td class=date>2025-12-30T21:15:43.343</td>
+					<td class=description>When system.enableCrossNamespaceCommands is enabled (on by default), the Temporal server permits certain workflow task commands (e.g. StartChildWorkflowExecution, SignalExternalWorkflowExecution, RequestCancelExternalWorkflowExecution) to target a different namespace than the namespace authorized at the gRPC boundary. The frontend authorizes RespondWorkflowTaskCompleted based on the outer request namespace, but the history service later resolves and executes the command using the namespace embedded in command attributes without authorizing the caller for that target namespace. This can allow a worker authorized for one namespace to create, signal, or cancel workflows in another namespace.
+This issue affects Temporal: through 1.29.1. Fixed in 1.27.4, 1.28.2, 1.29.2.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2025-14986">CVE-2025-14986</a></td>
+					<td>-</td>
+					<td>execution,bypass</td>
+					<td class=date>2025-12-30T21:15:42.773</td>
+					<td class=description>When frontend.enableExecuteMultiOperation is enabled, the server can apply namespace-scoped validation and feature gates for the embedded StartWorkflowExecutionRequest using its Namespace field rather than the outer, authorized ExecuteMultiOperationRequest.Namespace. This allows a caller authorized for one namespace to bypass that namespace's limits/policies by setting the embedded start request's namespace to a different namespace. The workflow is still created in the outer (authorized) namespace; only validation/gating is performed under the wrong namespace context.
+This issue affects Temporal: from 1.24.0 through 1.29.1. Fixed in 1.27.4, 1.28.2, 1.29.2.</td>
+				</tr>
+			
 		
 			
 		
