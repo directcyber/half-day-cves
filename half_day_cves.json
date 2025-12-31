@@ -364,5 +364,77 @@
     "description": "The Ultimate Post Kit Addons for Elementor WordPress plugin before 4.0.16 exposes multiple AJAX \u201cload more\u201d endpoints such as upk_alex_grid_loadmore_posts without ensuring that posts to be displayed are published authentication. This allows an unauthenticated attacker to query arbitrary posts and retrieve rendered HTML content of private and unpublished ones.",
     "published": "2025-12-31T06:15:40.410",
     "keywords": "unauthenticated,authentication"
+  },
+  "CVE-2025-15269": {
+    "cvss": 8.8,
+    "description": "FontForge SFD File Parsing Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of FontForge. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of SFD files. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-28564.",
+    "published": "2025-12-31T07:15:50.710",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-15270": {
+    "cvss": 8.8,
+    "description": "FontForge SFD File Parsing Improper Validation of Array Index Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of FontForge. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of SFD files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated array. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-28563.",
+    "published": "2025-12-31T07:15:50.897",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-15271": {
+    "cvss": 8.8,
+    "description": "FontForge SFD File Parsing Improper Validation of Array Index Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of FontForge. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of SFD files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated array. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-28562.",
+    "published": "2025-12-31T07:15:51.063",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-15272": {
+    "cvss": 8.8,
+    "description": "FontForge SFD File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of FontForge. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of SFD files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-28547.",
+    "published": "2025-12-31T07:15:51.233",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-15273": {
+    "cvss": 8.8,
+    "description": "FontForge PFB File Parsing Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of FontForge. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of PFB files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-28546.",
+    "published": "2025-12-31T07:15:51.393",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-15274": {
+    "cvss": 8.8,
+    "description": "FontForge SFD File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of FontForge. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of SFD files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-28544.",
+    "published": "2025-12-31T07:15:51.550",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-15275": {
+    "cvss": 8.8,
+    "description": "FontForge SFD File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of FontForge. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of SFD files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-28543.",
+    "published": "2025-12-31T07:15:51.710",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-15276": {
+    "cvss": 7.8,
+    "description": "FontForge SFD File Parsing Deserialization of Untrusted Data Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of FontForge. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of SFD files. The issue results from the lack of proper validation of user-supplied data, which can result in deserialization of untrusted data. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28198.",
+    "published": "2025-12-31T07:15:51.870",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-15277": {
+    "cvss": 7.8,
+    "description": "FontForge GUtils SGI File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of FontForge. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of scanlines within SGI files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-27920.",
+    "published": "2025-12-31T07:15:52.037",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-15278": {
+    "cvss": 7.8,
+    "description": "FontForge GUtils XBM File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of FontForge. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of pixels within XBM files. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before allocating a buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-27865.",
+    "published": "2025-12-31T07:15:52.193",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-15279": {
+    "cvss": 7.8,
+    "description": "FontForge GUtils BMP File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of FontForge. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of pixels within BMP files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-27517.",
+    "published": "2025-12-31T07:15:52.353",
+    "keywords": "remote,execution"
+  },
+  "CVE-2025-15280": {
+    "cvss": 8.8,
+    "description": "FontForge SFD File Parsing Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of FontForge. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of SFD files. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-28525.",
+    "published": "2025-12-31T07:15:52.500",
+    "keywords": "remote,execution"
   }
 }
