@@ -1,10 +1,4 @@
 {
-  "CVE-2025-15129": {
-    "url": "https://github.com/chenjinchuang/lin-cms-tp5/issues/65",
-    "cvss": 6.3,
-    "description": "A flaw has been found in ChenJinchuang Lin-CMS-TP5 up to 0.3.3. This vulnerability affects the function Upload of the file application/lib/file/LocalUploader.php of the component File Upload Handler. Executing manipulation of the argument File can lead to code injection. The attack can be executed remotely. The exploit has been published and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
-    "published": "2025-12-28T09:15:41.707"
-  },
   "CVE-2025-15134": {
     "url": "https://github.com/yourmaileyes/mooc/issues/12#issue-3722197285",
     "cvss": 3.5,
@@ -448,5 +442,17 @@
     "description": "The NPort 6100-G2/6200-G2 Series is affected by an execution with unnecessary privileges vulnerability (CVE-2025-1977) that allows an authenticated user with read-only access to perform unauthorized configuration changes through the MCC (Moxa CLI Configuration) tool. The issue can be exploited remotely over the network with low-attack complexity and no user interaction but requires specific system conditions or configurations to be present. Successful exploitation may result in changes to device settings that were not intended to be permitted for the affected user role, potentially leading to a high impact on the confidentiality, integrity, and availability of the device. No impact on other systems has been identified.",
     "published": "2025-12-31T08:15:45.310",
     "keywords": "remote,execution"
+  },
+  "CVE-2025-15387": {
+    "cvss": 8.8,
+    "description": "VPN Firewall developed by QNO Technology has a Insufficient Entropy vulnerability, allowing unauthenticated remote attackers to obtain any logged-in user session through brute-force attacks and subsequently log into the system.",
+    "published": "2025-12-31T09:15:49.680",
+    "keywords": "remote,unauthenticated,vpn"
+  },
+  "CVE-2025-15388": {
+    "cvss": 8.8,
+    "description": "VPN Firewall developed by QNO Technology has an OS Command Injection vulnerability, allowing authenticated remote attackers to inject arbitrary OS commands and execute them on the server.",
+    "published": "2025-12-31T09:15:50.657",
+    "keywords": "remote,command,vpn"
   }
 }
