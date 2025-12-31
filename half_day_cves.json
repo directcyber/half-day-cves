@@ -436,5 +436,17 @@
     "description": "FontForge SFD File Parsing Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of FontForge. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of SFD files. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-28525.",
     "published": "2025-12-31T07:15:52.500",
     "keywords": "remote,execution"
+  },
+  "CVE-2025-15017": {
+    "cvss": "-",
+    "description": "A vulnerability exists in serial device servers where active debug code remains enabled in the UART interface. An attacker with physical access to the device can directly connect to the UART interface and, without authentication, user interaction, or execution conditions, gain unauthorized access to internal debug functionality. Exploitation is low complexity and allows an attacker to execute privileged operations and access sensitive system resources, resulting in a high impact to the confidentiality, integrity, and availability of the affected device. No security impact to external or dependent systems has been identified.",
+    "published": "2025-12-31T08:15:44.303",
+    "keywords": "execution,authentication,sensitive"
+  },
+  "CVE-2025-1977": {
+    "cvss": "-",
+    "description": "The NPort 6100-G2/6200-G2 Series is affected by an execution with unnecessary privileges vulnerability (CVE-2025-1977) that allows an authenticated user with read-only access to perform unauthorized configuration changes through the MCC (Moxa CLI Configuration) tool. The issue can be exploited remotely over the network with low-attack complexity and no user interaction but requires specific system conditions or configurations to be present. Successful exploitation may result in changes to device settings that were not intended to be permitted for the affected user role, potentially leading to a high impact on the confidentiality, integrity, and availability of the device. No impact on other systems has been identified.",
+    "published": "2025-12-31T08:15:45.310",
+    "keywords": "remote,execution"
   }
 }
