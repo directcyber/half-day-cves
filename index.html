@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2026-01-02T21:10:42.278721
+Updated at UTC 2026-01-02T22:13:25.059769
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -62,8 +62,56 @@ Updated at UTC 2026-01-02T21:10:42.278721
 		
 			
 		
+			
+		
+			
+		
+			
+		
+			
+		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-21452">CVE-2026-21452</a></td>
+					<td>7.5</td>
+					<td>remote,bypass</td>
+					<td class=date>2026-01-02T21:16:03.067</td>
+					<td class=description>MessagePack for Java is a serializer implementation for Java. A denial-of-service vulnerability exists in versions prior to 0.9.11 when deserializing .msgpack files containing EXT32 objects with attacker-controlled payload lengths. While MessagePack-Java parses extension headers lazily, it later trusts the declared EXT payload length when materializing the extension data. When ExtensionValue.getData() is invoked, the library attempts to allocate a byte array of the declared length without enforcing any upper bound. A malicious .msgpack file of only a few bytes can therefore trigger unbounded heap allocation, resulting in JVM heap exhaustion, process termination, or service unavailability. This vulnerability is triggered during model loading / deserialization, making it a model format vulnerability suitable for remote exploitation. The vulnerability enables a remote denial-of-service attack against applications that deserialize untrusted .msgpack model files using MessagePack for Java. A specially crafted but syntactically valid .msgpack file containing an EXT32 object with an attacker-controlled, excessively large payload length can trigger unbounded memory allocation during deserialization. When the model file is loaded, the library trusts the declared length metadata and attempts to allocate a byte array of that size, leading to rapid heap exhaustion, excessive garbage collection, or immediate JVM termination with an OutOfMemoryError. The attack requires no malformed bytes, user interaction, or elevated privileges and can be exploited remotely in real-world environments such as model registries, inference services, CI/CD pipelines, and cloud-based model hosting platforms that accept or fetch .msgpack artifacts. Because the malicious file is extremely small yet valid, it can bypass basic validation and scanning mechanisms, resulting in complete service unavailability and potential cascading failures in production systems. Version 0.9.11 fixes the vulnerability.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-21451">CVE-2026-21451</a></td>
+					<td>-</td>
+					<td>execution,bypass</td>
+					<td class=date>2026-01-02T21:16:02.930</td>
+					<td class=description>Bagisto is an open source laravel eCommerce platform. A stored Cross-Site Scripting (XSS) vulnerability exists in Bagisto prior to version 2.3.10 within the CMS page editor. Although the platform normally attempts to sanitize `<script>` tags, the filtering can be bypassed by manipulating the raw HTTP POST request before submission. As a result, arbitrary JavaScript can be stored in the CMS content and executed whenever the page is viewed or edited. This exposes administrators to a high-severity risk, including complete account takeover, backend hijacking, and malicious script execution. Version 2.3.10 fixes the issue.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-21450">CVE-2026-21450</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2026-01-02T21:16:02.797</td>
+					<td class=description>Bagisto is an open source laravel eCommerce platform. Versions prior to 2.3.10 are vulnerable to server-side template injection via type parameter, which can lead to remote code execution or another exploitation. Version 2.3.10 fixes the issue.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-21448">CVE-2026-21448</a></td>
+					<td>-</td>
+					<td>remote,execution</td>
+					<td class=date>2026-01-02T21:15:59.053</td>
+					<td class=description>Bagisto is an open source laravel eCommerce platform. Versions prior to 2.3.10 are vulnerable to server-side template injection. When a normal customer orders any product, in the `add address` step they can inject a value to run in admin view. The issue can lead to remote code execution. Version 2.3.10 contains a patch.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
