@@ -1,16 +1,4 @@
 {
-  "CVE-2026-21445": {
-    "cvss": "-",
-    "description": "Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to version 1.7.0.dev45, multiple critical API endpoints in Langflow are missing authentication controls. The issue allows any unauthenticated user to access sensitive user conversation data, transaction histories, and perform destructive operations including message deletion. This affects endpoints handling personal data and system operations that should require proper authorization. Version 1.7.0.dev45 contains a patch.",
-    "published": "2026-01-02T20:16:17.880",
-    "keywords": "unauthenticated,authentication,sensitive"
-  },
-  "CVE-2026-21446": {
-    "cvss": "-",
-    "description": "Bagisto is an open source laravel eCommerce platform. In versions on the 2.3 branch prior to 2.3.10, API routes remain active even after initial installation is complete. The underlying API endpoints (`/install/api/*`) are directly accessible and exploitable without any authentication. An attacker can bypass the Ib installer entirely by calling the API endpoints directly. This allows any unauthenticated attacker to create admin accounts, modify application configurations, and potentially overwrite existing data. Version 2.3.10 fixes the issue.",
-    "published": "2026-01-02T20:16:18.020",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
   "CVE-2026-21448": {
     "cvss": "-",
     "description": "Bagisto is an open source laravel eCommerce platform. Versions prior to 2.3.10 are vulnerable to server-side template injection. When a normal customer orders any product, in the `add address` step they can inject a value to run in admin view. The issue can lead to remote code execution. Version 2.3.10 contains a patch.",
