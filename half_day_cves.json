@@ -28,5 +28,11 @@
     "description": "Authentication bypass issue exists in OpenBlocks series versions prior to FW5.0.8, which may allow an attacker to bypass administrator authentication and change the password.",
     "published": "2026-01-06T07:15:43.870",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2026-0641": {
+    "cvss": 6.3,
+    "description": "A security vulnerability has been detected in TOTOLINK WA300 5.2cu.7112_B20190227. This vulnerability affects the function sub_401510 of the file cstecgi.cgi. The manipulation of the argument UPLOAD_FILENAME leads to command injection. The attack may be initiated remotely. The exploit has been disclosed publicly and may be used.",
+    "published": "2026-01-06T19:16:07.573",
+    "keywords": "remote,command"
   }
 }
