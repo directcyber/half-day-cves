@@ -1,22 +1,4 @@
 {
-  "CVE-2026-1363": {
-    "cvss": 9.8,
-    "description": "IAQS and I6 developed by JNC has a Client-Side Enforcement of Server-Side Security vulnerability, allowing unauthenticated remote attackers to gain administrator privileges by manipulating the web front-end.",
-    "published": "2026-01-23T09:15:47.430",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2026-1364": {
-    "cvss": 9.8,
-    "description": "IAQS and I6 developed by JNC has a Missing Authentication vulnerability, allowing unauthenticated remote attackers to directly operate system administrative functionalities.",
-    "published": "2026-01-23T09:15:47.643",
-    "keywords": "remote,unauthenticated,authentication"
-  },
-  "CVE-2026-22271": {
-    "cvss": 7.5,
-    "description": "Dell ECS, versions 3.8.1.0 through 3.8.1.7, and Dell ObjectScale versions prior to 4.2.0.0, contains a Cleartext Transmission of Sensitive Information vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to information exposure.",
-    "published": "2026-01-23T09:15:48.030",
-    "keywords": "remote,unauthenticated,sensitive"
-  },
   "CVE-2026-22274": {
     "cvss": 6.5,
     "description": "Dell ECS, versions 3.8.1.0 through 3.8.1.7, and Dell ObjectScale versions prior to 4.2.0.0, contains a Cleartext Transmission of Sensitive Information vulnerability in the Fabric Syslog. An unauthenticated attacker with remote access could potentially exploit this vulnerability to intercept and modify information in transit.",
@@ -163,8 +145,14 @@
   },
   "CVE-2026-1427": {
     "cvss": 8.8,
-    "description": "Organization Portal System developed by WellChoose has a OS Command Injection vulnerability, allowing authenticated remote attackers to inject arbitrary OS commands and execute them on the server.",
+    "description": "Single Sign-On Portal System developed by WellChoose has a OS Command Injection vulnerability, allowing authenticated remote attackers to inject arbitrary OS commands and execute them on the server.",
     "published": "2026-01-26T08:16:00.753",
+    "keywords": "remote,command"
+  },
+  "CVE-2026-1428": {
+    "cvss": 8.8,
+    "description": "Single Sign-On Portal System developed by WellChoose has a OS Command Injection vulnerability, allowing authenticated remote attackers to inject arbitrary OS commands and execute them on the server.",
+    "published": "2026-01-26T09:15:47.433",
     "keywords": "remote,command"
   }
 }
