@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2026-01-26T14:21:22.550486
+Updated at UTC 2026-01-26T15:21:41.085171
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -146,20 +146,6 @@ Updated at UTC 2026-01-26T14:21:22.550486
 email module, specifically the "BytesGenerator" class, didn’t properly quote newlines for email headers when 
 serializing an email message allowing for header injection when an email
  is serialized. This is only applicable if using "LiteralHeader" writing headers that don't respect email folding rules, the new behavior will reject the incorrectly folded headers in "BytesGenerator".</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-0994">CVE-2026-0994</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/protocolbuffers/protobuf/pull/25239">https://github.com/protocolbuffers/protobuf/pull/25239</a></td>
-					<td class=date>2026-01-23T15:16:06.840</td>
-					<td class=description>A denial-of-service (DoS) vulnerability exists in google.protobuf.json_format.ParseDict() in Python, where the max_recursion_depth limit can be bypassed when parsing nested google.protobuf.Any messages.
-
-Due to missing recursion depth accounting inside the internal Any-handling logic, an attacker can supply deeply nested Any structures that bypass the intended recursion limit, eventually exhausting Python’s recursion stack and causing a RecursionError.</td>
 
 
 				</tr>
@@ -393,8 +379,6 @@ Users are recommended to upgrade to version 2.12.0, which fixes the issue.</td>
 					<td class=date>2026-01-23T17:16:13.483</td>
 					<td class=description>SmarterTools SmarterMail versions prior to build 9511 contain an unauthenticated remote code execution vulnerability in the ConnectToHub API method. The attacker could point the SmarterMail to the malicious HTTP server, which serves the malicious OS command. This command will be executed by the vulnerable application.</td>
 				</tr>
-			
-		
 			
 		
 			

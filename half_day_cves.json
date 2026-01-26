@@ -1,10 +1,4 @@
 {
-  "CVE-2026-0994": {
-    "url": "https://github.com/protocolbuffers/protobuf/pull/25239",
-    "cvss": "-",
-    "description": "A denial-of-service (DoS) vulnerability exists in google.protobuf.json_format.ParseDict() in Python, where the max_recursion_depth limit can be bypassed when parsing nested google.protobuf.Any messages.\n\nDue to missing recursion depth accounting inside the internal Any-handling logic, an attacker can supply deeply nested Any structures that bypass the intended recursion limit, eventually exhausting Python\u2019s recursion stack and causing a RecursionError.",
-    "published": "2026-01-23T15:16:06.840"
-  },
   "CVE-2026-1299": {
     "url": "https://github.com/python/cpython/pull/144126",
     "cvss": "-",
