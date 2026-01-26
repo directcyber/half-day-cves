@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2026-01-26T22:14:48.201251
+Updated at UTC 2026-01-26T23:15:18.292322
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,12 @@ Updated at UTC 2026-01-26T22:14:48.201251
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
 		
 			
 				<tr>
@@ -148,6 +154,36 @@ Updated at UTC 2026-01-26T22:14:48.201251
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-24003">CVE-2026-24003</a></td>
+					<td>4.3</td>
+					<td>authentication,bypass</td>
+					<td class=date>2026-01-26T22:15:56.513</td>
+					<td class=description>EVerest is an EV charging software stack. In versions up to and including 2025.12.1, it is possible to bypass the sequence state verification including authentication, and send requests that transition to forbidden states relative to the current one, thereby updating the current context with illegitimate data.cThanks to the modular design of EVerest, authorization is handled in a separate module and EVSEManager Charger internal state machine cannot transition out of the `WaitingForAuthentication` state through ISO 15118-2 communication. From this state, it was however possible through ISO 15118-2 messages which are published to the MQTT server to trick it into preparing to charge, and even to prepare to send current. The final requirement to actually send current to the EV was the closure of the contactors, which does not appear to be possible without leaving the `WaitingForAuthentication` state and leveraging ISO 15118-2 messages. As of time of publication, no fixed versions are available.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-23890">CVE-2026-23890</a></td>
+					<td>6.5</td>
+					<td>sensitive,bypass</td>
+					<td class=date>2026-01-26T22:15:56.363</td>
+					<td class=description>pnpm is a package manager. Prior to version 10.28.1, a path traversal vulnerability in pnpm's bin linking allows malicious npm packages to create executable shims or symlinks outside of `node_modules/.bin`. Bin names starting with `@` bypass validation, and after scope normalization, path traversal sequences like `../../` remain intact. This issue affects all pnpm users who install npm packages and CI/CD pipelines using pnpm. It can lead to overwriting config files, scripts, or other sensitive files. Version 10.28.1 contains a patch.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-22696">CVE-2026-22696</a></td>
+					<td>-</td>
+					<td>remote,bypass</td>
+					<td class=date>2026-01-26T22:15:55.733</td>
+					<td class=description>dcap-qvl implements the quote verification logic for DCAP (Data Center Attestation Primitives). A vulnerability present in versions prior to 0.3.9 involves a critical gap in the cryptographic verification process within the dcap-qvl. The library fetches QE Identity collateral (including qe_identity, qe_identity_signature, and qe_identity_issuer_chain) from the PCCS. However, it skips to verify the QE Identity signature against its certificate chain and does not enforce policy constraints on the QE Report. An attacker can forge the QE Identity data to whitelist a malicious or non-Intel Quoting Enclave. This allows the attacker to forge the QE and sign untrusted quotes that the verifier will accept as valid. Effectively, this bypasses the entire remote attestation security model, as the verifier can no longer trust the entity responsible for signing the quotes. All deployments utilizing the dcap-qvl library for SGX or TDX quote verification are affected. The vulnerability has been patched in dcap-qvl version 0.3.9. The fix implements the missing cryptographic verification for the QE Identity signature and enforces the required checks for MRSIGNER, ISVPRODID, and ISVSVN against the QE Report. Users of the `@phala/dcap-qvl-node` and `@phala/dcap-qvl-web` packages should switch to the pure JavaScript implementation, `@phala/dcap-qvl`. There are no known workarounds for this vulnerability. Users must upgrade to the patched version to ensure that QE Identity collateral is properly verified.</td>
+				</tr>
+			
 		
 			
 		
