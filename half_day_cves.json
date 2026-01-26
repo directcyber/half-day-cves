@@ -1,38 +1,170 @@
 {
-  "CVE-2026-0581": {
-    "cvss": 6.3,
-    "description": "A vulnerability was determined in Tenda AC1206 15.03.06.23. Affected by this issue is the function formBehaviorManager of the file /goform/BehaviorManager of the component httpd. Executing a manipulation of the argument modulename/option/data/switch can lead to command injection. The attack can be launched remotely. The exploit has been publicly disclosed and may be utilized.",
-    "published": "2026-01-05T09:15:54.867",
-    "keywords": "remote,command"
+  "CVE-2026-1363": {
+    "cvss": 9.8,
+    "description": "IAQS and I6 developed by JNC has a Client-Side Enforcement of Server-Side Security vulnerability, allowing unauthenticated remote attackers to gain administrator privileges by manipulating the web front-end.",
+    "published": "2026-01-23T09:15:47.430",
+    "keywords": "remote,unauthenticated"
   },
-  "CVE-2026-0589": {
-    "cvss": 7.3,
-    "description": "A vulnerability was found in code-projects Online Product Reservation System 1.0. Impacted is an unknown function of the component Administration Backend. The manipulation results in improper authentication. The attack may be performed from remote. The exploit has been made public and could be used.",
-    "published": "2026-01-05T13:15:55.457",
-    "keywords": "remote,authentication"
+  "CVE-2026-1364": {
+    "cvss": 9.8,
+    "description": "IAQS and I6 developed by JNC has a Missing Authentication vulnerability, allowing unauthenticated remote attackers to directly operate system administrative functionalities.",
+    "published": "2026-01-23T09:15:47.643",
+    "keywords": "remote,unauthenticated,authentication"
   },
-  "CVE-2026-0621": {
-    "url": "https://github.com/modelcontextprotocol/typescript-sdk/issues/965",
+  "CVE-2026-22271": {
+    "cvss": 7.5,
+    "description": "Dell ECS, versions 3.8.1.0 through 3.8.1.7, and Dell ObjectScale versions prior to 4.2.0.0, contains a Cleartext Transmission of Sensitive Information vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to information exposure.",
+    "published": "2026-01-23T09:15:48.030",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2026-22274": {
+    "cvss": 6.5,
+    "description": "Dell ECS, versions 3.8.1.0 through 3.8.1.7, and Dell ObjectScale versions prior to 4.2.0.0, contains a Cleartext Transmission of Sensitive Information vulnerability in the Fabric Syslog. An unauthenticated attacker with remote access could potentially exploit this vulnerability to intercept and modify information in transit.",
+    "published": "2026-01-23T10:15:53.480",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2026-0994": {
+    "url": "https://github.com/protocolbuffers/protobuf/pull/25239",
     "cvss": "-",
-    "description": "Anthropic's MCP TypeScript SDK versions up to and including 1.25.1 contain a regular expression denial of service (ReDoS) vulnerability in the UriTemplate class when processing RFC 6570 exploded array patterns. The dynamically generated regular expression used during URI matching contains nested quantifiers that can trigger catastrophic backtracking on specially crafted inputs, resulting in excessive CPU consumption. An attacker can exploit this by supplying a malicious URI that causes the Node.js process to become unresponsive, leading to a denial of service.",
-    "published": "2026-01-05T21:16:14.533"
+    "description": "A denial-of-service (DoS) vulnerability exists in google.protobuf.json_format.ParseDict() in Python, where the max_recursion_depth limit can be bypassed when parsing nested google.protobuf.Any messages.\n\nDue to missing recursion depth accounting inside the internal Any-handling logic, an attacker can supply deeply nested Any structures that bypass the intended recursion limit, eventually exhausting Python\u2019s recursion stack and causing a RecursionError.",
+    "published": "2026-01-23T15:16:06.840"
   },
-  "CVE-2026-0625": {
+  "CVE-2026-1299": {
+    "url": "https://github.com/python/cpython/pull/144126",
     "cvss": "-",
-    "description": "Multiple D-Link DSL gateway devices contain a command injection vulnerability in the dnscfg.cgi endpoint due to improper sanitization of user-supplied DNS configuration parameters. An unauthenticated remote attacker can inject and execute arbitrary shell commands, resulting in remote code execution. The affected endpoint is also associated with unauthenticated DNS modification (\u201cDNSChanger\u201d) behavior documented by D-Link, which reported active exploitation campaigns targeting firmware variants of the DSL-2740R, DSL-2640B, DSL-2780B, and DSL-526B models from 2016 through 2019. Exploitation evidence was observed by the Shadowserver Foundation on 2025-11-27 (UTC). Affected devices were declared end-of-life/end-of-service in early 2020.",
-    "published": "2026-01-05T22:15:54.483",
+    "description": "The \nemail module, specifically the \"BytesGenerator\" class, didn\u2019t properly quote newlines for email headers when \nserializing an email message allowing for header injection when an email\n is serialized. This is only applicable if using \"LiteralHeader\" writing headers that don't respect email folding rules, the new behavior will reject the incorrectly folded headers in \"BytesGenerator\".",
+    "published": "2026-01-23T17:16:12.977"
+  },
+  "CVE-2026-24423": {
+    "cvss": "-",
+    "description": "SmarterTools SmarterMail versions prior to build 9511 contain an unauthenticated remote code execution vulnerability in the ConnectToHub API method. The attacker could point the SmarterMail to the malicious HTTP server, which serves the malicious OS command. This command will be executed by the vulnerable application.",
+    "published": "2026-01-23T17:16:13.483",
     "keywords": "remote,execution,unauthenticated,command"
   },
-  "CVE-2026-21411": {
-    "cvss": 8.8,
-    "description": "Authentication bypass issue exists in OpenBlocks series versions prior to FW5.0.8, which may allow an attacker to bypass administrator authentication and change the password.",
-    "published": "2026-01-06T07:15:43.870",
-    "keywords": "authentication,bypass"
+  "CVE-2026-24136": {
+    "cvss": "-",
+    "description": "Saleor is an e-commerce platform. Versions 3.2.0 through 3.20.109, 3.21.0-a.0 through 3.21.44 and 3.22.0-a.0 through 3.22.28 have a n Insecure Direct Object Reference (IDOR) vulnerability that allows unauthenticated actors to extract sensitive information in plain text. Orders created before Saleor 3.2.0 could have PIIs exfiltrated. The issue has been patched in Saleor versions: 3.22.29, 3.21.45, and 3.20.110. To workaround, temporarily block non-staff users from fetching order information (the order() GraphQL query) using a WAF.",
+    "published": "2026-01-24T00:15:49.167",
+    "keywords": "unauthenticated,sensitive"
   },
-  "CVE-2026-0641": {
-    "cvss": 6.3,
-    "description": "A security vulnerability has been detected in TOTOLINK WA300 5.2cu.7112_B20190227. This vulnerability affects the function sub_401510 of the file cstecgi.cgi. The manipulation of the argument UPLOAD_FILENAME leads to command injection. The attack may be initiated remotely. The exploit has been disclosed publicly and may be used.",
-    "published": "2026-01-06T19:16:07.573",
+  "CVE-2026-24139": {
+    "cvss": "-",
+    "description": "MyTube is a self-hosted downloader and player for several video websites. Versions 1.7.78 and below do not safeguard against authorization bypass, allowing guest users to download the complete application database. The application fails to properly validate user permissions on the database export endpoint, enabling low-privileged users to access sensitive data they should not have permission to view.",
+    "published": "2026-01-24T00:15:49.313",
+    "keywords": "sensitive,bypass"
+  },
+  "CVE-2026-24474": {
+    "url": "https://github.com/dioxuslabs/components/commit/41e4242ecb1062d04ae42a5215363c1d9fd4e23a",
+    "cvss": "-",
+    "description": "Dioxus Components is a shadcn-style component library for the Dioxus app framework. Prior to commit 41e4242ecb1062d04ae42a5215363c1d9fd4e23a, `use_animated_open` formats a string for `eval` with an `id` that can be user supplied. Commit 41e4242ecb1062d04ae42a5215363c1d9fd4e23a patches the issue.",
+    "published": "2026-01-24T00:15:49.603"
+  },
+  "CVE-2026-24403": {
+    "cvss": 7.1,
+    "description": "iccDEV provides libraries and tools for interacting with, manipulating, and applying ICC color management profiles. In versions 2.3.1.1 and below, an integer overflow vulnerability exists in icValidateStatus CIccProfile::CheckHeader() when user-controllable input is incorporated into profile data unsafely. Tampering with tag tables, offsets, or size fields can trigger parsing errors, memory corruption, or DoS, potentially enabling arbitrary Code Execution or bypassing application logic. This issue has been fixed in version 2.3.1.2.",
+    "published": "2026-01-24T01:15:50.620",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2026-24404": {
+    "cvss": 7.1,
+    "description": "iccDEV provides libraries and tools for interacting with, manipulating, and applying ICC color management profiles. In versions 2.3.1.1 and below, CIccXmlArrayType() contains a Null Pointer Dereference and Undefined Behavior vulnerability. This occurs when user-controllable input is unsafely incorporated into ICC profile data or other structured binary blobs. Successful exploitation may allow an attacker to perform DoS, manipulate data, bypass application logic and Code Execution. This issue has been fixed in version 2.3.1.2.",
+    "published": "2026-01-24T01:15:50.773",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2026-24405": {
+    "cvss": 8.8,
+    "description": "iccDEV provides libraries and tools for interacting with, manipulating, and applying ICC color management profiles. Versions 2.3.1.1 and below have a Heap Buffer Overflow vulnerability in CIccMpeCalculator::Read(). This occurs when user-controllable input is unsafely incorporated into ICC profile data or other structured binary blobs. Successful exploitation may allow an attacker to perform DoS, manipulate data, bypass application logic and Code Execution. This issue has been fixed in version 2.3.1.2.",
+    "published": "2026-01-24T01:15:50.923",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2026-24406": {
+    "cvss": 8.8,
+    "description": "iccDEV provides libraries and tools for interacting with, manipulating, and applying ICC color management profiles. Versions 2.3.1.1 and below have a Heap Buffer Overflow vulnerability in CIccTagNamedColor2::SetSize(). This occurs when user-controllable input is unsafely incorporated into ICC profile data or other structured binary blobs. Successful exploitation may allow an attacker to perform DoS, manipulate data, bypass application logic and Code Execution. This issue has been fixed in version 2.3.1.2.",
+    "published": "2026-01-24T01:15:51.073",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2026-24407": {
+    "cvss": 7.1,
+    "description": "iccDEV provides libraries and tools for interacting with, manipulating, and applying ICC color management profiles. Versions 2.3.1.1 and below have Undefined Behavior in icSigCalcOp(). This occurs when user-controllable input is unsafely incorporated into ICC profile data or other structured binary blobs. Successful exploitation may allow an attacker to perform DoS, manipulate data, bypass application logic and Code Execution. This issue has been fixed in version 2.3.1.2.",
+    "published": "2026-01-24T01:15:51.223",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2026-24401": {
+    "url": "https://github.com/avahi/avahi/commit/78eab31128479f06e30beb8c1cbf99dd921e2524",
+    "cvss": 6.5,
+    "description": "Avahi is a system which facilitates service discovery on a local network via the mDNS/DNS-SD protocol suite. In versions 0.9rc2 and below, avahi-daemon can be crashed via a segmentation fault by sending an unsolicited mDNS response containing a recursive CNAME record, where the alias and canonical name point to the same domain (e.g., \"h.local\" as a CNAME for \"h.local\"). This causes unbounded recursion in the lookup_handle_cname function, leading to stack exhaustion. The vulnerability affects record browsers where AVAHI_LOOKUP_USE_MULTICAST is set explicitly, which includes record browsers created by resolvers used by nss-mdns. This issue is patched in commit 78eab31128479f06e30beb8c1cbf99dd921e2524.",
+    "published": "2026-01-24T02:15:48.760"
+  },
+  "CVE-2026-24409": {
+    "cvss": 7.1,
+    "description": "iccDEV provides libraries and tools for interacting with, manipulating, and applying ICC color management profiles. Versions 2.3.1.1 and below have Undefined Behavior and Null Pointer Deference in CIccTagXmlFloatNum<>::ParseXml(). This occurs when user-controllable input is unsafely incorporated into ICC profile data or other structured binary blobs. Successful exploitation may allow an attacker to perform DoS, manipulate data, bypass application logic and Code Execution. This issue has been fixed in version 2.3.1.2.",
+    "published": "2026-01-24T02:15:48.930",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2026-24410": {
+    "cvss": 7.1,
+    "description": "iccDEV provides libraries and tools for interacting with, manipulating, and applying ICC color management profiles. Versions 2.3.1.1 and below have Undefined Behavior and Null Pointer Deference in CIccProfileXml::ParseBasic(). This occurs when user-controllable input is unsafely incorporated into ICC profile data or other structured binary blobs. Successful exploitation may allow an attacker to perform DoS, manipulate data, bypass application logic and Code Execution. This issue has been fixed in version 2.3.1.2.",
+    "published": "2026-01-24T02:15:49.080",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2026-24411": {
+    "cvss": 7.1,
+    "description": "iccDEV provides libraries and tools for interacting with, manipulating, and applying ICC color management profiles. Versions 2.3.1.1 and below have Undefined Behavior in CIccTagXmlSegmentedCurve::ToXml(). This occurs when user-controllable input is unsafely incorporated into ICC profile data or other structured binary blobs. Successful exploitation may allow an attacker to perform DoS, manipulate data, bypass application logic and Code Execution. This issue has been fixed in version 2.3.1.2.",
+    "published": "2026-01-24T02:15:49.223",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2026-24412": {
+    "cvss": 8.8,
+    "description": "iccDEV provides libraries and tools for interacting with, manipulating, and applying ICC color management profiles. Versions 2.3.1.1 and below have aHeap Buffer Overflow vulnerability in the CIccTagXmlSegmentedCurve::ToXml() function. This occurs when user-controllable input is unsafely incorporated into ICC profile data or other structured binary blobs. Successful exploitation may allow an attacker to perform DoS, manipulate data, bypass application logic and Code Execution. This issue has been fixed in version 2.3.1.2.",
+    "published": "2026-01-24T02:15:49.360",
+    "keywords": "execution,bypass"
+  },
+  "CVE-2026-24469": {
+    "cvss": 7.5,
+    "description": "C++ HTTP Server is an HTTP/1.1 server built to handle client connections and serve HTTP requests. Versions 1.0 and below are vulnerable to Path Traversal via the RequestHandler::handleRequest method. This flaw allows an unauthenticated, remote attacker to read arbitrary files from the server's filesystem by crafting a malicious HTTP GET request containing ../ sequences. The application fails to sanitize the filename variable derived from the user-controlled URL path, directly concatenating it to the files_directory base path and enabling traversal outside the intended root. No patch was available at the time of publication.",
+    "published": "2026-01-24T03:16:01.150",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2026-1075": {
+    "cvss": 4.3,
+    "description": "The ZT Captcha plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.0.4. This is due to improper nonce validation on the save_ztcpt_captcha_settings action where the nonce check can be bypassed by sending an empty token value. This makes it possible for unauthenticated attackers to modify the plugin's settings via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.",
+    "published": "2026-01-24T08:16:07.963",
+    "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2026-1257": {
+    "cvss": 7.5,
+    "description": "The Administrative Shortcodes plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 0.3.4 via the 'slug' attribute of the 'get_template' shortcode. This is due to insufficient path validation on user-supplied input passed to the get_template_part() function. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \"safe\" file types can be uploaded and included.",
+    "published": "2026-01-24T08:16:09.517",
+    "keywords": "execution,sensitive,bypass"
+  },
+  "CVE-2026-0633": {
+    "cvss": 3.7,
+    "description": "The MetForm \u2013 Contact Form, Survey, Quiz, & Custom Form Builder for Elementor plugin for WordPress is vulnerable to Sensitive Information Exposure in versions up to, and including, 4.1.0. This is due to the use of a forgeable cookie value derived only from the entry ID and current user ID without a server-side secret. This makes it possible for unauthenticated attackers to access form submission entry data via MetForm shortcodes for entries created within the transient TTL (default is 15 minutes).",
+    "published": "2026-01-24T09:15:52.843",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2026-0911": {
+    "cvss": 7.5,
+    "description": "The Hustle \u2013 Email Marketing, Lead Generation, Optins, Popups plugin for WordPress is vulnerable to arbitrary file uploads due to incorrect file type validation in the action_import_module() function in all versions up to, and including, 7.8.9.2. This makes it possible for authenticated attackers, with a lower-privileged role (e.g., Subscriber-level access and above), to upload arbitrary files on the affected site's server which may make remote code execution possible. Successful exploitation requires an admin to grant Hustle module permissions (or module edit access) to the low-privileged user so they can access the Hustle admin page and obtain the required nonce.",
+    "published": "2026-01-24T13:15:55.300",
+    "keywords": "remote,execution"
+  },
+  "CVE-2026-1419": {
+    "cvss": 4.7,
+    "description": "A weakness has been identified in D-Link DCS700l 1.03.09. Affected is an unknown function of the file /setDayNightMode of the component Web Form Handler. Executing a manipulation of the argument LightSensorControl can lead to command injection. The attack may be launched remotely. The exploit has been made available to the public and could be used for attacks.",
+    "published": "2026-01-26T05:16:05.193",
+    "keywords": "remote,command"
+  },
+  "CVE-2026-1425": {
+    "url": "https://github.com/pymumu/smartdns/commit/2d57c4b4e1add9b4537aeb403f794a084727e1c8",
+    "cvss": 5.6,
+    "description": "A security flaw has been discovered in pymumu SmartDNS up to 47.1. This vulnerability affects the function _dns_decode_rr_head/_dns_decode_SVCB_HTTPS of the file src/dns.c of the component SVBC Record Parser. The manipulation results in stack-based buffer overflow. It is possible to launch the attack remotely. A high complexity level is associated with this attack. It is stated that the exploitability is difficult. The patch is identified as 2d57c4b4e1add9b4537aeb403f794a084727e1c8. Applying a patch is advised to resolve this issue.",
+    "published": "2026-01-26T08:16:00.490"
+  },
+  "CVE-2026-1427": {
+    "cvss": 8.8,
+    "description": "Organization Portal System developed by WellChoose has a OS Command Injection vulnerability, allowing authenticated remote attackers to inject arbitrary OS commands and execute them on the server.",
+    "published": "2026-01-26T08:16:00.753",
     "keywords": "remote,command"
   }
 }
