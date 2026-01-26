@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2026-01-26T16:24:22.112181
+Updated at UTC 2026-01-26T17:23:31.221253
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -132,23 +132,6 @@ Updated at UTC 2026-01-26T16:24:22.112181
 		
 			
 		
-			
-		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-1299">CVE-2026-1299</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/python/cpython/pull/144126">https://github.com/python/cpython/pull/144126</a></td>
-					<td class=date>2026-01-23T17:16:12.977</td>
-					<td class=description>The 
-email module, specifically the "BytesGenerator" class, didn’t properly quote newlines for email headers when 
-serializing an email message allowing for header injection when an email
- is serialized. This is only applicable if using "LiteralHeader" writing headers that don't respect email folding rules, the new behavior will reject the incorrectly folded headers in "BytesGenerator".</td>
-
-
-				</tr>
 			
 		
 
@@ -369,18 +352,6 @@ Users are recommended to upgrade to version 2.12.0, which fixes the issue.</td>
 					<td class=date>2026-01-24T00:15:49.167</td>
 					<td class=description>Saleor is an e-commerce platform. Versions 3.2.0 through 3.20.109, 3.21.0-a.0 through 3.21.44 and 3.22.0-a.0 through 3.22.28 have a n Insecure Direct Object Reference (IDOR) vulnerability that allows unauthenticated actors to extract sensitive information in plain text. Orders created before Saleor 3.2.0 could have PIIs exfiltrated. The issue has been patched in Saleor versions: 3.22.29, 3.21.45, and 3.20.110. To workaround, temporarily block non-staff users from fetching order information (the order() GraphQL query) using a WAF.</td>
 				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-24423">CVE-2026-24423</a></td>
-					<td>-</td>
-					<td>remote,execution,unauthenticated,command</td>
-					<td class=date>2026-01-23T17:16:13.483</td>
-					<td class=description>SmarterTools SmarterMail versions prior to build 9511 contain an unauthenticated remote code execution vulnerability in the ConnectToHub API method. The attacker could point the SmarterMail to the malicious HTTP server, which serves the malicious OS command. This command will be executed by the vulnerable application.</td>
-				</tr>
-			
-		
 			
 		
 

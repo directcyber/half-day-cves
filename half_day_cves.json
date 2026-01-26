@@ -1,16 +1,4 @@
 {
-  "CVE-2026-1299": {
-    "url": "https://github.com/python/cpython/pull/144126",
-    "cvss": "-",
-    "description": "The \nemail module, specifically the \"BytesGenerator\" class, didn\u2019t properly quote newlines for email headers when \nserializing an email message allowing for header injection when an email\n is serialized. This is only applicable if using \"LiteralHeader\" writing headers that don't respect email folding rules, the new behavior will reject the incorrectly folded headers in \"BytesGenerator\".",
-    "published": "2026-01-23T17:16:12.977"
-  },
-  "CVE-2026-24423": {
-    "cvss": "-",
-    "description": "SmarterTools SmarterMail versions prior to build 9511 contain an unauthenticated remote code execution vulnerability in the ConnectToHub API method. The attacker could point the SmarterMail to the malicious HTTP server, which serves the malicious OS command. This command will be executed by the vulnerable application.",
-    "published": "2026-01-23T17:16:13.483",
-    "keywords": "remote,execution,unauthenticated,command"
-  },
   "CVE-2026-24136": {
     "cvss": "-",
     "description": "Saleor is an e-commerce platform. Versions 3.2.0 through 3.20.109, 3.21.0-a.0 through 3.21.44 and 3.22.0-a.0 through 3.22.28 have a n Insecure Direct Object Reference (IDOR) vulnerability that allows unauthenticated actors to extract sensitive information in plain text. Orders created before Saleor 3.2.0 could have PIIs exfiltrated. The issue has been patched in Saleor versions: 3.22.29, 3.21.45, and 3.20.110. To workaround, temporarily block non-staff users from fetching order information (the order() GraphQL query) using a WAF.",
