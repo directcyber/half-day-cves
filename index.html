@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2026-01-27T07:21:41.005928
+Updated at UTC 2026-01-27T08:22:32.139310
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -102,10 +102,6 @@ Updated at UTC 2026-01-27T07:21:41.005928
 
 
 				</tr>
-			
-		
-			
-		
 			
 		
 			
@@ -269,26 +265,6 @@ Users are recommended to upgrade to version 2.12.0, which fixes the issue.</td>
 					<td>unauthenticated,sensitive</td>
 					<td class=date>2026-01-24T09:15:52.843</td>
 					<td class=description>The MetForm – Contact Form, Survey, Quiz, & Custom Form Builder for Elementor plugin for WordPress is vulnerable to Sensitive Information Exposure in versions up to, and including, 4.1.0. This is due to the use of a forgeable cookie value derived only from the entry ID and current user ID without a server-side secret. This makes it possible for unauthenticated attackers to access form submission entry data via MetForm shortcodes for entries created within the transient TTL (default is 15 minutes).</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-1257">CVE-2026-1257</a></td>
-					<td>7.5</td>
-					<td>execution,sensitive,bypass</td>
-					<td class=date>2026-01-24T08:16:09.517</td>
-					<td class=description>The Administrative Shortcodes plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 0.3.4 via the 'slug' attribute of the 'get_template' shortcode. This is due to insufficient path validation on user-supplied input passed to the get_template_part() function. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other "safe" file types can be uploaded and included.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-1075">CVE-2026-1075</a></td>
-					<td>4.3</td>
-					<td>unauthenticated,bypass</td>
-					<td class=date>2026-01-24T08:16:07.963</td>
-					<td class=description>The ZT Captcha plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.0.4. This is due to improper nonce validation on the save_ztcpt_captcha_settings action where the nonce check can be bypassed by sending an empty token value. This makes it possible for unauthenticated attackers to modify the plugin's settings via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.</td>
 				</tr>
 			
 		
