@@ -1,22 +1,4 @@
 {
-  "CVE-2026-24136": {
-    "cvss": "-",
-    "description": "Saleor is an e-commerce platform. Versions 3.2.0 through 3.20.109, 3.21.0-a.0 through 3.21.44 and 3.22.0-a.0 through 3.22.28 have a n Insecure Direct Object Reference (IDOR) vulnerability that allows unauthenticated actors to extract sensitive information in plain text. Orders created before Saleor 3.2.0 could have PIIs exfiltrated. The issue has been patched in Saleor versions: 3.22.29, 3.21.45, and 3.20.110. To workaround, temporarily block non-staff users from fetching order information (the order() GraphQL query) using a WAF.",
-    "published": "2026-01-24T00:15:49.167",
-    "keywords": "unauthenticated,sensitive"
-  },
-  "CVE-2026-24139": {
-    "cvss": "-",
-    "description": "MyTube is a self-hosted downloader and player for several video websites. Versions 1.7.78 and below do not safeguard against authorization bypass, allowing guest users to download the complete application database. The application fails to properly validate user permissions on the database export endpoint, enabling low-privileged users to access sensitive data they should not have permission to view.",
-    "published": "2026-01-24T00:15:49.313",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2026-24474": {
-    "url": "https://github.com/dioxuslabs/components/commit/41e4242ecb1062d04ae42a5215363c1d9fd4e23a",
-    "cvss": "-",
-    "description": "Dioxus Components is a shadcn-style component library for the Dioxus app framework. Prior to commit 41e4242ecb1062d04ae42a5215363c1d9fd4e23a, `use_animated_open` formats a string for `eval` with an `id` that can be user supplied. Commit 41e4242ecb1062d04ae42a5215363c1d9fd4e23a patches the issue.",
-    "published": "2026-01-24T00:15:49.603"
-  },
   "CVE-2026-24403": {
     "cvss": 7.1,
     "description": "iccDEV provides libraries and tools for interacting with, manipulating, and applying ICC color management profiles. In versions 2.3.1.1 and below, an integer overflow vulnerability exists in icValidateStatus CIccProfile::CheckHeader() when user-controllable input is incorporated into profile data unsafely. Tampering with tag tables, offsets, or size fields can trigger parsing errors, memory corruption, or DoS, potentially enabling arbitrary Code Execution or bypassing application logic. This issue has been fixed in version 2.3.1.2.",
@@ -160,5 +142,23 @@
     "description": "EVerest is an EV charging software stack. In versions up to and including 2025.12.1, it is possible to bypass the sequence state verification including authentication, and send requests that transition to forbidden states relative to the current one, thereby updating the current context with illegitimate data.cThanks to the modular design of EVerest, authorization is handled in a separate module and EVSEManager Charger internal state machine cannot transition out of the `WaitingForAuthentication` state through ISO 15118-2 communication. From this state, it was however possible through ISO 15118-2 messages which are published to the MQTT server to trick it into preparing to charge, and even to prepare to send current. The final requirement to actually send current to the EV was the closure of the contactors, which does not appear to be possible without leaving the `WaitingForAuthentication` state and leveraging ISO 15118-2 messages. As of time of publication, no fixed versions are available.",
     "published": "2026-01-26T22:15:56.513",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2026-1448": {
+    "cvss": 7.2,
+    "description": "A vulnerability was detected in D-Link DIR-615 up to 4.10. This impacts an unknown function of the file /wiz_policy_3_machine.php of the component Web Management Interface. Performing a manipulation of the argument ipaddr results in os command injection. It is possible to initiate the attack remotely. The exploit is now public and may be used. This vulnerability only affects products that are no longer supported by the maintainer.",
+    "published": "2026-01-27T00:15:50.573",
+    "keywords": "remote,command"
+  },
+  "CVE-2026-24477": {
+    "cvss": "-",
+    "description": "AnythingLLM is an application that turns pieces of content into context that any LLM can use as references during chatting. If AnythingLLM prior to version 1.10.0 is configured to use Qdrant as the vector database with an API key, this QdrantApiKey could be exposed in plain text to unauthenticated users via the `/api/setup-complete` endpoint. Leakage of QdrantApiKey allows an unauthenticated attacker full read/write access to the Qdrant vector database instance used by AnythingLLM. Since Qdrant often stores the core knowledge base for RAG in AnythingLLM, this can lead to complete compromise of the semantic search / retrieval functionality and indirect leakage of confidential uploaded documents. Version 1.10.0 patches the issue.",
+    "published": "2026-01-27T00:15:51.150",
+    "keywords": "unauthenticated,leak"
+  },
+  "CVE-2026-24478": {
+    "cvss": 7.2,
+    "description": "AnythingLLM is an application that turns pieces of content into context that any LLM can use as references during chatting. Prior to version 1.10.0, a critical Path Traversal vulnerability in the DrupalWiki integration allows a malicious admin (or an attacker who can convince an admin to configure a malicious DrupalWiki URL) to write arbitrary files to the server. This can lead to Remote Code Execution (RCE) by overwriting configuration files or writing executable scripts. Version 1.10.0 fixes the issue.",
+    "published": "2026-01-27T00:15:51.297",
+    "keywords": "remote,execution"
   }
 }

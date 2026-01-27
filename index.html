@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2026-01-26T23:15:18.292322
+Updated at UTC 2026-01-27T01:12:41.162873
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,12 @@ Updated at UTC 2026-01-26T23:15:18.292322
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
 		
 			
 		
@@ -136,24 +142,38 @@ Updated at UTC 2026-01-26T23:15:18.292322
 		
 			
 		
+
+		<hr>
+		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-24474">CVE-2026-24474</a></td>
-					<td>-</td>
-					<td><a target=_blank href="https://github.com/dioxuslabs/components/commit/41e4242ecb1062d04ae42a5215363c1d9fd4e23a">https://github.com/dioxuslabs/components/commit/41e4242ecb1062d04ae42a5215363c1d9fd4e23a</a></td>
-					<td class=date>2026-01-24T00:15:49.603</td>
-					<td class=description>Dioxus Components is a shadcn-style component library for the Dioxus app framework. Prior to commit 41e4242ecb1062d04ae42a5215363c1d9fd4e23a, `use_animated_open` formats a string for `eval` with an `id` that can be user supplied. Commit 41e4242ecb1062d04ae42a5215363c1d9fd4e23a patches the issue.</td>
-
-
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-24478">CVE-2026-24478</a></td>
+					<td>7.2</td>
+					<td>remote,execution</td>
+					<td class=date>2026-01-27T00:15:51.297</td>
+					<td class=description>AnythingLLM is an application that turns pieces of content into context that any LLM can use as references during chatting. Prior to version 1.10.0, a critical Path Traversal vulnerability in the DrupalWiki integration allows a malicious admin (or an attacker who can convince an admin to configure a malicious DrupalWiki URL) to write arbitrary files to the server. This can lead to Remote Code Execution (RCE) by overwriting configuration files or writing executable scripts. Version 1.10.0 fixes the issue.</td>
 				</tr>
 			
 		
 			
-		
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-24477">CVE-2026-24477</a></td>
+					<td>-</td>
+					<td>unauthenticated,leak</td>
+					<td class=date>2026-01-27T00:15:51.150</td>
+					<td class=description>AnythingLLM is an application that turns pieces of content into context that any LLM can use as references during chatting. If AnythingLLM prior to version 1.10.0 is configured to use Qdrant as the vector database with an API key, this QdrantApiKey could be exposed in plain text to unauthenticated users via the `/api/setup-complete` endpoint. Leakage of QdrantApiKey allows an unauthenticated attacker full read/write access to the Qdrant vector database instance used by AnythingLLM. Since Qdrant often stores the core knowledge base for RAG in AnythingLLM, this can lead to complete compromise of the semantic search / retrieval functionality and indirect leakage of confidential uploaded documents. Version 1.10.0 patches the issue.</td>
+				</tr>
 			
 		
-
-		<hr>
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-1448">CVE-2026-1448</a></td>
+					<td>7.2</td>
+					<td>remote,command</td>
+					<td class=date>2026-01-27T00:15:50.573</td>
+					<td class=description>A vulnerability was detected in D-Link DIR-615 up to 4.10. This impacts an unknown function of the file /wiz_policy_3_machine.php of the component Web Management Interface. Performing a manipulation of the argument ipaddr results in os command injection. It is possible to initiate the attack remotely. The exploit is now public and may be used. This vulnerability only affects products that are no longer supported by the maintainer.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -379,28 +399,6 @@ Users are recommended to upgrade to version 2.12.0, which fixes the issue.</td>
 					<td>execution,bypass</td>
 					<td class=date>2026-01-24T01:15:50.620</td>
 					<td class=description>iccDEV provides libraries and tools for interacting with, manipulating, and applying ICC color management profiles. In versions 2.3.1.1 and below, an integer overflow vulnerability exists in icValidateStatus CIccProfile::CheckHeader() when user-controllable input is incorporated into profile data unsafely. Tampering with tag tables, offsets, or size fields can trigger parsing errors, memory corruption, or DoS, potentially enabling arbitrary Code Execution or bypassing application logic. This issue has been fixed in version 2.3.1.2.</td>
-				</tr>
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-24139">CVE-2026-24139</a></td>
-					<td>-</td>
-					<td>sensitive,bypass</td>
-					<td class=date>2026-01-24T00:15:49.313</td>
-					<td class=description>MyTube is a self-hosted downloader and player for several video websites. Versions 1.7.78 and below do not safeguard against authorization bypass, allowing guest users to download the complete application database. The application fails to properly validate user permissions on the database export endpoint, enabling low-privileged users to access sensitive data they should not have permission to view.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-24136">CVE-2026-24136</a></td>
-					<td>-</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2026-01-24T00:15:49.167</td>
-					<td class=description>Saleor is an e-commerce platform. Versions 3.2.0 through 3.20.109, 3.21.0-a.0 through 3.21.44 and 3.22.0-a.0 through 3.22.28 have a n Insecure Direct Object Reference (IDOR) vulnerability that allows unauthenticated actors to extract sensitive information in plain text. Orders created before Saleor 3.2.0 could have PIIs exfiltrated. The issue has been patched in Saleor versions: 3.22.29, 3.21.45, and 3.20.110. To workaround, temporarily block non-staff users from fetching order information (the order() GraphQL query) using a WAF.</td>
 				</tr>
 			
 		
