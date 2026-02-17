@@ -1,98 +1,206 @@
 {
-  "CVE-2026-0633": {
-    "cvss": 3.7,
-    "description": "The MetForm \u2013 Contact Form, Survey, Quiz, & Custom Form Builder for Elementor plugin for WordPress is vulnerable to Sensitive Information Exposure in versions up to, and including, 4.1.0. This is due to the use of a forgeable cookie value derived only from the entry ID and current user ID without a server-side secret. This makes it possible for unauthenticated attackers to access form submission entry data via MetForm shortcodes for entries created within the transient TTL (default is 15 minutes).",
-    "published": "2026-01-24T09:15:52.843",
+  "CVE-2026-1306": {
+    "cvss": 9.8,
+    "description": "The midi-Synth plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type and file extension validation in the 'export' AJAX action in all versions up to, and including, 1.1.0. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible granted the attacker can obtain a valid nonce. The nonce is exposed in frontend JavaScript making it trivially accessible to unauthenticated attackers.",
+    "published": "2026-02-14T07:16:10.150",
+    "keywords": "remote,execution,unauthenticated"
+  },
+  "CVE-2026-2024": {
+    "cvss": 7.5,
+    "description": "The PhotoStack Gallery plugin for WordPress is vulnerable to SQL Injection via the 'postid' parameter in all versions up to, and including, 0.4.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2026-02-14T07:16:13.020",
     "keywords": "unauthenticated,sensitive"
   },
-  "CVE-2026-0911": {
-    "cvss": 7.5,
-    "description": "The Hustle \u2013 Email Marketing, Lead Generation, Optins, Popups plugin for WordPress is vulnerable to arbitrary file uploads due to incorrect file type validation in the action_import_module() function in all versions up to, and including, 7.8.9.2. This makes it possible for authenticated attackers, with a lower-privileged role (e.g., Subscriber-level access and above), to upload arbitrary files on the affected site's server which may make remote code execution possible. Successful exploitation requires an admin to grant Hustle module permissions (or module edit access) to the low-privileged user so they can access the Hustle admin page and obtain the required nonce.",
-    "published": "2026-01-24T13:15:55.300",
-    "keywords": "remote,execution"
+  "CVE-2026-23132": {
+    "cvss": "-",
+    "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/bridge: synopsys: dw-dp: fix error paths of dw_dp_bind\n\nFix several issues in dw_dp_bind() error handling:\n\n1. Missing return after drm_bridge_attach() failure - the function\n   continued execution instead of returning an error.\n\n2. Resource leak: drm_dp_aux_register() is not a devm function, so\n   drm_dp_aux_unregister() must be called on all error paths after\n   aux registration succeeds. This affects errors from:\n   - drm_bridge_attach()\n   - phy_init()\n   - devm_add_action_or_reset()\n   - platform_get_irq()\n   - devm_request_threaded_irq()\n\n3. Bug fix: platform_get_irq() returns the IRQ number or a negative\n   error code, but the error path was returning ERR_PTR(ret) instead\n   of ERR_PTR(dp->irq).\n\nUse a goto label for cleanup to ensure consistent error handling.",
+    "published": "2026-02-14T16:15:53.163",
+    "keywords": "execution,leak"
   },
-  "CVE-2026-1419": {
+  "CVE-2026-23151": {
+    "cvss": "-",
+    "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: MGMT: Fix memory leak in set_ssp_complete\n\nFix memory leak in set_ssp_complete() where mgmt_pending_cmd structures\nare not freed after being removed from the pending list.\n\nCommit 302a1f674c00 (\"Bluetooth: MGMT: Fix possible UAFs\") replaced\nmgmt_pending_foreach() calls with individual command handling but missed\nadding mgmt_pending_free() calls in both error and success paths of\nset_ssp_complete(). Other completion functions like set_le_complete()\nwere fixed correctly in the same commit.\n\nThis causes a memory leak of the mgmt_pending_cmd structure and its\nassociated parameter data for each SSP command that completes.\n\nAdd the missing mgmt_pending_free(cmd) calls in both code paths to fix\nthe memory leak. Also fix the same issue in set_advertising_complete().",
+    "published": "2026-02-14T16:15:55.233",
+    "keywords": "command,leak"
+  },
+  "CVE-2026-1490": {
+    "cvss": 9.8,
+    "description": "The Spam protection, Anti-Spam, FireWall by CleanTalk plugin for WordPress is vulnerable to unauthorized Arbitrary Plugin Installation due to an authorization bypass via reverse DNS (PTR record) spoofing on the 'checkWithoutToken' function in all versions up to, and including, 6.71. This makes it possible for unauthenticated attackers to install and activate arbitrary plugins which can be leveraged to achieve remote code execution if another vulnerable plugin is installed and activated. Note: This is only exploitable on sites with an invalid API key.",
+    "published": "2026-02-15T04:15:53.783",
+    "keywords": "remote,execution,unauthenticated,bypass"
+  },
+  "CVE-2026-2539": {
+    "cvss": "-",
+    "description": "The RF communication protocol in the Micca KE700 car alarm system does not encrypt its data frames. An attacker with a radio interception tool (e.g., SDR) can capture the random number and counters\u00a0transmitted in cleartext, which is sensitive information required for authentication.",
+    "published": "2026-02-15T11:15:54.897",
+    "keywords": "authentication,sensitive"
+  },
+  "CVE-2026-2517": {
+    "url": "https://github.com/open5gs/open5gs/issues/4281#issue-3807802287",
+    "cvss": 5.3,
+    "description": "A security flaw has been discovered in Open5GS up to 2.7.6. This vulnerability affects the function ogs_gtp2_parse_tft in the library lib/gtp/v2/types.c of the component SMF. Performing a manipulation of the argument pf[0].content.length results in denial of service. The attack is possible to be carried out remotely. The exploit has been released to the public and may be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2026-02-15T13:16:16.690"
+  },
+  "CVE-2026-26366": {
+    "cvss": 9.8,
+    "description": "eNet SMART HOME server 2.2.1 and 2.3.1 ships with default credentials (user:user, admin:admin) that remain active after installation and commissioning without enforcing a mandatory password change. Unauthenticated attackers can use these default credentials to gain administrative access to sensitive smart home configuration and control functions.",
+    "published": "2026-02-15T16:15:53.870",
+    "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2026-2521": {
+    "url": "https://github.com/open5gs/open5gs/issues/4282#issue-3807902188",
+    "cvss": 5.3,
+    "description": "A weakness has been identified in Open5GS up to 2.7.6. This issue affects the function sgwc_s5c_handle_create_session_response of the component SGW-C. Executing a manipulation can lead to memory corruption. The attack may be performed from remote. The exploit has been made available to the public and could be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2026-02-15T23:16:05.803"
+  },
+  "CVE-2026-2522": {
+    "url": "https://github.com/open5gs/open5gs/issues/4283#issue-3807916595",
+    "cvss": 5.3,
+    "description": "A security vulnerability has been detected in Open5GS up to 2.7.6. Impacted is an unknown function of the file /src/mme/esm-build.c of the component MME. The manipulation leads to memory corruption. It is possible to initiate the attack remotely. The exploit has been disclosed publicly and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2026-02-16T00:16:07.550"
+  },
+  "CVE-2026-2523": {
+    "url": "https://github.com/open5gs/open5gs/issues/4285#issue-3809055236",
+    "cvss": 5.3,
+    "description": "A vulnerability was detected in Open5GS up to 2.7.6. The affected element is the function smf_gn_handle_create_pdp_context_request of the file /src/smf/gn-handler.c of the component SMF. The manipulation results in reachable assertion. It is possible to launch the attack remotely. The exploit is now public and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2026-02-16T01:15:53.767"
+  },
+  "CVE-2026-2524": {
+    "url": "https://github.com/open5gs/open5gs/issues/4284#issue-3808462406",
+    "cvss": 5.3,
+    "description": "A flaw has been found in Open5GS 2.7.6. The impacted element is the function mme_s11_handle_create_session_response of the component MME. This manipulation causes denial of service. The attack can be initiated remotely. The exploit has been published and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2026-02-16T01:15:54.000"
+  },
+  "CVE-2026-2525": {
+    "url": "https://github.com/free5gc/free5gc/issues/796#issue-3812169865",
+    "cvss": 5.3,
+    "description": "A vulnerability has been found in Free5GC up to 4.1.0. This affects an unknown function of the component PFCP UDP Endpoint. Such manipulation leads to denial of service. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
+    "published": "2026-02-16T02:16:06.153"
+  },
+  "CVE-2026-2526": {
+    "cvss": 6.3,
+    "description": "A vulnerability was found in Wavlink WL-WN579A3 up to 20210219. This impacts the function multi_ssid of the file /cgi-bin/wireless.cgi. Performing a manipulation of the argument SSID2G2 results in command injection. The attack may be initiated remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2026-02-16T02:16:06.423",
+    "keywords": "remote,command"
+  },
+  "CVE-2026-2527": {
+    "cvss": 6.3,
+    "description": "A vulnerability was determined in Wavlink WL-WN579A3 up to 20210219. Affected is an unknown function of the file /cgi-bin/login.cgi. Executing a manipulation of the argument key can lead to command injection. The attack may be launched remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2026-02-16T02:16:06.620",
+    "keywords": "remote,command"
+  },
+  "CVE-2026-2528": {
+    "cvss": 6.3,
+    "description": "A vulnerability was identified in Wavlink WL-WN579A3 up to 20210219. Affected by this vulnerability is the function Delete_Mac_list of the file /cgi-bin/wireless.cgi. The manipulation of the argument delete_list leads to command injection. Remote exploitation of the attack is possible. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2026-02-16T02:16:06.807",
+    "keywords": "remote,command"
+  },
+  "CVE-2026-2529": {
+    "cvss": 6.3,
+    "description": "A security flaw has been discovered in Wavlink WL-WN579A3 up to 20210219. Affected by this issue is the function DeleteMac of the file /cgi-bin/wireless.cgi. The manipulation of the argument delete_list results in command injection. The attack can be executed remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2026-02-16T02:16:07.000",
+    "keywords": "remote,command"
+  },
+  "CVE-2026-2530": {
+    "cvss": 6.3,
+    "description": "A weakness has been identified in Wavlink WL-WN579A3 up to 20210219. This affects the function AddMac of the file /cgi-bin/wireless.cgi. This manipulation of the argument macAddr causes command injection. The attack is possible to be carried out remotely. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2026-02-16T04:15:51.677",
+    "keywords": "remote,command"
+  },
+  "CVE-2026-2531": {
+    "url": "https://github.com/mindsdb/mindsdb/pull/12213",
+    "cvss": 6.3,
+    "description": "A security vulnerability has been detected in MindsDB up to 25.14.1. This vulnerability affects the function clear_filename of the file mindsdb/utilities/security.py of the component File Upload. Such manipulation leads to server-side request forgery. The attack may be performed from remote. The exploit has been disclosed publicly and may be used. The name of the patch is 74d6f0fd4b630218519a700fbee1c05c7fd4b1ed. It is best practice to apply a patch to resolve this issue.",
+    "published": "2026-02-16T04:15:51.897"
+  },
+  "CVE-2026-2533": {
+    "cvss": 7.3,
+    "description": "A flaw has been found in Tosei Self-service Washing Machine 4.02. Impacted is an unknown function of the file /cgi-bin/tosei_datasend.php. Executing a manipulation of the argument adr_txt_1 can lead to command injection. It is possible to launch the attack remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2026-02-16T04:15:52.283",
+    "keywords": "remote,command"
+  },
+  "CVE-2026-2534": {
+    "cvss": 6.3,
+    "description": "A vulnerability has been found in Comfast CF-N1 V2 2.6.0.2. The affected element is the function sub_44AC4C of the file /cgi-bin/mbox-config?method=SET&section=ptest_bandwidth. The manipulation of the argument bandwidth leads to command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2026-02-16T04:15:52.470",
+    "keywords": "remote,command"
+  },
+  "CVE-2026-2535": {
+    "cvss": 6.3,
+    "description": "A vulnerability was found in Comfast CF-N1 V2 2.6.0.2. The impacted element is the function sub_44AB9C of the file /cgi-bin/mbox-config?method=SET&section=ptest_channel. The manipulation of the argument channel results in command injection. The attack can be launched remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2026-02-16T05:16:07.777",
+    "keywords": "remote,command"
+  },
+  "CVE-2026-2537": {
     "cvss": 4.7,
-    "description": "A weakness has been identified in D-Link DCS700l 1.03.09. Affected is an unknown function of the file /setDayNightMode of the component Web Form Handler. Executing a manipulation of the argument LightSensorControl can lead to command injection. The attack may be launched remotely. The exploit has been made available to the public and could be used for attacks.",
-    "published": "2026-01-26T05:16:05.193",
+    "description": "A vulnerability was identified in Comfast CF-E4 2.6.0.1. This impacts an unknown function of the file /cgi-bin/mbox-config?method=SET&section=ntp_timezone of the component HTTP POST Request Handler. Such manipulation of the argument timestr leads to command injection. The attack may be launched remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2026-02-16T06:16:22.320",
     "keywords": "remote,command"
   },
-  "CVE-2026-1425": {
-    "url": "https://github.com/pymumu/smartdns/commit/2d57c4b4e1add9b4537aeb403f794a084727e1c8",
-    "cvss": 5.6,
-    "description": "A security flaw has been discovered in pymumu SmartDNS up to 47.1. This vulnerability affects the function _dns_decode_rr_head/_dns_decode_SVCB_HTTPS of the file src/dns.c of the component SVBC Record Parser. The manipulation results in stack-based buffer overflow. It is possible to launch the attack remotely. A high complexity level is associated with this attack. It is stated that the exploitability is difficult. The patch is identified as 2d57c4b4e1add9b4537aeb403f794a084727e1c8. Applying a patch is advised to resolve this issue.",
-    "published": "2026-01-26T08:16:00.490"
-  },
-  "CVE-2026-1427": {
-    "cvss": 8.8,
-    "description": "Single Sign-On Portal System developed by WellChoose has a OS Command Injection vulnerability, allowing authenticated remote attackers to inject arbitrary OS commands and execute them on the server.",
-    "published": "2026-01-26T08:16:00.753",
+  "CVE-2026-2544": {
+    "cvss": 7.3,
+    "description": "A security flaw has been discovered in yued-fe LuLu UI up to 3.0.0. This issue affects the function child_process.exec of the file run.js. The manipulation results in os command injection. The attack can be launched remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2026-02-16T08:16:05.287",
     "keywords": "remote,command"
   },
-  "CVE-2026-1428": {
-    "cvss": 8.8,
-    "description": "Single Sign-On Portal System developed by WellChoose has a OS Command Injection vulnerability, allowing authenticated remote attackers to inject arbitrary OS commands and execute them on the server.",
-    "published": "2026-01-26T09:15:47.433",
+  "CVE-2026-2548": {
+    "cvss": 6.3,
+    "description": "A flaw has been found in WAYOS FBM-220G 24.10.19. This affects the function sub_40F820 of the file rc. Executing a manipulation of the argument upnp_waniface/upnp_ssdp_interval/upnp_max_age can lead to command injection. The attack can be executed remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2026-02-16T09:16:08.853",
     "keywords": "remote,command"
   },
-  "CVE-2026-24656": {
-    "cvss": 3.7,
-    "description": "Deserialization of Untrusted Data vulnerability in Apache Karaf Decanter.\n\n\nThe Decanter log socket collector exposes the port 4560, without authentication. If the collector exposes allowed classes property, this configuration can be bypassed.\nIt means that the log socket collector is vulnerable to deserialization of untrusted data, eventually causing DoS.\n\n\nNB: Decanter log socket collector is not installed by default. Users who have not installed Decanter log socket are not impacted by this issue.\n\nThis issue affects Apache Karaf Decanter before 2.12.0.\n\nUsers are recommended to upgrade to version 2.12.0, which fixes the issue.",
-    "published": "2026-01-26T10:16:09.597",
+  "CVE-2026-0999": {
+    "cvss": 5.4,
+    "description": "Mattermost versions 11.1.x <= 11.1.2, 10.11.x <= 10.11.9, 11.2.x <= 11.2.1 fail to properly validate login method restrictions which allows an authenticated user to bypass SSO-only login requirements via userID-based authentication. Mattermost Advisory ID: MMSA-2025-00548",
+    "published": "2026-02-16T10:16:08.140",
     "keywords": "authentication,bypass"
   },
-  "CVE-2026-0810": {
-    "url": "https://github.com/gitoxidelabs/gitoxide/issues/2305",
-    "cvss": 6.8,
-    "description": "A flaw was found in gix-date. The `gix_date::parse::TimeBuf::as_str` function can generate strings containing invalid non-UTF8 characters. This issue violates the internal safety invariants of the `TimeBuf` component, leading to undefined behavior when these malformed strings are subsequently processed. This could potentially result in application instability or other unforeseen consequences.",
-    "published": "2026-01-26T20:16:09.600"
+  "CVE-2026-2549": {
+    "url": "https://github.com/zhanghuanhao/librarysystem/issues/32#issue-3879640487",
+    "cvss": 7.3,
+    "description": "A vulnerability has been found in zhanghuanhao LibrarySystem \u56fe\u4e66\u9986\u7ba1\u7406\u7cfb\u7edf up to 1.1.1. This impacts an unknown function of the file BookController.java. The manipulation leads to improper access controls. The attack is possible to be carried out remotely. The exploit has been disclosed to the public and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2026-02-16T10:16:08.403"
   },
-  "CVE-2026-22696": {
+  "CVE-2026-2577": {
+    "cvss": 10.0,
+    "description": "The WhatsApp bridge component in Nanobot binds the WebSocket server to all network interfaces (0.0.0.0) on port 3001 by default and does not require authentication for incoming connections. An unauthenticated remote attacker with network access to the bridge can connect to the WebSocket server to hijack the WhatsApp session. This allows the attacker to send messages on behalf of the user, intercept all incoming messages and media in real-time, and capture authentication QR codes.",
+    "published": "2026-02-16T10:16:08.827",
+    "keywords": "remote,unauthenticated,authentication"
+  },
+  "CVE-2026-2415": {
     "cvss": "-",
-    "description": "dcap-qvl implements the quote verification logic for DCAP (Data Center Attestation Primitives). A vulnerability present in versions prior to 0.3.9 involves a critical gap in the cryptographic verification process within the dcap-qvl. The library fetches QE Identity collateral (including qe_identity, qe_identity_signature, and qe_identity_issuer_chain) from the PCCS. However, it skips to verify the QE Identity signature against its certificate chain and does not enforce policy constraints on the QE Report. An attacker can forge the QE Identity data to whitelist a malicious or non-Intel Quoting Enclave. This allows the attacker to forge the QE and sign untrusted quotes that the verifier will accept as valid. Effectively, this bypasses the entire remote attestation security model, as the verifier can no longer trust the entity responsible for signing the quotes. All deployments utilizing the dcap-qvl library for SGX or TDX quote verification are affected. The vulnerability has been patched in dcap-qvl version 0.3.9. The fix implements the missing cryptographic verification for the QE Identity signature and enforces the required checks for MRSIGNER, ISVPRODID, and ISVSVN against the QE Report. Users of the `@phala/dcap-qvl-node` and `@phala/dcap-qvl-web` packages should switch to the pure JavaScript implementation, `@phala/dcap-qvl`. There are no known workarounds for this vulnerability. Users must upgrade to the patched version to ensure that QE Identity collateral is properly verified.",
-    "published": "2026-01-26T22:15:55.733",
-    "keywords": "remote,bypass"
+    "description": "Emails sent by pretix can utilize placeholders that will be filled with customer data. For example, when {name}\n is used in an email template, it will  be replaced with the buyer's \nname for the final email. This mechanism contained two security-relevant\n bugs:\n\n\n\n  *  \nIt was possible to exfiltrate information about the pretix system through specially crafted placeholder names such as {{event.__init__.__code__.co_filename}}.\n This way, an attacker with the ability to control email templates \n(usually every user of the pretix backend) could retrieve sensitive \ninformation from the system configuration, including even database \npasswords or API keys. pretix does include mechanisms to prevent the usage of such \nmalicious placeholders, however due to a mistake in the code, they were \nnot fully effective for the email subject.\n\n\n\n\n  *  \nPlaceholders in subjects and plain text bodies of emails were \nwrongfully evaluated twice. Therefore, if the first evaluation of a \nplaceholder again contains a placeholder, this second placeholder was \nrendered. This allows the rendering of placeholders controlled by the \nticket buyer, and therefore the exploitation of the first issue as a \nticket buyer. Luckily, the only buyer-controlled placeholder available \nin pretix by default (that is not validated in a way that prevents the \nissue) is {invoice_company}, which is very unusual (but not\n impossible) to be contained in an email subject template. In addition \nto broadening the attack surface of the first issue, this could \ntheoretically also leak information about an order to one of the \nattendees within that order. However, we also consider this scenario \nvery unlikely under typical conditions.\n\n\nOut of caution, we recommend that you rotate all passwords and API keys contained in your  pretix.cfg https://docs.pretix.eu/self-hosting/config/ \u00a0file.",
+    "published": "2026-02-16T11:15:56.047",
+    "keywords": "sensitive,leak"
   },
-  "CVE-2026-23890": {
-    "cvss": 6.5,
-    "description": "pnpm is a package manager. Prior to version 10.28.1, a path traversal vulnerability in pnpm's bin linking allows malicious npm packages to create executable shims or symlinks outside of `node_modules/.bin`. Bin names starting with `@` bypass validation, and after scope normalization, path traversal sequences like `../../` remain intact. This issue affects all pnpm users who install npm packages and CI/CD pipelines using pnpm. It can lead to overwriting config files, scripts, or other sensitive files. Version 10.28.1 contains a patch.",
-    "published": "2026-01-26T22:15:56.363",
-    "keywords": "sensitive,bypass"
+  "CVE-2026-2555": {
+    "url": "https://github.com/jeecgboot/jeecgboot/issues/9335",
+    "cvss": 5.0,
+    "description": "A weakness has been identified in JeecgBoot 3.9.1. This vulnerability affects the function importDocumentFromZip of the file org/jeecg/modules/airag/llm/controller/AiragKnowledgeController.java of the component Retrieval-Augmented Generation. Executing a manipulation can lead to deserialization. The attack can be launched remotely. Attacks of this nature are highly complex. It is stated that the exploitability is difficult. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2026-02-16T12:16:22.667"
   },
-  "CVE-2026-24003": {
-    "cvss": 4.3,
-    "description": "EVerest is an EV charging software stack. In versions up to and including 2025.12.1, it is possible to bypass the sequence state verification including authentication, and send requests that transition to forbidden states relative to the current one, thereby updating the current context with illegitimate data.cThanks to the modular design of EVerest, authorization is handled in a separate module and EVSEManager Charger internal state machine cannot transition out of the `WaitingForAuthentication` state through ISO 15118-2 communication. From this state, it was however possible through ISO 15118-2 messages which are published to the MQTT server to trick it into preparing to charge, and even to prepare to send current. The final requirement to actually send current to the EV was the closure of the contactors, which does not appear to be possible without leaving the `WaitingForAuthentication` state and leveraging ISO 15118-2 messages. As of time of publication, no fixed versions are available.",
-    "published": "2026-01-26T22:15:56.513",
-    "keywords": "authentication,bypass"
+  "CVE-2026-2558": {
+    "url": "https://github.com/yangjian102621/geekai/issues/256#issue-3888814886",
+    "cvss": 6.3,
+    "description": "A flaw has been found in GeekAI up to 4.2.4. The affected element is the function Download of the file api/handler/net_handler.go. This manipulation of the argument url causes server-side request forgery. Remote exploitation of the attack is possible. The exploit has been published and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2026-02-16T14:16:18.650"
   },
-  "CVE-2026-1448": {
-    "cvss": 7.2,
-    "description": "A vulnerability was detected in D-Link DIR-615 up to 4.10. This impacts an unknown function of the file /wiz_policy_3_machine.php of the component Web Management Interface. Performing a manipulation of the argument ipaddr results in os command injection. It is possible to initiate the attack remotely. The exploit is now public and may be used. This vulnerability only affects products that are no longer supported by the maintainer.",
-    "published": "2026-01-27T00:15:50.573",
+  "CVE-2026-2560": {
+    "cvss": 6.3,
+    "description": "A vulnerability has been found in kalcaddle kodbox up to 1.64.05. The impacted element is the function run of the file plugins/fileThumb/lib/VideoResize.class.php of the component Media File Preview Plugin. Such manipulation of the argument localFile leads to os command injection. The attack can be executed remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2026-02-16T14:16:18.840",
     "keywords": "remote,command"
   },
-  "CVE-2026-24477": {
-    "cvss": "-",
-    "description": "AnythingLLM is an application that turns pieces of content into context that any LLM can use as references during chatting. If AnythingLLM prior to version 1.10.0 is configured to use Qdrant as the vector database with an API key, this QdrantApiKey could be exposed in plain text to unauthenticated users via the `/api/setup-complete` endpoint. Leakage of QdrantApiKey allows an unauthenticated attacker full read/write access to the Qdrant vector database instance used by AnythingLLM. Since Qdrant often stores the core knowledge base for RAG in AnythingLLM, this can lead to complete compromise of the semantic search / retrieval functionality and indirect leakage of confidential uploaded documents. Version 1.10.0 patches the issue.",
-    "published": "2026-01-27T00:15:51.150",
-    "keywords": "unauthenticated,leak"
-  },
-  "CVE-2026-24478": {
-    "cvss": 7.2,
-    "description": "AnythingLLM is an application that turns pieces of content into context that any LLM can use as references during chatting. Prior to version 1.10.0, a critical Path Traversal vulnerability in the DrupalWiki integration allows a malicious admin (or an attacker who can convince an admin to configure a malicious DrupalWiki URL) to write arbitrary files to the server. This can lead to Remote Code Execution (RCE) by overwriting configuration files or writing executable scripts. Version 1.10.0 fixes the issue.",
-    "published": "2026-01-27T00:15:51.297",
+  "CVE-2026-2001": {
+    "cvss": 8.8,
+    "description": "The WowRevenue plugin for WordPress is vulnerable to unauthorized plugin installation due to a missing capability check in the 'Notice::install_activate_plugin' function in all versions up to, and including, 2.1.3. This makes it possible for authenticated attackers, with subscriber-level access and above, to install arbitrary plugins on the affected site's server which may make remote code execution possible.",
+    "published": "2026-02-16T20:19:36.190",
     "keywords": "remote,execution"
   },
-  "CVE-2026-24479": {
+  "CVE-2026-26220": {
     "cvss": "-",
-    "description": "HUSTOF is an open source online judge based on PHP/C++/MySQL/Linux for ACM/ICPC and NOIP training. Prior to version 26.01.24, the problem_import_qduoj.php and problem_import_hoj.php modules fail to properly sanitize filenames within uploaded ZIP archives. Attackers can craft a malicious ZIP file containing files with path traversal sequences (e.g., ../../shell.php). When extracted by the server, this allows writing files to arbitrary locations in the web root, leading to Remote Code Execution (RCE). Version 26.01.24 contains a fix for the issue.",
-    "published": "2026-01-27T01:16:02.017",
-    "keywords": "remote,execution"
-  },
-  "CVE-2026-24480": {
-    "cvss": "-",
-    "description": "QGIS is a free, open source, cross platform geographical information system (GIS) The repository contains a GitHub Actions workflow called \"pre-commit checks\" that, before commit 76a693cd91650f9b4e83edac525e5e4f90d954e9, was vulnerable to remote code execution and repository compromise because it used the `pull_request_target` trigger and then checked out and executed untrusted pull request code in a privileged context. Workflows triggered by `pull_request_target` ran with the base repository's credentials and access to secrets. If these workflows then checked out and executed code from the head of an external pull request (which could have been attacker controlled), the attacker could have executed arbitrary commands with elevated privileges. This insecure pattern has been documented as a security risk by GitHub and security researchers. Commit 76a693cd91650f9b4e83edac525e5e4f90d954e9 removed the vulnerable code.",
-    "published": "2026-01-27T01:16:02.160",
-    "keywords": "remote,execution,command"
+    "description": "LightLLM version 1.1.0 and prior contain an unauthenticated remote code execution vulnerability in PD (prefill-decode) disaggregation mode. The PD master node exposes WebSocket endpoints that receive binary frames and pass the data directly to pickle.loads() without authentication or validation. A remote attacker who can reach the PD master can send a crafted payload to achieve arbitrary code execution.",
+    "published": "2026-02-17T03:16:01.893",
+    "keywords": "remote,execution,unauthenticated,authentication"
   }
 }
