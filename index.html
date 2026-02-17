@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2026-02-17T15:43:00.766498
+Updated at UTC 2026-02-17T16:48:05.474335
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -222,10 +222,6 @@ Updated at UTC 2026-02-17T15:43:00.766498
 
 
 				</tr>
-			
-		
-			
-		
 			
 		
 			
@@ -537,65 +533,6 @@ Out of caution, we recommend that you rotate all passwords and API keys containe
 					<td>remote,execution,unauthenticated,bypass</td>
 					<td class=date>2026-02-15T04:15:53.783</td>
 					<td class=description>The Spam protection, Anti-Spam, FireWall by CleanTalk plugin for WordPress is vulnerable to unauthorized Arbitrary Plugin Installation due to an authorization bypass via reverse DNS (PTR record) spoofing on the 'checkWithoutToken' function in all versions up to, and including, 6.71. This makes it possible for unauthenticated attackers to install and activate arbitrary plugins which can be leveraged to achieve remote code execution if another vulnerable plugin is installed and activated. Note: This is only exploitable on sites with an invalid API key.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-23151">CVE-2026-23151</a></td>
-					<td>-</td>
-					<td>command,leak</td>
-					<td class=date>2026-02-14T16:15:55.233</td>
-					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
-
-Bluetooth: MGMT: Fix memory leak in set_ssp_complete
-
-Fix memory leak in set_ssp_complete() where mgmt_pending_cmd structures
-are not freed after being removed from the pending list.
-
-Commit 302a1f674c00 ("Bluetooth: MGMT: Fix possible UAFs") replaced
-mgmt_pending_foreach() calls with individual command handling but missed
-adding mgmt_pending_free() calls in both error and success paths of
-set_ssp_complete(). Other completion functions like set_le_complete()
-were fixed correctly in the same commit.
-
-This causes a memory leak of the mgmt_pending_cmd structure and its
-associated parameter data for each SSP command that completes.
-
-Add the missing mgmt_pending_free(cmd) calls in both code paths to fix
-the memory leak. Also fix the same issue in set_advertising_complete().</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-23132">CVE-2026-23132</a></td>
-					<td>-</td>
-					<td>execution,leak</td>
-					<td class=date>2026-02-14T16:15:53.163</td>
-					<td class=description>In the Linux kernel, the following vulnerability has been resolved:
-
-drm/bridge: synopsys: dw-dp: fix error paths of dw_dp_bind
-
-Fix several issues in dw_dp_bind() error handling:
-
-1. Missing return after drm_bridge_attach() failure - the function
-   continued execution instead of returning an error.
-
-2. Resource leak: drm_dp_aux_register() is not a devm function, so
-   drm_dp_aux_unregister() must be called on all error paths after
-   aux registration succeeds. This affects errors from:
-   - drm_bridge_attach()
-   - phy_init()
-   - devm_add_action_or_reset()
-   - platform_get_irq()
-   - devm_request_threaded_irq()
-
-3. Bug fix: platform_get_irq() returns the IRQ number or a negative
-   error code, but the error path was returning ERR_PTR(ret) instead
-   of ERR_PTR(dp->irq).
-
-Use a goto label for cleanup to ensure consistent error handling.</td>
 				</tr>
 			
 		
