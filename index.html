@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2026-02-17T06:48:44.768804
+Updated at UTC 2026-02-17T07:43:43.975816
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2026-02-17T06:48:44.768804
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -224,12 +226,18 @@ Updated at UTC 2026-02-17T06:48:44.768804
 		
 			
 		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-0829">CVE-2026-0829</a></td>
+					<td>-</td>
+					<td>unauthenticated,sensitive</td>
+					<td class=date>2026-02-17T07:16:31.883</td>
+					<td class=description>The Frontend File Manager Plugin WordPress plugin through 23.5 allows unauthenticated users to send emails through the site without any security checks. This lets attackers use the WordPress site as an open relay for spam or phishing emails to anyone. Attackers can also guess file IDs to access and share uploaded files without permission, exposing sensitive information.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -552,26 +560,6 @@ Fix several issues in dw_dp_bind() error handling:
    of ERR_PTR(dp->irq).
 
 Use a goto label for cleanup to ensure consistent error handling.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-2024">CVE-2026-2024</a></td>
-					<td>7.5</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2026-02-14T07:16:13.020</td>
-					<td class=description>The PhotoStack Gallery plugin for WordPress is vulnerable to SQL Injection via the 'postid' parameter in all versions up to, and including, 0.4.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-1306">CVE-2026-1306</a></td>
-					<td>9.8</td>
-					<td>remote,execution,unauthenticated</td>
-					<td class=date>2026-02-14T07:16:10.150</td>
-					<td class=description>The midi-Synth plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type and file extension validation in the 'export' AJAX action in all versions up to, and including, 1.1.0. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible granted the attacker can obtain a valid nonce. The nonce is exposed in frontend JavaScript making it trivially accessible to unauthenticated attackers.</td>
 				</tr>
 			
 		

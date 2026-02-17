@@ -1,16 +1,4 @@
 {
-  "CVE-2026-1306": {
-    "cvss": 9.8,
-    "description": "The midi-Synth plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type and file extension validation in the 'export' AJAX action in all versions up to, and including, 1.1.0. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible granted the attacker can obtain a valid nonce. The nonce is exposed in frontend JavaScript making it trivially accessible to unauthenticated attackers.",
-    "published": "2026-02-14T07:16:10.150",
-    "keywords": "remote,execution,unauthenticated"
-  },
-  "CVE-2026-2024": {
-    "cvss": 7.5,
-    "description": "The PhotoStack Gallery plugin for WordPress is vulnerable to SQL Injection via the 'postid' parameter in all versions up to, and including, 0.4.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
-    "published": "2026-02-14T07:16:13.020",
-    "keywords": "unauthenticated,sensitive"
-  },
   "CVE-2026-23132": {
     "cvss": "-",
     "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/bridge: synopsys: dw-dp: fix error paths of dw_dp_bind\n\nFix several issues in dw_dp_bind() error handling:\n\n1. Missing return after drm_bridge_attach() failure - the function\n   continued execution instead of returning an error.\n\n2. Resource leak: drm_dp_aux_register() is not a devm function, so\n   drm_dp_aux_unregister() must be called on all error paths after\n   aux registration succeeds. This affects errors from:\n   - drm_bridge_attach()\n   - phy_init()\n   - devm_add_action_or_reset()\n   - platform_get_irq()\n   - devm_request_threaded_irq()\n\n3. Bug fix: platform_get_irq() returns the IRQ number or a negative\n   error code, but the error path was returning ERR_PTR(ret) instead\n   of ERR_PTR(dp->irq).\n\nUse a goto label for cleanup to ensure consistent error handling.",
@@ -208,5 +196,11 @@
     "description": "The EventPrime plugin for WordPress is vulnerable to unauthorized image file upload in all versions up to, and including, 4.2.8.4. This is due to the plugin registering the upload_file_media AJAX action as publicly accessible (nopriv-enabled) without implementing any authentication, authorization, or nonce verification despite a nonce being created. This makes it possible for unauthenticated attackers to upload image files to the WordPress uploads directory and create Media Library attachments via the ep_upload_file_media endpoint.",
     "published": "2026-02-17T06:16:18.173",
     "keywords": "unauthenticated,authentication"
+  },
+  "CVE-2026-0829": {
+    "cvss": "-",
+    "description": "The Frontend File Manager Plugin WordPress plugin through 23.5 allows unauthenticated users to send emails through the site without any security checks. This lets attackers use the WordPress site as an open relay for spam or phishing emails to anyone. Attackers can also guess file IDs to access and share uploaded files without permission, exposing sensitive information.",
+    "published": "2026-02-17T07:16:31.883",
+    "keywords": "unauthenticated,sensitive"
   }
 }
