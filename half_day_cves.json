@@ -208,5 +208,11 @@
     "description": "OpenS100 (the reference implementation S-100 viewer) prior to commit 753cf29 contain a remote code execution vulnerability via an unrestricted Lua interpreter. The Portrayal Engine initializes Lua using luaL_openlibs() without sandboxing or capability restrictions, exposing standard libraries such as 'os' and 'io' to untrusted portrayal catalogues. An attacker can provide a malicious S-100 portrayal catalogue containing Lua scripts that execute arbitrary commands with the privileges of the OpenS100 process when a user imports the catalogue and loads a chart.",
     "published": "2026-02-17T15:16:22.320",
     "keywords": "remote,execution,command"
+  },
+  "CVE-2026-23647": {
+    "cvss": "-",
+    "description": "Glory RBG-100 recycler systems using the ISPK-08 software component contain hard-coded operating system credentials that allow remote authentication to the underlying Linux system. Multiple local user accounts, including accounts with administrative privileges, were found to have fixed, embedded passwords. An attacker with network access to exposed services such as SSH may authenticate using these credentials and gain unauthorized access to the system. Successful exploitation allows remote access with elevated privileges and may result in full system compromise.",
+    "published": "2026-02-17T17:21:05.040",
+    "keywords": "remote,authentication"
   }
 }
