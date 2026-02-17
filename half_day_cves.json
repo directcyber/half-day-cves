@@ -238,5 +238,29 @@
     "description": "Dell Unisphere for PowerMax, version(s) 9.2.4.x, contain(s) an Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to the execution of malicious HTML or JavaScript code in a victim user's web browser in the context of the vulnerable web application. Exploitation may lead to information disclosure, session theft, or client-side request forgery.",
     "published": "2026-02-17T20:22:10.437",
     "keywords": "remote,execution"
+  },
+  "CVE-2026-23595": {
+    "cvss": 8.8,
+    "description": "An authentication bypass in the application API allows an unauthorized administrative account to be created. A remote attacker could exploit this vulnerability to create privileged user accounts. Successful exploitation could allow an attacker to gain administrative access, modify system configurations, and access or manipulate sensitive data.",
+    "published": "2026-02-17T21:22:15.757",
+    "keywords": "remote,authentication,sensitive,bypass"
+  },
+  "CVE-2026-23596": {
+    "cvss": 6.5,
+    "description": "A vulnerability in the management API of the affected product could allow an unauthenticated remote attacker to trigger service restarts. Successful exploitation could allow an attacker to disrupt services and negatively impact system availability.",
+    "published": "2026-02-17T21:22:15.913",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2026-23597": {
+    "cvss": 6.5,
+    "description": "Vulnerabilities in the API error handling of an HPE Aruba Networking  5G Core server API could allow an unauthenticated remote attacker to obtain sensitive information. Successful exploitation could allow an attacker to access details such as user accounts, roles, and system configuration, as well as to gain insight into internal services and workflows, increasing the risk of unauthorized access and elevated privileges when combined with other vulnerabilities.",
+    "published": "2026-02-17T21:22:16.053",
+    "keywords": "remote,unauthenticated,sensitive"
+  },
+  "CVE-2026-23598": {
+    "cvss": 6.5,
+    "description": "Vulnerabilities in the API error handling of an HPE Aruba Networking  5G Core server API could allow an unauthenticated remote attacker to obtain sensitive information. Successful exploitation could allow an attacker to access details such as user accounts, roles, and system configuration, as well as to gain insight into internal services and workflows, increasing the risk of unauthorized access and elevated privileges when combined with other vulnerabilities.",
+    "published": "2026-02-17T21:22:16.193",
+    "keywords": "remote,unauthenticated,sensitive"
   }
 }
