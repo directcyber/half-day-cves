@@ -202,5 +202,11 @@
     "description": "The Frontend File Manager Plugin WordPress plugin through 23.5 allows unauthenticated users to send emails through the site without any security checks. This lets attackers use the WordPress site as an open relay for spam or phishing emails to anyone. Attackers can also guess file IDs to access and share uploaded files without permission, exposing sensitive information.",
     "published": "2026-02-17T07:16:31.883",
     "keywords": "unauthenticated,sensitive"
+  },
+  "CVE-2026-2615": {
+    "cvss": 7.2,
+    "description": "A flaw has been found in Wavlink WL-NU516U1 up to 20251208. The affected element is the function singlePortForwardDelete of the file /cgi-bin/firewall.cgi. Executing a manipulation of the argument del_flag can lead to command injection. The attack may be launched remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2026-02-17T13:16:17.113",
+    "keywords": "remote,command"
   }
 }
