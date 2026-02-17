@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2026-02-17T14:01:38.328205
+Updated at UTC 2026-02-17T15:43:00.766498
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,10 @@ Updated at UTC 2026-02-17T14:01:38.328205
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
 		
 			
 		
@@ -233,6 +237,26 @@ Updated at UTC 2026-02-17T14:01:38.328205
 		
 			
 				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-22208">CVE-2026-22208</a></td>
+					<td>-</td>
+					<td>remote,execution,command</td>
+					<td class=date>2026-02-17T15:16:22.320</td>
+					<td class=description>OpenS100 (the reference implementation S-100 viewer) prior to commit 753cf29 contain a remote code execution vulnerability via an unrestricted Lua interpreter. The Portrayal Engine initializes Lua using luaL_openlibs() without sandboxing or capability restrictions, exposing standard libraries such as 'os' and 'io' to untrusted portrayal catalogues. An attacker can provide a malicious S-100 portrayal catalogue containing Lua scripts that execute arbitrary commands with the privileges of the OpenS100 process when a user imports the catalogue and loads a chart.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-23861">CVE-2026-23861</a></td>
+					<td>5.4</td>
+					<td>remote,execution</td>
+					<td class=date>2026-02-17T14:16:01.773</td>
+					<td class=description>Dell Unisphere for PowerMax vApp, version(s) 9.2.4.x, contain(s) an Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to the execution of malicious HTML or JavaScript code in a victim user's web browser in the context of the vulnerable web application. Exploitation may lead to information disclosure, session theft, or client-side request forgery.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-2615">CVE-2026-2615</a></td>
 					<td>7.2</td>
 					<td>remote,command</td>
@@ -244,7 +268,7 @@ Updated at UTC 2026-02-17T14:01:38.328205
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-0829">CVE-2026-0829</a></td>
-					<td>-</td>
+					<td>5.8</td>
 					<td>unauthenticated,sensitive</td>
 					<td class=date>2026-02-17T07:16:31.883</td>
 					<td class=description>The Frontend File Manager Plugin WordPress plugin through 23.5 allows unauthenticated users to send emails through the site without any security checks. This lets attackers use the WordPress site as an open relay for spam or phishing emails to anyone. Attackers can also guess file IDs to access and share uploaded files without permission, exposing sensitive information.</td>

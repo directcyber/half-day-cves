@@ -198,7 +198,7 @@
     "keywords": "unauthenticated,authentication"
   },
   "CVE-2026-0829": {
-    "cvss": "-",
+    "cvss": 5.8,
     "description": "The Frontend File Manager Plugin WordPress plugin through 23.5 allows unauthenticated users to send emails through the site without any security checks. This lets attackers use the WordPress site as an open relay for spam or phishing emails to anyone. Attackers can also guess file IDs to access and share uploaded files without permission, exposing sensitive information.",
     "published": "2026-02-17T07:16:31.883",
     "keywords": "unauthenticated,sensitive"
@@ -208,5 +208,17 @@
     "description": "A flaw has been found in Wavlink WL-NU516U1 up to 20251208. The affected element is the function singlePortForwardDelete of the file /cgi-bin/firewall.cgi. Executing a manipulation of the argument del_flag can lead to command injection. The attack may be launched remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2026-02-17T13:16:17.113",
     "keywords": "remote,command"
+  },
+  "CVE-2026-23861": {
+    "cvss": 5.4,
+    "description": "Dell Unisphere for PowerMax vApp, version(s) 9.2.4.x, contain(s) an Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to the execution of malicious HTML or JavaScript code in a victim user's web browser in the context of the vulnerable web application. Exploitation may lead to information disclosure, session theft, or client-side request forgery.",
+    "published": "2026-02-17T14:16:01.773",
+    "keywords": "remote,execution"
+  },
+  "CVE-2026-22208": {
+    "cvss": "-",
+    "description": "OpenS100 (the reference implementation S-100 viewer) prior to commit 753cf29 contain a remote code execution vulnerability via an unrestricted Lua interpreter. The Portrayal Engine initializes Lua using luaL_openlibs() without sandboxing or capability restrictions, exposing standard libraries such as 'os' and 'io' to untrusted portrayal catalogues. An attacker can provide a malicious S-100 portrayal catalogue containing Lua scripts that execute arbitrary commands with the privileges of the OpenS100 process when a user imports the catalogue and loads a chart.",
+    "published": "2026-02-17T15:16:22.320",
+    "keywords": "remote,execution,command"
   }
 }
