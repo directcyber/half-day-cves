@@ -202,5 +202,11 @@
     "description": "LightLLM version 1.1.0 and prior contain an unauthenticated remote code execution vulnerability in PD (prefill-decode) disaggregation mode. The PD master node exposes WebSocket endpoints that receive binary frames and pass the data directly to pickle.loads() without authentication or validation. A remote attacker who can reach the PD master can send a crafted payload to achieve arbitrary code execution.",
     "published": "2026-02-17T03:16:01.893",
     "keywords": "remote,execution,unauthenticated,authentication"
+  },
+  "CVE-2026-1657": {
+    "cvss": 5.3,
+    "description": "The EventPrime plugin for WordPress is vulnerable to unauthorized image file upload in all versions up to, and including, 4.2.8.4. This is due to the plugin registering the upload_file_media AJAX action as publicly accessible (nopriv-enabled) without implementing any authentication, authorization, or nonce verification despite a nonce being created. This makes it possible for unauthenticated attackers to upload image files to the WordPress uploads directory and create Media Library attachments via the ep_upload_file_media endpoint.",
+    "published": "2026-02-17T06:16:18.173",
+    "keywords": "unauthenticated,authentication"
   }
 }
