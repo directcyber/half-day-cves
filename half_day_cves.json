@@ -204,21 +204,39 @@
     "keywords": "remote,execution"
   },
   "CVE-2026-22208": {
-    "cvss": "-",
+    "cvss": 9.6,
     "description": "OpenS100 (the reference implementation S-100 viewer) prior to commit 753cf29 contain a remote code execution vulnerability via an unrestricted Lua interpreter. The Portrayal Engine initializes Lua using luaL_openlibs() without sandboxing or capability restrictions, exposing standard libraries such as 'os' and 'io' to untrusted portrayal catalogues. An attacker can provide a malicious S-100 portrayal catalogue containing Lua scripts that execute arbitrary commands with the privileges of the OpenS100 process when a user imports the catalogue and loads a chart.",
     "published": "2026-02-17T15:16:22.320",
     "keywords": "remote,execution,command"
   },
   "CVE-2026-23647": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "Glory RBG-100 recycler systems using the ISPK-08 software component contain hard-coded operating system credentials that allow remote authentication to the underlying Linux system. Multiple local user accounts, including accounts with administrative privileges, were found to have fixed, embedded passwords. An attacker with network access to exposed services such as SSH may authenticate using these credentials and gain unauthorized access to the system. Successful exploitation allows remote access with elevated privileges and may result in full system compromise.",
     "published": "2026-02-17T17:21:05.040",
     "keywords": "remote,authentication"
   },
   "CVE-2026-2630": {
-    "cvss": 9.9,
+    "cvss": 8.8,
     "description": "A Command Injection vulnerability exists where an authenticated, remote attacker could execute arbitrary code on the underlying server where Tenable Security Center is hosted.",
     "published": "2026-02-17T19:21:58.060",
     "keywords": "remote,command"
+  },
+  "CVE-2026-22284": {
+    "cvss": 6.6,
+    "description": "Dell SmartFabric OS10 Software, versions prior to 10.5.6.12, contains an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Command execution.",
+    "published": "2026-02-17T20:22:09.490",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2026-22769": {
+    "cvss": 10.0,
+    "description": "Dell RecoverPoint for Virtual Machines, versions prior to 6.0.3.1 HF1, contain a hardcoded credential vulnerability. This is considered critical as an unauthenticated remote attacker with knowledge of the hardcoded credential could potentially exploit this vulnerability leading to unauthorized access to the underlying operating system and root-level persistence. Dell recommends that customers upgrade or apply one of the remediations as soon as possible.",
+    "published": "2026-02-17T20:22:09.800",
+    "keywords": "remote,unauthenticated"
+  },
+  "CVE-2026-26357": {
+    "cvss": 5.4,
+    "description": "Dell Unisphere for PowerMax, version(s) 9.2.4.x, contain(s) an Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to the execution of malicious HTML or JavaScript code in a victim user's web browser in the context of the vulnerable web application. Exploitation may lead to information disclosure, session theft, or client-side request forgery.",
+    "published": "2026-02-17T20:22:10.437",
+    "keywords": "remote,execution"
   }
 }
