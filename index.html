@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2026-02-18T14:02:24.947619
+Updated at UTC 2026-02-18T16:54:15.439023
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,36 @@ Updated at UTC 2026-02-18T14:02:24.947619
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-2656">CVE-2026-2656</a></td>
+					<td>2.5</td>
+					<td><a target=_blank href="https://github.com/chaiscript/chaiscript/issues/636#issue-3828333582">https://github.com/chaiscript/chaiscript/issues/636#issue-3828333582</a></td>
+					<td class=date>2026-02-18T15:18:44.743</td>
+					<td class=description>A flaw has been found in ChaiScript up to 6.1.0. This affects the function chaiscript::Type_Info::bare_equal of the file include/chaiscript/dispatchkit/type_info.hpp. This manipulation causes use after free. The attack requires local access. The attack's complexity is rated as high. The exploitability is reported as difficult. The exploit has been published and may be used. The project was informed of the problem early through an issue report but has not responded yet.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-2655">CVE-2026-2655</a></td>
+					<td>2.5</td>
+					<td><a target=_blank href="https://github.com/chaiscript/chaiscript/issues/632">https://github.com/chaiscript/chaiscript/issues/632</a></td>
+					<td class=date>2026-02-18T14:16:07.490</td>
+					<td class=description>A vulnerability was detected in ChaiScript up to 6.1.0. The impacted element is the function chaiscript::str_less::operator of the file include/chaiscript/chaiscript_defines.hpp. The manipulation results in use after free. The attack requires a local approach. The attack requires a high level of complexity. The exploitability is regarded as difficult. The exploit is now public and may be used. The project was informed of the problem early through an issue report but has not responded yet.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
 		
 			
 		
@@ -306,10 +336,42 @@ Updated at UTC 2026-02-18T14:02:24.947619
 				</tr>
 			
 		
-			
-		
 
 		<hr>
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-2329">CVE-2026-2329</a></td>
+					<td>-</td>
+					<td>remote,execution,unauthenticated</td>
+					<td class=date>2026-02-18T15:18:44.173</td>
+					<td class=description>An unauthenticated stack-based buffer overflow vulnerability exists in the HTTP API endpoint /cgi-bin/api.values.get. A remote attacker can leverage this vulnerability to achieve unauthenticated remote code execution (RCE) with root privileges on a target device. The vulnerability affects all six device models in the series: GXP1610, GXP1615, GXP1620, GXP1625, GXP1628, and GXP1630.</td>
+				</tr>
+			
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-2464">CVE-2026-2464</a></td>
+					<td>-</td>
+					<td>remote,authentication,sensitive</td>
+					<td class=date>2026-02-18T14:16:07.120</td>
+					<td class=description>Path traversal vulnerability in the AMR Printer Management 1.01 Beta web service, which allows remote attackers to read arbitrary files from the underlying Windows system by using specially crafted path traversal sequences in requests directed to the web management service. The service is accessible without authentication and runs with elevated privileges, amplifying the impact of the vulnerability. An attacker can exploit this condition to access sensitive and privileged files on the system using path traversal payloads. Successful exploitation of this vulnerability could lead to the unauthorized disclosure of internal system information, compromising the confidentiality of the affected environment.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-1437">CVE-2026-1437</a></td>
+					<td>-</td>
+					<td>execution,authentication</td>
+					<td class=date>2026-02-18T14:16:05.993</td>
+					<td class=description>Reflected Cross-Site Scripting (XSS) vulnerability in the Graylog Web Interface console, version 2.2.3, caused by a lack of proper sanitization and escaping in HTML output. Several endpoints include segments of the URL directly in the response without applying output encoding, allowing an attacker to inject and execute arbitrary JavaScript code when a user visits a specially crafted URL. Exploitation of this vulnerability may allow script execution in the victim's browser and limited manipulation of the affected user's session context, through the '/system/authentication/users/edit/' endpoint.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -772,16 +834,6 @@ Out of caution, we recommend that you rotate all passwords and API keys containe
 		
 			
 		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-26366">CVE-2026-26366</a></td>
-					<td>9.8</td>
-					<td>unauthenticated,sensitive</td>
-					<td class=date>2026-02-15T16:15:53.870</td>
-					<td class=description>eNet SMART HOME server 2.2.1 and 2.3.1 ships with default credentials (user:user, admin:admin) that remain active after installation and commissioning without enforcing a mandatory password change. Unauthenticated attackers can use these default credentials to gain administrative access to sensitive smart home configuration and control functions.</td>
-				</tr>
 			
 		
 
