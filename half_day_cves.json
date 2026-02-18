@@ -127,7 +127,7 @@
   },
   "CVE-2026-2555": {
     "url": "https://github.com/jeecgboot/jeecgboot/issues/9335",
-    "cvss": 5.0,
+    "cvss": 7.5,
     "description": "A weakness has been identified in JeecgBoot 3.9.1. This vulnerability affects the function importDocumentFromZip of the file org/jeecg/modules/airag/llm/controller/AiragKnowledgeController.java of the component Retrieval-Augmented Generation. Executing a manipulation can lead to deserialization. The attack can be launched remotely. Attacks of this nature are highly complex. It is stated that the exploitability is difficult. The project was informed of the problem early through an issue report but has not responded yet.",
     "published": "2026-02-16T12:16:22.667"
   },
@@ -429,6 +429,66 @@
     "cvss": 7.3,
     "description": "A vulnerability was found in Rongzhitong Visual Integrated Command and Dispatch Platform up to 20260206. This affects an unknown function of the file /dm/dispatch/user/add of the component User Handler. The manipulation results in improper access controls. The attack may be launched remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2026-02-18T21:16:25.450",
+    "keywords": "remote,command"
+  },
+  "CVE-2026-27174": {
+    "cvss": 9.8,
+    "description": "MajorDoMo (aka Major Domestic Module) allows unauthenticated remote code execution via the admin panel's PHP console feature. An include order bug in modules/panel.class.php causes execution to continue past a redirect() call that lacks an exit statement, allowing unauthenticated requests to reach the ajax handler in inc_panel_ajax.php. The console handler within that file passes user-supplied input from GET parameters (via register_globals) directly to eval() without any authentication check. An attacker can execute arbitrary PHP code by sending a crafted GET request to /admin.php with ajax_panel, op, and command parameters.",
+    "published": "2026-02-18T22:16:25.080",
+    "keywords": "remote,execution,unauthenticated,authentication,command"
+  },
+  "CVE-2026-27175": {
+    "cvss": 9.8,
+    "description": "MajorDoMo (aka Major Domestic Module) is vulnerable to unauthenticated OS command injection via rc/index.php. The $param variable from user input is interpolated into a command string within double quotes without sanitization via escapeshellarg(). The command is inserted into a database queue by safe_exec(), which performs no sanitization. The cycle_execs.php script, which is web-accessible without authentication, retrieves queued commands and passes them directly to exec(). An attacker can exploit a race condition by first triggering cycle_execs.php (which purges the queue and enters a polling loop), then injecting a malicious command via the rc endpoint while the worker is polling. The injected shell metacharacters expand inside double quotes, achieving remote code execution within one second.",
+    "published": "2026-02-18T22:16:25.263",
+    "keywords": "remote,execution,unauthenticated,authentication,command"
+  },
+  "CVE-2026-27176": {
+    "url": "https://github.com/sergejey/majordomo/pull/1177",
+    "cvss": 6.1,
+    "description": "MajorDoMo (aka Major Domestic Module) contains a reflected cross-site scripting (XSS) vulnerability in command.php. The $qry parameter is rendered directly into the HTML page without sanitization via htmlspecialchars(), both in an input field value attribute and in a paragraph element. An attacker can inject arbitrary JavaScript by crafting a URL with malicious content in the qry parameter.",
+    "published": "2026-02-18T22:16:25.440"
+  },
+  "CVE-2026-27177": {
+    "url": "https://github.com/sergejey/majordomo/pull/1177",
+    "cvss": 7.2,
+    "description": "MajorDoMo (aka Major Domestic Module) contains a stored cross-site scripting (XSS) vulnerability via the /objects/?op=set endpoint, which is intentionally unauthenticated for IoT device integration. User-supplied property values are stored raw in the database without sanitization. When an administrator views the property editor in the admin panel, the stored values are rendered without escaping in both a paragraph tag (SOURCE field) and a textarea element (VALUE field). The XSS fires on page load without requiring any click from the admin. Additionally, the session cookie lacks the HttpOnly flag, enabling session hijack via document.cookie exfiltration. An attacker can enumerate properties via the unauthenticated /api.php/data/ endpoint and poison any property with malicious JavaScript.",
+    "published": "2026-02-18T22:16:25.610"
+  },
+  "CVE-2026-27178": {
+    "cvss": 7.2,
+    "description": "MajorDoMo (aka Major Domestic Module) contains a stored cross-site scripting (XSS) vulnerability through method parameter injection into the shoutbox. The /objects/?method= endpoint allows unauthenticated execution of stored methods with attacker-controlled parameters. Default methods such as ThisComputer.VolumeLevelChanged pass the user-supplied VALUE parameter directly into the say() function, which stores the message raw in the shouts database table without escaping. The shoutbox widget renders stored messages without sanitization in both PHP rendering code and HTML templates. Because the dashboard widget auto-refreshes every 3 seconds, the injected script executes automatically when any administrator loads the dashboard, enabling session hijack through cookie exfiltration.",
+    "published": "2026-02-18T22:16:25.790",
+    "keywords": "execution,unauthenticated"
+  },
+  "CVE-2026-27179": {
+    "cvss": 8.2,
+    "description": "MajorDoMo (aka Major Domestic Module) contains an unauthenticated SQL injection vulnerability in the commands module. The commands_search.inc.php file directly interpolates the $_GET['parent'] parameter into multiple SQL queries without sanitization or parameterized queries. The commands module is loadable without authentication via the /objects/?module=commands endpoint, which includes arbitrary modules by name and calls their usual() method. Time-based blind SQL injection is exploitable using UNION SELECT SLEEP() syntax. Because MajorDoMo stores admin passwords as unsalted MD5 hashes in the users table, successful exploitation enables extraction of credentials and subsequent admin panel access.",
+    "published": "2026-02-18T22:16:25.967",
+    "keywords": "unauthenticated,authentication,command"
+  },
+  "CVE-2026-27180": {
+    "cvss": 9.8,
+    "description": "MajorDoMo (aka Major Domestic Module) is vulnerable to unauthenticated remote code execution through supply chain compromise via update URL poisoning. The saverestore module exposes its admin() method through the /objects/?module=saverestore endpoint without authentication because it uses gr('mode') (which reads directly from $_REQUEST) instead of the framework's $this->mode. An attacker can poison the system update URL via the auto_update_settings mode handler, then trigger the force_update handler to initiate the update chain. The autoUpdateSystem() method fetches an Atom feed from the attacker-controlled URL with trivial validation, downloads a tarball via curl with TLS verification disabled (CURLOPT_SSL_VERIFYPEER set to FALSE), extracts it using exec('tar xzvf ...'), and copies all extracted files to the document root using copyTree(). This allows an attacker to deploy arbitrary PHP files, including webshells, to the webroot with two GET requests.",
+    "published": "2026-02-18T22:16:26.153",
+    "keywords": "remote,execution,unauthenticated,authentication"
+  },
+  "CVE-2026-27181": {
+    "cvss": 7.5,
+    "description": "MajorDoMo (aka Major Domestic Module) allows unauthenticated arbitrary module uninstallation through the market module. The market module's admin() method reads gr('mode') from $_REQUEST and assigns it to $this->mode at the start of execution, making all mode-gated code paths reachable without authentication via the /objects/?module=market endpoint. The uninstall mode handler calls uninstallPlugin(), which deletes module records from the database, executes the module's uninstall() method via eval(), recursively deletes the module's directory and template files using removeTree(), and removes associated cycle scripts. An attacker can iterate through module names and wipe the entire MajorDoMo installation with a series of unauthenticated GET requests.",
+    "published": "2026-02-18T22:16:26.337",
+    "keywords": "execution,unauthenticated,authentication"
+  },
+  "CVE-2026-27182": {
+    "cvss": 8.4,
+    "description": "Saturn Remote Mouse Server contains a command injection vulnerability that allows unauthenticated attackers to execute arbitrary commands by sending specially crafted UDP JSON frames to port 27000. Attackers on the local network can send malformed packets with unsanitized command data that the service forwards directly to OS execution functions, enabling remote code execution under the service account.",
+    "published": "2026-02-18T22:16:26.517",
+    "keywords": "remote,execution,unauthenticated,command"
+  },
+  "CVE-2026-2669": {
+    "cvss": 6.5,
+    "description": "A vulnerability was determined in Rongzhitong Visual Integrated Command and Dispatch Platform up to 20260206. This impacts an unknown function of the file /dm/dispatch/user/delete of the component User Handler. This manipulation of the argument ID causes improper access controls. Remote exploitation of the attack is possible. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.",
+    "published": "2026-02-18T22:16:27.177",
     "keywords": "remote,command"
   }
 }
