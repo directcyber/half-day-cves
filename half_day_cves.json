@@ -358,5 +358,23 @@
     "cvss": 3.3,
     "description": "A vulnerability has been found in wren-lang wren up to 0.4.0. This impacts the function printError of the file src/vm/wren_compiler.c of the component Error Message Handler. Such manipulation leads to stack-based buffer overflow. An attack has to be approached locally. The exploit has been disclosed to the public and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
     "published": "2026-02-18T17:21:40.400"
+  },
+  "CVE-2026-20137": {
+    "cvss": 3.5,
+    "description": "In Splunk Enterprise versions below 10.2.0, 10.0.3, 9.4.5, 9.3.7, and 9.2.9, and Splunk Cloud Platform versions below 10.1.2507.0, 10.0.2503.9, 9.3.2411.112, and 9.3.2408.122, a low-privileged user who does not hold the \"admin\" or \"power\" Splunk roles could bypass the SPL safeguards for risky commands when they create a Data Model that contains an injected SPL query within an object. They can bypass the safeguards by exploiting a path traversal vulnerability.",
+    "published": "2026-02-18T18:24:22.637",
+    "keywords": "command,bypass"
+  },
+  "CVE-2026-2658": {
+    "url": "https://github.com/newbee-ltd/newbee-mall/issues/107",
+    "cvss": 4.3,
+    "description": "A vulnerability was found in newbee-ltd newbee-mall up to a069069b07027613bf0e7f571736be86f431faee. Affected is an unknown function of the component Multiple Endpoints. Performing a manipulation results in cross-site request forgery. Remote exploitation of the attack is possible. The exploit has been made public and could be used. This product follows a rolling release approach for continuous delivery, so version details for affected or updated releases are not provided. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2026-02-18T18:24:34.400"
+  },
+  "CVE-2026-2659": {
+    "url": "https://github.com/albertodemichelis/squirrel/issues/311",
+    "cvss": 3.3,
+    "description": "A vulnerability was determined in Squirrel up to 3.2. Affected by this vulnerability is the function SQFuncState::PopTarget of the file src/squirrel/squirrel/sqfuncstate.cpp. Executing a manipulation of the argument _target_stack can lead to out-of-bounds read. It is possible to launch the attack on the local host. The exploit has been publicly disclosed and may be utilized. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2026-02-18T18:24:34.610"
   }
 }
