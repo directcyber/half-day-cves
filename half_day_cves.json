@@ -352,5 +352,11 @@
     "cvss": 2.5,
     "description": "A flaw has been found in ChaiScript up to 6.1.0. This affects the function chaiscript::Type_Info::bare_equal of the file include/chaiscript/dispatchkit/type_info.hpp. This manipulation causes use after free. The attack requires local access. The attack's complexity is rated as high. The exploitability is reported as difficult. The exploit has been published and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
     "published": "2026-02-18T15:18:44.743"
+  },
+  "CVE-2026-2657": {
+    "url": "https://github.com/wren-lang/wren/issues/1221",
+    "cvss": 3.3,
+    "description": "A vulnerability has been found in wren-lang wren up to 0.4.0. This impacts the function printError of the file src/vm/wren_compiler.c of the component Error Message Handler. Such manipulation leads to stack-based buffer overflow. An attack has to be approached locally. The exploit has been disclosed to the public and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2026-02-18T17:21:40.400"
   }
 }
