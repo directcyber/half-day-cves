@@ -1,10 +1,4 @@
 {
-  "CVE-2026-2521": {
-    "url": "https://github.com/open5gs/open5gs/issues/4282#issue-3807902188",
-    "cvss": 9.8,
-    "description": "A weakness has been identified in Open5GS up to 2.7.6. This issue affects the function sgwc_s5c_handle_create_session_response of the component SGW-C. Executing a manipulation can lead to memory corruption. The attack may be performed from remote. The exploit has been made available to the public and could be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.",
-    "published": "2026-02-15T23:16:05.803"
-  },
   "CVE-2026-2522": {
     "url": "https://github.com/open5gs/open5gs/issues/4283#issue-3807916595",
     "cvss": 9.8,
@@ -490,5 +484,17 @@
     "description": "A vulnerability was determined in Rongzhitong Visual Integrated Command and Dispatch Platform up to 20260206. This impacts an unknown function of the file /dm/dispatch/user/delete of the component User Handler. This manipulation of the argument ID causes improper access controls. Remote exploitation of the attack is possible. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2026-02-18T22:16:27.177",
     "keywords": "remote,command"
+  },
+  "CVE-2026-25548": {
+    "cvss": 9.1,
+    "description": "InvoicePlane is a self-hosted open source application for managing invoices, clients, and payments. A critical Remote Code Execution (RCE) vulnerability exists in InvoicePlane 1.7.0 through a chained Local File Inclusion (LFI) and Log Poisoning attack. An authenticated administrator can execute arbitrary system commands on the server by manipulating the `public_invoice_template` setting to include poisoned log files containing PHP code. Version 1.7.1 patches the issue.",
+    "published": "2026-02-18T23:16:19.567",
+    "keywords": "remote,execution,command"
+  },
+  "CVE-2026-2676": {
+    "url": "https://github.com/googtech/sms-ssm/issues/27#issuecomment-3828063958",
+    "cvss": 6.3,
+    "description": "A weakness has been identified in GoogTech sms-ssm up to e8534c766fd13f5f94c01dab475d75f286918a8d. Affected by this issue is the function preHandle of the file LoginInterceptor.java of the component API Interface. Executing a manipulation can lead to improper authorization. The attack may be performed from remote. The exploit has been made available to the public and could be used for attacks. This product utilizes a rolling release system for continuous delivery, and as such, version information for affected or updated releases is not disclosed.",
+    "published": "2026-02-18T23:16:20.910"
   }
 }

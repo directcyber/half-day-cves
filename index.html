@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2026-02-18T22:24:47.203197
+Updated at UTC 2026-02-18T23:22:11.953252
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,20 @@ Updated at UTC 2026-02-18T22:24:47.203197
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-2676">CVE-2026-2676</a></td>
+					<td>6.3</td>
+					<td><a target=_blank href="https://github.com/googtech/sms-ssm/issues/27#issuecomment-3828063958">https://github.com/googtech/sms-ssm/issues/27#issuecomment-3828063958</a></td>
+					<td class=date>2026-02-18T23:16:20.910</td>
+					<td class=description>A weakness has been identified in GoogTech sms-ssm up to e8534c766fd13f5f94c01dab475d75f286918a8d. Affected by this issue is the function preHandle of the file LoginInterceptor.java of the component API Interface. Executing a manipulation can lead to improper authorization. The attack may be performed from remote. The exploit has been made available to the public and could be used for attacks. This product utilizes a rolling release system for continuous delivery, and as such, version information for affected or updated releases is not disclosed.</td>
+
+
+				</tr>
+			
+		
+			
 		
 			
 		
@@ -470,20 +484,20 @@ Updated at UTC 2026-02-18T22:24:47.203197
 				</tr>
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-2521">CVE-2026-2521</a></td>
-					<td>9.8</td>
-					<td><a target=_blank href="https://github.com/open5gs/open5gs/issues/4282#issue-3807902188">https://github.com/open5gs/open5gs/issues/4282#issue-3807902188</a></td>
-					<td class=date>2026-02-15T23:16:05.803</td>
-					<td class=description>A weakness has been identified in Open5GS up to 2.7.6. This issue affects the function sgwc_s5c_handle_create_session_response of the component SGW-C. Executing a manipulation can lead to memory corruption. The attack may be performed from remote. The exploit has been made available to the public and could be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-25548">CVE-2026-25548</a></td>
+					<td>9.1</td>
+					<td>remote,execution,command</td>
+					<td class=date>2026-02-18T23:16:19.567</td>
+					<td class=description>InvoicePlane is a self-hosted open source application for managing invoices, clients, and payments. A critical Remote Code Execution (RCE) vulnerability exists in InvoicePlane 1.7.0 through a chained Local File Inclusion (LFI) and Log Poisoning attack. An authenticated administrator can execute arbitrary system commands on the server by manipulating the `public_invoice_template` setting to include poisoned log files containing PHP code. Version 1.7.1 patches the issue.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -1120,8 +1134,6 @@ Out of caution, we recommend that you rotate all passwords and API keys containe
 					<td class=date>2026-02-16T02:16:06.423</td>
 					<td class=description>A vulnerability was found in Wavlink WL-WN579A3 up to 20210219. This impacts the function multi_ssid of the file /cgi-bin/wireless.cgi. Performing a manipulation of the argument SSID2G2 results in command injection. The attack may be initiated remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
 				</tr>
-			
-		
 			
 		
 			
