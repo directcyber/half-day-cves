@@ -286,5 +286,29 @@
     "cvss": 3.3,
     "description": "A weakness has been identified in universal-ctags ctags up to 6.2.1. The affected element is the function parseExpression/parseExprList of the file parsers/v.c of the component V Language Parser. Executing a manipulation can lead to uncontrolled recursion. It is possible to launch the attack on the local host. The exploit has been made available to the public and could be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.",
     "published": "2026-02-18T06:16:35.517"
+  },
+  "CVE-2026-1857": {
+    "cvss": 4.3,
+    "description": "The Gutenberg Blocks with AI by Kadence WP plugin for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 3.6.1. This is due to insufficient validation of the `endpoint` parameter in the `get_items()` function of the GetResponse REST API handler. The endpoint's permission check only requires `edit_posts` capability (Contributor role) rather than `manage_options` (Administrator). This makes it possible for authenticated attackers, with Contributor-level access and above, to make server-side requests to arbitrary endpoints on the configured GetResponse API server, retrieving sensitive data such as contacts, campaigns, and mailing lists using the site's stored API credentials. The stored API key is also leaked in the request headers.",
+    "published": "2026-02-18T07:16:09.907",
+    "keywords": "sensitive,leak"
+  },
+  "CVE-2026-2633": {
+    "cvss": 4.3,
+    "description": "The Gutenberg Blocks with AI by Kadence WP plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 3.6.1. This is due to a missing capability check in the `process_image_data_ajax_callback()` function which handles the `kadence_import_process_image_data` AJAX action. The function's authorization check via `verify_ajax_call()` only validates `edit_posts` capability but fails to check for the `upload_files` capability. This makes it possible for authenticated attackers, with Contributor-level access and above, to upload arbitrary images from remote URLs to the WordPress Media Library, bypassing the standard WordPress capability restriction that prevents Contributors from uploading files.",
+    "published": "2026-02-18T07:16:10.807",
+    "keywords": "remote,bypass"
+  },
+  "CVE-2026-2642": {
+    "url": "https://github.com/ggreer/the_silver_searcher/issues/1558",
+    "cvss": 3.3,
+    "description": "A security vulnerability has been detected in ggreer the_silver_searcher up to 2.2.0. The impacted element is the function search_stream of the file src/search.c. The manipulation leads to null pointer dereference. Local access is required to approach this attack. The exploit has been disclosed publicly and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2026-02-18T07:16:10.980"
+  },
+  "CVE-2026-2644": {
+    "url": "https://github.com/niklasso/minisat/issues/55#issue-3832527387",
+    "cvss": 3.3,
+    "description": "A weakness has been identified in niklasso minisat up to 2.2.0. This issue affects the function Solver::value in the library core/SolverTypes.h of the component DIMACS File Parser. This manipulation of the argument variable index with the input 2147483648 causes out-of-bounds read. The attack needs to be launched locally. The exploit has been made available to the public and could be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2026-02-18T07:16:11.230"
   }
 }
