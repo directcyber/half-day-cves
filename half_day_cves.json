@@ -1,10 +1,4 @@
 {
-  "CVE-2026-2517": {
-    "url": "https://github.com/open5gs/open5gs/issues/4281#issue-3807802287",
-    "cvss": 5.3,
-    "description": "A security flaw has been discovered in Open5GS up to 2.7.6. This vulnerability affects the function ogs_gtp2_parse_tft in the library lib/gtp/v2/types.c of the component SMF. Performing a manipulation of the argument pf[0].content.length results in denial of service. The attack is possible to be carried out remotely. The exploit has been released to the public and may be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.",
-    "published": "2026-02-15T13:16:16.690"
-  },
   "CVE-2026-26366": {
     "cvss": 9.8,
     "description": "eNet SMART HOME server 2.2.1 and 2.3.1 ships with default credentials (user:user, admin:admin) that remain active after installation and commissioning without enforcing a mandatory password change. Unauthenticated attackers can use these default credentials to gain administrative access to sensitive smart home configuration and control functions.",
@@ -328,5 +322,11 @@
     "cvss": 5.3,
     "description": "A security flaw has been discovered in admesh up to 0.98.5. This issue affects the function stl_check_normal_vector of the file src/normals.c. Performing a manipulation results in heap-based buffer overflow. The attack must be initiated from a local position. The exploit has been released to the public and may be used for attacks. It looks like this product is not really maintained anymore.",
     "published": "2026-02-18T11:16:32.770"
+  },
+  "CVE-2026-1582": {
+    "cvss": 3.7,
+    "description": "The WP All Export plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.4.14 via the export download endpoint. This is due to a PHP type juggling vulnerability in the security token comparison which uses loose comparison (==) instead of strict comparison (===). This makes it possible for unauthenticated attackers to bypass authentication using \"magic hash\" values when the expected MD5 hash prefix happens to be numeric-looking (matching pattern ^0e\\d+$), allowing download of sensitive export files containing PII, business data, or database information.",
+    "published": "2026-02-18T13:16:20.340",
+    "keywords": "unauthenticated,authentication,sensitive,bypass"
   }
 }

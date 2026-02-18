@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2026-02-18T12:42:24.226574
+Updated at UTC 2026-02-18T14:02:24.947619
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2026-02-18T12:42:24.226574
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 				<tr>
@@ -306,20 +308,18 @@ Updated at UTC 2026-02-18T12:42:24.226574
 		
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-2517">CVE-2026-2517</a></td>
-					<td>5.3</td>
-					<td><a target=_blank href="https://github.com/open5gs/open5gs/issues/4281#issue-3807802287">https://github.com/open5gs/open5gs/issues/4281#issue-3807802287</a></td>
-					<td class=date>2026-02-15T13:16:16.690</td>
-					<td class=description>A security flaw has been discovered in Open5GS up to 2.7.6. This vulnerability affects the function ogs_gtp2_parse_tft in the library lib/gtp/v2/types.c of the component SMF. Performing a manipulation of the argument pf[0].content.length results in denial of service. The attack is possible to be carried out remotely. The exploit has been released to the public and may be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.</td>
-
-
-				</tr>
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-1582">CVE-2026-1582</a></td>
+					<td>3.7</td>
+					<td>unauthenticated,authentication,sensitive,bypass</td>
+					<td class=date>2026-02-18T13:16:20.340</td>
+					<td class=description>The WP All Export plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.4.14 via the export download endpoint. This is due to a PHP type juggling vulnerability in the security token comparison which uses loose comparison (==) instead of strict comparison (===). This makes it possible for unauthenticated attackers to bypass authentication using "magic hash" values when the expected MD5 hash prefix happens to be numeric-looking (matching pattern ^0e\d+$), allowing download of sensitive export files containing PII, business data, or database information.</td>
+				</tr>
+			
 		
 			
 		
@@ -782,8 +782,6 @@ Out of caution, we recommend that you rotate all passwords and API keys containe
 					<td class=date>2026-02-15T16:15:53.870</td>
 					<td class=description>eNet SMART HOME server 2.2.1 and 2.3.1 ships with default credentials (user:user, admin:admin) that remain active after installation and commissioning without enforcing a mandatory password change. Unauthenticated attackers can use these default credentials to gain administrative access to sensitive smart home configuration and control functions.</td>
 				</tr>
-			
-		
 			
 		
 
