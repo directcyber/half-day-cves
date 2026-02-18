@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2026-02-18T09:38:13.158903
+Updated at UTC 2026-02-18T10:36:12.334565
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2026-02-18T09:38:13.158903
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -308,6 +310,16 @@ Updated at UTC 2026-02-18T09:38:13.158903
 		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-2126">CVE-2026-2126</a></td>
+					<td>5.3</td>
+					<td>unauthenticated,bypass</td>
+					<td class=date>2026-02-18T10:16:15.173</td>
+					<td class=description>The User Submitted Posts – Enable Users to Submit Posts from the Front End plugin for WordPress is vulnerable to Incorrect Authorization in all versions up to, and including, 20260113. This is due to the `usp_get_submitted_category()` function accepting user-submitted category IDs from the POST body without validating them against the admin-configured allowed categories stored in `usp_options['categories']`. This makes it possible for unauthenticated attackers to assign submitted posts to arbitrary categories, including restricted ones, by crafting a direct POST request with manipulated `user-submitted-category[]` values, bypassing the frontend category restrictions.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
