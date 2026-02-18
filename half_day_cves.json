@@ -310,5 +310,17 @@
     "cvss": 3.3,
     "description": "A weakness has been identified in niklasso minisat up to 2.2.0. This issue affects the function Solver::value in the library core/SolverTypes.h of the component DIMACS File Parser. This manipulation of the argument variable index with the input 2147483648 causes out-of-bounds read. The attack needs to be launched locally. The exploit has been made available to the public and could be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.",
     "published": "2026-02-18T07:16:11.230"
+  },
+  "CVE-2026-1656": {
+    "cvss": 5.3,
+    "description": "The Business Directory Plugin for WordPress is vulnerable to authorization bypass due to a missing authorization check in all versions up to, and including, 6.4.20. This makes it possible for unauthenticated attackers to modify arbitrary listings, including changing titles, content, and email addresses, by directly referencing the listing ID in crafted requests to the wpbdp_ajax AJAX action.",
+    "published": "2026-02-18T09:15:58.403",
+    "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2026-2495": {
+    "cvss": 7.5,
+    "description": "The WPNakama \u2013 Team and multi-Client Collaboration, Editorial and Project Management plugin for WordPress is vulnerable to SQL Injection via the 'order' parameter of the '/wp-json/WPNakama/v1/boards' REST API endpoint in all versions up to, and including, 0.6.5. This is due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "published": "2026-02-18T09:15:59.030",
+    "keywords": "unauthenticated,sensitive"
   }
 }
