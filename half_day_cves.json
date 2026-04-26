@@ -1,28 +1,4 @@
 {
-  "CVE-2026-6376": {
-    "cvss": "-",
-    "description": "A weakness in SpiceJet\u2019s public booking retrieval page permits full passenger booking details to be accessed using only a PNR and last name, with no authentication or verification mechanisms. This results in exposure of extensive personal, travel, and booking metadata to any unauthenticated user who can obtain or guess those basic inputs. The issue arises from improper access control on a sensitive data retrieval function.",
-    "published": "2026-04-23T21:16:06.507",
-    "keywords": "unauthenticated,authentication,sensitive"
-  },
-  "CVE-2026-6940": {
-    "url": "https://github.com/radareorg/radare2/pull/25830",
-    "cvss": 7.1,
-    "description": "radare2 prior to 6.1.4 contains a path traversal vulnerability in project deletion that allows local attackers to recursively delete arbitrary directories by supplying absolute paths that escape the configured dir.projects root directory. Attackers can craft absolute paths to project marker files outside the project storage boundary to cause recursive deletion of attacker-chosen directories with permissions of the radare2 process, resulting in integrity and availability loss.",
-    "published": "2026-04-23T21:16:06.640"
-  },
-  "CVE-2026-6941": {
-    "url": "https://github.com/radareorg/radare2/pull/25831",
-    "cvss": 6.6,
-    "description": "radare2 prior to 6.1.4 contains a path traversal vulnerability in its project notes handling that allows attackers to read or write files outside the configured project directory by importing a malicious .zrp archive containing a symlinked notes.txt file. Attackers can craft a .zrp archive with a symlinked notes.txt that bypasses directory confinement checks, allowing note operations to follow the symlink and access arbitrary files outside the dir.projects root directory.",
-    "published": "2026-04-23T21:16:06.790"
-  },
-  "CVE-2026-6942": {
-    "cvss": 9.8,
-    "description": "radare2-mcp version 1.6.0 and earlier contains an os command injection vulnerability that allows remote attackers to execute arbitrary commands by bypassing the command filter through shell metacharacters in user-controlled input passed to r2_cmd_str(). Attackers can inject shell metacharacters through the jsonrpc interface parameters to achieve remote code execution on the host running radare2-mcp without requiring authentication.",
-    "published": "2026-04-23T21:16:06.947",
-    "keywords": "remote,execution,authentication,command,bypass"
-  },
   "CVE-2026-26210": {
     "url": "https://github.com/kvcache-ai/ktransformers/pull/1944",
     "cvss": 9.8,

@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2026-04-26T20:30:31.304107
+Updated at UTC 2026-04-26T21:31:00.267871
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -350,34 +350,6 @@ To remediate this issue, users should redeploy from the updated repository and e
 
 
 				</tr>
-			
-		
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-6941">CVE-2026-6941</a></td>
-					<td>6.6</td>
-					<td><a target=_blank href="https://github.com/radareorg/radare2/pull/25831">https://github.com/radareorg/radare2/pull/25831</a></td>
-					<td class=date>2026-04-23T21:16:06.790</td>
-					<td class=description>radare2 prior to 6.1.4 contains a path traversal vulnerability in its project notes handling that allows attackers to read or write files outside the configured project directory by importing a malicious .zrp archive containing a symlinked notes.txt file. Attackers can craft a .zrp archive with a symlinked notes.txt that bypasses directory confinement checks, allowing note operations to follow the symlink and access arbitrary files outside the dir.projects root directory.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-6940">CVE-2026-6940</a></td>
-					<td>7.1</td>
-					<td><a target=_blank href="https://github.com/radareorg/radare2/pull/25830">https://github.com/radareorg/radare2/pull/25830</a></td>
-					<td class=date>2026-04-23T21:16:06.640</td>
-					<td class=description>radare2 prior to 6.1.4 contains a path traversal vulnerability in project deletion that allows local attackers to recursively delete arbitrary directories by supplying absolute paths that escape the configured dir.projects root directory. Attackers can craft absolute paths to project marker files outside the project storage boundary to cause recursive deletion of attacker-chosen directories with permissions of the radare2 process, resulting in integrity and availability loss.</td>
-
-
-				</tr>
-			
-		
 			
 		
 
@@ -1026,30 +998,6 @@ X3050’s web management interface allows unauthorized access to certain configu
 				</tr>
 			
 		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-6942">CVE-2026-6942</a></td>
-					<td>9.8</td>
-					<td>remote,execution,authentication,command,bypass</td>
-					<td class=date>2026-04-23T21:16:06.947</td>
-					<td class=description>radare2-mcp version 1.6.0 and earlier contains an os command injection vulnerability that allows remote attackers to execute arbitrary commands by bypassing the command filter through shell metacharacters in user-controlled input passed to r2_cmd_str(). Attackers can inject shell metacharacters through the jsonrpc interface parameters to achieve remote code execution on the host running radare2-mcp without requiring authentication.</td>
-				</tr>
-			
-		
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-6376">CVE-2026-6376</a></td>
-					<td>-</td>
-					<td>unauthenticated,authentication,sensitive</td>
-					<td class=date>2026-04-23T21:16:06.507</td>
-					<td class=description>A weakness in SpiceJet’s public booking retrieval page permits full passenger booking details to be accessed using only a PNR and last name, with no authentication or verification mechanisms. This results in exposure of extensive personal, travel, and booking metadata to any unauthenticated user who can obtain or guess those basic inputs. The issue arises from improper access control on a sensitive data retrieval function.</td>
-				</tr>
 			
 		
 
