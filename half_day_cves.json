@@ -514,5 +514,17 @@
     "description": "A security vulnerability has been detected in SmythOS sre up to 0.0.15. Affected is the function AgentRuntime of the file packages/core/src/subsystems/AgentManager/AgentRuntime.class.ts of the component HTTP Header Handler. Such manipulation of the argument X-DEBUG-RUN/X-DEBUG-INJ leads to improper authentication. It is possible to launch the attack remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
     "published": "2026-04-26T06:16:02.210",
     "keywords": "remote,authentication"
+  },
+  "CVE-2026-7037": {
+    "cvss": 9.8,
+    "description": "A security flaw has been discovered in Totolink A8000RU 7.1cu.643_b20200521. This issue affects the function setVpnPassCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipulation of the argument pptpPassThru results in os command injection. The attack can be executed remotely. The exploit has been released to the public and may be used for attacks.",
+    "published": "2026-04-26T12:16:23.173",
+    "keywords": "remote,command,vpn"
+  },
+  "CVE-2026-7038": {
+    "cvss": 3.3,
+    "description": "A weakness has been identified in tufantunc ssh-mcp up to 1.5.0. Impacted is an unknown function of the file src/index.ts of the component Command Line Handler. This manipulation causes insufficiently protected credentials. The attack is restricted to local execution. The exploit has been made available to the public and could be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2026-04-26T12:16:23.373",
+    "keywords": "execution,command"
   }
 }
