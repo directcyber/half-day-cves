@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2026-04-26T15:36:44.995588
+Updated at UTC 2026-04-26T16:35:11.962642
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -388,12 +388,6 @@ To remediate this issue, users should redeploy from the updated repository and e
 
 
 				</tr>
-			
-		
-			
-		
-			
-		
 			
 		
 			
@@ -1213,36 +1207,6 @@ X3050’s web management interface allows unauthorized access to certain configu
 					<td>sensitive,bypass</td>
 					<td class=date>2026-04-23T18:16:29.543</td>
 					<td class=description>OpenClaw before 2026.4.20 contains a scope enforcement bypass vulnerability in the assistant-media route that allows trusted-proxy callers without operator.read scope to access protected assistant-media files and metadata. Attackers can bypass identity-bearing HTTP auth path scope validation to retrieve sensitive media content within allowed media roots.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-23751">CVE-2026-23751</a></td>
-					<td>9.8</td>
-					<td>remote,execution,unauthenticated,authentication,sensitive</td>
-					<td class=date>2026-04-23T16:16:24.463</td>
-					<td class=description>Kofax Capture, now referred to as Tungsten Capture, version 6.0.0.0 (other versions may be affected) exposes a deprecated .NET Remoting HTTP channel on port 2424 via the Ascent Capture Service that is accessible without authentication and uses a default, publicly known endpoint identifier. An unauthenticated remote attacker can exploit .NET Remoting object unmarshalling techniques to instantiate a remote System.Net.WebClient object and read arbitrary files from the server filesystem, write attacker-controlled files to the server, or coerce NTLMv2 authentication to an attacker-controlled host, enabling sensitive credential disclosure, denial of service, remote code execution, or lateral movement depending on service account privileges and network environment.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-41460">CVE-2026-41460</a></td>
-					<td>9.8</td>
-					<td>remote,execution,unauthenticated</td>
-					<td class=date>2026-04-23T15:37:24.540</td>
-					<td class=description>SocialEngine versions 7.8.0 and prior contain a SQL injection vulnerability in the /activity/index/get-memberall endpoint where user-supplied input passed via the text parameter is not sanitized before being incorporated into a SQL query. An unauthenticated remote attacker can exploit this vulnerability to read arbitrary data from the database, reset administrator account passwords, and gain unauthorized access to the Packages Manager in the Admin Panel, potentially enabling remote code execution.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-35225">CVE-2026-35225</a></td>
-					<td>-</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2026-04-23T15:37:23.377</td>
-					<td class=description>An unauthenticated remote attacker is able to exhaust all available TCP connections in the CODESYS EtherNet/IP adapter stack, preventing legitimate clients from establishing new connections.</td>
 				</tr>
 			
 		
