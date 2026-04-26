@@ -526,5 +526,17 @@
     "description": "A weakness has been identified in tufantunc ssh-mcp up to 1.5.0. Impacted is an unknown function of the file src/index.ts of the component Command Line Handler. This manipulation causes insufficiently protected credentials. The attack is restricted to local execution. The exploit has been made available to the public and could be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.",
     "published": "2026-04-26T12:16:23.373",
     "keywords": "execution,command"
+  },
+  "CVE-2026-7039": {
+    "url": "https://github.com/tufantunc/ssh-mcp/issues/44",
+    "cvss": 7.8,
+    "description": "A security vulnerability has been detected in tufantunc ssh-mcp up to 1.5.0. The affected element is the function shell.write of the file src/index.ts. Such manipulation of the argument Description leads to command injection. The attack must be carried out locally. The exploit has been disclosed publicly and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2026-04-26T13:16:00.727"
+  },
+  "CVE-2026-7041": {
+    "url": "https://github.com/666ghj/mirofish/issues/483",
+    "cvss": 3.7,
+    "description": "A vulnerability was detected in 666ghj MiroFish up to 0.1.2. The impacted element is an unknown function of the file /console of the component Werkzeug Debugger PIN Handler. Performing a manipulation of the argument SECRET results in information disclosure. It is possible to initiate the attack remotely. The attack is considered to have high complexity. The exploitability is regarded as difficult. The exploit is now public and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2026-04-26T13:16:01.813"
   }
 }
