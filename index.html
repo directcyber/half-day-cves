@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2026-04-26T09:46:35.224823
+Updated at UTC 2026-04-26T10:39:00.049458
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -360,18 +360,6 @@ To remediate this issue, users should redeploy from the updated repository and e
 
 
 				</tr>
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
 			
 		
 			
@@ -1203,70 +1191,6 @@ X3050’s web management interface allows unauthorized access to certain configu
 					<td>remote,unauthenticated</td>
 					<td class=date>2026-04-23T15:37:23.377</td>
 					<td class=description>An unauthenticated remote attacker is able to exhaust all available TCP connections in the CODESYS EtherNet/IP adapter stack, preventing legitimate clients from establishing new connections.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-6903">CVE-2026-6903</a></td>
-					<td>7.5</td>
-					<td>remote,unauthenticated</td>
-					<td class=date>2026-04-23T10:16:18.680</td>
-					<td class=description>The LabOne Web Server, backing the LabOne User Interface, contains insufficient input validation in its file access functionality. An unauthenticated attacker could exploit this vulnerability to read arbitrary files on the host system that are accessible to the operating system user running the LabOne software.
-
-Additionally, the Web Server does not sufficiently restrict cross-origin requests, which could allow a remote attacker to trigger file access from a victim's browser by directing the victim to a malicious website.
-
-The vulnerability is only exploitable when the LabOne Web Server is running. Installations using only the LabOne APIs without starting the Web Server are not exposed.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-6887">CVE-2026-6887</a></td>
-					<td>9.8</td>
-					<td>remote,unauthenticated,command</td>
-					<td class=date>2026-04-23T10:16:18.527</td>
-					<td class=description>Borg SPM 2007 (Sales Ended in 2008) developed by BorG Technology Corporation has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL commands to read, modify, and delete database contents.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-6886">CVE-2026-6886</a></td>
-					<td>9.8</td>
-					<td>remote,unauthenticated,authentication,bypass</td>
-					<td class=date>2026-04-23T10:16:18.390</td>
-					<td class=description>Borg SPM 2007 (Sales Ended in 2008) developed by BorG Technology Corporation has a Authentication Bypass vulnerability, allowing unauthenticated remote attackers to log into the system as any user.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-6885">CVE-2026-6885</a></td>
-					<td>9.8</td>
-					<td>remote,execution,unauthenticated</td>
-					<td class=date>2026-04-23T10:16:18.240</td>
-					<td class=description>Borg SPM 2007 (Sales Ended in 2008) developed by BorG Technology Corporation has an Arbitrary File Upload vulnerability, allowing unauthenticated remote attackers to upload and execute web shell backdoors, thereby enabling arbitrary code execution on the server.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-5464">CVE-2026-5464</a></td>
-					<td>7.2</td>
-					<td>remote,execution</td>
-					<td class=date>2026-04-23T10:16:18.077</td>
-					<td class=description>The ExactMetrics – Google Analytics Dashboard for WordPress (Website Stats Plugin) plugin for WordPress is vulnerable to unauthorized arbitrary plugin installation and activation in all versions up to, and including, 9.1.2. This is due to the reports page exposing the 'onboarding_key' transient to any user with the 'exactmetrics_view_dashboard' capability. This key is the sole authorization gate for the '/wp-json/exactmetrics/v1/onboarding/connect-url' REST endpoint, which returns a one-time hash (OTH) token. This OTH token is then the only credential checked by the 'exactmetrics_connect_process' AJAX endpoint — which has no capability check, no nonce verification, and accepts an arbitrary plugin ZIP URL via the file parameter for installation and activation. This makes it possible for authenticated attackers, with Editor-level access and above granted the report viewing permission, to install and activate arbitrary plugins from attacker-controlled URLs, leading to Remote Code Execution.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-3960">CVE-2026-3960</a></td>
-					<td>5.9</td>
-					<td>remote,execution,unauthenticated,bypass</td>
-					<td class=date>2026-04-23T10:16:17.813</td>
-					<td class=description>A critical remote code execution vulnerability exists in the unauthenticated REST API endpoint /99/ImportSQLTable in H2O-3 version 3.46.0.9 and prior. The vulnerability arises due to insufficient security controls in the parameter blacklist mechanism, which only targets MySQL JDBC driver-specific dangerous parameters. An attacker can bypass these controls by switching the JDBC URL protocol to jdbc:postgresql: and exploiting PostgreSQL JDBC driver-specific parameters such as socketFactory and socketFactoryArg. This allows unauthenticated attackers to execute arbitrary code on the H2O-3 server with the privileges of the H2O-3 process. The issue is resolved in version 3.46.0.10.</td>
 				</tr>
 			
 		
