@@ -1,10 +1,4 @@
 {
-  "CVE-2026-41908": {
-    "cvss": 4.3,
-    "description": "OpenClaw before 2026.4.20 contains a scope enforcement bypass vulnerability in the assistant-media route that allows trusted-proxy callers without operator.read scope to access protected assistant-media files and metadata. Attackers can bypass identity-bearing HTTP auth path scope validation to retrieve sensitive media content within allowed media roots.",
-    "published": "2026-04-23T18:16:29.543",
-    "keywords": "sensitive,bypass"
-  },
   "CVE-2026-41247": {
     "cvss": "-",
     "description": "elFinder is an open-source file manager for web, written in JavaScript using jQuery UI. Prior to 2.1.67, elFinder contains a command injection vulnerability in the resize command. The bg (background color) parameter is accepted from user input and passed through image resize/rotate processing. In configurations that use the ImageMagick CLI backend, this value is incorporated into shell command strings without sufficient escaping. An attacker able to invoke the resize command with a crafted bg value may achieve arbitrary command execution as the web server process user. This vulnerability is fixed in 2.1.67.",
@@ -334,12 +328,6 @@
     "description": "Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15.1 and 0.31.1, the Axios library is vulnerable to a Prototype Pollution \"Gadget\" attack that allows any Object.prototype pollution to silently suppress all HTTP error responses (401, 403, 500, etc.), causing them to be treated as successful responses. This completely bypasses application-level authentication and error handling. The root cause is that validateStatus is the only config property using the mergeDirectKeys merge strategy, which uses JavaScript's in operator \u2014 an operator that inherently traverses the prototype chain. When Object.prototype.validateStatus is polluted with () => true, all HTTP status codes are accepted as success. This vulnerability is fixed in 1.15.1 and 0.31.1.",
     "published": "2026-04-24T18:16:31.133",
     "keywords": "authentication,bypass"
-  },
-  "CVE-2026-41414": {
-    "url": "https://github.com/skim-rs/skim/commit/bf63404ad51985b00ed304690ba9d477860a5a75",
-    "cvss": 7.4,
-    "description": "Skim is a fuzzy finder designed to through files, lines, and commands. The generate-files job in .github/workflows/pr.yml checks out attacker-controlled fork code and executes it via cargo run, with access to SKIM_RS_BOT_PRIVATE_KEY and GITHUB_TOKEN (contents:write). No gates prevent exploitation - any GitHub user can trigger this by opening a pull request from a fork. This vulnerability is fixed with commit bf63404ad51985b00ed304690ba9d477860a5a75.",
-    "published": "2026-04-24T19:17:13.020"
   },
   "CVE-2026-41492": {
     "cvss": 9.8,

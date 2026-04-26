@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2026-04-26T17:33:37.006442
+Updated at UTC 2026-04-26T18:40:13.436016
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -239,18 +239,6 @@ Updated at UTC 2026-04-26T17:33:37.006442
 			
 		
 			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-41414">CVE-2026-41414</a></td>
-					<td>7.4</td>
-					<td><a target=_blank href="https://github.com/skim-rs/skim/commit/bf63404ad51985b00ed304690ba9d477860a5a75">https://github.com/skim-rs/skim/commit/bf63404ad51985b00ed304690ba9d477860a5a75</a></td>
-					<td class=date>2026-04-24T19:17:13.020</td>
-					<td class=description>Skim is a fuzzy finder designed to through files, lines, and commands. The generate-files job in .github/workflows/pr.yml checks out attacker-controlled fork code and executes it via cargo run, with access to SKIM_RS_BOT_PRIVATE_KEY and GITHUB_TOKEN (contents:write). No gates prevent exploitation - any GitHub user can trigger this by opening a pull request from a fork. This vulnerability is fixed with commit bf63404ad51985b00ed304690ba9d477860a5a75.</td>
-
-
-				</tr>
-			
-		
-			
 		
 			
 		
@@ -388,8 +376,6 @@ To remediate this issue, users should redeploy from the updated repository and e
 
 
 				</tr>
-			
-		
 			
 		
 			
@@ -626,8 +612,6 @@ We recommend you upgrade to tough-v0.22.0 / tuftool-v0.15.0.</td>
 					<td class=date>2026-04-24T19:17:14.047</td>
 					<td class=description>Dgraph is an open source distributed GraphQL database. Prior to 25.3.3, Dgraphl exposes the process command line through the unauthenticated /debug/vars endpoint on Alpha. Because the admin token is commonly supplied via the --security "token=..." startup flag, an unauthenticated attacker can retrieve that token and replay it in the X-Dgraph-AuthToken header to access admin-only endpoints. This is a variant of the previously fixed /debug/pprof/cmdline issue, but the current fix is incomplete because it blocks only /debug/pprof/cmdline and still serves http.DefaultServeMux, which includes expvar's /debug/vars handler. This vulnerability is fixed in 25.3.3.</td>
 				</tr>
-			
-		
 			
 		
 			
@@ -1197,16 +1181,6 @@ X3050’s web management interface allows unauthorized access to certain configu
 					<td>execution,command</td>
 					<td class=date>2026-04-23T19:17:29.850</td>
 					<td class=description>elFinder is an open-source file manager for web, written in JavaScript using jQuery UI. Prior to 2.1.67, elFinder contains a command injection vulnerability in the resize command. The bg (background color) parameter is accepted from user input and passed through image resize/rotate processing. In configurations that use the ImageMagick CLI backend, this value is incorporated into shell command strings without sufficient escaping. An attacker able to invoke the resize command with a crafted bg value may achieve arbitrary command execution as the web server process user. This vulnerability is fixed in 2.1.67.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-41908">CVE-2026-41908</a></td>
-					<td>4.3</td>
-					<td>sensitive,bypass</td>
-					<td class=date>2026-04-23T18:16:29.543</td>
-					<td class=description>OpenClaw before 2026.4.20 contains a scope enforcement bypass vulnerability in the assistant-media route that allows trusted-proxy callers without operator.read scope to access protected assistant-media files and metadata. Attackers can bypass identity-bearing HTTP auth path scope validation to retrieve sensitive media content within allowed media roots.</td>
 				</tr>
 			
 		
