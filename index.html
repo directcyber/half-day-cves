@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2026-04-26T18:40:13.436016
+Updated at UTC 2026-04-26T19:40:46.168747
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -376,8 +376,6 @@ To remediate this issue, users should redeploy from the updated repository and e
 
 
 				</tr>
-			
-		
 			
 		
 			
@@ -1171,16 +1169,6 @@ X3050’s web management interface allows unauthorized access to certain configu
 					<td>execution,unauthenticated</td>
 					<td class=date>2026-04-23T20:16:13.903</td>
 					<td class=description>LeRobot through 0.5.1 contains an unsafe deserialization vulnerability in the async inference pipeline where pickle.loads() is used to deserialize data received over unauthenticated gRPC channels without TLS in the policy server and robot client components. An unauthenticated network-reachable attacker can achieve arbitrary code execution on the server or client by sending a crafted pickle payload through the SendPolicyInstructions, SendObservations, or GetActions gRPC calls.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-41247">CVE-2026-41247</a></td>
-					<td>-</td>
-					<td>execution,command</td>
-					<td class=date>2026-04-23T19:17:29.850</td>
-					<td class=description>elFinder is an open-source file manager for web, written in JavaScript using jQuery UI. Prior to 2.1.67, elFinder contains a command injection vulnerability in the resize command. The bg (background color) parameter is accepted from user input and passed through image resize/rotate processing. In configurations that use the ImageMagick CLI backend, this value is incorporated into shell command strings without sufficient escaping. An attacker able to invoke the resize command with a crafted bg value may achieve arbitrary command execution as the web server process user. This vulnerability is fixed in 2.1.67.</td>
 				</tr>
 			
 		
