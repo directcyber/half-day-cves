@@ -1,28 +1,4 @@
 {
-  "CVE-2026-40062": {
-    "cvss": 7.5,
-    "description": "A path Traversal vulnerability exists in Ziostation2 v2.9.8.7 and earlier. A remote unauthenticated attacker may get sensitive information on the operating system.",
-    "published": "2026-04-23T00:16:45.467",
-    "keywords": "remote,unauthenticated,sensitive"
-  },
-  "CVE-2026-41176": {
-    "cvss": "-",
-    "description": "Rclone is a command-line program to sync files and directories to and from different cloud storage providers. The RC endpoint `options/set` is exposed without `AuthRequired: true`, but it can mutate global runtime configuration, including the RC option block itself. Starting in version 1.45.0 and prior to version 1.73.5, an unauthenticated attacker can set `rc.NoAuth=true`, which disables the authorization gate for many RC methods registered with `AuthRequired: true` on reachable RC servers that are started without global HTTP authentication. This can lead to unauthorized access to sensitive administrative functionality, including configuration and operational RC methods. Version 1.73.5 patches the issue.",
-    "published": "2026-04-23T00:16:45.800",
-    "keywords": "unauthenticated,authentication,command,sensitive"
-  },
-  "CVE-2026-41179": {
-    "cvss": "-",
-    "description": "Rclone is a command-line program to sync files and directories to and from different cloud storage providers. Starting in version 1.48.0 and prior to version 1.73.5, the RC endpoint `operations/fsinfo` is exposed without `AuthRequired: true` and accepts attacker-controlled `fs` input. Because `rc.GetFs(...)` supports inline backend definitions, an unauthenticated attacker can instantiate an attacker-controlled backend on demand. For the WebDAV backend, `bearer_token_command` is executed during backend initialization, making single-request unauthenticated local command execution possible on reachable RC deployments without global HTTP authentication. Version 1.73.5 patches the issue.",
-    "published": "2026-04-23T00:16:45.947",
-    "keywords": "execution,unauthenticated,authentication,command"
-  },
-  "CVE-2026-5935": {
-    "cvss": 7.3,
-    "description": "IBM Total Storage Service Console (TSSC) / TS4500 IMC 9.2, 9.3, 9.4, 9.5, 9.6 TSSC/IMC\u00a0could allow an unauthenticated user to execute arbitrary commands with normal user privileges on the system due to improper validation of user supplied input.",
-    "published": "2026-04-23T00:16:46.900",
-    "keywords": "unauthenticated,command"
-  },
   "CVE-2026-41182": {
     "cvss": 5.3,
     "description": "LangSmith Client SDKs provide SDK's for interacting with the LangSmith platform. Prior to version 0.5.19 of the JavaScript SDK and version 0.7.31 of the Python SDK, the LangSmith SDK's output redaction controls (hideOutputs in JS, hide_outputs in Python) do not apply to streaming token events. When an LLM run produces streaming output, each chunk is recorded as a new_token event containing the raw token value. These events bypass the redaction pipeline entirely \u2014 prepareRunCreateOrUpdateInputs (JS) and _hide_run_outputs (Python) only process the inputs and outputs fields on a run, never the events array. As a result, applications relying on output redaction to prevent sensitive LLM output from being stored in LangSmith will still leak the full streamed content via run events. Version 0.5.19 of the JavaScript SDK and version 0.7.31 of the Python SDK fix the issue.",
@@ -556,5 +532,11 @@
     "cvss": 5.3,
     "description": "A security flaw has been discovered in go-kratos kratos up to 2.9.2. This impacts the function NewServer of the file transport/http/server.go of the component http.DefaultServeMux Fallback Handler. The manipulation results in unintended intermediary. The attack may be launched remotely. The exploit has been released to the public and may be used for attacks. The patch is identified as 0284a5bcf92b5a7ee015300ce3051baf7ae4718d. Applying a patch is advised to resolve this issue.",
     "published": "2026-04-25T19:16:00.177"
+  },
+  "CVE-2026-7011": {
+    "url": "https://github.com/maxsite/cms/commit/8a3946bd0a54bfb72a4d57179fcd253f2c550cd7",
+    "cvss": 2.4,
+    "description": "A weakness has been identified in MaxSite CMS up to 109.3. Affected by this vulnerability is an unknown functionality of the file /admin/plugin_antispam of the component Antispam Plugin. Executing a manipulation of the argument f_logging_file can lead to cross site scripting. It is possible to launch the attack remotely. The exploit has been made available to the public and could be used for attacks. Upgrading to version 109.4 addresses this issue. This patch is called 8a3946bd0a54bfb72a4d57179fcd253f2c550cd7. Upgrading the affected component is advised. The vendor was informed early about this issue. They classify it as a \"Self-XSS\". They deployed a countermeasure: \"Nevertheless, we consider this a violation of secure coding standards. The lack of filtering via `htmlspecialchars()` has already been fixed in the latest patch to prevent incorrect data display.\"",
+    "published": "2026-04-26T01:15:59.590"
   }
 }

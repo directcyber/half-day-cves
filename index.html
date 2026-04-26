@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2026-04-25T23:30:49.071895
+Updated at UTC 2026-04-26T02:01:20.073555
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,18 @@ Updated at UTC 2026-04-25T23:30:49.071895
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-7011">CVE-2026-7011</a></td>
+					<td>2.4</td>
+					<td><a target=_blank href="https://github.com/maxsite/cms/commit/8a3946bd0a54bfb72a4d57179fcd253f2c550cd7">https://github.com/maxsite/cms/commit/8a3946bd0a54bfb72a4d57179fcd253f2c550cd7</a></td>
+					<td class=date>2026-04-26T01:15:59.590</td>
+					<td class=description>A weakness has been identified in MaxSite CMS up to 109.3. Affected by this vulnerability is an unknown functionality of the file /admin/plugin_antispam of the component Antispam Plugin. Executing a manipulation of the argument f_logging_file can lead to cross site scripting. It is possible to launch the attack remotely. The exploit has been made available to the public and could be used for attacks. Upgrading to version 109.4 addresses this issue. This patch is called 8a3946bd0a54bfb72a4d57179fcd253f2c550cd7. Upgrading the affected component is advised. The vendor was informed early about this issue. They classify it as a "Self-XSS". They deployed a countermeasure: "Nevertheless, we consider this a violation of secure coding standards. The lack of filtering via `htmlspecialchars()` has already been fixed in the latest patch to prevent incorrect data display."</td>
+
+
+				</tr>
+			
 		
 			
 				<tr>
@@ -330,16 +342,10 @@ To remediate this issue, users should redeploy from the updated repository and e
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
 		
 			
 		
@@ -1225,46 +1231,6 @@ The vulnerability is only exploitable when the LabOne Web Server is running. Ins
 					<td>sensitive,bypass,leak</td>
 					<td class=date>2026-04-23T02:16:16.123</td>
 					<td class=description>LangSmith Client SDKs provide SDK's for interacting with the LangSmith platform. Prior to version 0.5.19 of the JavaScript SDK and version 0.7.31 of the Python SDK, the LangSmith SDK's output redaction controls (hideOutputs in JS, hide_outputs in Python) do not apply to streaming token events. When an LLM run produces streaming output, each chunk is recorded as a new_token event containing the raw token value. These events bypass the redaction pipeline entirely — prepareRunCreateOrUpdateInputs (JS) and _hide_run_outputs (Python) only process the inputs and outputs fields on a run, never the events array. As a result, applications relying on output redaction to prevent sensitive LLM output from being stored in LangSmith will still leak the full streamed content via run events. Version 0.5.19 of the JavaScript SDK and version 0.7.31 of the Python SDK fix the issue.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-5935">CVE-2026-5935</a></td>
-					<td>7.3</td>
-					<td>unauthenticated,command</td>
-					<td class=date>2026-04-23T00:16:46.900</td>
-					<td class=description>IBM Total Storage Service Console (TSSC) / TS4500 IMC 9.2, 9.3, 9.4, 9.5, 9.6 TSSC/IMC could allow an unauthenticated user to execute arbitrary commands with normal user privileges on the system due to improper validation of user supplied input.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-41179">CVE-2026-41179</a></td>
-					<td>-</td>
-					<td>execution,unauthenticated,authentication,command</td>
-					<td class=date>2026-04-23T00:16:45.947</td>
-					<td class=description>Rclone is a command-line program to sync files and directories to and from different cloud storage providers. Starting in version 1.48.0 and prior to version 1.73.5, the RC endpoint `operations/fsinfo` is exposed without `AuthRequired: true` and accepts attacker-controlled `fs` input. Because `rc.GetFs(...)` supports inline backend definitions, an unauthenticated attacker can instantiate an attacker-controlled backend on demand. For the WebDAV backend, `bearer_token_command` is executed during backend initialization, making single-request unauthenticated local command execution possible on reachable RC deployments without global HTTP authentication. Version 1.73.5 patches the issue.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-41176">CVE-2026-41176</a></td>
-					<td>-</td>
-					<td>unauthenticated,authentication,command,sensitive</td>
-					<td class=date>2026-04-23T00:16:45.800</td>
-					<td class=description>Rclone is a command-line program to sync files and directories to and from different cloud storage providers. The RC endpoint `options/set` is exposed without `AuthRequired: true`, but it can mutate global runtime configuration, including the RC option block itself. Starting in version 1.45.0 and prior to version 1.73.5, an unauthenticated attacker can set `rc.NoAuth=true`, which disables the authorization gate for many RC methods registered with `AuthRequired: true` on reachable RC servers that are started without global HTTP authentication. This can lead to unauthorized access to sensitive administrative functionality, including configuration and operational RC methods. Version 1.73.5 patches the issue.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-40062">CVE-2026-40062</a></td>
-					<td>7.5</td>
-					<td>remote,unauthenticated,sensitive</td>
-					<td class=date>2026-04-23T00:16:45.467</td>
-					<td class=description>A path Traversal vulnerability exists in Ziostation2 v2.9.8.7 and earlier. A remote unauthenticated attacker may get sensitive information on the operating system.</td>
 				</tr>
 			
 		
