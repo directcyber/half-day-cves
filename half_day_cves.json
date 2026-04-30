@@ -1,46 +1,4 @@
 {
-  "CVE-2026-29971": {
-    "cvss": 6.1,
-    "description": "A reflected cross-site scripting (XSS) vulnerability exists in WebFileSys version before 2.32.0 and fixed in v.2.32.0. User-controlled input is reflected into HTML and JavaScript contexts without proper output encoding, allowing arbitrary JavaScript execution in the victim's browser via the ftpBackup functionality, authentication input handling, search functionality, and error message rendering components",
-    "published": "2026-04-27T21:16:33.267",
-    "keywords": "execution,authentication"
-  },
-  "CVE-2026-3087": {
-    "url": "https://github.com/python/cpython/pull/146591",
-    "cvss": "-",
-    "description": "If `shutil.unpack_archive()` is given a ZIP archive with an absolute Windows path containing a drive (`C:\\\\...`) then the archive will be extracted outside the target directory which is different than other operating systems. Only Windows is affected by this vulnerability.",
-    "published": "2026-04-27T21:16:42.480"
-  },
-  "CVE-2026-7154": {
-    "cvss": 9.8,
-    "description": "A weakness has been identified in Totolink A8000RU 7.1cu.643_b20200521. This affects the function setAdvancedInfoShow of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Executing a manipulation of the argument tty_server can lead to os command injection. The attack can be launched remotely. The exploit has been made available to the public and could be used for attacks.",
-    "published": "2026-04-27T21:16:43.660",
-    "keywords": "remote,command"
-  },
-  "CVE-2026-7155": {
-    "cvss": 9.8,
-    "description": "A security vulnerability has been detected in Totolink A8000RU 7.1cu.643_b20200521. This impacts the function setLoginPasswordCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipulation of the argument admpass leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed publicly and may be used.",
-    "published": "2026-04-27T21:16:43.833",
-    "keywords": "remote,command"
-  },
-  "CVE-2026-7156": {
-    "cvss": 9.8,
-    "description": "A vulnerability was detected in Totolink A8000RU 7.1cu.643_b20200521. Affected is the function CsteSystem of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipulation of the argument HTTP results in os command injection. The attack may be launched remotely. The exploit is now public and may be used.",
-    "published": "2026-04-27T21:16:44.000",
-    "keywords": "remote,command"
-  },
-  "CVE-2026-7157": {
-    "cvss": 7.3,
-    "description": "A flaw has been found in disler aider-mcp-server up to b2516fa466d0d851932da92ee6d0e66946db9efc. Affected by this vulnerability is an unknown functionality of the file src/aider_mcp_server/server.py of the component aider_ai_code. This manipulation of the argument relative_editable_files causes command injection. Remote exploitation of the attack is possible. The exploit has been published and may be used. This product follows a rolling release approach for continuous delivery, so version details for affected or updated releases are not provided. The project was informed of the problem early through an issue report but has not responded yet.",
-    "published": "2026-04-27T21:16:44.167",
-    "keywords": "remote,command"
-  },
-  "CVE-2026-7191": {
-    "cvss": 7.2,
-    "description": "Improper use of the static-eval npm package in the open source solution qnabot-on-aws versions 7.2.4 and earlier may allow an authenticated administrator to execute arbitrary code within the fulfillment Lambda execution context by injecting a crafted conditional chaining expression via the Content Designer interface, which bypasses the intended expression sandbox through JavaScript prototype manipulation. This may grant direct access to backend resources (Lambda environment variables, OpenSearch indices, S3 objects, DynamoDB tables) that are not exposed through normal administrative interfaces.\n\nWe recommend you upgrade to version 7.3.0 or above.",
-    "published": "2026-04-27T21:16:44.513",
-    "keywords": "execution,bypass"
-  },
   "CVE-2026-7160": {
     "cvss": 8.8,
     "description": "A vulnerability was determined in Tenda HG3 2.0. This vulnerability affects the function formTracert of the file /boaform/formTracert. Executing a manipulation of the argument datasize can lead to command injection. The attack may be performed from remote. The exploit has been publicly disclosed and may be utilized.",
@@ -288,7 +246,7 @@
     "keywords": "unauthenticated,authentication,bypass"
   },
   "CVE-2026-41397": {
-    "cvss": 6.8,
+    "cvss": 9.6,
     "description": "OpenClaw before 2026.3.31 contains a sandbox escape vulnerability allowing attackers to traverse directory boundaries through symlink exploitation during file synchronization operations. Remote attackers can bypass sandbox restrictions by crafting malicious symlinks in mirror sync operations to access arbitrary files outside intended boundaries.",
     "published": "2026-04-28T19:37:43.153",
     "keywords": "remote,bypass"
@@ -634,5 +592,35 @@
     "cvss": 4.6,
     "description": "SSCMS v7.4.0 contains a reflected cross-site scripting vulnerability in the STL processing endpoint that allows attackers to execute arbitrary JavaScript by crafting malicious STL template payloads that are decrypted and returned without proper sanitization. Attackers can exploit improper output encoding in the /api/stl/actions/dynamic endpoint to inject executable JavaScript into JSON responses, leading to session hijacking, phishing attacks, and unauthorized actions performed on behalf of users.",
     "published": "2026-04-30T20:16:24.997"
+  },
+  "CVE-2026-35051": {
+    "cvss": "-",
+    "description": "Traefik is an HTTP reverse proxy and load balancer. Prior to versions 2.11.43, 3.6.14, and 3.7.0-rc.2, there is an authentication bypass vulnerability in Traefik's ForwardAuth middleware when trustForwardHeader=false is configured and Traefik is deployed behind a trusted upstream proxy. This issue has been patched in versions 2.11.43, 3.6.14, and 3.7.0-rc.2.",
+    "published": "2026-04-30T21:16:32.047",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2026-39858": {
+    "cvss": "-",
+    "description": "Traefik is an HTTP reverse proxy and load balancer. Prior to versions 2.11.43, 3.6.14, and 3.7.0-rc.2, there is a high severity authentication bypass vulnerability in Traefik's ForwardAuth and snippet-based authentication middleware. Traefik's forwarded-header sanitization logic targets only canonical header names (e.g., X-Forwarded-Proto) and does not strip or normalize alias variants that use underscores instead of dashes (e.g., X_Forwarded_Proto). These unsanitized alias headers are forwarded intact to the authentication backend. When the backend normalizes underscore and dash header forms equivalently, an attacker can inject spoofed trust context \u2014 such as a trusted scheme or host \u2014 through the alias headers and bypass authentication on protected routes without valid credentials. This issue has been patched in versions 2.11.43, 3.6.14, and 3.7.0-rc.2.",
+    "published": "2026-04-30T21:16:32.313",
+    "keywords": "authentication,bypass"
+  },
+  "CVE-2026-40912": {
+    "cvss": "-",
+    "description": "Traefik is an HTTP reverse proxy and load balancer. Prior to versions 2.11.43, 3.6.14, and 3.7.0-rc.2, there is a high severity authentication bypass vulnerability in Traefik's StripPrefixRegex middleware when used in combination with ForwardAuth, BasicAuth, or DigestAuth. The middleware matches the regex against the decoded URL path but uses the resulting byte length to slice the percent-encoded raw path. When a dot (or multiple dots) appears in the prefix portion of the URL, the raw path after stripping becomes a dot-segment (e.g. /./admin/secret). ForwardAuth receives this dot-segment path in X-Forwarded-Uri, which does not match the protected path patterns and therefore allows the request through. The backend then normalizes the dot-segment to the real path per RFC 3986 and serves the protected content An unauthenticated attacker can exploit this against any backend that performs dot-segment normalization. This issue has been patched in versions 2.11.43, 3.6.14, and 3.7.0-rc.2.",
+    "published": "2026-04-30T21:16:32.740",
+    "keywords": "unauthenticated,authentication,bypass"
+  },
+  "CVE-2026-7435": {
+    "cvss": 7.2,
+    "description": "SSCMS v7.4.0 contains a SQL injection vulnerability in the stl:sqlContent tag where the queryString attribute is passed directly to database execution without parameterization or sanitization. Attackers can craft encrypted payloads submitted to the /api/stl/actions/dynamic endpoint to execute arbitrary SQL statements, leading to unauthorized database access, data disclosure, authentication bypass, data modification, or complete database compromise.",
+    "published": "2026-04-30T21:16:34.100",
+    "keywords": "execution,authentication,bypass"
+  },
+  "CVE-2026-7501": {
+    "url": "https://github.com/linkstackorg/linkstack/pull/974",
+    "cvss": 3.5,
+    "description": "A weakness has been identified in LinkStackOrg LinkStack up to 4.8.6. Impacted is the function editPage of the file app/Http/Controllers/UserController.php. Executing a manipulation of the argument pageDescription can lead to cross site scripting. It is possible to launch the attack remotely. The exploit has been made available to the public and could be used for attacks. The project was informed of the problem early through a pull request but has not reacted yet.",
+    "published": "2026-04-30T21:16:34.360"
   }
 }
