@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2026-04-30T19:08:02.207405
+Updated at UTC 2026-04-30T20:52:50.154494
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -59,11 +59,31 @@ Updated at UTC 2026-04-30T19:08:02.207405
 
 		
 			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-7429">CVE-2026-7429</a></td>
+					<td>4.6</td>
+					<td><a target=_blank href="https://github.com/siteserver/cms/issues/3892">https://github.com/siteserver/cms/issues/3892</a></td>
+					<td class=date>2026-04-30T20:16:24.997</td>
+					<td class=description>SSCMS v7.4.0 contains a reflected cross-site scripting vulnerability in the STL processing endpoint that allows attackers to execute arbitrary JavaScript by crafting malicious STL template payloads that are decrypted and returned without proper sanitization. Attackers can exploit improper output encoding in the /api/stl/actions/dynamic endpoint to inject executable JavaScript into JSON responses, leading to session hijacking, phishing attacks, and unauthorized actions performed on behalf of users.</td>
+
+
+				</tr>
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
 		
 			
 				<tr>
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-36766">CVE-2026-36766</a></td>
-					<td>-</td>
+					<td>5.4</td>
 					<td><a target=_blank href="https://github.com/shopizer-ecommerce/shopizer/issues/1093">https://github.com/shopizer-ecommerce/shopizer/issues/1093</a></td>
 					<td class=date>2026-04-30T18:16:29.830</td>
 					<td class=description>Multiple authenticated cross-site scripting (XSS) vulnerabilities in the XssHttpServletRequestWrapper class of shopizer v3.2.5 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the getInputStream() or getReader() functions.</td>
@@ -520,16 +540,58 @@ Updated at UTC 2026-04-30T19:08:02.207405
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-7461">CVE-2026-7461</a></td>
+					<td>7.2</td>
+					<td>remote,command</td>
+					<td class=date>2026-04-30T19:16:10.737</td>
+					<td class=description>Improper neutralization of inputs used in an OS command in the FSx Windows File Server volume mounting component in Amazon ECS Agent on Windows before version 1.103.0 might allow a remote authenticated threat actor to execute shell commands with SYSTEM privileges on the underlying host via a specially crafted username field in an ECS task definition. This issue requires permissions to register ECS task definitions or write to the Secrets Manager or SSM Parameter Store credentials used by the FSx volume configuration.
+
+To remediate this issue, users should upgrade to version 1.103.0.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-40601">CVE-2026-40601</a></td>
+					<td>7.5</td>
+					<td>unauthenticated,authentication</td>
+					<td class=date>2026-04-30T19:16:10.110</td>
+					<td class=description>Chartbrew is an open-source web application that can connect directly to databases and APIs and use the data to create charts. In version 4.9.0, Chartbrew exposes POST /api/chart/:chart_id/query without authentication. The endpoint only checks team.allowReportRefresh and does not verify that the target chart belongs to a public report, that the project is public, or that sharing policy allows the operation. An unauthenticated attacker who knows a chart identifier can trigger a data refresh and retrieve the current data of private charts. This issue has been patched in version 5.0.0.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-35514">CVE-2026-35514</a></td>
+					<td>6.5</td>
+					<td>unauthenticated,authentication,bypass</td>
+					<td class=date>2026-04-30T19:16:09.217</td>
+					<td class=description>Chartbrew is an open-source web application that can connect directly to databases and APIs and use the data to create charts. In version 4.9.0, the endpoint POST /user/invited does not validate any invite token, authentication header, or session. Any unauthenticated attacker can call this endpoint directly to create a fully active account and receive a valid JWT — even when the instance has existing users and signupRestricted is enabled. This bypass is distinct from the normal registration endpoint (POST /user) which enforces signupRestricted and sets active: false pending verification. This issue has been patched in version 5.0.0.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-32148">CVE-2026-32148</a></td>
+					<td>-</td>
+					<td>remote,bypass</td>
+					<td class=date>2026-04-30T19:16:09.000</td>
+					<td class=description>Insufficient Verification of Data Authenticity vulnerability in hexpm hex (Hex.RemoteConverger module) allows dependency integrity bypass via unverified lockfile checksums.
+
+Hex stores checksums for dependencies in the mix.lock file to ensure reproducible and integrity-checked builds. However, Hex.RemoteConverger.verify_resolved/2 never executes checksum verification because the lock data returned by Hex.Utils.lock/1 uses string-based dependency names, while the verification logic compares against atom-based names. This type mismatch causes the verification code path to be silently skipped. Checksums are still validated when packages are initially downloaded from the registry, but mismatches between the lockfile and resolved dependencies are not detected.
+
+An attacker who can influence cached packages (e.g., via local cache poisoning or a compromised registry) can provide modified dependency contents that will be accepted without detection. The mix.lock file is silently rewritten with the checksum values from the registry, erasing evidence of tampering.
+
+This issue affects hex: from 0.16.0 before 2.4.2.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -660,7 +722,7 @@ A specially crafted packet can cause dhclient to overrun its buffer of environme
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-28221">CVE-2026-28221</a></td>
-					<td>6.5</td>
+					<td>8.2</td>
 					<td>remote,unauthenticated,authentication</td>
 					<td class=date>2026-04-29T19:16:23.047</td>
 					<td class=description>Wazuh is a free and open source platform used for threat prevention, detection, and response. From version 4.8.0 to before version 4.14.4, a stack-based buffer overflow exists in print_hex_string() in wazuh-remoted. The bug is triggered when formatting attacker-controlled bytes using sprintf(dst_buf + 2*i, "%.2x", src_buf[i]) on platforms where char is treated as signed and the compiled code sign-extends bytes before the variadic call. For input bytes such as 0xFF, the formatting can emit "ffffffff" (8 chars) instead of "ff" (2 chars), causing an out-of-bounds write past a fixed 2049-byte stack buffer. The vulnerable path is reachable remotely prior to any agent authentication/registration logic via TCP/1514 when an oversized length prefix causes the “unexpected message (hex)” diagnostic path to run. Additionally, the same unauthenticated oversized-message diagnostic path logs an attacker-controlled hex dump to /var/ossec/logs/ossec.log for each trigger, allowing remote log amplification that can degrade monitoring fidelity and consume disk/I/O. This log amplification is reachable even without triggering the sign-extension overflow (e.g., using bytes < 0x80). This issue has been patched in version 4.14.4.</td>
@@ -961,7 +1023,7 @@ Successful exploitation of this vulnerability could allow the attacker to bypass
 			
 				<tr class=keywords style="display: none">
 					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-41391">CVE-2026-41391</a></td>
-					<td>5.3</td>
+					<td>6.1</td>
 					<td>execution,bypass</td>
 					<td class=date>2026-04-28T19:37:42.310</td>
 					<td class=description>OpenClaw before 2026.3.31 fails to properly sanitize PIP_INDEX_URL and UV_INDEX_URL environment variables in host execution contexts, allowing attackers to redirect Python package-index traffic. Attackers can exploit this bypass to intercept or manipulate package management operations by injecting malicious index URLs through unsanitized environment variables.</td>
@@ -1365,46 +1427,6 @@ We recommend you upgrade to version 7.3.0 or above.</td>
 					<td>execution,authentication</td>
 					<td class=date>2026-04-27T21:16:33.267</td>
 					<td class=description>A reflected cross-site scripting (XSS) vulnerability exists in WebFileSys version before 2.32.0 and fixed in v.2.32.0. User-controlled input is reflected into HTML and JavaScript contexts without proper output encoding, allowing arbitrary JavaScript execution in the victim's browser via the ftpBackup functionality, authentication input handling, search functionality, and error message rendering components</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-7153">CVE-2026-7153</a></td>
-					<td>9.8</td>
-					<td>remote,command</td>
-					<td class=date>2026-04-27T20:16:29.230</td>
-					<td class=description>A security flaw has been discovered in Totolink A8000RU 7.1cu.643_b20200521. The impacted element is the function setMiniuiHomeInfoShow of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Performing a manipulation of the argument sys_info results in os command injection. The attack can be initiated remotely. The exploit has been released to the public and may be used for attacks.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-7152">CVE-2026-7152</a></td>
-					<td>9.8</td>
-					<td>remote,command</td>
-					<td class=date>2026-04-27T20:16:29.063</td>
-					<td class=description>A vulnerability was identified in Totolink A8000RU 7.1cu.643_b20200521. The affected element is the function setTelnetCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Such manipulation of the argument telnet_enabled leads to os command injection. It is possible to launch the attack remotely. The exploit is publicly available and might be used.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-35903">CVE-2026-35903</a></td>
-					<td>9.8</td>
-					<td>authentication,command</td>
-					<td class=date>2026-04-27T19:16:52.817</td>
-					<td class=description>MERCURY MIPC252W IP camera 1.0.5 Build 230306 Rel.79931n contains an improper authentication vulnerability in the RTSP service. After successful Digest authentication in an initial DESCRIBE request, the device does not verify the Digest response parameter in subsequent RTSP requests within the same session. As a result, RTSP methods such as SETUP, PLAY, and TEARDOWN can be processed even when the Authorization header contains an empty or invalid response value, as long as the nonce and session identifier correspond to a previously authenticated session. This allows an attacker with network access to reuse session parameters and issue unauthorized RTSP control commands without computing a valid Digest response.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-35902">CVE-2026-35902</a></td>
-					<td>6.2</td>
-					<td>unauthenticated,authentication</td>
-					<td class=date>2026-04-27T19:16:51.060</td>
-					<td class=description>The RTSP service of MERCURY IP camera MIPC252W 1.0.5 Build 230306 has an issue handling failed Digest authentication attempts. By repeatedly sending RTSP requests with invalid authentication parameters, an unauthenticated attacker can cause the RTSP service to enter a persistent authentication failure state, preventing legitimate clients from authenticating and leading to a denial of service.</td>
 				</tr>
 			
 		
