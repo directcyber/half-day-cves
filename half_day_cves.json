@@ -1,16 +1,4 @@
 {
-  "CVE-2026-7086": {
-    "url": "https://github.com/hbai-ltd/toonflow-app/issues/97#issuecomment-4208207717",
-    "cvss": 4.3,
-    "description": "A vulnerability was identified in HBAI-Ltd Toonflow-app up to 1.1.1. This issue affects the function updateStoryboardUrl of the file replaceUrl.ts of the component Storyboard Export. Such manipulation of the argument url leads to path traversal. It is possible to launch the attack remotely. The exploit is publicly available and might be used. It is still unclear if this vulnerability genuinely exists. The vendor explains in a reply to the issue report, that \"[t]he URL of this interface is designed to only be a local address or a trusted domain address configured in docker, and will not contain malicious links, unless the user modifies the code causing unexpected situations.\"",
-    "published": "2026-04-27T06:16:03.223"
-  },
-  "CVE-2026-3008": {
-    "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/issues/17960",
-    "cvss": 6.6,
-    "description": "Successful exploitation of the\nstring injection vulnerability could allow an attacker to obtain memory address\ninformation or crash the application.",
-    "published": "2026-04-27T07:16:03.597"
-  },
   "CVE-2026-22077": {
     "cvss": "-",
     "description": "OPPO Wallet APP contains a trusted domain validation flaw that allows attackers to bypass protected interface access restrictions, which may lead to account token hijacking and sensitive information disclosure.",
