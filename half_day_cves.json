@@ -1,52 +1,4 @@
 {
-  "CVE-2026-7119": {
-    "cvss": 8.8,
-    "description": "A vulnerability was detected in Tenda HG3 2.0. The impacted element is an unknown function of the file /boaform/formCountrystr. The manipulation of the argument countrystr results in os command injection. The attack may be performed from remote. The exploit is now public and may be used.",
-    "published": "2026-04-27T12:16:25.830",
-    "keywords": "remote,command"
-  },
-  "CVE-2026-7121": {
-    "cvss": 9.8,
-    "description": "A flaw has been found in Totolink A8000RU 7.1cu.643_b20200521. This affects the function setWizardCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. This manipulation of the argument wizard causes os command injection. It is possible to initiate the attack remotely. The exploit has been published and may be used.",
-    "published": "2026-04-27T12:16:25.997",
-    "keywords": "remote,command"
-  },
-  "CVE-2026-7122": {
-    "cvss": 9.8,
-    "description": "A vulnerability has been found in Totolink A8000RU 7.1cu.643_b20200521. This impacts the function setUPnPCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Such manipulation of the argument enable leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2026-04-27T12:16:26.183",
-    "keywords": "remote,command"
-  },
-  "CVE-2026-7123": {
-    "cvss": 9.8,
-    "description": "A vulnerability was found in Totolink A8000RU 7.1cu.643_b20200521. Affected is the function setIptvCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Performing a manipulation of the argument setIptvCfg results in os command injection. The attack can be initiated remotely. The exploit has been made public and could be used.",
-    "published": "2026-04-27T13:16:04.660",
-    "keywords": "remote,command"
-  },
-  "CVE-2026-7124": {
-    "cvss": 9.8,
-    "description": "A vulnerability was determined in Totolink A8000RU 7.1cu.643_b20200521. Affected by this vulnerability is the function setIpv6LanCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Executing a manipulation of the argument addrPrefixLen can lead to os command injection. The attack can be launched remotely. The exploit has been publicly disclosed and may be utilized.",
-    "published": "2026-04-27T13:16:04.837",
-    "keywords": "remote,command"
-  },
-  "CVE-2026-7125": {
-    "cvss": 9.8,
-    "description": "A vulnerability was identified in Totolink A8000RU 7.1cu.643_b20200521. Affected by this issue is the function setWiFiEasyCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipulation of the argument merge leads to os command injection. The attack may be initiated remotely. The exploit is publicly available and might be used.",
-    "published": "2026-04-27T13:16:05.013",
-    "keywords": "remote,command"
-  },
-  "CVE-2026-32688": {
-    "cvss": "-",
-    "description": "Allocation of Resources Without Limits or Throttling vulnerability in elixir-plug plug_cowboy allows unauthenticated remote denial of service via atom table exhaustion.\n\nPlug.Cowboy.Conn.conn/1 in lib/plug/cowboy/conn.ex calls String.to_atom/1 on the value returned by :cowboy_req.scheme/1. For HTTP/2 connections, cowlib passes the client-supplied :scheme pseudo-header value through verbatim without validation. Each unique value permanently allocates a new entry in the BEAM atom table. Since atoms are never garbage-collected and the atom table has a fixed limit (default 1,048,576), an unauthenticated attacker can exhaust the table by sending HTTP/2 requests with unique :scheme values, causing the Erlang VM to abort with system_limit and taking down the entire node.\n\nThis vulnerability does not affect HTTP/1.1, where cowboy derives the scheme from the listener type rather than from a client-supplied header.\n\nThis issue affects plug_cowboy: from 2.0.0 before 2.8.1.",
-    "published": "2026-04-27T14:16:47.340",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2026-41081": {
-    "cvss": 6.5,
-    "description": "Improper Handling of TLS Client Authentication Failure Leading to Anonymous Principal Assignment in Apache Storm\n\nVersions Affected: up to 2.8.7\n\nDescription: When TLS transport is enabled in Apache Storm without requiring client certificate authentication (the default configuration), the TlsTransportPlugin assigns a fallback principal (CN=ANONYMOUS) if no client certificate is presented or if certificate verification fails. The underlying SSLPeerUnverifiedException is caught and suppressed rather than rejecting the connection.\n\nThis fail-open behavior means an unauthenticated client can establish a TLS connection and receive a valid principal identity. If the configured authorizer (e.g., SimpleACLAuthorizer) does not explicitly deny access to CN=ANONYMOUS, this may result in unauthorized access to Storm services. The condition is logged at debug level only, reducing visibility in production.\n\nImpact: Unauthenticated clients may be assigned a principal identity, potentially bypassing authorization in permissive or misconfigured environments.\n\nMitigation: Users should upgrade to 2.8.7 in which TLS authentication failures are handled in a fail-closed manner.\n\nUsers who cannot upgrade immediately should:\n- Enable mandatory client certificate authentication (nimbus.thrift.tls.client.auth.required: true)\n- Ensure authorization rules explicitly deny access to CN=ANONYMOUS\n- Review all ACL configurations for implicit default-allow behavior",
-    "published": "2026-04-27T14:16:48.167",
-    "keywords": "unauthenticated,authentication,bypass"
-  },
   "CVE-2026-30352": {
     "cvss": 9.8,
     "description": "A remote code execution (RCE) vulnerability in the /devserver/start endpoint of leonvanzyl autocoder commit 79d02a allows attackers to execute arbitrary code via providing a crafted command parameter.",
@@ -378,7 +330,7 @@
     "published": "2026-04-28T15:16:26.800"
   },
   "CVE-2026-40969": {
-    "cvss": 3.7,
+    "cvss": 5.3,
     "description": "The raw message of every server-side AuthenticationException is returned to the unauthenticated remote caller in the gRPC status description. This allows an attacker to obtain information about the authentication failure, which may be useful for further attacks.\n\nAffected versions:\nSpring gRPC: 1.0.0 - 1.0.2 (fixed in 1.0.3). Older, unsupported versions are also affected.",
     "published": "2026-04-28T15:16:30.560",
     "keywords": "remote,unauthenticated,authentication"
@@ -672,7 +624,7 @@
     "keywords": "remote,command"
   },
   "CVE-2026-42512": {
-    "cvss": "-",
+    "cvss": 7.3,
     "description": "As dhclient is building an environment to pass to dhclient-script, it may need to resize the array of string pointers.  The code which expands the array incorrectly calculates its new size when requesting memory, resulting in a heap buffer overrun.\n\nA specially crafted packet can cause dhclient to overrun its buffer of environment entries.  This can result in a crash, but it may be possible to leverage this bug to achieve remote code execution.",
     "published": "2026-04-30T09:16:03.373",
     "keywords": "remote,execution"
@@ -681,6 +633,12 @@
     "cvss": 5.3,
     "description": "The Five Star Restaurant Reservations plugin for WordPress is vulnerable to a payment bypass via PHP type juggling in versions up to, and including, 2.7.16 This is due to the valid_payment() function using a PHP loose comparison (==) between the attacker-controlled payment_id POST parameter and the booking's stripe_payment_intent_id property. When an unauthenticated attacker submits a request to the nopriv AJAX handler rtb_stripe_pmt_succeed before the Stripe payment intent has been created for a booking (i.e., before the JavaScript-triggered create_stripe_pmtIntnt() call has stored an intent ID in post meta), the stripe_payment_intent_id property on the booking object remains null. The comparison sanitize_text_field('') == null evaluates to TRUE in PHP loose comparison, causing the payment verification check to pass with zero actual payment. This makes it possible for unauthenticated attackers to mark any existing payment_pending booking as paid without completing a Stripe payment by submitting an empty payment_id parameter.",
     "published": "2026-04-30T10:16:02.327",
+    "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2026-2892": {
+    "cvss": 7.5,
+    "description": "The Otter Blocks plugin for WordPress is vulnerable to Purchase Verification Bypass in all versions up to, and including, 3.1.4. This is due to the 'get_customer_data' method relying on an unsigned 'o_stripe_data' cookie to determine Stripe product ownership for unauthenticated users. The 'check_purchase' method trusts this cookie data without performing server-side verification against the Stripe API for one-time 'payment' mode purchases. This makes it possible for unauthenticated attackers to bypass Stripe purchase-gated content visibility conditions by forging the 'o_stripe_data' cookie with a target product ID, which is publicly exposed in the checkout block's HTML source.",
+    "published": "2026-04-30T14:16:29.760",
     "keywords": "unauthenticated,bypass"
   }
 }
