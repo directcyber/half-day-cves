@@ -1,46 +1,4 @@
 {
-  "CVE-2026-30352": {
-    "cvss": 9.8,
-    "description": "A remote code execution (RCE) vulnerability in the /devserver/start endpoint of leonvanzyl autocoder commit 79d02a allows attackers to execute arbitrary code via providing a crafted command parameter.",
-    "published": "2026-04-27T16:16:43.597",
-    "keywords": "remote,execution,command"
-  },
-  "CVE-2026-41462": {
-    "cvss": 9.8,
-    "description": "ProjeQtor versions 7.0 through 12.4.3 contain an unauthenticated SQL injection vulnerability in the login functionality where the login variable is directly concatenated into a SQL query without parameterization or sanitization. Attackers can inject arbitrary SQL expressions through the username field at the authentication endpoint to create privileged accounts, read sensitive data, and execute operating system commands if the database user has elevated permissions.",
-    "published": "2026-04-27T16:16:45.340",
-    "keywords": "unauthenticated,authentication,command,sensitive"
-  },
-  "CVE-2026-41463": {
-    "cvss": 8.8,
-    "description": "ProjeQtor versions 7.0 through 12.4.3 contain a ZipSlip path traversal vulnerability in the plugin upload functionality that allows authenticated attackers with upload permissions to write files outside the intended extraction directory by crafting ZIP archives with directory traversal sequences. Attackers can exploit unvalidated archive extraction to write a PHP webshell to a web-accessible directory and achieve remote code execution with the privileges of the web server process.",
-    "published": "2026-04-27T16:16:45.493",
-    "keywords": "remote,execution"
-  },
-  "CVE-2026-41464": {
-    "cvss": 6.5,
-    "description": "ProjeQtor versions 7.0 through 12.4.3 contain a missing authorization vulnerability in the objectDetail.php endpoint that allows authenticated users with guest-level privileges to retrieve sensitive data belonging to other users including password hashes and API keys. Attackers can bypass access controls by directly accessing the endpoint without ownership or role-based validation to extract administrator credentials and perform privilege escalation.",
-    "published": "2026-04-27T16:16:45.647",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2026-7136": {
-    "cvss": 9.8,
-    "description": "A weakness has been identified in Totolink A8000RU 7.1cu.643_b20200521. Affected by this issue is the function setDmzCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Executing a manipulation of the argument wanIdx can lead to os command injection. The attack may be launched remotely. The exploit has been made available to the public and could be used for attacks.",
-    "published": "2026-04-27T16:16:46.930",
-    "keywords": "remote,command"
-  },
-  "CVE-2026-7137": {
-    "cvss": 9.8,
-    "description": "A security vulnerability has been detected in Totolink A8000RU 7.1cu.643_b20200521. This affects the function setStorageCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipulation of the argument sambaEnabled leads to os command injection. Remote exploitation of the attack is possible. The exploit has been disclosed publicly and may be used.",
-    "published": "2026-04-27T16:16:47.110",
-    "keywords": "remote,command"
-  },
-  "CVE-2026-7138": {
-    "cvss": 9.8,
-    "description": "A vulnerability was detected in Totolink A8000RU 7.1cu.643_b20200521. This vulnerability affects the function setNtpCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipulation of the argument tz results in os command injection. The attack can be executed remotely. The exploit is now public and may be used.",
-    "published": "2026-04-27T16:16:47.283",
-    "keywords": "remote,command"
-  },
   "CVE-2026-38934": {
     "cvss": 8.8,
     "description": "Cross Site Request Forgery vulnerability in diskoverdata diskover-community v.2.3.5. and before allows a remote attacker to escalate privileges and obtain sensitive information via the public/settings_process.php",
@@ -540,7 +498,7 @@
     "keywords": "authentication,bypass"
   },
   "CVE-2026-38992": {
-    "cvss": "-",
+    "cvss": 9.8,
     "description": "Cockpit v2.13.5 and earlier is vulnerable to arbitrary code execution via the filter parameter within multiple endpoints. This vulnerability allows an attacker to run system commands on the underlying infrastructure via the MongoLite $func operator.",
     "published": "2026-04-29T15:16:05.750",
     "keywords": "execution,command"
@@ -640,5 +598,17 @@
     "description": "The Otter Blocks plugin for WordPress is vulnerable to Purchase Verification Bypass in all versions up to, and including, 3.1.4. This is due to the 'get_customer_data' method relying on an unsigned 'o_stripe_data' cookie to determine Stripe product ownership for unauthenticated users. The 'check_purchase' method trusts this cookie data without performing server-side verification against the Stripe API for one-time 'payment' mode purchases. This makes it possible for unauthenticated attackers to bypass Stripe purchase-gated content visibility conditions by forging the 'o_stripe_data' cookie with a target product ID, which is publicly exposed in the checkout block's HTML source.",
     "published": "2026-04-30T14:16:29.760",
     "keywords": "unauthenticated,bypass"
+  },
+  "CVE-2026-38939": {
+    "cvss": "-",
+    "description": "Cross Site Scripting vulnerability in andrewtch88 mvc-ecommerce v.1.0 allows a remote attacker to execute arbitrary code and obtain sensitive information via the product_catalogue.php component",
+    "published": "2026-04-30T16:16:43.417",
+    "keywords": "remote,sensitive"
+  },
+  "CVE-2026-4670": {
+    "cvss": 9.8,
+    "description": "Authentication bypass by primary weakness vulnerability in Progress Software MOVEit Automation allows Authentication Bypass.\n\nThis issue affects MOVEit Automation: from 2025.0.0 before 2025.0.9, from 2024.0.0 before 2024.1.8, versions prior to 2024.0.0.",
+    "published": "2026-04-30T16:16:44.167",
+    "keywords": "authentication,bypass"
   }
 }
