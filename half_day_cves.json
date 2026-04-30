@@ -1,40 +1,4 @@
 {
-  "CVE-2026-38934": {
-    "cvss": 8.8,
-    "description": "Cross Site Request Forgery vulnerability in diskoverdata diskover-community v.2.3.5. and before allows a remote attacker to escalate privileges and obtain sensitive information via the public/settings_process.php",
-    "published": "2026-04-27T17:16:43.037",
-    "keywords": "remote,sensitive"
-  },
-  "CVE-2026-7139": {
-    "cvss": 9.8,
-    "description": "A flaw has been found in Totolink A8000RU 7.1cu.643_b20200521. This issue affects the function setWiFiAclRules of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. This manipulation of the argument mode causes os command injection. The attack is possible to be carried out remotely. The exploit has been published and may be used.",
-    "published": "2026-04-27T17:16:45.293",
-    "keywords": "remote,command"
-  },
-  "CVE-2026-7140": {
-    "cvss": 9.8,
-    "description": "A vulnerability has been found in Totolink A8000RU 7.1cu.643_b20200521. Impacted is the function CsteSystem of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Such manipulation of the argument HTTP leads to os command injection. The attack may be performed from remote. The exploit has been disclosed to the public and may be used.",
-    "published": "2026-04-27T17:16:45.467",
-    "keywords": "remote,command"
-  },
-  "CVE-2026-7141": {
-    "url": "https://github.com/vllm-project/vllm/pull/39283",
-    "cvss": 5.6,
-    "description": "A vulnerability was found in vllm up to 0.19.0. The affected element is the function has_mamba_layers of the file vllm/v1/kv_cache_interface.py of the component KV Block Handler. Performing a manipulation results in uninitialized resource. It is possible to initiate the attack remotely. The attack is considered to have high complexity. The exploitability is described as difficult. The exploit has been made public and could be used. The patch is named 1ad67864c0c20f167929e64c875f5c28e1aad9fd. To fix this issue, it is recommended to deploy a patch.",
-    "published": "2026-04-27T17:16:45.637"
-  },
-  "CVE-2026-25908": {
-    "cvss": 7.8,
-    "description": "Dell Alienware Command Center (AWCC), versions prior to 6.13.8.0, contain an Execution with Unnecessary Privileges vulnerability in the AWCC. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of Privileges.",
-    "published": "2026-04-27T18:16:53.360",
-    "keywords": "execution,command"
-  },
-  "CVE-2026-7145": {
-    "cvss": 5.4,
-    "description": "A weakness has been identified in mettle sendportal up to 3.0.1. Affected is the function destroy of the file app/Http/Controllers/Workspaces/WorkspaceInvitationsController.php of the component Invitation Handler. This manipulation of the argument invitation causes authorization bypass. The attack may be initiated remotely. The project was informed of the problem early through an issue report but has not responded yet.",
-    "published": "2026-04-27T18:16:56.753",
-    "keywords": "remote,bypass"
-  },
   "CVE-2026-35902": {
     "cvss": 6.2,
     "description": "The RTSP service of MERCURY IP camera MIPC252W 1.0.5 Build 230306 has an issue handling failed Digest authentication attempts. By repeatedly sending RTSP requests with invalid authentication parameters, an unauthenticated attacker can cause the RTSP service to enter a persistent authentication failure state, preventing legitimate clients from authenticating and leading to a denial of service.",
@@ -360,7 +324,7 @@
     "keywords": "unauthenticated,authentication"
   },
   "CVE-2026-41403": {
-    "cvss": 2.9,
+    "cvss": 4.0,
     "description": "OpenClaw before 2026.3.31 misclassifies proxied remote requests as loopback connections in the diffs viewer when allowRemoteViewer is disabled, allowing unauthorized access. Attackers can bypass access controls by sending proxied requests that are incorrectly identified as local loopback traffic, circumventing intended remote viewer restrictions.",
     "published": "2026-04-28T19:37:43.823",
     "keywords": "remote,bypass"
@@ -600,7 +564,7 @@
     "keywords": "unauthenticated,bypass"
   },
   "CVE-2026-38939": {
-    "cvss": "-",
+    "cvss": 6.1,
     "description": "Cross Site Scripting vulnerability in andrewtch88 mvc-ecommerce v.1.0 allows a remote attacker to execute arbitrary code and obtain sensitive information via the product_catalogue.php component",
     "published": "2026-04-30T16:16:43.417",
     "keywords": "remote,sensitive"
@@ -610,5 +574,59 @@
     "description": "Authentication bypass by primary weakness vulnerability in Progress Software MOVEit Automation allows Authentication Bypass.\n\nThis issue affects MOVEit Automation: from 2025.0.0 before 2025.0.9, from 2024.0.0 before 2024.1.8, versions prior to 2024.0.0.",
     "published": "2026-04-30T16:16:44.167",
     "keywords": "authentication,bypass"
+  },
+  "CVE-2026-36760": {
+    "url": "https://github.com/thinkgem/jeesite/issues/530",
+    "cvss": 9.6,
+    "description": "An issue in the fileMd5 parameter in the /a/file/upload endpoint of JeeSite v5.15.1 allows authenticated attackers with file upload permissions to execute a path traversal and write arbitrary files with whitelisted suffixes to arbitrary filesystem locations while chunked upload is enabled.",
+    "published": "2026-04-30T17:16:26.050"
+  },
+  "CVE-2026-36764": {
+    "url": "https://github.com/chillzhuang/springblade/issues/36",
+    "cvss": 5.0,
+    "description": "A Server-Side Request Forgery (SSRF) in the /ureport/datasource/testConnection endpoint of SpringBlade v4.8.0 allows authenticated attackers to scan internal resources via a crafted GET request.",
+    "published": "2026-04-30T17:16:26.157"
+  },
+  "CVE-2026-36767": {
+    "url": "https://github.com/shopizer-ecommerce/shopizer/issues/1091",
+    "cvss": 10.0,
+    "description": "A path traversal vulnerability in the /content/images/add endpoint of shopizer v3.2.5 allows attackers write arbitrary files to any writeable path via a crafted POST request.",
+    "published": "2026-04-30T17:16:26.267"
+  },
+  "CVE-2026-36761": {
+    "url": "https://github.com/thinkgem/jeesite/issues/528",
+    "cvss": 6.1,
+    "description": "A stored cross-site scripting (XSS) vulnerability in the /msg/msgInner/save endpoint of JeeSite v5.15.1 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted input into the msgContent parameter.",
+    "published": "2026-04-30T18:16:29.087"
+  },
+  "CVE-2026-36762": {
+    "url": "https://github.com/thinkgem/jeesite/issues/529",
+    "cvss": "-",
+    "description": "An issue in the fileEntityId parameter in the /a/file/upload endpoint of JeeSite v5.15.1 allows authenticated attackers with file upload permissions to execute a path traversal and write arbitrary files with whitelisted suffixes to arbitrary filesystem locations.",
+    "published": "2026-04-30T18:16:29.263"
+  },
+  "CVE-2026-36763": {
+    "url": "https://github.com/shopizer-ecommerce/shopizer/issues/1091",
+    "cvss": 6.1,
+    "description": "A stored cross-site scripting (XSS) vulnerability in the /api/blade-desk/notice/submit endpoint of SpringBlade v4.8.0 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted input into the content parameter.",
+    "published": "2026-04-30T18:16:29.370"
+  },
+  "CVE-2026-36765": {
+    "url": "https://github.com/chillzhuang/springblade/issues/37",
+    "cvss": "-",
+    "description": "An XML external entity (XXE) vulnerability in the /designer/loadReport endpoint of SpringBlade v4.8.0 allows authenticated attackers to execute arbitrary code via injecting a crafted payload.",
+    "published": "2026-04-30T18:16:29.707"
+  },
+  "CVE-2026-36766": {
+    "url": "https://github.com/shopizer-ecommerce/shopizer/issues/1093",
+    "cvss": "-",
+    "description": "Multiple authenticated cross-site scripting (XSS) vulnerabilities in the XssHttpServletRequestWrapper class of shopizer v3.2.5 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the getInputStream() or getReader() functions.",
+    "published": "2026-04-30T18:16:29.830"
+  },
+  "CVE-2026-3833": {
+    "cvss": 6.5,
+    "description": "A flaw was found in gnutls. This vulnerability occurs because gnutls performs case-sensitive comparisons of `nameConstraints` labels, specifically for `dNSName` (DNS) or `rfc822Name` (email) constraints within `excludedSubtrees` or `permittedSubtrees`. A remote attacker can exploit this by crafting a leaf certificate with casing differences in the Subject Alternative Name (SAN), leading to a policy bypass where a certificate that should be rejected is instead accepted. This could result in unauthorized access or information disclosure.",
+    "published": "2026-04-30T18:16:30.577",
+    "keywords": "remote,sensitive,bypass"
   }
 }
