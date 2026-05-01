@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2026-05-01T08:55:02.336342
+Updated at UTC 2026-05-01T10:17:55.529148
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,8 @@ Updated at UTC 2026-05-01T08:55:02.336342
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
 		
 			
 		
@@ -476,16 +478,18 @@ Updated at UTC 2026-05-01T08:55:02.336342
 		
 			
 		
-			
-		
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-7567">CVE-2026-7567</a></td>
+					<td>9.8</td>
+					<td>unauthenticated,authentication,bypass</td>
+					<td class=date>2026-05-01T10:15:58.080</td>
+					<td class=description>The Temporary Login plugin for WordPress is vulnerable to Authentication Bypass in versions up to and including 1.0.0. This is due to improper input validation in the maybe_login_temporary_user() function, which fails to verify that the 'temp-login-token' GET parameter is a scalar string before processing it. When the parameter is supplied as an array, PHP's empty() check is bypassed and sanitize_key() returns an empty string, which is then passed as the meta_value to get_users(). WordPress ignores an empty meta_value and returns all users matching the meta_key '_temporary_login_token', allowing authentication without a valid token. This makes it possible for unauthenticated attackers to authenticate as any active temporary login user by sending a single crafted GET request.</td>
+				</tr>
+			
 		
 			
 				<tr class=keywords style="display: none">
@@ -1221,46 +1225,6 @@ This issue affects mpGabinet version 23.12.19 and below.</td>
 					<td>remote,unauthenticated,sensitive</td>
 					<td class=date>2026-04-28T11:16:05.967</td>
 					<td class=description>An unsecured configuration interface on affected devices allows unauthenticated remote attackers to access sensitive information, including hashed credentials and access codes.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-7244">CVE-2026-7244</a></td>
-					<td>9.8</td>
-					<td>remote,command</td>
-					<td class=date>2026-04-28T09:16:17.950</td>
-					<td class=description>A security flaw has been discovered in Totolink A8000RU 7.1cu.643_b20200521. The impacted element is the function setWiFiEasyGuestCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipulation of the argument merge results in os command injection. It is possible to launch the attack remotely. The exploit has been released to the public and may be used for attacks.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-7243">CVE-2026-7243</a></td>
-					<td>9.8</td>
-					<td>remote,command</td>
-					<td class=date>2026-04-28T09:16:17.787</td>
-					<td class=description>A vulnerability was identified in Totolink A8000RU 7.1cu.643_b20200521. The affected element is the function setRadvdCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipulation of the argument maxRtrAdvInterval leads to os command injection. It is possible to initiate the attack remotely. The exploit is publicly available and might be used.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-7242">CVE-2026-7242</a></td>
-					<td>9.8</td>
-					<td>remote,command,vpn</td>
-					<td class=date>2026-04-28T09:16:17.627</td>
-					<td class=description>A vulnerability was determined in Totolink A8000RU 7.1cu.643_b20200521. Impacted is the function setOpenVpnClientCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Executing a manipulation of the argument enabled can lead to os command injection. The attack may be performed from remote. The exploit has been publicly disclosed and may be utilized.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-7241">CVE-2026-7241</a></td>
-					<td>9.8</td>
-					<td>remote,command</td>
-					<td class=date>2026-04-28T09:16:17.457</td>
-					<td class=description>A vulnerability was found in Totolink A8000RU 7.1cu.643_b20200521. This issue affects the function setWiFiBasicCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Performing a manipulation of the argument wifiOff results in os command injection. The attack is possible to be carried out remotely. The exploit has been made public and could be used.</td>
 				</tr>
 			
 		
