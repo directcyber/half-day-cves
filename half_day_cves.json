@@ -1,40 +1,4 @@
 {
-  "CVE-2026-40355": {
-    "cvss": 5.9,
-    "description": "In MIT Kerberos 5 (aka krb5) before 1.22.3, there is a NULL pointer dereference if an application calls gss_accept_sec_context() on a system with a NegoEx mechanism registered in /etc/gss/mech. An unauthenticated remote attacker can trigger this, causing the process to terminate in parse_nego_message.",
-    "published": "2026-04-28T06:16:03.663",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2026-40356": {
-    "cvss": 5.9,
-    "description": "In MIT Kerberos 5 (aka krb5) before 1.22.3, there is an integer underflow and resultant out-of-bounds read if an application calls gss_accept_sec_context() on a system with a NegoEx mechanism registered in /etc/gss/mech. An unauthenticated remote attacker can trigger this, possibly causing the process to terminate in parse_message.",
-    "published": "2026-04-28T07:16:03.197",
-    "keywords": "remote,unauthenticated"
-  },
-  "CVE-2026-7234": {
-    "url": "https://github.com/browseroperator/browser-operator-core/issues/96",
-    "cvss": 7.3,
-    "description": "A weakness has been identified in BrowserOperator browser-operator-core up to 0.6.0. Affected is the function startsWith of the file scripts/component_server/server.js. Executing a manipulation of the argument request.url can lead to path traversal. The attack can be launched remotely. The exploit has been made available to the public and could be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.",
-    "published": "2026-04-28T07:16:04.247"
-  },
-  "CVE-2026-40966": {
-    "cvss": 5.9,
-    "description": "In Spring AI, an attacker can bypass conversation isolation and exfiltrate sensitive memory from other users\u2019 chat histories, including secrets and credentials, by injecting filter logic through conversationId. Only applications that use VectorStoreChatMemoryAdvisor and pass user-supplied input as a conversationId are affected.",
-    "published": "2026-04-28T08:16:01.283",
-    "keywords": "sensitive,bypass"
-  },
-  "CVE-2026-7235": {
-    "url": "https://github.com/erlichliu/claude-agent-sdk-master/issues/5",
-    "cvss": 5.3,
-    "description": "A security vulnerability has been detected in ErlichLiu claude-agent-sdk-master up to b185aa7ff0d864581257008077b4010fca1747bf. Affected by this vulnerability is an unknown functionality of the file app/api/agent-output/route.ts. The manipulation of the argument outputFile leads to path traversal. The attack may be initiated remotely. The exploit has been disclosed publicly and may be used. This product uses a rolling release model to deliver continuous updates. As a result, specific version information for affected or updated releases is not available. The project was informed of the problem early through an issue report but has not responded yet.",
-    "published": "2026-04-28T08:16:02.467"
-  },
-  "CVE-2026-7240": {
-    "cvss": 9.8,
-    "description": "A vulnerability has been found in Totolink A8000RU 7.1cu.643_b20200521. This vulnerability affects the function setVpnAccountCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Such manipulation of the argument User leads to os command injection. The attack can be executed remotely. The exploit has been disclosed to the public and may be used.",
-    "published": "2026-04-28T08:16:02.990",
-    "keywords": "remote,command,vpn"
-  },
   "CVE-2026-7241": {
     "cvss": 9.8,
     "description": "A vulnerability was found in Totolink A8000RU 7.1cu.643_b20200521. This issue affects the function setWiFiBasicCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Performing a manipulation of the argument wifiOff results in os command injection. The attack is possible to be carried out remotely. The exploit has been made public and could be used.",
