@@ -42,7 +42,7 @@
 
 
 <body>
-Updated at UTC 2026-05-01T02:15:15.710211
+Updated at UTC 2026-05-01T06:09:06.850627
 
 <p><a target=_blank href=https://github.com/directcyber/half-day-cves/blob/main/half_day_cves.json>Access data as JSON</a></p>
 
@@ -57,6 +57,22 @@ Updated at UTC 2026-05-01T02:15:15.710211
 		    <th onclick="sortTable(4)">Description</th>
 		</tr>
 
+		
+			
+		
+			
+		
+			
+				<tr>
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-7536">CVE-2026-7536</a></td>
+					<td>5.3</td>
+					<td><a target=_blank href="https://github.com/open5gs/open5gs/issues/4400">https://github.com/open5gs/open5gs/issues/4400</a></td>
+					<td class=date>2026-05-01T02:16:04.347</td>
+					<td class=description>A vulnerability was determined in Open5GS up to 2.7.7. This vulnerability affects the function bsf_sess_add_by_ip_address of the file /nbsf-management/v1/pcfBindings of the component BSF. Executing a manipulation of the argument ipv4Addr can lead to denial of service. The attack can be launched remotely. The exploit has been publicly disclosed and may be utilized. The project was informed of the problem early through an issue report but has not responded yet.</td>
+
+
+				</tr>
+			
 		
 			
 				<tr>
@@ -500,36 +516,30 @@ Updated at UTC 2026-05-01T02:15:15.710211
 		
 			
 		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-7223">CVE-2026-7223</a></td>
-					<td>7.3</td>
-					<td><a target=_blank href="https://github.com/bigsweetpotatostudio/hyperchat/issues/142">https://github.com/bigsweetpotatostudio/hyperchat/issues/142</a></td>
-					<td class=date>2026-04-28T04:16:29.043</td>
-					<td class=description>A vulnerability was identified in BigSweetPotatoStudio HyperChat up to 2.0.0-alpha.63. Affected by this issue is the function fetch of the file packages/core/src/http/aiProxyMiddleware.mts of the component AI Proxy Middleware. Such manipulation of the argument baseurl leads to server-side request forgery. The attack can be launched remotely. The exploit is publicly available and might be used. The project was informed of the problem early through an issue report but has not responded yet.</td>
-
-
-				</tr>
-			
-		
-			
-				<tr>
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-7217">CVE-2026-7217</a></td>
-					<td>5.3</td>
-					<td><a target=_blank href="https://github.com/deepractice/promptx/issues/571">https://github.com/deepractice/promptx/issues/571</a></td>
-					<td class=date>2026-04-28T03:16:04.777</td>
-					<td class=description>A security vulnerability has been detected in Deepractice PromptX up to 2.4.0. The affected element is the function read_docx/read_xlsx/read_pptx/list_xlsx_sheets/read_pdf of the file packages/mcp-office/src/index.ts of the component Document File Handler. Such manipulation of the argument path leads to absolute path traversal. The attack can be executed remotely. The exploit has been disclosed publicly and may be used. The project was informed of the problem early through an issue report but has not responded yet.</td>
-
-
-				</tr>
-			
-		
-			
-		
-			
-		
 
 		<hr>
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-7548">CVE-2026-7548</a></td>
+					<td>8.8</td>
+					<td>remote,command</td>
+					<td class=date>2026-05-01T03:16:01.467</td>
+					<td class=description>A vulnerability was detected in Totolink NR1800X 9.1.0u.6279_B20210910. This affects the function sub_41A68C of the file /cgi-bin/cstecgi.cgi. Performing a manipulation of the argument setUssd results in command injection. The attack is possible to be carried out remotely. The exploit is now public and may be used.</td>
+				</tr>
+			
+		
+			
+				<tr class=keywords style="display: none">
+					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-7538">CVE-2026-7538</a></td>
+					<td>9.8</td>
+					<td>remote,command</td>
+					<td class=date>2026-05-01T02:16:04.533</td>
+					<td class=description>A vulnerability was identified in Totolink A8000RU 7.1cu.643_b20200521. This issue affects the function Vulnerability of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipulation of the argument proto leads to os command injection. The attack may be initiated remotely. The exploit is publicly available and might be used.</td>
+				</tr>
+			
+		
+			
 		
 			
 		
@@ -1327,30 +1337,6 @@ This issue affects mpGabinet version 23.12.19 and below.</td>
 					<td>remote,unauthenticated</td>
 					<td class=date>2026-04-28T06:16:03.663</td>
 					<td class=description>In MIT Kerberos 5 (aka krb5) before 1.22.3, there is a NULL pointer dereference if an application calls gss_accept_sec_context() on a system with a NegoEx mechanism registered in /etc/gss/mech. An unauthenticated remote attacker can trigger this, causing the process to terminate in parse_nego_message.</td>
-				</tr>
-			
-		
-			
-		
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-1460">CVE-2026-1460</a></td>
-					<td>7.2</td>
-					<td>authentication,command</td>
-					<td class=date>2026-04-28T03:16:02.313</td>
-					<td class=description>A post-authentication command injection vulnerability in the “DomainName” parameter of the DHCP configuration file in Zyxel DX3301-T0 and EX3301-T0 firmware versions through 5.50(ABVY.7.1)C0 could allow an authenticated attacker with administrator privileges to execute OS commands on an affected device.</td>
-				</tr>
-			
-		
-			
-				<tr class=keywords style="display: none">
-					<td><a target=_blank href="https://nvd.nist.gov/vuln/detail/CVE-2026-0711">CVE-2026-0711</a></td>
-					<td>6.8</td>
-					<td>authentication,command</td>
-					<td class=date>2026-04-28T03:16:02.167</td>
-					<td class=description>A post-authentication command injection vulnerability in the EasyMesh-related APIs of Zyxel DX3300-T0 firmware versions through 5.50(ABVY.7.1)C0 could allow an authenticated, adjacent attacker with administrator privileges to execute OS commands on an affected device.</td>
 				</tr>
 			
 		

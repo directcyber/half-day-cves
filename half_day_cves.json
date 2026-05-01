@@ -1,28 +1,4 @@
 {
-  "CVE-2026-0711": {
-    "cvss": 6.8,
-    "description": "A post-authentication command injection vulnerability in the EasyMesh-related APIs of Zyxel DX3300-T0 firmware versions through 5.50(ABVY.7.1)C0 could allow an authenticated, adjacent attacker with administrator privileges to execute OS commands on an affected device.",
-    "published": "2026-04-28T03:16:02.167",
-    "keywords": "authentication,command"
-  },
-  "CVE-2026-1460": {
-    "cvss": 7.2,
-    "description": "A post-authentication command injection vulnerability in the \u201cDomainName\u201d parameter of the DHCP configuration file in Zyxel DX3301-T0 and EX3301-T0 firmware versions through 5.50(ABVY.7.1)C0 could allow an authenticated attacker with administrator privileges to execute OS commands on an affected device.",
-    "published": "2026-04-28T03:16:02.313",
-    "keywords": "authentication,command"
-  },
-  "CVE-2026-7217": {
-    "url": "https://github.com/deepractice/promptx/issues/571",
-    "cvss": 5.3,
-    "description": "A security vulnerability has been detected in Deepractice PromptX up to 2.4.0. The affected element is the function read_docx/read_xlsx/read_pptx/list_xlsx_sheets/read_pdf of the file packages/mcp-office/src/index.ts of the component Document File Handler. Such manipulation of the argument path leads to absolute path traversal. The attack can be executed remotely. The exploit has been disclosed publicly and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
-    "published": "2026-04-28T03:16:04.777"
-  },
-  "CVE-2026-7223": {
-    "url": "https://github.com/bigsweetpotatostudio/hyperchat/issues/142",
-    "cvss": 7.3,
-    "description": "A vulnerability was identified in BigSweetPotatoStudio HyperChat up to 2.0.0-alpha.63. Affected by this issue is the function fetch of the file packages/core/src/http/aiProxyMiddleware.mts of the component AI Proxy Middleware. Such manipulation of the argument baseurl leads to server-side request forgery. The attack can be launched remotely. The exploit is publicly available and might be used. The project was informed of the problem early through an issue report but has not responded yet.",
-    "published": "2026-04-28T04:16:29.043"
-  },
   "CVE-2026-40355": {
     "cvss": 5.9,
     "description": "In MIT Kerberos 5 (aka krb5) before 1.22.3, there is a NULL pointer dereference if an application calls gss_accept_sec_context() on a system with a NegoEx mechanism registered in /etc/gss/mech. An unauthenticated remote attacker can trigger this, causing the process to terminate in parse_nego_message.",
@@ -598,5 +574,23 @@
     "cvss": 4.3,
     "description": "A vulnerability was found in Open5GS up to 2.7.7. This affects the function amf_namf_comm_handle_registration_status_update_request in the library /lib/app/ogs-init.c of the file /namf-comm/v1/ue-contexts/{ueContextId}/transfer-update. Performing a manipulation of the argument ueContextId results in denial of service. The attack can be initiated remotely. The exploit has been made public and could be used. The project was informed of the problem early through an issue report but has not responded yet.",
     "published": "2026-05-01T01:16:18.087"
+  },
+  "CVE-2026-7536": {
+    "url": "https://github.com/open5gs/open5gs/issues/4400",
+    "cvss": 5.3,
+    "description": "A vulnerability was determined in Open5GS up to 2.7.7. This vulnerability affects the function bsf_sess_add_by_ip_address of the file /nbsf-management/v1/pcfBindings of the component BSF. Executing a manipulation of the argument ipv4Addr can lead to denial of service. The attack can be launched remotely. The exploit has been publicly disclosed and may be utilized. The project was informed of the problem early through an issue report but has not responded yet.",
+    "published": "2026-05-01T02:16:04.347"
+  },
+  "CVE-2026-7538": {
+    "cvss": 9.8,
+    "description": "A vulnerability was identified in Totolink A8000RU 7.1cu.643_b20200521. This issue affects the function Vulnerability of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipulation of the argument proto leads to os command injection. The attack may be initiated remotely. The exploit is publicly available and might be used.",
+    "published": "2026-05-01T02:16:04.533",
+    "keywords": "remote,command"
+  },
+  "CVE-2026-7548": {
+    "cvss": 8.8,
+    "description": "A vulnerability was detected in Totolink NR1800X 9.1.0u.6279_B20210910. This affects the function sub_41A68C of the file /cgi-bin/cstecgi.cgi. Performing a manipulation of the argument setUssd results in command injection. The attack is possible to be carried out remotely. The exploit is now public and may be used.",
+    "published": "2026-05-01T03:16:01.467",
+    "keywords": "remote,command"
   }
 }
